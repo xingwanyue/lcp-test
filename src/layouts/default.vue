@@ -5,7 +5,6 @@
     <el-header class="header" height="60px"> HEADER </el-header>
     <el-main class="main">
       <slot />
-      <v-help />
     </el-main>
     <el-footer>Footer</el-footer>
   </el-container>

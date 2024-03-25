@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt'],
 
-  css: ['element-plus/dist/index.css', '@/assets/iconfont/iconfont.css'],
+  css: ['element-plus/dist/index.css'],
   app: {
     head: {
       link: [{ rel: 'stylesheet', href: '/css/main.css' }],
