@@ -6,15 +6,38 @@ body {
 .el-footer{
   height:unset !important;
 }
+.v-header {
+  border:0px !important;
+}
 
 a {
   text-decoration: none;
   outline: none;
   color: #000000;
 }
-
+.common_btn {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  min-width: 280px;
+  box-sizing: border-box;
+ 
+ 
+}
 .common_btn_hover_bgColor:hover{
   background-color: #dc593b !important;
+}
+.common_btn_hover_borderCu:hover{
+  border: 2px solid #201515 !important;
+  /* box-sizing: border-box; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+ 
 }
 @media screen and (max-width: 1000px) {
   *::-webkit-scrollbar {

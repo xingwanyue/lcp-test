@@ -159,7 +159,7 @@ const menus = [
               <nuxt-link :href="urlGet('/questions')" class="head-name">{{ menu.name }}</nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :href="menu.path">{{ menu.name }}</nuxt-link>
+          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}</nuxt-link>
         </nav>
       </div>
       <div class="mobile">
