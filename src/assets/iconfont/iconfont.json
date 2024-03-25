@@ -1,0 +1,16 @@
+{
+  "id": "4351020",
+  "name": "det",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-det",
+  "description": "det官网",
+  "glyphs": [
+    {
+      "icon_id": "39403564",
+      "name": "logo",
+      "font_class": "logon",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

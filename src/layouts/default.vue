@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import vHeader from './header.vue';
 import vFooter from './footer.vue';
 </script>
 
 <template>
   <el-container class="wrap">
-    <el-header class="header" height="60px"> HEADER </el-header>
+    <el-header class="header" height="72px"> <v-header /> </el-header>
     <el-main class="main">
       <slot />
     </el-main>
@@ -22,7 +23,7 @@ import vFooter from './footer.vue';
     width: 100%;
   }
   .main {
-    padding: 60px 0 0;
+    padding: 72px 0 0 0;
     min-height: calc(100vh - 60px);
   }
   .footer_wrap {

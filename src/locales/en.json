@@ -1,3 +1,8 @@
 {
-  "test": "For test"
+  "test": "For test",
+  "home": "home",
+  "Products": "Products",
+  "Learn": "Learn",
+  "Pricing": "Pricing",
+  "Blog": "Blog"
 }

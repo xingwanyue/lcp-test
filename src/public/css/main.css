@@ -12,6 +12,10 @@ a {
   outline: none;
   color: #000000;
 }
+
+.common_btn_hover_bgColor:hover{
+  background-color: #dc593b !important;
+}
 @media screen and (max-width: 1000px) {
   *::-webkit-scrollbar {
     display: none;

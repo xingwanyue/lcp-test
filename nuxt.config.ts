@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
-  css: ['element-plus/dist/index.css', 'aos/dist/aos.css'],
+  css: ['element-plus/dist/index.css', '@/assets/iconfont/iconfont.css', 'aos/dist/aos.css'],
   i18n: {
     locales: ['en', 'id'],
     defaultLocale: 'en',
