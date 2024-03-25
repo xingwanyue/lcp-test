@@ -50,8 +50,12 @@ const moveAnamit = () => {
           </div>
         </div>
         <div class="two_btn_out">
-          <div class="common_btn yellow common_btn_hover_bgColor">Start free with Goog</div>
-          <div class="common_btn white common_btn_hover_borderCu">Start free with emai</div>
+          <div class="common_btn common_btn_hover_bgColor yellow">
+            <img src="./public/img/home/google_icon.svg" />
+
+            Start free with Goog
+          </div>
+          <div class="common_btn common_btn_hover_borderCu white">Start free with emai</div>
         </div>
       </div>
     </div>
