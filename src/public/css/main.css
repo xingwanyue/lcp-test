@@ -3,6 +3,9 @@ body {
   padding: 0;
   margin: 0;
 }
+.el-footer{
+  height:unset !important;
+}
 
 a {
   text-decoration: none;

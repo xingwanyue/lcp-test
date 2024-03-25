@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import vFooter from './footer.vue';
+</script>
 
 <template>
   <el-container class="wrap">
@@ -6,7 +8,7 @@
     <el-main class="main">
       <slot />
     </el-main>
-    <el-footer>Footer</el-footer>
+    <el-footer class="footer_wrap"> <v-footer /></el-footer>
   </el-container>
 </template>
 <style lang="scss" scoped>
@@ -22,6 +24,10 @@
   .main {
     padding: 60px 0 0;
     min-height: calc(100vh - 60px);
+  }
+  .footer_wrap {
+    padding: 0 30px;
+    border: 1px red solid;
   }
 }
 </style>
