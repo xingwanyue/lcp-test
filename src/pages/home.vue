@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const localePath = useLocalePath();
+</script>
 
-<template>HOME</template>
+<template>
+  {{ $t('test') }}
+  <NuxtLink :to="localePath('home')">{{ $t('home') }}</NuxtLink>
+</template>
 
 <style lang="scss" scoped></style>
