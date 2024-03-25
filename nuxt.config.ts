@@ -4,12 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
-  css: ['element-plus/dist/index.css'],
+  css: ['element-plus/dist/index.css', 'aos/dist/aos.css'],
   i18n: {
     locales: ['en', 'id'],
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts', // if you are using custom path, default
   },
+  plugins: [{ src: '@/plugins/aos.client.js', ssr: false }],
   app: {
     head: {
       link: [{ rel: 'stylesheet', href: '/css/main.css' }],
