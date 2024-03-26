@@ -3,6 +3,7 @@ const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
 };
+
 const MembershipArr = ref([]);
 const CurrentMembershipId = ref(0);
 const changeCurrentMembershipId = (id: number) => {
@@ -11,6 +12,51 @@ const changeCurrentMembershipId = (id: number) => {
 const buyMembership = (id: number) => {
   console.log(id);
 };
+
+const aqList = ref([
+  {
+    open: false,
+    q: 'My payment was successful, but the VIP upgrade failed.',
+    a: "Yes, we take your data security and privacy very seriously. All your data, including the knowledge base, uploaded documents, and AI interactions, are securely stored on Sand Studio's servers, hosted on Amazon Web Services (AWS). This provides a secure environment with firewalls, data encryption, and DDoS mitigation. We will not provide your data to OpenAI, and your data is NOT used in any ML training or any beyond-service analysis.",
+  },
+  {
+    open: false,
+    q: 'My payment was successful, but the VIP upgrade failed.',
+    a: "Yes, we take your data security and privacy very seriously. All your data, including the knowledge base, uploaded documents, and AI interactions, are securely stored on Sand Studio's servers, hosted on Amazon Web Services (AWS). This provides a secure environment with firewalls, data encryption, and DDoS mitigation. We will not provide your data to OpenAI, and your data is NOT used in any ML training or any beyond-service analysis.",
+  },
+  {
+    open: false,
+    q: 'My payment was successful, but the VIP upgrade failed.',
+    a: "Yes, we take your data security and privacy very seriously. All your data, including the knowledge base, uploaded documents, and AI interactions, are securely stored on Sand Studio's servers, hosted on Amazon Web Services (AWS). This provides a secure environment with firewalls, data encryption, and DDoS mitigation. We will not provide your data to OpenAI, and your data is NOT used in any ML training or any beyond-service analysis.",
+  },
+]);
+const openOrCloseOneQuestion = (item: any) => {
+  item.open = !item.open;
+};
+
+import online from '../public/img/pricing/online.svg';
+import email from '../public/img/pricing/email.svg';
+import message from '../public/img/pricing/message.svg';
+const contaceUsList = ref([
+  {
+    icon: online,
+    font: 'Online Customer Service',
+    tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
+    btn: 'Initiate a conversation',
+  },
+  {
+    icon: email,
+    font: 'Consultation Email',
+    tip: 'We will respond to you within one business day.',
+    btn: 'info@aitogether.uk',
+  },
+  {
+    icon: message,
+    font: 'Leave a message',
+    tip: 'We will respond to you within one business day.',
+    btn: 'Leave a message now',
+  },
+]);
 
 onMounted(() => {
   makeMMembershipArr();
@@ -146,6 +192,59 @@ const makeMMembershipArr = () => {
               </div>
               <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">Buy Now</div>
             </div>
+          </div>
+        </div>
+        <div class="scroll_buyed">
+          <div class="scroll_buyed_left">
+            <div class="icon"><img src="../public/img/pricing/green_check.svg" /></div>
+            <div class="name">Sha****819</div>
+            <div class="type">purchased</div>
+            <div class="days">30-day membership</div>
+          </div>
+          <div class="scroll_buyed_right">
+            <div class="flag"><img src="../public/img/pricing/green_check.svg" /></div>
+            <div class="country_name">china</div>
+            <div class="time">20 mins ago</div>
+          </div>
+        </div>
+        <div class="bank_card">
+          <div class="title">Secure Payment:</div>
+          <div class="img_self"></div>
+        </div>
+      </div>
+    </div>
+    <div class="part2_wrapper">
+      <div class="part2">
+        <div class="title">Frequently Asked Questions</div>
+        <div class="list_out">
+          <div
+            v-for="(item, index) in aqList"
+            :key="index"
+            :class="[item.open ? 'one_question one_question_open' : 'one_question']"
+            @click="openOrCloseOneQuestion(item)"
+          >
+            <div class="header">
+              <div class="icon">
+                <img src="../public/img/pricing/arrow_down.svg" />
+              </div>
+              <div class="qusetion">{{ item.q }}</div>
+            </div>
+            <div v-if="item.open" class="answer">
+              {{ item.a }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part3_wrapper">
+      <div class="part3">
+        <div class="title">Contact Us</div>
+        <div class="three_out">
+          <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
+            <div class="icon"><img :src="`${item.icon}`" /></div>
+            <div class="method_font">{{ item.font }}</div>
+            <div class="method_tip">{{ item.tip }}</div>
+            <div class="btn">{{ item.btn }}</div>
           </div>
         </div>
       </div>
@@ -415,6 +514,231 @@ const makeMMembershipArr = () => {
               text-align: center;
               margin-top: 32px;
             }
+          }
+        }
+      }
+      .scroll_buyed {
+        padding: 16px 24px;
+        background: #fff4f1;
+        border-radius: 8px;
+        margin-top: 32px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        // overflow: hidden;
+        @media (max-width: 846px) {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 16px;
+        }
+        .scroll_buyed_left {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          .icon {
+            width: 20px;
+            height: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .name {
+            font-weight: 400;
+            font-size: 16px;
+            color: #201515;
+            margin-left: 12px;
+          }
+          .type {
+            font-weight: 400;
+            font-size: 16px;
+            color: #201515;
+            margin-left: 12px;
+          }
+          .days {
+            font-weight: 400;
+            font-size: 16px;
+            color: #f66442;
+            margin-left: 12px;
+          }
+        }
+        .scroll_buyed_right {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1;
+          .flag {
+            width: 36px;
+            height: 24px;
+            //   border: 1px red solid;
+            margin-left: 40px;
+            //   margin-top: 10px;
+            position: relative;
+            @media (max-width: 846px) {
+              margin-left: 0px;
+            }
+            top: 2px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .country_name {
+            font-weight: 400;
+            font-size: 16px;
+            color: #201515;
+            margin-left: 16px;
+            flex: 1;
+          }
+          .time {
+            font-weight: 400;
+            font-size: 16px;
+            color: #201515;
+          }
+        }
+      }
+      .bank_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        grid-gap: 6px;
+        flex-wrap: wrap;
+        .title {
+          font-weight: 400;
+          font-size: 14px;
+          color: #403f3e;
+        }
+        .img_self {
+          width: 422px;
+          height: 40px;
+          border: 1px red solid;
+        }
+      }
+    }
+  }
+  .part2_wrapper {
+    padding: 0px 30px;
+    margin-top: 120px;
+    .part2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      .title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #201515;
+        text-align: center;
+        @media (max-width: 662px) {
+          font-size: 30px;
+        }
+      }
+      .list_out {
+        // border: 1px red solid;
+        margin-top: 56px;
+        .one_question {
+          padding: 18px 24px;
+          background: #f2f4f6;
+          border-radius: 8px;
+          cursor: pointer;
+          margin-bottom: 8px;
+          .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-gap: 24px;
+            .icon {
+              width: 16px;
+              height: 16px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .qusetion {
+              font-weight: 500;
+              font-size: 20px;
+              color: #201515;
+              @media (max-width: 662px) {
+                font-size: 16px;
+              }
+            }
+          }
+          .answer {
+            font-weight: 400;
+            font-size: 18px;
+            color: #201515;
+            margin-top: 24px;
+            padding-left: 44px;
+            @media (max-width: 662px) {
+              font-size: 16px;
+            }
+          }
+        }
+        .one_question_open {
+          background: #ffffff;
+          border: 1px solid #e9e9e9;
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+          .header {
+            .icon {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .part3_wrapper {
+    padding: 0px 30px;
+    background: #fff4f1;
+    margin-top: 100px;
+    .part3 {
+      padding: 100px 0;
+      //   border: 1px red solid;
+      max-width: 1200px;
+      margin: 0 auto;
+      .title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #201515;
+        text-align: center;
+        margin-bottom: 64px;
+      }
+      .three_out {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 24px;
+        .one_card {
+          padding: 32px 20px;
+          background: #ffffff;
+          border-radius: 8px;
+          border: 1px solid #f0e8e8;
+          .icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto;
+          }
+          .method_font {
+            font-weight: 600;
+            font-size: 24px;
+            color: #201515;
+            margin-top: 16px;
+          }
+          .method_tip {
+            font-weight: 400;
+            font-size: 14px;
+            color: #403f3e;
+            margin-top: 8px;
+          }
+          .btn {
+            padding: 11px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #201515;
+            font-weight: 500;
+            font-size: 16px;
+            color: #201515;
+            margin-top: 24px;
           }
         }
       }
