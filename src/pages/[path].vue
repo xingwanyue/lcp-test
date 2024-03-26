@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { api } from '@/utils';
 import _ from 'lodash';
+
 const route = useRoute();
 
 const { data: article } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
@@ -14,8 +15,8 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div class="article">
-    <p class="articleContent" v-html="article.content"></p>
+  <div class="article" v-if="article?.content">
+    <div class="articleContent" v-html="article?.content"></div>
   </div>
 </template>
 <style scoped lang="scss">
