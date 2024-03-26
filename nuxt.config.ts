@@ -10,7 +10,10 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts', // if you are using custom path, default
   },
-  plugins: [{ src: '@/plugins/aos.client.js', ssr: false }],
+  plugins: [
+    { src: '@/plugins/aos.client.js', ssr: false },
+    { src: '@/assets/iconfont/iconfont.js', ssr: false },
+  ],
   app: {
     head: {
       link: [{ rel: 'stylesheet', href: '/css/main.css' }],
