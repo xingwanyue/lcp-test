@@ -1,7 +1,114 @@
 <script setup lang="ts">
+import vSlogen from '../components/slogen.vue';
+const pinglun = [
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
+    avatr: '',
+  },
+];
+let timer = null;
+// 将pinglun的数据两个两个的放到一起
+const pinglunArr = ref([]);
+
 onMounted(() => {
   moveAnamit();
+  // 如果是在浏览器环境下，执行movePingLun
+  if (process.client) {
+    makePinglunData();
+    // movePingLun();
+  }
 });
+
+const makePinglunData = () => {
+  for (let i = 0; i < pinglun.length; i += 2) {
+    pinglunArr.value.push([pinglun[i], pinglun[i + 1]]);
+  }
+};
+const delPinglunData = () => {
+  // 移出前四个个数据
+  pinglunArr.value.shift();
+  pinglunArr.value.shift();
+  pinglunArr.value.shift();
+  // pinglunArr.value.shift();
+};
+const movePingLun = () => {
+  // 清除之前的定时器
+  if (timer) {
+    clearInterval(timer);
+  }
+  // 找到评论dom 使其能平滑的向左无限滚动
+  const review_scroll_out = document.querySelector('.review_scroll_out');
+  // const review_scroll_out_it = document.querySelector('.review_scroll_out_it');
+  timer = setInterval(() => {
+    review_scroll_out.scrollLeft += 1;
+    //  输出滚动的右侧距离 scrollright = scrollWidth - scrollLeft - clientWidth
+    const scrollright = review_scroll_out.scrollWidth - review_scroll_out.scrollLeft - review_scroll_out.clientWidth;
+    if (scrollright === 0) {
+      makePinglunData();
+    }
+    console.log(pinglunArr.value.length);
+    if (pinglunArr.value.length > 16) {
+      delPinglunData();
+    }
+  }, 10000);
+
+  review_scroll_out.onmouseover = () => {
+    clearInterval(timer);
+  };
+  review_scroll_out.onmouseout = () => {
+    movePingLun();
+  };
+  review_scroll_out.ontouchstart = () => {
+    clearInterval(timer);
+  };
+  review_scroll_out.ontouchend = () => {
+    movePingLun();
+  };
+};
 
 const moveAnamit = () => {
   const small_title_wrap = document.querySelector('.small_title_wrap');
@@ -211,27 +318,50 @@ const moveAnamit = () => {
         </div>
       </div>
     </div>
+
     <div class="review_wrapper">
       <div class="review">
         <div class="review_title">Rated 4.8/5 based on 850+ reviews</div>
         <div class="review_scroll_out">
-          <div class="one_card">
-            <div class="one_card_top">
-              <div class="one_card_top_left">
-                <div class="icon_touxiang"></div>
-                <div class="name_out">
-                  <div class="name">Della Walsh</div>
-                  <div class="country">China</div>
+          <div class="review_scroll_out_it">
+            <div v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
+              <div class="one_card">
+                <div class="one_card_top">
+                  <div class="one_card_top_left">
+                    <div class="icon_touxiang"></div>
+                    <div class="name_out">
+                      <div class="name">{{ item[0].name }}</div>
+                      <div class="country">{{ item[0].countyr }}</div>
+                    </div>
+                  </div>
+                  <div class="one_card_top_right">
+                    <img src="../public/img/home/five_starts.svg" />
+                  </div>
                 </div>
+                <div class="one_card_font">{{ item[0].font }}</div>
               </div>
-              <div class="one_card_top_right">
-                <img src="../public/img/home/five_starts.svg" />
+              <div class="one_card" style="margin-top: 24px">
+                <div class="one_card_top">
+                  <div class="one_card_top_left">
+                    <div class="icon_touxiang"></div>
+                    <div class="name_out">
+                      <div class="name">{{ item[1].name }}</div>
+                      <div class="country">{{ item[1].countyr }}</div>
+                    </div>
+                  </div>
+                  <div class="one_card_top_right">
+                    <img src="../public/img/home/five_starts.svg" />
+                  </div>
+                </div>
+                <div class="one_card_font">{{ item[1].font }}</div>
               </div>
             </div>
-            <div class="one_card_font"></div>
           </div>
         </div>
       </div>
+    </div>
+    <div>
+      <v-slogen />
     </div>
   </div>
 </template>
@@ -242,7 +372,6 @@ const moveAnamit = () => {
 </style>
 <style lang="scss" scoped>
 .home {
-  // max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 
@@ -375,7 +504,10 @@ const moveAnamit = () => {
         justify-content: center;
         align-items: center;
         margin-top: 40px;
-        grid-column-gap: 16px;
+        grid-gap: 16px;
+        @media (max-width: 730px) {
+          flex-direction: column;
+        }
 
         .yellow {
           background: #f66442;
@@ -407,8 +539,8 @@ const moveAnamit = () => {
         padding: 0px 60px;
         margin-top: 40px;
         .big_img {
-          // border: 1px red solid;
-          height: 500px;
+          border: 1px red solid;
+          height: 576px;
         }
       }
     }
@@ -651,48 +783,74 @@ const moveAnamit = () => {
         font-size: 40px;
         color: #ffffff;
         text-align: center;
+        margin-bottom: 64px;
       }
       .review_scroll_out {
-        display: flex;
-        .one_card {
-          padding: 24px;
-          background: #ffffff;
-          border-radius: 8px;
-          .one_card_top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .one_card_top_left {
-              .icon_touxiang {
-                width: 48px;
-                height: 48px;
-                border: 1px red solid;
+        padding: 0 20px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        .review_scroll_out_it {
+          // cursor: move;
+          display: flex;
+          width: fit-content;
+          grid-column-gap: 20px;
+          // animation: scroll 30s linear infinite;
+          .one_card {
+            flex-shrink: 0;
+            flex-grow: 0;
+            padding: 24px;
+            background: #ffffff;
+            border-radius: 8px;
+            width: 432px;
+            .one_card_top {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .one_card_top_left {
+                display: flex;
+                justify-content: flex-start;
+                grid-column-gap: 16px;
+                align-items: center;
+                .icon_touxiang {
+                  width: 48px;
+                  height: 48px;
+                  border: 1px red solid;
+                }
+                .name_out {
+                  .name {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #201515;
+                  }
+                  .country {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #403f3e;
+                  }
+                }
               }
-              .name_out {
-                .name {
-                  font-weight: 500;
-                  font-size: 16px;
-                  color: #201515;
-                }
-                .country {
-                  font-weight: 400;
-                  font-size: 14px;
-                  color: #403f3e;
-                }
+              .one_card_top_right {
+                width: 116px;
+                height: 19px;
               }
             }
-            .one_card_top_right {
-              width: 116px;
-              height: 19px;
+            .one_card_font {
+              font-weight: 400;
+              font-size: 18px;
+              color: #201515;
+              margin-top: 24px;
             }
-          }
-          .one_card_font {
-            font-weight: 400;
-            font-size: 18px;
-            color: #201515;
           }
         }
       }
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* 初始位置 */
+    }
+    100% {
+      transform: translateX(-100%); /* 向上滚动 100% 的高度 */
     }
   }
 }
