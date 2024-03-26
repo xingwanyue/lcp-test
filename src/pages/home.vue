@@ -387,6 +387,7 @@ const moveAnamit = () => {
     background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 804px, #ffffff 804px);
     .part1 {
       max-width: 1200px;
+      overflow: hidden;
       // border: 1px red solid;
       margin: 0 auto;
       height: 100%;
