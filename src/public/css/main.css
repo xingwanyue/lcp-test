@@ -9,6 +9,9 @@ body {
 .v-header {
   border:0px !important;
 }
+div {
+  -webkit-tap-highlight-color: transparent;
+}
 
 a {
   text-decoration: none;

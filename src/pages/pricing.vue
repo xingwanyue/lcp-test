@@ -8,6 +8,9 @@ const CurrentMembershipId = ref(0);
 const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
 };
+const buyMembership = (id: number) => {
+  console.log(id);
+};
 
 onMounted(() => {
   makeMMembershipArr();
@@ -80,7 +83,7 @@ const makeMMembershipArr = () => {
             More Service
           </div>
         </div>
-        <div class="Membership_dom">
+        <div v-if="switchType === '1'" class="Membership_dom">
           <div
             v-for="(item, index) in MembershipArr"
             :key="index"
@@ -100,7 +103,7 @@ const makeMMembershipArr = () => {
                 <div class="big_price">{{ item.big_price }}</div>
                 <div class="small_price">{{ item.small_price }}</div>
               </div>
-              <div class="card_price_buy_btn">Buy Now</div>
+              <div class="card_price_buy_btn" @click="buyMembership(item.id)">Buy Now</div>
               <div class="card_price_qllist">
                 <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
@@ -110,13 +113,41 @@ const makeMMembershipArr = () => {
                     <!-- <span class="bigger">30 days</span> -->
                     {{ itemin.font }}
                   </div>
-                  <div v-if="itemin.tips" class="tips"><img src="../public/img/pricing/tip.svg" /></div>
+                  <div v-if="itemin.tips" class="tips">
+                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
+                      <img src="../public/img/pricing/tip.svg" />
+                    </el-tooltip>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="Service_dom"></div>
+        <div v-if="switchType === '2'" class="Service_dom">
+          <div
+            v-for="(item, index) in MembershipArr"
+            :key="index"
+            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
+            @click="changeCurrentMembershipId(item.id)"
+          >
+            <div class="title">Most Popular Choice</div>
+            <div class="card_price">
+              <div class="card_price_part1">Speaking guide</div>
+              <div class="card_price_part2">
+                {{ item.text }}
+              </div>
+              <div class="card_price_part3">
+                <div class="member_price">$14.99</div>
+                <div class="member_font">Member's price</div>
+              </div>
+              <div class="card_price_part4">
+                <div class="off_price">$19.99</div>
+                <div class="old_price">$39.99</div>
+              </div>
+              <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">Buy Now</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -140,6 +171,9 @@ const makeMMembershipArr = () => {
           padding: 0px 0px;
           margin: 0px 0px 0px 0px;
           margin-top: 56px;
+          @media (max-width: 834px) {
+            font-size: 36px;
+          }
         }
       }
       .title2 {
@@ -150,6 +184,9 @@ const makeMMembershipArr = () => {
           text-align: center;
           margin: 0px 0px 0px 0px;
           margin-top: 32px;
+          @media (max-width: 834px) {
+            font-size: 20px;
+          }
         }
       }
       .switch_out {
@@ -257,6 +294,9 @@ const makeMMembershipArr = () => {
               color: #4c2929;
               text-align: center;
               margin-top: 32px;
+              &:hover {
+                background: #cba67f;
+              }
             }
             .card_price_qllist {
               margin-top: 40px;
@@ -301,6 +341,80 @@ const makeMMembershipArr = () => {
           }
           .card_price {
             border: 1px solid #e9e9e9;
+          }
+        }
+      }
+      .Service_dom {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        grid-gap: 16px;
+        .one_price {
+          border-radius: 8px;
+          display: grid;
+          cursor: pointer;
+          .title {
+            display: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+            flex: 1;
+            padding: 9px 0px;
+          }
+          .card_price {
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e9e9e9;
+            .card_price_part1 {
+              font-weight: 600;
+              font-size: 24px;
+              color: #201515;
+            }
+            .card_price_part2 {
+              font-weight: 400;
+              font-size: 14px;
+              color: #403f3e;
+              margin-top: 11px;
+            }
+            .card_price_part3 {
+              height: 134px;
+              .member_price {
+                font-weight: 600;
+                font-size: 32px;
+                color: #f66442;
+                margin-top: 44px;
+              }
+              .member_font {
+                font-weight: 400;
+                font-size: 14px;
+                color: #f66442;
+              }
+            }
+            .card_price_part4 {
+              .off_price {
+                font-weight: 600;
+                font-size: 32px;
+                color: #201515;
+              }
+              .old_price {
+                font-weight: 400;
+                font-size: 14px;
+                color: #403f3e;
+                text-decoration: line-through;
+              }
+            }
+            .card_price_buy_btn {
+              padding: 11px 0px;
+              background: #f66442;
+              border-radius: 4px;
+              font-weight: 500;
+              font-size: 16px;
+              color: white;
+              text-align: center;
+              margin-top: 32px;
+            }
           }
         }
       }
