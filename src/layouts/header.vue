@@ -86,6 +86,7 @@ const groups = computed(() =>
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
+  console.log('777777777777');
   visible.value = true;
 };
 
@@ -115,6 +116,41 @@ const menus = [
     path: '/blog',
   },
 ];
+
+import product_icon1 from '../public/img/home/product_icon1.svg';
+import product_icon2 from '../public/img/home/product_icon2.svg';
+import product_icon3 from '../public/img/home/product_icon3.svg';
+import product_icon4 from '../public/img/home/product_icon4.svg';
+const products = ref([
+  {
+    activeFontColor: 'color: #3E8BF8;',
+    activeBgColor: 'background: linear-gradient( , #F5FCFF 0%, #ECF7FF 100%);',
+    icon: product_icon1,
+    title: 'Duolingo English Test Practice',
+    font: 'Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent Monitoring for Exam Excellence!',
+  },
+  {
+    activeFontColor: 'color: #F66442;',
+    activeBgColor: 'background: linear-gradient( , #FFF8F5 0%, #FFF0EC 100%);',
+    icon: product_icon2,
+    title: 'Duolingo English Test Correction Service',
+    font: 'Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in Just Two Weeks!',
+  },
+  {
+    activeFontColor: 'color: #FF7C0E;',
+    activeBgColor: 'background: linear-gradient( , #FFFAF4 0%, #FFEFE1 100%);',
+    icon: product_icon3,
+    title: 'Duolingo English Test  Mock',
+    font: 'Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results Anytime, Anywhere!',
+  },
+  {
+    activeFontColor: 'color: #06CC76;',
+    activeBgColor: 'background: linear-gradient( , #F2FFF6 0%, #E7FDEC 100%);',
+    icon: product_icon4,
+    title: 'Duolingo English Test  Course',
+    font: 'Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!',
+  },
+]);
 </script>
 
 <template>
@@ -126,37 +162,65 @@ const menus = [
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
           <el-popover
-            v-if="menu.path === urlGet('/questions')"
+            v-if="menu.path === '/products'"
             v-model="popoverQuestions"
             placement="bottom"
-            width="824"
+            width="80%"
             trigger="hover"
             popper-class="head-question-popover"
           >
             <div class="head-question-con">
-              <div v-for="(val, key) in groups" :key="key" class="head-question-list">
-                <div class="group">
-                  <el-image
-                    ondragstart="return false;"
-                    oncontextmenu="return false;"
-                    class="group-image"
-                    :src="val.listImage"
-                  />
-                  <div class="group-name">{{ val.name }}</div>
+              <NuxtLink :to="localePath('/products/bank?id=bank')" class="one_card card1">
+                <div class="icon">
+                  <img src="../public/img/home/product_icon1.svg" />
                 </div>
-                <nuxt-link
-                  v-for="(v, k) in val.options"
-                  :key="k"
-                  class="group-list"
-                  :href="urlGet(`/questions?group=${val.key}&key=${v.key}`)"
-                >
-                  {{ v.name }}
-                  <span v-if="v.desc" :class="`${v.key === '4' ? 'descAI' : 'desc'}`">{{ v.desc }}</span>
-                </nuxt-link>
+                <div class="right">
+                  <div class="title">Duolingo English Test Practice</div>
+                  <div class="font">
+                    Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent
+                    Monitoring for Exam Excellence!
+                  </div>
+                </div>
+              </NuxtLink>
+              <div class="one_card card2">
+                <div class="icon">
+                  <img src="../public/img/home/product_icon2.svg" />
+                </div>
+                <div class="right">
+                  <div class="title">Duolingo English Test Correction Service</div>
+                  <div class="font">
+                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in
+                    Just Two Weeks!
+                  </div>
+                </div>
+              </div>
+              <div class="one_card card3">
+                <div class="icon">
+                  <img src="../public/img/home/product_icon3.svg" />
+                </div>
+                <div class="right">
+                  <div class="title">Duolingo English Test Mock</div>
+                  <div class="font">
+                    Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
+                    Anytime, Anywhere!
+                  </div>
+                </div>
+              </div>
+              <div class="one_card card4">
+                <div class="icon">
+                  <img src="../public/img/home/product_icon4.svg" />
+                </div>
+                <div class="right">
+                  <div class="title">Duolingo English Test Course</div>
+                  <div class="font">
+                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident
+                    Speaking and Writing Excellence!
+                  </div>
+                </div>
               </div>
             </div>
             <template #reference>
-              <nuxt-link :href="urlGet('/questions')" class="head-name">{{ menu.name }}</nuxt-link>
+              <nuxt-link class="head-name">{{ menu.name }}</nuxt-link>
             </template>
           </el-popover>
           <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}</nuxt-link>
@@ -178,7 +242,7 @@ const menus = [
     <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
         <nuxt-link href="/">
-          <el-image src="/img/logo.svg" class="asideLogo" />
+          <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
         </nuxt-link>
         <div class="asideMenus" @click="handleClose">
           <nuxt-link
@@ -197,63 +261,74 @@ const menus = [
 <style lang="scss">
 .head-question-popover {
   .head-question-con {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    .head-question-list {
-      // width: 130px;
-      .group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 4px;
-        .group-image {
-          width: 40px;
-          height: 40px;
-        }
-        .group-name {
-          font-size: 16px;
-          font-family: PingFangSC-Medium, PingFang SC;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+    .one_card {
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      grid-column-gap: 16px;
+      cursor: pointer;
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+      .right {
+        .title {
           font-weight: 500;
-          color: #484848;
-          margin-left: 16px;
+          font-size: 18px;
+          color: #201515;
+        }
+        .font {
+          font-weight: 400;
+          font-size: 14px;
+          color: #403f3e;
+          margin-top: 8px;
         }
       }
-      .group-list {
-        display: block;
-        font-size: 14px;
-        font-family: PingFangSC-Regular, PingFang SC;
-        font-weight: 400;
-        color: #484848;
-        line-height: 20px;
-        margin-top: 12px;
-        display: block;
-        cursor: pointer;
-        &.active {
-          color: #f66442;
+    }
+    .card1 {
+      &:hover {
+        .right {
+          .title {
+            color: #3e8bf8;
+          }
         }
-        &:hover {
-          color: #f66442;
+        background: linear-gradient(0, #f5fcff 0%, #ecf7ff 100%);
+      }
+    }
+    .card2 {
+      &:hover {
+        .right {
+          .title {
+            color: #f66442;
+          }
         }
-        .desc {
-          padding: 2px 4px;
-          background: #edfff1;
-          border-radius: 2px;
-          text-align: center;
-          line-height: 20px;
-          color: #47bf88;
-          font-size: 12px;
-          margin-left: 4px;
+        background: linear-gradient(0, #fff8f5 0%, #fff0ec 100%);
+      }
+    }
+    .card3 {
+      &:hover {
+        .right {
+          .title {
+            color: #ff7c0e;
+          }
         }
-        .descAI {
-          padding: 2px 4px;
-          background: #e8f4ff;
-          border-radius: 2px;
-          text-align: center;
-          line-height: 20px;
-          color: #2087fc;
-          font-size: 12px;
-          margin-left: 4px;
+        background: linear-gradient(0, #fffaf4 0%, #ffefe1 100%);
+        color: #fff;
+      }
+    }
+    .card4 {
+      &:hover {
+        .right {
+          .title {
+            color: #06cc76;
+          }
         }
+        background: linear-gradient(0, #f2fff6 0%, #e7fdec 100%);
+        color: #fff;
       }
     }
   }
