@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import vSlogen from '../components/slogen.vue';
+import vSubscribe from '../components/subscribe.vue';
 const pinglun = [
   {
     name: 'Della Walsh',
@@ -362,6 +363,9 @@ const moveAnamit = () => {
     </div>
     <div>
       <v-slogen />
+    </div>
+    <div>
+      <v-subscribe />
     </div>
   </div>
 </template>
