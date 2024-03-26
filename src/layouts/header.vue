@@ -100,19 +100,19 @@ const menus = [
   },
   {
     name: t('Products'),
-    path: '/exam',
+    path: '/products',
   },
   {
     name: t('Learn'),
-    path: '/course',
+    path: '/learn',
   },
   {
     name: t('Pricing'),
-    path: urlGet('/questions'),
+    path: '/pricing',
   },
   {
     name: t('Blog'),
-    path: '/ai',
+    path: '/blog',
   },
 ];
 </script>
