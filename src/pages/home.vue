@@ -51,11 +51,185 @@ const moveAnamit = () => {
         </div>
         <div class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow">
-            <img src="./public/img/home/google_icon.svg" />
-
+            <img src="../public/img/home/google_icon.svg" />
             Start free with Goog
           </div>
           <div class="common_btn common_btn_hover_borderCu white">Start free with emai</div>
+        </div>
+        <div class="all_stu_nums">
+          Trusted by <span class="yellow">500,000+ students</span> worldwide to improve Duolingo English Test scores
+          within one month.
+        </div>
+        <div class="big_img_out">
+          <div class="big_img"></div>
+        </div>
+      </div>
+    </div>
+    <div class="part2_wrapper">
+      <div class="part2">
+        <div class="title1">
+          <h2>
+            The best platform for enhancing your scores in the<br />
+            Duolingo English Test
+          </h2>
+        </div>
+        <div class="title2">
+          <h3>Utilize our comprehensive resources to accelerate your score improvement</h3>
+        </div>
+        <div class="one_img_article">
+          <div class="img_out">
+            <img src="../public/img/home/home1.png" />
+          </div>
+          <div class="article_out">
+            <div class="article_out_title">
+              <h4>Duolingo English Test Practice</h4>
+            </div>
+            <div class="tips">
+              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+            </div>
+            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
+              answering questions.
+            </div>
+            <div class="get_more">
+              <div class="font">Get more information</div>
+              <div class="icon">
+                <img src="../public/img/home/yellow_arrow_right.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one_article_img">
+          <div class="img_out">
+            <img src="../public/img/home/home2.png" />
+          </div>
+          <div class="article_out">
+            <div class="article_out_title">
+              <h4>Duolingo English Test Practice</h4>
+            </div>
+            <div class="tips">
+              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+            </div>
+            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
+              answering questions.
+            </div>
+            <div class="get_more">
+              <div class="font">Get more information</div>
+              <div class="icon">
+                <img src="../public/img/home/yellow_arrow_right.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one_img_article">
+          <div class="img_out">
+            <img src="../public/img/home/home3.png" />
+          </div>
+          <div class="article_out">
+            <div class="article_out_title">
+              <h4>Duolingo English Test Practice</h4>
+            </div>
+            <div class="tips">
+              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+            </div>
+            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
+              answering questions.
+            </div>
+            <div class="get_more">
+              <div class="font">Get more information</div>
+              <div class="icon">
+                <img src="../public/img/home/yellow_arrow_right.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one_article_img">
+          <div class="img_out">
+            <img src="../public/img/home/home4.png" />
+          </div>
+          <div class="article_out">
+            <div class="article_out_title">
+              <h4>Duolingo English Test Practice</h4>
+            </div>
+            <div class="tips">
+              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+            </div>
+            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
+              answering questions.
+            </div>
+            <div class="get_more">
+              <div class="font">Get more information</div>
+              <div class="icon">
+                <img src="../public/img/home/yellow_arrow_right.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part3_wrapper">
+      <div class="part3">
+        <div class="title">Number of High Scorers (130+ Points)：10000+</div>
+        <div class="user_nums_out">
+          <div class="one_num">
+            <div class="bigger_num">500k</div>
+            <div class="small_font">Users</div>
+          </div>
+          <div class="one_num">
+            <div class="bigger_num">500k</div>
+            <div class="small_font">Questions</div>
+          </div>
+          <div class="one_num">
+            <div class="bigger_num">500k</div>
+            <div class="small_font">Mock Test</div>
+          </div>
+        </div>
+        <div class="btn_out">
+          <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
+        </div>
+        <div class="score_scroll_out">
+          <div class="one_score">1</div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score"></div>
+          <div class="one_score">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="review_wrapper">
+      <div class="review">
+        <div class="review_title">Rated 4.8/5 based on 850+ reviews</div>
+        <div class="review_scroll_out">
+          <div class="one_card">
+            <div class="one_card_top">
+              <div class="one_card_top_left">
+                <div class="icon_touxiang"></div>
+                <div class="name_out">
+                  <div class="name">Della Walsh</div>
+                  <div class="country">China</div>
+                </div>
+              </div>
+              <div class="one_card_top_right">
+                <img src="../public/img/home/five_starts.svg" />
+              </div>
+            </div>
+            <div class="one_card_font"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -70,13 +244,17 @@ const moveAnamit = () => {
 .home {
   // max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
+
   // border: 1px red solid;
   .part1_wrapper {
-    height: 804px;
-    background: #fff4f1;
+    padding: 0px 30px;
+    // border: 1px red solid;
+    // height: 804px;
+    background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 804px, #ffffff 804px);
     .part1 {
       max-width: 1200px;
-      border: 1px red solid;
+      // border: 1px red solid;
       margin: 0 auto;
       height: 100%;
       .power_by {
@@ -201,14 +379,321 @@ const moveAnamit = () => {
 
         .yellow {
           background: #f66442;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column-gap: 8px;
+          img {
+            width: 26px;
+            height: 26px;
+          }
         }
         .white {
           border: 1px solid #201515;
           color: #201515;
         }
       }
+      .all_stu_nums {
+        font-weight: 400;
+        font-size: 16px;
+        color: #201515;
+        text-align: center;
+        margin-top: 40px;
+        .yellow {
+          color: #f66442;
+        }
+      }
+      .big_img_out {
+        padding: 0px 60px;
+        margin-top: 40px;
+        .big_img {
+          // border: 1px red solid;
+          height: 500px;
+        }
+      }
     }
   }
-  //
+  .part2_wrapper {
+    padding: 0px 30px;
+
+    box-sizing: border-box;
+    .part2 {
+      max-width: 1200px;
+      // border: 1px blue solid;
+      margin: 0 auto;
+      .title1 {
+        h2 {
+          font-weight: 500;
+          font-size: 40px;
+          color: #201515;
+          text-align: center;
+        }
+      }
+      .title2 {
+        margin-top: 32px;
+        h3 {
+          font-weight: 500;
+          font-size: 24px;
+          color: #201515;
+          text-align: center;
+        }
+      }
+      .one_img_article {
+        display: grid;
+        margin-bottom: 120px;
+        grid-template-columns: 1fr 0.75fr;
+        grid-column-gap: 80px;
+        grid-row-gap: 40px;
+        grid-template-areas: 'img_out  article_out';
+        @media (max-width: 926px) {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            'img_out'
+            'article_out';
+        }
+        .img_out {
+          // border: 1px red solid;
+          grid-area: img_out;
+          min-height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .article_out {
+          grid-area: article_out;
+          @media (max-width: 926px) {
+            text-align: center;
+          }
+          .article_out_title {
+            h4 {
+              font-weight: 500;
+              font-size: 32px;
+              color: #201515;
+              margin-top: 0px;
+            }
+          }
+          .tips {
+            font-weight: 400;
+            font-size: 18px;
+            color: #403f3e;
+            margin-top: 24px;
+          }
+          .get_more {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1;
+            // border: 1px red solid;
+            margin-top: 34px;
+            grid-column-gap: 8px;
+            @media (max-width: 926px) {
+              justify-content: center;
+            }
+            cursor: pointer;
+            .font {
+              font-weight: 500;
+              font-size: 20px;
+              color: #f66442;
+            }
+            .icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+      .one_article_img {
+        display: grid;
+        margin-bottom: 120px;
+        grid-template-columns: 0.75fr 1fr;
+        grid-column-gap: 80px;
+        grid-row-gap: 40px;
+        grid-template-areas: ' article_out img_out';
+        @media (max-width: 926px) {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            'img_out'
+            'article_out';
+        }
+        .img_out {
+          // border: 1px red solid;
+          grid-area: img_out;
+          min-height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .article_out {
+          grid-area: article_out;
+          @media (max-width: 926px) {
+            text-align: center;
+          }
+          .article_out_title {
+            h4 {
+              font-weight: 500;
+              font-size: 32px;
+              color: #201515;
+              margin-top: 0px;
+            }
+          }
+          .tips {
+            font-weight: 400;
+            font-size: 18px;
+            color: #403f3e;
+            margin-top: 24px;
+          }
+          .get_more {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1;
+            // border: 1px red solid;
+            margin-top: 34px;
+            grid-column-gap: 8px;
+            @media (max-width: 926px) {
+              justify-content: center;
+            }
+            cursor: pointer;
+            .font {
+              font-weight: 500;
+              font-size: 20px;
+              color: #f66442;
+            }
+            .icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .part3_wrapper {
+    border: 1px red solid;
+    background: #f2f4f6;
+    .part3 {
+      .title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #201515;
+        text-align: center;
+        margin-top: 100px;
+      }
+      .user_nums_out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 24px;
+        margin-top: 40px;
+        .one_num {
+          padding: 4px 32px;
+          background: #ffffff;
+          border-radius: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column-gap: 16px;
+          .bigger_num {
+            font-weight: 500;
+            font-size: 32px;
+            color: #201515;
+          }
+          .small_font {
+            font-weight: 400;
+            font-size: 18px;
+            color: #201515;
+          }
+        }
+      }
+      .btn_out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        .yellow {
+          background: #f66442;
+        }
+      }
+      .score_scroll_out {
+        border: 1px red solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 20px;
+        overflow-x: auto;
+        margin-top: 40px;
+
+        .one_score {
+          width: 312px;
+          flex-shrink: 0;
+          border: 1px blue solid;
+          height: 100px;
+        }
+      }
+    }
+  }
+  .review_wrapper {
+    background: #f66442;
+    overflow-y: hidden;
+    .review {
+      padding-bottom: 100px;
+      .review_title {
+        margin-top: 100px;
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .review_scroll_out {
+        display: flex;
+        .one_card {
+          padding: 24px;
+          background: #ffffff;
+          border-radius: 8px;
+          .one_card_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .one_card_top_left {
+              .icon_touxiang {
+                width: 48px;
+                height: 48px;
+                border: 1px red solid;
+              }
+              .name_out {
+                .name {
+                  font-weight: 500;
+                  font-size: 16px;
+                  color: #201515;
+                }
+                .country {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #403f3e;
+                }
+              }
+            }
+            .one_card_top_right {
+              width: 116px;
+              height: 19px;
+            }
+          }
+          .one_card_font {
+            font-weight: 400;
+            font-size: 18px;
+            color: #201515;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
