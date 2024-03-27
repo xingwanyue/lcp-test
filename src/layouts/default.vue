@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
+useHead({
+  script: [{ src: 'https://accounts.google.com/gsi/client' }],
+});
 </script>
 
 <template>
@@ -10,6 +13,12 @@ import vFooter from './footer.vue';
       <slot />
     </el-main>
     <el-footer class="footer_wrap"> <v-footer /></el-footer>
+    <div
+      id="g_id_onload"
+      data-client_id="1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com"
+      data-login_uri="https://app.detpractice.com/weapp/api/common/login"
+      data-auto_select
+    ></div>
   </el-container>
 </template>
 <style lang="scss" scoped>
