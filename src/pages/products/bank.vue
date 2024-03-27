@@ -1,112 +1,133 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import vEmbark from '../../components/embark.vue';
+// 获取 .v-header 将背景色改为透明
+</script>
 <template>
-  <div class="bank_wrapper">
-    <div class="bank">
-      <div class="banner_wrapper">
-        <div class="banner">
-          <div class="banner_left">
-            <div class="big_title">
-              <h1>
-                Duolingo Practice<br />
-                Question Bank
-              </h1>
-            </div>
-            <div class="desc">
-              "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation " —
-              achieve score improvement quickly at the lowest cost through a scientific approach.
-            </div>
-            <div class="people_num">
-              <div class="icon_continer"></div>
-              <div class="font">500000 + people used the question bank for practice.</div>
-            </div>
-            <div class="btn">
-              <div class="font">Practice For Free</div>
-              <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
-            </div>
-          </div>
-          <div class="banner_right"></div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="one_card img_left">
-          <div class="one_card_left">
-            <img src="../../public/img/products/bank_picture1.png" />
-          </div>
-          <div class="one_card_right">
-            <div class="one_card_right_forMid">
-              <div class="right_title">Abundant test questions</div>
-              <div class="right_desc">
-                Providing over <span class="strong">ten thousand questions</span>, covering various types of exams, and
-                continuously updating the question bank. It helps you systematically enhance your test-taking abilities
-                in different question formats.
+  <div class="bankW100">
+    <div class="bank_wrapper">
+      <div class="bank">
+        <div class="banner_wrapper">
+          <div class="banner">
+            <div class="banner_left">
+              <div class="big_title">
+                <h1>
+                  Duolingo Practice<br />
+                  Question Bank
+                </h1>
               </div>
-              <div class="right_click">
-                <div class="font">Start experiencing</div>
-                <div class="arrow">
-                  <img src="../../public/img/products/blue_arrow_right.svg" />
+              <div class="desc">
+                "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation " —
+                achieve score improvement quickly at the lowest cost through a scientific approach.
+              </div>
+              <div class="people_num">
+                <div class="icon_continer">
+                  <div class="one_icon left0">
+                    <img src="../../public/img/products/bank_user_icon1.png" />
+                  </div>
+                  <div class="one_icon left24">
+                    <img src="../../public/img/products/bank_user_icon1.png" />
+                  </div>
+                  <div class="one_icon left48">
+                    <img src="../../public/img/products/bank_user_icon1.png" />
+                  </div>
+                  <div class="one_icon left72">
+                    <img src="../../public/img/products/bank_user_icon1.png" />
+                  </div>
+                  <div class="one_icon left96">
+                    <img src="../../public/img/products/bank_user_icon1.png" />
+                  </div>
+                </div>
+                <div class="font">500000 + people used the question bank for practice.</div>
+              </div>
+              <div class="btn">
+                <div class="font">Practice For Free</div>
+                <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
+              </div>
+            </div>
+            <div class="banner_right"></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="one_card img_left">
+            <div class="one_card_left">
+              <img src="../../public/img/products/bank_picture1.png" />
+            </div>
+            <div class="one_card_right">
+              <div class="one_card_right_forMid">
+                <div class="right_title">Abundant test questions</div>
+                <div class="right_desc">
+                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
+                  and continuously updating the question bank. It helps you systematically enhance your test-taking
+                  abilities in different question formats.
+                </div>
+                <div class="right_click">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="one_card img_right">
-          <div class="one_card_left">
-            <img src="../../public/img/products/bank_picture1.png" />
-          </div>
-          <div class="one_card_right">
-            <div class="one_card_right_forMid">
-              <div class="right_title">Abundant test questions</div>
-              <div class="right_desc">
-                Providing over <span class="strong">ten thousand questions</span>, covering various types of exams, and
-                continuously updating the question bank. It helps you systematically enhance your test-taking abilities
-                in different question formats.
-              </div>
-              <div class="right_click">
-                <div class="font">Start experiencing</div>
-                <div class="arrow">
-                  <img src="../../public/img/products/blue_arrow_right.svg" />
+          <div class="one_card img_right">
+            <div class="one_card_left">
+              <img src="../../public/img/products/bank_picture1.png" />
+            </div>
+            <div class="one_card_right">
+              <div class="one_card_right_forMid">
+                <div class="right_title">Abundant test questions</div>
+                <div class="right_desc">
+                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
+                  and continuously updating the question bank. It helps you systematically enhance your test-taking
+                  abilities in different question formats.
+                </div>
+                <div class="right_click">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="one_card img_left">
-          <div class="one_card_left">
-            <img src="../../public/img/products/bank_picture1.png" />
-          </div>
-          <div class="one_card_right">
-            <div class="one_card_right_forMid">
-              <div class="right_title">Abundant test questions</div>
-              <div class="right_desc">
-                Providing over <span class="strong">ten thousand questions</span>, covering various types of exams, and
-                continuously updating the question bank. It helps you systematically enhance your test-taking abilities
-                in different question formats.
-              </div>
-              <div class="right_click">
-                <div class="font">Start experiencing</div>
-                <div class="arrow">
-                  <img src="../../public/img/products/blue_arrow_right.svg" />
+          <div class="one_card img_left">
+            <div class="one_card_left">
+              <img src="../../public/img/products/bank_picture1.png" />
+            </div>
+            <div class="one_card_right">
+              <div class="one_card_right_forMid">
+                <div class="right_title">Abundant test questions</div>
+                <div class="right_desc">
+                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
+                  and continuously updating the question bank. It helps you systematically enhance your test-taking
+                  abilities in different question formats.
+                </div>
+                <div class="right_click">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="one_card img_right">
-          <div class="one_card_left">
-            <img src="../../public/img/products/bank_picture1.png" />
-          </div>
-          <div class="one_card_right">
-            <div class="one_card_right_forMid">
-              <div class="right_title">Abundant test questions</div>
-              <div class="right_desc">
-                Providing over <span class="strong">ten thousand questions</span>, covering various types of exams, and
-                continuously updating the question bank. It helps you systematically enhance your test-taking abilities
-                in different question formats.
-              </div>
-              <div class="right_click">
-                <div class="font">Start experiencing</div>
-                <div class="arrow">
-                  <img src="../../public/img/products/blue_arrow_right.svg" />
+          <div class="one_card img_right">
+            <div class="one_card_left">
+              <img src="../../public/img/products/bank_picture1.png" />
+            </div>
+            <div class="one_card_right">
+              <div class="one_card_right_forMid">
+                <div class="right_title">Abundant test questions</div>
+                <div class="right_desc">
+                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
+                  and continuously updating the question bank. It helps you systematically enhance your test-taking
+                  abilities in different question formats.
+                </div>
+                <div class="right_click">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,6 +135,7 @@
         </div>
       </div>
     </div>
+    <v-embark />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -156,7 +178,32 @@
             grid-gap: 8px;
             .icon_continer {
               width: 128px;
-              border: 1px red solid;
+              position: relative;
+              height: 32px;
+              .one_icon {
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .left0 {
+                left: 0;
+              }
+              .left24 {
+                left: 24px;
+              }
+              .left48 {
+                left: 48px;
+              }
+              .left72 {
+                left: 72px;
+              }
+              .left96 {
+                left: 96px;
+              }
             }
             .font {
               font-weight: 400;
