@@ -12,6 +12,9 @@
 // });
 
 const localePath = useLocalePath();
+useHead({
+  script: [{ src: 'https://accounts.google.com/gsi/client' }],
+});
 </script>
 <template>
   <NuxtLink :to="localePath('home')">Go Home</NuxtLink>
