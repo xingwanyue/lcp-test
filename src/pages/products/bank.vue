@@ -44,11 +44,13 @@ import vEmbark from '../../components/embark.vue';
                 <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
               </div>
             </div>
-            <div class="banner_right"></div>
+            <div class="banner_right">
+              <img src="../../public/img/products/bank_banner.png" />
+            </div>
           </div>
         </div>
         <div class="content">
-          <div class="one_card img_left">
+          <div class="one_card img_left aos-item" data-aos="fade-up" data-aos-duration="600">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -69,7 +71,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_right">
+          <div class="one_card img_right aos-item" data-aos="fade-up" data-aos-duration="600">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -90,7 +92,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_left">
+          <div class="one_card img_left aos-item" data-aos="fade-up" data-aos-duration="600">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -111,7 +113,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_right">
+          <div class="one_card img_right aos-item" data-aos="fade-up" data-aos-duration="600">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -155,6 +157,10 @@ import vEmbark from '../../components/embark.vue';
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
+        @media (max-width: 986px) {
+          grid-template-columns: 1fr;
+        }
+
         .banner_left {
           .big_title {
             h1 {
@@ -233,7 +239,16 @@ import vEmbark from '../../components/embark.vue';
           }
         }
         .banner_right {
-          border: 1px red solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 986px) {
+            display: none;
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
