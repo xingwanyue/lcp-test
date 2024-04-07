@@ -39,7 +39,7 @@ import vEmbark from '../../components/embark.vue';
                 </div>
                 <div class="font">500000 + people used the question bank for practice.</div>
               </div>
-              <div class="btn">
+              <div class="btn common_btn_hover_bgColor">
                 <div class="font">Practice For Free</div>
                 <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
               </div>
@@ -50,7 +50,7 @@ import vEmbark from '../../components/embark.vue';
           </div>
         </div>
         <div class="content">
-          <div class="one_card img_left aos-item" data-aos="fade-up" data-aos-duration="600">
+          <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -71,7 +71,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_right aos-item" data-aos="fade-up" data-aos-duration="600">
+          <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -92,7 +92,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_left aos-item" data-aos="fade-up" data-aos-duration="600">
+          <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -113,7 +113,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_right aos-item" data-aos="fade-up" data-aos-duration="600">
+          <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -227,6 +227,7 @@ import vEmbark from '../../components/embark.vue';
             align-items: center;
             justify-content: center;
             grid-gap: 8px;
+            cursor: pointer;
             .font {
               font-weight: 500;
               font-size: 18px;
