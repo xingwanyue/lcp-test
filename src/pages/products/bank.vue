@@ -1,5 +1,14 @@
 <script lang="ts" setup>
+import { urlGet } from '@/utils';
 import vEmbark from '../../components/embark.vue';
+
+useSeoMeta({
+  title: 'Duolingo Practice Question Bank',
+  description:
+    'Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.',
+  keywords: 'Duolingo Practice Question Bank',
+});
+
 // 获取 .v-header 将背景色改为透明
 </script>
 <template>
@@ -40,7 +49,7 @@ import vEmbark from '../../components/embark.vue';
                 <div class="font">500000 + people used the question bank for practice.</div>
               </div>
               <div class="btn common_btn_hover_bgColor">
-                <div class="font">Practice For Free</div>
+                <nuxt-link class="font" :href="urlGet('/login')">Practice For Free</nuxt-link>
                 <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
               </div>
             </div>
@@ -63,7 +72,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -84,7 +93,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -105,7 +114,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -126,7 +135,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
