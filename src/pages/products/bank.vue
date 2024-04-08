@@ -153,7 +153,7 @@ useSeoMeta({
 .bank_wrapper {
   padding: 0 30px;
   overflow: hidden;
-  background: linear-gradient(0, #ffffff 0%, #ecf7ff 100%);
+  background: linear-gradient(#ecf7ff 0%, #ffffff 657px, #ffffff 0px, #ffffff);
   .bank {
     max-width: 1200px;
     // border: 1px red solid;
