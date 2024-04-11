@@ -4,5 +4,8 @@
   "Products": "Products",
   "Learn": "Learn",
   "Pricing": "Pricing",
-  "Blog": "Blog"
+  "Blog": "Blog",
+  "footer": {
+    "inc": "Our product has no connection with Duolingo,Inc"
+  }
 }

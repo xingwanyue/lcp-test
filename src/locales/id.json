@@ -1,3 +1,6 @@
 {
-  "test": "tes"
+  "test": "tes",
+  "footer": {
+    "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc"
+  }
 }
