@@ -8,15 +8,15 @@ const link_arr = [
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'AI Correction Service',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'DET Mock',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Duolingo English Test Course',
         url: '/product1',
       },
     ],
@@ -25,19 +25,19 @@ const link_arr = [
     name: 'Learn',
     list: [
       {
-        name: 'DET Practice',
+        name: 'Duolingo English Test',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Read and Complete',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Read and Select',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Interactive Reading',
         url: '/product1',
       },
     ],
@@ -46,19 +46,19 @@ const link_arr = [
     name: 'Blog',
     list: [
       {
-        name: 'DET Practice',
+        name: 'Duolingo English Test Duolingo English Test',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Read and Complete Read and Complete',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Mastering the New Duolingo English Test Updates in 2024: Tips and Strategies',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Interactive Reading',
         url: '/product1',
       },
     ],
@@ -67,19 +67,19 @@ const link_arr = [
     name: 'Company',
     list: [
       {
-        name: 'DET Practice',
+        name: 'About us',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Contact us',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Terms and Conditions',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Privacy Policy',
         url: '/product1',
       },
     ],
@@ -123,7 +123,9 @@ const options = [
     </div>
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
-        <div class="logo_img_out"></div>
+        <div class="logo_img_out">
+          <el-img src="../public/img/footer/small_logo.svg" />
+        </div>
         <div class="logo_icon_out">
           <div class="one_icon"></div>
           <div class="one_icon"></div>
@@ -146,7 +148,7 @@ const options = [
 .common_footer {
   max-width: 1200px;
 
-  border: 1px red solid;
+  // border: 1px red solid;
   margin: 0 auto;
   padding-top: 56px;
   padding-bottom: 37px;
@@ -154,11 +156,13 @@ const options = [
     text-align: left;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 40px;
     @media (max-width: 496px) {
       text-align: center;
     }
     grid-row-gap: 24px;
     .one_link_list {
+      // border: 1px red solid;
       .one_link_list_title {
         margin-bottom: 24px;
         font-weight: 500;
@@ -170,6 +174,11 @@ const options = [
         font-size: 14px;
         color: #201515;
         margin-bottom: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        &:hover {
+          color: #f66442;
+        }
       }
     }
   }
