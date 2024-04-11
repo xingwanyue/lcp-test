@@ -212,7 +212,7 @@ const contaceUsList = ref([
   .guide_wrapper_out {
     padding: 0px 30px;
     .guide_wrapper {
-      border: 1px red solid;
+      // border: 1px red solid;
       max-width: 1200px;
       margin: 0 auto;
     }

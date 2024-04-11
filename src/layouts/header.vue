@@ -18,7 +18,13 @@ const route = useRoute();
 const pathname = computed(() => route.path);
 const headerColor = ref('#FFF4F1');
 watch(pathname, (val) => {
-  switch (val) {
+  changeHeaderColor(val);
+});
+onMounted(() => {
+  changeHeaderColor(pathname.value);
+});
+const changeHeaderColor = (pathname: string) => {
+  switch (pathname) {
     case '/products/bank':
       headerColor.value = '#ECF7FF';
       break;
@@ -33,7 +39,7 @@ watch(pathname, (val) => {
       headerColor.value = '#FFF4F1';
       break;
   }
-});
+};
 
 const { data: cfg } = await useFetch(`${api}/common/cfg`, {
   server: false,
