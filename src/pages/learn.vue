@@ -4,7 +4,6 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import vEmbark from '../components/embark.vue';
 
 const router = useRouter();
 const activeName = ref('1');
@@ -14,6 +13,7 @@ const state = reactive({
   selConData: {} as any,
   infoList: [] as any,
   drawerVisible: false,
+  isMore: false,
 });
 onMounted(() => {
   getSelect();
@@ -63,10 +63,15 @@ const getInfo = async () => {
     { name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
   ];
 };
+const getMore = () => {
+  state.isMore = true;
+  getInfo();
+};
 const selCheck = (v1: any, v2: any) => {
   state.selFatherData = v1;
   state.selConData = v2;
   state.drawerVisible = false;
+  state.isMore = false;
 };
 const handleClose = () => {
   state.drawerVisible = false;
@@ -108,6 +113,7 @@ const goInfo = (val: any) => {
             <div class="title">{{ val.name }}</div>
             <div class="description">{{ val.desc }}</div>
           </div>
+          <div class="more" @click="getMore">Show more</div>
         </div>
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
@@ -122,7 +128,7 @@ const goInfo = (val: any) => {
         </el-collapse>
       </el-drawer>
     </div>
-    <v-embark />
+    <!-- <v-embark /> -->
   </div>
 </template>
 <style lang="scss">
@@ -293,6 +299,16 @@ const goInfo = (val: any) => {
         line-height: 28px;
         margin-top: 24px;
       }
+    }
+    .more{
+      font-weight: 400;
+      font-size: 20px;
+      color: #201515;
+      line-height: 28px;
+      text-decoration-line: underline;
+      text-align: center;
+      margin: 24px 0px;
+      cursor: pointer;
     }
   }
   @media (max-width: 800px){
