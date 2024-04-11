@@ -124,13 +124,13 @@ const options = [
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
         <div class="logo_img_out">
-          <el-img src="../public/img/footer/small_logo.svg" />
+          <img src="../public/img/footer/small_logo.svg" />
         </div>
         <div class="logo_icon_out">
-          <div class="one_icon"></div>
-          <div class="one_icon"></div>
-          <div class="one_icon"></div>
-          <div class="one_icon"></div>
+          <div class="one_icon youtube"></div>
+          <div class="one_icon x"></div>
+          <div class="one_icon facebook"></div>
+          <div class="one_icon tiktok"></div>
         </div>
       </div>
       <div class="footer_logo_right">
@@ -147,8 +147,6 @@ const options = [
 <style lang="scss" scoped>
 .common_footer {
   max-width: 1200px;
-
-  // border: 1px red solid;
   margin: 0 auto;
   padding-top: 56px;
   padding-bottom: 37px;
@@ -195,6 +193,7 @@ const options = [
       justify-content: flex-start;
       align-items: center;
       grid-column-gap: 40px;
+      //  border: 1px red solid;
       @media (max-width: 420px) {
         grid-column-gap: 20px;
       }
@@ -204,7 +203,12 @@ const options = [
       .logo_img_out {
         width: 132px;
         height: 24px;
-        border: 1px red solid;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
         @media (max-width: 420px) {
           width: 100px;
           height: 18px;
@@ -216,10 +220,40 @@ const options = [
         .one_icon {
           width: 30px;
           height: 30px;
-          border: 1px red solid;
+          border-radius: 50%;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
           @media (max-width: 420px) {
             width: 24px;
             height: 24px;
+          }
+        }
+        .youtube {
+          background-image: url('../public/img/footer/youtube_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/youtube_logo_active.svg');
+          }
+        }
+        .x {
+          background-image: url('../public/img/footer/x_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/x_logo_active.svg');
+          }
+        }
+        .facebook {
+          background-image: url('../public/img/footer/facebook_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/facebook_logo_active.svg');
+          }
+        }
+        .tiktok {
+          background-image: url('../public/img/footer/tiktok_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/tiktok_logo_active.svg');
           }
         }
       }
@@ -246,7 +280,6 @@ const options = [
         }
       }
       .select_out {
-        // border: 1px red solid;
         @media (max-width: 668px) {
           text-align: center;
         }
