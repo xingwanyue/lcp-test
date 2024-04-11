@@ -10,6 +10,8 @@ useSeoMeta({
 });
 
 // 获取 .v-header 将背景色改为透明
+// 如果是在浏览器环境下，可以直接使用 document.querySelector('.v-header') 获取元素
+// 如果是在 node 环境下，可以使用 window.document.querySelector('.v-header') 获取元素
 </script>
 <template>
   <div class="bankW100">
@@ -34,16 +36,16 @@ useSeoMeta({
                     <img src="../../public/img/products/bank_user_icon1.png" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon2.png" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon3.png" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon4.png" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon5.png" />
                   </div>
                 </div>
                 <div class="font">500000 + people used the question bank for practice.</div>
@@ -149,6 +151,7 @@ useSeoMeta({
     <v-embark />
   </div>
 </template>
+
 <style lang="scss" scoped>
 .bank_wrapper {
   padding: 0 30px;
