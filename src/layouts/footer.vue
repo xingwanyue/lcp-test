@@ -5,19 +5,19 @@ const link_arr = [
     list: [
       {
         name: 'DET Practice',
-        url: '/product1',
+        url: '/products/bank',
       },
       {
         name: 'AI Correction Service',
-        url: '/product1',
+        url: '/products/service',
       },
       {
         name: 'DET Mock',
-        url: '/product1',
+        url: '/products/mock',
       },
       {
         name: 'Duolingo English Test Course',
-        url: '/product1',
+        url: '/products/guide',
       },
     ],
   },
@@ -117,7 +117,7 @@ const options = [
       <div v-for="(item, index) in link_arr" :key="index" class="one_link_list">
         <div class="one_link_list_title">{{ item.name }}</div>
         <div v-for="(itemin, indexin) in item.list" :key="index * 10 + indexin" class="one_link_list_detail">
-          {{ itemin.name }}
+          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
     </div>
@@ -175,7 +175,9 @@ const options = [
         line-height: 20px;
         cursor: pointer;
         &:hover {
-          color: #f66442;
+          a {
+            color: #f66442;
+          }
         }
       }
     }
