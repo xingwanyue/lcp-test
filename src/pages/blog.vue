@@ -59,7 +59,7 @@ const handleCurrentChange = (val: number) => {
     </div>
     <div class="bolgs_content_wrapper">
       <div class="bolgs_content">
-        <div v-for="(item, index) in blogs" :key="index" class="one_blog">
+        <div v-for="(item, index) in blogs" :key="index" class="one_blog" data-aos="fade-up" data-aos-duration="1000">
           <div class="title">
             {{ item.name }}
           </div>
