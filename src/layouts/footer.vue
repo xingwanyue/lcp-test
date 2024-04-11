@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { locale, t } = useI18n();
 const link_arr = [
   {
     name: 'Products',
@@ -85,16 +87,22 @@ const link_arr = [
     ],
   },
 ];
-const value = ref('');
+const language = ref('en');
+// 监听value的变化
+watch(language, (newVal) => {
+  console.log(locale);
+  console.log(newVal);
+  locale.value = newVal;
+});
 
 const options = [
   {
-    value: 'Option1',
-    label: 'Option1',
+    value: 'en',
+    label: 'English',
   },
   {
-    value: 'Option2',
-    label: 'Option2',
+    value: 'id',
+    label: 'Indonesian',
   },
   {
     value: 'Option3',
@@ -134,9 +142,9 @@ const options = [
         </div>
       </div>
       <div class="footer_logo_right">
-        <div class="tips_out">Our product has no connection with Duolingo,Inc</div>
+        <div class="tips_out">{{ t('footer.inc') }}</div>
         <div class="select_out">
-          <el-select v-model="value" placeholder="Select" style="width: 240px">
+          <el-select v-model="language" placeholder="Select" style="width: 240px">
             <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
           </el-select>
         </div>
