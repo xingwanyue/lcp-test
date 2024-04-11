@@ -16,6 +16,31 @@ const groupList5Img = staticPcUrlGet('group/list-5.png');
 
 const route = useRoute();
 const pathname = computed(() => route.path);
+const headerColor = ref('#FFF4F1');
+watch(pathname, (val) => {
+  changeHeaderColor(val);
+});
+onMounted(() => {
+  changeHeaderColor(pathname.value);
+});
+const changeHeaderColor = (pathname: string) => {
+  switch (pathname) {
+    case '/products/bank':
+      headerColor.value = '#ECF7FF';
+      break;
+    case '/products/mock':
+      headerColor.value = '#FFEFE1';
+      break;
+    case '/products/guide':
+      headerColor.value = ' #E7FDEC';
+      break;
+
+    default:
+      headerColor.value = '#FFF4F1';
+      break;
+  }
+};
+
 const { data: cfg } = await useFetch(`${api}/common/cfg`, {
   server: false,
 });
@@ -26,67 +51,10 @@ const listImages = {
   groupList4Img,
   groupList5Img,
 } as any;
-const titltArr = {
-  '1': '词汇',
-  '2': '听力',
-  '3': '口语',
-  '4': '阅读',
-  '5': '写作',
-} as any;
-const nameArr = {
-  '7': '单词辨认',
-  '2': '听写句子',
-  '3': '完型填空',
-  '4': '朗读句子',
-  '9': '听题演讲',
-  a: '看图演讲',
-  e: '看题演讲',
-  '6': '看图写句',
-  '8': '50字作文',
-  c: '口语面试',
-  d: '写作面试',
-  i: '互动阅读',
-  l: '互动听力',
-  j: 'DET高频必刷词',
-  g: '单词辨认词汇',
-  h: '完型填空高频词',
-  m: '互动听力场景词汇',
-  '-': '我的单词本',
-} as any;
-
-const config = computed(() => cfg.value || {}) as any;
-
-const topics = computed(() =>
-  config.value.topics?.map((topic: any) => ({
-    ...topic,
-    name: nameArr[topic.key],
-  })),
-);
-const groups = computed(() =>
-  config.value.groups?.map((group: any) => {
-    group.listImage = listImages[`groupList${group.key}Img`];
-    group.name = titltArr[group.key];
-    const options1 = _.filter(topics.value, (t) => t.group === group.key);
-    const options = _.map(options1, (d) => {
-      if (group.key === '3' || group.key === '5') {
-        return { ...d, desc: d.key === '4' ? `AI测评` : `名师精批` };
-      }
-      return d;
-    });
-
-    return {
-      ...group,
-      listImage: listImages[`groupList${group.key}Img`],
-      name: titltArr[group.key],
-      options,
-    };
-  }),
-);
 
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
-  console.log('777777777777');
   visible.value = true;
 };
 
@@ -154,7 +122,7 @@ const products = ref([
 </script>
 
 <template>
-  <div class="v-header">
+  <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
     <div class="header-content">
       <nuxt-link :to="localePath('home')" class="home-logo">
         <span class="icon iconfont icon-detlogon logo"></span>
@@ -170,7 +138,7 @@ const products = ref([
             popper-class="head-question-popover"
           >
             <div class="head-question-con">
-              <NuxtLink :to="localePath('/products/bank?id=bank')" class="one_card card1">
+              <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
                   <img src="../public/img/home/product_icon1.svg" />
                 </div>
@@ -182,7 +150,7 @@ const products = ref([
                   </div>
                 </div>
               </NuxtLink>
-              <div class="one_card card2">
+              <NuxtLink :to="localePath('/products/service')" class="one_card card2">
                 <div class="icon">
                   <img src="../public/img/home/product_icon2.svg" />
                 </div>
@@ -193,8 +161,8 @@ const products = ref([
                     Just Two Weeks!
                   </div>
                 </div>
-              </div>
-              <div class="one_card card3">
+              </NuxtLink>
+              <NuxtLink :to="localePath('/products/mock')" class="one_card card3">
                 <div class="icon">
                   <img src="../public/img/home/product_icon3.svg" />
                 </div>
@@ -205,8 +173,8 @@ const products = ref([
                     Anytime, Anywhere!
                   </div>
                 </div>
-              </div>
-              <div class="one_card card4">
+              </NuxtLink>
+              <NuxtLink :to="localePath('/products/guide')" class="one_card card4">
                 <div class="icon">
                   <img src="../public/img/home/product_icon4.svg" />
                 </div>
@@ -217,7 +185,7 @@ const products = ref([
                     Speaking and Writing Excellence!
                   </div>
                 </div>
-              </div>
+              </NuxtLink>
             </div>
             <template #reference>
               <nuxt-link class="head-name">{{ menu.name }}</nuxt-link>

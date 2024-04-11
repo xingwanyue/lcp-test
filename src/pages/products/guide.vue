@@ -145,7 +145,7 @@ const contaceUsList = ref([
           </div>
         </div>
         <div class="one_article">
-          <h1 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h1>
+          <h2 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h2>
           <div class="article_out">
             <div class="left_img">
               <img src="../../public/img/guid/guide2.png" />
@@ -186,6 +186,21 @@ const contaceUsList = ref([
         </div>
       </div>
     </div>
+    <div class="orange_block_wrapper">
+      <div class="orange_block">
+        <h2 class="orange_title">Elite Language Educators</h2>
+        <div class="team_desc">
+          Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching
+          Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS,
+          and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching
+          approaches, and innovative methods, they are committed to helping each student achieve their highest potential
+          in English proficiency.
+        </div>
+        <div class="team_img">
+          <img src="../../public/img/guid/team_bg.svg" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -197,7 +212,7 @@ const contaceUsList = ref([
   .guide_wrapper_out {
     padding: 0px 30px;
     .guide_wrapper {
-      border: 1px red solid;
+      // border: 1px red solid;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -382,7 +397,45 @@ const contaceUsList = ref([
             font-size: 16px;
             color: #201515;
             margin-top: 24px;
+            cursor: pointer;
           }
+        }
+      }
+    }
+  }
+  .orange_block_wrapper {
+    padding: 0px 30px;
+    background: #f66442;
+    .orange_block {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 100px;
+      .orange_title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+      }
+      .team_desc {
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 20px;
+        color: #ffffff;
+        max-width: 900px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 32px;
+      }
+      .team_img {
+        margin: 0 auto;
+        max-width: 1078px;
+        margin-top: 48px;
+        display: flex;
+
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
