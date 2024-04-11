@@ -6,3 +6,38 @@ export const api = 'https://app.detpractice.com/weapp/api';
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
 export const staticUrlGet = (path: string) => (path.startsWith('http') ? path : `${cdn}${path}`);
+const TOKEN = 'det_i18n_token';
+export function getToken(forHeader: any) {
+  const token = sessionStorage[TOKEN] || localStorage[TOKEN];
+  let res;
+  if (token) {
+    res = forHeader ? `Bearer ${token}` : token;
+  } else {
+    res = forHeader ? '' : token;
+  }
+  return Promise.resolve(res);
+}
+
+export function saveToken(token: any, remeber: any) {
+  const store = remeber ? localStorage : sessionStorage;
+  if (token === null || token === undefined) {
+    store.removeItem(TOKEN);
+  } else {
+    store[TOKEN] = token;
+  }
+}
+let defaultCachePrefix = '20180428_'; // 默认缓存前缀,便于快速清除缓存
+export const setCatchePrefix = (prefix: String) => {
+  defaultCachePrefix = `${prefix}_`;
+};
+
+export const saveStorage = (key: String, value: String, remeber: Boolean) => {
+  (remeber ? localStorage : sessionStorage)[`${defaultCachePrefix}${key}`] = value;
+};
+export const getStorage = (key: String) =>
+  sessionStorage[`${defaultCachePrefix}${key}`] || localStorage[`${defaultCachePrefix}${key}`];
+
+export function removeToken() {
+  sessionStorage.removeItem(TOKEN);
+  localStorage.removeItem(TOKEN);
+}
