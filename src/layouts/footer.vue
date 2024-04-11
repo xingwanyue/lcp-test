@@ -68,7 +68,7 @@ const link_arr = [
     list: [
       {
         name: 'About us',
-        url: '/product1',
+        url: '/aboutus',
       },
       {
         name: 'Contact us',
