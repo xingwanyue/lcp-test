@@ -4,6 +4,7 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import subscribe from '../components/subscribe.vue';
 
 const router = useRouter();
 const activeName = ref('1');
@@ -128,7 +129,7 @@ const goInfo = (val: any) => {
         </el-collapse>
       </el-drawer>
     </div>
-    <!-- <v-embark /> -->
+    <subscribe />
   </div>
 </template>
 <style lang="scss">
@@ -307,7 +308,7 @@ const goInfo = (val: any) => {
       line-height: 28px;
       text-decoration-line: underline;
       text-align: center;
-      margin: 24px 0px;
+      margin: 24px 0px 120px 0px;
       cursor: pointer;
     }
   }
@@ -325,6 +326,9 @@ const goInfo = (val: any) => {
     .right{
       max-width: 100%;
       margin-left: 0px;
+      .more{
+        margin: 24px 0px 60px 0px;
+      }
     }
     .select{
       display: block;

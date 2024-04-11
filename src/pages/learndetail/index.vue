@@ -3,6 +3,7 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue'
+import subscribe from '../../components/subscribe.vue';
 
 const router = useRouter();
 const route = useRoute();
@@ -68,6 +69,7 @@ const rateChange = () => {
         :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`" @click="getContent(val.id)">
         {{ val.name }}</div>
     </div>
+    <subscribe class="subs" />
   </div>
 </template>
 <style lang="scss">
@@ -140,7 +142,9 @@ const rateChange = () => {
   }
   .rate-con{
     margin-top: 56px;
-
+  }
+  .subs{
+    margin-top: 120px;
   }
 }
 @media (max-width: 800px){
@@ -198,6 +202,9 @@ const rateChange = () => {
       margin-top: 32px;
       box-sizing: border-box;
       padding: 0px 14px;
+    }
+    .subs{
+      margin-top: 60px;
     }
   }
 }
