@@ -121,11 +121,35 @@ const settings = {
 const prevArrow = '<button type="button" class="slick-prev">Previous</button>';
 const nextArrow = '<button type="button" class="slick-next">Next</button>';
 onMounted(() => {
+  moveAnamit();
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     makePinglunData();
   }
 });
+const moveAnamit = () => {
+  const small_title_wrap = document.querySelector('.small_title_wrap');
+  const small_title = document.querySelectorAll('.one_small_title');
+  let index = 0;
+  let timer = null;
+  timer = setInterval(() => {
+    small_title.forEach((item) => {
+      item.classList.remove('current');
+      item.classList.remove('per');
+      item.classList.remove('start');
+    });
+    small_title[index].classList.add('current');
+    if (index === 0) {
+      small_title[small_title.length - 1].classList.add('per');
+    } else {
+      small_title[index - 1].classList.add('per');
+    }
+    index++;
+    if (index === small_title.length) {
+      index = 0;
+    }
+  }, 2000);
+};
 
 const makePinglunData = () => {
   for (let i = 0; i < pinglun.length; i += 2) {
