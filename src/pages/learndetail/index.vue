@@ -24,6 +24,20 @@ const getList = async () => {
     { id: '1', name: 'OverView of Duolingo English Test1', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
     { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
     { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
+    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
   ];
   const { id = '1' } = route.query as any;
   getContent(id);
@@ -54,12 +68,13 @@ const rateChange = () => {
       <div class="article-title-list article-title-list1">
         <div v-for="(val, key) in state.list" :key="key"
           :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`" @click="getContent(val.id)">
-          {{ val.name }}</div>
+          {{ val.name }}
+        </div>
       </div>
     </div>
     <div class="rate-con">
       <div>
-        <el-rate v-model="state.rate" :disabled="state.rate" allow-half show-score text-color="#201515"
+        <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
           score-template="{value}/5（112votes）" @change="rateChange" />
       </div>
       <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
@@ -94,6 +109,7 @@ const rateChange = () => {
   .content{
     max-width: 1200px;
     display: flex;
+    margin-top: 64px;
     .article-con{
       width: auto;
       margin-right: 24px;
@@ -102,7 +118,6 @@ const rateChange = () => {
         font-size: 56px;
         color: #201515;
         line-height: 72px;
-        margin-top: 64px;
       }
       .article-con1{
         font-weight: 400;
@@ -159,13 +174,13 @@ const rateChange = () => {
       display: block;
       box-sizing: border-box;
       padding: 0px 14px;
+      margin-top: 28px;
       .article-con{
         margin-right: 0px;
         .title{
           font-weight: 500;
           font-size: 20px;
           line-height: 27px;
-          margin-top: 28px;
         }
         .article-con1{
           font-size: 14px;
