@@ -4,8 +4,9 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import subscribe from '../components/subscribe.vue';
 
-const router = useRouter();
+const localePath = useLocalePath();
 const activeName = ref('1');
 const state = reactive({
   selectList: [] as any,
@@ -77,9 +78,9 @@ const handleClose = () => {
   state.drawerVisible = false;
 };
 // learn
-const goInfo = (val: any) => {
-  router.push({ path: '/learndetail', query: { id: val.code || '1' } });
-};
+// const goInfo = (val: any) => {
+//   router.push({ path: '/learndetail', query: { id: val.code || '1' } });
+// };
 </script>
 <template>
   <div class="learn">
@@ -99,7 +100,8 @@ const goInfo = (val: any) => {
         </div>
         <div class="left">
           <el-collapse v-model="activeName" accordion>
-            <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code">
+            <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code"
+              :class="`${key === 0 ? 'firstCollapse' : ''}`">
               <div v-for="(v, k) in val.content" :key="k"
                 :class="`title sel-list ${state.selFatherData.code === val.code && state.selConData.code === v.code ? 'sel-list-checked' : ''}`"
                 @click="selCheck(val, v)">
@@ -109,9 +111,11 @@ const goInfo = (val: any) => {
           </el-collapse>
         </div>
         <div class="right">
-          <div v-for="(val, key) in state.infoList" :key="key" class="r-list" @click="goInfo(val)">
-            <div class="title">{{ val.name }}</div>
-            <div class="description">{{ val.desc }}</div>
+          <div v-for="(val, key) in state.infoList" :key="key">
+            <nuxt-link :to="localePath(`/learndetail/${val.id || '1'}`)" class="r-list">
+              <div class="title">{{ val.name }}</div>
+              <div class="description">{{ val.desc }}</div>
+            </nuxt-link>
           </div>
           <div class="more" @click="getMore">Show more</div>
         </div>
@@ -128,7 +132,7 @@ const goInfo = (val: any) => {
         </el-collapse>
       </el-drawer>
     </div>
-    <!-- <v-embark /> -->
+    <subscribe />
   </div>
 </template>
 <style lang="scss">
@@ -145,6 +149,9 @@ const goInfo = (val: any) => {
     padding:0px 24px;
     box-sizing: border-box;
     margin-top: 8px;
+  }
+  .firstCollapse>.el-collapse-item__header{
+    margin-top: 0px;
   }
   .el-collapse-item__content{
     width: 276px;
@@ -279,6 +286,7 @@ const goInfo = (val: any) => {
     max-width: 900px;
     margin-left: 24px;
     .r-list{
+      display: block;
       width: 100%;
       box-sizing: border-box;
       border-radius: 8px;
@@ -307,7 +315,7 @@ const goInfo = (val: any) => {
       line-height: 28px;
       text-decoration-line: underline;
       text-align: center;
-      margin: 24px 0px;
+      margin: 24px 0px 120px 0px;
       cursor: pointer;
     }
   }
@@ -325,6 +333,9 @@ const goInfo = (val: any) => {
     .right{
       max-width: 100%;
       margin-left: 0px;
+      .more{
+        margin: 24px 0px 60px 0px;
+      }
     }
     .select{
       display: block;

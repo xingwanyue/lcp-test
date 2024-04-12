@@ -3,7 +3,9 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue'
+import subscribe from '../../components/subscribe.vue';
 
+// const localePath = useLocalePath();
 const router = useRouter();
 const route = useRoute();
 const rate = ref(0);
@@ -24,7 +26,7 @@ const getList = async () => {
     { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
     { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
   ];
-  const { id = '1' } = route.query as any;
+  const { id = '1' } = route.params as any;
   getContent(id);
 };
 const getContent = async (id: string) => {
@@ -51,23 +53,28 @@ const rateChange = () => {
         <!-- <div id="content" class="content" v-html="state.details.desc" style="white-space:pre-wrap"></div> -->
       </div>
       <div class="article-title-list article-title-list1">
-        <div v-for="(val, key) in state.list" :key="key"
-          :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`" @click="getContent(val.id)">
-          {{ val.name }}</div>
+        <div v-for="(val, key) in state.list" :key="key">
+          <nuxt-link :to="`/learndetail/${val.id || '1'}`" class="">
+            <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
+          </nuxt-link>
+        </div>
       </div>
     </div>
     <div class="rate-con">
       <div>
-        <el-rate v-model="state.rate" :disabled="state.rate" allow-half show-score text-color="#201515"
+        <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
           score-template="{value}/5（112votes）" @change="rateChange" />
       </div>
       <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
     </div>
     <div class="article-title-list article-title-list2">
-      <div v-for="(val, key) in state.list" :key="key"
-        :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`" @click="getContent(val.id)">
-        {{ val.name }}</div>
+      <div v-for="(val, key) in state.list" :key="key">
+        <nuxt-link :to="`/learndetail/${val.id || '1'}`" class="">
+          <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
+        </nuxt-link>
+      </div>
     </div>
+    <subscribe class="subs" />
   </div>
 </template>
 <style lang="scss">
@@ -92,6 +99,7 @@ const rateChange = () => {
   .content{
     max-width: 1200px;
     display: flex;
+    margin-top: 64px;
     .article-con{
       width: auto;
       margin-right: 24px;
@@ -100,7 +108,6 @@ const rateChange = () => {
         font-size: 56px;
         color: #201515;
         line-height: 72px;
-        margin-top: 64px;
       }
       .article-con1{
         font-weight: 400;
@@ -111,9 +118,6 @@ const rateChange = () => {
       }
     }
 
-  }
-  .article-title-list2{
-    display: none;
   }
   .article-title-list{
     width: 276px;
@@ -138,9 +142,19 @@ const rateChange = () => {
       line-height: 28px;
     }
   }
+  .article-title-list1{
+    display: block;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+  }
+  .article-title-list2{
+    display: none;
+  }
   .rate-con{
     margin-top: 56px;
-
+  }
+  .subs{
+    margin-top: 120px;
   }
 }
 @media (max-width: 800px){
@@ -155,13 +169,13 @@ const rateChange = () => {
       display: block;
       box-sizing: border-box;
       padding: 0px 14px;
+      margin-top: 28px;
       .article-con{
         margin-right: 0px;
         .title{
           font-weight: 500;
           font-size: 20px;
           line-height: 27px;
-          margin-top: 28px;
         }
         .article-con1{
           font-size: 14px;
@@ -198,6 +212,9 @@ const rateChange = () => {
       margin-top: 32px;
       box-sizing: border-box;
       padding: 0px 14px;
+    }
+    .subs{
+      margin-top: 60px;
     }
   }
 }
