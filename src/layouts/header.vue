@@ -129,14 +129,8 @@ const products = ref([
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover
-            v-if="menu.path === '/products'"
-            v-model="popoverQuestions"
-            placement="bottom"
-            width="80%"
-            trigger="hover"
-            popper-class="head-question-popover"
-          >
+          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" width="80%"
+            trigger="hover" popper-class="head-question-popover">
             <div class="head-question-con">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -196,7 +190,6 @@ const products = ref([
       </div>
       <div class="mobile">
         <el-image src="/img/logo.svg" class="mobileLogo" />
-        <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
       <a v-if="user.id" href="/app" class="userInfo">
         <div class="nickname">{{ user.nickname }}</div>
@@ -206,6 +199,9 @@ const products = ref([
         <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
         <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor">Try for free</nuxt-link>
       </div>
+      <div class="mobile">
+        <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
+      </div>
     </div>
     <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
@@ -213,12 +209,8 @@ const products = ref([
           <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
         </nuxt-link>
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
+          <nuxt-link v-for="menu in menus" :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
             {{ menu.name }}
           </nuxt-link>
         </div>
@@ -396,8 +388,8 @@ const products = ref([
       }
 
       .mobileMenus {
-        width: 32px;
-        height: 32px;
+        width: 20px;
+        height: 20px;
       }
     }
     .btn {
@@ -449,6 +441,9 @@ const products = ref([
     align-items: center;
     justify-content: center;
     // border: 1px red solid;
+    @media screen and (max-width: 460px) {
+      display: none;
+    }
     .login_font {
       font-weight: 400;
       font-size: 18px;
