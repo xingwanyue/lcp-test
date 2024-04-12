@@ -63,7 +63,7 @@ const rateChange = () => {
     <div class="rate-con">
       <div>
         <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
-          score-template="{value}/5（112votes）" @change="rateChange" />
+          :score-template="`{value}/5（${112}votes）`" @change="rateChange" />
       </div>
       <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
     </div>
@@ -95,11 +95,13 @@ const rateChange = () => {
     color: #201515;
     line-height: 22px;
     margin-top: 32px;
+    padding: 0px 30px;
   }
   .content{
     max-width: 1200px;
     display: flex;
     margin-top: 64px;
+    padding: 0px 30px;
     .article-con{
       width: auto;
       margin-right: 24px;
@@ -152,6 +154,7 @@ const rateChange = () => {
   }
   .rate-con{
     margin-top: 56px;
+    padding: 0px 30px;
   }
   .subs{
     margin-top: 120px;
@@ -173,12 +176,12 @@ const rateChange = () => {
       .article-con{
         margin-right: 0px;
         .title{
-          font-weight: 500;
+          font-weight: 600;
           font-size: 20px;
           line-height: 27px;
         }
         .article-con1{
-          font-size: 14px;
+          font-size: 15px;
           line-height: 21px;
           margin-top: 12px;
         }
@@ -209,12 +212,12 @@ const rateChange = () => {
       }
     }
     .rate-con{
-      margin-top: 32px;
+      margin-top: 28px;
       box-sizing: border-box;
       padding: 0px 14px;
     }
     .subs{
-      margin-top: 60px;
+      margin-top: 28px;
     }
   }
 }
