@@ -1,6 +1,21 @@
 <script setup lang="ts">
 import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
+
+// import { Carousel, Navigation, Slide } from 'vue3-carousel';
+// import 'vue3-carousel/dist/carousel.css';
+
+const {
+  data: platformData = {
+    v1Total: 0,
+    userTotal: 0,
+    questionTotal: 0,
+    examTotal: 0,
+  },
+} = (await useFetch(`${api}/common/platformData`, {
+  server: true,
+})) as any;
+
 const pinglun = [
   {
     name: 'Della Walsh',
@@ -54,7 +69,35 @@ const pinglun = [
 let timer = null;
 // 将pinglun的数据两个两个的放到一起
 const pinglunArr = ref([]);
-
+const sockerArr = ref([
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+  { name: '666666666', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
+]);
+const settings = {
+  prevArrow: null,
+  nextArrow: null,
+  arrows: false,
+  dots: false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 2000,
+  cssEase: 'linear',
+};
+const prevArrow = '<button type="button" class="slick-prev">Previous</button>';
+const nextArrow = '<button type="button" class="slick-next">Next</button>';
 onMounted(() => {
   moveAnamit();
   // 如果是在浏览器环境下，执行movePingLun
@@ -134,6 +177,19 @@ const moveAnamit = () => {
     }
   }, 2000);
 };
+
+// 将数字格式化 306281变为306k 3062811变为3061k
+const toThousands = (num) => {
+  let result = '';
+  const numStr = num.toString();
+  for (let i = 0; i < numStr.length; i++) {
+    if (i % 3 === 0 && i !== 0) {
+      result = ``;
+    }
+    result = numStr[numStr.length - i - 1] + result;
+  }
+  return result;
+};
 </script>
 
 <template>
@@ -160,9 +216,9 @@ const moveAnamit = () => {
         <div class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow">
             <img src="../public/img/home/google_icon.svg" />
-            Start free with Goog
+            Start free with Google
           </div>
-          <div class="common_btn common_btn_hover_borderCu white">Start free with emai</div>
+          <div class="common_btn common_btn_hover_borderCu white">Start free with email</div>
         </div>
         <div class="all_stu_nums">
           Trusted by <span class="yellow">500,000+ students</span> worldwide to improve Duolingo English Test scores
@@ -284,18 +340,18 @@ const moveAnamit = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div class="title">Number of High Scorers (130+ Points)：10000+</div>
+        <div class="title">Number of High Scorers (130+ Points)：{{ platformData.v1Total }}+</div>
         <div class="user_nums_out">
           <div class="one_num">
-            <div class="bigger_num">500k</div>
+            <div class="bigger_num">{{ toThousands(platformData.userTotal) }}k</div>
             <div class="small_font">Users</div>
           </div>
           <div class="one_num">
-            <div class="bigger_num">500k</div>
+            <div class="bigger_num">{{ toThousands(platformData.questionTotal) }}k</div>
             <div class="small_font">Questions</div>
           </div>
           <div class="one_num">
-            <div class="bigger_num">500k</div>
+            <div class="bigger_num">{{ toThousands(platformData.examTotal) }}k</div>
             <div class="small_font">Mock Test</div>
           </div>
         </div>
@@ -303,19 +359,32 @@ const moveAnamit = () => {
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
         </div>
         <div class="score_scroll_out">
-          <div class="one_score">1</div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score"></div>
-          <div class="one_score">0</div>
+          <!-- <VueSlickCarousel>
+            <div class="all_score">
+              <div v-for="(item, index) in sockerArr" :key="index" class="one_score">
+                <div class="one_score_head">
+                  <div class="user_icon"></div>
+                  <div class="user_detail">
+                    <div class="user_name">{{ item.name }}</div>
+                    <div class="user_country">CHINA</div>
+                  </div>
+                </div>
+                <div class="one_score_content">132</div>
+              </div>
+            </div>
+          </VueSlickCarousel> -->
+          <Carousel itemsToShow="6" :autoplay="10" :wrap-around="true">
+            <Slide v-for="(item, index) in sockerArr" :key="index" class="one_score">
+              <div class="one_score_head">
+                <div class="user_icon"></div>
+                <div class="user_detail">
+                  <div class="user_name">{{ item.name }}</div>
+                  <div class="user_country">CHINA</div>
+                </div>
+              </div>
+              <div class="one_score_content">132</div>
+            </Slide>
+          </Carousel>
         </div>
       </div>
     </div>
@@ -761,20 +830,55 @@ const moveAnamit = () => {
           background: #f66442;
         }
       }
+      @keyframes carousel {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-12.33%);
+        }
+      }
       .score_scroll_out {
         border: 1px red solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column-gap: 20px;
-        overflow-x: auto;
+
+        overflow: hidden;
         margin-top: 40px;
 
         .one_score {
-          width: 312px;
+          // width: 312px;
+          padding: 24px;
           flex-shrink: 0;
           border: 1px blue solid;
           height: 100px;
+          .one_score_head {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-column-gap: 16px;
+            .user_icon {
+              width: 48px;
+              height: 48px;
+              border: 1px red solid;
+            }
+            .user_detail {
+              .user_name {
+                font-weight: 500;
+                font-size: 16px;
+                color: #201515;
+              }
+              .user_country {
+                font-weight: 400;
+                font-size: 14px;
+                color: #403f3e;
+              }
+            }
+          }
+          .one_score_content {
+            width: 264px;
+            margin-top: 17px;
+            border-radius: 8px;
+            border: 2px solid #e9e9e9;
+          }
         }
       }
     }

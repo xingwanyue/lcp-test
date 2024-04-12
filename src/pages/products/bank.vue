@@ -61,7 +61,7 @@ useSeoMeta({
           </div>
         </div>
         <div class="content">
-          <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
+          <div class="one_card img_left">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -198,6 +198,7 @@ useSeoMeta({
               width: 128px;
               position: relative;
               height: 32px;
+              flex-shrink: 0;
               .one_icon {
                 width: 32px;
                 height: 32px;
