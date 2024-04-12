@@ -54,8 +54,9 @@ const getSelect = async () => {
       ],
     },
   ];
-  // const data = await useFetch(`${articleCategoryGet}?`, {});
-  // console.log('ffff:', data);
+  const { data = {} } = await useFetch(`${articleCategoryGet}?`, { server: true }) as any;
+  const temp = data.value?.data;
+  console.log('ffff:', temp);
   // 默认第一个
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.content) || {};

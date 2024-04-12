@@ -72,7 +72,7 @@ const getContent = async (id: string) => {
     <div class="con-list padding">
       <div class="con-list1">
         <div class="content-l">
-          <div class="content ">
+          <div class="content " data-aos="fade-up" data-aos-duration="1000">
             <div class="title">Michael Z.</div>
             <div class="author">Tutor Supervisor</div>
             <div class="content1">
@@ -94,7 +94,7 @@ const getContent = async (id: string) => {
               commitment to student success make him an invaluable leader and mentor both to our team and our students.
             </div>
           </div>
-          <div class="content">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000">
             <div class="title">Albert L.</div>
             <div class="author">Course Designer</div>
             <div class="content1">
@@ -119,7 +119,7 @@ const getContent = async (id: string) => {
           </div>
         </div>
         <div class="content-l">
-          <div class=" content">
+          <div class=" content" data-aos="fade-up" data-aos-duration="1000">
             <div class="title">Rita T.</div>
             <div class="author">Senior Tutor</div>
             <div class="content1">
@@ -143,7 +143,7 @@ const getContent = async (id: string) => {
             </div>
           </div>
 
-          <div class="content">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000">
             <div class="title">Doris W.</div>
             <div class="author">Tutor</div>
             <div class="content1">
@@ -156,7 +156,7 @@ const getContent = async (id: string) => {
               responsible, making her a favorite among a wide range of students.
             </div>
           </div>
-          <div class="content">
+          <div class="content" data-aos="fade-up" data-aos-duration="1000">
             <div class="title">Laura K.</div>
             <div class="author">Test Researcher</div>
             <div class="content1">

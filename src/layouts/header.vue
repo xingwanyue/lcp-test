@@ -125,18 +125,12 @@ const products = ref([
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
     <div class="header-content">
       <nuxt-link :to="localePath('home')" class="home-logo">
-        <span class="icon iconfont icon-detlogon logo"></span>
+        <el-image src="/img/logo.svg" class="mobileLogo" />
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover
-            v-if="menu.path === '/products'"
-            v-model="popoverQuestions"
-            placement="bottom"
-            width="80%"
-            trigger="hover"
-            popper-class="head-question-popover"
-          >
+          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" width="80%"
+            trigger="hover" popper-class="head-question-popover">
             <div class="head-question-con">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -215,12 +209,8 @@ const products = ref([
           <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
         </nuxt-link>
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
+          <nuxt-link v-for="menu in menus" :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
             {{ menu.name }}
           </nuxt-link>
         </div>
@@ -364,7 +354,9 @@ const products = ref([
       .meun {
         font-size: 18px;
         font-weight: 400;
-        color: #484848;
+        // color: #484848;
+        font-family: PingFangSC, PingFang SC;
+        color: #403F3E;
         box-sizing: border-box;
         height: 100%;
         display: flex;
@@ -378,12 +370,13 @@ const products = ref([
         &.active {
           border-bottom: 4px solid #f66442;
           a {
-            color: #f66442;
+            color: #201515;
+            font-weight: 600;
           }
         }
         &:hover {
           a {
-            color: #f66442;
+            color: #201515;
           }
         }
       }
