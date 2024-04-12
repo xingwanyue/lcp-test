@@ -45,12 +45,17 @@ const rateChange = () => {
 </script>
 <template>
   <div class="learndetail">
-    <div class="top">Home > Learn > {{ state.details.name }}</div>
+    <div class="top">Home >
+      <nuxt-link :to="`/learn`" class="">
+        Learn
+      </nuxt-link>
+      > {{ state.details.name }}
+    </div>
     <div class="content">
       <div class="article-con">
         <div class="title">{{ state.details.name }}</div>
-        <div class="article-con1">{{ state.details.desc }}</div>
-        <!-- <div id="content" class="content" v-html="state.details.desc" style="white-space:pre-wrap"></div> -->
+        <!-- <div class="article-con1">{{ state.details.desc }}</div> -->
+        <div id="content" class="article-con1" v-html="state.details.desc" style="white-space:pre-wrap"></div>
       </div>
       <div class="article-title-list article-title-list1">
         <div v-for="(val, key) in state.list" :key="key">

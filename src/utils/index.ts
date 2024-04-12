@@ -1,7 +1,10 @@
+import _ from 'lodash';
+
 const host = 'https://app.detpractice.com/app/#/';
 const cdn = 'https://detcdn.zixuekeji.cn';
-export const api = 'https://app.detpractice.com/weapp/api';
-// export const api = 'http://192.168.1.22:9000/api';
+// export const api = 'https://app.detpractice.com/weapp/api';
+export const api = 'http://192.168.1.22:9000/api';
+// const api1 = 'http://192.168.1.147:10001/api';
 
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
@@ -40,4 +43,26 @@ export const getStorage = (key: String) =>
 export function removeToken() {
   sessionStorage.removeItem(TOKEN);
   localStorage.removeItem(TOKEN);
+}
+
+// article
+export const articleGet = `${api}/common/article`;
+export const articleCategoryGet = `${api}/common/article/category`;
+
+// tree
+export function getTree(data = [], sid: any, pid = null) {
+  const children = [] as any;
+  _.forEach(data, (value: any) => {
+    const node = value;
+    if (((!pid && !node.pid) || node.pid === pid) && node.id !== sid) {
+      children.push({
+        key: node.id,
+        value: node.id,
+        label: node.name,
+        ...node,
+        children: getTree(data, sid, node.id),
+      });
+    }
+  });
+  return children.length ? children : undefined;
 }
