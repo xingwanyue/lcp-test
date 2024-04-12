@@ -203,7 +203,7 @@ const products = ref([
         <el-image :src="staticUrlGet(user.avatar)" class="avatar"></el-image>
       </a>
       <div v-else class="loginbtn">
-        <nuxt-link :href="urlGet('/login')" class="login_font">Log in</nuxt-link>
+        <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
         <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor">Try for free</nuxt-link>
       </div>
     </div>
