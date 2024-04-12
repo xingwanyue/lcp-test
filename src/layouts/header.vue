@@ -129,8 +129,14 @@ const products = ref([
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" width="80%"
-            trigger="hover" popper-class="head-question-popover">
+          <el-popover
+            v-if="menu.path === '/products'"
+            v-model="popoverQuestions"
+            placement="bottom"
+            width="80%"
+            trigger="hover"
+            popper-class="head-question-popover"
+          >
             <div class="head-question-con">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -209,8 +215,12 @@ const products = ref([
           <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
         </nuxt-link>
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link v-for="menu in menus" :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
+          <nuxt-link
+            v-for="menu in menus"
+            :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
+            :href="menu.path"
+          >
             {{ menu.name }}
           </nuxt-link>
         </div>

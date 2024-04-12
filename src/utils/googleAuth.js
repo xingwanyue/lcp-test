@@ -1,4 +1,5 @@
 // import { post } from './request';
+import { api } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
@@ -59,7 +60,7 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
-    // return post('/common/login', { email, avatar: picture, nickname: name, google: true, type: 'pc' });
+    return useFetch(`${api}/common/login`, { email, avatar: picture, nickname: name, google: true, type: 'pc' });
   }
 };
 export default {};
