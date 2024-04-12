@@ -340,6 +340,19 @@ const handleClose = () => {
     .select{
       display: block;
     }
+    .select-title{
+      height: 48px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #E9E9E9;
+      padding: 0px 12px;
+      margin-bottom: 12px;
+      .img-down{
+        display: block;
+        width: 12px;
+        height: 12px;
+      }
+    }
     .left{
       display: none;
     }

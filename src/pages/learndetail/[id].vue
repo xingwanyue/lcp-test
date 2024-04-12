@@ -95,11 +95,13 @@ const rateChange = () => {
     color: #201515;
     line-height: 22px;
     margin-top: 32px;
+    padding: 0px 30px;
   }
   .content{
     max-width: 1200px;
     display: flex;
     margin-top: 64px;
+    padding: 0px 30px;
     .article-con{
       width: auto;
       margin-right: 24px;
@@ -152,6 +154,7 @@ const rateChange = () => {
   }
   .rate-con{
     margin-top: 56px;
+    padding: 0px 30px;
   }
   .subs{
     margin-top: 120px;
