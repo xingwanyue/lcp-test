@@ -175,16 +175,16 @@ const moveAnamit = () => {
     </div>
     <div class="part2_wrapper">
       <div class="part2">
-        <div class="title1">
+        <div class="title1" data-aos="fade-up" data-aos-duration="1000">
           <h2>
             The best platform for enhancing your scores in the<br />
             Duolingo English Test
           </h2>
         </div>
-        <div class="title2">
+        <div class="title2" data-aos="fade-up" data-aos-duration="1000">
           <h3>Utilize our comprehensive resources to accelerate your score improvement</h3>
         </div>
-        <div class="one_img_article">
+        <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img src="../public/img/home/home1.png" />
           </div>
@@ -208,7 +208,7 @@ const moveAnamit = () => {
             </div>
           </div>
         </div>
-        <div class="one_article_img">
+        <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img src="../public/img/home/home2.png" />
           </div>
@@ -232,7 +232,7 @@ const moveAnamit = () => {
             </div>
           </div>
         </div>
-        <div class="one_img_article">
+        <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img src="../public/img/home/home3.png" />
           </div>
@@ -256,7 +256,7 @@ const moveAnamit = () => {
             </div>
           </div>
         </div>
-        <div class="one_article_img">
+        <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img src="../public/img/home/home4.png" />
           </div>
@@ -568,11 +568,13 @@ const moveAnamit = () => {
       }
       .title2 {
         margin-top: 32px;
+        margin-bottom: 80px;
         h3 {
           font-weight: 500;
           font-size: 24px;
           color: #201515;
           text-align: center;
+          margin: 0;
         }
       }
       .one_img_article {

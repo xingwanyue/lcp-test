@@ -38,7 +38,7 @@ useHead({
   }
   .footer_wrap {
     padding: 0 30px;
-    border: 1px red solid;
+    // border: 1px red solid;
   }
 }
 </style>

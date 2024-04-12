@@ -1,23 +1,25 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { locale, t } = useI18n();
 const link_arr = [
   {
     name: 'Products',
     list: [
       {
         name: 'DET Practice',
-        url: '/product1',
+        url: '/products/bank',
       },
       {
-        name: 'DET Practice',
-        url: '/product1',
+        name: 'AI Correction Service',
+        url: '/products/service',
       },
       {
-        name: 'DET Practice',
-        url: '/product1',
+        name: 'DET Mock',
+        url: '/products/mock',
       },
       {
-        name: 'DET Practice',
-        url: '/product1',
+        name: 'Duolingo English Test Course',
+        url: '/products/guide',
       },
     ],
   },
@@ -25,19 +27,19 @@ const link_arr = [
     name: 'Learn',
     list: [
       {
-        name: 'DET Practice',
+        name: 'Duolingo English Test',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Read and Complete',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Read and Select',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Interactive Reading',
         url: '/product1',
       },
     ],
@@ -46,19 +48,19 @@ const link_arr = [
     name: 'Blog',
     list: [
       {
-        name: 'DET Practice',
+        name: 'Duolingo English Test Duolingo English Test',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Read and Complete Read and Complete',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Mastering the New Duolingo English Test Updates in 2024: Tips and Strategies',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Interactive Reading',
         url: '/product1',
       },
     ],
@@ -67,34 +69,40 @@ const link_arr = [
     name: 'Company',
     list: [
       {
-        name: 'DET Practice',
+        name: 'About us',
+        url: '/aboutus',
+      },
+      {
+        name: 'Contact us',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
+        name: 'Terms and Conditions',
         url: '/product1',
       },
       {
-        name: 'DET Practice',
-        url: '/product1',
-      },
-      {
-        name: 'DET Practice',
+        name: 'Privacy Policy',
         url: '/product1',
       },
     ],
   },
 ];
-const value = ref('');
+const language = ref('en');
+// 监听value的变化
+watch(language, (newVal) => {
+  console.log(locale);
+  console.log(newVal);
+  locale.value = newVal;
+});
 
 const options = [
   {
-    value: 'Option1',
-    label: 'Option1',
+    value: 'en',
+    label: 'English',
   },
   {
-    value: 'Option2',
-    label: 'Option2',
+    value: 'id',
+    label: 'Indonesian',
   },
   {
     value: 'Option3',
@@ -117,24 +125,26 @@ const options = [
       <div v-for="(item, index) in link_arr" :key="index" class="one_link_list">
         <div class="one_link_list_title">{{ item.name }}</div>
         <div v-for="(itemin, indexin) in item.list" :key="index * 10 + indexin" class="one_link_list_detail">
-          {{ itemin.name }}
+          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
     </div>
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
-        <div class="logo_img_out"></div>
+        <div class="logo_img_out">
+          <img src="../public/img/footer/small_logo.svg" />
+        </div>
         <div class="logo_icon_out">
-          <div class="one_icon"></div>
-          <div class="one_icon"></div>
-          <div class="one_icon"></div>
-          <div class="one_icon"></div>
+          <div class="one_icon youtube"></div>
+          <div class="one_icon x"></div>
+          <div class="one_icon facebook"></div>
+          <div class="one_icon tiktok"></div>
         </div>
       </div>
       <div class="footer_logo_right">
-        <div class="tips_out">Our product has no connection with Duolingo,Inc</div>
+        <div class="tips_out">{{ t('footer.inc') }}</div>
         <div class="select_out">
-          <el-select v-model="value" placeholder="Select" style="width: 240px">
+          <el-select v-model="language" placeholder="Select" style="width: 240px">
             <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
           </el-select>
         </div>
@@ -145,8 +155,6 @@ const options = [
 <style lang="scss" scoped>
 .common_footer {
   max-width: 1200px;
-
-  border: 1px red solid;
   margin: 0 auto;
   padding-top: 56px;
   padding-bottom: 37px;
@@ -154,11 +162,13 @@ const options = [
     text-align: left;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 40px;
     @media (max-width: 496px) {
       text-align: center;
     }
     grid-row-gap: 24px;
     .one_link_list {
+      // border: 1px red solid;
       .one_link_list_title {
         margin-bottom: 24px;
         font-weight: 500;
@@ -170,6 +180,13 @@ const options = [
         font-size: 14px;
         color: #201515;
         margin-bottom: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        &:hover {
+          a {
+            color: #f66442;
+          }
+        }
       }
     }
   }
@@ -186,6 +203,7 @@ const options = [
       justify-content: flex-start;
       align-items: center;
       grid-column-gap: 40px;
+      //  border: 1px red solid;
       @media (max-width: 420px) {
         grid-column-gap: 20px;
       }
@@ -195,7 +213,12 @@ const options = [
       .logo_img_out {
         width: 132px;
         height: 24px;
-        border: 1px red solid;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
         @media (max-width: 420px) {
           width: 100px;
           height: 18px;
@@ -207,10 +230,40 @@ const options = [
         .one_icon {
           width: 30px;
           height: 30px;
-          border: 1px red solid;
+          border-radius: 50%;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
           @media (max-width: 420px) {
             width: 24px;
             height: 24px;
+          }
+        }
+        .youtube {
+          background-image: url('../public/img/footer/youtube_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/youtube_logo_active.svg');
+          }
+        }
+        .x {
+          background-image: url('../public/img/footer/x_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/x_logo_active.svg');
+          }
+        }
+        .facebook {
+          background-image: url('../public/img/footer/facebook_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/facebook_logo_active.svg');
+          }
+        }
+        .tiktok {
+          background-image: url('../public/img/footer/tiktok_logo.svg');
+          &:hover {
+            background-image: url('../public/img/footer/tiktok_logo_active.svg');
           }
         }
       }
@@ -237,7 +290,6 @@ const options = [
         }
       }
       .select_out {
-        // border: 1px red solid;
         @media (max-width: 668px) {
           text-align: center;
         }

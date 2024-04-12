@@ -1,6 +1,17 @@
 <script lang="ts" setup>
+import { urlGet } from '@/utils';
 import vEmbark from '../../components/embark.vue';
+
+useSeoMeta({
+  title: 'Duolingo Practice Question Bank',
+  description:
+    'Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.',
+  keywords: 'Duolingo Practice Question Bank',
+});
+
 // 获取 .v-header 将背景色改为透明
+// 如果是在浏览器环境下，可以直接使用 document.querySelector('.v-header') 获取元素
+// 如果是在 node 环境下，可以使用 window.document.querySelector('.v-header') 获取元素
 </script>
 <template>
   <div class="bankW100">
@@ -25,30 +36,32 @@ import vEmbark from '../../components/embark.vue';
                     <img src="../../public/img/products/bank_user_icon1.png" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon2.png" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon3.png" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon4.png" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/bank_user_icon5.png" />
                   </div>
                 </div>
                 <div class="font">500000 + people used the question bank for practice.</div>
               </div>
-              <div class="btn">
-                <div class="font">Practice For Free</div>
+              <div class="btn common_btn_hover_bgColor">
+                <nuxt-link class="font" :href="urlGet('/login')">Practice For Free</nuxt-link>
                 <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
               </div>
             </div>
-            <div class="banner_right"></div>
+            <div class="banner_right">
+              <img src="../../public/img/products/bank_banner.png" />
+            </div>
           </div>
         </div>
         <div class="content">
-          <div class="one_card img_left">
+          <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -61,7 +74,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -69,7 +82,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_right">
+          <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -82,7 +95,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -90,7 +103,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_left">
+          <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -103,7 +116,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -111,7 +124,7 @@ import vEmbark from '../../components/embark.vue';
               </div>
             </div>
           </div>
-          <div class="one_card img_right">
+          <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <img src="../../public/img/products/bank_picture1.png" />
             </div>
@@ -124,7 +137,7 @@ import vEmbark from '../../components/embark.vue';
                   abilities in different question formats.
                 </div>
                 <div class="right_click">
-                  <div class="font">Start experiencing</div>
+                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -138,11 +151,12 @@ import vEmbark from '../../components/embark.vue';
     <v-embark />
   </div>
 </template>
+
 <style lang="scss" scoped>
 .bank_wrapper {
   padding: 0 30px;
   overflow: hidden;
-  background: linear-gradient(0, #ffffff 0%, #ecf7ff 100%);
+  background: linear-gradient(#ecf7ff 0%, #ffffff 657px, #ffffff 0px, #ffffff);
   .bank {
     max-width: 1200px;
     // border: 1px red solid;
@@ -155,6 +169,10 @@ import vEmbark from '../../components/embark.vue';
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
+        @media (max-width: 986px) {
+          grid-template-columns: 1fr;
+        }
+
         .banner_left {
           .big_title {
             h1 {
@@ -221,6 +239,7 @@ import vEmbark from '../../components/embark.vue';
             align-items: center;
             justify-content: center;
             grid-gap: 8px;
+            cursor: pointer;
             .font {
               font-weight: 500;
               font-size: 18px;
@@ -233,7 +252,16 @@ import vEmbark from '../../components/embark.vue';
           }
         }
         .banner_right {
-          border: 1px red solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 986px) {
+            display: none;
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }

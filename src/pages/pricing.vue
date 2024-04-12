@@ -689,6 +689,7 @@ const makeMMembershipArr = () => {
     }
   }
   .part3_wrapper {
+    // border: 1px red solid;
     padding: 0px 30px;
     background: #fff4f1;
     margin-top: 100px;
@@ -723,6 +724,7 @@ const makeMMembershipArr = () => {
             font-size: 24px;
             color: #201515;
             margin-top: 16px;
+            text-align: center;
           }
           .method_tip {
             font-weight: 400;
