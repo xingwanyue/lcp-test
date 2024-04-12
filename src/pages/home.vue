@@ -923,6 +923,7 @@ const toThousands = (num) => {
               font-size: 18px;
               color: #201515;
               margin-top: 24px;
+              text-align: left;
             }
           }
         }
