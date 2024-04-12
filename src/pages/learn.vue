@@ -75,9 +75,8 @@ const getMore = () => {
   state.isMore = true;
   getInfo();
 };
-const selCheck = (v1: any, v2: any) => {
-  state.selFatherData = v1;
-  state.selConData = v2;
+const selCheck = (v: any) => {
+  state.selConData = v;
   state.drawerVisible = false;
   state.isMore = false;
 };
@@ -88,6 +87,9 @@ const handleClose = () => {
 // const goInfo = (val: any) => {
 //   router.push({ path: '/learndetail', query: { id: val.code || '1' } });
 // };
+const handleChange = () => {
+  state.selFatherData = _.find(state.selectList, { code: activeName.value }) || {};
+};
 </script>
 <template>
   <div class="learn">
@@ -106,12 +108,12 @@ const handleClose = () => {
           </div>
         </div>
         <div class="left">
-          <el-collapse v-model="activeName" accordion>
+          <el-collapse v-model="activeName" accordion @change="handleChange">
             <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code"
-              :class="`${key === 0 ? 'firstCollapse' : ''}`">
+              :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.code === val.code ? 'expand' : ''}`">
               <div v-for="(v, k) in val.content" :key="k"
                 :class="`title sel-list ${state.selFatherData.code === val.code && state.selConData.code === v.code ? 'sel-list-checked' : ''}`"
-                @click="selCheck(val, v)">
+                @click="selCheck(v)">
                 {{ v.name }}
               </div>
             </el-collapse-item>
@@ -128,12 +130,12 @@ const handleClose = () => {
         </div>
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
-        <el-collapse v-model="activeName" accordion>
+        <el-collapse v-model="activeName" accordion @change="handleChange">
           <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code"
-            :class="`${key === 0 ? 'firstCollapse' : ''}`">
+            :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.code === val.code ? 'expand' : ''}`">
             <div v-for="(v, k) in val.content" :key="k"
               :class="`title sel-list ${state.selFatherData.code === val.code && state.selConData.code === v.code ? 'sel-list-checked' : ''}`"
-              @click="selCheck(val, v)">
+              @click="selCheck(v)">
               {{ v.name }}
             </div>
           </el-collapse-item>
@@ -145,6 +147,15 @@ const handleClose = () => {
 </template>
 <style lang="scss">
 .learn{
+  .expand{
+    border: 1px solid #E9E9E9;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .el-collapse-item__header{
+      background: #FFFFFF;
+    }
+  }
   .el-collapse-item__header{
     border: none;
     width: 276px;
@@ -157,16 +168,18 @@ const handleClose = () => {
     color: #201515;
     padding:18px 24px;
     box-sizing: border-box;
+  }
+  .el-collapse-item{
     margin-top: 8px;
   }
-  .firstCollapse>.el-collapse-item__header{
+  .firstCollapse{
     margin-top: 0px;
   }
+  
   .el-collapse-item__content{
     width: 276px;
     background: #FFFFFF;
     border-radius: 8px;
-    border: 1px solid #E9E9E9;
     margin-top: 8px;
     box-sizing: border-box;
     padding-bottom: 12px;

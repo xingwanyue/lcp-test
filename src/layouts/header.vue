@@ -182,7 +182,8 @@ const products = ref([
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name">{{ menu.name }}</nuxt-link>
+              <nuxt-link class="head-name">{{ menu.name }} <el-image src="/img/learn/down-icon.svg"
+                  class="down-icon" /></nuxt-link>
             </template>
           </el-popover>
           <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}</nuxt-link>
@@ -366,6 +367,11 @@ const products = ref([
           display: block;
           height: 72px;
           line-height: 72px;
+          .down-icon{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+          }
         }
         &.active {
           border-bottom: 4px solid #f66442;
