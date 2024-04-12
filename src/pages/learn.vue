@@ -3,7 +3,7 @@
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import bannerLearn from '@/public/img/learn/banner-learn.svg';
 import subscribe from '../components/subscribe.vue';
 
 const localePath = useLocalePath();
@@ -15,6 +15,8 @@ const state = reactive({
   infoList: [] as any,
   drawerVisible: false,
   isMore: false,
+  // 是否展示showMore
+  isShow: false,
 });
 onMounted(() => {
   getSelect();
@@ -84,7 +86,7 @@ const handleClose = () => {
 </script>
 <template>
   <div class="learn">
-    <div class="learn_hader">
+    <div class="learn_hader" :style="`background-image: url(${bannerLearn});`">
       <div class="learn_hader_content">
         <div class="title">We will update the exam preparation tips of Duolingo English Test timely</div>
         <div class="title2">The lastest update is until March 1, 2024</div>
@@ -190,7 +192,9 @@ const handleClose = () => {
 .learn {
   .learn_hader {
     text-align: center;
-    background: #fff4f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
