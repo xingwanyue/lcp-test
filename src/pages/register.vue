@@ -2,7 +2,7 @@
   <div class="login">
     <div class="left">
       <div class="t1">Sign up</div>
-      <div class="t2">Create your free DETPractice account</div>
+      <h1 class="t2">Create your free DETPractice account</h1>
       <div class="loginGoogle" @click="googleRegister">
         <img :src="googleImg" alt="" />
         <span style="margin-left: 16px">Sign up with Google</span>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { saveStorage, getStorage } from '@/utils';
 const { locale, t } = useI18n();
 const link_arr = [
   {
@@ -88,11 +89,16 @@ const link_arr = [
   },
 ];
 const language = ref('en');
-// 监听value的变化
+const userSelectLanguage = getStorage('detlanguage');
+
+if (userSelectLanguage) {
+  language.value = userSelectLanguage;
+  locale.value = userSelectLanguage;
+}
+
 watch(language, (newVal) => {
-  console.log(locale);
-  console.log(newVal);
   locale.value = newVal;
+  saveStorage('detlanguage', newVal);
 });
 
 const options = [

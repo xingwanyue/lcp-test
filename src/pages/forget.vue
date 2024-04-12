@@ -3,7 +3,7 @@
     <div class="left">
       <img :src="lockImg" alt="" />
       <div class="t1">Forgot Password?</div>
-      <div class="t2">Please enter the email used to create your account</div>
+      <h1 class="t2">Please enter the email used to create your account</h1>
       <el-form
         ref="ruleFormRef"
         :rules="rules"
