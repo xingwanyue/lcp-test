@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-// import { api } from '@/utils';
+import { articleGet, articleCategoryGet } from '@/utils';
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { ref } from 'vue';
@@ -20,7 +20,6 @@ const state = reactive({
 });
 onMounted(() => {
   getSelect();
-  getInfo();
 });
 const getSelect = async () => {
   state.selectList = [
@@ -55,9 +54,12 @@ const getSelect = async () => {
       ],
     },
   ];
+  // const data = await useFetch(`${articleCategoryGet}?`, {});
+  // console.log('ffff:', data);
   // 默认第一个
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.content) || {};
+  getInfo();
 };
 const getInfo = async () => {
   state.infoList = [
@@ -65,6 +67,8 @@ const getInfo = async () => {
     { name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
     { name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
   ];
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${1}`, { server: true }) as any;
+  console.log(value?.data, 'data');
 };
 const getMore = () => {
   state.isMore = true;
