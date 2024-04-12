@@ -17,7 +17,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [{ rel: 'stylesheet', href: '/css/main.css' }],
-      title: '大牛多邻国 - 高效备考多邻国考试',
+      title: 'Det',
+      // title: '大牛多邻国 - 高效备考多邻国考试',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
