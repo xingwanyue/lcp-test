@@ -2,9 +2,6 @@
 import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
 
-// import { Carousel, Navigation, Slide } from 'vue3-carousel';
-// import 'vue3-carousel/dist/carousel.css';
-
 const {
   data: platformData = {
     v1Total: 0,
@@ -17,6 +14,12 @@ const {
 })) as any;
 
 const pinglun = [
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
+    avatr: '',
+  },
   {
     name: 'Della Walsh',
     countrt: 'China',
@@ -65,6 +68,12 @@ const pinglun = [
     font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
     avatr: '',
   },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
 ];
 let timer = null;
 // 将pinglun的数据两个两个的放到一起
@@ -99,11 +108,9 @@ const settings = {
 const prevArrow = '<button type="button" class="slick-prev">Previous</button>';
 const nextArrow = '<button type="button" class="slick-next">Next</button>';
 onMounted(() => {
-  moveAnamit();
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     makePinglunData();
-    // movePingLun();
   }
 });
 
@@ -111,71 +118,6 @@ const makePinglunData = () => {
   for (let i = 0; i < pinglun.length; i += 2) {
     pinglunArr.value.push([pinglun[i], pinglun[i + 1]]);
   }
-};
-const delPinglunData = () => {
-  // 移出前四个个数据
-  pinglunArr.value.shift();
-  pinglunArr.value.shift();
-  pinglunArr.value.shift();
-  // pinglunArr.value.shift();
-};
-const movePingLun = () => {
-  // 清除之前的定时器
-  if (timer) {
-    clearInterval(timer);
-  }
-  // 找到评论dom 使其能平滑的向左无限滚动
-  const review_scroll_out = document.querySelector('.review_scroll_out');
-  // const review_scroll_out_it = document.querySelector('.review_scroll_out_it');
-  timer = setInterval(() => {
-    review_scroll_out.scrollLeft += 1;
-    //  输出滚动的右侧距离 scrollright = scrollWidth - scrollLeft - clientWidth
-    const scrollright = review_scroll_out.scrollWidth - review_scroll_out.scrollLeft - review_scroll_out.clientWidth;
-    if (scrollright === 0) {
-      makePinglunData();
-    }
-    console.log(pinglunArr.value.length);
-    if (pinglunArr.value.length > 16) {
-      delPinglunData();
-    }
-  }, 10000);
-
-  review_scroll_out.onmouseover = () => {
-    clearInterval(timer);
-  };
-  review_scroll_out.onmouseout = () => {
-    movePingLun();
-  };
-  review_scroll_out.ontouchstart = () => {
-    clearInterval(timer);
-  };
-  review_scroll_out.ontouchend = () => {
-    movePingLun();
-  };
-};
-
-const moveAnamit = () => {
-  const small_title_wrap = document.querySelector('.small_title_wrap');
-  const small_title = document.querySelectorAll('.one_small_title');
-  let index = 0;
-  let timer = null;
-  timer = setInterval(() => {
-    small_title.forEach((item) => {
-      item.classList.remove('current');
-      item.classList.remove('per');
-      item.classList.remove('start');
-    });
-    small_title[index].classList.add('current');
-    if (index === 0) {
-      small_title[small_title.length - 1].classList.add('per');
-    } else {
-      small_title[index - 1].classList.add('per');
-    }
-    index++;
-    if (index === small_title.length) {
-      index = 0;
-    }
-  }, 2000);
 };
 
 // 将数字格式化 306281变为306k 3062811变为3061k
@@ -359,9 +301,9 @@ const toThousands = (num) => {
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
         </div>
         <div class="score_scroll_out">
-          <!-- <VueSlickCarousel>
-            <div class="all_score">
-              <div v-for="(item, index) in sockerArr" :key="index" class="one_score">
+          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true">
+            <Slide v-for="(item, index) in sockerArr" :key="index" class="one_score">
+              <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon"></div>
                   <div class="user_detail">
@@ -371,18 +313,6 @@ const toThousands = (num) => {
                 </div>
                 <div class="one_score_content">132</div>
               </div>
-            </div>
-          </VueSlickCarousel> -->
-          <Carousel itemsToShow="6" :autoplay="10" :wrap-around="true">
-            <Slide v-for="(item, index) in sockerArr" :key="index" class="one_score">
-              <div class="one_score_head">
-                <div class="user_icon"></div>
-                <div class="user_detail">
-                  <div class="user_name">{{ item.name }}</div>
-                  <div class="user_country">CHINA</div>
-                </div>
-              </div>
-              <div class="one_score_content">132</div>
             </Slide>
           </Carousel>
         </div>
@@ -394,38 +324,42 @@ const toThousands = (num) => {
         <div class="review_title">Rated 4.8/5 based on 850+ reviews</div>
         <div class="review_scroll_out">
           <div class="review_scroll_out_it">
-            <div v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
-              <div class="one_card">
-                <div class="one_card_top">
-                  <div class="one_card_top_left">
-                    <div class="icon_touxiang"></div>
-                    <div class="name_out">
-                      <div class="name">{{ item[0].name }}</div>
-                      <div class="country">{{ item[0].countyr }}</div>
+            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true">
+              <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
+                <div>
+                  <div class="one_card">
+                    <div class="one_card_top">
+                      <div class="one_card_top_left">
+                        <div class="icon_touxiang"></div>
+                        <div class="name_out">
+                          <div class="name">{{ item[0].name }}</div>
+                          <div class="country">{{ item[0].countyr }}</div>
+                        </div>
+                      </div>
+                      <div class="one_card_top_right">
+                        <img src="../public/img/home/five_starts.svg" />
+                      </div>
                     </div>
+                    <div class="one_card_font">{{ item[0].font }}</div>
                   </div>
-                  <div class="one_card_top_right">
-                    <img src="../public/img/home/five_starts.svg" />
+                  <div class="one_card" style="margin-top: 24px">
+                    <div class="one_card_top">
+                      <div class="one_card_top_left">
+                        <div class="icon_touxiang"></div>
+                        <div class="name_out">
+                          <div class="name">{{ item[1].name }}</div>
+                          <div class="country">{{ item[1].countyr }}</div>
+                        </div>
+                      </div>
+                      <div class="one_card_top_right">
+                        <img src="../public/img/home/five_starts.svg" />
+                      </div>
+                    </div>
+                    <div class="one_card_font">{{ item[1].font }}</div>
                   </div>
                 </div>
-                <div class="one_card_font">{{ item[0].font }}</div>
-              </div>
-              <div class="one_card" style="margin-top: 24px">
-                <div class="one_card_top">
-                  <div class="one_card_top_left">
-                    <div class="icon_touxiang"></div>
-                    <div class="name_out">
-                      <div class="name">{{ item[1].name }}</div>
-                      <div class="country">{{ item[1].countyr }}</div>
-                    </div>
-                  </div>
-                  <div class="one_card_top_right">
-                    <img src="../public/img/home/five_starts.svg" />
-                  </div>
-                </div>
-                <div class="one_card_font">{{ item[1].font }}</div>
-              </div>
-            </div>
+              </Slide>
+            </Carousel>
           </div>
         </div>
       </div>
@@ -785,8 +719,9 @@ const toThousands = (num) => {
     }
   }
   .part3_wrapper {
-    border: 1px red solid;
+    overflow: hidden;
     background: #f2f4f6;
+    padding-bottom: 72px;
     .part3 {
       .title {
         font-weight: 500;
@@ -830,54 +765,54 @@ const toThousands = (num) => {
           background: #f66442;
         }
       }
-      @keyframes carousel {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-12.33%);
-        }
-      }
-      .score_scroll_out {
-        border: 1px red solid;
 
+      .score_scroll_out {
         overflow: hidden;
         margin-top: 40px;
 
         .one_score {
-          // width: 312px;
-          padding: 24px;
-          flex-shrink: 0;
-          border: 1px blue solid;
-          height: 100px;
-          .one_score_head {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            grid-column-gap: 16px;
-            .user_icon {
-              width: 48px;
-              height: 48px;
-              border: 1px red solid;
-            }
-            .user_detail {
-              .user_name {
-                font-weight: 500;
-                font-size: 16px;
-                color: #201515;
-              }
-              .user_country {
-                font-weight: 400;
-                font-size: 14px;
-                color: #403f3e;
-              }
-            }
-          }
+          width: 312px !important;
+          box-sizing: border-box;
+
+          // border: 1px blue solid;
+          margin-left: 24px;
+          background: #ffffff;
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+          border-radius: 8px;
+          // height: 100px;
           .one_score_content {
-            width: 264px;
-            margin-top: 17px;
-            border-radius: 8px;
-            border: 2px solid #e9e9e9;
+            padding: 24px;
+            .one_score_head {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              grid-column-gap: 16px;
+              .user_icon {
+                width: 48px;
+                height: 48px;
+                border: 1px red solid;
+              }
+              .user_detail {
+                .user_name {
+                  font-weight: 500;
+                  font-size: 16px;
+                  color: #201515;
+                  text-align: left;
+                }
+                .user_country {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #403f3e;
+                  text-align: left;
+                }
+              }
+            }
+            .one_score_content {
+              width: 264px;
+              margin-top: 17px;
+              border-radius: 8px;
+              border: 2px solid #e9e9e9;
+            }
           }
         }
       }
@@ -886,6 +821,7 @@ const toThousands = (num) => {
   .review_wrapper {
     background: #f66442;
     overflow-y: hidden;
+
     .review {
       padding-bottom: 100px;
       .review_title {
@@ -897,22 +833,24 @@ const toThousands = (num) => {
         margin-bottom: 64px;
       }
       .review_scroll_out {
-        padding: 0 20px;
-        overflow-x: scroll;
+        // padding: 0 20px;
+
         scrollbar-width: none;
         .review_scroll_out_it {
           // cursor: move;
-          display: flex;
-          width: fit-content;
-          grid-column-gap: 20px;
+
           // animation: scroll 30s linear infinite;
+          .two_card_out {
+            margin-left: 24px;
+            border: 1px red solid;
+            width: 432px !important;
+          }
           .one_card {
-            flex-shrink: 0;
-            flex-grow: 0;
+            width: 100%;
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
-            width: 432px;
+
             .one_card_top {
               display: flex;
               justify-content: space-between;

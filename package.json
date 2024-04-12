@@ -24,6 +24,7 @@
     "element-plus": "^2.6.2",
     "lru-cache": "^10.2.0",
     "pinia": "^2.1.7",
-    "sass": "^1.72.0"
+    "sass": "^1.72.0",
+    "vue3-carousel": "^0.3.3"
   }
 }
