@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
+import { oauth2SignIn } from '@/utils/googleAuth';
 
 const {
   data: platformData = {
@@ -169,6 +170,9 @@ const toThousands = (num) => {
   }
   return result;
 };
+const googleLogin = () => {
+  oauth2SignIn();
+};
 </script>
 
 <template>
@@ -193,11 +197,13 @@ const toThousands = (num) => {
           </div>
         </div>
         <div class="two_btn_out">
-          <div class="common_btn common_btn_hover_bgColor yellow">
+          <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <div class="common_btn common_btn_hover_borderCu white">Start free with email</div>
+          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+            Start free with email
+          </NuxtLink>
         </div>
         <div class="all_stu_nums">
           Trusted by <span class="yellow">500,000+ students</span> worldwide to improve Duolingo English Test scores

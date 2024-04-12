@@ -6,6 +6,7 @@
 
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+// import { useStore } from '@/store';
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { getToken, saveToken } from '@/utils';
@@ -28,9 +29,11 @@ const errMessage = ref('');
 const errShow = ref(false);
 
 onMounted(async () => {
+  console.log('7777777777');
   const token = await getToken();
+
   if (token) {
-    await store.dispatch('app/getUserInfo');
+    await store.getUserInfo();
     router.push(url);
   }
 });
@@ -56,13 +59,13 @@ const submit = async () => {
     return false;
   }
   loading.value = true;
-  const { err, data: { token } = {} } = await login({
+  const { err, data: { token } = {} } = await store.login({
     email: formData.value.email,
     password: formData.value.password,
   });
   if (!err) {
     await saveToken(token, true);
-    await store.dispatch('app/getUserInfo');
+    await store.getUserInfo();
     router.push(url);
   } else {
     errShow.value = true;
@@ -88,20 +91,13 @@ const googleLogin = async () => {
   <div class="login">
     <div class="left">
       <div class="t1">Welcome back</div>
-      <div class="t2">Login to practice</div>
+      <h1 class="t2">Login to practice</h1>
       <div class="loginGoogle" @click="googleLogin">
         <img :src="googleImg" alt="" />
         <span style="margin-left: 16px">Log in with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
+      <el-form ref="ruleFormRef" :model="formData" size="default" class="login-form" @submit.native.prevent>
         <el-form-item prop="email" label="">
           Email address
           <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>

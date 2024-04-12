@@ -37,8 +37,12 @@ export const setCatchePrefix = (prefix: String) => {
 export const saveStorage = (key: String, value: String, remeber: Boolean) => {
   (remeber ? localStorage : sessionStorage)[`${defaultCachePrefix}${key}`] = value;
 };
-export const getStorage = (key: String) =>
-  sessionStorage[`${defaultCachePrefix}${key}`] || localStorage[`${defaultCachePrefix}${key}`];
+export const getStorage = (key: String) => {
+  if (process.client) {
+    return sessionStorage[`${defaultCachePrefix}${key}`] || localStorage[`${defaultCachePrefix}${key}`];
+  }
+  return '';
+};
 
 export function removeToken() {
   sessionStorage.removeItem(TOKEN);
