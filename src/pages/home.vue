@@ -17,39 +17,10 @@ const pinglun = [
   {
     name: 'Della Walsh',
     countrt: 'China',
-    font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
     font: 'Rew things make me feel more powerful than setting up automatio.',
     avatr: '',
   },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
+
   {
     name: 'Della Walsh',
     countrt: 'China',
@@ -66,6 +37,48 @@ const pinglun = [
     name: 'Della Walsh',
     countrt: 'China',
     font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
+    avatr: '',
+  },
+  {
+    name: 'Della Walsh',
+    countrt: 'China',
+    font: 'Rew things make me feel more powerful than setting up automatio.',
     avatr: '',
   },
   {
@@ -301,7 +314,7 @@ const toThousands = (num) => {
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
         </div>
         <div class="score_scroll_out">
-          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true">
+          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in sockerArr" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
@@ -324,7 +337,7 @@ const toThousands = (num) => {
         <div class="review_title">Rated 4.8/5 based on 850+ reviews</div>
         <div class="review_scroll_out">
           <div class="review_scroll_out_it">
-            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true">
+            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
                 <div>
                   <div class="one_card">
@@ -333,7 +346,7 @@ const toThousands = (num) => {
                         <div class="icon_touxiang"></div>
                         <div class="name_out">
                           <div class="name">{{ item[0].name }}</div>
-                          <div class="country">{{ item[0].countyr }}</div>
+                          <div class="country">{{ item[0].countrt }}</div>
                         </div>
                       </div>
                       <div class="one_card_top_right">
@@ -348,7 +361,7 @@ const toThousands = (num) => {
                         <div class="icon_touxiang"></div>
                         <div class="name_out">
                           <div class="name">{{ item[1].name }}</div>
-                          <div class="country">{{ item[1].countyr }}</div>
+                          <div class="country">{{ item[1].countrt }}</div>
                         </div>
                       </div>
                       <div class="one_card_top_right">
@@ -837,12 +850,8 @@ const toThousands = (num) => {
 
         scrollbar-width: none;
         .review_scroll_out_it {
-          // cursor: move;
-
-          // animation: scroll 30s linear infinite;
           .two_card_out {
             margin-left: 24px;
-            border: 1px red solid;
             width: 432px !important;
           }
           .one_card {
@@ -850,7 +859,6 @@ const toThousands = (num) => {
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
-
             .one_card_top {
               display: flex;
               justify-content: space-between;
@@ -870,11 +878,14 @@ const toThousands = (num) => {
                     font-weight: 500;
                     font-size: 16px;
                     color: #201515;
+                    text-align: left;
                   }
                   .country {
+                    margin-top: 4px;
                     font-weight: 400;
                     font-size: 14px;
                     color: #403f3e;
+                    text-align: left;
                   }
                 }
               }
