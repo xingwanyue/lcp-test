@@ -1,4 +1,7 @@
 import { defineStore } from 'pinia';
+import isEmpty from 'lodash/isEmpty';
+import { api } from '@/utils';
+
 export const useStore = defineStore({
   id: 'base',
   state: () => {
@@ -6,5 +9,52 @@ export const useStore = defineStore({
       user: {} as any,
     };
   },
-  actions: {},
+  actions: {
+    async login(jwtResponse: string) {
+      const jwtParts = jwtResponse.split('.');
+
+      if (jwtParts.length !== 3) {
+        throw new Error('Invalid JWT format');
+      }
+
+      const { email, name, picture } = JSON.parse(atob(jwtParts[1]));
+      // email, avatar: picture, nickname: name, google: true, type: 'pc'
+      const res = await fetch(`${api}/common/login`, {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          avatar: picture,
+          nickname: name,
+          google: true,
+          type: 'pc',
+        }),
+      });
+      const { token, user } = await res.json();
+      this.user = user;
+      localStorage.setItem('det_token', token);
+    },
+    async getUserInfo() {
+      try {
+        if (!localStorage.getItem('det_token') || !isEmpty(this.user)) {
+          return;
+        }
+        const res = await fetch(`${api}/userInfo`, {
+          method: 'get',
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('det_token')}`,
+            'Content-Type': 'application/sss',
+          },
+        });
+        if (res.status === 401) {
+          localStorage.removeItem('det_token');
+        } else {
+          const { user } = await res.json();
+          this.user = user;
+        }
+      } catch (e) {}
+    },
+  },
 });
