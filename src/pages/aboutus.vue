@@ -3,6 +3,7 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue'
+import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 
 const router = useRouter();
 const route = useRoute();
@@ -35,15 +36,10 @@ const getContent = async (id: string) => {
   state.rate = rate;
 };
 
-const rateChange = () => {
-  const rateArr = JSON.parse(localStorage.getItem('det_rate') || '[]');
-  rateArr.push({ id: state.details.id, rate: state.rate });
-  localStorage.setItem('det_rate', JSON.stringify(rateArr));
-};
 </script>
 <template>
   <div class="aboutus">
-    <div class="learn_hader">
+    <div class="learn_hader" :style="`background-image: url(${bannerAboutus});`">
       <div class="learn_hader_content">
         <div class="title">About DET Pratice</div>
       </div>
@@ -181,7 +177,9 @@ const rateChange = () => {
 .aboutus{
   .learn_hader {
     text-align: center;
-    background: #fff4f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
