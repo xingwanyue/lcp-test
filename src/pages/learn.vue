@@ -124,7 +124,8 @@ const handleClose = () => {
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
         <el-collapse v-model="activeName" accordion>
-          <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code">
+          <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code"
+            :class="`${key === 0 ? 'firstCollapse' : ''}`">
             <div v-for="(v, k) in val.content" :key="k"
               :class="`title sel-list ${state.selFatherData.code === val.code && state.selConData.code === v.code ? 'sel-list-checked' : ''}`"
               @click="selCheck(val, v)">
@@ -142,13 +143,14 @@ const handleClose = () => {
   .el-collapse-item__header{
     border: none;
     width: 276px;
-    height: 64px;
+    height: auto;
+    line-height: 28px;
     background: #F2F4F6;
     border-radius: 8px;
     font-weight: 600;
     font-size: 20px;
     color: #201515;
-    padding:0px 24px;
+    padding:18px 24px;
     box-sizing: border-box;
     margin-top: 8px;
   }
@@ -160,22 +162,22 @@ const handleClose = () => {
     background: #FFFFFF;
     border-radius: 8px;
     border: 1px solid #E9E9E9;
-    margin: 8px 0px;
+    margin-top: 8px;
     box-sizing: border-box;
     padding-bottom: 12px;
   }
   @media (max-width: 800px){
     .el-collapse-item__header{
       width: 100%;
-      height: 64px;
+      line-height: 21px;
       border-radius: 6px;
-      padding:0px 12px;
+      padding:13px 18px;
       margin-top: 4px;
     }
     .el-collapse-item__content{
       width: 100%;
       border-radius: 6px;
-      margin: 4px 0px;
+      margin-top: 6px;
       padding-bottom: 6px;
     }
   }
@@ -185,6 +187,13 @@ const handleClose = () => {
   .el-drawer{
     border-radius: 12px 12px 0px 0px;
     height: 80% !important;
+  }
+  .el-drawer__header{
+    margin-bottom: 0px;
+    font-size: 18px;
+    .el-icon{
+      font-size: 28px;
+    }
   }
 }
 </style>
@@ -274,11 +283,10 @@ const handleClose = () => {
   }
   .sel-list{
     width: 100%;
-    height: 48px;
-    line-height: 48px;
+    line-height: 25px;
     color: #403F3E;
     font-size: 18px;
-    padding:0px 24px;
+    padding:12px 24px;
     box-sizing: border-box;
     cursor: pointer;
   }
@@ -319,7 +327,7 @@ const handleClose = () => {
       line-height: 28px;
       text-decoration-line: underline;
       text-align: center;
-      margin: 24px 0px 120px 0px;
+      margin: 0px 0px 120px 0px;
       cursor: pointer;
     }
   }
@@ -334,11 +342,30 @@ const handleClose = () => {
         display: block;
       }
     }
+    .sel-list{
+      line-height: 19px;
+      font-size: 14px;
+      padding:9px 18px;
+    }
     .right{
       max-width: 100%;
       margin-left: 0px;
+      .r-list{
+        border-radius: 6px;
+        margin-bottom: 12px;
+        padding: 12px;
+        .title{
+          font-size: 20px;
+          line-height: 27px;
+        }
+        .description{
+          font-size: 15px;
+          line-height: 21px;
+          margin-top: 12px;
+        }
+      }
       .more{
-        margin: 24px 0px 60px 0px;
+        margin: 0px 0px 40px 0px;
       }
     }
     .select{
