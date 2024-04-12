@@ -5,6 +5,7 @@ import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue'
 import subscribe from '../../components/subscribe.vue';
 
+// const localePath = useLocalePath();
 const router = useRouter();
 const route = useRoute();
 const rate = ref(0);
@@ -24,22 +25,8 @@ const getList = async () => {
     { id: '1', name: 'OverView of Duolingo English Test1', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
     { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
     { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
-    // { id: '', name: 'OverView of Duolingo English Test', desc: '' },
   ];
-  const { id = '1' } = route.query as any;
+  const { id = '1' } = route.params as any;
   getContent(id);
 };
 const getContent = async (id: string) => {
@@ -66,9 +53,10 @@ const rateChange = () => {
         <!-- <div id="content" class="content" v-html="state.details.desc" style="white-space:pre-wrap"></div> -->
       </div>
       <div class="article-title-list article-title-list1">
-        <div v-for="(val, key) in state.list" :key="key"
-          :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`" @click="getContent(val.id)">
-          {{ val.name }}
+        <div v-for="(val, key) in state.list" :key="key">
+          <nuxt-link :to="`/learndetail/${val.id || '1'}`" class="">
+            <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -80,9 +68,11 @@ const rateChange = () => {
       <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
     </div>
     <div class="article-title-list article-title-list2">
-      <div v-for="(val, key) in state.list" :key="key"
-        :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`" @click="getContent(val.id)">
-        {{ val.name }}</div>
+      <div v-for="(val, key) in state.list" :key="key">
+        <nuxt-link :to="`/learndetail/${val.id || '1'}`" class="">
+          <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
+        </nuxt-link>
+      </div>
     </div>
     <subscribe class="subs" />
   </div>
@@ -129,9 +119,6 @@ const rateChange = () => {
     }
 
   }
-  .article-title-list2{
-    display: none;
-  }
   .article-title-list{
     width: 276px;
     background: #FFFFFF;
@@ -154,6 +141,14 @@ const rateChange = () => {
       color: rgba(144,144,144,0.65);
       line-height: 28px;
     }
+  }
+  .article-title-list1{
+    display: block;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+  }
+  .article-title-list2{
+    display: none;
   }
   .rate-con{
     margin-top: 56px;

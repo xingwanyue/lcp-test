@@ -112,7 +112,7 @@ const handleClose = () => {
         </div>
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
-            <nuxt-link :to="localePath(`/learndetail?id=${val.id}`)" class="r-list">
+            <nuxt-link :to="localePath(`/learndetail/${val.id || '1'}`)" class="r-list">
               <div class="title">{{ val.name }}</div>
               <div class="description">{{ val.desc }}</div>
             </nuxt-link>
