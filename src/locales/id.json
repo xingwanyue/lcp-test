@@ -1,5 +1,10 @@
 {
-  "test": "tes",
+  "test": "Untuk tes",
+  "Home": "Beranda",
+  "Products": "Produk",
+  "Learn": "Belajar",
+  "Pricing": "Harga",
+  "Blog": "Blog",
   "footer": {
     "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc"
   }
