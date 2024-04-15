@@ -133,6 +133,7 @@ const submit = async () => {
     max-width: 1200px;
     margin: auto;
     padding: 100px 30px;
+    box-sizing: border-box;
     background: #fff;
     display: flex;
     justify-content: space-between;
