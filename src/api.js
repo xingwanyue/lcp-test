@@ -4,6 +4,9 @@ export const sesCodeSend = (args) =>
   fetchmy(`${api}/common/sesCode`, {
     method: 'post',
     body: JSON.stringify(args),
+    Headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+    },
   });
 
 export const sesCodeVerify = (data) =>
