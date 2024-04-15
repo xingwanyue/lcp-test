@@ -11,3 +11,19 @@ export const sesCodeVerify = (args) =>
     method: 'post',
     body: JSON.stringify(args),
   });
+
+export const stripePayUrlGet = (args, token) =>
+  fetchmy(`${api}/stripe/payUrl?vipId=${args.vipId}`, {
+    method: 'get',
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+export const stripePayStatusGet = (logVipId, token) =>
+  fetchmy(`${api}/stripe/status?logVipId=${logVipId}`, {
+    method: 'get',
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });

@@ -1,10 +1,35 @@
 <script setup lang="ts">
-//
+import { getToken } from '@/utils';
+import { useStore } from '@/store';
+const store = useStore();
+
 const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
-  server: false,
+  server: true,
 })) as any;
 
-if (buyData.value) {
+const membershipArr = ref([]);
+const moreServiceArr = ref([]);
+const { data: plans } = (await useFetch(`${api}/vips`, {
+  server: true,
+  headers: {
+    Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkyNzIsInMiOiI5OTkyIiwiaWF0IjoxNzEzMTgzNTc2LCJleHAiOjE3MjA5NTk1NzZ9.C695hs-_0U5I9cETOWKl4grawEqUxMOh83mhvKDRc_8`,
+  },
+})) as any;
+
+if (plans && plans.value && plans.value.data && plans.value.data.length) {
+  plans.value.data.forEach((item: any) => {
+    if (item.type === '1') {
+      membershipArr.value.push(item);
+    } else {
+      moreServiceArr.value.push(item);
+    }
+  });
+  console.log('77777777777777');
+  console.log(membershipArr);
+  console.log(moreServiceArr);
+}
+
+if (buyData && buyData.value) {
   buyData.value.forEach((item: any) => {
     item.data = JSON.parse(item.data);
   });
@@ -23,6 +48,7 @@ const changeCurrentMembershipId = (id: number) => {
 };
 const buyMembership = (id: number) => {
   console.log(id);
+  store.stripePay({ vipId: id });
 };
 
 const aqList = ref([
@@ -72,48 +98,48 @@ const contaceUsList = ref([
 ]);
 
 onMounted(() => {
-  makeMMembershipArr();
+  // makeMMembershipArr();
 });
-const makeMMembershipArr = () => {
-  const data = [0, 1, 2, 3];
-  data.forEach((item, index) => {
-    MembershipArr.value.push({
-      id: index,
-      title: 'Most Popular Choice',
-      day: '30 Days',
-      off: '26% off',
-      text: '80% of students have chosen this plan, which is the most cost-effective option.',
-      big_price: '$19.99',
-      small_price: '$8.00',
-      qlList: [
-        {
-          font: '30 days of unlimited practice',
-          tips: '123132',
-        },
-        {
-          font: '30 days of unlimited practice',
-          tips: '123132',
-        },
-        {
-          font: '30 days of unlimited practice',
-          tips: '123132',
-        },
-        {
-          font: '30 days of unlimited practice',
-          tips: '123132',
-        },
-        {
-          font: '30 days of unlimited practice',
-          tips: '123132',
-        },
-        {
-          font: '30 days of unlimited practice',
-          tips: '',
-        },
-      ],
-    });
-  });
-};
+// const makeMMembershipArr = () => {
+//   const data = [0, 1, 2, 3];
+//   data.forEach((item, index) => {
+//     MembershipArr.value.push({
+//       id: index,
+//       title: 'Most Popular Choice',
+//       day: '30 Days',
+//       off: '26% off',
+//       text: '80% of students have chosen this plan, which is the most cost-effective option.',
+//       big_price: '$19.99',
+//       small_price: '$8.00',
+//       qlList: [
+//         {
+//           font: '30 days of unlimited practice',
+//           tips: '123132',
+//         },
+//         {
+//           font: '30 days of unlimited practice',
+//           tips: '123132',
+//         },
+//         {
+//           font: '30 days of unlimited practice',
+//           tips: '123132',
+//         },
+//         {
+//           font: '30 days of unlimited practice',
+//           tips: '123132',
+//         },
+//         {
+//           font: '30 days of unlimited practice',
+//           tips: '123132',
+//         },
+//         {
+//           font: '30 days of unlimited practice',
+//           tips: '',
+//         },
+//       ],
+//     });
+//   });
+// };
 </script>
 <template>
   <div class="pricing">
@@ -144,7 +170,7 @@ const makeMMembershipArr = () => {
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
           <div
-            v-for="(item, index) in MembershipArr"
+            v-for="(item, index) in membershipArr"
             :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
@@ -153,14 +179,12 @@ const makeMMembershipArr = () => {
             <div class="card_price">
               <div class="card_price_part1">
                 <div class="day">{{ item.day }}</div>
-                <div class="off">{{ item.off }}</div>
+                <div class="off">{{ item.description }}</div>
               </div>
-              <div class="card_price_part2">
-                {{ item.text }}
-              </div>
+              <div class="card_price_part2">{{ item.text }}</div>
               <div class="card_price_part3">
-                <div class="big_price">{{ item.big_price }}</div>
-                <div class="small_price">{{ item.small_price }}</div>
+                <div class="big_price">${{ item.originalPrice }}</div>
+                <div class="small_price">${{ item.price }}</div>
               </div>
               <div class="card_price_buy_btn" @click="buyMembership(item.id)">Buy Now</div>
               <div class="card_price_qllist">
@@ -184,7 +208,7 @@ const makeMMembershipArr = () => {
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
           <div
-            v-for="(item, index) in MembershipArr"
+            v-for="(item, index) in moreServiceArr"
             :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
@@ -196,12 +220,12 @@ const makeMMembershipArr = () => {
                 {{ item.text }}
               </div>
               <div class="card_price_part3">
-                <div class="member_price">$14.99</div>
+                <div class="member_price">${{ item.originalPrice }}</div>
                 <div class="member_font">Member's price</div>
               </div>
               <div class="card_price_part4">
-                <div class="off_price">$19.99</div>
-                <div class="old_price">$39.99</div>
+                <div class="off_price">${{ item.price }}</div>
+                <div class="old_price">${{ item.originalPrice }}</div>
               </div>
               <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">Buy Now</div>
             </div>

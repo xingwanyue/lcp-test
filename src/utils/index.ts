@@ -11,6 +11,9 @@ export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
 export const staticUrlGet = (path: string) => (path.startsWith('http') ? path : `${cdn}${path}`);
 const TOKEN = 'det_i18n_token';
 export function getToken(forHeader: any) {
+  if (!process.client) {
+    return;
+  }
   const token = sessionStorage[TOKEN] || localStorage[TOKEN];
   let res;
   if (token) {

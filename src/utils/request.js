@@ -67,11 +67,13 @@ const checkStatus = (result) => {
 };
 const hooks = {};
 export const fetchmy = (url, options) => {
+  const defaultHeaders = {
+    'Content-Type': 'application/json; charset=utf-8',
+  };
+  const headers = Object.assign({}, defaultHeaders, options.headers);
   return fetch(url, {
+    headers,
     ...options,
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8',
-    },
   })
     .then(parseResponse)
     .then(checkStatus)
