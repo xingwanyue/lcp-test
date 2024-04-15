@@ -7,6 +7,7 @@ export const useStore = defineStore({
   state: () => {
     return {
       user: {} as any,
+      userSelectLanguage: 'en',
     };
   },
   actions: {
@@ -55,6 +56,9 @@ export const useStore = defineStore({
           this.user = user;
         }
       } catch (e) {}
+    },
+    async userChangeLanguage(language: string) {
+      this.userSelectLanguage = language;
     },
   },
 });

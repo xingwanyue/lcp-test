@@ -10,8 +10,6 @@ import { useRoute, useRouter } from 'vue-router';
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { getToken, saveToken } from '@/utils';
-// import { login } from '@/api';
-
 import googleImg from '../public/img/login/google_logo.svg';
 import lookImg from '../public/img/login/look.svg';
 import unlookImg from '../public/img/login/unlook.svg';
@@ -27,11 +25,12 @@ const loading = ref(false);
 const pwdShow = ref(false);
 const errMessage = ref('');
 const errShow = ref(false);
+definePageMeta({
+  layout: 'noheaderfooter',
+});
 
 onMounted(async () => {
-  console.log('7777777777');
   const token = await getToken();
-
   if (token) {
     await store.getUserInfo();
     router.push(url);
