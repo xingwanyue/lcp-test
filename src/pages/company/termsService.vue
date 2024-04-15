@@ -18,7 +18,7 @@ onMounted(() => { });
         <div class="title">Last updated: 2023-11-20</div>
         <div class="content1">
           Please read these Terms of Service (“Terms”, “TOS”) carefully before using the
-          <nuxt-link to="https://detpractice.com" class="website">
+          <nuxt-link to="https://detpractice.com" target="_blank" class="website">
             https://detpractice.com
           </nuxt-link>
           website

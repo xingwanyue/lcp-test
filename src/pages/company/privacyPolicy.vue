@@ -27,7 +27,7 @@ onMounted(() => { });
           We use your Personal Information to provide and improve the Service. By using the Service, you agree to the
           collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy
           Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at
-          <nuxt-link to="https://detpractice.com" class="website">
+          <nuxt-link to="https://detpractice.com" target="_blank" class="website">
             https://detpractice.com
           </nuxt-link>
           <div class="line-break"></div>
@@ -84,11 +84,11 @@ onMounted(() => { });
           the
           Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe,
           available at
-          <nuxt-link to="https://stripe.com/us/legal" class="website">
+          <nuxt-link to="https://stripe.com/us/legal" target="_blank" class="website">
             https://stripe.com/us/legal
           </nuxt-link>
           &
-          <nuxt-link to="https://stripe.com/us/privacy" class="website">
+          <nuxt-link to="https://stripe.com/us/privacy" target="_blank" class="website">
             https://stripe.com/us/privacy.
           </nuxt-link>
         </div>
