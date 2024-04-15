@@ -14,7 +14,7 @@ onMounted(() => { });
       </div>
     </div>
     <div class="bg">
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Last updated: 2023-11-20</div>
         <div class="content1">
           Please read these Terms of Service (“Terms”, “TOS”) carefully before using the
@@ -30,7 +30,7 @@ onMounted(() => { });
           terms then you may not access the Service.
         </div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Accounts</div>
         <div class="content1">When you create an account with us, you must provide us with information that is accurate,
           complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in
@@ -41,7 +41,7 @@ onMounted(() => { });
           You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware
           of any breach of security or unauthorized use of your account.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Links To Other Web Sites</div>
         <div class="content1">Our Service may contain links to third-party websites or services that are not owned or
           controlled by DET Practice.<div class="line-break"></div>
@@ -55,7 +55,7 @@ onMounted(() => { });
           We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or
           services that you visit.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Termination</div>
         <div class="content1">We may terminate or suspend your account immediately, without prior notice or liability,
           for
@@ -66,7 +66,7 @@ onMounted(() => { });
           including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of
           liability.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Disclaimer</div>
         <div class="content1">Your use of the Service is at your sole risk. The Service is provided on an “AS IS” and
           “AS
@@ -75,7 +75,7 @@ onMounted(() => { });
           but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement,
           or course of performance.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Governing Law</div>
         <div class="content1">These Terms shall be governed and construed in accordance with the laws of the United
           Kingdom without regard to its conflict of law provisions.<div class="line-break"></div>
@@ -86,7 +86,7 @@ onMounted(() => { });
           Service
           and supersede and replace any prior agreements we might have between us regarding the Service.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Changes</div>
         <div class="content1">We reserve the right, at our sole discretion, to modify or replace these Terms at any
           time.
@@ -99,7 +99,7 @@ onMounted(() => { });
           revised terms. If you do not agree to the new terms, please stop using the Service.
         </div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Contact Us</div>
         <div class="content1">If you have any questions about these Terms, please contact us.</div>
       </div>

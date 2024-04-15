@@ -14,7 +14,7 @@ onMounted(() => { });
       </div>
     </div>
     <div class="bg">
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Last updated: 2023-11-20</div>
         <div class="content1">
           DET Pratice (“us”, “we”, or “our”) operates the DET Pratice website (the “Service”).<div class="line-break">
@@ -40,7 +40,7 @@ onMounted(() => { });
           • Email address
         </div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Log Data</div>
         <div class="content1">We collect information that your browser sends whenever you visit our Service (“Log
           Data”).
@@ -48,7 +48,7 @@ onMounted(() => { });
           browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on
           those pages, and other statistics.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Cookies</div>
         <div class="content1">Cookies are files with a small amount of data, which may include an anonymous unique
           identifier. Cookies are sent to your browser from a website and stored on your computer’s hard drive.<div
@@ -58,7 +58,7 @@ onMounted(() => { });
           a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our
           Service.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Service Providers</div>
         <div class="content1">We may employ third-party companies and individuals to facilitate our Service, to provide
           the Service on our behalf, to perform Service-related services, or to assist us in analyzing how our Service
@@ -67,7 +67,7 @@ onMounted(() => { });
           These third parties have access to your Personal Information only to perform these tasks on our behalf and are
           obligated not to disclose or use it for any other purpose.</div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Security</div>
         <div class="content1">The security of your Personal Information is important to us, but remember that no method
           of
@@ -75,7 +75,7 @@ onMounted(() => { });
           commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.
         </div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Payment Info & Security</div>
         <div class="content1">In order to collect payments on your behalf from your customers, and provide payments to
           you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees
@@ -93,7 +93,7 @@ onMounted(() => { });
           </nuxt-link>
         </div>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Links To Other Sites</div>
         <div class="content1">Our Service may contain links to other sites that are not operated by us. If you click on
           a
