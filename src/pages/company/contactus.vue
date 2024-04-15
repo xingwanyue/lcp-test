@@ -6,7 +6,7 @@ import { ref } from 'vue';
 import type { FormInstance } from 'element-plus';
 import { ElMessage } from 'element-plus';
 import { portalContact } from '@/utils';
-import subscribe from '../components/subscribe.vue';
+import subscribe from '../../components/subscribe.vue';
 import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 import emailImg from '@/public/img/aboutus/email.svg';
 

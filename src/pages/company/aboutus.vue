@@ -171,6 +171,7 @@ onMounted(() => { });
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
+    box-sizing: border-box;
     .title{
       font-weight: 500;
       font-size: 28px;
