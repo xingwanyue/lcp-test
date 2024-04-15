@@ -52,7 +52,8 @@ export function removeToken() {
 // article
 export const articleGet = `${api}/common/article`;
 export const articleCategoryGet = `${api}/common/article/category`;
-
+// rate,post,{articleId, rate }
+export const rateAdd = `${api}/common/article/rate`;
 // tree
 export function getTree(data = [], sid: any, pid = null) {
   const children = [] as any;

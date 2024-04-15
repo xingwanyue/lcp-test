@@ -2,7 +2,8 @@
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
-import { ref } from 'vue'
+import { ref } from 'vue';
+import { articleGet, rateAdd } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
 // const localePath = useLocalePath();
@@ -21,26 +22,41 @@ onMounted(() => {
   getList();
 });
 const getList = async () => {
-  state.list = [
-    { id: '1', name: 'OverView of Duolingo English Test1', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  ];
+  // state.list = [
+  //   { id: '1', name: 'OverView of Duolingo English Test1', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
+  //   { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
+  //   { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
+  // ];
+  // 需要传左侧的类型
   const { id = '1' } = route.params as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${1}`, { server: true }) as any;
+  state.list = value?.data;
   getContent(id);
 };
 const getContent = async (id: string) => {
   state.checkId = id;
-  const temp = _.find(state.list, { id }) || {};
+  const temp = _.find(state.list, { id: Number(id) }) || {};
   state.details = { ...temp };
   const { rate } = _.find(state.rateArr, { id: id }) || {};
   state.rate = rate;
 };
 
-const rateChange = () => {
+const rateChange = async () => {
   const rateArr = JSON.parse(localStorage.getItem('det_rate') || '[]');
   rateArr.push({ id: state.details.id, rate: state.rate });
   localStorage.setItem('det_rate', JSON.stringify(rateArr));
+  // 
+  const data = await useFetch(`${rateAdd}`, {
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      articleId: state.checkId,
+      rate: state.rate,
+    }),
+  });
+  console.log(data);
 };
 </script>
 <template>
@@ -55,7 +71,7 @@ const rateChange = () => {
       <div class="article-con">
         <div class="title">{{ state.details.name }}</div>
         <!-- <div class="article-con1">{{ state.details.desc }}</div> -->
-        <div id="content" class="article-con1" v-html="state.details.desc" style="white-space:pre-wrap"></div>
+        <div id="content" class="article-con1" v-html="state.details.description" style="white-space:pre-wrap"></div>
       </div>
       <div class="article-title-list article-title-list1">
         <div v-for="(val, key) in state.list" :key="key">
@@ -108,7 +124,7 @@ const rateChange = () => {
     margin-top: 64px;
     padding: 0px 30px;
     .article-con{
-      width: auto;
+      width: 100%;
       margin-right: 24px;
       .title{
         font-weight: 600;
