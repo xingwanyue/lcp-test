@@ -2,6 +2,10 @@
 import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
+import { useStore } from '@/store';
+import { staticUrlGet } from '@/utils';
+const store = useStore();
+const user = computed(() => store.user);
 // 获取平台数据
 const {
   data: platformData = {
@@ -37,9 +41,20 @@ const makePinglunData = () => {
   }
 };
 // 获取用户得分数据;
-const { data: usersockerArr = [] } = (await useFetch(`${api}/common/portalData?type=3`, {
+const { data: usersockerArr } = (await useFetch(`${api}/common/portalData?type=3`, {
   server: true,
 })) as any;
+
+if (usersockerArr && usersockerArr.value && usersockerArr.value.length) {
+  usersockerArr.value.forEach((item) => {
+    try {
+      item.data = JSON.parse(item.data);
+    } catch (error) {
+      console.log(error);
+    }
+  });
+  console.log(usersockerArr);
+}
 
 // 获取用户得分数据 头部文案
 const { data: usersockerTopFont } = (await useFetch(`${api}/common/portalData?type=4`, {
@@ -51,7 +66,7 @@ onMounted(() => {
   if (process.client) {
     moveAnamit();
   }
-  if (pinglunMid.value.length) {
+  if (pinglunMid && pinglunMid.value.length) {
     makePinglunData();
   }
 });
@@ -81,6 +96,9 @@ const moveAnamit = () => {
 
 // 将数字格式化 306281变为306k 3062811变为3061k
 const toThousands = (num) => {
+  if (!num) {
+    return 0;
+  }
   let result = '';
   const numStr = num.toString();
   for (let i = 0; i < numStr.length; i++) {
@@ -117,7 +135,7 @@ const googleLogin = () => {
             </div>
           </div>
         </div>
-        <div class="two_btn_out">
+        <div v-if="!user.id" class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
@@ -163,7 +181,8 @@ const googleLogin = () => {
               answering questions.
             </div>
             <div class="get_more">
-              <div class="font">Get more information</div>
+              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -187,7 +206,8 @@ const googleLogin = () => {
               answering questions.
             </div>
             <div class="get_more">
-              <div class="font">Get more information</div>
+              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -211,7 +231,8 @@ const googleLogin = () => {
               answering questions.
             </div>
             <div class="get_more">
-              <div class="font">Get more information</div>
+              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -235,7 +256,8 @@ const googleLogin = () => {
               answering questions.
             </div>
             <div class="get_more">
-              <div class="font">Get more information</div>
+              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -246,7 +268,7 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFont.length" class="title">{{ usersockerTopFont[0].data }}</div>
+        <div v-if="usersockerTopFont && usersockerTopFont.length" class="title">{{ usersockerTopFont[0].data }}</div>
         <div class="user_nums_out">
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData.userTotal) }}k</div>
@@ -264,18 +286,24 @@ const googleLogin = () => {
         <div class="btn_out">
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
         </div>
-        <div v-if="usersockerArr.length" class="score_scroll_out">
+        <div v-if="usersockerArr && usersockerArr.length" class="score_scroll_out">
+          <!-- {{ usersockerArr }} -->
           <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
-                  <div class="user_icon"></div>
+                  <div class="user_icon">
+                    <!-- {{ item.data.avatar }} -->
+                    <img :src="staticUrlGet(item.data.avatar)" />
+                  </div>
                   <div class="user_detail">
-                    <div class="user_name">{{ item.name }}</div>
-                    <div class="user_country">CHINA</div>
+                    <div class="user_name">{{ item.data.nickname }}</div>
+                    <div class="user_country">{{ item.data.country }}</div>
                   </div>
                 </div>
-                <div class="one_score_content">132</div>
+                <div class="one_score_content_img">
+                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" />
+                </div>
               </div>
             </Slide>
           </Carousel>
@@ -285,9 +313,9 @@ const googleLogin = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFont.length" class="review_title">{{ commentTopFont[0].data }}</div>
+        <div v-if="commentTopFont && commentTopFont.length" class="review_title">{{ commentTopFont[0].data }}</div>
         <div class="review_scroll_out">
-          <div v-if="pinglunArr.length" class="review_scroll_out_it">
+          <div v-if="pinglunArr && pinglunArr.length" class="review_scroll_out_it">
             <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
                 <div>
@@ -741,7 +769,7 @@ const googleLogin = () => {
         .one_score {
           width: 312px !important;
           box-sizing: border-box;
-
+          height: fit-content;
           // border: 1px blue solid;
           margin-left: 24px;
           background: #ffffff;
@@ -750,6 +778,7 @@ const googleLogin = () => {
           // height: 100px;
           .one_score_content {
             padding: 24px;
+
             .one_score_head {
               display: flex;
               justify-content: flex-start;
@@ -758,7 +787,11 @@ const googleLogin = () => {
               .user_icon {
                 width: 48px;
                 height: 48px;
-                border: 1px red solid;
+                // border: 1px red solid;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
               }
               .user_detail {
                 .user_name {
@@ -775,11 +808,15 @@ const googleLogin = () => {
                 }
               }
             }
-            .one_score_content {
+            .one_score_content_img {
               width: 264px;
               margin-top: 17px;
               border-radius: 8px;
               border: 2px solid #e9e9e9;
+              img {
+                width: 100%;
+                height: auto;
+              }
             }
           }
         }
