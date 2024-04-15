@@ -110,6 +110,9 @@ const goLogin = () => {
       border-color: rgba(0, 0, 0, 0.45) !important;
     }
   }
+  .el-input__wrapper {
+    height: 40px;
+  }
   .el-input__suffix-inner > img {
     margin-top: 8px;
   }
@@ -124,8 +127,9 @@ const goLogin = () => {
   height: 100vh;
   overflow: hidden;
   .left {
+    flex: none;
     width: 400px;
-    flex: auto;
+
     background-color: #f7f8f9;
     display: flex;
     flex-direction: column;
