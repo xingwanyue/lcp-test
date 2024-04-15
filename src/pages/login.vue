@@ -117,7 +117,7 @@ const googleLogin = async () => {
         <el-form-item>
           <div class="zhuce">
             <div class="goforget">
-              <NuxtLink :to="localePath('/forget')" style="cursor: pointer">Forgot password?</NuxtLink>
+              <NuxtLink :to="localePath('/forget')" style="color: #f66442; cursor: pointer">Forgot password?</NuxtLink>
             </div>
             <div class="goregister">
               Don't have an account?
@@ -256,8 +256,8 @@ const googleLogin = async () => {
     }
 
     .goforget {
-      color: #f66442;
-      // cursor: pointer;
+      color: #f66442 !important;
+      cursor: pointer;
     }
   }
   .right {
