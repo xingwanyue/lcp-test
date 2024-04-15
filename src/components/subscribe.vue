@@ -1,7 +1,14 @@
 <script setup lang="ts">
 const email = ref('');
-const sendEmail = () => {
-  console.log(email.value);
+const sendEmail = async () => {
+  const { err } = (await useFetch(`${api}/common/portalSubscribe`, {
+    method: 'post',
+    body: { email: email.value },
+  })) as any;
+  if (!err) {
+    ElMessage.success('Subscribe successfully');
+    email.value = '';
+  }
 };
 </script>
 
