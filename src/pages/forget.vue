@@ -40,8 +40,12 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-// import { sesCodeSend } from '@/api';
-
+import { sesCodeSend } from '@/api.js';
+import { fetchmy } from '@/utils/request';
+definePageMeta({
+  layout: 'noheaderfooter',
+});
+import lockImg from '../public/img/login/lock.svg';
 import errIcon from '../public/img/login/errIcon.svg';
 
 const router = useRouter();
@@ -70,7 +74,7 @@ const submit = async () => {
   const { err } = await sesCodeSend({ email: formData.value.email, type: 'findPassword' });
   loading.value = false;
   if (!err) {
-    router.push({ path: '/forget2', query: { email: formData.value.email } });
+    router.push({ path: '/resetPassword', query: { email: formData.value.email } });
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -109,12 +113,15 @@ const submit = async () => {
 <style lang="scss" scoped>
 .login {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #f7f8f9;
   .left {
+    flex: none;
     width: 400px;
-    flex: auto;
+
     background-color: #f7f8f9;
     display: flex;
     flex-direction: column;

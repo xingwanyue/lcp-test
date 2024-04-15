@@ -67,7 +67,12 @@ const checkStatus = (result) => {
 };
 const hooks = {};
 export const fetchmy = (url, options) => {
-  return fetch(url, options)
+  return fetch(url, {
+    ...options,
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+    },
+  })
     .then(parseResponse)
     .then(checkStatus)
     .then((data) => {

@@ -1,4 +1,16 @@
 <script setup lang="ts">
+//
+const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
+  server: false,
+})) as any;
+
+if (buyData.value) {
+  buyData.value.forEach((item: any) => {
+    item.data = JSON.parse(item.data);
+  });
+  console.log(buyData.value);
+}
+
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
@@ -37,6 +49,7 @@ const openOrCloseOneQuestion = (item: any) => {
 import online from '../public/img/pricing/online.svg';
 import email from '../public/img/pricing/email.svg';
 import message from '../public/img/pricing/message.svg';
+import payment from '../public/img/pricing/payment.png';
 const contaceUsList = ref([
   {
     icon: online,
@@ -194,22 +207,30 @@ const makeMMembershipArr = () => {
             </div>
           </div>
         </div>
-        <div class="scroll_buyed">
-          <div class="scroll_buyed_left">
-            <div class="icon"><img src="../public/img/pricing/green_check.svg" /></div>
-            <div class="name">Sha****819</div>
-            <div class="type">purchased</div>
-            <div class="days">30-day membership</div>
-          </div>
-          <div class="scroll_buyed_right">
-            <div class="flag"><img src="../public/img/pricing/green_check.svg" /></div>
-            <div class="country_name">china</div>
-            <div class="time">20 mins ago</div>
-          </div>
+        <!-- {{buyData}} -->
+        <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
+          <Carousel :itemsToShow="1" :autoplay="0" :wrap-around="true" :pauseAutoplayOnHover="true">
+            <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
+              <div class="scroll_buyed_left">
+                <div class="icon"><img src="../public/img/pricing/green_check.svg" /></div>
+                <div class="name">{{ item.data.nickname }}</div>
+                <div class="type">purchased</div>
+                <div class="days">{{ item.data.examNum }}-day membership</div>
+              </div>
+              <div class="scroll_buyed_right">
+                <div class="flag"><img :src="item.data.avatar" /></div>
+                <div class="country_name">{{ item.data.country }}</div>
+                <div class="time">20 mins ago</div>
+              </div>
+            </Slide>
+          </Carousel>
         </div>
+
         <div class="bank_card">
           <div class="title">Secure Payment:</div>
-          <div class="img_self"></div>
+          <div class="img_self">
+            <img :src="payment" />
+          </div>
         </div>
       </div>
     </div>
@@ -517,87 +538,95 @@ const makeMMembershipArr = () => {
           }
         }
       }
-      .scroll_buyed {
-        padding: 16px 24px;
-        background: #fff4f1;
-        border-radius: 8px;
+      .scroll_buyed_wrapper {
+        height: 56px;
+        border: 1px #fff4f1 solid;
         margin-top: 32px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        // overflow: hidden;
-        @media (max-width: 846px) {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-gap: 16px;
-        }
-        .scroll_buyed_left {
+        .scroll_buyed {
+          // border: 1px red solid;
+          padding: 16px 24px;
+          background: #fff4f1;
+          border-radius: 8px;
+          width: 100%;
+
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          .icon {
-            width: 20px;
-            height: 20px;
-            img {
-              width: 100%;
-              height: 100%;
+          flex-wrap: wrap;
+          // overflow: hidden;
+          @media (max-width: 846px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 16px;
+          }
+          .scroll_buyed_left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .icon {
+              width: 20px;
+              height: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .name {
+              font-weight: 400;
+              font-size: 16px;
+              color: #201515;
+              margin-left: 12px;
+            }
+            .type {
+              font-weight: 400;
+              font-size: 16px;
+              color: #201515;
+              margin-left: 12px;
+            }
+            .days {
+              font-weight: 400;
+              font-size: 16px;
+              color: #f66442;
+              margin-left: 12px;
             }
           }
-          .name {
-            font-weight: 400;
-            font-size: 16px;
-            color: #201515;
-            margin-left: 12px;
-          }
-          .type {
-            font-weight: 400;
-            font-size: 16px;
-            color: #201515;
-            margin-left: 12px;
-          }
-          .days {
-            font-weight: 400;
-            font-size: 16px;
-            color: #f66442;
-            margin-left: 12px;
-          }
-        }
-        .scroll_buyed_right {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          flex: 1;
-          .flag {
-            width: 36px;
-            height: 24px;
-            //   border: 1px red solid;
-            margin-left: 40px;
-            //   margin-top: 10px;
-            position: relative;
-            @media (max-width: 846px) {
-              margin-left: 0px;
-            }
-            top: 2px;
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-          .country_name {
-            font-weight: 400;
-            font-size: 16px;
-            color: #201515;
-            margin-left: 16px;
+          .scroll_buyed_right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
             flex: 1;
-          }
-          .time {
-            font-weight: 400;
-            font-size: 16px;
-            color: #201515;
+            .flag {
+              width: 36px;
+              height: 24px;
+              //   border: 1px red solid;
+              margin-left: 40px;
+              //   margin-top: 10px;
+              position: relative;
+              @media (max-width: 846px) {
+                margin-left: 0px;
+              }
+              top: 2px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .country_name {
+              font-weight: 400;
+              font-size: 16px;
+              color: #201515;
+              margin-left: 16px;
+              flex: 1;
+            }
+            .time {
+              font-weight: 400;
+              font-size: 16px;
+              color: #201515;
+            }
           }
         }
       }
+
       .bank_card {
         display: flex;
         justify-content: center;
@@ -611,9 +640,13 @@ const makeMMembershipArr = () => {
           color: #403f3e;
         }
         .img_self {
-          width: 422px;
-          height: 40px;
-          border: 1px red solid;
+          max-width: 422px;
+
+          // border: 1px red solid;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
