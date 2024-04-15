@@ -2,7 +2,7 @@
 import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
-
+// 获取平台数据
 const {
   data: platformData = {
     v1Total: 0,
@@ -14,117 +14,48 @@ const {
   server: true,
 })) as any;
 
-const pinglun = [
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
+// 获取评论头部文字
+const { data: commentTopFont } = (await useFetch(`${api}/common/portalData?type=5`, {
+  type: 'get',
+  server: true,
+})) as any;
 
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make Rew things make me feel more powerful than setting up automatiome feel more powerful than setting up automatio.Rew things make me feel more powerful than setting up automatio',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-  {
-    name: 'Della Walsh',
-    countrt: 'China',
-    font: 'Rew things make me feel more powerful than setting up automatio.',
-    avatr: '',
-  },
-];
-let timer = null;
+// 获取评论数据
+const { data: userPingLun } = (await useFetch(`${api}/common/portalData?type=1`, {
+  type: 'get',
+  server: true,
+})) as any;
+let pinglunMid = ref([]);
+pinglunMid = userPingLun;
 // 将pinglun的数据两个两个的放到一起
 const pinglunArr = ref([]);
-const sockerArr = ref([
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: 'Beatrice Peterson', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-  { name: '666666666', country: '', date: '', socker: '', lit: '', com: '', con: '', prod: '' },
-]);
-const settings = {
-  prevArrow: null,
-  nextArrow: null,
-  arrows: false,
-  dots: false,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 2000,
-  cssEase: 'linear',
+const makePinglunData = () => {
+  for (let i = 0; i < pinglunMid.value.length; i += 2) {
+    pinglunMid.value[i].data = JSON.parse(pinglunMid.value[i].data);
+    pinglunMid.value[i + 1].data = JSON.parse(pinglunMid.value[i + 1].data);
+    pinglunMid.value[i].data.rate = Number(pinglunMid.value[i].data.rate);
+    pinglunMid.value[i + 1].data.rate = Number(pinglunMid.value[i + 1].data.rate);
+    pinglunArr.value.push([pinglunMid.value[i], pinglunMid.value[i + 1]]);
+  }
 };
-const prevArrow = '<button type="button" class="slick-prev">Previous</button>';
-const nextArrow = '<button type="button" class="slick-next">Next</button>';
+// 获取用户得分数据;
+const { data: usersockerArr = [] } = (await useFetch(`${api}/common/portalData?type=3`, {
+  type: 'get',
+  server: true,
+})) as any;
+
+// 获取用户得分数据 头部文案
+const { data: usersockerTopFont } = (await useFetch(`${api}/common/portalData?type=4`, {
+  type: 'get',
+  server: true,
+})) as any;
+
 onMounted(() => {
-  moveAnamit();
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
+    moveAnamit();
+  }
+  if (pinglunMid.value.length) {
     makePinglunData();
   }
 });
@@ -150,12 +81,6 @@ const moveAnamit = () => {
       index = 0;
     }
   }, 2000);
-};
-
-const makePinglunData = () => {
-  for (let i = 0; i < pinglun.length; i += 2) {
-    pinglunArr.value.push([pinglun[i], pinglun[i + 1]]);
-  }
 };
 
 // 将数字格式化 306281变为306k 3062811变为3061k
@@ -325,7 +250,7 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div class="title">Number of High Scorers (130+ Points)：{{ platformData.v1Total }}+</div>
+        <div v-if="usersockerTopFont.length" class="title">{{ usersockerTopFont[0].data }}</div>
         <div class="user_nums_out">
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData.userTotal) }}k</div>
@@ -343,9 +268,9 @@ const googleLogin = () => {
         <div class="btn_out">
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
         </div>
-        <div class="score_scroll_out">
+        <div v-if="usersockerArr.length" class="score_scroll_out">
           <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-            <Slide v-for="(item, index) in sockerArr" :key="index" class="one_score">
+            <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon"></div>
@@ -364,41 +289,45 @@ const googleLogin = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div class="review_title">Rated 4.8/5 based on 850+ reviews</div>
+        <div v-if="commentTopFont.length" class="review_title">{{ commentTopFont[0].data }}</div>
         <div class="review_scroll_out">
-          <div class="review_scroll_out_it">
+          <div v-if="pinglunArr.length" class="review_scroll_out_it">
             <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
-                        <div class="icon_touxiang"></div>
+                        <div class="icon_touxiang">
+                          <img :src="item[0].data.avatar" />
+                        </div>
                         <div class="name_out">
-                          <div class="name">{{ item[0].name }}</div>
-                          <div class="country">{{ item[0].countrt }}</div>
+                          <div class="name">{{ item[0].data.nickname }}</div>
+                          <div class="country">{{ item[0].data.country }}</div>
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <img src="../public/img/home/five_starts.svg" />
+                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
                       </div>
                     </div>
-                    <div class="one_card_font">{{ item[0].font }}</div>
+                    <div class="one_card_font">{{ item[0].data.content }}</div>
                   </div>
                   <div class="one_card" style="margin-top: 24px">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
-                        <div class="icon_touxiang"></div>
+                        <div class="icon_touxiang">
+                          <img :src="item[0].data.avatar" />
+                        </div>
                         <div class="name_out">
-                          <div class="name">{{ item[1].name }}</div>
-                          <div class="country">{{ item[1].countrt }}</div>
+                          <div class="name">{{ item[1].data.nickname }}</div>
+                          <div class="country">{{ item[1].data.country }}</div>
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <img src="../public/img/home/five_starts.svg" />
+                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
                       </div>
                     </div>
-                    <div class="one_card_font">{{ item[1].font }}</div>
+                    <div class="one_card_font">{{ item[1].data.content }}</div>
                   </div>
                 </div>
               </Slide>
@@ -901,7 +830,12 @@ const googleLogin = () => {
                 .icon_touxiang {
                   width: 48px;
                   height: 48px;
-                  border: 1px red solid;
+                  flex-shrink: 0;
+                  // border: 1px red solid;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
                 }
                 .name_out {
                   .name {
@@ -920,8 +854,9 @@ const googleLogin = () => {
                 }
               }
               .one_card_top_right {
-                width: 116px;
-                height: 19px;
+                :deep(.el-rate .el-rate__icon) {
+                  font-size: 28px;
+                }
               }
             }
             .one_card_font {
