@@ -13,9 +13,9 @@ import emailImg from '@/public/img/aboutus/email.svg';
 const router = useRouter();
 const route = useRoute();
 const ruleFormRef = ref<FormInstance>();
-const formData = ref({}) as any;
 const state = reactive({
   loading: false,
+  formData: {} as any,
 });
 onMounted(() => { });
 const rules = reactive({
@@ -32,14 +32,17 @@ const submit = async () => {
     state.loading = true;
     if (valid) {
       // 验证通过
-      const data = await useFetch(`${portalContact}`, {
+      const { data } = await useFetch(`${portalContact}`, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(state.formData),
       });
-      ElMessage({ type: 'success', message: 'Submitted successfully' });
+      if (data?.value) {
+        ElMessage({ type: 'success', message: 'Submitted successfully' });
+        state.formData = {};
+      }
     }
     state.loading = false;
   });
@@ -68,16 +71,16 @@ const submit = async () => {
         </div>
       </div>
       <div class="right">
-        <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
+        <el-form ref="ruleFormRef" :rules="rules" :model="state.formData" size="default" class="login-form"
           @submit.native.prevent>
           <el-form-item prop="name" label="">
-            <el-input v-model="formData.name" placeholder="Name"> </el-input>
+            <el-input v-model="state.formData.name" placeholder="Name"> </el-input>
           </el-form-item>
           <el-form-item prop="email" label="">
-            <el-input v-model="formData.email" placeholder="Email Address"> </el-input>
+            <el-input v-model="state.formData.email" placeholder="Email Address"> </el-input>
           </el-form-item>
           <el-form-item prop="message" label="">
-            <el-input v-model="formData.message" type="textarea" :rows="6" placeholder="Message"> </el-input>
+            <el-input v-model="state.formData.message" type="textarea" :rows="6" placeholder="Message"> </el-input>
           </el-form-item>
           <el-form-item style="margin-top: 24px; margin-bottom: 16px">
             <el-button v-loading="state.loading" class="submit" @click="submit">
