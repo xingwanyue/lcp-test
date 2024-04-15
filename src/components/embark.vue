@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useStore } from '@/store';
+const store = useStore();
+const user = computed(() => store.user);
+</script>
 
 <template>
   <div class="embark_out_wrapper">

@@ -1,11 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useStore } from '@/store';
+const store = useStore();
+const user = computed(() => store.user);
+</script>
 
 <template>
   <div class="slogen_out_wrapper">
     <div class="slogen_out">
       <div class="font1">Embark on your journey to high scores on</div>
       <div class="font2">Duolingo English Test !</div>
-      <div class="two_btn_out">
+      <div v-if="!user.id" class="two_btn_out">
         <div class="common_btn common_btn_hover_bgColor yellow">
           <img src="../public/img/home/google_icon.svg" />
           Start free with Google
