@@ -7,6 +7,7 @@ const { t } = useI18n();
 
 const store = useStore();
 const user = computed(() => store.user);
+console.log(user.value);
 
 const groupList1Img = staticPcUrlGet('group/list-1.png');
 const groupList2Img = staticPcUrlGet('group/list-2.png');
@@ -22,6 +23,7 @@ watch(pathname, (val) => {
 });
 onMounted(() => {
   changeHeaderColor(pathname.value);
+  store.getUserInfo();
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {

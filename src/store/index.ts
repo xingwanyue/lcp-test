@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
-import isEmpty from 'lodash/isEmpty';
-import { api, saveToken } from '@/utils';
+// import isEmpty from 'lodash/isEmpty';
+import { api, saveToken, getToken, removeToken } from '@/utils';
+import { fetchmy } from '@/utils/request';
 
 export const useStore = defineStore({
   id: 'base',
@@ -35,11 +36,10 @@ export const useStore = defineStore({
       });
       const { token, user } = await res.json();
       this.user = user;
-      localStorage.setItem('det_token', token);
-      // saveToken(token, true);
+      saveToken(token, true);
     },
     async userClickLogin(args: any) {
-      const res = await fetch(`${api}/common/login`, {
+      const res = await fetchmy(`${api}/common/login`, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
@@ -49,30 +49,32 @@ export const useStore = defineStore({
           type: 'pc',
         }),
       });
-      const { token, user } = await res.json();
-      this.user = user;
-      saveToken(token, true);
+
       return res;
     },
     async getUserInfo() {
       try {
-        if (!localStorage.getItem('det_token') || !isEmpty(this.user)) {
-          return;
-        }
+        const token = await getToken(false);
+        // if (!localStorage.getItem('det_token') || !isEmpty(this.user)) {
+        //   return;
+        // }
         const res = await fetch(`${api}/userInfo`, {
           method: 'get',
           headers: {
-            Authorization: `Bearer ${localStorage.getItem('det_token')}`,
+            Authorization: `Bearer ${token}`,
             'Content-Type': 'application/sss',
           },
         });
+
         if (res.status === 401) {
-          localStorage.removeItem('det_token');
+          removeToken();
         } else {
           const { user } = await res.json();
           this.user = user;
         }
-      } catch (e) {}
+      } catch (e) {
+        console.log(e);
+      }
     },
     async userChangeLanguage(language: string) {
       this.userSelectLanguage = language;

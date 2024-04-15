@@ -62,10 +62,10 @@ const submit = async () => {
     email: formData.value.email,
     password: formData.value.password,
   });
-  console.log(err);
-  console.log(data);
+
   if (!err) {
     await saveToken(token, true);
+    console.log('store.getUserInfo');
     await store.getUserInfo();
     router.push(url);
   } else {
