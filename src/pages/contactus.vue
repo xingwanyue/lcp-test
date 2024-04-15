@@ -32,14 +32,14 @@ const submit = async () => {
     state.loading = true;
     if (valid) {
       // 验证通过
-      const { data } = await useFetch(`${portalContact}`, {
+      const { err } = await useFetch(`${portalContact}`, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(state.formData),
-      });
-      if (data?.value) {
+      }) as any;
+      if (!err) {
         ElMessage({ type: 'success', message: 'Submitted successfully' });
         state.formData = {};
       }
@@ -132,7 +132,7 @@ const submit = async () => {
   .content{
     max-width: 1200px;
     margin: auto;
-    padding: 100px 0px;
+    padding: 100px 30px;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -189,20 +189,67 @@ const submit = async () => {
   }
 }
 @media (max-width: 800px){
-.contactus{
-  .learn_hader {
-    text-align: center;
-    background: #fff4f1;
-    .learn_hader_content {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 20px 14px 12px;
-      .title {
-        font-size: 24px;
+  .contactus{
+    .learn_hader {
+      text-align: center;
+      background: #fff4f1;
+      .learn_hader_content {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 14px 12px;
+        .title {
+          font-size: 24px;
           line-height: 30px;
+        }
+        .title2{
+          font-size: 14px;
+          line-height: 22px;
+          margin-top: 12px;
+        }
+      }
+    }
+    .content{
+      max-width: calc(100% - 30px);
+      padding: 50px 15px;
+      display: block;
+    }
+    .left{
+      width: 100%;
+      .title{
+        font-size: 22px;
+      }
+      .desc{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 20px;
+      }
+      .info{
+        margin-top: 24px;
+        .email-img{
+          width: 44px;
+          height: 44px;
+        }
+        .info-right{
+          margin-left: 8px;
+        }
+        .name{
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .address{
+          font-size: 14px;
+          line-height: 16px;
+          margin-top: 4px;
+        }
+      }
+    }
+    .right{
+      width: 100%;
+      margin-top: 12px;
+      .submit{
+        width: 100%;
       }
     }
   }
-}
 }
 </style>
