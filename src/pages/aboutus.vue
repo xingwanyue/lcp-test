@@ -2,39 +2,14 @@
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
-import { ref } from 'vue'
+import { ref } from 'vue';
 import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 
 const router = useRouter();
 const route = useRoute();
 const rate = ref(0);
-const state = reactive({
-  list: [] as any,
-  details: {} as any,
-  checkId: '',
-  rate,
-  rateArr: [] as any,
-});
-onMounted(() => {
-  state.rateArr = JSON.parse(localStorage.getItem('det_rate') || '[]');
-  getList();
-});
-const getList = async () => {
-  state.list = [
-    { id: '1', name: 'OverView of Duolingo English Test1', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  ];
-  const { id = '1' } = route.query as any;
-  getContent(id);
-};
-const getContent = async (id: string) => {
-  state.checkId = id;
-  const temp = _.find(state.list, { id }) || {};
-  state.details = { ...temp };
-  const { rate } = _.find(state.rateArr, { id: id }) || {};
-  state.rate = rate;
-};
+const state = reactive({});
+onMounted(() => { });
 
 </script>
 <template>

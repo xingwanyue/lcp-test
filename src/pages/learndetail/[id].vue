@@ -42,7 +42,7 @@ const rateChange = async () => {
   rateArr.push({ id: state.details.id, rate: state.rate });
   localStorage.setItem('det_rate', JSON.stringify(rateArr));
   // 
-  const data = await useFetch(`${rateAdd}`, {
+  await useFetch(`${rateAdd}`, {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
@@ -52,7 +52,6 @@ const rateChange = async () => {
       rate: state.rate,
     }),
   });
-  console.log(data);
 };
 </script>
 <template>

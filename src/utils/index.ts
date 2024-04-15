@@ -71,3 +71,4 @@ export function getTree(data = [], sid: any, pid = null) {
   });
   return children.length ? children : undefined;
 }
+export const portalContact = `${api}/common/portalContact`;
