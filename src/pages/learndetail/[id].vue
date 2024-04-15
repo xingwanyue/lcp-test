@@ -3,6 +3,7 @@ import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue';
+import { ElMessage } from 'element-plus';
 import { articleGet, rateAdd } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
@@ -42,7 +43,7 @@ const rateChange = async () => {
   rateArr.push({ id: state.details.id, rate: state.rate });
   localStorage.setItem('det_rate', JSON.stringify(rateArr));
   // 
-  await useFetch(`${rateAdd}`, {
+  const { err } = await useFetch(`${rateAdd}`, {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
@@ -51,7 +52,10 @@ const rateChange = async () => {
       articleId: state.checkId,
       rate: state.rate,
     }),
-  });
+  }) as any;
+  if (!err) {
+    ElMessage({ type: 'success', message: 'Submitted successfully' });
+  }
 };
 </script>
 <template>
