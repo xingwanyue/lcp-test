@@ -58,10 +58,12 @@ const submit = async () => {
     return false;
   }
   loading.value = true;
-  const { err, data: { token } = {} } = await store.login({
+  const { err, data: { token } = {} } = await store.userClickLogin({
     email: formData.value.email,
     password: formData.value.password,
   });
+  console.log(err);
+  console.log(data);
   if (!err) {
     await saveToken(token, true);
     await store.getUserInfo();
@@ -71,14 +73,6 @@ const submit = async () => {
     errMessage.value = err.message;
   }
   loading.value = false;
-};
-
-const goForget = () => {
-  router.push('/forget');
-};
-
-const goRegister = () => {
-  router.push('/register');
 };
 
 const googleLogin = async () => {
@@ -114,7 +108,7 @@ const googleLogin = async () => {
             <img :src="errIcon" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
-          <div>
+          <div class="login_btn_out">
             <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
               Login
             </el-button>
@@ -123,11 +117,11 @@ const googleLogin = async () => {
         <el-form-item>
           <div class="zhuce">
             <div class="goforget">
-              <span style="cursor: pointer" @click="goForget">Forgot password?</span>
+              <NuxtLink :to="localePath('/forget')" style="cursor: pointer">Forgot password?</NuxtLink>
             </div>
             <div class="goregister">
               Don't have an account?
-              <span style="color: #f66442; cursor: pointer" @click="goRegister">Sign up here</span>
+              <NuxtLink :to="localePath('/register')" style="color: #f66442; cursor: pointer">Sign up here</NuxtLink>
             </div>
           </div>
         </el-form-item>
@@ -139,6 +133,14 @@ const googleLogin = async () => {
 
 <style lang="scss">
 .login {
+  .login_btn_out {
+    // border: 1px red solid;
+    border-radius: 25px;
+    background-color: red;
+    .el-loading-mask {
+      border-radius: 25px;
+    }
+  }
   .submit {
     width: 400px;
     border-radius: 25px;
