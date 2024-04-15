@@ -16,13 +16,11 @@ const {
 
 // 获取评论头部文字
 const { data: commentTopFont } = (await useFetch(`${api}/common/portalData?type=5`, {
-  type: 'get',
   server: true,
 })) as any;
 
 // 获取评论数据
 const { data: userPingLun } = (await useFetch(`${api}/common/portalData?type=1`, {
-  type: 'get',
   server: true,
 })) as any;
 let pinglunMid = ref([]);
@@ -40,13 +38,11 @@ const makePinglunData = () => {
 };
 // 获取用户得分数据;
 const { data: usersockerArr = [] } = (await useFetch(`${api}/common/portalData?type=3`, {
-  type: 'get',
   server: true,
 })) as any;
 
 // 获取用户得分数据 头部文案
 const { data: usersockerTopFont } = (await useFetch(`${api}/common/portalData?type=4`, {
-  type: 'get',
   server: true,
 })) as any;
 
