@@ -22,7 +22,7 @@ const state = reactive({
 onMounted(() => {
   state.played = JSON.parse(localStorage.getItem('det_listen') || '[]');
 });
-
+const selectChange = async () => { };
 const listClick = async (val: any) => {
   state.playData = { ...val };
   if (!_.find(state.played, { id: val.id })) {
@@ -39,9 +39,14 @@ const playClick = (val: any) => { };
 <template>
   <div class="listen-page">
     <div class="listen-head">
-      <div class="title">＜ Speaking practice audio</div>
+      <div class="title">
+        ＜ Speaking practice audio
+        <!-- <nuxt-link :to="localePath(``)" class="">
+          ＜ Speaking practice audio
+        </nuxt-link> -->
+      </div>
       <div>
-        <el-radio-group v-model="state.type" size="large">
+        <el-radio-group v-model="state.type" size="large" @change="selectChange">
           <el-radio-button label="Listen then speak" value="1" />
           <el-radio-button label="Sample answer" value="2" />
         </el-radio-group>
@@ -51,11 +56,14 @@ const playClick = (val: any) => { };
       <div v-for="(val, key) in state.list" :key="key"
         :class="`list ${state.playData.id === val.id ? 'list1' : ''} ${getPlayed(val)}`" @click="listClick(val)">
         <div class="title">{{ val.name }}</div>
-        <el-image :src="playImg" class="play-img" @click="playClick(val)"></el-image>
-        <el-image v-if="state.playData.id === val.id" :src="playingImg" class="playing-img"></el-image>
-        <el-image :src="pauseImg" class="pause-img" @click="pauseClick(val)"></el-image>
+        <el-image :id="`play-img${key}`" :key="key" :src="playImg" class="play-img" @click="playClick(val)"></el-image>
+        <el-image v-if="state.playData.id === val.id" :key="key" :id="`playing-img${key}`" :src="playingImg"
+          class="playing-img"></el-image>
+        <el-image :id="`pause-img${key}`" :key="key" :src="pauseImg" class="pause-img"
+          @click="pauseClick(val)"></el-image>
       </div>
     </div>
+    <audio :src="state.playData.filePath" controls type="audio/wav" class="listen-audio"></audio>
   </div>
 </template>
 <style lang="scss">
@@ -96,7 +104,6 @@ const playClick = (val: any) => { };
     border-top:1px solid #E9E9E9;
     .list{
       width: 100%;
-      height: 56px;
       box-sizing: border-box;
       border-bottom:1px solid #E9E9E9;
       padding:16px 78px 16px 24px;
@@ -105,6 +112,7 @@ const playClick = (val: any) => { };
       cursor: pointer;
       color: #403F3E;
       font-size: 16px;
+      line-height: 24px;
       &:hover{
         background: #F2F4F6;
         .play-img{
@@ -130,7 +138,7 @@ const playClick = (val: any) => { };
           display: block;
         }
         .play-img, .playing-img{
-          display: none !important;
+          display: none;
         }
       }
     }
@@ -138,9 +146,43 @@ const playClick = (val: any) => { };
       color: rgba(64,63,62,0.65);
     }
   }
+  .listen-audio{
+    display: none;
+  }
 }
 @media (max-width: 800px){
- .listen-page{
- }
+  .listen-page{
+    max-width: 100%;
+    padding: 20px 15px;
+    margin: auto;
+    box-sizing: border-box;
+    .listen-head{
+      display: block;
+      .title{
+        margin-bottom: 24px;
+      }
+    }
+    .listen-con{
+      max-width: 100%;
+      margin-top: 16px;
+      .list{
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom:1px solid #E9E9E9;
+        padding:8px 40px 8px 12px;
+        .play-img{
+          display: block !important;
+        }
+      }
+      .list1{
+        .pause-img, .play-img{
+          display: none !important;
+        }
+        .playing-img{
+          display: block !important;
+        }
+      }
+    }
+  }
 }
 </style>
