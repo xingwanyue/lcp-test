@@ -73,19 +73,19 @@ const link_arr = [
     list: [
       {
         name: 'About us',
-        url: '/aboutus',
+        url: '/company/aboutus',
       },
       {
         name: 'Contact us',
-        url: '/contactus',
+        url: '/company/contactus',
       },
       {
         name: 'Terms and Conditions',
-        url: '/product1',
+        url: '/company/termsService',
       },
       {
         name: 'Privacy Policy',
-        url: '/product1',
+        url: '/company/privacyPolicy',
       },
     ],
   },

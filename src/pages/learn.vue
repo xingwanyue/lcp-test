@@ -47,10 +47,6 @@ const selCheck = (v: any) => {
 const handleClose = () => {
   state.drawerVisible = false;
 };
-// learn
-// const goInfo = (val: any) => {
-//   router.push({ path: '/learndetail', query: { id: val.id || '1' } });
-// };
 const handleChange = () => {
   state.selFatherData = _.find(state.selectList, { id: activeName.value }) || {};
 };

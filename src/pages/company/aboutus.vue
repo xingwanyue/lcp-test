@@ -1,13 +1,7 @@
 <script lang="ts" setup>
-import { reactive, computed, onMounted } from 'vue';
-import _ from 'lodash';
-import { useRouter, useRoute } from 'vue-router';
-import { ref } from 'vue';
+import { reactive, onMounted } from 'vue';
 import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 
-const router = useRouter();
-const route = useRoute();
-const rate = ref(0);
 const state = reactive({});
 onMounted(() => { });
 
@@ -171,6 +165,7 @@ onMounted(() => { });
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
+    box-sizing: border-box;
     .title{
       font-weight: 500;
       font-size: 28px;

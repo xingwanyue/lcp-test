@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue';
 import { ElMessage } from 'element-plus';
-import { articleGet, rateAdd } from '@/utils';
+import { articleGet, rateAdd, saveStorage, getStorage } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
 // const localePath = useLocalePath();
@@ -19,7 +19,7 @@ const state = reactive({
   rateArr: [] as any,
 });
 onMounted(() => {
-  state.rateArr = JSON.parse(localStorage.getItem('det_rate') || '[]');
+  state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
   getList();
 });
 const getList = async () => {
@@ -39,9 +39,9 @@ const getContent = async (id: string) => {
 };
 
 const rateChange = async () => {
-  const rateArr = JSON.parse(localStorage.getItem('det_rate') || '[]');
+  const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.details.id, rate: state.rate });
-  localStorage.setItem('det_rate', JSON.stringify(rateArr));
+  saveStorage('det_rate', JSON.stringify(rateArr), true);
   // 
   const { err } = await useFetch(`${rateAdd}`, {
     method: 'post',

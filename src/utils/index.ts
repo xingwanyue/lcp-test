@@ -34,7 +34,7 @@ export const setCatchePrefix = (prefix: String) => {
   defaultCachePrefix = `${prefix}_`;
 };
 
-export const saveStorage = (key: String, value: String, remeber: Boolean) => {
+export const saveStorage = (key: String, value: String, remeber?: Boolean) => {
   (remeber ? localStorage : sessionStorage)[`${defaultCachePrefix}${key}`] = value;
 };
 export const getStorage = (key: String) => {
