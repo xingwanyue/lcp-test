@@ -22,38 +22,6 @@ onMounted(() => {
   getSelect();
 });
 const getSelect = async () => {
-  // state.selectList = [
-  //   {
-  //     name: 'Test Info',
-  //     id: '1',
-  //     children: [
-  //       { name: 'Overview', id: '11' },
-  //       { name: 'Read and Complete', id: '12' },
-  //       { name: 'Read and Select', id: '13' },
-  //       { name: 'Listen and Type', id: '14' },
-  //     ],
-  //   },
-  //   {
-  //     name: 'Test Scores',
-  //     id: '2',
-  //     children: [
-  //       { name: 'Overview', id: '21' },
-  //       { name: 'Read and Complete', id: '22' },
-  //       { name: 'Read and Select', id: '23' },
-  //       { name: 'Listen and Type', id: '24' },
-  //     ],
-  //   },
-  //   {
-  //     name: 'Some Advice',
-  //     id: '3',
-  //     children: [
-  //       { name: 'Overview', id: '31' },
-  //       { name: 'Read and Complete', id: '32' },
-  //       { name: 'Read and Select', id: '33' },
-  //       { name: 'Listen and Type', id: '34' },
-  //     ],
-  //   },
-  // ];
   const { data = {} } = await useFetch(`${articleCategoryGet}?`, { server: true }) as any;
   state.selectList = getTree(data.value, null, null);
   // 默认第一个
@@ -62,11 +30,6 @@ const getSelect = async () => {
   getInfo();
 };
 const getInfo = async () => {
-  // state.infoList = [
-  //   { id: '1', name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  //   { id: '2', name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  //   { id: '3', name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  // ];
   // 需要传左侧的类型
   const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${state.selConData.id}`, { server: true }) as any;
   state.infoList = value?.data;
@@ -122,7 +85,7 @@ const handleChange = () => {
         </div>
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
-            <nuxt-link :to="localePath(`/learndetail/${val.id || '1'}`)" class="r-list">
+            <nuxt-link :to="localePath(`/learndetail/${val.id}?type=${state.selConData.id}`)" class="r-list">
               <div class="title">{{ val.title }}</div>
               <div class="description">{{ val.description }}</div>
             </nuxt-link>
@@ -269,6 +232,7 @@ const handleChange = () => {
       max-width: 1200px;
       margin: 0 auto;
       margin-top: 100px;
+      margin-bottom: 120px;
       display: flex;
       justify-content: space-between;
     }
@@ -347,7 +311,6 @@ const handleChange = () => {
       line-height: 28px;
       text-decoration-line: underline;
       text-align: center;
-      margin: 0px 0px 120px 0px;
       cursor: pointer;
     }
   }
@@ -359,6 +322,7 @@ const handleChange = () => {
         max-width: 100%;
         margin: 0 auto;
         margin-top: 50px;
+        margin-bottom: 40px;
         display: block;
       }
     }
@@ -383,9 +347,6 @@ const handleChange = () => {
           line-height: 21px;
           margin-top: 12px;
         }
-      }
-      .more{
-        margin: 0px 0px 40px 0px;
       }
     }
     .select{

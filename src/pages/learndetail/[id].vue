@@ -22,14 +22,10 @@ onMounted(() => {
   getList();
 });
 const getList = async () => {
-  // state.list = [
-  //   { id: '1', name: 'OverView of Duolingo English Test1', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  //   { id: '2', name: 'OverView of Duolingo English Test2', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  //   { id: '3', name: 'OverView of Duolingo English Test3', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  // ];
   // 需要传左侧的类型
-  const { id = '1' } = route.params as any;
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${1}`, { server: true }) as any;
+  const { id = '' } = route.params as any;
+  const { type = '' } = route.query as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${type}`, { server: true }) as any;
   state.list = value?.data;
   getContent(id);
 };
