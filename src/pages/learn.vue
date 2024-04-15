@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { articleGet, articleCategoryGet } from '@/utils';
+import { articleGet, articleCategoryGet, getTree } from '@/utils';
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
 import { ref } from 'vue';
@@ -22,54 +22,17 @@ onMounted(() => {
   getSelect();
 });
 const getSelect = async () => {
-  state.selectList = [
-    {
-      name: 'Test Info',
-      code: '1',
-      content: [
-        { name: 'Overview', code: '1' },
-        { name: 'Read and Complete', code: '2' },
-        { name: 'Read and Select', code: '3' },
-        { name: 'Listen and Type', code: '4' },
-      ],
-    },
-    {
-      name: 'Test Scores',
-      code: '2',
-      content: [
-        { name: 'Overview', code: '1' },
-        { name: 'Read and Complete', code: '2' },
-        { name: 'Read and Select', code: '3' },
-        { name: 'Listen and Type', code: '4' },
-      ],
-    },
-    {
-      name: 'Some Advice',
-      code: '3',
-      content: [
-        { name: 'Overview', code: '1' },
-        { name: 'Read and Complete', code: '2' },
-        { name: 'Read and Select', code: '3' },
-        { name: 'Listen and Type', code: '4' },
-      ],
-    },
-  ];
   const { data = {} } = await useFetch(`${articleCategoryGet}?`, { server: true }) as any;
-  const temp = data.value?.data;
-  console.log('ffff:', temp);
+  state.selectList = getTree(data.value, null, null);
   // 默认第一个
   state.selFatherData = _.head(state.selectList) || {};
-  state.selConData = _.head(state.selFatherData.content) || {};
+  state.selConData = _.head(state.selFatherData.children) || {};
   getInfo();
 };
 const getInfo = async () => {
-  state.infoList = [
-    { name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    { name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-    { name: 'OverView of Duolingo English Test', desc: 'Discover over 100 heartfelt Islamic messages for the sick person in this article. Inspire wellness and comfort with these powerful words of encouragement.' },
-  ];
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${1}`, { server: true }) as any;
-  console.log(value?.data, 'data');
+  // 需要传左侧的类型
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${state.selConData.id}`, { server: true }) as any;
+  state.infoList = value?.data;
 };
 const getMore = () => {
   state.isMore = true;
@@ -79,16 +42,17 @@ const selCheck = (v: any) => {
   state.selConData = v;
   state.drawerVisible = false;
   state.isMore = false;
+  getInfo();
 };
 const handleClose = () => {
   state.drawerVisible = false;
 };
 // learn
 // const goInfo = (val: any) => {
-//   router.push({ path: '/learndetail', query: { id: val.code || '1' } });
+//   router.push({ path: '/learndetail', query: { id: val.id || '1' } });
 // };
 const handleChange = () => {
-  state.selFatherData = _.find(state.selectList, { code: activeName.value }) || {};
+  state.selFatherData = _.find(state.selectList, { id: activeName.value }) || {};
 };
 </script>
 <template>
@@ -109,10 +73,10 @@ const handleChange = () => {
         </div>
         <div class="left">
           <el-collapse v-model="activeName" accordion @change="handleChange">
-            <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code"
-              :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.code === val.code ? 'expand' : ''}`">
-              <div v-for="(v, k) in val.content" :key="k"
-                :class="`title sel-list ${state.selFatherData.code === val.code && state.selConData.code === v.code ? 'sel-list-checked' : ''}`"
+            <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.id"
+              :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`">
+              <div v-for="(v, k) in val.children" :key="k"
+                :class="`title sel-list ${state.selConData.id === v.id ? 'sel-list-checked' : ''}`"
                 @click="selCheck(v)">
                 {{ v.name }}
               </div>
@@ -121,9 +85,9 @@ const handleChange = () => {
         </div>
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
-            <nuxt-link :to="localePath(`/learndetail/${val.id || '1'}`)" class="r-list">
-              <div class="title">{{ val.name }}</div>
-              <div class="description">{{ val.desc }}</div>
+            <nuxt-link :to="localePath(`/learndetail/${val.id}?type=${state.selConData.id}`)" class="r-list">
+              <div class="title">{{ val.title }}</div>
+              <div class="description">{{ val.description }}</div>
             </nuxt-link>
           </div>
           <div class="more" @click="getMore">Show more</div>
@@ -131,10 +95,10 @@ const handleChange = () => {
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
         <el-collapse v-model="activeName" accordion @change="handleChange">
-          <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.code"
-            :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.code === val.code ? 'expand' : ''}`">
-            <div v-for="(v, k) in val.content" :key="k"
-              :class="`title sel-list ${state.selFatherData.code === val.code && state.selConData.code === v.code ? 'sel-list-checked' : ''}`"
+          <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.id"
+            :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`">
+            <div v-for="(v, k) in val.children" :key="k"
+              :class="`title sel-list ${state.selFatherData.id === val.id && state.selConData.id === v.id ? 'sel-list-checked' : ''}`"
               @click="selCheck(v)">
               {{ v.name }}
             </div>
@@ -268,6 +232,7 @@ const handleChange = () => {
       max-width: 1200px;
       margin: 0 auto;
       margin-top: 100px;
+      margin-bottom: 120px;
       display: flex;
       justify-content: space-between;
     }
@@ -313,6 +278,7 @@ const handleChange = () => {
     color:#F66442;
   }
   .right{
+    width: 100%;
     max-width: 900px;
     margin-left: 24px;
     .r-list{
@@ -345,7 +311,6 @@ const handleChange = () => {
       line-height: 28px;
       text-decoration-line: underline;
       text-align: center;
-      margin: 0px 0px 120px 0px;
       cursor: pointer;
     }
   }
@@ -357,6 +322,7 @@ const handleChange = () => {
         max-width: 100%;
         margin: 0 auto;
         margin-top: 50px;
+        margin-bottom: 40px;
         display: block;
       }
     }
@@ -381,9 +347,6 @@ const handleChange = () => {
           line-height: 21px;
           margin-top: 12px;
         }
-      }
-      .more{
-        margin: 0px 0px 40px 0px;
       }
     }
     .select{

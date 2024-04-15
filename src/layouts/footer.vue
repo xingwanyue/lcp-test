@@ -77,7 +77,7 @@ const link_arr = [
       },
       {
         name: 'Contact us',
-        url: '/product1',
+        url: '/contactus',
       },
       {
         name: 'Terms and Conditions',
