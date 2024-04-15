@@ -23,7 +23,7 @@ onMounted(() => {
 });
 const getSelect = async () => {
   const { data = {} } = await useFetch(`${articleCategoryGet}?`, { server: true }) as any;
-  state.selectList = getTree(data.value, null, null);
+  state.selectList = getTree(_.filter(data.value, v => v.type === '2') as any, null, null);
   // 默认第一个
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.children) || {};
@@ -31,7 +31,7 @@ const getSelect = async () => {
 };
 const getInfo = async () => {
   // 需要传左侧的类型
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${state.selConData.id}`, { server: true }) as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${state.selConData.id}`, { server: true }) as any;
   state.infoList = value?.data;
 };
 const getMore = () => {
