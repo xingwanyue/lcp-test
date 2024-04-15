@@ -122,6 +122,7 @@ const rateChange = async () => {
     display: flex;
     margin-top: 64px;
     padding: 0px 30px;
+    box-sizing: border-box;
     .article-con{
       width: 100%;
       margin-right: 24px;
