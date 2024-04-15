@@ -41,7 +41,7 @@ const getContent = async (id: string) => {
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.details.id, rate: state.rate });
-  saveStorage('det_rate', JSON.stringify(rateArr));
+  saveStorage('det_rate', JSON.stringify(rateArr), true);
   // 
   const { err } = await useFetch(`${rateAdd}`, {
     method: 'post',

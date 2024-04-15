@@ -28,7 +28,7 @@ const listClick = async (val: any) => {
   state.playData = { ...val };
   if (!_.find(state.played, { id: val.id })) {
     state.played.push(val);
-    saveStorage('det_listen', JSON.stringify(state.played));
+    saveStorage('det_listen', JSON.stringify(state.played), true);
   }
 };
 const getPlayed = (val: any) => {
