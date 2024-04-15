@@ -1,13 +1,7 @@
 <script lang="ts" setup>
-import { reactive, computed, onMounted } from 'vue';
-import _ from 'lodash';
-import { useRouter, useRoute } from 'vue-router';
-import { ref } from 'vue';
+import { reactive, onMounted } from 'vue';
 import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 
-const router = useRouter();
-const route = useRoute();
-const rate = ref(0);
 const state = reactive({});
 onMounted(() => { });
 

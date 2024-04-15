@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
+import { saveStorage, getStorage } from '@/utils';
 import { useRouter, useRoute } from 'vue-router';
 import playImg from '@/public/img/listen/play.svg';
 import playingImg from '@/public/img/listen/playing.svg';
@@ -20,14 +21,14 @@ const state = reactive({
   played: [] as any,
 });
 onMounted(() => {
-  state.played = JSON.parse(localStorage.getItem('det_listen') || '[]');
+  state.played = JSON.parse(getStorage('det_listen') || '[]');
 });
 const selectChange = async () => { };
 const listClick = async (val: any) => {
   state.playData = { ...val };
   if (!_.find(state.played, { id: val.id })) {
     state.played.push(val);
-    localStorage.setItem('det_listen', JSON.stringify(state.played));
+    saveStorage('det_listen', JSON.stringify(state.played));
   }
 };
 const getPlayed = (val: any) => {
