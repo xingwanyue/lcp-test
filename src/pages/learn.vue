@@ -34,8 +34,15 @@ const getSelect = async () => {
 };
 const getInfo = async () => {
   // 需要传左侧的类型
-  const args = `categoryId=${state.selConData.id}&page=${state.page}&pageSize=${state.pageSize}`;
-  const { data: { value = {} } = {}, total = 0 } = await useFetch(`${articleGet}?${args}`, { server: true }) as any;
+  const args = {
+    categoryId: state.selConData.id,
+    page: state.page,
+    pageSize: state.pageSize,
+  };
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}`, {
+    server: true,
+    query: { ...args },
+  }) as any;
   state.total = value?.total;
   if (state.isMore) {
     state.infoList = [...state.infoList, ...value?.data];
