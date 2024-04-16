@@ -5,92 +5,92 @@ import { useStore } from '@/store';
 const localePath = useLocalePath();
 const store = useStore();
 const { locale, t } = useI18n();
-const link_arr = [
-  {
-    name: 'Products',
-    list: [
-      {
-        name: 'DET Practice',
-        url: '/products/bank',
-      },
-      {
-        name: 'AI Correction Service',
-        url: '/products/service',
-      },
-      {
-        name: 'DET Mock',
-        url: '/products/mock',
-      },
-      {
-        name: 'Duolingo English Test Course',
-        url: '/products/guide',
-      },
-    ],
+const link_arr = [];
+const prod = {
+  name: 'Products',
+  list: [
+    {
+      name: 'DET Practice',
+      url: '/products/bank',
+    },
+    {
+      name: 'AI Correction Service',
+      url: '/products/service',
+    },
+    {
+      name: 'DET Mock',
+      url: '/products/mock',
+    },
+    {
+      name: 'Duolingo English Test Course',
+      url: '/products/guide',
+    },
+  ],
+};
+const Learn = ref({
+  name: 'Learn',
+  list: [
+    {
+      name: 'Duolingo English Test',
+      url: '/product1',
+    },
+    {
+      name: 'Read and Complete',
+      url: '/product1',
+    },
+    {
+      name: 'Read and Select',
+      url: '/product1',
+    },
+    {
+      name: 'Interactive Reading',
+      url: '/product1',
+    },
+  ],
+});
+
+const Blog = ref({
+  name: 'Blog',
+  list: [],
+});
+const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+  server: true,
+  query: {
+    type: '1',
+    page: 1,
+    pageSize: 4,
   },
-  {
-    name: 'Learn',
-    list: [
-      {
-        name: 'Duolingo English Test',
-        url: '/product1',
-      },
-      {
-        name: 'Read and Complete',
-        url: '/product1',
-      },
-      {
-        name: 'Read and Select',
-        url: '/product1',
-      },
-      {
-        name: 'Interactive Reading',
-        url: '/product1',
-      },
-    ],
-  },
-  {
-    name: 'Blog',
-    list: [
-      {
-        name: 'Duolingo English Test Duolingo English Test',
-        url: '/product1',
-      },
-      {
-        name: 'Read and Complete Read and Complete',
-        url: '/product1',
-      },
-      {
-        name: 'Mastering the New Duolingo English Test Updates in 2024: Tips and Strategies',
-        url: '/product1',
-      },
-      {
-        name: 'Interactive Reading',
-        url: '/product1',
-      },
-    ],
-  },
-  {
-    name: 'Company',
-    list: [
-      {
-        name: 'About us',
-        url: '/company/aboutus',
-      },
-      {
-        name: 'Contact us',
-        url: '/company/contactus',
-      },
-      {
-        name: 'Terms and Conditions',
-        url: '/company/termsService',
-      },
-      {
-        name: 'Privacy Policy',
-        url: '/company/privacyPolicy',
-      },
-    ],
-  },
-];
+})) as any;
+console.log('788888888888888888888888');
+console.log(blogsjk);
+Blog.value.list = blogsjk.value.data.map((item) => {
+  return {
+    name: item.title,
+    url: `${item.path}`,
+  };
+});
+
+const Company = {
+  name: 'Company',
+  list: [
+    {
+      name: 'About us',
+      url: '/company/aboutus',
+    },
+    {
+      name: 'Contact us',
+      url: '/company/contactus',
+    },
+    {
+      name: 'Terms and Conditions',
+      url: '/company/termsService',
+    },
+    {
+      name: 'Privacy Policy',
+      url: '/company/privacyPolicy',
+    },
+  ],
+};
 const language = ref('en');
 const userSelectLanguage = getStorage('detlanguage');
 
@@ -132,9 +132,30 @@ const options = [
 <template>
   <div class="common_footer">
     <div class="footer_link_dom">
-      <div v-for="(item, index) in link_arr" :key="index" class="one_link_list">
-        <div class="one_link_list_title">{{ item.name }}</div>
-        <div v-for="(itemin, indexin) in item.list" :key="index * 10 + indexin" class="one_link_list_detail">
+      <div class="one_link_list">
+        <div class="one_link_list_title">{{ prod.name }}</div>
+        <div v-for="(itemin, indexin) in prod.list" :key="index * 10 + indexin" class="one_link_list_detail">
+          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+        </div>
+      </div>
+      <div class="one_link_list">
+        <div class="one_link_list_title">{{ Learn.name }}</div>
+        <div v-for="(itemin, indexin) in Learn.list" :key="index * 10 + indexin" class="one_link_list_detail">
+          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+        </div>
+      </div>
+      <div class="one_link_list">
+        <div class="one_link_list_title">{{ Blog.name }}</div>
+        <div v-for="(itemin, indexin) in Blog.list" :key="index * 10 + indexin" class="one_link_list_detail">
+          <NuxtLink :to="localePath(`/blogDetail/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+        </div>
+        <div class="one_link_list_detail">
+          <NuxtLink :to="localePath(`/blog`)"> show more</NuxtLink>
+        </div>
+      </div>
+      <div class="one_link_list">
+        <div class="one_link_list_title">{{ Company.name }}</div>
+        <div v-for="(itemin, indexin) in Company.list" :key="index * 10 + indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>

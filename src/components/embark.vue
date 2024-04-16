@@ -10,7 +10,7 @@ const user = computed(() => store.user);
       <div class="font1">Embark on your journey to high scores on</div>
       <div class="font2">Duolingo English Test !</div>
       <div class="two_btn_out">
-        <div>
+        <div v-if="!user.id">
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`/login`)"> Start Now</NuxtLink>
         </div>
       </div>
