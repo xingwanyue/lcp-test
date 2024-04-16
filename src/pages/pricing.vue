@@ -6,12 +6,12 @@ import email from '../public/img/pricing/email.svg';
 import message from '../public/img/pricing/message.svg';
 import payment from '../public/img/pricing/payment.png';
 const store = useStore();
-
+const localePath = useLocalePath();
 const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
   server: true,
 })) as any;
 
-const aqList = ref([]);
+const aqList = ref([]) as any;
 const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
@@ -21,8 +21,8 @@ const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
 console.log(aqlistjk);
 aqList.value = aqlistjk.value.data;
 
-const membershipArr = ref([]);
-const moreServiceArr = ref([]);
+const membershipArr = ref([]) as any;
+const moreServiceArr = ref([]) as any;
 const { data: plans } = (await useFetch(`${api}/common/vips`, {
   server: true,
 })) as any;
@@ -86,12 +86,12 @@ const contaceUsList = ref([
   },
 ]);
 
-const copy = async (email) => {
+const copy = async (email: any) => {
   await navigator.clipboard.writeText(`${email}`);
   // element3提示成功
   ElMessage.success('Copy successfully');
 };
-onMounted(() => {});
+onMounted(() => { });
 </script>
 <template>
   <div class="pricing">
@@ -107,26 +107,19 @@ onMounted(() => {});
           </h4>
         </div>
         <div class="switch_out">
-          <div
-            @click="changeSwitchType('1')"
-            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('1')"
+            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']">
             Membership
           </div>
-          <div
-            @click="changeSwitchType('2')"
-            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('2')"
+            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']">
             More Service
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
-          <div
-            v-for="(item, index) in membershipArr"
-            :key="index"
+          <div v-for="(item, index) in membershipArr" :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
-            @click="changeCurrentMembershipId(item.id)"
-          >
+            @click="changeCurrentMembershipId(item.id)">
             <div class="title">Most Popular Choice</div>
             <div class="card_price">
               <div class="card_price_part1">
@@ -159,12 +152,9 @@ onMounted(() => {});
           </div>
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
-          <div
-            v-for="(item, index) in moreServiceArr"
-            :key="index"
+          <div v-for="(item, index) in moreServiceArr" :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
-            @click="changeCurrentMembershipId(item.id)"
-          >
+            @click="changeCurrentMembershipId(item.id)">
             <div class="title">Most Popular Choice</div>
             <div class="card_price">
               <div class="card_price_part1">Speaking guide</div>
@@ -214,12 +204,9 @@ onMounted(() => {});
       <div class="part2">
         <div class="title">Frequently Asked Questions</div>
         <div class="list_out">
-          <div
-            v-for="(item, index) in aqList"
-            :key="index"
+          <div v-for="(item, index) in aqList" :key="index"
             :class="[item.open ? 'one_question one_question_open' : 'one_question']"
-            @click="openOrCloseOneQuestion(item)"
-          >
+            @click="openOrCloseOneQuestion(item)">
             <div class="header">
               <div class="icon">
                 <img src="../public/img/pricing/arrow_down.svg" />
