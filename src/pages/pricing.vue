@@ -10,6 +10,8 @@ const store = useStore();
 const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
   server: true,
 })) as any;
+
+const aqList = ref([]);
 const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
@@ -17,6 +19,7 @@ const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
   },
 })) as any;
 console.log(aqlistjk);
+aqList.value = aqlistjk.value.data;
 
 const membershipArr = ref([]);
 const moreServiceArr = ref([]);
@@ -55,23 +58,6 @@ const buyMembership = (id: number) => {
   store.stripePay({ vipId: id });
 };
 
-const aqList = ref([
-  {
-    open: false,
-    q: 'My payment was successful, but the VIP upgrade failed.',
-    a: "Yes, we take your data security and privacy very seriously. All your data, including the knowledge base, uploaded documents, and AI interactions, are securely stored on Sand Studio's servers, hosted on Amazon Web Services (AWS). This provides a secure environment with firewalls, data encryption, and DDoS mitigation. We will not provide your data to OpenAI, and your data is NOT used in any ML training or any beyond-service analysis.",
-  },
-  {
-    open: false,
-    q: 'My payment was successful, but the VIP upgrade failed.',
-    a: "Yes, we take your data security and privacy very seriously. All your data, including the knowledge base, uploaded documents, and AI interactions, are securely stored on Sand Studio's servers, hosted on Amazon Web Services (AWS). This provides a secure environment with firewalls, data encryption, and DDoS mitigation. We will not provide your data to OpenAI, and your data is NOT used in any ML training or any beyond-service analysis.",
-  },
-  {
-    open: false,
-    q: 'My payment was successful, but the VIP upgrade failed.',
-    a: "Yes, we take your data security and privacy very seriously. All your data, including the knowledge base, uploaded documents, and AI interactions, are securely stored on Sand Studio's servers, hosted on Amazon Web Services (AWS). This provides a secure environment with firewalls, data encryption, and DDoS mitigation. We will not provide your data to OpenAI, and your data is NOT used in any ML training or any beyond-service analysis.",
-  },
-]);
 const openOrCloseOneQuestion = (item: any) => {
   item.open = !item.open;
 };
@@ -238,10 +224,10 @@ onMounted(() => {});
               <div class="icon">
                 <img src="../public/img/pricing/arrow_down.svg" />
               </div>
-              <div class="qusetion">{{ item.q }}</div>
+              <div class="qusetion">{{ item.title }}</div>
             </div>
             <div v-if="item.open" class="answer">
-              {{ item.a }}
+              <div v-html="item.content"></div>
             </div>
           </div>
         </div>
