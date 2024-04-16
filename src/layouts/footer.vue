@@ -48,22 +48,35 @@ const Learn = ref({
     },
   ],
 });
-
+const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
+  server: true,
+  query: {
+    type: '2',
+    flag: '1',
+    page: 1,
+    pageSize: 4,
+  },
+})) as any;
+Learn.value.list = Learnjk.value.data.map((item: any) => {
+  return {
+    name: item.title,
+    url: `${item.path}`,
+  };
+});
 const Blog = ref({
   name: 'Blog',
-  list: [],
+  list: [] as any,
 });
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
     type: '1',
+    flag: '1',
     page: 1,
     pageSize: 4,
   },
 })) as any;
-console.log('788888888888888888888888');
-console.log(blogsjk);
-Blog.value.list = blogsjk.value.data.map((item) => {
+Blog.value.list = blogsjk.value.data.map((item: any) => {
   return {
     name: item.title,
     url: `${item.path}`,
@@ -134,28 +147,31 @@ const options = [
     <div class="footer_link_dom">
       <div class="one_link_list">
         <div class="one_link_list_title">{{ prod.name }}</div>
-        <div v-for="(itemin, indexin) in prod.list" :key="index * 10 + indexin" class="one_link_list_detail">
+        <div v-for="(itemin, indexin) in prod.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Learn.name }}</div>
-        <div v-for="(itemin, indexin) in Learn.list" :key="index * 10 + indexin" class="one_link_list_detail">
+        <div v-for="(itemin, indexin) in Learn.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+        </div>
+        <div class="one_link_list_detail">
+          <NuxtLink :to="localePath(`/learn`)" class="show-more"> show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Blog.name }}</div>
-        <div v-for="(itemin, indexin) in Blog.list" :key="index * 10 + indexin" class="one_link_list_detail">
+        <div v-for="(itemin, indexin) in Blog.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`/blogDetail/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <NuxtLink :to="localePath(`/blog`)"> show more</NuxtLink>
+          <NuxtLink :to="localePath(`/blog`)" class="show-more"> show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Company.name }}</div>
-        <div v-for="(itemin, indexin) in Company.list" :key="index * 10 + indexin" class="one_link_list_detail">
+        <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
@@ -334,6 +350,9 @@ const options = [
         }
       }
     }
+  }
+  .show-more{
+    text-decoration: underline;
   }
 }
 </style>
