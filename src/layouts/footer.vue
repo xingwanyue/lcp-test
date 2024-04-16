@@ -32,20 +32,6 @@ const Learn = ref({
   name: 'Learn',
   list: [] as any,
 });
-const { data: learnjk } = (await useFetch(`${api}/common/article`, {
-  server: true,
-  query: {
-    categoryId: 3,
-    page: 1,
-    pageSize: 4,
-  },
-})) as any;
-Learn.value.list = learnjk.value.data.map((item: any) => {
-  return {
-    name: item.title,
-    url: `${item.path}`,
-  };
-});
 const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
