@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Double_Right_Arrow from '@/public/img/guid/Double_Right_Arrow.svg';
+
 const article1 = ref({
   title: 'Key Features of DET Speaking Exam Excellence:',
   list: [
@@ -181,6 +183,7 @@ const contaceUsList = ref([
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
+            <img :src="Double_Right_Arrow" class="Double_Right_Arrow" alt="">
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <div v-if="item.btn" class="btn">{{ item.btn }}</div>
@@ -267,6 +270,8 @@ const contaceUsList = ref([
         img {
           width: 100%;
           height: auto;
+          border-radius: 4px;
+          box-shadow: 16px 16px 16px 0px rgba(0,0,0,0.2);
           @media screen and (max-width: 974px) {
             height: 100%;
             width: auto;
@@ -377,10 +382,18 @@ const contaceUsList = ref([
           background: #ffffff;
           border-radius: 8px;
           border: 1px solid #f0e8e8;
+          position: relative;
           .icon {
             width: 56px;
             height: 56px;
             margin: 0 auto;
+          }
+          .Double_Right_Arrow{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
           }
           .method_font {
             font-weight: 600;
