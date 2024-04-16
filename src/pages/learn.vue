@@ -32,7 +32,7 @@ const getSelect = async () => {
 };
 const getInfo = async () => {
   // 需要传左侧的类型
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${state.selConData.id}`, { server: true }) as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${state.selConData.id}`, { server: true }) as any;
   state.infoList = value?.data;
 };
 const getMore = () => {
