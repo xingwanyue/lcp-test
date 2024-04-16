@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { saveStorage, getStorage } from '@/utils';
 import { useStore } from '@/store';
+const localePath = useLocalePath();
 const store = useStore();
 const { locale, t } = useI18n();
 const link_arr = [
