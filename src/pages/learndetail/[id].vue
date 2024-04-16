@@ -41,6 +41,7 @@ const getContent = async (id: string) => {
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.details.id, rate: state.rate });
+  state.details.rateNum += 1;
   saveStorage('det_rate', JSON.stringify(rateArr), true);
   // 
   const { err } = await useFetch(`${rateAdd}`, {
@@ -69,7 +70,6 @@ const rateChange = async () => {
     <div class="content">
       <div class="article-con">
         <div class="title">{{ state.details.name }}</div>
-        <!-- <div class="article-con1">{{ state.details.desc }}</div> -->
         <div id="content" class="article-con1" v-html="state.details.content" style="white-space:pre-wrap"></div>
       </div>
       <div class="article-title-list article-title-list1">
@@ -83,7 +83,7 @@ const rateChange = async () => {
     <div class="rate-con">
       <div>
         <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
-          :score-template="`{value}/5（${state.details.rateNum}votes）`" @change="rateChange" />
+          :score-template="`{value}/5（${state.details.rateNum || 0}votes）`" @change="rateChange" />
       </div>
       <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
     </div>
