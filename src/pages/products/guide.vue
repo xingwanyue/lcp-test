@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Double_Right_Arrow from '@/public/img/guid/Double_Right_Arrow.svg';
+
 const article1 = ref({
   title: 'Key Features of DET Speaking Exam Excellence:',
   list: [
@@ -97,6 +99,7 @@ const contaceUsList = ref([
     tip: 'Please select whether you are buying a speaking guide or a writing guide',
     btn: 'Buying Speaking Guide',
     btn1: 'Buying Writing Guide',
+    id: '1',
   },
   {
     icon: download,
@@ -104,13 +107,15 @@ const contaceUsList = ref([
     tip: 'After purchasing the course, you can click to download it',
     btn: 'Download Speaking Guide',
     btn1: 'Download Writing Guide',
+    id: '2',
   },
   {
     icon: book,
     font: 'Start Learning',
     tip: 'After purchasing the course, you can view audio related to the Speaking Guide.',
-    btn: 'Speaking practice audio',
+    btn: '',
     btn1: 'Speaking practice audio',
+    id: '3',
   },
 ]);
 </script>
@@ -145,7 +150,7 @@ const contaceUsList = ref([
           </div>
         </div>
         <div class="one_article">
-          <h2 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h2>
+          <h2 class="title">DET Writing Exam Excellence: A Comprehensive Guide</h2>
           <div class="article_out">
             <div class="left_img">
               <img src="../../public/img/guid/guide2.png" />
@@ -178,10 +183,15 @@ const contaceUsList = ref([
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
+            <img :src="Double_Right_Arrow" class="Double_Right_Arrow" alt="">
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
-            <div class="btn">{{ item.btn }}</div>
-            <div class="btn">{{ item.btn1 }}</div>
+            <div v-if="item.btn" class="btn">{{ item.btn }}</div>
+            <div v-else class="btnNone">Speaking practice audio</div>
+            <div v-if="item.id !== '3'" class="btn">{{ item.btn1 }}</div>
+            <nuxt-link v-else class="font" to="/products/common/listen">
+              <div class="btn">{{ item.btn1 }}</div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -260,6 +270,8 @@ const contaceUsList = ref([
         img {
           width: 100%;
           height: auto;
+          border-radius: 4px;
+          box-shadow: 16px 16px 16px 0px rgba(0,0,0,0.2);
           @media screen and (max-width: 974px) {
             height: 100%;
             width: auto;
@@ -370,10 +382,18 @@ const contaceUsList = ref([
           background: #ffffff;
           border-radius: 8px;
           border: 1px solid #f0e8e8;
+          position: relative;
           .icon {
             width: 56px;
             height: 56px;
             margin: 0 auto;
+          }
+          .Double_Right_Arrow{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
           }
           .method_font {
             font-weight: 600;
@@ -398,6 +418,17 @@ const contaceUsList = ref([
             color: #201515;
             margin-top: 24px;
             cursor: pointer;
+          }
+          .btnNone{
+            padding: 11px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #FFF;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 24px;
+            // cursor: pointer;
           }
         }
       }
