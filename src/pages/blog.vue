@@ -1,15 +1,16 @@
 <script lang="ts" setup>
 // import { api } from '@/utils';
+import dayjs from "dayjs";
 
-import _ from 'lodash';
+import _ from "lodash";
 
-import vEmbark from '../components/embark.vue';
-import right_arrow from '../public/img/blog/right_arrow.svg';
+import vEmbark from "../components/embark.vue";
+import right_arrow from "../public/img/blog/right_arrow.svg";
 const localePath = useLocalePath();
 
 useSeoMeta({
-  title: 'blog',
-  description: 'blog',
+  title: "blog",
+  description: "blog",
 });
 const total = ref(0);
 const pageSize = ref(10);
@@ -17,7 +18,7 @@ let blogs = ref([]) as any;
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: '1',
+    type: "1",
     page: 1,
     pageSize: 10,
   },
@@ -30,7 +31,7 @@ const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
     server: true,
     query: {
-      type: '1',
+      type: "1",
       page: val,
       pageSize: 10,
     },
@@ -47,8 +48,14 @@ const handleCurrentChange = async (val: number) => {
     </div>
     <div class="bolgs_content_wrapper" style="">
       <div v-if="blogs && blogs.length" class="bolgs_content">
-        <div v-for="(item, index) in blogs" :key="index" class="one_blog" data-aos="fade-up" data-aos-duration="1000">
-          <NuxtLink :to="localePath(`/blogDetail/${item.path}`)">
+        <div
+          v-for="(item, index) in blogs"
+          :key="index"
+          class="one_blog"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <NuxtLink :to="localePath(`/${item.path}`)">
             <div class="title">
               {{ item.title }}
             </div>
@@ -56,7 +63,7 @@ const handleCurrentChange = async (val: number) => {
               {{ item.description }}
             </div>
             <div class="bottom">
-              <div class="date">{{ item.createTime }}</div>
+              <div class="date">{{ dayjs(item.createTime).format("YYYY-MM-DD") }}</div>
               <div class="right_arrow">
                 <el-image :src="right_arrow"></el-image>
               </div>
@@ -88,7 +95,7 @@ const handleCurrentChange = async (val: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding: 120px 0;
-      background: url('../public/img/blog/blog.svg') center no-repeat;
+      background: url("../public/img/blog/blog.svg") center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;

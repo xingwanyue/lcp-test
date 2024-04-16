@@ -1,0 +1,69 @@
+<script lang="ts" setup>
+import { api } from "@/utils";
+import _ from "lodash";
+
+const route = useRoute();
+
+const { data: article } = (await useFetch(
+  `${api}/common/article?path=${route.params.path}`,
+  {
+    server: true,
+  }
+)) as any;
+
+useSeoMeta({
+  title: () => article.value?.title,
+  description: () => article.value?.description,
+  keywords: () => article.value?.keywords,
+});
+</script>
+<template>
+  <div class="article_detail">
+    <div class="detail_hader">
+      <div class="detail_hader_content">
+        <h1>DET Pratice Blog</h1>
+      </div>
+    </div>
+    <div class="article" v-if="article?.content">
+      <div class="articleContent" v-html="article?.content"></div>
+    </div>
+  </div>
+</template>
+<style scoped lang="scss">
+.article_detail {
+  .detail_hader {
+    text-align: center;
+
+    background: #fff4f1;
+    .detail_hader_content {
+      // max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 0;
+      background: url("../public/img/aboutus/banner-aboutus.svg") center no-repeat;
+      background-size: cover;
+      @media (max-width: 650px) {
+        padding: 60px 0;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 56px;
+        color: #201515;
+        margin: 0;
+        @media (max-width: 650px) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .articleContent {
+      max-width: 1200px;
+      width: 100%;
+    }
+  }
+}
+</style>
