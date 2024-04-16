@@ -60,6 +60,7 @@ useSeoMeta({
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 30px;
     .articleContent {
       max-width: 1200px;
       width: 100%;
