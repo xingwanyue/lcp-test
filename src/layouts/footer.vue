@@ -27,26 +27,24 @@ const prod = {
     },
   ],
 };
+
 const Learn = ref({
   name: 'Learn',
-  list: [
-    {
-      name: 'Duolingo English Test',
-      url: '/product1',
-    },
-    {
-      name: 'Read and Complete',
-      url: '/product1',
-    },
-    {
-      name: 'Read and Select',
-      url: '/product1',
-    },
-    {
-      name: 'Interactive Reading',
-      url: '/product1',
-    },
-  ],
+  list: [],
+});
+const { data: learnjk } = (await useFetch(`${api}/common/article`, {
+  server: true,
+  query: {
+    categoryId: 3,
+    page: 1,
+    pageSize: 4,
+  },
+})) as any;
+Learn.value.list = learnjk.value.data.map((item) => {
+  return {
+    name: item.title,
+    url: `${item.path}`,
+  };
 });
 
 const Blog = ref({
@@ -61,8 +59,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
     pageSize: 4,
   },
 })) as any;
-console.log('788888888888888888888888');
-console.log(blogsjk);
+
 Blog.value.list = blogsjk.value.data.map((item) => {
   return {
     name: item.title,
@@ -143,14 +140,17 @@ const options = [
         <div v-for="(itemin, indexin) in Learn.list" :key="index * 10 + indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
+        <div class="one_link_list_detail show_more">
+          <NuxtLink :to="localePath(`/learn`)">show more</NuxtLink>
+        </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Blog.name }}</div>
         <div v-for="(itemin, indexin) in Blog.list" :key="index * 10 + indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`/blogDetail/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
-        <div class="one_link_list_detail">
-          <NuxtLink :to="localePath(`/blog`)"> show more</NuxtLink>
+        <div class="one_link_list_detail show_more">
+          <NuxtLink :to="localePath(`/blog`)">show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -225,6 +225,13 @@ const options = [
           a {
             color: #f66442;
           }
+        }
+      }
+      .show_more {
+        width: fit-content;
+        border-bottom: 1px #201515 solid;
+        &:hover {
+          border-bottom: 1px #f66442 solid;
         }
       }
     }
