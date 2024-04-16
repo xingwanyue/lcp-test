@@ -10,7 +10,7 @@ export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
 export const staticUrlGet = (path: string) => (path.startsWith('http') ? path : `${cdn}${path}`);
 const TOKEN = 'det_i18n_token';
-export function getToken(forHeader: any) {
+export function getToken(forHeader?: any) {
   if (!process.client) {
     return;
   }

@@ -10,12 +10,13 @@ import lookImg from '../public/img/login/look.svg';
 import unlookImg from '../public/img/login/unlook.svg';
 import errIcon from '../public/img/login/errIcon.svg';
 
+const localePath = useLocalePath();
 const route = useRoute();
 const router = useRouter();
 const store = useStore();
 
-const url = route.query.url ? decodeURIComponent(route.query.url) : '/home';
-const formData = ref({});
+const url = route.query.url ? decodeURIComponent(route.query.url as string) : '/home';
+const formData = ref({}) as any;
 const loading = ref(false);
 const pwdShow = ref(false);
 const errMessage = ref('');
@@ -53,7 +54,7 @@ const submit = async () => {
     return false;
   }
   loading.value = true;
-  const { err, data: { token } = {} } = await store.userClickLogin({
+  const { err, data: { token = '' } = {} } = await store.userClickLogin({
     email: formData.value.email,
     password: formData.value.password,
   });

@@ -7,7 +7,7 @@ import { ElMessage } from 'element-plus';
 import { articleGet, rateAdd, saveStorage, getStorage } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
-// const localePath = useLocalePath();
+const localePath = useLocalePath();
 const router = useRouter();
 const route = useRoute();
 const rate = ref(0);
@@ -62,7 +62,7 @@ const rateChange = async () => {
 <template>
   <div class="learndetail">
     <div class="top">Home >
-      <nuxt-link :to="`/learn`" class="">
+      <nuxt-link :to="localePath('/learn')" class="">
         Learn
       </nuxt-link>
       > {{ state.details.name }}
@@ -74,7 +74,7 @@ const rateChange = async () => {
       </div>
       <div class="article-title-list article-title-list1">
         <div v-for="(val, key) in state.list" :key="key">
-          <nuxt-link :to="`/learndetail/${val.id}?categoryId=${val.categoryId}`" class="">
+          <nuxt-link :to="localePath(`/learndetail/${val.id}?categoryId=${val.categoryId}`)" class="">
             <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
           </nuxt-link>
         </div>
@@ -89,7 +89,7 @@ const rateChange = async () => {
     </div>
     <div class="article-title-list article-title-list2">
       <div v-for="(val, key) in state.list" :key="key">
-        <nuxt-link :to="`/learndetail/${val.id}?categoryId=${val.categoryId}`" class="">
+        <nuxt-link :to="localePath(`/learndetail/${val.id}?categoryId=${val.categoryId}`)" class="">
           <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
         </nuxt-link>
       </div>
