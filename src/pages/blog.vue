@@ -5,7 +5,6 @@ import _ from 'lodash';
 
 import vEmbark from '../components/embark.vue';
 import right_arrow from '../public/img/blog/right_arrow.svg';
-// import blogbg from '../public/img/blog/blog.svg';
 const localePath = useLocalePath();
 
 useSeoMeta({
@@ -27,8 +26,16 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
 blogs.value = blogsjk.value.data;
 total.value = blogsjk.value.total;
 
-const handleCurrentChange = (val: number) => {
-  console.log(`current page: ${val}`);
+const handleCurrentChange = async (val: number) => {
+  const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
+    server: true,
+    query: {
+      type: '1',
+      page: val,
+      pageSize: 10,
+    },
+  })) as any;
+  blogs.value = blogsjkk.value.data;
 };
 </script>
 <template>
@@ -58,8 +65,14 @@ const handleCurrentChange = (val: number) => {
         </div>
       </div>
       <div class="pagination_out">
-        <el-pagination background layout="prev, pager, next" :total="total" :page-size="pageSize"
-          @current-change="handleCurrentChange" class="mt-4" />
+        <el-pagination
+          background
+          layout="prev, pager, next"
+          :total="total"
+          :page-size="pageSize"
+          @current-change="handleCurrentChange"
+          class="mt-4"
+        />
       </div>
     </div>
     <v-embark />
