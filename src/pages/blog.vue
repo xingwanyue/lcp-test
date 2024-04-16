@@ -5,42 +5,26 @@ import _ from 'lodash';
 
 import vEmbark from '../components/embark.vue';
 import right_arrow from '../public/img/blog/right_arrow.svg';
+import blogbg from '../public/img/blog/blog.svg';
 
 useSeoMeta({
   title: 'blog',
   description: 'blog',
 });
-
-// const { data: blogs } = (await useFetch(`${api}/common/article?type=1`, {
-//   server: true,
-// })) as any;
-const blogs = [
-  {
-    name: ' Mastering the DET with our Duolingo English Practice Test: Exclusive Insights from DET Practice',
-    content: 'Understanding the DET Scoring System Delving deeper into the Duolingo English Test, we unveil i',
-    date: 'Dec 31, 2023 | DET Test Essentials',
+const total = ref(0);
+const pageSize = ref(10);
+let blogs = ref([]);
+const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+  server: false,
+  query: {
+    type: '1',
+    page: 1,
+    pageSize: 10,
   },
-  {
-    name: ' Mastering the DET with our Duolingo English Practice Test: Exclusive Insights from DET Practice',
-    content: 'Understanding the DET Scoring System Delving deeper into the Duolingo English Test, we unveil i',
-    date: 'Dec 31, 2023 | DET Test Essentials',
-  },
-  {
-    name: ' Mastering the DET with our Duolingo English Practice Test: Exclusive Insights from DET Practice',
-    content: 'Understanding the DET Scoring System Delving deeper into the Duolingo English Test, we unveil i',
-    date: 'Dec 31, 2023 | DET Test Essentials',
-  },
-  {
-    name: ' Mastering the DET with our Duolingo English Practice Test: Exclusive Insights from DET Practice',
-    content: 'Understanding the DET Scoring System Delving deeper into the Duolingo English Test, we unveil i',
-    date: 'Dec 31, 2023 | DET Test Essentials',
-  },
-  {
-    name: ' Mastering the DET with our Duolingo English Practice Test: Exclusive Insights from DET Practice',
-    content: 'Understanding the DET Scoring System Delving deeper into the Duolingo English Test, we unveil i',
-    date: 'Dec 31, 2023 | DET Test Essentials',
-  },
-];
+})) as any;
+// console.log(blogsjk);
+blogs.value = blogsjk.value.data;
+total.value = blogsjk.value.total;
 
 const handleCurrentChange = (val: number) => {
   console.log(`current page: ${val}`);
@@ -48,26 +32,22 @@ const handleCurrentChange = (val: number) => {
 </script>
 <template>
   <div class="blogs">
-    <!-- +
-    {{ JSON.stringify(blogs) }}
-    <div v-for="blog in blogs" :key="blog">{{ blog.name }}</div> -->
-
     <div class="bolgs_hader">
       <div class="bolgs_hader_content">
         <h1>DET Pratice Blog</h1>
       </div>
     </div>
-    <div class="bolgs_content_wrapper">
+    <div class="bolgs_content_wrapper" style="">
       <div class="bolgs_content">
         <div v-for="(item, index) in blogs" :key="index" class="one_blog" data-aos="fade-up" data-aos-duration="1000">
           <div class="title">
-            {{ item.name }}
+            {{ item.title }}
           </div>
           <div class="content">
-            {{ item.content }}
+            {{ item.description }}
           </div>
           <div class="bottom">
-            <div class="date">{{ item.date }}</div>
+            <div class="date">{{ item.createTime }}</div>
             <div class="right_arrow">
               <el-image :src="right_arrow"></el-image>
             </div>
@@ -78,8 +58,8 @@ const handleCurrentChange = (val: number) => {
         <el-pagination
           background
           layout="prev, pager, next"
-          :total="50"
-          :page-size="10"
+          :total="total"
+          :page-size="pageSize"
           @current-change="handleCurrentChange"
           class="mt-4"
         />
@@ -95,15 +75,22 @@ const handleCurrentChange = (val: number) => {
 
     background: #fff4f1;
     .bolgs_hader_content {
-      // border: 1px red solid;
       max-width: 1200px;
       margin: 0 auto;
       padding: 120px 0;
+      background: url('../public/img/blog/blog.svg') center no-repeat;
+      background-size: cover;
+      @media (max-width: 650px) {
+        padding: 60px 0;
+      }
       h1 {
         font-weight: 600;
         font-size: 56px;
         color: #201515;
         margin: 0;
+        @media (max-width: 650px) {
+          font-size: 36px;
+        }
       }
     }
   }
@@ -118,6 +105,10 @@ const handleCurrentChange = (val: number) => {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 32px;
+      @media (max-width: 1270px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+      }
       .one_blog {
         padding: 24px;
         border-radius: 8px;

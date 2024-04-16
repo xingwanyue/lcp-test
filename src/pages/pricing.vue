@@ -9,11 +9,8 @@ const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`
 
 const membershipArr = ref([]);
 const moreServiceArr = ref([]);
-const { data: plans } = (await useFetch(`${api}/vips`, {
+const { data: plans } = (await useFetch(`${api}/common/vips`, {
   server: true,
-  headers: {
-    Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkyNzIsInMiOiI5OTkyIiwiaWF0IjoxNzEzMTgzNTc2LCJleHAiOjE3MjA5NTk1NzZ9.C695hs-_0U5I9cETOWKl4grawEqUxMOh83mhvKDRc_8`,
-  },
 })) as any;
 
 if (plans && plans.value && plans.value.data && plans.value.data.length) {
@@ -233,7 +230,7 @@ onMounted(() => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel :itemsToShow="1" :autoplay="0" :wrap-around="true" :pauseAutoplayOnHover="true">
+          <Carousel :itemsToShow="1" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon"><img src="../public/img/pricing/green_check.svg" /></div>
