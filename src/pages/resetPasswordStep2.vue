@@ -3,7 +3,7 @@
     <div class="left">
       <img :src="lockImg" alt="" />
       <div class="t1">Forgot Password?</div>
-      <h1 class="t2">Please enter the email used to create your account</h1>
+      <div class="t2">Please enter the email used to create your account</div>
       <el-form
         ref="ruleFormRef"
         :rules="rules"
@@ -12,10 +12,32 @@
         class="login-form"
         @submit.native.prevent
       >
-        <el-form-item prop="email" label="" style="margin-top: 80px; margin-bottom: 16px">
-          <el-input v-model="formData.email" placeholder="Enter your email"> </el-input>
+        <el-form-item prop="pwd" label="" style="margin-top: 80px">
+          New Password
+          <el-input
+            v-model="formData.pwd"
+            :type="pwdShow ? 'text' : 'password'"
+            maxlength="20"
+            placeholder="Enter a new password"
+          >
+            <template #suffix>
+              <img :src="pwdShow ? lookImg : unlookImg" style="cursor: pointer" alt="" @click="pwdShow = !pwdShow" />
+            </template>
+          </el-input>
         </el-form-item>
-        <div class="desc">We'll send you an email with the reset code</div>
+        <el-form-item prop="pwd1" label="" style="margin-top: 0px">
+          Confirm New Password
+          <el-input
+            v-model="formData.pwd1"
+            :type="pwdShow1 ? 'text' : 'password'"
+            maxlength="20"
+            placeholder="Confirm your new password"
+          >
+            <template #suffix>
+              <img :src="pwdShow1 ? lookImg : unlookImg" style="cursor: pointer" alt="" @click="pwdShow1 = !pwdShow1" />
+            </template>
+          </el-input>
+        </el-form-item>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
             <img :src="errIcon" class="errIcon" alt="" />
@@ -23,64 +45,80 @@
           </div>
           <div class="login_btn_out">
             <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-              Send reset code
+              Reset my password
             </el-button>
           </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
-            <NuxtLink class="goLogin" :to="localePath('/login')">＜ Back to log in</NuxtLink>
+            <div class="goLogin" @click="goLogin">＜ Back to log in</div>
           </div>
         </el-form-item>
       </el-form>
     </div>
-    <!-- <div class="right">
-      <el-image :src="loginImg" class="loginImg" fit="contain"></el-image>
-    </div> -->
   </div>
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-import { sesCodeSend } from '@/api.js';
-import { fetchmy } from '@/utils/request';
+import { ref } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
+import { findPassword } from '@/api';
+
+import lockImg from '../public/img/login/lock.svg';
+import lookImg from '../public/img/login/look.svg';
+import unlookImg from '../public/img/login/unlook.svg';
+import errIcon from '../public/img/login/errIcon.svg';
 definePageMeta({
   layout: 'noheaderfooter',
 });
-import lockImg from '../public/img/login/lock.svg';
-import errIcon from '../public/img/login/errIcon.svg';
 
 const router = useRouter();
+const route = useRoute();
 
 const formData = ref({});
 const loading = ref(false);
+const pwdShow = ref(false);
+const pwdShow1 = ref(false);
 const errMessage = ref('');
 const errShow = ref(false);
 
 const submit = async () => {
   if (loading.value) return false;
-  const { email } = formData.value || {};
+  const { email } = route.query || {};
+  const { pwd, pwd1 } = formData.value || {};
   errShow.value = false;
-  if (!email) {
+  if (!pwd) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address';
+    errMessage.value = 'Please enter your email address.';
     return false;
   }
-  const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
-  if (!pan.test(email)) {
+  if (pwd.length < 6) {
     errShow.value = true;
-    errMessage.value = 'Invalid email.';
+    errMessage.value = 'Password too short.';
     return false;
   }
+  if (pwd !== pwd1) {
+    errShow.value = true;
+    errMessage.value = 'Password inconsistency.';
+    return false;
+  }
+  const temp = {
+    email,
+    password: pwd,
+  };
   loading.value = true;
-  const { err } = await sesCodeSend({ email: formData.value.email, type: 'findPassword' });
-  loading.value = false;
+  const { err } = await findPassword(temp);
   if (!err) {
-    router.push({ path: '/resetPassword', query: { email: formData.value.email } });
+    router.push('/login');
   } else {
     errShow.value = true;
     errMessage.value = err.message;
   }
+  loading.value = false;
+};
+
+const goLogin = () => {
+  router.push('/login');
 };
 </script>
 
@@ -96,9 +134,9 @@ const submit = async () => {
   }
   .submit {
     width: 400px;
+    color: #fff;
     border-radius: 25px;
     height: 50px;
-    color: #fff;
     background-color: #f66442;
     border-color: #f66442;
     font-size: 18px;
@@ -130,9 +168,9 @@ const submit = async () => {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f7f8f9;
   height: 100vh;
   overflow: hidden;
-  background-color: #f7f8f9;
   .left {
     flex: none;
     width: 400px;
@@ -142,7 +180,6 @@ const submit = async () => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // max-height: 960px;
     .t1 {
       width: 400px;
       font-size: 32px;
@@ -155,14 +192,12 @@ const submit = async () => {
     }
     .t2 {
       width: 410px;
-      // white-space: nowrap;
       font-size: 16px;
       font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: rgba(0, 0, 0, 0.45);
       line-height: 22px;
       margin-top: 8px;
-      text-align: center;
       word-break: break-all;
     }
     .err-message {
@@ -216,8 +251,6 @@ const submit = async () => {
     .loginImg {
       width: calc(100% - 40px);
       display: block;
-      // margin: auto;
-      // flex: none;
     }
   }
 }

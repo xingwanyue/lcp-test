@@ -269,7 +269,7 @@ const googleLogin = () => {
     <div class="part3_wrapper">
       <div class="part3">
         <div v-if="usersockerTopFont && usersockerTopFont.length" class="title">{{ usersockerTopFont[0].data }}</div>
-        <div class="user_nums_out">
+        <div v-if="platformData" class="user_nums_out">
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData.userTotal) }}k</div>
             <div class="small_font">Users</div>
