@@ -16,12 +16,15 @@ const state = reactive({
   // 是否展示showMore
   isShow: false,
   activeName: '',
+  page: 1,
+  pageSize: 5,
+  total: 0,
 });
 onMounted(() => {
   getSelect();
 });
 const getSelect = async () => {
-  const { data = {} } = await useFetch(`${articleCategoryGet}?`, { server: true }) as any;
+  const { data = {} } = await useFetch(`${articleCategoryGet}`, { server: true }) as any;
   state.selectList = getTree(_.filter(data.value, v => v.type === '2') as any, null, null);
   // 默认第一个
   state.selFatherData = _.head(state.selectList) || {};
@@ -31,11 +34,18 @@ const getSelect = async () => {
 };
 const getInfo = async () => {
   // 需要传左侧的类型
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${state.selConData.id}`, { server: true }) as any;
-  state.infoList = value?.data;
+  const args = `categoryId=${state.selConData.id}&page=${state.page}&pageSize=${state.pageSize}`;
+  const { data: { value = {} } = {}, total = 0 } = await useFetch(`${articleGet}?${args}`, { server: true }) as any;
+  state.total = value?.total;
+  if (state.isMore) {
+    state.infoList = [...state.infoList, ...value?.data];
+  } else {
+    state.infoList = value?.data;
+  }
 };
 const getMore = () => {
   state.isMore = true;
+  state.page += 1;
   getInfo();
 };
 const selCheck = (v: any) => {
@@ -86,7 +96,7 @@ const handleChange = () => {
               <div class="description">{{ val.description }}</div>
             </nuxt-link>
           </div>
-          <div class="more" @click="getMore">Show more</div>
+          <div v-if="state.total > state.infoList.length" class="more" @click="getMore">Show more</div>
         </div>
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
