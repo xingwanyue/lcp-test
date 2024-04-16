@@ -1,12 +1,7 @@
 <script setup lang="ts">
-// 使用no-header-footer布局 不影响其他页面
-// definePageMeta({
-//   layout: false,
-// });
-
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-// import { useStore } from '@/store';
+
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { getToken, saveToken } from '@/utils';
@@ -168,9 +163,9 @@ const googleLogin = async () => {
   .el-input__wrapper {
     height: 40px;
   }
-  //   .el-input__suffix-inner > img {
-  //     margin-top: 10px;
-  //   }
+  .el-input__suffix-inner > img {
+    margin-top: 1px !important;
+  }
 }
 </style>
 <style lang="scss" scoped>

@@ -25,9 +25,11 @@
             <img :src="errIcon" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
-          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-            Request Password Reset
-          </el-button>
+          <div class="login_btn_out">
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+              Request Password Reset
+            </el-button>
+          </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
@@ -75,7 +77,7 @@ const submit = async () => {
   const { err } = await sesCodeVerify(temp);
   loading.value = false;
   if (!err) {
-    router.push({ path: '/forget3', query: { email } });
+    router.push({ path: '/resetPasswordStep2', query: { email } });
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -89,12 +91,22 @@ const goLogin = () => {
 
 <style lang="scss">
 .login {
+  .login_btn_out {
+    // border: 1px red solid;
+    border-radius: 25px;
+    background-color: red;
+    .el-loading-mask {
+      border-radius: 25px;
+    }
+  }
   .submit {
     width: 400px;
     color: #fff;
+    border-radius: 25px;
+    height: 50px;
     background-color: #f66442;
     border-color: #f66442;
-    font-size: 14px;
+    font-size: 18px;
     &:hover,
     &:active {
       color: #fff !important;
@@ -114,7 +126,7 @@ const goLogin = () => {
     height: 40px;
   }
   .el-input__suffix-inner > img {
-    margin-top: 8px;
+    margin-top: 1px !important;
   }
 }
 </style>

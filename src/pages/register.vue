@@ -26,9 +26,11 @@
             <img :src="errIcon" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
-          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-            Continue with email
-          </el-button>
+          <div class="login_btn_out">
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+              Continue with email
+            </el-button>
+          </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
@@ -43,9 +45,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-// import {  sesCodeSend } from '@/api';
+import { sesCodeSend } from '@/api';
 definePageMeta({
   layout: 'noheaderfooter',
 });
@@ -97,6 +98,14 @@ const googleRegister = () => {};
 
 <style lang="scss">
 .login {
+  .login_btn_out {
+    // border: 1px red solid;
+    border-radius: 25px;
+    background-color: red;
+    .el-loading-mask {
+      border-radius: 25px;
+    }
+  }
   .submit {
     width: 400px;
     color: #fff;
@@ -118,8 +127,11 @@ const googleRegister = () => {};
       border-color: rgba(0, 0, 0, 0.45) !important;
     }
   }
+  .el-input__wrapper {
+    height: 40px;
+  }
   .el-input__suffix-inner > img {
-    margin-top: 8px;
+    margin-top: 1px !important;
   }
 }
 </style>

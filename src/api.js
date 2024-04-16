@@ -27,3 +27,9 @@ export const stripePayStatusGet = (logVipId, token) =>
       Authorization: `Bearer ${token}`,
     },
   });
+
+export const findPassword = (args) =>
+  fetchmy(`${api}/common/findPassword`, {
+    method: 'post',
+    body: JSON.stringify(args),
+  });
