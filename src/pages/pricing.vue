@@ -1,11 +1,22 @@
 <script setup lang="ts">
 import { getToken } from '@/utils';
 import { useStore } from '@/store';
+import online from '../public/img/pricing/online.svg';
+import email from '../public/img/pricing/email.svg';
+import message from '../public/img/pricing/message.svg';
+import payment from '../public/img/pricing/payment.png';
 const store = useStore();
 
 const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
   server: true,
 })) as any;
+const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
+  server: true,
+  query: {
+    type: '3',
+  },
+})) as any;
+console.log(aqlistjk);
 
 const membershipArr = ref([]);
 const moreServiceArr = ref([]);
@@ -21,9 +32,6 @@ if (plans && plans.value && plans.value.data && plans.value.data.length) {
       moreServiceArr.value.push(item);
     }
   });
-  console.log('77777777777777');
-  console.log(membershipArr);
-  console.log(moreServiceArr);
 }
 
 if (buyData && buyData.value) {
@@ -44,7 +52,6 @@ const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
 };
 const buyMembership = (id: number) => {
-  console.log(id);
   store.stripePay({ vipId: id });
 };
 
@@ -69,24 +76,23 @@ const openOrCloseOneQuestion = (item: any) => {
   item.open = !item.open;
 };
 
-import online from '../public/img/pricing/online.svg';
-import email from '../public/img/pricing/email.svg';
-import message from '../public/img/pricing/message.svg';
-import payment from '../public/img/pricing/payment.png';
 const contaceUsList = ref([
   {
+    type: '1',
     icon: online,
     font: 'Online Customer Service',
     tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
     btn: 'Initiate a conversation',
   },
   {
+    type: '2',
     icon: email,
     font: 'Consultation Email',
     tip: 'We will respond to you within one business day.',
     btn: 'info@aitogether.uk',
   },
   {
+    type: '3',
     icon: message,
     font: 'Leave a message',
     tip: 'We will respond to you within one business day.',
@@ -94,49 +100,12 @@ const contaceUsList = ref([
   },
 ]);
 
-onMounted(() => {
-  // makeMMembershipArr();
-});
-// const makeMMembershipArr = () => {
-//   const data = [0, 1, 2, 3];
-//   data.forEach((item, index) => {
-//     MembershipArr.value.push({
-//       id: index,
-//       title: 'Most Popular Choice',
-//       day: '30 Days',
-//       off: '26% off',
-//       text: '80% of students have chosen this plan, which is the most cost-effective option.',
-//       big_price: '$19.99',
-//       small_price: '$8.00',
-//       qlList: [
-//         {
-//           font: '30 days of unlimited practice',
-//           tips: '123132',
-//         },
-//         {
-//           font: '30 days of unlimited practice',
-//           tips: '123132',
-//         },
-//         {
-//           font: '30 days of unlimited practice',
-//           tips: '123132',
-//         },
-//         {
-//           font: '30 days of unlimited practice',
-//           tips: '123132',
-//         },
-//         {
-//           font: '30 days of unlimited practice',
-//           tips: '123132',
-//         },
-//         {
-//           font: '30 days of unlimited practice',
-//           tips: '',
-//         },
-//       ],
-//     });
-//   });
-// };
+const copy = async (email) => {
+  await navigator.clipboard.writeText(`${email}`);
+  // element3提示成功
+  ElMessage.success('Copy successfully');
+};
+onMounted(() => {});
 </script>
 <template>
   <div class="pricing">
@@ -286,7 +255,11 @@ onMounted(() => {
             <div class="icon"><img :src="`${item.icon}`" /></div>
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
-            <div class="btn">{{ item.btn }}</div>
+            <div v-if="item.type === '1'" class="btn">{{ item.btn }}</div>
+            <div v-if="item.type === '2'" class="btn" @click="copy(item.btn)">{{ item.btn }}</div>
+            <div v-if="item.type === '3'" class="btn">
+              <NuxtLink :to="localePath(`/company/contactus`)">{{ item.btn }}</NuxtLink>
+            </div>
           </div>
         </div>
       </div>
@@ -795,6 +768,7 @@ onMounted(() => {
             font-size: 16px;
             color: #201515;
             margin-top: 24px;
+            cursor: pointer;
           }
         }
       }
