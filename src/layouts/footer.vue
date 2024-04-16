@@ -2,10 +2,20 @@
 import { useI18n } from 'vue-i18n';
 import { saveStorage, getStorage } from '@/utils';
 import { useStore } from '@/store';
+import { reactive, onMounted } from 'vue';
+
 const localePath = useLocalePath();
 const store = useStore();
 const { locale, t } = useI18n();
 const link_arr = [];
+const state = reactive({
+  isMore1: false,
+  isMore2: false,
+});
+onMounted(() => {
+  getLearn();
+  getBlob();
+});
 const prod = {
   name: 'Products',
   list: [
@@ -32,41 +42,51 @@ const Learn = ref({
   name: 'Learn',
   list: [] as any,
 });
-const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
-  server: true,
-  query: {
-    type: '2',
-    flag: '1',
-    page: 1,
-    pageSize: 4,
-  },
-})) as any;
-Learn.value.list = Learnjk.value.data.map((item: any) => {
-  return {
-    name: item.title,
-    url: `${item.path}`,
-  };
-});
 const Blog = ref({
   name: 'Blog',
   list: [] as any,
 });
-const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
-  server: true,
-  query: {
-    type: '1',
-    flag: '1',
-    page: 1,
-    pageSize: 4,
-  },
-})) as any;
-Blog.value.list = blogsjk.value.data.map((item: any) => {
-  return {
-    name: item.title,
-    url: `${item.path}`,
-  };
-});
+const getLearn = async () => {
+  let args = { type: '2', flag: '1' } as any;
+  if (!state.isMore2) {
+    args = { ...args, page: 1, pageSize: 4 };
+  }
+  const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
+    server: true,
+    query: { ...args },
+  })) as any;
+  Learn.value.list = Learnjk.value.data.map((item: any) => {
+    return {
+      name: item.title,
+      url: `${item.path}`,
+    };
+  });
+};
+const showMore2 = async () => {
+  state.isMore2 = !state.isMore2;
+  getLearn();
+};
+const getBlob = async () => {
+  let args = { type: '1', flag: '1' } as any;
+  if (!state.isMore1) {
+    args = { ...args, page: 1, pageSize: 4 };
+  }
+  const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+    server: true,
+    query: { ...args },
+  })) as any;
+  Blog.value.list = blogsjk.value.data.map((item: any) => {
+    return {
+      name: item.title,
+      url: `${item.path}`,
+    };
+  });
+};
 
+const showMore1 = async () => {
+  state.isMore1 = !state.isMore1;
+  getBlob();
+};
 const Company = {
   name: 'Company',
   list: [
@@ -141,7 +161,7 @@ const options = [
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <NuxtLink :to="localePath(`/learn`)" class="show-more"> show more</NuxtLink>
+          <NuxtLink :to="localePath(``)" class="show-more" @click="showMore2()"> show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -149,8 +169,8 @@ const options = [
         <div v-for="(itemin, indexin) in Blog.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`/blogDetail/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
-        <div class="one_link_list_detail">
-          <NuxtLink :to="localePath(`/blog`)" class="show-more"> show more</NuxtLink>
+        <div class="one_link_list_detail show-more">
+          <NuxtLink :to="localePath(``)" class="show-more" @click="showMore1()"> show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -234,6 +254,9 @@ const options = [
       //     border-bottom: 1px #f66442 solid;
       //   }
       // }
+      .show-more{
+        text-decoration: underline;
+      }
     }
   }
   .footer_logo_dom {
@@ -341,9 +364,6 @@ const options = [
         }
       }
     }
-  }
-  .show-more{
-    text-decoration: underline;
   }
 }
 </style>
