@@ -27,26 +27,24 @@ const prod = {
     },
   ],
 };
+
 const Learn = ref({
   name: 'Learn',
-  list: [
-    {
-      name: 'Duolingo English Test',
-      url: '/product1',
-    },
-    {
-      name: 'Read and Complete',
-      url: '/product1',
-    },
-    {
-      name: 'Read and Select',
-      url: '/product1',
-    },
-    {
-      name: 'Interactive Reading',
-      url: '/product1',
-    },
-  ],
+  list: [] as any,
+});
+const { data: learnjk } = (await useFetch(`${api}/common/article`, {
+  server: true,
+  query: {
+    categoryId: 3,
+    page: 1,
+    pageSize: 4,
+  },
+})) as any;
+Learn.value.list = learnjk.value.data.map((item: any) => {
+  return {
+    name: item.title,
+    url: `${item.path}`,
+  };
 });
 const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
   server: true,
@@ -243,6 +241,13 @@ const options = [
           }
         }
       }
+      // .show_more {
+      //   width: fit-content;
+      //   border-bottom: 1px #201515 solid;
+      //   &:hover {
+      //     border-bottom: 1px #f66442 solid;
+      //   }
+      // }
     }
   }
   .footer_logo_dom {
