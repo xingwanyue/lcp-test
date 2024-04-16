@@ -7,6 +7,7 @@ import playImg from '@/public/img/listen/play.svg';
 import playingImg from '@/public/img/listen/playing.svg';
 import pauseImg from '@/public/img/listen/pause.svg';
 
+const localePath = useLocalePath();
 const router = useRouter();
 const route = useRoute();
 const state = reactive({
@@ -41,10 +42,9 @@ const playClick = (val: any) => { };
   <div class="listen-page">
     <div class="listen-head">
       <div class="title">
-        ＜ Speaking practice audio
-        <!-- <nuxt-link :to="localePath(``)" class="">
+        <nuxt-link :to="localePath(`/products/guide`)" class="">
           ＜ Speaking practice audio
-        </nuxt-link> -->
+        </nuxt-link>
       </div>
       <div>
         <el-radio-group v-model="state.type" size="large" @change="selectChange">

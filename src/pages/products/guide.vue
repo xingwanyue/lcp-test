@@ -97,6 +97,7 @@ const contaceUsList = ref([
     tip: 'Please select whether you are buying a speaking guide or a writing guide',
     btn: 'Buying Speaking Guide',
     btn1: 'Buying Writing Guide',
+    id: '1',
   },
   {
     icon: download,
@@ -104,13 +105,15 @@ const contaceUsList = ref([
     tip: 'After purchasing the course, you can click to download it',
     btn: 'Download Speaking Guide',
     btn1: 'Download Writing Guide',
+    id: '2',
   },
   {
     icon: book,
     font: 'Start Learning',
     tip: 'After purchasing the course, you can view audio related to the Speaking Guide.',
-    btn: 'Speaking practice audio',
+    btn: '',
     btn1: 'Speaking practice audio',
+    id: '3',
   },
 ]);
 </script>
@@ -145,7 +148,7 @@ const contaceUsList = ref([
           </div>
         </div>
         <div class="one_article">
-          <h2 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h2>
+          <h2 class="title">DET Writing Exam Excellence: A Comprehensive Guide</h2>
           <div class="article_out">
             <div class="left_img">
               <img src="../../public/img/guid/guide2.png" />
@@ -180,8 +183,12 @@ const contaceUsList = ref([
             <div class="icon"><img :src="`${item.icon}`" /></div>
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
-            <div class="btn">{{ item.btn }}</div>
-            <div class="btn">{{ item.btn1 }}</div>
+            <div v-if="item.btn" class="btn">{{ item.btn }}</div>
+            <div v-else class="btnNone">Speaking practice audio</div>
+            <div v-if="item.id !== '3'" class="btn">{{ item.btn1 }}</div>
+            <nuxt-link v-else class="font" to="/products/common/listen">
+              <div class="btn">{{ item.btn1 }}</div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -398,6 +405,17 @@ const contaceUsList = ref([
             color: #201515;
             margin-top: 24px;
             cursor: pointer;
+          }
+          .btnNone{
+            padding: 11px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #FFF;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFF;
+            margin-top: 24px;
+            // cursor: pointer;
           }
         }
       }
