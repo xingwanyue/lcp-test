@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import vSlogen from '../components/slogen.vue';
-import vSubscribe from '../components/subscribe.vue';
-import { oauth2SignIn } from '@/utils/googleAuth';
-import { useStore } from '@/store';
-import { staticUrlGet } from '@/utils';
+import vSlogen from "../components/slogen.vue";
+import vSubscribe from "../components/subscribe.vue";
+import { oauth2SignIn } from "@/utils/googleAuth";
+import { useStore } from "@/store";
+import { staticUrlGet } from "@/utils";
 const store = useStore();
 const user = computed(() => store.user);
 // 获取平台数据
@@ -71,21 +71,21 @@ onMounted(() => {
   }
 });
 const moveAnamit = () => {
-  const small_title_wrap = document.querySelector('.small_title_wrap');
-  const small_title = document.querySelectorAll('.one_small_title');
+  const small_title_wrap = document.querySelector(".small_title_wrap");
+  const small_title = document.querySelectorAll(".one_small_title");
   let index = 0;
   let timer = null;
   timer = setInterval(() => {
     small_title.forEach((item) => {
-      item.classList.remove('current');
-      item.classList.remove('per');
-      item.classList.remove('start');
+      item.classList.remove("current");
+      item.classList.remove("per");
+      item.classList.remove("start");
     });
-    small_title[index].classList.add('current');
+    small_title[index].classList.add("current");
     if (index === 0) {
-      small_title[small_title.length - 1].classList.add('per');
+      small_title[small_title.length - 1].classList.add("per");
     } else {
-      small_title[index - 1].classList.add('per');
+      small_title[index - 1].classList.add("per");
     }
     index++;
     if (index === small_title.length) {
@@ -99,7 +99,7 @@ const toThousands = (num) => {
   if (!num) {
     return 0;
   }
-  let result = '';
+  let result = "";
   const numStr = num.toString();
   for (let i = 0; i < numStr.length; i++) {
     if (i % 3 === 0 && i !== 0) {
@@ -140,13 +140,16 @@ const googleLogin = () => {
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+          <NuxtLink
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_borderCu white"
+          >
             Start free with email
           </NuxtLink>
         </div>
         <div class="all_stu_nums">
-          Trusted by <span class="yellow">500,000+ students</span> worldwide to improve Duolingo English Test scores
-          within one month.
+          Trusted by <span class="yellow">500,000+ students</span> worldwide to improve
+          Duolingo English Test scores within one month.
         </div>
         <div class="big_img_out">
           <div class="big_img"></div>
@@ -162,7 +165,9 @@ const googleLogin = () => {
           </h2>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <h3>Utilize our comprehensive resources to accelerate your score improvement</h3>
+          <h3>
+            Utilize our comprehensive resources to accelerate your score improvement
+          </h3>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
@@ -173,16 +178,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Practice</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+              Having nearly 10,000+ practice questions, the question bank is continuously
+              updated and improved.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Covering all types of exams, detailed explanations are provided for each
+              question.
+            </div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to
+              constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/home')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -198,16 +211,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Practice</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+              Having nearly 10,000+ practice questions, the question bank is continuously
+              updated and improved.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Covering all types of exams, detailed explanations are provided for each
+              question.
+            </div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to
+              constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/home')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -223,16 +244,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Practice</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+              Having nearly 10,000+ practice questions, the question bank is continuously
+              updated and improved.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Covering all types of exams, detailed explanations are provided for each
+              question.
+            </div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to
+              constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/home')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -248,16 +277,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Practice</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously updated and improved.
+              Having nearly 10,000+ practice questions, the question bank is continuously
+              updated and improved.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Covering all types of exams, detailed explanations are provided for each
+              question.
+            </div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to
+              constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/home')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/home')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -268,7 +305,9 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFont && usersockerTopFont.length" class="title">{{ usersockerTopFont[0].data }}</div>
+        <div v-if="usersockerTopFont && usersockerTopFont.length" class="title">
+          {{ usersockerTopFont[0].data }}
+        </div>
         <div v-if="platformData" class="user_nums_out">
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData.userTotal) }}k</div>
@@ -284,11 +323,29 @@ const googleLogin = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink class="common_btn common_btn_hover_bgColor yellow">Join Them</NuxtLink>
+          <NuxtLink
+            v-if="!user.id"
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
+            Join Them
+          </NuxtLink>
+          <NuxtLink
+            v-else
+            :to="localePath('/home')"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
+            Join Them
+          </NuxtLink>
         </div>
         <div v-if="usersockerArr && usersockerArr.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
-          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+          <Carousel
+            :itemsToShow="6"
+            :autoplay="2000"
+            :wrap-around="true"
+            :pauseAutoplayOnHover="true"
+          >
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
@@ -313,11 +370,22 @@ const googleLogin = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFont && commentTopFont.length" class="review_title">{{ commentTopFont[0].data }}</div>
+        <div v-if="commentTopFont && commentTopFont.length" class="review_title">
+          {{ commentTopFont[0].data }}
+        </div>
         <div class="review_scroll_out">
           <div v-if="pinglunArr && pinglunArr.length" class="review_scroll_out_it">
-            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-              <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
+            <Carousel
+              :itemsToShow="4"
+              :autoplay="2000"
+              :wrap-around="true"
+              :pauseAutoplayOnHover="true"
+            >
+              <Slide
+                v-for="(item, index) in pinglunArr"
+                :key="index"
+                class="two_card_out"
+              >
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
@@ -331,7 +399,12 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[0].data.rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].data.content }}</div>
@@ -348,7 +421,12 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[0].data.rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].data.content }}</div>
@@ -582,12 +660,12 @@ const googleLogin = () => {
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
-        grid-template-areas: 'img_out  article_out';
+        grid-template-areas: "img_out  article_out";
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
-            'img_out'
-            'article_out';
+            "img_out"
+            "article_out";
         }
         .img_out {
           // border: 1px red solid;
@@ -650,12 +728,12 @@ const googleLogin = () => {
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
-        grid-template-areas: ' article_out img_out';
+        grid-template-areas: " article_out img_out";
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
-            'img_out'
-            'article_out';
+            "img_out"
+            "article_out";
         }
         .img_out {
           // border: 1px red solid;
