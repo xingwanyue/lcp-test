@@ -7,7 +7,6 @@ import bannerLearn from '@/public/img/learn/banner-learn.svg';
 import subscribe from '../components/subscribe.vue';
 
 const localePath = useLocalePath();
-const activeName = ref('1');
 const state = reactive({
   selectList: [] as any,
   selFatherData: {} as any,
@@ -17,6 +16,7 @@ const state = reactive({
   isMore: false,
   // 是否展示showMore
   isShow: false,
+  activeName: '',
 });
 onMounted(() => {
   getSelect();
@@ -27,11 +27,12 @@ const getSelect = async () => {
   // 默认第一个
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.children) || {};
+  state.activeName = state.selFatherData.id;
   getInfo();
 };
 const getInfo = async () => {
   // 需要传左侧的类型
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${state.selConData.id}`, { server: true }) as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${state.selConData.id}`, { server: true }) as any;
   state.infoList = value?.data;
 };
 const getMore = () => {
@@ -48,7 +49,7 @@ const handleClose = () => {
   state.drawerVisible = false;
 };
 const handleChange = () => {
-  state.selFatherData = _.find(state.selectList, { id: activeName.value }) || {};
+  state.selFatherData = _.find(state.selectList, { id: state.activeName }) || {};
 };
 </script>
 <template>
@@ -68,7 +69,7 @@ const handleChange = () => {
           </div>
         </div>
         <div class="left">
-          <el-collapse v-model="activeName" accordion @change="handleChange">
+          <el-collapse v-model="state.activeName" accordion @change="handleChange">
             <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.id"
               :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`">
               <div v-for="(v, k) in val.children" :key="k"
@@ -90,7 +91,7 @@ const handleChange = () => {
         </div>
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
-        <el-collapse v-model="activeName" accordion @change="handleChange">
+        <el-collapse v-model="state.activeName" accordion @change="handleChange">
           <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.id"
             :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`">
             <div v-for="(v, k) in val.children" :key="k"
