@@ -2,7 +2,6 @@
 import { articleGet, articleCategoryGet, getTree } from '@/utils';
 import { reactive, computed, onMounted } from 'vue';
 import _ from 'lodash';
-import { ref } from 'vue';
 import bannerLearn from '@/public/img/learn/banner-learn.svg';
 import subscribe from '../components/subscribe.vue';
 
