@@ -82,7 +82,7 @@ const handleChange = () => {
         </div>
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
-            <nuxt-link :to="localePath(`/learndetail/${val.id}?type=${state.selConData.id}`)" class="r-list">
+            <nuxt-link :to="localePath(`/learndetail/${val.id}?categoryId=${state.selConData.id}`)" class="r-list">
               <div class="title">{{ val.title }}</div>
               <div class="description">{{ val.description }}</div>
             </nuxt-link>
