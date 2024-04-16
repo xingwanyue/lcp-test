@@ -15,14 +15,14 @@ const total = ref(0);
 const pageSize = ref(10);
 let blogs = ref([]);
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
-  server: false,
+  server: true,
   query: {
     type: '1',
     page: 1,
     pageSize: 10,
   },
 })) as any;
-// console.log(blogsjk);
+
 blogs.value = blogsjk.value.data;
 total.value = blogsjk.value.total;
 
@@ -38,20 +38,22 @@ const handleCurrentChange = (val: number) => {
       </div>
     </div>
     <div class="bolgs_content_wrapper" style="">
-      <div class="bolgs_content">
+      <div v-if="blogs && blogs.length" class="bolgs_content">
         <div v-for="(item, index) in blogs" :key="index" class="one_blog" data-aos="fade-up" data-aos-duration="1000">
-          <div class="title">
-            {{ item.title }}
-          </div>
-          <div class="content">
-            {{ item.description }}
-          </div>
-          <div class="bottom">
-            <div class="date">{{ item.createTime }}</div>
-            <div class="right_arrow">
-              <el-image :src="right_arrow"></el-image>
+          <NuxtLink :to="localePath(`/blogDetail/${item.path}`)">
+            <div class="title">
+              {{ item.title }}
             </div>
-          </div>
+            <div class="content">
+              {{ item.description }}
+            </div>
+            <div class="bottom">
+              <div class="date">{{ item.createTime }}</div>
+              <div class="right_arrow">
+                <el-image :src="right_arrow"></el-image>
+              </div>
+            </div>
+          </NuxtLink>
         </div>
       </div>
       <div class="pagination_out">
