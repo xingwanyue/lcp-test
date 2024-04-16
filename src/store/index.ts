@@ -1,5 +1,7 @@
 import { defineStore } from 'pinia';
 // import isEmpty from 'lodash/isEmpty';
+import dayjs from 'dayjs';
+
 import { api, saveToken, getToken, removeToken } from '@/utils';
 import { fetchmy } from '@/utils/request';
 import { stripePayUrlGet, stripePayStatusGet } from '@/api';
@@ -83,18 +85,9 @@ export const useStore = defineStore({
     },
     async stripePay(payload: any) {
       const token = await getToken(false);
-      console.log(token);
-      // if (10 > 1) {
-      //   return;
-      // }
       const { err, data } = await stripePayUrlGet(payload, token);
-      console.log(data);
-
       if (!err) {
         const { logVipId, url } = data;
-        // commit('upState', {
-        //   logVipId,
-        // });
         timmer = setInterval(async () => {
           const { errP, data = {} } = await stripePayStatusGet(logVipId, token);
           if (!errP) {
@@ -112,22 +105,24 @@ export const useStore = defineStore({
 
               const message = [];
               if (examNum) {
-                console.log(`${examNum}mock exams purchased successfully!`);
+                message.push(`${examNum} mock exams purchased successfully!Remaining times ${this.user.examNum}`);
               }
               if (correctNum) {
-                console.log(`${correctNum}grading purchases successful!`);
+                message.push(`${correctNum} grading purchases successful!Remaining times ${this.user.correctNum}`);
               }
               if (vipDays) {
-                // days premium package purchased successfully! Membership valid until
-                //   message.push(`${vipDays}
-                // ${i18n.t('storeVip.font3')}
-                // ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
-              }
+                message.push(`${vipDays}
+                days premium package purchased successfully! Membership valid until 
+                ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
+               
+              } 
               if (message.length) {
-                // Vue.prototype.$alert(message.join('<br>'), i18n.t('storeVip.buysuccess'), {
-                //   confirmButtonText: i18n.t('storeVip.ok'),
-                //   dangerouslyUseHTMLString: true,
-                // });
+                ElMessage({
+                  dangerouslyUseHTMLString: true,
+                  message: message.join('<br>'),
+                   type: 'success',
+                })
+                
               }
             }
           }
