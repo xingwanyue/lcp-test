@@ -25,8 +25,8 @@ onMounted(() => {
 const getList = async () => {
   // 需要传左侧的类型
   const { id = '' } = route.params as any;
-  const { type = '' } = route.query as any;
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?type=${type}`, { server: true }) as any;
+  const { categoryId = '' } = route.query as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${categoryId}`, { server: true }) as any;
   state.list = value?.data;
   getContent(id);
 };
@@ -34,13 +34,14 @@ const getContent = async (id: string) => {
   state.checkId = id;
   const temp = _.find(state.list, { id: Number(id) }) || {};
   state.details = { ...temp };
-  const { rate } = _.find(state.rateArr, { id: id }) || {};
+  const { rate } = _.find(state.rateArr, { id: Number(id) }) || {};
   state.rate = rate;
 };
 
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.details.id, rate: state.rate });
+  state.details.rateNum += 1;
   saveStorage('det_rate', JSON.stringify(rateArr), true);
   // 
   const { err } = await useFetch(`${rateAdd}`, {
@@ -69,13 +70,12 @@ const rateChange = async () => {
     <div class="content">
       <div class="article-con">
         <div class="title">{{ state.details.name }}</div>
-        <!-- <div class="article-con1">{{ state.details.desc }}</div> -->
-        <div id="content" class="article-con1" v-html="state.details.description" style="white-space:pre-wrap"></div>
+        <div id="content" class="article-con1" v-html="state.details.content" style="white-space:pre-wrap"></div>
       </div>
       <div class="article-title-list article-title-list1">
         <div v-for="(val, key) in state.list" :key="key">
-          <nuxt-link :to="`/learndetail/${val.id || '1'}`" class="">
-            <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
+          <nuxt-link :to="`/learndetail/${val.id}?categoryId=${val.categoryId}`" class="">
+            <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
           </nuxt-link>
         </div>
       </div>
@@ -83,14 +83,14 @@ const rateChange = async () => {
     <div class="rate-con">
       <div>
         <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
-          :score-template="`{value}/5（${112}votes）`" @change="rateChange" />
+          :score-template="`{value}/5（${state.details.rateNum || 0}votes）`" @change="rateChange" />
       </div>
       <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
     </div>
     <div class="article-title-list article-title-list2">
       <div v-for="(val, key) in state.list" :key="key">
-        <nuxt-link :to="`/learndetail/${val.id || '1'}`" class="">
-          <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
+        <nuxt-link :to="`/learndetail/${val.id}?categoryId=${val.categoryId}`" class="">
+          <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
         </nuxt-link>
       </div>
     </div>
