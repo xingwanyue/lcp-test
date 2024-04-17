@@ -19,16 +19,14 @@ const state = reactive({
   rate,
   rateArr: [] as any,
 });
-onMounted(() => {
-  state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
-  getList();
-});
+state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 const getList = async () => {
   // 需要传左侧的类型
   const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${props.categoryId}`, { server: true }) as any;
   state.list = value?.data;
   getContent(props.id);
 };
+getList();
 const getContent = async (id: number) => {
   state.checkId = id;
   const temp = _.find(state.list, { id }) || {};
