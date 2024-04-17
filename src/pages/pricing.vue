@@ -11,6 +11,12 @@ const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
 const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
   server: true,
+  transform: (data: any) => {
+    return data.map((d: any) => ({
+      ...d,
+      data: JSON.parse(d.data),
+    }));
+  },
 })) as any;
 
 const aqList = ref([]) as any;
@@ -108,13 +114,6 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   },
 })) as any;
 
-
-if (buyData && buyData.value) {
-  buyData.value.forEach((item: any) => {
-    item.data = JSON.parse(item.data);
-  });
-  console.log(buyData.value);
-}
 
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
