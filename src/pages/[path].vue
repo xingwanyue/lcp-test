@@ -12,8 +12,8 @@ const { data: article } = (await useFetch(
 )) as any;
 
 useSeoMeta({
-  title: () => article.value?.title,
-  description: () => article.value?.description,
+  title: () => article.value?.title || "DET Pratice Blog",
+  description: () => article.value?.description || "DET Pratice Blog",
   keywords: () => article.value?.keywords,
 });
 </script>
