@@ -74,8 +74,12 @@ const handleChange = () => {
   <div class="learn">
     <div class="learn_hader" :style="`background-image: url(${bannerLearn});`">
       <div class="learn_hader_content">
-        <div class="title">We will update the exam preparation tips of Duolingo English Test timely</div>
-        <div class="title2">The lastest update is until March 1, 2024</div>
+        <div>
+          <h1 class="title">We will update the exam preparation tips of Duolingo English Test timely</h1>
+        </div>
+        <div>
+          <h2 class="title2">The lastest update is until March 1, 2024</h2>
+        </div>
       </div>
     </div>
     <div class="learn_content_wrapper">

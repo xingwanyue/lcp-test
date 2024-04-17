@@ -10,7 +10,7 @@ onMounted(() => { });
   <div class="aboutus">
     <div class="learn_hader" :style="`background-image: url(${bannerAboutus});`">
       <div class="learn_hader_content">
-        <div class="title">About DET Pratice</div>
+        <h1 class="title">About DET Pratice</h1>
       </div>
     </div>
     <div class="content padding">

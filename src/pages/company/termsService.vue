@@ -10,7 +10,7 @@ onMounted(() => { });
   <div class="termsService">
     <div class="learn_hader" :style="`background-image: url(${bannerAboutus});`">
       <div class="learn_hader_content">
-        <div class="title">Terms of Service</div>
+        <h1 class="title">Terms of Service</h1>
       </div>
     </div>
     <div class="bg">
@@ -32,13 +32,16 @@ onMounted(() => { });
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Accounts</div>
-        <div class="content1">When you create an account with us, you must provide us with information that is accurate,
+        <div class="content1">When you create an account with us, you must provide us with information that is
+          accurate,
           complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in
           immediate termination of your account on our Service.<div class="line-break"></div>
-          You are responsible for safeguarding the password that you use to access the Service and for any activities or
+          You are responsible for safeguarding the password that you use to access the Service and for any activities
+          or
           actions under your password, whether your password is with our Service or a third-party service.<div
             class="line-break"></div>
-          You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware
+          You agree not to disclose your password to any third party. You must notify us immediately upon becoming
+          aware
           of any breach of security or unauthorized use of your account.</div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
@@ -48,7 +51,8 @@ onMounted(() => { });
           DET Practice has no control over and assumes no responsibility for, the content, privacy policies, or
           practices
           of any third-party websites or services. You further acknowledge and agree that DET Practice shall not be
-          responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in
+          responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or
+          in
           connection with the use of or reliance on any such content, goods, or services available on or through any
           such
           web sites or services.<div class="line-break"></div>
@@ -60,7 +64,8 @@ onMounted(() => { });
         <div class="content1">We may terminate or suspend your account immediately, without prior notice or liability,
           for
           any reason whatsoever, including without limitation if you breach the Terms.<div class="line-break"></div>
-          Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account,
+          Upon termination, your right to use the Service will immediately cease. If you wish to terminate your
+          account,
           you may simply discontinue using the Service.<div class="line-break"></div>
           All provisions of the Terms which by their nature should survive termination shall survive termination,
           including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of
@@ -72,14 +77,16 @@ onMounted(() => { });
           “AS
           AVAILABLE” basis. The Service is provided without warranties of any kind, whether express or implied,
           including,
-          but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement,
+          but not limited to, implied warranties of merchantability, fitness for a particular purpose,
+          non-infringement,
           or course of performance.</div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Governing Law</div>
         <div class="content1">These Terms shall be governed and construed in accordance with the laws of the United
           Kingdom without regard to its conflict of law provisions.<div class="line-break"></div>
-          Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+          Our failure to enforce any right or provision of these Terms will not be considered a waiver of those
+          rights.
           If
           any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of
           these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our
