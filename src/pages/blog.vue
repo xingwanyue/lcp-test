@@ -57,10 +57,10 @@ const handleCurrentChange = async (val: number) => {
         >
           <NuxtLink :to="localePath(`/${item.path}`)">
             <div class="title">
-              {{ item.title }}
+              {{ item.name }}
             </div>
             <div class="content">
-              {{ item.description }}
+              {{ item.content }}
             </div>
             <div class="bottom">
               <div class="date">{{ dayjs(item.createTime).format("YYYY-MM-DD") }}</div>
