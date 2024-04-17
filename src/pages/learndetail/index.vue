@@ -22,9 +22,7 @@ const state = reactive({
 });
 onMounted(() => {
   state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
-  setTimeout(() => {
-    getList();
-  }, 200);
+  getList();
 });
 const getList = async () => {
   // 需要传左侧的类型
@@ -78,7 +76,7 @@ const rateChange = async () => {
         <div class="article-title-list article-title-list1">
           <div v-for="(val, key) in state.list" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="">
-              <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
+              <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
             </nuxt-link>
           </div>
         </div>
@@ -93,7 +91,7 @@ const rateChange = async () => {
       <div class="article-title-list article-title-list2">
         <div v-for="(val, key) in state.list" :key="key">
           <nuxt-link :to="localePath(`/${val.path}`)" class="">
-            <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
+            <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
           </nuxt-link>
         </div>
       </div>
