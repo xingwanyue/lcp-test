@@ -154,7 +154,7 @@ const options = [
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Learn.name }}</div>
         <div v-for="(itemin, indexin) in Learn.list" :key="indexin" class="one_link_list_detail">
-          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
           <NuxtLink :to="localePath(``)" class="show-more" @click="showMore2()"> show more</NuxtLink>
@@ -163,7 +163,7 @@ const options = [
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Blog.name }}</div>
         <div v-for="(itemin, indexin) in Blog.list" :key="indexin" class="one_link_list_detail">
-          <NuxtLink :to="localePath(`/blogDetail/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail show-more">
           <NuxtLink :to="localePath(``)" class="show-more" @click="showMore1()"> show more</NuxtLink>
