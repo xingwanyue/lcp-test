@@ -4,6 +4,8 @@ import vSubscribe from "../components/subscribe.vue";
 import { oauth2SignIn } from "@/utils/googleAuth";
 import { useStore } from "@/store";
 import { staticUrlGet, formatNumber } from "@/utils";
+
+const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 // 获取平台数据
@@ -27,10 +29,10 @@ const { data: commentTopFont } = (await useFetch(`${api}/common/portalData?type=
 const { data: userPingLun } = (await useFetch(`${api}/common/portalData?type=1`, {
   server: true,
 })) as any;
-let pinglunMid = ref([]);
+let pinglunMid = ref([]) as any;
 pinglunMid = userPingLun;
 // 将pinglun的数据两个两个的放到一起
-const pinglunArr = ref([]);
+const pinglunArr = ref([]) as any;
 const makePinglunData = () => {
   for (let i = 0; i < pinglunMid.value.length; i += 2) {
     pinglunMid.value[i].data = JSON.parse(pinglunMid.value[i].data);
@@ -46,7 +48,7 @@ const { data: usersockerArr } = (await useFetch(`${api}/common/portalData?type=3
 })) as any;
 
 if (usersockerArr && usersockerArr.value && usersockerArr.value.length) {
-  usersockerArr.value.forEach((item) => {
+  usersockerArr.value.forEach((item: any) => {
     try {
       item.data = JSON.parse(item.data);
     } catch (error) {
@@ -95,7 +97,7 @@ const moveAnamit = () => {
 };
 
 // 将数字格式化 306281变为306k 3062811变为3061k
-const toThousands = (num) => {
+const toThousands = (num: any) => {
   if (!num) {
     return 0;
   }
@@ -140,10 +142,7 @@ const googleLogin = () => {
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink
-            :to="localePath('/login')"
-            class="common_btn common_btn_hover_borderCu white"
-          >
+          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
             Start free with email
           </NuxtLink>
         </div>
@@ -191,12 +190,8 @@ const googleLogin = () => {
               constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -221,12 +216,8 @@ const googleLogin = () => {
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -254,12 +245,8 @@ const googleLogin = () => {
               hours.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -287,12 +274,8 @@ const googleLogin = () => {
               preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -321,22 +304,13 @@ const googleLogin = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink
-            v-if="!user.id"
-            :to="localePath('/login')"
-            class="common_btn common_btn_hover_bgColor yellow"
-          >
+          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
             Join Them
           </NuxtLink>
         </div>
         <div v-if="usersockerArr && usersockerArr.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
-          <Carousel
-            :itemsToShow="6"
-            :autoplay="2000"
-            :wrap-around="true"
-            :pauseAutoplayOnHover="true"
-          >
+          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
@@ -366,17 +340,8 @@ const googleLogin = () => {
         </div>
         <div class="review_scroll_out">
           <div v-if="pinglunArr && pinglunArr.length" class="review_scroll_out_it">
-            <Carousel
-              :itemsToShow="4"
-              :autoplay="2000"
-              :wrap-around="true"
-              :pauseAutoplayOnHover="true"
-            >
-              <Slide
-                v-for="(item, index) in pinglunArr"
-                :key="index"
-                class="two_card_out"
-              >
+            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+              <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
@@ -390,12 +355,7 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate
-                          v-model="item[0].data.rate"
-                          allow-half
-                          disabled
-                          size="large"
-                        />
+                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].data.content }}</div>
@@ -412,12 +372,7 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate
-                          v-model="item[0].data.rate"
-                          allow-half
-                          disabled
-                          size="large"
-                        />
+                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].data.content }}</div>
