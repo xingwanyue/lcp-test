@@ -62,7 +62,7 @@ export const oauthLogin = async () => {
     const { email, picture, name } = data;
     return fetch(`${api}/common/login`, {
       method: 'post',
-      data: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+      body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
     });
   }
