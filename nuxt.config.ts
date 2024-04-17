@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts',
   },
   plugins: [
-    { src: '@/plugins/aos.client.js', ssr: false },
+    { src: '@/plugins/aos.client.js', ssr: true },
     { src: '@/assets/iconfont/iconfont.js', ssr: false },
     { src: '@/plugins/crisp.js', mode: "client" },
   ],

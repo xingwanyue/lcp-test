@@ -7,7 +7,6 @@ import { reactive } from 'vue';
 const localePath = useLocalePath();
 const store = useStore();
 const { locale, t } = useI18n();
-const link_arr = [];
 const state = reactive({
   isMore1: false,
   isMore2: false,
@@ -48,7 +47,7 @@ const getLearn = async () => {
     args = { ...args, page: 1, pageSize: 4 };
   }
   const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
-    server: false,
+    server: true,
     query: { ...args },
   })) as any;
   Learn.value.list = Learnjk.value.data.map((item: any) => {
