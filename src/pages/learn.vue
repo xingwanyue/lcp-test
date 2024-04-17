@@ -28,9 +28,9 @@ const getSelect = async () => {
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.children) || {};
   state.activeName = state.selFatherData.id;
-  getInfo();
+
 };
-getSelect();
+await getSelect();
 const getInfo = async () => {
   // 需要传左侧的类型
   const args = {
@@ -49,6 +49,7 @@ const getInfo = async () => {
     state.infoList = value?.data;
   }
 };
+await getInfo();
 const getMore = () => {
   state.isMore = true;
   state.page += 1;

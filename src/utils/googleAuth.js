@@ -3,7 +3,7 @@ import { api } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
-const YOUR_REDIRECT_URI = 'https://app.detpractice.com/oauth';
+const YOUR_REDIRECT_URI = 'https://www.detpractice.com/oauth';
 
 /*
  * Create form to request access token from Google's OAuth 2.0 server.
