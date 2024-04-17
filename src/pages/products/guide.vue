@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useStore } from "@/store";
+const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
@@ -8,14 +9,14 @@ const { data: plans } = (await useFetch(`${api}/common/vips`, {
   server: true,
 })) as any;
 
-const speakingData = ref({});
-const writingData = ref({});
+const speakingData = ref({}) as any;
+const writingData = ref({}) as any;
 if (plans && plans.value && plans.value.data && plans.value.data.length) {
   const { data } = plans.value;
   // 找到 write 为1
-  const writeData = data.find((item) => item.write === 1);
+  const writeData = data.find((item: any) => item.write === 1);
   // 找到 speak 为1
-  const speakData = data.find((item) => item.speak === 1);
+  const speakData = data.find((item: any) => item.speak === 1);
   speakingData.value = speakData;
   writingData.value = writeData;
   if (isVip) {
@@ -168,11 +169,7 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div
-                v-for="(item, index) in article1.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -181,21 +178,13 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ speakingData.price / 100 }}</span>
                 </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(speakingData.id)"
-                >
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(speakingData.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="../../public/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="../../public/img/products/white_arrow_right.svg" />
@@ -213,11 +202,7 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div
-                v-for="(item, index) in article2.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -226,21 +211,13 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ writingData.price / 100 }}</span>
                 </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(writingData.id)"
-                >
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(writingData.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="../../public/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="../../public/img/products/white_arrow_right.svg" />
