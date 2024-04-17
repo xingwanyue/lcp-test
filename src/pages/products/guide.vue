@@ -1,123 +1,159 @@
 <script setup lang="ts">
-import Double_Right_Arrow from '@/public/img/guid/Double_Right_Arrow.svg';
+import { useStore } from "@/store";
+const store = useStore();
+const user = computed(() => store.user);
+const isVip = computed(() => store.isVip);
+import Double_Right_Arrow from "@/public/img/guid/Double_Right_Arrow.svg";
+const { data: plans } = (await useFetch(`${api}/common/vips`, {
+  server: true,
+})) as any;
+
+const speakingData = ref({});
+const writingData = ref({});
+if (plans && plans.value && plans.value.data && plans.value.data.length) {
+  const { data } = plans.value;
+  // 找到 write 为1
+  const writeData = data.find((item) => item.write === 1);
+  // 找到 speak 为1
+  const speakData = data.find((item) => item.speak === 1);
+  speakingData.value = speakData;
+  writingData.value = writeData;
+  if (isVip) {
+    speakingData.value.price = speakingData.value.vipPrice;
+    writingData.value.price = writingData.value.vipPrice;
+  }
+}
 
 const article1 = ref({
-  title: 'Key Features of DET Speaking Exam Excellence:',
+  title: "Key Features of DET Speaking Exam Excellence:",
   list: [
     {
-      smallTitle: '• Comprehensive Exam Breakdown: ',
+      smallTitle: "• Comprehensive Exam Breakdown: ",
       content:
-        ' Detailed exploration of all speaking task types in the DET, providing a clear understanding of what to expect.',
+        " Detailed exploration of all speaking task types in the DET, providing a clear understanding of what to expect.",
     },
     {
-      smallTitle: '• Effective Speaking Strategies: ',
+      smallTitle: "• Effective Speaking Strategies: ",
       content:
-        'Practical advice on how to approach each speaking task, including tips on organizing thoughts and expressing ideas clearly. ',
+        "Practical advice on how to approach each speaking task, including tips on organizing thoughts and expressing ideas clearly. ",
     },
     {
-      smallTitle: '• Interactive Speaking Exercises: ',
+      smallTitle: "• Interactive Speaking Exercises: ",
       content:
-        '   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios. • Expert Insights: Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance. ',
+        "   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios. • Expert Insights: Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance. ",
     },
     {
-      smallTitle: '• Real-Life Speaking Examples: ',
-      content: ' Recorded speech samples and analyses to demonstrate successful speaking strategies in action. ',
-    },
-    {
-      smallTitle: '• Personalized Learning Approaches: ',
+      smallTitle: "• Real-Life Speaking Examples: ",
       content:
-        'Tips and techniques suitable for learners at different levels of English proficiency, ensuring everyone benefits.',
+        " Recorded speech samples and analyses to demonstrate successful speaking strategies in action. ",
     },
     {
-      smallTitle: '• Self-Assessment Tools: ',
-      content: 'Methods and criteria to evaluate your speaking skills and track progress. ',
-    },
-    {
-      smallTitle: '• Focused Language Development: ',
+      smallTitle: "• Personalized Learning Approaches: ",
       content:
-        'Emphasis on key vocabulary and grammatical structures that are essential for effective communication in the DET speaking exam. ',
+        "Tips and techniques suitable for learners at different levels of English proficiency, ensuring everyone benefits.",
     },
     {
-      smallTitle: '• Up-to-date and Relevant: ',
+      smallTitle: "• Self-Assessment Tools: ",
       content:
-        'Incorporates the latest updates in the DET speaking format, ensuring your preparation is current and comprehensive.',
+        "Methods and criteria to evaluate your speaking skills and track progress. ",
+    },
+    {
+      smallTitle: "• Focused Language Development: ",
+      content:
+        "Emphasis on key vocabulary and grammatical structures that are essential for effective communication in the DET speaking exam. ",
+    },
+    {
+      smallTitle: "• Up-to-date and Relevant: ",
+      content:
+        "Incorporates the latest updates in the DET speaking format, ensuring your preparation is current and comprehensive.",
     },
   ],
 });
 const article2 = ref({
-  title: 'Key Features of DET Writing Exam Excellence:',
+  title: "Key Features of DET Writing Exam Excellence:",
   list: [
     {
-      smallTitle: '• All-encompassing Content: ',
-      content: 'Extensive coverage of every writing task type in the DET, with in-depth analysis and examples.',
-    },
-    {
-      smallTitle: '• Step-by-Step Approaches: ',
-      content: 'Detailed guidelines on planning, structuring, and writing essays that meet and exceed exam standards.',
-    },
-    {
-      smallTitle: '• Practical Writing Exercises: ',
-      content: 'Hands-on exercises to practice and refine writing skills, tailored to the specific demands of the DET.',
-    },
-    {
-      smallTitle: '• Expert Writing Tips: ',
+      smallTitle: "• All-encompassing Content: ",
       content:
-        'Proven tips and tricks from experienced ESL educators to enhance clarity, coherence, and sophistication in writing.',
+        "Extensive coverage of every writing task type in the DET, with in-depth analysis and examples.",
     },
     {
-      smallTitle: '• Sample Essays with Analysis: ',
-      content: 'Annotated sample responses illustrating effective writing strategies and common mistakes to avoid.',
-    },
-    {
-      smallTitle: '• Personalized Learning Pathways: ',
-      content: 'Strategies and advice adaptable to various proficiency levels, from beginners to advanced learners.',
-    },
-    {
-      smallTitle: '• Evaluation Techniques: ',
-      content: 'Tools and methods for self-assessment and continuous improvement in writing skills.',
-    },
-    {
-      smallTitle: '• Grammar and Vocabulary Focus: ',
-      content: 'Special emphasis on the linguistic elements critical for success in the DET writing section.',
-    },
-    {
-      smallTitle: '• Updated and Relevant: ',
+      smallTitle: "• Step-by-Step Approaches: ",
       content:
-        'Incorporating the latest trends and updates in the DET writing format, ensures you have the most current preparation.',
+        "Detailed guidelines on planning, structuring, and writing essays that meet and exceed exam standards.",
+    },
+    {
+      smallTitle: "• Practical Writing Exercises: ",
+      content:
+        "Hands-on exercises to practice and refine writing skills, tailored to the specific demands of the DET.",
+    },
+    {
+      smallTitle: "• Expert Writing Tips: ",
+      content:
+        "Proven tips and tricks from experienced ESL educators to enhance clarity, coherence, and sophistication in writing.",
+    },
+    {
+      smallTitle: "• Sample Essays with Analysis: ",
+      content:
+        "Annotated sample responses illustrating effective writing strategies and common mistakes to avoid.",
+    },
+    {
+      smallTitle: "• Personalized Learning Pathways: ",
+      content:
+        "Strategies and advice adaptable to various proficiency levels, from beginners to advanced learners.",
+    },
+    {
+      smallTitle: "• Evaluation Techniques: ",
+      content:
+        "Tools and methods for self-assessment and continuous improvement in writing skills.",
+    },
+    {
+      smallTitle: "• Grammar and Vocabulary Focus: ",
+      content:
+        "Special emphasis on the linguistic elements critical for success in the DET writing section.",
+    },
+    {
+      smallTitle: "• Updated and Relevant: ",
+      content:
+        "Incorporating the latest trends and updates in the DET writing format, ensures you have the most current preparation.",
     },
   ],
 });
 
-import wallet from '../../public/img/guid/wallet.svg';
-import download from '../../public/img/guid/download.svg';
-import book from '../../public/img/guid/book.svg';
+import wallet from "../../public/img/guid/wallet.svg";
+import download from "../../public/img/guid/download.svg";
+import book from "../../public/img/guid/book.svg";
 // import Double_Right_Arrow from '../../public/img/guid/Double_Right_Arrow.svg';
 const contaceUsList = ref([
   {
     icon: wallet,
-    font: 'Buying Guide',
-    tip: 'Please select whether you are buying a speaking guide or a writing guide',
-    btn: 'Buying Speaking Guide',
-    btn1: 'Buying Writing Guide',
-    id: '1',
+    font: "Buying Guide",
+    tip: "Please select whether you are buying a speaking guide or a writing guide",
+    btn: "Buying Speaking Guide",
+    btn1: "Buying Writing Guide",
+    id: "1",
   },
   {
     icon: download,
-    font: 'Download',
-    tip: 'After purchasing the course, you can click to download it',
-    btn: 'Download Speaking Guide',
-    btn1: 'Download Writing Guide',
-    id: '2',
+    font: "Download",
+    tip: "After purchasing the course, you can click to download it",
+    btn: "Download Speaking Guide",
+    btn1: "Download Writing Guide",
+    id: "2",
   },
   {
     icon: book,
-    font: 'Start Learning',
-    tip: 'After purchasing the course, you can view audio related to the Speaking Guide.',
-    btn: '',
-    btn1: 'Speaking practice audio',
-    id: '3',
+    font: "Start Learning",
+    tip: "After purchasing the course, you can view audio related to the Speaking Guide.",
+    btn: "",
+    btn1: "Speaking practice audio",
+    id: "3",
   },
 ]);
+
+const buyMembership = (id: number) => {
+  store.stripePay({ vipId: id });
+};
 </script>
 
 <template>
@@ -132,19 +168,39 @@ const contaceUsList = ref([
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
+              <div
+                v-for="(item, index) in article1.list"
+                :key="index"
+                class="one_article_detail"
+              >
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">14.99</span>
+                  <span class="price_num">{{ speakingData.price / 100 }}</span>
                 </div>
-                <div class="btn common_btn_hover_bgColor">
-                  <nuxt-link class="font" :href="urlGet('/login')">Buy Now</nuxt-link>
-                  <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
+                <div
+                  v-if="user.id"
+                  class="btn common_btn_hover_bgColor"
+                  @click="buyMembership(speakingData.id)"
+                >
+                  <div class="font">Buy Now</div>
+                  <div class="icon">
+                    <img src="../../public/img/products/white_arrow_right.svg" />
+                  </div>
                 </div>
+                <NuxtLink
+                  :to="localePath(`/login`)"
+                  v-else
+                  class="btn common_btn_hover_bgColor"
+                >
+                  <div class="font">Buy Now</div>
+                  <div class="icon">
+                    <img src="../../public/img/products/white_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -157,19 +213,39 @@ const contaceUsList = ref([
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
+              <div
+                v-for="(item, index) in article2.list"
+                :key="index"
+                class="one_article_detail"
+              >
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">14.99</span>
+                  <span class="price_num">{{ writingData.price / 100 }}</span>
                 </div>
-                <div class="btn common_btn_hover_bgColor">
-                  <nuxt-link class="font" :href="urlGet('/login')">Buy Now</nuxt-link>
-                  <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
+                <div
+                  v-if="user.id"
+                  class="btn common_btn_hover_bgColor"
+                  @click="buyMembership(writingData.id)"
+                >
+                  <div class="font">Buy Now</div>
+                  <div class="icon">
+                    <img src="../../public/img/products/white_arrow_right.svg" />
+                  </div>
                 </div>
+                <NuxtLink
+                  :to="localePath(`/login`)"
+                  v-else
+                  class="btn common_btn_hover_bgColor"
+                >
+                  <div class="font">Buy Now</div>
+                  <div class="icon">
+                    <img src="../../public/img/products/white_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -183,7 +259,7 @@ const contaceUsList = ref([
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
-            <img :src="Double_Right_Arrow" class="Double_Right_Arrow" alt="">
+            <img :src="Double_Right_Arrow" class="Double_Right_Arrow" alt="" />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <div v-if="item.btn" class="btn">{{ item.btn }}</div>
@@ -200,11 +276,12 @@ const contaceUsList = ref([
       <div class="orange_block">
         <h2 class="orange_title">Elite Language Educators</h2>
         <div class="team_desc">
-          Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching
-          Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS,
-          and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching
-          approaches, and innovative methods, they are committed to helping each student achieve their highest potential
-          in English proficiency.
+          Our distinguished team of language educators, holding esteemed qualifications
+          like TESOL and other teaching Certificates, brings a wealth of experience in
+          preparing students for major English tests like TOEFL, IELTS, and Duolingo
+          English Test (DET). Renowned for their impressive language skills, personalized
+          teaching approaches, and innovative methods, they are committed to helping each
+          student achieve their highest potential in English proficiency.
         </div>
         <div class="team_img">
           <img src="../../public/img/guid/team_bg.svg" />
@@ -271,7 +348,7 @@ const contaceUsList = ref([
           width: 100%;
           height: auto;
           border-radius: 4px;
-          box-shadow: 16px 16px 16px 0px rgba(0,0,0,0.2);
+          box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.2);
           @media screen and (max-width: 974px) {
             height: 100%;
             width: auto;
@@ -388,7 +465,7 @@ const contaceUsList = ref([
             height: 56px;
             margin: 0 auto;
           }
-          .Double_Right_Arrow{
+          .Double_Right_Arrow {
             width: 40px;
             height: 40px;
             position: absolute;
@@ -419,14 +496,14 @@ const contaceUsList = ref([
             margin-top: 24px;
             cursor: pointer;
           }
-          .btnNone{
+          .btnNone {
             padding: 11px;
             text-align: center;
             border-radius: 4px;
-            border: 1px solid #FFF;
+            border: 1px solid #fff;
             font-weight: 500;
             font-size: 16px;
-            color: #FFF;
+            color: #fff;
             margin-top: 24px;
             // cursor: pointer;
           }
