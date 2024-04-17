@@ -114,7 +114,7 @@ const toThousands = (num) => {
                   <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
                     Start experiencing
                   </NuxtLink>
-                  <NuxtLink v-ielse :to="localePath(`login`)" class="font">
+                  <NuxtLink v-else :to="localePath(`login`)" class="font">
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">

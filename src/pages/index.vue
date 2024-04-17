@@ -20,15 +20,19 @@ const {
   server: true,
 })) as any;
 
-// 获取评论头部文字
-const { data: commentTopFont } = (await useFetch(`${api}/common/portalData?type=5`, {
-  server: true,
-})) as any;
 
-// 获取评论数据
-const { data: userPingLun } = (await useFetch(`${api}/common/portalData?type=1`, {
-  server: true,
-})) as any;
+const [commentTopFontResponse, userPingLunResponse,usersockerArrResponse,usersockerTopFontResponse] = await Promise.all([
+  useFetch(`${api}/common/portalData?type=5`, { server: true }),
+  useFetch(`${api}/common/portalData?type=1`, { server: true }),
+  useFetch(`${api}/common/portalData?type=3`, { server: true }),
+  useFetch(`${api}/common/portalData?type=4`, { server: true }),
+]);
+const { data: commentTopFont } = commentTopFontResponse as any;
+const { data: userPingLun } = userPingLunResponse as any;
+const { data: usersockerArr } = usersockerArrResponse as any;
+const { data: usersockerTopFont } = usersockerTopFontResponse as any;
+
+
 let pinglunMid = ref([]) as any;
 pinglunMid = userPingLun;
 // 将pinglun的数据两个两个的放到一起
@@ -42,10 +46,12 @@ const makePinglunData = () => {
     pinglunArr.value.push([pinglunMid.value[i], pinglunMid.value[i + 1]]);
   }
 };
-// 获取用户得分数据;
-const { data: usersockerArr } = (await useFetch(`${api}/common/portalData?type=3`, {
-  server: true,
-})) as any;
+if (pinglunMid && pinglunMid.value.length) {
+    makePinglunData();
+  }
+
+
+
 
 if (usersockerArr && usersockerArr.value && usersockerArr.value.length) {
   usersockerArr.value.forEach((item: any) => {
@@ -58,19 +64,14 @@ if (usersockerArr && usersockerArr.value && usersockerArr.value.length) {
   console.log(usersockerArr);
 }
 
-// 获取用户得分数据 头部文案
-const { data: usersockerTopFont } = (await useFetch(`${api}/common/portalData?type=4`, {
-  server: true,
-})) as any;
+
 
 onMounted(() => {
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     moveAnamit();
   }
-  if (pinglunMid && pinglunMid.value.length) {
-    makePinglunData();
-  }
+  
 });
 const moveAnamit = () => {
   const small_title_wrap = document.querySelector(".small_title_wrap");
