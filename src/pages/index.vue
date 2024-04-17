@@ -328,13 +328,6 @@ const googleLogin = () => {
           >
             Join Them
           </NuxtLink>
-          <NuxtLink
-            v-else
-            :to="localePath('/')"
-            class="common_btn common_btn_hover_bgColor yellow"
-          >
-            Join Them
-          </NuxtLink>
         </div>
         <div v-if="usersockerArr && usersockerArr.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
