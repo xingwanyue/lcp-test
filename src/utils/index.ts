@@ -1,13 +1,17 @@
 import _ from 'lodash';
 
-const host = 'https://app.detpractice.com/app/#/';
 const cdn = 'https://detcdn.zixuekeji.cn';
 // export const api = 'https://app.detpractice.com/weapp/api';
 // export const api = 'http://192.168.1.22:9000/api';
 // export const api = 'http://192.168.1.147:11001/weapp/api';
 export const api = 'https://app.xingwanyue.com/weapp/api';
 
-export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
+export const urlGet = (url: string) => {
+  // 跳转 app.hostname.com
+  const domains = window.location.hostname.split('.').reverse();
+  const domain = `.${domains[1]}.${domains[0]}`;
+  return `https://app.${domain}?url=${encodeURIComponent(url)}`;
+};
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
 export const staticUrlGet = (path: string) => (path.startsWith('http') ? path : `${cdn}${path}`);
 const TOKEN = 'det_i18n_token';
@@ -25,12 +29,50 @@ export function getToken(forHeader?: any) {
   return Promise.resolve(res);
 }
 
+export const setCookie = (name: string, value: string, days: number) => {
+  let expires = '';
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = `; expires=${date.toUTCString()}`;
+  }
+  const domains = window.location.hostname.split('.').reverse();
+  const domain = `.${domains[1]}.${domains[0]}`;
+  document.cookie = `${name}=${value || ''}${expires}; domain=${domain}; path=/`;
+};
+
+export const getCookie = (name: string) => {
+  const nameEQ = `${name}=`;
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') {
+      c = c.substring(1, c.length);
+    }
+    if (c.indexOf(nameEQ) === 0) {
+      return c.substring(nameEQ.length, c.length);
+    }
+  }
+  return null;
+};
+export const deleteAllCookies = () => {
+  const cookies = document.cookie.split(';');
+
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i];
+    const eqPos = cookie.indexOf('=');
+    const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;`;
+  }
+};
+
 export function saveToken(token: any, remeber: any) {
   const store = remeber ? localStorage : sessionStorage;
   if (token === null || token === undefined) {
     store.removeItem(TOKEN);
   } else {
     store[TOKEN] = token;
+    setCookie(TOKEN, token, 90);
   }
 }
 let defaultCachePrefix = '20180428_'; // 默认缓存前缀,便于快速清除缓存
@@ -77,7 +119,7 @@ export function getTree(data = [], sid: any, pid = null) {
 }
 export const portalContact = `${api}/common/portalContact`;
 
-export const formatCash = (cash:number) => {
+export const formatCash = (cash: number) => {
   if (!cash) {
     return '0';
   }
@@ -90,7 +132,7 @@ export const formatCash = (cash:number) => {
   return (cash / 100).toFixed(2);
 };
 // 数字添加千分位
-export const formatNumber = (num:number) => {
+export const formatNumber = (num: number) => {
   if (!num) {
     return '0';
   }
