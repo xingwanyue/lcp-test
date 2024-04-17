@@ -1,5 +1,6 @@
 import { fetchmy } from '@/utils/request';
-import { api } from '@/utils';
+import { api, domainGet } from '@/utils';
+
 export const sesCodeSend = (args) =>
   fetchmy(`${api}/common/sesCode`, {
     method: 'post',
@@ -32,4 +33,9 @@ export const findPassword = (args) =>
   fetchmy(`${api}/common/findPassword`, {
     method: 'post',
     body: JSON.stringify(args),
+  });
+export const logout = () =>
+  fetchmy(`${api}/common/findPassword`, {
+    method: 'post',
+    body: JSON.stringify({ domain: domainGet() }),
   });

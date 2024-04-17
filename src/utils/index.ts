@@ -13,19 +13,11 @@ export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
 export const staticUrlGet = (path: string) => (path.startsWith('http') ? path : `${cdn}${path}`);
 const TOKEN = 'det_i18n_token';
-export function getToken(forHeader?: any) {
-  if (!process.client) {
-    return;
-  }
-  const token = sessionStorage[TOKEN] || localStorage[TOKEN];
-  let res;
-  if (token) {
-    res = forHeader ? `Bearer ${token}` : token;
-  } else {
-    res = forHeader ? '' : token;
-  }
-  return Promise.resolve(res);
-}
+
+export const domainGet = () => {
+  const domains = window.location.hostname.split('.').reverse();
+  return `.${domains[1]}.${domains[0]}`;
+};
 
 export const setCookie = (name: string, value: string, days: number) => {
   let expires = '';
@@ -34,9 +26,8 @@ export const setCookie = (name: string, value: string, days: number) => {
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     expires = `; expires=${date.toUTCString()}`;
   }
-  const domains = window.location.hostname.split('.').reverse();
-  const domain = `.${domains[1]}.${domains[0]}`;
-  document.cookie = `${name}=${value || ''}${expires}; domain=${domain}; path=/`;
+
+  document.cookie = `${name}=${value || ''}${expires}; domain=${domainGet()}; path=/`;
 };
 
 export const getCookie = (name: string) => {
@@ -53,16 +44,20 @@ export const getCookie = (name: string) => {
   }
   return null;
 };
-export const deleteAllCookies = () => {
-  const cookies = document.cookie.split(';');
 
-  for (let i = 0; i < cookies.length; i++) {
-    const cookie = cookies[i];
-    const eqPos = cookie.indexOf('=');
-    const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-    document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;`;
+export function getToken(forHeader?: any) {
+  if (!process.client) {
+    return;
   }
-};
+  const token = sessionStorage[TOKEN] || localStorage[TOKEN] || getCookie(TOKEN);
+  let res;
+  if (token) {
+    res = forHeader ? `Bearer ${token}` : token;
+  } else {
+    res = forHeader ? '' : token;
+  }
+  return Promise.resolve(res);
+}
 
 export function saveToken(token: any, remeber: any) {
   const store = remeber ? localStorage : sessionStorage;
