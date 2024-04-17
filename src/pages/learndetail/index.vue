@@ -9,14 +9,13 @@ import subscribe from '../../components/subscribe.vue';
 const props = defineProps({
   id: Number,
   categoryId: Number,
-  ttt: String,
 }) as any;
 const localePath = useLocalePath();
 const rate = ref(0);
 const state = reactive({
   list: [] as any,
   details: {} as any,
-  checkId: '',
+  checkId: 0,
   rate,
   rateArr: [] as any,
 });
@@ -30,11 +29,11 @@ const getList = async () => {
   state.list = value?.data;
   getContent(props.id);
 };
-const getContent = async (id: string) => {
+const getContent = async (id: number) => {
   state.checkId = id;
-  const temp = _.find(state.list, { id: Number(id) }) || {};
+  const temp = _.find(state.list, { id }) || {};
   state.details = { ...temp };
-  const { rate } = _.find(state.rateArr, { id: Number(id) }) || {};
+  const { rate } = _.find(state.rateArr, { id }) || {};
   state.rate = rate;
 };
 

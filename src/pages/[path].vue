@@ -31,7 +31,7 @@ useSeoMeta({
       </div>
     </div>
     <div v-else>
-      <LearnDetail :id="article?.id" :categoryId="article?.categoryId" ttt="aaa" />
+      <LearnDetail :id="article?.id" :categoryId="article?.categoryId" />
     </div>
 
   </div>
