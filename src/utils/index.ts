@@ -11,7 +11,12 @@ const host = 'https://app.xingwanyue.com';
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
-export const staticUrlGet = (path: string) => (path.startsWith('http') ? path : `${cdn}${path}`);
+export const staticUrlGet = (path: string) => {
+  if (!path) {
+    throw new Error('Path is required');
+  }
+  return path.startsWith('http') ? path : `${cdn}${path}`;
+};
 const TOKEN = 'det_i18n_token';
 
 export const domainGet = () => {
