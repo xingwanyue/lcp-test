@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { api } from "@/utils";
 import _ from "lodash";
+import LearnDetail from './learndetail/index.vue';
 
 const route = useRoute();
 
@@ -10,7 +11,7 @@ const { data: article } = (await useFetch(
     server: true,
   }
 )) as any;
-
+const isLearn = article.value?.type === '2';
 useSeoMeta({
   title: () => article.value?.title || "DET Pratice Blog",
   description: () => article.value?.description || "DET Pratice Blog",
@@ -18,16 +19,23 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div class="article_detail">
-    <div class="detail_hader">
-      <div class="detail_hader_content">
-        <h1>{{ article.name }}</h1>
+  <div>
+    <div v-if="!isLearn" class="article_detail">
+      <div class="detail_hader">
+        <div class="detail_hader_content">
+          <h1>{{ article.name }}</h1>
+        </div>
+      </div>
+      <div class="article" v-if="article?.content">
+        <div class="articleContent" v-html="article?.content"></div>
       </div>
     </div>
-    <div class="article" v-if="article?.content">
-      <div class="articleContent" v-html="article?.content"></div>
+    <div v-else>
+      <LearnDetail :id="article?.id" :categoryId="article?.categoryId" ttt="aaa" />
     </div>
+
   </div>
+
 </template>
 <style scoped lang="scss">
 .article_detail {

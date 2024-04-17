@@ -1,15 +1,17 @@
 <script lang="ts" setup>
-import { reactive, computed, onMounted } from 'vue';
+import { reactive, onMounted } from 'vue';
 import _ from 'lodash';
-import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue';
 import { ElMessage } from 'element-plus';
 import { articleGet, rateAdd, saveStorage, getStorage } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
+const props = defineProps({
+  id: Number,
+  categoryId: Number,
+  ttt: String,
+}) as any;
 const localePath = useLocalePath();
-const router = useRouter();
-const route = useRoute();
 const rate = ref(0);
 const state = reactive({
   list: [] as any,
@@ -26,11 +28,9 @@ onMounted(() => {
 });
 const getList = async () => {
   // 需要传左侧的类型
-  const { id = '' } = route.params as any;
-  const { categoryId = '' } = route.query as any;
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${categoryId}`, { server: true }) as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${props.categoryId}`, { server: true }) as any;
   state.list = value?.data;
-  getContent(id);
+  getContent(props.id);
 };
 const getContent = async (id: string) => {
   state.checkId = id;
@@ -63,37 +63,39 @@ const rateChange = async () => {
 </script>
 <template>
   <div class="learndetail">
-    <div class="top">Home >
-      <nuxt-link :to="localePath('/learn')" class="">
-        Learn
-      </nuxt-link>
-      > {{ state.details.name }}
-    </div>
-    <div class="content">
-      <div class="article-con">
-        <div class="title">{{ state.details.name }}</div>
-        <div id="content" class="article-con1" v-html="state.details.content" style="white-space:pre-wrap"></div>
+    <div class="learndetail-content">
+      <div class="top">Home >
+        <nuxt-link :to="localePath('/learn')" class="">
+          Learn
+        </nuxt-link>
+        > {{ state.details.name }}
       </div>
-      <div class="article-title-list article-title-list1">
+      <div class="content">
+        <div class="article-con">
+          <div class="title">{{ state.details.name }}</div>
+          <div id="content" class="article-con1" v-html="state.details.content" style="white-space:pre-wrap"></div>
+        </div>
+        <div class="article-title-list article-title-list1">
+          <div v-for="(val, key) in state.list" :key="key">
+            <nuxt-link :to="localePath(`/${val.path}`)" class="">
+              <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+      <div class="rate-con">
+        <div>
+          <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
+            :score-template="`{value}/5（${state.details.rateNum || 0}votes）`" @change="rateChange" />
+        </div>
+        <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
+      </div>
+      <div class="article-title-list article-title-list2">
         <div v-for="(val, key) in state.list" :key="key">
-          <nuxt-link :to="localePath(`/learndetail/${val.id}?categoryId=${val.categoryId}`)" class="">
+          <nuxt-link :to="localePath(`/${val.path}`)" class="">
             <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
           </nuxt-link>
         </div>
-      </div>
-    </div>
-    <div class="rate-con">
-      <div>
-        <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
-          :score-template="`{value}/5（${state.details.rateNum || 0}votes）`" @change="rateChange" />
-      </div>
-      <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
-    </div>
-    <div class="article-title-list article-title-list2">
-      <div v-for="(val, key) in state.list" :key="key">
-        <nuxt-link :to="localePath(`/learndetail/${val.id}?categoryId=${val.categoryId}`)" class="">
-          <div :class="`title ${state.checkId === String(val.id) ? 'title-checked' : ''}`">{{ val.name }}</div>
-        </nuxt-link>
       </div>
     </div>
     <subscribe class="subs" />
@@ -109,8 +111,11 @@ const rateChange = async () => {
 </style>
 <style lang="scss" scoped>
 .learndetail{
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  .learndetail-content{
+    max-width: 1200px;
+    margin: auto;
+  }
   .top{
     font-weight: 400;
     font-size: 16px;
