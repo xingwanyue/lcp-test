@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 import { urlGet } from "@/utils";
+import { useStore } from "@/store";
 import vEmbark from "../../components/embark.vue";
-
+const store = useStore();
+const user = computed(() => store.user);
 useSeoMeta({
   title: "Duolingo Practice Question Bank",
   description:
@@ -78,7 +80,10 @@ const toThousands = (num) => {
                 </div>
               </div>
               <div class="btn common_btn_hover_bgColor">
-                <NuxtLink class="font" :href="urlGet('/login')">
+                <NuxtLink v-if="user.id" class="font" :href="urlGet('/login')">
+                  Practice For Free
+                </NuxtLink>
+                <NuxtLink v-else class="font" :to="localePath(`login`)">
                   Practice For Free
                 </NuxtLink>
                 <div class="icon">
@@ -106,7 +111,10 @@ const toThousands = (num) => {
                   different question formats.
                 </div>
                 <div class="right_click">
-                  <NuxtLink :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
+                  <NuxtLink v-ielse :to="localePath(`login`)" class="font">
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
@@ -130,7 +138,10 @@ const toThousands = (num) => {
                   different question formats.
                 </div>
                 <div class="right_click">
-                  <NuxtLink :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
+                  <NuxtLink v-else :to="localePath(`login`)" class="font">
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
@@ -154,7 +165,10 @@ const toThousands = (num) => {
                   different question formats.
                 </div>
                 <div class="right_click">
-                  <NuxtLink :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
+                  <NuxtLink v-else :to="localePath(`login`)" class="font">
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
@@ -178,7 +192,10 @@ const toThousands = (num) => {
                   different question formats.
                 </div>
                 <div class="right_click">
-                  <NuxtLink :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
+                  <NuxtLink v-else :to="localePath(`login`)" class="font">
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
