@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { useStore } from '@/store';
-import { useRouter } from 'vue-router';
-import online from '../public/img/pricing/online.svg';
-import email from '../public/img/pricing/email.svg';
-import message from '../public/img/pricing/message.svg';
-import payment from '../public/img/pricing/payment.png';
+import { staticUrlGet } from "@/utils";
+import { useStore } from "@/store";
+import { useRouter } from "vue-router";
+import online from "../public/img/pricing/online.svg";
+import email from "../public/img/pricing/email.svg";
+import message from "../public/img/pricing/message.svg";
+import payment from "../public/img/pricing/payment.png";
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
@@ -23,7 +24,7 @@ const aqList = ref([]) as any;
 const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: '3',
+    type: "3",
   },
 })) as any;
 aqList.value = aqlistjk.value.data;
@@ -34,75 +35,75 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
     vips.forEach((item: any) => {
-      if (item.type === '1') {
+      if (item.type === "1") {
         if (item.day === 0) {
           item.qlList = [
-            { name: 1, desc: `${freeNum}Free Practices / day`, tips: '' },
+            { name: 1, desc: `${freeNum}Free Practices / day`, tips: "" },
             {
               name: 2,
               desc: `$${correct.price / 100} / 5 Correction Services`,
-              tips: '',
+              tips: "",
             },
-            { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: '' },
-            { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: '' },
-            { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: '' },
+            { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: "" },
+            { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: "" },
+            { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: "" },
           ];
         }
         if (item.day === 7) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
             {
               name: 2,
               desc: `${item.correctNum} Correction Services`,
-              tips: 'for speaking and writing',
+              tips: "for speaking and writing",
             },
             {
               name: 3,
               desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              tips: 'Exclusive Discount',
+              tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
+            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
+            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
           ];
         }
         if (item.day === 15) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
             {
               name: 2,
               desc: `${item.correctNum} Correction Services`,
-              tips: 'for speaking and writing',
+              tips: "for speaking and writing",
             },
             {
               name: 3,
               desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              tips: 'Exclusive Discount',
+              tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
+            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
+            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
           ];
         }
         if (item.day === 30) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
             {
               name: 2,
               desc: `${item.correctNum} Correction Services`,
-              tips: 'for speaking and writing',
+              tips: "for speaking and writing",
             },
             {
               name: 3,
               desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              tips: 'Exclusive Discount',
+              tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
+            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
+            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
           ];
         }
         membershipArr.push(item);
@@ -114,8 +115,7 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   },
 })) as any;
 
-
-const switchType = ref('1');
+const switchType = ref("1");
 const changeSwitchType = (type: string) => {
   switchType.value = type;
 };
@@ -134,129 +134,129 @@ const openOrCloseOneQuestion = (item: any) => {
 
 const contaceUsList = ref([
   {
-    type: '1',
+    type: "1",
     icon: online,
-    font: 'Online Customer Service',
-    tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
-    btn: 'Initiate a conversation',
+    font: "Online Customer Service",
+    tip: "Online hours: Monday to Friday, 10:00 - 19:00.",
+    btn: "Initiate a conversation",
   },
   {
-    type: '2',
+    type: "2",
     icon: email,
-    font: 'Consultation Email',
-    tip: 'We will respond to you within one business day.',
-    btn: 'info@aitogether.uk',
+    font: "Consultation Email",
+    tip: "We will respond to you within one business day.",
+    btn: "info@aitogether.uk",
   },
   {
-    type: '3',
+    type: "3",
     icon: message,
-    font: 'Leave a message',
-    tip: 'We will respond to you within one business day.',
-    btn: 'Leave a message now',
+    font: "Leave a message",
+    tip: "We will respond to you within one business day.",
+    btn: "Leave a message now",
   },
 ]);
 const membership = ref([
   {
-    name: 'free',
+    name: "free",
     equityList: [
       {
-        name: '1',
-        desc: '3 Free Practices / day',
-        tips: '',
+        name: "1",
+        desc: "3 Free Practices / day",
+        tips: "",
       },
       {
-        name: '2',
-        desc: '$5 /5 Correction Services',
-        tips: '',
+        name: "2",
+        desc: "$5 /5 Correction Services",
+        tips: "",
       },
       {
-        name: '3',
-        desc: '$5 /5 Correction Services',
-        tips: '',
+        name: "3",
+        desc: "$5 /5 Correction Services",
+        tips: "",
       },
       {
-        name: '4',
-        desc: '$5 /1 Mock Exam',
-        tips: '',
+        name: "4",
+        desc: "$5 /1 Mock Exam",
+        tips: "",
       },
       {
-        name: '5',
-        desc: '$19.99 /Writing Guide',
-        tips: '',
+        name: "5",
+        desc: "$19.99 /Writing Guide",
+        tips: "",
       },
       {
-        name: '6',
-        desc: 'View all practice questions',
-        tips: '',
+        name: "6",
+        desc: "View all practice questions",
+        tips: "",
       },
       {
-        name: '7',
-        desc: 'View all practice questions',
-        tips: '',
+        name: "7",
+        desc: "View all practice questions",
+        tips: "",
       },
       {
-        name: '8',
-        desc: 'Question Analysis',
-        tips: '',
+        name: "8",
+        desc: "Question Analysis",
+        tips: "",
       },
       {
-        name: '9',
-        desc: 'Vocabulary Book',
-        tips: 'high-frequency vocabulary in the exam',
+        name: "9",
+        desc: "Vocabulary Book",
+        tips: "high-frequency vocabulary in the exam",
       },
       {
-        name: '10',
-        desc: 'Intelligent question brushing plan',
-        tips: '',
+        name: "10",
+        desc: "Intelligent question brushing plan",
+        tips: "",
       },
       {
-        name: '11',
-        desc: 'Read aloud AI rating',
-        tips: '',
+        name: "11",
+        desc: "Read aloud AI rating",
+        tips: "",
       },
     ],
   },
 ]);
 const membershipUnchanging = ref([
   {
-    name: '1',
-    desc: 'View all practice questions',
-    tips: '',
+    name: "1",
+    desc: "View all practice questions",
+    tips: "",
   },
   {
-    name: '2',
-    desc: 'High-scoring Answers',
-    tips: '',
+    name: "2",
+    desc: "High-scoring Answers",
+    tips: "",
   },
   {
-    name: '3',
-    desc: 'Question Analysis',
-    tips: '',
+    name: "3",
+    desc: "Question Analysis",
+    tips: "",
   },
   {
-    name: '4',
-    desc: 'Vocabulary Book',
-    tips: 'high-frequency vocabulary in the exam',
+    name: "4",
+    desc: "Vocabulary Book",
+    tips: "high-frequency vocabulary in the exam",
   },
   {
-    name: '5',
-    desc: 'Intelligent question brushing plan',
-    tips: '',
+    name: "5",
+    desc: "Intelligent question brushing plan",
+    tips: "",
   },
   {
-    name: '6',
-    desc: 'Read aloud AI ratings',
-    tips: '',
+    name: "6",
+    desc: "Read aloud AI ratings",
+    tips: "",
   },
 ]);
 
 const copy = async (email: any) => {
   await navigator.clipboard.writeText(`${email}`);
   // element3提示成功
-  ElMessage.success('Copy successfully');
+  ElMessage.success("Copy successfully");
 };
 const openchat = () => {
-  $crisp.push(['do', 'chat:open']);
+  $crisp.push(["do", "chat:open"]);
 };
 </script>
 <template>
@@ -275,13 +275,21 @@ const openchat = () => {
         <div class="switch_out">
           <div
             @click="changeSwitchType('1')"
-            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
+            :class="[
+              switchType === '1'
+                ? 'switch_btn yellow common_btn_hover_bgColor'
+                : 'switch_btn',
+            ]"
           >
             Membership
           </div>
           <div
             @click="changeSwitchType('2')"
-            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
+            :class="[
+              switchType === '2'
+                ? 'switch_btn yellow common_btn_hover_bgColor'
+                : 'switch_btn',
+            ]"
           >
             More Service
           </div>
@@ -290,7 +298,11 @@ const openchat = () => {
           <div
             v-for="(item, index) in vipsData.membershipArr"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
+            :class="[
+              item.id === CurrentMembershipId
+                ? 'one_price '
+                : 'one_price currentMembership_no',
+            ]"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -298,20 +310,38 @@ const openchat = () => {
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" class="off">
-                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% </span>
+                  <span>
+                    {{
+                      ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
+                        0
+                      )
+                    }}%
+                  </span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
               <div class="card_price_part3">
                 <div class="big_price">${{ item.price / 100 }}</div>
-                <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
+                <div class="small_price">
+                  ${{ (item.originalPrice / 100).toFixed(2) }}
+                </div>
               </div>
               <div v-if="user.id">
-                <div v-if="item.day !== 0" class="card_price_buy_btn" @click="buyMembership(item.id)">
+                <div
+                  v-if="item.day !== 0"
+                  class="card_price_buy_btn"
+                  @click="buyMembership(item.id)"
+                >
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
-                <div v-else class="card_price_buy_btn try_free" @click="buyMembership(item.id)">Try for free</div>
+                <div
+                  v-else
+                  class="card_price_buy_btn try_free"
+                  @click="buyMembership(item.id)"
+                >
+                  Try for free
+                </div>
               </div>
               <div v-else>
                 <div v-if="item.day !== 0" class="card_price_buy_btn">
@@ -324,7 +354,11 @@ const openchat = () => {
               </div>
 
               <div class="card_price_qllist">
-                <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
+                <div
+                  v-for="(itemin, indexin) in item.qlList"
+                  :key="index * 10 + indexin"
+                  class="one_ql"
+                >
                   <div class="icon">
                     <img src="../public/img/pricing/check.svg" />
                   </div>
@@ -333,14 +367,22 @@ const openchat = () => {
                     {{ itemin.desc }}
                   </div>
                   <div v-if="itemin.tips" class="tips">
-                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
+                    <el-tooltip
+                      :content="itemin.tips"
+                      placement="right-start"
+                      effect="light"
+                    >
                       <img src="../public/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
               </div>
               <div class="card_price_qllist" style="margin-top: 16px">
-                <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
+                <div
+                  v-for="(itemuc, indexin) in membershipUnchanging"
+                  :key="itemuc.name"
+                  class="one_ql"
+                >
                   <div class="icon">
                     <img src="../public/img/pricing/check.svg" />
                   </div>
@@ -349,7 +391,11 @@ const openchat = () => {
                     {{ itemuc.desc }}
                   </div>
                   <div v-if="itemuc.tips" class="tips">
-                    <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
+                    <el-tooltip
+                      :content="itemuc.tips"
+                      placement="right-start"
+                      effect="light"
+                    >
                       <img src="../public/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
@@ -362,7 +408,11 @@ const openchat = () => {
           <div
             v-for="(item, index) in vipsData.moreServiceArr"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
+            :class="[
+              item.id === CurrentMembershipId
+                ? 'one_price '
+                : 'one_price currentMembership_no',
+            ]"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -380,7 +430,10 @@ const openchat = () => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
+                <div
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  @click="buyMembership(item.id)"
+                >
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
@@ -396,7 +449,12 @@ const openchat = () => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel :itemsToShow="1" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+          <Carousel
+            :itemsToShow="1"
+            :autoplay="2000"
+            :wrap-around="true"
+            :pauseAutoplayOnHover="true"
+          >
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
@@ -407,7 +465,7 @@ const openchat = () => {
                 <div class="days">{{ item.data.examNum }}-day membership</div>
               </div>
               <div class="scroll_buyed_right">
-                <div class="flag"><img :src="item.data.avatar" /></div>
+                <div class="flag"><img :src="staticUrlGet(item.data.avatar)" /></div>
                 <div class="country_name">{{ item.data.country }}</div>
                 <div class="time">20 mins ago</div>
               </div>
