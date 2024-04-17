@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { getToken } from '@/utils';
 import { useStore } from '@/store';
 import { useRouter } from 'vue-router';
-const router = useRouter();
 import online from '../public/img/pricing/online.svg';
 import email from '../public/img/pricing/email.svg';
 import message from '../public/img/pricing/message.svg';
@@ -125,7 +123,6 @@ const changeSwitchType = (type: string) => {
   switchType.value = type;
 };
 
-const MembershipArr = ref([]);
 const CurrentMembershipId = ref(0);
 const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
