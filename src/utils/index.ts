@@ -75,3 +75,16 @@ export function getTree(data = [], sid: any, pid = null) {
   return children.length ? children : undefined;
 }
 export const portalContact = `${api}/common/portalContact`;
+
+export const formatCash = (cash:number) => {
+  if (!cash) {
+    return '0';
+  }
+  if (cash % 100 === 0) {
+    return (cash / 100).toFixed(0);
+  }
+  if (cash % 10 === 0) {
+    return (cash / 100).toFixed(1);
+  }
+  return (cash / 100).toFixed(2);
+};

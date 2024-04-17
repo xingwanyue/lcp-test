@@ -9,6 +9,7 @@ import message from "../public/img/pricing/message.svg";
 import payment from "../public/img/pricing/payment.png";
 const store = useStore();
 const user = computed(() => store.user);
+const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
 const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`, {
   server: true,
@@ -37,18 +38,26 @@ if (plans && plans.value && plans.value.data && plans.value.data.length) {
   console.log(freeNum);
 
   plans.value.data.forEach((item: any) => {
+    console.log(isVip);
+    if (isVip) {
+      item.price = item.vipPrice;
+      exam.price = exam.vipPrice;
+      correct.price = correct.vipPrice;
+      speak.price = speak.vipPrice;
+      write.price = write.vipPrice;
+    }
     if (item.type === "1") {
       if (item.day === 0) {
         item.qlList = [
           { name: 1, desc: `${freeNum}Free Practices / day`, tips: "" },
           {
             name: 2,
-            desc: `$${correct.originalPrice / 100} / 5 Correction Services`,
+            desc: `$${correct.price / 100} / 5 Correction Services`,
             tips: "",
           },
-          { name: 3, desc: `$${exam.originalPrice / 100} / 1 Mock Exam`, tips: "" },
-          { name: 4, desc: `$${speak.originalPrice / 100} / Speaking Guide`, tips: "" },
-          { name: 5, desc: `$${write.originalPrice / 100} / Writing Guide`, tips: "" },
+          { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: "" },
+          { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: "" },
+          { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: "" },
         ];
       }
       if (item.day === 7) {
@@ -61,13 +70,13 @@ if (plans && plans.value && plans.value.data && plans.value.data.length) {
           },
           {
             name: 3,
-            desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+            desc: `$${correct.price / 100} / 5 Correction Services`,
             tips: "Exclusive Discount",
           },
           { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-          { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
-          { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
-          { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
+          { name: 5, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: "" },
+          { name: 6, desc: `$${speak.price / 100} / Speaking Guide`, tips: "" },
+          { name: 7, desc: `$${write.price / 100} / Writing Guide`, tips: "" },
         ];
       }
       if (item.day === 15) {
@@ -80,13 +89,13 @@ if (plans && plans.value && plans.value.data && plans.value.data.length) {
           },
           {
             name: 3,
-            desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+            desc: `$${correct.price / 100} / 5 Correction Services`,
             tips: "Exclusive Discount",
           },
           { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-          { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
-          { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
-          { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
+          { name: 5, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: "" },
+          { name: 6, desc: `$${speak.price / 100} / Speaking Guide`, tips: "" },
+          { name: 7, desc: `$${write.price / 100} / Writing Guide`, tips: "" },
         ];
       }
       if (item.day === 30) {
@@ -133,12 +142,7 @@ const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
 };
 const buyMembership = (id: number) => {
-  console.log("798798798798");
-  if (user.id) {
-    store.stripePay({ vipId: id });
-  } else {
-    router.push("/login");
-  }
+  store.stripePay({ vipId: id });
 };
 
 const openOrCloseOneQuestion = (item: any) => {
@@ -278,7 +282,7 @@ const openchat = () => {
     <div class="part1_wrapper">
       <div class="part1">
         <div class="title1">
-          <h1>Plans & Pricing</h1>
+          <h1>Plans & Pricing{{ Boolean(isVip) }}</h1>
         </div>
         <div class="title2">
           <h4>
@@ -324,13 +328,13 @@ const openchat = () => {
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" class="off">
-                  <span
-                    >{{
+                  <span>
+                    {{
                       ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
                         0
                       )
-                    }}%</span
-                  >
+                    }}%
+                  </span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
@@ -340,20 +344,31 @@ const openchat = () => {
                   ${{ (item.originalPrice / 100).toFixed(2) }}
                 </div>
               </div>
-              <div
-                v-if="item.day !== 0"
-                class="card_price_buy_btn"
-                @click="buyMembership(item.id)"
-              >
-                Buy Now
+              <div v-if="user.id">
+                <div
+                  v-if="item.day !== 0"
+                  class="card_price_buy_btn"
+                  @click="buyMembership(item.id)"
+                >
+                  Buy Now
+                </div>
+                <div
+                  v-else
+                  class="card_price_buy_btn try_free"
+                  @click="buyMembership(item.id)"
+                >
+                  Try for free
+                </div>
               </div>
-              <div
-                v-else
-                class="card_price_buy_btn try_free"
-                @click="buyMembership(item.id)"
-              >
-                Try for free
+              <div v-else>
+                <div v-if="item.day !== 0" class="card_price_buy_btn">
+                  <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                </div>
+                <div v-else class="card_price_buy_btn try_free">
+                  <NuxtLink :to="localePath(`/`)"> Try for free</NuxtLink>
+                </div>
               </div>
+
               <div class="card_price_qllist">
                 <div
                   v-for="(itemin, indexin) in item.qlList"
@@ -430,11 +445,18 @@ const openchat = () => {
                 <div class="off_price">${{ (item.price / 100).toFixed(2) }}</div>
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
-              <div
-                class="card_price_buy_btn common_btn_hover_bgColor"
-                @click="buyMembership(item.id)"
-              >
-                Buy Now
+              <div v-if="user.id">
+                <div
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  @click="buyMembership(item.id)"
+                >
+                  Buy Now
+                </div>
+              </div>
+              <div v-else>
+                <div class="card_price_buy_btn common_btn_hover_bgColor">
+                  <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                </div>
               </div>
             </div>
           </div>
@@ -651,6 +673,7 @@ const openchat = () => {
                 color: #403f3e;
                 position: relative;
                 top: 10px;
+                text-decoration: line-through;
               }
             }
             .card_price_buy_btn {

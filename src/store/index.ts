@@ -13,6 +13,8 @@ export const useStore = defineStore({
     return {
       user: {} as any,
       userSelectLanguage: 'en',
+      isVip:false,
+
     };
   },
   actions: {
@@ -74,6 +76,10 @@ export const useStore = defineStore({
           removeToken();
         } else {
           const { user } = await res.json();
+          const { vipEndTime } = user;
+          if (vipEndTime && dayjs().isBefore(dayjs(vipEndTime))) {
+            this.isVip = true;
+          }
           this.user = user;
         }
       } catch (e) {
