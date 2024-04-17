@@ -21,7 +21,9 @@ const state = reactive({
   total: 0,
 });
 onMounted(() => {
-  getSelect();
+  setTimeout(() => {
+    getSelect();
+  }, 200);
 });
 const getSelect = async () => {
   const { data = {} } = await useFetch(`${articleCategoryGet}`, { server: true }) as any;

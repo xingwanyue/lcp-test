@@ -15,17 +15,19 @@ useSeoMeta({
 const total = ref(0);
 const pageSize = ref(10);
 let blogs = ref([]) as any;
-const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
-  server: true,
-  query: {
-    type: "1",
-    page: 1,
-    pageSize: 10,
-  },
-})) as any;
+setTimeout(async () => {
+  const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+    server: true,
+    query: {
+      type: "1",
+      page: 1,
+      pageSize: 10,
+    },
+  })) as any;
 
-blogs.value = blogsjk.value.data;
-total.value = blogsjk.value.total;
+  blogs.value = blogsjk.value.data;
+  total.value = blogsjk.value.total;
+}, 200);
 
 const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
@@ -48,13 +50,7 @@ const handleCurrentChange = async (val: number) => {
     </div>
     <div class="bolgs_content_wrapper" style="">
       <div v-if="blogs && blogs.length" class="bolgs_content">
-        <div
-          v-for="(item, index) in blogs"
-          :key="index"
-          class="one_blog"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div v-for="(item, index) in blogs" :key="index" class="one_blog" data-aos="fade-up" data-aos-duration="1000">
           <NuxtLink :to="localePath(`/${item.path}`)">
             <div class="title">
               {{ item.name }}
@@ -72,14 +68,8 @@ const handleCurrentChange = async (val: number) => {
         </div>
       </div>
       <div class="pagination_out">
-        <el-pagination
-          background
-          layout="prev, pager, next"
-          :total="total"
-          :page-size="pageSize"
-          @current-change="handleCurrentChange"
-          class="mt-4"
-        />
+        <el-pagination background layout="prev, pager, next" :total="total" :page-size="pageSize"
+          @current-change="handleCurrentChange" class="mt-4" />
       </div>
     </div>
     <v-embark />

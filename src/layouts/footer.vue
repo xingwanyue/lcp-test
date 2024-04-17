@@ -13,8 +13,11 @@ const state = reactive({
   isMore2: false,
 });
 onMounted(() => {
-  getLearn();
-  getBlob();
+  setTimeout(() => {
+    getLearn();
+    getBlob();
+  }, 200);
+
 });
 const prod = {
   name: 'Products',
@@ -52,7 +55,7 @@ const getLearn = async () => {
     args = { ...args, page: 1, pageSize: 4 };
   }
   const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
-    server: true,
+    server: false,
     query: { ...args },
   })) as any;
   Learn.value.list = Learnjk.value.data.map((item: any) => {

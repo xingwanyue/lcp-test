@@ -20,7 +20,9 @@ const state = reactive({
 });
 onMounted(() => {
   state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
-  getList();
+  setTimeout(() => {
+    getList();
+  }, 200);
 });
 const getList = async () => {
   // 需要传左侧的类型
