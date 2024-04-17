@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: '@/plugins/aos.client.js', ssr: false },
     { src: '@/assets/iconfont/iconfont.js', ssr: false },
+    { src: '@/plugins/crisp.js', mode: "client" },
   ],
   app: {
     head: {

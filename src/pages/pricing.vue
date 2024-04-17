@@ -268,7 +268,10 @@ const copy = async (email: any) => {
   // element3提示成功
   ElMessage.success("Copy successfully");
 };
-onMounted(() => {});
+const openchat = () => {
+  console.log("8798789");
+  $crisp.push(["do", "chat:open"]);
+};
 </script>
 <template>
   <div class="pricing">
@@ -501,7 +504,9 @@ onMounted(() => {});
             <div class="icon"><img :src="`${item.icon}`" /></div>
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
-            <div v-if="item.type === '1'" class="btn">{{ item.btn }}</div>
+            <div v-if="item.type === '1'" class="btn" @click="openchat">
+              {{ item.btn }}
+            </div>
             <div v-if="item.type === '2'" class="btn" @click="copy(item.btn)">
               {{ item.btn }}
             </div>

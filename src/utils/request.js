@@ -85,7 +85,7 @@ export const fetchmy = (url, options) => {
       if (status === 401) {
         localStorage.clear();
         sessionStorage.clear();
-        window.location.href = '/home';
+        window.location.href = '/index';
       }
       return data;
     });

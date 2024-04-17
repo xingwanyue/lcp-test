@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { ref, onMounted } from "vue";
+import { useRoute, useRouter } from "vue-router";
 
-import { useStore } from '@/store';
-import { oauth2SignIn } from '@/utils/googleAuth';
-import { getToken, saveToken } from '@/utils';
-import googleImg from '../public/img/login/google_logo.svg';
-import lookImg from '../public/img/login/look.svg';
-import unlookImg from '../public/img/login/unlook.svg';
-import errIcon from '../public/img/login/errIcon.svg';
+import { useStore } from "@/store";
+import { oauth2SignIn } from "@/utils/googleAuth";
+import { getToken, saveToken } from "@/utils";
+import googleImg from "../public/img/login/google_logo.svg";
+import lookImg from "../public/img/login/look.svg";
+import unlookImg from "../public/img/login/unlook.svg";
+import errIcon from "../public/img/login/errIcon.svg";
 
 const localePath = useLocalePath();
 const route = useRoute();
 const router = useRouter();
 const store = useStore();
 
-const url = route.query.url ? decodeURIComponent(route.query.url as string) : '/home';
+const url = route.query.url ? decodeURIComponent(route.query.url as string) : "/index";
 const formData = ref({}) as any;
 const loading = ref(false);
 const pwdShow = ref(false);
-const errMessage = ref('');
+const errMessage = ref("");
 const errShow = ref(false);
 definePageMeta({
-  layout: 'noheaderfooter',
+  layout: "noheaderfooter",
 });
 
 onMounted(async () => {
@@ -39,29 +39,29 @@ const submit = async () => {
   errShow.value = false;
   if (!email) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = "Please enter your email address.";
     return false;
   }
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email)) {
     errShow.value = true;
-    errMessage.value = 'Invalid email.';
+    errMessage.value = "Invalid email.";
     return false;
   }
   if (!password) {
     errShow.value = true;
-    errMessage.value = 'Please enter your password.';
+    errMessage.value = "Please enter your password.";
     return false;
   }
   loading.value = true;
-  const { err, data: { token = '' } = {} } = await store.userClickLogin({
+  const { err, data: { token = "" } = {} } = await store.userClickLogin({
     email: formData.value.email,
     password: formData.value.password,
   });
 
   if (!err) {
     await saveToken(token, true);
-    console.log('store.getUserInfo');
+    console.log("store.getUserInfo");
     await store.getUserInfo();
     router.push(url);
   } else {
@@ -86,16 +86,30 @@ const googleLogin = async () => {
         <span style="margin-left: 16px">Log in with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form ref="ruleFormRef" :model="formData" size="default" class="login-form" @submit.native.prevent>
+      <el-form
+        ref="ruleFormRef"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
         <el-form-item prop="email" label="">
           Email address
           <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
         </el-form-item>
         <el-form-item prop="password" label="">
           Password
-          <el-input v-model="formData.password" :type="pwdShow ? 'text' : 'password'" placeholder="Password">
+          <el-input
+            v-model="formData.password"
+            :type="pwdShow ? 'text' : 'password'"
+            placeholder="Password"
+          >
             <template #suffix>
-              <img :src="pwdShow ? lookImg : unlookImg" alt="" @click="pwdShow = !pwdShow" />
+              <img
+                :src="pwdShow ? lookImg : unlookImg"
+                alt=""
+                @click="pwdShow = !pwdShow"
+              />
             </template>
           </el-input>
         </el-form-item>
@@ -105,7 +119,13 @@ const googleLogin = async () => {
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button
+              v-loading="loading"
+              type="primary"
+              native-type="submit"
+              class="submit"
+              @click="submit"
+            >
               Login
             </el-button>
           </div>
@@ -113,11 +133,19 @@ const googleLogin = async () => {
         <el-form-item>
           <div class="zhuce">
             <div class="goforget">
-              <NuxtLink :to="localePath('/forget')" style="color: #f66442; cursor: pointer">Forgot password?</NuxtLink>
+              <NuxtLink
+                :to="localePath('/forget')"
+                style="color: #f66442; cursor: pointer"
+                >Forgot password?</NuxtLink
+              >
             </div>
             <div class="goregister">
               Don't have an account?
-              <NuxtLink :to="localePath('/register')" style="color: #f66442; cursor: pointer">Sign up here</NuxtLink>
+              <NuxtLink
+                :to="localePath('/register')"
+                style="color: #f66442; cursor: pointer"
+                >Sign up here</NuxtLink
+              >
             </div>
           </div>
         </el-form-item>
