@@ -67,7 +67,7 @@ const handleClose = () => {
 const menus = [
   {
     name: t("Home"),
-    path: "/index",
+    path: "/",
   },
   {
     name: t("Products"),

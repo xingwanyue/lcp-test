@@ -15,7 +15,7 @@ const route = useRoute();
 const router = useRouter();
 const store = useStore();
 
-const url = route.query.url ? decodeURIComponent(route.query.url as string) : "/index";
+const url = route.query.url ? decodeURIComponent(route.query.url as string) : "/";
 const formData = ref({}) as any;
 const loading = ref(false);
 const pwdShow = ref(false);

@@ -193,7 +193,7 @@ const googleLogin = () => {
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/index')" class="font"
+              <NuxtLink v-else :to="localePath('/')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -226,7 +226,7 @@ const googleLogin = () => {
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/index')" class="font"
+              <NuxtLink v-else :to="localePath('/')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -259,7 +259,7 @@ const googleLogin = () => {
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/index')" class="font"
+              <NuxtLink v-else :to="localePath('/')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -292,7 +292,7 @@ const googleLogin = () => {
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/index')" class="font"
+              <NuxtLink v-else :to="localePath('/')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -332,7 +332,7 @@ const googleLogin = () => {
           </NuxtLink>
           <NuxtLink
             v-else
-            :to="localePath('/index')"
+            :to="localePath('/')"
             class="common_btn common_btn_hover_bgColor yellow"
           >
             Join Them
