@@ -20,58 +20,54 @@ const {
   server: true,
 })) as any;
 
-
-const [commentTopFontResponse, userPingLunResponse,usersockerArrResponse,usersockerTopFontResponse] = await Promise.all([
+const [
+  { data: commentTopFontResponse },
+  { data: userPingLunResponse },
+  { data: usersockerArrResponse },
+  { data: usersockerTopFontResponse },
+] = await Promise.all([
   useFetch(`${api}/common/portalData?type=5`, { server: true }),
-  useFetch(`${api}/common/portalData?type=1`, { server: true }),
-  useFetch(`${api}/common/portalData?type=3`, { server: true }),
+  useFetch(`${api}/common/portalData?type=1`, {
+    server: true,
+    transform: (data) => {
+      const pinglunArr = [] as any;
+      let pinglunMid = [] as any;
+      for (let i = 0; i < data.length; i += 2) {
+        console.log("inini");
+        console.log(JSON.parse(data[i].data));
+        pinglunMid[i] = JSON.parse(data[i].data);
+        pinglunMid[i + 1] = JSON.parse(data[i + 1].data);
+        pinglunMid[i].rate = Number(pinglunMid[i].rate);
+        pinglunMid[i + 1].rate = Number(pinglunMid[i + 1].rate);
+        pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
+      }
+      return pinglunArr;
+    },
+  }),
+  useFetch(`${api}/common/portalData?type=3`, {
+    server: true,
+    transform: (data) => {
+      const scorearr = [];
+      console.log(data);
+      data.forEach((item: any) => {
+        try {
+          item.data = JSON.parse(item.data);
+          scorearr.push(item);
+        } catch (error) {
+          console.log(error);
+        }
+      });
+      return scorearr;
+    },
+  }),
   useFetch(`${api}/common/portalData?type=4`, { server: true }),
 ]);
-const { data: commentTopFont } = commentTopFontResponse as any;
-const { data: userPingLun } = userPingLunResponse as any;
-const { data: usersockerArr } = usersockerArrResponse as any;
-const { data: usersockerTopFont } = usersockerTopFontResponse as any;
-
-
-let pinglunMid = ref([]) as any;
-pinglunMid = userPingLun;
-// 将pinglun的数据两个两个的放到一起
-const pinglunArr = ref([]) as any;
-const makePinglunData = () => {
-  for (let i = 0; i < pinglunMid.value.length; i += 2) {
-    pinglunMid.value[i].data = JSON.parse(pinglunMid.value[i].data);
-    pinglunMid.value[i + 1].data = JSON.parse(pinglunMid.value[i + 1].data);
-    pinglunMid.value[i].data.rate = Number(pinglunMid.value[i].data.rate);
-    pinglunMid.value[i + 1].data.rate = Number(pinglunMid.value[i + 1].data.rate);
-    pinglunArr.value.push([pinglunMid.value[i], pinglunMid.value[i + 1]]);
-  }
-};
-if (pinglunMid && pinglunMid.value.length) {
-    makePinglunData();
-  }
-
-
-
-
-if (usersockerArr && usersockerArr.value && usersockerArr.value.length) {
-  usersockerArr.value.forEach((item: any) => {
-    try {
-      item.data = JSON.parse(item.data);
-    } catch (error) {
-      console.log(error);
-    }
-  });
-  console.log(usersockerArr);
-}
-
-
 
 onMounted(() => {
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     moveAnamit();
   }
-  
 });
 const moveAnamit = () => {
   const small_title_wrap = document.querySelector(".small_title_wrap");
@@ -143,7 +139,10 @@ const googleLogin = () => {
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+          <NuxtLink
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_borderCu white"
+          >
             Start free with email
           </NuxtLink>
         </div>
@@ -191,8 +190,12 @@ const googleLogin = () => {
               constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -217,8 +220,12 @@ const googleLogin = () => {
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -246,8 +253,12 @@ const googleLogin = () => {
               hours.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -275,8 +286,12 @@ const googleLogin = () => {
               preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -287,8 +302,11 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFont && usersockerTopFont.length" class="title">
-          {{ usersockerTopFont[0].data }}
+        <div
+          v-if="usersockerTopFontResponse && usersockerTopFontResponse.length"
+          class="title"
+        >
+          {{ usersockerTopFontResponse[0].data }}
         </div>
         <div v-if="platformData" class="user_nums_out">
           <div class="one_num">
@@ -305,11 +323,18 @@ const googleLogin = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
+          <NuxtLink
+            v-if="!user.id"
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
             Join Them
           </NuxtLink>
         </div>
-        <div v-if="usersockerArr && usersockerArr.length" class="score_scroll_out">
+        <div
+          v-if="usersockerArrResponse && usersockerArrResponse.length"
+          class="score_scroll_out"
+        >
           <!-- {{ usersockerArr }} -->
           <!-- <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
@@ -330,7 +355,11 @@ const googleLogin = () => {
             </Slide>
           </Carousel> -->
           <div class="scrolls">
-            <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
+            <Slide
+              v-for="(item, index) in usersockerArrResponse"
+              :key="index"
+              class="one_score"
+            >
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
@@ -353,48 +382,68 @@ const googleLogin = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFont && commentTopFont.length" class="review_title">
-          {{ commentTopFont[0].data }}
+        <div
+          v-if="commentTopFontResponse && commentTopFontResponse.length"
+          class="review_title"
+        >
+          {{ commentTopFontResponse[0].data }}
         </div>
         <div class="review_scroll_out">
-          <div v-if="pinglunArr && pinglunArr.length" class="review_scroll_out_it">
+          <div
+            v-if="userPingLunResponse && userPingLunResponse.length"
+            class="review_scroll_out_it"
+          >
             <!-- <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"> -->
             <div class="scrolls">
-              <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
+              <Slide
+                v-for="(item, index) in userPingLunResponse"
+                :key="index"
+                class="two_card_out"
+              >
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[0].data.avatar" />
+                          <img :src="item[0].avatar" />
                         </div>
                         <div class="name_out">
-                          <div class="name">{{ item[0].data.nickname }}</div>
-                          <div class="country">{{ item[0].data.country }}</div>
+                          <div class="name">{{ item[0].nickname }}</div>
+                          <div class="country">{{ item[0].country }}</div>
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[0].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
-                    <div class="one_card_font">{{ item[0].data.content }}</div>
+                    <div class="one_card_font">{{ item[0].content }}</div>
                   </div>
                   <div class="one_card" style="margin-top: 24px">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[0].data.avatar" />
+                          <img :src="item[1].avatar" />
                         </div>
                         <div class="name_out">
-                          <div class="name">{{ item[1].data.nickname }}</div>
-                          <div class="country">{{ item[1].data.country }}</div>
+                          <div class="name">{{ item[1].nickname }}</div>
+                          <div class="country">{{ item[1].country }}</div>
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].data.rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[1].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
-                    <div class="one_card_font">{{ item[1].data.content }}</div>
+                    <div class="one_card_font">{{ item[1].content }}</div>
                   </div>
                 </div>
               </Slide>
@@ -416,17 +465,21 @@ const googleLogin = () => {
 .v-header {
   background: #fff4f1 !important;
 }
-.home{
-  .scrolls{
+.home {
+  .scrolls {
     display: flex;
     animation-name: around;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
   }
   @keyframes around {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
 </style>
