@@ -13,7 +13,7 @@ export const useStore = defineStore({
     return {
       user: {} as any,
       userSelectLanguage: 'en',
-      isVip:false,
+      isVip: false,
 
     };
   },
@@ -120,15 +120,15 @@ export const useStore = defineStore({
                 message.push(`${vipDays}
                 days premium package purchased successfully! Membership valid until 
                 ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
-               
-              } 
+
+              }
               if (message.length) {
                 ElMessage({
                   dangerouslyUseHTMLString: true,
                   message: message.join('<br>'),
-                   type: 'success',
+                  type: 'success',
                 })
-                
+
               }
             }
           }
@@ -137,6 +137,10 @@ export const useStore = defineStore({
           window.open(url, '_blank');
         }
       }
+    },
+     logout() {
+      removeToken();
+      window.location.href = '/'
     },
   },
 });
