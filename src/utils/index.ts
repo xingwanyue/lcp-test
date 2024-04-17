@@ -88,3 +88,10 @@ export const formatCash = (cash:number) => {
   }
   return (cash / 100).toFixed(2);
 };
+// 数字添加千分位
+export const formatNumber = (num:number) => {
+  if (!num) {
+    return '0';
+  }
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};

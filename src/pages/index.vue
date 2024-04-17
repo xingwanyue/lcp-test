@@ -3,7 +3,7 @@ import vSlogen from "../components/slogen.vue";
 import vSubscribe from "../components/subscribe.vue";
 import { oauth2SignIn } from "@/utils/googleAuth";
 import { useStore } from "@/store";
-import { staticUrlGet } from "@/utils";
+import { staticUrlGet, formatNumber } from "@/utils";
 const store = useStore();
 const user = computed(() => store.user);
 // 获取平台数据
@@ -148,8 +148,9 @@ const googleLogin = () => {
           </NuxtLink>
         </div>
         <div class="all_stu_nums">
-          Trusted by <span class="yellow">500,000+ students</span> worldwide to improve
-          Duolingo English Test scores within one month.
+          Trusted by
+          <span class="yellow">{{ formatNumber(platformData.userTotal) }}+ students</span>
+          worldwide to improve Duolingo English Test scores within one month.
         </div>
         <div class="big_img_out">
           <div class="big_img"></div>
@@ -178,8 +179,8 @@ const googleLogin = () => {
               <h4>Duolingo English Test Practice</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously
-              updated and improved.
+              Having nearly {{ formatNumber(platformData.questionTotal) }}+ practice
+              questions, the question bank is continuously updated and improved.
             </div>
             <div class="tips">
               Covering all types of exams, detailed explanations are provided for each
@@ -208,20 +209,17 @@ const googleLogin = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Duolingo English Test Practice</h4>
+              <h4>Correction Service powered by AI</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously
-              updated and improved.
+              "AI + Teacher" provides precise correction services, thoroughly reviewing
+              your essay.
             </div>
             <div class="tips">
-              Covering all types of exams, detailed explanations are provided for each
-              question.
+              Just submit your writing content, and you will receive a clear, detailed
+              report and band score in a moment.
             </div>
-            <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to
-              constantly monitor your performance in answering questions.
-            </div>
+            <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
                 >Get more information</NuxtLink
@@ -241,19 +239,19 @@ const googleLogin = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Duolingo English Test Practice</h4>
+              <h4>Duolingo English Test Mock</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously
-              updated and improved.
+              Replicate the formal examination, allowing you to experience the examination
+              process and content in advance.
             </div>
             <div class="tips">
-              Covering all types of exams, detailed explanations are provided for each
-              question.
+              Provide detailed simulated test reports, accurately analyzing your strengths
+              and weaknesses.
             </div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to
-              constantly monitor your performance in answering questions.
+              Take online mock exams anytime, anywhere, with rapid scoring within 24
+              hours.
             </div>
             <div class="get_more">
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
@@ -274,19 +272,19 @@ const googleLogin = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Duolingo English Test Practice</h4>
+              <h4>Duolingo English Test Course</h4>
             </div>
             <div class="tips">
-              Having nearly 10,000+ practice questions, the question bank is continuously
-              updated and improved.
+              Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with
+              detailed breakdowns, ensuring you confidently handle all exam components.
             </div>
             <div class="tips">
-              Covering all types of exams, detailed explanations are provided for each
-              question.
+              Access proven techniques from ESL professionals for improved speaking and
+              writing performance, personalized learning, and effective self-assessment.
             </div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to
-              constantly monitor your performance in answering questions.
+              Stay ahead with up-to-date insights on DET formats and trends, ensuring your
+              preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
               <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
