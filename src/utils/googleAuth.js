@@ -1,4 +1,4 @@
-// import { post } from './request';
+import { fetchmy } from './request';
 import { api } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
@@ -60,10 +60,9 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
-    return fetch(`${api}/common/login`, {
+    return fetchmy('/common/login', {
       method: 'post',
       body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
     });
   }
 };
