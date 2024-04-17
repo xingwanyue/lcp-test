@@ -108,8 +108,6 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   },
 })) as any;
 
-const membershipArr = computed(() => vipsData.value.membershipArr);
-const moreServiceArr = computed(() => vipsData.data.moreServiceArr);
 
 if (buyData && buyData.value) {
   buyData.value.forEach((item: any) => {
@@ -291,7 +289,7 @@ const openchat = () => {
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
           <div
-            v-for="(item, index) in membershipArr"
+            v-for="(item, index) in vipsData.membershipArr"
             :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
@@ -363,7 +361,7 @@ const openchat = () => {
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
           <div
-            v-for="(item, index) in moreServiceArr"
+            v-for="(item, index) in vipsData.moreServiceArr"
             :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
