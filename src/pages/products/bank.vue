@@ -1,17 +1,40 @@
 <script lang="ts" setup>
-import { urlGet } from '@/utils';
-import vEmbark from '../../components/embark.vue';
+import { urlGet } from "@/utils";
+import vEmbark from "../../components/embark.vue";
 
 useSeoMeta({
-  title: 'Duolingo Practice Question Bank',
+  title: "Duolingo Practice Question Bank",
   description:
-    'Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.',
-  keywords: 'Duolingo Practice Question Bank',
+    "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.",
+  keywords: "Duolingo Practice Question Bank",
 });
+// 获取平台数据
+const {
+  data: platformData = {
+    v1Total: 0,
+    userTotal: 0,
+    questionTotal: 0,
+    examTotal: 0,
+  },
+} = (await useFetch(`${api}/common/platformData`, {
+  server: true,
+})) as any;
 
-// 获取 .v-header 将背景色改为透明
-// 如果是在浏览器环境下，可以直接使用 document.querySelector('.v-header') 获取元素
-// 如果是在 node 环境下，可以使用 window.document.querySelector('.v-header') 获取元素
+// 将数字格式化 306281变为306k 3062811变为3061k
+const toThousands = (num) => {
+  if (!num) {
+    return 0;
+  }
+  let result = "";
+  const numStr = num.toString();
+  for (let i = 0; i < numStr.length; i++) {
+    if (i % 3 === 0 && i !== 0) {
+      result = ``;
+    }
+    result = numStr[numStr.length - i - 1] + result;
+  }
+  return result;
+};
 </script>
 <template>
   <div class="bankW100">
@@ -27,8 +50,9 @@ useSeoMeta({
                 </h1>
               </div>
               <div class="desc">
-                "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation " —
-                achieve score improvement quickly at the lowest cost through a scientific approach.
+                "Abundant test questions, Answer analysis & templates, intelligent
+                planning , AI speaking evaluation " — achieve score improvement quickly at
+                the lowest cost through a scientific approach.
               </div>
               <div class="people_num">
                 <div class="icon_continer">
@@ -48,11 +72,18 @@ useSeoMeta({
                     <img src="../../public/img/products/bank_user_icon5.png" />
                   </div>
                 </div>
-                <div class="font">500000 + people used the question bank for practice.</div>
+                <div v-if="platformData" class="font">
+                  {{ platformData.userTotal }}+ people used the question bank for
+                  practice.
+                </div>
               </div>
               <div class="btn common_btn_hover_bgColor">
-                <nuxt-link class="font" :href="urlGet('/login')">Practice For Free</nuxt-link>
-                <div class="icon"><img src="../../public/img/products/white_arrow_right.svg" /></div>
+                <NuxtLink class="font" :href="urlGet('/login')">
+                  Practice For Free
+                </NuxtLink>
+                <div class="icon">
+                  <img src="../../public/img/products/white_arrow_right.svg" />
+                </div>
               </div>
             </div>
             <div class="banner_right">
@@ -69,12 +100,15 @@ useSeoMeta({
               <div class="one_card_right_forMid">
                 <div class="right_title">Abundant test questions</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
-                  and continuously updating the question bank. It helps you systematically enhance your test-taking
-                  abilities in different question formats.
+                  Providing over <span class="strong">ten thousand questions</span>,
+                  covering various types of exams, and continuously updating the question
+                  bank. It helps you systematically enhance your test-taking abilities in
+                  different question formats.
                 </div>
                 <div class="right_click">
-                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
+                  <NuxtLink :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -90,12 +124,15 @@ useSeoMeta({
               <div class="one_card_right_forMid">
                 <div class="right_title">Abundant test questions</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
-                  and continuously updating the question bank. It helps you systematically enhance your test-taking
-                  abilities in different question formats.
+                  Providing over <span class="strong">ten thousand questions</span>,
+                  covering various types of exams, and continuously updating the question
+                  bank. It helps you systematically enhance your test-taking abilities in
+                  different question formats.
                 </div>
                 <div class="right_click">
-                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
+                  <NuxtLink :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -111,12 +148,15 @@ useSeoMeta({
               <div class="one_card_right_forMid">
                 <div class="right_title">Abundant test questions</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
-                  and continuously updating the question bank. It helps you systematically enhance your test-taking
-                  abilities in different question formats.
+                  Providing over <span class="strong">ten thousand questions</span>,
+                  covering various types of exams, and continuously updating the question
+                  bank. It helps you systematically enhance your test-taking abilities in
+                  different question formats.
                 </div>
                 <div class="right_click">
-                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
+                  <NuxtLink :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -132,12 +172,15 @@ useSeoMeta({
               <div class="one_card_right_forMid">
                 <div class="right_title">Abundant test questions</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
-                  and continuously updating the question bank. It helps you systematically enhance your test-taking
-                  abilities in different question formats.
+                  Providing over <span class="strong">ten thousand questions</span>,
+                  covering various types of exams, and continuously updating the question
+                  bank. It helps you systematically enhance your test-taking abilities in
+                  different question formats.
                 </div>
                 <div class="right_click">
-                  <nuxt-link :href="urlGet('/login')" class="font">Start experiencing</nuxt-link>
+                  <NuxtLink :href="urlGet('/login')" class="font">
+                    Start experiencing
+                  </NuxtLink>
                   <div class="arrow">
                     <img src="../../public/img/products/blue_arrow_right.svg" />
                   </div>
@@ -272,7 +315,7 @@ useSeoMeta({
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 80px;
-        grid-template-areas: 'one_card_left  one_card_right';
+        grid-template-areas: "one_card_left  one_card_right";
         .one_card_left {
           grid-area: one_card_left;
           display: flex;
@@ -332,18 +375,18 @@ useSeoMeta({
         }
       }
       .img_left {
-        grid-template-areas: 'one_card_left  one_card_right';
+        grid-template-areas: "one_card_left  one_card_right";
         @media (max-width: 986px) {
           grid-template-columns: 1fr;
-          grid-template-areas: 'one_card_left' 'one_card_right';
+          grid-template-areas: "one_card_left" "one_card_right";
           grid-gap: 40px;
         }
       }
       .img_right {
-        grid-template-areas: ' one_card_right one_card_left';
+        grid-template-areas: " one_card_right one_card_left";
         @media (max-width: 986px) {
           grid-template-columns: 1fr;
-          grid-template-areas: 'one_card_left' 'one_card_right';
+          grid-template-areas: "one_card_left" "one_card_right";
           grid-gap: 40px;
         }
       }
