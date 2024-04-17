@@ -291,38 +291,27 @@ const openchat = () => {
           </h4>
         </div>
         <div class="switch_out">
-          <div
-            @click="changeSwitchType('1')"
-            :class="[
-              switchType === '1'
-                ? 'switch_btn yellow common_btn_hover_bgColor'
-                : 'switch_btn',
-            ]"
-          >
+          <div @click="changeSwitchType('1')" :class="[
+            switchType === '1'
+              ? 'switch_btn yellow common_btn_hover_bgColor'
+              : 'switch_btn',
+          ]">
             Membership
           </div>
-          <div
-            @click="changeSwitchType('2')"
-            :class="[
-              switchType === '2'
-                ? 'switch_btn yellow common_btn_hover_bgColor'
-                : 'switch_btn',
-            ]"
-          >
+          <div @click="changeSwitchType('2')" :class="[
+            switchType === '2'
+              ? 'switch_btn yellow common_btn_hover_bgColor'
+              : 'switch_btn',
+          ]">
             More Service
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
-          <div
-            v-for="(item, index) in membershipArr"
-            :key="index"
-            :class="[
-              item.id === CurrentMembershipId
-                ? 'one_price '
-                : 'one_price currentMembership_no',
-            ]"
-            @click="changeCurrentMembershipId(item.id)"
-          >
+          <div v-for="(item, index) in membershipArr" :key="index" :class="[
+            item.id === CurrentMembershipId
+              ? 'one_price '
+              : 'one_price currentMembership_no',
+          ]" @click="changeCurrentMembershipId(item.id)">
             <div class="title">Most Popular Choice</div>
             <div class="card_price">
               <div class="card_price_part1">
@@ -330,10 +319,10 @@ const openchat = () => {
                 <div v-if="Number(item.originalPrice)" class="off">
                   <span>
                     {{
-                      ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
-                        0
-                      )
-                    }}%
+            ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
+              0
+            )
+          }}%
                   </span>
                 </div>
               </div>
@@ -345,24 +334,18 @@ const openchat = () => {
                 </div>
               </div>
               <div v-if="user.id">
-                <div
-                  v-if="item.day !== 0"
-                  class="card_price_buy_btn"
-                  @click="buyMembership(item.id)"
-                >
+                <div v-if="item.day !== 0" class="card_price_buy_btn" @click="buyMembership(item.id)">
                   Buy Now
+                  <div class="scroll-line"></div>
                 </div>
-                <div
-                  v-else
-                  class="card_price_buy_btn try_free"
-                  @click="buyMembership(item.id)"
-                >
+                <div v-else class="card_price_buy_btn try_free" @click="buyMembership(item.id)">
                   Try for free
                 </div>
               </div>
               <div v-else>
                 <div v-if="item.day !== 0" class="card_price_buy_btn">
                   <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                  <div class="scroll-line"></div>
                 </div>
                 <div v-else class="card_price_buy_btn try_free">
                   <NuxtLink :to="localePath(`/`)"> Try for free</NuxtLink>
@@ -370,11 +353,7 @@ const openchat = () => {
               </div>
 
               <div class="card_price_qllist">
-                <div
-                  v-for="(itemin, indexin) in item.qlList"
-                  :key="index * 10 + indexin"
-                  class="one_ql"
-                >
+                <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
                     <img src="../public/img/pricing/check.svg" />
                   </div>
@@ -383,22 +362,14 @@ const openchat = () => {
                     {{ itemin.desc }}
                   </div>
                   <div v-if="itemin.tips" class="tips">
-                    <el-tooltip
-                      :content="itemin.tips"
-                      placement="right-start"
-                      effect="light"
-                    >
+                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
                       <img src="../public/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
               </div>
               <div class="card_price_qllist" style="margin-top: 16px">
-                <div
-                  v-for="(itemuc, indexin) in membershipUnchanging"
-                  :key="itemuc.name"
-                  class="one_ql"
-                >
+                <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
                   <div class="icon">
                     <img src="../public/img/pricing/check.svg" />
                   </div>
@@ -407,11 +378,7 @@ const openchat = () => {
                     {{ itemuc.desc }}
                   </div>
                   <div v-if="itemuc.tips" class="tips">
-                    <el-tooltip
-                      :content="itemuc.tips"
-                      placement="right-start"
-                      effect="light"
-                    >
+                    <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
                       <img src="../public/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
@@ -421,16 +388,11 @@ const openchat = () => {
           </div>
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
-          <div
-            v-for="(item, index) in moreServiceArr"
-            :key="index"
-            :class="[
-              item.id === CurrentMembershipId
-                ? 'one_price '
-                : 'one_price currentMembership_no',
-            ]"
-            @click="changeCurrentMembershipId(item.id)"
-          >
+          <div v-for="(item, index) in moreServiceArr" :key="index" :class="[
+            item.id === CurrentMembershipId
+              ? 'one_price '
+              : 'one_price currentMembership_no',
+          ]" @click="changeCurrentMembershipId(item.id)">
             <div class="title">Most Popular Choice</div>
             <div class="card_price">
               <div class="card_price_part1">{{ item.tag }}</div>
@@ -446,16 +408,15 @@ const openchat = () => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  @click="buyMembership(item.id)"
-                >
+                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
                   Buy Now
+                  <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
                 <div class="card_price_buy_btn common_btn_hover_bgColor">
                   <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                  <div class="scroll-line"></div>
                 </div>
               </div>
             </div>
@@ -463,12 +424,7 @@ const openchat = () => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel
-            :itemsToShow="1"
-            :autoplay="2000"
-            :wrap-around="true"
-            :pauseAutoplayOnHover="true"
-          >
+          <Carousel :itemsToShow="1" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
@@ -499,12 +455,9 @@ const openchat = () => {
       <div class="part2">
         <div class="title">Frequently Asked Questions</div>
         <div class="list_out">
-          <div
-            v-for="(item, index) in aqList"
-            :key="index"
+          <div v-for="(item, index) in aqList" :key="index"
             :class="[item.open ? 'one_question one_question_open' : 'one_question']"
-            @click="openOrCloseOneQuestion(item)"
-          >
+            @click="openOrCloseOneQuestion(item)">
             <div class="header">
               <div class="icon">
                 <img src="../public/img/pricing/arrow_down.svg" />
@@ -542,9 +495,38 @@ const openchat = () => {
   </div>
 </template>
 <style lang="scss" scoped>
+.pricing{
+  /* 左右滚动效果 */
+  .scroll-line{
+    width: 12px;
+    height: 128%;
+    transform: rotate(30deg);
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top: -15%;
+    white-space: nowrap;
+    animation-name: around;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+  }
+  @keyframes around {
+    from {
+      margin-left: 0;
+    }
+    to {
+      margin-left: 100%;
+    }
+  }
+  }
+</style>
+<style lang="scss" scoped>
 .pricing {
   min-height: 100vh;
   background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 804px, #ffffff 804px);
+  
   .part1_wrapper {
     padding: 0px 30px;
     .part1 {
@@ -685,6 +667,7 @@ const openchat = () => {
               color: #4c2929;
               text-align: center;
               margin-top: 32px;
+              position: relative;
               &:hover {
                 background: #cba67f;
               }
@@ -812,6 +795,7 @@ const openchat = () => {
               color: white;
               text-align: center;
               margin-top: 32px;
+              position: relative;
             }
           }
         }
