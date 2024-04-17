@@ -52,8 +52,8 @@ const submit = async () => {
   <div class="contactus">
     <div class="learn_hader" :style="`background-image: url(${bannerAboutus});`">
       <div class="learn_hader_content">
-        <div class="title">Contact Us</div>
-        <div class="title2">Questions, bug reports, feedback - we’re here to help!</div>
+        <h1 class="title">Contact Us</h1>
+        <h2 class="title2">Questions, bug reports, feedback - we’re here to help!</h2>
       </div>
     </div>
     <div class="content">
