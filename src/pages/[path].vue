@@ -21,7 +21,7 @@ useSeoMeta({
   <div class="article_detail">
     <div class="detail_hader">
       <div class="detail_hader_content">
-        <h1>DET Pratice Blog</h1>
+        <h1>{{ article.name }}</h1>
       </div>
     </div>
     <div class="article" v-if="article?.content">
@@ -38,7 +38,7 @@ useSeoMeta({
     .detail_hader_content {
       // max-width: 1200px;
       margin: 0 auto;
-      padding: 120px 0;
+      padding: 120px 30px;
       background: url("../public/img/aboutus/banner-aboutus.svg") center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
