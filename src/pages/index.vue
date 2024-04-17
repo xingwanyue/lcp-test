@@ -310,12 +310,11 @@ const googleLogin = () => {
         </div>
         <div v-if="usersockerArr && usersockerArr.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
-          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+          <!-- <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
-                    <!-- {{ item.data.avatar }} -->
                     <img :src="staticUrlGet(item.data.avatar)" />
                   </div>
                   <div class="user_detail">
@@ -328,7 +327,25 @@ const googleLogin = () => {
                 </div>
               </div>
             </Slide>
-          </Carousel>
+          </Carousel> -->
+          <div class="scrolls">
+            <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
+              <div class="one_score_content">
+                <div class="one_score_head">
+                  <div class="user_icon">
+                    <img :src="staticUrlGet(item.data.avatar)" />
+                  </div>
+                  <div class="user_detail">
+                    <div class="user_name">{{ item.data.nickname }}</div>
+                    <div class="user_country">{{ item.data.country }}</div>
+                  </div>
+                </div>
+                <div class="one_score_content_img">
+                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" />
+                </div>
+              </div>
+            </Slide>
+          </div>
         </div>
       </div>
     </div>
@@ -340,7 +357,8 @@ const googleLogin = () => {
         </div>
         <div class="review_scroll_out">
           <div v-if="pinglunArr && pinglunArr.length" class="review_scroll_out_it">
-            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+            <!-- <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"> -->
+            <div class="scrolls">
               <Slide v-for="(item, index) in pinglunArr" :key="index" class="two_card_out">
                 <div>
                   <div class="one_card">
@@ -379,7 +397,8 @@ const googleLogin = () => {
                   </div>
                 </div>
               </Slide>
-            </Carousel>
+            </div>
+            <!-- </Carousel> -->
           </div>
         </div>
       </div>
@@ -392,9 +411,22 @@ const googleLogin = () => {
     </div>
   </div>
 </template>
-<style>
+<style lang="scss">
 .v-header {
   background: #fff4f1 !important;
+}
+.home{
+  .scrolls{
+    display: flex;
+    animation-name: around;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+  }
+  @keyframes around {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
 }
 </style>
 <style lang="scss" scoped>
@@ -789,7 +821,7 @@ const googleLogin = () => {
       .score_scroll_out {
         overflow: hidden;
         margin-top: 40px;
-
+        position: relative;
         .one_score {
           width: 312px !important;
           box-sizing: border-box;
@@ -866,12 +898,13 @@ const googleLogin = () => {
 
         scrollbar-width: none;
         .review_scroll_out_it {
+          overflow: hidden;
           .two_card_out {
             margin-left: 24px;
             width: 432px !important;
           }
           .one_card {
-            width: 100%;
+            width: calc(100% - 48px);
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
