@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { articleGet, articleCategoryGet, getTree } from '@/utils';
-import { reactive, computed, onMounted } from 'vue';
+import { reactive } from 'vue';
 import _ from 'lodash';
 import bannerLearn from '@/public/img/learn/banner-learn.svg';
 import subscribe from '../components/subscribe.vue';
@@ -20,11 +20,7 @@ const state = reactive({
   pageSize: 5,
   total: 0,
 });
-onMounted(() => {
-  setTimeout(() => {
-    getSelect();
-  }, 200);
-});
+
 const getSelect = async () => {
   const { data = {} } = await useFetch(`${articleCategoryGet}`, { server: true }) as any;
   state.selectList = getTree(_.filter(data.value, v => v.type === '2') as any, null, null);
@@ -32,8 +28,9 @@ const getSelect = async () => {
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.children) || {};
   state.activeName = state.selFatherData.id;
-  getInfo();
+
 };
+getSelect();
 const getInfo = async () => {
   // 需要传左侧的类型
   const args = {
@@ -52,6 +49,7 @@ const getInfo = async () => {
     state.infoList = value?.data;
   }
 };
+getInfo();
 const getMore = () => {
   state.isMore = true;
   state.page += 1;

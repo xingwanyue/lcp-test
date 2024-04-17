@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { saveStorage, getStorage } from '@/utils';
 import { useStore } from '@/store';
-import { reactive, onMounted } from 'vue';
+import { reactive } from 'vue';
 
 const localePath = useLocalePath();
 const store = useStore();
@@ -11,13 +11,6 @@ const link_arr = [];
 const state = reactive({
   isMore1: false,
   isMore2: false,
-});
-onMounted(() => {
-  setTimeout(() => {
-    getLearn();
-    getBlob();
-  }, 200);
-
 });
 const prod = {
   name: 'Products',
@@ -119,7 +112,8 @@ if (userSelectLanguage) {
   locale.value = userSelectLanguage;
   store.userChangeLanguage(userSelectLanguage);
 }
-
+getLearn();
+getBlob();
 watch(language, (newVal) => {
   locale.value = newVal;
   saveStorage('detlanguage', newVal);

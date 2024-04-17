@@ -1,9 +1,8 @@
 <script lang="ts" setup>
-import { reactive, onMounted } from 'vue';
+import { reactive } from 'vue';
 import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 
 const state = reactive({});
-onMounted(() => { });
 
 </script>
 <template>
