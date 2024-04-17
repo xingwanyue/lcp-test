@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-// import isEmpty from 'lodash/isEmpty';
+import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
 
 import { api, saveToken, getToken, removeToken } from '@/utils';
@@ -61,9 +61,9 @@ export const useStore = defineStore({
     async getUserInfo() {
       try {
         const token = await getToken(false);
-        // if (!localStorage.getItem('det_token') || !isEmpty(this.user)) {
-        //   return;
-        // }
+        if (!token || !isEmpty(this.user)) {
+          return;
+        }
         const res = await fetch(`${api}/userInfo`, {
           method: 'get',
           headers: {
