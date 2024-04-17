@@ -60,7 +60,11 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
-    return useFetch(`${api}/common/login`, { email, avatar: picture, nickname: name, google: true, type: 'pc' });
+    return fetch(`${api}/common/login`, {
+      method: 'post',
+      data: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    });
   }
 };
 export default {};
