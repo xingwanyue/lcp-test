@@ -30,7 +30,7 @@ const getSelect = async () => {
   state.activeName = state.selFatherData.id;
 
 };
-getSelect();
+await getSelect();
 const getInfo = async () => {
   // 需要传左侧的类型
   const args = {
@@ -49,7 +49,7 @@ const getInfo = async () => {
     state.infoList = value?.data;
   }
 };
-getInfo();
+await getInfo();
 const getMore = () => {
   state.isMore = true;
   state.page += 1;
