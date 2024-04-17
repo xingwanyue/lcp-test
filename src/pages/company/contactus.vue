@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { reactive, computed, onMounted } from 'vue';
+import { reactive } from 'vue';
 import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue';
@@ -17,7 +17,6 @@ const state = reactive({
   loading: false,
   formData: {} as any,
 });
-onMounted(() => { });
 const rules = reactive({
   name: [{ required: true, message: 'Please enter your name.', trigger: 'blur' }],
   email: [{ required: true, message: 'Please enter your email address.', trigger: 'blur' }],

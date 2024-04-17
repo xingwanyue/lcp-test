@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { reactive, computed, onMounted } from 'vue';
+import { reactive } from 'vue';
 import _ from 'lodash';
 import { saveStorage, getStorage } from '@/utils';
 import { useRouter, useRoute } from 'vue-router';
@@ -21,9 +21,8 @@ const state = reactive({
   playData: {} as any,
   played: [] as any,
 });
-onMounted(() => {
-  state.played = JSON.parse(getStorage('det_listen') || '[]');
-});
+state.played = JSON.parse(getStorage('det_listen') || '[]');
+
 const selectChange = async () => { };
 const listClick = async (val: any) => {
   state.playData = { ...val };

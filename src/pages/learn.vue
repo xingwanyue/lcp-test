@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { articleGet, articleCategoryGet, getTree } from '@/utils';
-import { reactive, computed, onMounted } from 'vue';
+import { reactive } from 'vue';
 import _ from 'lodash';
 import bannerLearn from '@/public/img/learn/banner-learn.svg';
 import subscribe from '../components/subscribe.vue';
