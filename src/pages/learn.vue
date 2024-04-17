@@ -28,7 +28,7 @@ const getSelect = async () => {
   state.selFatherData = _.head(state.selectList) || {};
   state.selConData = _.head(state.selFatherData.children) || {};
   state.activeName = state.selFatherData.id;
-
+  getInfo();
 };
 getSelect();
 const getInfo = async () => {
@@ -49,7 +49,6 @@ const getInfo = async () => {
     state.infoList = value?.data;
   }
 };
-getInfo();
 const getMore = () => {
   state.isMore = true;
   state.page += 1;

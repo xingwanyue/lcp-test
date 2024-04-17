@@ -2,6 +2,7 @@
 import { urlGet } from "@/utils";
 import { useStore } from "@/store";
 import vEmbark from "../../components/embark.vue";
+const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useSeoMeta({
@@ -23,20 +24,20 @@ const {
 })) as any;
 
 // 将数字格式化 306281变为306k 3062811变为3061k
-const toThousands = (num) => {
-  if (!num) {
-    return 0;
-  }
-  let result = "";
-  const numStr = num.toString();
-  for (let i = 0; i < numStr.length; i++) {
-    if (i % 3 === 0 && i !== 0) {
-      result = ``;
-    }
-    result = numStr[numStr.length - i - 1] + result;
-  }
-  return result;
-};
+// const toThousands = (num) => {
+//   if (!num) {
+//     return 0;
+//   }
+//   let result = "";
+//   const numStr = num.toString();
+//   for (let i = 0; i < numStr.length; i++) {
+//     if (i % 3 === 0 && i !== 0) {
+//       result = ``;
+//     }
+//     result = numStr[numStr.length - i - 1] + result;
+//   }
+//   return result;
+// };
 </script>
 <template>
   <div class="bankW100">
