@@ -445,13 +445,13 @@ const logout = () => {
           // border-bottom: 4px solid #f66442;
           a {
             color: #201515;
-            font-weight: 600;
+            font-weight: 500;
           }
         }
         &:hover {
           a {
             color: #201515;
-            font-weight: 600;
+            font-weight: 500;
           }
         }
       }
