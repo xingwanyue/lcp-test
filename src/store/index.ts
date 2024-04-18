@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 
 import { api, saveToken, getToken, removeToken } from '@/utils';
 import { fetchmy } from '@/utils/request';
-import { stripePayUrlGet, stripePayStatusGet } from '@/api';
+import { stripePayUrlGet, stripePayStatusGet, logout } from '@/api';
 
 let timmer: any = null;
 export const useStore = defineStore({
@@ -14,7 +14,6 @@ export const useStore = defineStore({
       user: {} as any,
       userSelectLanguage: 'en',
       isVip: false,
-
     };
   },
   actions: {
@@ -42,7 +41,7 @@ export const useStore = defineStore({
       });
       const { token, user } = await res.json();
       this.user = user;
-      saveToken(token, true);
+      saveToken(token);
     },
     async userClickLogin(args: any) {
       const res = await fetchmy(`${api}/common/login`, {
@@ -120,15 +119,13 @@ export const useStore = defineStore({
                 message.push(`${vipDays}
                 days premium package purchased successfully! Membership valid until 
                 ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
-
               }
               if (message.length) {
                 ElMessage({
                   dangerouslyUseHTMLString: true,
                   message: message.join('<br>'),
                   type: 'success',
-                })
-
+                });
               }
             }
           }
@@ -138,9 +135,10 @@ export const useStore = defineStore({
         }
       }
     },
-     logout() {
+    async logout() {
+      await logout();
       removeToken();
-      window.location.href = '/'
+      window.location.href = '/';
     },
   },
 });

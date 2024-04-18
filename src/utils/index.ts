@@ -54,7 +54,7 @@ export function getToken(forHeader?: any) {
   if (!process.client) {
     return;
   }
-  const token = sessionStorage[TOKEN] || localStorage[TOKEN] || getCookie(TOKEN);
+  const token = getCookie(TOKEN);
   let res;
   if (token) {
     res = forHeader ? `Bearer ${token}` : token;
@@ -64,14 +64,8 @@ export function getToken(forHeader?: any) {
   return Promise.resolve(res);
 }
 
-export function saveToken(token: any, remeber: any) {
-  const store = remeber ? localStorage : sessionStorage;
-  if (token === null || token === undefined) {
-    store.removeItem(TOKEN);
-  } else {
-    store[TOKEN] = token;
-    setCookie(TOKEN, token, 90);
-  }
+export function saveToken(token: any) {
+  setCookie(TOKEN, token, 90);
 }
 let defaultCachePrefix = '20180428_'; // 默认缓存前缀,便于快速清除缓存
 export const setCatchePrefix = (prefix: String) => {
