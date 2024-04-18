@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const cdn = 'https://detcdn.zixuekeji.cn';
+export const cdn = 'https://detcdn.zixuekeji.cn';
 // export const api = 'https://app.detpractice.com/weapp/api';
 // export const api = 'http://192.168.1.22:9000/api';
 // export const api = 'http://192.168.1.147:11001/weapp/api';
