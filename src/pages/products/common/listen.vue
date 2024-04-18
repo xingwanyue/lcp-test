@@ -1,41 +1,64 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
 import _ from 'lodash';
-import { saveStorage, getStorage } from '@/utils';
-import { useRouter, useRoute } from 'vue-router';
+import { saveStorage, getStorage, api, cdn } from '@/utils';
 import playImg from '@/public/img/listen/play.svg';
 import playingImg from '@/public/img/listen/playing.svg';
 import pauseImg from '@/public/img/listen/pause.svg';
 
 const localePath = useLocalePath();
-const router = useRouter();
-const route = useRoute();
 const state = reactive({
   type: '1',
-  list: [
-    { id: '1', name: 'listen-then-speak-question-1', filePath: '' },
-    { id: '2', name: 'listen-then-speak-question-2', filePath: '' },
-    { id: '3', name: 'listen-then-speak-question-3', filePath: '' },
-    { id: '4', name: 'listen-then-speak-question-4', filePath: '' },
-  ] as any,
+  list: [] as any,
+  listenThenSpeak: [] as any,
+  sampleAnswer: [] as any,
   playData: {} as any,
   played: [] as any,
+  isPlay: false,
 });
 state.played = JSON.parse(getStorage('det_listen') || '[]');
+const getList = async () => {
+  const { data = {} } = await useFetch(`${api}/common/courses`, { server: true }) as any;
+  const { listenThenSpeak, sampleAnswer } = data.value;
+  state.listenThenSpeak = [...listenThenSpeak];
+  state.sampleAnswer = [...sampleAnswer];
+  state.list = state.type === '1' ? [...state.listenThenSpeak] : [...state.sampleAnswer];
+};
+getList();
+const selectChange = async () => {
+  state.list = state.type === '1' ? [...state.listenThenSpeak] : [...state.sampleAnswer];
+};
+const getPlayed = (val: any) => {
+  return _.find(state.played, { path: val.path }) ? 'list2' : '';
+};
 
-const selectChange = async () => { };
-const listClick = async (val: any) => {
+const playClick = (val: any) => {
   state.playData = { ...val };
-  if (!_.find(state.played, { id: val.id })) {
+  const audio = document.getElementById('audioFile') as any;
+  nextTick(() => {
+    audio.play();
+    state.isPlay = true;
+  });
+  if (!_.find(state.played, { path: val.path })) {
     state.played.push(val);
     saveStorage('det_listen', JSON.stringify(state.played), true);
   }
 };
-const getPlayed = (val: any) => {
-  return _.find(state.played, { id: val.id }) ? 'list2' : '';
+const pauseClick = () => {
+  // state.playData = {};
+  const audio = document.getElementById('audioFile') as any;
+  audio.pause();
+  state.isPlay = false;
 };
-const pauseClick = (val: any) => { };
-const playClick = (val: any) => { };
+const continuePlay = () => {
+  state.isPlay = true;
+  const audio = document.getElementById('audioFile') as any;
+  audio.play();
+};
+const onAudioEnd = () => {
+  state.playData = {};
+  state.isPlay = false;
+};
 </script>
 <template>
   <div class="listen-page">
@@ -54,16 +77,21 @@ const playClick = (val: any) => { };
     </div>
     <div class="listen-con">
       <div v-for="(val, key) in state.list" :key="key"
-        :class="`list ${state.playData.id === val.id ? 'list1' : ''} ${getPlayed(val)}`" @click="listClick(val)">
+        :class="`list ${state.playData.path === val.path ? 'list1' : ''} ${getPlayed(val)}`">
         <div class="title">{{ val.name }}</div>
         <el-image :id="`play-img${key}`" :key="key" :src="playImg" class="play-img" @click="playClick(val)"></el-image>
-        <el-image v-if="state.playData.id === val.id" :key="key" :id="`playing-img${key}`" :src="playingImg"
-          class="playing-img"></el-image>
-        <el-image :id="`pause-img${key}`" :key="key" :src="pauseImg" class="pause-img"
-          @click="pauseClick(val)"></el-image>
+        <span v-if="state.playData.path === val.path">
+          <el-image v-if="state.isPlay" :key="key" :id="`playing-img${key}`" :src="playingImg"
+            class="playing-img"></el-image>
+          <el-image v-else :key="`a${key}a`" :id="`playing-img${key}`" :src="playImg" class="playing-img-play"
+            @click="continuePlay"></el-image>
+        </span>
+        <el-image v-if="state.isPlay" :id="`pause-img${key}`" :key="key" :src="pauseImg" class="pause-img"
+          @click="pauseClick()"></el-image>
       </div>
     </div>
-    <audio :src="state.playData.filePath" controls type="audio/wav" class="listen-audio"></audio>
+    <audio id="audioFile" :src="`${cdn}/${state.playData.path}`" controls type="audio/wav" class="listen-audio"
+      @ended="onAudioEnd"></audio>
   </div>
 </template>
 <style lang="scss">
@@ -76,10 +104,15 @@ const playClick = (val: any) => { };
   .el-radio-button__inner{
     font-size: 18px;
     color: #403F3E;
+    @media (max-width: 800px){
+      font-size: 14px;
+      padding:6px 8px;
+    }
     &:hover{
       color: #F66442;
     }
   }
+  
 }
 </style>
 <style lang="scss" scoped>
@@ -124,7 +157,7 @@ const playClick = (val: any) => { };
         height: 24px;
         display: none;
       }
-      .playing-img{
+      .playing-img, .playing-img-play{
         width: 24px;
         height: 24px;
         display: block;
@@ -160,6 +193,7 @@ const playClick = (val: any) => { };
       display: block;
       .title{
         margin-bottom: 24px;
+        font-size: 16px;
       }
     }
     .listen-con{
@@ -169,7 +203,8 @@ const playClick = (val: any) => { };
         width: 100%;
         box-sizing: border-box;
         border-bottom:1px solid #E9E9E9;
-        padding:8px 40px 8px 12px;
+        padding:8px 20px 8px 12px;
+        font-size: 14px;
         .play-img{
           display: block !important;
         }
