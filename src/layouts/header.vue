@@ -212,7 +212,7 @@ const logout = () => {
       </div>
       <div v-if="user.id" href="/app">
         <el-popover placement="top-start" trigger="hover" class="111">
-          <div class="logout_btn" @click="logout">log out</div>
+          <div class="logout_btn" @click="logout">Log out</div>
           <template #reference>
             <div class="userInfo">
               <div class="nickname">{{ user.nickname }}</div>
