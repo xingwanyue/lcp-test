@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 4351020 */
+  font-family: "iconfont"; /* Project id 4513987 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1709287665570') format('woff2'),
-       url('iconfont.woff?t=1709287665570') format('woff'),
-       url('iconfont.ttf?t=1709287665570') format('truetype');
+       url('iconfont.woff2?t=1713432590809') format('woff2'),
+       url('iconfont.woff?t=1713432590809') format('woff'),
+       url('iconfont.ttf?t=1713432590809') format('truetype');
 }
 
 .iconfont {
@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-detlogon:before {
-  content: "\e600";
+.icon-logo:before {
+  content: "\e601";
 }
 
