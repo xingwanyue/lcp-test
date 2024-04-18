@@ -28,6 +28,16 @@ watch(pathname, (val) => {
 });
 onMounted(() => {
   changeHeaderColor(pathname.value);
+  const dom = document.getElementsByClassName('v-header')[0] as any;
+  window.addEventListener('scroll', (e) => {
+    if (document.documentElement.scrollTop === 0) {
+      headerColor.value = "#FFF4F1";
+      dom.style.borderBottom = '0px solid';
+    } else {
+      headerColor.value = '#fff';
+      dom.style.borderBottom = '1px solid #f0e8e8';
+    }
+  });
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
@@ -391,7 +401,6 @@ const logout = () => {
   background: #ffffff;
   flex-grow: 1;
   padding: 0;
-  border-bottom: 1px solid #00000010;
   // border: 1px red solid;
   .header-content {
     width: 100%;
@@ -432,8 +441,9 @@ const logout = () => {
           display: block;
           // height: 72px;
           // line-height: 72px;
-          height: 54px;
-          line-height: 50px;
+          height: 60px;
+          line-height: 56px;
+          box-sizing: border-box;
           overflow: hidden;
           .down-icon {
             display: inline-block;
