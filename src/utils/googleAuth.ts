@@ -65,7 +65,17 @@ export const oauthLogin = async () => {
     }
   });
   if (accessToken) {
-    return loginBycredential(accessToken);
+    const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    const data = await res.json();
+    const { email, picture, name } = data;
+    return fetchmy(`${api}/common/login`, {
+      method: 'post',
+      body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+    });
   }
 };
 
