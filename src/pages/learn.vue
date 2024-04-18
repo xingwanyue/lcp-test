@@ -329,6 +329,9 @@ const handleChange = () => {
       text-decoration-line: underline;
       text-align: center;
       cursor: pointer;
+      &:hover{
+        color: #F66442;
+      }
     }
   }
   @media (max-width: 800px){

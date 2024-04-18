@@ -321,7 +321,8 @@ const openchat = () => {
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
               <div class="card_price_part3">
-                <div class="big_price">${{ item.price / 100 }}</div>
+                <div v-if='isVip' class="big_price">${{ item.vipPrice / 100 }}</div>
+                <div v-else class="big_price">${{ item.price / 100 }}</div>
                 <div class="small_price">
                   ${{ (item.originalPrice / 100).toFixed(2) }}
                 </div>
