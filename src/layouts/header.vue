@@ -28,7 +28,6 @@ watch(pathname, (val) => {
 });
 onMounted(() => {
   changeHeaderColor(pathname.value);
-  store.getUserInfo();
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
