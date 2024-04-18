@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useStore } from '@/store';
+import { useStore } from "@/store";
 const store = useStore();
 const user = computed(() => store.user);
 </script>
@@ -7,11 +7,16 @@ const user = computed(() => store.user);
 <template>
   <div class="embark_out_wrapper">
     <div class="embark_out">
-      <div class="font1">Embark on your journey to high scores on</div>
-      <div class="font2">Duolingo English Test !</div>
+      <div class="font1">Immediately embark on your journey to</div>
+      <div class="font2">high-scoring writing!</div>
       <div v-if="!user.id" class="two_btn_out">
         <div >
-          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`/login`)"> Start Now</NuxtLink>
+          <NuxtLink
+            class="common_btn common_btn_hover_bgColor yellow"
+            :to="localePath(`/login`)"
+          >
+            Start Now</NuxtLink
+          >
         </div>
       </div>
     </div>
