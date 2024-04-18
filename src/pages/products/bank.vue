@@ -127,16 +127,16 @@ const {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture1.png" />
+              <img src="../../public/img/products/bank_picture2.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Abundant test questions</div>
+                <div class="right_title">Intelligent planning</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>,
-                  covering various types of exams, and continuously updating the question
-                  bank. It helps you systematically enhance your test-taking abilities in
-                  different question formats.
+                  We have developed an intelligent learning knowledge graph to recommend a
+                  <span class="strong">personalized practice plan</span> for you. Through
+                  intelligent analysis of your daily learning behavior, we suggest the
+                  most suitable practice questions to help you study more intelligently.
                 </div>
                 <div class="right_click">
                   <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
@@ -154,16 +154,15 @@ const {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture1.png" />
+              <img src="../../public/img/products/bank_picture3.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Abundant test questions</div>
+                <div class="right_title">AI speaking evaluati</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>,
-                  covering various types of exams, and continuously updating the question
-                  bank. It helps you systematically enhance your test-taking abilities in
-                  different question formats.
+                  <span class="strong"> AI-based spoken language scoring</span> makes oral
+                  practice more efficient. Once you submit a spoken language question, you
+                  instantly receive a comprehensive assessment of your oral skills.
                 </div>
                 <div class="right_click">
                   <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
@@ -181,16 +180,17 @@ const {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture1.png" />
+              <img src="../../public/img/products/bank_picture4.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Abundant test questions</div>
+                <div class="right_title">Answer analysis</div>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>,
-                  covering various types of exams, and continuously updating the question
-                  bank. It helps you systematically enhance your test-taking abilities in
-                  different question formats.
+                  Providing <span class="strong"> detailed answer explanations</span> to
+                  help you gain a profound understanding of key concepts and solution
+                  approaches. Through these explanations, you not only can answer
+                  questions correctly but also enhance your grasp of knowledge points,
+                  improving your learning effectiveness.
                 </div>
                 <div class="right_click">
                   <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
