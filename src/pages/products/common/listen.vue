@@ -83,10 +83,15 @@ const onAudioEnd = () => {
   .el-radio-button__inner{
     font-size: 18px;
     color: #403F3E;
+    @media (max-width: 800px){
+      font-size: 14px;
+      padding:6px 8px;
+    }
     &:hover{
       color: #F66442;
     }
   }
+  
 }
 </style>
 <style lang="scss" scoped>
@@ -167,6 +172,7 @@ const onAudioEnd = () => {
       display: block;
       .title{
         margin-bottom: 24px;
+        font-size: 16px;
       }
     }
     .listen-con{
@@ -176,7 +182,8 @@ const onAudioEnd = () => {
         width: 100%;
         box-sizing: border-box;
         border-bottom:1px solid #E9E9E9;
-        padding:8px 40px 8px 12px;
+        padding:8px 20px 8px 12px;
+        font-size: 14px;
         .play-img{
           display: block !important;
         }
