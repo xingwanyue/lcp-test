@@ -14,6 +14,7 @@ const state = reactive({
   sampleAnswer: [] as any,
   playData: {} as any,
   played: [] as any,
+  isPlay: false,
 });
 state.played = JSON.parse(getStorage('det_listen') || '[]');
 const getList = async () => {
@@ -30,18 +31,33 @@ const selectChange = async () => {
 const getPlayed = (val: any) => {
   return _.find(state.played, { path: val.path }) ? 'list2' : '';
 };
+
 const playClick = (val: any) => {
   state.playData = { ...val };
+  const audio = document.getElementById('audioFile') as any;
+  nextTick(() => {
+    audio.play();
+    state.isPlay = true;
+  });
   if (!_.find(state.played, { path: val.path })) {
     state.played.push(val);
     saveStorage('det_listen', JSON.stringify(state.played), true);
   }
 };
 const pauseClick = () => {
-  state.playData = {};
+  // state.playData = {};
+  const audio = document.getElementById('audioFile') as any;
+  audio.pause();
+  state.isPlay = false;
+};
+const continuePlay = () => {
+  state.isPlay = true;
+  const audio = document.getElementById('audioFile') as any;
+  audio.play();
 };
 const onAudioEnd = () => {
   state.playData = {};
+  state.isPlay = false;
 };
 </script>
 <template>
@@ -64,13 +80,18 @@ const onAudioEnd = () => {
         :class="`list ${state.playData.path === val.path ? 'list1' : ''} ${getPlayed(val)}`">
         <div class="title">{{ val.name }}</div>
         <el-image :id="`play-img${key}`" :key="key" :src="playImg" class="play-img" @click="playClick(val)"></el-image>
-        <el-image v-if="state.playData.path === val.path" :key="key" :id="`playing-img${key}`" :src="playingImg"
-          class="playing-img"></el-image>
-        <el-image :id="`pause-img${key}`" :key="key" :src="pauseImg" class="pause-img" @click="pauseClick()"></el-image>
+        <span v-if="state.playData.path === val.path">
+          <el-image v-if="state.isPlay" :key="key" :id="`playing-img${key}`" :src="playingImg"
+            class="playing-img"></el-image>
+          <el-image v-else :key="`a${key}a`" :id="`playing-img${key}`" :src="playImg" class="playing-img-play"
+            @click="continuePlay"></el-image>
+        </span>
+        <el-image v-if="state.isPlay" :id="`pause-img${key}`" :key="key" :src="pauseImg" class="pause-img"
+          @click="pauseClick()"></el-image>
       </div>
     </div>
-    <audio v-if="state.playData.path" id="audioFile" :src="`${cdn}/${state.playData.path}`" autoplay controls
-      type="audio/wav" class="listen-audio" @ended="onAudioEnd"></audio>
+    <audio id="audioFile" :src="`${cdn}/${state.playData.path}`" controls type="audio/wav" class="listen-audio"
+      @ended="onAudioEnd"></audio>
   </div>
 </template>
 <style lang="scss">
@@ -136,7 +157,7 @@ const onAudioEnd = () => {
         height: 24px;
         display: none;
       }
-      .playing-img{
+      .playing-img, .playing-img-play{
         width: 24px;
         height: 24px;
         display: block;
