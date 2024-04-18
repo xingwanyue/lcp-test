@@ -29,12 +29,10 @@ const [
   useFetch(`${api}/common/portalData?type=5`, { server: true }),
   useFetch(`${api}/common/portalData?type=1`, {
     server: true,
-    transform: (data) => {
+    transform: (data: any) => {
       const pinglunArr = [] as any;
       let pinglunMid = [] as any;
       for (let i = 0; i < data.length; i += 2) {
-        console.log("inini");
-        console.log(JSON.parse(data[i].data));
         pinglunMid[i] = JSON.parse(data[i].data);
         pinglunMid[i + 1] = JSON.parse(data[i + 1].data);
         pinglunMid[i].rate = Number(pinglunMid[i].rate);
@@ -46,9 +44,8 @@ const [
   }),
   useFetch(`${api}/common/portalData?type=3`, {
     server: true,
-    transform: (data) => {
-      const scorearr = [];
-      console.log(data);
+    transform: (data: any) => {
+      const scorearr = [] as any;
       data.forEach((item: any) => {
         try {
           item.data = JSON.parse(item.data);
@@ -61,7 +58,7 @@ const [
     },
   }),
   useFetch(`${api}/common/portalData?type=4`, { server: true }),
-]);
+]) as any;
 
 onMounted(() => {
   // 如果是在浏览器环境下，执行movePingLun
@@ -139,10 +136,7 @@ const googleLogin = () => {
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink
-            :to="localePath('/login')"
-            class="common_btn common_btn_hover_borderCu white"
-          >
+          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
             Start free with email
           </NuxtLink>
         </div>
@@ -190,12 +184,8 @@ const googleLogin = () => {
               constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -220,12 +210,8 @@ const googleLogin = () => {
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -253,12 +239,8 @@ const googleLogin = () => {
               hours.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -286,12 +268,8 @@ const googleLogin = () => {
               preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/')" class="font"
-                >Get more information</NuxtLink
-              >
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -302,10 +280,7 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div
-          v-if="usersockerTopFontResponse && usersockerTopFontResponse.length"
-          class="title"
-        >
+        <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
           {{ usersockerTopFontResponse[0].data }}
         </div>
         <div v-if="platformData" class="user_nums_out">
@@ -323,18 +298,11 @@ const googleLogin = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink
-            v-if="!user.id"
-            :to="localePath('/login')"
-            class="common_btn common_btn_hover_bgColor yellow"
-          >
+          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
             Join Them
           </NuxtLink>
         </div>
-        <div
-          v-if="usersockerArrResponse && usersockerArrResponse.length"
-          class="score_scroll_out"
-        >
+        <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
           <!-- <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
@@ -355,11 +323,7 @@ const googleLogin = () => {
             </Slide>
           </Carousel> -->
           <div class="scrolls">
-            <Slide
-              v-for="(item, index) in usersockerArrResponse"
-              :key="index"
-              class="one_score"
-            >
+            <Slide v-for="(item, index) in usersockerArrResponse" :key="index" class="one_score">
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
@@ -382,24 +346,14 @@ const googleLogin = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div
-          v-if="commentTopFontResponse && commentTopFontResponse.length"
-          class="review_title"
-        >
+        <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
           {{ commentTopFontResponse[0].data }}
         </div>
         <div class="review_scroll_out">
-          <div
-            v-if="userPingLunResponse && userPingLunResponse.length"
-            class="review_scroll_out_it"
-          >
+          <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
             <!-- <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"> -->
             <div class="scrolls">
-              <Slide
-                v-for="(item, index) in userPingLunResponse"
-                :key="index"
-                class="two_card_out"
-              >
+              <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
@@ -413,12 +367,7 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate
-                          v-model="item[0].rate"
-                          allow-half
-                          disabled
-                          size="large"
-                        />
+                        <el-rate v-model="item[0].rate" allow-half disabled size="large" />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].content }}</div>
@@ -435,12 +384,7 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate
-                          v-model="item[1].rate"
-                          allow-half
-                          disabled
-                          size="large"
-                        />
+                        <el-rate v-model="item[1].rate" allow-half disabled size="large" />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].content }}</div>

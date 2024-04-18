@@ -7,7 +7,6 @@ const { t } = useI18n();
 
 const store = useStore();
 const user = computed(() => store.user);
-console.log(user.value);
 
 const groupList1Img = staticPcUrlGet("group/list-1.png");
 const groupList2Img = staticPcUrlGet("group/list-2.png");
@@ -138,19 +137,9 @@ const logout = () => {
         <el-image src="/img/logo.svg" class="mobileLogo" />
       </nuxt-link>
       <div class="menus">
-        <nav
-          v-for="menu in menus"
-          :key="menu.path"
-          :class="`meun ${pathname === menu.path ? 'active' : ''}`"
-        >
-          <el-popover
-            v-if="menu.path === '/products'"
-            v-model="popoverQuestions"
-            placement="bottom"
-            width="80%"
-            trigger="hover"
-            popper-class="head-question-popover"
-          >
+        <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
+          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" width="80%"
+            trigger="hover" popper-class="head-question-popover">
             <div class="head-question-con">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -202,10 +191,8 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name"
-                >{{ menu.name }}
-                <el-image src="/img/learn/down-icon.svg" class="down-icon"
-              /></nuxt-link>
+              <nuxt-link class="head-name">{{ menu.name }}
+                <el-image src="/img/learn/down-icon.svg" class="down-icon" /></nuxt-link>
             </template>
           </el-popover>
           <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}</nuxt-link>
@@ -227,32 +214,20 @@ const logout = () => {
       </div>
       <div v-else class="loginbtn">
         <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
-        <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor"
-          >Try for free</nuxt-link
-        >
+        <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor">Try for free</nuxt-link>
       </div>
       <div class="mobile">
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
     </div>
-    <el-drawer
-      v-model="visible"
-      direction="ltr"
-      size="200px"
-      :with-header="false"
-      :before-close="handleClose"
-    >
+    <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
         <nuxt-link href="/">
           <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
         </nuxt-link>
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
+          <nuxt-link v-for="menu in menus" :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
             {{ menu.name }}
           </nuxt-link>
         </div>
