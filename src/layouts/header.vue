@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { api, staticPcUrlGet, urlGet, staticUrlGet } from "@/utils";
+import { api, staticPcUrlGet, urlGet, staticUrlGet, saveStorage, getStorage } from "@/utils";
 import _ from "lodash";
 import { useStore } from "@/store";
 const localePath = useLocalePath();
@@ -17,8 +17,14 @@ const groupList5Img = staticPcUrlGet("group/list-5.png");
 const route = useRoute();
 const pathname = computed(() => route.path);
 const headerColor = ref("#FFF4F1");
+const oldPath = ref('');
 watch(pathname, (val) => {
+  oldPath.value = getStorage('pathname');
+  setTimeout(() => {
+    oldPath.value = '';
+  }, 200);
   changeHeaderColor(val);
+  saveStorage('pathname', val);
 });
 onMounted(() => {
   changeHeaderColor(pathname.value);
@@ -195,7 +201,11 @@ const logout = () => {
                 <el-image src="/img/learn/down-icon.svg" class="down-icon" /></nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}</nuxt-link>
+          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
+            <div v-if="pathname === menu.path" class="header-scrolls"></div>
+            <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
+          </nuxt-link>
+
         </nav>
       </div>
       <div class="mobile">
@@ -236,6 +246,38 @@ const logout = () => {
   </div>
 </template>
 <style lang="scss">
+.header-scrolls {
+  width: 100%;
+  border-bottom: 4px solid #f66442;
+  animation-name: moveto;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes moveto {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.header-scrolls-move{
+  width: 100%;
+  border-bottom: 4px solid #f66442;
+  animation-name: disappear;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: forwards;
+}
+@keyframes disappear {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .head-question-popover {
   .head-question-con {
     display: grid;
@@ -389,8 +431,11 @@ const logout = () => {
         justify-content: center;
         a {
           display: block;
-          height: 72px;
-          line-height: 72px;
+          // height: 72px;
+          // line-height: 72px;
+          height: 54px;
+          line-height: 50px;
+          overflow: hidden;
           .down-icon {
             display: inline-block;
             width: 16px;
@@ -398,7 +443,7 @@ const logout = () => {
           }
         }
         &.active {
-          border-bottom: 4px solid #f66442;
+          // border-bottom: 4px solid #f66442;
           a {
             color: #201515;
             font-weight: 600;
