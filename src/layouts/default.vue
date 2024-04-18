@@ -1,6 +1,15 @@
 <script setup lang="ts">
+import { loginBycredential } from '@/utils/googleAuth';
+import { saveToken } from '@/utils';
+import { useRouter } from 'vue-router';
+import { useStore } from '@/store';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
+
+const router = useRouter();
+
+const store = useStore();
+
 useHead({
   script: [{ src: 'https://accounts.google.com/gsi/client' }],
 });
@@ -9,11 +18,20 @@ declare global {
     google: any;
   }
 }
-onMounted(() => {
+onMounted(async () => {
   window.google.accounts.id.initialize({
     client_id: '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com',
-    callback: function (response: any) {
-      console.log(response);
+    callback: async function (response: any) {
+      console.log(response.credential);
+      const {
+        data: { token, isNew },
+        err,
+      } = await loginBycredential(response.credential);
+      if (!err) {
+        await saveToken(token, true);
+        store.getUserInfo();
+        router.push('/');
+      }
     },
   });
   window.google.accounts.id.prompt();

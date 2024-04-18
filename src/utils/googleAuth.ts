@@ -25,7 +25,7 @@ export function oauth2SignIn() {
     state: 'try_sample_request',
     include_granted_scopes: 'true',
     response_type: 'token',
-  };
+  } as any;
 
   // Add form parameters as hidden input values.
   Object.keys(params).forEach((p) => {
@@ -41,6 +41,18 @@ export function oauth2SignIn() {
   form.submit();
 }
 
+export const loginBycredential = async (credential: string) => {
+  const { data } = await fetchmy(`${api}/common/jwtDecode`, {
+    method: 'post',
+    body: JSON.stringify({ credential }),
+  });
+  const { email, picture, name } = data;
+  return fetchmy(`${api}/common/login`, {
+    method: 'post',
+    body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+  });
+};
+
 // If there's an access token, try an API request.
 // Otherwise, start OAuth 2.0 flow.
 export const oauthLogin = async () => {
@@ -53,17 +65,8 @@ export const oauthLogin = async () => {
     }
   });
   if (accessToken) {
-    const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    });
-    const data = await res.json();
-    const { email, picture, name } = data;
-    return fetchmy(`${api}/common/login`, {
-      method: 'post',
-      body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
-    });
+    return loginBycredential(accessToken);
   }
 };
+
 export default {};
