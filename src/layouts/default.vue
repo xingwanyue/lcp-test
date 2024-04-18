@@ -1,8 +1,45 @@
 <script setup lang="ts">
+import { loginBycredential } from '@/utils/googleAuth';
+import { saveToken, getToken } from '@/utils';
+import { useRouter } from 'vue-router';
+import { useStore } from '@/store';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
+
+const router = useRouter();
+
+const store = useStore();
+
 useHead({
   script: [{ src: 'https://accounts.google.com/gsi/client' }],
+});
+declare global {
+  interface Window {
+    google: any;
+  }
+}
+onMounted(async () => {
+  const token = getToken();
+  if (token) {
+    store.getUserInfo();
+    return;
+  }
+  window.google.accounts.id.initialize({
+    client_id: '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com',
+    callback: async function (response: any) {
+      console.log(response.credential);
+      const {
+        data: { token, isNew },
+        err,
+      } = await loginBycredential(response.credential);
+      if (!err) {
+        await saveToken(token, true);
+        store.getUserInfo();
+        router.push('/');
+      }
+    },
+  });
+  window.google.accounts.id.prompt();
 });
 </script>
 
@@ -13,12 +50,12 @@ useHead({
       <slot />
     </el-main>
     <el-footer class="footer_wrap"> <v-footer /></el-footer>
-    <div
+    <!-- <div
       id="g_id_onload"
       data-client_id="1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com"
       data-login_uri="https://app.detpractice.com/weapp/api/common/login"
       data-auto_select
-    ></div>
+    ></div> -->
   </el-container>
 </template>
 <style lang="scss" scoped>
