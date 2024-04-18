@@ -4,7 +4,7 @@ export const cdn = 'https://detcdn.zixuekeji.cn';
 // export const api = 'https://app.detpractice.com/weapp/api';
 // export const api = 'http://192.168.1.22:9000/api';
 // export const api = 'http://192.168.1.147:11001/weapp/api';
-export const api = 'https://app.xingwanyue.com/weapp/api';
+export const api = 'https://server.xingwanyue.com/weapp/api'; // 次域名数据缓存
 
 const host = 'https://app.xingwanyue.com';
 
