@@ -207,7 +207,7 @@ const logout = () => {
           <template #reference>
             <div class="userInfo">
               <div class="nickname">{{ user.nickname }}</div>
-              <el-image :src="staticUrlGet(user.avatar)" class="avatar"></el-image>
+              <el-image v-if="user.avatar" :src="staticUrlGet(user.avatar)" class="avatar"></el-image>
             </div>
           </template>
         </el-popover>

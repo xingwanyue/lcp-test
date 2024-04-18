@@ -465,7 +465,7 @@ const openchat = () => {
                 <div class="days">{{ item.data.examNum }}-day membership</div>
               </div>
               <div class="scroll_buyed_right">
-                <div class="flag"><img :src="staticUrlGet(item.data.avatar)" /></div>
+                <div class="flag"><img v-if="item.data.avatar" :src="staticUrlGet(item.data.avatar)" /></div>
                 <div class="country_name">{{ item.data.country }}</div>
                 <div class="time">20 mins ago</div>
               </div>
