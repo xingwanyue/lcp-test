@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { urlGet } from "@/utils";
 import { useStore } from "@/store";
-import vEmbark from "../../components/embark.vue";
+import vEasyexam from "../../components/easyexam.vue";
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -199,7 +199,7 @@ const {
         </div>
       </div>
     </div>
-    <v-embark />
+    <v-easyexam />
   </div>
 </template>
 
