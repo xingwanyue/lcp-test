@@ -18,10 +18,12 @@ const {
     userTotal: 0,
     questionTotal: 0,
     examTotal: 0,
+    correctTotal  : 0,
   },
 } = (await useFetch(`${api}/common/platformData`, {
   server: true,
 })) as any;
+
 </script>
 <template>
   <div class="bankW100">
@@ -41,23 +43,23 @@ const {
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="../../public/img/products/service_user_icon1.png" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="../../public/img/products/bank_user_icon2.png" />
+                    <img src="../../public/img/products/service_user_icon2.png" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="../../public/img/products/bank_user_icon3.png" />
+                    <img src="../../public/img/products/service_user_icon3.png" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="../../public/img/products/bank_user_icon4.png" />
+                    <img src="../../public/img/products/service_user_icon4.png" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="../../public/img/products/bank_user_icon5.png" />
+                    <img src="../../public/img/products/service_user_icon5.png" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.v1Total }}+ people used Correction service.
+                  {{ platformData.correctTotal }}+ people used Correction service.
                 </div>
               </div>
               <div class="btn common_btn_hover_bgColor">
