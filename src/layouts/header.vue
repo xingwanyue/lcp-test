@@ -31,7 +31,7 @@ onMounted(() => {
   const dom = document.getElementsByClassName('v-header')[0] as any;
   window.addEventListener('scroll', (e) => {
     if (document.documentElement.scrollTop === 0) {
-      headerColor.value = "#FFF4F1";
+      changeHeaderColor(pathname.value);
       dom.style.borderBottom = '0px solid';
     } else {
       headerColor.value = '#fff';
