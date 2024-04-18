@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { loginBycredential } from '@/utils/googleAuth';
-import { saveToken } from '@/utils';
+import { saveToken, getToken } from '@/utils';
 import { useRouter } from 'vue-router';
 import { useStore } from '@/store';
 import vHeader from './header.vue';
@@ -19,6 +19,11 @@ declare global {
   }
 }
 onMounted(async () => {
+  const token = getToken();
+  if (token) {
+    store.getUserInfo();
+    return;
+  }
   window.google.accounts.id.initialize({
     client_id: '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com',
     callback: async function (response: any) {
