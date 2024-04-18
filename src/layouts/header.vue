@@ -451,6 +451,7 @@ const logout = () => {
         &:hover {
           a {
             color: #201515;
+            font-weight: 600;
           }
         }
       }
@@ -522,9 +523,15 @@ const logout = () => {
       display: none;
     }
     .login_font {
+      width: 80px;
       font-weight: 400;
       font-size: 18px;
       color: #403f3e;
+      text-align: right;
+      &:hover{
+        color: #201515;
+        font-weight: 600;
+      }
       @media screen and (max-width: 460px) {
         font-size: 12px;
       }
