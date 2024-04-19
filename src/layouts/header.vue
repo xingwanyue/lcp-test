@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { api, staticPcUrlGet, urlGet, staticUrlGet, saveStorage, getStorage } from "@/utils";
-import _ from "lodash";
-import { useStore } from "@/store";
+import { api, staticPcUrlGet, urlGet, staticUrlGet, saveStorage, getStorage } from '@/utils';
+import _ from 'lodash';
+import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
 
@@ -16,7 +16,7 @@ const groupList5Img = staticPcUrlGet('group/list-5.png');
 
 const route = useRoute();
 const pathname = computed(() => route.path);
-const headerColor = ref("#FFF4F1");
+const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
 watch(pathname, (val) => {
   oldPath.value = getStorage('pathname');
@@ -152,8 +152,13 @@ const logout = () => {
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
-            popper-class="head-question-popover">
+          <el-popover
+            v-if="menu.path === '/products'"
+            :visible="popoverQuestions"
+            placement="bottom"
+            trigger="hover"
+            popper-class="head-question-popover"
+          >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -210,15 +215,15 @@ const logout = () => {
               </nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
+          <nuxt-link v-else :to="localePath(menu.path)"
+            >{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
           </nuxt-link>
-
         </nav>
       </div>
       <div class="mobile">
-        <el-image src="/img/logo.svg" class="mobileLogo" />
+        <span class="icon iconfont icon-logo mobileLogo"></span>
       </div>
       <div v-if="user.id" href="/app">
         <el-popover placement="top-start" trigger="hover" class="111">
@@ -241,12 +246,14 @@ const logout = () => {
     </div>
     <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
-        <nuxt-link href="/">
-          <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
-        </nuxt-link>
+      
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link v-for="menu in menus" :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
+          <nuxt-link
+            v-for="menu in menus"
+            :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
+            :href="menu.path"
+          >
             {{ menu.name }}
           </nuxt-link>
         </div>
@@ -271,7 +278,7 @@ const logout = () => {
     transform: translateX(0);
   }
 }
-.header-scrolls-move{
+.header-scrolls-move {
   width: 100%;
   border-bottom: 4px solid #f66442;
   animation-name: disappear;
@@ -288,8 +295,8 @@ const logout = () => {
   }
 }
 .head-question-popover {
-   max-width: 1000px !important;
-   width: auto !important;
+  max-width: 1000px !important;
+  width: auto !important;
   .head-question-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -473,8 +480,7 @@ const logout = () => {
       display: none;
 
       .mobileLogo {
-        width: 142px;
-        height: 40px;
+        font-size: 26px;
         cursor: pointer;
       }
 
@@ -541,7 +547,7 @@ const logout = () => {
       font-size: 18px;
       color: #403f3e;
       text-align: right;
-      &:hover{
+      &:hover {
         color: #201515;
         font-weight: 600;
       }
