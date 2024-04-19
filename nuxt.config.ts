@@ -13,11 +13,18 @@ export default defineNuxtConfig({
   plugins: [
     { src: '@/plugins/aos.client.js', ssr: true },
     { src: '@/assets/iconfont/iconfont.js', ssr: false },
-    { src: '@/plugins/crisp.js', mode: "client" },
+    { src: '@/plugins/crisp.js', mode: 'client' },
   ],
   app: {
     head: {
-      link: [{ rel: 'stylesheet', href: '/css/main.css' }],
+      link: [
+        { rel: 'stylesheet', href: '/css/main.css' },
+        {
+          rel: 'stylesheet',
+          // href: 'https://fonts.googleapis.com/css?key=AIzaSyDbzT4fuJKXpd5bgx-ZjfBtphK63CVvbFE&family=Sedan',
+          href: 'https://fonts.googleapis.com/css?family=Sedan',
+        },
+      ],
       title: 'Det',
       // title: '大牛多邻国 - 高效备考多邻国考试',
       meta: [

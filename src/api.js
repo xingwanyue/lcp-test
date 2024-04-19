@@ -35,7 +35,7 @@ export const findPassword = (args) =>
     body: JSON.stringify(args),
   });
 export const logout = () =>
-  fetchmy(`${api}/common/findPassword`, {
+  fetchmy(`${api}/common/logout`, {
     method: 'post',
     body: JSON.stringify({ domain: domainGet() }),
   });
