@@ -60,9 +60,9 @@ const changeHeaderColor = (pathname: string) => {
     case "/products/guide":
       headerColor.value = "#E7FDEC";
       break;
-    case "/company/contactus":
-      headerColor.value = "#ffffff";
-      break;
+    // case "/company/contactus":
+    //   headerColor.value = "#ffffff";
+    //   break;
 
     default:
       headerColor.value = "#FFF4F1";
