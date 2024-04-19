@@ -2,7 +2,6 @@
 import { articleGet, articleCategoryGet, getTree } from '@/utils';
 import { reactive } from 'vue';
 import _ from 'lodash';
-import bannerLearn from '@/public/img/learn/banner-learn.svg';
 import subscribe from '../components/subscribe.vue';
 
 const localePath = useLocalePath();
@@ -70,7 +69,7 @@ const handleChange = () => {
 </script>
 <template>
   <div class="learn">
-    <div class="learn_hader" :style="`background-image: url(${bannerLearn});`">
+    <div class="learn_hader" :style="`background-image: url(/img/learn/banner-learn.svg);`">
       <div class="learn_hader_content">
         <div>
           <h1 class="title">We will update the exam preparation tips of Duolingo English Test timely</h1>
