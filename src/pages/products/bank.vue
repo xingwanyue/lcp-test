@@ -47,9 +47,7 @@ const {
           <div class="banner">
             <div class="banner_left">
               <div class="big_title">
-                <h1>
-                  Duolingo Practice Question Bank
-                </h1>
+                <h1>Duolingo Practice Question Bank</h1>
               </div>
               <div class="desc">
                 "Abundant test questions, Answer analysis & templates, intelligent
@@ -157,7 +155,7 @@ const {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">AI speaking evaluati</div>
+                <div class="right_title">AI speaking evaluation</div>
                 <div class="right_desc">
                   <span class="strong"> AI-based spoken language scoring</span> makes oral
                   practice more efficient. Once you submit a spoken language question, you
