@@ -19,6 +19,7 @@ const pathname = computed(() => route.path);
 const headerColor = ref("#FFF4F1");
 const oldPath = ref('');
 watch(pathname, (val) => {
+  popoverQuestions.value = false;
   oldPath.value = getStorage('pathname');
   setTimeout(() => {
     oldPath.value = '';
@@ -149,10 +150,10 @@ const logout = () => {
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" trigger="hover"
+          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
             popper-class="head-question-popover">
-            <div class="head-question-con">
-              <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
+            <div class="head-question-con" @mouseleave="popoverQuestions = false">
+              <NuxtLink :to="localePath('/products/bank')" class="one_card card1" @click="popoverQuestions = false">
                 <div class="icon">
                   <img src="../public/img/home/product_icon1.svg" />
                 </div>
@@ -164,7 +165,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/service')" class="one_card card2">
+              <NuxtLink :to="localePath('/products/service')" class="one_card card2" @click="popoverQuestions = false">
                 <div class="icon">
                   <img src="../public/img/home/product_icon2.svg" />
                 </div>
@@ -176,7 +177,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/mock')" class="one_card card3">
+              <NuxtLink :to="localePath('/products/mock')" class="one_card card3" @click="popoverQuestions = false">
                 <div class="icon">
                   <img src="../public/img/home/product_icon3.svg" />
                 </div>
@@ -188,7 +189,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/guide')" class="one_card card4">
+              <NuxtLink :to="localePath('/products/guide')" class="one_card card4" @click="popoverQuestions = false">
                 <div class="icon">
                   <img src="../public/img/home/product_icon4.svg" />
                 </div>
@@ -202,8 +203,9 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name">{{ menu.name }} <el-image src="/img/learn/down-icon.svg"
-                  class="down-icon" /></nuxt-link>
+              <nuxt-link class="head-name" @mouseover="popoverQuestions = true">
+                {{ menu.name }} <el-image src="/img/learn/down-icon.svg" class="down-icon" />
+              </nuxt-link>
             </template>
           </el-popover>
           <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
