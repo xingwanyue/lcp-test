@@ -224,7 +224,7 @@ const openchat = () => {
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" class="off">
-                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% </span>
+                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off</span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
@@ -234,14 +234,17 @@ const openchat = () => {
                 <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div v-if="item.day !== 0" class="card_price_buy_btn" @click="buyMembership(item.id)">
+                <div v-if="item.day !== 0"
+                  :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']"
+                  @click="buyMembership(item.id)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
                 <div v-else class="card_price_buy_btn try_free" @click="buyMembership(item.id)">Try for free</div>
               </div>
               <div v-else>
-                <div v-if="item.day !== 0" class="card_price_buy_btn">
+                <div v-if="item.day !== 0"
+                  :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']">
                   <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
@@ -581,24 +584,33 @@ const openchat = () => {
 
             .card_price_buy_btn {
               padding: 11px 0px;
-              background: #edc295;
+              background: #F66442;
               border-radius: 4px;
               font-weight: 500;
               font-size: 16px;
-              color: #4c2929;
+              // color: #4c2929;
               text-align: center;
               margin-top: 32px;
               position: relative;
-
               &:hover {
-                background: #cba67f;
+                background: #F66442;
+              }
+              a{
+                color: #fff
               }
             }
-
+             .card_price_buy_btn1 {
+              background: #EDC295;
+              a{
+                color: #4c2929;
+              }
+             }
             .try_free {
               background: white;
               border: 1px solid #201515;
-
+              a{
+                color: #4c2929;
+              }
               &:hover {
                 background: white;
               }
@@ -739,10 +751,12 @@ const openchat = () => {
               border-radius: 4px;
               font-weight: 500;
               font-size: 16px;
-              color: white;
               text-align: center;
               margin-top: 32px;
               position: relative;
+              a{
+                color: white;
+              }
             }
           }
         }
