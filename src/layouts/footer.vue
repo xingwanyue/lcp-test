@@ -217,15 +217,18 @@ const options = [
   padding-bottom: 37px;
   .footer_link_dom {
     text-align: left;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-column-gap: 40px;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    // grid-column-gap: 40px;
+    display: flex;
+    justify-content: space-between;
     @media (max-width: 496px) {
       text-align: center;
     }
-    grid-row-gap: 24px;
+    // grid-row-gap: 24px;
     .one_link_list {
       // border: 1px red solid;
+      width: auto;
       .one_link_list_title {
         margin-bottom: 24px;
         font-weight: 500;
