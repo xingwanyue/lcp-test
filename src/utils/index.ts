@@ -20,6 +20,9 @@ export const staticUrlGet = (path: string) => {
 const TOKEN = 'det_i18n_token';
 
 export const domainGet = () => {
+  if (window.location.hostname === 'localhost') {
+    return window.location.hostname;
+  }
   const domains = window.location.hostname.split('.').reverse();
   return `.${domains[1]}.${domains[0]}`;
 };

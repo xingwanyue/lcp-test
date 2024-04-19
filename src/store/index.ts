@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
+import { useRouter } from 'vue-router';
 
 import { api, saveToken, getToken, removeToken, delay } from '@/utils';
 import { fetchmy } from '@/utils/request';
@@ -88,8 +89,9 @@ export const useStore = defineStore({
       this.userSelectLanguage = language;
     },
     async checkPayStatus(logVipId: string, token: string) {
-      const { errP, data = {} } = await stripePayStatusGet(logVipId, token);
-      if (!errP) {
+      console.log('checkPayStatus');
+      const { err, data = {} } = await stripePayStatusGet(logVipId, token);
+      if (!err) {
         const { code, vipEndTime, vipDays, examNum, correctNum } = data;
         if (code === 1) {
           this.user.vipEndTime = vipEndTime;
@@ -99,7 +101,6 @@ export const useStore = defineStore({
           if (correctNum) {
             this.user.correctNum = (this.user.correctNum || 0) + correctNum;
           }
-
           const message = [];
           if (examNum) {
             message.push(`${examNum} mock exams purchased successfully!Remaining times ${this.user.examNum}`);
@@ -120,19 +121,30 @@ export const useStore = defineStore({
             });
           }
         } else {
+          console.log('delay start');
           await delay(1000);
+          console.log('delay end');
           await this.checkPayStatus(logVipId, token);
         }
       }
     },
     async stripePay(payload: any) {
       const token = await getToken(false);
+      console.log('stripePay',token)
+      if (!token) {
+        const router = useRouter();
+        console.log(router)
+        const localePath = useLocalePath();
+        console.log(localePath('/login'))
+        router.push(localePath('/login'))
+        return;
+      }
       const { err, data } = await stripePayUrlGet(payload, token);
       if (!err) {
         const { logVipId, url } = data;
 
         if (url) {
-          stripePayStatusGet(logVipId, token);
+          this.checkPayStatus(logVipId, token);
           window.open(url, '_blank');
         }
       }

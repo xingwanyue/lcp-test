@@ -18,7 +18,7 @@ const route = useRoute();
 const pathname = computed(() => route.path);
 const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
-watch(pathname, (val) => {
+watch(pathname, (val: string) => {
   oldPath.value = getStorage('pathname');
   setTimeout(() => {
     oldPath.value = '';
@@ -246,7 +246,6 @@ const logout = () => {
     </div>
     <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
-      
         <div class="asideMenus" @click="handleClose">
           <nuxt-link
             v-for="menu in menus"
