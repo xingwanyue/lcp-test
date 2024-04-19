@@ -20,10 +20,9 @@ const sendEmail = async () => {
         <div class="left_font2">Get the latest exam news and tips for improving your score.</div>
       </div>
       <div class="subscribe_in_right">
-        <el-input size="large" v-model="email" style="width: 100%" placeholder="Email">
+        <el-input size="large" v-model="email" style="width: 100%;height: 50px;" placeholder="Email">
           <template #append>
-            <el-button @click="sendEmail" class="common_btn_hover_bgColor subscribe-btn"
-              type="primary">Subscribe</el-button></template>
+            <el-button @click="sendEmail" class="subscribe-btn">Subscribe</el-button></template>
         </el-input>
       </div>
     </div>
@@ -60,9 +59,14 @@ const sendEmail = async () => {
       flex: 1;
       min-width: 300px;
       .subscribe-btn{
+        width: 100%;
         height: 100%;
         border-radius: 0px 8px 8px 0px;
         background: #F66442;
+        border-color:#F66442;
+        &:hover{
+          background: rgba(0,0,0,0.1);
+        }
       }
     }
   }
@@ -72,6 +76,9 @@ const sendEmail = async () => {
 .el-input-group__append {
   background: #f66442;
   color: #fff;
+  padding: 0px;
+  width: 150px;
+  box-shadow: none;
 }
 
 .el-input__wrapper.is-focus {
