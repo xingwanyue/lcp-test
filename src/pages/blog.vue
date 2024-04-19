@@ -5,7 +5,6 @@ import dayjs from "dayjs";
 import _ from "lodash";
 
 import vEmbark from "../components/embark.vue";
-import right_arrow from "../public/img/blog/right_arrow.svg";
 const localePath = useLocalePath();
 
 useSeoMeta({
@@ -49,13 +48,7 @@ const handleCurrentChange = async (val: number) => {
     </div>
     <div class="bolgs_content_wrapper" style="">
       <div v-if="blogs && blogs.length" class="bolgs_content">
-        <div
-          v-for="(item, index) in blogs"
-          :key="index"
-          class="one_blog"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div v-for="(item, index) in blogs" :key="index" class="one_blog" data-aos="fade-up" data-aos-duration="1000">
           <NuxtLink :to="localePath(`/${item.path}`)">
             <div class="title">
               {{ item.name }}
@@ -66,21 +59,15 @@ const handleCurrentChange = async (val: number) => {
             <div class="bottom">
               <div class="date">{{ dayjs(item.createTime).format("YYYY-MM-DD") }}</div>
               <div class="right_arrow">
-                <el-image :src="right_arrow"></el-image>
+                <el-image src="/img/blog/right_arrow.svg"></el-image>
               </div>
             </div>
           </NuxtLink>
         </div>
       </div>
       <div class="pagination_out">
-        <el-pagination
-          background
-          layout="prev, pager, next"
-          :total="total"
-          :page-size="pageSize"
-          @current-change="handleCurrentChange"
-          class="mt-4"
-        />
+        <el-pagination background layout="prev, pager, next" :total="total" :page-size="pageSize"
+          @current-change="handleCurrentChange" class="mt-4" />
       </div>
     </div>
     <v-embark />
@@ -96,7 +83,7 @@ const handleCurrentChange = async (val: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding: 120px 0;
-      background: url("../public/img/blog/blog.svg") center no-repeat;
+      background: url("/img/blog/blog.svg") center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;
@@ -157,6 +144,12 @@ const handleCurrentChange = async (val: number) => {
           font-size: 20px;
           color: #201515;
           margin-top: 24px;
+          height: 76px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
         }
         .bottom {
           margin-top: 24px;
@@ -164,6 +157,10 @@ const handleCurrentChange = async (val: number) => {
           justify-content: space-between;
           align-items: center;
           height: 24px;
+          width: calc(100% - 48px);
+          position: absolute;
+          left: 24px;
+          bottom: 24px;
           .date {
             font-weight: 400;
             font-size: 16px;
