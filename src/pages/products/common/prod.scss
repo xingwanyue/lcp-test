@@ -198,6 +198,13 @@
                                 font-weight: 500;
                                 font-size: 20px;
                                 color: #ff7c0e;
+                                height: 28px;
+                                line-height: 28px;
+                                border-bottom: 1px white solid;
+
+                                &:hover {
+                                    border-bottom: 1px #ff7c0e solid;
+                                }
                             }
 
                             .arrow {
@@ -214,6 +221,13 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                            }
+
+                            &:hover {
+                                .arrow {
+                                    transform: translateX(8px);
+                                    transition: all 0.2s;
+                                }
                             }
                         }
                     }
@@ -251,6 +265,10 @@
     .right_click {
         .font {
             color: #F66442 !important;
+
+            &:hover {
+                border-bottom: 1px #F66442 solid !important;
+            }
         }
     }
 }
@@ -263,6 +281,12 @@
     .right_click {
         .font {
             color: #3E8BF8 !important;
+
+            &:hover {
+                border-bottom: 1px #3E8BF8 solid !important;
+            }
         }
+
+
     }
 }
