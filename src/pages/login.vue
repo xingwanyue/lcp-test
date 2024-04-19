@@ -219,7 +219,6 @@ const googleLogin = async () => {
     .t1 {
       width: 400px;
       font-size: 32px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: #333333;
       line-height: 45px;
@@ -227,7 +226,6 @@ const googleLogin = async () => {
     .t2 {
       width: 400px;
       font-size: 16px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: rgba(0, 0, 0, 0.45);
       line-height: 22px;
@@ -260,7 +258,6 @@ const googleLogin = async () => {
       background: #ffffff;
       font-size: 18px;
       margin-top: 49px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: #333333;
       cursor: pointer;
