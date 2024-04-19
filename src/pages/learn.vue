@@ -319,6 +319,11 @@ const handleChange = () => {
         color: #201515;
         line-height: 28px;
         margin-top: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
       }
     }
     .more{
@@ -366,6 +371,7 @@ const handleChange = () => {
           font-size: 15px;
           line-height: 21px;
           margin-top: 12px;
+          // max-height: 42px;
         }
       }
     }
