@@ -184,18 +184,18 @@ const options = [
           <img src="../public/img/footer/small_logo.svg" />
         </div>
         <div class="logo_icon_out">
-          <NuxtLink to="">
+          <NuxtLink to="https://www.youtube.com/@detpracticecom">
             <div class="one_icon youtube"></div>
           </NuxtLink>
-          <NuxtLink to="">
+          <!-- <NuxtLink to="">
             <div class="one_icon x"></div>
-          </NuxtLink>
-          <NuxtLink to="">
+          </NuxtLink> -->
+          <NuxtLink to="https://www.facebook.com/detpractice">
             <div class="one_icon facebook"></div>
           </NuxtLink>
-          <NuxtLink to="">
+          <!-- <NuxtLink to="">
             <div class="one_icon tiktok"></div>
-          </NuxtLink>
+          </NuxtLink> -->
         </div>
       </div>
       <div class="footer_logo_right">
