@@ -22,10 +22,8 @@ const sendEmail = async () => {
       <div class="subscribe_in_right">
         <el-input size="large" v-model="email" style="width: 100%" placeholder="Email">
           <template #append>
-            <el-button @click="sendEmail" class="common_btn_hover_bgColor" type="primary"
-              >Subscribe</el-button
-            ></template
-          >
+            <el-button @click="sendEmail" class="common_btn_hover_bgColor subscribe-btn"
+              type="primary">Subscribe</el-button></template>
         </el-input>
       </div>
     </div>
@@ -61,6 +59,11 @@ const sendEmail = async () => {
     .subscribe_in_right {
       flex: 1;
       min-width: 300px;
+      .subscribe-btn{
+        height: 100%;
+        border-radius: 0px 8px 8px 0px;
+        background: #F66442;
+      }
     }
   }
 }
@@ -70,6 +73,7 @@ const sendEmail = async () => {
   background: #f66442;
   color: #fff;
 }
+
 .el-input__wrapper.is-focus {
   box-shadow: 0 0 0 2px #201515 inset !important;
 }
