@@ -385,7 +385,6 @@ const logout = () => {
         font-size: 18px;
         font-weight: 400;
         // color: #484848;
-        font-family: PingFangSC, PingFang SC;
         color: #403f3e;
         box-sizing: border-box;
         height: 100%;

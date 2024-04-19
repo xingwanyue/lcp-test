@@ -151,7 +151,6 @@ const goLogin = () => {
     .t1 {
       width: 400px;
       font-size: 32px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: #333333;
       line-height: 45px;
@@ -162,7 +161,6 @@ const goLogin = () => {
       width: 410px;
       // white-space: nowrap;
       font-size: 16px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: rgba(0, 0, 0, 0.45);
       line-height: 22px;
@@ -190,7 +188,6 @@ const goLogin = () => {
     }
     .desc {
       font-size: 14px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.45);
       line-height: 20px;
@@ -198,7 +195,6 @@ const goLogin = () => {
     .goLogin {
       width: 400px;
       font-size: 14px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.45);
       line-height: 20px;

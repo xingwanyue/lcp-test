@@ -138,7 +138,6 @@ const submit = async () => {
   .left{
      width: 40%;
     .title{
-      font-family: PingFangSC, PingFang SC;
       font-weight: 500;
       font-size: 32px;
       color: #201515;

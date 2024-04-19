@@ -156,7 +156,6 @@ const googleRegister = () => {};
     .t1 {
       width: 400px;
       font-size: 32px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: #333333;
       line-height: 45px;
@@ -164,7 +163,6 @@ const googleRegister = () => {};
     .t2 {
       width: 400px;
       font-size: 16px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: rgba(0, 0, 0, 0.45);
       line-height: 22px;
@@ -197,7 +195,6 @@ const googleRegister = () => {};
       background: #ffffff;
       font-size: 18px;
       margin-top: 49px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: #333333;
       cursor: pointer;
@@ -217,7 +214,6 @@ const googleRegister = () => {};
     }
     .desc {
       font-size: 14px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.45);
       line-height: 20px;
