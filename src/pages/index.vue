@@ -737,15 +737,16 @@ const googleLogin = () => {
             "article_out";
         }
         .img_out {
-          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           grid-area: img_out;
           min-height: 300px;
           display: flex;
           justify-content: center;
           align-items: center;
           img {
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
             width: 100%;
             height: auto;
+            border-radius: 16px;
           }
         }
         .article_out {
@@ -816,15 +817,16 @@ const googleLogin = () => {
             "article_out";
         }
         .img_out {
-          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           grid-area: img_out;
           min-height: 300px;
           display: flex;
           justify-content: center;
           align-items: center;
           img {
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
             width: 100%;
             height: auto;
+            border-radius: 16px;
           }
         }
         .article_out {
