@@ -229,6 +229,7 @@ const options = [
     .one_link_list {
       // border: 1px red solid;
       width: auto;
+      max-width: 22%;
       .one_link_list_title {
         margin-bottom: 24px;
         font-weight: 500;
