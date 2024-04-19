@@ -22,7 +22,7 @@
     "@pinia/nuxt": "^0.5.1",
     "aos": "^2.3.4",
     "dayjs": "^1.11.10",
-    "element-plus": "^2.7.0",
+    "element-plus": "^2.6.2",
     "lru-cache": "^10.2.0",
     "pinia": "^2.1.7",
     "sass": "^1.75.0",
