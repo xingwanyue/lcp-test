@@ -408,6 +408,12 @@ const buyMembership = (id: number) => {
               width: 24px;
               height: 24px;
             }
+            &:hover {
+              .icon {
+                transform: translateX(8px);
+                transition: all 0.2s;
+              }
+            }
           }
         }
         @media screen and (max-width: 1000000px) {
