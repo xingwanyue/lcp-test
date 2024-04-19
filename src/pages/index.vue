@@ -746,6 +746,7 @@ const googleLogin = () => {
               font-size: 32px;
               color: #201515;
               margin-top: 0px;
+              margin-bottom: 0px;
             }
           }
           .tips {
@@ -824,6 +825,7 @@ const googleLogin = () => {
               font-size: 32px;
               color: #201515;
               margin-top: 0px;
+              margin-bottom: 0px;
             }
           }
           .tips {
