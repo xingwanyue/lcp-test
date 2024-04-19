@@ -481,7 +481,7 @@ const googleLogin = () => {
   .scrolls {
     display: flex;
     animation-name: around;
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
