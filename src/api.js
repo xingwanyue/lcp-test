@@ -34,8 +34,14 @@ export const findPassword = (args) =>
     method: 'post',
     body: JSON.stringify(args),
   });
-export const logout = () =>
-  fetchmy(`${api}/common/logout`, {
+  
+export const logout = async () => {
+  const token = await getToken(false);
+  return fetchmy(`${api}/logout`, {
     method: 'post',
     body: JSON.stringify({ domain: domainGet() }),
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
   });
+};

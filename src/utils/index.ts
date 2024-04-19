@@ -20,6 +20,9 @@ export const staticUrlGet = (path: string) => {
 const TOKEN = 'det_i18n_token';
 
 export const domainGet = () => {
+  if (window.location.hostname === 'localhost') {
+    return window.location.hostname;
+  }
   const domains = window.location.hostname.split('.').reverse();
   return `.${domains[1]}.${domains[0]}`;
 };
@@ -130,3 +133,5 @@ export const formatNumber = (num: number) => {
   }
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 };
+
+export const delay = (timeout: number) => new Promise((resolve) => setTimeout(resolve, timeout));

@@ -6,11 +6,11 @@
   "description": "det-i18n",
   "glyphs": [
     {
-      "icon_id": "39995385",
+      "icon_id": "40009865",
       "name": "logo",
       "font_class": "logo",
-      "unicode": "e601",
-      "unicode_decimal": 58881
+      "unicode": "e600",
+      "unicode_decimal": 58880
     }
   ]
 }

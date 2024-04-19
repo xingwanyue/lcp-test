@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 4513987 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1713432590809') format('woff2'),
-       url('iconfont.woff?t=1713432590809') format('woff'),
-       url('iconfont.ttf?t=1713432590809') format('truetype');
+       url('iconfont.woff2?t=1713511153252') format('woff2'),
+       url('iconfont.woff?t=1713511153252') format('woff'),
+       url('iconfont.ttf?t=1713511153252') format('truetype');
 }
 
 .iconfont {
@@ -16,6 +16,6 @@
 }
 
 .icon-logo:before {
-  content: "\e601";
+  content: "\e600";
 }
 
