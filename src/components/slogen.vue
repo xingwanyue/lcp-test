@@ -11,7 +11,7 @@ const user = computed(() => store.user);
       <div class="font2">Duolingo English Test !</div>
       <div v-if="!user.id" class="two_btn_out">
         <div class="common_btn common_btn_hover_bgColor yellow">
-          <img src="../public/img/home/google_icon.svg" />
+          <img src="/img/home/google_icon.svg" />
           Start free with Google
         </div>
         <div class="common_btn common_btn_hover_borderCu white">Start free with email</div>

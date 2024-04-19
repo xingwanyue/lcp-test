@@ -1,24 +1,18 @@
 <template>
   <div class="login">
     <div class="left">
-      <img :src="lockImg" alt="" />
+      <img src="/img/login/lock.svg" alt="" />
       <div class="t1">Forgot Password?</div>
       <h1 class="t2">Please enter the email used to create your account</h1>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
+      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
+        @submit.native.prevent>
         <el-form-item prop="email" label="" style="margin-top: 80px; margin-bottom: 16px">
           <el-input v-model="formData.email" placeholder="Enter your email"> </el-input>
         </el-form-item>
         <div class="desc">We'll send you an email with the reset code</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img :src="errIcon" class="errIcon" alt="" />
+            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
@@ -47,8 +41,6 @@ import { fetchmy } from '@/utils/request';
 definePageMeta({
   layout: 'noheaderfooter',
 });
-import lockImg from '../public/img/login/lock.svg';
-import errIcon from '../public/img/login/errIcon.svg';
 
 const router = useRouter();
 

@@ -5,10 +5,6 @@ import { useRoute, useRouter } from "vue-router";
 import { useStore } from "@/store";
 import { oauth2SignIn } from "@/utils/googleAuth";
 import { getToken, saveToken } from "@/utils";
-import googleImg from "../public/img/login/google_logo.svg";
-import lookImg from "../public/img/login/look.svg";
-import unlookImg from "../public/img/login/unlook.svg";
-import errIcon from "../public/img/login/errIcon.svg";
 
 const localePath = useLocalePath();
 const route = useRoute();
@@ -60,7 +56,7 @@ const submit = async () => {
   });
 
   if (!err) {
-    await saveToken(token, true);
+    await saveToken(token);
     console.log("store.getUserInfo");
     await store.getUserInfo();
     router.push(url);
@@ -82,50 +78,31 @@ const googleLogin = async () => {
       <div class="t1">Welcome back</div>
       <h1 class="t2">Login to practice</h1>
       <div class="loginGoogle" @click="googleLogin">
-        <img :src="googleImg" alt="" />
+        <img src="/img/login/google_logo.svg" alt="" />
         <span style="margin-left: 16px">Log in with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form
-        ref="ruleFormRef"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
+      <el-form ref="ruleFormRef" :model="formData" size="default" class="login-form" @submit.native.prevent>
         <el-form-item prop="email" label="">
           Email address
           <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
         </el-form-item>
         <el-form-item prop="password" label="">
           Password
-          <el-input
-            v-model="formData.password"
-            :type="pwdShow ? 'text' : 'password'"
-            placeholder="Password"
-          >
+          <el-input v-model="formData.password" :type="pwdShow ? 'text' : 'password'" placeholder="Password">
             <template #suffix>
-              <img
-                :src="pwdShow ? lookImg : unlookImg"
-                alt=""
-                @click="pwdShow = !pwdShow"
-              />
+              <img :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'" alt=""
+                @click="pwdShow = !pwdShow" />
             </template>
           </el-input>
         </el-form-item>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img :src="errIcon" class="errIcon" alt="" />
+            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button
-              v-loading="loading"
-              type="primary"
-              native-type="submit"
-              class="submit"
-              @click="submit"
-            >
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
               Login
             </el-button>
           </div>
@@ -133,19 +110,11 @@ const googleLogin = async () => {
         <el-form-item>
           <div class="zhuce">
             <div class="goforget">
-              <NuxtLink
-                :to="localePath('/forget')"
-                style="color: #f66442; cursor: pointer"
-                >Forgot password?</NuxtLink
-              >
+              <NuxtLink :to="localePath('/forget')" style="color: #f66442; cursor: pointer">Forgot password?</NuxtLink>
             </div>
             <div class="goregister">
               Don't have an account?
-              <NuxtLink
-                :to="localePath('/register')"
-                style="color: #f66442; cursor: pointer"
-                >Sign up here</NuxtLink
-              >
+              <NuxtLink :to="localePath('/register')" style="color: #f66442; cursor: pointer">Sign up here</NuxtLink>
             </div>
           </div>
         </el-form-item>
