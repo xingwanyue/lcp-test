@@ -19,7 +19,6 @@ const pathname = computed(() => route.path);
 const headerColor = ref("#FFF4F1");
 const oldPath = ref('');
 watch(pathname, (val) => {
-  popoverQuestions.value = false;
   oldPath.value = getStorage('pathname');
   setTimeout(() => {
     oldPath.value = '';
@@ -38,6 +37,9 @@ onMounted(() => {
       headerColor.value = '#fff';
       dom.style.borderBottom = '1px solid #f0e8e8';
     }
+  });
+  window.addEventListener('click', () => {
+    popoverQuestions.value = false;
   });
 });
 const changeHeaderColor = (pathname: string) => {
@@ -152,8 +154,8 @@ const logout = () => {
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
           <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
             popper-class="head-question-popover">
-            <div class="head-question-con" @mouseleave="popoverQuestions = false">
-              <NuxtLink :to="localePath('/products/bank')" class="one_card card1" @click="popoverQuestions = false">
+            <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
+              <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
                   <img src="../public/img/home/product_icon1.svg" />
                 </div>
@@ -165,7 +167,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/service')" class="one_card card2" @click="popoverQuestions = false">
+              <NuxtLink :to="localePath('/products/service')" class="one_card card2">
                 <div class="icon">
                   <img src="../public/img/home/product_icon2.svg" />
                 </div>
@@ -177,7 +179,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/mock')" class="one_card card3" @click="popoverQuestions = false">
+              <NuxtLink :to="localePath('/products/mock')" class="one_card card3">
                 <div class="icon">
                   <img src="../public/img/home/product_icon3.svg" />
                 </div>
@@ -189,7 +191,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/guide')" class="one_card card4" @click="popoverQuestions = false">
+              <NuxtLink :to="localePath('/products/guide')" class="one_card card4">
                 <div class="icon">
                   <img src="../public/img/home/product_icon4.svg" />
                 </div>
@@ -203,7 +205,7 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name" @mouseover="popoverQuestions = true">
+              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
                 {{ menu.name }} <el-image src="/img/learn/down-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
