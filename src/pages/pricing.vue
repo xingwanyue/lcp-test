@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { staticUrlGet } from '@/utils';
 import { useStore } from '@/store';
-import online from '../public/img/pricing/online.svg';
-import email from '../public/img/pricing/email.svg';
-import message from '../public/img/pricing/message.svg';
-import payment from '../public/img/pricing/payment.png';
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
@@ -44,27 +40,27 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
               tips: '',
             },
             { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: '' },
-            { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: '' },
-            { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: '' },
+            { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: '', style: 'font-weight: 500;' },
+            { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: '', style: 'font-weight: 500;' },
           ];
         }
         if (item.day === 7) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '', style: 'font-weight: 500;' },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
+              desc: `${item.correctNum} Correction Services`, style: 'font-weight: 500;',
               tips: 'for speaking and writing',
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+              desc: `$${correct.vipPrice / 100} / 5 Correction Services`, style: 'font-weight: 500;',
               tips: 'Exclusive Discount',
             },
             { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
             { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '', style: 'font-weight: 500;' },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '', style: 'font-weight: 500;' },
           ];
         }
         if (item.day === 15) {
@@ -72,37 +68,37 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
+              desc: `${item.correctNum} Correction Services`, style: 'font-weight: 500;',
               tips: 'for speaking and writing',
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+              desc: `$${correct.vipPrice / 100} / 5 Correction Services`, style: 'font-weight: 500;',
               tips: 'Exclusive Discount',
             },
             { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
             { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '', style: 'font-weight: 500;' },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '', style: 'font-weight: 500;' },
           ];
         }
         if (item.day === 30) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '', style: 'font-weight: 500;' },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
+              desc: `${item.correctNum} Correction Services`, style: 'font-weight: 500;',
               tips: 'for speaking and writing',
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+              desc: `$${correct.vipPrice / 100} / 5 Correction Services`, style: 'font-weight: 500;',
               tips: 'Exclusive Discount',
             },
             { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
             { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '', style: 'font-weight: 500;' },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '', style: 'font-weight: 500;' },
           ];
         }
         membershipArr.push(item);
@@ -134,21 +130,21 @@ const openOrCloseOneQuestion = (item: any) => {
 const contaceUsList = ref([
   {
     type: '1',
-    icon: online,
+    icon: '/img/pricing/online.svg',
     font: 'Online Customer Service',
     tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
     btn: 'Initiate a conversation',
   },
   {
     type: '2',
-    icon: email,
+    icon: '/img/pricing/email.svg',
     font: 'Consultation Email',
     tip: 'We will respond to you within one business day.',
     btn: 'info@aitogether.uk',
   },
   {
     type: '3',
-    icon: message,
+    icon: '/img/pricing/message.svg',
     font: 'Leave a message',
     tip: 'We will respond to you within one business day.',
     btn: 'Leave a message now',
@@ -185,7 +181,7 @@ const membershipUnchanging = ref([
     desc: 'Read aloud AI ratings',
     tips: '',
   },
-]);
+]) as any;
 
 const copy = async (email: any) => {
   await navigator.clipboard.writeText(`${email}`);
@@ -210,28 +206,21 @@ const openchat = () => {
           </h4>
         </div>
         <div class="switch_out">
-          <div
-            @click="changeSwitchType('1')"
-            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('1')"
+            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']">
             Membership
           </div>
-          <div
-            @click="changeSwitchType('2')"
-            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('2')"
+            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']">
             More Service
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
-          <div
-            v-for="(item, index) in vipsData.membershipArr"
-            :key="index"
+          <div v-for="(item, index) in vipsData.membershipArr" :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
-            @click="changeCurrentMembershipId(item.id)"
-          >
+            @click="changeCurrentMembershipId(item.id)">
             <div class="title">Most Popular Choice</div>
-            <div class="card_price">
+            <div class="card_price" :style="item.id === CurrentMembershipId ? 'background-color:#E9E9E9;' : ''">
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" class="off">
@@ -264,15 +253,15 @@ const openchat = () => {
               <div class="card_price_qllist">
                 <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
-                    <img src="../public/img/pricing/check.svg" />
+                    <img src="/img/pricing/check.svg" />
                   </div>
-                  <div class="font">
+                  <div class="font" :style="itemin?.style">
                     <!-- <span class="bigger">30 days</span> -->
                     {{ itemin.desc }}
                   </div>
                   <div v-if="itemin.tips" class="tips">
                     <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
-                      <img src="../public/img/pricing/tip.svg" />
+                      <img src="/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
@@ -280,15 +269,15 @@ const openchat = () => {
               <div class="card_price_qllist" style="margin-top: 16px">
                 <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
                   <div class="icon">
-                    <img src="../public/img/pricing/check.svg" />
+                    <img src="/img/pricing/check.svg" />
                   </div>
-                  <div class="font">
+                  <div class="font" :style="itemuc?.style">
                     <!-- <span class="bigger">30 days</span> -->
                     {{ itemuc.desc }}
                   </div>
                   <div v-if="itemuc.tips" class="tips">
                     <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
-                      <img src="../public/img/pricing/tip.svg" />
+                      <img src="/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
@@ -297,12 +286,9 @@ const openchat = () => {
           </div>
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
-          <div
-            v-for="(item, index) in vipsData.moreServiceArr"
-            :key="index"
+          <div v-for="(item, index) in vipsData.moreServiceArr" :key="index"
             :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
-            @click="changeCurrentMembershipId(item.id)"
-          >
+            @click="changeCurrentMembershipId(item.id)">
             <div class="title">Most Popular Choice</div>
             <div class="card_price">
               <div class="card_price_part1">{{ item.tag }}</div>
@@ -338,7 +324,7 @@ const openchat = () => {
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
-                  <img src="../public/img/pricing/green_check.svg" />
+                  <img src="/img/pricing/green_check.svg" />
                 </div>
                 <div class="name">{{ item.data.nickname }}</div>
                 <div class="type">purchased</div>
@@ -358,7 +344,7 @@ const openchat = () => {
         <div class="bank_card">
           <div class="title">Secure Payment:</div>
           <div class="img_self">
-            <img :src="payment" />
+            <img src="/img/pricing/payment.png" />
           </div>
         </div>
       </div>
@@ -367,15 +353,12 @@ const openchat = () => {
       <div class="part2">
         <div class="title">Frequently Asked Questions</div>
         <div class="list_out">
-          <div
-            v-for="(item, index) in aqList"
-            :key="index"
+          <div v-for="(item, index) in aqList" :key="index"
             :class="[item.open ? 'one_question one_question_open' : 'one_question']"
-            @click="openOrCloseOneQuestion(item)"
-          >
+            @click="openOrCloseOneQuestion(item)">
             <div class="header">
               <div class="icon">
-                <img src="../public/img/pricing/arrow_down.svg" />
+                <img src="/img/pricing/arrow_down.svg" />
               </div>
               <div class="qusetion">{{ item.title }}</div>
             </div>
@@ -561,7 +544,7 @@ const openchat = () => {
                 border-radius: 16px;
                 font-weight: 500;
                 font-size: 14px;
-                color: #4c2929;
+                color: #fff;
               }
             }
 
@@ -570,6 +553,7 @@ const openchat = () => {
               font-size: 14px;
               color: #403f3e;
               margin-top: 11px;
+              min-height: 51px;
             }
 
             .card_price_part3 {
@@ -639,7 +623,7 @@ const openchat = () => {
                 }
 
                 .font {
-                  font-weight: 500;
+                  // font-weight: 500;
                   font-size: 14px;
                   color: #403f3e;
 
@@ -679,7 +663,7 @@ const openchat = () => {
       .Service_dom {
         margin-top: 80px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
         grid-gap: 16px;
 
         .one_price {
@@ -714,6 +698,7 @@ const openchat = () => {
               font-size: 14px;
               color: #403f3e;
               margin-top: 11px;
+              min-height: 68px;
             }
 
             .card_price_part3 {
