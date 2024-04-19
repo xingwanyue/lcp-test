@@ -157,8 +157,8 @@ const options = [
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <NuxtLink :to="localePath(``)" :class="['show-more', state.isMore2 && 'show-more1']" @click="showMore2()">
-            show more</NuxtLink>
+          <div :class="['show-more', state.isMore2 && 'show-more1']" @click="showMore2()">
+            show more</div>
         </div>
       </div>
       <div class="one_link_list">
@@ -167,8 +167,8 @@ const options = [
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <NuxtLink :to="localePath(``)" :class="['show-more', state.isMore1 && 'show-more1']" @click="showMore1()">
-            show more</NuxtLink>
+          <div :class="['show-more', state.isMore1 && 'show-more1']" @click="showMore1()">
+            show more</div>
         </div>
       </div>
       <div class="one_link_list">
@@ -257,7 +257,10 @@ const options = [
       //   }
       // }
       .show-more{
-        text-decoration: underline;
+        text-decoration: underline !important;
+        &:hover{
+          color: #f66442;
+        }
       }
       .show-more1{
         color: #f66442;
