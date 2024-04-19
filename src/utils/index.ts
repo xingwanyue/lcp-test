@@ -130,3 +130,5 @@ export const formatNumber = (num: number) => {
   }
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 };
+
+export const delay = (timeout: number) => new Promise((resolve) => setTimeout(resolve, timeout));

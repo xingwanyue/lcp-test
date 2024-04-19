@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { staticUrlGet } from "@/utils";
-import { useStore } from "@/store";
-import { useRouter } from "vue-router";
-import online from "../public/img/pricing/online.svg";
-import email from "../public/img/pricing/email.svg";
-import message from "../public/img/pricing/message.svg";
-import payment from "../public/img/pricing/payment.png";
+import { staticUrlGet } from '@/utils';
+import { useStore } from '@/store';
+import online from '../public/img/pricing/online.svg';
+import email from '../public/img/pricing/email.svg';
+import message from '../public/img/pricing/message.svg';
+import payment from '../public/img/pricing/payment.png';
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
@@ -24,7 +23,7 @@ const aqList = ref([]) as any;
 const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: "3",
+    type: '3',
   },
 })) as any;
 aqList.value = aqlistjk.value.data;
@@ -35,75 +34,75 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
     vips.forEach((item: any) => {
-      if (item.type === "1") {
+      if (item.type === '1') {
         if (item.day === 0) {
           item.qlList = [
-            { name: 1, desc: `${freeNum}Free Practices / day`, tips: "" },
+            { name: 1, desc: `${freeNum}Free Practices / day`, tips: '' },
             {
               name: 2,
               desc: `$${correct.price / 100} / 5 Correction Services`,
-              tips: "",
+              tips: '',
             },
-            { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: "" },
-            { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: "" },
-            { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: "" },
+            { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: '' },
+            { name: 4, desc: `$${speak.price / 100} / Speaking Guide`, tips: '' },
+            { name: 5, desc: `$${write.price / 100} / Writing Guide`, tips: '' },
           ];
         }
         if (item.day === 7) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
             {
               name: 2,
               desc: `${item.correctNum} Correction Services`,
-              tips: "for speaking and writing",
+              tips: 'for speaking and writing',
             },
             {
               name: 3,
               desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              tips: "Exclusive Discount",
+              tips: 'Exclusive Discount',
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
+            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
+            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
           ];
         }
         if (item.day === 15) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
             {
               name: 2,
               desc: `${item.correctNum} Correction Services`,
-              tips: "for speaking and writing",
+              tips: 'for speaking and writing',
             },
             {
               name: 3,
               desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              tips: "Exclusive Discount",
+              tips: 'Exclusive Discount',
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
+            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
+            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
           ];
         }
         if (item.day === 30) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
+            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
             {
               name: 2,
               desc: `${item.correctNum} Correction Services`,
-              tips: "for speaking and writing",
+              tips: 'for speaking and writing',
             },
             {
               name: 3,
               desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              tips: "Exclusive Discount",
+              tips: 'Exclusive Discount',
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
-            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: "" },
-            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: "" },
+            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
+            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
+            { name: 6, desc: `$${speak.vipPrice / 100} / Speaking Guide`, tips: '' },
+            { name: 7, desc: `$${write.vipPrice / 100} / Writing Guide`, tips: '' },
           ];
         }
         membershipArr.push(item);
@@ -115,7 +114,7 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   },
 })) as any;
 
-const switchType = ref("1");
+const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
 };
@@ -134,129 +133,67 @@ const openOrCloseOneQuestion = (item: any) => {
 
 const contaceUsList = ref([
   {
-    type: "1",
+    type: '1',
     icon: online,
-    font: "Online Customer Service",
-    tip: "Online hours: Monday to Friday, 10:00 - 19:00.",
-    btn: "Initiate a conversation",
+    font: 'Online Customer Service',
+    tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
+    btn: 'Initiate a conversation',
   },
   {
-    type: "2",
+    type: '2',
     icon: email,
-    font: "Consultation Email",
-    tip: "We will respond to you within one business day.",
-    btn: "info@aitogether.uk",
+    font: 'Consultation Email',
+    tip: 'We will respond to you within one business day.',
+    btn: 'info@aitogether.uk',
   },
   {
-    type: "3",
+    type: '3',
     icon: message,
-    font: "Leave a message",
-    tip: "We will respond to you within one business day.",
-    btn: "Leave a message now",
-  },
-]);
-const membership = ref([
-  {
-    name: "free",
-    equityList: [
-      {
-        name: "1",
-        desc: "3 Free Practices / day",
-        tips: "",
-      },
-      {
-        name: "2",
-        desc: "$5 /5 Correction Services",
-        tips: "",
-      },
-      {
-        name: "3",
-        desc: "$5 /5 Correction Services",
-        tips: "",
-      },
-      {
-        name: "4",
-        desc: "$5 /1 Mock Exam",
-        tips: "",
-      },
-      {
-        name: "5",
-        desc: "$19.99 /Writing Guide",
-        tips: "",
-      },
-      {
-        name: "6",
-        desc: "View all practice questions",
-        tips: "",
-      },
-      {
-        name: "7",
-        desc: "View all practice questions",
-        tips: "",
-      },
-      {
-        name: "8",
-        desc: "Question Analysis",
-        tips: "",
-      },
-      {
-        name: "9",
-        desc: "Vocabulary Book",
-        tips: "high-frequency vocabulary in the exam",
-      },
-      {
-        name: "10",
-        desc: "Intelligent question brushing plan",
-        tips: "",
-      },
-      {
-        name: "11",
-        desc: "Read aloud AI rating",
-        tips: "",
-      },
-    ],
+    font: 'Leave a message',
+    tip: 'We will respond to you within one business day.',
+    btn: 'Leave a message now',
   },
 ]);
 const membershipUnchanging = ref([
   {
-    name: "1",
-    desc: "View all practice questions",
-    tips: "",
+    name: '1',
+    desc: 'View all practice questions',
+    tips: '',
   },
   {
-    name: "2",
-    desc: "High-scoring Answers",
-    tips: "",
+    name: '2',
+    desc: 'High-scoring Answers',
+    tips: '',
   },
   {
-    name: "3",
-    desc: "Question Analysis",
-    tips: "",
+    name: '3',
+    desc: 'Question Analysis',
+    tips: '',
   },
   {
-    name: "4",
-    desc: "Vocabulary Book",
-    tips: "high-frequency vocabulary in the exam",
+    name: '4',
+    desc: 'Vocabulary Book',
+    tips: 'high-frequency vocabulary in the exam',
   },
   {
-    name: "5",
-    desc: "Intelligent question brushing plan",
-    tips: "",
+    name: '5',
+    desc: 'Intelligent question brushing plan',
+    tips: '',
   },
   {
-    name: "6",
-    desc: "Read aloud AI ratings",
-    tips: "",
+    name: '6',
+    desc: 'Read aloud AI ratings',
+    tips: '',
   },
 ]);
 
 const copy = async (email: any) => {
   await navigator.clipboard.writeText(`${email}`);
   // element3提示成功
-  ElMessage.success("Copy successfully");
+  ElMessage.success('Copy successfully');
 };
 const openchat = () => {
-  $crisp.push(["do", "chat:open"]);
+  (window as any).$crisp.push(['do', 'chat:open']);
 };
 </script>
 <template>
@@ -275,21 +212,13 @@ const openchat = () => {
         <div class="switch_out">
           <div
             @click="changeSwitchType('1')"
-            :class="[
-              switchType === '1'
-                ? 'switch_btn yellow common_btn_hover_bgColor'
-                : 'switch_btn',
-            ]"
+            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
           >
             Membership
           </div>
           <div
             @click="changeSwitchType('2')"
-            :class="[
-              switchType === '2'
-                ? 'switch_btn yellow common_btn_hover_bgColor'
-                : 'switch_btn',
-            ]"
+            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
           >
             More Service
           </div>
@@ -298,11 +227,7 @@ const openchat = () => {
           <div
             v-for="(item, index) in vipsData.membershipArr"
             :key="index"
-            :class="[
-              item.id === CurrentMembershipId
-                ? 'one_price '
-                : 'one_price currentMembership_no',
-            ]"
+            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -310,39 +235,21 @@ const openchat = () => {
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" class="off">
-                  <span>
-                    {{
-                      ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
-                        0
-                      )
-                    }}%
-                  </span>
+                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% </span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
               <div class="card_price_part3">
-                <div v-if='isVip' class="big_price">${{ item.vipPrice / 100 }}</div>
+                <div v-if="isVip" class="big_price">${{ item.vipPrice / 100 }}</div>
                 <div v-else class="big_price">${{ item.price / 100 }}</div>
-                <div class="small_price">
-                  ${{ (item.originalPrice / 100).toFixed(2) }}
-                </div>
+                <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div
-                  v-if="item.day !== 0"
-                  class="card_price_buy_btn"
-                  @click="buyMembership(item.id)"
-                >
+                <div v-if="item.day !== 0" class="card_price_buy_btn" @click="buyMembership(item.id)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
-                <div
-                  v-else
-                  class="card_price_buy_btn try_free"
-                  @click="buyMembership(item.id)"
-                >
-                  Try for free
-                </div>
+                <div v-else class="card_price_buy_btn try_free" @click="buyMembership(item.id)">Try for free</div>
               </div>
               <div v-else>
                 <div v-if="item.day !== 0" class="card_price_buy_btn">
@@ -355,11 +262,7 @@ const openchat = () => {
               </div>
 
               <div class="card_price_qllist">
-                <div
-                  v-for="(itemin, indexin) in item.qlList"
-                  :key="index * 10 + indexin"
-                  class="one_ql"
-                >
+                <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
                     <img src="../public/img/pricing/check.svg" />
                   </div>
@@ -368,22 +271,14 @@ const openchat = () => {
                     {{ itemin.desc }}
                   </div>
                   <div v-if="itemin.tips" class="tips">
-                    <el-tooltip
-                      :content="itemin.tips"
-                      placement="right-start"
-                      effect="light"
-                    >
+                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
                       <img src="../public/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
               </div>
               <div class="card_price_qllist" style="margin-top: 16px">
-                <div
-                  v-for="(itemuc, indexin) in membershipUnchanging"
-                  :key="itemuc.name"
-                  class="one_ql"
-                >
+                <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
                   <div class="icon">
                     <img src="../public/img/pricing/check.svg" />
                   </div>
@@ -392,11 +287,7 @@ const openchat = () => {
                     {{ itemuc.desc }}
                   </div>
                   <div v-if="itemuc.tips" class="tips">
-                    <el-tooltip
-                      :content="itemuc.tips"
-                      placement="right-start"
-                      effect="light"
-                    >
+                    <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
                       <img src="../public/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
@@ -409,11 +300,7 @@ const openchat = () => {
           <div
             v-for="(item, index) in vipsData.moreServiceArr"
             :key="index"
-            :class="[
-              item.id === CurrentMembershipId
-                ? 'one_price '
-                : 'one_price currentMembership_no',
-            ]"
+            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -431,10 +318,7 @@ const openchat = () => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  @click="buyMembership(item.id)"
-                >
+                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
@@ -450,12 +334,7 @@ const openchat = () => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel
-            :itemsToShow="1"
-            :autoplay="2000"
-            :wrap-around="true"
-            :pauseAutoplayOnHover="true"
-          >
+          <Carousel :itemsToShow="1" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
@@ -466,7 +345,9 @@ const openchat = () => {
                 <div class="days">{{ item.data.examNum }}-day membership</div>
               </div>
               <div class="scroll_buyed_right">
-                <div class="flag"><img v-if="item.data.avatar" :src="staticUrlGet(item.data.avatar)" /></div>
+                <div class="flag">
+                  <img v-if="item.data.avatar" :src="staticUrlGet(item.data.avatar)" />
+                </div>
                 <div class="country_name">{{ item.data.country }}</div>
                 <div class="time">20 mins ago</div>
               </div>
@@ -546,10 +427,12 @@ const openchat = () => {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+
   @keyframes around {
     from {
       margin-left: 0;
     }
+
     to {
       margin-left: 100%;
     }
@@ -563,10 +446,12 @@ const openchat = () => {
 
   .part1_wrapper {
     padding: 0px 30px;
+
     .part1 {
       max-width: 1200px;
       margin: 0 auto;
       overflow: hidden;
+
       .title1 {
         h1 {
           font-weight: 600;
@@ -576,11 +461,13 @@ const openchat = () => {
           padding: 0px 0px;
           margin: 0px 0px 0px 0px;
           margin-top: 56px;
+
           @media (max-width: 834px) {
             font-size: 36px;
           }
         }
       }
+
       .title2 {
         h4 {
           font-weight: 500;
@@ -589,11 +476,13 @@ const openchat = () => {
           text-align: center;
           margin: 0px 0px 0px 0px;
           margin-top: 32px;
+
           @media (max-width: 834px) {
             font-size: 20px;
           }
         }
       }
+
       .switch_out {
         background: #ffffff;
         border-radius: 22px;
@@ -606,6 +495,7 @@ const openchat = () => {
         align-items: center;
         grid-gap: 16px;
         padding: 4px;
+
         .switch_btn {
           padding: 8px 32px;
           font-weight: 500;
@@ -615,16 +505,19 @@ const openchat = () => {
           color: #484848;
           cursor: pointer;
         }
+
         .yellow {
           background: #f66442;
           color: #ffffff;
         }
       }
+
       .Membership_dom {
         margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         grid-gap: 16px;
+
         .one_price {
           border-radius: 8px;
           //   border: 1px red solid;
@@ -634,6 +527,7 @@ const openchat = () => {
           padding-bottom: 4px;
           grid-template-rows: 50px 1fr;
           cursor: pointer;
+
           .title {
             // border: 1px red solid;
             font-weight: 600;
@@ -643,20 +537,24 @@ const openchat = () => {
             flex: 1;
             padding: 9px 0px;
           }
+
           .card_price {
             padding: 20px;
             background: #ffffff;
             border-radius: 8px;
             border: 1px solid #e9e9e9;
+
             .card_price_part1 {
               display: flex;
               justify-content: space-between;
               align-items: center;
+
               .day {
                 font-weight: 600;
                 font-size: 24px;
                 color: #4c2929;
               }
+
               .off {
                 padding: 4px 10px;
                 background: #edc295;
@@ -666,23 +564,27 @@ const openchat = () => {
                 color: #4c2929;
               }
             }
+
             .card_price_part2 {
               font-weight: 400;
               font-size: 14px;
               color: #403f3e;
               margin-top: 11px;
             }
+
             .card_price_part3 {
               display: flex;
               justify-content: flex-start;
               align-items: center;
               margin-top: 32px;
               grid-gap: 8px;
+
               .big_price {
                 font-weight: 600;
                 font-size: 40px;
                 color: #4c2929;
               }
+
               .small_price {
                 font-weight: 400;
                 font-size: 14px;
@@ -692,6 +594,7 @@ const openchat = () => {
                 text-decoration: line-through;
               }
             }
+
             .card_price_buy_btn {
               padding: 11px 0px;
               background: #edc295;
@@ -702,41 +605,50 @@ const openchat = () => {
               text-align: center;
               margin-top: 32px;
               position: relative;
+
               &:hover {
                 background: #cba67f;
               }
             }
+
             .try_free {
               background: white;
               border: 1px solid #201515;
+
               &:hover {
                 background: white;
               }
             }
+
             .card_price_qllist {
               margin-top: 40px;
               display: flex;
               flex-direction: column;
               grid-gap: 16px;
+
               .one_ql {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 grid-gap: 8px;
+
                 .icon {
                   width: 12px;
                   height: 10px;
                   display: flex;
                 }
+
                 .font {
                   font-weight: 500;
                   font-size: 14px;
                   color: #403f3e;
+
                   .bigger {
                     color: #201515;
                     font-weight: 600;
                   }
                 }
+
                 .tips {
                   width: 12px;
                   height: 12px;
@@ -746,28 +658,35 @@ const openchat = () => {
             }
           }
         }
+
         .currentMembership_no {
           background: rgba(76, 41, 41, 0);
+
           .title {
             color: rgba(76, 41, 41, 0);
           }
+
           .off {
             background: linear-gradient(90deg, #f7ba96 0%, #f66442 100%) !important;
           }
+
           .card_price {
             border: 1px solid #e9e9e9;
           }
         }
       }
+
       .Service_dom {
         margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         grid-gap: 16px;
+
         .one_price {
           border-radius: 8px;
           display: grid;
           cursor: pointer;
+
           .title {
             display: none;
             font-weight: 600;
@@ -777,42 +696,50 @@ const openchat = () => {
             flex: 1;
             padding: 9px 0px;
           }
+
           .card_price {
             padding: 20px;
             background: #ffffff;
             border-radius: 8px;
             border: 1px solid #e9e9e9;
+
             .card_price_part1 {
               font-weight: 600;
               font-size: 24px;
               color: #201515;
             }
+
             .card_price_part2 {
               font-weight: 400;
               font-size: 14px;
               color: #403f3e;
               margin-top: 11px;
             }
+
             .card_price_part3 {
               height: 134px;
+
               .member_price {
                 font-weight: 600;
                 font-size: 32px;
                 color: #f66442;
                 margin-top: 44px;
               }
+
               .member_font {
                 font-weight: 400;
                 font-size: 14px;
                 color: #f66442;
               }
             }
+
             .card_price_part4 {
               .off_price {
                 font-weight: 600;
                 font-size: 32px;
                 color: #201515;
               }
+
               .old_price {
                 font-weight: 400;
                 font-size: 14px;
@@ -820,6 +747,7 @@ const openchat = () => {
                 text-decoration: line-through;
               }
             }
+
             .card_price_buy_btn {
               padding: 11px 0px;
               background: #f66442;
@@ -834,10 +762,12 @@ const openchat = () => {
           }
         }
       }
+
       .scroll_buyed_wrapper {
         height: 56px;
         border: 1px #fff4f1 solid;
         margin-top: 32px;
+
         .scroll_buyed {
           // border: 1px red solid;
           padding: 16px 24px;
@@ -849,36 +779,43 @@ const openchat = () => {
           justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
+
           // overflow: hidden;
           @media (max-width: 846px) {
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 16px;
           }
+
           .scroll_buyed_left {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+
             .icon {
               width: 20px;
               height: 20px;
+
               img {
                 width: 100%;
                 height: 100%;
               }
             }
+
             .name {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
               margin-left: 12px;
             }
+
             .type {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
               margin-left: 12px;
             }
+
             .days {
               font-weight: 400;
               font-size: 16px;
@@ -886,11 +823,13 @@ const openchat = () => {
               margin-left: 12px;
             }
           }
+
           .scroll_buyed_right {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex: 1;
+
             .flag {
               width: 36px;
               height: 24px;
@@ -898,15 +837,19 @@ const openchat = () => {
               margin-left: 40px;
               //   margin-top: 10px;
               position: relative;
+
               @media (max-width: 846px) {
                 margin-left: 0px;
               }
+
               top: 2px;
+
               img {
                 width: 100%;
                 height: 100%;
               }
             }
+
             .country_name {
               font-weight: 400;
               font-size: 16px;
@@ -914,6 +857,7 @@ const openchat = () => {
               margin-left: 16px;
               flex: 1;
             }
+
             .time {
               font-weight: 400;
               font-size: 16px;
@@ -930,11 +874,13 @@ const openchat = () => {
         margin-top: 32px;
         grid-gap: 6px;
         flex-wrap: wrap;
+
         .title {
           font-weight: 400;
           font-size: 14px;
           color: #403f3e;
         }
+
         .img_self {
           max-width: 422px;
 
@@ -947,36 +893,44 @@ const openchat = () => {
       }
     }
   }
+
   .part2_wrapper {
     padding: 0px 30px;
     margin-top: 120px;
+
     .part2 {
       max-width: 1200px;
       margin: 0 auto;
       overflow: hidden;
+
       .title {
         font-weight: 500;
         font-size: 40px;
         color: #201515;
         text-align: center;
+
         @media (max-width: 662px) {
           font-size: 30px;
         }
       }
+
       .list_out {
         // border: 1px red solid;
         margin-top: 56px;
+
         .one_question {
           padding: 18px 24px;
           background: #f2f4f6;
           border-radius: 8px;
           cursor: pointer;
           margin-bottom: 8px;
+
           .header {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             grid-gap: 24px;
+
             .icon {
               width: 16px;
               height: 16px;
@@ -984,30 +938,36 @@ const openchat = () => {
               justify-content: center;
               align-items: center;
             }
+
             .qusetion {
               font-weight: 500;
               font-size: 20px;
               color: #201515;
+
               @media (max-width: 662px) {
                 font-size: 16px;
               }
             }
           }
+
           .answer {
             font-weight: 400;
             font-size: 18px;
             color: #201515;
             margin-top: 24px;
             padding-left: 44px;
+
             @media (max-width: 662px) {
               font-size: 16px;
             }
           }
         }
+
         .one_question_open {
           background: #ffffff;
           border: 1px solid #e9e9e9;
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+
           .header {
             .icon {
               transform: rotate(180deg);
@@ -1017,16 +977,19 @@ const openchat = () => {
       }
     }
   }
+
   .part3_wrapper {
     // border: 1px red solid;
     padding: 0px 30px;
     background: #fff4f1;
     margin-top: 100px;
+
     .part3 {
       padding: 100px 0;
       //   border: 1px red solid;
       max-width: 1200px;
       margin: 0 auto;
+
       .title {
         font-weight: 500;
         font-size: 40px;
@@ -1034,20 +997,24 @@ const openchat = () => {
         text-align: center;
         margin-bottom: 64px;
       }
+
       .three_out {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 24px;
+
         .one_card {
           padding: 32px 20px;
           background: #ffffff;
           border-radius: 8px;
           border: 1px solid #f0e8e8;
+
           .icon {
             width: 56px;
             height: 56px;
             margin: 0 auto;
           }
+
           .method_font {
             font-weight: 600;
             font-size: 24px;
@@ -1055,12 +1022,14 @@ const openchat = () => {
             margin-top: 16px;
             text-align: center;
           }
+
           .method_tip {
             font-weight: 400;
             font-size: 14px;
             color: #403f3e;
             margin-top: 8px;
           }
+
           .btn {
             padding: 11px;
             text-align: center;

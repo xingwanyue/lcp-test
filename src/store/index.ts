@@ -2,11 +2,10 @@ import { defineStore } from 'pinia';
 import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
 
-import { api, saveToken, getToken, removeToken } from '@/utils';
+import { api, saveToken, getToken, removeToken, delay } from '@/utils';
 import { fetchmy } from '@/utils/request';
 import { stripePayUrlGet, stripePayStatusGet, logout } from '@/api';
 
-let timmer: any = null;
 export const useStore = defineStore({
   id: 'base',
   state: () => {
@@ -88,49 +87,52 @@ export const useStore = defineStore({
     async userChangeLanguage(language: string) {
       this.userSelectLanguage = language;
     },
+    async checkPayStatus(logVipId: string, token: string) {
+      const { errP, data = {} } = await stripePayStatusGet(logVipId, token);
+      if (!errP) {
+        const { code, vipEndTime, vipDays, examNum, correctNum } = data;
+        if (code === 1) {
+          this.user.vipEndTime = vipEndTime;
+          if (examNum) {
+            this.user.examNum = (this.user.examNum || 0) + examNum;
+          }
+          if (correctNum) {
+            this.user.correctNum = (this.user.correctNum || 0) + correctNum;
+          }
+
+          const message = [];
+          if (examNum) {
+            message.push(`${examNum} mock exams purchased successfully!Remaining times ${this.user.examNum}`);
+          }
+          if (correctNum) {
+            message.push(`${correctNum} grading purchases successful!Remaining times ${this.user.correctNum}`);
+          }
+          if (vipDays) {
+            message.push(`${vipDays}
+            days premium package purchased successfully! Membership valid until 
+            ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
+          }
+          if (message.length) {
+            ElMessage({
+              dangerouslyUseHTMLString: true,
+              message: message.join('<br>'),
+              type: 'success',
+            });
+          }
+        } else {
+          await delay(1000);
+          await this.checkPayStatus(logVipId, token);
+        }
+      }
+    },
     async stripePay(payload: any) {
       const token = await getToken(false);
       const { err, data } = await stripePayUrlGet(payload, token);
       if (!err) {
         const { logVipId, url } = data;
-        timmer = setInterval(async () => {
-          const { errP, data = {} } = await stripePayStatusGet(logVipId, token);
-          if (!errP) {
-            const { code, vipEndTime, vipDays, examNum, correctNum } = data;
-            if (code === 1) {
-              clearInterval(timmer);
-              timmer = null;
-              this.user.vipEndTime = vipEndTime;
-              if (examNum) {
-                this.user.examNum = (this.user.examNum || 0) + examNum;
-              }
-              if (correctNum) {
-                this.user.correctNum = (this.user.correctNum || 0) + correctNum;
-              }
 
-              const message = [];
-              if (examNum) {
-                message.push(`${examNum} mock exams purchased successfully!Remaining times ${this.user.examNum}`);
-              }
-              if (correctNum) {
-                message.push(`${correctNum} grading purchases successful!Remaining times ${this.user.correctNum}`);
-              }
-              if (vipDays) {
-                message.push(`${vipDays}
-                days premium package purchased successfully! Membership valid until 
-                ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
-              }
-              if (message.length) {
-                ElMessage({
-                  dangerouslyUseHTMLString: true,
-                  message: message.join('<br>'),
-                  type: 'success',
-                });
-              }
-            }
-          }
-        }, 1000);
         if (url) {
+          stripePayStatusGet(logVipId, token);
           window.open(url, '_blank');
         }
       }
