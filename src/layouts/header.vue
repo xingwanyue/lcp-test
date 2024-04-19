@@ -149,8 +149,8 @@ const logout = () => {
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" width="80%"
-            trigger="hover" popper-class="head-question-popover">
+          <el-popover v-if="menu.path === '/products'" v-model="popoverQuestions" placement="bottom" trigger="hover"
+            popper-class="head-question-popover">
             <div class="head-question-con">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -284,6 +284,8 @@ const logout = () => {
   }
 }
 .head-question-popover {
+   max-width: 1000px !important;
+   width: auto !important;
   .head-question-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
