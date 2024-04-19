@@ -11,6 +11,10 @@
         .banner_wrapper {
             margin-bottom: 174px;
 
+            @media (max-width: 986px) {
+                margin-bottom: 80px;
+            }
+
             .banner {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -27,6 +31,10 @@
                             font-size: 56px;
                             color: #201515;
                             margin: 0;
+
+                            @media (max-width: 986px) {
+                                text-align: center;
+                            }
                         }
                     }
 
@@ -138,6 +146,10 @@
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 80px;
                 grid-template-areas: "one_card_left  one_card_right";
+
+                @media (max-width: 986px) {
+                    margin-bottom: 80px;
+                }
 
                 .one_card_left {
                     grid-area: one_card_left;

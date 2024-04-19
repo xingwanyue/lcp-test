@@ -48,8 +48,7 @@ const {
             <div class="banner_left">
               <div class="big_title">
                 <h1>
-                  Duolingo Practice<br />
-                  Question Bank
+                  Duolingo Practice Question Bank
                 </h1>
               </div>
               <div class="desc">
