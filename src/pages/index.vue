@@ -940,7 +940,8 @@ const googleLogin = () => {
               .user_icon {
                 width: 48px;
                 height: 48px;
-                // border: 1px red solid;
+                border-radius: 50%;
+                overflow: hidden;
                 img {
                   width: 100%;
                   height: 100%;
@@ -1018,7 +1019,8 @@ const googleLogin = () => {
                   width: 48px;
                   height: 48px;
                   flex-shrink: 0;
-                  // border: 1px red solid;
+                  border-radius: 50%;
+                  overflow: hidden;
                   img {
                     width: 100%;
                     height: 100%;
