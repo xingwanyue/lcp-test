@@ -770,6 +770,12 @@ const googleLogin = () => {
               width: 24px;
               height: 24px;
             }
+            &:hover {
+              .icon {
+                transform: translateX(8px);
+                transition: all 0.2s;
+              }
+            }
           }
         }
       }
@@ -837,6 +843,12 @@ const googleLogin = () => {
             .icon {
               width: 24px;
               height: 24px;
+            }
+            &:hover {
+              .icon {
+                transform: translateX(8px);
+                transition: all 0.2s;
+              }
             }
           }
         }
