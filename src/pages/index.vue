@@ -479,7 +479,9 @@ const googleLogin = () => {
 }
 .home {
   .scrolls {
+    // border: 1px red solid;
     display: flex;
+    align-items: flex-start;
     animation-name: around;
     animation-duration: 30s;
     animation-iteration-count: infinite;
