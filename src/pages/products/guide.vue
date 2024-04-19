@@ -4,10 +4,9 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
-import Double_Right_Arrow from "@/public/img/guid/Double_Right_Arrow.svg";
 const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
   server: true,
-  transform: (res) => {
+  transform: (res: any) => {
     const { data } = res;
     const writeData = data.find((item: any) => item.write === 1);
     const speakData = data.find((item: any) => item.speak === 1);
@@ -115,13 +114,9 @@ const article2 = ref({
   ],
 });
 
-import wallet from "../../public/img/guid/wallet.svg";
-import download from "../../public/img/guid/download.svg";
-import book from "../../public/img/guid/book.svg";
-// import Double_Right_Arrow from '../../public/img/guid/Double_Right_Arrow.svg';
 const contaceUsList = ref([
   {
-    icon: wallet,
+    icon: '/img/guid/wallet.svg',
     font: "Buying Guide",
     tip: "Please select whether you are buying a speaking guide or a writing guide",
     btn: "Buying Speaking Guide",
@@ -129,7 +124,7 @@ const contaceUsList = ref([
     id: "1",
   },
   {
-    icon: download,
+    icon: '/img/guid/download.svg',
     font: "Download",
     tip: "After purchasing the course, you can click to download it",
     btn: "Download Speaking Guide",
@@ -137,7 +132,7 @@ const contaceUsList = ref([
     id: "2",
   },
   {
-    icon: book,
+    icon: '/img/guid/book.svg',
     font: "Start Learning",
     tip: "After purchasing the course, you can view audio related to the Speaking Guide.",
     btn: "",
@@ -159,15 +154,11 @@ const buyMembership = (id: number) => {
           <h1 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h1>
           <div class="article_out">
             <div class="left_img">
-              <img src="../../public/img/guid/guide1.png" />
+              <img src="/img/guid/guide1.png" />
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div
-                v-for="(item, index) in article1.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -176,24 +167,16 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ pricedata.speakData.price / 100 }}</span>
                 </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(pricedata.speakData.id)"
-                >
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.speakData.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
-                    <img src="../../public/img/products/white_arrow_right.svg" />
+                    <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
-                    <img src="../../public/img/products/white_arrow_right.svg" />
+                    <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </NuxtLink>
               </div>
@@ -204,15 +187,11 @@ const buyMembership = (id: number) => {
           <h2 class="title">DET Writing Exam Excellence: A Comprehensive Guide</h2>
           <div class="article_out">
             <div class="left_img">
-              <img src="../../public/img/guid/guide2.png" />
+              <img src="/img/guid/guide2.png" />
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div
-                v-for="(item, index) in article2.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -221,24 +200,16 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ pricedata.writeData.price / 100 }}</span>
                 </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(pricedata.writeData.id)"
-                >
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.writeData.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
-                    <img src="../../public/img/products/white_arrow_right.svg" />
+                    <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
-                    <img src="../../public/img/products/white_arrow_right.svg" />
+                    <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </NuxtLink>
               </div>
@@ -254,7 +225,7 @@ const buyMembership = (id: number) => {
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
-            <img :src="Double_Right_Arrow" class="Double_Right_Arrow" alt="" />
+            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" alt="" />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <div v-if="item.btn" class="btn">{{ item.btn }}</div>
@@ -279,7 +250,7 @@ const buyMembership = (id: number) => {
           student achieve their highest potential in English proficiency.
         </div>
         <div class="team_img">
-          <img src="../../public/img/guid/team_bg.svg" />
+          <img src="/img/guid/team_bg.svg" />
         </div>
       </div>
     </div>
@@ -307,10 +278,11 @@ const buyMembership = (id: number) => {
       color: #201515;
       text-align: center;
       margin: 0;
-      margin-top: 56px;
+      margin-top: 120px;
       margin-bottom: 32px;
       @media (max-width: 906px) {
         font-size: 46px;
+        margin-top: 56px;
       }
       @media (max-width: 744px) {
         font-size: 36px;
