@@ -481,7 +481,7 @@ const googleLogin = () => {
   .scrolls {
     display: flex;
     animation-name: around;
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -692,6 +692,9 @@ const googleLogin = () => {
           font-size: 40px;
           color: #201515;
           text-align: center;
+          padding: 0px;
+          margin: 0px;
+          margin-top: 120px;
         }
       }
       .title2 {
@@ -771,6 +774,10 @@ const googleLogin = () => {
               height: 24px;
             }
             &:hover {
+              .font {
+                border-bottom: 1px #f66442 solid;
+              }
+
               .icon {
                 transform: translateX(8px);
                 transition: all 0.2s;
@@ -845,6 +852,9 @@ const googleLogin = () => {
               height: 24px;
             }
             &:hover {
+              .font {
+                border-bottom: 1px #f66442 solid;
+              }
               .icon {
                 transform: translateX(8px);
                 transition: all 0.2s;
