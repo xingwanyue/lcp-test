@@ -165,23 +165,10 @@ const logout = () => {
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
-        <nav
-          v-for="menu in menus"
-          :key="menu.path"
-          :class="`meun ${pathname === menu.path ? 'active' : ''}`"
-        >
-          <el-popover
-            v-if="menu.path === '/products'"
-            :visible="popoverQuestions"
-            placement="bottom"
-            trigger="hover"
-            popper-class="head-question-popover"
-          >
-            <div
-              class="head-question-con"
-              @mouseleave="popoverQuestions = false"
-              @mouseover="popoverQuestions = true"
-            >
+        <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
+          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
+            popper-class="head-question-popover">
+            <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
                   <img src="../public/img/home/product_icon1.svg" />
@@ -232,18 +219,13 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link
-                class="head-name"
-                @mouseover="popoverQuestions = true"
-                @mouseleave="popoverQuestions = false"
-              >
+              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
                 {{ menu.name }}
                 <el-image src="/img/learn/down-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)"
-            >{{ menu.name }}
+          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
           </nuxt-link>
@@ -258,40 +240,24 @@ const logout = () => {
           <template #reference>
             <div class="userInfo">
               <div class="nickname">{{ user.nickname }}</div>
-              <el-image
-                v-if="user.avatar"
-                :src="staticUrlGet(user.avatar)"
-                class="avatar"
-              ></el-image>
+              <el-image v-if="user.avatar" :src="staticUrlGet(user.avatar)" class="avatar"></el-image>
             </div>
           </template>
         </el-popover>
       </div>
       <div v-else class="loginbtn">
         <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
-        <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor"
-          >Try for free</nuxt-link
-        >
+        <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor">Try for free</nuxt-link>
       </div>
       <div class="mobile">
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
     </div>
-    <el-drawer
-      v-model="visible"
-      direction="ltr"
-      size="200px"
-      :with-header="false"
-      :before-close="handleClose"
-    >
+    <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
+          <nuxt-link v-for="menu in menus" :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
             {{ menu.name }}
           </nuxt-link>
         </div>
@@ -440,7 +406,7 @@ const logout = () => {
 </style>
 <style lang="scss" scoped>
 .v-header {
-  height: 60px;
+  height: 72px;
   // width: 100vw;
   display: flex;
   align-items: center;
@@ -488,8 +454,8 @@ const logout = () => {
           display: block;
           // height: 72px;
           // line-height: 72px;
-          height: 60px;
-          line-height: 56px;
+          height: 72px;
+          line-height: 68px;
           box-sizing: border-box;
           overflow: hidden;
           color: #403f3e;
