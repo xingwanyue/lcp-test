@@ -38,6 +38,9 @@ onMounted(() => {
       dom.style.borderBottom = '1px solid #f0e8e8';
     }
   });
+  window.addEventListener('click', () => {
+    popoverQuestions.value = false;
+  });
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
@@ -149,15 +152,9 @@ const logout = () => {
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover
-            v-if="menu.path === '/products'"
-            v-model="popoverQuestions"
-            placement="bottom"
-            width="80%"
-            trigger="hover"
-            popper-class="head-question-popover"
-          >
-            <div class="head-question-con">
+          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
+            popper-class="head-question-popover">
+            <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
                   <img src="../public/img/home/product_icon1.svg" />
@@ -208,9 +205,9 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name"
-                >{{ menu.name }} <el-image src="/img/learn/down-icon.svg" class="down-icon"
-              /></nuxt-link>
+              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
+                {{ menu.name }} <el-image src="/img/learn/down-icon.svg" class="down-icon" />
+              </nuxt-link>
             </template>
           </el-popover>
           <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
@@ -248,12 +245,8 @@ const logout = () => {
           <!-- <el-image src="/img/logo.svg" class="asideLogo" /> -->
         </nuxt-link>
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
+          <nuxt-link v-for="menu in menus" :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
             {{ menu.name }}
           </nuxt-link>
         </div>
@@ -295,6 +288,8 @@ const logout = () => {
   }
 }
 .head-question-popover {
+   max-width: 1000px !important;
+   width: auto !important;
   .head-question-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -452,6 +447,7 @@ const logout = () => {
           line-height: 56px;
           box-sizing: border-box;
           overflow: hidden;
+          color: #403f3e;
           .down-icon {
             display: inline-block;
             width: 16px;

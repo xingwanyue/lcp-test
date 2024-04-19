@@ -25,7 +25,7 @@ const [
   { data: userPingLunResponse },
   { data: usersockerArrResponse },
   { data: usersockerTopFontResponse },
-] = await Promise.all([
+] = (await Promise.all([
   useFetch(`${api}/common/portalData?type=5`, { server: true }),
   useFetch(`${api}/common/portalData?type=1`, {
     server: true,
@@ -58,7 +58,7 @@ const [
     },
   }),
   useFetch(`${api}/common/portalData?type=4`, { server: true }),
-]) as any;
+])) as any;
 
 onMounted(() => {
   // 如果是在浏览器环境下，执行movePingLun
@@ -136,7 +136,10 @@ const googleLogin = () => {
             <img src="../public/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+          <NuxtLink
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_borderCu white"
+          >
             Start free with email
           </NuxtLink>
         </div>
@@ -146,7 +149,22 @@ const googleLogin = () => {
           worldwide to improve Duolingo English Test scores within one month.
         </div>
         <div class="big_img_out">
-          <div class="big_img"></div>
+          <div class="big_img">
+            <video
+              width="100%"
+              height="100%"
+              muted
+              autoplay
+              loop
+              controlslist="nodownload"
+              webkit-playsinline="true"
+              playsinline="true"
+              x5-video-player-fullscreen="true"
+              x5-video-orientation="portraint"
+              x5-video-player-type="h5"
+              src="../public/img/video_banner.mp4"
+            ></video>
+          </div>
         </div>
       </div>
     </div>
@@ -184,8 +202,12 @@ const googleLogin = () => {
               constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -210,8 +232,12 @@ const googleLogin = () => {
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -239,8 +265,12 @@ const googleLogin = () => {
               hours.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -268,8 +298,12 @@ const googleLogin = () => {
               preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="../public/img/home/yellow_arrow_right.svg" />
               </div>
@@ -280,7 +314,10 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
+        <div
+          v-if="usersockerTopFontResponse && usersockerTopFontResponse.length"
+          class="title"
+        >
           {{ usersockerTopFontResponse[0].data }}
         </div>
         <div v-if="platformData" class="user_nums_out">
@@ -298,11 +335,18 @@ const googleLogin = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
+          <NuxtLink
+            v-if="!user.id"
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
             Join Them
           </NuxtLink>
         </div>
-        <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
+        <div
+          v-if="usersockerArrResponse && usersockerArrResponse.length"
+          class="score_scroll_out"
+        >
           <!-- {{ usersockerArr }} -->
           <!-- <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
@@ -323,7 +367,11 @@ const googleLogin = () => {
             </Slide>
           </Carousel> -->
           <div class="scrolls">
-            <Slide v-for="(item, index) in usersockerArrResponse" :key="index" class="one_score">
+            <Slide
+              v-for="(item, index) in usersockerArrResponse"
+              :key="index"
+              class="one_score"
+            >
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
@@ -346,14 +394,24 @@ const googleLogin = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
+        <div
+          v-if="commentTopFontResponse && commentTopFontResponse.length"
+          class="review_title"
+        >
           {{ commentTopFontResponse[0].data }}
         </div>
         <div class="review_scroll_out">
-          <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
+          <div
+            v-if="userPingLunResponse && userPingLunResponse.length"
+            class="review_scroll_out_it"
+          >
             <!-- <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"> -->
             <div class="scrolls">
-              <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
+              <Slide
+                v-for="(item, index) in userPingLunResponse"
+                :key="index"
+                class="two_card_out"
+              >
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
@@ -367,7 +425,12 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[0].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].content }}</div>
@@ -384,7 +447,12 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[1].rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[1].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].content }}</div>
@@ -411,9 +479,11 @@ const googleLogin = () => {
 }
 .home {
   .scrolls {
+    // border: 1px red solid;
     display: flex;
+    align-items: flex-start;
     animation-name: around;
-    animation-duration: 15s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -596,9 +666,16 @@ const googleLogin = () => {
       .big_img_out {
         padding: 0px 60px;
         margin-top: 40px;
+        @media (max-width: 730px) {
+          padding: 0px 0px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .big_img {
-          border: 1px red solid;
-          height: 576px;
+          max-width: 1080px;
+          // width: calc(100% - 80px);
+          // border: 1px red solid;
         }
       }
     }
@@ -617,6 +694,9 @@ const googleLogin = () => {
           font-size: 40px;
           color: #201515;
           text-align: center;
+          padding: 0px;
+          margin: 0px;
+          margin-top: 120px;
         }
       }
       .title2 {
@@ -644,7 +724,7 @@ const googleLogin = () => {
             "article_out";
         }
         .img_out {
-          // border: 1px red solid;
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           grid-area: img_out;
           min-height: 300px;
           display: flex;
@@ -666,6 +746,7 @@ const googleLogin = () => {
               font-size: 32px;
               color: #201515;
               margin-top: 0px;
+              margin-bottom: 0px;
             }
           }
           .tips {
@@ -694,6 +775,16 @@ const googleLogin = () => {
             .icon {
               width: 24px;
               height: 24px;
+            }
+            &:hover {
+              .font {
+                border-bottom: 1px #f66442 solid;
+              }
+
+              .icon {
+                transform: translateX(8px);
+                transition: all 0.2s;
+              }
             }
           }
         }
@@ -712,7 +803,7 @@ const googleLogin = () => {
             "article_out";
         }
         .img_out {
-          // border: 1px red solid;
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           grid-area: img_out;
           min-height: 300px;
           display: flex;
@@ -734,6 +825,7 @@ const googleLogin = () => {
               font-size: 32px;
               color: #201515;
               margin-top: 0px;
+              margin-bottom: 0px;
             }
           }
           .tips {
@@ -762,6 +854,15 @@ const googleLogin = () => {
             .icon {
               width: 24px;
               height: 24px;
+            }
+            &:hover {
+              .font {
+                border-bottom: 1px #f66442 solid;
+              }
+              .icon {
+                transform: translateX(8px);
+                transition: all 0.2s;
+              }
             }
           }
         }
@@ -841,7 +942,8 @@ const googleLogin = () => {
               .user_icon {
                 width: 48px;
                 height: 48px;
-                // border: 1px red solid;
+                border-radius: 50%;
+                overflow: hidden;
                 img {
                   width: 100%;
                   height: 100%;
@@ -919,7 +1021,8 @@ const googleLogin = () => {
                   width: 48px;
                   height: 48px;
                   flex-shrink: 0;
-                  // border: 1px red solid;
+                  border-radius: 50%;
+                  overflow: hidden;
                   img {
                     width: 100%;
                     height: 100%;

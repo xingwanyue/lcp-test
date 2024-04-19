@@ -18,12 +18,11 @@ const {
     userTotal: 0,
     questionTotal: 0,
     examTotal: 0,
-    correctTotal  : 0,
+    correctTotal: 0,
   },
 } = (await useFetch(`${api}/common/platformData`, {
   server: true,
 })) as any;
-
 </script>
 <template>
   <div class="bankW100 service_out">
