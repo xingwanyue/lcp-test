@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import {
-  api,
-  staticPcUrlGet,
   urlGet,
   staticUrlGet,
   saveStorage,
@@ -14,12 +12,6 @@ const { t } = useI18n();
 
 const store = useStore();
 const user = computed(() => store.user);
-
-const groupList1Img = staticPcUrlGet("group/list-1.png");
-const groupList2Img = staticPcUrlGet("group/list-2.png");
-const groupList3Img = staticPcUrlGet("group/list-3.png");
-const groupList4Img = staticPcUrlGet("group/list-4.png");
-const groupList5Img = staticPcUrlGet("group/list-5.png");
 
 const route = useRoute();
 const pathname = computed(() => route.path);
@@ -70,17 +62,6 @@ const changeHeaderColor = (pathname: string) => {
   }
 };
 
-// const { data: cfg } = await useFetch(`${api}/common/cfg`, {
-//   server: false,
-// });
-const listImages = {
-  groupList1Img,
-  groupList2Img,
-  groupList3Img,
-  groupList4Img,
-  groupList5Img,
-} as any;
-
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
@@ -114,45 +95,6 @@ const menus = [
   },
 ];
 
-import product_icon1 from "../public/img/home/product_icon1.svg";
-import product_icon2 from "../public/img/home/product_icon2.svg";
-import product_icon3 from "../public/img/home/product_icon3.svg";
-import product_icon4 from "../public/img/home/product_icon4.svg";
-const products = ref([
-  {
-    activeFontColor: "color: #3E8BF8;",
-    activeBgColor: "background: linear-gradient( , #F5FCFF 0%, #ECF7FF 100%);",
-    icon: product_icon1,
-    title: "Duolingo English Test Practice",
-    font:
-      "Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent Monitoring for Exam Excellence!",
-  },
-  {
-    activeFontColor: "color: #F66442;",
-    activeBgColor: "background: linear-gradient( , #FFF8F5 0%, #FFF0EC 100%);",
-    icon: product_icon2,
-    title: "Duolingo English Test Correction Service",
-    font:
-      "Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in Just Two Weeks!",
-  },
-  {
-    activeFontColor: "color: #FF7C0E;",
-    activeBgColor: "background: linear-gradient( , #FFFAF4 0%, #FFEFE1 100%);",
-    icon: product_icon3,
-    title: "Duolingo English Test  Mock",
-    font:
-      "Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results Anytime, Anywhere!",
-  },
-  {
-    activeFontColor: "color: #06CC76;",
-    activeBgColor: "background: linear-gradient( , #F2FFF6 0%, #E7FDEC 100%);",
-    icon: product_icon4,
-    title: "Duolingo English Test  Course",
-    font:
-      "Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!",
-  },
-]);
-
 const logout = () => {
   store.logout();
 };
@@ -171,7 +113,7 @@ const logout = () => {
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
-                  <img src="../public/img/home/product_icon1.svg" />
+                  <img src="/img/home/product_icon1.svg" />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Practice</div>
@@ -183,7 +125,7 @@ const logout = () => {
               </NuxtLink>
               <NuxtLink :to="localePath('/products/service')" class="one_card card2">
                 <div class="icon">
-                  <img src="../public/img/home/product_icon2.svg" />
+                  <img src="/img/home/product_icon2.svg" />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Correction Service</div>
@@ -195,7 +137,7 @@ const logout = () => {
               </NuxtLink>
               <NuxtLink :to="localePath('/products/mock')" class="one_card card3">
                 <div class="icon">
-                  <img src="../public/img/home/product_icon3.svg" />
+                  <img src="/img/home/product_icon3.svg" />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
@@ -207,7 +149,7 @@ const logout = () => {
               </NuxtLink>
               <NuxtLink :to="localePath('/products/guide')" class="one_card card4">
                 <div class="icon">
-                  <img src="../public/img/home/product_icon4.svg" />
+                  <img src="/img/home/product_icon4.svg" />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Course</div>
