@@ -428,7 +428,7 @@ const openchat = () => {
 <style lang="scss" scoped>
 .pricing {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 804px, #ffffff 804px);
+  background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 604px, #ffffff 604px);
 
   .part1_wrapper {
     padding: 0px 30px;
@@ -714,13 +714,13 @@ const openchat = () => {
             }
 
             .card_price_part3 {
-              height: 134px;
+              height: 84px;
 
               .member_price {
                 font-weight: 600;
                 font-size: 32px;
                 color: #f66442;
-                margin-top: 44px;
+                margin-top: 24px;
               }
 
               .member_font {
