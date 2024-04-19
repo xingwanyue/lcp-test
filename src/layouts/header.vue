@@ -1,61 +1,71 @@
 <script setup lang="ts">
-import { api, staticPcUrlGet, urlGet, staticUrlGet, saveStorage, getStorage } from '@/utils';
-import _ from 'lodash';
-import { useStore } from '@/store';
+import {
+  api,
+  staticPcUrlGet,
+  urlGet,
+  staticUrlGet,
+  saveStorage,
+  getStorage,
+} from "@/utils";
+import _ from "lodash";
+import { useStore } from "@/store";
 const localePath = useLocalePath();
 const { t } = useI18n();
 
 const store = useStore();
 const user = computed(() => store.user);
 
-const groupList1Img = staticPcUrlGet('group/list-1.png');
-const groupList2Img = staticPcUrlGet('group/list-2.png');
-const groupList3Img = staticPcUrlGet('group/list-3.png');
-const groupList4Img = staticPcUrlGet('group/list-4.png');
-const groupList5Img = staticPcUrlGet('group/list-5.png');
+const groupList1Img = staticPcUrlGet("group/list-1.png");
+const groupList2Img = staticPcUrlGet("group/list-2.png");
+const groupList3Img = staticPcUrlGet("group/list-3.png");
+const groupList4Img = staticPcUrlGet("group/list-4.png");
+const groupList5Img = staticPcUrlGet("group/list-5.png");
 
 const route = useRoute();
 const pathname = computed(() => route.path);
-const headerColor = ref('#FFF4F1');
-const oldPath = ref('');
+const headerColor = ref("#FFF4F1");
+const oldPath = ref("");
 watch(pathname, (val) => {
-  oldPath.value = getStorage('pathname');
+  oldPath.value = getStorage("pathname");
   setTimeout(() => {
-    oldPath.value = '';
+    oldPath.value = "";
   }, 200);
   changeHeaderColor(val);
-  saveStorage('pathname', val);
+  saveStorage("pathname", val);
 });
 onMounted(() => {
   changeHeaderColor(pathname.value);
-  const dom = document.getElementsByClassName('v-header')[0] as any;
-  window.addEventListener('scroll', (e) => {
+  const dom = document.getElementsByClassName("v-header")[0] as any;
+  window.addEventListener("scroll", (e) => {
     if (document.documentElement.scrollTop === 0) {
       changeHeaderColor(pathname.value);
-      dom.style.borderBottom = '0px solid';
+      dom.style.borderBottom = "0px solid";
     } else {
-      headerColor.value = '#fff';
-      dom.style.borderBottom = '1px solid #f0e8e8';
+      headerColor.value = "#fff";
+      dom.style.borderBottom = "1px solid #f0e8e8";
     }
   });
-  window.addEventListener('click', () => {
+  window.addEventListener("click", () => {
     popoverQuestions.value = false;
   });
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
-    case '/products/bank':
-      headerColor.value = '#ECF7FF';
+    case "/products/bank":
+      headerColor.value = "#ECF7FF";
       break;
-    case '/products/mock':
-      headerColor.value = '#FFEFE1';
+    case "/products/mock":
+      headerColor.value = "#FFEFE1";
       break;
-    case '/products/guide':
-      headerColor.value = ' #E7FDEC';
+    case "/products/guide":
+      headerColor.value = "#E7FDEC";
+      break;
+    case "/company/contactus":
+      headerColor.value = "#ffffff";
       break;
 
     default:
-      headerColor.value = '#FFF4F1';
+      headerColor.value = "#FFF4F1";
       break;
   }
 };
@@ -83,59 +93,63 @@ const handleClose = () => {
 
 const menus = [
   {
-    name: t('Home'),
-    path: '/',
+    name: t("Home"),
+    path: "/",
   },
   {
-    name: t('Products'),
-    path: '/products',
+    name: t("Products"),
+    path: "/products",
   },
   {
-    name: t('Learn'),
-    path: '/learn',
+    name: t("Learn"),
+    path: "/learn",
   },
   {
-    name: t('Pricing'),
-    path: '/pricing',
+    name: t("Pricing"),
+    path: "/pricing",
   },
   {
-    name: t('Blog'),
-    path: '/blog',
+    name: t("Blog"),
+    path: "/blog",
   },
 ];
 
-import product_icon1 from '../public/img/home/product_icon1.svg';
-import product_icon2 from '../public/img/home/product_icon2.svg';
-import product_icon3 from '../public/img/home/product_icon3.svg';
-import product_icon4 from '../public/img/home/product_icon4.svg';
+import product_icon1 from "../public/img/home/product_icon1.svg";
+import product_icon2 from "../public/img/home/product_icon2.svg";
+import product_icon3 from "../public/img/home/product_icon3.svg";
+import product_icon4 from "../public/img/home/product_icon4.svg";
 const products = ref([
   {
-    activeFontColor: 'color: #3E8BF8;',
-    activeBgColor: 'background: linear-gradient( , #F5FCFF 0%, #ECF7FF 100%);',
+    activeFontColor: "color: #3E8BF8;",
+    activeBgColor: "background: linear-gradient( , #F5FCFF 0%, #ECF7FF 100%);",
     icon: product_icon1,
-    title: 'Duolingo English Test Practice',
-    font: 'Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent Monitoring for Exam Excellence!',
+    title: "Duolingo English Test Practice",
+    font:
+      "Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent Monitoring for Exam Excellence!",
   },
   {
-    activeFontColor: 'color: #F66442;',
-    activeBgColor: 'background: linear-gradient( , #FFF8F5 0%, #FFF0EC 100%);',
+    activeFontColor: "color: #F66442;",
+    activeBgColor: "background: linear-gradient( , #FFF8F5 0%, #FFF0EC 100%);",
     icon: product_icon2,
-    title: 'Duolingo English Test Correction Service',
-    font: 'Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in Just Two Weeks!',
+    title: "Duolingo English Test Correction Service",
+    font:
+      "Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in Just Two Weeks!",
   },
   {
-    activeFontColor: 'color: #FF7C0E;',
-    activeBgColor: 'background: linear-gradient( , #FFFAF4 0%, #FFEFE1 100%);',
+    activeFontColor: "color: #FF7C0E;",
+    activeBgColor: "background: linear-gradient( , #FFFAF4 0%, #FFEFE1 100%);",
     icon: product_icon3,
-    title: 'Duolingo English Test  Mock',
-    font: 'Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results Anytime, Anywhere!',
+    title: "Duolingo English Test  Mock",
+    font:
+      "Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results Anytime, Anywhere!",
   },
   {
-    activeFontColor: 'color: #06CC76;',
-    activeBgColor: 'background: linear-gradient( , #F2FFF6 0%, #E7FDEC 100%);',
+    activeFontColor: "color: #06CC76;",
+    activeBgColor: "background: linear-gradient( , #F2FFF6 0%, #E7FDEC 100%);",
     icon: product_icon4,
-    title: 'Duolingo English Test  Course',
-    font: 'Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!',
+    title: "Duolingo English Test  Course",
+    font:
+      "Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!",
   },
 ]);
 
@@ -151,7 +165,11 @@ const logout = () => {
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
-        <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
+        <nav
+          v-for="menu in menus"
+          :key="menu.path"
+          :class="`meun ${pathname === menu.path ? 'active' : ''}`"
+        >
           <el-popover
             v-if="menu.path === '/products'"
             :visible="popoverQuestions"
@@ -159,7 +177,11 @@ const logout = () => {
             trigger="hover"
             popper-class="head-question-popover"
           >
-            <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
+            <div
+              class="head-question-con"
+              @mouseleave="popoverQuestions = false"
+              @mouseover="popoverQuestions = true"
+            >
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
                   <img src="../public/img/home/product_icon1.svg" />
@@ -167,8 +189,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Practice</div>
                   <div class="font">
-                    Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent
-                    Monitoring for Exam Excellence!
+                    Dive into Success with Vast Question Bank : 10,000+ Questions,
+                    Continuous Updates, and Intelligent Monitoring for Exam Excellence!
                   </div>
                 </div>
               </NuxtLink>
@@ -179,8 +201,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Correction Service</div>
                   <div class="font">
-                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in
-                    Just Two Weeks!
+                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant
+                    Reports, and Score Boosts in Just Two Weeks!
                   </div>
                 </div>
               </NuxtLink>
@@ -191,8 +213,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
                   <div class="font">
-                    Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
-                    Anytime, Anywhere!
+                    Master Your Exam with Full-Length Mocks: Realistic Simulation,
+                    Detailed Analysis, and Rapid Results Anytime, Anywhere!
                   </div>
                 </div>
               </NuxtLink>
@@ -203,15 +225,20 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Course</div>
                   <div class="font">
-                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident
-                    Speaking and Writing Excellence!
+                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and
+                    Up-to-Date Insights for Confident Speaking and Writing Excellence!
                   </div>
                 </div>
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
-                {{ menu.name }} <el-image src="/img/learn/down-icon.svg" class="down-icon" />
+              <nuxt-link
+                class="head-name"
+                @mouseover="popoverQuestions = true"
+                @mouseleave="popoverQuestions = false"
+              >
+                {{ menu.name }}
+                <el-image src="/img/learn/down-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
           </el-popover>
@@ -231,22 +258,33 @@ const logout = () => {
           <template #reference>
             <div class="userInfo">
               <div class="nickname">{{ user.nickname }}</div>
-              <el-image v-if="user.avatar" :src="staticUrlGet(user.avatar)" class="avatar"></el-image>
+              <el-image
+                v-if="user.avatar"
+                :src="staticUrlGet(user.avatar)"
+                class="avatar"
+              ></el-image>
             </div>
           </template>
         </el-popover>
       </div>
       <div v-else class="loginbtn">
         <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
-        <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor">Try for free</nuxt-link>
+        <nuxt-link :href="urlGet('/login')" class="try_free common_btn_hover_bgColor"
+          >Try for free</nuxt-link
+        >
       </div>
       <div class="mobile">
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
     </div>
-    <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
+    <el-drawer
+      v-model="visible"
+      direction="ltr"
+      size="200px"
+      :with-header="false"
+      :before-close="handleClose"
+    >
       <div class="asideMenu">
-      
         <div class="asideMenus" @click="handleClose">
           <nuxt-link
             v-for="menu in menus"
