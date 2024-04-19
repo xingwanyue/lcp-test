@@ -1,13 +1,12 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
 
 const state = reactive({});
 
 </script>
 <template>
   <div class="privacyPolicy">
-    <div class="learn_hader" :style="`background-image: url(${bannerAboutus});`">
+    <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
         <h1 class="title">Privacy Policy</h1>
       </div>

@@ -7,8 +7,6 @@ import type { FormInstance } from 'element-plus';
 import { ElMessage } from 'element-plus';
 import { portalContact } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
-import bannerAboutus from '@/public/img/aboutus/banner-aboutus.svg';
-import emailImg from '@/public/img/aboutus/email.svg';
 
 const router = useRouter();
 const route = useRoute();
@@ -49,7 +47,7 @@ const submit = async () => {
 </script>
 <template>
   <div class="contactus">
-    <div class="learn_hader" :style="`background-image: url(${bannerAboutus});`">
+    <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
         <h1 class="title">Contact Us</h1>
         <h2 class="title2">Questions, bug reports, feedback - we’re here to help!</h2>
@@ -62,7 +60,7 @@ const submit = async () => {
           staff will reach
           out to you as soon as possible to address your inquiries.</div>
         <div class="info">
-          <el-image :src="emailImg" class="email-img"></el-image>
+          <el-image src="/img/aboutus/email.svg" class="email-img"></el-image>
           <div class="info-right">
             <div class="name">Email</div>
             <div class="address">support@detpractice.com</div>

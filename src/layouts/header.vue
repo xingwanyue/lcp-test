@@ -51,8 +51,11 @@ const changeHeaderColor = (pathname: string) => {
       headerColor.value = '#FFEFE1';
       break;
     case '/products/guide':
-      headerColor.value = ' #E7FDEC';
+      headerColor.value = '#E7FDEC';
       break;
+    // case "/company/contactus":
+    //   headerColor.value = "#ffffff";
+    //   break;
 
     default:
       headerColor.value = '#FFF4F1';
@@ -211,7 +214,8 @@ const logout = () => {
             </div>
             <template #reference>
               <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
-                {{ menu.name }} <el-image src="/img/learn/down-icon.svg" class="down-icon" />
+                {{ menu.name }}
+                <el-image src="/img/learn/down-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
           </el-popover>
@@ -401,7 +405,7 @@ const logout = () => {
 </style>
 <style lang="scss" scoped>
 .v-header {
-  height: 60px;
+  height: 72px;
   // width: 100vw;
   display: flex;
   align-items: center;
@@ -449,8 +453,8 @@ const logout = () => {
           display: block;
           // height: 72px;
           // line-height: 72px;
-          height: 60px;
-          line-height: 56px;
+          height: 72px;
+          line-height: 68px;
           box-sizing: border-box;
           overflow: hidden;
           color: #403f3e;
