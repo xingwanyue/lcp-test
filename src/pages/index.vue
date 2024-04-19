@@ -113,6 +113,7 @@ const googleLogin = () => {
 <template>
   <div class="home">
     <div class="part1_wrapper">
+      <div class="bg_handle"></div>
       <div class="part1">
         <div class="power_by">Powered by AI</div>
         <div class="page_title">
@@ -502,12 +503,23 @@ const googleLogin = () => {
   margin: 0 auto;
   overflow: hidden;
 
-  // border: 1px red solid;
   .part1_wrapper {
     padding: 0px 30px;
-    // border: 1px red solid;
-    // height: 804px;
-    background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 804px, #ffffff 804px);
+    position: relative;
+    .bg_handle {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 790px;
+      z-index: -1;
+      background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 100%);
+      @media (max-width: 1290px) {
+        height: 100%;
+        padding-bottom: 60px;
+      }
+    }
+
     .part1 {
       max-width: 1200px;
       overflow: hidden;
@@ -680,6 +692,7 @@ const googleLogin = () => {
       }
     }
   }
+
   .part2_wrapper {
     padding: 0px 30px;
 
