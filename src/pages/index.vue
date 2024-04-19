@@ -724,7 +724,7 @@ const googleLogin = () => {
             "article_out";
         }
         .img_out {
-          // border: 1px red solid;
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           grid-area: img_out;
           min-height: 300px;
           display: flex;
@@ -803,7 +803,7 @@ const googleLogin = () => {
             "article_out";
         }
         .img_out {
-          // border: 1px red solid;
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           grid-area: img_out;
           min-height: 300px;
           display: flex;
