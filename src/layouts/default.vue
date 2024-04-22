@@ -19,7 +19,7 @@ declare global {
   }
 }
 onMounted(async () => {
-  const token = getToken();
+  const token = await getToken();
   if (token) {
     store.getUserInfo();
     return;
@@ -33,7 +33,7 @@ onMounted(async () => {
         err,
       } = await loginBycredential(response.credential);
       if (!err) {
-        await saveToken(token, true);
+        await saveToken(token);
         store.getUserInfo();
         router.push('/');
       }
