@@ -338,7 +338,7 @@ const formateMinToHour = (min: number) => {
                 </div>
                 <NuxtLink
                   v-else
-                  :href="urlGet('/login')"
+                  :href="urlGet('/home')"
                   class="card_price_buy_btn try_free"
                 >
                   Try for free
