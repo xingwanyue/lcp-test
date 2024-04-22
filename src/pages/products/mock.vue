@@ -119,7 +119,7 @@ const {
                   types, replicating the real examination process.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -145,7 +145,7 @@ const {
                   enhance exam preparation efficiency.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -170,7 +170,7 @@ const {
                   after purchase.If necessary, you can pause or exit the exam midway.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -194,7 +194,7 @@ const {
                   Scores are released within 24 hours after completing the mock exam.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
