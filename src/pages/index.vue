@@ -163,7 +163,8 @@ const googleLogin = () => {
               x5-video-player-fullscreen="true"
               x5-video-orientation="portraint"
               x5-video-player-type="h5"
-              :src="staticUrlGet('/store/static/file/video_banner.mp4')"
+              src="/img/video_banner.mp4"
+              poster="/img/home/video_banner.png"
             ></video>
           </div>
         </div>
