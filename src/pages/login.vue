@@ -57,8 +57,12 @@ const submit = async () => {
 
   if (!err) {
     await saveToken(token);
-    console.log("store.getUserInfo");
     await store.getUserInfo();
+    // 如果url 包含 http 则打开一个新窗口 去应用内
+    if (url.includes("http")) {
+      window.open(url);
+      return;
+    }
     router.push(url);
   } else {
     errShow.value = true;
