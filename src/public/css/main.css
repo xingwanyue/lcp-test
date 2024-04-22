@@ -7,7 +7,7 @@ body {
   height: unset !important;
 }
 * {
-  font-family: Sedan, Microsoft YaHei;
+  font-family: Nunito, Microsoft YaHei;
 }
 div {
   -webkit-tap-highlight-color: transparent;
