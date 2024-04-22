@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { reactive, onMounted } from 'vue';
-import _ from 'lodash';
+import { reactive } from 'vue';
 import { ref } from 'vue';
+import find from 'lodash/find';
 import { ElMessage } from 'element-plus';
 import { articleGet, rateAdd, saveStorage, getStorage } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
@@ -41,7 +41,7 @@ const getList = async () => {
     state.list = value?.data;
   }
   state.checkId = props.id;
-  const { rate } = _.find(state.rateArr, { id: props.id }) || {};
+  const { rate } = find(state.rateArr, { id: props.id }) || {};
   state.rate = rate;
 };
 getList();

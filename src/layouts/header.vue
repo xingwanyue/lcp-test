@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { urlGet, staticUrlGet, saveStorage, getStorage } from "@/utils";
-import _ from "lodash";
 import { useStore } from "@/store";
 const localePath = useLocalePath();
 const { t } = useI18n();

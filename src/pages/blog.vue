@@ -1,15 +1,13 @@
 <script lang="ts" setup>
 // import { api } from '@/utils';
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-import _ from "lodash";
-
-import vEmbark from "../components/embark.vue";
+import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
 useSeoMeta({
-  title: "blog",
-  description: "blog",
+  title: 'blog',
+  description: 'blog',
 });
 const total = ref(0);
 const pageSize = ref(10);
@@ -18,7 +16,7 @@ let blogs = ref([]) as any;
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: "1",
+    type: '1',
     page: 1,
     pageSize: 10,
   },
@@ -31,7 +29,7 @@ const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
     server: true,
     query: {
-      type: "1",
+      type: '1',
       page: val,
       pageSize: 10,
     },
@@ -63,7 +61,7 @@ const handleCurrentChange = async (val: number) => {
             {{ item.content }}
           </div>
           <div class="bottom">
-            <div class="date">{{ dayjs(item.createTime).format("YYYY-MM-DD") }}</div>
+            <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}</div>
             <div class="right_arrow">
               <el-image src="/img/blog/right_arrow.svg"></el-image>
             </div>
@@ -94,7 +92,7 @@ const handleCurrentChange = async (val: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding: 120px 0;
-      background: url("/img/blog/blog.svg") center no-repeat;
+      background: url('/img/blog/blog.svg') center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;
@@ -128,7 +126,7 @@ const handleCurrentChange = async (val: number) => {
       .one_blog {
         padding: 24px;
         border-radius: 8px;
-        padding-bottom:48px;
+        padding-bottom: 48px;
         border: 1px solid #e9e9e9;
         cursor: pointer;
 
@@ -166,12 +164,11 @@ const handleCurrentChange = async (val: number) => {
           justify-content: space-between;
           align-items: center;
           height: 24px;
-          position:absolute;
-          bottom:12px;
+          position: absolute;
+          bottom: 12px;
           // border:1px red solid;
-          width:calc(100% - 48px);
+          width: calc(100% - 48px);
 
-         
           .date {
             font-weight: 400;
             font-size: 16px;
