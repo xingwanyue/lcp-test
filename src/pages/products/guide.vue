@@ -199,7 +199,7 @@ const buyMembership = (id: number) => {
                   </div>
                 </div>
                 <NuxtLink
-                  :to="localePath(`/login`)"
+                  :to="localePath(`/login?url=/products/guide`)"
                   v-else
                   class="btn common_btn_hover_bgColor"
                 >
@@ -246,7 +246,7 @@ const buyMembership = (id: number) => {
                   </div>
                 </div>
                 <NuxtLink
-                  :to="localePath(`/login`)"
+                  :to="localePath(`/login?url=/products/guide`)"
                   v-else
                   class="btn common_btn_hover_bgColor"
                 >
@@ -293,10 +293,10 @@ const buyMembership = (id: number) => {
                 </div>
               </template>
               <template v-else>
-                <NuxtLink v-if="item.btn" :to="localePath(`/login`)" class="btn">
+                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/products/guide`)" class="btn">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink v-if="item.btn1" :to="localePath(`/login`)" class="btn"
+                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/products/guide`)" class="btn"
                   >{{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -332,10 +332,10 @@ const buyMembership = (id: number) => {
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/products/guide`)">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink class="btn" :to="localePath(`/login`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/products/guide`)">
                   {{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -355,7 +355,7 @@ const buyMembership = (id: number) => {
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/products/common/listen`)">
                   {{ item.btn1 }}
                 </NuxtLink></template
               >
