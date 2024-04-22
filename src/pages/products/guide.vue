@@ -267,12 +267,6 @@ const buyMembership = (id: number) => {
             />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
-            <!-- <div v-if="item.btn" class="btn">{{ item.btn }}</div>
-            <div v-else class="btnNone">Speaking practice audio</div>
-            <div v-if="item.id !== '3'" class="btn">{{ item.btn1 }}</div>
-            <nuxt-link v-else class="font" to="/products/common/listen">
-              <div class="btn">{{ item.btn1 }}</div>
-            </nuxt-link> -->
             <template v-if="item.id === '1'">
               <NuxtLink v-if="item.btn" :to="localePath(`/pricing`)" class="btn">{{
                 item.btn
@@ -282,26 +276,47 @@ const buyMembership = (id: number) => {
               }}</NuxtLink>
             </template>
             <template v-if="item.id === '2'">
-              <a
-                v-if="item.btn"
-                :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
-                class="btn"
-                download
-                >{{ item.btn }}</a
-              >
-              <a
-                v-if="item.btn1"
-                :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
-                class="btn"
-                download
-                >{{ item.btn1 }}</a
-              >
+              <template v-if="user.speak === 1">
+                <a
+                  v-if="item.btn"
+                  :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
+                  class="btn"
+                  download
+                  >{{ item.btn }}
+                </a>
+              </template>
+              <template v-else>
+                <div v-if="item.btn" class="disbtn">
+                  {{ item.btn }}
+                </div>
+              </template>
+              <template v-if="user.write === 1">
+                <a
+                  v-if="item.btn1"
+                  :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
+                  class="btn"
+                  download
+                  >{{ item.btn1 }}
+                </a>
+              </template>
+              <template v-else>
+                <div v-if="item.btn1" class="disbtn">
+                  {{ item.btn1 }}
+                </div>
+              </template>
             </template>
             <template v-if="item.id === '3'">
               <div class="btnNone">Speaking practice audio</div>
-              <NuxtLink class="btn" :to="localePath(`/products/common/listen`)">
-                {{ item.btn1 }}
-              </NuxtLink>
+              <template v-if="user.speak === 1">
+                <NuxtLink class="btn" :to="localePath(`/products/common/listen`)">
+                  {{ item.btn1 }}
+                </NuxtLink>
+              </template>
+              <template v-else>
+                <div class="disbtn">
+                  {{ item.btn1 }}
+                </div></template
+              >
             </template>
           </div>
         </div>
@@ -544,6 +559,20 @@ const buyMembership = (id: number) => {
               outline: 0px solid #201515;
               padding: 10px;
             }
+          }
+          .disbtn {
+            opacity: 0.3;
+            display: block;
+            padding: 11px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #201515;
+            outline: 1px solid transparent; /* 添加一个透明的外边框 */
+            font-weight: 500;
+            font-size: 16px;
+            color: #201515;
+            margin-top: 24px;
+            cursor: not-allowed;
           }
           .btnNone {
             display: block;
