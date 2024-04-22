@@ -205,7 +205,7 @@ const handleChange = () => {
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 46px 0 40px;
+      padding: 56px 0 40px;
       .title {
         font-weight: 600;
         font-size: 56px;
