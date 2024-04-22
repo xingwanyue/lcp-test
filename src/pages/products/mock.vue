@@ -118,17 +118,18 @@ const {
                   Intelligent adaptive question generation algorithm covering all question
                   types, replicating the real examination process.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/orange_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -144,17 +145,18 @@ const {
                   current strengths and weaknesses, automatically updating study plans to
                   enhance exam preparation efficiency.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/orange_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -169,17 +171,18 @@ const {
                   No need for exam appointments, participate in tests anytime, anywhere
                   after purchase.If necessary, you can pause or exit the exam midway.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/orange_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -193,17 +196,18 @@ const {
                 <div class="right_desc">
                   Scores are released within 24 hours after completing the mock exam.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/exam')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/orange_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>

@@ -116,17 +116,18 @@ const {
                   bank. It helps you systematically enhance your test-taking abilities in
                   different question formats.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -143,17 +144,18 @@ const {
                   intelligent analysis of your daily learning behavior, we suggest the
                   most suitable practice questions to help you study more intelligently.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -169,17 +171,18 @@ const {
                   practice more efficient. Once you submit a spoken language question, you
                   instantly receive a comprehensive assessment of your oral skills.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -197,17 +200,18 @@ const {
                   questions correctly but also enhance your grasp of knowledge points,
                   improving your learning effectiveness.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
