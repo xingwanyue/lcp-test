@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import _ from 'lodash';
 import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue';
 import type { FormInstance } from 'element-plus';

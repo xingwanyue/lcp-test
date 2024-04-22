@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import _ from 'lodash';
+import find from 'lodash/find';
 import { saveStorage, getStorage, api, cdn } from '@/utils';
 
 const localePath = useLocalePath();
@@ -26,7 +26,7 @@ const selectChange = async () => {
   state.list = state.type === '1' ? [...state.listenThenSpeak] : [...state.sampleAnswer];
 };
 const getPlayed = (val: any) => {
-  return _.find(state.played, { path: val.path }) ? 'list2' : '';
+  return find(state.played, { path: val.path }) ? 'list2' : '';
 };
 
 const playClick = (val: any) => {
@@ -36,7 +36,7 @@ const playClick = (val: any) => {
     audio.play();
     state.isPlay = true;
   });
-  if (!_.find(state.played, { path: val.path })) {
+  if (!find(state.played, { path: val.path })) {
     state.played.push(val);
     saveStorage('det_listen', JSON.stringify(state.played), true);
   }

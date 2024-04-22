@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { api } from "@/utils";
-import _ from "lodash";
 import LearnDetail from "./learndetail/index.vue";
 
 const route = useRoute();
