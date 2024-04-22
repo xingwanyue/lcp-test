@@ -308,7 +308,7 @@ const formateMinToHour = (min: number) => {
               <div v-if="user.id">
                 <div
                   v-if="item.day !== 0"
-                  :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']"
+                  :class="['card_price_buy_btn', item.flag === '1' && 'card_price_buy_btn1']"
                   @click="buyMembership(item.id)"
                 >
                   Buy Now
