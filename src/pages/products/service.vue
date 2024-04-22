@@ -21,7 +21,7 @@ const {
     correctTotal: 0,
   },
 } = (await useFetch(`${api}/common/platformData`, {
-  server: true,
+  server: false,
 })) as any;
 </script>
 <template>

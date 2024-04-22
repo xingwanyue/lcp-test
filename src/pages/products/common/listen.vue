@@ -15,7 +15,7 @@ const state = reactive({
 });
 state.played = JSON.parse(getStorage('det_listen') || '[]');
 const getList = async () => {
-  const { data = {} } = await useFetch(`${api}/common/courses`, { server: true }) as any;
+  const { data = {} } = (await useFetch(`${api}/common/courses`, { server: false })) as any;
   const { listenThenSpeak, sampleAnswer } = data.value;
   state.listenThenSpeak = [...listenThenSpeak];
   state.sampleAnswer = [...sampleAnswer];
@@ -61,9 +61,7 @@ const onAudioEnd = () => {
   <div class="listen-page">
     <div class="listen-head">
       <div class="title">
-        <nuxt-link :to="localePath(`/products/guide`)" class="">
-          ＜ Speaking practice audio
-        </nuxt-link>
+        <nuxt-link :to="localePath(`/products/guide`)" class=""> ＜ Speaking practice audio </nuxt-link>
       </div>
       <div>
         <el-radio-group v-model="state.type" size="large" @change="selectChange">
@@ -73,59 +71,94 @@ const onAudioEnd = () => {
       </div>
     </div>
     <div class="listen-con">
-      <div v-for="(val, key) in state.list" :key="key"
-        :class="`list ${state.playData.path === val.path ? 'list1' : ''} ${getPlayed(val)}`">
+      <div
+        v-for="(val, key) in state.list"
+        :key="key"
+        :class="`list ${state.playData.path === val.path ? 'list1' : ''} ${getPlayed(val)}`"
+      >
         <div class="title">{{ val.name }}</div>
-        <el-image :id="`play-img${key}`" :key="key" src="/img/listen/play.svg" class="play-img"
-          @click="playClick(val)"></el-image>
+        <el-image
+          :id="`play-img${key}`"
+          :key="key"
+          src="/img/listen/play.svg"
+          class="play-img"
+          @click="playClick(val)"
+        ></el-image>
         <span v-if="state.playData.path === val.path">
           <div v-if="state.isPlay" class="playing-content">
             <div class="playing-rolling">
-              <el-image :key="key" :id="`playing-img${key}`" src="/img/listen/playing.svg"
-                class="playing-img"></el-image>
-              <el-image :key="`${key}a`" :id="`playing-img${key}a`" src="/img/listen/playing.svg" class="playing-img"
-                style="margin-left: 2px"></el-image>
+              <el-image
+                :key="key"
+                :id="`playing-img${key}`"
+                src="/img/listen/playing.svg"
+                class="playing-img"
+              ></el-image>
+              <el-image
+                :key="`${key}a`"
+                :id="`playing-img${key}a`"
+                src="/img/listen/playing.svg"
+                class="playing-img"
+                style="margin-left: 2px"
+              ></el-image>
             </div>
           </div>
-          <el-image v-else :key="`a${key}a`" :id="`playing-img${key}`" src="/img/listen/play.svg"
-            class="playing-img-play" @click="continuePlay"></el-image>
+          <el-image
+            v-else
+            :key="`a${key}a`"
+            :id="`playing-img${key}`"
+            src="/img/listen/play.svg"
+            class="playing-img-play"
+            @click="continuePlay"
+          ></el-image>
         </span>
-        <el-image v-if="state.isPlay" :id="`pause-img${key}`" :key="key" src="/img/listen/pause.svg" class="pause-img"
-          @click="pauseClick()"></el-image>
+        <el-image
+          v-if="state.isPlay"
+          :id="`pause-img${key}`"
+          :key="key"
+          src="/img/listen/pause.svg"
+          class="pause-img"
+          @click="pauseClick()"
+        ></el-image>
       </div>
     </div>
-    <audio id="audioFile" :src="`${cdn}/${state.playData.path}`" controls type="audio/wav" class="listen-audio"
-      @ended="onAudioEnd"></audio>
+    <audio
+      id="audioFile"
+      :src="`${cdn}/${state.playData.path}`"
+      controls
+      type="audio/wav"
+      class="listen-audio"
+      @ended="onAudioEnd"
+    ></audio>
   </div>
 </template>
 <style lang="scss">
-.listen-page{
-  .el-radio-button{
+.listen-page {
+  .el-radio-button {
     --el-radio-button-checked-bg-color: #fff;
-    --el-radio-button-checked-text-color: #F66442;
-    --el-radio-button-checked-border-color: #F66442;
+    --el-radio-button-checked-text-color: #f66442;
+    --el-radio-button-checked-border-color: #f66442;
   }
-  .el-radio-button__inner{
+  .el-radio-button__inner {
     font-size: 18px;
-    color: #403F3E;
-    @media (max-width: 800px){
+    color: #403f3e;
+    @media (max-width: 800px) {
       font-size: 14px;
-      padding:6px 8px;
+      padding: 6px 8px;
     }
-    &:hover{
-      color: #F66442;
+    &:hover {
+      color: #f66442;
     }
   }
 }
 </style>
 <style lang="scss" scoped>
-.listen-page{
+.listen-page {
   // rolling
-  .playing-content{
+  .playing-content {
     width: 24px;
     height: 24px;
     overflow: hidden;
-    .playing-rolling{
+    .playing-rolling {
       display: flex;
       width: 48px;
       height: 24px;
@@ -146,104 +179,108 @@ const onAudioEnd = () => {
 }
 </style>
 <style lang="scss" scoped>
-.listen-page{
+.listen-page {
   max-width: 1200px;
   padding: 40px 30px;
   margin: auto;
   box-sizing: border-box;
-  .listen-head{
+  .listen-head {
     display: flex;
     justify-content: space-between;
-    .title{
+    .title {
       font-weight: 500;
       font-size: 20px;
       color: #201515;
     }
   }
-  .listen-con{
+  .listen-con {
     max-width: 1200px;
     margin: auto;
     margin-top: 33px;
-    border-top:1px solid #E9E9E9;
-    .list{
+    border-top: 1px solid #e9e9e9;
+    .list {
       width: 100%;
       box-sizing: border-box;
-      border-bottom:1px solid #E9E9E9;
-      padding:16px 78px 16px 24px;
+      border-bottom: 1px solid #e9e9e9;
+      padding: 16px 78px 16px 24px;
       display: flex;
       justify-content: space-between;
       cursor: pointer;
-      color: #403F3E;
+      color: #403f3e;
       font-size: 16px;
       line-height: 24px;
-      &:hover{
-        background: #F2F4F6;
-        .play-img{
+      &:hover {
+        background: #f2f4f6;
+        .play-img {
           display: block;
         }
       }
-      .play-img, .pause-img{
+      .play-img,
+      .pause-img {
         width: 24px;
         height: 24px;
         display: none;
       }
-      .playing-img, .playing-img-play{
+      .playing-img,
+      .playing-img-play {
         width: 24px;
         height: 24px;
         display: block;
       }
     }
-    .list1{
-      color: #F66442 !important;
-      &:hover{
+    .list1 {
+      color: #f66442 !important;
+      &:hover {
         background: #fff;
-        .pause-img{
+        .pause-img {
           display: block;
         }
-        .play-img, .playing-img{
+        .play-img,
+        .playing-img {
           display: none;
         }
       }
     }
-    .list2{
-      color: rgba(64,63,62,0.65);
+    .list2 {
+      color: rgba(64, 63, 62, 0.65);
     }
   }
-  .listen-audio{
+  .listen-audio {
     display: none;
   }
 }
-@media (max-width: 800px){
-  .listen-page{
+@media (max-width: 800px) {
+  .listen-page {
     max-width: 100%;
     padding: 20px 15px;
     margin: auto;
     box-sizing: border-box;
-    .listen-head{
+    .listen-head {
       display: block;
-      .title{
+      .title {
         margin-bottom: 24px;
         font-size: 16px;
       }
     }
-    .listen-con{
+    .listen-con {
       max-width: 100%;
       margin-top: 16px;
-      .list{
+      .list {
         width: 100%;
         box-sizing: border-box;
-        border-bottom:1px solid #E9E9E9;
-        padding:8px 20px 8px 12px;
+        border-bottom: 1px solid #e9e9e9;
+        padding: 8px 20px 8px 12px;
         font-size: 14px;
-        .play-img{
+        .play-img {
           display: block !important;
         }
       }
-      .list1{
-        .pause-img, .play-img{
+      .list1 {
+        .pause-img,
+        .play-img {
           display: none !important;
         }
-        .playing-img{
+        .playing-img {
           display: block !important;
         }
       }

@@ -6,7 +6,7 @@ const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
 const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
-  server: true,
+  server: false,
   transform: (res: any) => {
     const { data } = res;
     const writeData = data.find((item: any) => item.write === 1);
@@ -20,7 +20,7 @@ const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
 })) as any;
 
 const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
-  server: true,
+  server: false,
   transform: (data: any) => {
     console.log(data);
     const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
