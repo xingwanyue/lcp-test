@@ -102,8 +102,8 @@ const handleChange = () => {
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="r-list">
-              <div class="title">{{ val.title }}</div>
-              <div class="description">{{ val.description }}</div>
+              <div class="title">{{ val.name }}</div>
+              <div class="description">{{ val.content }}</div>
             </nuxt-link>
           </div>
           <div v-if="state.total > state.infoList.length" class="more" @click="getMore">Show more</div>
