@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { reactive, onMounted } from "vue";
-import _ from "lodash";
-import { ref } from "vue";
-import { ElMessage } from "element-plus";
-import { articleGet, rateAdd, saveStorage, getStorage } from "@/utils";
-import subscribe from "../../components/subscribe.vue";
+import { reactive, onMounted } from 'vue';
+import _ from 'lodash';
+import { ref } from 'vue';
+import { ElMessage } from 'element-plus';
+import { articleGet, rateAdd, saveStorage, getStorage } from '@/utils';
+import subscribe from '../../components/subscribe.vue';
 
 const props = defineProps({
   id: Number,
@@ -21,26 +21,23 @@ const state = reactive({
   rate,
   rateArr: [] as any,
 });
-state.rateArr = JSON.parse(getStorage("det_rate") || "[]");
+state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
 const getList = async () => {
   // 兼容blog
-  if (props.type === "1") {
+  if (props.type === '1') {
     const { data: { value = {} } = {} } = (await useFetch(`${api}/common/article`, {
       server: true,
       query: {
-        type: "1",
+        type: '1',
       },
     })) as any;
     state.list = value?.data;
-  } else if (props.type === "2") {
+  } else if (props.type === '2') {
     // 兼容learn
-    const { data: { value = {} } = {} } = (await useFetch(
-      `${articleGet}?categoryId=${props.categoryId}`,
-      {
-        server: true,
-      }
-    )) as any;
+    const { data: { value = {} } = {} } = (await useFetch(`${articleGet}?categoryId=${props.categoryId}`, {
+      server: true,
+    })) as any;
     state.list = value?.data;
   }
   state.checkId = props.id;
@@ -50,13 +47,13 @@ const getList = async () => {
 getList();
 
 const rateChange = async () => {
-  const rateArr = JSON.parse(getStorage("det_rate") || "[]");
+  const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.checkId, rate: state.rate });
-  saveStorage("det_rate", JSON.stringify(rateArr), true);
+  saveStorage('det_rate', JSON.stringify(rateArr), true);
   const { err } = (await useFetch(`${rateAdd}`, {
-    method: "post",
+    method: 'post',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       articleId: state.checkId,
@@ -65,7 +62,7 @@ const rateChange = async () => {
   })) as any;
   if (!err) {
     state.details.rateNum += 1;
-    ElMessage({ type: "success", message: "Submitted successfully" });
+    ElMessage({ type: 'success', message: 'Submitted successfully' });
   }
 };
 </script>
@@ -80,12 +77,7 @@ const rateChange = async () => {
       <div class="content">
         <div class="article-con">
           <div class="title">{{ props.article.name }}</div>
-          <div
-            id="content"
-            class="article-con1"
-            v-html="props.article.content"
-            style="white-space: pre-wrap"
-          ></div>
+          <div id="content" class="article-con1" v-html="props.article.content" style="white-space: pre-wrap"></div>
         </div>
         <div class="article-title-list article-title-list1">
           <div class="title title1">Related Articles</div>
@@ -110,7 +102,7 @@ const rateChange = async () => {
             @change="rateChange"
           />
         </div>
-        <div>{{ state.rate ? "Thanks for voting!" : "Rate this article" }}</div>
+        <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
       </div>
       <div class="article-title-list article-title-list2">
         <div class="title title1">Related Articles</div>
@@ -211,7 +203,7 @@ const rateChange = async () => {
     padding: 0px 30px;
   }
   .subs {
-    margin-top: 120px;
+    margin-top: 78px;
   }
 }
 @media (max-width: 800px) {
