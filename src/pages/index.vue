@@ -204,10 +204,10 @@ const googleLogin = () => {
               constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+              <NuxtLink v-if="!user.id" :to="localePath('/products/bank')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/')" class="font"
+              <NuxtLink v-else :to="localePath('/products/bank')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -234,10 +234,10 @@ const googleLogin = () => {
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+              <NuxtLink v-if="!user.id" :to="localePath('/products/service')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/')" class="font"
+              <NuxtLink v-else :to="localePath('/products/service')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -267,10 +267,10 @@ const googleLogin = () => {
               hours.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+              <NuxtLink v-if="!user.id" :to="localePath('/products/mock')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/')" class="font"
+              <NuxtLink v-else :to="localePath('/products/mock')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
@@ -300,10 +300,10 @@ const googleLogin = () => {
               preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/login')" class="font"
+              <NuxtLink v-if="!user.id" :to="localePath('/products/guide')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/')" class="font"
+              <NuxtLink v-else :to="localePath('/products/guide')" class="font"
                 >Get more information</NuxtLink
               >
               <div class="icon">
