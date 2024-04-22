@@ -160,7 +160,7 @@ const state = reactive({});
     }
   }
   .content{
-    max-width: 1200px;
+    max-width: 1260px;
     margin: auto;
     margin-top: 100px;
     box-sizing: border-box;

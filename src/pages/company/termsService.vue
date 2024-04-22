@@ -139,7 +139,7 @@ const state = reactive({});
     padding-top: 120px;
   }
   .content{
-    max-width: 1200px;
+    max-width: 1260px;
     margin: auto;
     margin-top: 30px;
     padding: 0px 30px;

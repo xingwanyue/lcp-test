@@ -109,6 +109,7 @@ const rateChange = async () => {
   width: 100%;
   .learndetail-content{
     max-width: 1200px;
+    padding: 0px 30px;
     margin: auto;
   }
   .top{
@@ -117,13 +118,11 @@ const rateChange = async () => {
     color: #201515;
     line-height: 22px;
     margin-top: 32px;
-    padding: 0px 30px;
   }
   .content{
     max-width: 1200px;
     display: flex;
     margin-top: 64px;
-    padding: 0px 30px;
     box-sizing: border-box;
     .article-con{
       width: 100%;
@@ -185,8 +184,11 @@ const rateChange = async () => {
 }
 @media (max-width: 800px){
   .learndetail{
-    max-width: 100%;
-    margin: auto;
+    .learndetail-content{
+      max-width: 100%;
+      margin: auto;
+      padding: 0px 14px;
+    }
     .top{
       display: none;
     }
@@ -194,7 +196,6 @@ const rateChange = async () => {
       max-width: 100%;
       display: block;
       box-sizing: border-box;
-      padding: 0px 14px;
       margin-top: 28px;
       .article-con{
         margin-right: 0px;
