@@ -20,7 +20,7 @@ const {
     examTotal: 0,
   },
 } = (await useFetch(`${api}/common/platformData`, {
-  server: true,
+  server: false,
 })) as any;
 
 // 将数字格式化 306281变为306k 3062811变为3061k

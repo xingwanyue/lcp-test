@@ -17,7 +17,7 @@ const {
     examTotal: 0,
   },
 } = (await useFetch(`${api}/common/platformData`, {
-  server: true,
+  server: false,
 })) as any;
 
 const [
@@ -26,9 +26,9 @@ const [
   { data: usersockerArrResponse },
   { data: usersockerTopFontResponse },
 ] = (await Promise.all([
-  useFetch(`${api}/common/portalData?type=5`, { server: true }),
+  useFetch(`${api}/common/portalData?type=5`, { server: false }),
   useFetch(`${api}/common/portalData?type=1`, {
-    server: true,
+    server: false,
     transform: (data: any) => {
       const pinglunArr = [] as any;
       let pinglunMid = [] as any;
@@ -43,7 +43,7 @@ const [
     },
   }),
   useFetch(`${api}/common/portalData?type=3`, {
-    server: true,
+    server: false,
     transform: (data: any) => {
       const scorearr = [] as any;
       data.forEach((item: any) => {
@@ -57,7 +57,7 @@ const [
       return scorearr;
     },
   }),
-  useFetch(`${api}/common/portalData?type=4`, { server: true }),
+  useFetch(`${api}/common/portalData?type=4`, { server: false }),
 ])) as any;
 
 onMounted(() => {

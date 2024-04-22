@@ -25,7 +25,7 @@ const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
 aqList.value = aqlistjk.value.data;
 
 const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
-  server: true,
+  server: false,
   transform: ({ freeNum, correct, exam, speak, write, data: vips }: any) => {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
