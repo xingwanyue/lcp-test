@@ -18,6 +18,7 @@ const [
 ] = (await Promise.all([
   useFetch(`${api}/common/platformData`, {
     server: false,
+    lazy: true,
   }),
   useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true }),
   useFetch(`${api}/common/portalData?type=1`, {
