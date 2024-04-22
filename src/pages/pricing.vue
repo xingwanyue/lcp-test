@@ -293,17 +293,16 @@ const formateMinToHour = (min: number) => {
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
           <div
-            v-for="(item, index) in vipsData.membershipArr"
+            v-for="(item, index) in vipsData?.membershipArr"
             :key="index"
             :class="[
-              item.id === CurrentMembershipId
+              item.flag === '1'
                 ? 'one_price '
                 : 'one_price currentMembership_no',
             ]"
-            @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
-            <div class="card_price" :style="item.id === CurrentMembershipId ? '' : ''">
+            <div class="card_price">
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" class="off">
@@ -649,7 +648,6 @@ const formateMinToHour = (min: number) => {
 
         .one_price {
           border-radius: 8px;
-          //   border: 1px red solid;
           display: grid;
           background: #4c2929;
           padding: 0px 4px;
@@ -658,13 +656,13 @@ const formateMinToHour = (min: number) => {
           cursor: pointer;
 
           .title {
-            // border: 1px red solid;
             font-weight: 600;
             font-size: 16px;
             color: #ffffff;
             text-align: center;
             flex: 1;
             padding: 9px 0px;
+            line-height: 32px; 
           }
 
           .card_price {
