@@ -4,18 +4,12 @@
       <div class="t1">Sign up</div>
       <h1 class="t2">Create your free DETPractice account</h1>
       <div class="loginGoogle" @click="googleRegister">
-        <img :src="googleImg" alt="" />
+        <img src="/img/login/google_logo.svg" alt="" />
         <span style="margin-left: 16px">Sign up with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
+      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
+        @submit.native.prevent>
         <el-form-item prop="email" label="" style="margin-bottom: 16px">
           Email address
           <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
@@ -23,7 +17,7 @@
         <div class="desc">You will receive your activation code by email</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img :src="errIcon" class="errIcon" alt="" />
+            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
@@ -50,10 +44,6 @@ import { sesCodeSend } from '@/api';
 definePageMeta({
   layout: 'noheaderfooter',
 });
-import googleImg from '../public/img/login/google_logo.svg';
-import lookImg from '../public/img/login/look.svg';
-import unlookImg from '../public/img/login/unlook.svg';
-import errIcon from '../public/img/login/errIcon.svg';
 
 const router = useRouter();
 
@@ -93,7 +83,7 @@ const goLogin = () => {
   router.push('/login');
 };
 
-const googleRegister = () => {};
+const googleRegister = () => { };
 </script>
 
 <style lang="scss">

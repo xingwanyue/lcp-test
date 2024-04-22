@@ -57,19 +57,19 @@ const {
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img src="../../public/img/products/bank_user_icon1.png" />
+                    <img src="/img/products/bank_user_icon1.png" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="../../public/img/products/bank_user_icon2.png" />
+                    <img src="/img/products/bank_user_icon2.png" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="../../public/img/products/bank_user_icon3.png" />
+                    <img src="/img/products/bank_user_icon3.png" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="../../public/img/products/bank_user_icon4.png" />
+                    <img src="/img/products/bank_user_icon4.png" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="../../public/img/products/bank_user_icon5.png" />
+                    <img src="/img/products/bank_user_icon5.png" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
@@ -85,19 +85,19 @@ const {
                   Practice For Free
                 </NuxtLink>
                 <div class="icon">
-                  <img src="../../public/img/products/white_arrow_right.svg" />
+                  <img src="/img/products/white_arrow_right.svg" />
                 </div>
               </div>
             </div>
             <div class="banner_right">
-              <img src="../../public/img/products/bank_banner.png" />
+              <img src="/img/products/bank_banner.png" />
             </div>
           </div>
         </div>
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture1.png" />
+              <img src="/img/products/bank_picture1.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -116,7 +116,7 @@ const {
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
-                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture2.png" />
+              <img src="/img/products/bank_picture2.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -143,7 +143,7 @@ const {
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
-                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@ const {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture3.png" />
+              <img src="/img/products/bank_picture3.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -169,7 +169,7 @@ const {
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
-                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@ const {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="../../public/img/products/bank_picture4.png" />
+              <img src="/img/products/bank_picture4.png" />
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -197,7 +197,7 @@ const {
                     Start experiencing
                   </NuxtLink>
                   <div class="arrow">
-                    <img src="../../public/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </div>
               </div>

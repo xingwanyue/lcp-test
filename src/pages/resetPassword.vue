@@ -1,17 +1,11 @@
 <template>
   <div class="login">
     <div class="left">
-      <img :src="lockImg" alt="" />
+      <img src="/img/login/lock.svg" alt="" />
       <div class="t1">Forgot Password?</div>
       <div class="t2">Please enter the email used to create your account</div>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
+      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
+        @submit.native.prevent>
         <!-- <el-form-item prop="email" label="" style="margin-top: 80px;margin-bottom: 16px;">
           <el-input v-model="formData.email" disabled placeholder="Enter your email"> </el-input>
         </el-form-item>
@@ -22,7 +16,7 @@
         <div class="desc">Please wait for 120 seconds to reset code</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img :src="errIcon" class="errIcon" alt="" />
+            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
@@ -46,8 +40,6 @@ import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { sesCodeVerify } from '@/api';
 
-import lockImg from '../public/img/login/lock.svg';
-import errIcon from '../public/img/login/errIcon.svg';
 definePageMeta({
   layout: 'noheaderfooter',
 });
