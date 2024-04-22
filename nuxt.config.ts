@@ -11,17 +11,31 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts',
   },
   plugins: [
-    { src: '@/plugins/aos.client.js', ssr: true },
-    { src: '@/assets/iconfont/iconfont.js', ssr: false },
+    { src: '@/plugins/aos.client.js', mode: 'client' },
+    { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
+  webpack: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true,
+          },
+        },
+      },
+    },
+  },
   app: {
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
         {
           rel: 'stylesheet',
-          // href: 'https://fonts.googleapis.com/css?key=AIzaSyDbzT4fuJKXpd5bgx-ZjfBtphK63CVvbFE&family=Sedan',
           href: 'https://fonts.googleapis.com/css?family=Nunito',
         },
       ],
