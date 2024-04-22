@@ -205,12 +205,13 @@ const handleChange = () => {
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 66px 0 40px;
+      padding: 46px 0 40px;
       .title {
         font-weight: 600;
         font-size: 56px;
         color: #201515;
         line-height: 72px;
+        margin: 0px;
       }
       .title2{
         font-weight: 400;
@@ -218,6 +219,7 @@ const handleChange = () => {
         color: #201515;
         line-height: 32px;
         margin-top: 32px;
+        margin-bottom: 0px;
       }
     }
   }
