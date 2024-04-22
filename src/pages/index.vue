@@ -9,7 +9,6 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 
-
 const [
   { data: platformData },
   { data: commentTopFontResponse },
@@ -20,9 +19,10 @@ const [
   useFetch(`${api}/common/platformData`, {
     server: false,
   }),
-  useFetch(`${api}/common/portalData?type=5`, { server: false }),
+  useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true }),
   useFetch(`${api}/common/portalData?type=1`, {
     server: false,
+    lazy: true,
     transform: (data: any) => {
       const pinglunArr = [] as any;
       let pinglunMid = [] as any;
@@ -38,6 +38,7 @@ const [
   }),
   useFetch(`${api}/common/portalData?type=3`, {
     server: false,
+    lazy: true,
     transform: (data: any) => {
       const scorearr = [] as any;
       data.forEach((item: any) => {
@@ -51,7 +52,7 @@ const [
       return scorearr;
     },
   }),
-  useFetch(`${api}/common/portalData?type=4`, { server: false }),
+  useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true }),
 ])) as any;
 
 onMounted(() => {
