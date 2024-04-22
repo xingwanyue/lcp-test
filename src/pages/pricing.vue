@@ -450,7 +450,7 @@ const openchat = () => {
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
           <Carousel
             :itemsToShow="1"
-            :autoplay="2000"
+            :autoplay="0"
             :wrap-around="true"
             :pauseAutoplayOnHover="true"
           >
@@ -463,11 +463,13 @@ const openchat = () => {
                 <div class="type">purchased</div>
                 <div class="days">{{ item.data.examNum }}-day membership</div>
               </div>
-              <div class="scroll_buyed_right">
+              <div class="scroll_buyed_mid">
                 <div class="flag">
                   <img v-if="item.data.avatar" :src="staticUrlGet(item.data.avatar)" />
                 </div>
                 <div class="country_name">{{ item.data.country }}</div>
+              </div>
+              <div class="scroll_buyed_right">
                 <div class="time">20 mins ago</div>
               </div>
             </Slide>
@@ -900,11 +902,9 @@ const openchat = () => {
 
       .scroll_buyed_wrapper {
         height: 56px;
-        border: 1px #fff4f1 solid;
         margin-top: 32px;
 
         .scroll_buyed {
-          // border: 1px red solid;
           padding: 16px 24px;
           background: #fff4f1;
           border-radius: 8px;
@@ -958,19 +958,16 @@ const openchat = () => {
               margin-left: 12px;
             }
           }
-
-          .scroll_buyed_right {
+          .scroll_buyed_mid {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            grid-gap: 12px;
             flex: 1;
-
             .flag {
               width: 36px;
               height: 24px;
-              //   border: 1px red solid;
               margin-left: 40px;
-              //   margin-top: 10px;
               position: relative;
 
               @media (max-width: 846px) {
@@ -989,9 +986,15 @@ const openchat = () => {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
-              margin-left: 16px;
-              flex: 1;
             }
+          }
+
+          .scroll_buyed_right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            // border: 1px red solid;
+            flex: 1;
 
             .time {
               font-weight: 400;
