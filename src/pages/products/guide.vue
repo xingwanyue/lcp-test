@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useStore } from "@/store";
+import { staticUrlGet } from "@/utils";
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -17,6 +18,16 @@ const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
     return { speakData, writeData };
   },
 })) as any;
+
+const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
+  server: true,
+  transform: (data: any) => {
+    console.log(data);
+    const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
+    return { DETSpeakingExamExcellence, DETWritingExamExcellence2024 };
+  },
+})) as any;
+console.log(downloadhref);
 
 const article1 = ref({
   title: "Key Features of DET Speaking Exam Excellence:",
@@ -116,7 +127,7 @@ const article2 = ref({
 
 const contaceUsList = ref([
   {
-    icon: '/img/guid/wallet.svg',
+    icon: "/img/guid/wallet.svg",
     font: "Buying Guide",
     tip: "Please select whether you are buying a speaking guide or a writing guide",
     btn: "Buying Speaking Guide",
@@ -124,7 +135,7 @@ const contaceUsList = ref([
     id: "1",
   },
   {
-    icon: '/img/guid/download.svg',
+    icon: "/img/guid/download.svg",
     font: "Download",
     tip: "After purchasing the course, you can click to download it",
     btn: "Download Speaking Guide",
@@ -132,7 +143,7 @@ const contaceUsList = ref([
     id: "2",
   },
   {
-    icon: '/img/guid/book.svg',
+    icon: "/img/guid/book.svg",
     font: "Start Learning",
     tip: "After purchasing the course, you can view audio related to the Speaking Guide.",
     btn: "",
@@ -158,7 +169,11 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
+              <div
+                v-for="(item, index) in article1.list"
+                :key="index"
+                class="one_article_detail"
+              >
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -167,13 +182,21 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ pricedata.speakData.price / 100 }}</span>
                 </div>
-                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.speakData.id)">
+                <div
+                  v-if="user.id"
+                  class="btn common_btn_hover_bgColor"
+                  @click="buyMembership(pricedata.speakData.id)"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink
+                  :to="localePath(`/login`)"
+                  v-else
+                  class="btn common_btn_hover_bgColor"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -191,7 +214,11 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
+              <div
+                v-for="(item, index) in article2.list"
+                :key="index"
+                class="one_article_detail"
+              >
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -200,13 +227,21 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ pricedata.writeData.price / 100 }}</span>
                 </div>
-                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.writeData.id)">
+                <div
+                  v-if="user.id"
+                  class="btn common_btn_hover_bgColor"
+                  @click="buyMembership(pricedata.writeData.id)"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink
+                  :to="localePath(`/login`)"
+                  v-else
+                  class="btn common_btn_hover_bgColor"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -225,15 +260,49 @@ const buyMembership = (id: number) => {
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
-            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" alt="" />
+            <img
+              src="/img/guid/Double_Right_Arrow.svg"
+              class="Double_Right_Arrow"
+              alt=""
+            />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
-            <div v-if="item.btn" class="btn">{{ item.btn }}</div>
+            <!-- <div v-if="item.btn" class="btn">{{ item.btn }}</div>
             <div v-else class="btnNone">Speaking practice audio</div>
             <div v-if="item.id !== '3'" class="btn">{{ item.btn1 }}</div>
             <nuxt-link v-else class="font" to="/products/common/listen">
               <div class="btn">{{ item.btn1 }}</div>
-            </nuxt-link>
+            </nuxt-link> -->
+            <template v-if="item.id === '1'">
+              <NuxtLink v-if="item.btn" :to="localePath(`/pricing`)" class="btn">{{
+                item.btn
+              }}</NuxtLink>
+              <NuxtLink v-if="item.btn1" :to="localePath(`/pricing`)" class="btn">{{
+                item.btn1
+              }}</NuxtLink>
+            </template>
+            <template v-if="item.id === '2'">
+              <a
+                v-if="item.btn"
+                :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
+                class="btn"
+                download
+                >{{ item.btn }}</a
+              >
+              <a
+                v-if="item.btn1"
+                :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
+                class="btn"
+                download
+                >{{ item.btn1 }}</a
+              >
+            </template>
+            <template v-if="item.id === '3'">
+              <div class="btnNone">Speaking practice audio</div>
+              <NuxtLink class="btn" :to="localePath(`/products/common/listen`)">
+                {{ item.btn1 }}
+              </NuxtLink>
+            </template>
           </div>
         </div>
       </div>
@@ -361,7 +430,6 @@ const buyMembership = (id: number) => {
           }
           .btn {
             width: fit-content;
-
             padding: 12px 32px;
             background: #f66442;
             border-radius: 25px;
@@ -459,17 +527,26 @@ const buyMembership = (id: number) => {
             margin-top: 8px;
           }
           .btn {
+            display: block;
             padding: 11px;
             text-align: center;
             border-radius: 4px;
             border: 1px solid #201515;
+            outline: 1px solid transparent; /* 添加一个透明的外边框 */
             font-weight: 500;
             font-size: 16px;
             color: #201515;
             margin-top: 24px;
             cursor: pointer;
+
+            &:hover {
+              border: 2px solid #201515;
+              outline: 0px solid #201515;
+              padding: 10px;
+            }
           }
           .btnNone {
+            display: block;
             padding: 11px;
             text-align: center;
             border-radius: 4px;
