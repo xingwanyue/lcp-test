@@ -103,7 +103,7 @@ const logout = () => {
 <template>
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
     <div class="header-content">
-      <nuxt-link :to="localePath('home')" class="home-logo">
+      <nuxt-link :to="localePath('/')" class="home-logo">
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
