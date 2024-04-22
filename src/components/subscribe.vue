@@ -64,6 +64,7 @@ const sendEmail = async () => {
         border-radius: 0px 8px 8px 0px;
         background: #F66442;
         border-color:#F66442;
+        font-size: 18px;
         &:hover{
           background: rgba(0,0,0,0.1);
         }
@@ -72,7 +73,7 @@ const sendEmail = async () => {
   }
 }
 </style>
-<style>
+<style lang="scss">
 .el-input-group__append {
   background: #f66442;
   color: #fff;
@@ -83,5 +84,10 @@ const sendEmail = async () => {
 
 .el-input__wrapper.is-focus {
   box-shadow: 0 0 0 2px #201515 inset !important;
+}
+.subscribe_in_right{
+  .el-input__inner{
+    font-size: 18px;
+  }
 }
 </style>
