@@ -321,11 +321,11 @@ const formateMinToHour = (min: number) => {
                   v-if="item.day !== 0"
                   :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']"
                 >
-                  <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                  <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
                 <div v-else class="card_price_buy_btn try_free">
-                  <NuxtLink :to="localePath(`/login`)"> Try for free</NuxtLink>
+                  <NuxtLink :to="localePath(`/login?url=/pricing`)"> Try for free</NuxtLink>
                 </div>
               </div>
 
@@ -393,7 +393,7 @@ const formateMinToHour = (min: number) => {
               </div>
               <div v-else>
                 <div class="card_price_buy_btn common_btn_hover_bgColor">
-                  <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                  <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
               </div>

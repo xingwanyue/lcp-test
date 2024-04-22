@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useStore } from "@/store";
 const store = useStore();
+import { urlGet } from "@/utils";
 const user = computed(() => store.user);
 </script>
 
@@ -13,7 +14,7 @@ const user = computed(() => store.user);
         <div >
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
-            :to="localePath(`/login`)"
+            :to="localePath(`/login?url=${urlGet('/correct')}`)"
           >
             Start Now</NuxtLink
           >
