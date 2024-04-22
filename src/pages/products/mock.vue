@@ -121,7 +121,7 @@ const {
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
-                    <img src="/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/orange_arrow_right.svg" />
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`login`)">
@@ -148,7 +148,7 @@ const {
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
-                    <img src="/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/orange_arrow_right.svg" />
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`login`)">
@@ -174,7 +174,7 @@ const {
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
-                    <img src="/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/orange_arrow_right.svg" />
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`login`)">
@@ -199,7 +199,7 @@ const {
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
-                    <img src="/img/products/blue_arrow_right.svg" />
+                    <img src="/img/products/orange_arrow_right.svg" />
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`login`)">
