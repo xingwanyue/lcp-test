@@ -102,23 +102,10 @@ const logout = () => {
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
-        <nav
-          v-for="menu in menus"
-          :key="menu.path"
-          :class="`meun ${pathname === menu.path ? 'active' : ''}`"
-        >
-          <el-popover
-            v-if="menu.path === '/products'"
-            :visible="popoverQuestions"
-            placement="bottom"
-            trigger="hover"
-            popper-class="head-question-popover"
-          >
-            <div
-              class="head-question-con"
-              @mouseleave="popoverQuestions = false"
-              @mouseover="popoverQuestions = true"
-            >
+        <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
+          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
+            popper-class="head-question-popover">
+            <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
                   <img src="/img/home/product_icon1.svg" />
@@ -169,18 +156,14 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link
-                class="head-name"
-                @mouseover="popoverQuestions = true"
-                @mouseleave="popoverQuestions = false"
-              >
+              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
                 {{ menu.name }}
-                <el-image src="/img/learn/down-icon.svg" class="down-icon" />
+                <el-image v-if="!popoverQuestions" src="/img/learn/down-icon.svg" class="down-icon" />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)"
-            >{{ menu.name }}
+          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
           </nuxt-link>
@@ -215,21 +198,11 @@ const logout = () => {
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
     </div>
-    <el-drawer
-      v-model="visible"
-      direction="ltr"
-      size="200px"
-      :with-header="false"
-      :before-close="handleClose"
-    >
+    <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
+          <nuxt-link v-for="menu in menus" :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
             {{ menu.name }}
           </nuxt-link>
         </div>
