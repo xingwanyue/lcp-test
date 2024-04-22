@@ -180,9 +180,9 @@ const buyMembership = (id: number) => {
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">{{ pricedata.speakData.price / 100 }}</span>
+                  <span class="price_num">{{ pricedata?.speakData?.price / 100 }}</span>
                 </div>
-                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.speakData.id)">
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata?.speakData?.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -213,9 +213,9 @@ const buyMembership = (id: number) => {
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">{{ pricedata.writeData.price / 100 }}</span>
+                  <span class="price_num">{{ pricedata?.writeData?.price / 100 }}</span>
                 </div>
-                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.writeData.id)">
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata?.writeData?.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
