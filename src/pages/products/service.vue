@@ -64,7 +64,7 @@ const {
               <NuxtLink
                 v-if="user.id"
                 class="btn common_btn_hover_bgColor"
-                :href="urlGet('/home')"
+                :href="urlGet('/correct')"
               >
                 <div class="font">Get Started</div>
                 <div class="icon">
@@ -100,7 +100,7 @@ const {
                   receive a clear and detailed report and score immediately.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -127,7 +127,7 @@ const {
                   your expression.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -152,7 +152,7 @@ const {
                   learn how to avoid them.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -177,7 +177,7 @@ const {
                   to help you identify the weaknesses in your paper and make it perfect.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -203,7 +203,7 @@ const {
                   your composition and transform it into a high-scoring one.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
