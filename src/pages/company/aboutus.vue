@@ -163,7 +163,7 @@ const state = reactive({});
   .content{
     max-width: 1260px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 104px;
     box-sizing: border-box;
     .title{
       font-weight: 500;

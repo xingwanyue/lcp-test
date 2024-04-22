@@ -79,7 +79,7 @@ const submit = async () => {
           <el-form-item prop="message" label="">
             <el-input v-model="state.formData.message" type="textarea" :rows="6" placeholder="Message"> </el-input>
           </el-form-item>
-          <el-form-item style="margin-top: 24px; margin-bottom: 16px">
+          <el-form-item style="margin-top: 32px; margin-bottom: 16px">
             <el-button v-loading="state.loading" class="submit" @click="submit">
               SUBMIT
             </el-button>

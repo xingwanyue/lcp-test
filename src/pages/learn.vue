@@ -101,7 +101,8 @@ const handleChange = () => {
         </div>
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
-            <nuxt-link :to="localePath(`/${val.path}`)" class="r-list">
+            <nuxt-link :to="localePath(`/${val.path}`)"
+              :class="`r-list ${(key + 1) === state.infoList.length ? 'margin-bottom0' : ''}`">
               <div class="title">{{ val.name }}</div>
               <div class="description">{{ val.content }}</div>
             </nuxt-link>
@@ -327,6 +328,9 @@ const handleChange = () => {
         -webkit-box-orient: vertical;
       }
     }
+    .margin-bottom0{
+      margin-bottom: 0px;
+    }
     .more{
       font-weight: 400;
       font-size: 20px;
@@ -335,6 +339,7 @@ const handleChange = () => {
       text-decoration-line: underline;
       text-align: center;
       cursor: pointer;
+      margin-top: 24px;
       &:hover{
         color: #F66442;
       }
