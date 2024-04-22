@@ -12,7 +12,7 @@ const state = reactive({});
       </div>
     </div>
     <div class="bg">
-      <div class="content" data-aos="fade-up" data-aos-duration="1000">
+      <div class="content margin-top0" data-aos="fade-up" data-aos-duration="1000">
         <div class="title">Last updated: 2023-11-20</div>
         <div class="content1">
           Please read these Terms of Service (“Terms”, “TOS”) carefully before using the
@@ -137,7 +137,10 @@ const state = reactive({});
     background-repeat: no-repeat;
     background-position: 0 100%;
     padding-bottom: 120px;
-    padding-top: 90px;
+    padding-top: 120px;
+  }
+  .margin-top0{
+    margin-top: 0 !important;
   }
   .content{
     max-width: 1260px;

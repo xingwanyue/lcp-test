@@ -81,7 +81,7 @@ const submit = async () => {
           </el-form-item>
           <el-form-item style="margin-top: 24px; margin-bottom: 16px">
             <el-button v-loading="state.loading" class="submit" @click="submit">
-              Subit
+              SUBMIT
             </el-button>
           </el-form-item>
         </el-form>
