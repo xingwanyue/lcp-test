@@ -114,12 +114,13 @@ const state = reactive({});
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 66px 0 120px;
+      padding: 120px 0px;
       .title {
         font-weight: 600;
         font-size: 56px;
         color: #201515;
         line-height: 72px;
+        margin: 0px;
       }
     }
   }
@@ -129,7 +130,7 @@ const state = reactive({});
     background-repeat: no-repeat;
     background-position: 0 100%;
     padding-bottom: 120px;
-    padding-top: 120px;
+    padding-top: 90px;
   }
   .content{
     max-width: 1260px;
@@ -167,7 +168,7 @@ const state = reactive({});
       padding: 20px 14px 12px;
       .title {
         font-size: 24px;
-          line-height: 30px;
+        line-height: 30px;
       }
     }
   }

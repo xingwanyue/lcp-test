@@ -116,12 +116,14 @@ const submit = async () => {
         font-size: 56px;
         color: #201515;
         line-height: 72px;
+        margin: 0px;
       }
       .title2{
         font-weight: 400;
         font-size: 24px;
         color: #201515;
         line-height: 32px;
+        margin: 0px;
         margin-top: 24px;
       }
     }

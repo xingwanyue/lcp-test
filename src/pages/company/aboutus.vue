@@ -150,12 +150,13 @@ const state = reactive({});
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 66px 0 120px;
+      padding: 120px 0;
       .title {
         font-weight: 600;
         font-size: 56px;
         color: #201515;
         line-height: 72px;
+        margin: 0px;
       }
     }
   }
@@ -186,7 +187,7 @@ const state = reactive({});
   .con-list{
     background: linear-gradient( 180deg, #FFFFFF 0%, #FFF4F1 100%);
     padding-bottom: 120px !important;
-    margin-top: 100px;
+    // margin-top: 100px;
     .con-list1{
       max-width: 1200px;
       margin: auto;
