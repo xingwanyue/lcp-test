@@ -78,17 +78,28 @@ const {
                   practice.
                 </div>
               </div>
-              <div class="btn common_btn_hover_bgColor">
-                <NuxtLink v-if="user.id" class="font" :href="urlGet('/login')">
-                  Mock Now
-                </NuxtLink>
-                <NuxtLink v-else class="font" :to="localePath(`login`)">
-                  Mock Now
-                </NuxtLink>
+              <NuxtLink
+                v-if="user.id"
+                class="btn common_btn_hover_bgColor"
+                :href="urlGet('/exam')"
+              >
+                <div class="font">Mock Now</div>
+
                 <div class="icon">
                   <img src="/img/products/white_arrow_right.svg" />
                 </div>
-              </div>
+              </NuxtLink>
+              <NuxtLink
+                v-else
+                :to="localePath(`login`)"
+                class="btn common_btn_hover_bgColor"
+              >
+                <div class="font">Mock Now</div>
+
+                <div class="icon">
+                  <img src="/img/products/white_arrow_right.svg" />
+                </div>
+              </NuxtLink>
             </div>
             <div class="banner_right">
               <img src="/img/products/mock_banner.png" />

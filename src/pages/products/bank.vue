@@ -76,17 +76,26 @@ const {
                   {{ platformData.userTotal }} people used the question bank for practice.
                 </div>
               </div>
-              <div class="btn common_btn_hover_bgColor">
-                <NuxtLink v-if="user.id" class="font" :href="urlGet('/login')">
-                  Practice For Free
-                </NuxtLink>
-                <NuxtLink v-else class="font" :to="localePath(`login`)">
-                  Practice For Free
-                </NuxtLink>
+              <NuxtLink
+                v-if="user.id"
+                class="btn common_btn_hover_bgColor"
+                :to="urlGet('/questions')"
+              >
+                <div class="font">Practice For Free</div>
                 <div class="icon">
                   <img src="/img/products/white_arrow_right.svg" />
                 </div>
-              </div>
+              </NuxtLink>
+              <NuxtLink
+                v-else
+                class="btn common_btn_hover_bgColor"
+                :to="localePath(`login`)"
+              >
+                <div class="font">Practice For Free</div>
+                <div class="icon">
+                  <img src="/img/products/white_arrow_right.svg" />
+                </div>
+              </NuxtLink>
             </div>
             <div class="banner_right">
               <img src="/img/products/bank_banner.png" />
