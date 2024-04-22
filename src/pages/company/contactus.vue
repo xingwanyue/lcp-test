@@ -127,7 +127,7 @@ const submit = async () => {
     }
   }
   .content{
-    max-width: 1200px;
+    max-width: 1260px;
     margin: auto;
     padding: 100px 30px;
     box-sizing: border-box;
