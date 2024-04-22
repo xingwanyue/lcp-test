@@ -168,7 +168,7 @@ const rateChange = async () => {
     background: #ffffff;
     border-radius: 8px;
     border: 1px solid #e9e9e9;
-    padding: 12px 24px;
+    padding: 18px 24px 12px;
     box-sizing: border-box;
     .title {
       width: 100%;
@@ -181,6 +181,7 @@ const rateChange = async () => {
     }
     .title1 {
       font-weight: 600;
+      padding-top: 0px;
       cursor: default;
     }
     .title-checked {
