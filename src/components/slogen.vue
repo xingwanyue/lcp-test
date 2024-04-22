@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { useStore } from '@/store';
+import { useStore } from "@/store";
+import { oauth2SignIn } from "@/utils/googleAuth";
 const store = useStore();
 const user = computed(() => store.user);
+const googleLogin = () => {
+  oauth2SignIn();
+};
 </script>
 
 <template>
@@ -10,11 +14,16 @@ const user = computed(() => store.user);
       <div class="font1">Embark on your journey to high scores on</div>
       <div class="font2">Duolingo English Test !</div>
       <div v-if="!user.id" class="two_btn_out">
-        <div class="common_btn common_btn_hover_bgColor yellow">
+        <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
           <img src="/img/home/google_icon.svg" />
           Start free with Google
         </div>
-        <div class="common_btn common_btn_hover_borderCu white">Start free with email</div>
+        <NuxtLink
+          :to="localePath('/login')"
+          class="common_btn common_btn_hover_borderCu white"
+        >
+          Start free with email
+        </NuxtLink>
       </div>
     </div>
   </div>

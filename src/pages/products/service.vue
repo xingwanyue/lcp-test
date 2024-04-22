@@ -99,17 +99,18 @@ const {
                   Submit your essay by inputting or from the question bank, and you can
                   receive a clear and detailed report and score immediately.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -126,17 +127,18 @@ const {
                   repeated words in the composition, helping you maintain diversity in
                   your expression.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -151,17 +153,18 @@ const {
                   You can immediately see your vocabulary mistakes, grammar errors, and
                   learn how to avoid them.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -176,17 +179,18 @@ const {
                   According to the DET scoring elements, we provide professional guidance
                   to help you identify the weaknesses in your paper and make it perfect.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -202,17 +206,18 @@ const {
                   paragraph structure, and revitalize the writing style to further improve
                   your composition and transform it into a high-scoring one.
                 </div>
-                <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/correct')" class="font">
-                    Start experiencing
-                  </NuxtLink>
-                  <NuxtLink v-else :to="localePath(`login`)" class="font">
-                    Start experiencing
-                  </NuxtLink>
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
+                  <div class="font">Start experiencing</div>
+                  <div class="arrow">
+                    <img src="/img/products/blue_arrow_right.svg" />
+                  </div>
+                </NuxtLink>
+                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                  <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" />
                   </div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
