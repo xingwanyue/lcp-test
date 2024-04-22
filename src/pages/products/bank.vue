@@ -117,7 +117,7 @@ const {
                   different question formats.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -144,7 +144,7 @@ const {
                   most suitable practice questions to help you study more intelligently.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -170,7 +170,7 @@ const {
                   instantly receive a comprehensive assessment of your oral skills.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
@@ -198,7 +198,7 @@ const {
                   improving your learning effectiveness.
                 </div>
                 <div class="right_click">
-                  <NuxtLink v-if="user.id" :href="urlGet('/login')" class="font">
+                  <NuxtLink v-if="user.id" :href="urlGet('/questions')" class="font">
                     Start experiencing
                   </NuxtLink>
                   <NuxtLink v-else :to="localePath(`login`)" class="font">
