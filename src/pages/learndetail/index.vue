@@ -27,7 +27,7 @@ const getList = async () => {
   // 兼容blog
   if (props.type === "1") {
     const { data: { value = {} } = {} } = (await useFetch(`${api}/common/article`, {
-      server: false,
+      server: true,
       query: {
         type: "1",
       },
@@ -38,7 +38,7 @@ const getList = async () => {
     const { data: { value = {} } = {} } = (await useFetch(
       `${articleGet}?categoryId=${props.categoryId}`,
       {
-        server: false,
+        server: true,
       }
     )) as any;
     state.list = value?.data;
