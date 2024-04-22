@@ -247,6 +247,14 @@ const copy = async (email: any) => {
 const openchat = () => {
   (window as any).$crisp.push(["do", "chat:open"]);
 };
+const formateMinToHour = (min: number) => {
+  const hour = Math.floor(min / 60);
+  const minute = min % 60;
+  if (hour === 0) {
+    return `${minute}mins ago`;
+  }
+  return `${hour}h ${minute}mins ago`;
+};
 </script>
 <template>
   <div class="pricing">
@@ -450,7 +458,7 @@ const openchat = () => {
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
           <Carousel
             :itemsToShow="1"
-            :autoplay="0"
+            :autoplay="2000"
             :wrap-around="true"
             :pauseAutoplayOnHover="true"
           >
@@ -470,7 +478,7 @@ const openchat = () => {
                 <div class="country_name">{{ item.data.country }}</div>
               </div>
               <div class="scroll_buyed_right">
-                <div class="time">20 mins ago</div>
+                <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
               </div>
             </Slide>
           </Carousel>
@@ -903,13 +911,13 @@ const openchat = () => {
       .scroll_buyed_wrapper {
         height: 56px;
         margin-top: 32px;
+        height: fit-content;
 
         .scroll_buyed {
           padding: 16px 24px;
           background: #fff4f1;
           border-radius: 8px;
           width: 100%;
-
           display: flex;
           justify-content: flex-start;
           align-items: center;
@@ -919,7 +927,7 @@ const openchat = () => {
           @media (max-width: 846px) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 16px;
+            grid-gap: 8px;
           }
 
           .scroll_buyed_left {
@@ -942,6 +950,9 @@ const openchat = () => {
               font-size: 16px;
               color: #201515;
               margin-left: 12px;
+              @media (max-width: 528px) {
+                font-size: 12px;
+              }
             }
 
             .type {
@@ -949,6 +960,9 @@ const openchat = () => {
               font-size: 16px;
               color: #201515;
               margin-left: 12px;
+              @media (max-width: 528px) {
+                font-size: 12px;
+              }
             }
 
             .days {
@@ -956,6 +970,9 @@ const openchat = () => {
               font-size: 16px;
               color: #f66442;
               margin-left: 12px;
+              @media (max-width: 528px) {
+                font-size: 12px;
+              }
             }
           }
           .scroll_buyed_mid {
@@ -975,6 +992,10 @@ const openchat = () => {
               }
 
               top: 2px;
+              @media (max-width: 528px) {
+                width: 24px;
+                height: 16px;
+              }
 
               img {
                 width: 100%;
@@ -986,6 +1007,9 @@ const openchat = () => {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
+              @media (max-width: 528px) {
+                font-size: 12px;
+              }
             }
           }
 
@@ -1000,6 +1024,9 @@ const openchat = () => {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
+              @media (max-width: 528px) {
+                font-size: 12px;
+              }
             }
           }
         }
