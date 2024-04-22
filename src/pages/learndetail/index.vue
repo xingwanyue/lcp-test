@@ -21,8 +21,7 @@ const state = reactive({
 });
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 const getList = async () => {
-  // 需要传左侧的类型
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${props.categoryId}`, { server: true }) as any;
+  const { data: { value = {} } = {} } = await useFetch(`${articleGet}?categoryId=${props.categoryId}`, { server: false }) as any;
   state.list = value?.data;
   getContent(props.id);
 };
@@ -38,7 +37,6 @@ const getContent = async (id: number) => {
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.details.id, rate: state.rate });
-  state.details.rateNum += 1;
   saveStorage('det_rate', JSON.stringify(rateArr), true);
   // 
   const { err } = await useFetch(`${rateAdd}`, {
@@ -52,6 +50,7 @@ const rateChange = async () => {
     }),
   }) as any;
   if (!err) {
+    state.details.rateNum += 1;
     ElMessage({ type: 'success', message: 'Submitted successfully' });
   }
 };
@@ -71,6 +70,7 @@ const rateChange = async () => {
           <div id="content" class="article-con1" v-html="state.details.content" style="white-space:pre-wrap"></div>
         </div>
         <div class="article-title-list article-title-list1">
+          <div class="title title1">Related Articles</div>
           <div v-for="(val, key) in state.list" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="">
               <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
@@ -81,11 +81,12 @@ const rateChange = async () => {
       <div class="rate-con">
         <div>
           <el-rate v-model="state.rate" :disabled="Boolean(state.rate)" allow-half show-score text-color="#201515"
-            :score-template="`{value}/5（${state.details.rateNum || 0}votes）`" @change="rateChange" />
+            :score-template="`{value}/5（${state.details.rateNum || 0} votes）`" @change="rateChange" />
         </div>
         <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
       </div>
       <div class="article-title-list article-title-list2">
+        <div class="title title1">Related Articles</div>
         <div v-for="(val, key) in state.list" :key="key">
           <nuxt-link :to="localePath(`/${val.path}`)" class="">
             <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">{{ val.name }}</div>
@@ -158,6 +159,10 @@ const rateChange = async () => {
       color: #403F3E;
       line-height: 25px;
       cursor: pointer;
+    }
+    .title1{
+      font-weight: 600;
+      cursor: default;
     }
     .title-checked{
       font-weight: 500;
