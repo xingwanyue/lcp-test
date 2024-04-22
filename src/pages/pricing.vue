@@ -261,7 +261,7 @@ const formateMinToHour = (min: number) => {
     <div class="part1_wrapper">
       <div class="part1">
         <div class="title1">
-          <h1>Plans & Pricing{{ Boolean(isVip) }}</h1>
+          <h1>Plans & Pricing</h1>
         </div>
         <div class="title2">
           <h4>

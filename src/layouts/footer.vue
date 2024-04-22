@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
-import { saveStorage, getStorage } from '@/utils';
-import { useStore } from '@/store';
-import { reactive } from 'vue';
+import { useI18n } from "vue-i18n";
+import { saveStorage, getStorage } from "@/utils";
+import { useStore } from "@/store";
+import { reactive } from "vue";
 
 const localePath = useLocalePath();
 const store = useStore();
@@ -11,38 +11,49 @@ const state = reactive({
   isMore1: false,
   isMore2: false,
 });
+const cookieShow = ref(false);
+onMounted(() => {
+  console.log("mounted");
+  setTimeout(() => {
+    const cookieShowlocalStorage = localStorage.getItem("cookieShow");
+    if (cookieShowlocalStorage !== "true") {
+      cookieShow.value = true;
+      localStorage.setItem("cookieShow", "true");
+    }
+  }, 5000);
+});
 const prod = {
-  name: 'Products',
+  name: "Products",
   list: [
     {
-      name: 'DET Practice',
-      url: '/products/bank',
+      name: "DET Practice",
+      url: "/products/bank",
     },
     {
-      name: 'AI Correction Service',
-      url: '/products/service',
+      name: "AI Correction Service",
+      url: "/products/service",
     },
     {
-      name: 'DET Mock',
-      url: '/products/mock',
+      name: "DET Mock",
+      url: "/products/mock",
     },
     {
-      name: 'Duolingo English Test Course',
-      url: '/products/guide',
+      name: "Duolingo English Test Course",
+      url: "/products/guide",
     },
   ],
 };
 
 const Learn = ref({
-  name: 'Learn',
+  name: "Learn",
   list: [] as any,
 });
 const Blog = ref({
-  name: 'Blog',
+  name: "Blog",
   list: [] as any,
 });
 const getLearn = async () => {
-  let args = { type: '2', flag: '1' } as any;
+  let args = { type: "2", flag: "1" } as any;
   if (!state.isMore2) {
     args = { ...args, page: 1, pageSize: 4 };
   }
@@ -62,7 +73,7 @@ const showMore2 = async () => {
   getLearn();
 };
 const getBlob = async () => {
-  let args = { type: '1', flag: '1' } as any;
+  let args = { type: "1", flag: "1" } as any;
   if (!state.isMore1) {
     args = { ...args, page: 1, pageSize: 4 };
   }
@@ -83,28 +94,28 @@ const showMore1 = async () => {
   getBlob();
 };
 const Company = {
-  name: 'Company',
+  name: "Company",
   list: [
     {
-      name: 'About us',
-      url: '/company/aboutus',
+      name: "About us",
+      url: "/company/aboutus",
     },
     {
-      name: 'Contact us',
-      url: '/company/contactus',
+      name: "Contact us",
+      url: "/company/contactus",
     },
     {
-      name: 'Terms and Conditions',
-      url: '/company/termsService',
+      name: "Terms and Conditions",
+      url: "/company/termsService",
     },
     {
-      name: 'Privacy Policy',
-      url: '/company/privacyPolicy',
+      name: "Privacy Policy",
+      url: "/company/privacyPolicy",
     },
   ],
 };
-const language = ref('en');
-const userSelectLanguage = getStorage('detlanguage');
+const language = ref("en");
+const userSelectLanguage = getStorage("detlanguage");
 
 if (userSelectLanguage) {
   language.value = userSelectLanguage;
@@ -115,13 +126,13 @@ getLearn();
 getBlob();
 watch(language, (newVal) => {
   locale.value = newVal;
-  saveStorage('detlanguage', newVal);
+  saveStorage("detlanguage", newVal);
 });
 
 const options = [
   {
-    value: 'en',
-    label: 'English',
+    value: "en",
+    label: "English",
   },
   // {
   //   value: 'id',
@@ -140,6 +151,9 @@ const options = [
   //   label: 'Option5',
   // },
 ];
+const closeCookie = () => {
+  cookieShow.value = false;
+};
 </script>
 
 <template>
@@ -147,33 +161,51 @@ const options = [
     <div class="footer_link_dom">
       <div class="one_link_list">
         <div class="one_link_list_title">{{ prod.name }}</div>
-        <div v-for="(itemin, indexin) in prod.list" :key="indexin" class="one_link_list_detail">
+        <div
+          v-for="(itemin, indexin) in prod.list"
+          :key="indexin"
+          class="one_link_list_detail"
+        >
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Learn.name }}</div>
-        <div v-for="(itemin, indexin) in Learn.list" :key="indexin" class="one_link_list_detail">
+        <div
+          v-for="(itemin, indexin) in Learn.list"
+          :key="indexin"
+          class="one_link_list_detail"
+        >
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
           <div :class="['show-more', state.isMore2 && 'show-more1']" @click="showMore2()">
-            show more</div>
+            show more
+          </div>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Blog.name }}</div>
-        <div v-for="(itemin, indexin) in Blog.list" :key="indexin" class="one_link_list_detail">
+        <div
+          v-for="(itemin, indexin) in Blog.list"
+          :key="indexin"
+          class="one_link_list_detail"
+        >
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
           <div :class="['show-more', state.isMore1 && 'show-more1']" @click="showMore1()">
-            show more</div>
+            show more
+          </div>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Company.name }}</div>
-        <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
+        <div
+          v-for="(itemin, indexin) in Company.list"
+          :key="indexin"
+          class="one_link_list_detail"
+        >
           <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
@@ -199,12 +231,29 @@ const options = [
         </div>
       </div>
       <div class="footer_logo_right">
-        <div class="tips_out">{{ t('footer.inc') }}</div>
-        <div v-if='options.length !== 1' class="select_out">
+        <div class="tips_out">{{ t("footer.inc") }}</div>
+        <div v-if="options.length !== 1" class="select_out">
           <el-select v-model="language" placeholder="Select" style="width: 240px">
-            <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+            <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value"
+            />
           </el-select>
         </div>
+      </div>
+    </div>
+    <div v-if="cookieShow" class="cookie_out">
+      <div class="cookie_header">
+        <img :src="`/img/footer/close_icon.svg`" @click="closeCookie" />
+      </div>
+      <div class="cookie_contenr">
+        DET Practice uses cookies to improve content based on your browser Settings. For
+        more details, see
+        <NuxtLink :to="localePath(`/company/cookie`)" class="see_cookei"
+          >Cookie Policy</NuxtLink
+        >
       </div>
     </div>
   </div>
@@ -256,13 +305,13 @@ const options = [
       //     border-bottom: 1px #f66442 solid;
       //   }
       // }
-      .show-more{
+      .show-more {
         text-decoration: underline !important;
-        &:hover{
+        &:hover {
           color: #f66442;
         }
       }
-      .show-more1{
+      .show-more1 {
         color: #f66442;
       }
     }
@@ -320,27 +369,27 @@ const options = [
           }
         }
         .youtube {
-          background-image: url('/img/footer/youtube_logo.svg');
+          background-image: url("/img/footer/youtube_logo.svg");
           &:hover {
-            background-image: url('/img/footer/youtube_logo_active.svg');
+            background-image: url("/img/footer/youtube_logo_active.svg");
           }
         }
         .x {
-          background-image: url('/img/footer/x_logo.svg');
+          background-image: url("/img/footer/x_logo.svg");
           &:hover {
-            background-image: url('/img/footer/x_logo_active.svg');
+            background-image: url("/img/footer/x_logo_active.svg");
           }
         }
         .facebook {
-          background-image: url('/img/footer/facebook_logo.svg');
+          background-image: url("/img/footer/facebook_logo.svg");
           &:hover {
-            background-image: url('/img/footer/facebook_logo_active.svg');
+            background-image: url("/img/footer/facebook_logo_active.svg");
           }
         }
         .tiktok {
-          background-image: url('/img/footer/tiktok_logo.svg');
+          background-image: url("/img/footer/tiktok_logo.svg");
           &:hover {
-            background-image: url('/img/footer/tiktok_logo_active.svg');
+            background-image: url("/img/footer/tiktok_logo_active.svg");
           }
         }
       }
@@ -370,6 +419,38 @@ const options = [
         @media (max-width: 668px) {
           text-align: center;
         }
+      }
+    }
+  }
+  .cookie_out {
+    // border: 1px red solid;
+    position: fixed;
+    bottom: 17px;
+    left: 16px;
+    padding: 12px;
+    width: 320px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    .cookie_header {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        cursor: pointer;
+        width: 14px;
+        height: 14px;
+        // border: 1px red solid;
+      }
+    }
+    .cookie_contenr {
+      font-size: 14px;
+      color: #201515;
+      .see_cookei {
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
