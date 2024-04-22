@@ -58,7 +58,7 @@ const {
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.correctTotal }}+ people used Correction service.
+                  {{ platformData.correctTotal }} people used Correction service.
                 </div>
               </div>
               <div class="btn common_btn_hover_bgColor">

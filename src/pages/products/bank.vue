@@ -73,8 +73,7 @@ const {
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.userTotal }}+ people used the question bank for
-                  practice.
+                  {{ platformData.userTotal }} people used the question bank for practice.
                 </div>
               </div>
               <div class="btn common_btn_hover_bgColor">

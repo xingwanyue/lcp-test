@@ -74,8 +74,8 @@ const {
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.examTotal }}+ people used mock exams for
-                  self-assessment. practice.
+                  {{ platformData.examTotal }} people used mock exams for self-assessment.
+                  practice.
                 </div>
               </div>
               <div class="btn common_btn_hover_bgColor">
@@ -204,6 +204,5 @@ const {
 </template>
 
 <style lang="scss" scoped>
-
 @import "./common/prod.scss";
 </style>
