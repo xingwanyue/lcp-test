@@ -146,7 +146,7 @@ const googleLogin = () => {
         </div>
         <div class="all_stu_nums">
           Trusted by
-          <span class="yellow">{{ formatNumber(platformData.userTotal) }}+ students</span>
+          <span class="yellow">{{ formatNumber(platformData.userTotal) }} students</span>
           worldwide to improve Duolingo English Test scores within one month.
         </div>
         <div class="big_img_out">

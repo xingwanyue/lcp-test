@@ -469,7 +469,7 @@ const formateMinToHour = (min: number) => {
                 </div>
                 <div class="name">{{ item.data.nickname }}</div>
                 <div class="type">purchased</div>
-                <div class="days">{{ item.data.examNum }}-day membership</div>
+                <div class="days">{{ item.data.tag }}</div>
               </div>
               <div class="scroll_buyed_mid">
                 <div class="flag">
