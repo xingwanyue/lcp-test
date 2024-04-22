@@ -281,21 +281,19 @@ const buyMembership = (id: number) => {
                   v-if="item.btn"
                   :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
                   class="btn"
-                  download
+                  target="_blank"
                   >{{ item.btn }}
                 </a>
               </template>
               <template v-else>
-                <div v-if="item.btn" class="disbtn">
-                  {{ item.btn }}
-                </div>
+                <div v-if="item.btn" class="disbtn">{{ item.btn }}</div>
               </template>
               <template v-if="user.write === 1">
                 <a
                   v-if="item.btn1"
                   :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
                   class="btn"
-                  download
+                  target="_blank"
                   >{{ item.btn1 }}
                 </a>
               </template>
