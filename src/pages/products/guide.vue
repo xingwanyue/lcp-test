@@ -45,7 +45,11 @@ const article1 = ref({
     {
       smallTitle: "• Interactive Speaking Exercises: ",
       content:
-        "   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios. • Expert Insights: Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance. ",
+        "   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios.  ",
+    },
+    {
+      smallTitle: '• Expert Insights:',
+      content: ' Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance.',
     },
     {
       smallTitle: "• Real-Life Speaking Examples: ",
@@ -169,11 +173,7 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div
-                v-for="(item, index) in article1.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -182,21 +182,13 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ pricedata.speakData.price / 100 }}</span>
                 </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(pricedata.speakData.id)"
-                >
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.speakData.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -214,11 +206,7 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div
-                v-for="(item, index) in article2.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
@@ -227,21 +215,13 @@ const buyMembership = (id: number) => {
                   <span class="tag">$</span>
                   <span class="price_num">{{ pricedata.writeData.price / 100 }}</span>
                 </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(pricedata.writeData.id)"
-                >
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.writeData.id)">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -260,11 +240,7 @@ const buyMembership = (id: number) => {
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
-            <img
-              src="/img/guid/Double_Right_Arrow.svg"
-              class="Double_Right_Arrow"
-              alt=""
-            />
+            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" alt="" />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <template v-if="item.id === '1'">
@@ -277,24 +253,16 @@ const buyMembership = (id: number) => {
             </template>
             <template v-if="item.id === '2'">
               <template v-if="user.speak === 1">
-                <a
-                  v-if="item.btn"
-                  :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
-                  class="btn"
-                  target="_blank"
-                  >{{ item.btn }}
+                <a v-if="item.btn" :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)" class="btn"
+                  target="_blank">{{ item.btn }}
                 </a>
               </template>
               <template v-else>
                 <div v-if="item.btn" class="disbtn">{{ item.btn }}</div>
               </template>
               <template v-if="user.write === 1">
-                <a
-                  v-if="item.btn1"
-                  :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
-                  class="btn"
-                  target="_blank"
-                  >{{ item.btn1 }}
+                <a v-if="item.btn1" :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)" class="btn"
+                  target="_blank">{{ item.btn1 }}
                 </a>
               </template>
               <template v-else>
@@ -313,8 +281,8 @@ const buyMembership = (id: number) => {
               <template v-else>
                 <div class="disbtn">
                   {{ item.btn1 }}
-                </div></template
-              >
+                </div>
+              </template>
             </template>
           </div>
         </div>
@@ -360,11 +328,11 @@ const buyMembership = (id: number) => {
       color: #201515;
       text-align: center;
       margin: 0;
-      margin-top: 120px;
+      margin-top: 56px;
       margin-bottom: 32px;
       @media (max-width: 906px) {
         font-size: 46px;
-        margin-top: 56px;
+        margin-top: 36px;
       }
       @media (max-width: 744px) {
         font-size: 36px;

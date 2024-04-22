@@ -79,8 +79,14 @@ const onAudioEnd = () => {
         <el-image :id="`play-img${key}`" :key="key" src="/img/listen/play.svg" class="play-img"
           @click="playClick(val)"></el-image>
         <span v-if="state.playData.path === val.path">
-          <el-image v-if="state.isPlay" :key="key" :id="`playing-img${key}`" src="/img/listen/playing.svg"
-            class="playing-img"></el-image>
+          <div v-if="state.isPlay" class="playing-content">
+            <div class="playing-rolling">
+              <el-image :key="key" :id="`playing-img${key}`" src="/img/listen/playing.svg"
+                class="playing-img"></el-image>
+              <el-image :key="`${key}a`" :id="`playing-img${key}a`" src="/img/listen/playing.svg" class="playing-img"
+                style="margin-left: 2px"></el-image>
+            </div>
+          </div>
           <el-image v-else :key="`a${key}a`" :id="`playing-img${key}`" src="/img/listen/play.svg"
             class="playing-img-play" @click="continuePlay"></el-image>
         </span>
@@ -110,7 +116,33 @@ const onAudioEnd = () => {
       color: #F66442;
     }
   }
-  
+}
+</style>
+<style lang="scss" scoped>
+.listen-page{
+  // rolling
+  .playing-content{
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    .playing-rolling{
+      display: flex;
+      width: 48px;
+      height: 24px;
+      animation-name: moveto;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  @keyframes moveto {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 </style>
 <style lang="scss" scoped>
