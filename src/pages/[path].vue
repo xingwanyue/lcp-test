@@ -47,7 +47,7 @@ useSeoMeta({
       // max-width: 1200px;
       margin: 0 auto;
       padding: 120px 30px;
-      background: url("../public/img/aboutus/banner-aboutus.svg") center no-repeat;
+      background: url("/img/aboutus/banner-aboutus.svg") center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;

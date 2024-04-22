@@ -2,9 +2,6 @@
 import { reactive } from 'vue';
 import _ from 'lodash';
 import { saveStorage, getStorage, api, cdn } from '@/utils';
-import playImg from '@/public/img/listen/play.svg';
-import playingImg from '@/public/img/listen/playing.svg';
-import pauseImg from '@/public/img/listen/pause.svg';
 
 const localePath = useLocalePath();
 const state = reactive({
@@ -79,14 +76,15 @@ const onAudioEnd = () => {
       <div v-for="(val, key) in state.list" :key="key"
         :class="`list ${state.playData.path === val.path ? 'list1' : ''} ${getPlayed(val)}`">
         <div class="title">{{ val.name }}</div>
-        <el-image :id="`play-img${key}`" :key="key" :src="playImg" class="play-img" @click="playClick(val)"></el-image>
+        <el-image :id="`play-img${key}`" :key="key" src="/img/listen/play.svg" class="play-img"
+          @click="playClick(val)"></el-image>
         <span v-if="state.playData.path === val.path">
-          <el-image v-if="state.isPlay" :key="key" :id="`playing-img${key}`" :src="playingImg"
+          <el-image v-if="state.isPlay" :key="key" :id="`playing-img${key}`" src="/img/listen/playing.svg"
             class="playing-img"></el-image>
-          <el-image v-else :key="`a${key}a`" :id="`playing-img${key}`" :src="playImg" class="playing-img-play"
-            @click="continuePlay"></el-image>
+          <el-image v-else :key="`a${key}a`" :id="`playing-img${key}`" src="/img/listen/play.svg"
+            class="playing-img-play" @click="continuePlay"></el-image>
         </span>
-        <el-image v-if="state.isPlay" :id="`pause-img${key}`" :key="key" :src="pauseImg" class="pause-img"
+        <el-image v-if="state.isPlay" :id="`pause-img${key}`" :key="key" src="/img/listen/pause.svg" class="pause-img"
           @click="pauseClick()"></el-image>
       </div>
     </div>

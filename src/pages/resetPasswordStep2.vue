@@ -1,46 +1,34 @@
 <template>
   <div class="login">
     <div class="left">
-      <img :src="lockImg" alt="" />
+      <img src="/img/login/lock.svg" alt="" />
       <div class="t1">Forgot Password?</div>
       <div class="t2">Please enter the email used to create your account</div>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
+      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
+        @submit.native.prevent>
         <el-form-item prop="pwd" label="" style="margin-top: 80px">
           New Password
-          <el-input
-            v-model="formData.pwd"
-            :type="pwdShow ? 'text' : 'password'"
-            maxlength="20"
-            placeholder="Enter a new password"
-          >
+          <el-input v-model="formData.pwd" :type="pwdShow ? 'text' : 'password'" maxlength="20"
+            placeholder="Enter a new password">
             <template #suffix>
-              <img :src="pwdShow ? lookImg : unlookImg" style="cursor: pointer" alt="" @click="pwdShow = !pwdShow" />
+              <img :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'" style="cursor: pointer" alt=""
+                @click="pwdShow = !pwdShow" />
             </template>
           </el-input>
         </el-form-item>
         <el-form-item prop="pwd1" label="" style="margin-top: 0px">
           Confirm New Password
-          <el-input
-            v-model="formData.pwd1"
-            :type="pwdShow1 ? 'text' : 'password'"
-            maxlength="20"
-            placeholder="Confirm your new password"
-          >
+          <el-input v-model="formData.pwd1" :type="pwdShow1 ? 'text' : 'password'" maxlength="20"
+            placeholder="Confirm your new password">
             <template #suffix>
-              <img :src="pwdShow1 ? lookImg : unlookImg" style="cursor: pointer" alt="" @click="pwdShow1 = !pwdShow1" />
+              <img :src="pwdShow1 ? '/img/login/look.svg' : '/img/login/unlook.svg'" style="cursor: pointer" alt=""
+                @click="pwdShow1 = !pwdShow1" />
             </template>
           </el-input>
         </el-form-item>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img :src="errIcon" class="errIcon" alt="" />
+            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
@@ -64,10 +52,6 @@ import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { findPassword } from '@/api';
 
-import lockImg from '../public/img/login/lock.svg';
-import lookImg from '../public/img/login/look.svg';
-import unlookImg from '../public/img/login/unlook.svg';
-import errIcon from '../public/img/login/errIcon.svg';
 definePageMeta({
   layout: 'noheaderfooter',
 });
@@ -183,7 +167,6 @@ const goLogin = () => {
     .t1 {
       width: 400px;
       font-size: 32px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: #333333;
       line-height: 45px;
@@ -193,7 +176,6 @@ const goLogin = () => {
     .t2 {
       width: 410px;
       font-size: 16px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 600;
       color: rgba(0, 0, 0, 0.45);
       line-height: 22px;
@@ -221,7 +203,6 @@ const goLogin = () => {
     }
     .desc {
       font-size: 14px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.45);
       line-height: 20px;
@@ -229,7 +210,6 @@ const goLogin = () => {
     .goLogin {
       width: 400px;
       font-size: 14px;
-      font-family: PingFangSC, PingFang SC;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.45);
       line-height: 20px;

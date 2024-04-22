@@ -181,7 +181,7 @@ const options = [
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
         <div class="logo_img_out">
-          <img src="../public/img/footer/small_logo.svg" />
+          <img src="/img/footer/small_logo.svg" />
         </div>
         <div class="logo_icon_out">
           <NuxtLink to="https://www.youtube.com/@detpracticecom">
@@ -320,27 +320,27 @@ const options = [
           }
         }
         .youtube {
-          background-image: url('../public/img/footer/youtube_logo.svg');
+          background-image: url('/img/footer/youtube_logo.svg');
           &:hover {
-            background-image: url('../public/img/footer/youtube_logo_active.svg');
+            background-image: url('/img/footer/youtube_logo_active.svg');
           }
         }
         .x {
-          background-image: url('../public/img/footer/x_logo.svg');
+          background-image: url('/img/footer/x_logo.svg');
           &:hover {
-            background-image: url('../public/img/footer/x_logo_active.svg');
+            background-image: url('/img/footer/x_logo_active.svg');
           }
         }
         .facebook {
-          background-image: url('../public/img/footer/facebook_logo.svg');
+          background-image: url('/img/footer/facebook_logo.svg');
           &:hover {
-            background-image: url('../public/img/footer/facebook_logo_active.svg');
+            background-image: url('/img/footer/facebook_logo_active.svg');
           }
         }
         .tiktok {
-          background-image: url('../public/img/footer/tiktok_logo.svg');
+          background-image: url('/img/footer/tiktok_logo.svg');
           &:hover {
-            background-image: url('../public/img/footer/tiktok_logo_active.svg');
+            background-image: url('/img/footer/tiktok_logo_active.svg');
           }
         }
       }
