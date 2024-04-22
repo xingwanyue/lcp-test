@@ -512,7 +512,7 @@ const googleLogin = () => {
       top: 0px;
       left: 0;
       width: 100%;
-      height: 790px;
+      height: 720px;
       z-index: -1;
       background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 100%);
       @media (max-width: 1290px) {
