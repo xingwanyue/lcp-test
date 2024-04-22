@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { staticUrlGet } from "@/utils";
+import { staticUrlGet, urlGet } from "@/utils";
 import { useStore } from "@/store";
 const store = useStore();
 const user = computed(() => store.user);
@@ -336,13 +336,13 @@ const formateMinToHour = (min: number) => {
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
-                <div
+                <NuxtLink
                   v-else
+                  :href="urlGet('/home')"
                   class="card_price_buy_btn try_free"
-                  @click="buyMembership(item.id)"
                 >
                   Try for free
-                </div>
+                </NuxtLink>
               </div>
               <div v-else>
                 <div
@@ -356,7 +356,7 @@ const formateMinToHour = (min: number) => {
                   <div class="scroll-line"></div>
                 </div>
                 <div v-else class="card_price_buy_btn try_free">
-                  <NuxtLink :to="localePath(`/`)"> Try for free</NuxtLink>
+                  <NuxtLink :to="localePath(`/login`)"> Try for free</NuxtLink>
                 </div>
               </div>
 
@@ -753,11 +753,14 @@ const formateMinToHour = (min: number) => {
               border: 1px solid #201515;
               font-size: 16px;
               color: #201515;
+              display: block;
               a {
                 color: #4c2929;
               }
               &:hover {
+                padding: 10px 0px;
                 background: white;
+                border: 2px solid #201515;
               }
             }
 
