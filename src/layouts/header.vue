@@ -11,7 +11,10 @@ const route = useRoute();
 const pathname = computed(() => route.path);
 const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
+const isProductsClick = ref(false);
+const isProductsMobile = ref(false);
 watch(pathname, (val: string) => {
+  isProductsClick.value = false;
   oldPath.value = getStorage('pathname');
   setTimeout(() => {
     oldPath.value = '';
@@ -19,6 +22,7 @@ watch(pathname, (val: string) => {
   changeHeaderColor(val);
   saveStorage('pathname', val);
 });
+
 onMounted(() => {
   changeHeaderColor(pathname.value);
   const dom = document.getElementsByClassName('v-header')[0] as any;
@@ -64,8 +68,12 @@ const handleOpen = () => {
 
 const handleClose = () => {
   visible.value = false;
+  isProductsMobile.value = false;
 };
-
+const productClick = () => {
+  isProductsMobile.value = !isProductsMobile.value;
+  isProductsClick.value = true;
+};
 const menus = [
   {
     name: t('Home'),
@@ -205,15 +213,62 @@ const logout = () => {
     </div>
     <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
-        <div class="asideMenus" @click="handleClose">
-          <nuxt-link
-            v-for="menu in menus"
-            :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
-            :href="menu.path"
-          >
-            {{ menu.name }}
-          </nuxt-link>
+        <div class="asideMenus">
+          <div v-for="menu in menus" :key="menu.path">
+            <div v-if="menu.path === '/products'">
+              <!-- <nuxt-link :to="menu.path" :class="`asideMeun ${isProductsMobile ? 'active' : ''}`" @click="productClick">
+                {{ menu.name }}
+                <el-image v-if="!isProductsMobile" src="/img/learn/down-icon.svg" class="down-icon-mobile" />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon-mobile" />
+              </nuxt-link> -->
+              <div :class="`asideMeun ${isProductsMobile ? 'active' : ''}`" @click="productClick">
+                {{ menu.name }}
+                <el-image v-if="!isProductsMobile" src="/img/learn/down-icon.svg" class="down-icon-mobile" />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon-mobile" />
+              </div>
+              <!-- Duolingo English -->
+              <nuxt-link
+                v-if="isProductsMobile"
+                class="product-child"
+                :to="localePath('/products/bank')"
+                @click="handleClose"
+              >
+                Test Practice
+              </nuxt-link>
+              <nuxt-link
+                v-if="isProductsMobile"
+                class="product-child"
+                :to="localePath('/products/service')"
+                @click="handleClose"
+              >
+                Test Correction Service
+              </nuxt-link>
+              <nuxt-link
+                v-if="isProductsMobile"
+                class="product-child"
+                :to="localePath('/products/mock')"
+                @click="handleClose"
+              >
+                Test Mock
+              </nuxt-link>
+              <nuxt-link
+                v-if="isProductsMobile"
+                class="product-child"
+                :to="localePath('/products/guide')"
+                @click="handleClose"
+              >
+                Test Course
+              </nuxt-link>
+            </div>
+            <nuxt-link
+              v-else
+              :class="`asideMeun ${pathname === menu.path && !isProductsClick ? 'active' : ''}`"
+              :href="menu.path"
+              @click="handleClose"
+            >
+              {{ menu.name }}
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </el-drawer>
@@ -485,13 +540,25 @@ const logout = () => {
         height: 48px;
         box-sizing: border-box;
         padding-left: 14px;
-
+        padding-right: 14px;
+        justify-content: space-between;
         &.active {
           background: #f6644210;
           border-radius: 8px;
           border-color: #f6644240;
           color: #f66442;
         }
+        .down-icon-mobile {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .product-child {
+        display: block;
+        box-sizing: border-box;
+        width: 168px;
+        padding: 4px 14px 4px 28px;
+        font-size: 14px;
       }
     }
   }
