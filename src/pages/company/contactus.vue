@@ -14,11 +14,23 @@ const state = reactive({
   loading: false,
   formData: {} as any,
 });
+const checkEmail = (rules: any, value: string, callback: any) => {
+  const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
+  if (!pan.test(value)) {
+    callback('The email must be a valid email address.');
+  } else {
+    callback();
+  }
+};
 const rules = reactive({
   name: [{ required: true, message: 'Please enter your name.', trigger: 'blur' }],
-  email: [{ required: true, message: 'Please enter your email address.', trigger: 'blur' }],
+  email: [
+    { required: true, message: 'Please enter your email address.', trigger: 'blur' },
+    { validator: checkEmail, trigger: 'blur' },
+  ],
   message: [{ required: true, message: 'Please enter your message.', trigger: 'blur' }],
 });
+
 const submit = async () => {
   if (state.loading) {
     return;
@@ -28,13 +40,13 @@ const submit = async () => {
     state.loading = true;
     if (valid) {
       // 验证通过
-      const { err } = await useFetch(`${portalContact}`, {
+      const { err } = (await useFetch(`${portalContact}`, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(state.formData),
-      }) as any;
+      })) as any;
       if (!err) {
         ElMessage({ type: 'success', message: 'Submitted successfully' });
         state.formData = {};
@@ -55,9 +67,10 @@ const submit = async () => {
     <div class="content">
       <div class="left">
         <div class="title">Fill in the form</div>
-        <div class="desc">Thank you for choosing to get in touch with us. Please fill out this contact form and our
-          staff will reach
-          out to you as soon as possible to address your inquiries.</div>
+        <div class="desc">
+          Thank you for choosing to get in touch with us. Please fill out this contact form and our staff will reach out
+          to you as soon as possible to address your inquiries.
+        </div>
         <div class="info">
           <el-image src="/img/aboutus/email.svg" class="email-img"></el-image>
           <div class="info-right">
@@ -67,8 +80,14 @@ const submit = async () => {
         </div>
       </div>
       <div class="right">
-        <el-form ref="ruleFormRef" :rules="rules" :model="state.formData" size="default" class="login-form"
-          @submit.native.prevent>
+        <el-form
+          ref="ruleFormRef"
+          :rules="rules"
+          :model="state.formData"
+          size="default"
+          class="login-form"
+          @submit.native.prevent
+        >
           <el-form-item prop="name" label="">
             <el-input v-model="state.formData.name" placeholder="Name"> </el-input>
           </el-form-item>
@@ -79,9 +98,7 @@ const submit = async () => {
             <el-input v-model="state.formData.message" type="textarea" :rows="6" placeholder="Message"> </el-input>
           </el-form-item>
           <el-form-item style="margin-top: 32px; margin-bottom: 16px">
-            <el-button v-loading="state.loading" class="submit" @click="submit">
-              SUBMIT
-            </el-button>
+            <el-button v-loading="state.loading" class="submit" @click="submit"> SUBMIT </el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -90,17 +107,17 @@ const submit = async () => {
   </div>
 </template>
 <style lang="scss">
-.contactus{
-  .el-input__inner{
+.contactus {
+  .el-input__inner {
     height: 50px;
   }
-  .el-loading-spinner .path{
+  .el-loading-spinner .path {
     stroke: #f66442;
   }
 }
 </style>
 <style lang="scss" scoped>
-.contactus{
+.contactus {
   .learn_hader {
     text-align: center;
     background-repeat: no-repeat;
@@ -117,7 +134,7 @@ const submit = async () => {
         line-height: 72px;
         margin: 0px;
       }
-      .title2{
+      .title2 {
         font-weight: 400;
         font-size: 24px;
         color: #201515;
@@ -127,7 +144,7 @@ const submit = async () => {
       }
     }
   }
-  .content{
+  .content {
     max-width: 1260px;
     margin: auto;
     padding: 100px 30px;
@@ -136,58 +153,58 @@ const submit = async () => {
     display: flex;
     justify-content: space-between;
   }
-  .left{
-     width: 40%;
-    .title{
+  .left {
+    width: 40%;
+    .title {
       font-weight: 500;
       font-size: 32px;
       color: #201515;
     }
-    .desc{
+    .desc {
       font-size: 20px;
-      color: #403F3E;
+      color: #403f3e;
       line-height: 28px;
       margin-top: 40px;
     }
-    .info{
+    .info {
       margin-top: 48px;
       display: flex;
-      .email-img{
+      .email-img {
         width: 56px;
         height: 56px;
         display: block;
       }
-      .info-right{
+      .info-right {
         margin-left: 16px;
       }
-      .name{
+      .name {
         font-weight: 600;
         font-size: 20px;
         color: #201515;
         line-height: 32px;
       }
-      .address{
+      .address {
         font-size: 16px;
-        color: #403F3E;
+        color: #403f3e;
         line-height: 20px;
         margin-top: 4px;
       }
     }
   }
-  .right{
+  .right {
     width: 53%;
-    .submit{
+    .submit {
       width: 160px;
       height: 50px;
-      background: #F66442;
+      background: #f66442;
       border-radius: 8px;
       color: #fff;
       font-size: 18px;
     }
   }
 }
-@media (max-width: 800px){
-  .contactus{
+@media (max-width: 800px) {
+  .contactus {
     .learn_hader {
       text-align: center;
       background: #fff4f1;
@@ -199,52 +216,52 @@ const submit = async () => {
           font-size: 24px;
           line-height: 30px;
         }
-        .title2{
+        .title2 {
           font-size: 14px;
           line-height: 22px;
           margin-top: 12px;
         }
       }
     }
-    .content{
+    .content {
       max-width: calc(100% - 30px);
       padding: 50px 15px;
       display: block;
     }
-    .left{
+    .left {
       width: 100%;
-      .title{
+      .title {
         font-size: 22px;
       }
-      .desc{
+      .desc {
         font-size: 14px;
         line-height: 18px;
         margin-top: 20px;
       }
-      .info{
+      .info {
         margin-top: 24px;
-        .email-img{
+        .email-img {
           width: 44px;
           height: 44px;
         }
-        .info-right{
+        .info-right {
           margin-left: 8px;
         }
-        .name{
+        .name {
           font-size: 16px;
           line-height: 22px;
         }
-        .address{
+        .address {
           font-size: 14px;
           line-height: 16px;
           margin-top: 4px;
         }
       }
     }
-    .right{
+    .right {
       width: 100%;
       margin-top: 12px;
-      .submit{
+      .submit {
         width: 100%;
       }
     }
