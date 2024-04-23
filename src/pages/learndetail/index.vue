@@ -61,7 +61,7 @@ const rateChange = async () => {
     }),
   })) as any;
   if (!err) {
-    state.details.rateNum += 1;
+    props.article.rateNum += 1;
     ElMessage({ type: 'success', message: 'Submitted successfully' });
   }
 };
@@ -80,7 +80,7 @@ const rateChange = async () => {
           <div id="content" class="article-con1" v-html="props.article.content" style="white-space: pre-wrap"></div>
         </div>
         <div class="article-title-list article-title-list1">
-          <div class="title title1">Related Articles</div>
+          <div class="title title-checked">Related Articles</div>
           <div v-for="(val, key) in state.list" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="">
               <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
@@ -98,14 +98,14 @@ const rateChange = async () => {
             allow-half
             show-score
             text-color="#201515"
-            :score-template="`{value}/5（${state.details.rateNum || 0} votes）`"
+            :score-template="`{value}/5（${props.article.rateNum || 0} votes）`"
             @change="rateChange"
           />
         </div>
         <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
       </div>
       <div class="article-title-list article-title-list2">
-        <div class="title title1">Related Articles</div>
+        <div class="title title-checked">Related Articles</div>
         <div v-for="(val, key) in state.list" :key="key">
           <nuxt-link :to="localePath(`/${val.path}`)" class="">
             <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
