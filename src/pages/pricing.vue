@@ -302,7 +302,7 @@ const formateMinToHour = (min: number) => {
               <div v-if="user.id">
                 <div
                   v-if="item.day !== 0"
-                  :class="['card_price_buy_btn', item.flag === '1' && 'card_price_buy_btn1']"
+                  :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
                   @click="buyMembership(item.id)"
                 >
                   Buy Now
@@ -311,7 +311,7 @@ const formateMinToHour = (min: number) => {
                 <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free"> Try for free </NuxtLink>
               </div>
               <div v-else>
-                <div v-if="item.day !== 0" :class="['card_price_buy_btn', item.flag === '1' && 'card_price_buy_btn1']">
+                <div v-if="item.day !== 0" :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']">
                   <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
@@ -377,13 +377,13 @@ const formateMinToHour = (min: number) => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div class="card_price_buy_btn" @click="buyMembership(item.id)">
+                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
-                <div class="card_price_buy_btn">
+                <div class="card_price_buy_btn common_btn_hover_bgColor">
                   <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
@@ -672,9 +672,9 @@ const formateMinToHour = (min: number) => {
               text-align: center;
               margin-top: 32px;
               position: relative;
-              &:hover {
-                background: #f66442;
-              }
+              // &:hover {
+              //   background: #f66442;
+              // }
               a {
                 color: #fff;
               }
@@ -683,6 +683,9 @@ const formateMinToHour = (min: number) => {
               background: #edc295;
               a {
                 color: #4c2929;
+              }
+              &:hover {
+                background: #d0aa83 !important;
               }
             }
             .try_free {
