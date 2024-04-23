@@ -8,6 +8,10 @@ import { staticUrlGet, formatNumber } from "@/utils";
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
+const isMobile = ref(false);
+onMounted(() => {
+  isMobile.value = window.innerWidth < 450;
+});
 
 const [
   { data: platformData },
@@ -114,7 +118,10 @@ const googleLogin = () => {
         <div class="power_by">Powered by AI</div>
         <div class="page_title">
           <div class="h_one">
-            <h1>
+            <h1 v-if="isMobile">
+              Get Higher Score Easily <br />in the Duolingo <br />English Test With
+            </h1>
+            <h1 v-else>
               Get Higher Score Easily in the <br />
               Duolingo English Test With
             </h1>
