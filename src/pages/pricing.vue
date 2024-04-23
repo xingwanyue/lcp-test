@@ -628,7 +628,9 @@ const formateMinToHour = (min: number) => {
 
   .part1_wrapper {
     padding: 0px 30px;
-
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
     .part1 {
       max-width: 1200px;
       margin: 0 auto;
@@ -1147,6 +1149,9 @@ const formateMinToHour = (min: number) => {
 
   .part2_wrapper {
     padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
     margin-top: 120px;
     @media (max-width: 450px) {
       margin-top: 60px;
@@ -1235,6 +1240,9 @@ const formateMinToHour = (min: number) => {
   .part3_wrapper {
     // border: 1px red solid;
     padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
     background: #fff4f1;
     margin-top: 100px;
     @media (max-width: 450px) {
