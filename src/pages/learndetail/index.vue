@@ -61,7 +61,7 @@ const rateChange = async () => {
     }),
   })) as any;
   if (!err) {
-    state.details.rateNum += 1;
+    props.article.rateNum += 1;
     ElMessage({ type: 'success', message: 'Submitted successfully' });
   }
 };
@@ -98,7 +98,7 @@ const rateChange = async () => {
             allow-half
             show-score
             text-color="#201515"
-            :score-template="`{value}/5（${state.details.rateNum || 0} votes）`"
+            :score-template="`{value}/5（${props.article.rateNum || 0} votes）`"
             @change="rateChange"
           />
         </div>
@@ -180,9 +180,12 @@ const rateChange = async () => {
       cursor: pointer;
     }
     .title1 {
-      font-weight: 600;
       padding-top: 0px;
       cursor: default;
+      font-weight: 500;
+      font-size: 20px;
+      color: rgba(144, 144, 144, 0.65);
+      line-height: 28px;
     }
     .title-checked {
       font-weight: 500;
@@ -253,6 +256,10 @@ const rateChange = async () => {
         padding: 8px 0px;
         font-size: 14px;
         line-height: 19px;
+      }
+      .title1 {
+        font-size: 16px;
+        line-height: 20px;
       }
       .title-checked {
         font-weight: 500;
