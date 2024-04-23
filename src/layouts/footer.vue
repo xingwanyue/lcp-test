@@ -269,7 +269,7 @@ const closeCookie = () => {
     display: flex;
     justify-content: space-between;
     @media (max-width: 496px) {
-      text-align: center;
+      // text-align: center;
     }
     @media (max-width: 670px) {
       display: grid;
