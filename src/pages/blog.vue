@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 // import { api } from '@/utils';
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
-import vEmbark from '../components/embark.vue';
+import vEmbark from "../components/embark.vue";
 const localePath = useLocalePath();
 
 useSeoMeta({
-  title: 'blog',
-  description: 'blog',
+  title: "blog",
+  description: "blog",
 });
 const total = ref(0);
 const pageSize = ref(10);
@@ -16,7 +16,7 @@ let blogs = ref([]) as any;
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: '1',
+    type: "1",
     page: 1,
     pageSize: 10,
   },
@@ -29,7 +29,7 @@ const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
     server: true,
     query: {
-      type: '1',
+      type: "1",
       page: val,
       pageSize: 10,
     },
@@ -61,7 +61,7 @@ const handleCurrentChange = async (val: number) => {
             {{ item.content }}
           </div>
           <div class="bottom">
-            <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}</div>
+            <div class="date">{{ dayjs(item.createTime).format("YYYY-MM-DD") }}</div>
             <div class="right_arrow">
               <el-image src="/img/blog/right_arrow.svg"></el-image>
             </div>
@@ -92,7 +92,7 @@ const handleCurrentChange = async (val: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding: 120px 0;
-      background: url('/img/blog/blog.svg') center no-repeat;
+      background: url("/img/blog/blog.svg") center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;
@@ -102,8 +102,8 @@ const handleCurrentChange = async (val: number) => {
         font-size: 56px;
         color: #201515;
         margin: 0;
-        @media (max-width: 650px) {
-          font-size: 36px;
+        @media (max-width: 450px) {
+          font-size: 24px;
         }
       }
     }
@@ -145,6 +145,9 @@ const handleCurrentChange = async (val: number) => {
           font-weight: 600;
           font-size: 28px;
           color: #201515;
+          @media (max-width: 450px) {
+            font-size: 20px;
+          }
         }
         .content {
           font-weight: 400;
@@ -157,6 +160,9 @@ const handleCurrentChange = async (val: number) => {
           -webkit-box-orient: vertical;
           overflow: hidden;
           line-height: 28px;
+          @media (max-width: 450px) {
+            font-size: 16px;
+          }
         }
         .bottom {
           margin-top: 24px;
