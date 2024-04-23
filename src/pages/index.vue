@@ -8,6 +8,10 @@ import { staticUrlGet, formatNumber } from "@/utils";
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
+const isMobile = ref(false);
+onMounted(() => {
+  isMobile.value = window.innerWidth < 450;
+});
 
 const [
   { data: platformData },
@@ -114,7 +118,10 @@ const googleLogin = () => {
         <div class="power_by">Powered by AI</div>
         <div class="page_title">
           <div class="h_one">
-            <h1>
+            <h1 v-if="isMobile">
+              Get Higher Score Easily <br />in the Duolingo <br />English Test With
+            </h1>
+            <h1 v-else>
               Get Higher Score Easily in the <br />
               Duolingo English Test With
             </h1>
@@ -726,6 +733,7 @@ const googleLogin = () => {
         margin-bottom: 120px;
         @media (max-width: 450px) {
           margin-bottom: 30px;
+          grid-row-gap: 0px;
         }
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
@@ -815,6 +823,7 @@ const googleLogin = () => {
         margin-bottom: 120px;
         @media (max-width: 450px) {
           margin-bottom: 30px;
+          grid-row-gap: 0px;
         }
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
@@ -924,6 +933,11 @@ const googleLogin = () => {
         align-items: center;
         grid-column-gap: 24px;
         margin-top: 40px;
+        @media (max-width: 450px) {
+          display: grid;
+          grid-template-columns: 0.5fr;
+          grid-row-gap: 14px;
+        }
 
         .one_num {
           padding: 4px 32px;
