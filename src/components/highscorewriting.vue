@@ -20,6 +20,16 @@ const user = computed(() => store.user);
           >
         </div>
       </div>
+      <div v-else class="two_btn_out">
+        <div>
+          <NuxtLink
+            class="common_btn common_btn_hover_bgColor yellow"
+            :to="localePath(`${urlGet('/correct')}`)"
+          >
+            Start Now
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </div>
 </template>
