@@ -2,7 +2,6 @@
 import { articleGet, articleCategoryGet, getTree } from '@/utils';
 import { reactive } from 'vue';
 import head from 'lodash/head';
-import filter from 'lodash/filter';
 import find from 'lodash/find';
 import subscribe from '../components/subscribe.vue';
 
@@ -23,8 +22,8 @@ const state = reactive({
 });
 
 const getSelect = async () => {
-  const { data = {} } = (await useFetch(`${articleCategoryGet}`, { server: true })) as any;
-  state.selectList = getTree(filter(data.value, (v) => v.type === '2') as any, null, null);
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, { server: true })) as any;
+  state.selectList = getTree(data.value, null, null);
   // 默认第一个
   state.selFatherData = head(state.selectList) || {};
   state.selConData = head(state.selFatherData.children) || {};
