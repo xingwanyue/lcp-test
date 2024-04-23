@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import vSlogen from '../components/slogen.vue';
-import vSubscribe from '../components/subscribe.vue';
-import { oauth2SignIn } from '@/utils/googleAuth';
-import { useStore } from '@/store';
-import { staticUrlGet, formatNumber } from '@/utils';
+import vSlogen from "../components/slogen.vue";
+import vSubscribe from "../components/subscribe.vue";
+import { oauth2SignIn } from "@/utils/googleAuth";
+import { useStore } from "@/store";
+import { staticUrlGet, formatNumber } from "@/utils";
 
 const localePath = useLocalePath();
 const store = useStore();
@@ -63,21 +63,21 @@ onMounted(() => {
   }
 });
 const moveAnamit = () => {
-  const small_title_wrap = document.querySelector('.small_title_wrap');
-  const small_title = document.querySelectorAll('.one_small_title');
+  const small_title_wrap = document.querySelector(".small_title_wrap");
+  const small_title = document.querySelectorAll(".one_small_title");
   let index = 0;
   let timer = null;
   timer = setInterval(() => {
     small_title.forEach((item) => {
-      item.classList.remove('current');
-      item.classList.remove('per');
-      item.classList.remove('start');
+      item.classList.remove("current");
+      item.classList.remove("per");
+      item.classList.remove("start");
     });
-    small_title[index].classList.add('current');
+    small_title[index].classList.add("current");
     if (index === 0) {
-      small_title[small_title.length - 1].classList.add('per');
+      small_title[small_title.length - 1].classList.add("per");
     } else {
-      small_title[index - 1].classList.add('per');
+      small_title[index - 1].classList.add("per");
     }
     index++;
     if (index === small_title.length) {
@@ -91,7 +91,7 @@ const toThousands = (num: any) => {
   if (!num) {
     return 0;
   }
-  let result = '';
+  let result = "";
   const numStr = num.toString();
   for (let i = 0; i < numStr.length; i++) {
     if (i % 3 === 0 && i !== 0) {
@@ -115,7 +115,7 @@ const googleLogin = () => {
         <div class="page_title">
           <div class="h_one">
             <h1>
-              Get Higher Score Easily in the <br/> 
+              Get Higher Score Easily in the <br />
               Duolingo English Test With
             </h1>
           </div>
@@ -133,7 +133,10 @@ const googleLogin = () => {
             <img src="/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+          <NuxtLink
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_borderCu white"
+          >
             Start free with email
           </NuxtLink>
         </div>
@@ -172,7 +175,9 @@ const googleLogin = () => {
           </h2>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <h3>Utilize our comprehensive resources to accelerate your score improvement</h3>
+          <h3>
+            Utilize our comprehensive resources to accelerate your score improvement
+          </h3>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
@@ -183,17 +188,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Practice</h4>
             </div>
             <div class="tips">
-              Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice questions, the question bank is
-              continuously updated and improved.
+              Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice
+              questions, the question bank is continuously updated and improved.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Covering all types of exams, detailed explanations are provided for each
+              question.
+            </div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to
+              constantly monitor your performance in answering questions.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/bank')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/products/bank')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/products/bank')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/products/bank')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
@@ -209,18 +221,21 @@ const googleLogin = () => {
               <h4>Correction Service powered by AI</h4>
             </div>
             <div class="tips">
-              "AI + Teacher" provides precise correction services, thoroughly reviewing your essay.
+              "AI + Teacher" provides precise correction services, thoroughly reviewing
+              your essay.
             </div>
             <div class="tips">
-              Just submit your writing content, and you will receive a clear, detailed report and band score in a
-              moment.
+              Just submit your writing content, and you will receive a clear, detailed
+              report and band score in a moment.
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <div class="get_more">
               <NuxtLink v-if="!user.id" :to="localePath('/products/service')" class="font"
                 >Get more information</NuxtLink
               >
-              <NuxtLink v-else :to="localePath('/products/service')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-else :to="localePath('/products/service')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
@@ -236,16 +251,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Mock</h4>
             </div>
             <div class="tips">
-              Replicate the formal examination, allowing you to experience the examination process and content in
-              advance.
+              Replicate the formal examination, allowing you to experience the examination
+              process and content in advance.
             </div>
             <div class="tips">
-              Provide detailed simulated test reports, accurately analyzing your strengths and weaknesses.
+              Provide detailed simulated test reports, accurately analyzing your strengths
+              and weaknesses.
             </div>
-            <div class="tips">Take online mock exams anytime, anywhere, with rapid scoring within 24 hours.</div>
+            <div class="tips">
+              Take online mock exams anytime, anywhere, with rapid scoring within 24
+              hours.
+            </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/mock')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/products/mock')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/products/mock')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/products/mock')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
@@ -261,20 +284,24 @@ const googleLogin = () => {
               <h4>Duolingo English Test Course</h4>
             </div>
             <div class="tips">
-              Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with detailed breakdowns, ensuring
-              you confidently handle all exam components.
+              Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with
+              detailed breakdowns, ensuring you confidently handle all exam components.
             </div>
             <div class="tips">
-              Access proven techniques from ESL professionals for improved speaking and writing performance,
-              personalized learning, and effective self-assessment.
+              Access proven techniques from ESL professionals for improved speaking and
+              writing performance, personalized learning, and effective self-assessment.
             </div>
             <div class="tips">
-              Stay ahead with up-to-date insights on DET formats and trends, ensuring your preparation aligns seamlessly
-              with the latest exam standards.
+              Stay ahead with up-to-date insights on DET formats and trends, ensuring your
+              preparation aligns seamlessly with the latest exam standards.
             </div>
             <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/guide')" class="font">Get more information</NuxtLink>
-              <NuxtLink v-else :to="localePath('/products/guide')" class="font">Get more information</NuxtLink>
+              <NuxtLink v-if="!user.id" :to="localePath('/products/guide')" class="font"
+                >Get more information</NuxtLink
+              >
+              <NuxtLink v-else :to="localePath('/products/guide')" class="font"
+                >Get more information</NuxtLink
+              >
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
@@ -285,7 +312,10 @@ const googleLogin = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
+        <div
+          v-if="usersockerTopFontResponse && usersockerTopFontResponse.length"
+          class="title"
+        >
           {{ usersockerTopFontResponse[0].data }}
         </div>
         <div v-if="platformData" class="user_nums_out">
@@ -303,14 +333,30 @@ const googleLogin = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
+          <NuxtLink
+            v-if="!user.id"
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
             Join Them
           </NuxtLink>
         </div>
-        <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
+        <div
+          v-if="usersockerArrResponse && usersockerArrResponse.length"
+          class="score_scroll_out"
+        >
           <!-- {{ usersockerArr }} -->
-          <!-- <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-            <Slide v-for="(item, index) in usersockerArr" :key="index" class="one_score">
+          <Carousel
+            :itemsToShow="6"
+            :autoplay="1000"
+            :wrap-around="true"
+            :pauseAutoplayOnHover="true"
+          >
+            <Slide
+              v-for="(item, index) in usersockerArrResponse"
+              :key="index"
+              class="one_score"
+            >
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
@@ -326,39 +372,35 @@ const googleLogin = () => {
                 </div>
               </div>
             </Slide>
-          </Carousel> -->
-          <div class="scrolls">
-            <Slide v-for="(item, index) in usersockerArrResponse" :key="index" class="one_score">
-              <div class="one_score_content">
-                <div class="one_score_head">
-                  <div class="user_icon">
-                    <img :src="staticUrlGet(item.data.avatar)" />
-                  </div>
-                  <div class="user_detail">
-                    <div class="user_name">{{ item.data.nickname }}</div>
-                    <div class="user_country">{{ item.data.country }}</div>
-                  </div>
-                </div>
-                <div class="one_score_content_img">
-                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" />
-                </div>
-              </div>
-            </Slide>
-          </div>
+          </Carousel>
         </div>
       </div>
     </div>
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
+        <div
+          v-if="commentTopFontResponse && commentTopFontResponse.length"
+          class="review_title"
+        >
           {{ commentTopFontResponse[0].data }}
         </div>
         <div class="review_scroll_out">
-          <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
-            <!-- <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"> -->
-            <div class="scrolls">
-              <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
+          <div
+            v-if="userPingLunResponse && userPingLunResponse.length"
+            class="review_scroll_out_it"
+          >
+            <Carousel
+              :itemsToShow="4"
+              :autoplay="1000"
+              :wrap-around="true"
+              :pauseAutoplayOnHover="true"
+            >
+              <Slide
+                v-for="(item, index) in userPingLunResponse"
+                :key="index"
+                class="two_card_out"
+              >
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
@@ -372,7 +414,12 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[0].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].content }}</div>
@@ -389,15 +436,19 @@ const googleLogin = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[1].rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[1].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].content }}</div>
                   </div>
                 </div>
               </Slide>
-            </div>
-            <!-- </Carousel> -->
+            </Carousel>
           </div>
         </div>
       </div>
@@ -646,7 +697,7 @@ const googleLogin = () => {
           padding: 0px;
           margin: 0px;
           margin-top: 120px;
-           @media (max-width: 450px) {
+          @media (max-width: 450px) {
             font-size: 23px;
           }
         }
@@ -654,17 +705,17 @@ const googleLogin = () => {
       .title2 {
         margin-top: 32px;
         margin-bottom: 80px;
-         @media (max-width: 450px) {
-            margin-top: 20px;
-              margin-bottom: 40px;
-          }
+        @media (max-width: 450px) {
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
         h3 {
           font-weight: 500;
           font-size: 24px;
           color: #201515;
           text-align: center;
           margin: 0;
-           @media (max-width: 450px) {
+          @media (max-width: 450px) {
             font-size: 18px;
           }
         }
@@ -679,12 +730,12 @@ const googleLogin = () => {
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
-        grid-template-areas: 'img_out  article_out';
+        grid-template-areas: "img_out  article_out";
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
-            'img_out'
-            'article_out';
+            "img_out"
+            "article_out";
         }
         .img_out {
           grid-area: img_out;
@@ -712,8 +763,8 @@ const googleLogin = () => {
               margin-top: 0px;
               margin-bottom: 0px;
               @media (max-width: 450px) {
-            font-size: 22px;
-          }
+                font-size: 22px;
+              }
             }
           }
           .tips {
@@ -721,9 +772,9 @@ const googleLogin = () => {
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
-             @media (max-width: 450px) {
-            font-size: 16px;
-          }
+            @media (max-width: 450px) {
+              font-size: 16px;
+            }
           }
           .get_more {
             display: flex;
@@ -768,12 +819,12 @@ const googleLogin = () => {
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
-        grid-template-areas: ' article_out img_out';
+        grid-template-areas: " article_out img_out";
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
-            'img_out'
-            'article_out';
+            "img_out"
+            "article_out";
         }
         .img_out {
           grid-area: img_out;
@@ -800,9 +851,9 @@ const googleLogin = () => {
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
-               @media (max-width: 450px) {
-            font-size: 22px;
-          }
+              @media (max-width: 450px) {
+                font-size: 22px;
+              }
             }
           }
           .tips {
@@ -810,9 +861,9 @@ const googleLogin = () => {
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
-             @media (max-width: 450px) {
-            font-size: 16px;
-          }
+            @media (max-width: 450px) {
+              font-size: 16px;
+            }
           }
           .get_more {
             display: flex;
@@ -853,6 +904,9 @@ const googleLogin = () => {
     overflow: hidden;
     background: #f2f4f6;
     padding-bottom: 72px;
+    @media (max-width: 450px) {
+      padding-bottom: 40px;
+    }
     .part3 {
       .title {
         font-weight: 500;
@@ -860,9 +914,9 @@ const googleLogin = () => {
         color: #201515;
         text-align: center;
         margin-top: 100px;
-          @media (max-width: 450px) {
-            font-size: 23px;
-          }
+        @media (max-width: 450px) {
+          font-size: 23px;
+        }
       }
       .user_nums_out {
         display: flex;
@@ -870,7 +924,7 @@ const googleLogin = () => {
         align-items: center;
         grid-column-gap: 24px;
         margin-top: 40px;
-       
+
         .one_num {
           padding: 4px 32px;
           background: #ffffff;
@@ -883,17 +937,17 @@ const googleLogin = () => {
             font-weight: 500;
             font-size: 32px;
             color: #201515;
-             @media (max-width: 450px) {
-            font-size: 22px;
-          }
+            @media (max-width: 450px) {
+              font-size: 22px;
+            }
           }
           .small_font {
             font-weight: 400;
             font-size: 18px;
             color: #201515;
-             @media (max-width: 450px) {
-            font-size: 16px;
-          }
+            @media (max-width: 450px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -913,6 +967,9 @@ const googleLogin = () => {
         position: relative;
         .one_score {
           width: 312px !important;
+          @media (max-width: 450px) {
+            width: 220px !important;
+          }
           box-sizing: border-box;
           height: fit-content;
           // border: 1px blue solid;
@@ -955,7 +1012,7 @@ const googleLogin = () => {
               }
             }
             .one_score_content_img {
-              width: 264px;
+              width: auto;
               margin-top: 17px;
               border-radius: 8px;
               border: 2px solid #e9e9e9;
@@ -980,12 +1037,14 @@ const googleLogin = () => {
         font-weight: 500;
         font-size: 40px;
         color: #ffffff;
-        padding:0 10px;
+        padding: 0 10px;
         text-align: center;
         margin-bottom: 64px;
         @media (max-width: 450px) {
-            font-size: 23px;
-          }
+          font-size: 23px;
+          margin-top: 50px;
+          margin-bottom: 34px;
+        }
       }
       .review_scroll_out {
         // padding: 0 20px;
@@ -994,11 +1053,18 @@ const googleLogin = () => {
         .review_scroll_out_it {
           overflow: hidden;
           .two_card_out {
-            margin-left: 24px;
+            // border: 1px red solid;
+            margin-left: 12px;
             width: 432px !important;
+            @media (max-width: 450px) {
+              width: 366px !important;
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
           }
           .one_card {
-            width: calc(100% - 48px);
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
