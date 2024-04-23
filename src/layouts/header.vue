@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { urlGet, staticUrlGet, saveStorage, getStorage } from "@/utils";
-import { useStore } from "@/store";
+import { urlGet, staticUrlGet, saveStorage, getStorage } from '@/utils';
+import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
 
@@ -9,49 +9,49 @@ const user = computed(() => store.user);
 
 const route = useRoute();
 const pathname = computed(() => route.path);
-const headerColor = ref("#FFF4F1");
-const oldPath = ref("");
+const headerColor = ref('#FFF4F1');
+const oldPath = ref('');
 watch(pathname, (val: string) => {
-  oldPath.value = getStorage("pathname");
+  oldPath.value = getStorage('pathname');
   setTimeout(() => {
-    oldPath.value = "";
+    oldPath.value = '';
   }, 200);
   changeHeaderColor(val);
-  saveStorage("pathname", val);
+  saveStorage('pathname', val);
 });
 onMounted(() => {
   changeHeaderColor(pathname.value);
-  const dom = document.getElementsByClassName("v-header")[0] as any;
-  window.addEventListener("scroll", (e) => {
+  const dom = document.getElementsByClassName('v-header')[0] as any;
+  window.addEventListener('scroll', (e) => {
     if (document.documentElement.scrollTop === 0) {
       changeHeaderColor(pathname.value);
-      dom.style.borderBottom = "0px solid";
+      dom.style.borderBottom = '0px solid';
     } else {
-      headerColor.value = "#fff";
-      dom.style.borderBottom = "1px solid #f0e8e8";
+      headerColor.value = '#fff';
+      dom.style.borderBottom = '1px solid #f0e8e8';
     }
   });
-  window.addEventListener("click", () => {
+  window.addEventListener('click', () => {
     popoverQuestions.value = false;
   });
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
-    case "/products/bank":
-      headerColor.value = "#ECF7FF";
+    case '/products/bank':
+      headerColor.value = '#ECF7FF';
       break;
-    case "/products/mock":
-      headerColor.value = "#FFEFE1";
+    case '/products/mock':
+      headerColor.value = '#FFEFE1';
       break;
-    case "/products/guide":
-      headerColor.value = "#E7FDEC";
+    case '/products/guide':
+      headerColor.value = '#E7FDEC';
       break;
     // case "/company/contactus":
     //   headerColor.value = "#ffffff";
     //   break;
 
     default:
-      headerColor.value = "#FFF4F1";
+      headerColor.value = '#FFF4F1';
       break;
   }
 };
@@ -68,24 +68,24 @@ const handleClose = () => {
 
 const menus = [
   {
-    name: t("Home"),
-    path: "/",
+    name: t('Home'),
+    path: '/',
   },
   {
-    name: t("Products"),
-    path: "/products",
+    name: t('Products'),
+    path: '/products',
   },
   {
-    name: t("Learn"),
-    path: "/learn",
+    name: t('Learn'),
+    path: '/learn',
   },
   {
-    name: t("Pricing"),
-    path: "/pricing",
+    name: t('Pricing'),
+    path: '/pricing',
   },
   {
-    name: t("Blog"),
-    path: "/blog",
+    name: t('Blog'),
+    path: '/blog',
   },
 ];
 
@@ -102,8 +102,13 @@ const logout = () => {
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
-            popper-class="head-question-popover">
+          <el-popover
+            v-if="menu.path === '/products'"
+            :visible="popoverQuestions"
+            placement="bottom"
+            trigger="hover"
+            popper-class="head-question-popover"
+          >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -112,8 +117,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Practice</div>
                   <div class="font">
-                    Dive into Success with Vast Question Bank : 10,000+ Questions,
-                    Continuous Updates, and Intelligent Monitoring for Exam Excellence!
+                    Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent
+                    Monitoring for Exam Excellence!
                   </div>
                 </div>
               </NuxtLink>
@@ -124,8 +129,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Correction Service</div>
                   <div class="font">
-                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant
-                    Reports, and Score Boosts in Just Two Weeks!
+                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in
+                    Just Two Weeks!
                   </div>
                 </div>
               </NuxtLink>
@@ -136,8 +141,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
                   <div class="font">
-                    Master Your Exam with Full-Length Mocks: Realistic Simulation,
-                    Detailed Analysis, and Rapid Results Anytime, Anywhere!
+                    Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
+                    Anytime, Anywhere!
                   </div>
                 </div>
               </NuxtLink>
@@ -148,21 +153,26 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Course</div>
                   <div class="font">
-                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and
-                    Up-to-Date Insights for Confident Speaking and Writing Excellence!
+                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident
+                    Speaking and Writing Excellence!
                   </div>
                 </div>
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
+              <nuxt-link
+                class="head-name head-name-products"
+                @mouseover="popoverQuestions = true"
+                @mouseleave="popoverQuestions = false"
+              >
                 {{ menu.name }}
                 <el-image v-if="!popoverQuestions" src="/img/learn/down-icon.svg" class="down-icon" />
                 <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
+          <nuxt-link v-else :to="localePath(menu.path)"
+            >{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
           </nuxt-link>
@@ -182,16 +192,12 @@ const logout = () => {
           </template>
         </el-popover> -->
         <div class="loginbtn">
-          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor">
-            Get started
-          </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn">
         <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
-        <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor">
-          Try for free
-        </nuxt-link>
+        <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
       </div>
       <div class="mobile">
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
@@ -200,8 +206,12 @@ const logout = () => {
     <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
         <div class="asideMenus" @click="handleClose">
-          <nuxt-link v-for="menu in menus" :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
+          <nuxt-link
+            v-for="menu in menus"
+            :key="menu.path"
+            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`"
+            :href="menu.path"
+          >
             {{ menu.name }}
           </nuxt-link>
         </div>
@@ -406,7 +416,14 @@ const logout = () => {
             display: inline-block;
             width: 16px;
             height: 16px;
+            margin-left: 8px;
           }
+        }
+        .head-name-products {
+          height: 68px;
+          margin-bottom: 4px;
+          display: flex;
+          align-items: center;
         }
         &.active {
           // border-bottom: 4px solid #f66442;
