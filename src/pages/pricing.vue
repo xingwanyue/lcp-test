@@ -712,7 +712,10 @@ const formateMinToHour = (min: number) => {
           background: #4c2929;
           padding: 0px 4px;
           padding-bottom: 4px;
-          grid-template-rows: 50px 1fr;
+          grid-template-rows: 50px 1fr !important;
+          @media (max-width: 450px) {
+            grid-template-rows: 50px 1fr !important;
+          }
           cursor: pointer;
 
           .title {
@@ -877,6 +880,10 @@ const formateMinToHour = (min: number) => {
 
         .currentMembership_no {
           background: rgba(76, 41, 41, 0);
+          grid-template-rows: 50px 1fr;
+          @media (max-width: 450px) {
+            grid-template-rows: 0px 1fr !important;
+          }
 
           .title {
             color: rgba(76, 41, 41, 0);
