@@ -753,18 +753,11 @@ const formateMinToHour = (min: number) => {
               text-align: center;
               margin-top: 32px;
               position: relative;
-              // &:hover {
-              //   background: #f66442;
-              // }
-              a {
-                color: #fff;
-              }
             }
             .card_price_buy_btn1 {
+              color: #4c2929 !important;
               background: #edc295;
-              a {
-                color: #4c2929;
-              }
+
               &:hover {
                 background: #d0aa83 !important;
               }
