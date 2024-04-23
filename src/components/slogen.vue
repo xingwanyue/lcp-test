@@ -31,6 +31,9 @@ const googleLogin = () => {
 <style lang="scss" scoped>
 .slogen_out_wrapper {
   padding: 0 30px;
+  @media (max-width: 450px) {
+    padding: 0 15px;
+  }
   .slogen_out {
     max-width: 1200px;
     margin: 0 auto;

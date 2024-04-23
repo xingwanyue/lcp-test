@@ -48,10 +48,11 @@ const sendEmail = async () => {
 <style lang="scss" scoped>
 .subscribe_out_wrapper {
   padding: 64px 30px;
-  background: #fff4f1;
-  @media (max-width: 768px) {
-    padding: 34px 30px;
+  @media (max-width: 450px) {
+    padding: 32px 15px;
   }
+  background: #fff4f1;
+
   .subscribe_out {
     max-width: 1200px;
     margin: 0 auto;

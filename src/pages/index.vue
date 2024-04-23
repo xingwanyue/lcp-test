@@ -499,6 +499,9 @@ const googleLogin = () => {
 
   .part1_wrapper {
     padding: 0px 30px;
+    @media (max-width: 450px) {
+      padding: 0px 15px;
+    }
     position: relative;
     .bg_handle {
       position: absolute;
@@ -689,7 +692,9 @@ const googleLogin = () => {
 
   .part2_wrapper {
     padding: 0px 30px;
-
+    @media (max-width: 450px) {
+      padding: 0px 15px;
+    }
     box-sizing: border-box;
     .part2 {
       max-width: 1200px;
