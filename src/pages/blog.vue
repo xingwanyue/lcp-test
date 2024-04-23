@@ -129,6 +129,7 @@ const handleCurrentChange = async (val: number) => {
         padding-bottom: 48px;
         border: 1px solid #e9e9e9;
         cursor: pointer;
+        display: block;
 
         &:hover {
           box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
