@@ -933,6 +933,11 @@ const googleLogin = () => {
         align-items: center;
         grid-column-gap: 24px;
         margin-top: 40px;
+        @media (max-width: 450px) {
+          display: grid;
+          grid-template-columns: 0.5fr;
+          grid-row-gap: 14px;
+        }
 
         .one_num {
           padding: 4px 32px;
