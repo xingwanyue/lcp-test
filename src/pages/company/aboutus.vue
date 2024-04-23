@@ -187,7 +187,7 @@ const state = reactive({});
       .learn_hader_content {
         max-width: 100%;
         margin: 0 auto;
-        padding: 30px 0px;
+        padding: 30px 15px;
         .title {
           font-size: 24px;
           line-height: 30px;
@@ -227,7 +227,7 @@ const state = reactive({});
       }
     }
     .padding {
-      padding: 0px 14px;
+      padding: 0px 15px;
     }
   }
 }
