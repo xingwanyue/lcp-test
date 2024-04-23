@@ -1284,6 +1284,10 @@ const formateMinToHour = (min: number) => {
             color: #201515;
             margin-top: 24px;
             cursor: pointer;
+            &:hover {
+              border: 2px solid #201515;
+              padding: 10px;
+            }
           }
         }
       }
