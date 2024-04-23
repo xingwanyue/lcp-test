@@ -447,12 +447,12 @@ const googleLogin = () => {
       top: 0px;
       left: 0;
       width: 100%;
-      height: 720px;
+      height: 808px;
       z-index: -1;
       background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 100%);
       @media (max-width: 1290px) {
         height: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
       }
     }
 
