@@ -209,7 +209,7 @@ const submit = async () => {
       .learn_hader_content {
         max-width: 100%;
         margin: 0 auto;
-        padding: 22px 0px 22px;
+        padding: 22px 15px 22px;
         .title {
           font-size: 24px;
           line-height: 30px;
@@ -222,7 +222,7 @@ const submit = async () => {
       }
     }
     .content {
-      max-width: calc(100% - 30px);
+      max-width: 100%;
       padding: 50px 15px;
       display: block;
     }
