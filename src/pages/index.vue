@@ -933,14 +933,18 @@ const googleLogin = () => {
         align-items: center;
         grid-column-gap: 24px;
         margin-top: 40px;
+
         @media (max-width: 450px) {
-          display: grid;
-          grid-template-columns: 0.5fr;
-          grid-row-gap: 14px;
+          flex-wrap: wrap;
+          grid-column-gap: 12px;
+          grid-row-gap: 12px;
         }
 
         .one_num {
           padding: 4px 32px;
+          @media (max-width: 450px) {
+            padding: 4px 16px;
+          }
           background: #ffffff;
           border-radius: 25px;
           display: flex;
@@ -982,7 +986,8 @@ const googleLogin = () => {
         .one_score {
           width: 312px !important;
           @media (max-width: 450px) {
-            width: 220px !important;
+            width: 176px !important;
+            margin-left: 12px;
           }
           box-sizing: border-box;
           height: fit-content;
