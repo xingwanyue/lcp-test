@@ -206,12 +206,10 @@ const submit = async () => {
 @media (max-width: 800px) {
   .contactus {
     .learn_hader {
-      text-align: center;
-      background: #fff4f1;
       .learn_hader_content {
         max-width: 100%;
         margin: 0 auto;
-        padding: 20px 14px 12px;
+        padding: 22px 0px 22px;
         .title {
           font-size: 24px;
           line-height: 30px;
