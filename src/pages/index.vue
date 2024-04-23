@@ -115,7 +115,7 @@ const googleLogin = () => {
         <div class="page_title">
           <div class="h_one">
             <h1>
-              Get Higher Score Easily in the<br />
+              Get Higher Score Easily in the <br/> 
               Duolingo English Test With
             </h1>
           </div>
@@ -495,7 +495,7 @@ const googleLogin = () => {
               font-size: 26px;
             }
             @media (max-width: 450px) {
-              font-size: 22px;
+              font-size: 24px;
             }
           }
         }
@@ -646,22 +646,36 @@ const googleLogin = () => {
           padding: 0px;
           margin: 0px;
           margin-top: 120px;
+           @media (max-width: 450px) {
+            font-size: 23px;
+          }
         }
       }
       .title2 {
         margin-top: 32px;
         margin-bottom: 80px;
+         @media (max-width: 450px) {
+            margin-top: 20px;
+              margin-bottom: 40px;
+          }
         h3 {
           font-weight: 500;
           font-size: 24px;
           color: #201515;
           text-align: center;
           margin: 0;
+           @media (max-width: 450px) {
+            font-size: 18px;
+          }
         }
       }
       .one_img_article {
+        // border:1px red solid;
         display: grid;
         margin-bottom: 120px;
+        @media (max-width: 450px) {
+          margin-bottom: 30px;
+        }
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
@@ -697,6 +711,9 @@ const googleLogin = () => {
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
+              @media (max-width: 450px) {
+            font-size: 22px;
+          }
             }
           }
           .tips {
@@ -704,6 +721,9 @@ const googleLogin = () => {
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
+             @media (max-width: 450px) {
+            font-size: 16px;
+          }
           }
           .get_more {
             display: flex;
@@ -742,6 +762,9 @@ const googleLogin = () => {
       .one_article_img {
         display: grid;
         margin-bottom: 120px;
+        @media (max-width: 450px) {
+          margin-bottom: 30px;
+        }
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
@@ -777,6 +800,9 @@ const googleLogin = () => {
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
+               @media (max-width: 450px) {
+            font-size: 22px;
+          }
             }
           }
           .tips {
@@ -784,6 +810,9 @@ const googleLogin = () => {
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
+             @media (max-width: 450px) {
+            font-size: 16px;
+          }
           }
           .get_more {
             display: flex;
@@ -831,6 +860,9 @@ const googleLogin = () => {
         color: #201515;
         text-align: center;
         margin-top: 100px;
+          @media (max-width: 450px) {
+            font-size: 23px;
+          }
       }
       .user_nums_out {
         display: flex;
@@ -838,6 +870,7 @@ const googleLogin = () => {
         align-items: center;
         grid-column-gap: 24px;
         margin-top: 40px;
+       
         .one_num {
           padding: 4px 32px;
           background: #ffffff;
@@ -850,11 +883,17 @@ const googleLogin = () => {
             font-weight: 500;
             font-size: 32px;
             color: #201515;
+             @media (max-width: 450px) {
+            font-size: 22px;
+          }
           }
           .small_font {
             font-weight: 400;
             font-size: 18px;
             color: #201515;
+             @media (max-width: 450px) {
+            font-size: 16px;
+          }
           }
         }
       }
@@ -941,8 +980,12 @@ const googleLogin = () => {
         font-weight: 500;
         font-size: 40px;
         color: #ffffff;
+        padding:0 10px;
         text-align: center;
         margin-bottom: 64px;
+        @media (max-width: 450px) {
+            font-size: 23px;
+          }
       }
       .review_scroll_out {
         // padding: 0 20px;
