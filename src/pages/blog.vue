@@ -110,6 +110,9 @@ const handleCurrentChange = async (val: number) => {
   }
   .bolgs_content_wrapper {
     padding: 0px 30px;
+    @media (max-width: 450px) {
+      padding: 0px 15px;
+    }
     overflow: hidden;
     // border: 1px red solid;
     .bolgs_content {
