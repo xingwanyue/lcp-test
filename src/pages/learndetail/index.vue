@@ -80,7 +80,7 @@ const rateChange = async () => {
           <div id="content" class="article-con1" v-html="props.article.content" style="white-space: pre-wrap"></div>
         </div>
         <div class="article-title-list article-title-list1">
-          <div class="title title-checked">Related Articles</div>
+          <div class="title title1">Related Articles</div>
           <div v-for="(val, key) in state.list" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="">
               <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
@@ -105,7 +105,7 @@ const rateChange = async () => {
         <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
       </div>
       <div class="article-title-list article-title-list2">
-        <div class="title title-checked">Related Articles</div>
+        <div class="title title1">Related Articles</div>
         <div v-for="(val, key) in state.list" :key="key">
           <nuxt-link :to="localePath(`/${val.path}`)" class="">
             <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
@@ -180,9 +180,12 @@ const rateChange = async () => {
       cursor: pointer;
     }
     .title1 {
-      font-weight: 600;
       padding-top: 0px;
       cursor: default;
+      font-weight: 500;
+      font-size: 20px;
+      color: rgba(144, 144, 144, 0.65);
+      line-height: 28px;
     }
     .title-checked {
       font-weight: 500;
@@ -253,6 +256,10 @@ const rateChange = async () => {
         padding: 8px 0px;
         font-size: 14px;
         line-height: 19px;
+      }
+      .title1 {
+        font-size: 16px;
+        line-height: 20px;
       }
       .title-checked {
         font-weight: 500;
