@@ -16,7 +16,7 @@ export default {
       });
     } else {
       // 在客户端，正常初始化 AOS
-      this.AOS = new AOS.init({ disable: "phone", once: true });
+      this.AOS = new AOS.init({ once: true });
     }
   },
 };
