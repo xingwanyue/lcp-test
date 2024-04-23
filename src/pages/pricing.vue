@@ -391,21 +391,24 @@ const formateMinToHour = (min: number) => {
                 </NuxtLink>
               </div>
               <div v-else>
-                <div
+                <NuxtLink
                   v-if="item.day !== 0"
                   :class="[
                     'card_price_buy_btn common_btn_hover_bgColor',
                     item.flag === '1' && 'card_price_buy_btn1',
                   ]"
+                  :to="localePath(`/login?url=/pricing`)"
                 >
-                  <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
+                  Buy Now
                   <div class="scroll-line"></div>
-                </div>
-                <div v-else class="card_price_buy_btn try_free">
-                  <NuxtLink :to="localePath(`/login?url=/pricing`)">
-                    Try for free</NuxtLink
-                  >
-                </div>
+                </NuxtLink>
+                <NuxtLink
+                  v-else
+                  class="card_price_buy_btn try_free"
+                  :to="localePath(`/login?url=/pricing`)"
+                >
+                  Try for free
+                </NuxtLink>
               </div>
 
               <div class="card_price_qllist">
@@ -493,10 +496,13 @@ const formateMinToHour = (min: number) => {
                 </div>
               </div>
               <div v-else>
-                <div class="card_price_buy_btn common_btn_hover_bgColor">
-                  <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
+                <NuxtLink
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  :to="localePath(`/login?url=/pricing`)"
+                >
+                  Buy Now
                   <div class="scroll-line"></div>
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -802,6 +808,10 @@ const formateMinToHour = (min: number) => {
               text-align: center;
               margin-top: 32px;
               position: relative;
+              display: block;
+              a {
+                color: white;
+              }
             }
             .card_price_buy_btn1 {
               color: #4c2929 !important;
@@ -965,6 +975,7 @@ const formateMinToHour = (min: number) => {
               margin-top: 32px;
               position: relative;
               color: white;
+              display: block;
               &:hover {
                 opacity: 0.9;
               }
