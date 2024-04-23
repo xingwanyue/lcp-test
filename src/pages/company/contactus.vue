@@ -1,14 +1,11 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
 import { ref } from 'vue';
 import type { FormInstance } from 'element-plus';
 import { ElMessage } from 'element-plus';
 import { portalContact } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
-const router = useRouter();
-const route = useRoute();
 const ruleFormRef = ref<FormInstance>();
 const state = reactive({
   loading: false,
@@ -39,7 +36,7 @@ const submit = async () => {
   formNode1.validate(async (valid: any) => {
     state.loading = true;
     if (valid) {
-      // 验证通过
+      // Verification passed
       const { err } = (await useFetch(`${portalContact}`, {
         method: 'post',
         headers: {
