@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
   css: ['@/assets/iconfont/iconfont.css'],
   i18n: {
     locales: ['en', 'id'],
@@ -12,23 +12,12 @@ export default defineNuxtConfig({
   },
   plugins: [
     { src: '@/plugins/aos.client.js', mode: 'client' },
+    { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
-  webpack: {
-    extractCSS: true,
-    optimization: {
-      splitChunks: {
-        cacheGroups: {
-          styles: {
-            name: 'styles',
-            test: /\.(css|vue)$/,
-            chunks: 'all',
-            enforce: true,
-          },
-        },
-      },
-    },
+  features: {
+    inlineStyles: false,
   },
   app: {
     head: {
