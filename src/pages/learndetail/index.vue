@@ -198,7 +198,7 @@ const rateChange = async () => {
     .title-checked {
       font-weight: 500;
       font-size: 20px;
-      color: rgba(144, 144, 144, 0.65);
+      color: #f66442;
       line-height: 28px;
     }
   }
