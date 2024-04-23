@@ -293,10 +293,17 @@ const buyMembership = (id: number) => {
                 </div>
               </template>
               <template v-else>
-                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/products/guide`)" class="btn">
+                <NuxtLink
+                  v-if="item.btn"
+                  :to="localePath(`/login?url=/products/guide`)"
+                  class="btn"
+                >
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/products/guide`)" class="btn"
+                <NuxtLink
+                  v-if="item.btn1"
+                  :to="localePath(`/login?url=/products/guide`)"
+                  class="btn"
                   >{{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -355,7 +362,10 @@ const buyMembership = (id: number) => {
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/products/common/listen`)">
+                <NuxtLink
+                  class="btn"
+                  :to="localePath(`/login?url=/products/common/listen`)"
+                >
                   {{ item.btn1 }}
                 </NuxtLink></template
               >
@@ -532,13 +542,18 @@ const buyMembership = (id: number) => {
     }
   }
   .part3_wrapper {
-    // border: 1px red solid;
     padding: 0px 30px;
     background: #fff4f1;
     margin-top: 120px;
+    @media screen and (max-width: 450px) {
+      margin-top: 60px;
+    }
     .part3 {
       padding: 100px 0;
-      //   border: 1px red solid;
+      @media screen and (max-width: 450px) {
+        padding: 50px 0;
+      }
+
       max-width: 1200px;
       margin: 0 auto;
       .title {
@@ -547,6 +562,10 @@ const buyMembership = (id: number) => {
         color: #201515;
         text-align: center;
         margin-bottom: 64px;
+        @media screen and (max-width: 450px) {
+          font-size: 20px;
+          margin-bottom: 32px;
+        }
       }
       .three_out {
         display: grid;
@@ -639,9 +658,15 @@ const buyMembership = (id: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding-top: 100px;
+      @media screen and (max-width: 450px) {
+        padding-top: 50px;
+      }
       .orange_title {
         font-weight: 500;
         font-size: 40px;
+        @media screen and (max-width: 450px) {
+          font-size: 22px;
+        }
         color: #ffffff;
         text-align: center;
         margin: 0;
@@ -650,6 +675,9 @@ const buyMembership = (id: number) => {
         margin: 0 auto;
         font-weight: 400;
         font-size: 20px;
+        @media screen and (max-width: 450px) {
+          font-size: 14px;
+        }
         color: #ffffff;
         max-width: 900px;
         line-height: 28px;

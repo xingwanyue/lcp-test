@@ -11,7 +11,7 @@ const user = computed(() => store.user);
       <div class="font1">Immediately embark on your journey to</div>
       <div class="font2">high-scoring writing!</div>
       <div v-if="!user.id" class="two_btn_out">
-        <div >
+        <div>
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
             :to="localePath(`/login?url=${urlGet('/correct')}`)"
@@ -31,6 +31,9 @@ const user = computed(() => store.user);
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+    @media (max-width: 450px) {
+      padding: 50px 0;
+    }
   }
   .font1 {
     font-weight: 600;
