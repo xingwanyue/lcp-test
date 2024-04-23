@@ -35,22 +35,26 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
       if (item.type === "1") {
         if (item.day === 0) {
           item.qlList = [
-            { name: 1, desc: `${freeNum}Free Practices / day`, tips: "" },
+            { name: 1, desc: `${freeNum} Free Practices / day`, tips: "" },
             {
               name: 2,
               desc: `$${correct.price / 100} / 5 Correction Services`,
               tips: "",
             },
-            { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: "" },
+            {
+              name: 3,
+              desc: `<span class='bigger'>$${exam.price / 100}</span> / 1 Mock Exam`,
+              tips: "",
+            },
             {
               name: 4,
-              desc: `$${speak.price / 100} / Speaking Guide`,
+              desc: `<span class='bigger'>$${speak.price / 100}</span> / Speaking Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
             {
               name: 5,
-              desc: `$${write.price / 100} / Writing Guide`,
+              desc: `<span class='bigger'>$${write.price / 100}</span> / Writing Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
@@ -60,33 +64,47 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `Unlimited for Practice Sessions`,
+              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
               tips: "",
               style: "font-weight: 500;",
             },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
+              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
               style: "font-weight: 500;",
               tips: "for speaking and writing",
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+              desc: `<span class='bigger'>$${
+                correct.vipPrice / 100
+              } / 5</span> Correction Services`,
               style: "font-weight: 500;",
               tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
+            {
+              name: 4,
+              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              tips: "",
+            },
+            {
+              name: 5,
+              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+              tips: "",
+            },
             {
               name: 6,
-              desc: `$${speak.vipPrice / 100} / Speaking Guide`,
+              desc: `<span class='bigger'>$${
+                speak.vipPrice / 100
+              }</span> / Speaking Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
             {
               name: 7,
-              desc: `$${write.vipPrice / 100} / Writing Guide`,
+              desc: `<span class='bigger'>$${
+                write.vipPrice / 100
+              }</span> / Writing Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
@@ -94,30 +112,48 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
         }
         if (item.day === 15) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: "" },
+            {
+              name: 1,
+              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              tips: "",
+            },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
+              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
               style: "font-weight: 500;",
               tips: "for speaking and writing",
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+              desc: `<span class='bigger'>$${
+                correct.vipPrice / 100
+              } / 5</span> Correction Services`,
               style: "font-weight: 500;",
               tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
+            {
+              name: 4,
+              desc: `<span class='bigger'>${item.examNum} Mock Exam</span>`,
+              tips: "",
+            },
+            {
+              name: 5,
+              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+              tips: "",
+            },
             {
               name: 6,
-              desc: `$${speak.vipPrice / 100} / Speaking Guide`,
+              desc: `<span class='bigger'>$${
+                speak.vipPrice / 100
+              }</span> / Speaking Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
             {
               name: 7,
-              desc: `$${write.vipPrice / 100} / Writing Guide`,
+              desc: `<span class='bigger'>$${
+                write.vipPrice / 100
+              }</span> / Writing Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
@@ -127,33 +163,47 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `Unlimited for Practice Sessions`,
+              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
               tips: "",
               style: "font-weight: 500;",
             },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
+              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
               style: "font-weight: 500;",
               tips: "for speaking and writing",
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
+              desc: `<span class='bigger'>$${
+                correct.vipPrice / 100
+              } / 5</span> Correction Services`,
               style: "font-weight: 500;",
               tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: "" },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: "" },
+            {
+              name: 4,
+              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              tips: "",
+            },
+            {
+              name: 5,
+              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+              tips: "",
+            },
             {
               name: 6,
-              desc: `$${speak.vipPrice / 100} / Speaking Guide`,
+              desc: `<span class='bigger'>$${
+                speak.vipPrice / 100
+              }</span> / Speaking Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
             {
               name: 7,
-              desc: `$${write.vipPrice / 100} / Writing Guide`,
+              desc: `<span class='bigger'>$${
+                write.vipPrice / 100
+              }</span> / Writing Guide`,
               tips: "",
               style: "font-weight: 500;",
             },
@@ -367,9 +417,8 @@ const formateMinToHour = (min: number) => {
                   <div class="icon">
                     <img src="/img/pricing/check.svg" />
                   </div>
-                  <div class="font" :style="itemin?.style">
-                    <!-- <span class="bigger">30 days</span> -->
-                    {{ itemin.desc }}
+                  <div class="font">
+                    <div v-html="itemin.desc"></div>
                   </div>
                   <div v-if="itemin.tips" class="tips">
                     <el-tooltip
@@ -800,8 +849,7 @@ const formateMinToHour = (min: number) => {
                   // font-weight: 500;
                   font-size: 14px;
                   color: #403f3e;
-
-                  .bigger {
+                  :deep(.bigger) {
                     color: #201515;
                     font-weight: 600;
                   }
@@ -1236,6 +1284,10 @@ const formateMinToHour = (min: number) => {
             color: #201515;
             margin-top: 24px;
             cursor: pointer;
+            &:hover {
+              border: 2px solid #201515;
+              padding: 10px;
+            }
           }
         }
       }
