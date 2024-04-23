@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
-  css: ['@/assets/iconfont/iconfont.css', 'aos/dist/aos.css'],
+  css: ['@/assets/iconfont/iconfont.css'],
   i18n: {
     locales: ['en', 'id'],
     defaultLocale: 'en',
