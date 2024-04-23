@@ -1,5 +1,5 @@
 import AOS from 'aos';
 
-export default ({ app }) => {
+export default defineNuxtPlugin(() => {
   new AOS.init();
-};
+});
