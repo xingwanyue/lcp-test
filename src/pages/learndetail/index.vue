@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import { reactive, onMounted } from "vue";
-import _ from "lodash";
-import { ref } from "vue";
-import { ElMessage } from "element-plus";
-import { articleGet, rateAdd, saveStorage, getStorage } from "@/utils";
-import subscribe from "../../components/subscribe.vue";
+import { reactive } from 'vue';
+import { ref } from 'vue';
+import find from 'lodash/find';
+import head from 'lodash/head';
+import { ElMessage } from 'element-plus';
+import { articleGet, rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
+import subscribe from '../../components/subscribe.vue';
 
 const props = defineProps({
   id: Number,
@@ -20,43 +21,46 @@ const state = reactive({
   checkId: 0,
   rate,
   rateArr: [] as any,
+  selectName: '',
 });
-state.rateArr = JSON.parse(getStorage("det_rate") || "[]");
+state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
 const getList = async () => {
   // 兼容blog
-  if (props.type === "1") {
+  if (props.type === '1') {
     const { data: { value = {} } = {} } = (await useFetch(`${api}/common/article`, {
       server: true,
       query: {
-        type: "1",
+        type: '1',
       },
     })) as any;
     state.list = value?.data;
-  } else if (props.type === "2") {
+  } else if (props.type === '2') {
     // 兼容learn
-    const { data: { value = {} } = {} } = (await useFetch(
-      `${articleGet}?categoryId=${props.categoryId}`,
-      {
-        server: true,
-      }
-    )) as any;
+    const { data: { value = {} } = {} } = (await useFetch(`${articleGet}?categoryId=${props.categoryId}`, {
+      server: true,
+    })) as any;
     state.list = value?.data;
   }
   state.checkId = props.id;
-  const { rate } = _.find(state.rateArr, { id: props.id }) || {};
+  const { rate } = find(state.rateArr, { id: props.id }) || {};
   state.rate = rate;
 };
 getList();
-
+const getSelect = async () => {
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, { server: true })) as any;
+  const { name } = head(data.value) as any;
+  state.selectName = name;
+};
+getSelect();
 const rateChange = async () => {
-  const rateArr = JSON.parse(getStorage("det_rate") || "[]");
+  const rateArr = JSON.parse(getStorage('det_rate') || '[]');
   rateArr.push({ id: state.checkId, rate: state.rate });
-  saveStorage("det_rate", JSON.stringify(rateArr), true);
+  saveStorage('det_rate', JSON.stringify(rateArr), true);
   const { err } = (await useFetch(`${rateAdd}`, {
-    method: "post",
+    method: 'post',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       articleId: state.checkId,
@@ -64,28 +68,24 @@ const rateChange = async () => {
     }),
   })) as any;
   if (!err) {
-    state.details.rateNum += 1;
-    ElMessage({ type: "success", message: "Submitted successfully" });
+    props.article.rateNum += 1;
+    ElMessage({ type: 'success', message: 'Submitted successfully' });
   }
 };
 </script>
 <template>
   <div class="learndetail">
     <div class="learndetail-content">
-      <div v-if="props.type === '2'" class="top">
+      <div class="top">
         Home >
-        <nuxt-link :to="localePath('/learn')" class=""> Learn </nuxt-link>
-        > {{ props.article.name }}
+        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class=""> Learn </nuxt-link>
+        <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class=""> Blog </nuxt-link>
+        > {{ state.selectName }}
       </div>
       <div class="content">
         <div class="article-con">
           <div class="title">{{ props.article.name }}</div>
-          <div
-            id="content"
-            class="article-con1"
-            v-html="props.article.content"
-            style="white-space: pre-wrap"
-          ></div>
+          <div id="content" class="article-con1" v-html="props.article.content"></div>
         </div>
         <div class="article-title-list article-title-list1">
           <div class="title title1">Related Articles</div>
@@ -106,11 +106,11 @@ const rateChange = async () => {
             allow-half
             show-score
             text-color="#201515"
-            :score-template="`{value}/5（${state.details.rateNum || 0} votes）`"
+            :score-template="`{value}/5（${props.article.rateNum || 0} votes）`"
             @change="rateChange"
           />
         </div>
-        <div>{{ state.rate ? "Thanks for voting!" : "Rate this article" }}</div>
+        <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
       </div>
       <div class="article-title-list article-title-list2">
         <div class="title title1">Related Articles</div>
@@ -176,7 +176,7 @@ const rateChange = async () => {
     background: #ffffff;
     border-radius: 8px;
     border: 1px solid #e9e9e9;
-    padding: 12px 24px;
+    padding: 18px 24px 12px;
     box-sizing: border-box;
     .title {
       width: 100%;
@@ -188,8 +188,12 @@ const rateChange = async () => {
       cursor: pointer;
     }
     .title1 {
-      font-weight: 600;
+      padding-top: 0px;
       cursor: default;
+      font-weight: 500;
+      font-size: 20px;
+      color: rgba(144, 144, 144, 0.65);
+      line-height: 28px;
     }
     .title-checked {
       font-weight: 500;
@@ -211,7 +215,7 @@ const rateChange = async () => {
     padding: 0px 30px;
   }
   .subs {
-    margin-top: 120px;
+    margin-top: 78px;
   }
 }
 @media (max-width: 800px) {
@@ -260,6 +264,10 @@ const rateChange = async () => {
         padding: 8px 0px;
         font-size: 14px;
         line-height: 19px;
+      }
+      .title1 {
+        font-size: 16px;
+        line-height: 20px;
       }
       .title-checked {
         font-weight: 500;

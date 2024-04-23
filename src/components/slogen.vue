@@ -19,7 +19,7 @@ const googleLogin = () => {
           Start free with Google
         </div>
         <NuxtLink
-          :to="localePath('/login')"
+          :to="localePath('/login?url=/home')"
           class="common_btn common_btn_hover_borderCu white"
         >
           Start free with email

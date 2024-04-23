@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useStore } from "@/store";
 const store = useStore();
+import { urlGet } from "@/utils";
 const user = computed(() => store.user);
 </script>
 
@@ -10,13 +11,23 @@ const user = computed(() => store.user);
       <div class="font1">Immediately embark on your journey to</div>
       <div class="font2">high-scoring writing!</div>
       <div v-if="!user.id" class="two_btn_out">
-        <div >
+        <div>
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
-            :to="localePath(`/login`)"
+            :to="localePath(`/login?url=${urlGet('/correct')}`)"
           >
             Start Now</NuxtLink
           >
+        </div>
+      </div>
+      <div v-else class="two_btn_out">
+        <div>
+          <NuxtLink
+            class="common_btn common_btn_hover_bgColor yellow"
+            :to="localePath(`${urlGet('/correct')}`)"
+          >
+            Start Now
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -30,6 +41,9 @@ const user = computed(() => store.user);
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+    @media (max-width: 450px) {
+      padding: 50px 0;
+    }
   }
   .font1 {
     font-weight: 600;

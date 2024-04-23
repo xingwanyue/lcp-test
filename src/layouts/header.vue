@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { urlGet, staticUrlGet, saveStorage, getStorage } from "@/utils";
-import _ from "lodash";
-import { useStore } from "@/store";
+import { urlGet, staticUrlGet, saveStorage, getStorage } from '@/utils';
+import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
 
@@ -10,83 +9,98 @@ const user = computed(() => store.user);
 
 const route = useRoute();
 const pathname = computed(() => route.path);
-const headerColor = ref("#FFF4F1");
-const oldPath = ref("");
+const headerColor = ref('#FFF4F1');
+const oldPath = ref('');
+const isProductsClick = ref(false);
+const isProductsMobile = ref(false);
 watch(pathname, (val: string) => {
-  oldPath.value = getStorage("pathname");
+  isProductsClick.value = false;
+  oldPath.value = getStorage('pathname');
   setTimeout(() => {
-    oldPath.value = "";
+    oldPath.value = '';
   }, 200);
   changeHeaderColor(val);
-  saveStorage("pathname", val);
+  saveStorage('pathname', val);
 });
+
 onMounted(() => {
   changeHeaderColor(pathname.value);
-  const dom = document.getElementsByClassName("v-header")[0] as any;
-  window.addEventListener("scroll", (e) => {
+  const dom = document.getElementsByClassName('v-header')[0] as any;
+  window.addEventListener('scroll', (e) => {
     if (document.documentElement.scrollTop === 0) {
       changeHeaderColor(pathname.value);
-      dom.style.borderBottom = "0px solid";
+      dom.style.borderBottom = '0px solid';
     } else {
-      headerColor.value = "#fff";
-      dom.style.borderBottom = "1px solid #f0e8e8";
+      headerColor.value = '#fff';
+      dom.style.borderBottom = '1px solid #f0e8e8';
     }
   });
-  window.addEventListener("click", () => {
+  window.addEventListener('click', () => {
     popoverQuestions.value = false;
   });
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
-    case "/products/bank":
-      headerColor.value = "#ECF7FF";
+    case '/products/bank':
+      headerColor.value = '#ECF7FF';
       break;
-    case "/products/mock":
-      headerColor.value = "#FFEFE1";
+    case '/products/mock':
+      headerColor.value = '#FFEFE1';
       break;
-    case "/products/guide":
-      headerColor.value = "#E7FDEC";
+    case '/products/guide':
+      headerColor.value = '#E7FDEC';
       break;
     // case "/company/contactus":
     //   headerColor.value = "#ffffff";
     //   break;
 
     default:
-      headerColor.value = "#FFF4F1";
+      headerColor.value = '#FFF4F1';
       break;
   }
 };
-
+const productPaths = ['/products/bank', '/products/service', '/products/mock', '/products/guide'];
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
   visible.value = true;
+  // productPaths
+  if (productPaths.indexOf(pathname.value) !== -1) {
+    isProductsClick.value = true;
+    isProductsMobile.value = true;
+  }
 };
 
 const handleClose = () => {
   visible.value = false;
+  isProductsMobile.value = false;
+  isProductsClick.value = false;
+};
+const productClick = () => {
+  isProductsMobile.value = !isProductsMobile.value;
+  isProductsClick.value = true;
 };
 
 const menus = [
   {
-    name: t("Home"),
-    path: "/",
+    name: t('Home'),
+    path: '/',
   },
   {
-    name: t("Products"),
-    path: "/products",
+    name: t('Products'),
+    path: '/products',
   },
   {
-    name: t("Learn"),
-    path: "/learn",
+    name: t('Learn'),
+    path: '/learn',
   },
   {
-    name: t("Pricing"),
-    path: "/pricing",
+    name: t('Pricing'),
+    path: '/pricing',
   },
   {
-    name: t("Blog"),
-    path: "/blog",
+    name: t('Blog'),
+    path: '/blog',
   },
 ];
 
@@ -103,8 +117,13 @@ const logout = () => {
       </nuxt-link>
       <div class="menus">
         <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
-          <el-popover v-if="menu.path === '/products'" :visible="popoverQuestions" placement="bottom" trigger="hover"
-            popper-class="head-question-popover">
+          <el-popover
+            v-if="menu.path === '/products'"
+            :visible="popoverQuestions"
+            placement="bottom"
+            trigger="click"
+            popper-class="head-question-popover"
+          >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
@@ -113,8 +132,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Practice</div>
                   <div class="font">
-                    Dive into Success with Vast Question Bank : 10,000+ Questions,
-                    Continuous Updates, and Intelligent Monitoring for Exam Excellence!
+                    Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent
+                    Monitoring for Exam Excellence!
                   </div>
                 </div>
               </NuxtLink>
@@ -125,8 +144,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Correction Service</div>
                   <div class="font">
-                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant
-                    Reports, and Score Boosts in Just Two Weeks!
+                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in
+                    Just Two Weeks!
                   </div>
                 </div>
               </NuxtLink>
@@ -137,8 +156,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
                   <div class="font">
-                    Master Your Exam with Full-Length Mocks: Realistic Simulation,
-                    Detailed Analysis, and Rapid Results Anytime, Anywhere!
+                    Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
+                    Anytime, Anywhere!
                   </div>
                 </div>
               </NuxtLink>
@@ -149,21 +168,26 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Course</div>
                   <div class="font">
-                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and
-                    Up-to-Date Insights for Confident Speaking and Writing Excellence!
+                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident
+                    Speaking and Writing Excellence!
                   </div>
                 </div>
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link class="head-name" @mouseover="popoverQuestions = true" @mouseleave="popoverQuestions = false">
+              <nuxt-link
+                class="head-name head-name-products"
+                @mouseover="popoverQuestions = true"
+                @mouseleave="popoverQuestions = false"
+              >
                 {{ menu.name }}
                 <el-image v-if="!popoverQuestions" src="/img/learn/down-icon.svg" class="down-icon" />
                 <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" />
               </nuxt-link>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)">{{ menu.name }}
+          <nuxt-link v-else :to="localePath(menu.path)"
+            >{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
           </nuxt-link>
@@ -183,34 +207,95 @@ const logout = () => {
           </template>
         </el-popover> -->
         <div class="loginbtn">
-          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor">
-            Get started
-          </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn">
         <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
-        <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor">
-          Try for free
-        </nuxt-link>
+        <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
       </div>
       <div class="mobile">
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
     </div>
-    <el-drawer v-model="visible" direction="ltr" size="200px" :with-header="false" :before-close="handleClose">
+    <el-drawer v-model="visible" direction="ltr" size="80%" :with-header="false" :before-close="handleClose">
       <div class="asideMenu">
-        <div class="asideMenus" @click="handleClose">
-          <nuxt-link v-for="menu in menus" :key="menu.path"
-            :class="`asideMeun ${pathname === menu.path ? 'active' : ''}`" :href="menu.path">
-            {{ menu.name }}
-          </nuxt-link>
+        <div class="asideMenus">
+          <div v-for="menu in menus" :key="menu.path">
+            <div v-if="menu.path === '/products'">
+              <!-- <nuxt-link :to="menu.path" :class="`asideMeun ${isProductsMobile ? 'active' : ''}`" @click="productClick">
+                {{ menu.name }}
+                <el-image v-if="!isProductsMobile" src="/img/learn/down-icon.svg" class="down-icon-mobile" />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon-mobile" />
+              </nuxt-link> -->
+              <div :class="`asideMeun ${isProductsMobile ? 'active' : ''}`" @click="productClick">
+                {{ menu.name }}
+                <el-image v-if="!isProductsMobile" src="/img/learn/down-icon.svg" class="down-icon-mobile" />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon-mobile" />
+              </div>
+              <!-- Duolingo English -->
+              <nuxt-link
+                v-if="isProductsMobile"
+                :class="`product-child ${pathname === '/products/bank' ? 'product-child-checked' : ''}`"
+                :to="localePath('/products/bank')"
+                @click="handleClose"
+              >
+                Duolingo English Test Practice
+              </nuxt-link>
+              <nuxt-link
+                v-if="isProductsMobile"
+                :class="`product-child ${pathname === '/products/service' ? 'product-child-checked' : ''}`"
+                :to="localePath('/products/service')"
+                @click="handleClose"
+              >
+                Duolingo English Test Correction Service
+              </nuxt-link>
+              <nuxt-link
+                v-if="isProductsMobile"
+                :class="`product-child ${pathname === '/products/mock' ? 'product-child-checked' : ''}`"
+                :to="localePath('/products/mock')"
+                @click="handleClose"
+              >
+                Duolingo English Test Mock
+              </nuxt-link>
+              <nuxt-link
+                v-if="isProductsMobile"
+                :class="`product-child ${pathname === '/products/guide' ? 'product-child-checked' : ''}`"
+                :to="localePath('/products/guide')"
+                @click="handleClose"
+              >
+                Duolingo English Test Course
+              </nuxt-link>
+            </div>
+            <nuxt-link
+              v-else
+              :class="`asideMeun ${pathname === menu.path && !isProductsClick ? 'active' : ''}`"
+              :href="menu.path"
+              @click="handleClose"
+            >
+              {{ menu.name }}
+            </nuxt-link>
+          </div>
+          <div v-if="user.id" href="/app">
+            <div class="loginbtn">
+              <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
+            </div>
+          </div>
+          <div v-else class="loginbtn">
+            <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
+            <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
+          </div>
         </div>
       </div>
     </el-drawer>
   </div>
 </template>
 <style lang="scss">
+.el-popover.el-popper {
+  border: 0px red solid !important;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
 .header-scrolls {
   width: 100%;
   border-bottom: 4px solid #f66442;
@@ -246,6 +331,7 @@ const logout = () => {
 .head-question-popover {
   max-width: 1000px !important;
   width: auto !important;
+
   .head-question-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -407,19 +493,24 @@ const logout = () => {
             display: inline-block;
             width: 16px;
             height: 16px;
+            margin-left: 8px;
           }
+        }
+        .head-name-products {
+          height: 68px;
+          margin-bottom: 4px;
+          display: flex;
+          align-items: center;
         }
         &.active {
           // border-bottom: 4px solid #f66442;
           a {
-            color: #201515;
-            font-weight: 500;
+            color: #f66442;
           }
         }
         &:hover {
           a {
-            color: #201515;
-            font-weight: 500;
+            color: #f66442;
           }
         }
       }
@@ -456,7 +547,8 @@ const logout = () => {
       padding-left: 15px;
     }
     .asideMenus {
-      width: 200px;
+      // width: 200px;
+      width: 100%;
       padding-top: 28px;
       .asideMeun {
         margin-bottom: 8px;
@@ -467,17 +559,65 @@ const logout = () => {
         box-sizing: border-box;
         border: 2px solid #ffffff;
         text-wrap: nowrap;
-        width: 168px;
+        // width: 168px;
+        width: 100%;
         height: 48px;
         box-sizing: border-box;
         padding-left: 14px;
-
+        padding-right: 14px;
+        justify-content: space-between;
+        color: #403f3e;
         &.active {
           background: #f6644210;
           border-radius: 8px;
           border-color: #f6644240;
           color: #f66442;
         }
+        .down-icon-mobile {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .product-child {
+        display: block;
+        box-sizing: border-box;
+        // width: 168px;
+        padding: 4px 4px 4px 20px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #403f3e;
+      }
+      .product-child-checked {
+        color: #f66442;
+      }
+    }
+    .loginbtn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px;
+      .login_font {
+        display: block;
+        width: 45%;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 22px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #403f3e;
+        text-align: center;
+        border: 1px solid #403f3e;
+      }
+      .try_free {
+        display: block;
+        width: 45%;
+        height: 32px;
+        line-height: 32px;
+        background-color: #f66442;
+        border-radius: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
       }
     }
   }
@@ -486,8 +626,8 @@ const logout = () => {
     align-items: center;
     justify-content: center;
     // border: 1px red solid;
-    @media screen and (max-width: 460px) {
-      // display: none;
+    @media screen and (max-width: 800px) {
+      display: none;
     }
     .login_font {
       width: 80px;

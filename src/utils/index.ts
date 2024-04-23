@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 export const cdn = 'https://detcdn.zixuekeji.cn';
 // export const api = 'https://app.detpractice.com/weapp/api';
 // export const api = 'http://192.168.1.22:9000/api';
@@ -98,7 +96,7 @@ export const rateAdd = `${api}/common/article/rate`;
 // tree
 export function getTree(data = [], sid: any, pid = null) {
   const children = [] as any;
-  _.forEach(data, (value: any) => {
+  data.forEach((value: any) => {
     const node = value;
     if (((!pid && !node.pid) || node.pid === pid) && node.id !== sid) {
       children.push({

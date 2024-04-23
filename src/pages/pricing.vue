@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { staticUrlGet, urlGet } from '@/utils';
-import { useStore } from '@/store';
+import { staticUrlGet, urlGet } from "@/utils";
+import { useStore } from "@/store";
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
@@ -20,7 +20,7 @@ const aqList = ref([]) as any;
 const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: '3',
+    type: "3",
   },
 })) as any;
 aqList.value = aqlistjk.value.data;
@@ -32,27 +32,31 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
     vips.forEach((item: any) => {
-      if (item.type === '1') {
+      if (item.type === "1") {
         if (item.day === 0) {
           item.qlList = [
-            { name: 1, desc: `${freeNum}Free Practices / day`, tips: '' },
+            { name: 1, desc: `${freeNum} Free Practices / day`, tips: "" },
             {
               name: 2,
               desc: `$${correct.price / 100} / 5 Correction Services`,
-              tips: '',
+              tips: "",
             },
-            { name: 3, desc: `$${exam.price / 100} / 1 Mock Exam`, tips: '' },
+            {
+              name: 3,
+              desc: `<span class='bigger'>$${exam.price / 100}</span> / 1 Mock Exam`,
+              tips: "",
+            },
             {
               name: 4,
-              desc: `$${speak.price / 100} / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${speak.price / 100}</span> / Speaking Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
             {
               name: 5,
-              desc: `$${write.price / 100} / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${write.price / 100}</span> / Writing Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
           ];
         }
@@ -60,66 +64,98 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `Unlimited for Practice Sessions`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              tips: "",
+              style: "font-weight: 500;",
             },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'for speaking and writing',
+              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
+              style: "font-weight: 500;",
+              tips: "for speaking and writing",
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'Exclusive Discount',
+              desc: `<span class='bigger'>$${
+                correct.vipPrice / 100
+              } / 5</span> Correction Services`,
+              style: "font-weight: 500;",
+              tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
+            {
+              name: 4,
+              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              tips: "",
+            },
+            {
+              name: 5,
+              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+              tips: "",
+            },
             {
               name: 6,
-              desc: `$${speak.vipPrice / 100} / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${
+                speak.vipPrice / 100
+              }</span> / Speaking Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
             {
               name: 7,
-              desc: `$${write.vipPrice / 100} / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${
+                write.vipPrice / 100
+              }</span> / Writing Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
           ];
         }
         if (item.day === 15) {
           item.qlList = [
-            { name: 1, desc: `Unlimited for Practice Sessions`, tips: '' },
+            {
+              name: 1,
+              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              tips: "",
+            },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'for speaking and writing',
+              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
+              style: "font-weight: 500;",
+              tips: "for speaking and writing",
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'Exclusive Discount',
+              desc: `<span class='bigger'>$${
+                correct.vipPrice / 100
+              } / 5</span> Correction Services`,
+              style: "font-weight: 500;",
+              tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
+            {
+              name: 4,
+              desc: `<span class='bigger'>${item.examNum} Mock Exam</span>`,
+              tips: "",
+            },
+            {
+              name: 5,
+              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+              tips: "",
+            },
             {
               name: 6,
-              desc: `$${speak.vipPrice / 100} / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${
+                speak.vipPrice / 100
+              }</span> / Speaking Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
             {
               name: 7,
-              desc: `$${write.vipPrice / 100} / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${
+                write.vipPrice / 100
+              }</span> / Writing Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
           ];
         }
@@ -127,35 +163,49 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `Unlimited for Practice Sessions`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              tips: "",
+              style: "font-weight: 500;",
             },
             {
               name: 2,
-              desc: `${item.correctNum} Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'for speaking and writing',
+              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
+              style: "font-weight: 500;",
+              tips: "for speaking and writing",
             },
             {
               name: 3,
-              desc: `$${correct.vipPrice / 100} / 5 Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'Exclusive Discount',
+              desc: `<span class='bigger'>$${
+                correct.vipPrice / 100
+              } / 5</span> Correction Services`,
+              style: "font-weight: 500;",
+              tips: "Exclusive Discount",
             },
-            { name: 4, desc: `${item.examNum} Mock Exam`, tips: '' },
-            { name: 5, desc: `$${exam.vipPrice / 100} / 1 Mock Exam`, tips: '' },
+            {
+              name: 4,
+              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              tips: "",
+            },
+            {
+              name: 5,
+              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+              tips: "",
+            },
             {
               name: 6,
-              desc: `$${speak.vipPrice / 100} / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${
+                speak.vipPrice / 100
+              }</span> / Speaking Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
             {
               name: 7,
-              desc: `$${write.vipPrice / 100} / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
+              desc: `<span class='bigger'>$${
+                write.vipPrice / 100
+              }</span> / Writing Guide`,
+              tips: "",
+              style: "font-weight: 500;",
             },
           ];
         }
@@ -168,7 +218,7 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   },
 })) as any;
 
-const switchType = ref('1');
+const switchType = ref("1");
 const changeSwitchType = (type: string) => {
   switchType.value = type;
 };
@@ -187,67 +237,67 @@ const openOrCloseOneQuestion = (item: any) => {
 
 const contaceUsList = ref([
   {
-    type: '1',
-    icon: '/img/pricing/online.svg',
-    font: 'Online Customer Service',
-    tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
-    btn: 'Initiate a conversation',
+    type: "1",
+    icon: "/img/pricing/online.svg",
+    font: "Online Customer Service",
+    tip: "Online hours: Monday to Friday, 10:00 - 19:00.",
+    btn: "Initiate a conversation",
   },
   {
-    type: '2',
-    icon: '/img/pricing/email.svg',
-    font: 'Consultation Email',
-    tip: 'We will respond to you within one business day.',
-    btn: 'info@aitogether.uk',
+    type: "2",
+    icon: "/img/pricing/email.svg",
+    font: "Consultation Email",
+    tip: "We will respond to you within one business day.",
+    btn: "info@aitogether.uk",
   },
   {
-    type: '3',
-    icon: '/img/pricing/message.svg',
-    font: 'Leave a message',
-    tip: 'We will respond to you within one business day.',
-    btn: 'Leave a message now',
+    type: "3",
+    icon: "/img/pricing/message.svg",
+    font: "Leave a message",
+    tip: "We will respond to you within one business day.",
+    btn: "Leave a message now",
   },
 ]);
 const membershipUnchanging = ref([
   {
-    name: '1',
-    desc: 'View all practice questions',
-    tips: '',
+    name: "1",
+    desc: "View all practice questions",
+    tips: "",
   },
   {
-    name: '2',
-    desc: 'High-scoring Answers',
-    tips: '',
+    name: "2",
+    desc: "High-scoring Answers",
+    tips: "",
   },
   {
-    name: '3',
-    desc: 'Question Analysis',
-    tips: '',
+    name: "3",
+    desc: "Question Analysis",
+    tips: "",
   },
   {
-    name: '4',
-    desc: 'Vocabulary Book',
-    tips: 'high-frequency vocabulary in the exam',
+    name: "4",
+    desc: "Vocabulary Book",
+    tips: "high-frequency vocabulary in the exam",
   },
   {
-    name: '5',
-    desc: 'Intelligent question brushing plan',
-    tips: '',
+    name: "5",
+    desc: "Intelligent question brushing plan",
+    tips: "",
   },
   {
-    name: '6',
-    desc: 'Read aloud AI ratings',
-    tips: '',
+    name: "6",
+    desc: "Read aloud AI ratings",
+    tips: "",
   },
 ]) as any;
 
 const copy = async (email: any) => {
   await navigator.clipboard.writeText(`${email}`);
   // element3提示成功
-  ElMessage.success('Copy successfully');
+  ElMessage.success("Copy successfully");
 };
 const openchat = () => {
-  (window as any).$crisp.push(['do', 'chat:open']);
+  (window as any).$crisp.push(["do", "chat:open"]);
 };
 const formateMinToHour = (min: number) => {
   const hour = Math.floor(min / 60);
@@ -274,13 +324,13 @@ const formateMinToHour = (min: number) => {
         <div class="switch_out">
           <div
             @click="changeSwitchType('1')"
-            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
+            :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']"
           >
             Membership
           </div>
           <div
             @click="changeSwitchType('2')"
-            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
+            :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']"
           >
             More Service
           </div>
@@ -289,65 +339,104 @@ const formateMinToHour = (min: number) => {
           <div
             v-for="(item, index) in vipsData?.membershipArr || []"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
-            @click="changeCurrentMembershipId(item.id)"
+            :class="[item.flag === '1' ? 'one_price ' : 'one_price currentMembership_no']"
           >
             <div class="title">Most Popular Choice</div>
-            <div class="card_price" :style="item.id === CurrentMembershipId ? '' : ''">
+            <div class="card_price">
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
-                <div v-if="Number(item.originalPrice)" class="off">
-                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off</span>
+                <div
+                  v-if="Number(item.originalPrice)"
+                  :class="`off ${item.flag === '1' ? 'off1' : ''}`"
+                >
+                  <span>
+                    {{
+                      ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
+                        0
+                      )
+                    }}% off</span
+                  >
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
               <div class="card_price_part3">
-                <div v-if="isVip" class="big_price">${{ item.vipPrice / 100 }}</div>
-                <div v-else class="big_price">${{ item.price / 100 }}</div>
-                <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
+                <div v-if="isVip" class="big_price">
+                  <span class="symbol">$</span>{{ item.vipPrice / 100 }}
+                </div>
+                <div v-else class="big_price">
+                  <span class="symbol">$</span>{{ item.price / 100 }}
+                </div>
+                <div class="small_price">
+                  ${{ (item.originalPrice / 100).toFixed(2) }}
+                </div>
               </div>
               <div v-if="user.id">
                 <div
                   v-if="item.day !== 0"
-                  :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']"
+                  :class="[
+                    'card_price_buy_btn common_btn_hover_bgColor',
+                    item.flag === '1' && 'card_price_buy_btn1',
+                  ]"
                   @click="buyMembership(item.id)"
                 >
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
-                <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free"> Try for free </NuxtLink>
+                <NuxtLink
+                  v-else
+                  :href="urlGet('/home')"
+                  class="card_price_buy_btn try_free"
+                >
+                  Try for free
+                </NuxtLink>
               </div>
               <div v-else>
                 <div
                   v-if="item.day !== 0"
-                  :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']"
+                  :class="[
+                    'card_price_buy_btn common_btn_hover_bgColor',
+                    item.flag === '1' && 'card_price_buy_btn1',
+                  ]"
                 >
-                  <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                  <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
                 <div v-else class="card_price_buy_btn try_free">
-                  <NuxtLink :to="localePath(`/login`)"> Try for free</NuxtLink>
+                  <NuxtLink :to="localePath(`/login?url=/pricing`)">
+                    Try for free</NuxtLink
+                  >
                 </div>
               </div>
 
               <div class="card_price_qllist">
-                <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
+                <div
+                  v-for="(itemin, indexin) in item.qlList"
+                  :key="index * 10 + indexin"
+                  class="one_ql"
+                >
                   <div class="icon">
                     <img src="/img/pricing/check.svg" />
                   </div>
-                  <div class="font" :style="itemin?.style">
-                    <!-- <span class="bigger">30 days</span> -->
-                    {{ itemin.desc }}
+                  <div class="font">
+                    <div v-html="itemin.desc"></div>
                   </div>
                   <div v-if="itemin.tips" class="tips">
-                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
+                    <el-tooltip
+                      :content="itemin.tips"
+                      placement="right-start"
+                      effect="light"
+                    >
                       <img src="/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
               </div>
               <div class="card_price_qllist" style="margin-top: 16px">
-                <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
+                <div
+                  v-for="(itemuc, indexin) in membershipUnchanging"
+                  :key="itemuc.name"
+                  class="one_ql"
+                >
                   <div class="icon">
                     <img src="/img/pricing/check.svg" />
                   </div>
@@ -356,7 +445,11 @@ const formateMinToHour = (min: number) => {
                     {{ itemuc.desc }}
                   </div>
                   <div v-if="itemuc.tips" class="tips">
-                    <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
+                    <el-tooltip
+                      :content="itemuc.tips"
+                      placement="right-start"
+                      effect="light"
+                    >
                       <img src="/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
@@ -369,7 +462,11 @@ const formateMinToHour = (min: number) => {
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
+            :class="[
+              item.id === CurrentMembershipId
+                ? 'one_price '
+                : 'one_price currentMembership_no',
+            ]"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -387,14 +484,17 @@ const formateMinToHour = (min: number) => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
+                <div
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  @click="buyMembership(item.id)"
+                >
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
                 <div class="card_price_buy_btn common_btn_hover_bgColor">
-                  <NuxtLink :to="localePath(`/login`)">Buy Now</NuxtLink>
+                  <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
               </div>
@@ -403,7 +503,12 @@ const formateMinToHour = (min: number) => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel :itemsToShow="1" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+          <Carousel
+            :itemsToShow="1"
+            :autoplay="2000"
+            :wrap-around="true"
+            :pauseAutoplayOnHover="true"
+          >
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
@@ -485,13 +590,13 @@ const formateMinToHour = (min: number) => {
   /* 左右滚动效果 */
   .scroll-line {
     width: 12px;
-    height: 128%;
+    height: 132%;
     transform: rotate(30deg);
     background: rgba(255, 255, 255, 0.3);
     position: absolute;
     z-index: 3;
     left: 0px;
-    top: -15%;
+    top: -16%;
     white-space: nowrap;
     animation-name: around;
     animation-duration: 5s;
@@ -533,8 +638,8 @@ const formateMinToHour = (min: number) => {
           margin: 0px 0px 0px 0px;
           margin-top: 56px;
 
-          @media (max-width: 834px) {
-            font-size: 36px;
+          @media (max-width: 450px) {
+            font-size: 24px;
           }
         }
       }
@@ -548,8 +653,8 @@ const formateMinToHour = (min: number) => {
           margin: 0px 0px 0px 0px;
           margin-top: 32px;
 
-          @media (max-width: 834px) {
-            font-size: 20px;
+          @media (max-width: 450px) {
+            font-size: 16px;
           }
         }
       }
@@ -575,6 +680,9 @@ const formateMinToHour = (min: number) => {
           border-radius: 22px;
           color: #484848;
           cursor: pointer;
+          @media (max-width: 450px) {
+            font-size: 14px;
+          }
         }
 
         .yellow {
@@ -588,10 +696,12 @@ const formateMinToHour = (min: number) => {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         grid-gap: 16px;
+        @media (max-width: 450px) {
+          margin-top: 20px;
+        }
 
         .one_price {
           border-radius: 8px;
-          //   border: 1px red solid;
           display: grid;
           background: #4c2929;
           padding: 0px 4px;
@@ -600,13 +710,13 @@ const formateMinToHour = (min: number) => {
           cursor: pointer;
 
           .title {
-            // border: 1px red solid;
             font-weight: 600;
             font-size: 16px;
             color: #ffffff;
             text-align: center;
             flex: 1;
             padding: 9px 0px;
+            line-height: 32px;
           }
 
           .card_price {
@@ -624,6 +734,9 @@ const formateMinToHour = (min: number) => {
                 font-weight: 600;
                 font-size: 24px;
                 color: #4c2929;
+                @media (max-width: 450px) {
+                  font-size: 18px;
+                }
               }
 
               .off {
@@ -633,6 +746,9 @@ const formateMinToHour = (min: number) => {
                 font-weight: 500;
                 font-size: 14px;
                 color: #fff;
+              }
+              .off1 {
+                color: #4c2929;
               }
             }
 
@@ -655,6 +771,15 @@ const formateMinToHour = (min: number) => {
                 font-weight: 600;
                 font-size: 40px;
                 color: #4c2929;
+                @media (max-width: 450px) {
+                  font-size: 40px;
+                }
+                .symbol {
+                  font-size: 20px;
+                  @media (max-width: 450px) {
+                    font-size: 16px;
+                  }
+                }
               }
 
               .small_price {
@@ -677,17 +802,13 @@ const formateMinToHour = (min: number) => {
               text-align: center;
               margin-top: 32px;
               position: relative;
-              &:hover {
-                background: #f66442;
-              }
-              a {
-                color: #fff;
-              }
             }
             .card_price_buy_btn1 {
+              color: #4c2929 !important;
               background: #edc295;
-              a {
-                color: #4c2929;
+
+              &:hover {
+                background: #d0aa83 !important;
               }
             }
             .try_free {
@@ -728,8 +849,7 @@ const formateMinToHour = (min: number) => {
                   // font-weight: 500;
                   font-size: 14px;
                   color: #403f3e;
-
-                  .bigger {
+                  :deep(.bigger) {
                     color: #201515;
                     font-weight: 600;
                   }
@@ -845,6 +965,9 @@ const formateMinToHour = (min: number) => {
               margin-top: 32px;
               position: relative;
               color: white;
+              &:hover {
+                opacity: 0.9;
+              }
               a {
                 color: white;
               }
@@ -1007,6 +1130,9 @@ const formateMinToHour = (min: number) => {
   .part2_wrapper {
     padding: 0px 30px;
     margin-top: 120px;
+    @media (max-width: 450px) {
+      margin-top: 60px;
+    }
 
     .part2 {
       max-width: 1200px;
@@ -1019,8 +1145,8 @@ const formateMinToHour = (min: number) => {
         color: #201515;
         text-align: center;
 
-        @media (max-width: 662px) {
-          font-size: 30px;
+        @media (max-width: 450px) {
+          font-size: 20px;
         }
       }
 
@@ -1093,10 +1219,15 @@ const formateMinToHour = (min: number) => {
     padding: 0px 30px;
     background: #fff4f1;
     margin-top: 100px;
+    @media (max-width: 450px) {
+      margin-top: 50px;
+    }
 
     .part3 {
       padding: 100px 0;
-      //   border: 1px red solid;
+      @media (max-width: 450px) {
+        padding: 50px 0;
+      }
       max-width: 1200px;
       margin: 0 auto;
 
@@ -1106,6 +1237,9 @@ const formateMinToHour = (min: number) => {
         color: #201515;
         text-align: center;
         margin-bottom: 64px;
+        @media (max-width: 450px) {
+          margin-bottom: 32px;
+        }
       }
 
       .three_out {
@@ -1150,6 +1284,10 @@ const formateMinToHour = (min: number) => {
             color: #201515;
             margin-top: 24px;
             cursor: pointer;
+            &:hover {
+              border: 2px solid #201515;
+              padding: 10px;
+            }
           }
         }
       }

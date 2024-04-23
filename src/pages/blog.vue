@@ -2,8 +2,6 @@
 // import { api } from '@/utils';
 import dayjs from "dayjs";
 
-import _ from "lodash";
-
 import vEmbark from "../components/embark.vue";
 const localePath = useLocalePath();
 
@@ -104,8 +102,8 @@ const handleCurrentChange = async (val: number) => {
         font-size: 56px;
         color: #201515;
         margin: 0;
-        @media (max-width: 650px) {
-          font-size: 36px;
+        @media (max-width: 450px) {
+          font-size: 24px;
         }
       }
     }
@@ -128,9 +126,10 @@ const handleCurrentChange = async (val: number) => {
       .one_blog {
         padding: 24px;
         border-radius: 8px;
-        padding-bottom:48px;
+        padding-bottom: 48px;
         border: 1px solid #e9e9e9;
         cursor: pointer;
+        display: block;
 
         &:hover {
           box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
@@ -147,6 +146,9 @@ const handleCurrentChange = async (val: number) => {
           font-weight: 600;
           font-size: 28px;
           color: #201515;
+          @media (max-width: 450px) {
+            font-size: 20px;
+          }
         }
         .content {
           font-weight: 400;
@@ -159,6 +161,9 @@ const handleCurrentChange = async (val: number) => {
           -webkit-box-orient: vertical;
           overflow: hidden;
           line-height: 28px;
+          @media (max-width: 450px) {
+            font-size: 16px;
+          }
         }
         .bottom {
           margin-top: 24px;
@@ -166,12 +171,11 @@ const handleCurrentChange = async (val: number) => {
           justify-content: space-between;
           align-items: center;
           height: 24px;
-          position:absolute;
-          bottom:12px;
+          position: absolute;
+          bottom: 12px;
           // border:1px red solid;
-          width:calc(100% - 48px);
+          width: calc(100% - 48px);
 
-         
           .date {
             font-weight: 400;
             font-size: 16px;

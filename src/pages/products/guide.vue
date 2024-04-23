@@ -15,6 +15,7 @@ const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
       speakData.price = speakData.vipPrice;
       writeData.price = writeData.vipPrice;
     }
+    console.log(speakData);
     return { speakData, writeData };
   },
 })) as any;
@@ -22,12 +23,10 @@ const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
 const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
   server: false,
   transform: (data: any) => {
-    console.log(data);
     const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
     return { DETSpeakingExamExcellence, DETWritingExamExcellence2024 };
   },
 })) as any;
-console.log(downloadhref);
 
 const article1 = ref({
   title: "Key Features of DET Speaking Exam Excellence:",
@@ -48,8 +47,9 @@ const article1 = ref({
         "   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios.  ",
     },
     {
-      smallTitle: '• Expert Insights:',
-      content: ' Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance.',
+      smallTitle: "• Expert Insights:",
+      content:
+        " Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance.",
     },
     {
       smallTitle: "• Real-Life Speaking Examples: ",
@@ -173,22 +173,36 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
+              <div
+                v-for="(item, index) in article1.list"
+                :key="index"
+                class="one_article_detail"
+              >
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">{{ pricedata.speakData.price / 100 }}</span>
+                  <span class="price_num">{{
+                    pricedata?.speakData?.price / 100 || 0
+                  }}</span>
                 </div>
-                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.speakData.id)">
+                <div
+                  v-if="user.id"
+                  class="btn common_btn_hover_bgColor"
+                  @click="buyMembership(pricedata?.speakData?.id)"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink
+                  :to="localePath(`/login?url=/products/guide`)"
+                  v-else
+                  class="btn common_btn_hover_bgColor"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -206,22 +220,36 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
+              <div
+                v-for="(item, index) in article2.list"
+                :key="index"
+                class="one_article_detail"
+              >
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">{{ pricedata.writeData.price / 100 }}</span>
+                  <span class="price_num">{{
+                    pricedata?.writeData?.price / 100 || 0
+                  }}</span>
                 </div>
-                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(pricedata.writeData.id)">
+                <div
+                  v-if="user.id"
+                  class="btn common_btn_hover_bgColor"
+                  @click="buyMembership(pricedata?.writeData?.id)"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink
+                  :to="localePath(`/login?url=/products/guide`)"
+                  v-else
+                  class="btn common_btn_hover_bgColor"
+                >
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -240,49 +268,107 @@ const buyMembership = (id: number) => {
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
-            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" alt="" />
+            <img
+              src="/img/guid/Double_Right_Arrow.svg"
+              class="Double_Right_Arrow"
+              alt=""
+            />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <template v-if="item.id === '1'">
-              <NuxtLink v-if="item.btn" :to="localePath(`/pricing`)" class="btn">{{
-                item.btn
-              }}</NuxtLink>
-              <NuxtLink v-if="item.btn1" :to="localePath(`/pricing`)" class="btn">{{
-                item.btn1
-              }}</NuxtLink>
-            </template>
-            <template v-if="item.id === '2'">
-              <template v-if="user.speak === 1">
-                <a v-if="item.btn" :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)" class="btn"
-                  target="_blank">{{ item.btn }}
-                </a>
-              </template>
-              <template v-else>
-                <div v-if="item.btn" class="disbtn">{{ item.btn }}</div>
-              </template>
-              <template v-if="user.write === 1">
-                <a v-if="item.btn1" :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)" class="btn"
-                  target="_blank">{{ item.btn1 }}
-                </a>
-              </template>
-              <template v-else>
-                <div v-if="item.btn1" class="disbtn">
+              <template v-if="user.id">
+                <div
+                  v-if="item.btn"
+                  @click="buyMembership(pricedata?.speakData?.id)"
+                  class="btn"
+                >
+                  {{ item.btn }}
+                </div>
+                <div
+                  v-if="item.btn1"
+                  @click="buyMembership(pricedata?.writeData?.id)"
+                  class="btn"
+                >
                   {{ item.btn1 }}
                 </div>
+              </template>
+              <template v-else>
+                <NuxtLink
+                  v-if="item.btn"
+                  :to="localePath(`/login?url=/products/guide`)"
+                  class="btn"
+                >
+                  {{ item.btn }}
+                </NuxtLink>
+                <NuxtLink
+                  v-if="item.btn1"
+                  :to="localePath(`/login?url=/products/guide`)"
+                  class="btn"
+                  >{{ item.btn1 }}
+                </NuxtLink>
+              </template>
+            </template>
+
+            <template v-if="item.id === '2'">
+              <template v-if="user.id">
+                <template v-if="user.speak === 1">
+                  <a
+                    v-if="item.btn"
+                    :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
+                    class="btn"
+                    target="_blank"
+                    >{{ item.btn }}
+                  </a>
+                </template>
+                <template v-else>
+                  <div v-if="item.btn" class="disbtn">{{ item.btn }}</div>
+                </template>
+                <template v-if="user.write === 1">
+                  <a
+                    v-if="item.btn1"
+                    :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
+                    class="btn"
+                    target="_blank"
+                    >{{ item.btn1 }}
+                  </a>
+                </template>
+                <template v-else>
+                  <div v-if="item.btn1" class="disbtn">
+                    {{ item.btn1 }}
+                  </div>
+                </template>
+              </template>
+              <template v-else>
+                <NuxtLink class="btn" :to="localePath(`/login?url=/products/guide`)">
+                  {{ item.btn }}
+                </NuxtLink>
+                <NuxtLink class="btn" :to="localePath(`/login?url=/products/guide`)">
+                  {{ item.btn1 }}
+                </NuxtLink>
               </template>
             </template>
             <template v-if="item.id === '3'">
               <div class="btnNone">Speaking practice audio</div>
-              <template v-if="user.speak === 1">
-                <NuxtLink class="btn" :to="localePath(`/products/common/listen`)">
-                  {{ item.btn1 }}
-                </NuxtLink>
+              <template v-if="user.id">
+                <template v-if="user.speak === 1">
+                  <NuxtLink class="btn" :to="localePath(`/products/common/listen`)">
+                    {{ item.btn1 }}
+                  </NuxtLink>
+                </template>
+                <template v-else>
+                  <div class="disbtn">
+                    {{ item.btn1 }}
+                  </div>
+                </template>
               </template>
               <template v-else>
-                <div class="disbtn">
+                <NuxtLink
+                  class="btn"
+                  :to="localePath(`/login?url=/products/common/listen`)"
+                >
                   {{ item.btn1 }}
-                </div>
-              </template>
+                </NuxtLink></template
+              >
             </template>
           </div>
         </div>
@@ -456,13 +542,18 @@ const buyMembership = (id: number) => {
     }
   }
   .part3_wrapper {
-    // border: 1px red solid;
     padding: 0px 30px;
     background: #fff4f1;
     margin-top: 120px;
+    @media screen and (max-width: 450px) {
+      margin-top: 60px;
+    }
     .part3 {
       padding: 100px 0;
-      //   border: 1px red solid;
+      @media screen and (max-width: 450px) {
+        padding: 50px 0;
+      }
+
       max-width: 1200px;
       margin: 0 auto;
       .title {
@@ -471,6 +562,10 @@ const buyMembership = (id: number) => {
         color: #201515;
         text-align: center;
         margin-bottom: 64px;
+        @media screen and (max-width: 450px) {
+          font-size: 20px;
+          margin-bottom: 32px;
+        }
       }
       .three_out {
         display: grid;
@@ -563,9 +658,15 @@ const buyMembership = (id: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding-top: 100px;
+      @media screen and (max-width: 450px) {
+        padding-top: 50px;
+      }
       .orange_title {
         font-weight: 500;
         font-size: 40px;
+        @media screen and (max-width: 450px) {
+          font-size: 22px;
+        }
         color: #ffffff;
         text-align: center;
         margin: 0;
@@ -574,6 +675,9 @@ const buyMembership = (id: number) => {
         margin: 0 auto;
         font-weight: 400;
         font-size: 20px;
+        @media screen and (max-width: 450px) {
+          font-size: 14px;
+        }
         color: #ffffff;
         max-width: 900px;
         line-height: 28px;

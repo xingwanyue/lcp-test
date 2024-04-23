@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { articleGet, articleCategoryGet, getTree } from '@/utils';
 import { reactive } from 'vue';
-import _ from 'lodash';
+import head from 'lodash/head';
+import find from 'lodash/find';
 import subscribe from '../components/subscribe.vue';
 
 const localePath = useLocalePath();
@@ -21,13 +22,12 @@ const state = reactive({
 });
 
 const getSelect = async () => {
-  const { data = {} } = await useFetch(`${articleCategoryGet}`, { server: true }) as any;
-  state.selectList = getTree(_.filter(data.value, v => v.type === '2') as any, null, null);
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, { server: true })) as any;
+  state.selectList = getTree(data.value, null, null);
   // 默认第一个
-  state.selFatherData = _.head(state.selectList) || {};
-  state.selConData = _.head(state.selFatherData.children) || {};
+  state.selFatherData = head(state.selectList) || {};
+  state.selConData = head(state.selFatherData.children) || {};
   state.activeName = state.selFatherData.id;
-
 };
 await getSelect();
 const getInfo = async () => {
@@ -37,10 +37,10 @@ const getInfo = async () => {
     page: state.page,
     pageSize: state.pageSize,
   };
-  const { data: { value = {} } = {} } = await useFetch(`${articleGet}`, {
+  const { data: { value = {} } = {} } = (await useFetch(`${articleGet}`, {
     server: true,
     query: { ...args },
-  }) as any;
+  })) as any;
   state.total = value?.total;
   if (state.isMore) {
     state.infoList = [...state.infoList, ...value?.data];
@@ -64,7 +64,7 @@ const handleClose = () => {
   state.drawerVisible = false;
 };
 const handleChange = () => {
-  state.selFatherData = _.find(state.selectList, { id: state.activeName }) || {};
+  state.selFatherData = find(state.selectList, { id: state.activeName }) || {};
 };
 </script>
 <template>
@@ -82,18 +82,26 @@ const handleChange = () => {
     <div class="learn_content_wrapper">
       <div class="learn_content">
         <div class="select">
-          <div class="select-title" @click="state.drawerVisible = true;">
+          <div class="select-title" @click="state.drawerVisible = true">
             <span>{{ state.selConData.name }}</span>
-            <img src="/img/learn/down-icon.svg" class="img img-down" alt="">
+            <img src="/img/learn/down-icon.svg" class="img img-down" alt="" />
           </div>
         </div>
         <div class="left">
           <el-collapse v-model="state.activeName" accordion @change="handleChange">
-            <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.id"
-              :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`">
-              <div v-for="(v, k) in val.children" :key="k"
+            <el-collapse-item
+              v-for="(val, key) in state.selectList"
+              :key="key"
+              :title="val.name"
+              :name="val.id"
+              :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`"
+            >
+              <div
+                v-for="(v, k) in val.children"
+                :key="k"
                 :class="`title sel-list ${state.selConData.id === v.id ? 'sel-list-checked' : ''}`"
-                @click="selCheck(v)">
+                @click="selCheck(v)"
+              >
                 {{ v.name }}
               </div>
             </el-collapse-item>
@@ -101,8 +109,10 @@ const handleChange = () => {
         </div>
         <div class="right">
           <div v-for="(val, key) in state.infoList" :key="key">
-            <nuxt-link :to="localePath(`/${val.path}`)"
-              :class="`r-list ${(key + 1) === state.infoList.length ? 'margin-bottom0' : ''}`">
+            <nuxt-link
+              :to="localePath(`/${val.path}`)"
+              :class="`r-list ${key + 1 === state.infoList.length ? 'margin-bottom0' : ''}`"
+            >
               <div class="title">{{ val.name }}</div>
               <div class="description">{{ val.content }}</div>
             </nuxt-link>
@@ -112,11 +122,21 @@ const handleChange = () => {
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">
         <el-collapse v-model="state.activeName" accordion @change="handleChange">
-          <el-collapse-item v-for="(val, key) in state.selectList" :key="key" :title="val.name" :name="val.id"
-            :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`">
-            <div v-for="(v, k) in val.children" :key="k"
-              :class="`title sel-list ${state.selFatherData.id === val.id && state.selConData.id === v.id ? 'sel-list-checked' : ''}`"
-              @click="selCheck(v)">
+          <el-collapse-item
+            v-for="(val, key) in state.selectList"
+            :key="key"
+            :title="val.name"
+            :name="val.id"
+            :class="`${key === 0 ? 'firstCollapse' : ''} ${state.selFatherData.id === val.id ? 'expand' : ''}`"
+          >
+            <div
+              v-for="(v, k) in val.children"
+              :key="k"
+              :class="`title sel-list ${
+                state.selFatherData.id === val.id && state.selConData.id === v.id ? 'sel-list-checked' : ''
+              }`"
+              @click="selCheck(v)"
+            >
               {{ v.name }}
             </div>
           </el-collapse-item>
@@ -127,70 +147,71 @@ const handleChange = () => {
   </div>
 </template>
 <style lang="scss">
-.learn{
-  .expand{
-    border: 1px solid #E9E9E9;
+.learn {
+  .expand {
+    border: 1px solid #e9e9e9;
     border-radius: 8px;
     box-sizing: border-box;
     overflow: hidden;
-    .el-collapse-item__header{
-      background: #FFFFFF;
+    .el-collapse-item__header {
+      background: #ffffff;
     }
   }
-  .el-collapse-item__header{
+  .el-collapse-item__header {
     border: none;
     width: 276px;
     height: auto;
     line-height: 28px;
-    background: #F2F4F6;
+    background: #f2f4f6;
     border-radius: 8px;
     font-weight: 600;
     font-size: 20px;
     color: #201515;
-    padding:18px 24px;
+    padding: 18px 24px;
     box-sizing: border-box;
   }
-  .el-collapse-item{
+  .el-collapse-item {
     margin-top: 8px;
   }
-  .firstCollapse{
+  .firstCollapse {
     margin-top: 0px;
   }
-  
-  .el-collapse-item__content{
+
+  .el-collapse-item__content {
     width: 276px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 8px;
     margin-top: 8px;
     box-sizing: border-box;
     padding-bottom: 12px;
   }
-  @media (max-width: 800px){
-    .el-collapse-item__header{
+  @media (max-width: 800px) {
+    .el-collapse-item__header {
       width: 100%;
       line-height: 21px;
       border-radius: 6px;
-      padding:13px 18px;
+      padding: 13px 18px;
       margin-top: 4px;
     }
-    .el-collapse-item__content{
+    .el-collapse-item__content {
       width: 100%;
       border-radius: 6px;
       margin-top: 6px;
       padding-bottom: 6px;
     }
   }
-  .el-collapse, .el-collapse-item__wrap{
+  .el-collapse,
+  .el-collapse-item__wrap {
     border: none;
   }
-  .el-drawer{
+  .el-drawer {
     border-radius: 12px 12px 0px 0px;
     height: 80% !important;
   }
-  .el-drawer__header{
+  .el-drawer__header {
     margin-bottom: 0px;
     font-size: 18px;
-    .el-icon{
+    .el-icon {
       font-size: 28px;
     }
   }
@@ -214,7 +235,7 @@ const handleChange = () => {
         line-height: 72px;
         margin: 0px;
       }
-      .title2{
+      .title2 {
         font-weight: 400;
         font-size: 24px;
         color: #201515;
@@ -224,7 +245,7 @@ const handleChange = () => {
       }
     }
   }
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     .learn_hader {
       .learn_hader_content {
         max-width: 100%;
@@ -234,7 +255,7 @@ const handleChange = () => {
           font-size: 24px;
           line-height: 30px;
         }
-        .title2{
+        .title2 {
           font-weight: 400;
           font-size: 14px;
           color: #201515;
@@ -256,17 +277,17 @@ const handleChange = () => {
       justify-content: space-between;
     }
   }
-  .select{
+  .select {
     display: none;
   }
-  .select-title{
+  .select-title {
     width: 100%;
     height: 96px;
     font-weight: 600;
     font-size: 30px;
     color: #201515;
     border-radius: 12px;
-    border: 2px solid #E9E9E9;
+    border: 2px solid #e9e9e9;
     box-sizing: border-box;
     padding: 0px 24px;
     margin-bottom: 24px;
@@ -274,7 +295,7 @@ const handleChange = () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .img-down{
+    .img-down {
       display: block;
       width: 24px;
       height: 24px;
@@ -283,39 +304,39 @@ const handleChange = () => {
   .left {
     width: 276px;
   }
-  .sel-list{
+  .sel-list {
     width: 100%;
     line-height: 25px;
-    color: #403F3E;
+    color: #403f3e;
     font-size: 18px;
-    padding:12px 24px;
+    padding: 12px 24px;
     box-sizing: border-box;
     cursor: pointer;
   }
-  .sel-list-checked{
-    background: #FFF4F1;
-    color:#F66442;
+  .sel-list-checked {
+    background: #fff4f1;
+    color: #f66442;
   }
-  .right{
+  .right {
     width: 100%;
     max-width: 900px;
     margin-left: 24px;
-    .r-list{
+    .r-list {
       display: block;
       width: 100%;
       box-sizing: border-box;
       border-radius: 8px;
-      border: 1px solid #E9E9E9;
+      border: 1px solid #e9e9e9;
       margin-bottom: 24px;
       padding: 24px;
       cursor: pointer;
-      .title{
+      .title {
         font-weight: 600;
         font-size: 28px;
         color: #201515;
         line-height: 36px;
       }
-      .description{
+      .description {
         font-weight: 400;
         font-size: 20px;
         color: #201515;
@@ -328,10 +349,10 @@ const handleChange = () => {
         -webkit-box-orient: vertical;
       }
     }
-    .margin-bottom0{
+    .margin-bottom0 {
       margin-bottom: 0px;
     }
-    .more{
+    .more {
       font-weight: 400;
       font-size: 20px;
       color: #201515;
@@ -340,12 +361,12 @@ const handleChange = () => {
       text-align: center;
       cursor: pointer;
       margin-top: 24px;
-      &:hover{
-        color: #F66442;
+      &:hover {
+        color: #f66442;
       }
     }
   }
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     .learn_content_wrapper {
       padding: 0px 14px;
       overflow: hidden;
@@ -357,23 +378,23 @@ const handleChange = () => {
         display: block;
       }
     }
-    .sel-list{
+    .sel-list {
       line-height: 19px;
       font-size: 14px;
-      padding:9px 18px;
+      padding: 9px 18px;
     }
-    .right{
+    .right {
       max-width: 100%;
       margin-left: 0px;
-      .r-list{
+      .r-list {
         border-radius: 6px;
         margin-bottom: 12px;
         padding: 12px;
-        .title{
+        .title {
           font-size: 20px;
           line-height: 27px;
         }
-        .description{
+        .description {
           font-size: 15px;
           line-height: 21px;
           margin-top: 12px;
@@ -381,23 +402,23 @@ const handleChange = () => {
         }
       }
     }
-    .select{
+    .select {
       display: block;
     }
-    .select-title{
+    .select-title {
       height: 48px;
       font-size: 16px;
       border-radius: 6px;
-      border: 1px solid #E9E9E9;
+      border: 1px solid #e9e9e9;
       padding: 0px 12px;
       margin-bottom: 12px;
-      .img-down{
+      .img-down {
         display: block;
         width: 12px;
         height: 12px;
       }
     }
-    .left{
+    .left {
       display: none;
     }
   }
