@@ -733,6 +733,7 @@ const googleLogin = () => {
         margin-bottom: 120px;
         @media (max-width: 450px) {
           margin-bottom: 30px;
+          grid-row-gap: 0px;
         }
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
@@ -822,6 +823,7 @@ const googleLogin = () => {
         margin-bottom: 120px;
         @media (max-width: 450px) {
           margin-bottom: 30px;
+          grid-row-gap: 0px;
         }
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
