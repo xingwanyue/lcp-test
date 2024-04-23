@@ -500,7 +500,7 @@ const logout = () => {
     align-items: center;
     justify-content: center;
     // border: 1px red solid;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 800px) {
       display: none;
     }
     .login_font {
