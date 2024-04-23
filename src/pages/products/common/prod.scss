@@ -35,6 +35,10 @@
                             @media (max-width: 986px) {
                                 text-align: center;
                             }
+
+                            @media (max-width: 450px) {
+                                font-size: 24px;
+                            }
                         }
                     }
 
@@ -43,6 +47,10 @@
                         font-size: 20px;
                         color: #201515;
                         margin-top: 32px;
+
+                        @media (max-width: 450px) {
+                            font-size: 16px;
+                        }
                     }
 
                     .people_num {
@@ -94,6 +102,10 @@
                             font-weight: 400;
                             font-size: 16px;
                             color: #403f3e;
+
+                            @media (max-width: 450px) {
+                                font-size: 14px;
+                            }
                         }
                     }
 
@@ -184,6 +196,10 @@
                             font-weight: 500;
                             font-size: 32px;
                             color: #201515;
+
+                            @media (max-width: 450px) {
+                                font-size: 22px;
+                            }
                         }
 
                         .right_desc {
@@ -191,6 +207,10 @@
                             font-size: 20px;
                             color: #403f3e;
                             margin-top: 40px;
+
+                            @media (max-width: 450px) {
+                                font-size: 16px;
+                            }
 
                             .strong {
                                 font-weight: 600;
