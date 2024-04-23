@@ -11,10 +11,8 @@ const route = useRoute();
 const pathname = computed(() => route.path);
 const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
-const isProductsClick = ref(false);
 const isProductsMobile = ref(false);
 watch(pathname, (val: string) => {
-  isProductsClick.value = false;
   oldPath.value = getStorage('pathname');
   setTimeout(() => {
     oldPath.value = '';
@@ -66,7 +64,6 @@ const handleOpen = () => {
   visible.value = true;
   // productPaths
   if (productPaths.indexOf(pathname.value) !== -1) {
-    isProductsClick.value = true;
     isProductsMobile.value = true;
   }
 };
@@ -74,11 +71,9 @@ const handleOpen = () => {
 const handleClose = () => {
   visible.value = false;
   isProductsMobile.value = false;
-  isProductsClick.value = false;
 };
 const productClick = () => {
   isProductsMobile.value = !isProductsMobile.value;
-  isProductsClick.value = true;
 };
 
 const menus = [
@@ -218,78 +213,189 @@ const logout = () => {
         <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
       </div>
     </div>
-    <el-drawer v-model="visible" direction="ltr" size="80%" :with-header="false" :before-close="handleClose">
-      <div class="asideMenu">
-        <div class="asideMenus">
-          <div v-for="menu in menus" :key="menu.path">
-            <div v-if="menu.path === '/products'">
-              <!-- <nuxt-link :to="menu.path" :class="`asideMeun ${isProductsMobile ? 'active' : ''}`" @click="productClick">
-                {{ menu.name }}
-                <el-image v-if="!isProductsMobile" src="/img/learn/down-icon.svg" class="down-icon-mobile" />
-                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon-mobile" />
-              </nuxt-link> -->
-              <div :class="`asideMeun ${isProductsMobile ? 'active' : ''}`" @click="productClick">
-                {{ menu.name }}
-                <el-image v-if="!isProductsMobile" src="/img/learn/down-icon.svg" class="down-icon-mobile" />
-                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon-mobile" />
-              </div>
-              <!-- Duolingo English -->
-              <nuxt-link
-                v-if="isProductsMobile"
-                :class="`product-child ${pathname === '/products/bank' ? 'product-child-checked' : ''}`"
-                :to="localePath('/products/bank')"
-                @click="handleClose"
-              >
-                Duolingo English Test Practice
-              </nuxt-link>
-              <nuxt-link
-                v-if="isProductsMobile"
-                :class="`product-child ${pathname === '/products/service' ? 'product-child-checked' : ''}`"
-                :to="localePath('/products/service')"
-                @click="handleClose"
-              >
-                Duolingo English Test Correction Service
-              </nuxt-link>
-              <nuxt-link
-                v-if="isProductsMobile"
-                :class="`product-child ${pathname === '/products/mock' ? 'product-child-checked' : ''}`"
-                :to="localePath('/products/mock')"
-                @click="handleClose"
-              >
-                Duolingo English Test Mock
-              </nuxt-link>
-              <nuxt-link
-                v-if="isProductsMobile"
-                :class="`product-child ${pathname === '/products/guide' ? 'product-child-checked' : ''}`"
-                :to="localePath('/products/guide')"
-                @click="handleClose"
-              >
-                Duolingo English Test Course
-              </nuxt-link>
+    <el-drawer
+      v-model="visible"
+      direction="ltr"
+      size="100%"
+      :with-header="false"
+      class="drawer-mobile"
+      :before-close="handleClose"
+    >
+      <div class="drawer-head">
+        <span class="icon iconfont icon-logo mobileLogo"></span>
+        <el-image class="mobile-cancel" @click="handleClose" src="/img/learn/mobile-close.svg" />
+      </div>
+      <div class="asideMenus">
+        <div v-for="menu in menus" :key="menu.path">
+          <div v-if="menu.path === '/products'" :class="`asideMeun-pro`">
+            <div class="asideMeun1" @click="productClick">
+              {{ menu.name }}
+              <el-image v-if="!isProductsMobile" src="/img/learn/down-mobile.svg" class="down-icon-mobile" />
+              <el-image v-else src="/img/learn/up-mobile.svg" class="down-icon-mobile" />
             </div>
             <nuxt-link
-              v-else
-              :class="`asideMeun ${pathname === menu.path && !isProductsClick ? 'active' : ''}`"
-              :href="menu.path"
+              v-if="isProductsMobile"
+              :class="`product-child`"
+              :to="localePath('/products/bank')"
               @click="handleClose"
             >
-              {{ menu.name }}
+              Duolingo English Test Practice
+            </nuxt-link>
+            <nuxt-link
+              v-if="isProductsMobile"
+              :class="`product-child`"
+              :to="localePath('/products/service')"
+              @click="handleClose"
+            >
+              Duolingo English Test Correction Service
+            </nuxt-link>
+            <nuxt-link
+              v-if="isProductsMobile"
+              :class="`product-child`"
+              :to="localePath('/products/mock')"
+              @click="handleClose"
+            >
+              Duolingo English Test Mock
+            </nuxt-link>
+            <nuxt-link
+              v-if="isProductsMobile"
+              :class="`product-child`"
+              :to="localePath('/products/guide')"
+              @click="handleClose"
+            >
+              Duolingo English Test Course
             </nuxt-link>
           </div>
-          <div v-if="user.id" href="/app">
-            <div class="loginbtn">
-              <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
-            </div>
-          </div>
-          <div v-else class="loginbtn">
-            <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
-            <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
-          </div>
+          <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose">
+            {{ menu.name }}
+          </nuxt-link>
         </div>
+      </div>
+      <div v-if="user.id" href="/app">
+        <div class="loginbtn-mobile">
+          <nuxt-link :href="urlGet('/home')" class="try_free"> Get started </nuxt-link>
+        </div>
+      </div>
+      <div v-else class="loginbtn-mobile">
+        <nuxt-link :to="localePath('/login')" class="try_free"> Try for free </nuxt-link>
+        <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
       </div>
     </el-drawer>
   </div>
 </template>
+<style lang="scss">
+.drawer-mobile {
+  padding: 0px;
+  .el-drawer__body {
+    padding: 0px;
+    position: relative;
+  }
+  .drawer-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 15px 15px 14px;
+    .mobileLogo {
+      font-size: 26px;
+    }
+    .mobile-cancel {
+      display: block;
+      width: 18px;
+      height: 18px;
+      color: #403f3e;
+    }
+  }
+  .asideMenus {
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    .asideMeun {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e9e9e9;
+      width: 100%;
+      padding: 14px 5px;
+      color: #201515;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover {
+        background: #f2f4f6;
+      }
+      .down-icon-mobile {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .asideMeun-pro {
+      box-sizing: border-box;
+      border-bottom: 1px solid #e9e9e9;
+      width: 100%;
+      padding: 14px 5px;
+      color: #201515;
+      font-size: 16px;
+      font-weight: 600;
+      .down-icon-mobile {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .asideMeun1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .product-child {
+      display: block;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 14px;
+      color: #403f3e;
+      border-radius: 6px;
+      font-weight: 400;
+      &:hover {
+        background: #f2f4f6;
+      }
+    }
+  }
+  .loginbtn-mobile {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    .login_font {
+      display: block;
+      width: 100%;
+      height: 38px;
+      line-height: 38px;
+      border-radius: 25px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #201515;
+      text-align: center;
+      border: 1px solid #201515;
+      margin-top: 12px;
+    }
+    .try_free {
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      background-color: #f66442;
+      border-radius: 25px;
+      font-weight: 500;
+      color: #ffffff;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+</style>
 <style lang="scss">
 .el-popover.el-popper {
   border: 0px red solid !important;
@@ -538,89 +644,7 @@ const logout = () => {
       line-height: 40px;
     }
   }
-  .asideMenu {
-    display: flex;
-    flex-direction: column;
-    .asideLogo {
-      width: 140px;
-      height: 40px;
-      padding-left: 15px;
-    }
-    .asideMenus {
-      // width: 200px;
-      width: 100%;
-      padding-top: 28px;
-      .asideMeun {
-        margin-bottom: 8px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        cursor: pointer;
-        box-sizing: border-box;
-        border: 2px solid #ffffff;
-        text-wrap: nowrap;
-        // width: 168px;
-        width: 100%;
-        height: 48px;
-        box-sizing: border-box;
-        padding-left: 14px;
-        padding-right: 14px;
-        justify-content: space-between;
-        color: #403f3e;
-        &.active {
-          background: #f6644210;
-          border-radius: 8px;
-          border-color: #f6644240;
-          color: #f66442;
-        }
-        .down-icon-mobile {
-          width: 16px;
-          height: 16px;
-        }
-      }
-      .product-child {
-        display: block;
-        box-sizing: border-box;
-        // width: 168px;
-        padding: 4px 4px 4px 20px;
-        font-size: 14px;
-        line-height: 16px;
-        color: #403f3e;
-      }
-      .product-child-checked {
-        color: #f66442;
-      }
-    }
-    .loginbtn {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 32px;
-      .login_font {
-        display: block;
-        width: 45%;
-        height: 32px;
-        line-height: 32px;
-        border-radius: 22px;
-        font-weight: 400;
-        font-size: 16px;
-        color: #403f3e;
-        text-align: center;
-        border: 1px solid #403f3e;
-      }
-      .try_free {
-        display: block;
-        width: 45%;
-        height: 32px;
-        line-height: 32px;
-        background-color: #f66442;
-        border-radius: 22px;
-        font-weight: 500;
-        color: #ffffff;
-        font-size: 16px;
-        text-align: center;
-      }
-    }
-  }
+
   .loginbtn {
     display: flex;
     align-items: center;

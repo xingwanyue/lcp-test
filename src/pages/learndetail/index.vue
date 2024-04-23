@@ -198,7 +198,7 @@ const rateChange = async () => {
     .title-checked {
       font-weight: 500;
       font-size: 20px;
-      color: rgba(144, 144, 144, 0.65);
+      color: #f66442;
       line-height: 28px;
     }
   }
@@ -212,7 +212,7 @@ const rateChange = async () => {
   }
   .rate-con {
     margin-top: 56px;
-    padding: 0px 30px;
+    // padding: 0px 30px;
   }
   .subs {
     margin-top: 78px;
@@ -256,7 +256,7 @@ const rateChange = async () => {
     .article-title-list {
       border-radius: 6px;
       padding: 12px;
-      width: calc(100% - 28px);
+      width: 100%;
       margin: auto;
       margin-top: 28px;
       .title {
@@ -278,7 +278,7 @@ const rateChange = async () => {
     .rate-con {
       margin-top: 28px;
       box-sizing: border-box;
-      padding: 0px 14px;
+      // padding: 0px 14px;
     }
     .subs {
       margin-top: 28px;
