@@ -272,16 +272,10 @@ const formateMinToHour = (min: number) => {
           </h4>
         </div>
         <div class="switch_out">
-          <div
-            @click="changeSwitchType('1')"
-            :class="[switchType === '1' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             Membership
           </div>
-          <div
-            @click="changeSwitchType('2')"
-            :class="[switchType === '2' ? 'switch_btn yellow common_btn_hover_bgColor' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
             More Service
           </div>
         </div>
@@ -295,14 +289,14 @@ const formateMinToHour = (min: number) => {
             <div class="card_price">
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
-                <div v-if="Number(item.originalPrice)" class="off">
+                <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
                   <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off</span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
               <div class="card_price_part3">
-                <div v-if="isVip" class="big_price">${{ item.vipPrice / 100 }}</div>
-                <div v-else class="big_price">${{ item.price / 100 }}</div>
+                <div v-if="isVip" class="big_price"><span class="symbol">$</span>{{ item.vipPrice / 100 }}</div>
+                <div v-else class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
                 <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
@@ -317,10 +311,7 @@ const formateMinToHour = (min: number) => {
                 <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free"> Try for free </NuxtLink>
               </div>
               <div v-else>
-                <div
-                  v-if="item.day !== 0"
-                  :class="['card_price_buy_btn', item.id === CurrentMembershipId && 'card_price_buy_btn1']"
-                >
+                <div v-if="item.day !== 0" :class="['card_price_buy_btn', item.flag === '1' && 'card_price_buy_btn1']">
                   <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
@@ -386,13 +377,13 @@ const formateMinToHour = (min: number) => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
+                <div class="card_price_buy_btn" @click="buyMembership(item.id)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
-                <div class="card_price_buy_btn common_btn_hover_bgColor">
+                <div class="card_price_buy_btn">
                   <NuxtLink :to="localePath(`/login?url=/pricing`)">Buy Now</NuxtLink>
                   <div class="scroll-line"></div>
                 </div>
@@ -484,13 +475,13 @@ const formateMinToHour = (min: number) => {
   /* 左右滚动效果 */
   .scroll-line {
     width: 12px;
-    height: 128%;
+    height: 132%;
     transform: rotate(30deg);
     background: rgba(255, 255, 255, 0.3);
     position: absolute;
     z-index: 3;
     left: 0px;
-    top: -15%;
+    top: -16%;
     white-space: nowrap;
     animation-name: around;
     animation-duration: 5s;
@@ -604,7 +595,7 @@ const formateMinToHour = (min: number) => {
             text-align: center;
             flex: 1;
             padding: 9px 0px;
-            line-height: 32px; 
+            line-height: 32px;
           }
 
           .card_price {
@@ -632,6 +623,9 @@ const formateMinToHour = (min: number) => {
                 font-size: 14px;
                 color: #fff;
               }
+              .off1 {
+                color: #4c2929;
+              }
             }
 
             .card_price_part2 {
@@ -653,6 +647,9 @@ const formateMinToHour = (min: number) => {
                 font-weight: 600;
                 font-size: 40px;
                 color: #4c2929;
+                .symbol {
+                  font-size: 20px;
+                }
               }
 
               .small_price {
@@ -843,6 +840,9 @@ const formateMinToHour = (min: number) => {
               margin-top: 32px;
               position: relative;
               color: white;
+              &:hover {
+                opacity: 0.9;
+              }
               a {
                 color: white;
               }
