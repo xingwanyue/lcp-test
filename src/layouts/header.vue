@@ -116,7 +116,7 @@ const logout = () => {
         >
           <el-popover
             v-if="menu.path === '/products'"
-            :visible="true"
+            :visible="popoverQuestions"
             placement="bottom"
             trigger="click"
             popper-class="head-question-popover"
