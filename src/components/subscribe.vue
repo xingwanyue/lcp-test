@@ -1,13 +1,19 @@
 <script setup lang="ts">
-const email = ref('');
+const email = ref("");
 const sendEmail = async () => {
+  // 验证email合法性
+  const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
+  if (!pan.test(email.value)) {
+    ElMessage.error("Invalid email");
+    return;
+  }
   const { err } = (await useFetch(`${api}/common/portalSubscribe`, {
-    method: 'post',
+    method: "post",
     body: { email: email.value },
   })) as any;
   if (!err) {
-    ElMessage.success('Subscribe successfully');
-    email.value = '';
+    ElMessage.success("Subscribe successfully");
+    email.value = "";
   }
 };
 </script>
@@ -17,11 +23,23 @@ const sendEmail = async () => {
     <div class="subscribe_out">
       <div class="subscribe_in_left">
         <div class="left_font1">Subscribe!</div>
-        <div class="left_font2">Get the latest exam news and tips for improving your score.</div>
+        <div class="left_font2">
+          Get the latest exam news and tips for improving your score.
+        </div>
       </div>
       <div class="subscribe_in_right">
-        <el-input size="large" v-model="email" style="width: 100%; height: 50px" placeholder="Email">
-          <template #append> <el-button @click="sendEmail" class="subscribe-btn">Subscribe</el-button></template>
+        <el-input
+          size="large"
+          v-model="email"
+          style="width: 100%"
+          placeholder="Email"
+          class="input_self"
+        >
+          <template #append>
+            <el-button @click="sendEmail" class="subscribe-btn"
+              >Subscribe</el-button
+            ></template
+          >
         </el-input>
       </div>
     </div>
@@ -99,8 +117,17 @@ const sendEmail = async () => {
   box-shadow: 0 0 0 2px #201515 inset !important;
 }
 .subscribe_in_right {
+  .input_self {
+    height: 50px;
+    @media (max-width: 450px) {
+      height: 40px;
+    }
+  }
   .el-input__inner {
     font-size: 18px;
+    @media (max-width: 450px) {
+      font-size: 18px;
+    }
   }
 }
 </style>
