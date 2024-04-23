@@ -658,9 +658,15 @@ const buyMembership = (id: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding-top: 100px;
+      @media screen and (max-width: 450px) {
+        padding-top: 50px;
+      }
       .orange_title {
         font-weight: 500;
         font-size: 40px;
+        @media screen and (max-width: 450px) {
+          font-size: 22px;
+        }
         color: #ffffff;
         text-align: center;
         margin: 0;
@@ -669,6 +675,9 @@ const buyMembership = (id: number) => {
         margin: 0 auto;
         font-weight: 400;
         font-size: 20px;
+        @media screen and (max-width: 450px) {
+          font-size: 14px;
+        }
         color: #ffffff;
         max-width: 900px;
         line-height: 28px;
