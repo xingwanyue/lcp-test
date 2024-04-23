@@ -59,21 +59,28 @@ const changeHeaderColor = (pathname: string) => {
       break;
   }
 };
-
+const productPaths = ['/products/bank', '/products/service', '/products/mock', '/products/guide'];
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
   visible.value = true;
+  // productPaths
+  if (productPaths.indexOf(pathname.value) !== -1) {
+    isProductsClick.value = true;
+    isProductsMobile.value = true;
+  }
 };
 
 const handleClose = () => {
   visible.value = false;
   isProductsMobile.value = false;
+  isProductsClick.value = false;
 };
 const productClick = () => {
   isProductsMobile.value = !isProductsMobile.value;
   isProductsClick.value = true;
 };
+
 const menus = [
   {
     name: t("Home"),
@@ -258,35 +265,35 @@ const logout = () => {
               <!-- Duolingo English -->
               <nuxt-link
                 v-if="isProductsMobile"
-                class="product-child"
+                :class="`product-child ${pathname === '/products/bank' ? 'product-child-checked' : ''}`"
                 :to="localePath('/products/bank')"
                 @click="handleClose"
               >
-                Test Practice
+                Duolingo English Test Practice
               </nuxt-link>
               <nuxt-link
                 v-if="isProductsMobile"
-                class="product-child"
+                :class="`product-child ${pathname === '/products/service' ? 'product-child-checked' : ''}`"
                 :to="localePath('/products/service')"
                 @click="handleClose"
               >
-                Test Correction Service
+                Duolingo English Test Correction Service
               </nuxt-link>
               <nuxt-link
                 v-if="isProductsMobile"
-                class="product-child"
+                :class="`product-child ${pathname === '/products/mock' ? 'product-child-checked' : ''}`"
                 :to="localePath('/products/mock')"
                 @click="handleClose"
               >
-                Test Mock
+                Duolingo English Test Mock
               </nuxt-link>
               <nuxt-link
                 v-if="isProductsMobile"
-                class="product-child"
+                :class="`product-child ${pathname === '/products/guide' ? 'product-child-checked' : ''}`"
                 :to="localePath('/products/guide')"
                 @click="handleClose"
               >
-                Test Course
+                Duolingo English Test Course
               </nuxt-link>
             </div>
             <nuxt-link
@@ -579,6 +586,7 @@ const logout = () => {
         padding-left: 14px;
         padding-right: 14px;
         justify-content: space-between;
+        color: #403f3e;
         &.active {
           background: #f6644210;
           border-radius: 8px;
@@ -594,8 +602,13 @@ const logout = () => {
         display: block;
         box-sizing: border-box;
         width: 168px;
-        padding: 4px 14px 4px 28px;
+        padding: 4px 4px 4px 20px;
         font-size: 14px;
+        line-height: 16px;
+        color: #403f3e;
+      }
+      .product-child-checked {
+        color: #f66442;
       }
     }
   }
