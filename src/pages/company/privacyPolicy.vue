@@ -150,7 +150,7 @@ const state = reactive({});
     }
     .content1 {
       font-size: 16px;
-      color: #201515;
+      color: rgba(0, 0, 0, 0.8);
       line-height: 20px;
       margin-top: 12px;
       .line-break {
