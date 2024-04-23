@@ -36,6 +36,9 @@ const user = computed(() => store.user);
 <style lang="scss" scoped>
 .embark_out_wrapper {
   padding: 0 30px;
+  @media (max-width: 450px) {
+    padding: 0 15px;
+  }
   background: #fff4f1;
   .embark_out {
     max-width: 1200px;

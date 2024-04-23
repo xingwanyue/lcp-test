@@ -400,6 +400,9 @@ const buyMembership = (id: number) => {
   background: linear-gradient(#e7fdec 0, #ffffff 657px, #ffffff 0px, #ffffff);
   .guide_wrapper_out {
     padding: 0px 30px;
+    @media (max-width: 450px) {
+      padding: 0 15px;
+    }
     .guide_wrapper {
       // border: 1px red solid;
       max-width: 1200px;
@@ -543,6 +546,9 @@ const buyMembership = (id: number) => {
   }
   .part3_wrapper {
     padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
     background: #fff4f1;
     margin-top: 120px;
     @media screen and (max-width: 450px) {
@@ -653,6 +659,9 @@ const buyMembership = (id: number) => {
   }
   .orange_block_wrapper {
     padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
     background: #f66442;
     .orange_block {
       max-width: 1200px;
