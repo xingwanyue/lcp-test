@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
-  css: ['@/assets/iconfont/iconfont.css'],
+  css: ['@/assets/iconfont/iconfont.css', 'aos/dist/aos.css'],
   i18n: {
     locales: ['en', 'id'],
     defaultLocale: 'en',
@@ -34,7 +34,6 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        { rel: 'stylesheet', href: '/css/aos.css' },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css?family=Nunito',
