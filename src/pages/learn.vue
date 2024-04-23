@@ -373,7 +373,7 @@ const handleChange = () => {
       .learn_content {
         max-width: 100%;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 12px;
         margin-bottom: 40px;
         display: block;
       }

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const email = ref("");
+const email = ref('');
 const sendEmail = async () => {
   const { err } = (await useFetch(`${api}/common/portalSubscribe`, {
-    method: "post",
+    method: 'post',
     body: { email: email.value },
   })) as any;
   if (!err) {
-    ElMessage.success("Subscribe successfully");
-    email.value = "";
+    ElMessage.success('Subscribe successfully');
+    email.value = '';
   }
 };
 </script>
@@ -17,22 +17,11 @@ const sendEmail = async () => {
     <div class="subscribe_out">
       <div class="subscribe_in_left">
         <div class="left_font1">Subscribe!</div>
-        <div class="left_font2">
-          Get the latest exam news and tips for improving your score.
-        </div>
+        <div class="left_font2">Get the latest exam news and tips for improving your score.</div>
       </div>
       <div class="subscribe_in_right">
-        <el-input
-          size="large"
-          v-model="email"
-          style="width: 100%; height: 50px"
-          placeholder="Email"
-        >
-          <template #append>
-            <el-button @click="sendEmail" class="subscribe-btn"
-              >Subscribe</el-button
-            ></template
-          >
+        <el-input size="large" v-model="email" style="width: 100%; height: 50px" placeholder="Email">
+          <template #append> <el-button @click="sendEmail" class="subscribe-btn">Subscribe</el-button></template>
         </el-input>
       </div>
     </div>
@@ -65,6 +54,7 @@ const sendEmail = async () => {
         color: #201515;
         @media (max-width: 768px) {
           font-size: 26px;
+          text-align: center;
         }
       }
       .left_font2 {
@@ -74,6 +64,7 @@ const sendEmail = async () => {
         margin-top: 8px;
         @media (max-width: 768px) {
           font-size: 16px;
+          text-align: center;
         }
       }
     }
