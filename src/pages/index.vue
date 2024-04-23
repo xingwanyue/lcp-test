@@ -986,7 +986,8 @@ const googleLogin = () => {
         .one_score {
           width: 312px !important;
           @media (max-width: 450px) {
-            width: 220px !important;
+            width: 176px !important;
+            margin-left: 12px;
           }
           box-sizing: border-box;
           height: fit-content;
