@@ -372,24 +372,28 @@ const closeCookie = () => {
         }
         .youtube {
           background-image: url("/img/footer/youtube_logo.svg");
+          background-size: cover;
           &:hover {
             background-image: url("/img/footer/youtube_logo_active.svg");
           }
         }
         .x {
           background-image: url("/img/footer/x_logo.svg");
+          background-size: cover;
           &:hover {
             background-image: url("/img/footer/x_logo_active.svg");
           }
         }
         .facebook {
           background-image: url("/img/footer/facebook_logo.svg");
+          background-size: cover;
           &:hover {
             background-image: url("/img/footer/facebook_logo_active.svg");
           }
         }
         .tiktok {
           background-image: url("/img/footer/tiktok_logo.svg");
+          background-size: cover;
           &:hover {
             background-image: url("/img/footer/tiktok_logo_active.svg");
           }
