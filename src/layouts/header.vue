@@ -428,14 +428,12 @@ const logout = () => {
         &.active {
           // border-bottom: 4px solid #f66442;
           a {
-            color: #201515;
-            font-weight: 500;
+            color: #f66442;
           }
         }
         &:hover {
           a {
-            color: #201515;
-            font-weight: 500;
+            color: #f66442;
           }
         }
       }
