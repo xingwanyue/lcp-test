@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const email = ref('');
+const email = ref("");
 const sendEmail = async () => {
   const { err } = (await useFetch(`${api}/common/portalSubscribe`, {
-    method: 'post',
+    method: "post",
     body: { email: email.value },
   })) as any;
   if (!err) {
-    ElMessage.success('Subscribe successfully');
-    email.value = '';
+    ElMessage.success("Subscribe successfully");
+    email.value = "";
   }
 };
 </script>
@@ -17,12 +17,22 @@ const sendEmail = async () => {
     <div class="subscribe_out">
       <div class="subscribe_in_left">
         <div class="left_font1">Subscribe!</div>
-        <div class="left_font2">Get the latest exam news and tips for improving your score.</div>
+        <div class="left_font2">
+          Get the latest exam news and tips for improving your score.
+        </div>
       </div>
       <div class="subscribe_in_right">
-        <el-input size="large" v-model="email" style="width: 100%;height: 50px;" placeholder="Email">
+        <el-input
+          size="large"
+          v-model="email"
+          style="width: 100%; height: 50px"
+          placeholder="Email"
+        >
           <template #append>
-            <el-button @click="sendEmail" class="subscribe-btn">Subscribe</el-button></template>
+            <el-button @click="sendEmail" class="subscribe-btn"
+              >Subscribe</el-button
+            ></template
+          >
         </el-input>
       </div>
     </div>
@@ -32,6 +42,9 @@ const sendEmail = async () => {
 .subscribe_out_wrapper {
   padding: 64px 30px;
   background: #fff4f1;
+  @media (max-width: 768px) {
+    padding: 34px 30px;
+  }
   .subscribe_out {
     max-width: 1200px;
     margin: 0 auto;
@@ -41,32 +54,41 @@ const sendEmail = async () => {
     flex-wrap: wrap;
     grid-column-gap: 80px;
     grid-row-gap: 40px;
+    @media (max-width: 768px) {
+      grid-row-gap: 20px;
+    }
     .subscribe_in_left {
       min-width: 300px;
       .left_font1 {
         font-weight: 500;
         font-size: 40px;
         color: #201515;
+        @media (max-width: 768px) {
+          font-size: 26px;
+        }
       }
       .left_font2 {
         font-weight: 400;
         font-size: 20px;
         color: #201515;
         margin-top: 8px;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
       }
     }
     .subscribe_in_right {
       flex: 1;
       min-width: 300px;
-      .subscribe-btn{
+      .subscribe-btn {
         width: 100%;
         height: 100%;
         border-radius: 0px 8px 8px 0px;
-        background: #F66442;
-        border-color:#F66442;
+        background: #f66442;
+        border-color: #f66442;
         font-size: 18px;
-        &:hover{
-          background: rgba(0,0,0,0.1);
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
         }
       }
     }
@@ -85,8 +107,8 @@ const sendEmail = async () => {
 .el-input__wrapper.is-focus {
   box-shadow: 0 0 0 2px #201515 inset !important;
 }
-.subscribe_in_right{
-  .el-input__inner{
+.subscribe_in_right {
+  .el-input__inner {
     font-size: 18px;
   }
 }
