@@ -52,13 +52,17 @@ const submit = async () => {
     state.loading = false;
   });
 };
+useSeoMeta({
+  title: 'Contact Us - DET Practice',
+  description: '',
+});
 </script>
 <template>
   <div class="contactus">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <h1 class="title">Contact Us</h1>
-        <h2 class="title2">Questions, bug reports, feedback - we’re here to help!</h2>
+        <div class="title">Contact Us</div>
+        <div class="title2">Questions, bug reports, feedback - we’re here to help!</div>
       </div>
     </div>
     <div class="content">

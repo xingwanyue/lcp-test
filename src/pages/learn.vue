@@ -66,6 +66,11 @@ const handleClose = () => {
 const handleChange = () => {
   state.selFatherData = find(state.selectList, { id: state.activeName }) || {};
 };
+useSeoMeta({
+  title: 'DET Practice: Learn the expert Tips for the Duolingo English Test',
+  description:
+    'Explore expert strategies and study methods to excel on the Duolingo English Test. Our blog offers actionable tips and insights to enhance your preparation and boost your score.',
+});
 </script>
 <template>
   <div class="learn">
@@ -75,7 +80,7 @@ const handleChange = () => {
           <h1 class="title">We will update the exam preparation tips of Duolingo English Test timely</h1>
         </div>
         <div>
-          <h2 class="title2">The lastest update is until March 1, 2024</h2>
+          <div class="title2">The lastest update is until March 1, 2024</div>
         </div>
       </div>
     </div>
