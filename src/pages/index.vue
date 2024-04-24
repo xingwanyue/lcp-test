@@ -1118,6 +1118,10 @@ const googleLogin = () => {
                   flex-shrink: 0;
                   border-radius: 50%;
                   overflow: hidden;
+                  @media (max-width: 450px) {
+                    width: 28px;
+                    height: 28px;
+                  }
                   img {
                     width: 100%;
                     height: 100%;
@@ -1129,6 +1133,9 @@ const googleLogin = () => {
                     font-size: 16px;
                     color: #201515;
                     text-align: left;
+                    @media (max-width: 450px) {
+                      font-size: 14px;
+                    }
                   }
                   .country {
                     margin-top: 4px;
@@ -1136,6 +1143,9 @@ const googleLogin = () => {
                     font-size: 14px;
                     color: #403f3e;
                     text-align: left;
+                    @media (max-width: 450px) {
+                      font-size: 10px;
+                    }
                   }
                 }
               }
@@ -1151,6 +1161,9 @@ const googleLogin = () => {
               color: #201515;
               margin-top: 24px;
               text-align: left;
+              @media (max-width: 450px) {
+                font-size: 16px;
+              }
             }
           }
         }
