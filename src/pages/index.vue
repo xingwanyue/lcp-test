@@ -355,7 +355,7 @@ const googleLogin = () => {
           <!-- {{ usersockerArr }} -->
           <Carousel
             :itemsToShow="6"
-            :autoplay="1000"
+            :autoplay="2000"
             :wrap-around="true"
             :pauseAutoplayOnHover="true"
           >
@@ -399,7 +399,7 @@ const googleLogin = () => {
           >
             <Carousel
               :itemsToShow="4"
-              :autoplay="1000"
+              :autoplay="2000"
               :wrap-around="true"
               :pauseAutoplayOnHover="true"
             >
@@ -1015,6 +1015,11 @@ const googleLogin = () => {
                 height: 48px;
                 border-radius: 50%;
                 overflow: hidden;
+                flex-shrink: 0;
+                @media (max-width: 450px) {
+                  width: 28px;
+                  height: 28px;
+                }
                 img {
                   width: 100%;
                   height: 100%;
@@ -1026,12 +1031,18 @@ const googleLogin = () => {
                   font-size: 16px;
                   color: #201515;
                   text-align: left;
+                  @media (max-width: 450px) {
+                    font-size: 12px;
+                  }
                 }
                 .user_country {
                   font-weight: 400;
                   font-size: 14px;
                   color: #403f3e;
                   text-align: left;
+                  @media (max-width: 450px) {
+                    font-size: 10px;
+                  }
                 }
               }
             }
@@ -1107,6 +1118,10 @@ const googleLogin = () => {
                   flex-shrink: 0;
                   border-radius: 50%;
                   overflow: hidden;
+                  @media (max-width: 450px) {
+                    width: 28px;
+                    height: 28px;
+                  }
                   img {
                     width: 100%;
                     height: 100%;
@@ -1118,6 +1133,9 @@ const googleLogin = () => {
                     font-size: 16px;
                     color: #201515;
                     text-align: left;
+                    @media (max-width: 450px) {
+                      font-size: 14px;
+                    }
                   }
                   .country {
                     margin-top: 4px;
@@ -1125,6 +1143,9 @@ const googleLogin = () => {
                     font-size: 14px;
                     color: #403f3e;
                     text-align: left;
+                    @media (max-width: 450px) {
+                      font-size: 10px;
+                    }
                   }
                 }
               }
@@ -1140,6 +1161,9 @@ const googleLogin = () => {
               color: #201515;
               margin-top: 24px;
               text-align: left;
+              @media (max-width: 450px) {
+                font-size: 16px;
+              }
             }
           }
         }
