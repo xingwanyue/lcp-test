@@ -11,7 +11,7 @@ const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`
   transform: (data: any) => {
     return data.map((d: any) => ({
       ...d,
-      data: JSON.parse(d.data),
+      data:{...JSON.parse(d.data),nickname:JSON.parse(d.data).nickname.replace(/(.{1}).*(.{1})/, '$1***$2')},
     }));
   },
 })) as any;
@@ -529,10 +529,9 @@ const formateMinToHour = (min: number) => {
                   <img v-if="item.data.avatar" :src="staticUrlGet(item.data.avatar)" />
                 </div>
                 <div class="country_name">{{ item.data.country }}</div>
-              </div>
-              <div class="scroll_buyed_right">
                 <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
               </div>
+              
             </Slide>
           </Carousel>
         </div>
@@ -1067,7 +1066,7 @@ const formateMinToHour = (min: number) => {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            grid-gap: 12px;
+            grid-gap: 16px;
             flex: 1;
             .flag {
               width: 36px;
@@ -1095,19 +1094,12 @@ const formateMinToHour = (min: number) => {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
+              flex:1;
+              text-align: left;
               @media (max-width: 528px) {
                 font-size: 12px;
               }
             }
-          }
-
-          .scroll_buyed_right {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            // border: 1px red solid;
-            flex: 1;
-
             .time {
               font-weight: 400;
               font-size: 16px;
@@ -1117,6 +1109,8 @@ const formateMinToHour = (min: number) => {
               }
             }
           }
+
+          
         }
       }
 
