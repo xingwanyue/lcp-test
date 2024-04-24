@@ -2,6 +2,7 @@ import { defineStore } from 'pinia';
 import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
 import { useRouter } from 'vue-router';
+import { payEvent, beginCheckoutEvent } from '@/utils/gtag';
 
 import { api, saveToken, getToken, removeToken, delay } from '@/utils';
 import { fetchmy } from '@/utils/request';
@@ -92,8 +93,9 @@ export const useStore = defineStore({
       console.log('checkPayStatus');
       const { err, data = {} } = await stripePayStatusGet(logVipId, token);
       if (!err) {
-        const { code, vipEndTime, vipDays, examNum, correctNum } = data;
+        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount } = data;
         if (code === 1) {
+          payEvent(id, amount);
           this.user.vipEndTime = vipEndTime;
           if (examNum) {
             this.user.examNum = (this.user.examNum || 0) + examNum;
@@ -121,22 +123,19 @@ export const useStore = defineStore({
             });
           }
         } else {
-          console.log('delay start');
           await delay(1000);
-          console.log('delay end');
           await this.checkPayStatus(logVipId, token);
         }
       }
     },
     async stripePay(payload: any) {
       const token = await getToken(false);
-      console.log('stripePay',token)
       if (!token) {
         const router = useRouter();
-        console.log(router)
+        console.log(router);
         const localePath = useLocalePath();
-        console.log(localePath('/login'))
-        router.push(localePath('/login'))
+        console.log(localePath('/login'));
+        router.push(localePath('/login'));
         return;
       }
       const { err, data } = await stripePayUrlGet(payload, token);
@@ -144,6 +143,7 @@ export const useStore = defineStore({
         const { logVipId, url } = data;
 
         if (url) {
+          beginCheckoutEvent();
           this.checkPayStatus(logVipId, token);
           window.open(url, '_blank');
         }
