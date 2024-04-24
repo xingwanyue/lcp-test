@@ -189,7 +189,9 @@ const logout = () => {
         </nav>
       </div>
       <div class="mobile">
-        <span class="icon iconfont icon-logo mobileLogo"></span>
+        <nuxt-link :to="localePath('/')" class="">
+          <span class="icon iconfont icon-logo mobileLogo"></span>
+        </nuxt-link>
       </div>
       <div v-if="user.id" href="/app">
         <!-- <el-popover placement="top-start" trigger="hover" class="111">
@@ -222,7 +224,9 @@ const logout = () => {
       :before-close="handleClose"
     >
       <div class="drawer-head">
-        <span class="icon iconfont icon-logo mobileLogo"></span>
+        <nuxt-link :to="localePath('/')" class="" @click="handleClose">
+          <span class="icon iconfont icon-logo mobileLogo"></span>
+        </nuxt-link>
         <el-image class="mobile-cancel" @click="handleClose" src="/img/learn/mobile-close.svg" />
       </div>
       <div class="asideMenus">
