@@ -608,7 +608,7 @@ const logout = () => {
         }
         .head-name-products {
           height: 68px;
-          margin-bottom: 4px;
+          border-bottom: 4px;
           display: flex;
           align-items: center;
         }
