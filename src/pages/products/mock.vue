@@ -6,10 +6,9 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useSeoMeta({
-  title: "Duolingo Practice Question Bank",
+  title: "DET Practice: Full-Scale Mock Exam for Realistic Preparation",
   description:
-    "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.",
-  keywords: "Duolingo Practice Question Bank",
+    "Experience the closest simulation to the real Duolingo English Test with our full-scale mock exams. Get accurate scoring, comprehensive reports, and fast feedback to identify and work on your weaknesses.",
 });
 // 获取平台数据
 const {
@@ -113,7 +112,7 @@ const {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Algorithmic intelligence</div>
+                <h2 class="right_title">Algorithmic intelligence</h2>
                 <div class="right_desc">
                   Intelligent adaptive question generation algorithm covering all question
                   types, replicating the real examination process.

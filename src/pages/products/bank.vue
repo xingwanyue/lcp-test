@@ -6,10 +6,9 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useSeoMeta({
-  title: "Duolingo Practice Question Bank",
+  title: "DET Practice:The most powerful website for Duolingo practice test. ",
   description:
-    "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.",
-  keywords: "Duolingo Practice Question Bank",
+    "The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.",
 });
 // 获取平台数据
 const {
@@ -109,7 +108,7 @@ const {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Abundant test questions</div>
+                <h2 class="right_title">Abundant test questions</h2>
                 <div class="right_desc">
                   Providing over <span class="strong">ten thousand questions</span>,
                   covering various types of exams, and continuously updating the question
