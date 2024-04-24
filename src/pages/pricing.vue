@@ -343,9 +343,31 @@ const membershipUnchanging = ref([
 ]) as any;
 
 const copy = async (email: any) => {
-  await navigator.clipboard.writeText(`${email}`);
-  // element3提示成功
-  ElMessage.success("Copy successfully");
+  if (navigator.clipboard) {
+    // 尝试使用 Clipboard API
+    try {
+      await navigator.clipboard.writeText(email);
+      ElMessage.success("Copy successfully");
+    } catch (err) {
+      ElMessage.error("Failed to copy text: " + err);
+    }
+  } else if (document.execCommand) {
+    // 尝试使用 document.execCommand
+    const textarea = document.createElement("textarea");
+    textarea.value = email;
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand("copy");
+      ElMessage.success("Copy successfully");
+    } catch (err) {
+      ElMessage.error("Failed to copy text: " + err);
+    } finally {
+      document.body.removeChild(textarea);
+    }
+  } else {
+    ElMessage.error("Your browser does not support copying text to clipboard.");
+  }
 };
 const openchat = () => {
   (window as any).$crisp.push(["do", "chat:open"]);
@@ -636,9 +658,13 @@ const formateMinToHour = (min: number) => {
             <div v-if="item.type === '2'" class="btn" @click="copy(item.btn)">
               {{ item.btn }}
             </div>
-            <div v-if="item.type === '3'" class="btn">
-              <NuxtLink :to="localePath(`/company/contactus`)">{{ item.btn }}</NuxtLink>
-            </div>
+            <NuxtLink
+              v-if="item.type === '3'"
+              class="btn"
+              :to="localePath(`/company/contactus`)"
+            >
+              <div>{{ item.btn }}</div>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -1361,6 +1387,7 @@ const formateMinToHour = (min: number) => {
             font-size: 16px;
             color: #201515;
             margin-top: 24px;
+            display: block;
             cursor: pointer;
             &:hover {
               border: 2px solid #201515;
