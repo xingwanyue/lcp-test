@@ -39,7 +39,7 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            '超全真题，难度分级；智能学习计划，高效备考；写作全名师批改指导；口语AI评分，纠正发音；性价比超高名师课程。',
+            'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
         },
         { hid: 'keywords', name: 'keywords', content: '大牛多邻国，多邻国，DET考试，英语水平考试，留学考试，留学申请' },
       ],
