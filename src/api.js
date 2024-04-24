@@ -45,3 +45,8 @@ export const logout = async () => {
     },
   });
 };
+export const register = (args) =>
+  fetchmy(`${api}/common/register`, {
+    method: 'post',
+    body: JSON.stringify(args),
+  });

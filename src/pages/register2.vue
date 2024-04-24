@@ -2,7 +2,7 @@
   <div class="login">
     <div class="left">
       <div class="t1">Sign up</div>
-      <h1 class="t2">Create your free DETPractice account</h1>
+      <div class="t2">Create your free DETPractice account</div>
       <div class="loginGoogle" @click="googleRegister">
         <img src="/img/login/google_logo.svg" alt="" />
         <span style="margin-left: 16px">Sign up with Google</span>
@@ -16,34 +16,54 @@
         class="login-form"
         @submit.native.prevent
       >
-        <el-form-item prop="email" label="" style="margin-bottom: 16px">
-          Email address
-          <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
+        <el-form-item prop="code" label="">
+          Register code
+          <el-input v-model="formData.code" placeholder="Enter your code"> </el-input>
         </el-form-item>
-        <div class="desc">You will receive your activation code by email</div>
+        <el-form-item prop="nickname" label="">
+          Full Name
+          <el-input v-model="formData.nickname" maxlength="100" placeholder="Full Name">
+          </el-input>
+        </el-form-item>
+        <el-form-item prop="password" label="">
+          Password
+          <el-input
+            v-model="formData.password"
+            :type="pwdShow ? 'text' : 'password'"
+            maxlength="20"
+            placeholder="Password"
+          >
+            <template #suffix>
+              <img
+                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                style="cursor: pointer"
+                alt=""
+                @click="pwdShow = !pwdShow"
+              />
+            </template>
+          </el-input>
+        </el-form-item>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
             <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
             <span>{{ errMessage }}</span>
           </div>
-          <div class="login_btn_out">
-            <el-button
-              v-loading="loading"
-              type="primary"
-              native-type="submit"
-              class="submit"
-              @click="submit"
-            >
-              Continue with email
-            </el-button>
-          </div>
+          <el-button
+            v-loading="loading"
+            type="primary"
+            native-type="submit"
+            class="submit"
+            @click="submit"
+          >
+            Create Account
+          </el-button>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
             <div class="goregister">
               Already have an account?
               <span style="color: #f66442; cursor: pointer" @click="goLogin"
-                >Login here</span
+                >Login here.</span
               >
             </div>
           </div>
@@ -54,13 +74,15 @@
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
-import { sesCodeSend } from "@/api";
+import { ref } from "vue";
+import { useRouter, useRoute } from "vue-router";
+import { register } from "@/api";
 definePageMeta({
   layout: "noheaderfooter",
 });
 
 const router = useRouter();
+const route = useRoute();
 
 const formData = ref({});
 const loading = ref(false);
@@ -70,25 +92,39 @@ const errShow = ref(false);
 
 const submit = async () => {
   if (loading.value) return false;
-  const { email } = formData.value || {};
+  const { email, code, nickname, password } = formData.value || {};
   errShow.value = false;
-  if (!email) {
+  if (!code) {
+    errShow.value = true;
+    errMessage.value = "Please enter your code.";
+    return false;
+  }
+  if (!nickname) {
+    errShow.value = true;
+    errMessage.value = "Please enter your full name.";
+    return false;
+  }
+  if (!password) {
     errShow.value = true;
     errMessage.value = "Please enter your email address.";
     return false;
   }
-  const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
-  if (!pan.test(email)) {
+  if (password.length < 6) {
     errShow.value = true;
-    errMessage.value = "Invalid email.";
+    errMessage.value = "Password too short.";
     return false;
   }
+  const temp = {
+    email,
+    nickname,
+    code,
+    password,
+  };
   loading.value = true;
-  const { err } = await sesCodeSend({ email: formData.value.email, type: "register" });
+  const { err } = await register(temp);
   loading.value = false;
-  console.log("6666666666666");
   if (!err) {
-    router.push({ path: "/register2", query: { email: formData.value.email } });
+    router.push("/login");
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -99,25 +135,27 @@ const goLogin = () => {
   router.push("/login");
 };
 
-const googleRegister = () => {};
+const googleRegister = () => {
+  // TODO: Implement Google registration
+};
 </script>
 
 <style lang="scss">
 .login {
+  .el-loading-mask {
+    border-radius: 25px !important;
+  }
   .login_btn_out {
     // border: 1px red solid;
     border-radius: 25px;
     background-color: red;
-    .el-loading-mask {
-      border-radius: 25px;
-    }
   }
   .submit {
     width: 400px;
     color: #fff;
     background-color: #f66442;
     border-color: #f66442;
-    font-size: 18px;
+    font-size: 14px;
     &:hover,
     &:active {
       color: #fff !important;
@@ -133,9 +171,6 @@ const googleRegister = () => {};
       border-color: rgba(0, 0, 0, 0.45) !important;
     }
   }
-  .el-input__wrapper {
-    height: 40px;
-  }
   .el-input__suffix-inner > img {
     margin-top: 1px !important;
   }
@@ -150,9 +185,8 @@ const googleRegister = () => {};
   height: 100vh;
   overflow: hidden;
   .left {
-    flex: none;
     width: 400px;
-
+    flex: none;
     background-color: #f7f8f9;
     display: flex;
     flex-direction: column;
@@ -162,6 +196,7 @@ const googleRegister = () => {};
     .t1 {
       width: 400px;
       font-size: 32px;
+
       font-weight: 600;
       color: #333333;
       line-height: 45px;
@@ -169,6 +204,7 @@ const googleRegister = () => {};
     .t2 {
       width: 400px;
       font-size: 16px;
+
       font-weight: 600;
       color: rgba(0, 0, 0, 0.45);
       line-height: 22px;
@@ -178,13 +214,13 @@ const googleRegister = () => {};
       display: flex;
       align-items: center;
       width: 400px;
-      height: 26px;
+      height: 40px;
       background: #fef7f5;
       border-radius: 4px;
       border: 1px solid rgba(246, 100, 66, 0.1);
       box-sizing: border-box;
       color: #f66442;
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 8px;
       .errIcon {
         width: 16px;
@@ -201,6 +237,7 @@ const googleRegister = () => {};
       background: #ffffff;
       font-size: 18px;
       margin-top: 49px;
+
       font-weight: 600;
       color: #333333;
       cursor: pointer;
@@ -211,18 +248,12 @@ const googleRegister = () => {};
     .fengeline {
       width: 400px;
       margin-top: 48px;
-      :deep(.el-divider__text) {
+      .el-divider__text {
         background-color: #f7f8f9;
         font-weight: 400;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.45);
       }
-    }
-    .desc {
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(0, 0, 0, 0.45);
-      line-height: 20px;
     }
   }
   .right {
