@@ -124,10 +124,11 @@ const googleLogin = () => {
           <div class="h_one">
             <h1 v-if="isMobile">
               Get Higher Score Easily <br />in the Duolingo <br />English Test With
+              <span class="seo_hack">DET Practice</span>
             </h1>
             <h1 v-else>
               Get Higher Score Easily in the <br />
-              Duolingo English Test With
+              Duolingo English Test With <span class="seo_hack">DET Practice</span>
             </h1>
           </div>
           <div class="animat_wrap">
@@ -562,6 +563,9 @@ const googleLogin = () => {
             @media (max-width: 450px) {
               font-size: 24px;
             }
+          }
+          .seo_hack {
+            display: none;
           }
         }
         .animat_wrap {
