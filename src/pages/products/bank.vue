@@ -88,7 +88,7 @@ const {
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`login`)"
+                :to="localePath(`login?url=/products/bank`)"
               >
                 <div class="font">Practice For Free</div>
                 <div class="icon">
@@ -121,7 +121,7 @@ const {
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`login?url=/products/bank`)">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
@@ -149,7 +149,7 @@ const {
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`login?url=/products/bank`)">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
@@ -176,7 +176,7 @@ const {
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`login?url=/products/bank`)">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
@@ -205,7 +205,7 @@ const {
                     <img src="/img/products/blue_arrow_right.svg" />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`login`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`login?url=/products/bank`)">
                   <div class="font">Start experiencing</div>
                   <div class="arrow">
                     <img src="/img/products/blue_arrow_right.svg" />
