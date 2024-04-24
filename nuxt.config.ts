@@ -41,7 +41,7 @@ export default defineNuxtConfig({
           content:
             'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
         },
-        { hid: 'keywords', name: 'keywords', content: '大牛多邻国，多邻国，DET考试，英语水平考试，留学考试，留学申请' },
+        // { hid: 'keywords', name: 'keywords', content: '大牛多邻国，多邻国，DET考试，英语水平考试，留学考试，留学申请' },
       ],
     },
   },
