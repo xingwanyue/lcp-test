@@ -13,7 +13,7 @@ const state = reactive({
   infoList: [] as any,
   drawerVisible: false,
   isMore: false,
-  // 是否展示showMore
+  // Is showMore displayed
   isShow: false,
   activeName: '',
   page: 1,
@@ -24,14 +24,14 @@ const state = reactive({
 const getSelect = async () => {
   const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, { server: true })) as any;
   state.selectList = getTree(data.value, null, null);
-  // 默认第一个
+  // Default First
   state.selFatherData = head(state.selectList) || {};
   state.selConData = head(state.selFatherData.children) || {};
   state.activeName = state.selFatherData.id;
 };
 await getSelect();
 const getInfo = async () => {
-  // 需要传左侧的类型
+  // Need to pass the type on the left side
   const args = {
     categoryId: state.selConData.id,
     page: state.page,

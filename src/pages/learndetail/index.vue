@@ -26,7 +26,7 @@ const state = reactive({
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
 const getList = async () => {
-  // 兼容blog
+  // compatible blog
   if (props.type === '1') {
     const { data: { value = {} } = {} } = (await useFetch(`${api}/common/article`, {
       server: true,
@@ -36,7 +36,7 @@ const getList = async () => {
     })) as any;
     state.list = value?.data;
   } else if (props.type === '2') {
-    // 兼容learn
+    // compatible learn
     const { data: { value = {} } = {} } = (await useFetch(`${articleGet}?categoryId=${props.categoryId}`, {
       server: true,
     })) as any;

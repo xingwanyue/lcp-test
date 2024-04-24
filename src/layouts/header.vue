@@ -317,7 +317,7 @@ const logout = () => {
       align-items: center;
       justify-content: space-between;
       box-sizing: border-box;
-      border-bottom: 1px solid #e9e9e9;
+      border-bottom: 2px solid #e9e9e9;
       width: 100%;
       padding: 14px 5px;
       color: #201515;
