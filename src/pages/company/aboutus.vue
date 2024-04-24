@@ -2,12 +2,16 @@
 import { reactive } from 'vue';
 
 const state = reactive({});
+useSeoMeta({
+  title: 'About Us - DET Practice',
+  description: '',
+});
 </script>
 <template>
   <div class="aboutus">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <h1 class="title">About DET Pratice</h1>
+        <div class="title">About DET Pratice</div>
       </div>
     </div>
     <div class="content padding">
