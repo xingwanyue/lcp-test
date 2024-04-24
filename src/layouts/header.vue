@@ -171,7 +171,7 @@ const logout = () => {
             </div>
             <template #reference>
               <nuxt-link
-                class="head-name head-name-products"
+                :class="`head-name head-name-products ${popoverQuestions ? 'head-name-products1' : ''}`"
                 @mouseover="popoverQuestions = true"
                 @mouseleave="popoverQuestions = false"
               >
@@ -607,6 +607,9 @@ const logout = () => {
           margin-bottom: 4px;
           display: flex;
           align-items: center;
+        }
+        .head-name-products1 {
+          color: #f66442;
         }
         &.active {
           // border-bottom: 4px solid #f66442;
