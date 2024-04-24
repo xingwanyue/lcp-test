@@ -75,15 +75,21 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
       if (item.type === "1") {
         if (item.day === 0) {
           item.qlList = [
-            { name: 1, desc: `${freeNum} Free Practices / day`, tips: "" },
+            {
+              name: 1,
+              desc: `<span class='bigger'>20</span> Practice Questions`,
+              tips: "",
+            },
             {
               name: 2,
-              desc: `$${correct.price / 100} / 5 Correction Services`,
+              desc: `<span class='bigger'>$${
+                correct.price / 100
+              } / 5</span> Correction Services`,
               tips: "",
             },
             {
               name: 3,
-              desc: `<span class='bigger'>$${exam.price / 100}</span> / 1 Mock Exam`,
+              desc: `<span class='bigger'>$${exam.price / 100} / 1 </span> Mock Exam`,
               tips: "",
             },
             {
