@@ -93,7 +93,8 @@ const errShow = ref(false);
 
 const submit = async () => {
   if (loading.value) return false;
-  const { email, code, nickname, password } = formData.value || {};
+  const { code, nickname, password } = formData.value || {};
+  const email = route.query.email;
   errShow.value = false;
   if (!code) {
     errShow.value = true;
