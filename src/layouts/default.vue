@@ -3,6 +3,7 @@ import { loginBycredential } from '@/utils/googleAuth';
 import { saveToken, getToken } from '@/utils';
 import { useRouter } from 'vue-router';
 import { useStore } from '@/store';
+import { sinupEvent } from '@/utils/gtag';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
 
@@ -34,6 +35,9 @@ onMounted(async () => {
         err,
       } = await loginBycredential(response.credential);
       if (!err) {
+        if (isNew) {
+          sinupEvent();
+        }
         await saveToken(token);
         store.getUserInfo();
         router.push('/');

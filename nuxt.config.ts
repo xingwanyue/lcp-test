@@ -30,8 +30,17 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css?family=Nunito',
         },
       ],
-      title: 'Det',
-      // title: '大牛多邻国 - 高效备考多邻国考试',
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-BTN96NLD4D',
+          async: true,
+        },
+        {
+          src: '/js/googleAnalytics.js',
+          async: true,
+        },
+      ],
+      title: 'DetPractice',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,7 +50,6 @@ export default defineNuxtConfig({
           content:
             'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
         },
-        // { hid: 'keywords', name: 'keywords', content: '大牛多邻国，多邻国，DET考试，英语水平考试，留学考试，留学申请' },
       ],
     },
   },
