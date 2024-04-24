@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { loginBycredential } from "@/utils/googleAuth";
-import { saveToken, getToken } from "@/utils";
-import { useRouter } from "vue-router";
-import { useStore } from "@/store";
-import vHeader from "./header.vue";
-import vFooter from "./footer.vue";
+import { loginBycredential } from '@/utils/googleAuth';
+import { saveToken, getToken } from '@/utils';
+import { useRouter } from 'vue-router';
+import { useStore } from '@/store';
+import vHeader from './header.vue';
+import vFooter from './footer.vue';
 
 const router = useRouter();
 
 const store = useStore();
 
 useHead({
-  script: [{ src: "https://accounts.google.com/gsi/client" }],
+  script: [{ src: 'https://accounts.google.com/gsi/client' }],
 });
 declare global {
   interface Window {
@@ -25,8 +25,8 @@ onMounted(async () => {
     return;
   }
   window.google.accounts.id.initialize({
-    client_id:
-      "1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com",
+    client_id: '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com',
+    use_fedcm_for_prompt: false,
     callback: async function (response: any) {
       console.log(response.credential);
       const {
@@ -36,7 +36,7 @@ onMounted(async () => {
       if (!err) {
         await saveToken(token);
         store.getUserInfo();
-        router.push("/");
+        router.push('/');
       }
     },
   });
