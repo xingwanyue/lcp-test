@@ -211,17 +211,12 @@ const googleLogin = () => {
               Thorough answers, intelligent recognition, and scoring allow you to
               constantly monitor your performance in answering questions.
             </div>
-            <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/bank')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/products/bank')" class="font"
-                >Get more information</NuxtLink
-              >
+            <NuxtLink class="get_more" :to="localePath('/products/bank')">
+              <div class="font">Get more information</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
@@ -241,17 +236,12 @@ const googleLogin = () => {
               report and band score in a moment.
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
-            <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/service')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/products/service')" class="font"
-                >Get more information</NuxtLink
-              >
+            <NuxtLink class="get_more" :to="localePath('/products/service')">
+              <div class="font">Get more information</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
@@ -274,17 +264,12 @@ const googleLogin = () => {
               Take online mock exams anytime, anywhere, with rapid scoring within 24
               hours.
             </div>
-            <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/mock')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/products/mock')" class="font"
-                >Get more information</NuxtLink
-              >
+            <NuxtLink class="get_more" :to="localePath('/products/mock')">
+              <div class="font">Get more information</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
@@ -307,17 +292,12 @@ const googleLogin = () => {
               Stay ahead with up-to-date insights on DET formats and trends, ensuring your
               preparation aligns seamlessly with the latest exam standards.
             </div>
-            <div class="get_more">
-              <NuxtLink v-if="!user.id" :to="localePath('/products/guide')" class="font"
-                >Get more information</NuxtLink
-              >
-              <NuxtLink v-else :to="localePath('/products/guide')" class="font"
-                >Get more information</NuxtLink
-              >
+            <NuxtLink class="get_more" :to="localePath('/products/guide')">
+              <div class="font">Get more information</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" />
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
       </div>
