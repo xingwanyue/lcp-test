@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
 import { urlGet } from '@/utils';
+const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 </script>
