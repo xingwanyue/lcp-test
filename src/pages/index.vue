@@ -355,7 +355,7 @@ const googleLogin = () => {
           <!-- {{ usersockerArr }} -->
           <Carousel
             :itemsToShow="6"
-            :autoplay="1000"
+            :autoplay="2000"
             :wrap-around="true"
             :pauseAutoplayOnHover="true"
           >
@@ -399,7 +399,7 @@ const googleLogin = () => {
           >
             <Carousel
               :itemsToShow="4"
-              :autoplay="1000"
+              :autoplay="2000"
               :wrap-around="true"
               :pauseAutoplayOnHover="true"
             >
