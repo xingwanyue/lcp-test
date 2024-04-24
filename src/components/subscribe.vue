@@ -1,10 +1,19 @@
 <script setup lang="ts">
 const email = ref("");
+const emailErrShow = ref(false);
+const emailErrMessage = ref("");
 const sendEmail = async () => {
   // 验证email合法性
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email.value)) {
-    ElMessage.error("Invalid email");
+    if (email.value) {
+      console.log("email is not valid");
+      emailErrMessage.value = "The email must be a valid email address.";
+    } else {
+      console.log("email is empty");
+      emailErrMessage.value = "Please enter your email address.";
+    }
+    emailErrShow.value = true;
     return;
   }
   const { err } = (await useFetch(`${api}/common/portalSubscribe`, {
@@ -14,6 +23,8 @@ const sendEmail = async () => {
   if (!err) {
     ElMessage.success("Subscribe successfully");
     email.value = "";
+    emailErrShow.value = false;
+    emailErrMessage.value = "";
   }
 };
 </script>
@@ -34,6 +45,7 @@ const sendEmail = async () => {
           style="width: 100%"
           placeholder="Email"
           class="input_self"
+          @input="emailErrShow = false"
         >
           <template #append>
             <el-button @click="sendEmail" class="subscribe-btn"
@@ -41,6 +53,9 @@ const sendEmail = async () => {
             ></template
           >
         </el-input>
+        <div class="errDom">
+          <span v-if="emailErrShow">{{ emailErrMessage }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -90,6 +105,9 @@ const sendEmail = async () => {
     .subscribe_in_right {
       flex: 1;
       min-width: 300px;
+      @media (max-width: 450px) {
+        padding-bottom: 20px;
+      }
       .subscribe-btn {
         width: 100%;
         height: 100%;
@@ -99,6 +117,17 @@ const sendEmail = async () => {
         font-size: 18px;
         &:hover {
           background: rgba(0, 0, 0, 0.1);
+        }
+      }
+      .errDom {
+        padding: 12px;
+        padding-left: 0px;
+        color: #f66442;
+        font-size: 16px;
+        position: absolute;
+        @media (max-width: 450px) {
+          width: calc(100% - 24px);
+          text-align: center;
         }
       }
     }
