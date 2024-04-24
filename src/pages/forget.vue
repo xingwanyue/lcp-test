@@ -4,8 +4,14 @@
       <img src="/img/login/lock.svg" alt="" />
       <div class="t1">Forgot Password?</div>
       <h1 class="t2">Please enter the email used to create your account</h1>
-      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
-        @submit.native.prevent>
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
         <el-form-item prop="email" label="" style="margin-top: 80px; margin-bottom: 16px">
           <el-input v-model="formData.email" placeholder="Enter your email"> </el-input>
         </el-form-item>
@@ -16,14 +22,22 @@
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button
+              v-loading="loading"
+              type="primary"
+              native-type="submit"
+              class="submit"
+              @click="submit"
+            >
               Send reset code
             </el-button>
           </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
-            <NuxtLink class="goLogin" :to="localePath('/login')">＜ Back to log in</NuxtLink>
+            <NuxtLink class="goLogin" :to="localePath('/login')"
+              >＜ Back to log in</NuxtLink
+            >
           </div>
         </el-form-item>
       </el-form>
@@ -35,18 +49,18 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-import { sesCodeSend } from '@/api.js';
-import { fetchmy } from '@/utils/request';
+import { useRouter } from "vue-router";
+import { sesCodeSend } from "@/api.js";
+import { fetchmy } from "@/utils/request";
 definePageMeta({
-  layout: 'noheaderfooter',
+  layout: "noheaderfooter",
 });
 
 const router = useRouter();
 
 const formData = ref({});
 const loading = ref(false);
-const errMessage = ref('');
+const errMessage = ref("");
 const errShow = ref(false);
 
 const submit = async () => {
@@ -55,20 +69,23 @@ const submit = async () => {
   errShow.value = false;
   if (!email) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address';
+    errMessage.value = "Please enter your email address";
     return false;
   }
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email)) {
     errShow.value = true;
-    errMessage.value = 'Invalid email.';
+    errMessage.value = "Invalid email.";
     return false;
   }
   loading.value = true;
-  const { err } = await sesCodeSend({ email: formData.value.email, type: 'findPassword' });
+  const { err } = await sesCodeSend({
+    email: formData.value.email,
+    type: "findPassword",
+  });
   loading.value = false;
   if (!err) {
-    router.push({ path: '/resetPassword', query: { email: formData.value.email } });
+    router.push({ path: "/resetPassword", query: { email: formData.value.email } });
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -82,6 +99,7 @@ const submit = async () => {
     // border: 1px red solid;
     border-radius: 25px;
     background-color: red;
+    width: 100%;
     .el-loading-mask {
       border-radius: 25px;
     }

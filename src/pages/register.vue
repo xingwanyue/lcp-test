@@ -8,8 +8,14 @@
         <span style="margin-left: 16px">Sign up with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
-        @submit.native.prevent>
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
         <el-form-item prop="email" label="" style="margin-bottom: 16px">
           Email address
           <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
@@ -21,7 +27,13 @@
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button
+              v-loading="loading"
+              type="primary"
+              native-type="submit"
+              class="submit"
+              @click="submit"
+            >
               Continue with email
             </el-button>
           </div>
@@ -29,7 +41,10 @@
         <el-form-item>
           <div class="zhuce">
             <div class="goregister">
-              Already have an account? <span style="color: #f66442; cursor: pointer" @click="goLogin">Login here</span>
+              Already have an account?
+              <span style="color: #f66442; cursor: pointer" @click="goLogin"
+                >Login here</span
+              >
             </div>
           </div>
         </el-form-item>
@@ -39,10 +54,10 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-import { sesCodeSend } from '@/api';
+import { useRouter } from "vue-router";
+import { sesCodeSend } from "@/api";
 definePageMeta({
-  layout: 'noheaderfooter',
+  layout: "noheaderfooter",
 });
 
 const router = useRouter();
@@ -50,7 +65,7 @@ const router = useRouter();
 const formData = ref({});
 const loading = ref(false);
 const pwdShow = ref(false);
-const errMessage = ref('');
+const errMessage = ref("");
 const errShow = ref(false);
 
 const submit = async () => {
@@ -59,20 +74,21 @@ const submit = async () => {
   errShow.value = false;
   if (!email) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = "Please enter your email address.";
     return false;
   }
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email)) {
     errShow.value = true;
-    errMessage.value = 'Invalid email.';
+    errMessage.value = "Invalid email.";
     return false;
   }
   loading.value = true;
-  const { err } = await sesCodeSend({ email: formData.value.email, type: 'register' });
+  const { err } = await sesCodeSend({ email: formData.value.email, type: "register" });
   loading.value = false;
+  console.log("6666666666666");
   if (!err) {
-    router.push({ path: '/register2', query: { email: formData.value.email } });
+    router.push({ path: "/register2", query: { email: formData.value.email } });
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -80,16 +96,17 @@ const submit = async () => {
 };
 
 const goLogin = () => {
-  router.push('/login');
+  router.push("/login");
 };
 
-const googleRegister = () => { };
+const googleRegister = () => {};
 </script>
 
 <style lang="scss">
 .login {
   .login_btn_out {
     // border: 1px red solid;
+    width: 100%;
     border-radius: 25px;
     background-color: red;
     .el-loading-mask {
@@ -196,9 +213,9 @@ const googleRegister = () => { };
       width: 400px;
       margin-top: 48px;
       :deep(.el-divider__text) {
-        background-color: #f7f8f9;
+        background-color: #f7f8f9 !important;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         color: rgba(0, 0, 0, 0.45);
       }
     }
