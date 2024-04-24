@@ -11,19 +11,59 @@ const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`
   transform: (data: any) => {
     return data.map((d: any) => ({
       ...d,
-      data:{...JSON.parse(d.data),nickname:JSON.parse(d.data).nickname.replace(/(.{1}).*(.{1})/, '$1***$2')},
+      data: {
+        ...JSON.parse(d.data),
+        nickname: JSON.parse(d.data).nickname.replace(/(.{1}).*(.{1})/, "$1***$2"),
+      },
     }));
   },
 })) as any;
 
-const aqList = ref([]) as any;
-const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
-  server: true,
-  query: {
-    type: "3",
+const aqList = ref([
+  {
+    name: "How does DETPractice’s plans and pricing work?",
+    content:
+      "We provide transparent plans and pricing for our users, with no hidden fees. Additionally, we offer add-on subscription packages so that you can choose services according to your needs.",
+    open: false,
   },
-})) as any;
-aqList.value = aqlistjk.value.data;
+  {
+    name: "Is there a free trial?",
+    content:
+      "Yes! You can view 3 questions for free every day. Help you understand us before you buy more services.",
+    open: false,
+  },
+  {
+    name: "Do you offer any discounts?",
+    content:
+      "Yes! We offer tailored discounts for each service. However, when you opt for a 30-day service, you'll receive a greater discount compared to other services. Please refer to the price details above for more information.",
+    open: false,
+  },
+  {
+    name: "My payment was successful, but the upgrade failed.",
+    content:
+      "Please contact us via chat or email: <span class='email_address'>info@aitogether.uk</span>. This is the simplest and fastest way to address your concerns.",
+    open: false,
+  },
+  {
+    name: "Can I change my plan later?",
+    content:
+      "You can purchase more services at any time, and upon purchase, the services will be added directly to your account. If you need to cancel any services, please contact us via chat or email at <span class='email_address'>info@aitogether.uk</span>.",
+    open: false,
+  },
+  {
+    name: "Where do I send my feedback?",
+    content:
+      'You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class="email_address">info@aitogether.uk</span>. Alternatively, you can leave a message directly in the "Contact Us" section.',
+    open: false,
+  },
+]) as any;
+// const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
+//   server: true,
+//   query: {
+//     type: "3",
+//   },
+// })) as any;
+// aqList.value = aqlistjk.value.data;
 
 const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   server: false,
@@ -531,7 +571,6 @@ const formateMinToHour = (min: number) => {
                 <div class="country_name">{{ item.data.country }}</div>
                 <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
               </div>
-              
             </Slide>
           </Carousel>
         </div>
@@ -552,13 +591,12 @@ const formateMinToHour = (min: number) => {
             v-for="(item, index) in aqList"
             :key="index"
             :class="[item.open ? 'one_question one_question_open' : 'one_question']"
-            @click="openOrCloseOneQuestion(item)"
           >
-            <div class="header">
+            <div class="header" @click="openOrCloseOneQuestion(item)">
               <div class="icon">
                 <img src="/img/pricing/arrow_down.svg" />
               </div>
-              <div class="qusetion">{{ item.title }}</div>
+              <div class="qusetion">{{ item.name }}</div>
             </div>
             <div v-if="item.open" class="answer">
               <div v-html="item.content"></div>
@@ -1094,7 +1132,7 @@ const formateMinToHour = (min: number) => {
               font-weight: 400;
               font-size: 16px;
               color: #201515;
-              flex:1;
+              flex: 1;
               text-align: left;
               @media (max-width: 528px) {
                 font-size: 12px;
@@ -1109,8 +1147,6 @@ const formateMinToHour = (min: number) => {
               }
             }
           }
-
-          
         }
       }
 
@@ -1175,7 +1211,7 @@ const formateMinToHour = (min: number) => {
           padding: 18px 24px;
           background: #f2f4f6;
           border-radius: 8px;
-          cursor: pointer;
+
           margin-bottom: 8px;
 
           .header {
@@ -1183,6 +1219,7 @@ const formateMinToHour = (min: number) => {
             justify-content: flex-start;
             align-items: center;
             grid-gap: 24px;
+            cursor: pointer;
 
             .icon {
               width: 16px;
@@ -1209,6 +1246,10 @@ const formateMinToHour = (min: number) => {
             color: #201515;
             margin-top: 24px;
             padding-left: 44px;
+            :deep(.email_address) {
+              color: #f66442;
+              text-decoration: underline;
+            }
 
             @media (max-width: 662px) {
               font-size: 16px;
