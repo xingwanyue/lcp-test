@@ -1,30 +1,34 @@
 <script setup lang="ts">
-const email = ref("");
+const email = ref('');
 const emailErrShow = ref(false);
-const emailErrMessage = ref("");
+const emailErrMessage = ref('');
+const loading = ref(false);
 const sendEmail = async () => {
   // 验证email合法性
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email.value)) {
     if (email.value) {
-      console.log("email is not valid");
-      emailErrMessage.value = "The email must be a valid email address.";
+      emailErrMessage.value = 'The email must be a valid email address.';
     } else {
-      console.log("email is empty");
-      emailErrMessage.value = "Please enter your email address.";
+      emailErrMessage.value = 'Please enter your email address.';
     }
     emailErrShow.value = true;
     return;
   }
+  if (loading.value) {
+    return false;
+  }
+  loading.value = true;
   const { err } = (await useFetch(`${api}/common/portalSubscribe`, {
-    method: "post",
+    method: 'post',
     body: { email: email.value },
   })) as any;
   if (!err) {
-    ElMessage.success("Subscribe successfully");
-    email.value = "";
+    ElMessage.success('Subscribe successfully');
+    email.value = '';
     emailErrShow.value = false;
-    emailErrMessage.value = "";
+    emailErrMessage.value = '';
+    loading.value = false;
   }
 };
 </script>
@@ -34,9 +38,7 @@ const sendEmail = async () => {
     <div class="subscribe_out">
       <div class="subscribe_in_left">
         <div class="left_font1">Subscribe!</div>
-        <div class="left_font2">
-          Get the latest exam news and tips for improving your score.
-        </div>
+        <div class="left_font2">Get the latest exam news and tips for improving your score.</div>
       </div>
       <div class="subscribe_in_right">
         <el-input
@@ -47,11 +49,7 @@ const sendEmail = async () => {
           class="input_self"
           @input="emailErrShow = false"
         >
-          <template #append>
-            <el-button @click="sendEmail" class="subscribe-btn"
-              >Subscribe</el-button
-            ></template
-          >
+          <template #append> <el-button @click="sendEmail" class="subscribe-btn">Subscribe</el-button></template>
         </el-input>
         <div class="errDom">
           <span v-if="emailErrShow">{{ emailErrMessage }}</span>

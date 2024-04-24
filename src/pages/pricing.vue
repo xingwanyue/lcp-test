@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { staticUrlGet, urlGet } from "@/utils";
-import { useStore } from "@/store";
+import { staticUrlGet, urlGet } from '@/utils';
+import { useStore } from '@/store';
 useSeoMeta({
-  title: "DET Practice: Duolingo Test Prep Membership and Services Pricing",
+  title: 'DET Practice: Duolingo Test Prep Membership and Services Pricing',
   description:
-    "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
+    'Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.',
 });
 const store = useStore();
 const user = computed(() => store.user);
@@ -18,7 +18,7 @@ const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`
       ...d,
       data: {
         ...JSON.parse(d.data),
-        nickname: JSON.parse(d.data).nickname.replace(/(.{1}).*(.{1})/, "$1***$2"),
+        nickname: JSON.parse(d.data).nickname.replace(/(.{1}).*(.{1})/, '$1***$2'),
       },
     }));
   },
@@ -26,37 +26,36 @@ const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`
 
 const aqList = ref([
   {
-    name: "How does DETPractice’s plans and pricing work?",
+    name: 'How does DETPractice’s plans and pricing work?',
     content:
-      "We provide transparent plans and pricing for our users, with no hidden fees. Additionally, we offer add-on subscription packages so that you can choose services according to your needs.",
+      'We provide transparent plans and pricing for our users, with no hidden fees. Additionally, we offer add-on subscription packages so that you can choose services according to your needs.',
     open: false,
   },
   {
-    name: "Is there a free trial?",
-    content:
-      "Yes! You can view 3 questions for free every day. Help you understand us before you buy more services.",
+    name: 'Is there a free trial?',
+    content: 'Yes! You can view 3 questions for free every day. Help you understand us before you buy more services.',
     open: false,
   },
   {
-    name: "Do you offer any discounts?",
+    name: 'Do you offer any discounts?',
     content:
       "Yes! We offer tailored discounts for each service. However, when you opt for a 30-day service, you'll receive a greater discount compared to other services. Please refer to the price details above for more information.",
     open: false,
   },
   {
-    name: "My payment was successful, but the upgrade failed.",
+    name: 'My payment was successful, but the upgrade failed.',
     content:
       "Please contact us via chat or email: <span class='email_address'>info@aitogether.uk</span>. This is the simplest and fastest way to address your concerns.",
     open: false,
   },
   {
-    name: "Can I change my plan later?",
+    name: 'Can I change my plan later?',
     content:
       "You can purchase more services at any time, and upon purchase, the services will be added directly to your account. If you need to cancel any services, please contact us via chat or email at <span class='email_address'>info@aitogether.uk</span>.",
     open: false,
   },
   {
-    name: "Where do I send my feedback?",
+    name: 'Where do I send my feedback?',
     content:
       'You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class="email_address">info@aitogether.uk</span>. Alternatively, you can leave a message directly in the "Contact Us" section.',
     open: false,
@@ -77,37 +76,35 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
     vips.forEach((item: any) => {
-      if (item.type === "1") {
+      if (item.type === '1') {
         if (item.day === 0) {
           item.qlList = [
             {
               name: 1,
               desc: `<span class='bigger'>20</span> Practice Questions`,
-              tips: "",
+              tips: '',
             },
             {
               name: 2,
-              desc: `<span class='bigger'>$${
-                correct.price / 100
-              } / 5</span> Correction Services`,
-              tips: "",
+              desc: `<span class='bigger'>$${correct.price / 100} / 5</span> Correction Services`,
+              tips: '',
             },
             {
               name: 3,
               desc: `<span class='bigger'>$${exam.price / 100} / 1 </span> Mock Exam`,
-              tips: "",
+              tips: '',
             },
             {
               name: 4,
               desc: `<span class='bigger'>$${speak.price / 100}</span> / Speaking Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              tips: '',
+              style: 'font-weight: 500;',
             },
             {
               name: 5,
               desc: `<span class='bigger'>$${write.price / 100}</span> / Writing Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              tips: '',
+              style: 'font-weight: 500;',
             },
           ];
         }
@@ -116,48 +113,42 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             {
               name: 1,
               desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
-              tips: "",
-              style: "font-weight: 500;",
+              tips: '',
+              style: 'font-weight: 500;',
             },
             {
               name: 2,
               desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
-              style: "font-weight: 500;",
-              tips: "for speaking and writing",
+              style: 'font-weight: 500;',
+              tips: 'for speaking and writing',
             },
             {
               name: 3,
-              desc: `<span class='bigger'>$${
-                correct.vipPrice / 100
-              } / 5</span> Correction Services`,
-              style: "font-weight: 500;",
-              tips: "Exclusive Discount",
+              desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
+              style: 'font-weight: 500;',
+              tips: 'Exclusive Discount',
             },
             {
               name: 4,
               desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
-              tips: "",
+              tips: '',
             },
             {
               name: 5,
               desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-              tips: "",
+              tips: '',
             },
             {
               name: 6,
-              desc: `<span class='bigger'>$${
-                speak.vipPrice / 100
-              }</span> / Speaking Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
+              tips: '',
+              style: 'font-weight: 500;',
             },
             {
               name: 7,
-              desc: `<span class='bigger'>$${
-                write.vipPrice / 100
-              }</span> / Writing Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
+              tips: '',
+              style: 'font-weight: 500;',
             },
           ];
         }
@@ -166,47 +157,41 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             {
               name: 1,
               desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
-              tips: "",
+              tips: '',
             },
             {
               name: 2,
               desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
-              style: "font-weight: 500;",
-              tips: "for speaking and writing",
+              style: 'font-weight: 500;',
+              tips: 'for speaking and writing',
             },
             {
               name: 3,
-              desc: `<span class='bigger'>$${
-                correct.vipPrice / 100
-              } / 5</span> Correction Services`,
-              style: "font-weight: 500;",
-              tips: "Exclusive Discount",
+              desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
+              style: 'font-weight: 500;',
+              tips: 'Exclusive Discount',
             },
             {
               name: 4,
               desc: `<span class='bigger'>${item.examNum} Mock Exam</span>`,
-              tips: "",
+              tips: '',
             },
             {
               name: 5,
               desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-              tips: "",
+              tips: '',
             },
             {
               name: 6,
-              desc: `<span class='bigger'>$${
-                speak.vipPrice / 100
-              }</span> / Speaking Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
+              tips: '',
+              style: 'font-weight: 500;',
             },
             {
               name: 7,
-              desc: `<span class='bigger'>$${
-                write.vipPrice / 100
-              }</span> / Writing Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
+              tips: '',
+              style: 'font-weight: 500;',
             },
           ];
         }
@@ -215,48 +200,42 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             {
               name: 1,
               desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
-              tips: "",
-              style: "font-weight: 500;",
+              tips: '',
+              style: 'font-weight: 500;',
             },
             {
               name: 2,
               desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
-              style: "font-weight: 500;",
-              tips: "for speaking and writing",
+              style: 'font-weight: 500;',
+              tips: 'for speaking and writing',
             },
             {
               name: 3,
-              desc: `<span class='bigger'>$${
-                correct.vipPrice / 100
-              } / 5</span> Correction Services`,
-              style: "font-weight: 500;",
-              tips: "Exclusive Discount",
+              desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
+              style: 'font-weight: 500;',
+              tips: 'Exclusive Discount',
             },
             {
               name: 4,
               desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
-              tips: "",
+              tips: '',
             },
             {
               name: 5,
               desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-              tips: "",
+              tips: '',
             },
             {
               name: 6,
-              desc: `<span class='bigger'>$${
-                speak.vipPrice / 100
-              }</span> / Speaking Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
+              tips: '',
+              style: 'font-weight: 500;',
             },
             {
               name: 7,
-              desc: `<span class='bigger'>$${
-                write.vipPrice / 100
-              }</span> / Writing Guide`,
-              tips: "",
-              style: "font-weight: 500;",
+              desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
+              tips: '',
+              style: 'font-weight: 500;',
             },
           ];
         }
@@ -269,7 +248,7 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   },
 })) as any;
 
-const switchType = ref("1");
+const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
 };
@@ -288,57 +267,57 @@ const openOrCloseOneQuestion = (item: any) => {
 
 const contaceUsList = ref([
   {
-    type: "1",
-    icon: "/img/pricing/online.svg",
-    font: "Online Customer Service",
-    tip: "Online hours: Monday to Friday, 10:00 - 19:00.",
-    btn: "Initiate a conversation",
+    type: '1',
+    icon: '/img/pricing/online.svg',
+    font: 'Online Customer Service',
+    tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
+    btn: 'Initiate a conversation',
   },
   {
-    type: "2",
-    icon: "/img/pricing/email.svg",
-    font: "Consultation Email",
-    tip: "We will respond to you within one business day.",
-    btn: "info@aitogether.uk",
+    type: '2',
+    icon: '/img/pricing/email.svg',
+    font: 'Consultation Email',
+    tip: 'We will respond to you within one business day.',
+    btn: 'info@aitogether.uk',
   },
   {
-    type: "3",
-    icon: "/img/pricing/message.svg",
-    font: "Leave a message",
-    tip: "We will respond to you within one business day.",
-    btn: "Leave a message now",
+    type: '3',
+    icon: '/img/pricing/message.svg',
+    font: 'Leave a message',
+    tip: 'We will respond to you within one business day.',
+    btn: 'Leave a message now',
   },
 ]);
 const membershipUnchanging = ref([
   {
-    name: "1",
-    desc: "View all practice questions",
-    tips: "",
+    name: '1',
+    desc: 'View all practice questions',
+    tips: '',
   },
   {
-    name: "2",
-    desc: "High-scoring Answers",
-    tips: "",
+    name: '2',
+    desc: 'High-scoring Answers',
+    tips: '',
   },
   {
-    name: "3",
-    desc: "Question Analysis",
-    tips: "",
+    name: '3',
+    desc: 'Question Analysis',
+    tips: '',
   },
   {
-    name: "4",
-    desc: "Vocabulary Book",
-    tips: "high-frequency vocabulary in the exam",
+    name: '4',
+    desc: 'Vocabulary Book',
+    tips: 'high-frequency vocabulary in the exam',
   },
   {
-    name: "5",
-    desc: "Intelligent question brushing plan",
-    tips: "",
+    name: '5',
+    desc: 'Intelligent question brushing plan',
+    tips: '',
   },
   {
-    name: "6",
-    desc: "Read aloud AI ratings",
-    tips: "",
+    name: '6',
+    desc: 'Read aloud AI ratings',
+    tips: '',
   },
 ]) as any;
 
@@ -347,30 +326,30 @@ const copy = async (email: any) => {
     // 尝试使用 Clipboard API
     try {
       await navigator.clipboard.writeText(email);
-      ElMessage.success("Copy successfully");
+      ElMessage.success('Copy successfully');
     } catch (err) {
-      ElMessage.error("Failed to copy text: " + err);
+      ElMessage.error('Failed to copy text: ' + err);
     }
   } else if (document.execCommand) {
     // 尝试使用 document.execCommand
-    const textarea = document.createElement("textarea");
+    const textarea = document.createElement('textarea');
     textarea.value = email;
     document.body.appendChild(textarea);
     textarea.select();
     try {
-      document.execCommand("copy");
-      ElMessage.success("Copy successfully");
+      document.execCommand('copy');
+      ElMessage.success('Copy successfully');
     } catch (err) {
-      ElMessage.error("Failed to copy text: " + err);
+      ElMessage.error('Failed to copy text: ' + err);
     } finally {
       document.body.removeChild(textarea);
     }
   } else {
-    ElMessage.error("Your browser does not support copying text to clipboard.");
+    ElMessage.error('Your browser does not support copying text to clipboard.');
   }
 };
 const openchat = () => {
-  (window as any).$crisp.push(["do", "chat:open"]);
+  (window as any).$crisp.push(['do', 'chat:open']);
 };
 const formateMinToHour = (min: number) => {
   const hour = Math.floor(min / 60);
@@ -395,16 +374,10 @@ const formateMinToHour = (min: number) => {
           </h4>
         </div>
         <div class="switch_out">
-          <div
-            @click="changeSwitchType('1')"
-            :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             Membership
           </div>
-          <div
-            @click="changeSwitchType('2')"
-            :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']"
-          >
+          <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
             More Service
           </div>
         </div>
@@ -418,78 +391,43 @@ const formateMinToHour = (min: number) => {
             <div class="card_price">
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
-                <div
-                  v-if="Number(item.originalPrice)"
-                  :class="`off ${item.flag === '1' ? 'off1' : ''}`"
-                >
-                  <span>
-                    {{
-                      ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(
-                        0
-                      )
-                    }}% off</span
-                  >
+                <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
+                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off</span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
               <div class="card_price_part3">
-                <div v-if="isVip" class="big_price">
-                  <span class="symbol">$</span>{{ item.vipPrice / 100 }}
-                </div>
-                <div v-else class="big_price">
-                  <span class="symbol">$</span>{{ item.price / 100 }}
-                </div>
-                <div class="small_price">
-                  ${{ (item.originalPrice / 100).toFixed(2) }}
-                </div>
+                <div v-if="isVip" class="big_price"><span class="symbol">$</span>{{ item.vipPrice / 100 }}</div>
+                <div v-else class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
+                <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
                 <div
                   v-if="item.day !== 0"
-                  :class="[
-                    'card_price_buy_btn common_btn_hover_bgColor',
-                    item.flag === '1' && 'card_price_buy_btn1',
-                  ]"
+                  :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
                   @click="buyMembership(item.id)"
                 >
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
-                <NuxtLink
-                  v-else
-                  :href="urlGet('/home')"
-                  class="card_price_buy_btn try_free"
-                >
-                  Try for free
-                </NuxtLink>
+                <NuxtLink v-else :href="urlGet('/')" class="card_price_buy_btn try_free"> Try for free </NuxtLink>
               </div>
               <div v-else>
                 <NuxtLink
                   v-if="item.day !== 0"
-                  :class="[
-                    'card_price_buy_btn common_btn_hover_bgColor',
-                    item.flag === '1' && 'card_price_buy_btn1',
-                  ]"
+                  :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
                   :to="localePath(`/login?url=/pricing`)"
                 >
                   Buy Now
                   <div class="scroll-line"></div>
                 </NuxtLink>
-                <NuxtLink
-                  v-else
-                  class="card_price_buy_btn try_free"
-                  :to="localePath(`/login?url=/pricing`)"
-                >
+                <NuxtLink v-else class="card_price_buy_btn try_free" :to="localePath(`/login?url=/pricing`)">
                   Try for free
                 </NuxtLink>
               </div>
 
               <div class="card_price_qllist">
-                <div
-                  v-for="(itemin, indexin) in item.qlList"
-                  :key="index * 10 + indexin"
-                  class="one_ql"
-                >
+                <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
                     <img src="/img/pricing/check.svg" />
                   </div>
@@ -497,22 +435,14 @@ const formateMinToHour = (min: number) => {
                     <div v-html="itemin.desc"></div>
                   </div>
                   <div v-if="itemin.tips" class="tips">
-                    <el-tooltip
-                      :content="itemin.tips"
-                      placement="right-start"
-                      effect="light"
-                    >
+                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
                       <img src="/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
                 </div>
               </div>
               <div class="card_price_qllist" style="margin-top: 16px">
-                <div
-                  v-for="(itemuc, indexin) in membershipUnchanging"
-                  :key="itemuc.name"
-                  class="one_ql"
-                >
+                <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
                   <div class="icon">
                     <img src="/img/pricing/check.svg" />
                   </div>
@@ -521,11 +451,7 @@ const formateMinToHour = (min: number) => {
                     {{ itemuc.desc }}
                   </div>
                   <div v-if="itemuc.tips" class="tips">
-                    <el-tooltip
-                      :content="itemuc.tips"
-                      placement="right-start"
-                      effect="light"
-                    >
+                    <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
                       <img src="/img/pricing/tip.svg" />
                     </el-tooltip>
                   </div>
@@ -538,11 +464,7 @@ const formateMinToHour = (min: number) => {
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
-            :class="[
-              item.id === CurrentMembershipId
-                ? 'one_price '
-                : 'one_price currentMembership_no',
-            ]"
+            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -566,19 +488,13 @@ const formateMinToHour = (min: number) => {
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
-                <div
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  @click="buyMembership(item.id)"
-                >
+                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
-                <NuxtLink
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  :to="localePath(`/login?url=/pricing`)"
-                >
+                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
                   Buy Now
                   <div class="scroll-line"></div>
                 </NuxtLink>
@@ -588,12 +504,7 @@ const formateMinToHour = (min: number) => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel
-            :itemsToShow="1"
-            :autoplay="2000"
-            :wrap-around="true"
-            :pauseAutoplayOnHover="true"
-          >
+          <Carousel :itemsToShow="1" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
             <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
@@ -658,11 +569,7 @@ const formateMinToHour = (min: number) => {
             <div v-if="item.type === '2'" class="btn" @click="copy(item.btn)">
               {{ item.btn }}
             </div>
-            <NuxtLink
-              v-if="item.type === '3'"
-              class="btn"
-              :to="localePath(`/company/contactus`)"
-            >
+            <NuxtLink v-if="item.type === '3'" class="btn" :to="localePath(`/company/contactus`)">
               <div>{{ item.btn }}</div>
             </NuxtLink>
           </div>

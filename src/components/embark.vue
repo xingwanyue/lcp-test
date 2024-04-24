@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useStore } from "@/store";
-import { urlGet } from "@/utils";
+import { useStore } from '@/store';
+import { urlGet } from '@/utils';
+const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 </script>
@@ -12,20 +13,14 @@ const user = computed(() => store.user);
       <div class="font2">Duolingo English Test !</div>
       <div v-if="!user.id" class="two_btn_out">
         <div>
-          <NuxtLink
-            class="common_btn common_btn_hover_bgColor yellow"
-            :to="localePath(`/login?url=${urlGet('/home')}`)"
-          >
+          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`/login?url=${urlGet('/')}`)">
             Start Now</NuxtLink
           >
         </div>
       </div>
       <div v-else class="two_btn_out">
         <div>
-          <NuxtLink
-            class="common_btn common_btn_hover_bgColor yellow"
-            :to="localePath(`${urlGet('/home')}`)"
-          >
+          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/')}`)">
             Start Now</NuxtLink
           >
         </div>
