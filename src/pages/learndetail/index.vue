@@ -226,9 +226,9 @@ const rateChange = async () => {
       margin: auto;
       padding: 0px 14px;
     }
-    .top {
-      display: none;
-    }
+    // .top {
+    //   display: none;
+    // }
     .content {
       max-width: 100%;
       display: block;
