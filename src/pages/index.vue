@@ -1015,6 +1015,11 @@ const googleLogin = () => {
                 height: 48px;
                 border-radius: 50%;
                 overflow: hidden;
+                flex-shrink: 0;
+                @media (max-width: 450px) {
+                  width: 28px;
+                  height: 28px;
+                }
                 img {
                   width: 100%;
                   height: 100%;
@@ -1026,12 +1031,18 @@ const googleLogin = () => {
                   font-size: 16px;
                   color: #201515;
                   text-align: left;
+                  @media (max-width: 450px) {
+                    font-size: 12px;
+                  }
                 }
                 .user_country {
                   font-weight: 400;
                   font-size: 14px;
                   color: #403f3e;
                   text-align: left;
+                  @media (max-width: 450px) {
+                    font-size: 10px;
+                  }
                 }
               }
             }
