@@ -12,6 +12,12 @@ useSeoMeta({
 const total = ref(0);
 const pageSize = ref(10);
 let blogs = ref([]) as any;
+const { data: category } = (await useFetch(`${api}/common/article/category`, {
+  server: true,
+  query: {
+    type: "1",
+  },
+})) as any;
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
@@ -19,6 +25,15 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
     type: "1",
     page: 1,
     pageSize: 10,
+  },
+  transform: (data: any) => {
+    data.data = data.data.map((item: any) => {
+      item.category = category.value.find(
+        (cate: any) => cate.id === item.categoryId
+      ).name;
+      return item;
+    });
+    return { data: data.data, total: data.total };
   },
 })) as any;
 
@@ -33,9 +48,24 @@ const handleCurrentChange = async (val: number) => {
       page: val,
       pageSize: 10,
     },
+    transform: (data: any) => {
+      data.data = data.data.map((item: any) => {
+        item.category = category.value.find(
+          (cate: any) => cate.id === item.categoryId
+        ).name;
+        return item;
+      });
+      return { data: data.data, total: data.total };
+    },
   })) as any;
   blogs.value = blogsjkk.value.data;
 };
+// const findCategory = (id: Number) => {
+//   console.log(id);
+//   console.log();
+//   const finditem = category.value.find((item: any) => item.id === id);
+//   console.log(finditem);
+// };
 </script>
 <template>
   <div class="blogs">
@@ -54,14 +84,16 @@ const handleCurrentChange = async (val: number) => {
           data-aos-duration="1000"
           :to="localePath(`/${item.path}`)"
         >
-          <div class="title">
-            {{ item.name }}
-          </div>
+          <div class="title">{{ item.name }}</div>
           <div class="content">
             {{ item.content }}
           </div>
           <div class="bottom">
-            <div class="date">{{ dayjs(item.createTime).format("YYYY-MM-DD") }}</div>
+            <div class="date">
+              {{ dayjs(item.createTime).format("YYYY-MM-DD") }}&nbsp;|&nbsp;{{
+                item.category
+              }}
+            </div>
             <div class="right_arrow">
               <el-image src="/img/blog/right_arrow.svg"></el-image>
             </div>
