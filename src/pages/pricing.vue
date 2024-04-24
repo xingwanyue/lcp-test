@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { staticUrlGet, urlGet } from "@/utils";
 import { useStore } from "@/store";
+useSeoMeta({
+  title: "DET Practice: Duolingo Test Prep Membership and Services Pricing",
+  description:
+    "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
+});
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);

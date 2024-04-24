@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { useStore } from "@/store";
 import { staticUrlGet } from "@/utils";
+useSeoMeta({
+  title:
+    "DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide",
+  description:
+    "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.",
+});
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -213,7 +219,7 @@ const buyMembership = (id: number) => {
           </div>
         </div>
         <div class="one_article">
-          <h2 class="title">DET Writing Exam Excellence: A Comprehensive Guide</h2>
+          <div class="title">DET Writing Exam Excellence: A Comprehensive Guide</div>
           <div class="article_out">
             <div class="left_img">
               <img src="/img/guid/guide2.png" />
@@ -376,7 +382,7 @@ const buyMembership = (id: number) => {
     </div>
     <div class="orange_block_wrapper">
       <div class="orange_block">
-        <h2 class="orange_title">Elite Language Educators</h2>
+        <div class="orange_title">Elite Language Educators</div>
         <div class="team_desc">
           Our distinguished team of language educators, holding esteemed qualifications
           like TESOL and other teaching Certificates, brings a wealth of experience in

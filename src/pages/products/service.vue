@@ -6,10 +6,9 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useSeoMeta({
-  title: "Duolingo Practice Question Bank",
+  title: "DET Practice:Correction Service powered by AI for your Duolingo Learning",
   description:
-    "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation — achieve score improvement quickly at the lowest cost through a scientific approach.",
-  keywords: "Duolingo Practice Question Bank",
+    'Correction service provided by "AI + Teachers". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.',
 });
 // 获取平台数据
 const {
@@ -94,7 +93,7 @@ const {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Accurate score</div>
+                <h2 class="right_title">Accurate score</h2>
                 <div class="right_desc">
                   Submit your essay by inputting or from the question bank, and you can
                   receive a clear and detailed report and score immediately.

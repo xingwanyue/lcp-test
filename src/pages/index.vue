@@ -4,7 +4,11 @@ import vSubscribe from "../components/subscribe.vue";
 import { oauth2SignIn } from "@/utils/googleAuth";
 import { useStore } from "@/store";
 import { staticUrlGet, formatNumber } from "@/utils";
-
+useSeoMeta({
+  title: "DET Practice:The best Duolingo English Test Practice platform",
+  description:
+    "Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.",
+});
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -176,10 +180,10 @@ const googleLogin = () => {
     <div class="part2_wrapper">
       <div class="part2">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-          <h2>
+          <h3>
             The best platform for enhancing your scores in the<br />
             Duolingo English Test
-          </h2>
+          </h3>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
           <h3>
@@ -192,7 +196,7 @@ const googleLogin = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Duolingo English Test Practice</h4>
+              <h2>Duolingo English Test Practice</h2>
             </div>
             <div class="tips">
               Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice
@@ -701,7 +705,7 @@ const googleLogin = () => {
       // border: 1px blue solid;
       margin: 0 auto;
       .title1 {
-        h2 {
+        h3 {
           font-weight: 500;
           font-size: 40px;
           color: #201515;
@@ -769,6 +773,16 @@ const googleLogin = () => {
             text-align: center;
           }
           .article_out_title {
+            h2 {
+              font-weight: 500;
+              font-size: 32px;
+              color: #201515;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              @media (max-width: 450px) {
+                font-size: 22px;
+              }
+            }
             h4 {
               font-weight: 500;
               font-size: 32px;

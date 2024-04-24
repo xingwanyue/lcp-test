@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import { reactive } from "vue";
+useSeoMeta({
+  title: "Cookie Policy - DET Practice",
+});
 
 const state = reactive({});
 </script>
@@ -10,7 +13,7 @@ const state = reactive({});
       :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`"
     >
       <div class="learn_hader_content">
-        <h1 class="title">Cookie Policy</h1>
+        <div class="title"><h1>Cookie Policy</h1></div>
       </div>
     </div>
     <div class="content padding">
