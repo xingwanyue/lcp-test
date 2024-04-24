@@ -171,7 +171,7 @@ const logout = () => {
             </div>
             <template #reference>
               <nuxt-link
-                class="head-name head-name-products"
+                :class="`head-name head-name-products ${popoverQuestions ? 'head-name-products1' : ''}`"
                 @mouseover="popoverQuestions = true"
                 @mouseleave="popoverQuestions = false"
               >
@@ -189,7 +189,9 @@ const logout = () => {
         </nav>
       </div>
       <div class="mobile">
-        <span class="icon iconfont icon-logo mobileLogo"></span>
+        <nuxt-link :to="localePath('/')" class="">
+          <span class="icon iconfont icon-logo mobileLogo"></span>
+        </nuxt-link>
       </div>
       <div v-if="user.id" href="/app">
         <!-- <el-popover placement="top-start" trigger="hover" class="111">
@@ -222,7 +224,9 @@ const logout = () => {
       :before-close="handleClose"
     >
       <div class="drawer-head">
-        <span class="icon iconfont icon-logo mobileLogo"></span>
+        <nuxt-link :to="localePath('/')" class="" @click="handleClose">
+          <span class="icon iconfont icon-logo mobileLogo"></span>
+        </nuxt-link>
         <el-image class="mobile-cancel" @click="handleClose" src="/img/learn/mobile-close.svg" />
       </div>
       <div class="asideMenus">
@@ -333,7 +337,7 @@ const logout = () => {
     }
     .asideMeun-pro {
       box-sizing: border-box;
-      border-bottom: 1px solid #e9e9e9;
+      border-bottom: 2px solid #e9e9e9;
       width: 100%;
       padding: 14px 5px;
       color: #201515;
@@ -607,6 +611,9 @@ const logout = () => {
           margin-bottom: 4px;
           display: flex;
           align-items: center;
+        }
+        .head-name-products1 {
+          color: #f66442;
         }
         &.active {
           // border-bottom: 4px solid #f66442;

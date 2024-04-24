@@ -77,7 +77,8 @@ const rateChange = async () => {
   <div class="learndetail">
     <div class="learndetail-content">
       <div class="top">
-        Home >
+        <nuxt-link :to="localePath('/')" class=""> Home </nuxt-link>
+        >
         <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class=""> Learn </nuxt-link>
         <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class=""> Blog </nuxt-link>
         > {{ state.selectName }}
