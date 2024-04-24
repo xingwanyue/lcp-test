@@ -4,25 +4,47 @@
       <img src="/img/login/lock.svg" alt="" />
       <div class="t1">Forgot Password?</div>
       <div class="t2">Please enter the email used to create your account</div>
-      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
-        @submit.native.prevent>
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
         <el-form-item prop="pwd" label="" style="margin-top: 80px">
           New Password
-          <el-input v-model="formData.pwd" :type="pwdShow ? 'text' : 'password'" maxlength="20"
-            placeholder="Enter a new password">
+          <el-input
+            v-model="formData.pwd"
+            :type="pwdShow ? 'text' : 'password'"
+            maxlength="20"
+            placeholder="Enter a new password"
+          >
             <template #suffix>
-              <img :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'" style="cursor: pointer" alt=""
-                @click="pwdShow = !pwdShow" />
+              <img
+                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                style="cursor: pointer"
+                alt=""
+                @click="pwdShow = !pwdShow"
+              />
             </template>
           </el-input>
         </el-form-item>
         <el-form-item prop="pwd1" label="" style="margin-top: 0px">
           Confirm New Password
-          <el-input v-model="formData.pwd1" :type="pwdShow1 ? 'text' : 'password'" maxlength="20"
-            placeholder="Confirm your new password">
+          <el-input
+            v-model="formData.pwd1"
+            :type="pwdShow1 ? 'text' : 'password'"
+            maxlength="20"
+            placeholder="Confirm your new password"
+          >
             <template #suffix>
-              <img :src="pwdShow1 ? '/img/login/look.svg' : '/img/login/unlook.svg'" style="cursor: pointer" alt=""
-                @click="pwdShow1 = !pwdShow1" />
+              <img
+                :src="pwdShow1 ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                style="cursor: pointer"
+                alt=""
+                @click="pwdShow1 = !pwdShow1"
+              />
             </template>
           </el-input>
         </el-form-item>
@@ -32,7 +54,13 @@
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button
+              v-loading="loading"
+              type="primary"
+              native-type="submit"
+              class="submit"
+              @click="submit"
+            >
               Reset my password
             </el-button>
           </div>
@@ -48,12 +76,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { useRouter, useRoute } from 'vue-router';
-import { findPassword } from '@/api';
+import { ref } from "vue";
+import { useRouter, useRoute } from "vue-router";
+import { findPassword } from "@/api";
 
 definePageMeta({
-  layout: 'noheaderfooter',
+  layout: "noheaderfooter",
 });
 
 const router = useRouter();
@@ -63,7 +91,7 @@ const formData = ref({});
 const loading = ref(false);
 const pwdShow = ref(false);
 const pwdShow1 = ref(false);
-const errMessage = ref('');
+const errMessage = ref("");
 const errShow = ref(false);
 
 const submit = async () => {
@@ -73,17 +101,17 @@ const submit = async () => {
   errShow.value = false;
   if (!pwd) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = "Please enter your email address.";
     return false;
   }
   if (pwd.length < 6) {
     errShow.value = true;
-    errMessage.value = 'Password too short.';
+    errMessage.value = "Password too short.";
     return false;
   }
   if (pwd !== pwd1) {
     errShow.value = true;
-    errMessage.value = 'Password inconsistency.';
+    errMessage.value = "Password inconsistency.";
     return false;
   }
   const temp = {
@@ -93,7 +121,7 @@ const submit = async () => {
   loading.value = true;
   const { err } = await findPassword(temp);
   if (!err) {
-    router.push('/login');
+    router.push("/login");
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -102,7 +130,7 @@ const submit = async () => {
 };
 
 const goLogin = () => {
-  router.push('/login');
+  router.push("/login");
 };
 </script>
 
@@ -112,6 +140,7 @@ const goLogin = () => {
     // border: 1px red solid;
     border-radius: 25px;
     background-color: red;
+    width: 100%;
     .el-loading-mask {
       border-radius: 25px;
     }

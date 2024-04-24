@@ -4,8 +4,14 @@
       <img src="/img/login/lock.svg" alt="" />
       <div class="t1">Forgot Password?</div>
       <div class="t2">Please enter the email used to create your account</div>
-      <el-form ref="ruleFormRef" :rules="rules" :model="formData" size="default" class="login-form"
-        @submit.native.prevent>
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
         <!-- <el-form-item prop="email" label="" style="margin-top: 80px;margin-bottom: 16px;">
           <el-input v-model="formData.email" disabled placeholder="Enter your email"> </el-input>
         </el-form-item>
@@ -20,7 +26,13 @@
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button
+              v-loading="loading"
+              type="primary"
+              native-type="submit"
+              class="submit"
+              @click="submit"
+            >
               Request Password Reset
             </el-button>
           </div>
@@ -36,12 +48,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-import { sesCodeVerify } from '@/api';
+import { ref, onMounted } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import { sesCodeVerify } from "@/api";
 
 definePageMeta({
-  layout: 'noheaderfooter',
+  layout: "noheaderfooter",
 });
 const route = useRoute();
 const router = useRouter();
@@ -49,7 +61,7 @@ const router = useRouter();
 const { email } = route.query || {};
 const formData = ref({ email });
 const loading = ref(false);
-const errMessage = ref('');
+const errMessage = ref("");
 const errShow = ref(false);
 
 const submit = async () => {
@@ -58,7 +70,7 @@ const submit = async () => {
   errShow.value = false;
   if (!code) {
     errShow.value = true;
-    errMessage.value = 'Please enter your code.';
+    errMessage.value = "Please enter your code.";
     return false;
   }
   const temp = {
@@ -69,7 +81,7 @@ const submit = async () => {
   const { err } = await sesCodeVerify(temp);
   loading.value = false;
   if (!err) {
-    router.push({ path: '/resetPasswordStep2', query: { email } });
+    router.push({ path: "/resetPasswordStep2", query: { email } });
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -77,7 +89,7 @@ const submit = async () => {
 };
 
 const goLogin = () => {
-  router.push('/login');
+  router.push("/login");
 };
 </script>
 
@@ -87,6 +99,7 @@ const goLogin = () => {
     // border: 1px red solid;
     border-radius: 25px;
     background-color: red;
+    width: 100%;
     .el-loading-mask {
       border-radius: 25px;
     }

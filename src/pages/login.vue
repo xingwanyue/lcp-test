@@ -86,17 +86,30 @@ const googleLogin = async () => {
         <span style="margin-left: 16px">Log in with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form ref="ruleFormRef" :model="formData" size="default" class="login-form" @submit.native.prevent>
+      <el-form
+        ref="ruleFormRef"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
         <el-form-item prop="email" label="">
           Email address
           <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
         </el-form-item>
         <el-form-item prop="password" label="">
           Password
-          <el-input v-model="formData.password" :type="pwdShow ? 'text' : 'password'" placeholder="Password">
+          <el-input
+            v-model="formData.password"
+            :type="pwdShow ? 'text' : 'password'"
+            placeholder="Password"
+          >
             <template #suffix>
-              <img :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'" alt=""
-                @click="pwdShow = !pwdShow" />
+              <img
+                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                alt=""
+                @click="pwdShow = !pwdShow"
+              />
             </template>
           </el-input>
         </el-form-item>
@@ -106,7 +119,13 @@ const googleLogin = async () => {
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button
+              v-loading="loading"
+              type="primary"
+              native-type="submit"
+              class="submit"
+              @click="submit"
+            >
               Login
             </el-button>
           </div>
@@ -114,11 +133,19 @@ const googleLogin = async () => {
         <el-form-item>
           <div class="zhuce">
             <div class="goforget">
-              <NuxtLink :to="localePath('/forget')" style="color: #f66442; cursor: pointer">Forgot password?</NuxtLink>
+              <NuxtLink
+                :to="localePath('/forget')"
+                style="color: #f66442; cursor: pointer"
+                >Forgot password?</NuxtLink
+              >
             </div>
             <div class="goregister">
               Don't have an account?
-              <NuxtLink :to="localePath('/register')" style="color: #f66442; cursor: pointer">Sign up here</NuxtLink>
+              <NuxtLink
+                :to="localePath('/register')"
+                style="color: #f66442; cursor: pointer"
+                >Sign up here</NuxtLink
+              >
             </div>
           </div>
         </el-form-item>
@@ -134,6 +161,7 @@ const googleLogin = async () => {
     // border: 1px red solid;
     border-radius: 25px;
     background-color: red;
+    width: 100%;
     .el-loading-mask {
       border-radius: 25px;
     }
@@ -244,7 +272,7 @@ const googleLogin = async () => {
       :deep(.el-divider__text) {
         background-color: #f7f8f9 !important;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         color: rgba(0, 0, 0, 0.45);
       }
     }

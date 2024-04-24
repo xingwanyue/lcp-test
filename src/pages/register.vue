@@ -106,6 +106,7 @@ const googleRegister = () => {};
 .login {
   .login_btn_out {
     // border: 1px red solid;
+    width: 100%;
     border-radius: 25px;
     background-color: red;
     .el-loading-mask {
@@ -212,9 +213,9 @@ const googleRegister = () => {};
       width: 400px;
       margin-top: 48px;
       :deep(.el-divider__text) {
-        background-color: #f7f8f9;
+        background-color: #f7f8f9 !important;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         color: rgba(0, 0, 0, 0.45);
       }
     }

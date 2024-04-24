@@ -77,6 +77,7 @@
 import { ref } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import { register } from "@/api";
+import { oauth2SignIn } from "@/utils/googleAuth";
 definePageMeta({
   layout: "noheaderfooter",
 });
@@ -135,8 +136,9 @@ const goLogin = () => {
   router.push("/login");
 };
 
-const googleRegister = () => {
+const googleRegister = async () => {
   // TODO: Implement Google registration
+  return oauth2SignIn();
 };
 </script>
 
@@ -148,6 +150,7 @@ const googleRegister = () => {
   .login_btn_out {
     // border: 1px red solid;
     border-radius: 25px;
+    width: 100%;
     background-color: red;
   }
   .submit {
@@ -248,10 +251,10 @@ const googleRegister = () => {
     .fengeline {
       width: 400px;
       margin-top: 48px;
-      .el-divider__text {
-        background-color: #f7f8f9;
+      :deep(.el-divider__text) {
+        background-color: #f7f8f9 !important;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         color: rgba(0, 0, 0, 0.45);
       }
     }
