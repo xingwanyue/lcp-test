@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { useStore } from "@/store";
-import { staticUrlGet } from "@/utils";
+import { useStore } from '@/store';
+import { staticUrlGet } from '@/utils';
 useSeoMeta({
-  title:
-    "DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide",
+  title: 'DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide',
   description:
-    "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.",
+    'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.',
 });
 const localePath = useLocalePath();
 const store = useStore();
@@ -13,6 +12,7 @@ const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
 const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
   server: false,
+  lazy: true,
   transform: (res: any) => {
     const { data } = res;
     const writeData = data.find((item: any) => item.write === 1);
@@ -28,6 +28,7 @@ const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
 
 const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
   server: false,
+  lazy: true,
   transform: (data: any) => {
     const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
     return { DETSpeakingExamExcellence, DETWritingExamExcellence2024 };
@@ -35,130 +36,121 @@ const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
 })) as any;
 
 const article1 = ref({
-  title: "Key Features of DET Speaking Exam Excellence:",
+  title: 'Key Features of DET Speaking Exam Excellence:',
   list: [
     {
-      smallTitle: "• Comprehensive Exam Breakdown: ",
+      smallTitle: '• Comprehensive Exam Breakdown: ',
       content:
-        " Detailed exploration of all speaking task types in the DET, providing a clear understanding of what to expect.",
+        ' Detailed exploration of all speaking task types in the DET, providing a clear understanding of what to expect.',
     },
     {
-      smallTitle: "• Effective Speaking Strategies: ",
+      smallTitle: '• Effective Speaking Strategies: ',
       content:
-        "Practical advice on how to approach each speaking task, including tips on organizing thoughts and expressing ideas clearly. ",
+        'Practical advice on how to approach each speaking task, including tips on organizing thoughts and expressing ideas clearly. ',
     },
     {
-      smallTitle: "• Interactive Speaking Exercises: ",
+      smallTitle: '• Interactive Speaking Exercises: ',
       content:
-        "   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios.  ",
+        '   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios.  ',
     },
     {
-      smallTitle: "• Expert Insights:",
+      smallTitle: '• Expert Insights:',
       content:
-        " Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance.",
+        ' Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance.',
     },
     {
-      smallTitle: "• Real-Life Speaking Examples: ",
-      content:
-        " Recorded speech samples and analyses to demonstrate successful speaking strategies in action. ",
+      smallTitle: '• Real-Life Speaking Examples: ',
+      content: ' Recorded speech samples and analyses to demonstrate successful speaking strategies in action. ',
     },
     {
-      smallTitle: "• Personalized Learning Approaches: ",
+      smallTitle: '• Personalized Learning Approaches: ',
       content:
-        "Tips and techniques suitable for learners at different levels of English proficiency, ensuring everyone benefits.",
+        'Tips and techniques suitable for learners at different levels of English proficiency, ensuring everyone benefits.',
     },
     {
-      smallTitle: "• Self-Assessment Tools: ",
-      content:
-        "Methods and criteria to evaluate your speaking skills and track progress. ",
+      smallTitle: '• Self-Assessment Tools: ',
+      content: 'Methods and criteria to evaluate your speaking skills and track progress. ',
     },
     {
-      smallTitle: "• Focused Language Development: ",
+      smallTitle: '• Focused Language Development: ',
       content:
-        "Emphasis on key vocabulary and grammatical structures that are essential for effective communication in the DET speaking exam. ",
+        'Emphasis on key vocabulary and grammatical structures that are essential for effective communication in the DET speaking exam. ',
     },
     {
-      smallTitle: "• Up-to-date and Relevant: ",
+      smallTitle: '• Up-to-date and Relevant: ',
       content:
-        "Incorporates the latest updates in the DET speaking format, ensuring your preparation is current and comprehensive.",
+        'Incorporates the latest updates in the DET speaking format, ensuring your preparation is current and comprehensive.',
     },
   ],
 });
 const article2 = ref({
-  title: "Key Features of DET Writing Exam Excellence:",
+  title: 'Key Features of DET Writing Exam Excellence:',
   list: [
     {
-      smallTitle: "• All-encompassing Content: ",
-      content:
-        "Extensive coverage of every writing task type in the DET, with in-depth analysis and examples.",
+      smallTitle: '• All-encompassing Content: ',
+      content: 'Extensive coverage of every writing task type in the DET, with in-depth analysis and examples.',
     },
     {
-      smallTitle: "• Step-by-Step Approaches: ",
-      content:
-        "Detailed guidelines on planning, structuring, and writing essays that meet and exceed exam standards.",
+      smallTitle: '• Step-by-Step Approaches: ',
+      content: 'Detailed guidelines on planning, structuring, and writing essays that meet and exceed exam standards.',
     },
     {
-      smallTitle: "• Practical Writing Exercises: ",
-      content:
-        "Hands-on exercises to practice and refine writing skills, tailored to the specific demands of the DET.",
+      smallTitle: '• Practical Writing Exercises: ',
+      content: 'Hands-on exercises to practice and refine writing skills, tailored to the specific demands of the DET.',
     },
     {
-      smallTitle: "• Expert Writing Tips: ",
+      smallTitle: '• Expert Writing Tips: ',
       content:
-        "Proven tips and tricks from experienced ESL educators to enhance clarity, coherence, and sophistication in writing.",
+        'Proven tips and tricks from experienced ESL educators to enhance clarity, coherence, and sophistication in writing.',
     },
     {
-      smallTitle: "• Sample Essays with Analysis: ",
-      content:
-        "Annotated sample responses illustrating effective writing strategies and common mistakes to avoid.",
+      smallTitle: '• Sample Essays with Analysis: ',
+      content: 'Annotated sample responses illustrating effective writing strategies and common mistakes to avoid.',
     },
     {
-      smallTitle: "• Personalized Learning Pathways: ",
-      content:
-        "Strategies and advice adaptable to various proficiency levels, from beginners to advanced learners.",
+      smallTitle: '• Personalized Learning Pathways: ',
+      content: 'Strategies and advice adaptable to various proficiency levels, from beginners to advanced learners.',
     },
     {
-      smallTitle: "• Evaluation Techniques: ",
-      content:
-        "Tools and methods for self-assessment and continuous improvement in writing skills.",
+      smallTitle: '• Evaluation Techniques: ',
+      content: 'Tools and methods for self-assessment and continuous improvement in writing skills.',
     },
     {
-      smallTitle: "• Grammar and Vocabulary Focus: ",
-      content:
-        "Special emphasis on the linguistic elements critical for success in the DET writing section.",
+      smallTitle: '• Grammar and Vocabulary Focus: ',
+      content: 'Special emphasis on the linguistic elements critical for success in the DET writing section.',
     },
     {
-      smallTitle: "• Updated and Relevant: ",
+      smallTitle: '• Updated and Relevant: ',
       content:
-        "Incorporating the latest trends and updates in the DET writing format, ensures you have the most current preparation.",
+        'Incorporating the latest trends and updates in the DET writing format, ensures you have the most current preparation.',
     },
   ],
 });
 
 const contaceUsList = ref([
   {
-    icon: "/img/guid/wallet.svg",
-    font: "Buying Guide",
-    tip: "Please select whether you are buying a speaking guide or a writing guide",
-    btn: "Buying Speaking Guide",
-    btn1: "Buying Writing Guide",
-    id: "1",
+    icon: '/img/guid/wallet.svg',
+    font: 'Buying Guide',
+    tip: 'Please select whether you are buying a speaking guide or a writing guide',
+    btn: 'Buying Speaking Guide',
+    btn1: 'Buying Writing Guide',
+    id: '1',
   },
   {
-    icon: "/img/guid/download.svg",
-    font: "Download",
-    tip: "After purchasing the course, you can click to download it",
-    btn: "Download Speaking Guide",
-    btn1: "Download Writing Guide",
-    id: "2",
+    icon: '/img/guid/download.svg',
+    font: 'Download',
+    tip: 'After purchasing the course, you can click to download it',
+    btn: 'Download Speaking Guide',
+    btn1: 'Download Writing Guide',
+    id: '2',
   },
   {
-    icon: "/img/guid/book.svg",
-    font: "Start Learning",
-    tip: "After purchasing the course, you can view audio related to the Speaking Guide.",
-    btn: "",
-    btn1: "Speaking practice audio",
-    id: "3",
+    icon: '/img/guid/book.svg',
+    font: 'Start Learning',
+    tip: 'After purchasing the course, you can view audio related to the Speaking Guide.',
+    btn: '',
+    btn1: 'Speaking practice audio',
+    id: '3',
   },
 ]);
 
@@ -179,20 +171,14 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
-              <div
-                v-for="(item, index) in article1.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">{{
-                    pricedata?.speakData?.price / 100 || 0
-                  }}</span>
+                  <span class="price_num">{{ pricedata?.speakData?.price / 100 || 0 }}</span>
                 </div>
                 <div
                   v-if="user.id"
@@ -204,11 +190,7 @@ const buyMembership = (id: number) => {
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login?url=/products/guide`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login?url=/products/guide`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -226,20 +208,14 @@ const buyMembership = (id: number) => {
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
-              <div
-                v-for="(item, index) in article2.list"
-                :key="index"
-                class="one_article_detail"
-              >
+              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
                 <span class="small_title">{{ item.smallTitle }}</span>
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
                   <span class="tag">$</span>
-                  <span class="price_num">{{
-                    pricedata?.writeData?.price / 100 || 0
-                  }}</span>
+                  <span class="price_num">{{ pricedata?.writeData?.price / 100 || 0 }}</span>
                 </div>
                 <div
                   v-if="user.id"
@@ -251,11 +227,7 @@ const buyMembership = (id: number) => {
                     <img src="/img/products/white_arrow_right.svg" />
                   </div>
                 </div>
-                <NuxtLink
-                  :to="localePath(`/login?url=/products/guide`)"
-                  v-else
-                  class="btn common_btn_hover_bgColor"
-                >
+                <NuxtLink :to="localePath(`/login?url=/products/guide`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img src="/img/products/white_arrow_right.svg" />
@@ -274,42 +246,23 @@ const buyMembership = (id: number) => {
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon"><img :src="`${item.icon}`" /></div>
-            <img
-              src="/img/guid/Double_Right_Arrow.svg"
-              class="Double_Right_Arrow"
-              alt=""
-            />
+            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" alt="" />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <template v-if="item.id === '1'">
               <template v-if="user.id">
-                <div
-                  v-if="item.btn"
-                  @click="buyMembership(pricedata?.speakData?.id)"
-                  class="btn"
-                >
+                <div v-if="item.btn" @click="buyMembership(pricedata?.speakData?.id)" class="btn">
                   {{ item.btn }}
                 </div>
-                <div
-                  v-if="item.btn1"
-                  @click="buyMembership(pricedata?.writeData?.id)"
-                  class="btn"
-                >
+                <div v-if="item.btn1" @click="buyMembership(pricedata?.writeData?.id)" class="btn">
                   {{ item.btn1 }}
                 </div>
               </template>
               <template v-else>
-                <NuxtLink
-                  v-if="item.btn"
-                  :to="localePath(`/login?url=/products/guide`)"
-                  class="btn"
-                >
+                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/products/guide`)" class="btn">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink
-                  v-if="item.btn1"
-                  :to="localePath(`/login?url=/products/guide`)"
-                  class="btn"
+                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/products/guide`)" class="btn"
                   >{{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -368,10 +321,7 @@ const buyMembership = (id: number) => {
                 </template>
               </template>
               <template v-else>
-                <NuxtLink
-                  class="btn"
-                  :to="localePath(`/login?url=/products/common/listen`)"
-                >
+                <NuxtLink class="btn" :to="localePath(`/login?url=/products/common/listen`)">
                   {{ item.btn1 }}
                 </NuxtLink></template
               >
@@ -384,12 +334,11 @@ const buyMembership = (id: number) => {
       <div class="orange_block">
         <div class="orange_title">Elite Language Educators</div>
         <div class="team_desc">
-          Our distinguished team of language educators, holding esteemed qualifications
-          like TESOL and other teaching Certificates, brings a wealth of experience in
-          preparing students for major English tests like TOEFL, IELTS, and Duolingo
-          English Test (DET). Renowned for their impressive language skills, personalized
-          teaching approaches, and innovative methods, they are committed to helping each
-          student achieve their highest potential in English proficiency.
+          Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching
+          Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS,
+          and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching
+          approaches, and innovative methods, they are committed to helping each student achieve their highest potential
+          in English proficiency.
         </div>
         <div class="team_img">
           <img src="/img/guid/team_bg.svg" />

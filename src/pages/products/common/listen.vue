@@ -15,7 +15,7 @@ const state = reactive({
 });
 state.played = JSON.parse(getStorage('det_listen') || '[]');
 const getList = async () => {
-  const { data = {} } = (await useFetch(`${api}/common/courses`, { server: false })) as any;
+  const { data = {} } = (await useFetch(`${api}/common/courses`, { server: false, lazy: true })) as any;
   const { listenThenSpeak, sampleAnswer } = data.value;
   state.listenThenSpeak = [...listenThenSpeak];
   state.sampleAnswer = [...sampleAnswer];

@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { urlGet } from "@/utils";
-import { useStore } from "@/store";
-import vEmbark from "../../components/embark.vue";
+import { urlGet } from '@/utils';
+import { useStore } from '@/store';
+import vEmbark from '../../components/embark.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useSeoMeta({
-  title: "DET Practice:The most powerful website for Duolingo practice test. ",
+  title: 'DET Practice:The most powerful website for Duolingo practice test. ',
   description:
-    "The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.",
+    'The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',
 });
 // 获取平台数据
 const {
@@ -20,6 +20,7 @@ const {
   },
 } = (await useFetch(`${api}/common/platformData`, {
   server: false,
+  lazy: true,
 })) as any;
 
 // 将数字格式化 306281变为306k 3062811变为3061k
@@ -49,9 +50,8 @@ const {
                 <h1>Duolingo Practice Question Bank</h1>
               </div>
               <div class="desc">
-                "Abundant test questions, Answer analysis & templates, intelligent
-                planning , AI speaking evaluation " — achieve score improvement quickly at
-                the lowest cost through a scientific approach.
+                "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation " —
+                achieve score improvement quickly at the lowest cost through a scientific approach.
               </div>
               <div class="people_num">
                 <div class="icon_continer">
@@ -75,21 +75,13 @@ const {
                   {{ platformData.userTotal }} people used the question bank for practice.
                 </div>
               </div>
-              <NuxtLink
-                v-if="user.id"
-                class="btn common_btn_hover_bgColor"
-                :to="urlGet('/questions')"
-              >
+              <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :to="urlGet('/questions')">
                 <div class="font">Practice For Free</div>
                 <div class="icon">
                   <img src="/img/products/white_arrow_right.svg" />
                 </div>
               </NuxtLink>
-              <NuxtLink
-                v-else
-                class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=/products/bank`)"
-              >
+              <NuxtLink v-else class="btn common_btn_hover_bgColor" :to="localePath(`/login?url=/products/bank`)">
                 <div class="font">Practice For Free</div>
                 <div class="icon">
                   <img src="/img/products/white_arrow_right.svg" />
@@ -110,10 +102,9 @@ const {
               <div class="one_card_right_forMid">
                 <h2 class="right_title">Abundant test questions</h2>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>,
-                  covering various types of exams, and continuously updating the question
-                  bank. It helps you systematically enhance your test-taking abilities in
-                  different question formats.
+                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
+                  and continuously updating the question bank. It helps you systematically enhance your test-taking
+                  abilities in different question formats.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">Start experiencing</div>
@@ -139,9 +130,9 @@ const {
                 <div class="right_title">Intelligent planning</div>
                 <div class="right_desc">
                   We have developed an intelligent learning knowledge graph to recommend a
-                  <span class="strong">personalized practice plan</span> for you. Through
-                  intelligent analysis of your daily learning behavior, we suggest the
-                  most suitable practice questions to help you study more intelligently.
+                  <span class="strong">personalized practice plan</span> for you. Through intelligent analysis of your
+                  daily learning behavior, we suggest the most suitable practice questions to help you study more
+                  intelligently.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">Start experiencing</div>
@@ -166,9 +157,9 @@ const {
               <div class="one_card_right_forMid">
                 <div class="right_title">AI speaking evaluation</div>
                 <div class="right_desc">
-                  <span class="strong"> AI-based spoken language scoring</span> makes oral
-                  practice more efficient. Once you submit a spoken language question, you
-                  instantly receive a comprehensive assessment of your oral skills.
+                  <span class="strong"> AI-based spoken language scoring</span> makes oral practice more efficient. Once
+                  you submit a spoken language question, you instantly receive a comprehensive assessment of your oral
+                  skills.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">Start experiencing</div>
@@ -193,11 +184,10 @@ const {
               <div class="one_card_right_forMid">
                 <div class="right_title">Answer analysis</div>
                 <div class="right_desc">
-                  Providing <span class="strong"> detailed answer explanations</span> to
-                  help you gain a profound understanding of key concepts and solution
-                  approaches. Through these explanations, you not only can answer
-                  questions correctly but also enhance your grasp of knowledge points,
-                  improving your learning effectiveness.
+                  Providing <span class="strong"> detailed answer explanations</span> to help you gain a profound
+                  understanding of key concepts and solution approaches. Through these explanations, you not only can
+                  answer questions correctly but also enhance your grasp of knowledge points, improving your learning
+                  effectiveness.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">Start experiencing</div>
@@ -222,5 +212,5 @@ const {
 </template>
 
 <style lang="scss" scoped>
-@import "./common/prod.scss";
+@import './common/prod.scss';
 </style>
