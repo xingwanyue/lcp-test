@@ -170,7 +170,7 @@ const logout = () => {
               </NuxtLink>
             </div>
             <template #reference>
-              <nuxt-link
+              <div
                 :class="`head-name head-name-products ${popoverQuestions ? 'head-name-products1' : ''}`"
                 @mouseover="popoverQuestions = true"
                 @mouseleave="popoverQuestions = false"
@@ -178,7 +178,7 @@ const logout = () => {
                 {{ menu.name }}
                 <el-image v-if="!popoverQuestions" src="/img/learn/down-icon.svg" class="down-icon" />
                 <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" />
-              </nuxt-link>
+              </div>
             </template>
           </el-popover>
           <nuxt-link v-else :to="localePath(menu.path)"
@@ -607,10 +607,19 @@ const logout = () => {
           }
         }
         .head-name-products {
-          height: 68px;
-          border-bottom: 4px;
+          height: 72px;
+          line-height: 68px;
+          padding-bottom: 4px;
           display: flex;
           align-items: center;
+          color: #403f3e;
+          overflow: hidden;
+          .down-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 8px;
+          }
         }
         .head-name-products1 {
           color: #f66442;

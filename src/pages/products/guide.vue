@@ -157,6 +157,14 @@ const contaceUsList = ref([
 const buyMembership = (id: number) => {
   store.stripePay({ vipId: id });
 };
+const isLoad = ref(false);
+const onLoad = () => {
+  isLoad.value = true;
+};
+const isLoad2 = ref(false);
+const onLoad2 = () => {
+  isLoad2.value = true;
+};
 </script>
 
 <template>
@@ -167,7 +175,13 @@ const buyMembership = (id: number) => {
           <h1 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h1>
           <div class="article_out">
             <div class="left_img">
-              <img src="/img/guid/guide1.png" />
+              <!-- <img src="/img/guid/guide1.png" /> -->
+              <el-image v-show="isLoad" src="/img/guid/guide1.png" alt="" @load="onLoad" />
+              <el-skeleton v-show="!isLoad" style="width: 100%; height: 100%" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article1.title }}</div>
@@ -204,7 +218,13 @@ const buyMembership = (id: number) => {
           <div class="title">DET Writing Exam Excellence: A Comprehensive Guide</div>
           <div class="article_out">
             <div class="left_img">
-              <img src="/img/guid/guide2.png" />
+              <!-- <img src="/img/guid/guide2.png" /> -->
+              <el-image v-show="isLoad2" src="/img/guid/guide2.png" alt="" @load="onLoad2" />
+              <el-skeleton v-show="!isLoad2" style="width: 100%; height: 100%" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="right_article">
               <div class="one_article_title">{{ article2.title }}</div>
