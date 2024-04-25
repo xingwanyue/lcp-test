@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
   features: {
-    // inlineStyles: false,
+    inlineStyles: false,
   },
   app: {
     head: {
