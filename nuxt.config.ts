@@ -4,10 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
-  css: ['@/assets/iconfont/iconfont.css', 'aos/dist/aos.css'],
+  css: ['@/assets/iconfont/iconfont.css'],
   i18n: { locales: ['en', 'id'], defaultLocale: 'en', vueI18n: './i18n.config.ts' },
   plugins: [
-    { src: '@/plugins/aos.client.js', mode: 'client' },
+    // { src: '@/plugins/aos.client.js', mode: 'client' },
     { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/crisp.js', mode: 'client' },
