@@ -573,7 +573,7 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_part3">
                 <div class="member_price">
                   <span v-if="item.vipPrice !== item.price">
-                   ${{ (item.vipPrice / 100).toFixed(2) }}
+                    ${{ (item.vipPrice / 100).toFixed(2) }}
                   </span>
                 </div>
                 <div class="member_font">
@@ -607,7 +607,38 @@ const formateMinToHour = (min: number) => {
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <Carousel
+          <el-carousel
+            height="46px"
+            direction="vertical"
+            :autoplay="true"
+            indicator-position="none"
+          >
+            <el-carousel-item v-for="item in buyData" :key="item.id" class="scroll_buyed">
+              <div class="scroll_buyed_left">
+                <div class="icon">
+                  <img
+                    src="/img/pricing/green_check.svg"
+                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                  />
+                </div>
+                <div class="name">{{ item.data.nickname }}</div>
+                <div class="type">purchased</div>
+                <div class="days">{{ item.data.tag }}</div>
+              </div>
+              <div class="scroll_buyed_mid">
+                <div class="flag">
+                  <img
+                    v-if="item.data.avatar"
+                    :src="staticUrlGet(item.data.avatar)"
+                    :alt="item.data.country"
+                  />
+                </div>
+                <div class="country_name">{{ item.data.country }}</div>
+                <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
+              </div>
+            </el-carousel-item>
+          </el-carousel>
+          <!-- <Carousel
             :itemsToShow="1"
             :autoplay="2000"
             :wrap-around="true"
@@ -637,7 +668,7 @@ const formateMinToHour = (min: number) => {
                 <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
               </div>
             </Slide>
-          </Carousel>
+          </Carousel> -->
         </div>
 
         <div class="bank_card">
@@ -1121,15 +1152,18 @@ const formateMinToHour = (min: number) => {
       }
 
       .scroll_buyed_wrapper {
-        height: 56px;
+        height: 46px;
         margin-top: 32px;
         height: fit-content;
+        padding: 10px 20px;
+        background: #fff4f1;
+        border-radius: 8px;
 
         .scroll_buyed {
-          padding: 16px 24px;
+          padding: 0px 0px;
           background: #fff4f1;
-          border-radius: 8px;
-          width: 100%;
+
+          // width: 100%;
           display: flex;
           justify-content: flex-start;
           align-items: center;
