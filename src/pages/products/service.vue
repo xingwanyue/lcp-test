@@ -23,6 +23,30 @@ const {
   server: false,
   lazy: true,
 })) as any;
+const isLoad = ref(false);
+const onLoad = () => {
+  isLoad.value = true;
+};
+const isLoad2 = ref(false);
+const onLoad2 = () => {
+  isLoad2.value = true;
+};
+const isLoad3 = ref(false);
+const onLoad3 = () => {
+  isLoad3.value = true;
+};
+const isLoad4 = ref(false);
+const onLoad4 = () => {
+  isLoad4.value = true;
+};
+const isLoad5 = ref(false);
+const onLoad5 = () => {
+  isLoad5.value = true;
+};
+const isLoad1 = ref(false);
+const onLoad1 = () => {
+  isLoad1.value = true;
+};
 </script>
 <template>
   <div class="bankW100 service_out">
@@ -74,14 +98,26 @@ const {
               </NuxtLink>
             </div>
             <div class="banner_right">
-              <img src="/img/products/service_banner.png" />
+              <!-- <img src="/img/products/service_banner.png" /> -->
+              <el-image v-show="isLoad" src="/img/products/service_banner.png" alt="" @load="onLoad" />
+              <el-skeleton v-show="!isLoad" style="width: 100%; height: 100%" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
           </div>
         </div>
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <img src="/img/products/service_picture1.png" />
+              <!-- <img src="/img/products/service_picture1.png" /> -->
+              <el-image v-show="isLoad1" src="/img/products/service_picture1.png" alt="" @load="onLoad1" />
+              <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -107,7 +143,13 @@ const {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="/img/products/service_picture2.png" />
+              <!-- <img src="/img/products/service_picture2.png" /> -->
+              <el-image v-show="isLoad2" src="/img/products/service_picture2.png" alt="" @load="onLoad2" />
+              <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -134,7 +176,13 @@ const {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="/img/products/service_picture3.png" />
+              <!-- <img src="/img/products/service_picture3.png" /> -->
+              <el-image v-show="isLoad3" src="/img/products/service_picture3.png" alt="" @load="onLoad3" />
+              <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -159,7 +207,13 @@ const {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="/img/products/service_picture4.png" />
+              <!-- <img src="/img/products/service_picture4.png" /> -->
+              <el-image v-show="isLoad4" src="/img/products/service_picture4.png" alt="" @load="onLoad4" />
+              <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
@@ -185,7 +239,13 @@ const {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <img src="/img/products/service_picture5.png" />
+              <!-- <img src="/img/products/service_picture5.png" /> -->
+              <el-image v-show="isLoad5" src="/img/products/service_picture5.png" alt="" @load="onLoad5" />
+              <el-skeleton v-show="!isLoad5" style="width: 100%; height: 385px" animated>
+                <template #template>
+                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
+                </template>
+              </el-skeleton>
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
