@@ -18,7 +18,11 @@
         <div class="desc">We'll send you an email with the reset code</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
+            <img
+              src="/img/login/errIcon.svg"
+              class="errIcon"
+              alt="DET Practice:The best Duolingo English Test Practice platform"
+            />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">

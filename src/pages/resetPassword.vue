@@ -1,7 +1,10 @@
 <template>
   <div class="login">
     <div class="left">
-      <img src="/img/login/lock.svg" alt="" />
+      <img
+        src="/img/login/lock.svg"
+        alt="DET Practice:The best Duolingo English Test Practice platform"
+      />
       <div class="t1">Forgot Password?</div>
       <div class="t2">Please enter the email used to create your account</div>
       <el-form
@@ -22,7 +25,11 @@
         <div class="desc">Please wait for 120 seconds to reset code</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
+            <img
+              src="/img/login/errIcon.svg"
+              class="errIcon"
+              alt="DET Practice:The best Duolingo English Test Practice platform"
+            />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">

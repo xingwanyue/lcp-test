@@ -4,7 +4,10 @@
       <div class="t1">Sign up</div>
       <h1 class="t2">Create your free DETPractice account</h1>
       <div class="loginGoogle" @click="googleRegister">
-        <img src="/img/login/google_logo.svg" alt="" />
+        <img
+          src="/img/login/google_logo.svg"
+          alt="DET Practice:The best Duolingo English Test Practice platform"
+        />
         <span style="margin-left: 16px">Sign up with Google</span>
       </div>
       <el-divider class="fengeline"><span>Or continue with</span></el-divider>
@@ -23,7 +26,11 @@
         <div class="desc">You will receive your activation code by email</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
+            <img
+              src="/img/login/errIcon.svg"
+              class="errIcon"
+              alt="DET Practice:The best Duolingo English Test Practice platform"
+            />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">

@@ -96,7 +96,10 @@ const handleCurrentChange = async (val: number) => {
               }}
             </div>
             <div class="right_arrow">
-              <el-image src="/img/blog/right_arrow.svg"></el-image>
+              <el-image
+                src="/img/blog/right_arrow.svg"
+                alt="DET Practice:The best Duolingo English Test Practice platform"
+              ></el-image>
             </div>
           </div>
         </NuxtLink>

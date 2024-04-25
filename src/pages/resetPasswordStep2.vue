@@ -24,7 +24,7 @@
               <img
                 :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
                 style="cursor: pointer"
-                alt=""
+                alt="DET Practice:The best Duolingo English Test Practice platform"
                 @click="pwdShow = !pwdShow"
               />
             </template>
@@ -42,7 +42,7 @@
               <img
                 :src="pwdShow1 ? '/img/login/look.svg' : '/img/login/unlook.svg'"
                 style="cursor: pointer"
-                alt=""
+                alt="DET Practice:The best Duolingo English Test Practice platform"
                 @click="pwdShow1 = !pwdShow1"
               />
             </template>
@@ -50,7 +50,11 @@
         </el-form-item>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img src="/img/login/errIcon.svg" class="errIcon" alt="" />
+            <img
+              src="/img/login/errIcon.svg"
+              class="errIcon"
+              alt="DET Practice:The best Duolingo English Test Practice platform"
+            />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">

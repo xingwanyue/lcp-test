@@ -158,7 +158,7 @@ const onLoad4 = () => {
         </div>
         <div v-if="!user.id" class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
-            <img src="/img/home/google_icon.svg" />
+            <img src="/img/home/google_icon.svg" alt="Start free with Google" />
             Start free with Google
           </div>
           <NuxtLink

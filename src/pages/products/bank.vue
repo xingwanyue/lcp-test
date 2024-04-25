@@ -131,7 +131,10 @@ const onLoad4 = () => {
               >
                 <div class="font">Practice For Free</div>
                 <div class="icon">
-                  <img src="/img/products/white_arrow_right.svg" />
+                  <img
+                    src="/img/products/white_arrow_right.svg"
+                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                  />
                 </div>
               </NuxtLink>
             </div>
