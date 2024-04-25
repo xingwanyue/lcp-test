@@ -73,7 +73,7 @@ useSeoMeta({
           to you as soon as possible to address your inquiries.
         </div>
         <div class="info">
-          <el-image src="/img/aboutus/email.svg" class="email-img"></el-image>
+          <el-image src="/img/aboutus/email.svg" class="email-img" alt="email"></el-image>
           <div class="info-right">
             <div class="name">Email</div>
             <div class="address">support@detpractice.com</div>

@@ -89,7 +89,11 @@ useSeoMeta({
         <div class="select">
           <div class="select-title" @click="state.drawerVisible = true">
             <span>{{ state.selConData.name }}</span>
-            <img src="/img/learn/down-icon.svg" class="img img-down" alt="" />
+            <img
+              src="/img/learn/down-icon.svg"
+              class="img img-down"
+              alt="DET Practice:The best Duolingo English Test Practice platform"
+            />
           </div>
         </div>
         <div class="left">
