@@ -365,7 +365,9 @@ const onLoad4 = () => {
           <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
             Join Them
           </NuxtLink>
-          <NuxtLink v-else :to="urlGet('/')" class="common_btn common_btn_hover_bgColor yellow"> Join Them </NuxtLink>
+          <NuxtLink v-else :to="urlGet('/home')" class="common_btn common_btn_hover_bgColor yellow">
+            Join Them
+          </NuxtLink>
         </div>
         <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
