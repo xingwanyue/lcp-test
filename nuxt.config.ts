@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        { rel: 'stylesheet', href: '/css/aos.css' },
+        // { rel: 'stylesheet', href: '/css/aos.css' },
         { rel: 'stylesheet', href: '/css/carousel.css' },
         {
           rel: 'stylesheet',
