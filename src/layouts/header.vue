@@ -122,7 +122,10 @@ const logout = () => {
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
                 <div class="icon">
-                  <img src="/img/home/product_icon1.svg" />
+                  <img
+                    src="/img/home/product_icon1.svg"
+                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                  />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Practice</div>
@@ -134,7 +137,10 @@ const logout = () => {
               </NuxtLink>
               <NuxtLink :to="localePath('/products/service')" class="one_card card2">
                 <div class="icon">
-                  <img src="/img/home/product_icon2.svg" />
+                  <img
+                    src="/img/home/product_icon2.svg"
+                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                  />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Correction Service</div>
@@ -146,7 +152,10 @@ const logout = () => {
               </NuxtLink>
               <NuxtLink :to="localePath('/products/mock')" class="one_card card3">
                 <div class="icon">
-                  <img src="/img/home/product_icon3.svg" />
+                  <img
+                    src="/img/home/product_icon3.svg"
+                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                  />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
@@ -158,7 +167,10 @@ const logout = () => {
               </NuxtLink>
               <NuxtLink :to="localePath('/products/guide')" class="one_card card4">
                 <div class="icon">
-                  <img src="/img/home/product_icon4.svg" />
+                  <img
+                    src="/img/home/product_icon4.svg"
+                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                  />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Test Course</div>
@@ -176,8 +188,18 @@ const logout = () => {
                 @mouseleave="popoverQuestions = false"
               >
                 {{ menu.name }}
-                <el-image v-if="!popoverQuestions" src="/img/learn/down-icon.svg" class="down-icon" />
-                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" />
+                <el-image
+                  v-if="!popoverQuestions"
+                  src="/img/learn/down-icon.svg"
+                  class="down-icon"
+                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                />
+                <el-image
+                  v-else
+                  src="/img/learn/up-icon.svg"
+                  class="down-icon"
+                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                />
               </div>
             </template>
           </el-popover>
@@ -212,7 +234,12 @@ const logout = () => {
         <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
       </div>
       <div class="mobile">
-        <el-image src="/img/menu.svg" class="mobileMenus" @click="handleOpen" />
+        <el-image
+          src="/img/menu.svg"
+          class="mobileMenus"
+          alt="DET Practice:The best Duolingo English Test Practice platform"
+          @click="handleOpen"
+        />
       </div>
     </div>
     <el-drawer
@@ -227,15 +254,30 @@ const logout = () => {
         <nuxt-link :to="localePath('/')" class="" @click="handleClose">
           <span class="icon iconfont icon-logo mobileLogo"></span>
         </nuxt-link>
-        <el-image class="mobile-cancel" @click="handleClose" src="/img/learn/mobile-close.svg" />
+        <el-image
+          class="mobile-cancel"
+          @click="handleClose"
+          src="/img/learn/mobile-close.svg"
+          alt="DET Practice:The best Duolingo English Test Practice platform"
+        />
       </div>
       <div class="asideMenus">
         <div v-for="menu in menus" :key="menu.path">
           <div v-if="menu.path === '/products'" :class="`asideMeun-pro`">
             <div class="asideMeun1" @click="productClick">
               {{ menu.name }}
-              <el-image v-if="!isProductsMobile" src="/img/learn/down-mobile.svg" class="down-icon-mobile" />
-              <el-image v-else src="/img/learn/up-mobile.svg" class="down-icon-mobile" />
+              <el-image
+                v-if="!isProductsMobile"
+                src="/img/learn/down-mobile.svg"
+                class="down-icon-mobile"
+                alt="DET Practice:The best Duolingo English Test Practice platform"
+              />
+              <el-image
+                v-else
+                src="/img/learn/up-mobile.svg"
+                class="down-icon-mobile"
+                alt="DET Practice:The best Duolingo English Test Practice platform"
+              />
             </div>
             <nuxt-link
               v-if="isProductsMobile"

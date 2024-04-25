@@ -82,6 +82,7 @@ const onAudioEnd = () => {
           :key="key"
           src="/img/listen/play.svg"
           class="play-img"
+          alt="DET Practice:The best Duolingo English Test Practice platform"
           @click="playClick(val)"
         ></el-image>
         <span v-if="state.playData.path === val.path">
@@ -92,12 +93,14 @@ const onAudioEnd = () => {
                 :id="`playing-img${key}`"
                 src="/img/listen/playing.svg"
                 class="playing-img"
+                alt="DET Practice:The best Duolingo English Test Practice platform"
               ></el-image>
               <el-image
                 :key="`${key}a`"
                 :id="`playing-img${key}a`"
                 src="/img/listen/playing.svg"
                 class="playing-img"
+                alt="DET Practice:The best Duolingo English Test Practice platform"
                 style="margin-left: 2px"
               ></el-image>
             </div>
@@ -108,6 +111,7 @@ const onAudioEnd = () => {
             :id="`playing-img${key}`"
             src="/img/listen/play.svg"
             class="playing-img-play"
+            alt="DET Practice:The best Duolingo English Test Practice platform"
             @click="continuePlay"
           ></el-image>
         </span>
@@ -117,6 +121,7 @@ const onAudioEnd = () => {
           :key="key"
           src="/img/listen/pause.svg"
           class="pause-img"
+          alt="DET Practice:The best Duolingo English Test Practice platform"
           @click="pauseClick()"
         ></el-image>
       </div>
