@@ -194,17 +194,17 @@ const onLoad4 = () => {
     <div class="part2_wrapper">
       <div class="part2">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-          <h3>
+          <h2>
             The best platform for enhancing your scores in the<br />
             Duolingo English Test
-          </h3>
+          </h2>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <h3>Utilize our comprehensive resources to accelerate your score improvement</h3>
+          <h2>Utilize our comprehensive resources to accelerate your score improvement</h2>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad" src="/img/home/home1.png" alt="" @load="onLoad" />
+            <el-image v-show="isLoad" src="/img/home/home1.png" alt="Duolingo English Test Practice" @load="onLoad" />
             <el-skeleton v-show="!isLoad" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -213,7 +213,7 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>Duolingo English Test Practice</h2>
+              <h3>Duolingo English Test Practice</h3>
             </div>
             <div class="tips">
               Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice questions, the question bank is
@@ -227,14 +227,14 @@ const onLoad4 = () => {
             <NuxtLink class="get_more" :to="localePath('/products/bank')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" />
+                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad2" src="/img/home/home2.png" alt="" @load="onLoad2" />
+            <el-image v-show="isLoad2" src="/img/home/home2.png" alt="Correction Service powered by AI" @load="onLoad2" />
             <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -256,14 +256,14 @@ const onLoad4 = () => {
             <NuxtLink class="get_more" :to="localePath('/products/service')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" />
+                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad3" src="/img/home/home3.png" alt="" @load="onLoad3" />
+            <el-image v-show="isLoad3" src="/img/home/home3.png" alt="Duolingo English Test Mock" @load="onLoad3" />
             <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -285,14 +285,14 @@ const onLoad4 = () => {
             <NuxtLink class="get_more" :to="localePath('/products/mock')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" />
+                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad4" src="/img/home/home4.png" alt="" @load="onLoad4" />
+            <el-image v-show="isLoad4" src="/img/home/home4.png" alt="Duolingo English Test Course" @load="onLoad4" />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -318,7 +318,7 @@ const onLoad4 = () => {
             <NuxtLink class="get_more" :to="localePath('/products/guide')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" />
+                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
               </div>
             </NuxtLink>
           </div>
@@ -356,7 +356,7 @@ const onLoad4 = () => {
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
-                    <img :src="staticUrlGet(item.data.avatar)" />
+                    <img :src="staticUrlGet(item.data.avatar)" :alt='item.data.nickname' />
                   </div>
                   <div class="user_detail">
                     <div class="user_name">{{ item.data.nickname }}</div>
@@ -364,7 +364,7 @@ const onLoad4 = () => {
                   </div>
                 </div>
                 <div class="one_score_content_img">
-                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" />
+                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" :alt='item.data.nickname' />
                 </div>
               </div>
             </Slide>
@@ -387,7 +387,7 @@ const onLoad4 = () => {
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[0].avatar" />
+                          <img :src="item[0].avatar" :alt='item[0].nickname' />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -404,7 +404,7 @@ const onLoad4 = () => {
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[1].avatar" />
+                          <img :src="item[1].avatar" :alt='item[1].nickname' />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>
@@ -668,7 +668,7 @@ const onLoad4 = () => {
       // border: 1px blue solid;
       margin: 0 auto;
       .title1 {
-        h3 {
+        h2 {
           font-weight: 500;
           font-size: 40px;
           color: #201515;
@@ -688,7 +688,7 @@ const onLoad4 = () => {
           margin-top: 20px;
           margin-bottom: 40px;
         }
-        h3 {
+        h2 {
           font-weight: 500;
           font-size: 24px;
           color: #201515;
@@ -736,7 +736,7 @@ const onLoad4 = () => {
             text-align: center;
           }
           .article_out_title {
-            h2 {
+            h3 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
