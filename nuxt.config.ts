@@ -15,7 +15,9 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: false,
   },
-  writeEarlyHints: true,
+  experimental: {
+    writeEarlyHints: true,
+  },
   app: {
     head: {
       link: [
