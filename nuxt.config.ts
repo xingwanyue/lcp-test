@@ -13,18 +13,13 @@ export default defineNuxtConfig({
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
   features: {
-    // inlineStyles: false,
+    inlineStyles: false,
   },
   app: {
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        // { rel: 'stylesheet', href: '/css/aos.css' },
         { rel: 'stylesheet', href: '/css/carousel.css' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Nunito',
-        },
       ],
       htmlAttrs: {
         lang: 'en',
@@ -35,7 +30,7 @@ export default defineNuxtConfig({
           async: true,
         },
         {
-          src: '/js/googleAnalytics.js',
+          src: '/js/main.js',
           async: true,
         },
       ],
