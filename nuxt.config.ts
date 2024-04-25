@@ -19,7 +19,12 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
+        { rel: 'stylesheet', href: '/css/aos.css' },
         { rel: 'stylesheet', href: '/css/carousel.css' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Nunito',
+        },
       ],
       htmlAttrs: {
         lang: 'en',
@@ -30,7 +35,7 @@ export default defineNuxtConfig({
           async: true,
         },
         {
-          src: '/js/main.js',
+          src: '/js/googleAnalytics.js',
           async: true,
         },
       ],
