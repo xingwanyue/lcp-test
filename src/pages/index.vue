@@ -170,22 +170,7 @@ const onLoad4 = () => {
           <span class="yellow">{{ formatNumber(platformData?.userTotal) }} students</span>
           worldwide to improve Duolingo English Test scores within one month.
         </div>
-        <div class="big_img_out">
-          <div class="big_img">
-            <video
-              width="100%"
-              height="100%"
-              muted
-              autoplay
-              loop
-              playsinline
-              webkit-playsinline
-              poster="/img/video_banner.png"
-            >
-              <source src="/img/video_banner.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
+        
       </div>
     </div>
     <div class="part2_wrapper">
