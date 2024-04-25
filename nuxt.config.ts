@@ -18,13 +18,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'stylesheet', href: '/css/main.css' },
-        { rel: 'stylesheet', href: '/css/aos.css' },
-        { rel: 'stylesheet', href: '/css/carousel.css' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Nunito',
-        },
+        // { rel: 'stylesheet', href: '/css/main.css' },
+        // { rel: 'stylesheet', href: '/css/aos.css' },
+        // { rel: 'stylesheet', href: '/css/carousel.css' },
+        // {
+        //   rel: 'stylesheet',
+        //   href: 'https://fonts.googleapis.com/css?family=Nunito',
+        // },
       ],
       htmlAttrs: {
         lang: 'en',
