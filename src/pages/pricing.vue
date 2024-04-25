@@ -573,7 +573,7 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_part3">
                 <div class="member_price">
                   <span v-if="item.vipPrice !== item.price">
-                    {{ (item.vipPrice / 100).toFixed(2) }}
+                   ${{ (item.vipPrice / 100).toFixed(2) }}
                   </span>
                 </div>
                 <div class="member_font">
