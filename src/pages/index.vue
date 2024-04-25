@@ -400,7 +400,7 @@ const onLoad4 = () => {
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
-            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+            <Carousel :itemsToShow="4" :autoplay="0" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
                 <div>
                   <div class="one_card">
@@ -415,7 +415,7 @@ const onLoad4 = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].rate" allow-half disabled size="large" />
+                        <el-rate class="custom_rate" v-model="item[0].rate" allow-half disabled size="large" />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].content }}</div>
@@ -1159,6 +1159,17 @@ const onLoad4 = () => {
               .one_card_top_right {
                 :deep(.el-rate .el-rate__icon) {
                   font-size: 28px;
+                }
+                :deep(.el-icon) {
+                  width: 22px;
+                }
+                // .custom_rate {
+                //   .el-rate__icon {
+                //     margin-right: 100px !important;
+                //   }
+                // }
+                :deep(.el-rate) {
+                  --el-rate-icon-margin: 0px;
                 }
               }
             }
