@@ -247,7 +247,6 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     return { membershipArr, moreServiceArr };
   },
 })) as any;
-
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
@@ -458,6 +457,18 @@ const formateMinToHour = (min: number) => {
                 </div>
               </div>
             </div>
+          </div>
+          <div v-if="!vipsData?.membershipArr" class="no-load">
+            <el-skeleton :rows="15" animated />
+          </div>
+          <div v-if="!vipsData?.membershipArr" class="no-load">
+            <el-skeleton :rows="15" animated />
+          </div>
+          <div v-if="!vipsData?.membershipArr" class="no-load">
+            <el-skeleton :rows="15" animated />
+          </div>
+          <div v-if="!vipsData?.membershipArr" class="no-load">
+            <el-skeleton :rows="15" animated />
           </div>
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
@@ -755,7 +766,7 @@ const formateMinToHour = (min: number) => {
               font-size: 14px;
               color: #403f3e;
               margin-top: 11px;
-              min-height: 51px;
+              min-height: 61px;
             }
 
             .card_price_part3 {
@@ -884,6 +895,16 @@ const formateMinToHour = (min: number) => {
 
           .card_price {
             border: 1px solid #e9e9e9;
+          }
+        }
+        .no-load {
+          background: #fff;
+          display: block;
+          border: 1px solid #e9e9e9;
+          border-radius: 8px;
+          padding: 20px;
+          @media (max-width: 750px) {
+            padding: 10px;
           }
         }
       }
