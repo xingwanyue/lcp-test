@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import vSlogen from '../components/slogen.vue';
-import vSubscribe from '../components/subscribe.vue';
-import { oauth2SignIn } from '@/utils/googleAuth';
-import { useStore } from '@/store';
-import { staticUrlGet, formatNumber } from '@/utils';
+import vSlogen from "../components/slogen.vue";
+import vSubscribe from "../components/subscribe.vue";
+import { oauth2SignIn } from "@/utils/googleAuth";
+import { useStore } from "@/store";
+import { staticUrlGet, formatNumber } from "@/utils";
 useSeoMeta({
-  title: 'DET Practice:The best Duolingo English Test Practice platform',
+  title: "DET Practice:The best Duolingo English Test Practice platform",
   description:
-    'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
+    "Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.",
 });
 const localePath = useLocalePath();
 const store = useStore();
@@ -71,21 +71,21 @@ onMounted(() => {
   }
 });
 const moveAnamit = () => {
-  const small_title_wrap = document.querySelector('.small_title_wrap');
-  const small_title = document.querySelectorAll('.one_small_title');
+  const small_title_wrap = document.querySelector(".small_title_wrap");
+  const small_title = document.querySelectorAll(".one_small_title");
   let index = 0;
   let timer = null;
   timer = setInterval(() => {
     small_title.forEach((item) => {
-      item.classList.remove('current');
-      item.classList.remove('per');
-      item.classList.remove('start');
+      item.classList.remove("current");
+      item.classList.remove("per");
+      item.classList.remove("start");
     });
-    small_title[index].classList.add('current');
+    small_title[index].classList.add("current");
     if (index === 0) {
-      small_title[small_title.length - 1].classList.add('per');
+      small_title[small_title.length - 1].classList.add("per");
     } else {
-      small_title[index - 1].classList.add('per');
+      small_title[index - 1].classList.add("per");
     }
     index++;
     if (index === small_title.length) {
@@ -99,7 +99,7 @@ const toThousands = (num: any) => {
   if (!num) {
     return 0;
   }
-  let result = '';
+  let result = "";
   const numStr = num.toString();
   for (let i = 0; i < numStr.length; i++) {
     if (i % 3 === 0 && i !== 0) {
@@ -161,7 +161,10 @@ const onLoad4 = () => {
             <img src="/img/home/google_icon.svg" />
             Start free with Google
           </div>
-          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+          <NuxtLink
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_borderCu white"
+          >
             Start free with email
           </NuxtLink>
         </div>
@@ -200,11 +203,18 @@ const onLoad4 = () => {
           </h2>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <h2>Utilize our comprehensive resources to accelerate your score improvement</h2>
+          <h2>
+            Utilize our comprehensive resources to accelerate your score improvement
+          </h2>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad" src="/img/home/home1.png" alt="Duolingo English Test Practice" @load="onLoad" />
+            <el-image
+              v-show="isLoad"
+              src="/img/home/home1.png"
+              alt="Duolingo English Test Practice"
+              @load="onLoad"
+            />
             <el-skeleton v-show="!isLoad" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -216,25 +226,36 @@ const onLoad4 = () => {
               <h3>Duolingo English Test Practice</h3>
             </div>
             <div class="tips">
-              Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice questions, the question bank is
-              continuously updated and improved.
+              Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice
+              questions, the question bank is continuously updated and improved.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Covering all types of exams, detailed explanations are provided for each
+              question.
+            </div>
+            <div class="tips">
+              Thorough answers, intelligent recognition, and scoring allow you to
+              constantly monitor your performance in answering questions.
             </div>
             <NuxtLink class="get_more" :to="localePath('/products/bank')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
+                <img
+                  src="/img/home/yellow_arrow_right.svg"
+                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad2" src="/img/home/home2.png" alt="Correction Service powered by AI" @load="onLoad2" />
+            <el-image
+              v-show="isLoad2"
+              src="/img/home/home2.png"
+              alt="Correction Service powered by AI"
+              @load="onLoad2"
+            />
             <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -243,27 +264,36 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Correction Service powered by AI</h4>
+              <h3>Correction Service powered by AI</h3>
             </div>
             <div class="tips">
-              "AI + Teacher" provides precise correction services, thoroughly reviewing your essay.
+              "AI + Teacher" provides precise correction services, thoroughly reviewing
+              your essay.
             </div>
             <div class="tips">
-              Just submit your writing content, and you will receive a clear, detailed report and band score in a
-              moment.
+              Just submit your writing content, and you will receive a clear, detailed
+              report and band score in a moment.
             </div>
             <div class="tips">Improve your writing score within two weeks.</div>
             <NuxtLink class="get_more" :to="localePath('/products/service')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
+                <img
+                  src="/img/home/yellow_arrow_right.svg"
+                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad3" src="/img/home/home3.png" alt="Duolingo English Test Mock" @load="onLoad3" />
+            <el-image
+              v-show="isLoad3"
+              src="/img/home/home3.png"
+              alt="Duolingo English Test Mock"
+              @load="onLoad3"
+            />
             <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -272,27 +302,39 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Duolingo English Test Mock</h4>
+              <h3>Duolingo English Test Mock</h3>
             </div>
             <div class="tips">
-              Replicate the formal examination, allowing you to experience the examination process and content in
-              advance.
+              Replicate the formal examination, allowing you to experience the examination
+              process and content in advance.
             </div>
             <div class="tips">
-              Provide detailed simulated test reports, accurately analyzing your strengths and weaknesses.
+              Provide detailed simulated test reports, accurately analyzing your strengths
+              and weaknesses.
             </div>
-            <div class="tips">Take online mock exams anytime, anywhere, with rapid scoring within 24 hours.</div>
+            <div class="tips">
+              Take online mock exams anytime, anywhere, with rapid scoring within 24
+              hours.
+            </div>
             <NuxtLink class="get_more" :to="localePath('/products/mock')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
+                <img
+                  src="/img/home/yellow_arrow_right.svg"
+                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad4" src="/img/home/home4.png" alt="Duolingo English Test Course" @load="onLoad4" />
+            <el-image
+              v-show="isLoad4"
+              src="/img/home/home4.png"
+              alt="Duolingo English Test Course"
+              @load="onLoad4"
+            />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -301,24 +343,27 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h4>Duolingo English Test Course</h4>
+              <h3>Duolingo English Test Course</h3>
             </div>
             <div class="tips">
-              Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with detailed breakdowns, ensuring
-              you confidently handle all exam components.
+              Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with
+              detailed breakdowns, ensuring you confidently handle all exam components.
             </div>
             <div class="tips">
-              Access proven techniques from ESL professionals for improved speaking and writing performance,
-              personalized learning, and effective self-assessment.
+              Access proven techniques from ESL professionals for improved speaking and
+              writing performance, personalized learning, and effective self-assessment.
             </div>
             <div class="tips">
-              Stay ahead with up-to-date insights on DET formats and trends, ensuring your preparation aligns seamlessly
-              with the latest exam standards.
+              Stay ahead with up-to-date insights on DET formats and trends, ensuring your
+              preparation aligns seamlessly with the latest exam standards.
             </div>
             <NuxtLink class="get_more" :to="localePath('/products/guide')">
               <div class="font">Get more information</div>
               <div class="icon">
-                <img src="/img/home/yellow_arrow_right.svg" alt='DET Practice:The best Duolingo English Test Practice platform' />
+                <img
+                  src="/img/home/yellow_arrow_right.svg"
+                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                />
               </div>
             </NuxtLink>
           </div>
@@ -327,7 +372,10 @@ const onLoad4 = () => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
+        <div
+          v-if="usersockerTopFontResponse && usersockerTopFontResponse.length"
+          class="title"
+        >
           {{ usersockerTopFontResponse[0].data }}
         </div>
         <div v-if="platformData" class="user_nums_out">
@@ -345,18 +393,37 @@ const onLoad4 = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
+          <NuxtLink
+            v-if="!user.id"
+            :to="localePath('/login')"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
             Join Them
           </NuxtLink>
         </div>
-        <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
+        <div
+          v-if="usersockerArrResponse && usersockerArrResponse.length"
+          class="score_scroll_out"
+        >
           <!-- {{ usersockerArr }} -->
-          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-            <Slide v-for="(item, index) in usersockerArrResponse" :key="index" class="one_score">
+          <Carousel
+            :itemsToShow="6"
+            :autoplay="2000"
+            :wrap-around="true"
+            :pauseAutoplayOnHover="true"
+          >
+            <Slide
+              v-for="(item, index) in usersockerArrResponse"
+              :key="index"
+              class="one_score"
+            >
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
-                    <img :src="staticUrlGet(item.data.avatar)" :alt='item.data.nickname' />
+                    <img
+                      :src="staticUrlGet(item.data.avatar)"
+                      :alt="item.data.nickname"
+                    />
                   </div>
                   <div class="user_detail">
                     <div class="user_name">{{ item.data.nickname }}</div>
@@ -364,7 +431,10 @@ const onLoad4 = () => {
                   </div>
                 </div>
                 <div class="one_score_content_img">
-                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" :alt='item.data.nickname' />
+                  <img
+                    :src="staticUrlGet(`/${item.data.scoreImg}`)"
+                    :alt="item.data.nickname"
+                  />
                 </div>
               </div>
             </Slide>
@@ -375,19 +445,34 @@ const onLoad4 = () => {
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
+        <div
+          v-if="commentTopFontResponse && commentTopFontResponse.length"
+          class="review_title"
+        >
           {{ commentTopFontResponse[0].data }}
         </div>
         <div class="review_scroll_out">
-          <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
-            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-              <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
+          <div
+            v-if="userPingLunResponse && userPingLunResponse.length"
+            class="review_scroll_out_it"
+          >
+            <Carousel
+              :itemsToShow="4"
+              :autoplay="2000"
+              :wrap-around="true"
+              :pauseAutoplayOnHover="true"
+            >
+              <Slide
+                v-for="(item, index) in userPingLunResponse"
+                :key="index"
+                class="two_card_out"
+              >
                 <div>
                   <div class="one_card">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[0].avatar" :alt='item[0].nickname' />
+                          <img :src="item[0].avatar" :alt="item[0].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -395,7 +480,12 @@ const onLoad4 = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[0].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].content }}</div>
@@ -404,7 +494,7 @@ const onLoad4 = () => {
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[1].avatar" :alt='item[1].nickname' />
+                          <img :src="item[1].avatar" :alt="item[1].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>
@@ -412,7 +502,12 @@ const onLoad4 = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[1].rate" allow-half disabled size="large" />
+                        <el-rate
+                          v-model="item[1].rate"
+                          allow-half
+                          disabled
+                          size="large"
+                        />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].content }}</div>
@@ -710,12 +805,12 @@ const onLoad4 = () => {
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
-        grid-template-areas: 'img_out  article_out';
+        grid-template-areas: "img_out  article_out";
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
-            'img_out'
-            'article_out';
+            "img_out"
+            "article_out";
         }
         .img_out {
           grid-area: img_out;
@@ -810,12 +905,12 @@ const onLoad4 = () => {
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
-        grid-template-areas: ' article_out img_out';
+        grid-template-areas: " article_out img_out";
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
-            'img_out'
-            'article_out';
+            "img_out"
+            "article_out";
         }
         .img_out {
           grid-area: img_out;
@@ -836,6 +931,16 @@ const onLoad4 = () => {
             text-align: center;
           }
           .article_out_title {
+            h3 {
+              font-weight: 500;
+              font-size: 32px;
+              color: #201515;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              @media (max-width: 450px) {
+                font-size: 22px;
+              }
+            }
             h4 {
               font-weight: 500;
               font-size: 32px;
