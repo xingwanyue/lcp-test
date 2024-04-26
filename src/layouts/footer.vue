@@ -171,7 +171,9 @@ const closeCookie = () => {
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <div :class="['show-more', state.isMore2 && 'show-more1']" @click="showMore2()">show more</div>
+          <NuxtLink :class="['show-more', state.isMore2 && 'show-more1']" :to="localePath(`/learn`)"
+            >show more</NuxtLink
+          >
         </div>
       </div>
       <div class="one_link_list">
@@ -180,7 +182,7 @@ const closeCookie = () => {
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <div :class="['show-more', state.isMore1 && 'show-more1']" @click="showMore1()">show more</div>
+          <NuxtLink :class="['show-more', state.isMore1 && 'show-more1']" :to="localePath(`/blog`)">show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
