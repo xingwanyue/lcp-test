@@ -20,6 +20,19 @@ onMounted(async () => {
     }
     await saveToken(token);
     store.getUserInfo();
+    let custom_url = '/';
+
+    const hashString = window.location.hash.substring(1);
+    hashString.split('&').forEach((str) => {
+      const [k, v] = str.split('=');
+      if (k === 'custom_url' && v) {
+        custom_url = decodeURIComponent(v);
+      }
+    });
+    if (custom_url.startsWith('http')) {
+      window.location.href = custom_url;
+      return;
+    }
     router.push('/');
   }
 });
