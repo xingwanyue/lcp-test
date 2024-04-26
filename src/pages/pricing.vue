@@ -985,6 +985,11 @@ const formateMinToHour = (min: number) => {
             border-radius: 8px;
             border: 1px solid #e9e9e9;
 
+            &:hover {
+              border: 2px #f66442 solid;
+              padding: 19px;
+            }
+
             .card_price_part1 {
               font-weight: 600;
               font-size: 24px;
