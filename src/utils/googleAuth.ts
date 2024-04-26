@@ -31,6 +31,9 @@ export function oauth2SignIn(url?: string) {
     response_type: 'token',
   } as any;
 
+  if (url) {
+    params.custom_url = url;
+  }
   // Add form parameters as hidden input values.
   Object.keys(params).forEach((p) => {
     const input = document.createElement('input');
@@ -39,7 +42,6 @@ export function oauth2SignIn(url?: string) {
     input.setAttribute('value', params[p]);
     form.appendChild(input);
   });
-
   // Add form to page and submit it to open the OAuth 2.0 endpoint.
   document.body.appendChild(form);
   form.submit();
