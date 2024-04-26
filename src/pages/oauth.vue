@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { saveToken } from '@/utils';
+import { saveToken, getStorage, saveStorage } from '@/utils';
 import { useRouter } from 'vue-router';
 import { oauthLogin } from '@/utils/googleAuth';
 import { useStore } from '@/store';
@@ -22,16 +22,9 @@ onMounted(async () => {
     }
     await saveToken(token);
     store.getUserInfo();
-    let custom_url = '/';
+    const custom_url = getStorage('custom_url');
+    saveStorage('custom_url', '');
 
-    const hashString = window.location.hash.substring(1);
-    hashString.split('&').forEach((str) => {
-      const [k, v] = str.split('=');
-      if (k === 'custom_url' && v) {
-        custom_url = v;
-      }
-    });
-    console.log('custom_url', custom_url);
     if (custom_url.startsWith('http')) {
       window.location.href = custom_url;
       return;

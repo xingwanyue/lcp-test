@@ -1,5 +1,5 @@
 import { fetchmy } from './request';
-import { api } from '@/utils';
+import { api, saveStorage } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
@@ -32,7 +32,7 @@ export function oauth2SignIn(url?: string) {
   } as any;
 
   if (url) {
-    params.custom_url = encodeURIComponent(url);
+    saveStorage('custom_url', url);
   }
   // Add form parameters as hidden input values.
   Object.keys(params).forEach((p) => {
