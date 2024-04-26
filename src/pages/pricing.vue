@@ -1139,7 +1139,7 @@ const formateMinToHour = (min: number) => {
                 margin-left: 0px;
               }
 
-              top: 2px;
+              // top: 2px;
               @media (max-width: 528px) {
                 width: 24px;
                 height: 16px;
