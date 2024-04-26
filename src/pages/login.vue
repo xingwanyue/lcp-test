@@ -72,7 +72,7 @@ const submit = async () => {
 };
 
 const googleLogin = async () => {
-  return oauth2SignIn();
+  return oauth2SignIn(url);
 };
 </script>
 
