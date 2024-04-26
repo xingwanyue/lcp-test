@@ -177,7 +177,7 @@ const googleRegister = () => {};
       display: flex;
       align-items: center;
       width: 400px;
-      height: 26px;
+      height: 40px;
       background: #fef7f5;
       border-radius: 4px;
       border: 1px solid rgba(246, 100, 66, 0.1);
@@ -260,9 +260,9 @@ const googleRegister = () => {};
       .t2 {
         width: calc(100% - 48px);
       }
-      .err-message {
-        width: calc(100% - 48px);
-      }
+      // .err-message {
+      //   width: calc(100% - 48px);
+      // }
       .loginGoogle {
         width: calc(100% - 48px);
       }
