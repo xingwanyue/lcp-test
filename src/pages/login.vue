@@ -252,14 +252,18 @@ const googleLogin = async () => {
       :deep(.el-divider__text) {
         background-color: #f7f8f9 !important;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         color: rgba(0, 0, 0, 0.45);
       }
     }
-
+    .zhuce {
+      // border: 1px red solid;
+      margin: 0 auto;
+    }
     .goforget {
       color: #f66442 !important;
       cursor: pointer;
+      text-align: center;
     }
   }
   .right {

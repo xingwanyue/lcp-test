@@ -22,8 +22,7 @@
         </el-form-item>
         <el-form-item prop="nickname" label="">
           Full Name
-          <el-input v-model="formData.nickname" maxlength="100" placeholder="Full Name">
-          </el-input>
+          <el-input v-model="formData.nickname" maxlength="100" placeholder="Full Name"> </el-input>
         </el-form-item>
         <el-form-item prop="password" label="">
           Password
@@ -52,13 +51,7 @@
             />
             <span>{{ errMessage }}</span>
           </div>
-          <el-button
-            v-loading="loading"
-            type="primary"
-            native-type="submit"
-            class="submit"
-            @click="submit"
-          >
+          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
             Create Account
           </el-button>
         </el-form-item>
@@ -66,9 +59,7 @@
           <div class="zhuce">
             <div class="goregister">
               Already have an account?
-              <span style="color: #f66442; cursor: pointer" @click="goLogin"
-                >Login here.</span
-              >
+              <span style="color: #f66442; cursor: pointer" @click="goLogin">Login here.</span>
             </div>
           </div>
         </el-form-item>
@@ -78,14 +69,14 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { useRouter, useRoute } from "vue-router";
-import { register } from "@/api";
-import { oauth2SignIn } from "@/utils/googleAuth";
-import { sinupEvent } from "@/utils/gtag";
+import { ref } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
+import { register } from '@/api';
+import { oauth2SignIn } from '@/utils/googleAuth';
+import { sinupEvent } from '@/utils/gtag';
 
 definePageMeta({
-  layout: "noheaderfooter",
+  layout: 'noheaderfooter',
 });
 
 const router = useRouter();
@@ -94,7 +85,7 @@ const route = useRoute();
 const formData = ref({});
 const loading = ref(false);
 const pwdShow = ref(false);
-const errMessage = ref("");
+const errMessage = ref('');
 const errShow = ref(false);
 
 const submit = async () => {
@@ -104,22 +95,22 @@ const submit = async () => {
   errShow.value = false;
   if (!code) {
     errShow.value = true;
-    errMessage.value = "Please enter your code.";
+    errMessage.value = 'Please enter your code.';
     return false;
   }
   if (!nickname) {
     errShow.value = true;
-    errMessage.value = "Please enter your full name.";
+    errMessage.value = 'Please enter your full name.';
     return false;
   }
   if (!password) {
     errShow.value = true;
-    errMessage.value = "Please enter your email address.";
+    errMessage.value = 'Please enter your email address.';
     return false;
   }
   if (password.length < 6) {
     errShow.value = true;
-    errMessage.value = "Password too short.";
+    errMessage.value = 'Password too short.';
     return false;
   }
   const temp = {
@@ -133,7 +124,7 @@ const submit = async () => {
   loading.value = false;
   if (!err) {
     sinupEvent();
-    router.push("/login");
+    router.push('/login');
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -141,7 +132,7 @@ const submit = async () => {
 };
 
 const goLogin = () => {
-  router.push("/login");
+  router.push('/login');
 };
 
 const googleRegister = async () => {
@@ -163,10 +154,12 @@ const googleRegister = async () => {
   }
   .submit {
     width: 400px;
+    border-radius: 25px;
+    height: 50px;
     color: #fff;
     background-color: #f66442;
     border-color: #f66442;
-    font-size: 14px;
+    font-size: 18px;
     &:hover,
     &:active {
       color: #fff !important;
@@ -262,7 +255,7 @@ const googleRegister = async () => {
       :deep(.el-divider__text) {
         background-color: #f7f8f9 !important;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         color: rgba(0, 0, 0, 0.45);
       }
     }
