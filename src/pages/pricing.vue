@@ -68,7 +68,7 @@ const aqList = ref([
 //   },
 // })) as any;
 // aqList.value = aqlistjk.value.data;
-
+const memberShipVipPriceShow = ref(false);
 const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   server: false,
   lazy: true,
@@ -77,6 +77,11 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const moreServiceArr = [] as any;
     vips.forEach((item: any) => {
       if (item.type === '1') {
+        if (item.vipPrice !== item.price) {
+          if (Number(item.vipPrice) !== 0) {
+            memberShipVipPriceShow.value = true;
+          }
+        }
         if (item.day === 0) {
           item.qlList = [
             {
@@ -391,13 +396,30 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
-                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off</span>
+                  <!-- <span v-if="Number(item.vipPrice)">
+                    {{ ((Number(item.vipPrice) / Number(item.originalPrice)) * 100).toFixed(0) }}% off
+                  </span> -->
+                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off </span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
+              <div v-if="memberShipVipPriceShow" class="vip_price_out">
+                <div
+                  v-if="Number(item.vipPrice) && item.vipPrice !== item.price && Number(item.price) !== 0"
+                  class="vip_price_top"
+                >
+                  <span class="symbol">$</span>{{ item.vipPrice / 100 }}
+                </div>
+                <div
+                  v-if="Number(item.vipPrice) && item.vipPrice !== item.price && Number(item.price) !== 0"
+                  class="vip_price_bottom"
+                >
+                  Member's price
+                </div>
+              </div>
               <div class="card_price_part3">
-                <div v-if="isVip" class="big_price"><span class="symbol">$</span>{{ item.vipPrice / 100 }}</div>
-                <div v-else class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
+                <!-- <div v-if="isVip" class="big_price"><span class="symbol">$</span>{{ item.vipPrice / 100 }}</div> -->
+                <div class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
                 <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
@@ -818,13 +840,35 @@ const formateMinToHour = (min: number) => {
               color: #403f3e;
               margin-top: 11px;
               min-height: 61px;
+              // border: 1px red solid;
+            }
+            .vip_price_out {
+              margin-top: 16px;
+              // border: 1px red solid;
+              min-height: 72px;
+              .vip_price_top {
+                font-size: 40px;
+                color: #f66442;
+                font-weight: 600;
+                .symbol {
+                  font-size: 20px;
+                  @media (max-width: 450px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+              .vip_price_bottom {
+                font-weight: 400;
+                font-size: 14px;
+                color: #f66442;
+              }
             }
 
             .card_price_part3 {
               display: flex;
               justify-content: flex-start;
               align-items: center;
-              margin-top: 32px;
+              margin-top: 24px;
               grid-gap: 8px;
 
               .big_price {
