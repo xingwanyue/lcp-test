@@ -226,7 +226,7 @@ const logout = () => {
           </template>
         </el-popover> -->
         <div class="loginbtn">
-          <nuxt-link :href="urlGet('/')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn">
@@ -319,7 +319,7 @@ const logout = () => {
       </div>
       <div v-if="user.id" href="/app">
         <div class="loginbtn-mobile">
-          <nuxt-link :href="urlGet('/')" class="try_free"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free"> Get started </nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn-mobile">

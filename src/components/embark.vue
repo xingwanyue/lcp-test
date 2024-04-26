@@ -13,14 +13,17 @@ const user = computed(() => store.user);
       <div class="font2">Duolingo English Test !</div>
       <div v-if="!user.id" class="two_btn_out">
         <div>
-          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`/login?url=${urlGet('/')}`)">
+          <NuxtLink
+            class="common_btn common_btn_hover_bgColor yellow"
+            :to="localePath(`/login?url=${urlGet('/home')}`)"
+          >
             Start Now</NuxtLink
           >
         </div>
       </div>
       <div v-else class="two_btn_out">
         <div>
-          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/')}`)">
+          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/home')}`)">
             Start Now</NuxtLink
           >
         </div>
