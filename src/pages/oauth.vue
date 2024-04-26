@@ -31,6 +31,7 @@ onMounted(async () => {
         custom_url = v;
       }
     });
+    console.log('custom_url', custom_url);
     if (custom_url.startsWith('http')) {
       window.location.href = custom_url;
       return;

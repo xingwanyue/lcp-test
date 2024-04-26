@@ -32,7 +32,7 @@ export function oauth2SignIn(url?: string) {
   } as any;
 
   if (url) {
-    params.custom_url = url;
+    params.custom_url = encodeURIComponent(url);
   }
   // Add form parameters as hidden input values.
   Object.keys(params).forEach((p) => {
