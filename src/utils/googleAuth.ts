@@ -20,7 +20,7 @@ export function oauth2SignIn(url?: string) {
   // Parameters to pass to OAuth 2.0 endpoint.
   let redirect_uri = `${window.location.protocol}//${window.location.hostname}${YOUR_REDIRECT_URI}`;
   if (url) {
-    redirect_uri += `&url=${encodeURIComponent(url)}`;
+    redirect_uri += `?url=${encodeURIComponent(url)}`;
   }
   const params = {
     client_id: YOUR_CLIENT_ID,
