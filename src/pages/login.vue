@@ -226,7 +226,7 @@ const googleLogin = async () => {
       border: 1px solid rgba(246, 100, 66, 0.1);
       box-sizing: border-box;
       color: #f66442;
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 8px;
       .errIcon {
         width: 16px;
@@ -258,6 +258,7 @@ const googleLogin = async () => {
         font-weight: 400;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.45);
+        padding: 0 16px;
       }
     }
     .zhuce {
