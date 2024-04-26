@@ -6,6 +6,8 @@ export const api = 'https://app.xingwanyue.com/weapp/api'; // 次域名数据缓
 
 const host = 'https://app.xingwanyue.com';
 
+export const domain = 'xingwanyue.com';
+
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
@@ -17,13 +19,6 @@ export const staticUrlGet = (path: string) => {
 };
 const TOKEN = 'det_i18n_token';
 
-export const domainGet = () => {
-  if (window.location.hostname === 'localhost') {
-    return window.location.hostname;
-  }
-  const domains = window.location.hostname.split('.').reverse();
-  return `.${domains[1]}.${domains[0]}`;
-};
 
 export const setCookie = (name: string, value: string, days: number) => {
   let expires = '';
@@ -33,7 +28,7 @@ export const setCookie = (name: string, value: string, days: number) => {
     expires = `; expires=${date.toUTCString()}`;
   }
 
-  document.cookie = `${name}=${value || ''}${expires}; domain=${domainGet()}; path=/`;
+  document.cookie = `${name}=${value || ''}${expires}; domain=.${domain}; path=/`;
 };
 
 export const getCookie = (name: string) => {
