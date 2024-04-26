@@ -105,7 +105,7 @@ const submit = async () => {
   }
   if (!password) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = 'Please enter your password.';
     return false;
   }
   if (password.length < 6) {
@@ -259,6 +259,11 @@ const googleRegister = async () => {
         color: rgba(0, 0, 0, 0.45);
       }
     }
+    .zhuce {
+      // border: 1px red solid;
+      width: 100%;
+      text-align: center;
+    }
   }
   .right {
     width: 50%;
@@ -296,9 +301,9 @@ const googleRegister = async () => {
       .t2 {
         width: calc(100% - 48px);
       }
-      .err-message {
-        width: calc(100% - 48px);
-      }
+      // .err-message {
+      //   width: calc(100% - 48px);
+      // }
       .loginGoogle {
         width: calc(100% - 48px);
       }

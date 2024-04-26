@@ -58,20 +58,14 @@
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button
-              v-loading="loading"
-              type="primary"
-              native-type="submit"
-              class="submit"
-              @click="submit"
-            >
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
               Reset my password
             </el-button>
           </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
-            <div class="goLogin" @click="goLogin">＜ Back to log in</div>
+            <div class="goLogin" @click="goLogin">＜ Back to login</div>
           </div>
         </el-form-item>
       </el-form>
@@ -80,12 +74,12 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { useRouter, useRoute } from "vue-router";
-import { findPassword } from "@/api";
+import { ref } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
+import { findPassword } from '@/api';
 
 definePageMeta({
-  layout: "noheaderfooter",
+  layout: 'noheaderfooter',
 });
 
 const router = useRouter();
@@ -95,7 +89,7 @@ const formData = ref({});
 const loading = ref(false);
 const pwdShow = ref(false);
 const pwdShow1 = ref(false);
-const errMessage = ref("");
+const errMessage = ref('');
 const errShow = ref(false);
 
 const submit = async () => {
@@ -105,17 +99,17 @@ const submit = async () => {
   errShow.value = false;
   if (!pwd) {
     errShow.value = true;
-    errMessage.value = "Please enter your email address.";
+    errMessage.value = 'Please enter your email address.';
     return false;
   }
   if (pwd.length < 6) {
     errShow.value = true;
-    errMessage.value = "Password too short.";
+    errMessage.value = 'Password too short.';
     return false;
   }
   if (pwd !== pwd1) {
     errShow.value = true;
-    errMessage.value = "Password inconsistency.";
+    errMessage.value = 'Password inconsistency.';
     return false;
   }
   const temp = {
@@ -125,7 +119,7 @@ const submit = async () => {
   loading.value = true;
   const { err } = await findPassword(temp);
   if (!err) {
-    router.push("/login");
+    router.push('/login');
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -134,7 +128,7 @@ const submit = async () => {
 };
 
 const goLogin = () => {
-  router.push("/login");
+  router.push('/login');
 };
 </script>
 
@@ -251,6 +245,10 @@ const goLogin = () => {
       &:hover {
         color: #f66442;
       }
+    }
+    .zhuce {
+      width: 100%;
+      text-align: center;
     }
   }
   .right {

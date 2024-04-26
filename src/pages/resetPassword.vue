@@ -1,10 +1,7 @@
 <template>
   <div class="login">
     <div class="left">
-      <img
-        src="/img/login/lock.svg"
-        alt="DET Practice:The best Duolingo English Test Practice platform"
-      />
+      <img src="/img/login/lock.svg" alt="DET Practice:The best Duolingo English Test Practice platform" />
       <div class="t1">Forgot Password?</div>
       <div class="t2">Please enter the email used to create your account</div>
       <el-form
@@ -33,20 +30,14 @@
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button
-              v-loading="loading"
-              type="primary"
-              native-type="submit"
-              class="submit"
-              @click="submit"
-            >
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
               Request Password Reset
             </el-button>
           </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
-            <div class="goLogin" @click="goLogin">＜ Back to log in</div>
+            <div class="goLogin" @click="goLogin">＜ Back to login</div>
           </div>
         </el-form-item>
       </el-form>
@@ -55,12 +46,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import { useRoute, useRouter } from "vue-router";
-import { sesCodeVerify } from "@/api";
+import { ref, onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { sesCodeVerify } from '@/api';
 
 definePageMeta({
-  layout: "noheaderfooter",
+  layout: 'noheaderfooter',
 });
 const route = useRoute();
 const router = useRouter();
@@ -68,7 +59,7 @@ const router = useRouter();
 const { email } = route.query || {};
 const formData = ref({ email });
 const loading = ref(false);
-const errMessage = ref("");
+const errMessage = ref('');
 const errShow = ref(false);
 
 const submit = async () => {
@@ -77,7 +68,7 @@ const submit = async () => {
   errShow.value = false;
   if (!code) {
     errShow.value = true;
-    errMessage.value = "Please enter your code.";
+    errMessage.value = 'Please enter your code.';
     return false;
   }
   const temp = {
@@ -88,7 +79,7 @@ const submit = async () => {
   const { err } = await sesCodeVerify(temp);
   loading.value = false;
   if (!err) {
-    router.push({ path: "/resetPasswordStep2", query: { email } });
+    router.push({ path: '/resetPasswordStep2', query: { email } });
   } else {
     errShow.value = true;
     errMessage.value = err.message;
@@ -96,7 +87,7 @@ const submit = async () => {
 };
 
 const goLogin = () => {
-  router.push("/login");
+  router.push('/login');
 };
 </script>
 
@@ -215,6 +206,10 @@ const goLogin = () => {
       &:hover {
         color: #f66442;
       }
+    }
+    .zhuce {
+      width: 100%;
+      text-align: center;
     }
   }
   .right {
