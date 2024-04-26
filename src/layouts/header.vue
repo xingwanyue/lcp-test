@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { urlGet, staticUrlGet, saveStorage, getStorage } from '@/utils';
+import { urlGet, saveStorage, getStorage } from '@/utils';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
@@ -234,7 +234,7 @@ const logout = () => {
         <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
       </div>
       <div class="mobile">
-        <el-image
+        <img
           src="/img/menu.svg"
           class="mobileMenus"
           alt="DET Practice:The best Duolingo English Test Practice platform"

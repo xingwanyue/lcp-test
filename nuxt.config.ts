@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
-  css: ['@/assets/iconfont/iconfont.css'],
+  css: ['@/assets/iconfont/iconfont.css', 'aos/dist/aos.css'],
   i18n: { locales: ['en', 'id'], defaultLocale: 'en', vueI18n: './i18n.config.ts' },
   plugins: [
     { src: '@/plugins/aos.client.js', mode: 'client' },
@@ -15,11 +15,13 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: false,
   },
+  experimental: {
+    writeEarlyHints: true,
+  },
   app: {
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        { rel: 'stylesheet', href: '/css/aos.css' },
         { rel: 'stylesheet', href: '/css/carousel.css' },
         {
           rel: 'stylesheet',
