@@ -223,6 +223,10 @@ const googleRegister = () => {};
       color: rgba(0, 0, 0, 0.45);
       line-height: 20px;
     }
+    .zhuce {
+      width: 100%;
+      text-align: center;
+    }
   }
   .right {
     width: 50%;
