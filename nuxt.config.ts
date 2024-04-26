@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
   aos: {
-    disable: 'mobile',
+    // disable: 'mobile',
   },
   features: {
     inlineStyles: false,

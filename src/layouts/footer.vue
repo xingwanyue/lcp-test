@@ -61,7 +61,7 @@ const getLearn = async () => {
     server: true,
     query: { ...args },
   })) as any;
-  Learn.value.list = Learnjk.value.data.map((item: any) => {
+  Learn.value.list = Learnjk.value?.data.map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
@@ -81,7 +81,7 @@ const getBlob = async () => {
     server: true,
     query: { ...args },
   })) as any;
-  Blog.value.list = blogsjk.value.data.map((item: any) => {
+  Blog.value.list = blogsjk.value?.data.map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
