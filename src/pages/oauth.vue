@@ -33,7 +33,7 @@ onMounted(async () => {
       window.location.href = custom_url;
       return;
     }
-    router.push('/');
+    router.push(custom_url);
   }
 });
 </script>

@@ -25,6 +25,10 @@ onMounted(async () => {
   const token = await getToken();
   if (token) {
     await store.getUserInfo();
+    if (url.startsWith('http')) {
+      window.location.href = url;
+      return;
+    }
     router.push(url);
   }
 });

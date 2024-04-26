@@ -110,7 +110,7 @@ const toThousands = (num: any) => {
   return result;
 };
 const googleLogin = () => {
-  oauth2SignIn();
+  oauth2SignIn(urlGet('/home'));
 };
 const isLoad = ref(false);
 const onLoad = () => {
