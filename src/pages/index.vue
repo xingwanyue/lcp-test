@@ -402,12 +402,12 @@ const onLoad4 = () => {
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
             <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
-                <div>
+                <div class="width100">
                   <div class="one_card">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[0].avatar" :alt="item[0].nickname" />
+                          <img :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -424,7 +424,7 @@ const onLoad4 = () => {
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[1].avatar" :alt="item[1].nickname" />
+                          <img :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>
@@ -1105,11 +1105,15 @@ const onLoad4 = () => {
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            .width100 {
+              width: 100%;
+            }
           }
           .one_card {
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
+            width: 100%;
             .one_card_top {
               display: flex;
               justify-content: space-between;
