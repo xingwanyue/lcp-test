@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { urlGet, saveStorage, getStorage } from '@/utils';
+import { urlGet, saveStorage, getStorage, domainGet } from '@/utils';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
@@ -230,8 +230,15 @@ const logout = () => {
         </div>
       </div>
       <div v-else class="loginbtn">
-        <nuxt-link :to="localePath('/login')" class="login_font">Login</nuxt-link>
-        <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
+        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(`www${domainGet()}`)}`)" class="login_font">
+          Login
+        </nuxt-link>
+        <nuxt-link
+          :to="localePath(`/login?url=${encodeURIComponent(`www${domainGet()}`)}`)"
+          class="try_free common_btn_hover_bgColor"
+        >
+          Try for free
+        </nuxt-link>
       </div>
       <div class="mobile">
         <img
