@@ -498,14 +498,16 @@ const formateMinToHour = (min: number) => {
               </div>
               <div class="card_price_part3">
                 <div class="member_price">
-                  <span v-if="item.vipPrice !== item.price"> ${{ (item.vipPrice / 100).toFixed(2) }} </span>
+                  <span v-if="item.vipPrice !== item.price"
+                    ><span class="small">$</span>{{ (item.vipPrice / 100).toFixed(2) }}
+                  </span>
                 </div>
                 <div class="member_font">
                   <span v-if="item.vipPrice !== item.price">Member's price</span>
                 </div>
               </div>
               <div class="card_price_part4">
-                <div class="off_price">${{ (item.price / 100).toFixed(2) }}</div>
+                <div class="off_price"><span class="small">$</span>{{ (item.price / 100).toFixed(2) }}</div>
                 <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
               </div>
               <div v-if="user.id">
@@ -1012,6 +1014,9 @@ const formateMinToHour = (min: number) => {
                 font-size: 32px;
                 color: #f66442;
                 margin-top: 24px;
+                .small {
+                  font-size: 20px;
+                }
               }
 
               .member_font {
@@ -1026,6 +1031,9 @@ const formateMinToHour = (min: number) => {
                 font-weight: 600;
                 font-size: 32px;
                 color: #201515;
+                .small {
+                  font-size: 20px;
+                }
               }
 
               .old_price {
