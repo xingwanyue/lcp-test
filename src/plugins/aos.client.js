@@ -1,5 +1,7 @@
 import AOS from 'aos';
 
 export default defineNuxtPlugin(() => {
-  new AOS.init();
+  new AOS.init({
+    disable: 'mobile',
+  });
 });
