@@ -1,10 +1,11 @@
 export const cdn = 'https://detcdn.zixuekeji.cn';
-// export const api = 'https://app.detpractice.com/weapp/api';
-// export const api = 'http://192.168.1.22:9000/api';
-// export const api = 'http://192.168.1.147:11001/weapp/api';
-export const api = 'https://app.xingwanyue.com/weapp/api'; // 次域名数据缓存
 
-const host = 'https://app.xingwanyue.com';
+export const domain = 'xingwanyue.com';
+// export const domain = 'detpractice.com';
+
+// 应用地址
+export const host = `https://app.${domain}`;
+export const api = `https://app.${domain}/weapp/api`;
 
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 
@@ -17,14 +18,6 @@ export const staticUrlGet = (path: string) => {
 };
 const TOKEN = 'det_i18n_token';
 
-export const domainGet = () => {
-  if (window.location.hostname === 'localhost') {
-    return window.location.hostname;
-  }
-  const domains = window.location.hostname.split('.').reverse();
-  return `.${domains[1]}.${domains[0]}`;
-};
-
 export const setCookie = (name: string, value: string, days: number) => {
   let expires = '';
   if (days) {
@@ -33,7 +26,7 @@ export const setCookie = (name: string, value: string, days: number) => {
     expires = `; expires=${date.toUTCString()}`;
   }
 
-  document.cookie = `${name}=${value || ''}${expires}; domain=${domainGet()}; path=/`;
+  document.cookie = `${name}=${value || ''}${expires}; domain=.${domain}; path=/`;
 };
 
 export const getCookie = (name: string) => {

@@ -1,5 +1,5 @@
 import { fetchmy } from '@/utils/request';
-import { api, domainGet } from '@/utils';
+import { api, domain } from '@/utils';
 
 export const sesCodeSend = (args) =>
   fetchmy(`${api}/common/sesCode`, {
@@ -39,7 +39,7 @@ export const logout = async () => {
   const token = await getToken(false);
   return fetchmy(`${api}/logout`, {
     method: 'post',
-    body: JSON.stringify({ domain: domainGet() }),
+    body: JSON.stringify({ domain }),
     headers: {
       Authorization: `Bearer ${token}`,
     },

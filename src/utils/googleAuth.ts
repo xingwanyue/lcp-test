@@ -1,5 +1,5 @@
 import { fetchmy } from './request';
-import { api } from '@/utils';
+import { api, saveStorage } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
@@ -8,7 +8,7 @@ const YOUR_REDIRECT_URI = '/oauth';
 /*
  * Create form to request access token from Google's OAuth 2.0 server.
  */
-export function oauth2SignIn() {
+export function oauth2SignIn(url?: string) {
   // Google's OAuth 2.0 endpoint for requesting an access token
   const oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
 
@@ -18,15 +18,22 @@ export function oauth2SignIn() {
   form.setAttribute('action', oauth2Endpoint);
 
   // Parameters to pass to OAuth 2.0 endpoint.
+  const redirect_uri = `${window.location.protocol}//${window.location.hostname}${YOUR_REDIRECT_URI}`;
+  // if (url) {
+  //   redirect_uri += `?url=${encodeURIComponent(url)}`;
+  // }
   const params = {
     client_id: YOUR_CLIENT_ID,
-    redirect_uri: `${window.location.protocol}//${window.location.hostname}${YOUR_REDIRECT_URI}`,
+    redirect_uri,
     scope: 'https://www.googleapis.com/auth/userinfo.profile email',
     state: 'try_sample_request',
     include_granted_scopes: 'true',
     response_type: 'token',
   } as any;
 
+  if (url) {
+    saveStorage('custom_url', url);
+  }
   // Add form parameters as hidden input values.
   Object.keys(params).forEach((p) => {
     const input = document.createElement('input');
@@ -35,7 +42,6 @@ export function oauth2SignIn() {
     input.setAttribute('value', params[p]);
     form.appendChild(input);
   });
-
   // Add form to page and submit it to open the OAuth 2.0 endpoint.
   document.body.appendChild(form);
   form.submit();

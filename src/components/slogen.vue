@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
+import { urlGet } from '@/utils';
+
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 const googleLogin = () => {
-  oauth2SignIn();
+  oauth2SignIn(urlGet('/home'));
 };
 </script>
 
@@ -19,7 +21,10 @@ const googleLogin = () => {
           <img src="/img/home/google_icon.svg" alt="Start free with Google" />
           Start free with Google
         </div>
-        <NuxtLink :to="localePath('/login?url=/home')" class="common_btn common_btn_hover_borderCu white">
+        <NuxtLink
+          :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          class="common_btn common_btn_hover_borderCu white"
+        >
           Start free with email
         </NuxtLink>
       </div>
@@ -28,7 +33,10 @@ const googleLogin = () => {
           <img src="/img/home/google_icon.svg" alt="Start free with Google" />
           Start free with Google
         </div>
-        <NuxtLink :to="localePath('/login?url=/home')" class="common_btn common_btn_hover_borderCu white">
+        <NuxtLink
+          :to="localePath(`/login?url=${encodeURIComponent(`${host}`)}`)"
+          class="common_btn common_btn_hover_borderCu white"
+        >
           Start free with email
         </NuxtLink>
       </div>
