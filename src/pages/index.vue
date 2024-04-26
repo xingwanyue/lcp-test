@@ -178,12 +178,15 @@ const onLoad4 = () => {
               muted
               autoplay
               loop
-              playsinline
-              webkit-playsinline
+              controlslist="nodownload"
+              webkit-playsinline="true"
+              playsinline="true"
+              x5-video-player-fullscreen="true"
+              x5-video-orientation="portraint"
+              x5-video-player-type="h5"
+              src="/img/video_banner.mp4"
               poster="/img/video_banner.png"
-            >
-              <source src="/img/video_banner.mp4" type="video/mp4" />
-            </video>
+            ></video>
           </div>
         </div>
       </div>
@@ -362,6 +365,9 @@ const onLoad4 = () => {
           <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
             Join Them
           </NuxtLink>
+          <NuxtLink v-else :to="urlGet('/home')" class="common_btn common_btn_hover_bgColor yellow">
+            Join Them
+          </NuxtLink>
         </div>
         <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
           <!-- {{ usersockerArr }} -->
@@ -396,12 +402,12 @@ const onLoad4 = () => {
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
             <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
-                <div>
+                <div class="width100">
                   <div class="one_card">
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[0].avatar" :alt="item[0].nickname" />
+                          <img :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -409,7 +415,7 @@ const onLoad4 = () => {
                         </div>
                       </div>
                       <div class="one_card_top_right">
-                        <el-rate v-model="item[0].rate" allow-half disabled size="large" />
+                        <el-rate class="custom_rate" v-model="item[0].rate" allow-half disabled size="large" />
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[0].content }}</div>
@@ -418,7 +424,7 @@ const onLoad4 = () => {
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="item[1].avatar" :alt="item[1].nickname" />
+                          <img :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>
@@ -656,8 +662,6 @@ const onLoad4 = () => {
       .big_img_out {
         padding: 0px 60px;
         margin-top: 40px;
-        width: 100%;
-        box-sizing: border-box;
         @media (max-width: 730px) {
           padding: 0px 0px;
         }
@@ -1101,11 +1105,15 @@ const onLoad4 = () => {
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            .width100 {
+              width: 100%;
+            }
           }
           .one_card {
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
+            width: 100%;
             .one_card_top {
               display: flex;
               justify-content: space-between;
@@ -1156,6 +1164,17 @@ const onLoad4 = () => {
                 :deep(.el-rate .el-rate__icon) {
                   font-size: 28px;
                 }
+                :deep(.el-icon) {
+                  width: 15px;
+                }
+                // .custom_rate {
+                //   .el-rate__icon {
+                //     margin-right: 100px !important;
+                //   }
+                // }
+                // :deep(.el-rate) {
+                //   --el-rate-icon-margin: 0px;
+                // }
               }
             }
             .one_card_font {

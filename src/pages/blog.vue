@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 // import { api } from '@/utils';
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-import vEmbark from "../components/embark.vue";
+import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
 useSeoMeta({
-  title: "DET Practice Blog - Duolingo English Test Tips, News, and Service Updates",
+  title: 'DET Practice Blog - Duolingo English Test Tips, News, and Service Updates',
   description:
-    "Stay informed and prepared with our DET blog. Get the latest Duolingo English Test tips, news, service updates, and announcements designed to enhance your test readiness.",
+    'Stay informed and prepared with our DET blog. Get the latest Duolingo English Test tips, news, service updates, and announcements designed to enhance your test readiness.',
 });
 const total = ref(0);
 const pageSize = ref(10);
@@ -16,22 +16,20 @@ let blogs = ref([]) as any;
 const { data: category } = (await useFetch(`${api}/common/article/category`, {
   server: true,
   query: {
-    type: "1",
+    type: '1',
   },
 })) as any;
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
-    type: "1",
+    type: '1',
     page: 1,
     pageSize: 10,
   },
   transform: (data: any) => {
     data.data = data.data.map((item: any) => {
-      item.category = category.value.find(
-        (cate: any) => cate.id === item.categoryId
-      ).name;
+      item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
       return item;
     });
     return { data: data.data, total: data.total };
@@ -45,15 +43,13 @@ const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
     server: true,
     query: {
-      type: "1",
+      type: '1',
       page: val,
       pageSize: 10,
     },
     transform: (data: any) => {
       data.data = data.data.map((item: any) => {
-        item.category = category.value.find(
-          (cate: any) => cate.id === item.categoryId
-        ).name;
+        item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
         return item;
       });
       return { data: data.data, total: data.total };
@@ -90,11 +86,7 @@ const handleCurrentChange = async (val: number) => {
             {{ item.content }}
           </div>
           <div class="bottom">
-            <div class="date">
-              {{ dayjs(item.createTime).format("YYYY-MM-DD") }}&nbsp;|&nbsp;{{
-                item.category
-              }}
-            </div>
+            <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item.category }}</div>
             <div class="right_arrow">
               <el-image
                 src="/img/blog/right_arrow.svg"
@@ -128,7 +120,7 @@ const handleCurrentChange = async (val: number) => {
       max-width: 1200px;
       margin: 0 auto;
       padding: 120px 0;
-      background: url("/img/blog/blog.svg") center no-repeat;
+      background: url('/img/blog/blog.svg') center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;
@@ -169,6 +161,7 @@ const handleCurrentChange = async (val: number) => {
         border: 1px solid #e9e9e9;
         cursor: pointer;
         display: block;
+        position: relative;
 
         &:hover {
           box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);

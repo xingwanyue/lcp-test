@@ -226,11 +226,11 @@ const logout = () => {
           </template>
         </el-popover> -->
         <div class="loginbtn">
-          <nuxt-link :href="urlGet('/')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn">
-        <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
+        <nuxt-link :to="localePath('/login')" class="login_font">Login</nuxt-link>
         <nuxt-link :to="localePath('/login')" class="try_free common_btn_hover_bgColor"> Try for free </nuxt-link>
       </div>
       <div class="mobile">
@@ -319,12 +319,12 @@ const logout = () => {
       </div>
       <div v-if="user.id" href="/app">
         <div class="loginbtn-mobile">
-          <nuxt-link :href="urlGet('/')" class="try_free"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free"> Get started </nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn-mobile">
         <nuxt-link :to="localePath('/login')" class="try_free"> Try for free </nuxt-link>
-        <nuxt-link :to="localePath('/login')" class="login_font">Log in</nuxt-link>
+        <nuxt-link :to="localePath('/login')" class="login_font">Login</nuxt-link>
       </div>
     </el-drawer>
   </div>
@@ -708,7 +708,7 @@ const logout = () => {
     align-items: center;
     justify-content: center;
     // border: 1px red solid;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
       display: none;
     }
     .login_font {
