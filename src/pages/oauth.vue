@@ -8,7 +8,9 @@ import { sinupEvent } from '@/utils/gtag';
 const router = useRouter();
 
 const store = useStore();
-
+definePageMeta({
+  layout: 'noheaderfooter',
+});
 onMounted(async () => {
   const {
     data: { token, isNew },
@@ -26,7 +28,7 @@ onMounted(async () => {
     hashString.split('&').forEach((str) => {
       const [k, v] = str.split('=');
       if (k === 'custom_url' && v) {
-        custom_url = decodeURIComponent(v);
+        custom_url = v;
       }
     });
     if (custom_url.startsWith('http')) {

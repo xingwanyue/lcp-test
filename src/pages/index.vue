@@ -161,7 +161,10 @@ const onLoad4 = () => {
             <img src="/img/home/google_icon.svg" alt="Start free with Google" />
             Start free with Google
           </div>
-          <NuxtLink :to="localePath('/login')" class="common_btn common_btn_hover_borderCu white">
+          <NuxtLink
+            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+            class="common_btn common_btn_hover_borderCu white"
+          >
             Start free with email
           </NuxtLink>
         </div>
@@ -362,7 +365,11 @@ const onLoad4 = () => {
           </div>
         </div>
         <div class="btn_out">
-          <NuxtLink v-if="!user.id" :to="localePath('/login')" class="common_btn common_btn_hover_bgColor yellow">
+          <NuxtLink
+            v-if="!user.id"
+            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+            class="common_btn common_btn_hover_bgColor yellow"
+          >
             Join Them
           </NuxtLink>
           <NuxtLink v-else :to="urlGet('/home')" class="common_btn common_btn_hover_bgColor yellow">
