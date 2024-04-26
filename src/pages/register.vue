@@ -215,6 +215,7 @@ const googleRegister = () => {};
         font-weight: 400;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.45);
+        padding: 0 16px;
       }
     }
     .desc {
