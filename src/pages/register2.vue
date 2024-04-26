@@ -105,7 +105,7 @@ const submit = async () => {
   }
   if (!password) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = 'Please enter your password.';
     return false;
   }
   if (password.length < 6) {
