@@ -1,6 +1,6 @@
 export const cdn = 'https://detcdn.zixuekeji.cn';
 
-export const domain = 'xingwanyue.com';
+export const domain = 'easycash.ai';
 // export const domain = 'detpractice.com';
 
 // 应用地址
