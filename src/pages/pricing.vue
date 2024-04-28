@@ -325,31 +325,60 @@ const membershipUnchanging = ref([
   },
 ]) as any;
 
-const copy = async (email: any) => {
+// const copy = async (email: any) => {
+//   if (navigator.clipboard) {
+//     // 尝试使用 Clipboard API
+//     try {
+//       // 请求剪贴板权限
+//       const permission = await navigator.permissions.query({ name: 'clipboard-write' });
+//       if (permission.state === 'granted' || permission.state === 'prompt') {
+//         await navigator.clipboard.writeText(email);
+//         ElMessage.success('Copy successfully');
+//       } else {
+//         throw new Error('Clipboard permission denied');
+//       }
+//     } catch (err) {
+//       ElMessage.error('Failed to copy text: ' + err);
+//     }
+//   } else if (document.execCommand) {
+//     // 尝试使用 document.execCommand
+//     const textarea = document.createElement('textarea');
+//     textarea.value = email;
+//     document.body.appendChild(textarea);
+//     textarea.select();
+//     try {
+//       document.execCommand('copy');
+//       ElMessage.success('Copy successfully');
+//     } catch (err) {
+//       ElMessage.error('Failed to copy text: ' + err);
+//     } finally {
+//       document.body.removeChild(textarea);
+//     }
+//   } else {
+//     ElMessage.error('Your browser does not support copying text to clipboard.');
+//   }
+// };
+const copy = async (text: any) => {
   if (navigator.clipboard) {
     // 尝试使用 Clipboard API
     try {
-      // 请求剪贴板权限
-      const permission = await navigator.permissions.query({ name: 'clipboard-write' });
-      if (permission.state === 'granted' || permission.state === 'prompt') {
-        await navigator.clipboard.writeText(email);
-        ElMessage.success('Copy successfully');
-      } else {
-        throw new Error('Clipboard permission denied');
-      }
+      await navigator.clipboard.writeText(text);
+      ElMessage.success('Copy successfully');
     } catch (err) {
       ElMessage.error('Failed to copy text: ' + err);
     }
   } else if (document.execCommand) {
     // 尝试使用 document.execCommand
     const textarea = document.createElement('textarea');
-    textarea.value = email;
+    textarea.value = text;
     document.body.appendChild(textarea);
     textarea.select();
     try {
       document.execCommand('copy');
+      // console.log('Text copied to clipboard');
       ElMessage.success('Copy successfully');
     } catch (err) {
+      // console.error('Failed to copy text: ' + err);
       ElMessage.error('Failed to copy text: ' + err);
     } finally {
       document.body.removeChild(textarea);
