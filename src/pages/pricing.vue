@@ -330,7 +330,7 @@ const copy = async (email: any) => {
     // 尝试使用 Clipboard API
     try {
       // 请求剪贴板权限
-      const permission = await navigator.permissions.query({name: 'clipboard-write'});
+      const permission = await navigator.permissions.query({ name: 'clipboard-write' });
       if (permission.state === 'granted' || permission.state === 'prompt') {
         await navigator.clipboard.writeText(email);
         ElMessage.success('Copy successfully');
@@ -551,6 +551,21 @@ const formateMinToHour = (min: number) => {
                 </NuxtLink>
               </div>
             </div>
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
           </div>
         </div>
         <!-- {{buyData}} -->
@@ -982,7 +997,7 @@ const formateMinToHour = (min: number) => {
         }
         .box_shadow {
           &:hover {
-            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
           }
         }
 
@@ -1004,7 +1019,7 @@ const formateMinToHour = (min: number) => {
           .card_price {
             border: 1px solid #e9e9e9;
             &:hover {
-              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
             }
           }
         }
@@ -1050,7 +1065,7 @@ const formateMinToHour = (min: number) => {
             border: 1px solid #e9e9e9;
 
             &:hover {
-              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
             }
 
             .card_price_part1 {
@@ -1123,6 +1138,16 @@ const formateMinToHour = (min: number) => {
                 color: white;
               }
             }
+          }
+        }
+        .no-load {
+          background: #fff;
+          display: block;
+          border: 1px solid #e9e9e9;
+          border-radius: 8px;
+          padding: 20px;
+          @media (max-width: 750px) {
+            padding: 10px;
           }
         }
       }
@@ -1287,7 +1312,7 @@ const formateMinToHour = (min: number) => {
     .part2 {
       max-width: 1200px;
       margin: 0 auto;
-      overflow: hidden;
+      // overflow: hidden;
 
       .title {
         font-weight: 500;
@@ -1357,7 +1382,7 @@ const formateMinToHour = (min: number) => {
         .one_question_open {
           background: #ffffff;
           border: 1px solid #e9e9e9;
-          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
 
           .header {
             .icon {
