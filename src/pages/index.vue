@@ -764,9 +764,9 @@ const onLoad4 = () => {
         }
         .article_out {
           grid-area: article_out;
-          @media (max-width: 926px) {
-            text-align: center;
-          }
+          // @media (max-width: 926px) {
+          //   text-align: center;
+          // }
           .article_out_title {
             h3 {
               font-weight: 500;
@@ -806,9 +806,9 @@ const onLoad4 = () => {
             // border: 1px red solid;
             margin-top: 34px;
             grid-column-gap: 8px;
-            @media (max-width: 926px) {
-              justify-content: center;
-            }
+            // @media (max-width: 926px) {
+            //   justify-content: center;
+            // }
             cursor: pointer;
             .font {
               font-weight: 500;
@@ -864,9 +864,9 @@ const onLoad4 = () => {
         }
         .article_out {
           grid-area: article_out;
-          @media (max-width: 926px) {
-            text-align: center;
-          }
+          // @media (max-width: 926px) {
+          //   text-align: center;
+          // }
           .article_out_title {
             h3 {
               font-weight: 500;
@@ -906,9 +906,9 @@ const onLoad4 = () => {
             // border: 1px red solid;
             margin-top: 34px;
             grid-column-gap: 8px;
-            @media (max-width: 926px) {
-              justify-content: center;
-            }
+            // @media (max-width: 926px) {
+            //   justify-content: center;
+            // }
             cursor: pointer;
             .font {
               font-weight: 500;
