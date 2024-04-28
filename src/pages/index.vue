@@ -3,7 +3,7 @@ import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
-import { staticUrlGet, formatNumber } from '@/utils';
+import { staticUrlGet, formatNumber, urlGet } from '@/utils';
 useSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
   description:
@@ -166,6 +166,11 @@ const onLoad4 = () => {
             class="common_btn common_btn_hover_borderCu white"
           >
             Start free with email
+          </NuxtLink>
+        </div>
+        <div v-else class="two_btn_out">
+          <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white">
+            Start for free
           </NuxtLink>
         </div>
         <div class="all_stu_nums">
