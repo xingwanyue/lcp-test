@@ -5,7 +5,7 @@ import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn } from '@/utils';
 
-const videoUrl = `${cdn}/store/portal/banner.mp4`
+const videoUrl = `${cdn}/store/portal/banner_min.mp4`
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
