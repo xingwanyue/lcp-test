@@ -44,7 +44,7 @@ onMounted(async () => {
       }
     },
   });
-  window.google.accounts.id.prompt();
+  window.google?.accounts?.id?.prompt();
 });
 </script>
 
@@ -55,12 +55,6 @@ onMounted(async () => {
       <slot />
     </el-main>
     <el-footer class="footer_wrap"> <v-footer /></el-footer>
-    <!-- <div
-      id="g_id_onload"
-      data-client_id="1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com"
-      data-login_uri="https://app.detpractice.com/weapp/api/common/login"
-      data-auto_select
-    ></div> -->
   </el-container>
 </template>
 <style lang="scss" scoped>
