@@ -329,8 +329,14 @@ const copy = async (email: any) => {
   if (navigator.clipboard) {
     // 尝试使用 Clipboard API
     try {
-      await navigator.clipboard.writeText(email);
-      ElMessage.success('Copy successfully');
+      // 请求剪贴板权限
+      const permission = await navigator.permissions.query({name: 'clipboard-write'});
+      if (permission.state === 'granted' || permission.state === 'prompt') {
+        await navigator.clipboard.writeText(email);
+        ElMessage.success('Copy successfully');
+      } else {
+        throw new Error('Clipboard permission denied');
+      }
     } catch (err) {
       ElMessage.error('Failed to copy text: ' + err);
     }
