@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import vSlogen from '../components/slogen.vue';
+import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
@@ -357,6 +358,9 @@ const onLoad4 = () => {
         <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
           {{ usersockerTopFontResponse[0].data }}
         </div>
+        <div v-else class="title">
+          <el-skeleton :rows="1" animated />
+        </div>
         <div v-if="platformData" class="user_nums_out">
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData?.userTotal) }}k</div>
@@ -369,6 +373,17 @@ const onLoad4 = () => {
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData?.examTotal) }}k</div>
             <div class="small_font">Mock Test</div>
+          </div>
+        </div>
+        <div v-else class="user_nums_out">
+          <div class="one_num">
+            <el-skeleton :rows="1" animated />
+          </div>
+          <div class="one_num">
+            <el-skeleton :rows="1" animated />
+          </div>
+          <div class="one_num">
+            <el-skeleton :rows="1" animated />
           </div>
         </div>
         <div class="btn_out">
@@ -390,7 +405,13 @@ const onLoad4 = () => {
               <div class="one_score_content">
                 <div class="one_score_head">
                   <div class="user_icon">
-                    <img :src="staticUrlGet(item.data.avatar)" :alt="item.data.nickname" />
+                    <el-image :src="staticUrlGet(item.data.avatar)" :alt="item.data.nickname">
+                      <template #placeholder>
+                        <div class="image-slot">
+                          <el-icon><icon-picture /></el-icon>
+                        </div>
+                      </template>
+                    </el-image>
                   </div>
                   <div class="user_detail">
                     <div class="user_name">{{ item.data.nickname }}</div>
@@ -398,11 +419,15 @@ const onLoad4 = () => {
                   </div>
                 </div>
                 <div class="one_score_content_img">
-                  <img :src="staticUrlGet(`/${item.data.scoreImg}`)" :alt="item.data.nickname" />
+                  <!-- <el-image > -->
+                  <v-myimage :src="item.data.scoreImg" :alt="item.data.nickname" />
                 </div>
               </div>
             </Slide>
           </Carousel>
+        </div>
+        <div v-else class="score_scroll_out">
+          <el-skeleton :rows="10" animated />
         </div>
       </div>
     </div>
@@ -411,6 +436,9 @@ const onLoad4 = () => {
       <div class="review">
         <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
           {{ commentTopFontResponse[0].data }}
+        </div>
+        <div v-else class="review_title">
+          <el-skeleton :rows="1" animated />
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
@@ -450,6 +478,20 @@ const onLoad4 = () => {
                       </div>
                     </div>
                     <div class="one_card_font">{{ item[1].content }}</div>
+                  </div>
+                </div>
+              </Slide>
+            </Carousel>
+          </div>
+          <div v-else class="review_scroll_out_it">
+            <Carousel :itemsToShow="4" :autoplay="0" :wrap-around="true" :pauseAutoplayOnHover="true">
+              <Slide v-for="(item, index) in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]" :key="index" class="two_card_out">
+                <div class="width100">
+                  <div class="one_card" style="height: 250px">
+                    <el-skeleton :rows="4" animated />
+                  </div>
+                  <div class="one_card" style="margin-top: 24px; height: 250px">
+                    <el-skeleton :rows="4" animated />
                   </div>
                 </div>
               </Slide>
@@ -1031,6 +1073,7 @@ const onLoad4 = () => {
           // height: 100px;
           .one_score_content {
             padding: 24px;
+            flex: 1;
 
             .one_score_head {
               display: flex;
