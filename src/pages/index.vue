@@ -483,7 +483,7 @@ const onLoad4 = () => {
               </Slide>
             </Carousel>
           </div>
-          <div v-else class="review_scroll_out_it">
+          <div v-else class="review_scroll_out_it min_height350">
             <Carousel :itemsToShow="4" :autoplay="0" :wrap-around="true" :pauseAutoplayOnHover="true">
               <Slide v-for="(item, index) in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]" :key="index" class="two_card_out">
                 <div class="width100">
@@ -1251,6 +1251,9 @@ const onLoad4 = () => {
               }
             }
           }
+        }
+        .min_height350 {
+          height: 550px;
         }
       }
     }
