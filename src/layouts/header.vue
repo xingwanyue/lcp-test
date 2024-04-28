@@ -160,7 +160,7 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
                   <div class="font">
-                    Master Your Exam with Full-Length Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
+                    Master Your Exam with Full-Scale Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
                     Anytime, Anywhere!
                   </div>
                 </div>

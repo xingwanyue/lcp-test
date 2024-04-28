@@ -155,7 +155,7 @@ const onLoad4 = () => {
             <div class="small_title_wrap">
               <div class="one_small_title current">DET Practice</div>
               <div class="one_small_title">AI Correction</div>
-              <div class="one_small_title">Full-length Mock</div>
+              <div class="one_small_title">Full-Scale Mock</div>
               <div class="one_small_title">DET Courses</div>
             </div>
           </div>
