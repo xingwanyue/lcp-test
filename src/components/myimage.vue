@@ -13,7 +13,7 @@ const imgOnload = () => {
 
 <template>
   <div class="my_image_out">
-    <el-image v-show="loaded" :src="staticUrlGet(`/${props.src}`)" @load="imgOnload"></el-image>
+    <el-image v-show="loaded" :src="staticUrlGet(`/${props.src}`)" :alt="props.alt" @load="imgOnload"></el-image>
     <el-skeleton v-show="!loaded" :rows="10" animated>
       <template #template>
         <el-skeleton-item variant="image" style="width: 100%; height: 250px" />
