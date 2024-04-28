@@ -5,7 +5,7 @@ import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn } from '@/utils';
 
-const videoUrl = `${cdn}/store/portal/banner.mp4`
+const videoUrl = `${cdn}/store/portal/banner.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
@@ -757,6 +757,9 @@ const onLoad4 = () => {
           display: flex;
           justify-content: center;
           align-items: center;
+          :deep(.el-image) {
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+          }
           img {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
             width: 100%;
@@ -857,8 +860,11 @@ const onLoad4 = () => {
           display: flex;
           justify-content: center;
           align-items: center;
-          img {
+          // border: 1px red solid;
+          :deep(.el-image) {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+          }
+          img {
             width: 100%;
             height: auto;
             border-radius: 16px;
