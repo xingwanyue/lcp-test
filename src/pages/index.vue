@@ -3,7 +3,10 @@ import vSlogen from '../components/slogen.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
-import { staticUrlGet, formatNumber } from '@/utils';
+import { staticUrlGet, formatNumber, cdn } from '@/utils';
+
+const videoUrl = `${cdn}/store/portal/banner.mp4`
+// const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
   description:
@@ -187,8 +190,7 @@ const onLoad4 = () => {
               x5-video-player-fullscreen="true"
               x5-video-orientation="portraint"
               x5-video-player-type="h5"
-              src="/img/video_banner.mp4"
-              poster="/img/video_banner.png"
+              :src="videoUrl"
             ></video>
           </div>
         </div>

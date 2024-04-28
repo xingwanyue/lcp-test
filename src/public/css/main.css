@@ -7,7 +7,8 @@ body {
   height: unset !important;
 }
 * {
-  font-family: Nunito, Microsoft YaHei;
+  font-family: Helvetica,   'Helvetica Neue',   'PingFang SC',   'Hiragino Sans GB',   'Microsoft YaHei', Arial,
+    sans-serif;
 }
 div {
   -webkit-tap-highlight-color: transparent;
