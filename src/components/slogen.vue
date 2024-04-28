@@ -29,16 +29,7 @@ const googleLogin = () => {
         </NuxtLink>
       </div>
       <div v-else class="two_btn_out">
-        <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
-          <img src="/img/home/google_icon.svg" alt="Start free with Google" />
-          Start free with Google
-        </div>
-        <NuxtLink
-          :to="localePath(`/login?url=${encodeURIComponent(`${host}`)}`)"
-          class="common_btn common_btn_hover_borderCu white"
-        >
-          Start free with email
-        </NuxtLink>
+        <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white"> Start for free </NuxtLink>
       </div>
     </div>
   </div>

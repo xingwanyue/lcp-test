@@ -496,9 +496,9 @@ const onLoad2 = () => {
           align-items: center;
           margin-top: 32px;
           grid-gap: 40px;
-          @media screen and (max-width: 974px) {
-            justify-content: center;
-          }
+          // @media screen and (max-width: 974px) {
+          //   justify-content: center;
+          // }
 
           .price {
             .tag {

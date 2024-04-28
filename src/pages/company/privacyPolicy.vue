@@ -4,14 +4,13 @@ import { reactive } from 'vue';
 const state = reactive({});
 useSeoMeta({
   title: 'Privacy Policy - DET Practice',
-  description: '',
 });
 </script>
 <template>
   <div class="privacyPolicy">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">Privacy Policy</div>
+        <h1 class="title">Privacy Policy</h1>
       </div>
     </div>
     <div class="bg">

@@ -329,8 +329,14 @@ const copy = async (email: any) => {
   if (navigator.clipboard) {
     // 尝试使用 Clipboard API
     try {
-      await navigator.clipboard.writeText(email);
-      ElMessage.success('Copy successfully');
+      // 请求剪贴板权限
+      const permission = await navigator.permissions.query({name: 'clipboard-write'});
+      if (permission.state === 'granted' || permission.state === 'prompt') {
+        await navigator.clipboard.writeText(email);
+        ElMessage.success('Copy successfully');
+      } else {
+        throw new Error('Clipboard permission denied');
+      }
     } catch (err) {
       ElMessage.error('Failed to copy text: ' + err);
     }
@@ -389,7 +395,7 @@ const formateMinToHour = (min: number) => {
           <div
             v-for="(item, index) in vipsData?.membershipArr || []"
             :key="index"
-            :class="[item.flag === '1' ? 'one_price ' : 'one_price currentMembership_no']"
+            :class="[item.flag === '1' ? 'one_price box_shadow' : 'one_price currentMembership_no']"
           >
             <div class="title">Most Popular Choice</div>
             <div class="card_price">
@@ -509,7 +515,7 @@ const formateMinToHour = (min: number) => {
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price ' : 'one_price currentMembership_no']"
+            :class="[item.id === CurrentMembershipId ? 'one_price' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">Most Popular Choice</div>
@@ -705,9 +711,11 @@ const formateMinToHour = (min: number) => {
     .part1 {
       max-width: 1200px;
       margin: 0 auto;
-      overflow: hidden;
+      // overflow-x: hidden;
+      // overflow-y: auto;
 
       .title1 {
+        overflow: hidden;
         h1 {
           font-weight: 600;
           font-size: 56px;
@@ -972,6 +980,11 @@ const formateMinToHour = (min: number) => {
             }
           }
         }
+        .box_shadow {
+          &:hover {
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+          }
+        }
 
         .currentMembership_no {
           background: rgba(76, 41, 41, 0);
@@ -990,6 +1003,9 @@ const formateMinToHour = (min: number) => {
 
           .card_price {
             border: 1px solid #e9e9e9;
+            &:hover {
+              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+            }
           }
         }
         .no-load {
@@ -1009,6 +1025,8 @@ const formateMinToHour = (min: number) => {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
         grid-gap: 16px;
+        // border: 1px red solid;
+        // padding: 0px 30px;
 
         .one_price {
           border-radius: 8px;
@@ -1032,8 +1050,7 @@ const formateMinToHour = (min: number) => {
             border: 1px solid #e9e9e9;
 
             &:hover {
-              border: 2px #f66442 solid;
-              padding: 19px;
+              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
             }
 
             .card_price_part1 {

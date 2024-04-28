@@ -171,6 +171,11 @@ const onLoad4 = () => {
             Start free with email
           </NuxtLink>
         </div>
+        <div v-else class="two_btn_out">
+          <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white">
+            Start for free
+          </NuxtLink>
+        </div>
         <div class="all_stu_nums">
           Trusted by
           <span class="yellow">{{ formatNumber(platformData?.userTotal) }} students</span>
@@ -761,9 +766,9 @@ const onLoad4 = () => {
         }
         .article_out {
           grid-area: article_out;
-          @media (max-width: 926px) {
-            text-align: center;
-          }
+          // @media (max-width: 926px) {
+          //   text-align: center;
+          // }
           .article_out_title {
             h3 {
               font-weight: 500;
@@ -803,9 +808,9 @@ const onLoad4 = () => {
             // border: 1px red solid;
             margin-top: 34px;
             grid-column-gap: 8px;
-            @media (max-width: 926px) {
-              justify-content: center;
-            }
+            // @media (max-width: 926px) {
+            //   justify-content: center;
+            // }
             cursor: pointer;
             .font {
               font-weight: 500;
@@ -861,9 +866,9 @@ const onLoad4 = () => {
         }
         .article_out {
           grid-area: article_out;
-          @media (max-width: 926px) {
-            text-align: center;
-          }
+          // @media (max-width: 926px) {
+          //   text-align: center;
+          // }
           .article_out_title {
             h3 {
               font-weight: 500;
@@ -903,9 +908,9 @@ const onLoad4 = () => {
             // border: 1px red solid;
             margin-top: 34px;
             grid-column-gap: 8px;
-            @media (max-width: 926px) {
-              justify-content: center;
-            }
+            // @media (max-width: 926px) {
+            //   justify-content: center;
+            // }
             cursor: pointer;
             .font {
               font-weight: 500;
