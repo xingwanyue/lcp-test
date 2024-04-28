@@ -552,6 +552,21 @@ const formateMinToHour = (min: number) => {
               </div>
             </div>
           </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
+          <div v-if="!vipsData?.moreServiceArr" class="no-load">
+            <el-skeleton :rows="9" animated />
+          </div>
         </div>
         <!-- {{buyData}} -->
         <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
@@ -1123,6 +1138,16 @@ const formateMinToHour = (min: number) => {
                 color: white;
               }
             }
+          }
+        }
+        .no-load {
+          background: #fff;
+          display: block;
+          border: 1px solid #e9e9e9;
+          border-radius: 8px;
+          padding: 20px;
+          @media (max-width: 750px) {
+            padding: 10px;
           }
         }
       }
