@@ -1,14 +1,17 @@
 <script lang="ts" setup>
-// import { api } from '@/utils';
+import { domain } from '@/utils';
 import dayjs from 'dayjs';
 
 import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice Blog - Duolingo English Test Tips, News, and Service Updates',
   description:
     'Stay informed and prepared with our DET blog. Get the latest Duolingo English Test tips, news, service updates, and announcements designed to enhance your test readiness.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/blog` }],
 });
 const total = ref(0);
 const pageSize = ref(10);
@@ -36,8 +39,8 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   },
 })) as any;
 
-blogs.value = blogsjk.value.data;
-total.value = blogsjk.value.total;
+blogs.value = blogsjk.value?.data;
+total.value = blogsjk.value?.total;
 
 const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
@@ -55,7 +58,7 @@ const handleCurrentChange = async (val: number) => {
       return { data: data.data, total: data.total };
     },
   })) as any;
-  blogs.value = blogsjkk.value.data;
+  blogs.value = blogsjkk?.value.data;
 };
 // const findCategory = (id: Number) => {
 //   console.log(id);

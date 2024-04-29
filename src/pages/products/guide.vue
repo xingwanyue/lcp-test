@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
 import { staticUrlGet } from '@/utils';
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide',
   description:
     'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.',

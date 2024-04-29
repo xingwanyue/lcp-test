@@ -6,7 +6,7 @@ import vEasyexam from '../../components/easyexam.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice: Full-Scale Mock Exam for Realistic Preparation',
   description:
     'Experience the closest simulation to the real Duolingo English Test with our full-scale mock exams. Get accurate scoring, comprehensive reports, and fast feedback to identify and work on your weaknesses.',

@@ -52,7 +52,7 @@ const submit = async () => {
     state.loading = false;
   });
 };
-useSeoMeta({
+useServerSeoMeta({
   title: 'Contact Us - DET Practice',
   description: '',
 });

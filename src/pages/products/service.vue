@@ -5,7 +5,7 @@ import vHighscorewriting from '../../components/highscorewriting.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice:Correction Service powered by AI for your Duolingo Learning',
   description:
     'Correction service provided by "AI + Teachers". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.',

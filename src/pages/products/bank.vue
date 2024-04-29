@@ -5,7 +5,7 @@ import vEmbark from '../../components/embark.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice:The most powerful website for Duolingo practice test. ',
   description:
     'The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',

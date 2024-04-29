@@ -8,7 +8,7 @@ import { staticUrlGet, formatNumber, cdn } from '@/utils';
 
 const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
   description:
     'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',

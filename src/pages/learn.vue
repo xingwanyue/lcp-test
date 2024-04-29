@@ -66,7 +66,7 @@ const handleClose = () => {
 const handleChange = () => {
   state.selFatherData = find(state.selectList, { id: state.activeName }) || {};
 };
-useSeoMeta({
+useServerSeoMeta({
   title: 'DET Practice: Learn the expert Tips for the Duolingo English Test',
   description:
     'Explore expert strategies and study methods to excel on the Duolingo English Test. Our blog offers actionable tips and insights to enhance your preparation and boost your score.',

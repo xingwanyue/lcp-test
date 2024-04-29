@@ -2,7 +2,7 @@
 import { reactive } from 'vue';
 
 const state = reactive({});
-useSeoMeta({
+useServerSeoMeta({
   title: 'Cookie Policy - DET Practice',
 });
 </script>
