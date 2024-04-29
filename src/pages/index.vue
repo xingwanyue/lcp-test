@@ -136,6 +136,13 @@ const isLoad4 = ref(false);
 const onLoad4 = () => {
   isLoad4.value = true;
 };
+
+// 引入cdn图片
+const bannerImg = `${cdn}/store/portal/home/banner.png`;
+const home1 = `${cdn}/store/portal/home/home1.png`;
+const home2 = `${cdn}/store/portal/home/home2.png`;
+const home3 = `${cdn}/store/portal/home/home3.png`;
+const home4 = `${cdn}/store/portal/home/home4.png`;
 </script>
 
 <template>
@@ -202,7 +209,7 @@ const onLoad4 = () => {
               x5-video-player-type="h5"
               :src="videoUrl"
             ></video> -->
-            <img src="/img/home/banner.png" />
+            <img :src="bannerImg" />
           </div>
         </div>
       </div>
@@ -221,7 +228,7 @@ const onLoad4 = () => {
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad" src="/img/home/home1.png" alt="Duolingo English Test Practice" @load="onLoad" />
+            <el-image v-show="isLoad" :src="home1" alt="Duolingo English Test Practice" @load="onLoad" />
             <el-skeleton v-show="!isLoad" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -255,12 +262,7 @@ const onLoad4 = () => {
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image
-              v-show="isLoad2"
-              src="/img/home/home2.png"
-              alt="Correction Service powered by AI"
-              @load="onLoad2"
-            />
+            <el-image v-show="isLoad2" :src="home2" alt="Correction Service powered by AI" @load="onLoad2" />
             <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -291,7 +293,7 @@ const onLoad4 = () => {
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad3" src="/img/home/home3.png" alt="Duolingo English Test Mock" @load="onLoad3" />
+            <el-image v-show="isLoad3" :src="home3" alt="Duolingo English Test Mock" @load="onLoad3" />
             <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -324,7 +326,7 @@ const onLoad4 = () => {
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad4" src="/img/home/home4.png" alt="Duolingo English Test Course" @load="onLoad4" />
+            <el-image v-show="isLoad4" :src="home4" alt="Duolingo English Test Course" @load="onLoad4" />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
