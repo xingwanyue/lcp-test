@@ -130,8 +130,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Practice</div>
                   <div class="font">
-                    Dive into Success with Vast Question Bank : 10,000+ Questions, Continuous Updates, and Intelligent
-                    Monitoring for Exam Excellence!
+                    Achieve Excellence with Our Extensive Question Bank: Over 10,000 Questions, Regular Updates, and
+                    Smart Performance Tracking!
                   </div>
                 </div>
               </NuxtLink>
@@ -145,8 +145,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Correction Service</div>
                   <div class="font">
-                    Elevate Your Essays with AI + Teacher : Precision Corrections, Instant Reports, and Score Boosts in
-                    Just Two Weeks!
+                    Perfect Your Essays with AI-Powered Teacher Feedback: Accurate Corrections, Instant Reports, and
+                    Score Improvement within Two Weeks!
                   </div>
                 </div>
               </NuxtLink>
@@ -160,8 +160,8 @@ const logout = () => {
                 <div class="right">
                   <div class="title">Duolingo English Test Mock</div>
                   <div class="font">
-                    Master Your Exam with Full-Scale Mocks: Realistic Simulation, Detailed Analysis, and Rapid Results
-                    Anytime, Anywhere!
+                    Conquer Your Exam with Authentic Full-Length Mocks: In-depth Analysis and Instant Results, Available
+                    Anytime, Anywhere.
                   </div>
                 </div>
               </NuxtLink>

@@ -14,7 +14,7 @@ const googleLogin = () => {
 <template>
   <div class="slogen_out_wrapper">
     <div class="slogen_out">
-      <div class="font1">Embark on your journey to high scores on</div>
+      <div class="font1">Start Your Path to Top Scores on the</div>
       <div class="font2">Duolingo English Test !</div>
       <div v-if="!user.id" class="two_btn_out">
         <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">

@@ -38,7 +38,7 @@ const sendEmail = async () => {
     <div class="subscribe_out">
       <div class="subscribe_in_left">
         <div class="left_font1">Subscribe!</div>
-        <div class="left_font2">Get the latest exam news and tips for improving your score.</div>
+        <div class="left_font2">Subscribe for the Latest Insights and Strategies to Elevate Your Score.</div>
       </div>
       <div class="subscribe_in_right">
         <el-input
