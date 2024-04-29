@@ -1,10 +1,13 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-
+import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: 'About Us - DET Practice',
   description: '',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/company/aboutus` }],
 });
 </script>
 <template>

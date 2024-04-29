@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { staticUrlGet, urlGet } from '@/utils';
+import { staticUrlGet, urlGet, domain } from '@/utils';
 import { useStore } from '@/store';
 useServerSeoMeta({
   title: 'DET Practice: Duolingo Test Prep Membership and Services Pricing',
   description:
     'Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/pricing` }],
 });
 const store = useStore();
 const user = computed(() => store.user);
@@ -33,7 +36,7 @@ const aqList = ref([
   },
   {
     name: 'Is there a free trial?',
-    content: 'Yes! You can view 3 questions for free every day. Help you understand us before you buy more services.',
+    content: 'Yes! You can view 20 questions for free. Help you understand us before you buy more services.',
     open: false,
   },
   {

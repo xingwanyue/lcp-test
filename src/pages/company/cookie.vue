@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-
+import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: 'Cookie Policy - DET Practice',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/company/cookie` }],
 });
 </script>
 <template>

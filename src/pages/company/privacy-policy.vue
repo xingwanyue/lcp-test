@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-
+import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: 'Privacy Policy - DET Practice',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/company/privacy-policy` }],
 });
 </script>
 <template>

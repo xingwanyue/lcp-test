@@ -346,7 +346,7 @@ const onLoad4 = () => {
               Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is
               in perfect sync with current exam standards.
             </div>
-            <NuxtLink class="get_more" :to="localePath('/guide ')">
+            <NuxtLink class="get_more" :to="localePath('/duolingo-courses')">
               <div class="font">Explore More</div>
               <div class="icon">
                 <img

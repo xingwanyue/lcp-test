@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet } from '@/utils';
+import { urlGet, domain } from '@/utils';
 import { useStore } from '@/store';
 import vHighscorewriting from '../components/highscorewriting.vue';
 const localePath = useLocalePath();
@@ -9,6 +9,9 @@ useServerSeoMeta({
   title: 'DET Practice:Correction Service powered by AI for your Duolingo Learning',
   description:
     'Correction service provided by "AI + Teachers". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/duolingo-correction` }],
 });
 // 获取平台数据
 const {
