@@ -11,7 +11,7 @@ useServerSeoMeta({
     'The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/duolingo-practice` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/duolingo-practice` }],
 });
 // 获取平台数据
 const {

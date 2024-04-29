@@ -12,7 +12,7 @@ useServerSeoMeta({
     'Experience the closest simulation to the real Duolingo English Test with our full-scale mock exams. Get accurate scoring, comprehensive reports, and fast feedback to identify and work on your weaknesses.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/products/mock` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/products/mock` }],
 });
 // 获取平台数据
 const {

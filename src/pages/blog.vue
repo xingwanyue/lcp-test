@@ -11,7 +11,7 @@ useServerSeoMeta({
     'Stay informed and prepared with our DET blog. Get the latest Duolingo English Test tips, news, service updates, and announcements designed to enhance your test readiness.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/blog` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],
 });
 const total = ref(0);
 const pageSize = ref(10);

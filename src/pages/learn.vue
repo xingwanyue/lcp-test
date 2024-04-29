@@ -72,7 +72,7 @@ useServerSeoMeta({
     'Explore expert strategies and study methods to excel on the Duolingo English Test. Our blog offers actionable tips and insights to enhance your preparation and boost your score.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/learn` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/learn` }],
 });
 </script>
 <template>

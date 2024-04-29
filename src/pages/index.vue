@@ -14,7 +14,7 @@ useServerSeoMeta({
     'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}` }],
 });
 const localePath = useLocalePath();
 const store = useStore();

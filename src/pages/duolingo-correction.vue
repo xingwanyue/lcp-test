@@ -11,7 +11,7 @@ useServerSeoMeta({
     'Correction service provided by "AI + Teachers". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/duolingo-correction` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/duolingo-correction` }],
 });
 // 获取平台数据
 const {

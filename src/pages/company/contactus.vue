@@ -57,7 +57,7 @@ useServerSeoMeta({
   description: '',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/company/contactus` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/company/contactus` }],
 });
 </script>
 <template>

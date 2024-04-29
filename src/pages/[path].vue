@@ -15,7 +15,7 @@ useServerSeoMeta({
   keywords: () => article.value?.keywords,
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/${route.params.path}` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/${route.params.path}` }],
 });
 </script>
 <template>

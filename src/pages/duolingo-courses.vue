@@ -7,7 +7,7 @@ useServerSeoMeta({
     'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/duolingo-courses` }],
+  link: [{ hid: 'canonical', href: `https://www.${domain}/duolingo-courses` }],
 });
 const localePath = useLocalePath();
 const store = useStore();

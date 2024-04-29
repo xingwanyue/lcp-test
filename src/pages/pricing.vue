@@ -7,7 +7,7 @@ useServerSeoMeta({
     'Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/pricing` }],
+  link: [{ rel: 'canonical',  href: `https://www.${domain}/pricing` }],
 });
 const store = useStore();
 const user = computed(() => store.user);

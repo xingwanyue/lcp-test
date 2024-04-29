@@ -6,7 +6,7 @@ useServerSeoMeta({
   title: 'Privacy Policy - DET Practice',
 });
 useHead({
-  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/company/privacy-policy` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/company/privacy-policy` }],
 });
 </script>
 <template>
