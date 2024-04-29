@@ -434,7 +434,7 @@ const formateMinToHour = (min: number) => {
                   <!-- <span v-if="Number(item.vipPrice)">
                     {{ ((Number(item.vipPrice) / Number(item.originalPrice)) * 100).toFixed(0) }}% off
                   </span> -->
-                  <span> {{ ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off </span>
+                  <span> {{ 100 - ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off </span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
