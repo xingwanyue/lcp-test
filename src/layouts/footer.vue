@@ -27,7 +27,7 @@ const prod = {
   list: [
     {
       name: 'DET Practice',
-      url: '/products/bank',
+      url: '/duolingo-practice',
     },
     {
       name: 'AI Correction Service',

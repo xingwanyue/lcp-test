@@ -45,19 +45,19 @@ const aqList = ref([
   {
     name: 'My payment was successful, but the upgrade failed.',
     content:
-      "Please contact us via chat or email: <span class='email_address'>info@aitogether.uk</span>. This is the simplest and fastest way to address your concerns.",
+      "Please contact us via chat or email: <span class='email_address'>support@detpractice.com</span>. This is the simplest and fastest way to address your concerns.",
     open: false,
   },
   {
     name: 'Can I change my plan later?',
     content:
-      "You can purchase more services at any time, and upon purchase, the services will be added directly to your account. If you need to cancel any services, please contact us via chat or email at <span class='email_address'>info@aitogether.uk</span>.",
+      "You can purchase more services at any time, and upon purchase, the services will be added directly to your account. If you need to cancel any services, please contact us via chat or email at <span class='email_address'>support@detpractice.com</span>.",
     open: false,
   },
   {
     name: 'Where do I send my feedback?',
     content:
-      'You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class="email_address">info@aitogether.uk</span>. Alternatively, you can leave a message directly in the "Contact Us" section.',
+      'You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class="email_address">support@detpractice.com</span>. Alternatively, you can leave a message directly in the "Contact Us" section.',
     open: false,
   },
 ]) as any;
@@ -89,28 +89,28 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
               desc: `<span class='bigger'>20</span> Practice Questions`,
               tips: '',
             },
-            {
-              name: 2,
-              desc: `<span class='bigger'>$${correct.price / 100} / 5</span> Correction Services`,
-              tips: '',
-            },
-            {
-              name: 3,
-              desc: `<span class='bigger'>$${exam.price / 100} / 1 </span> Mock Exam`,
-              tips: '',
-            },
-            {
-              name: 4,
-              desc: `<span class='bigger'>$${speak.price / 100}</span> / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
-            {
-              name: 5,
-              desc: `<span class='bigger'>$${write.price / 100}</span> / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
+            // {
+            //   name: 2,
+            //   desc: `<span class='bigger'>$${correct.price / 100} / 5</span> Correction Services`,
+            //   tips: '',
+            // },
+            // {
+            //   name: 3,
+            //   desc: `<span class='bigger'>$${exam.price / 100} / 1 </span> Mock Exam`,
+            //   tips: '',
+            // },
+            // {
+            //   name: 4,
+            //   desc: `<span class='bigger'>$${speak.price / 100}</span> / Speaking Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
+            // {
+            //   name: 5,
+            //   desc: `<span class='bigger'>$${write.price / 100}</span> / Writing Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
           ];
         }
         if (item.day === 7) {
@@ -125,36 +125,36 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
               name: 2,
               desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
               style: 'font-weight: 500;',
-              tips: 'for speaking and writing',
+              tips: 'For Speaking and Writing Questions',
             },
-            {
-              name: 3,
-              desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'Exclusive Discount',
-            },
+            // {
+            //   name: 3,
+            //   desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
+            //   style: 'font-weight: 500;',
+            //   tips: 'Exclusive Discount',
+            // },
             {
               name: 4,
               desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
               tips: '',
             },
-            {
-              name: 5,
-              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-              tips: '',
-            },
-            {
-              name: 6,
-              desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
-            {
-              name: 7,
-              desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
+            // {
+            //   name: 5,
+            //   desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+            //   tips: '',
+            // },
+            // {
+            //   name: 6,
+            //   desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
+            // {
+            //   name: 7,
+            //   desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
           ];
         }
         if (item.day === 15) {
@@ -168,36 +168,36 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
               name: 2,
               desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
               style: 'font-weight: 500;',
-              tips: 'for speaking and writing',
+              tips: 'For Speaking and Writing Questions',
             },
-            {
-              name: 3,
-              desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'Exclusive Discount',
-            },
+            // {
+            //   name: 3,
+            //   desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
+            //   style: 'font-weight: 500;',
+            //   tips: 'Exclusive Discount',
+            // },
             {
               name: 4,
-              desc: `<span class='bigger'>${item.examNum} Mock Exam</span>`,
+              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
               tips: '',
             },
-            {
-              name: 5,
-              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-              tips: '',
-            },
-            {
-              name: 6,
-              desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
-            {
-              name: 7,
-              desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
+            // {
+            //   name: 5,
+            //   desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+            //   tips: '',
+            // },
+            // {
+            //   name: 6,
+            //   desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
+            // {
+            //   name: 7,
+            //   desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
           ];
         }
         if (item.day === 30) {
@@ -212,36 +212,36 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
               name: 2,
               desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
               style: 'font-weight: 500;',
-              tips: 'for speaking and writing',
+              tips: 'For Speaking and Writing Questions',
             },
-            {
-              name: 3,
-              desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
-              style: 'font-weight: 500;',
-              tips: 'Exclusive Discount',
-            },
+            // {
+            //   name: 3,
+            //   desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
+            //   style: 'font-weight: 500;',
+            //   tips: 'Exclusive Discount',
+            // },
             {
               name: 4,
               desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
               tips: '',
             },
-            {
-              name: 5,
-              desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-              tips: '',
-            },
-            {
-              name: 6,
-              desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
-            {
-              name: 7,
-              desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
-              tips: '',
-              style: 'font-weight: 500;',
-            },
+            // {
+            //   name: 5,
+            //   desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
+            //   tips: '',
+            // },
+            // {
+            //   name: 6,
+            //   desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
+            // {
+            //   name: 7,
+            //   desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
+            //   tips: '',
+            //   style: 'font-weight: 500;',
+            // },
           ];
         }
         membershipArr.push(item);
@@ -274,15 +274,15 @@ const contaceUsList = ref([
     type: '1',
     icon: '/img/pricing/online.svg',
     font: 'Online Customer Service',
-    tip: 'Online hours: Monday to Friday, 10:00 - 19:00.',
-    btn: 'Initiate a conversation',
+    tip: 'Available Mon-Fri, 10:00 - 19:00',
+    btn: 'Chat Live Now',
   },
   {
     type: '2',
     icon: '/img/pricing/email.svg',
-    font: 'Consultation Email',
-    tip: 'We will respond to you within one business day.',
-    btn: 'info@aitogether.uk',
+    font: 'Email Us',
+    tip: 'Receive a response in 1 business day.',
+    btn: 'support@detpractice.com',
   },
   {
     type: '3',
@@ -295,32 +295,32 @@ const contaceUsList = ref([
 const membershipUnchanging = ref([
   {
     name: '1',
-    desc: 'View all practice questions',
+    desc: 'Access all Practice Questions',
     tips: '',
   },
   {
     name: '2',
-    desc: 'High-scoring Answers',
+    desc: 'Browse High-scoring Demo Answers',
     tips: '',
   },
   {
     name: '3',
-    desc: 'Question Analysis',
+    desc: 'In-depth Question Analysis',
     tips: '',
   },
   {
     name: '4',
-    desc: 'Vocabulary Book',
-    tips: 'high-frequency vocabulary in the exam',
+    desc: 'High-Frequency Exam Word Book',
+    tips: '',
   },
   {
     name: '5',
-    desc: 'Intelligent question brushing plan',
+    desc: 'Tailored Study Plan with Smart Question Selection',
     tips: '',
   },
   {
     name: '6',
-    desc: 'Read aloud AI ratings',
+    desc: 'AI-Powered Speaking Evaluations',
     tips: '',
   },
 ]) as any;
@@ -407,10 +407,7 @@ const formateMinToHour = (min: number) => {
           <h1>Plans & Pricing</h1>
         </div>
         <div class="title2">
-          <h4>
-            In the future, there may be a certain increase in prices. lf necessary,<br />
-            please make a timely purchase.
-          </h4>
+          <h4>Act Now to Save! Grab your membership at today’s low prices – don’t miss out before costs rise.</h4>
         </div>
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
@@ -455,7 +452,9 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_part3">
                 <!-- <div v-if="isVip" class="big_price"><span class="symbol">$</span>{{ item.vipPrice / 100 }}</div> -->
                 <div class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
-                <div class="small_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
+                <div v-if="Number(item.originalPrice)" class="small_price">
+                  ${{ (item.originalPrice / 100).toFixed(2) }}
+                </div>
               </div>
               <div v-if="user.id">
                 <div
@@ -1484,6 +1483,7 @@ const formateMinToHour = (min: number) => {
             font-size: 14px;
             color: #403f3e;
             margin-top: 8px;
+            text-align: center;
           }
 
           .btn {
