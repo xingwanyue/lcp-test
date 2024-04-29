@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet, domain, cdn } from '@/utils';
+import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
 import vHighscorewriting from '../components/highscorewriting.vue';
 const localePath = useLocalePath();
@@ -173,7 +173,11 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                >
                   <div class="font">Get Scored Now</div>
                   <div class="arrow">
                     <img
@@ -210,7 +214,11 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                >
                   <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
@@ -246,7 +254,11 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                >
                   <div class="font">Correct Now</div>
                   <div class="arrow">
                     <img
@@ -283,7 +295,11 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                >
                   <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
@@ -320,7 +336,11 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                >
                   <div class="font">Begin Polishing</div>
                   <div class="arrow">
                     <img

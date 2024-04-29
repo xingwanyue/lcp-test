@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet, domain, cdn } from '@/utils';
+import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
 import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
@@ -181,7 +181,11 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                >
                   <div class="font">Dive Into Practice</div>
                   <div class="arrow">
                     <img
@@ -223,7 +227,11 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                >
                   <div class="font">Start Smart Study Journey</div>
                   <div class="arrow">
                     <img
@@ -261,7 +269,11 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                >
                   <div class="font">Begin Your Evaluation</div>
                   <div class="arrow">
                     <img
@@ -299,7 +311,11 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                >
                   <div class="font">Explore Answer Insights</div>
                   <div class="arrow">
                     <img

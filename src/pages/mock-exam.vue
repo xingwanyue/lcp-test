@@ -167,7 +167,11 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
@@ -209,7 +213,11 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
@@ -246,7 +254,11 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
@@ -282,7 +294,11 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
