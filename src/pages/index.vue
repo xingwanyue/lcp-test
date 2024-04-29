@@ -304,7 +304,7 @@ const onLoad4 = () => {
               Provide detailed simulated test reports, accurately analyzing your strengths and weaknesses.
             </div>
             <div class="tips">Take online mock exams anytime, anywhere, with rapid scoring within 24 hours.</div>
-            <NuxtLink class="get_more" :to="localePath('/products/mock')">
+            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
               <div class="font">Get more information</div>
               <div class="icon">
                 <img

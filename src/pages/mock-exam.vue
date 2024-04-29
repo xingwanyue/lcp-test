@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { urlGet, host } from '@/utils';
 import { useStore } from '@/store';
-import vEasyexam from '../../components/easyexam.vue';
+import vEasyexam from '../components/easyexam.vue';
 
 const localePath = useLocalePath();
 const store = useStore();
@@ -316,5 +316,5 @@ const onLoad4 = () => {
 </template>
 
 <style lang="scss" scoped>
-@import './common/prod.scss';
+@import './products/common/prod.scss';
 </style>

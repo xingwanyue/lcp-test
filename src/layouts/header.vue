@@ -42,7 +42,7 @@ const changeHeaderColor = (pathname: string) => {
     case '/products/bank':
       headerColor.value = '#ECF7FF';
       break;
-    case '/products/mock':
+    case '/mock-exam':
       headerColor.value = '#FFEFE1';
       break;
     case '/products/guide':
@@ -57,7 +57,7 @@ const changeHeaderColor = (pathname: string) => {
       break;
   }
 };
-const productPaths = ['/products/bank', '/products/service', '/products/mock', '/products/guide'];
+const productPaths = ['/products/bank', '/products/service', '/mock-exam', '/products/guide'];
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
@@ -150,7 +150,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/mock')" class="one_card card3">
+              <NuxtLink :to="localePath('/mock-exam')" class="one_card card3">
                 <div class="icon">
                   <img
                     src="/img/home/product_icon3.svg"
@@ -300,7 +300,7 @@ const logout = () => {
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
-              :to="localePath('/products/mock')"
+              :to="localePath('/mock-exam')"
               @click="handleClose"
             >
               Duolingo English Test Mock

@@ -35,7 +35,7 @@ const prod = {
     },
     {
       name: 'DET Mock',
-      url: '/products/mock',
+      url: '/mock-exam',
     },
     {
       name: 'Duolingo English Test Course',
