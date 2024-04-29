@@ -173,7 +173,11 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
@@ -216,7 +220,11 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
@@ -259,7 +267,11 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
@@ -301,7 +313,11 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
+                <NuxtLink
+                  v-else
+                  class="right_click"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                >
                   <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
