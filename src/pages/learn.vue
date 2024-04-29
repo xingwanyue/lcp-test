@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { articleGet, articleCategoryGet, getTree, domain } from '@/utils';
 import { reactive } from 'vue';
+import dayjs from 'dayjs';
 import head from 'lodash/head';
 import find from 'lodash/find';
 import subscribe from '../components/subscribe.vue';
@@ -19,6 +20,7 @@ const state = reactive({
   page: 1,
   pageSize: 5,
   total: 0,
+  learnLastestUpdateTime: '',
 });
 
 const getSelect = async () => {
@@ -42,6 +44,7 @@ const getInfo = async () => {
     query: { ...args },
   })) as any;
   state.total = value?.total;
+  state.learnLastestUpdateTime = value?.learnLastestUpdateTime;
   if (state.isMore) {
     state.infoList = [...state.infoList, ...value?.data];
   } else {
@@ -83,7 +86,9 @@ useHead({
           <h1 class="title">We will update the exam preparation tips of Duolingo English Test timely</h1>
         </div>
         <div>
-          <div class="title2">The lastest update is until March 1, 2024</div>
+          <div class="title2">
+            The lastest update is until {{ dayjs(state.learnLastestUpdateTime).format('MM-DD-YYYY') }}
+          </div>
         </div>
       </div>
     </div>
