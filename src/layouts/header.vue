@@ -230,7 +230,7 @@ const logout = () => {
         </div>
       </div>
       <div v-else class="loginbtn">
-        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link>
+        <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
         <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free common_btn_hover_bgColor">
           Try for free
         </nuxt-link>
@@ -328,7 +328,7 @@ const logout = () => {
         <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free">
           Try for free
         </nuxt-link>
-        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font">Login</nuxt-link>
+        <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font">Login</nuxt-link> -->
       </div>
     </el-drawer>
   </div>
