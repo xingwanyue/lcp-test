@@ -155,7 +155,7 @@ const onLoad4 = () => {
             <div class="small_title_wrap">
               <div class="one_small_title current">DET Practice</div>
               <div class="one_small_title">AI Correction</div>
-              <div class="one_small_title">Full-Scale Mock</div>
+              <div class="one_small_title">Full-Length Mock</div>
               <div class="one_small_title">DET Courses</div>
             </div>
           </div>
@@ -180,7 +180,7 @@ const onLoad4 = () => {
         <div class="all_stu_nums">
           Trusted by
           <span class="yellow">{{ formatNumber(platformData?.userTotal) }} students</span>
-          worldwide to improve Duolingo English Test scores within one month.
+          worldwide for a 1-month Duolingo English Test score boost.
         </div>
         <div class="big_img_out">
           <div class="big_img">
@@ -206,12 +206,13 @@ const onLoad4 = () => {
       <div class="part2">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
           <div>
-            The best platform for enhancing your scores in the<br />
-            Duolingo English Test
+            <!-- The best platform for enhancing your scores in the<br />
+            Duolingo English Test -->
+            The Best Platform for Boosting Your Duolingo English Test Scores
           </div>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <div>Utilize our comprehensive resources to accelerate your score improvement</div>
+          <div>Leverage Our All-Inclusive Resources for Swift Score Improvement</div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
@@ -227,16 +228,17 @@ const onLoad4 = () => {
               <h2>Duolingo English Test Practice</h2>
             </div>
             <div class="tips">
-              Having nearly {{ formatNumber(platformData?.questionTotal) }} practice questions, the question bank is
-              continuously updated and improved.
+              With over {{ formatNumber(platformData?.questionTotal) }} practice questions, our ever-expanding question
+              bank is regularly updated for excellence.
             </div>
-            <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
             <div class="tips">
-              Thorough answers, intelligent recognition, and scoring allow you to constantly monitor your performance in
-              answering questions.
+              Comprehensive coverage of all exam types with detailed explanations for every question.
+            </div>
+            <div class="tips">
+              In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.
             </div>
             <NuxtLink class="get_more" :to="localePath('/products/bank')">
-              <div class="font">Get more information</div>
+              <div class="font">Discover More</div>
               <div class="icon">
                 <img
                   src="/img/home/yellow_arrow_right.svg"
@@ -262,18 +264,17 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>Correction Service powered by AI</h2>
+              <h2>AI-Powered Essay Correction Service</h2>
             </div>
             <div class="tips">
-              "AI + Teacher" provides precise correction services, thoroughly reviewing your essay.
+              Benefit from precise essay corrections through our 'AI + Teacher' collaborative review.
             </div>
             <div class="tips">
-              Just submit your writing content, and you will receive a clear, detailed report and band score in a
-              moment.
+              Simply submit your essay and promptly receive a comprehensive report with a detailed band score.
             </div>
-            <div class="tips">Improve your writing score within two weeks.</div>
+            <div class="tips">Elevate your writing score in just 2 weeks.</div>
             <NuxtLink class="get_more" :to="localePath('/products/service')">
-              <div class="font">Get more information</div>
+              <div class="font">Learn More</div>
               <div class="icon">
                 <img
                   src="/img/home/yellow_arrow_right.svg"
@@ -297,15 +298,16 @@ const onLoad4 = () => {
               <h2>Duolingo English Test Mock</h2>
             </div>
             <div class="tips">
-              Replicate the formal examination, allowing you to experience the examination process and content in
-              advance.
+              Mimic the actual exam setting to familiarize yourself with the testing process and content beforehand.
             </div>
             <div class="tips">
-              Provide detailed simulated test reports, accurately analyzing your strengths and weaknesses.
+              Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.
             </div>
-            <div class="tips">Take online mock exams anytime, anywhere, with rapid scoring within 24 hours.</div>
+            <div class="tips">
+              Take online mock exams at your convenience, with fast scoring provided within 24 hours.
+            </div>
             <NuxtLink class="get_more" :to="localePath('/mock-exam')">
-              <div class="font">Get more information</div>
+              <div class="font">Find Out More</div>
               <div class="icon">
                 <img
                   src="/img/home/yellow_arrow_right.svg"
@@ -329,19 +331,19 @@ const onLoad4 = () => {
               <h2>Duolingo English Test Course</h2>
             </div>
             <div class="tips">
-              Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with detailed breakdowns, ensuring
-              you confidently handle all exam components.
+              Achieve Comprehensive Mastery. Develop an in-depth understanding of DET speaking and writing sections with
+              our detailed guides, ensuring you approach every part of the exam with confidence.
             </div>
             <div class="tips">
-              Access proven techniques from ESL professionals for improved speaking and writing performance,
-              personalized learning, and effective self-assessment.
+              Learn from ESL Experts. Utilize proven strategies to enhance your speaking and writing abilities, benefit
+              from personalized learning paths, and engage in effective self-assessment.
             </div>
             <div class="tips">
-              Stay ahead with up-to-date insights on DET formats and trends, ensuring your preparation aligns seamlessly
-              with the latest exam standards.
+              Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is
+              in perfect sync with current exam standards.
             </div>
             <NuxtLink class="get_more" :to="localePath('/products/guide')">
-              <div class="font">Get more information</div>
+              <div class="font">Explore More</div>
               <div class="icon">
                 <img
                   src="/img/home/yellow_arrow_right.svg"
