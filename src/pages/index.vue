@@ -6,7 +6,7 @@ import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn } from '@/utils';
 
-const videoUrl = `${cdn}/store/portal/banner_min.mp4`
+const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
@@ -227,7 +227,7 @@ const onLoad4 = () => {
               <h3>Duolingo English Test Practice</h3>
             </div>
             <div class="tips">
-              Having nearly {{ formatNumber(platformData?.questionTotal) }}+ practice questions, the question bank is
+              Having nearly {{ formatNumber(platformData?.questionTotal) }} practice questions, the question bank is
               continuously updated and improved.
             </div>
             <div class="tips">Covering all types of exams, detailed explanations are provided for each question.</div>
