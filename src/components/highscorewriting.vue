@@ -9,8 +9,8 @@ const user = computed(() => store.user);
 <template>
   <div class="embark_out_wrapper">
     <div class="embark_out">
-      <div class="font1">Immediately embark on your journey to</div>
-      <div class="font2">high-scoring writing!</div>
+      <div class="font1">Accelerate Your Path to</div>
+      <div class="font2">High-Scoring Writing Mastery.</div>
       <div v-if="!user.id" class="two_btn_out">
         <div>
           <NuxtLink

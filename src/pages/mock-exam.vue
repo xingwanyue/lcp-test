@@ -53,12 +53,12 @@ const onLoad4 = () => {
           <div class="banner">
             <div class="banner_left">
               <div class="big_title">
-                <h1>Duolingo 1:1 Full-scale Mock Exam</h1>
+                <h1>Duolingo English Test 1:1 Mock Exam</h1>
               </div>
               <div class="desc">
-                Fully recreate the formal examination environment, allowing you to experience the examination process in
-                advance. Receive scores and diagnostic reports within a short period, identify weaknesses, and make
-                targeted breakthroughs.
+                Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of
+                the actual testing process before the real deal and quickly receive scores and detailed diagnostic
+                reports to pinpoint areas for improvement.
               </div>
               <div class="people_num">
                 <div class="icon_continer">
@@ -94,7 +94,7 @@ const onLoad4 = () => {
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.examTotal }} people used mock exams for self-assessment. practice.
+                  {{ platformData.examTotal }} learners have taken our mock exams for self-assessment and practice.
                 </div>
               </div>
               <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :href="urlGet('/exam')">
@@ -145,7 +145,7 @@ const onLoad4 = () => {
               <el-image
                 v-show="isLoad1"
                 src="/img/products/mock_picture1.png"
-                alt="Algorithmic intelligence"
+                alt="Algorithmic Intelligence"
                 @load="onLoad1"
               />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
@@ -156,13 +156,13 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Algorithmic intelligence</h2>
+                <h2 class="right_title">Algorithmic Intelligence</h2>
                 <div class="right_desc">
-                  Intelligent adaptive question generation algorithm covering all question types, replicating the real
-                  examination process.
+                  Experience real exam conditions with our advanced adaptive testing algorithm. Quickly master various
+                  question types and gain precise assessments.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -171,7 +171,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -188,7 +188,7 @@ const onLoad4 = () => {
               <el-image
                 v-show="isLoad2"
                 src="/img/products/mock_picture2.png"
-                alt="Accurate Scoring & Comprehensive Reports"
+                alt="Precise Scoring & In-Depth Reports"
                 @load="onLoad2"
               />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
@@ -199,13 +199,13 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Accurate Scoring & Comprehensive Reports</h2>
+                <h2 class="right_title">Precise Scoring & In-Depth Reports</h2>
                 <div class="right_desc">
                   Detailed mock exam reports provide precise diagnosis and analysis of current strengths and weaknesses,
                   automatically updating study plans to enhance exam preparation efficiency.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -214,7 +214,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -244,11 +244,11 @@ const onLoad4 = () => {
               <div class="one_card_right_forMid">
                 <h2 class="right_title">Convenient Exam Experience</h2>
                 <div class="right_desc">
-                  No need for exam appointments, participate in tests anytime, anywhere after purchase.If necessary, you
-                  can pause or exit the exam midway.
+                  Enjoy flexible test-taking on your schedule, no appointments needed. Start your mock exam immediately
+                  after purchase and have the freedom to pause or resume anytime.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -257,7 +257,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -274,7 +274,7 @@ const onLoad4 = () => {
               <el-image
                 v-show="isLoad4"
                 src="/img/products/mock_picture4.png"
-                alt="Quick Score Release"
+                alt="Rapid Score Reporting"
                 @load="onLoad4"
               />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
@@ -285,10 +285,12 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Quick Score Release</h2>
-                <div class="right_desc">Scores are released within 24 hours after completing the mock exam.</div>
+                <h2 class="right_title">Rapid Score Reporting</h2>
+                <div class="right_desc">
+                  Get your mock exam results delivered within 24 hours, fast-tracking your progress review.
+                </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"
@@ -297,7 +299,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/mock-exam`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Mock Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/orange_arrow_right.svg"

@@ -56,11 +56,11 @@ const onLoad1 = () => {
           <div class="banner">
             <div class="banner_left">
               <div class="big_title">
-                <h1>The best new way to check your writing answers.</h1>
+                <h1>Discover the Best, Latest Method for Writing Review</h1>
               </div>
               <div class="desc">
-                Correction service provided by "AI + Teachers".Your essay will be corrected based on DET scoring rules,
-                and you will receive detailed feedback in a moment.
+                Enhance your essays with our 'AI + Teachers' correction service. Get detailed feedback based on official
+                scoring standards quickly after submission.
               </div>
               <div class="people_num">
                 <div class="icon_continer">
@@ -96,11 +96,11 @@ const onLoad1 = () => {
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.correctTotal }} people used Correction service.
+                  {{ platformData.correctTotal }} learners have improved their writing with our correction service.
                 </div>
               </div>
               <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :href="urlGet('/correct')">
-                <div class="font">Get Started</div>
+                <div class="font">Review Now</div>
                 <div class="icon">
                   <img
                     src="/img/products/white_arrow_right.svg"
@@ -113,7 +113,7 @@ const onLoad1 = () => {
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
               >
-                <div class="font">Get Started</div>
+                <div class="font">Review Now</div>
                 <div class="icon">
                   <img
                     src="/img/products/white_arrow_right.svg"
@@ -145,7 +145,7 @@ const onLoad1 = () => {
               <el-image
                 v-show="isLoad1"
                 src="/img/products/service_picture1.png"
-                alt="Accurate score"
+                alt="Precision in Scoring"
                 @load="onLoad1"
               />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
@@ -156,13 +156,13 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Accurate score</h2>
+                <h2 class="right_title">Precision in Scoring</h2>
                 <div class="right_desc">
-                  Submit your essay by inputting or from the question bank, and you can receive a clear and detailed
-                  report and score immediately.
+                  Effortlessly submit your essay from our question bank and instantly receive a comprehensive report
+                  with precise scoring.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Get Scored Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -171,7 +171,7 @@ const onLoad1 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Get Scored Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -185,7 +185,12 @@ const onLoad1 = () => {
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <!-- <img src="/img/products/service_picture2.png" /> -->
-              <el-image v-show="isLoad2" src="/img/products/service_picture2.png" alt="Word analysis" @load="onLoad2" />
+              <el-image
+                v-show="isLoad2"
+                src="/img/products/service_picture2.png"
+                alt="Vocabulary Enhancement"
+                @load="onLoad2"
+              />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -194,14 +199,13 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Word analysis</h2>
+                <h2 class="right_title">Vocabulary Enhancement</h2>
                 <div class="right_desc">
-                  Word count and mining, discovering the highlight words in the composition, enhancing your expression;
-                  Detecting and annotating the repeated words in the composition, helping you maintain diversity in your
-                  expression.
+                  Track your word usage and uncover key terms within your essays. Our tool identifies overused words,
+                  fostering diverse and effective expression.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -210,7 +214,7 @@ const onLoad1 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -227,7 +231,7 @@ const onLoad1 = () => {
               <el-image
                 v-show="isLoad3"
                 src="/img/products/service_picture3.png"
-                alt="Essay correction"
+                alt="Essay Correction"
                 @load="onLoad3"
               />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
@@ -238,12 +242,12 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Essay correction</h2>
+                <h2 class="right_title">Essay Correction</h2>
                 <div class="right_desc">
-                  You can immediately see your vocabulary mistakes, grammar errors, and learn how to avoid them.
+                  Instantly spot and understand errors in vocabulary and grammar to enhance your writing skills.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Correct Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -252,7 +256,7 @@ const onLoad1 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Correct Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -269,7 +273,7 @@ const onLoad1 = () => {
               <el-image
                 v-show="isLoad4"
                 src="/img/products/service_picture4.png"
-                alt="Professional guidance"
+                alt="Expert Guidance"
                 @load="onLoad4"
               />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
@@ -280,13 +284,13 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Professional guidance</h2>
+                <h2 class="right_title">Expert Guidance</h2>
                 <div class="right_desc">
-                  According to the DET scoring elements, we provide professional guidance to help you identify the
-                  weaknesses in your paper and make it perfect.
+                  Enhance your writing with expert analysis tailored to DET criteria, pinpointing areas for improvement
+                  to elevate your work.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -295,7 +299,7 @@ const onLoad1 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -312,7 +316,7 @@ const onLoad1 = () => {
               <el-image
                 v-show="isLoad5"
                 src="/img/products/service_picture5.png"
-                alt="Essay polishing"
+                alt="Essay Polishing"
                 @load="onLoad5"
               />
               <el-skeleton v-show="!isLoad5" style="width: 100%; height: 385px" animated>
@@ -323,13 +327,13 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Essay polishing</div>
+                <div class="right_title">Essay Polishing</div>
                 <div class="right_desc">
-                  Accurately modify every word and sentence, reasonably adjust the paragraph structure, and revitalize
-                  the writing style to further improve your composition and transform it into a high-scoring one.
+                  Elevate every word and sentence; refine structure and style for a distinguished and high-scoring
+                  composition.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Begin Polishing</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -338,7 +342,7 @@ const onLoad1 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Begin Polishing</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
