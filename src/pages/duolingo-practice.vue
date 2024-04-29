@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { urlGet } from '@/utils';
 import { useStore } from '@/store';
-import vEmbark from '../../components/embark.vue';
+import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -183,7 +183,7 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
                   <div class="font">Dive Into Practice</div>
                   <div class="arrow">
                     <img
@@ -231,7 +231,7 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
                   <div class="font">Start Smart Study Journey</div>
                   <div class="arrow">
                     <img
@@ -275,7 +275,7 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
                   <div class="font">Begin Your Evaluation</div>
                   <div class="arrow">
                     <img
@@ -314,7 +314,7 @@ const onLoad4 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-practice`)">
                   <div class="font">Explore Answer Insights</div>
                   <div class="arrow">
                     <img
@@ -334,5 +334,5 @@ const onLoad4 = () => {
 </template>
 
 <style lang="scss" scoped>
-@import './common/prod.scss';
+@import './products/common/prod.scss';
 </style>

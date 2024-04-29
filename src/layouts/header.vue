@@ -39,7 +39,7 @@ onMounted(() => {
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
-    case '/products/bank':
+    case '/duolingo-practice':
       headerColor.value = '#ECF7FF';
       break;
     case '/mock-exam':
@@ -57,7 +57,7 @@ const changeHeaderColor = (pathname: string) => {
       break;
   }
 };
-const productPaths = ['/products/bank', '/products/service', '/mock-exam', '/products/guide'];
+const productPaths = ['/duolingo-practice', '/products/service', '/mock-exam', '/products/guide'];
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
@@ -120,7 +120,7 @@ const logout = () => {
             popper-class="head-question-popover"
           >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
-              <NuxtLink :to="localePath('/products/bank')" class="one_card card1">
+              <NuxtLink :to="localePath('/duolingo-practice')" class="one_card card1">
                 <div class="icon">
                   <img
                     src="/img/home/product_icon1.svg"
@@ -284,7 +284,7 @@ const logout = () => {
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
-              :to="localePath('/products/bank')"
+              :to="localePath('/duolingo-practice')"
               @click="handleClose"
             >
               Duolingo English Test Practice

@@ -237,7 +237,7 @@ const onLoad4 = () => {
             <div class="tips">
               In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.
             </div>
-            <NuxtLink class="get_more" :to="localePath('/products/bank')">
+            <NuxtLink class="get_more" :to="localePath('/duolingo-practice')">
               <div class="font">Discover More</div>
               <div class="icon">
                 <img
