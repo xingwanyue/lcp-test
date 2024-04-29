@@ -43,23 +43,23 @@ const article1 = ref({
   list: [
     {
       smallTitle: '• Comprehensive Exam Breakdown: ',
-      content: 'In-depth exploration of all DET speaking task types',
+      content: '• In-depth exploration of all DET speaking task types',
     },
     {
       smallTitle: '• Effective Speaking Strategies: ',
-      content: 'Practical strategies for approaching each speaking task',
+      content: '• Practical strategies for approaching each speaking task',
     },
     {
       smallTitle: '• Interactive Speaking Exercises: ',
-      content: 'Interactive exercises to improve speech clarity, fluency, and confidence',
+      content: '• Interactive exercises to improve speech clarity, fluency, and confidence',
     },
     {
       smallTitle: '• Expert Insights:',
-      content: 'Expert guidance on pronunciation, tone, and overall performance',
+      content: '• Expert guidance on pronunciation, tone, and overall performance',
     },
     {
       smallTitle: '• Real-Life Speaking Examples: ',
-      content: 'Real-life speech samples and analyses demonstrating successful strategies',
+      content: '• Real-life speech samples and analyses demonstrating successful strategies',
     },
     {
       smallTitle: '• Personalized Learning Approaches: ',
@@ -67,15 +67,15 @@ const article1 = ref({
     },
     {
       smallTitle: '• Self-Assessment Tools: ',
-      content: 'Personalized learning approaches for different proficiency levels',
+      content: '• Personalized learning approaches for different proficiency levels',
     },
     {
       smallTitle: '• Focused Language Development: ',
-      content: 'Focus on essential vocabulary and grammar for effective communication',
+      content: '• Focus on essential vocabulary and grammar for effective communication',
     },
     {
       smallTitle: '• Up-to-date and Relevant: ',
-      content: 'Updated to incorporate the latest changes in the DET speaking format',
+      content: '• Updated to incorporate the latest changes in the DET speaking format',
     },
   ],
 });
@@ -84,35 +84,35 @@ const article2 = ref({
   list: [
     {
       smallTitle: '• All-encompassing Content: ',
-      content: 'Comprehensive coverage of DET writing tasks with analysis and examples',
+      content: '• Comprehensive coverage of DET writing tasks with analysis and examples',
     },
     {
       smallTitle: '• Step-by-Step Approaches: ',
-      content: 'Step-by-step guidelines for planning and writing exceptional essays',
+      content: '• Step-by-step guidelines for planning and writing exceptional essays',
     },
     {
       smallTitle: '• Practical Writing Exercises: ',
-      content: 'Targeted exercises to hone DET-specific writing skills',
+      content: '• Targeted exercises to hone DET-specific writing skills',
     },
     {
       smallTitle: '• Expert Writing Tips: ',
-      content: 'Expert tips to improve clarity, coherence, and sophistication',
+      content: '• Expert tips to improve clarity, coherence, and sophistication',
     },
     {
       smallTitle: '• Sample Essays with Analysis: ',
-      content: 'Annotated sample essays showcasing effective strategies and common pitfalls',
+      content: '• Annotated sample essays showcasing effective strategies and common pitfalls',
     },
     {
       smallTitle: '• Personalized Learning Pathways: ',
-      content: 'Adaptable learning paths for various proficiency levels',
+      content: '• Adaptable learning paths for various proficiency levels',
     },
     {
       smallTitle: '• Evaluation Techniques: ',
-      content: 'Emphasis on essential grammar and vocabulary for DET success',
+      content: '• Emphasis on essential grammar and vocabulary for DET success',
     },
     {
       smallTitle: '• Grammar and Vocabulary Focus: ',
-      content: 'Updated to reflect the latest DET writing format trends',
+      content: '• Updated to reflect the latest DET writing format trends',
     },
   ],
 });
