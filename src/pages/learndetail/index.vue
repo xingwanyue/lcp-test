@@ -32,6 +32,8 @@ const getList = async () => {
       server: true,
       query: {
         type: '1',
+        pageSize: 6,
+        page: 1,
       },
     })) as any;
     state.list = value?.data;

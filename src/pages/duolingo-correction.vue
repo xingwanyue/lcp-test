@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet, domain, host } from '@/utils';
+import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
 import vHighscorewriting from '../components/highscorewriting.vue';
 const localePath = useLocalePath();
@@ -50,6 +50,13 @@ const isLoad1 = ref(false);
 const onLoad1 = () => {
   isLoad1.value = true;
 };
+// 引入cdn图片
+const service_banner = `${cdn}/store/portal/products/service_banner.png`;
+const service_picture1 = `${cdn}/store/portal/products/service_picture1.png`;
+const service_picture2 = `${cdn}/store/portal/products/service_picture2.png`;
+const service_picture3 = `${cdn}/store/portal/products/service_picture3.png`;
+const service_picture4 = `${cdn}/store/portal/products/service_picture4.png`;
+const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
 </script>
 <template>
   <div class="bankW100 service_out">
@@ -126,10 +133,9 @@ const onLoad1 = () => {
               </NuxtLink>
             </div>
             <div class="banner_right">
-              <!-- <img src="/img/products/service_banner.png" /> -->
               <el-image
                 v-show="isLoad"
-                src="/img/products/service_banner.png"
+                :src="service_banner"
                 alt="The best new way to check your writing answers."
                 @load="onLoad"
               />
@@ -144,13 +150,7 @@ const onLoad1 = () => {
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <!-- <img src="/img/products/service_picture1.png" /> -->
-              <el-image
-                v-show="isLoad1"
-                src="/img/products/service_picture1.png"
-                alt="Precision in Scoring"
-                @load="onLoad1"
-              />
+              <el-image v-show="isLoad1" :src="service_picture1" alt="Precision in Scoring" @load="onLoad1" />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -191,13 +191,7 @@ const onLoad1 = () => {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/service_picture2.png" /> -->
-              <el-image
-                v-show="isLoad2"
-                src="/img/products/service_picture2.png"
-                alt="Vocabulary Enhancement"
-                @load="onLoad2"
-              />
+              <el-image v-show="isLoad2" :src="service_picture2" alt="Vocabulary Enhancement" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -238,13 +232,7 @@ const onLoad1 = () => {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/service_picture3.png" /> -->
-              <el-image
-                v-show="isLoad3"
-                src="/img/products/service_picture3.png"
-                alt="Essay Correction"
-                @load="onLoad3"
-              />
+              <el-image v-show="isLoad3" :src="service_picture3" alt="Essay Correction" @load="onLoad3" />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -284,13 +272,7 @@ const onLoad1 = () => {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/service_picture4.png" /> -->
-              <el-image
-                v-show="isLoad4"
-                src="/img/products/service_picture4.png"
-                alt="Expert Guidance"
-                @load="onLoad4"
-              />
+              <el-image v-show="isLoad4" :src="service_picture4" alt="Expert Guidance" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -331,13 +313,7 @@ const onLoad1 = () => {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/service_picture5.png" /> -->
-              <el-image
-                v-show="isLoad5"
-                src="/img/products/service_picture5.png"
-                alt="Essay Polishing"
-                @load="onLoad5"
-              />
+              <el-image v-show="isLoad5" :src="service_picture5" alt="Essay Polishing" @load="onLoad5" />
               <el-skeleton v-show="!isLoad5" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />

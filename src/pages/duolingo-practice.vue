@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet, domain, host } from '@/utils';
+import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
 import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
@@ -61,6 +61,12 @@ const isLoad4 = ref(false);
 const onLoad4 = () => {
   isLoad4.value = true;
 };
+// 引入cdn图片
+const bank_banner = `${cdn}/store/portal/products/bank_banner.png`;
+const bank_picture1 = `${cdn}/store/portal/products/bank_picture1.png`;
+const bank_picture2 = `${cdn}/store/portal/products/bank_picture2.png`;
+const bank_picture3 = `${cdn}/store/portal/products/bank_picture3.png`;
+const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
 </script>
 <template>
   <div class="bankW100 bank_out">
@@ -139,12 +145,7 @@ const onLoad4 = () => {
             </div>
             <div class="banner_right">
               <!-- <img src="/img/products/bank_banner.png" /> -->
-              <el-image
-                v-show="isLoad"
-                src="/img/products/bank_banner.png"
-                alt="Duolingo Practice Question Bank"
-                @load="onLoad"
-              />
+              <el-image v-show="isLoad" :src="bank_banner" alt="Duolingo Practice Question Bank" @load="onLoad" />
               <el-skeleton v-show="!isLoad" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -156,13 +157,7 @@ const onLoad4 = () => {
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <!-- <img src="/img/products/bank_picture1.png" /> -->
-              <el-image
-                v-show="isLoad1"
-                src="/img/products/bank_picture1.png"
-                alt="Extensive Question Library"
-                @load="onLoad1"
-              />
+              <el-image v-show="isLoad1" :src="bank_picture1" alt="Extensive Question Library" @load="onLoad1" />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -204,13 +199,7 @@ const onLoad4 = () => {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/bank_picture2.png" /> -->
-              <el-image
-                v-show="isLoad2"
-                src="/img/products/bank_picture2.png"
-                alt="Smart Planning for Success"
-                @load="onLoad2"
-              />
+              <el-image v-show="isLoad2" :src="bank_picture2" alt="Smart Planning for Success" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -256,13 +245,7 @@ const onLoad4 = () => {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/bank_picture3.png" /> -->
-              <el-image
-                v-show="isLoad3"
-                src="/img/products/bank_picture3.png"
-                alt="AI Speaking Evaluation"
-                @load="onLoad3"
-              />
+              <el-image v-show="isLoad3" :src="bank_picture3" alt="AI Speaking Evaluation" @load="onLoad3" />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -304,8 +287,7 @@ const onLoad4 = () => {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/bank_picture4.png" /> -->
-              <el-image v-show="isLoad4" src="/img/products/bank_picture4.png" alt="Answer Analysis" @load="onLoad4" />
+              <el-image v-show="isLoad4" :src="bank_picture4" alt="Answer Analysis" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />

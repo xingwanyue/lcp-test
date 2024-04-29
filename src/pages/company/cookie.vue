@@ -81,7 +81,7 @@ useHead({
         <div class="content1">
           If you have any questions about our Cookie Policy, please contact us :
           <div class="line-break"></div>
-          • By email: <span class="website">info@aitogether.uk</span>
+          • By email: <span class="website">support@detpractice.com</span>
           <div class="line-break"></div>
           • By visiting this page on our website:
 

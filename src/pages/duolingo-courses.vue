@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
-import { staticUrlGet, domain } from '@/utils';
+import { staticUrlGet, domain, cdn } from '@/utils';
 useServerSeoMeta({
   title: 'DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide',
   description:
@@ -155,6 +155,11 @@ const isLoad2 = ref(false);
 const onLoad2 = () => {
   isLoad2.value = true;
 };
+
+// 引入cdn图片
+const guide1 = `${cdn}/store/portal/guid/guide1.png`;
+const guide2 = `${cdn}/store/portal/guid/guide2.png`;
+const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
 </script>
 
 <template>
@@ -168,7 +173,7 @@ const onLoad2 = () => {
               <!-- <img src="/img/guid/guide1.png" /> -->
               <el-image
                 v-show="isLoad"
-                src="/img/guid/guide1.png"
+                :src="guide1"
                 alt="DET Speaking Exam Excellence: A Comprehensive Guide"
                 @load="onLoad"
               />
@@ -222,7 +227,7 @@ const onLoad2 = () => {
               <!-- <img src="/img/guid/guide2.png" /> -->
               <el-image
                 v-show="isLoad2"
-                src="/img/guid/guide2.png"
+                :src="guide2"
                 alt="DET Writing Exam Excellence: A Comprehensive Guide"
                 @load="onLoad2"
               />
@@ -379,7 +384,7 @@ const onLoad2 = () => {
           in English proficiency.
         </div>
         <div class="team_img">
-          <img src="/img/guid/team_bg.svg" alt="Elite Language Educators" />
+          <img :src="team_bg" alt="Elite Language Educators" />
         </div>
       </div>
     </div>
@@ -609,6 +614,8 @@ const onLoad2 = () => {
             font-size: 14px;
             color: #403f3e;
             margin-top: 8px;
+            // border: 1px red solid;
+            min-height: 36px;
           }
           .btn {
             display: block;
