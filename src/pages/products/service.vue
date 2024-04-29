@@ -194,7 +194,7 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Word analysis</div>
+                <h2 class="right_title">Word analysis</h2>
                 <div class="right_desc">
                   Word count and mining, discovering the highlight words in the composition, enhancing your expression;
                   Detecting and annotating the repeated words in the composition, helping you maintain diversity in your
@@ -238,7 +238,7 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Essay correction</div>
+                <h2 class="right_title">Essay correction</h2>
                 <div class="right_desc">
                   You can immediately see your vocabulary mistakes, grammar errors, and learn how to avoid them.
                 </div>
@@ -280,7 +280,7 @@ const onLoad1 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Professional guidance</div>
+                <h2 class="right_title">Professional guidance</h2>
                 <div class="right_desc">
                   According to the DET scoring elements, we provide professional guidance to help you identify the
                   weaknesses in your paper and make it perfect.

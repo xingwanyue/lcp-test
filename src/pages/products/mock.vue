@@ -199,7 +199,7 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Accurate Scoring & Comprehensive Reports</div>
+                <h2 class="right_title">Accurate Scoring & Comprehensive Reports</h2>
                 <div class="right_desc">
                   Detailed mock exam reports provide precise diagnosis and analysis of current strengths and weaknesses,
                   automatically updating study plans to enhance exam preparation efficiency.
@@ -242,7 +242,7 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Convenient Exam Experience</div>
+                <h2 class="right_title">Convenient Exam Experience</h2>
                 <div class="right_desc">
                   No need for exam appointments, participate in tests anytime, anywhere after purchase.If necessary, you
                   can pause or exit the exam midway.
@@ -285,7 +285,7 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Quick Score Release</div>
+                <h2 class="right_title">Quick Score Release</h2>
                 <div class="right_desc">Scores are released within 24 hours after completing the mock exam.</div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">Start experiencing</div>

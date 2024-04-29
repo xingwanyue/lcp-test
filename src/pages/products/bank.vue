@@ -211,7 +211,7 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Intelligent planning</div>
+                <h2 class="right_title">Intelligent planning</h2>
                 <div class="right_desc">
                   We have developed an intelligent learning knowledge graph to recommend a
                   <span class="strong">personalized practice plan</span> for you. Through intelligent analysis of your
@@ -256,7 +256,7 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">AI speaking evaluation</div>
+                <h2 class="right_title">AI speaking evaluation</h2>
                 <div class="right_desc">
                   <span class="strong"> AI-based spoken language scoring</span> makes oral practice more efficient. Once
                   you submit a spoken language question, you instantly receive a comprehensive assessment of your oral
@@ -295,7 +295,7 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Answer analysis</div>
+                <h2 class="right_title">Answer analysis</h2>
                 <div class="right_desc">
                   Providing <span class="strong"> detailed answer explanations</span> to help you gain a profound
                   understanding of key concepts and solution approaches. Through these explanations, you not only can

@@ -205,13 +205,13 @@ const onLoad4 = () => {
     <div class="part2_wrapper">
       <div class="part2">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-          <h2>
+          <div>
             The best platform for enhancing your scores in the<br />
             Duolingo English Test
-          </h2>
+          </div>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <h2>Utilize our comprehensive resources to accelerate your score improvement</h2>
+          <div>Utilize our comprehensive resources to accelerate your score improvement</div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
@@ -224,7 +224,7 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>Duolingo English Test Practice</h3>
+              <h2>Duolingo English Test Practice</h2>
             </div>
             <div class="tips">
               Having nearly {{ formatNumber(platformData?.questionTotal) }} practice questions, the question bank is
@@ -262,7 +262,7 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>Correction Service powered by AI</h3>
+              <h2>Correction Service powered by AI</h2>
             </div>
             <div class="tips">
               "AI + Teacher" provides precise correction services, thoroughly reviewing your essay.
@@ -294,7 +294,7 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>Duolingo English Test Mock</h3>
+              <h2>Duolingo English Test Mock</h2>
             </div>
             <div class="tips">
               Replicate the formal examination, allowing you to experience the examination process and content in
@@ -326,7 +326,7 @@ const onLoad4 = () => {
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>Duolingo English Test Course</h3>
+              <h2>Duolingo English Test Course</h2>
             </div>
             <div class="tips">
               Comprehensive Mastery.Gain a thorough grasp of DET speaking and writing with detailed breakdowns, ensuring
@@ -744,7 +744,7 @@ const onLoad4 = () => {
       // border: 1px blue solid;
       margin: 0 auto;
       .title1 {
-        h2 {
+        div {
           font-weight: 500;
           font-size: 40px;
           color: #201515;
@@ -764,7 +764,7 @@ const onLoad4 = () => {
           margin-top: 20px;
           margin-bottom: 40px;
         }
-        h2 {
+        div {
           font-weight: 500;
           font-size: 24px;
           color: #201515;
@@ -815,7 +815,7 @@ const onLoad4 = () => {
           //   text-align: center;
           // }
           .article_out_title {
-            h3 {
+            h2 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
@@ -918,7 +918,7 @@ const onLoad4 = () => {
           //   text-align: center;
           // }
           .article_out_title {
-            h3 {
+            h2 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
