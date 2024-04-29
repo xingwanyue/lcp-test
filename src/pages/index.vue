@@ -4,7 +4,7 @@ import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
-import { staticUrlGet, formatNumber, cdn } from '@/utils';
+import { staticUrlGet, formatNumber, cdn, domain } from '@/utils';
 
 const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
@@ -13,6 +13,10 @@ useServerSeoMeta({
   description:
     'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
 });
+useHead({
+  link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
+});
+
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -342,7 +346,7 @@ const onLoad4 = () => {
               Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is
               in perfect sync with current exam standards.
             </div>
-            <NuxtLink class="get_more" :to="localePath('/products/guide')">
+            <NuxtLink class="get_more" :to="localePath('/guide ')">
               <div class="font">Explore More</div>
               <div class="icon">
                 <img
