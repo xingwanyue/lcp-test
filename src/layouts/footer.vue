@@ -31,7 +31,7 @@ const prod = {
     },
     {
       name: 'AI Correction Service',
-      url: '/products/service',
+      url: '/duolingo-correction',
     },
     {
       name: 'DET Mock',

@@ -277,7 +277,7 @@ const onLoad4 = () => {
               Simply submit your essay and promptly receive a comprehensive report with a detailed band score.
             </div>
             <div class="tips">Elevate your writing score in just 2 weeks.</div>
-            <NuxtLink class="get_more" :to="localePath('/products/service')">
+            <NuxtLink class="get_more" :to="localePath('/duolingo-correction')">
               <div class="font">Learn More</div>
               <div class="icon">
                 <img
