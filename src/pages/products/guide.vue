@@ -40,46 +40,39 @@ const article1 = ref({
   list: [
     {
       smallTitle: '• Comprehensive Exam Breakdown: ',
-      content:
-        ' Detailed exploration of all speaking task types in the DET, providing a clear understanding of what to expect.',
+      content: 'In-depth exploration of all DET speaking task types',
     },
     {
       smallTitle: '• Effective Speaking Strategies: ',
-      content:
-        'Practical advice on how to approach each speaking task, including tips on organizing thoughts and expressing ideas clearly. ',
+      content: 'Practical strategies for approaching each speaking task',
     },
     {
       smallTitle: '• Interactive Speaking Exercises: ',
-      content:
-        '   Engaging activities designed to improve speech clarity, fluency, and confidence in a variety of speaking scenarios.  ',
+      content: 'Interactive exercises to improve speech clarity, fluency, and confidence',
     },
     {
       smallTitle: '• Expert Insights:',
-      content:
-        ' Guidance from seasoned ESL professionals, offering techniques to enhance pronunciation, tone, and overall speaking performance.',
+      content: 'Expert guidance on pronunciation, tone, and overall performance',
     },
     {
       smallTitle: '• Real-Life Speaking Examples: ',
-      content: ' Recorded speech samples and analyses to demonstrate successful speaking strategies in action. ',
+      content: 'Real-life speech samples and analyses demonstrating successful strategies',
     },
     {
       smallTitle: '• Personalized Learning Approaches: ',
-      content:
-        'Tips and techniques suitable for learners at different levels of English proficiency, ensuring everyone benefits.',
+      content: 'Audio demo answers to provide clear examples of effective responses',
     },
     {
       smallTitle: '• Self-Assessment Tools: ',
-      content: 'Methods and criteria to evaluate your speaking skills and track progress. ',
+      content: 'Personalized learning approaches for different proficiency levels',
     },
     {
       smallTitle: '• Focused Language Development: ',
-      content:
-        'Emphasis on key vocabulary and grammatical structures that are essential for effective communication in the DET speaking exam. ',
+      content: 'Focus on essential vocabulary and grammar for effective communication',
     },
     {
       smallTitle: '• Up-to-date and Relevant: ',
-      content:
-        'Incorporates the latest updates in the DET speaking format, ensuring your preparation is current and comprehensive.',
+      content: 'Updated to incorporate the latest changes in the DET speaking format',
     },
   ],
 });
@@ -88,41 +81,35 @@ const article2 = ref({
   list: [
     {
       smallTitle: '• All-encompassing Content: ',
-      content: 'Extensive coverage of every writing task type in the DET, with in-depth analysis and examples.',
+      content: 'Comprehensive coverage of DET writing tasks with analysis and examples',
     },
     {
       smallTitle: '• Step-by-Step Approaches: ',
-      content: 'Detailed guidelines on planning, structuring, and writing essays that meet and exceed exam standards.',
+      content: 'Step-by-step guidelines for planning and writing exceptional essays',
     },
     {
       smallTitle: '• Practical Writing Exercises: ',
-      content: 'Hands-on exercises to practice and refine writing skills, tailored to the specific demands of the DET.',
+      content: 'Targeted exercises to hone DET-specific writing skills',
     },
     {
       smallTitle: '• Expert Writing Tips: ',
-      content:
-        'Proven tips and tricks from experienced ESL educators to enhance clarity, coherence, and sophistication in writing.',
+      content: 'Expert tips to improve clarity, coherence, and sophistication',
     },
     {
       smallTitle: '• Sample Essays with Analysis: ',
-      content: 'Annotated sample responses illustrating effective writing strategies and common mistakes to avoid.',
+      content: 'Annotated sample essays showcasing effective strategies and common pitfalls',
     },
     {
       smallTitle: '• Personalized Learning Pathways: ',
-      content: 'Strategies and advice adaptable to various proficiency levels, from beginners to advanced learners.',
+      content: 'Adaptable learning paths for various proficiency levels',
     },
     {
       smallTitle: '• Evaluation Techniques: ',
-      content: 'Tools and methods for self-assessment and continuous improvement in writing skills.',
+      content: 'Emphasis on essential grammar and vocabulary for DET success',
     },
     {
       smallTitle: '• Grammar and Vocabulary Focus: ',
-      content: 'Special emphasis on the linguistic elements critical for success in the DET writing section.',
-    },
-    {
-      smallTitle: '• Updated and Relevant: ',
-      content:
-        'Incorporating the latest trends and updates in the DET writing format, ensures you have the most current preparation.',
+      content: 'Updated to reflect the latest DET writing format trends',
     },
   ],
 });
@@ -130,26 +117,26 @@ const article2 = ref({
 const contaceUsList = ref([
   {
     icon: '/img/guid/wallet.svg',
-    font: 'Buying Guide',
-    tip: 'Please select whether you are buying a speaking guide or a writing guide',
-    btn: 'Buying Speaking Guide',
-    btn1: 'Buying Writing Guide',
+    font: 'Select Your Guide',
+    tip: 'Choose the Speaking or Writing Guide for targeted exam prep.',
+    btn: 'Buy Speaking Guide',
+    btn1: 'Buy Writing Guide',
     id: '1',
   },
   {
     icon: '/img/guid/download.svg',
-    font: 'Download',
-    tip: 'After purchasing the course, you can click to download it',
+    font: 'Instant Download',
+    tip: 'Gain access to the guide immediately after purchase.',
     btn: 'Download Speaking Guide',
     btn1: 'Download Writing Guide',
     id: '2',
   },
   {
     icon: '/img/guid/book.svg',
-    font: 'Start Learning',
-    tip: 'After purchasing the course, you can view audio related to the Speaking Guide.',
+    font: 'Speaking Audio Samples',
+    tip: 'Explore the supplementary speaking audio demo answers.',
     btn: '',
-    btn1: 'Speaking practice audio',
+    btn1: 'Access Audio Samples',
     id: '3',
   },
 ]);
@@ -189,9 +176,9 @@ const onLoad2 = () => {
               </el-skeleton>
             </div>
             <div class="right_article">
-              <div class="one_article_title">{{ article1.title }}</div>
+              <!-- <div class="one_article_title">{{ article1.title }}</div> -->
               <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
-                <span class="small_title">{{ item.smallTitle }}</span>
+                <!-- <span class="small_title">{{ item.smallTitle }}</span> -->
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
@@ -243,9 +230,9 @@ const onLoad2 = () => {
               </el-skeleton>
             </div>
             <div class="right_article">
-              <div class="one_article_title">{{ article2.title }}</div>
+              <!-- <div class="one_article_title">{{ article2.title }}</div> -->
               <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
-                <span class="small_title">{{ item.smallTitle }}</span>
+                <!-- <span class="small_title">{{ item.smallTitle }}</span> -->
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
