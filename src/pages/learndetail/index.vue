@@ -156,9 +156,15 @@ const rateChange = async () => {
     display: flex;
     margin-top: 64px;
     box-sizing: border-box;
+
     .article-con {
       width: 100%;
       margin-right: 24px;
+      overflow: hidden;
+      :deep(iframe) {
+        width: 100%;
+        // border: 1px red solid;
+      }
       .title {
         font-weight: 600;
         font-size: 56px;
