@@ -174,6 +174,7 @@ const rateChange = async () => {
   }
   .article-title-list {
     width: 276px;
+    flex-shrink: 0;
     background: #ffffff;
     border-radius: 8px;
     border: 1px solid #e9e9e9;
