@@ -70,8 +70,9 @@ const onLoad4 = () => {
                 <h1>Duolingo Practice Question Bank</h1>
               </div>
               <div class="desc">
-                "Abundant test questions, Answer analysis & templates, intelligent planning , AI speaking evaluation " —
-                achieve score improvement quickly at the lowest cost through a scientific approach.
+                Gain access to an extensive collection of test questions, enhanced with answer analysis, templates,
+                AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and
+                affordably with our AI-powered approach.
               </div>
               <div class="people_num">
                 <div class="icon_continer">
@@ -107,11 +108,11 @@ const onLoad4 = () => {
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.userTotal }} people used the question bank for practice.
+                  {{ platformData.userTotal }} learners have used our question bank for DET preparation.
                 </div>
               </div>
               <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :to="urlGet('/questions')">
-                <div class="font">Practice For Free</div>
+                <div class="font">Start Practicing Now</div>
                 <div class="icon">
                   <img
                     src="/img/products/white_arrow_right.svg"
@@ -124,7 +125,7 @@ const onLoad4 = () => {
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
               >
-                <div class="font">Practice For Free</div>
+                <div class="font">Start Practicing Now</div>
                 <div class="icon">
                   <img
                     src="/img/products/white_arrow_right.svg"
@@ -156,7 +157,7 @@ const onLoad4 = () => {
               <el-image
                 v-show="isLoad1"
                 src="/img/products/bank_picture1.png"
-                alt="Abundant test questions"
+                alt="Extensive Question Library"
                 @load="onLoad1"
               />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
@@ -167,14 +168,14 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Abundant test questions</h2>
+                <h2 class="right_title">Extensive Question Library</h2>
                 <div class="right_desc">
-                  Providing over <span class="strong">ten thousand questions</span>, covering various types of exams,
-                  and continuously updating the question bank. It helps you systematically enhance your test-taking
-                  abilities in different question formats.
+                  Explore our extensive library of over 10,000 questions across diverse exam types, constantly refreshed
+                  to keep your practice up-to-date. Our question bank is designed to systematically bolster your
+                  test-taking skills across various question formats.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Dive Into Practice</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -183,7 +184,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Dive Into Practice</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -200,7 +201,7 @@ const onLoad4 = () => {
               <el-image
                 v-show="isLoad2"
                 src="/img/products/bank_picture2.png"
-                alt="Intelligent planning"
+                alt="Smart Planning for Success"
                 @load="onLoad2"
               />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
@@ -211,15 +212,18 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Intelligent planning</h2>
+                <h2 class="right_title">Smart Planning for Success</h2>
                 <div class="right_desc">
-                  We have developed an intelligent learning knowledge graph to recommend a
+                  <!-- We have developed an intelligent learning knowledge graph to recommend a
                   <span class="strong">personalized practice plan</span> for you. Through intelligent analysis of your
                   daily learning behavior, we suggest the most suitable practice questions to help you study more
-                  intelligently.
+                  intelligently. -->
+                  Experience smart learning with our AI-generated study plans tailored to your needs. Our intelligent
+                  system analyses your daily learning patterns to curate a selection of practice questions that best
+                  facilitate your progress.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Start Smart Study Journey</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -228,7 +232,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Start Smart Study Journey</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -245,7 +249,7 @@ const onLoad4 = () => {
               <el-image
                 v-show="isLoad3"
                 src="/img/products/bank_picture3.png"
-                alt="AI speaking evaluation"
+                alt="AI Speaking Evaluation"
                 @load="onLoad3"
               />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
@@ -256,14 +260,14 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">AI speaking evaluation</h2>
+                <h2 class="right_title">AI Speaking Evaluation</h2>
                 <div class="right_desc">
-                  <span class="strong"> AI-based spoken language scoring</span> makes oral practice more efficient. Once
-                  you submit a spoken language question, you instantly receive a comprehensive assessment of your oral
-                  skills.
+                  Enhance your oral proficiency with our AI-driven speaking evaluations. Submit your response to a
+                  spoken language question and instantly receive a detailed analysis of your speaking skills, helping
+                  you improve with precision and speed.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Begin Your Evaluation</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -272,7 +276,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Begin Your Evaluation</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -286,7 +290,7 @@ const onLoad4 = () => {
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
               <!-- <img src="/img/products/bank_picture4.png" /> -->
-              <el-image v-show="isLoad4" src="/img/products/bank_picture4.png" alt="Answer analysis" @load="onLoad4" />
+              <el-image v-show="isLoad4" src="/img/products/bank_picture4.png" alt="Answer Analysis" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -295,15 +299,14 @@ const onLoad4 = () => {
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Answer analysis</h2>
+                <h2 class="right_title">Answer Analysis</h2>
                 <div class="right_desc">
-                  Providing <span class="strong"> detailed answer explanations</span> to help you gain a profound
-                  understanding of key concepts and solution approaches. Through these explanations, you not only can
-                  answer questions correctly but also enhance your grasp of knowledge points, improving your learning
-                  effectiveness.
+                  Delve into comprehensive answer explanations that deepen your understanding of essential concepts and
+                  problem-solving techniques. Our detailed analyses don’t just guide you to the correct answers—they
+                  expand your knowledge and boost your study efficiency.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Explore Answer Insights</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
@@ -312,7 +315,7 @@ const onLoad4 = () => {
                   </div>
                 </NuxtLink>
                 <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/bank`)">
-                  <div class="font">Start experiencing</div>
+                  <div class="font">Explore Answer Insights</div>
                   <div class="arrow">
                     <img
                       src="/img/products/blue_arrow_right.svg"
