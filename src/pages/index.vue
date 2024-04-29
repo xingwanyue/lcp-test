@@ -202,7 +202,7 @@ const onLoad4 = () => {
               x5-video-player-type="h5"
               :src="videoUrl"
             ></video> -->
-            <img src='/img/home/banner.png'></img>
+            <img src="/img/home/banner.png" />
           </div>
         </div>
       </div>
@@ -735,9 +735,9 @@ const onLoad4 = () => {
           max-width: 1080px;
           // width: calc(100% - 80px);
           // border: 1px red solid;
-          img{
-            width:100%;
-            height:auto;
+          img {
+            width: 100%;
+            height: auto;
           }
         }
       }
