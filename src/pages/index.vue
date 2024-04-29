@@ -188,7 +188,7 @@ const onLoad4 = () => {
         </div>
         <div class="big_img_out">
           <div class="big_img">
-            <video
+            <!-- <video
               width="100%"
               height="100%"
               muted
@@ -201,7 +201,8 @@ const onLoad4 = () => {
               x5-video-orientation="portraint"
               x5-video-player-type="h5"
               :src="videoUrl"
-            ></video>
+            ></video> -->
+            <img src='/img/home/banner.png'></img>
           </div>
         </div>
       </div>
@@ -734,6 +735,10 @@ const onLoad4 = () => {
           max-width: 1080px;
           // width: calc(100% - 80px);
           // border: 1px red solid;
+          img{
+            width:100%;
+            height:auto;
+          }
         }
       }
     }
