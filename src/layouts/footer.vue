@@ -106,11 +106,11 @@ const Company = {
     },
     {
       name: 'Terms and Conditions',
-      url: '/company/termsService',
+      url: '/company/terms-service',
     },
     {
       name: 'Privacy Policy',
-      url: '/company/privacyPolicy',
+      url: '/company/privacy-policy',
     },
   ],
 };
