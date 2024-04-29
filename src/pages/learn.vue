@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { articleGet, articleCategoryGet, getTree } from '@/utils';
+import { articleGet, articleCategoryGet, getTree, domain } from '@/utils';
 import { reactive } from 'vue';
 import head from 'lodash/head';
 import find from 'lodash/find';
@@ -70,6 +70,9 @@ useServerSeoMeta({
   title: 'DET Practice: Learn the expert Tips for the Duolingo English Test',
   description:
     'Explore expert strategies and study methods to excel on the Duolingo English Test. Our blog offers actionable tips and insights to enhance your preparation and boost your score.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/learn` }],
 });
 </script>
 <template>

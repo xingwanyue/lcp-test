@@ -4,7 +4,7 @@ import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
-import { staticUrlGet, formatNumber, cdn } from '@/utils';
+import { staticUrlGet, formatNumber, cdn, domain } from '@/utils';
 
 const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
@@ -12,6 +12,9 @@ useServerSeoMeta({
   title: 'DET Practice:The best Duolingo English Test Practice platform',
   description:
     'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}` }],
 });
 const localePath = useLocalePath();
 const store = useStore();

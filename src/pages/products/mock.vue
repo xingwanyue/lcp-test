@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet, host } from '@/utils';
+import { urlGet, host, domain } from '@/utils';
 import { useStore } from '@/store';
 import vEasyexam from '../../components/easyexam.vue';
 
@@ -10,6 +10,9 @@ useServerSeoMeta({
   title: 'DET Practice: Full-Scale Mock Exam for Realistic Preparation',
   description:
     'Experience the closest simulation to the real Duolingo English Test with our full-scale mock exams. Get accurate scoring, comprehensive reports, and fast feedback to identify and work on your weaknesses.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/products/mock` }],
 });
 // 获取平台数据
 const {

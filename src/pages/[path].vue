@@ -1,21 +1,21 @@
 <script lang="ts" setup>
-import { api } from "@/utils";
-import LearnDetail from "./learndetail/index.vue";
+import { api, domain } from '@/utils';
+import LearnDetail from './learndetail/index.vue';
 
 const route = useRoute();
 
-const { data: article } = (await useFetch(
-  `${api}/common/article?path=${route.params.path}`,
-  {
-    server: true,
-  }
-)) as any;
-const isLearn = article.value?.type === "2" || article.value?.type === "1";
+const { data: article } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
+  server: true,
+})) as any;
+const isLearn = article.value?.type === '2' || article.value?.type === '1';
 
 useServerSeoMeta({
-  title: () => article.value?.title || "DET Pratice Blog",
-  description: () => article.value?.description || "DET Pratice Blog",
+  title: () => article.value?.title || 'DET Pratice Blog',
+  description: () => article.value?.description || 'DET Pratice Blog',
   keywords: () => article.value?.keywords,
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/${route.params.path}` }],
 });
 </script>
 <template>
@@ -31,12 +31,7 @@ useServerSeoMeta({
       </div>
     </div>
     <div v-else>
-      <LearnDetail
-        :id="article?.id"
-        :categoryId="article?.categoryId"
-        :type="article?.type"
-        :article="article"
-      />
+      <LearnDetail :id="article?.id" :categoryId="article?.categoryId" :type="article?.type" :article="article" />
     </div>
   </div>
 </template>
@@ -50,7 +45,7 @@ useServerSeoMeta({
       // max-width: 1200px;
       margin: 0 auto;
       padding: 120px 30px;
-      background: url("/img/aboutus/banner-aboutus.svg") center no-repeat;
+      background: url('/img/aboutus/banner-aboutus.svg') center no-repeat;
       background-size: cover;
       @media (max-width: 650px) {
         padding: 60px 0;

@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
-import { staticUrlGet } from '@/utils';
+import { staticUrlGet, domain } from '@/utils';
 useServerSeoMeta({
   title: 'DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide',
   description:
     'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/duolingo-courses` }],
 });
 const localePath = useLocalePath();
 const store = useStore();

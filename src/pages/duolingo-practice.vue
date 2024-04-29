@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet } from '@/utils';
+import { urlGet, domain } from '@/utils';
 import { useStore } from '@/store';
 import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
@@ -9,6 +9,9 @@ useServerSeoMeta({
   title: 'DET Practice:The most powerful website for Duolingo practice test. ',
   description:
     'The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/duolingo-practice` }],
 });
 // 获取平台数据
 const {

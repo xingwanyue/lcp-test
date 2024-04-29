@@ -3,7 +3,7 @@ import { reactive } from 'vue';
 import { ref } from 'vue';
 import type { FormInstance } from 'element-plus';
 import { ElMessage } from 'element-plus';
-import { portalContact } from '@/utils';
+import { portalContact, domain } from '@/utils';
 import subscribe from '../../components/subscribe.vue';
 
 const ruleFormRef = ref<FormInstance>();
@@ -55,6 +55,9 @@ const submit = async () => {
 useServerSeoMeta({
   title: 'Contact Us - DET Practice',
   description: '',
+});
+useHead({
+  meta: [{ hid: 'canonical', name: 'canonical', content: `https://www.${domain}/company/contactus` }],
 });
 </script>
 <template>
