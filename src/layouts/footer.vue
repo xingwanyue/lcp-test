@@ -39,7 +39,7 @@ const prod = {
     },
     {
       name: 'Duolingo English Test Course',
-      url: '/products/guide',
+      url: '/duolingo-courses',
     },
   ],
 };

@@ -199,7 +199,7 @@ const onLoad2 = () => {
                     />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login?url=/products/guide`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink :to="localePath(`/login?url=/duolingo-courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img
@@ -253,7 +253,7 @@ const onLoad2 = () => {
                     />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login?url=/products/guide`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink :to="localePath(`/login?url=/duolingo-courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img
@@ -294,10 +294,10 @@ const onLoad2 = () => {
                 </div>
               </template>
               <template v-else>
-                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/products/guide`)" class="btn">
+                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/duolingo-courses`)" class="btn">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/products/guide`)" class="btn"
+                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/duolingo-courses`)" class="btn"
                   >{{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -333,10 +333,10 @@ const onLoad2 = () => {
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/products/guide`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/duolingo-courses`)">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/products/guide`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/duolingo-courses`)">
                   {{ item.btn1 }}
                 </NuxtLink>
               </template>

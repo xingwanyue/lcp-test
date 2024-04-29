@@ -66,7 +66,7 @@ const onAudioEnd = () => {
   <div class="listen-page">
     <div class="listen-head">
       <div class="title">
-        <nuxt-link :to="localePath(`/products/guide`)" class=""> ＜ Speaking practice audio </nuxt-link>
+        <nuxt-link :to="localePath(`/duolingo-courses`)" class=""> ＜ Speaking practice audio </nuxt-link>
       </div>
       <div>
         <el-radio-group v-model="state.type" size="large" @change="selectChange">
