@@ -15,11 +15,16 @@ const state = reactive({
 });
 state.played = JSON.parse(getStorage('det_listen') || '[]');
 const getList = async () => {
-  const { data = {} } = (await useFetch(`${api}/common/courses`, { server: false, lazy: true })) as any;
-  const { listenThenSpeak, sampleAnswer } = data.value;
-  state.listenThenSpeak = [...listenThenSpeak];
-  state.sampleAnswer = [...sampleAnswer];
-  state.list = state.type === '1' ? [...state.listenThenSpeak] : [...state.sampleAnswer];
+  const { data } = await useFetch(`${api}/common/courses`, {
+    server: false,
+    lazy: true,
+    transform: (data: any) => {
+      const { listenThenSpeak, sampleAnswer } = data;
+      state.listenThenSpeak = [...listenThenSpeak];
+      state.sampleAnswer = [...sampleAnswer];
+      state.list = state.type === '1' ? [...state.listenThenSpeak] : [...state.sampleAnswer];
+    },
+  });
 };
 getList();
 const selectChange = async () => {
