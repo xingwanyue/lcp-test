@@ -36,7 +36,7 @@ const aqList = ref([
   },
   {
     name: 'Is there a free trial?',
-    content: 'Yes! You can view 3 questions for free every day. Help you understand us before you buy more services.',
+    content: 'Yes! You can view 20 questions for free. Help you understand us before you buy more services.',
     open: false,
   },
   {
