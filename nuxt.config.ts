@@ -39,17 +39,8 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
-      title: 'DetPractice',
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
-        },
-      ],
+      title: 'DET Practice:The best Duolingo English Test Practice platform',
+      meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     },
   },
 });
