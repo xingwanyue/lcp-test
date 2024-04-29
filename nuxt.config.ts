@@ -40,16 +40,7 @@ export default defineNuxtConfig({
         },
       ],
       title: 'DetPractice',
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
-        },
-      ],
+      meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     },
   },
 });
