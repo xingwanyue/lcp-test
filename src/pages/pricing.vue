@@ -7,7 +7,7 @@ useServerSeoMeta({
     'Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.',
 });
 useHead({
-  link: [{ rel: 'canonical',  href: `https://www.${domain}/pricing` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/pricing` }],
 });
 const store = useStore();
 const user = computed(() => store.user);
@@ -1103,6 +1103,8 @@ const formateMinToHour = (min: number) => {
               font-weight: 600;
               font-size: 24px;
               color: #201515;
+              // border: 1px red solid;
+              min-height: 56px;
             }
 
             .card_price_part2 {
