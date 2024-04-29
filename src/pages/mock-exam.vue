@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { urlGet, host, domain } from '@/utils';
+import { urlGet, host, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 import vEasyexam from '../components/easyexam.vue';
 
@@ -47,6 +47,12 @@ const isLoad4 = ref(false);
 const onLoad4 = () => {
   isLoad4.value = true;
 };
+// 引入cdn图片
+const mock_banner = `${cdn}/store/portal/products/mock_banner.png`;
+const mock_picture1 = `${cdn}/store/portal/products/mock_picture1.png`;
+const mock_picture2 = `${cdn}/store/portal/products/mock_picture2.png`;
+const mock_picture3 = `${cdn}/store/portal/products/mock_picture3.png`;
+const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
 </script>
 <template>
   <div class="bankW100 mock_out">
@@ -126,13 +132,7 @@ const onLoad4 = () => {
               </NuxtLink>
             </div>
             <div class="banner_right">
-              <!-- <img src="/img/products/mock_banner.png" /> -->
-              <el-image
-                v-show="isLoad"
-                src="/img/products/mock_banner.png"
-                alt="Duolingo 1:1 Full-scale Mock Exam"
-                @load="onLoad"
-              />
+              <el-image v-show="isLoad" :src="mock_banner" alt="Duolingo 1:1 Full-scale Mock Exam" @load="onLoad" />
               <el-skeleton v-show="!isLoad" style="width: 100%; height: 466px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -144,13 +144,7 @@ const onLoad4 = () => {
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <!-- <img src="/img/products/mock_picture1.png" /> -->
-              <el-image
-                v-show="isLoad1"
-                src="/img/products/mock_picture1.png"
-                alt="Algorithmic Intelligence"
-                @load="onLoad1"
-              />
+              <el-image v-show="isLoad1" :src="mock_picture1" alt="Algorithmic Intelligence" @load="onLoad1" />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -187,10 +181,9 @@ const onLoad4 = () => {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/mock_picture2.png" /> -->
               <el-image
                 v-show="isLoad2"
-                src="/img/products/mock_picture2.png"
+                :src="mock_picture2"
                 alt="Precise Scoring & In-Depth Reports"
                 @load="onLoad2"
               />
@@ -230,13 +223,7 @@ const onLoad4 = () => {
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/mock_picture3.png" /> -->
-              <el-image
-                v-show="isLoad3"
-                src="/img/products/mock_picture3.png"
-                alt="Convenient Exam Experience"
-                @load="onLoad3"
-              />
+              <el-image v-show="isLoad3" :src="mock_picture3" alt="Convenient Exam Experience" @load="onLoad3" />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -273,13 +260,7 @@ const onLoad4 = () => {
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <!-- <img src="/img/products/mock_picture4.png" /> -->
-              <el-image
-                v-show="isLoad4"
-                src="/img/products/mock_picture4.png"
-                alt="Rapid Score Reporting"
-                @load="onLoad4"
-              />
+              <el-image v-show="isLoad4" :src="mock_picture4" alt="Rapid Score Reporting" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
