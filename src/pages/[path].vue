@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { api, domain } from '@/utils';
+import { api } from '@/utils';
 import LearnDetail from './learndetail/index.vue';
 
 const route = useRoute();
@@ -15,7 +15,7 @@ useServerSeoMeta({
   keywords: () => article.value?.keywords,
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/${route.params.path}` }],
+  link: [{ rel: 'canonical', href: () => `https://www.${domain}/${article.value?.path}` }],
 });
 </script>
 <template>

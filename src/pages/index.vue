@@ -14,8 +14,9 @@ useServerSeoMeta({
     'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
 });
+
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
