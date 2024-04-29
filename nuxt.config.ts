@@ -39,7 +39,7 @@ export default defineNuxtConfig({
           async: true,
         },
       ],
-      title: 'DetPractice',
+      title: 'DET Practice:The best Duolingo English Test Practice platform',
       meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     },
   },
