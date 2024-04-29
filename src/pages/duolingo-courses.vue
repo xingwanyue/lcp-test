@@ -614,6 +614,8 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
             font-size: 14px;
             color: #403f3e;
             margin-top: 8px;
+            // border: 1px red solid;
+            min-height: 36px;
           }
           .btn {
             display: block;
