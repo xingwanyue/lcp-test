@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { urlGet } from '@/utils';
 import { useStore } from '@/store';
-import vHighscorewriting from '../../components/highscorewriting.vue';
+import vHighscorewriting from '../components/highscorewriting.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -170,7 +170,7 @@ const onLoad1 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
                   <div class="font">Get Scored Now</div>
                   <div class="arrow">
                     <img
@@ -213,7 +213,7 @@ const onLoad1 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
                   <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
@@ -255,7 +255,7 @@ const onLoad1 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
                   <div class="font">Correct Now</div>
                   <div class="arrow">
                     <img
@@ -298,7 +298,7 @@ const onLoad1 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
                   <div class="font">Enhance Now</div>
                   <div class="arrow">
                     <img
@@ -341,7 +341,7 @@ const onLoad1 = () => {
                     />
                   </div>
                 </NuxtLink>
-                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/products/service`)">
+                <NuxtLink v-else class="right_click" :to="localePath(`/login?url=/duolingo-correction`)">
                   <div class="font">Begin Polishing</div>
                   <div class="arrow">
                     <img
@@ -361,5 +361,5 @@ const onLoad1 = () => {
 </template>
 
 <style lang="scss" scoped>
-@import './common/prod.scss';
+@import './products/common/prod.scss';
 </style>

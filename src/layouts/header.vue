@@ -57,7 +57,7 @@ const changeHeaderColor = (pathname: string) => {
       break;
   }
 };
-const productPaths = ['/duolingo-practice', '/products/service', '/mock-exam', '/products/guide'];
+const productPaths = ['/duolingo-practice', '/duolingo-correction', '/mock-exam', '/products/guide'];
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
@@ -135,7 +135,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/products/service')" class="one_card card2">
+              <NuxtLink :to="localePath('/duolingo-correction')" class="one_card card2">
                 <div class="icon">
                   <img
                     src="/img/home/product_icon2.svg"
@@ -292,7 +292,7 @@ const logout = () => {
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
-              :to="localePath('/products/service')"
+              :to="localePath('/duolingo-correction')"
               @click="handleClose"
             >
               Duolingo English Test Correction Service
