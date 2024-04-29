@@ -12,7 +12,7 @@ const { data: article } = (await useFetch(
 )) as any;
 const isLearn = article.value?.type === "2" || article.value?.type === "1";
 
-useSeoMeta({
+useServerSeoMeta({
   title: () => article.value?.title || "DET Pratice Blog",
   description: () => article.value?.description || "DET Pratice Blog",
   keywords: () => article.value?.keywords,

@@ -2,7 +2,7 @@
 import { reactive } from 'vue';
 
 const state = reactive({});
-useSeoMeta({
+useServerSeoMeta({
   title: 'Terms and Conditions - DET Practice',
   description: '',
 });
