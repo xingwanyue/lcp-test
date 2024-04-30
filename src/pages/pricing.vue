@@ -2,7 +2,7 @@
 import { staticUrlGet, urlGet, domain } from '@/utils';
 import { useStore } from '@/store';
 useServerSeoMeta({
-  title: 'DET Practice: Duolingo Test Prep Membership and Services Pricing',
+  title: 'DET Practice - Duolingo Test Prep Membership and Services Pricing',
   description:
     'Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.',
 });
