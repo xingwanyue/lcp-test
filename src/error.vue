@@ -1,5 +1,7 @@
 <script setup lang="ts">
-window.location.href = '/';
+if (window.location.pathname !== '/') {
+  window.location.pathname = '/';
+}
 </script>
 
 <template>
