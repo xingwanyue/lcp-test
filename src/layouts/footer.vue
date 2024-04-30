@@ -171,7 +171,7 @@ const closeCookie = () => {
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <NuxtLink class="show-more" :to="localePath(`/learn`)">show more</NuxtLink>
+          <NuxtLink class="show_more" :to="localePath(`/learn`)">show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -180,7 +180,7 @@ const closeCookie = () => {
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
         <div class="one_link_list_detail">
-          <NuxtLink class="show-more" :to="localePath(`/blog`)">show more</NuxtLink>
+          <NuxtLink class="show_more" :to="localePath(`/blog`)">show more</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -238,6 +238,12 @@ const closeCookie = () => {
 </template>
 <style lang="scss" scoped>
 .common_footer {
+  .show_more {
+    text-decoration: underline !important;
+    &:hover {
+      color: #f66442 !important;
+    }
+  }
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 56px;
@@ -286,12 +292,7 @@ const closeCookie = () => {
       //     border-bottom: 1px #f66442 solid;
       //   }
       // }
-      .show-more {
-        text-decoration: underline !important;
-        &:hover {
-          color: #f66442;
-        }
-      }
+
       .show-more1 {
         // color: #f66442;
       }
