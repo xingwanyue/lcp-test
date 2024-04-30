@@ -10,6 +10,7 @@ import vFooter from './footer.vue';
 const router = useRouter();
 
 const store = useStore();
+const layouProps = useAttrs();
 
 useHead({
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
@@ -50,7 +51,7 @@ onMounted(async () => {
 
 <template>
   <el-container class="wrap">
-    <el-header class="header" height="62px"> <v-header /> </el-header>
+    <el-header class="header" height="62px"> <v-header :type="layouProps.type as string" /> </el-header>
     <el-main class="main">
       <slot />
     </el-main>

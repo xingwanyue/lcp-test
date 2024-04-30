@@ -5,8 +5,8 @@ export const domain = 'easycash.ai';
 
 // 应用地址
 export const host = `https://app.${domain}`;
-export const api = `https://app.${domain}/weapp/api`;
-// export const api = `http://192.168.1.22:9000/api`;
+// export const api = `https://app.${domain}/weapp/api`;
+export const api = `http://192.168.1.22:9000/api`;
 
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 

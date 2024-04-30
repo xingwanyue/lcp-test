@@ -3,6 +3,11 @@ import { urlGet, saveStorage, getStorage, host, getToken } from '@/utils';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
+const props = defineProps({
+  type: {
+    type: String,
+  },
+});
 
 const store = useStore();
 const user = computed(() => store.user);
@@ -99,10 +104,6 @@ const menus = [
     path: '/blog',
   },
 ];
-
-const logout = () => {
-  store.logout();
-};
 </script>
 
 <template>
@@ -112,7 +113,17 @@ const logout = () => {
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
-        <nav v-for="menu in menus" :key="menu.path" :class="`meun ${pathname === menu.path ? 'active' : ''}`">
+        <nav
+          v-for="menu in menus"
+          :key="menu.path"
+          :class="`meun ${
+            pathname === menu.path ||
+            (menu.path === '/blog' && props.type === '1') ||
+            (menu.path === '/learn' && props.type === '2')
+              ? 'active'
+              : ''
+          }`"
+        >
           <el-popover
             v-if="menu.path === '/products'"
             :visible="popoverQuestions"

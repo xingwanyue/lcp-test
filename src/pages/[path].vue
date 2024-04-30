@@ -19,7 +19,7 @@ useHead({
 });
 </script>
 <template>
-  <div>
+  <NuxtLayout :type="article?.type">
     <div v-if="!isLearn" class="article_detail">
       <div class="detail_hader">
         <div class="detail_hader_content">
@@ -33,7 +33,7 @@ useHead({
     <div v-else>
       <LearnDetail :id="article?.id" :categoryId="article?.categoryId" :type="article?.type" :article="article" />
     </div>
-  </div>
+  </NuxtLayout>
 </template>
 <style scoped lang="scss">
 .article_detail {
