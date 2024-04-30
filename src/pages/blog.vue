@@ -13,7 +13,9 @@ useServerSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],
 });
+const route = useRoute();
 const total = ref(0);
+const allPageNum = ref(0);
 const pageSize = ref(10);
 let blogs = ref([]) as any;
 const { data: category } = (await useFetch(`${api}/common/article/category`, {
@@ -27,7 +29,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
     type: '1',
-    page: 1,
+    page: route.query.page || 1,
     pageSize: 10,
   },
   transform: (data: any) => {
@@ -41,6 +43,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
 
 blogs.value = blogsjk.value?.data;
 total.value = blogsjk.value?.total;
+allPageNum.value = Math.ceil(total.value / 10);
 
 const handleCurrentChange = async (val: number) => {
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
@@ -108,6 +111,9 @@ const handleCurrentChange = async (val: number) => {
           @current-change="handleCurrentChange"
           class="mt-4"
         />
+      </div>
+      <div class="seohack">
+        <NuxtLink v-for="(item, index) in allPageNum" :to="localePath(`/blog?page=${item}`)">{{ item }}</NuxtLink>
       </div>
     </div>
     <v-embark />
@@ -247,6 +253,10 @@ const handleCurrentChange = async (val: number) => {
         background-color: white;
         border: 1px solid rgba(64, 63, 62, 0.6);
       }
+    }
+    .seohack {
+      position: fixed;
+      left: -99999px;
     }
   }
 }
