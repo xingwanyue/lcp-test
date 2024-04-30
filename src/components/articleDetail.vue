@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import { ref } from 'vue';
 import find from 'lodash/find';
 import head from 'lodash/head';
 import { ElMessage } from 'element-plus';
-import { articleGet, rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
+import { rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
 import subscribe from '@/components/subscribe.vue';
 
 const props = defineProps({
@@ -14,48 +13,21 @@ const props = defineProps({
   type: String,
 }) as any;
 const localePath = useLocalePath();
-const rate = ref(0);
 const state = reactive({
-  list: [] as any,
   details: {} as any,
   checkId: 0,
-  rate,
+  rate: 0,
   rateArr: [] as any,
   selectName: '',
   averageScore: 0,
 });
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
-const getList = async () => {
-  // compatible blog blog逻辑已废除 但是保留 type=1123132 条件下代码可以删除 先测试
-  if (props.type === '1123132') {
-    const { data: { value = {} } = {} } = (await useFetch(`${api}/common/article`, {
-      server: true,
-      query: {
-        type: '1',
-        pageSize: 6,
-        page: 1,
-      },
-    })) as any;
-    state.list = value?.data;
-  } else if (props.type === '2' || props.type === '1') {
-    // compatible learn
-    const { data: { value = {} } = {} } = (await useFetch(`${articleGet}`, {
-      server: true,
-      query: {
-        categoryId: props.categoryId,
-        pageSize: 6,
-        page: 1,
-      },
-    })) as any;
-    state.list = value?.data;
-  }
-  state.checkId = props.id;
-  const { rate, averageScore } = find(state.rateArr, { id: props.id }) || {};
-  state.rate = rate;
-  state.averageScore = averageScore;
-};
-getList();
+state.checkId = props.id;
+const { rate, averageScore } = (find(state.rateArr, { id: props.id }) || {}) as any;
+state.rate = rate;
+state.averageScore = averageScore;
+
 const getSelect = async () => {
   const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, { server: true })) as any;
   const { name } = head(data.value) as any;
@@ -103,7 +75,7 @@ const rateChange = async () => {
         </div>
         <div class="article-title-list article-title-list1">
           <div class="title title1">Related Articles</div>
-          <div v-for="(val, key) in state.list" :key="key">
+          <div v-for="(val, key) in props.article.relatedArticles" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="">
               <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
                 {{ val.name }}
@@ -143,7 +115,7 @@ const rateChange = async () => {
       </div>
       <div class="article-title-list article-title-list2">
         <div class="title title1">Related Articles</div>
-        <div v-for="(val, key) in state.list" :key="key">
+        <div v-for="(val, key) in props.article.relatedArticles" :key="key">
           <nuxt-link :to="localePath(`/${val.path}`)" class="">
             <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
               {{ val.name }}
