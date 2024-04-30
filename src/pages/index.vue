@@ -4,7 +4,7 @@ import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
-import { staticUrlGet, formatNumber, cdn, domain } from '@/utils';
+import { staticUrlGet, formatNumber, cdn, domain, getToken } from '@/utils';
 
 const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
@@ -71,11 +71,15 @@ const [
   }),
   useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true }),
 ])) as any;
-
-onMounted(() => {
+const haveCookie = ref(false);
+onMounted(async () => {
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     moveAnamit();
+  }
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
   }
 });
 const moveAnamit = () => {
@@ -171,7 +175,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             </div>
           </div>
         </div>
-        <div v-if="!user.id" class="two_btn_out">
+        <div v-if="!user.id && !haveCookie" class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="/img/home/google_icon.svg" alt="Start free with Google" />
             Start free with Google
