@@ -555,7 +555,17 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_part2">
                 {{ item.description }}
               </div>
+
+              <div :class="[!isVip ? 'card_price_part4 min_heighthack' : 'card_price_part4 min_heighthack2']">
+                <div v-if="!isVip && item.day !== 7" class="your_price">your price</div>
+                <div class="off_price"><span class="small">$</span>{{ (item.price / 100).toFixed(2) }}</div>
+                <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
+                <div class="no_member_font" v-if="item.day !== 7">Non-member</div>
+              </div>
               <div class="card_price_part3">
+                <div class="your_price" v-if="isVip && item.day !== 7">
+                  <span>your price</span>
+                </div>
                 <div class="member_price">
                   <span v-if="item.vipPrice !== item.price"
                     ><span class="small">$</span>{{ (item.vipPrice / 100).toFixed(2) }}
@@ -565,10 +575,7 @@ const formateMinToHour = (min: number) => {
                   <span v-if="item.vipPrice !== item.price">Member's price</span>
                 </div>
               </div>
-              <div class="card_price_part4">
-                <div class="off_price"><span class="small">$</span>{{ (item.price / 100).toFixed(2) }}</div>
-                <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div>
-              </div>
+
               <div v-if="user.id">
                 <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
                   Buy Now
@@ -1117,12 +1124,13 @@ const formateMinToHour = (min: number) => {
 
             .card_price_part3 {
               height: 84px;
-
+              margin-top: 24px;
+              // border: 1px red solid;
               .member_price {
                 font-weight: 600;
                 font-size: 32px;
                 color: #f66442;
-                margin-top: 24px;
+                // margin-top: 24px;
                 .small {
                   font-size: 20px;
                 }
@@ -1136,6 +1144,8 @@ const formateMinToHour = (min: number) => {
             }
 
             .card_price_part4 {
+              min-height: 92px;
+              // border: 1px blue solid;
               .off_price {
                 font-weight: 600;
                 font-size: 32px;
@@ -1151,6 +1161,28 @@ const formateMinToHour = (min: number) => {
                 color: #403f3e;
                 text-decoration: line-through;
               }
+              .no_member_font {
+                font-weight: 400;
+                font-size: 14px;
+                color: #403f3e;
+              }
+            }
+            .min_heighthack {
+              min-height: 92px;
+            }
+            .min_heighthack2 {
+              min-height: 62px;
+            }
+            .your_price {
+              width: 80px;
+              font-weight: 400;
+              font-size: 12px;
+              color: #f66442;
+              padding: 4px 8px;
+              background: rgba(246, 100, 66, 0.1);
+              border-radius: 12px;
+              text-align: center;
+              margin-bottom: 6px;
             }
 
             .card_price_buy_btn {
