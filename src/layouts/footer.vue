@@ -210,6 +210,7 @@ const closeCookie = () => {
           </NuxtLink> -->
         </div>
       </div>
+      <div class="Copyright">© 2024 DET Practice</div>
       <div class="footer_logo_right">
         <div class="tips_out">{{ t('footer.inc') }}</div>
         <div v-if="options.length !== 1" class="select_out">
@@ -219,7 +220,7 @@ const closeCookie = () => {
         </div>
       </div>
     </div>
-    <div class="Copyright">© 2024 DET Practice</div>
+
     <div v-if="cookieShow" class="cookie_out">
       <div class="cookie_header">
         <img
@@ -299,8 +300,11 @@ const closeCookie = () => {
   .footer_logo_dom {
     margin-top: 68px;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    @media (max-width: 1009px) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+    // border: 1px red solid;
+    @media (max-width: 929px) {
       grid-template-columns: 1fr;
       grid-row-gap: 24px;
     }
@@ -378,6 +382,12 @@ const closeCookie = () => {
         }
       }
     }
+    .Copyright {
+      font-weight: 400;
+      font-size: 14px;
+      color: #403f3e;
+      text-align: center;
+    }
     .footer_logo_right {
       display: flex;
       align-items: center;
@@ -406,13 +416,7 @@ const closeCookie = () => {
       }
     }
   }
-  .Copyright {
-    font-weight: 400;
-    font-size: 14px;
-    color: #403f3e;
-    text-align: center;
-    margin-top: 24px;
-  }
+
   .cookie_out {
     // border: 1px red solid;
     position: fixed;
