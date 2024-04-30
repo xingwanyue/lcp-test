@@ -6,7 +6,7 @@ useServerSeoMeta({
   title: 'Cookie Policy - DET Practice',
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/company/cookie` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/cookie` }],
 });
 </script>
 <template>

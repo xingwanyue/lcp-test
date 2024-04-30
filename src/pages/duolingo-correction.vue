@@ -360,5 +360,5 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
 </template>
 
 <style lang="scss" scoped>
-@import './products/common/prod.scss';
+@import '@/assets/prod.scss';
 </style>

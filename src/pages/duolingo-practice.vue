@@ -335,5 +335,5 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
 </template>
 
 <style lang="scss" scoped>
-@import './products/common/prod.scss';
+@import '@/assets/prod.scss';
 </style>

@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import type { FormInstance } from 'element-plus';
 import { ElMessage } from 'element-plus';
 import { portalContact, domain } from '@/utils';
-import subscribe from '../../components/subscribe.vue';
+import subscribe from '../components/subscribe.vue';
 
 const ruleFormRef = ref<FormInstance>();
 const state = reactive({
@@ -57,7 +57,7 @@ useServerSeoMeta({
   description: '',
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/company/contactus` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/contact-us` }],
 });
 </script>
 <template>

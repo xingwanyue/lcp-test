@@ -5,7 +5,7 @@ import find from 'lodash/find';
 import head from 'lodash/head';
 import { ElMessage } from 'element-plus';
 import { articleGet, rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
-import subscribe from '../../components/subscribe.vue';
+import subscribe from '@/components/subscribe.vue';
 
 const props = defineProps({
   id: Number,
