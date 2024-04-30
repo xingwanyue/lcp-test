@@ -116,7 +116,7 @@ const rateChange = async () => {
             show-score
             text-color="#201515"
             :score-template="`{value}/5（${
-              props.article.rateNum ? `Rating:${state.averageScore.toFixed(1)} ·` : ''
+              props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
             }   ${props.article.rateNum || 0} votes）`"
             @change="rateChange"
           />
