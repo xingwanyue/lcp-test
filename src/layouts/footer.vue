@@ -61,16 +61,12 @@ const getLearn = async () => {
     server: true,
     query: { ...args },
   })) as any;
-  Learn.value.list = Learnjk.value?.data.map((item: any) => {
+  Learn.value.list = [...Learnjk.value?.data, { name: 'show more', path: '/learn' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
     };
   });
-};
-const showMore2 = async () => {
-  state.isMore2 = !state.isMore2;
-  getLearn();
 };
 const getBlob = async () => {
   let args = { type: '1', flag: '1' } as any;
@@ -81,7 +77,7 @@ const getBlob = async () => {
     server: true,
     query: { ...args },
   })) as any;
-  Blog.value.list = blogsjk.value?.data.map((item: any) => {
+  Blog.value.list = [...blogsjk.value?.data, { name: 'show more', path: '/blog' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
@@ -89,10 +85,6 @@ const getBlob = async () => {
   });
 };
 
-const showMore1 = async () => {
-  state.isMore1 = !state.isMore1;
-  getBlob();
-};
 const Company = {
   name: 'Company',
   list: [
@@ -167,20 +159,22 @@ const closeCookie = () => {
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Learn.name }}</div>
-        <div v-for="(itemin, indexin) in Learn.list" :key="indexin" class="one_link_list_detail">
+        <div
+          v-for="(itemin, indexin) in Learn.list"
+          :key="indexin"
+          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+        >
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
-        </div>
-        <div class="one_link_list_detail" key="/learn">
-          <a href="/learn" class="show_more">show more</a>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Blog.name }}</div>
-        <div v-for="(itemin, indexin) in Blog.list" :key="indexin" class="one_link_list_detail">
+        <div
+          v-for="(itemin, indexin) in Blog.list"
+          :key="indexin"
+          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+        >
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
-        </div>
-        <div class="one_link_list_detail" key="/blog">
-          <a href="/blog" class="show_more">show more</a>
         </div>
       </div>
       <div class="one_link_list">
@@ -239,12 +233,6 @@ const closeCookie = () => {
 </template>
 <style lang="scss" scoped>
 .common_footer {
-  .show_more {
-    text-decoration: underline !important;
-    &:hover {
-      color: #f66442 !important;
-    }
-  }
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 56px;
@@ -285,6 +273,12 @@ const closeCookie = () => {
             color: #f66442;
           }
         }
+        &.show_more {
+          text-decoration: underline !important;
+          &:hover {
+            color: #f66442 !important;
+          }
+        }
       }
       // .show_more {
       //   width: fit-content;
@@ -293,10 +287,6 @@ const closeCookie = () => {
       //     border-bottom: 1px #f66442 solid;
       //   }
       // }
-
-      .show-more1 {
-        // color: #f66442;
-      }
     }
   }
   .footer_logo_dom {
