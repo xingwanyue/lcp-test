@@ -157,8 +157,8 @@ const onLoad2 = () => {
 };
 
 // 引入cdn图片
-const guide1 = `${cdn}/store/portal/guid/guide1.png`;
-const guide2 = `${cdn}/store/portal/guid/guide2.png`;
+const guide1 = `${cdn}/store/portal/guid/guide111.png`;
+const guide2 = `${cdn}/store/portal/guid/guide222.png`;
 const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
 </script>
 
@@ -433,7 +433,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
     }
     .article_out {
       display: grid;
-      grid-template-columns: 0.8fr 1fr;
+      grid-template-columns: 0.47fr 1fr;
       @media screen and (max-width: 974px) {
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -445,6 +445,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
         display: flex;
         justify-content: center;
         align-items: flex-start;
+
         @media screen and (max-width: 1248px) {
           align-items: center;
         }
@@ -452,6 +453,8 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
         .el-image {
           width: 100%;
           height: auto;
+          box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.2);
+          border-radius: 18px;
           @media screen and (max-width: 974px) {
             height: 100%;
             width: auto;
@@ -487,10 +490,12 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
         }
         .buy_btn {
           display: flex;
+
+          flex-direction: column;
           justify-content: flex-start;
-          align-items: center;
+          align-items: flex-start;
           margin-top: 32px;
-          grid-gap: 40px;
+          grid-gap: 32px;
           // @media screen and (max-width: 974px) {
           //   justify-content: center;
           // }

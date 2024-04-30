@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { urlGet, saveStorage, getStorage, host } from '@/utils';
+import { urlGet, saveStorage, getStorage, host, getToken } from '@/utils';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
@@ -11,6 +11,7 @@ const route = useRoute();
 const pathname = computed(() => route.path);
 const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
+const haveCookie = ref(false);
 const isProductsMobile = ref(false);
 watch(pathname, (val: string) => {
   oldPath.value = getStorage('pathname');
@@ -21,7 +22,11 @@ watch(pathname, (val: string) => {
   saveStorage('pathname', val);
 });
 
-onMounted(() => {
+onMounted(async () => {
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
+  }
   changeHeaderColor(pathname.value);
   const dom = document.getElementsByClassName('v-header')[0] as any;
   window.addEventListener('scroll', (e) => {
@@ -215,7 +220,7 @@ const logout = () => {
           <span class="icon iconfont icon-logo mobileLogo"></span>
         </nuxt-link>
       </div>
-      <div v-if="user.id" href="/app">
+      <div v-if="user.id || haveCookie" href="/app">
         <!-- <el-popover placement="top-start" trigger="hover" class="111">
           <div class="logout_btn" @click="logout">Log out</div>
           <template #reference>

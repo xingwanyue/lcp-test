@@ -5,7 +5,6 @@ const props = defineProps<{
   src: string;
   alt: string;
 }>();
-console.log(props);
 const loaded = ref(false);
 const imgOnload = () => {
   loaded.value = true;
