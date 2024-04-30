@@ -158,11 +158,11 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         <div class="page_title">
           <div class="h_one">
             <h1 v-if="isMobile">
-              Get a Higher Score Easily <br />on the Duolingo <br />English Test With
+              Get a Higher Score <br />on the Duolingo <br />English Test With
               <span class="seo_hack">DET Practice</span>
             </h1>
             <h1 v-else>
-              Get a Higher Score Easily on the <br />
+              Get a Higher Score on the <br />
               Duolingo English Test With <span class="seo_hack">DET Practice</span>
             </h1>
           </div>
