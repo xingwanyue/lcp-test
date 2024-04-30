@@ -6,7 +6,7 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useServerSeoMeta({
-  title: 'DET Practice:Correction Service powered by AI for your Duolingo Learning',
+  title: 'DET Practice - AI Correction Service for your Duolingo Test',
   description:
     'Correction service provided by "AI + Teachers". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.',
 });
@@ -66,7 +66,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
           <div class="banner">
             <div class="banner_left">
               <div class="big_title">
-                <h1>Discover the Best, Latest Method for Writing Review</h1>
+                <h1>Discover the Best AI Correction Service for Duolingo Test</h1>
               </div>
               <div class="desc">
                 Enhance your essays with our 'AI + Teachers' correction service. Get detailed feedback based on official
