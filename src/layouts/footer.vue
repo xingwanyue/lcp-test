@@ -391,6 +391,7 @@ const closeCookie = () => {
       font-size: 14px;
       color: #403f3e;
       text-align: center;
+      margin-left: 12px;
     }
     .footer_logo_right {
       display: flex;
