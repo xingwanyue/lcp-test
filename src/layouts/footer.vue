@@ -170,7 +170,7 @@ const closeCookie = () => {
         <div v-for="(itemin, indexin) in Learn.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
-        <div class="one_link_list_detail">
+        <div class="one_link_list_detail" key="/learn">
           <NuxtLink class="show_more" :to="localePath(`/learn`)">show more</NuxtLink>
         </div>
       </div>
@@ -179,7 +179,7 @@ const closeCookie = () => {
         <div v-for="(itemin, indexin) in Blog.list" :key="indexin" class="one_link_list_detail">
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
-        <div class="one_link_list_detail">
+        <div class="one_link_list_detail" key="/blog">
           <NuxtLink class="show_more" :to="localePath(`/blog`)">show more</NuxtLink>
         </div>
       </div>
