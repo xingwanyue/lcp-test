@@ -9,9 +9,9 @@ import { staticUrlGet, formatNumber, cdn, domain, getToken } from '@/utils';
 const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useServerSeoMeta({
-  title: 'DET Practice:The best Duolingo English Test Practice platform',
+  title: 'DET Practice - Ace the Duolingo English Test',
   description:
-    'Your one-stop learning hub for mastering the Duolingo English Test. We have the largest test bank, full-scale mock exam, correction service powered by AI, and professional courses.',
+    'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.',
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
