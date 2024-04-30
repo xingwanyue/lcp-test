@@ -121,7 +121,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
               >
                 <div class="font">Review Now</div>
                 <div class="icon">
@@ -176,7 +176,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
                   <div class="font">Get Scored Now</div>
                   <div class="arrow">
@@ -217,7 +217,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
                   <div class="font">Enhance Now</div>
                   <div class="arrow">
@@ -257,7 +257,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
                   <div class="font">Correct Now</div>
                   <div class="arrow">
@@ -298,7 +298,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
                   <div class="font">Enhance Now</div>
                   <div class="arrow">
@@ -339,7 +339,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
                   <div class="font">Begin Polishing</div>
                   <div class="arrow">
