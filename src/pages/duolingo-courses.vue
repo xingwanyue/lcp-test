@@ -2,9 +2,9 @@
 import { useStore } from '@/store';
 import { staticUrlGet, domain, cdn } from '@/utils';
 useServerSeoMeta({
-  title: 'DET Practice: Master Speaking and Writing for DET with the Duolingo English Test Guide',
+  title: 'DET Practice - Master Speaking and Writing with the Duolingo English Test Guide',
   description:
-    'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practices.',
+    'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice.',
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/duolingo-courses` }],
@@ -167,7 +167,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
     <div class="guide_wrapper_out">
       <div class="guide_wrapper">
         <div class="one_article">
-          <h1 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h1>
+          <div class="title">DET Speaking Exam Excellence: A Comprehensive Guide</div>
           <div class="article_out">
             <div class="left_img">
               <!-- <img src="/img/guid/guide1.png" /> -->
@@ -221,7 +221,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
           </div>
         </div>
         <div class="one_article">
-          <div class="title">DET Writing Exam Excellence: A Comprehensive Guide</div>
+          <h1 class="title">DET Writing Exam Excellence: A Comprehensive Guide</h1>
           <div class="article_out">
             <div class="left_img">
               <!-- <img src="/img/guid/guide2.png" /> -->

@@ -6,9 +6,9 @@ import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
 useServerSeoMeta({
-  title: 'DET Practice Blog - Duolingo English Test Tips, News, and Service Updates',
+  title: 'DET Practice - Duolingo English Test Tips and Tricks',
   description:
-    'Stay informed and prepared with our DET blog. Get the latest Duolingo English Test tips, news, service updates, and announcements designed to enhance your test readiness.',
+    "Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score.",
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],

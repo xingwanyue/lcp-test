@@ -70,9 +70,9 @@ const handleChange = () => {
   state.selFatherData = find(state.selectList, { id: state.activeName }) || {};
 };
 useServerSeoMeta({
-  title: 'DET Practice: Learn the expert Tips for the Duolingo English Test',
+  title: 'DET Practice - Learn the expert Tips for the Duolingo English Test',
   description:
-    'Explore expert strategies and study methods to excel on the Duolingo English Test. Our blog offers actionable tips and insights to enhance your preparation and boost your score.',
+    'Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score.',
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/learn` }],

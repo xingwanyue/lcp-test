@@ -7,9 +7,9 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useServerSeoMeta({
-  title: 'DET Practice: Full-Scale Mock Exam for Realistic Preparation',
+  title: 'DET Practice - Full-length Mock Exam for DET Preparation',
   description:
-    'Experience the closest simulation to the real Duolingo English Test with our full-scale mock exams. Get accurate scoring, comprehensive reports, and fast feedback to identify and work on your weaknesses.',
+    "Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test.",
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/mock-exam` }],
