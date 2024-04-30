@@ -4,6 +4,10 @@ import LearnDetail from '@/components/articleDetail.vue';
 
 const route = useRoute();
 
+definePageMeta({
+  layout: 'empty',
+});
+
 const { data: article } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
   server: true,
 })) as any;
@@ -19,7 +23,7 @@ useHead({
 });
 </script>
 <template>
-  <NuxtLayout :type="article?.type">
+  <NuxtLayout name="default" :type="article?.type">
     <div v-if="!isLearn" class="article_detail">
       <div class="detail_hader">
         <div class="detail_hader_content">

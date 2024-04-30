@@ -55,7 +55,9 @@ onMounted(async () => {
     <el-main class="main">
       <slot />
     </el-main>
-    <el-footer class="footer_wrap"> <v-footer /></el-footer>
+    <el-footer class="footer_wrap">
+      <v-footer />
+    </el-footer>
   </el-container>
 </template>
 <style lang="scss" scoped>
