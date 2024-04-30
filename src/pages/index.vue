@@ -142,7 +142,7 @@ const onLoad4 = () => {
 };
 
 // 引入cdn图片
-const bannerImg = `${cdn}/store/portal/home/banner.png`;
+const bannerImg = `${cdn}/store/portal/home/banner.svg`;
 const home1 = `${cdn}/store/portal/home/home1.png`;
 const home2 = `${cdn}/store/portal/home/home2.png`;
 const home3 = `${cdn}/store/portal/home/home3.png`;
