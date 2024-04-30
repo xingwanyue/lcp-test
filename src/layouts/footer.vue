@@ -219,6 +219,7 @@ const closeCookie = () => {
         </div>
       </div>
     </div>
+    <div class="Copyright">© 2024 DET Practice</div>
     <div v-if="cookieShow" class="cookie_out">
       <div class="cookie_header">
         <img
@@ -404,6 +405,13 @@ const closeCookie = () => {
         }
       }
     }
+  }
+  .Copyright {
+    font-weight: 400;
+    font-size: 14px;
+    color: #403f3e;
+    text-align: center;
+    margin-top: 24px;
   }
   .cookie_out {
     // border: 1px red solid;
