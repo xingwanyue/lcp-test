@@ -190,6 +190,7 @@ const closeCookie = () => {
           <img src="/img/footer/small_logo.svg" alt="DET Practice:The best Duolingo English Test Practice platform" />
         </div>
         <div class="logo_icon_out">
+          <span class="Copyright">© 2024 DET Practice</span>
           <NuxtLink to="https://www.youtube.com/@detpracticecom" target="_blank">
             <div class="one_icon youtube"></div>
           </NuxtLink>
@@ -202,7 +203,6 @@ const closeCookie = () => {
           <!-- <NuxtLink to="">
             <div class="one_icon tiktok"></div>
           </NuxtLink> -->
-          <span class="Copyright">© 2024 DET Practice</span>
         </div>
       </div>
 
@@ -304,7 +304,7 @@ const closeCookie = () => {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      grid-column-gap: 40px;
+      grid-column-gap: 20px;
       //  border: 1px red solid;
       @media (max-width: 420px) {
         grid-column-gap: 20px;
@@ -381,7 +381,7 @@ const closeCookie = () => {
       font-size: 14px;
       color: #403f3e;
       text-align: center;
-      margin-left: 12px;
+      margin-right: 22px;
     }
     .footer_logo_right {
       display: flex;
