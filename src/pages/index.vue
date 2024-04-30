@@ -190,7 +190,9 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="all_stu_nums">
           Trusted by
-          <span class="yellow">{{ formatNumber(platformData?.userTotal) }} students</span>
+          <span class="yellow"
+            >{{ platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000' }} students</span
+          >
           worldwide for a 1-month Duolingo English Test score boost.
         </div>
         <div class="big_img_out">
