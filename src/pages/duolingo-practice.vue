@@ -6,9 +6,9 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useServerSeoMeta({
-  title: 'DET Practice:The most powerful website for Duolingo practice test. ',
+  title: 'DET Practice - The best platform for Duolingo practice test',
   description:
-    'The most powerful website for Duolingo practice. Our test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',
+    'Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/duolingo-practice` }],
