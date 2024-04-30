@@ -355,7 +355,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is
               in perfect sync with current exam standards.
             </div>
-            <NuxtLink class="get_more" :to="localePath('/duolingo-courses')">
+            <NuxtLink class="get_more" :to="localePath('/courses')">
               <div class="font">Explore More</div>
               <div class="icon">
                 <img

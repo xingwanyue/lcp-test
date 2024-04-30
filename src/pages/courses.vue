@@ -7,7 +7,7 @@ useServerSeoMeta({
     'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice.',
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/duolingo-courses` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/courses` }],
 });
 const localePath = useLocalePath();
 const store = useStore();
@@ -207,7 +207,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                     />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login?url=/duolingo-courses`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img
@@ -261,7 +261,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                     />
                   </div>
                 </div>
-                <NuxtLink :to="localePath(`/login?url=/duolingo-courses`)" v-else class="btn common_btn_hover_bgColor">
+                <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">Buy Now</div>
                   <div class="icon">
                     <img
@@ -302,10 +302,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                 </div>
               </template>
               <template v-else>
-                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/duolingo-courses`)" class="btn">
+                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/courses`)" class="btn">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/duolingo-courses`)" class="btn"
+                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/courses`)" class="btn"
                   >{{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -341,10 +341,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/duolingo-courses`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/duolingo-courses`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)">
                   {{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -353,7 +353,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
               <div class="btnNone">Speaking practice audio</div>
               <template v-if="user.id">
                 <template v-if="user.speak === 1">
-                  <NuxtLink class="btn" :to="localePath(`/products/common/listen`)">
+                  <NuxtLink class="btn" :to="localePath(`/listen`)">
                     {{ item.btn1 }}
                   </NuxtLink>
                 </template>
@@ -364,7 +364,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/products/common/listen`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/listen`)">
                   {{ item.btn1 }}
                 </NuxtLink></template
               >

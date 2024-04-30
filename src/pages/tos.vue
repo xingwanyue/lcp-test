@@ -7,7 +7,7 @@ useServerSeoMeta({
   description: '',
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/company/terms-service` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/tos` }],
 });
 </script>
 <template>

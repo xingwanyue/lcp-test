@@ -39,7 +39,7 @@ const prod = {
     },
     {
       name: 'Duolingo English Test Course',
-      url: '/duolingo-courses',
+      url: '/courses',
     },
   ],
 };
@@ -98,19 +98,19 @@ const Company = {
   list: [
     {
       name: 'About us',
-      url: '/company/aboutus',
+      url: '/about-us',
     },
     {
       name: 'Contact us',
-      url: '/company/contactus',
+      url: '/contact-us',
     },
     {
       name: 'Terms and Conditions',
-      url: '/company/terms-service',
+      url: '/tos',
     },
     {
       name: 'Privacy Policy',
-      url: '/company/privacy-policy',
+      url: '/privacy-policy',
     },
   ],
 };
@@ -229,7 +229,7 @@ const closeCookie = () => {
       </div>
       <div class="cookie_contenr">
         DET Practice uses cookies to improve content based on your browser Settings. For more details, see
-        <NuxtLink :to="localePath(`/company/cookie`)" class="see_cookei">Cookie Policy</NuxtLink>
+        <NuxtLink :to="localePath(`/cookie`)" class="see_cookei">Cookie Policy</NuxtLink>
       </div>
     </div>
   </div>

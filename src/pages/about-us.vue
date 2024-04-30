@@ -7,7 +7,7 @@ useServerSeoMeta({
   description: '',
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/company/aboutus` }],
+  link: [{ rel: 'canonical', href: `https://www.${domain}/about-us` }],
 });
 </script>
 <template>

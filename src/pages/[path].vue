@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { api } from '@/utils';
-import LearnDetail from './learndetail/index.vue';
+import LearnDetail from '@/components/articleDetail.vue';
 
 const route = useRoute();
 

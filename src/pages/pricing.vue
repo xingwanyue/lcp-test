@@ -705,7 +705,7 @@ const formateMinToHour = (min: number) => {
             <div v-if="item.type === '2'" class="btn" @click="copy(item.btn)">
               {{ item.btn }}
             </div>
-            <NuxtLink v-if="item.type === '3'" class="btn" :to="localePath(`/company/contactus`)">
+            <NuxtLink v-if="item.type === '3'" class="btn" :to="localePath(`/contact-us`)">
               <div>{{ item.btn }}</div>
             </NuxtLink>
           </div>
