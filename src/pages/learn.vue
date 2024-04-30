@@ -6,6 +6,7 @@ import head from 'lodash/head';
 import find from 'lodash/find';
 import subscribe from '../components/subscribe.vue';
 
+const route = useRoute();
 const localePath = useLocalePath();
 const state = reactive({
   selectList: [] as any,
@@ -21,11 +22,20 @@ const state = reactive({
   pageSize: 5,
   total: 0,
   learnLastestUpdateTime: '',
+  categories: [] as any,
 });
 
 const getSelect = async () => {
   const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, { server: true })) as any;
+  state.categories = data.value;
   state.selectList = getTree(data.value, null, null);
+  if (route.query.c) {
+    // 路由带分类
+    state.selConData = find(state.categories, { id: Number(route.query.c) });
+    state.selFatherData = find(state.categories, { id: state.selConData.pid });
+    state.activeName = state.selFatherData.id;
+    return;
+  }
   // Default First
   state.selFatherData = head(state.selectList) || {};
   state.selConData = head(state.selFatherData.children) || {};
@@ -161,6 +171,13 @@ useHead({
       </el-drawer>
     </div>
     <subscribe />
+  </div>
+  <div>
+    <nuxt-link
+      v-for="category in state.categories"
+      :key="category.id"
+      :to="localePath(`/learn?c=${category.id}`)"
+    ></nuxt-link>
   </div>
 </template>
 <style lang="scss">
