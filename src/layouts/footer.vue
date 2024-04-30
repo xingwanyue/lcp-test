@@ -27,11 +27,11 @@ const prod = {
   list: [
     {
       name: 'DET Practice',
-      url: '/duolingo-practice',
+      url: '/practice',
     },
     {
       name: 'AI Correction Service',
-      url: '/duolingo-correction',
+      url: '/correction',
     },
     {
       name: 'DET Mock',
