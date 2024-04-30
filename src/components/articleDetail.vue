@@ -22,6 +22,7 @@ const state = reactive({
   rate,
   rateArr: [] as any,
   selectName: '',
+  averageScore: 0,
 });
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
@@ -45,8 +46,9 @@ const getList = async () => {
     state.list = value?.data;
   }
   state.checkId = props.id;
-  const { rate } = find(state.rateArr, { id: props.id }) || {};
+  const { rate, averageScore } = find(state.rateArr, { id: props.id }) || {};
   state.rate = rate;
+  state.averageScore = averageScore;
 };
 getList();
 const getSelect = async () => {
@@ -57,7 +59,10 @@ const getSelect = async () => {
 getSelect();
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
-  rateArr.push({ id: state.checkId, rate: state.rate });
+  const { initRate, initRateNum, rate, rateNum } = props.article;
+  const averageScore =
+    (Number(initRate) * Number(initRateNum) + rate * rateNum + state.rate) / (Number(initRateNum) + rateNum + 1);
+  rateArr.push({ id: state.checkId, rate: state.rate, averageScore: averageScore.toFixed(1) });
   saveStorage('det_rate', JSON.stringify(rateArr), true);
   const { err } = (await useFetch(`${rateAdd}`, {
     method: 'post',
@@ -71,6 +76,7 @@ const rateChange = async () => {
   })) as any;
   if (!err) {
     props.article.rateNum += 1;
+    props.article.rate = averageScore;
     ElMessage({ type: 'success', message: 'Submitted successfully' });
   }
 };
@@ -102,14 +108,29 @@ const rateChange = async () => {
         </div>
       </div>
       <div class="rate-con">
-        <div>
+        <div v-if="state.averageScore">
           <el-rate
             v-model="state.rate"
             :disabled="Boolean(state.rate)"
             allow-half
             show-score
             text-color="#201515"
-            :score-template="`{value}/5（${props.article.rateNum || 0} votes）`"
+            :score-template="`{value}/5（${
+              props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
+            }   ${props.article.rateNum || 0} votes）`"
+            @change="rateChange"
+          />
+        </div>
+        <div v-else>
+          <el-rate
+            v-model="state.rate"
+            :disabled="Boolean(state.rate)"
+            allow-half
+            show-score
+            text-color="#201515"
+            :score-template="`{value}/5（${
+              props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
+            }   ${props.article.rateNum || 0} votes）`"
             @change="rateChange"
           />
         </div>
