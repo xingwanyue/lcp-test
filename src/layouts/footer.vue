@@ -208,9 +208,10 @@ const closeCookie = () => {
           <!-- <NuxtLink to="">
             <div class="one_icon tiktok"></div>
           </NuxtLink> -->
+          <span class="Copyright">© 2024 DET Practice</span>
         </div>
       </div>
-      <div class="Copyright">© 2024 DET Practice</div>
+
       <div class="footer_logo_right">
         <div class="tips_out">{{ t('footer.inc') }}</div>
         <div v-if="options.length !== 1" class="select_out">
@@ -301,7 +302,7 @@ const closeCookie = () => {
   .footer_logo_dom {
     margin-top: 68px;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr;
     align-items: center;
     justify-content: center;
     // border: 1px red solid;
@@ -337,6 +338,8 @@ const closeCookie = () => {
       }
       .logo_icon_out {
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         grid-column-gap: 8px;
         .one_icon {
           width: 30px;
