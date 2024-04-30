@@ -27,8 +27,8 @@ const state = reactive({
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
 const getList = async () => {
-  // compatible blog
-  if (props.type === '1') {
+  // compatible blog blog逻辑已废除 但是保留 type=1123132 条件下代码可以删除 先测试
+  if (props.type === '1123132') {
     const { data: { value = {} } = {} } = (await useFetch(`${api}/common/article`, {
       server: true,
       query: {
@@ -38,10 +38,15 @@ const getList = async () => {
       },
     })) as any;
     state.list = value?.data;
-  } else if (props.type === '2') {
+  } else if (props.type === '2' || props.type === '1') {
     // compatible learn
-    const { data: { value = {} } = {} } = (await useFetch(`${articleGet}?categoryId=${props.categoryId}`, {
+    const { data: { value = {} } = {} } = (await useFetch(`${articleGet}`, {
       server: true,
+      query: {
+        categoryId: props.categoryId,
+        pageSize: 6,
+        page: 1,
+      },
     })) as any;
     state.list = value?.data;
   }
