@@ -255,7 +255,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             <div class="tips">
               In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.
             </div>
-            <NuxtLink class="get_more" :to="localePath('/duolingo-practice')">
+            <NuxtLink class="get_more" :to="localePath('/practice')">
               <div class="font">Discover More</div>
               <div class="icon">
                 <img
@@ -286,7 +286,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               Simply submit your essay and promptly receive a comprehensive report with a detailed band score.
             </div>
             <div class="tips">Elevate your writing score in just 2 weeks.</div>
-            <NuxtLink class="get_more" :to="localePath('/duolingo-correction')">
+            <NuxtLink class="get_more" :to="localePath('/correction')">
               <div class="font">Learn More</div>
               <div class="icon">
                 <img

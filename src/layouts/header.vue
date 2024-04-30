@@ -44,7 +44,7 @@ onMounted(async () => {
 });
 const changeHeaderColor = (pathname: string) => {
   switch (pathname) {
-    case '/duolingo-practice':
+    case '/practice':
       headerColor.value = '#ECF7FF';
       break;
     case '/mock-exam':
@@ -58,7 +58,7 @@ const changeHeaderColor = (pathname: string) => {
       break;
   }
 };
-const productPaths = ['/duolingo-practice', '/duolingo-correction', '/mock-exam', '/courses'];
+const productPaths = ['/practice', '/correction', '/mock-exam', '/courses'];
 const visible = ref(false);
 const popoverQuestions = ref(false);
 const handleOpen = () => {
@@ -121,7 +121,7 @@ const logout = () => {
             popper-class="head-question-popover"
           >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
-              <NuxtLink :to="localePath('/duolingo-practice')" class="one_card card1">
+              <NuxtLink :to="localePath('/practice')" class="one_card card1">
                 <div class="icon">
                   <img
                     src="/img/home/product_icon1.svg"
@@ -136,7 +136,7 @@ const logout = () => {
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/duolingo-correction')" class="one_card card2">
+              <NuxtLink :to="localePath('/correction')" class="one_card card2">
                 <div class="icon">
                   <img
                     src="/img/home/product_icon2.svg"
@@ -285,7 +285,7 @@ const logout = () => {
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
-              :to="localePath('/duolingo-practice')"
+              :to="localePath('/practice')"
               @click="handleClose"
             >
               Duolingo English Test Practice
@@ -293,7 +293,7 @@ const logout = () => {
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
-              :to="localePath('/duolingo-correction')"
+              :to="localePath('/correction')"
               @click="handleClose"
             >
               Duolingo English Test Correction Service
