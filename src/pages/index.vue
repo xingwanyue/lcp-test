@@ -20,10 +20,14 @@ useHead({
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-const isMobile = ref(false);
-onMounted(() => {
-  isMobile.value = window.innerWidth < 450;
-});
+// const isMobile = ref(false);
+// if (process.client) {
+//   isMobile.value = window.innerWidth < 450;
+// }
+
+// onMounted(() => {
+//   isMobile.value = window.innerWidth < 450;
+// });
 
 const [
   { data: platformData },
@@ -156,12 +160,14 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       <div class="part1">
         <div class="power_by">Powered by AI</div>
         <div class="page_title">
-          <div class="h_one">
-            <h1 v-if="isMobile">
+          <div class="h_one isMobile">
+            <h1>
               Get a Higher Score Easily<br />on the Duolingo <br />English Test With
               <span class="seo_hack">DET Practice</span>
             </h1>
-            <h1 v-else>
+          </div>
+          <div class="h_one isnoMobile">
+            <h1>
               Get a Higher Score Easily on the <br />
               Duolingo English Test With <span class="seo_hack">DET Practice</span>
             </h1>
@@ -615,6 +621,18 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             }
           }
           .seo_hack {
+            display: none;
+          }
+        }
+        .isMobile {
+          display: none;
+          @media (max-width: 450px) {
+            display: block;
+          }
+        }
+        .isnoMobile {
+          display: block;
+          @media (max-width: 450px) {
             display: none;
           }
         }
