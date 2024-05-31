@@ -17,3 +17,16 @@ gtag('config', 'AW-998843228');
 gtag('event', 'conversion', {
   send_to: 'AW-998843228/Bsl9CLHbppgZENzGpNwD',
 });
+
+window.addEventListener('load', function (event) {
+  document.querySelectorAll('button[type*="submit"]').forEach(function (e) {
+    e.addEventListener('click', function () {
+      var email = document.querySelector('[class="el-input__inner"]').value;
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (email != '' && mailformat.test(email)) {
+        gtag('set', 'user_data', { email: email });
+        gtag('event', 'sign_up', { send_to: 'G-BTN96NLD4D' });
+      }
+    });
+  });
+});
