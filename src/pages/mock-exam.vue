@@ -283,7 +283,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">Rapid Score Reporting</h2>
                 <div class="right_desc">
-                  Get your mock exam results delivered within 24 hours, fast-tracking your progress review.
+                  Get your mock exam results delivered within 30 minutes, fast-tracking your progress review.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">Mock Now</div>

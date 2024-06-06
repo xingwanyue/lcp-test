@@ -150,7 +150,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <el-image v-show="isLoad1" :src="service_picture1" alt="Precision in Scoring" @load="onLoad1" />
+              <el-image v-show="isLoad1" :src="service_picture1" alt="Requests for corrections" @load="onLoad1" />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -159,13 +159,12 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Precision in Scoring</h2>
+                <h2 class="right_title">Requests for corrections</h2>
                 <div class="right_desc">
-                  Effortlessly submit your essay from our question bank and instantly receive a comprehensive report
-                  with precise scoring.
+                  On the Speaking and Writing practice pages, you can apply for the correction service directly.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Get Scored Now</div>
+                  <div class="font">Correct Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -178,7 +177,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">Get Scored Now</div>
+                  <div class="font">Correct Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -191,7 +190,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad2" :src="service_picture2" alt="Vocabulary Enhancement" @load="onLoad2" />
+              <el-image v-show="isLoad2" :src="service_picture2" alt="Comprehensive Assessment" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -200,13 +199,13 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Vocabulary Enhancement</h2>
+                <h2 class="right_title">Comprehensive Assessment</h2>
                 <div class="right_desc">
-                  Track your word usage and uncover key terms within your essays. Our tool identifies overused words,
-                  fostering diverse and effective expression.
+                  Follows the official Duolingo English Test requirements to accurately capture writing skills and
+                  provide comprehensive assessment results.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">Enhance Now</div>
+                  <div class="font">Get Scored Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -219,7 +218,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">Enhance Now</div>
+                  <div class="font">Get Scored Now</div>
                   <div class="arrow">
                     <img
                       src="/img/products/yellow_arrow_right.svg"
@@ -232,7 +231,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad3" :src="service_picture3" alt="Essay Correction" @load="onLoad3" />
+              <el-image v-show="isLoad3" :src="service_picture3" alt="Writing Correction" @load="onLoad3" />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -241,7 +240,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Essay Correction</h2>
+                <h2 class="right_title">Writing Correction</h2>
                 <div class="right_desc">
                   Instantly spot and understand errors in vocabulary and grammar to enhance your writing skills.
                 </div>
@@ -272,7 +271,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad4" :src="service_picture4" alt="Expert Guidance" @load="onLoad4" />
+              <el-image v-show="isLoad4" :src="service_picture4" alt="Teacher Guidance" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -281,7 +280,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Expert Guidance</h2>
+                <h2 class="right_title">Teacher Guidance</h2>
                 <div class="right_desc">
                   Enhance your writing with expert analysis tailored to DET criteria, pinpointing areas for improvement
                   to elevate your work.
@@ -313,7 +312,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad5" :src="service_picture5" alt="Essay Polishing" @load="onLoad5" />
+              <el-image v-show="isLoad5" :src="service_picture5" alt="Original Text Polishing" @load="onLoad5" />
               <el-skeleton v-show="!isLoad5" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -322,9 +321,9 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <div class="right_title">Essay Polishing</div>
+                <div class="right_title">Original Text Polishing</div>
                 <div class="right_desc">
-                  Elevate every word and sentence; refine structure and style for a distinguished and high-scoring
+                  Elevate every word and sentence;refine structure and style for a distinguished and high-scoring
                   composition.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">

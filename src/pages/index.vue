@@ -6,7 +6,7 @@ import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn, domain, getToken } from '@/utils';
 
-const videoUrl = `${cdn}/store/portal/banner_min.mp4`;
+const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useServerSeoMeta({
   title: 'DET Practice - Ace the Duolingo English Test',
@@ -207,7 +207,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="big_img_out">
           <div class="big_img">
-            <!-- <video
+            <video
               width="100%"
               height="100%"
               muted
@@ -220,8 +220,8 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               x5-video-orientation="portraint"
               x5-video-player-type="h5"
               :src="videoUrl"
-            ></video> -->
-            <img :src="bannerImg" />
+            ></video>
+            <!-- <img :src="bannerImg" /> -->
           </div>
         </div>
       </div>
@@ -323,7 +323,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.
             </div>
             <div class="tips">
-              Take online mock exams at your convenience, with fast scoring provided within 24 hours.
+              Take online mock exams at your convenience, with fast scoring provided within 30 minutes.
             </div>
             <NuxtLink class="get_more" :to="localePath('/mock-exam')">
               <div class="font">Find Out More</div>
@@ -393,7 +393,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           </div>
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData?.examTotal) }}k</div>
-            <div class="small_font">Mock Test</div>
+            <div class="small_font">Mock Exam</div>
           </div>
         </div>
         <div v-else class="user_nums_out">

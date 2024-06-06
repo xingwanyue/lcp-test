@@ -199,7 +199,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad2" :src="bank_picture2" alt="Smart Planning for Success" @load="onLoad2" />
+              <el-image v-show="isLoad2" :src="bank_picture2" alt="Intelligent Recommendation" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -208,15 +208,16 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Smart Planning for Success</h2>
+                <h2 class="right_title">Intelligent Recommendation</h2>
                 <div class="right_desc">
                   <!-- We have developed an intelligent learning knowledge graph to recommend a
                   <span class="strong">personalized practice plan</span> for you. Through intelligent analysis of your
                   daily learning behavior, we suggest the most suitable practice questions to help you study more
                   intelligently. -->
-                  Experience smart learning with our AI-generated study plans tailored to your needs. Our intelligent
-                  system analyses your daily learning patterns to curate a selection of practice questions that best
-                  facilitate your progress.
+                  The Al model will take into account the mastery level of each question type, difficulty,target score,
+                  question weight, novelty of the questions, the recent frequency of the test, preparation time and
+                  efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the
+                  test.
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">Start Smart Study Journey</div>
