@@ -54,7 +54,7 @@ const aqList = ref([
   {
     name: 'Can I change my plan later?',
     content:
-      "You can purchase more services at any time, and upon purchase, the services will be added directly to your account. If you need to cancel any services, please contact us via chat or email at <span class='email_address'>support@detpractice.com</span>.",
+      'Thank you for purchasing the service! Please note that this is a virtual product. Once purchased, product delivery is considered complete and is generally non-refundable. Please check before purchasing.',
     open: false,
   },
   {
