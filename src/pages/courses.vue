@@ -371,6 +371,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
             </template>
           </div>
         </div>
+        <div class="tips">
+          Thank you for your interest in our Speaking/Writing Guide! Please note that this is a virtual product. Once
+          purchased and downloaded, the product delivery is considered complete, and it is generally non-refundable.
+          Please confirm before making a purchase.
+        </div>
       </div>
     </div>
     <div class="orange_block_wrapper">
@@ -568,6 +573,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
     }
     .part3 {
       padding: 100px 0;
+      padding-bottom: 92px;
       @media screen and (max-width: 450px) {
         padding: 50px 0;
       }
@@ -668,6 +674,12 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
             // cursor: pointer;
           }
         }
+      }
+      .tips {
+        font-weight: 400;
+        font-size: 14px;
+        color: #666666;
+        margin-top: 16px;
       }
     }
   }
