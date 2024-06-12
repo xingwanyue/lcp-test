@@ -5,3 +5,5 @@ Disallow: /register2
 Disallow: /resetPassword
 Disallow: /resetPasswordStep2
 Disallow: /oauth
+
+Sitemap: https://www.detpractice.com/sitemap.xml
