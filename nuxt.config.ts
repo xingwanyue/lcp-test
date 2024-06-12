@@ -40,7 +40,11 @@ export default defineNuxtConfig({
         },
       ],
       title: 'DET Practice:The best Duolingo English Test Practice platform',
-      meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'msvalidate.01', content: 'AB8D0671C60241C25BF7B5B9E68F5683' },
+      ],
     },
   },
 });
