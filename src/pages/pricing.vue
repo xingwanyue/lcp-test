@@ -63,6 +63,26 @@ const aqList = ref([
       'You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class="email_address">support@detpractice.com</span>. Alternatively, you can leave a message directly in the "Contact Us" section.',
     open: false,
   },
+  {
+    name: 'What is your refund policy?',
+    content: `
+    1. Free Account
+    <br>Usage is entirely free, so there are no refund issues.
+
+    <br>2. Subscription Plans
+    <br>Users may request a refund if DET Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect.
+        Refunds will not be issued for subscriptions and services that have already become active after purchase.
+    
+
+    <br>3. Speaking/Writing Guide
+    <br>The Speaking/Writing Guide is considered a digital product. Once purchased and downloaded, the product delivery is deemed complete and is generally non-refundable. Please carefully read the purchase information before making a purchase.
+
+    <br><br>Important Note:
+    <br>All refund requests must be processed through customer service, and relevant usage records must be provided for verification. 
+    <br>To prevent fraudulent refunds, each user account is limited to one refund request. Multiple requests will not be processed.
+    <br>If you have any special circumstances or unique situations, please contact us, and we will work with you to find a resolution.`,
+    open: false,
+  },
 ]) as any;
 // const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
 //   server: true,
@@ -690,7 +710,7 @@ const formateMinToHour = (min: number) => {
               <div class="qusetion">{{ item.name }}</div>
             </div>
             <div v-if="item.open" class="answer">
-              <div v-html="item.content"></div>
+              <div class="answer_content" v-html="item.content"></div>
             </div>
           </div>
         </div>
@@ -1440,6 +1460,9 @@ const formateMinToHour = (min: number) => {
 
             @media (max-width: 662px) {
               font-size: 16px;
+            }
+            .answer_content {
+              line-height: 26px;
             }
           }
         }
