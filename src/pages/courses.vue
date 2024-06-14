@@ -680,6 +680,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
         font-size: 14px;
         color: #666666;
         margin-top: 16px;
+        line-height: 22px;
       }
     }
   }
