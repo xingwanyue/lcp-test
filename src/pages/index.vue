@@ -76,16 +76,23 @@ const [
   useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true }),
 ])) as any;
 const haveCookie = ref(false);
+const isMobile = ref(false);
 onMounted(async () => {
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     moveAnamit();
+    // 监听窗口大小 改变isMobile
+    window.addEventListener('resize', () => {
+      isMobile.value = window.innerWidth < 450;
+    });
   }
+
   const token = await getToken();
   if (token) {
     haveCookie.value = true;
   }
 });
+
 const moveAnamit = () => {
   const small_title_wrap = document.querySelector('.small_title_wrap');
   const small_title = document.querySelectorAll('.one_small_title');
@@ -160,13 +167,13 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       <div class="part1">
         <div class="power_by">Powered by AI</div>
         <div class="page_title">
-          <div class="h_one isMobile">
+          <div v-if="isMobile" class="h_one isMobile">
             <h1>
               Get a Higher Score Easily<br />on the Duolingo <br />English Test With
               <span class="seo_hack">DET Practice</span>
             </h1>
           </div>
-          <div class="h_one isnoMobile">
+          <div v-if="!isMobile" class="h_one isnoMobile">
             <h1>
               Get a Higher Score Easily on the <br />
               Duolingo English Test With <span class="seo_hack">DET Practice</span>
@@ -624,18 +631,18 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             display: none;
           }
         }
-        .isMobile {
-          display: none;
-          @media (max-width: 450px) {
-            display: block;
-          }
-        }
-        .isnoMobile {
-          display: block;
-          @media (max-width: 450px) {
-            display: none;
-          }
-        }
+        // .isMobile {
+        //   display: none;
+        //   @media (max-width: 450px) {
+        //     display: block;
+        //   }
+        // }
+        // .isnoMobile {
+        //   display: block;
+        //   @media (max-width: 450px) {
+        //     display: none;
+        //   }
+        // }
         .animat_wrap {
           text-align: center;
           font-weight: 600;
