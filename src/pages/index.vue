@@ -196,7 +196,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           v-html="
             $t('index.trustedByWorldwide', {
               path: `<span class='yellow'>
-              ${platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000'} students
+              ${platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000'} 
               </span>`,
             })
           "
