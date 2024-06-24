@@ -7,5 +7,54 @@
   "Blog": "Blog",
   "footer": {
     "inc": "Our product has no connection with Duolingo,Inc"
+  },
+  "index": {
+    "power_by": "Powered by AI",
+    "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With <span class=\"seo_hack\">DET Practice</span>",
+    "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With <span class=\"seo_hack\">DET Practice</span>",
+    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "Start_free_with_Google": "Start free with Google",
+    "Start_free_with_email": "Start free with email",
+    "Start_for_free": "Start for free",
+    "trustedByWorldwide": "Trusted by {path} worldwide for a 1-month Duolingo English Test score boost.",
+    "The_Best_Platform": "The Best Platform for Boosting Your Duolingo English Test Scores",
+    "Leverage_Our": "Leverage Our All-Inclusive Resources for Swift Score Improvement",
+    "article1": {
+      "title": "Duolingo English Test Practice",
+      "tips1": "With over { number } practice questions, our ever-expanding question bank is regularly updated for excellence.",
+      "tips2": "Comprehensive coverage of all exam types with detailed explanations for every question.",
+      "tips3": "In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.",
+      "btn_font": "Discover More",
+      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+    },
+    "article2": {
+      "title": "AI-Powered Essay Correction Service",
+      "tips1": "Benefit from precise essay corrections through our 'AI + Teacher' collaborative review.",
+      "tips2": "Simply submit your essay and promptly receive a comprehensive report with a detailed band score.",
+      "tips3": "Elevate your writing score in just 2 weeks.",
+      "btn_font": "Learn More",
+      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+    },
+    "article3": {
+      "title": "Duolingo English Test Mock",
+      "tips1": "Mimic the actual exam setting to familiarize yourself with the testing process and content beforehand.",
+      "tips2": "Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.",
+      "tips3": "Take online mock exams at your convenience, with fast scoring provided within 30 minutes.",
+      "btn_font": "Find Out More",
+      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+    },
+    "article4": {
+      "title": "Duolingo English Test Course",
+      "tips1": " Achieve Comprehensive Mastery. Develop an in-depth understanding of DET speaking and writing sections with our detailed guides, ensuring you approach every part of the exam with confidence.",
+      "tips2": "Learn from ESL Experts. Utilize proven strategies to enhance your speaking and writing abilities, benefit from personalized learning paths, and engage in effective self-assessment.",
+      "tips3": "Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is in perfect sync with current exam standards.",
+      "btn_font": "Explore More",
+      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+    },
+    "thousand": "k",
+    "Users": "Users",
+    "Questions": "Questions",
+    "Mock_Exam": "Mock Exam",
+    "Join_Them": "Join Them"
   }
 }

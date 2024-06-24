@@ -7,5 +7,54 @@
   "Blog": "Blog",
   "footer": {
     "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc"
+  },
+  "index": {
+    "power_by": "Ditenagai oleh AI",
+    "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />di Tes Bahasa Inggris Duolingo <br />dengan Praktik <span class=\"seo_hack\">DET</span>",
+    "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Tes Bahasa Inggris Duolingo dengan Praktik <span class=\"seo_hack\">DET</span>",
+    "one_small_title": ["Praktik DET", "Koreksi AI", "Simulasi Lengkap", "Kursus DET"],
+    "Start_free_with_Google": "Mulai gratis dengan Google",
+    "Start_free_with_email": "Mulai gratis dengan email",
+    "Start_for_free": "Mulai secara gratis",
+    "trustedByWorldwide": "Dipercaya oleh {path} di seluruh dunia untuk peningkatan skor Tes Bahasa Inggris Duolingo dalam 1 bulan.",
+    "The_Best_Platform": "Platform Terbaik untuk Meningkatkan Skor Tes Bahasa Inggris Duolingo Anda",
+    "Leverage_Our": "Manfaatkan Sumber Daya Komprehensif Kami untuk Peningkatan Skor yang Cepat",
+    "article1": {
+      "title": "Praktik Tes Bahasa Inggris Duolingo",
+      "tips1": "Dengan lebih dari { number } pertanyaan latihan, bank pertanyaan kami yang terus berkembang secara rutin diperbarui untuk keunggulan.",
+      "tips2": "Cakupan komprehensif dari semua jenis ujian dengan penjelasan rinci untuk setiap pertanyaan.",
+      "tips3": "Jawaban mendalam, analitik cerdas, dan penilaian untuk memungkinkan pemantauan kinerja Anda secara berkelanjutan.",
+      "btn_font": "Temukan Lebih Banyak",
+      "btn_img_alt": "Praktik DET: Platform praktik Tes Bahasa Inggris Duolingo terbaik"
+    },
+    "article2": {
+      "title": "Layanan Koreksi Esai Berbasis AI",
+      "tips1": "Dapatkan koreksi esai yang tepat melalui tinjauan kolaboratif 'AI + Guru' kami.",
+      "tips2": "Cukup kirimkan esai Anda dan segera terima laporan komprehensif dengan skor band rinci.",
+      "tips3": "Tingkatkan skor penulisan Anda dalam hanya 2 minggu.",
+      "btn_font": "Pelajari Lebih Lanjut",
+      "btn_img_alt": "Praktik DET: Platform praktik Tes Bahasa Inggris Duolingo terbaik"
+    },
+    "article3": {
+      "title": "Simulasi Tes Bahasa Inggris Duolingo",
+      "tips1": "Tiru pengaturan ujian aktual untuk membiasakan diri Anda dengan proses dan konten pengujian sebelumnya.",
+      "tips2": "Terima laporan tes simulasi mendalam untuk analisis yang tepat dari kekuatan dan kelemahan Anda.",
+      "tips3": "Ikuti ujian simulasi online sesuai keinginan Anda, dengan penilaian cepat yang disediakan dalam 30 menit.",
+      "btn_font": "Cari Tahu Lebih Lanjut",
+      "btn_img_alt": "Praktik DET: Platform praktik Tes Bahasa Inggris Duolingo terbaik"
+    },
+    "article4": {
+      "title": "Kursus Tes Bahasa Inggris Duolingo",
+      "tips1": "Capai Penguasaan Komprehensif. Kembangkan pemahaman mendalam tentang bagian berbicara dan menulis DET dengan panduan rinci kami, memastikan Anda mendekati setiap bagian ujian dengan percaya diri.",
+      "tips2": "Belajar dari Para Ahli ESL. Gunakan strategi terbukti untuk meningkatkan kemampuan berbicara dan menulis Anda, manfaatkan jalur pembelajaran yang dipersonalisasi, dan terlibat dalam penilaian diri yang efektif.",
+      "tips3": "Tetap Informasi dan Terdepan. Tetap mengikuti format dan tren DET terbaru untuk memastikan persiapan Anda selaras sempurna dengan standar ujian saat ini.",
+      "btn_font": "Jelajahi Lebih Lanjut",
+      "btn_img_alt": "Praktik DET: Platform praktik Tes Bahasa Inggris Duolingo terbaik"
+    },
+    "thousand": "rb",
+    "Users": "Pengguna",
+    "Questions": "Pertanyaan",
+    "Mock_Exam": "Ujian Simulasi",
+    "Join_Them": "Bergabunglah dengan Mereka"
   }
 }

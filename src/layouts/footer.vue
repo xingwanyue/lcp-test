@@ -126,10 +126,10 @@ const options = [
     value: 'en',
     label: 'English',
   },
-  // {
-  //   value: 'id',
-  //   label: 'Indonesian',
-  // },
+  {
+    value: 'id',
+    label: 'Indonesian',
+  },
   // {
   //   value: 'Option3',
   //   label: 'Option3',
@@ -208,7 +208,7 @@ const closeCookie = () => {
 
       <div class="footer_logo_right">
         <div class="tips_out">{{ t('footer.inc') }}</div>
-        <div v-if="options.length !== 1" class="select_out">
+        <div v-if="options.length" class="select_out">
           <el-select v-model="language" placeholder="Select" style="width: 240px">
             <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
           </el-select>
