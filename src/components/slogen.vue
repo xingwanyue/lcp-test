@@ -14,22 +14,23 @@ const googleLogin = () => {
 <template>
   <div class="slogen_out_wrapper">
     <div class="slogen_out">
-      <div class="font1">Start Your Path to Top Scores on the</div>
-      <div class="font2">Duolingo English Test !</div>
+      <div v-html="$t('slogen.title')"></div>
       <div v-if="!user.id" class="two_btn_out">
         <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
-          <img src="/img/home/google_icon.svg" alt="Start free with Google" />
-          Start free with Google
+          <img src="/img/home/google_icon.svg" :alt="$t('slogen.Start_free_with_Google')" />
+          {{ $t('slogen.Start_free_with_Google') }}
         </div>
         <NuxtLink
           :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
           class="common_btn common_btn_hover_borderCu white"
         >
-          Start free with email
+          {{ $t('slogen.Start_free_with_email') }}
         </NuxtLink>
       </div>
       <div v-else class="two_btn_out">
-        <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white"> Start for free </NuxtLink>
+        <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white">
+          {{ $t('slogen.Start_for_free') }}
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -45,7 +46,7 @@ const googleLogin = () => {
     margin: 0 auto;
     padding: 100px 0;
   }
-  .font1 {
+  :deep(.font1) {
     font-weight: 600;
     font-size: 56px;
     color: #201515;
@@ -57,7 +58,7 @@ const googleLogin = () => {
       font-size: 24px;
     }
   }
-  .font2 {
+  :deep(.font2) {
     font-weight: 600;
     font-size: 56px;
     color: #f66442;

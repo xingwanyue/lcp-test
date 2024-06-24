@@ -56,5 +56,11 @@
     "Questions": "Pertanyaan",
     "Mock_Exam": "Ujian Simulasi",
     "Join_Them": "Bergabunglah dengan Mereka"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Mulai Jalurmu Menuju Skor Tertinggi di</div><div class='font2'>Tes Bahasa Inggris Duolingo!</div>",
+    "Start_free_with_Google": "Mulai gratis dengan Google",
+    "Start_free_with_email": "Mulai gratis dengan email",
+    "Start_for_free": "Mulai secara gratis"
   }
 }

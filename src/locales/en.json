@@ -56,5 +56,11 @@
     "Questions": "Questions",
     "Mock_Exam": "Mock Exam",
     "Join_Them": "Join Them"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Start Your Path to Top Scores on the</div><div class='font2'>Duolingo English Test !</div>",
+    "Start_free_with_Google": "Start free with Google",
+    "Start_free_with_email": "Start free with email",
+    "Start_for_free": " Start for free"
   }
 }
