@@ -9,6 +9,10 @@
     "inc": "Our product has no connection with Duolingo,Inc"
   },
   "index": {
+    "seometa": {
+      "title": "DET Practice - Ace the Duolingo English Test",
+      "description": "'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses."
+    },
     "power_by": "Powered by AI",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With <span class=\"seo_hack\">DET Practice</span>",

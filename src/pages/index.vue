@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import vSlogen from '../components/slogen.vue';
 import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
@@ -9,9 +11,8 @@ import { staticUrlGet, formatNumber, cdn, domain, getToken } from '@/utils';
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useServerSeoMeta({
-  title: 'DET Practice - Ace the Duolingo English Test',
-  description:
-    'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.',
+  title: t('index.seometa.title'),
+  description: t('index.seometa.description'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
