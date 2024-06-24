@@ -97,5 +97,15 @@
     "Subscribe_for": "Subscribe for the Latest Insights and Strategies to Elevate Your Score.",
     "Email": "Email",
     "Subscribe": "Subscribe"
+  },
+  "learn": {
+    "seometa": {
+      "title": "DET Practice - Learn the expert Tips for the Duolingo English Test",
+      "description": "Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score."
+    },
+    "h1": "We will update the exam preparation tips of Duolingo English Test timely",
+    "title2": " The lastest update is until {time}",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Show_more": "Show more"
   }
 }
