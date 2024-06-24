@@ -62,5 +62,14 @@
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": " Start for free"
+  },
+  "subscribe": {
+    "emailErrMessage1": "The email must be a valid email address.",
+    "emailErrMessage2": "Please enter your email address.",
+    "Subscribe_successfully": "Subscribe successfully",
+    "Subscribe!": "Subscribe!",
+    "Subscribe_for": "Subscribe for the Latest Insights and Strategies to Elevate Your Score.",
+    "Email": "Email",
+    "Subscribe": "Subscribe"
   }
 }

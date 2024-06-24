@@ -62,5 +62,14 @@
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai secara gratis"
+  },
+  "subscribe": {
+    "emailErrMessage1": "Email harus merupakan alamat email yang valid.",
+    "emailErrMessage2": "Silakan masukkan alamat email Anda.",
+    "Subscribe_successfully": "Berlangganan berhasil",
+    "Subscribe!": "Berlangganan!",
+    "Subscribe_for": "Berlangganan untuk Wawasan dan Strategi Terbaru untuk Meningkatkan Skor Anda.",
+    "Email": "Email",
+    "Subscribe": "Berlangganan"
   }
 }

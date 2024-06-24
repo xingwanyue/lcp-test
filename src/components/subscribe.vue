@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const email = ref('');
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 const emailErrShow = ref(false);
 const emailErrMessage = ref('');
 const loading = ref(false);
@@ -8,9 +10,9 @@ const sendEmail = async () => {
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email.value)) {
     if (email.value) {
-      emailErrMessage.value = 'The email must be a valid email address.';
+      emailErrMessage.value = t('subscribe.emailErrMessage1');
     } else {
-      emailErrMessage.value = 'Please enter your email address.';
+      emailErrMessage.value = t('subscribe.emailErrMessage2');
     }
     emailErrShow.value = true;
     return;
@@ -24,7 +26,7 @@ const sendEmail = async () => {
     body: { email: email.value },
   })) as any;
   if (!err) {
-    ElMessage.success('Subscribe successfully');
+    ElMessage.success(t('subscribe.Subscribe_successfully'));
     email.value = '';
     emailErrShow.value = false;
     emailErrMessage.value = '';
@@ -37,19 +39,23 @@ const sendEmail = async () => {
   <div class="subscribe_out_wrapper">
     <div class="subscribe_out">
       <div class="subscribe_in_left">
-        <div class="left_font1">Subscribe!</div>
-        <div class="left_font2">Subscribe for the Latest Insights and Strategies to Elevate Your Score.</div>
+        <div class="left_font1">{{ $t('subscribe.Subscribe!') }}</div>
+        <div class="left_font2">
+          {{ $t('subscribe.Subscribe_for') }}
+        </div>
       </div>
       <div class="subscribe_in_right">
         <el-input
           size="large"
           v-model="email"
           style="width: 100%"
-          placeholder="Email"
+          :placeholder="$t('subscribe.Email')"
           class="input_self"
           @input="emailErrShow = false"
         >
-          <template #append> <el-button @click="sendEmail" class="subscribe-btn">Subscribe</el-button></template>
+          <template #append>
+            <el-button @click="sendEmail" class="subscribe-btn">{{ $t('subscribe.Subscribe') }}</el-button></template
+          >
         </el-input>
         <div class="errDom">
           <span v-if="emailErrShow">{{ emailErrMessage }}</span>
