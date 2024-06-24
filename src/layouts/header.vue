@@ -109,7 +109,7 @@ const menus = [
 <template>
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
     <div class="header-content">
-      <nuxt-link :to="localePath('/')" class="home-logo">
+      <nuxt-link :to="localePath('/')" class="home-logo" title="DET Practice">
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
