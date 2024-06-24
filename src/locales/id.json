@@ -5,6 +5,28 @@
   "Learn": "Belajar",
   "Pricing": "Harga",
   "Blog": "Blog",
+  "header": {
+    "prod1": {
+      "title": "Latihan Tes Bahasa Inggris Duolingo",
+      "alt": "Latihan DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+      "font": "Raih Keunggulan dengan Bank Soal Luas Kami: Lebih dari 10.000 Soal, Pembaruan Berkala, dan Pelacakan Kinerja Cerdas!"
+    },
+    "prod2": {
+      "title": "Layanan Koreksi Tes Bahasa Inggris Duolingo",
+      "alt": "Latihan DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+      "font": "Sempurnakan Esai Anda dengan Umpan Balik Guru Berbasis AI: Koreksi Akurat, Laporan Instan, dan Peningkatan Skor dalam Dua Minggu!"
+    },
+    "prod3": {
+      "title": "Kursus Tes Bahasa Inggris Duolingo",
+      "alt": "Latihan DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+      "font": "Kuasai Ujian Anda dengan Mock Penuh Otentik: Analisis Mendalam dan Hasil Instan, Tersedia Kapan Saja, Di Mana Saja."
+    },
+    "prod4": {
+      "title": "Mock Tes Bahasa Inggris Duolingo",
+      "alt": "Latihan DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+      "font": "Buka Kunci Kesuksesan DET: Penguasaan Menyeluruh, Teknik Terbukti, dan Wawasan Terkini untuk Keunggulan Berbicara dan Menulis dengan Percaya Diri!"
+    }
+  },
   "footer": {
     "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc"
   },

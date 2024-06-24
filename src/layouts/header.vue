@@ -134,31 +134,23 @@ const menus = [
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
               <NuxtLink :to="localePath('/practice')" class="one_card card1">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon1.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Practice</div>
+                  <div class="title">{{ $t('header.prod1.title') }}</div>
                   <div class="font">
-                    Achieve Excellence with Our Extensive Question Bank: Over 10,000 Questions, Regular Updates, and
-                    Smart Performance Tracking!
+                    {{ $t('header.prod1.font') }}
                   </div>
                 </div>
               </NuxtLink>
               <NuxtLink :to="localePath('/correction')" class="one_card card2">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon2.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/home/product_icon2.svg" :alt="$t('header.prod2.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Correction Service</div>
+                  <div class="title">{{ $t('header.prod2.title') }}</div>
                   <div class="font">
-                    Perfect Your Essays with AI-Powered Teacher Feedback: Accurate Corrections, Instant Reports, and
-                    Score Improvement within Two Weeks!
+                    {{ $t('header.prod2.font') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -166,14 +158,13 @@ const menus = [
                 <div class="icon">
                   <img
                     src="/img/home/product_icon3.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                    :alt="$t('header.prod3.alt')"
                   />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Mock</div>
+                  <div class="title">{{ $t('header.prod3.title') }}</div>
                   <div class="font">
-                    Conquer Your Exam with Authentic Full-Length Mocks: In-depth Analysis and Instant Results, Available
-                    Anytime, Anywhere.
+                    {{ $t('header.prod3.font') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -181,14 +172,13 @@ const menus = [
                 <div class="icon">
                   <img
                     src="/img/home/product_icon4.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
+                    :alt=" $t('header.prod4.alt')"
                   />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Course</div>
+                  <div class="title"> {{ $t('header.prod4.title') }}</div>
                   <div class="font">
-                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident
-                    Speaking and Writing Excellence!
+                      {{ $t('header.prod4.font') }}
                   </div>
                 </div>
               </NuxtLink>
