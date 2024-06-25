@@ -107,5 +107,112 @@
     "title2": " Pembaruan terakhir adalah sampai {time}",
     "alt": "Praktik DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
     "Show_more": "Tampilkan lebih banyak"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "DET Practice - Harga Keanggotaan dan Layanan Persiapan Tes Duolingo",
+      "description": "Pilih rencana yang tepat untuk persiapan Tes Bahasa Inggris Duolingo Anda. Opsi harga terjangkau untuk latihan personalisasi, ulasan ahli, dan ujian simulasi skala penuh."
+    },
+    "pagefont": {
+      "h1": "Rencana & Harga",
+      "h4": "Bertindak Sekarang untuk Hemat! Dapatkan keanggotaan Anda dengan harga rendah hari ini – jangan lewatkan sebelum biaya naik.",
+      "switch1": "Keanggotaan",
+      "switch2": "Layanan Lainnya",
+      "Most_Popular_Choice": "Pilihan Paling Populer",
+      "off": " {off}% diskon ",
+      "do": "Rp",
+      "mp": "Harga anggota",
+      "Buy_Now": "Beli Sekarang",
+      "tf": " Coba Gratis ",
+      "mpc": "Pilihan Paling Populer",
+      "your_price": "harga Anda",
+      "Non_member": "Bukan anggota",
+      "purchased": "dibeli",
+      "Secure_Payment": "Pembayaran Aman:",
+      "faq": "Pertanyaan yang Sering Diajukan",
+      "Contact_Us": "Hubungi Kami",
+      "alt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik"
+    },
+    "aqList": [
+      {
+        "name": "Bagaimana cara kerja rencana dan harga DETPractice?",
+        "content": "Kami menyediakan rencana dan harga yang transparan untuk pengguna kami, tanpa biaya tersembunyi. Selain itu, kami menawarkan paket langganan tambahan sehingga Anda dapat memilih layanan sesuai dengan kebutuhan Anda."
+      },
+      {
+        "name": "Apakah ada uji coba gratis?",
+        "content": "Ya! Anda dapat melihat 20 pertanyaan secara gratis. Membantu Anda memahami kami sebelum Anda membeli layanan lebih banyak."
+      },
+      {
+        "name": "Apakah Anda menawarkan diskon?",
+        "content": "Ya! Kami menawarkan diskon khusus untuk setiap layanan. Namun, ketika Anda memilih layanan 30 hari, Anda akan menerima diskon yang lebih besar dibandingkan dengan layanan lainnya. Silakan lihat detail harga di atas untuk informasi lebih lanjut."
+      },
+      {
+        "name": "Pembayaran saya berhasil, tetapi peningkatan gagal.",
+        "content": "Silakan hubungi kami melalui chat atau email: <span class='email_address'>support@detpractice.com</span>. Ini adalah cara termudah dan tercepat untuk mengatasi kekhawatiran Anda."
+      },
+      {
+        "name": "Bisakah saya mengubah rencana saya nanti?",
+        "content": "Terima kasih telah membeli layanan! Harap dicatat bahwa ini adalah produk virtual. Setelah dibeli, pengiriman produk dianggap selesai dan umumnya tidak dapat dikembalikan. Silakan periksa sebelum membeli."
+      },
+      {
+        "name": "Kemana saya harus mengirimkan umpan balik?",
+        "content": "Anda dapat mengirimkan umpan balik melalui chat dukungan di sudut kanan bawah, atau hubungi kami melalui email di <span class='email_address'>support@detpractice.com</span>. Atau, Anda juga dapat meninggalkan pesan langsung di bagian \"Hubungi Kami\"."
+      },
+      {
+        "name": "Apa kebijakan pengembalian dana Anda?",
+        "content1": "1. Akun Gratis  <br>Penggunaan sepenuhnya gratis, jadi tidak ada masalah pengembalian dana.",
+        "content2": "<br>2. Rencana Langganan  <br>Pengguna dapat meminta pengembalian dana jika DET Practice gagal menyediakan layanan yang sesuai, sehingga pengguna tidak dapat menggunakannya, atau jika langganan belum berlaku. Pengembalian dana tidak akan dikeluarkan untuk langganan dan layanan yang sudah aktif setelah pembelian.",
+        "content3": "<br>3. Panduan Berbicara/Menulis  <br>Panduan Berbicara/Menulis dianggap sebagai produk digital. Setelah dibeli dan diunduh, pengiriman produk dianggap selesai dan umumnya tidak dapat dikembalikan. Silakan baca informasi pembelian dengan hati-hati sebelum melakukan pembelian.",
+        "content4": "<br><br>Catatan Penting:  <br>Semua permintaan pengembalian dana harus diproses melalui layanan pelanggan, dan catatan penggunaan yang relevan harus disediakan untuk verifikasi.<br>Untuk mencegah pengembalian dana yang curang, setiap akun pengguna dibatasi hanya satu permintaan pengembalian dana. Permintaan berulang tidak akan diproses. <br>Jika Anda memiliki keadaan khusus atau situasi unik, silakan hubungi kami, dan kami akan bekerja bersama Anda untuk menemukan solusi."
+      }
+    ],
+    "qlList": {
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Pertanyaan Latihan"
+      },
+      "day7": {
+        "name1Desc": "<span class='bigger'>Tidak Terbatas</span> untuk Sesi Latihan",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
+        "name2Tips": "Untuk Pertanyaan Berbicara dan Menulis",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Ujian Simulasi"
+      },
+      "day15": {
+        "name1Desc": "<span class='bigger'>Tidak Terbatas</span> untuk Sesi Latihan",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
+        "name2Tips": "Untuk Pertanyaan Berbicara dan Menulis",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Ujian Simulasi"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>Tidak Terbatas</span> untuk Sesi Latihan",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
+        "name2Tips": "Untuk Pertanyaan Berbicara dan Menulis",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Ujian Simulasi"
+      }
+    },
+    "membershipUnchanging": [
+      "Akses semua Pertanyaan Latihan",
+      "Jelajahi Jawaban Demo Berperingkat Tinggi",
+      "Analisis Pertanyaan Mendalam",
+      "Buku Kata Ujian Frekuensi Tinggi",
+      "Rencana Studi yang Disesuaikan dengan Pemilihan Pertanyaan Cerdas",
+      "Evaluasi Berbicara yang Didukung AI"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "Layanan Pelanggan Online",
+        "tip": "Tersedia Senin-Jumat, 10:00 - 19:00",
+        "btn": "Chat Langsung Sekarang"
+      },
+      "type2": {
+        "font": "Email Kami",
+        "tip": "Dapatkan respons dalam 1 hari kerja.",
+        "btn": "support@detpractice.com"
+      },
+      "type3": {
+        "font": "Tinggalkan pesan",
+        "tip": "Kami akan merespons Anda dalam satu hari kerja.",
+        "btn": "Tinggalkan pesan sekarang"
+      }
+    }
   }
 }

@@ -107,5 +107,112 @@
     "title2": " The lastest update is until {time}",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "Show_more": "Show more"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "DET Practice - Duolingo Test Prep Membership and Services Pricing",
+      "description": "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams."
+    },
+    "pagefont": {
+      "h1": "Plans & Pricing",
+      "h4": "Act Now to Save! Grab your membership at today’s low prices – don’t miss out before costs rise.",
+      "switch1": "Membership",
+      "switch2": "More Service",
+      "Most_Popular_Choice": "Most Popular Choice",
+      "off": " {off}% off ",
+      "do": "$",
+      "mp": "Member's price",
+      "Buy_Now": "Buy Now",
+      "tf": " Try for free ",
+      "mpc": "Most Popular Choice",
+      "your_price": "your price",
+      "Non_member": "Non-member",
+      "purchased": "purchased",
+      "Secure_Payment": "Secure Payment:",
+      "faq": "Frequently Asked Questions",
+      "Contact_Us": "Contact Us",
+      "alt": "DET Practice:The best Duolingo English Test Practice platform"
+    },
+    "aqList": [
+      {
+        "name": "How does DETPractice’s plans and pricing work?",
+        "content": "We provide transparent plans and pricing for our users, with no hidden fees. Additionally, we offer add-on subscription packages so that you can choose services according to your needs."
+      },
+      {
+        "name": "Is there a free trial?",
+        "content": "Yes! You can view 20 questions for free. Help you understand us before you buy more services."
+      },
+      {
+        "name": "Do you offer any discounts?",
+        "content": "Yes! We offer tailored discounts for each service. However, when you opt for a 30-day service, you'll receive a greater discount compared to other services. Please refer to the price details above for more information."
+      },
+      {
+        "name": "My payment was successful, but the upgrade failed.",
+        "content": "Please contact us via chat or email: <span class='email_address'>support@detpractice.com</span>. This is the simplest and fastest way to address your concerns."
+      },
+      {
+        "name": "Can I change my plan later?",
+        "content": "Thank you for purchasing the service! Please note that this is a virtual product. Once purchased, product delivery is considered complete and is generally non-refundable. Please check before purchasing."
+      },
+      {
+        "name": "Where do I send my feedback?",
+        "content": "You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class='email_address'>support@detpractice.com</span>. Alternatively, you can leave a message directly in the \"Contact Us\" section."
+      },
+      {
+        "name": "What is your refund policy?",
+        "content1": "1. Free Account  <br>Usage is entirely free, so there are no refund issues.",
+        "content2": "<br>2. Subscription Plans  <br>Users may request a refund if DET Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect. Refunds will not be issued for subscriptions and services that have already become active after purchase.",
+        "content3": "<br>3. Speaking/Writing Guide  <br>The Speaking/Writing Guide is considered a digital product. Once purchased and downloaded, the product delivery is deemed complete and is generally non-refundable. Please carefully read the purchase information before making a purchase.",
+        "content4": "<br><br>Important Note:  <br>All refund requests must be processed through customer service, and relevant usage records must be provided for verification.<br>To prevent fraudulent refunds, each user account is limited to one refund request. Multiple requests will not be processed. <br>If you have any special circumstances or unique situations, please contact us, and we will work with you to find a resolution."
+      }
+    ],
+    "qlList": {
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Practice Questions"
+      },
+      "day7": {
+        "name1Desc": "<span class='bigger'>Unlimited</span> for Practice Sessions",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Correction Services",
+        "name2Tips": "For Speaking and Writing Questions",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Mock Exam"
+      },
+      "day15": {
+        "name1Desc": "`<span class='bigger'>Unlimited</span> for Practice Sessions",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Correction Services",
+        "name2Tips": "For Speaking and Writing Questions",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Mock Exam"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>Unlimited</span> for Practice Sessions",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Correction Services",
+        "name2Tips": "For Speaking and Writing Questions",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Mock Exam"
+      }
+    },
+    "membershipUnchanging": [
+      "Access all Practice Questions",
+      "Browse High-scoring Demo Answers",
+      "In-depth Question Analysis",
+      "High-Frequency Exam Word Book",
+      "Tailored Study Plan with Smart Question Selection",
+      "AI-Powered Speaking Evaluations"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "Online Customer Service",
+        "tip": "Available Mon-Fri, 10:00 - 19:00",
+        "btn": "Chat Live Now"
+      },
+      "type2": {
+        "font": "Email Us",
+        "tip": "Receive a response in 1 business day.",
+        "btn": "support@detpractice.com"
+      },
+      "type3": {
+        "font": "Leave a message",
+        "tip": "We will respond to you within one business day.",
+        "btn": "Leave a message now"
+      }
+    }
   }
 }
