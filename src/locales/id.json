@@ -214,5 +214,18 @@
         "btn": "Tinggalkan pesan sekarang"
       }
     }
+  },
+  "blog": {
+    "seometa": {
+      "title": "DET Practice - Tips dan Trik Tes Bahasa Inggris Duolingo",
+      "description": "Temukan tips dan trik Tes Bahasa Inggris Duolingo yang esensial dengan blog DET Practice. Menyelami strategi ahli, wawasan skor, dan panduan mendalam untuk unggul di setiap bagian Tes Bahasa Inggris Duolingo dan mencapai skor terbaik Anda."
+    },
+    "h1": "Blog DET Practice",
+    "alt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik"
+  },
+  "embark": {
+    "font1": "Mulai perjalanan Anda menuju skor tinggi pada",
+    "font2": "Tes Bahasa Inggris Duolingo!",
+    "Start_Now": "Mulai Sekarang"
   }
 }

@@ -214,5 +214,18 @@
         "btn": "Leave a message now"
       }
     }
+  },
+  "blog": {
+    "seometa": {
+      "title": "DET Practice - Duolingo English Test Tips and Tricks",
+      "description": "Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score."
+    },
+    "h1": "DET Pratice Blog",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform"
+  },
+  "embark": {
+    "font1": "Embark on your journey to high scores on",
+    "font2": "Duolingo English Test !",
+    "Start_Now": "Start Now"
   }
 }
