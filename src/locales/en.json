@@ -477,5 +477,33 @@
     "Forgot_password": "Forgot password?",
     "Dont_have_an_account": "Don't have an account?",
     "Sign_up_here": "Sign up here"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "DET Practice - Full-length Mock Exam for DET Preparation",
+      "description": "Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test."
+    },
+    "h1": "Duolingo English Test 1:1 Mock Exam",
+    "desc": "Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of the actual testing process before the real deal and quickly receive scores and detailed diagnostic reports to pinpoint areas for improvement.",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "learners_have": "{number} learners have taken our mock exams for self-assessment and practice.",
+    "Mock_Now": "Mock Now",
+    "Full_scale": "Duolingo 1:1 Full-scale Mock Exam",
+    "article1": {
+      "h2": "Algorithmic Intelligence",
+      "right_desc": "Experience real exam conditions with our advanced adaptive testing algorithm. Quickly master various question types and gain precise assessments."
+    },
+    "article2": {
+      "h2": "Precise Scoring & In-Depth Reports",
+      "right_desc": "Detailed mock exam reports provide precise diagnosis and analysis of current strengths and weaknesses, automatically updating study plans to enhance exam preparation efficiency."
+    },
+    "article3": {
+      "h2": "Convenient Exam Experience",
+      "right_desc": "Enjoy flexible test-taking on your schedule, no appointments needed. Start your mock exam immediately after purchase and have the freedom to pause or resume anytime."
+    },
+    "article4": {
+      "h2": "Rapid Score Reporting",
+      "right_desc": "Get your mock exam results delivered within 30 minutes, fast-tracking your progress review."
+    }
   }
 }

@@ -477,5 +477,33 @@
     "Forgot_password": "Lupa kata sandi?",
     "Dont_have_an_account": "Tidak memiliki akun?",
     "Sign_up_here": "Daftar di sini"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "Praktik DET - Ujian Simulasi Lengkap untuk Persiapan DET",
+      "description": "Rasakan Tes Simulasi Duolingo yang realistis dengan ujian lengkap dari Praktik DET. Menampilkan pertanyaan adaptif cerdas dan penilaian AI, tes simulasi kami menawarkan penilaian akurat untuk mempersiapkan Anda secara efektif untuk Tes Bahasa Inggris Duolingo."
+    },
+    "h1": "Ujian Simulasi 1:1 Tes Bahasa Inggris Duolingo",
+    "desc": "Imersikan diri Anda dalam pengalaman ujian yang seperti nyata dengan ujian simulasi skala penuh kami. Dapatkan rasa dari proses pengujian sebenarnya sebelum hal yang sesungguhnya dan dengan cepat menerima skor dan laporan diagnostik terperinci untuk menunjukkan area untuk perbaikan.",
+    "alt": "Praktik DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+    "learners_have": "{number} peserta didik telah mengikuti ujian simulasi kami untuk penilaian diri dan latihan.",
+    "Mock_Now": "Ujian Simulasi Sekarang",
+    "Full_scale": "Ujian Simulasi Skala Penuh 1:1 Duolingo",
+    "article1": {
+      "h2": "Kecerdasan Algoritmik",
+      "right_desc": "Rasakan kondisi ujian nyata dengan algoritma pengujian adaptif canggih kami. Cepat kuasai berbagai jenis pertanyaan dan dapatkan penilaian yang tepat."
+    },
+    "article2": {
+      "h2": "Penilaian Tepat & Laporan Mendalam",
+      "right_desc": "Laporan ujian simulasi terperinci menyediakan diagnosis dan analisis yang tepat dari kekuatan dan kelemahan saat ini, secara otomatis memperbarui rencana belajar untuk meningkatkan efisiensi persiapan ujian."
+    },
+    "article3": {
+      "h2": "Pengalaman Ujian yang Nyaman",
+      "right_desc": "Nikmati pengambilan tes yang fleksibel sesuai jadwal Anda, tidak perlu janji. Mulai ujian simulasi Anda segera setelah pembelian dan memiliki kebebasan untuk jeda atau melanjutkan kapan saja."
+    },
+    "article4": {
+      "h2": "Pelaporan Skor Cepat",
+      "right_desc": "Dapatkan hasil ujian simulasi Anda dalam waktu 30 menit, mempercepat tinjauan kemajuan Anda."
+    }
   }
 }

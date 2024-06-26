@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { urlGet, host, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 import vEasyexam from '../components/easyexam.vue';
@@ -7,9 +9,8 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useServerSeoMeta({
-  title: 'DET Practice - Full-length Mock Exam for DET Preparation',
-  description:
-    "Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test.",
+  title: t('mockexam.seometa.title'),
+  description: t('mockexam.seometa.description'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/mock-exam` }],
@@ -62,58 +63,42 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
           <div class="banner">
             <div class="banner_left">
               <div class="big_title">
-                <h1>Duolingo English Test 1:1 Mock Exam</h1>
+                <h1>{{ $t('mockexam.h1') }}</h1>
               </div>
               <div class="desc">
-                Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of
-                the actual testing process before the real deal and quickly receive scores and detailed diagnostic
-                reports to pinpoint areas for improvement.
+                {{ $t('mockexam.desc') }}
               </div>
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img
-                      src="/img/products/mock_user_icon1.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/mock_user_icon1.png" :alt="$t('mockexam.alt')" />
                   </div>
                   <div class="one_icon left24">
-                    <img
-                      src="/img/products/mock_user_icon2.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/mock_user_icon2.png" :alt="$t('mockexam.alt')" />
                   </div>
                   <div class="one_icon left48">
-                    <img
-                      src="/img/products/mock_user_icon3.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/mock_user_icon3.png" :alt="$t('mockexam.alt')" />
                   </div>
                   <div class="one_icon left72">
-                    <img
-                      src="/img/products/mock_user_icon4.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/mock_user_icon4.png" :alt="$t('mockexam.alt')" />
                   </div>
                   <div class="one_icon left96">
-                    <img
-                      src="/img/products/mock_user_icon5.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/mock_user_icon5.png" :alt="$t('mockexam.alt')" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.examTotal }} learners have taken our mock exams for self-assessment and practice.
+                  {{
+                    $t('mockexam.learners_have', {
+                      number: platformData.examTotal,
+                    })
+                  }}
                 </div>
               </div>
               <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :href="urlGet('/exam')">
-                <div class="font">Mock Now</div>
+                <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
 
                 <div class="icon">
-                  <img
-                    src="/img/products/white_arrow_right.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('mockexam.alt')" />
                 </div>
               </NuxtLink>
               <NuxtLink
@@ -121,18 +106,15 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
                 class="btn common_btn_hover_bgColor"
               >
-                <div class="font">Mock Now</div>
+                <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
 
                 <div class="icon">
-                  <img
-                    src="/img/products/white_arrow_right.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('mockexam.alt')" />
                 </div>
               </NuxtLink>
             </div>
             <div class="banner_right">
-              <el-image v-show="isLoad" :src="mock_banner" alt="Duolingo 1:1 Full-scale Mock Exam" @load="onLoad" />
+              <el-image v-show="isLoad" :src="mock_banner" :alt="$t('mockexam.Full_scale')" @load="onLoad" />
               <el-skeleton v-show="!isLoad" style="width: 100%; height: 466px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -144,7 +126,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <el-image v-show="isLoad1" :src="mock_picture1" alt="Algorithmic Intelligence" @load="onLoad1" />
+              <el-image v-show="isLoad1" :src="mock_picture1" :alt="$t('mockexam.article1.h2')" @load="onLoad1" />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -153,18 +135,14 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Algorithmic Intelligence</h2>
+                <h2 class="right_title">{{ $t('mockexam.article1.h2') }}</h2>
                 <div class="right_desc">
-                  Experience real exam conditions with our advanced adaptive testing algorithm. Quickly master various
-                  question types and gain precise assessments.
+                  {{ $t('mockexam.article1.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -172,12 +150,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
                 >
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -185,12 +160,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image
-                v-show="isLoad2"
-                :src="mock_picture2"
-                alt="Precise Scoring & In-Depth Reports"
-                @load="onLoad2"
-              />
+              <el-image v-show="isLoad2" :src="mock_picture2" :alt="$t('mockexam.article2.h2')" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -199,18 +169,14 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Precise Scoring & In-Depth Reports</h2>
+                <h2 class="right_title">{{ $t('mockexam.article2.h2') }}</h2>
                 <div class="right_desc">
-                  Detailed mock exam reports provide precise diagnosis and analysis of current strengths and weaknesses,
-                  automatically updating study plans to enhance exam preparation efficiency.
+                  {{ $t('mockexam.article2.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -218,12 +184,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
                 >
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -231,7 +194,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad3" :src="mock_picture3" alt="Convenient Exam Experience" @load="onLoad3" />
+              <el-image v-show="isLoad3" :src="mock_picture3" :alt="$t('mockexam.article3.h2')" @load="onLoad3" />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -240,18 +203,14 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Convenient Exam Experience</h2>
+                <h2 class="right_title">{{ $t('mockexam.article3.h2') }}</h2>
                 <div class="right_desc">
-                  Enjoy flexible test-taking on your schedule, no appointments needed. Start your mock exam immediately
-                  after purchase and have the freedom to pause or resume anytime.
+                  {{ $t('mockexam.article3.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -259,12 +218,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
                 >
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -272,7 +228,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad4" :src="mock_picture4" alt="Rapid Score Reporting" @load="onLoad4" />
+              <el-image v-show="isLoad4" :src="mock_picture4" :alt="$t('mockexam.article4.h2')" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -281,17 +237,14 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Rapid Score Reporting</h2>
+                <h2 class="right_title">{{ $t('mockexam.article4.h2') }}</h2>
                 <div class="right_desc">
-                  Get your mock exam results delivered within 30 minutes, fast-tracking your progress review.
+                  {{ $t('mockexam.article4.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -299,12 +252,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
                 >
-                  <div class="font">Mock Now</div>
+                  <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/orange_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
                   </div>
                 </NuxtLink>
               </div>
