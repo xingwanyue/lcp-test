@@ -505,5 +505,37 @@
       "h2": "Rapid Score Reporting",
       "right_desc": "Get your mock exam results delivered within 30 minutes, fast-tracking your progress review."
     }
+  },
+  "practice": {
+    "seometa": {
+      "title": "DET Practice - The best platform for Duolingo practice test",
+      "description": "Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed."
+    },
+    "h1": "Duolingo Practice Question Bank",
+    "desc": "Gain access to an extensive collection of test questions, enhanced with answer analysis, templates, AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and affordably with our AI-powered approach.",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "altbanner": "Duolingo Practice Question Bank",
+    "learners_have": "{number} learners have used our question bank for DET preparation.",
+    "spn": "Start Practicing Now",
+    "article1": {
+      "h2": "Extensive Question Library",
+      "right_desc": "Explore our extensive library of over 10,000 questions across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats.",
+      "btn": "Dive Into Practice"
+    },
+    "article2": {
+      "h2": "Intelligent Recommendation",
+      "right_desc": " The Al model will take into account the mastery level of each question type, difficulty,target score, question weight, novelty of the questions, the recent frequency of the test, preparation time and efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the test.",
+      "btn": "Start Smart Study Journey"
+    },
+    "article3": {
+      "h2": "AI Speaking Evaluation",
+      "right_desc": "Enhance your oral proficiency with our AI-driven speaking evaluations. Submit your response to a spoken language question and instantly receive a detailed analysis of your speaking skills, helping you improve with precision and speed.",
+      "btn": "Begin Your Evaluation"
+    },
+    "article4": {
+      "h2": "Answer Analysis",
+      "right_desc": "Delve into comprehensive answer explanations that deepen your understanding of essential concepts and problem-solving techniques. Our detailed analyses don’t just guide you to the correct answers—they expand your knowledge and boost your study efficiency.",
+      "btn": "Explore Answer Insights"
+    }
   }
 }

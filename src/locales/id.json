@@ -505,5 +505,37 @@
       "h2": "Pelaporan Skor Cepat",
       "right_desc": "Dapatkan hasil ujian simulasi Anda dalam waktu 30 menit, mempercepat tinjauan kemajuan Anda."
     }
+  },
+  "practice": {
+    "seometa": {
+      "title": "Praktik DET - Platform terbaik untuk tes praktek Duolingo",
+      "description": "Bank tes DET kami mencakup ribuan pertanyaan untuk pelatihan ekstensif, lengkap dengan penjelasan rinci dan analisis AI untuk membantu Anda berhasil."
+    },
+    "h1": "Bank Pertanyaan Praktik Duolingo",
+    "desc": "Dapatkan akses ke koleksi pertanyaan tes yang luas, ditingkatkan dengan analisis jawaban, template, evaluasi berbicara yang didorong AI, dan perencanaan cerdas. Percepat peningkatan skor Anda secara efisien dan terjangkau dengan pendekatan yang didukung AI kami.",
+    "alt": "Praktik DET: Platform Praktik Tes Bahasa Inggris Duolingo terbaik",
+    "altbanner": "Bank Pertanyaan Praktik Duolingo",
+    "learners_have": "{number} peserta didik telah menggunakan bank pertanyaan kami untuk persiapan DET.",
+    "spn": "Mulai Berlatih Sekarang",
+    "article1": {
+      "h2": "Perpustakaan Pertanyaan Luas",
+      "right_desc": "Jelajahi perpustakaan kami yang luas dengan lebih dari 10.000 pertanyaan dari berbagai jenis ujian, terus diperbarui untuk menjaga latihan Anda tetap terkini. Bank pertanyaan kami dirancang untuk secara sistematis meningkatkan keterampilan Anda dalam menghadapi berbagai format pertanyaan.",
+      "btn": "Mulai Praktik"
+    },
+    "article2": {
+      "h2": "Rekomendasi Cerdas",
+      "right_desc": "Model AI akan mempertimbangkan tingkat penguasaan setiap jenis pertanyaan, kesulitan, skor target, bobot pertanyaan, kebaruan pertanyaan, frekuensi tes terbaru, waktu persiapan dan efisiensi skoring, dll. untuk merekomendasikan pertanyaan secara akurat yang membantu Anda mempersiapkan tes dengan efisien.",
+      "btn": "Mulai Perjalanan Belajar Cerdas"
+    },
+    "article3": {
+      "h2": "Evaluasi Berbicara AI",
+      "right_desc": "Tingkatkan kemahiran lisan Anda dengan evaluasi berbicara yang didorong AI kami. Kirimkan respons Anda ke pertanyaan bahasa lisan dan segera terima analisis rinci tentang keterampilan berbicara Anda, membantu Anda meningkat dengan presisi dan kecepatan.",
+      "btn": "Mulai Evaluasi Anda"
+    },
+    "article4": {
+      "h2": "Analisis Jawaban",
+      "right_desc": "Selami penjelasan jawaban komprehensif yang memperdalam pemahaman Anda tentang konsep-konsep penting dan teknik pemecahan masalah. Analisis rinci kami tidak hanya mengarahkan Anda ke jawaban yang benar—mereka memperluas pengetahuan Anda dan meningkatkan efisiensi belajar Anda.",
+      "btn": "Jelajahi Wawasan Jawaban"
+    }
   }
 }
