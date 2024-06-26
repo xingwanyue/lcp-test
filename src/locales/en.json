@@ -303,5 +303,47 @@
     "Email_Address": "Email Address",
     "Message": "Message",
     "SUBMIT": " SUBMIT "
+  },
+  "cookie": {
+    "seometa": { "title": "Cookie Policy - DET Practice" },
+    "Cookie_Policy": "Cookie Policy",
+    "Last_updated": "Last updated: ",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": " This Cookie Policy explains what cookies are, how we use them, and your choices regarding cookies on our website.",
+    "q1": {
+      "title": "What are cookies?",
+      "a1": "Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in your web browser and allows the website or a third-party to recognize you and make your next visit easier and the website more useful to you.",
+      "a2": "Cookies can be \"persistent\" or \"session\" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser."
+    },
+    "q2": {
+      "title": "How we use cookie",
+      "a1": "When you use and access our website, we may place a number of cookies files in your web browser.",
+      "a2": "We use cookies for the following purposes :",
+      "a3": "• To enable certain functions of the website",
+      "a4": "• To provide analytics",
+      "a5": "• To store your preferences",
+      "a6": "• To enable advertisements delivery (which are cookies from a domain different than the domain of the website you are visiting – for our advertising and marketing efforts.)",
+      "a7": "We use both session and persistent cookies on our website and we use different types of cookies to run the website:",
+      "a8": "• Essential cookies: We may use essential cookies to authenticate users and prevent fraudulent use of user accounts.",
+      "a9": "• Analytical/performance cookies: We may use analytical/performance cookies to track user activity on the website and gather data about how visitors use the website. This information is used to improve the website experience for our users.",
+      "a10": "• Functionality cookies: We may use functionality cookies to recognize you when you return to the website and personalize content for you.",
+      "a11": "• Targeting cookies: We may use targeting cookies to record your visit to the website, the pages you have visited, and the links you have followed."
+    },
+    "q3": {
+      "title": "Your choices regarding cookies",
+      "a1": "If you prefer to avoid the use of cookies on our website, you must disable the use of cookies in your browser and then delete the cookies saved in your browser associated with this website. You may use this option for preventing the use of cookies at any time."
+    },
+    "q4": {
+      "title": "Contact us",
+      "a1": "If you have any questions about our Cookie Policy, please contact us :",
+      "a2": "• By email: ",
+      "emailadderss": "support@detpractice.com",
+      "a3": "• By visiting this page on our website:",
+      "webseturl": "https://www.detpractice.com/contact-us/"
+    },
+    "q5": {
+      "title": "Changes to our Cookie Policy",
+      "a1": "We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page."
+    }
   }
 }

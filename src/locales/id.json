@@ -303,5 +303,47 @@
     "Email_Address": "Alamat Email",
     "Message": "Pesan",
     "SUBMIT": " KIRIM "
+  },
+  "cookie": {
+    "seometa": { "title": "Kebijakan Cookie - DET Practice" },
+    "Cookie_Policy": "Kebijakan Cookie",
+    "Last_updated": "Terakhir diperbarui: ",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": "Kebijakan Cookie ini menjelaskan apa itu cookie, bagaimana kami menggunakannya, dan pilihan Anda terkait cookie di situs web kami.",
+    "q1": {
+      "title": "Apa itu cookie?",
+      "a1": "Cookie adalah potongan teks kecil yang dikirim oleh peramban web Anda oleh situs web yang Anda kunjungi. Sebuah file cookie disimpan di peramban web Anda dan memungkinkan situs web atau pihak ketiga untuk mengenali Anda dan membuat kunjungan Anda berikutnya lebih mudah dan situs web lebih berguna bagi Anda.",
+      "a2": "Cookie dapat berupa \"persisten\" atau \"sesi\". Cookie persisten tetap berada di komputer pribadi atau perangkat seluler Anda ketika Anda offline, sementara cookie sesi dihapus segera setelah Anda menutup peramban web Anda."
+    },
+    "q2": {
+      "title": "Bagaimana kami menggunakan cookie",
+      "a1": "Ketika Anda menggunakan dan mengakses situs web kami, kami dapat menempatkan sejumlah file cookie di peramban web Anda.",
+      "a2": "Kami menggunakan cookie untuk tujuan berikut:",
+      "a3": "• Untuk mengaktifkan fungsi tertentu dari situs web",
+      "a4": "• Untuk menyediakan analitik",
+      "a5": "• Untuk menyimpan preferensi Anda",
+      "a6": "• Untuk mengaktifkan pengiriman iklan (yang merupakan cookie dari domain yang berbeda dari domain situs web yang Anda kunjungi – untuk upaya periklanan dan pemasaran kami.)",
+      "a7": "Kami menggunakan cookie sesi dan persisten di situs web kami dan kami menggunakan berbagai jenis cookie untuk menjalankan situs web:",
+      "a8": "• Cookie esensial: Kami dapat menggunakan cookie esensial untuk mengautentikasi pengguna dan mencegah penggunaan akun pengguna secara fraudulen.",
+      "a9": "• Cookie analitik/kinerja: Kami dapat menggunakan cookie analitik/kinerja untuk melacak aktivitas pengguna di situs web dan mengumpulkan data tentang bagaimana pengunjung menggunakan situs web. Informasi ini digunakan untuk meningkatkan pengalaman situs web bagi pengguna kami.",
+      "a10": "• Cookie fungsionalitas: Kami dapat menggunakan cookie fungsionalitas untuk mengenali Anda ketika Anda kembali ke situs web dan mempersonalisasi konten untuk Anda.",
+      "a11": "• Cookie penargetan: Kami dapat menggunakan cookie penargetan untuk mencatat kunjungan Anda ke situs web, halaman yang telah Anda kunjungi, dan tautan yang telah Anda ikuti."
+    },
+    "q3": {
+      "title": "Pilihan Anda terkait cookie",
+      "a1": "Jika Anda lebih memilih untuk menghindari penggunaan cookie di situs web kami, Anda harus menonaktifkan penggunaan cookie di peramban Anda dan kemudian menghapus cookie yang disimpan di peramban Anda yang terkait dengan situs web ini. Anda dapat menggunakan opsi ini untuk mencegah penggunaan cookie kapan saja."
+    },
+    "q4": {
+      "title": "Hubungi kami",
+      "a1": "Jika Anda memiliki pertanyaan tentang Kebijakan Cookie kami, silakan hubungi kami:",
+      "a2": "• Melalui email:",
+      "emailadderss": "support@detpractice.com",
+      "a3": "• Dengan mengunjungi halaman ini di situs web kami:",
+      "webseturl": "https://www.detpractice.com/contact-us/"
+    },
+    "q5": {
+      "title": "Perubahan pada Kebijakan Cookie Kami",
+      "a1": "Kami dapat memperbarui Kebijakan Cookie kami dari waktu ke waktu. Kami akan memberitahu Anda tentang perubahan apa pun dengan memposting Kebijakan Cookie baru di halaman ini."
+    }
   }
 }
