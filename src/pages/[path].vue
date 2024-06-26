@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { api } from '@/utils';
 import LearnDetail from '@/components/articleDetail.vue';
 
@@ -14,8 +16,8 @@ const { data: article } = (await useFetch(`${api}/common/article?path=${route.pa
 const isLearn = article.value?.type === '2' || article.value?.type === '1';
 
 useServerSeoMeta({
-  title: () => article.value?.title || 'DET Pratice Blog',
-  description: () => article.value?.description || 'DET Pratice Blog',
+  title: () => article.value?.title || t('path.seometa.title'),
+  description: () => article.value?.description || t('path.seometa.description'),
   keywords: () => article.value?.keywords,
 });
 useHead({

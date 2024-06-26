@@ -9,22 +9,22 @@ const user = computed(() => store.user);
 <template>
   <div class="embark_out_wrapper">
     <div class="embark_out">
-      <div class="font1">Accelerate Your Path to</div>
-      <div class="font2">High-Scoring Writing Mastery.</div>
+      <div class="font1">{{ $t('highscorewriting.font1') }}</div>
+      <div class="font2">{{ $t('highscorewriting.font2') }}</div>
       <div v-if="!user.id" class="two_btn_out">
         <div>
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
             :to="localePath(`/login?url=${urlGet('/correct')}`)"
           >
-            Start Now</NuxtLink
+            {{ $t('highscorewriting.Start_Now') }}</NuxtLink
           >
         </div>
       </div>
       <div v-else class="two_btn_out">
         <div>
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/correct')}`)">
-            Start Now
+            {{ $t('highscorewriting.Start_Now') }}
           </NuxtLink>
         </div>
       </div>

@@ -9,7 +9,7 @@ const user = computed(() => store.user);
 <template>
   <div class="embark_out_wrapper">
     <div class="embark_out">
-      <div class="font1">Start Now for Easy Exam Preparation.</div>
+      <div class="font1">{{ $t('easyexam.snfeep') }}</div>
       <!-- <div class="font2">Duolingo English Test !</div> -->
       <div v-if="!user.id" class="two_btn_out">
         <div>
@@ -17,14 +17,14 @@ const user = computed(() => store.user);
             class="common_btn common_btn_hover_bgColor yellow"
             :to="localePath(`/login?url=${urlGet('/exam')}`)"
           >
-            Start Now</NuxtLink
+            {{ $t('easyexam.Start_Now') }}</NuxtLink
           >
         </div>
       </div>
       <div v-else class="two_btn_out">
         <div>
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/exam')}`)">
-            Start Now</NuxtLink
+            {{ $t('easyexam.Start_Now') }}</NuxtLink
           >
         </div>
       </div>

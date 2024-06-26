@@ -156,10 +156,7 @@ const menus = [
               </NuxtLink>
               <NuxtLink :to="localePath('/mock-exam')" class="one_card card3">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon3.svg"
-                    :alt="$t('header.prod3.alt')"
-                  />
+                  <img src="/img/home/product_icon3.svg" :alt="$t('header.prod3.alt')" />
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('header.prod3.title') }}</div>
@@ -170,15 +167,12 @@ const menus = [
               </NuxtLink>
               <NuxtLink :to="localePath('/courses')" class="one_card card4">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon4.svg"
-                    :alt=" $t('header.prod4.alt')"
-                  />
+                  <img src="/img/home/product_icon4.svg" :alt="$t('header.prod4.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title"> {{ $t('header.prod4.title') }}</div>
+                  <div class="title">{{ $t('header.prod4.title') }}</div>
                   <div class="font">
-                      {{ $t('header.prod4.font') }}
+                    {{ $t('header.prod4.font') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -194,14 +188,9 @@ const menus = [
                   v-if="!popoverQuestions"
                   src="/img/learn/down-icon.svg"
                   class="down-icon"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                  :alt="$t('header.commonAlt')"
                 />
-                <el-image
-                  v-else
-                  src="/img/learn/up-icon.svg"
-                  class="down-icon"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" :alt="$t('header.commonAlt')" />
               </div>
             </template>
           </el-popover>
@@ -228,22 +217,19 @@ const menus = [
           </template>
         </el-popover> -->
         <div class="loginbtn">
-          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor">{{
+            $t('header.Get_started')
+          }}</nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn">
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
         <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free common_btn_hover_bgColor">
-          Try for free
+          {{ $t('header.Try_for_free') }}
         </nuxt-link>
       </div>
       <div class="mobile">
-        <img
-          src="/img/menu.svg"
-          class="mobileMenus"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
-          @click="handleOpen"
-        />
+        <img src="/img/menu.svg" class="mobileMenus" :alt="$t('header.commonAlt')" @click="handleOpen" />
       </div>
     </div>
     <el-drawer
@@ -262,7 +248,7 @@ const menus = [
           class="mobile-cancel"
           @click="handleClose"
           src="/img/learn/mobile-close.svg"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
+          :alt="$t('header.commonAlt')"
         />
       </div>
       <div class="asideMenus">
@@ -274,14 +260,9 @@ const menus = [
                 v-if="!isProductsMobile"
                 src="/img/learn/down-mobile.svg"
                 class="down-icon-mobile"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
+                :alt="$t('header.commonAlt')"
               />
-              <el-image
-                v-else
-                src="/img/learn/up-mobile.svg"
-                class="down-icon-mobile"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
-              />
+              <el-image v-else src="/img/learn/up-mobile.svg" class="down-icon-mobile" :alt="$t('header.commonAlt')" />
             </div>
             <nuxt-link
               v-if="isProductsMobile"
@@ -289,7 +270,7 @@ const menus = [
               :to="localePath('/practice')"
               @click="handleClose"
             >
-              Duolingo English Test Practice
+              {{ $t('header.prod1.title') }}
             </nuxt-link>
             <nuxt-link
               v-if="isProductsMobile"
@@ -297,7 +278,7 @@ const menus = [
               :to="localePath('/correction')"
               @click="handleClose"
             >
-              Duolingo English Test Correction Service
+              {{ $t('header.prod2.title') }}
             </nuxt-link>
             <nuxt-link
               v-if="isProductsMobile"
@@ -305,7 +286,7 @@ const menus = [
               :to="localePath('/mock-exam')"
               @click="handleClose"
             >
-              Duolingo English Test Mock
+              {{ $t('header.prod4.title') }}
             </nuxt-link>
             <nuxt-link
               v-if="isProductsMobile"
@@ -313,7 +294,7 @@ const menus = [
               :to="localePath('/courses')"
               @click="handleClose"
             >
-              Duolingo English Test Course
+              {{ $t('header.prod3.title') }}
             </nuxt-link>
           </div>
           <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose">
@@ -323,12 +304,12 @@ const menus = [
       </div>
       <div v-if="user.id" href="/app">
         <div class="loginbtn-mobile">
-          <nuxt-link :href="urlGet('/home')" class="try_free"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free">{{ $t('header.Get_started') }}</nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn-mobile">
         <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free">
-          Try for free
+          {{ $t('header.Try_for_free') }}
         </nuxt-link>
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font">Login</nuxt-link> -->
       </div>

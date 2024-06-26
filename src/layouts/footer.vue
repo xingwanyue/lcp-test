@@ -26,19 +26,19 @@ const prod = {
   name: 'Products',
   list: [
     {
-      name: 'DET Practice',
+      name: t('footer.Products[0]'),
       url: '/practice',
     },
     {
-      name: 'AI Correction Service',
+      name: t('footer.Products[1]'),
       url: '/correction',
     },
     {
-      name: 'DET Mock',
+      name: t('footer.Products[2]'),
       url: '/mock-exam',
     },
     {
-      name: 'Duolingo English Test Course',
+      name: t('footer.Products[3]'),
       url: '/courses',
     },
   ],
@@ -89,19 +89,19 @@ const Company = {
   name: 'Company',
   list: [
     {
-      name: 'About us',
+      name: t('footer.Company[0]'),
       url: '/about-us',
     },
     {
-      name: 'Contact us',
+      name: t('footer.Company[1]'),
       url: '/contact-us',
     },
     {
-      name: 'Terms and Conditions',
+      name: t('footer.Company[2]'),
       url: '/tos',
     },
     {
-      name: 'Privacy Policy',
+      name: t('footer.Company[3]'),
       url: '/privacy-policy',
     },
   ],
@@ -162,7 +162,7 @@ const closeCookie = () => {
         <div
           v-for="(itemin, indexin) in Learn.list"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+          :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
         >
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
@@ -172,7 +172,7 @@ const closeCookie = () => {
         <div
           v-for="(itemin, indexin) in Blog.list"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+          :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
         >
           <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
         </div>
@@ -187,7 +187,7 @@ const closeCookie = () => {
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
         <div class="logo_img_out">
-          <img src="/img/footer/small_logo.svg" alt="DET Practice:The best Duolingo English Test Practice platform" />
+          <img src="/img/footer/small_logo.svg" :alt="$t('footer.alt')" />
         </div>
         <div class="logo_icon_out">
           <span class="Copyright">© 2024 DET Practice</span>
@@ -225,7 +225,7 @@ const closeCookie = () => {
         />
       </div>
       <div class="cookie_contenr">
-        DET Practice uses cookies to improve content based on your browser Settings. For more details, see
+        {{ $t('footer.cookie_contenr') }}
         <NuxtLink :to="localePath(`/cookie`)" class="see_cookei">Cookie Policy</NuxtLink>
       </div>
     </div>

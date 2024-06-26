@@ -6,6 +6,9 @@
   "Pricing": "Harga",
   "Blog": "Blog",
   "header": {
+    "commonAlt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik",
+    "Get_started": "Mulai",
+    "Try_for_free": "Coba Gratis",
     "prod1": {
       "title": "Latihan Tes Bahasa Inggris Duolingo",
       "alt": "Latihan DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
@@ -28,7 +31,12 @@
     }
   },
   "footer": {
-    "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc"
+    "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc",
+    "Produk": ["DET Practice", "Layanan Koreksi AI", "DET Mock", "Kursus Tes Bahasa Inggris Duolingo"],
+    "Perusahaan": ["Tentang Kami", "Hubungi Kami", "Syarat dan Ketentuan", "Kebijakan Privasi"],
+    "show_more": "tampilkan lebih banyak",
+    "alt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik",
+    "cookie_content": "DET Practice menggunakan cookie untuk meningkatkan konten berdasarkan Pengaturan browser Anda. Untuk detail lebih lanjut, lihat"
   },
   "index": {
     "seometa": {
@@ -227,5 +235,73 @@
     "font1": "Mulai perjalanan Anda menuju skor tinggi pada",
     "font2": "Tes Bahasa Inggris Duolingo!",
     "Start_Now": "Mulai Sekarang"
+  },
+  "articleDetail": {
+    "Submitted_successfully": "Berhasil Dikirim",
+    "Home": " Beranda ",
+    "Learn": " Belajar ",
+    "Blog": " Blog ",
+    "Related_Articles": "Artikel Terkait",
+    "Thanks_for_voting": "Terima kasih telah memberikan suara!",
+    "Rate_this_article": "Nilai artikel ini"
+  },
+  "easyexam": {
+    "snfeep": "Mulai Sekarang untuk Persiapan Ujian yang Mudah.",
+    "Start_Now": " Mulai Sekarang"
+  },
+  "highscorewriting": {
+    "font1": "Percepat Jalur Anda menuju",
+    "font2": "Penguasaan Menulis Skor Tinggi.",
+    "Start_Now": "Mulai Sekarang"
+  },
+  "path": {
+    "seometa": {
+      "title": "Blog DET Pratice",
+      "description": "Blog DET Pratice"
+    }
+  },
+  "aboutUs": {
+    "seometa": {
+      "title": "Tentang Kami - DET Practice",
+      "description": ""
+    },
+    "title": "Tentang DET Practice",
+    "oelet": "Tim Pendidikan Bahasa Kami yang Terhormat",
+    "oeletdesc": "Di inti layanan pendidikan bahasa kami terdapat tim pendidik yang berdedikasi, sangat berkualifikasi, dan berpengalaman, masing-masing membawa keahlian dan gairah unik mereka ke garis depan pembelajaran bahasa. Tim kami terdiri dari profesional elit yang tidak hanya mahir dalam bahasa Inggris tetapi juga ahli dalam mempersiapkan siswa untuk tes kemahiran bahasa Inggris utama seperti TOEFL, IELTS, dan Duolingo English Test (DET). Pendidik kami memegang sertifikasi prestisius seperti TESOL, dan sertifikat Pelatihan Guru Bahasa Inggris Cambridge, menunjukkan komitmen mereka untuk memberikan pendidikan bahasa berkualitas tinggi. Mereka memiliki skor tes bahasa yang mengesankan, mencerminkan pemahaman mendalam mereka tentang keterampilan dan strategi yang diperlukan untuk unggul dalam ujian ini. Pengalaman kolektif tim kami mencakup beberapa tahun, selama itu mereka telah mengasah kemampuan mereka untuk melayani kebutuhan belajar yang beragam. Mereka unggul dalam mengidentifikasi kekuatan dan kelemahan individu siswa, memastikan pendekatan pengajaran yang dipersonalisasi yang memaksimalkan hasil belajar. Kemampuan unik ini memungkinkan mereka untuk memberikan bimbingan dan umpan balik yang ditargetkan, membantu siswa menembus hambatan belajar dan dengan cepat meningkatkan kemahiran bahasa mereka. Pendidik kami bukan hanya guru; mereka adalah mentor yang menginspirasi kepercayaan diri dan antusiasme pada siswa mereka. Mereka mendorong lingkungan belajar yang dinamis dan interaktif, membuat perjalanan pembelajaran bahasa menjadi menyenangkan dan efektif. Metode pengajaran mereka terus berkembang, mengintegrasikan teknik dan materi inovatif untuk tetap mengikuti tren terbaru dalam pendidikan bahasa. Keberhasilan siswa kami dalam mencapai tujuan bahasa mereka adalah bukti keahlian, dedikasi, dan keunggulan pengajaran tim kami. Sebagai sebuah unit, mereka mewakili yang terbaik dari pendidikan bahasa, berkomitmen untuk membimbing siswa menuju pencapaian potensi tertinggi mereka dalam kemahiran bahasa Inggris.",
+    "p1title": "Michael Z.",
+    "p1author": "Supervisor Tutor",
+    "p1content1": "Sebagai tokoh utama tim pengajar kami, Michael Z. merupakan puncak dari instruksi bahasa. Dengan pengalaman mengajar yang luas lebih dari satu dekade, Mike memegang semua kredensial dari guru terhormat kami, termasuk TESOL, Sertifikat Pelatihan Guru Bahasa Inggris Cambridge, dan sertifikat lainnya. Kemahiran bahasa yang luar biasa tercermin dari skornya yang mengesankan: 115 pada TOEFL, 8.5 pada IELTS, dan sempurna 150 pada Duolingo English Test. Filosofi mengajar Michael menggabungkan kekuatan tim kami yang beragam, menawarkan pendekatan yang komprehensif dan dinamis terhadap pembelajaran bahasa. Dia terkenal karena kemampuannya untuk memahami dan mengatasi kebutuhan unik setiap siswa, mendorong lingkungan belajar di mana siswa dapat berkembang dan melampaui tujuan mereka. Kelasnya adalah campuran dari standar akademik yang ketat dan pengalaman belajar yang menarik dan interaktif. Di luar mengajar, Michael berperan penting dalam mengembangkan kurikulum dan metode pelatihan terdepan, memastikan kursus kami tetap di garis depan pendidikan bahasa. Dedikasinya terhadap keunggulan dalam mengajar dan komitmennya terhadap kesuksesan siswa menjadikannya pemimpin dan mentor yang tak ternilai baik untuk tim kami maupun siswa kami.",
+    "p2title": "Albert L.",
+    "p2author": "Perancang Kursus",
+    "p2content1": "Dengan skor 8.5 dalam IELTS, Albert memiliki pengalaman mengajar yang luas dalam IELTS, TOEFL, PTE, dan DET. Pengajarannya dikenal karena atmosfernya yang santai dan hidup, membuat belajar menjadi menyenangkan. Pendekatan Albert disesuaikan dengan kebutuhan setiap siswa, memungkinkan peningkatan cepat dalam kemahiran bahasa Inggris dalam waktu singkat. Selain menjadi guru yang luar biasa, Albert juga seorang perancang kursus yang berbakat yang telah menciptakan dan mengembangkan berbagai kursus online dan offline untuk pembelajar bahasa Inggris dari berbagai tingkat dan tujuan. Dia memiliki pemahaman mendalam tentang standar kurikulum dan kriteria penilaian dari berbagai tes bahasa Inggris, dan dia tahu cara merancang kegiatan belajar dan materi yang efektif dan menarik yang dapat membantu siswa menguasai keterampilan dan strategi tes. Albert juga telah berkolaborasi dengan guru dan ahli lainnya untuk meninjau dan meningkatkan kualitas dan relevansi kursus, dan dia telah menerima umpan balik dan pengakuan positif dari baik siswa maupun rekan sejawat. Albert bersemangat tentang menciptakan kursus yang inovatif dan dipersonalisasi yang dapat memenuhi kebutuhan dan minat yang beragam dari pembelajar bahasa Inggris.",
+    "p3title": "Rita T.",
+    "p3author": "Tutor Senior",
+    "p3content1": "Dengan 11 tahun pengalaman mengajar, Rita adalah ahli berpengalaman dalam persiapan dan penelitian Duolingo English Test. Dia adalah guru bahasa Inggris lanjutan yang bersertifikat ATI, memegang Sertifikat Guru Bahasa Inggris Lanjutan TESOL dan Sertifikat Pelatihan Guru Bahasa Inggris Cambridge. Rita memiliki skor yang mengesankan 111 dalam TOEFL dan 140 dalam DET. Pengajarannya ditandai dengan kemampuan untuk menganalisis kebutuhan siswa secara tepat dan memberikan instruksi yang ditargetkan, membantu mereka menembus hambatan dan meningkatkan keterampilan bahasa mereka untuk mencapai skor yang diinginkan dengan cepat. Selain itu, Rita adalah guru yang bersemangat dan antusias yang selalu memotivasi dan menginspirasi siswanya untuk belajar bahasa Inggris dengan percaya diri dan kegembiraan. Dia menggunakan berbagai metode interaktif dan menarik, seperti permainan, peran, debat, dan simulasi, untuk membuat kelasnya menyenangkan dan efektif. Dia juga memberikan umpan balik dan bimbingan yang dipersonalisasi kepada setiap siswa, membantu mereka meningkatkan area lemah mereka dan mengatasi tantangan mereka. Siswa-siswa Rita menyukai kepribadiannya yang hangat dan mendukung, dan mereka sering memuji dia karena sabar, ramah, dan profesional.",
+    "p4title": "Doris W.",
+    "p4author": "Tutor",
+    "p4content1": "Doris, dengan skor 145 dalam DET dan 8.0 dalam IELTS, adalah instruktur Duolingo English Test yang serbaguna dikenal karena pengalaman mengajarnya yang kaya. Dia unggul dalam membantu siswa dari berbagai tingkat dengan cepat mengatasi kesulitan untuk mencapai hasil yang ideal, pernah membantu seorang siswa meningkatkan 30 poin hanya dalam dua minggu. Kelasnya dikenal karena atmosfernya yang hidup dan logika yang jelas, dan gaya mengajarnya yang ketat namun penuh gairah dan bertanggung jawab, membuatnya menjadi favorit di antara berbagai rentang siswa.",
+    "p5title": "Laura K.",
+    "p5author": "Peneliti Tes",
+    "p5content1": "Laura membawa bertahun-tahun pengalaman dalam pelatihan Duolingo, 110 dalam TOEFL, dan 155 dalam DET. Sebagai spesialis dalam penelitian pertanyaan Duolingo, Laura mahir dalam mengajar pertanyaan tes adaptif dan menulis. Dia memiliki pemahaman mendalam tentang teknik dan tren ujian DET, unggul dalam analisis kinerja untuk dengan cepat mengidentifikasi dan meningkatkan potensi siswa."
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "Hubungi Kami - DET Practice"
+    },
+    "checkEmail": "Email harus merupakan alamat email yang valid.",
+    "enterName": "Silakan masukkan nama Anda.",
+    "enterEmail": "Silakan masukkan alamat email Anda.",
+    "entermessage": "Silakan masukkan pesan Anda.",
+    "subsuccess": "Berhasil dikirim",
+    "Contact_Us": "Hubungi Kami",
+    "Questions": "Pertanyaan, laporan bug, umpan balik - kami di sini untuk membantu!",
+    "fill_in": "Isi formulir",
+    "thank": " Terima kasih telah memilih untuk menghubungi kami. Silakan isi formulir kontak ini dan staf kami akan segera menghubungi Anda untuk menangani pertanyaan Anda.",
+    "email": "Email",
+    "emailAdderss": "support@detpractice.com",
+    "Name": "Nama",
+    "Email_Address": "Alamat Email",
+    "Message": "Pesan",
+    "SUBMIT": " KIRIM "
   }
 }
