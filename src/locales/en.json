@@ -581,5 +581,20 @@
       "a1": "Our Service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third-party’s site. We strongly advise you to review the Privacy Policy of every site you visit.",
       "a2": "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
     }
+  },
+  "register": {
+    "peyea": "Please enter your email address.",
+    "Invalid_email": "Invalid email.",
+    "Sign_up": "Sign up",
+    "cya": "Create your free DETPractice account",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "suwg": "Sign up with Google",
+    "ocw": "Or continue with",
+    "Email_address": "Email address",
+    "ywr": "You will receive your activation code by email",
+    "cwe": "Continue with email",
+    "ahaa": "Already have an account?",
+    "Login_here": "Login here",
+    "yec": "you@example.com"
   }
 }

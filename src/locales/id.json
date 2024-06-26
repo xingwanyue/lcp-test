@@ -581,5 +581,20 @@
       "a1": "Layanan kami mungkin berisi tautan ke situs lain yang tidak dioperasikan oleh kami. Jika Anda mengklik tautan pihak ketiga, Anda akan diarahkan ke situs pihak ketiga tersebut. Kami sangat menyarankan Anda untuk meninjau Kebijakan Privasi dari setiap situs yang Anda kunjungi.",
       "a2": "Kami tidak memiliki kontrol atas dan tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik dari situs atau layanan pihak ketiga mana pun."
     }
+  },
+  "register": {
+    "peyea": "Silakan masukkan alamat email Anda.",
+    "Invalid_email": "Email tidak valid.",
+    "Sign_up": "Daftar",
+    "cya": "Buat akun DETPractice gratis Anda",
+    "alt": "DET Practice: Platform Praktik Tes Bahasa Inggris Duolingo terbaik",
+    "suwg": "Daftar dengan Google",
+    "ocw": "Atau lanjutkan dengan",
+    "Email_address": "Alamat email",
+    "ywr": "Anda akan menerima kode aktivasi melalui email",
+    "cwe": "Lanjutkan dengan email",
+    "ahaa": "Sudah memiliki akun?",
+    "Login_here": "Masuk di sini",
+    "yec": "anda@contoh.com"
   }
 }
