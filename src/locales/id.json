@@ -537,5 +537,49 @@
       "right_desc": "Selami penjelasan jawaban komprehensif yang memperdalam pemahaman Anda tentang konsep-konsep penting dan teknik pemecahan masalah. Analisis rinci kami tidak hanya mengarahkan Anda ke jawaban yang benar—mereka memperluas pengetahuan Anda dan meningkatkan efisiensi belajar Anda.",
       "btn": "Jelajahi Wawasan Jawaban"
     }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Kebijakan Privasi - Praktik DET"
+    },
+    "h1": "Kebijakan Privasi",
+    "q1": {
+      "title": "Terakhir diperbarui: 2023-11-20",
+      "a1": "Praktik DET (“kami”, “kita”, atau “milik kami”) mengoperasikan situs web Praktik DET (layanan “Layanan”).",
+      "a2": "Halaman ini memberi tahu Anda tentang kebijakan kami mengenai pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi ketika Anda menggunakan Layanan kami.",
+      "a3": "Kami tidak akan menggunakan atau membagikan informasi Anda dengan siapa pun kecuali seperti yang dijelaskan dalam Kebijakan Privasi ini.",
+      "a4": "Kami menggunakan Informasi Pribadi Anda untuk menyediakan dan meningkatkan Layanan. Dengan menggunakan Layanan, Anda setuju dengan pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Kecuali jika didefinisikan lain dalam Kebijakan Privasi ini, istilah yang digunakan dalam Kebijakan Privasi ini memiliki arti yang sama seperti dalam Syarat dan Ketentuan kami, yang dapat diakses di",
+      "a5": "Pengumpulan dan Penggunaan Informasi",
+      "a6": "Saat menggunakan Layanan kami, kami mungkin meminta Anda untuk memberikan kami informasi yang dapat diidentifikasi secara pribadi yang dapat digunakan untuk menghubungi atau mengidentifikasi Anda. Informasi yang dapat diidentifikasi secara pribadi (“Informasi Pribadi”) mungkin termasuk, namun tidak terbatas pada:",
+      "a7": "• Nama",
+      "a8": "• Alamat email"
+    },
+    "q2": {
+      "title": "Data Log",
+      "a1": "Kami mengumpulkan informasi yang dikirimkan browser Anda setiap kali Anda mengunjungi Layanan kami (“Data Log”). Data Log ini mungkin mencakup informasi seperti alamat Protokol Internet (“IP”) komputer Anda, jenis browser, versi browser, halaman Layanan kami yang Anda kunjungi, waktu dan tanggal kunjungan Anda, waktu yang dihabiskan di halaman tersebut, dan statistik lainnya."
+    },
+    "q3": {
+      "title": "Cookies",
+      "a1": "Cookies adalah file dengan jumlah data kecil, yang mungkin mencakup pengenal unik anonim. Cookies dikirim ke browser Anda dari situs web dan disimpan di hard drive komputer Anda.",
+      "a2": " Kami menggunakan “cookies” untuk mengumpulkan informasi. Anda dapat menginstruksikan browser Anda untuk menolak semua cookies atau untuk menunjukkan kapan cookie sedang dikirim. Namun, jika Anda tidak menerima cookies, Anda mungkin tidak dapat menggunakan beberapa bagian dari Layanan kami."
+    },
+    "q4": {
+      "title": "Penyedia Layanan",
+      "a1": "Kami mungkin mempekerjakan perusahaan dan individu pihak ketiga untuk memfasilitasi Layanan kami, untuk menyediakan Layanan atas nama kami, untuk melakukan layanan terkait Layanan, atau untuk membantu kami dalam menganalisis bagaimana Layanan kami digunakan.",
+      "a2": "Pihak ketiga ini hanya memiliki akses ke Informasi Pribadi Anda untuk melakukan tugas-tugas ini atas nama kami dan diwajibkan untuk tidak mengungkapkan atau menggunakannya untuk tujuan lain."
+    },
+    "q5": {
+      "title": "Keamanan",
+      "a1": "Keamanan Informasi Pribadi Anda penting bagi kami, tetapi ingat bahwa tidak ada metode transmisi melalui Internet, atau metode penyimpanan elektronik yang 100% aman. Meskipun kami berusaha menggunakan sarana yang dapat diterima secara komersial untuk melindungi Informasi Pribadi Anda, kami tidak dapat menjamin keamanannya secara absolut."
+    },
+    "q6": {
+      "title": "Info Pembayaran & Keamanan",
+      "a1": "Untuk mengumpulkan pembayaran atas nama Anda dari pelanggan Anda, dan menyediakan pembayaran kepada Anda, kami, menggunakan Stripe sebagai prosesor pembayaran pihak ketiga, mengumpulkan informasi pembayaran dari Anda, peserta dan pelanggan Anda, vendor Anda, dan pihak lain kepada siapa kami menyediakan pembayaran atas nama Anda dan dari siapa kami mengumpulkan pembayaran atas nama Anda. Informasi ini hanya digunakan untuk mengumpulkan dan menyediakan pembayaran terkait Layanan dan hanya disimpan oleh Stripe. Anda harus meninjau syarat layanan dan kebijakan privasi Stripe, yang tersedia di"
+    },
+    "q7": {
+      "title": "Tautan ke Situs Lain",
+      "a1": "Layanan kami mungkin berisi tautan ke situs lain yang tidak dioperasikan oleh kami. Jika Anda mengklik tautan pihak ketiga, Anda akan diarahkan ke situs pihak ketiga tersebut. Kami sangat menyarankan Anda untuk meninjau Kebijakan Privasi dari setiap situs yang Anda kunjungi.",
+      "a2": "Kami tidak memiliki kontrol atas dan tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik dari situs atau layanan pihak ketiga mana pun."
+    }
   }
 }

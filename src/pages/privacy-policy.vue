@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
-  title: 'Privacy Policy - DET Practice',
+  title: t('privacyPolicy.seometa.title'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/privacy-policy` }],
@@ -13,82 +15,63 @@ useHead({
   <div class="privacyPolicy">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <h1 class="title">Privacy Policy</h1>
+        <h1 class="title">{{ $t('privacyPolicy.h1') }}</h1>
       </div>
     </div>
     <div class="bg">
       <div class="content margin-top0" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Last updated: 2023-11-20</div>
+        <div class="title">{{ $t('privacyPolicy.q1.title') }}</div>
         <div class="content1">
-          DET Pratice (“us”, “we”, or “our”) operates the DET Pratice website (the “Service”).
+          {{ $t('privacyPolicy.q1.a1') }}
           <div class="line-break"></div>
-          This page informs you of our policies regarding the collection, use, and disclosure of Personal Information
-          when you use our Service.
+          {{ $t('privacyPolicy.q1.a2') }}
           <div class="line-break"></div>
-          We will not use or share your information with anyone except as described in this Privacy Policy.
+          {{ $t('privacyPolicy.q1.a3') }}
           <div class="line-break"></div>
-          We use your Personal Information to provide and improve the Service. By using the Service, you agree to the
-          collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy
-          Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at
+          {{ $t('privacyPolicy.q1.a4') }}
           <nuxt-link to="https://detpractice.com" target="_blank" class="website"> https://detpractice.com </nuxt-link>
           <div class="line-break"></div>
-          Information Collection And Use
+          {{ $t('privacyPolicy.q1.a5') }}
           <div class="line-break"></div>
-          While using our Service, we may ask you to provide us with certain personally identifiable information that
-          can be used to contact or identify you. Personally identifiable information (“Personal Information”) may
-          include, but is not limited to:
+          {{ $t('privacyPolicy.q1.a6') }}
           <div class="line-break"></div>
-          • Name
+          {{ $t('privacyPolicy.q1.a7') }}
           <div class="line-break"></div>
-          • Email address
+          {{ $t('privacyPolicy.q1.a8') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Log Data</div>
+        <div class="title">{{ $t('privacyPolicy.q2.title') }}</div>
         <div class="content1">
-          We collect information that your browser sends whenever you visit our Service (“Log Data”). This Log Data may
-          include information such as your computer’s Internet Protocol (“IP”) address, browser type, browser version,
-          the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and
-          other statistics.
+          {{ $t('privacyPolicy.q2.a1') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Cookies</div>
+        <div class="title">{{ $t('privacyPolicy.q3.title') }}</div>
         <div class="content1">
-          Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are
-          sent to your browser from a website and stored on your computer’s hard drive.
+          {{ $t('privacyPolicy.q3.a1') }}
           <div class="line-break"></div>
-          We use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate
-          when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions
-          of our Service.
+          {{ $t('privacyPolicy.q3.a2') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Service Providers</div>
+        <div class="title">{{ $t('privacyPolicy.q4.title') }}</div>
         <div class="content1">
-          We may employ third-party companies and individuals to facilitate our Service, to provide the Service on our
-          behalf, to perform Service-related services, or to assist us in analyzing how our Service is used.
+          {{ $t('privacyPolicy.q4.a1') }}
           <div class="line-break"></div>
-          These third parties have access to your Personal Information only to perform these tasks on our behalf and are
-          obligated not to disclose or use it for any other purpose.
+          {{ $t('privacyPolicy.q4.a2') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Security</div>
+        <div class="title">{{ $t('privacyPolicy.q5.title') }}</div>
         <div class="content1">
-          The security of your Personal Information is important to us, but remember that no method of transmission over
-          the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable
-          means to protect your Personal Information, we cannot guarantee its absolute security.
+          {{ $t('privacyPolicy.q5.a1') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Payment Info & Security</div>
+        <div class="title">{{ $t('privacyPolicy.q6.title') }}</div>
         <div class="content1">
-          In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe
-          as a third-party payment processor, collect payment information from you, your attendees and customers, your
-          vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on
-          your behalf. This information is used solely to collect and provide payments related to the Services and is
-          only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at
+          {{ $t('privacyPolicy.q6.a1') }}
           <nuxt-link to="https://stripe.com/us/legal" target="_blank" class="website">
             https://stripe.com/us/legal
           </nuxt-link>
@@ -99,14 +82,11 @@ useHead({
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Links To Other Sites</div>
+        <div class="title">{{ $t('privacyPolicy.q7.title') }}</div>
         <div class="content1">
-          Our Service may contain links to other sites that are not operated by us. If you click on a third-party link,
-          you will be directed to that third-party’s site. We strongly advise you to review the Privacy Policy of every
-          site you visit.
+          {{ $t('privacyPolicy.q7.a1') }}
           <div class="line-break"></div>
-          We have no control over and assume no responsibility for the content, privacy policies, or practices of any
-          third-party sites or services.
+          {{ $t('privacyPolicy.q7.a2') }}
         </div>
       </div>
     </div>

@@ -537,5 +537,49 @@
       "right_desc": "Delve into comprehensive answer explanations that deepen your understanding of essential concepts and problem-solving techniques. Our detailed analyses don’t just guide you to the correct answers—they expand your knowledge and boost your study efficiency.",
       "btn": "Explore Answer Insights"
     }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Privacy Policy - DET Practice"
+    },
+    "h1": "Privacy Policy",
+    "q1": {
+      "title": "Last updated: 2023-11-20",
+      "a1": "DET Pratice (“us”, “we”, or “our”) operates the DET Pratice website (the “Service”).",
+      "a2": "This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service.",
+      "a3": "We will not use or share your information with anyone except as described in this Privacy Policy.",
+      "a4": "We use your Personal Information to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at",
+      "a5": "Information Collection And Use",
+      "a6": "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information (“Personal Information”) may include, but is not limited to:",
+      "a7": "• Name",
+      "a8": "• Email address"
+    },
+    "q2": {
+      "title": "Log Data",
+      "a1": "We collect information that your browser sends whenever you visit our Service (“Log Data”). This Log Data may include information such as your computer’s Internet Protocol (“IP”) address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics."
+    },
+    "q3": {
+      "title": "Cookies",
+      "a1": "Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your computer’s hard drive.",
+      "a2": " We use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service."
+    },
+    "q4": {
+      "title": "Service Providers",
+      "a1": "We may employ third-party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services, or to assist us in analyzing how our Service is used.",
+      "a2": "These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose."
+    },
+    "q5": {
+      "title": "Security",
+      "a1": "The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security."
+    },
+    "q6": {
+      "title": "Payment Info & Security",
+      "a1": "In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees and customers, your vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on your behalf. This information is used solely to collect and provide payments related to the Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at"
+    },
+    "q7": {
+      "title": "Links To Other Sites",
+      "a1": "Our Service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third-party’s site. We strongly advise you to review the Privacy Policy of every site you visit.",
+      "a2": "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
+    }
   }
 }
