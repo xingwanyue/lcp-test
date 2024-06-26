@@ -345,5 +345,105 @@
       "title": "Perubahan pada Kebijakan Cookie Kami",
       "a1": "Kami dapat memperbarui Kebijakan Cookie kami dari waktu ke waktu. Kami akan memberitahu Anda tentang perubahan apa pun dengan memposting Kebijakan Cookie baru di halaman ini."
     }
+  },
+  "correction": {
+    "seometa": {
+      "title": "DET Practice - Layanan Koreksi AI untuk Tes Duolingo Anda",
+      "description": "Layanan koreksi yang disediakan oleh \"AI + Guru\". Dapatkan umpan balik personal dari para ahli bahasa untuk meningkatkan respons dan strategi Anda demi skor DET yang lebih tinggi."
+    },
+    "h1": "Temukan Layanan Koreksi AI Terbaik untuk Tes Duolingo",
+    "desc": "Tingkatkan esai Anda dengan layanan koreksi 'AI + Guru' kami. Dapatkan umpan balik terperinci berdasarkan standar penilaian resmi segera setelah pengajuan.",
+    "alt": "DET Practice: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+    "learners_have": "{number} peserta didik telah meningkatkan penulisan mereka dengan layanan koreksi kami.",
+    "Review_Now": "Tinjau Sekarang",
+    "Correct_Now": "Koreksi Sekarang",
+    "Get_Scored_Now": "Dapatkan Skor Sekarang",
+    "Enhance_Now": "Tingkatkan Sekarang",
+    "Begin_Polishing": "Mulai Poles",
+    "h2_1": {
+      "h2": "Permintaan koreksi",
+      "right_desc": "Di halaman latihan Berbicara dan Menulis, Anda dapat langsung mengajukan layanan koreksi."
+    },
+    "h2_2": {
+      "h2": "Penilaian Komprehensif",
+      "right_desc": "Mengikuti persyaratan Tes Bahasa Inggris Duolingo resmi untuk secara akurat menangkap keterampilan menulis dan menyediakan hasil penilaian yang komprehensif."
+    },
+    "h2_3": {
+      "h2": "Koreksi Menulis",
+      "right_desc": "Secara instan mengidentifikasi dan memahami kesalahan dalam kosakata dan tata bahasa untuk meningkatkan keterampilan menulis Anda."
+    },
+    "h2_4": {
+      "h2": "Bimbingan Guru",
+      "right_desc": "Tingkatkan penulisan Anda dengan analisis ahli yang disesuaikan dengan kriteria DET, menunjukkan area untuk perbaikan guna meningkatkan karya Anda."
+    },
+    "h2_5": {
+      "h2": "Pemolesan Teks Asli",
+      "right_desc": "Tingkatkan setiap kata dan kalimat; sempurnakan struktur dan gaya untuk komposisi yang terdistingsi dan berperingkat tinggi."
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "Praktik DET - Kuasai Berbicara dan Menulis dengan Panduan Tes Bahasa Inggris Duolingo",
+      "description": "Buka potensi Anda dengan Panduan Tes Bahasa Ingis Duolingo kami. Menyelami keunggulan berbicara dan menulis dengan strategi komprehensif, tips ahli, dan praktik DET yang terbaru."
+    },
+    "article1": {
+      "title": "Fitur Utama Keunggulan Ujian Berbicara DET:",
+      "list": [
+        { "content": "• Eksplorasi mendalam semua jenis tugas berbicara DET" },
+        { "content": "• Strategi praktis untuk menghadapi setiap tugas berbicara" },
+        { "content": "• Latihan interaktif untuk meningkatkan kejelasan, kelancaran, dan kepercayaan diri berbicara" },
+        { "content": "• Panduan ahli tentang pengucapan, nada, dan performa keseluruhan" },
+        { "content": "• Sampel ucapan nyata dan analisis yang menunjukkan strategi sukses" },
+        { "content": "Jawaban demo audio untuk memberikan contoh yang jelas tentang respons efektif" },
+        { "content": "• Pendekatan belajar yang dipersonalisasi untuk berbagai tingkat kemahiran" },
+        { "content": "• Fokus pada kosakata dan tata bahasa esensial untuk komunikasi efektif" },
+        { "content": "• Diperbarui untuk memasukkan perubahan terbaru dalam format berbicara DET" }
+      ]
+    },
+    "article2": {
+      "title": "Fitur Utama Keunggulan Ujian Menulis DET:",
+      "list": [
+        { "content": "• Cakupan komprehensif tugas menulis DET dengan analisis dan contoh" },
+        { "content": "• Pedoman langkah demi langkah untuk merencanakan dan menulis esai yang luar biasa" },
+        { "content": "• Latihan terarah untuk mengasah keterampilan menulis spesifik DET" },
+        { "content": "• Tips ahli untuk meningkatkan kejelasan, koherensi, dan kecanggihan" },
+        { "content": "• Esai sampel yang dianotasi menunjukkan strategi efektif dan kesalahan umum" },
+        { "content": "• Jalur belajar yang dapat disesuaikan untuk berbagai tingkat kemahiran" },
+        { "content": "• Penekanan pada tata bahasa dan kosakata esensial untuk sukses DET" },
+        { "content": "• Diperbarui untuk mencerminkan tren format menulis DET terbaru" }
+      ]
+    },
+    "contaceUsList": [
+      {
+        "font": "Pilih Panduan Anda",
+        "tip": "Pilih Panduan Berbicara atau Menulis untuk persiapan ujian yang ditargetkan.",
+        "btn": "Beli Panduan Berbicara",
+        "btn1": "Beli Panduan Menulis"
+      },
+      {
+        "font": "Unduh Segera",
+        "tip": "Dapatkan akses ke panduan segera setelah pembelian.",
+        "btn": "Unduh Panduan Berbicara",
+        "btn1": "Unduh Panduan Menulis"
+      },
+      {
+        "font": "Sampel Audio Berbicara",
+        "tip": "Jelajahi jawaban demo audio berbicara tambahan.",
+        "btn1": "Akses Sampel Audio"
+      }
+    ],
+    "pagefont": {
+      "h1": "Keunggulan Ujian Berbicara DET: Panduan Komprehensif",
+      "do": "$",
+      "Buy_Now": "Beli Sekarang",
+      "alt": "Praktik DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+      "DET_Writing": "Keunggulan Ujian Menulis DET: Panduan Komprehensif",
+      "How_to": "Bagaimana cara mendapatkan panduan?",
+      "spa": "Audio latihan berbicara",
+      "tips": "Terima kasih atas minat Anda pada Panduan Berbicara/Menulis kami! Harap dicatat bahwa ini adalah produk virtual. Setelah dibeli dan diunduh, pengiriman produk dianggap selesai, dan umumnya tidak dapat dikembalikan. Mohon konfirmasi sebelum melakukan pembelian.",
+      "orange_title": "Pendidik Bahasa Elit",
+      "team_desc": "Tim pendidik bahasa kami yang terkemuka, dengan kualifikasi terhormat seperti TESOL dan Sertifikat pengajaran lainnya, membawa pengalaman yang kaya dalam mempersiapkan siswa untuk tes bahasa Inggris utama seperti TOEFL, IELTS, dan Tes Bahasa Inggris Duolingo (DET). Terkenal karena keterampilan bahasa yang mengesankan, pendekatan pengajaran yang dipersonalisasi, dan metode inovatif, mereka berkomitmen untuk membantu setiap siswa mencapai potensi tertinggi mereka dalam kemahiran bahasa Inggris.",
+      "Elite_Language_Educators": "Pendidik Bahasa Elit"
+    }
   }
 }

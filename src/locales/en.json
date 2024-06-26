@@ -345,5 +345,105 @@
       "title": "Changes to our Cookie Policy",
       "a1": "We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page."
     }
+  },
+  "correction": {
+    "seometa": {
+      "title": "DET Practice - AI Correction Service for your Duolingo Test",
+      "description": "Correction service provided by \"AI + Teachers\". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores."
+    },
+    "h1": "Discover the Best AI Correction Service for Duolingo Test",
+    "desc": " Enhance your essays with our 'AI + Teachers' correction service. Get detailed feedback based on official scoring standards quickly after submission.",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "learners_have": "{number} learners have improved their writing with our correction service.",
+    "Review_Now": "Review Now",
+    "Correct_Now": "Correct Now",
+    "Get_Scored_Now": "Get Scored Now",
+    "Enhance_Now": "Enhance Now",
+    "Begin_Polishing": "Begin Polishing",
+    "h2_1": {
+      "h2": "Requests for corrections",
+      "right_desc": "On the Speaking and Writing practice pages, you can apply for the correction service directly."
+    },
+    "h2_2": {
+      "h2": "Comprehensive Assessment",
+      "right_desc": " Follows the official Duolingo English Test requirements to accurately capture writing skills and provide comprehensive assessment results."
+    },
+    "h2_3": {
+      "h2": "Writing Correction",
+      "right_desc": "Instantly spot and understand errors in vocabulary and grammar to enhance your writing skills."
+    },
+    "h2_4": {
+      "h2": "Teacher Guidance",
+      "right_desc": "Enhance your writing with expert analysis tailored to DET criteria, pinpointing areas for improvement to elevate your work."
+    },
+    "h2_5": {
+      "h2": "Original Text Polishing",
+      "right_desc": "Elevate every word and sentence;refine structure and style for a distinguished and high-scoring composition."
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "DET Practice - Master Speaking and Writing with the Duolingo English Test Guide",
+      "description": "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice."
+    },
+    "article1": {
+      "title": "Key Features of DET Speaking Exam Excellence:",
+      "list": [
+        { "content": "• In-depth exploration of all DET speaking task types" },
+        { "content": "• Practical strategies for approaching each speaking task" },
+        { "content": "• Interactive exercises to improve speech clarity, fluency, and confidence" },
+        { "content": "• Expert guidance on pronunciation, tone, and overall performance" },
+        { "content": "• Real-life speech samples and analyses demonstrating successful strategies" },
+        { "content": "Audio demo answers to provide clear examples of effective responses" },
+        { "content": "• Personalized learning approaches for different proficiency levels" },
+        { "content": "• Focus on essential vocabulary and grammar for effective communication" },
+        { "content": "• Updated to incorporate the latest changes in the DET speaking format" }
+      ]
+    },
+    "article2": {
+      "title": "Key Features of DET Writing Exam Excellence:",
+      "list": [
+        { "content": "• Comprehensive coverage of DET writing tasks with analysis and examples" },
+        { "content": "• Step-by-step guidelines for planning and writing exceptional essays" },
+        { "content": "• Targeted exercises to hone DET-specific writing skills" },
+        { "content": "• Expert tips to improve clarity, coherence, and sophistication" },
+        { "content": "• Annotated sample essays showcasing effective strategies and common pitfalls" },
+        { "content": "• Adaptable learning paths for various proficiency levels" },
+        { "content": "• Emphasis on essential grammar and vocabulary for DET success" },
+        { "content": "• Updated to reflect the latest DET writing format trends" }
+      ]
+    },
+    "contaceUsList": [
+      {
+        "font": "Select Your Guide",
+        "tip": "Choose the Speaking or Writing Guide for targeted exam prep.",
+        "btn": "Buy Speaking Guide",
+        "btn1": "Buy Writing Guide"
+      },
+      {
+        "font": "Instant Download",
+        "tip": "Gain access to the guide immediately after purchase.",
+        "btn": "Download Speaking Guide",
+        "btn1": "Download Writing Guide"
+      },
+      {
+        "font": "Speaking Audio Samples",
+        "tip": "Explore the supplementary speaking audio demo answers.",
+        "btn1": "Access Audio Samples"
+      }
+    ],
+    "pagefont": {
+      "h1": "DET Speaking Exam Excellence: A Comprehensive Guide",
+      "do": "$",
+      "Buy_Now": "Buy Now",
+      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "DET_Writing": "DET Writing Exam Excellence: A Comprehensive Guide",
+      "How_to": "How to get the guide?",
+      "spa": "Speaking practice audio",
+      "tips": "Thank you for your interest in our Speaking/Writing Guide! Please note that this is a virtual product. Once purchased and downloaded, the product delivery is considered complete, and it is generally non-refundable. Please confirm before making a purchase.",
+      "orange_title": "Elite Language Educators",
+      "team_desc": "Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS, and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching approaches, and innovative methods, they are committed to helping each student achieve their highest potential in English proficiency.",
+      "Elite_Language_Educators": "Elite Language Educators"
+    }
   }
 }

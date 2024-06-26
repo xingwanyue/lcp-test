@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { useStore } from '@/store';
 import { staticUrlGet, domain, cdn } from '@/utils';
 useServerSeoMeta({
-  title: 'DET Practice - Master Speaking and Writing with the Duolingo English Test Guide',
-  description:
-    'Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice.',
+  title: t('courses.seometa.title'),
+  description: t('courses.seometa.description'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/courses` }],
@@ -24,7 +25,6 @@ const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
       speakData.price = speakData.vipPrice;
       writeData.price = writeData.vipPrice;
     }
-    console.log(speakData);
     return { speakData, writeData };
   },
 })) as any;
@@ -39,80 +39,63 @@ const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
 })) as any;
 
 const article1 = ref({
-  title: 'Key Features of DET Speaking Exam Excellence:',
+  title: t('courses.article1.title'),
   list: [
     {
-      smallTitle: '• Comprehensive Exam Breakdown: ',
-      content: '• In-depth exploration of all DET speaking task types',
+      content: t('courses.article1.list[0].content'),
     },
     {
-      smallTitle: '• Effective Speaking Strategies: ',
-      content: '• Practical strategies for approaching each speaking task',
+      content: t('courses.article1.list[1].content'),
     },
     {
-      smallTitle: '• Interactive Speaking Exercises: ',
-      content: '• Interactive exercises to improve speech clarity, fluency, and confidence',
+      content: t('courses.article1.list[2].content'),
     },
     {
-      smallTitle: '• Expert Insights:',
-      content: '• Expert guidance on pronunciation, tone, and overall performance',
+      content: t('courses.article1.list[3].content'),
     },
     {
-      smallTitle: '• Real-Life Speaking Examples: ',
-      content: '• Real-life speech samples and analyses demonstrating successful strategies',
+      content: t('courses.article1.list[4].content'),
     },
     {
-      smallTitle: '• Personalized Learning Approaches: ',
-      content: 'Audio demo answers to provide clear examples of effective responses',
+      content: t('courses.article1.list[5].content'),
     },
     {
-      smallTitle: '• Self-Assessment Tools: ',
-      content: '• Personalized learning approaches for different proficiency levels',
+      content: t('courses.article1.list[6].content'),
     },
     {
-      smallTitle: '• Focused Language Development: ',
-      content: '• Focus on essential vocabulary and grammar for effective communication',
+      content: t('courses.article1.list[7].content'),
     },
     {
-      smallTitle: '• Up-to-date and Relevant: ',
-      content: '• Updated to incorporate the latest changes in the DET speaking format',
+      content: t('courses.article1.list[8].content'),
     },
   ],
 });
 const article2 = ref({
-  title: 'Key Features of DET Writing Exam Excellence:',
+  title: t('courses.article2.title'),
   list: [
     {
-      smallTitle: '• All-encompassing Content: ',
-      content: '• Comprehensive coverage of DET writing tasks with analysis and examples',
+      content: t('courses.article2.list[0].content'),
     },
     {
-      smallTitle: '• Step-by-Step Approaches: ',
-      content: '• Step-by-step guidelines for planning and writing exceptional essays',
+      content: t('courses.article2.list[1].content'),
     },
     {
-      smallTitle: '• Practical Writing Exercises: ',
-      content: '• Targeted exercises to hone DET-specific writing skills',
+      content: t('courses.article2.list[2].content'),
     },
     {
-      smallTitle: '• Expert Writing Tips: ',
-      content: '• Expert tips to improve clarity, coherence, and sophistication',
+      content: t('courses.article2.list[3].content'),
     },
     {
-      smallTitle: '• Sample Essays with Analysis: ',
-      content: '• Annotated sample essays showcasing effective strategies and common pitfalls',
+      content: t('courses.article2.list[4].content'),
     },
     {
-      smallTitle: '• Personalized Learning Pathways: ',
-      content: '• Adaptable learning paths for various proficiency levels',
+      content: t('courses.article2.list[5].content'),
     },
     {
-      smallTitle: '• Evaluation Techniques: ',
-      content: '• Emphasis on essential grammar and vocabulary for DET success',
+      content: t('courses.article2.list[6].content'),
     },
     {
-      smallTitle: '• Grammar and Vocabulary Focus: ',
-      content: '• Updated to reflect the latest DET writing format trends',
+      content: t('courses.article2.list[7].content'),
     },
   ],
 });
@@ -120,26 +103,26 @@ const article2 = ref({
 const contaceUsList = ref([
   {
     icon: '/img/guid/wallet.svg',
-    font: 'Select Your Guide',
-    tip: 'Choose the Speaking or Writing Guide for targeted exam prep.',
-    btn: 'Buy Speaking Guide',
-    btn1: 'Buy Writing Guide',
+    font: t('courses.contaceUsList[0].font'),
+    tip: t('courses.contaceUsList[0].tip'),
+    btn: t('courses.contaceUsList[0].btn'),
+    btn1: t('courses.contaceUsList[0].btn1'),
     id: '1',
   },
   {
     icon: '/img/guid/download.svg',
-    font: 'Instant Download',
-    tip: 'Gain access to the guide immediately after purchase.',
-    btn: 'Download Speaking Guide',
-    btn1: 'Download Writing Guide',
+    font: t('courses.contaceUsList[1].font'),
+    tip: t('courses.contaceUsList[1].tip'),
+    btn: t('courses.contaceUsList[1].btn'),
+    btn1: t('courses.contaceUsList[1].btn1'),
     id: '2',
   },
   {
     icon: '/img/guid/book.svg',
-    font: 'Speaking Audio Samples',
-    tip: 'Explore the supplementary speaking audio demo answers.',
+    font: t('courses.contaceUsList[2].font'),
+    tip: t('courses.contaceUsList[2].tip'),
     btn: '',
-    btn1: 'Access Audio Samples',
+    btn1: t('courses.contaceUsList[2].btn1'),
     id: '3',
   },
 ]);
@@ -167,16 +150,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
     <div class="guide_wrapper_out">
       <div class="guide_wrapper">
         <div class="one_article">
-          <h1 class="title">DET Speaking Exam Excellence: A Comprehensive Guide</h1>
+          <h1 class="title">{{ $t('courses.pagefont.h1') }}</h1>
           <div class="article_out">
             <div class="left_img">
               <!-- <img src="/img/guid/guide1.png" /> -->
-              <el-image
-                v-show="isLoad"
-                :src="guide1"
-                alt="DET Speaking Exam Excellence: A Comprehensive Guide"
-                @load="onLoad"
-              />
+              <el-image v-show="isLoad" :src="guide1" :alt="$t('courses.pagefont.h1')" @load="onLoad" />
               <el-skeleton v-show="!isLoad" style="width: 100%; height: 100%" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -184,14 +162,12 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
               </el-skeleton>
             </div>
             <div class="right_article">
-              <!-- <div class="one_article_title">{{ article1.title }}</div> -->
               <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
-                <!-- <span class="small_title">{{ item.smallTitle }}</span> -->
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
-                  <span class="tag">$</span>
+                  <span class="tag">{{ $t('courses.pagefont.do') }}</span>
                   <span class="price_num">{{ pricedata?.speakData?.price / 100 || 0 }}</span>
                 </div>
                 <div
@@ -199,21 +175,15 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                   class="btn common_btn_hover_bgColor"
                   @click="buyMembership(pricedata?.speakData?.id)"
                 >
-                  <div class="font">Buy Now</div>
+                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img
-                      src="/img/products/white_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
                   </div>
                 </div>
                 <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-                  <div class="font">Buy Now</div>
+                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img
-                      src="/img/products/white_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -221,16 +191,13 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
           </div>
         </div>
         <div class="one_article">
-          <h1 class="title">DET Writing Exam Excellence: A Comprehensive Guide</h1>
+          <div class="title">
+            {{ $t('courses.pagefont.DET_Writing') }}
+          </div>
           <div class="article_out">
             <div class="left_img">
               <!-- <img src="/img/guid/guide2.png" /> -->
-              <el-image
-                v-show="isLoad2"
-                :src="guide2"
-                alt="DET Writing Exam Excellence: A Comprehensive Guide"
-                @load="onLoad2"
-              />
+              <el-image v-show="isLoad2" :src="guide2" :alt="$t('courses.pagefont.DET_Writing')" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 100%" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -240,12 +207,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
             <div class="right_article">
               <!-- <div class="one_article_title">{{ article2.title }}</div> -->
               <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
-                <!-- <span class="small_title">{{ item.smallTitle }}</span> -->
                 <span class="content">{{ item.content }}</span>
               </div>
               <div class="buy_btn">
                 <div class="price">
-                  <span class="tag">$</span>
+                  <span class="tag">{{ $t('courses.pagefont.do') }}</span>
                   <span class="price_num">{{ pricedata?.writeData?.price / 100 || 0 }}</span>
                 </div>
                 <div
@@ -253,21 +219,15 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                   class="btn common_btn_hover_bgColor"
                   @click="buyMembership(pricedata?.writeData?.id)"
                 >
-                  <div class="font">Buy Now</div>
+                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img
-                      src="/img/products/white_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
                   </div>
                 </div>
                 <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-                  <div class="font">Buy Now</div>
+                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img
-                      src="/img/products/white_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -279,17 +239,13 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
 
     <div class="part3_wrapper">
       <div class="part3">
-        <div class="title">How to get the guide?</div>
+        <div class="title">{{ $t('courses.pagefont.How_to') }}</div>
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon">
-              <img :src="`${item.icon}`" alt="DET Practice:The best Duolingo English Test Practice platform" />
+              <img :src="`${item.icon}`" :alt="$t('courses.pagefont.alt')" />
             </div>
-            <img
-              src="/img/guid/Double_Right_Arrow.svg"
-              class="Double_Right_Arrow"
-              alt="DET Practice:The best Duolingo English Test Practice platform"
-            />
+            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" :alt="$t('courses.pagefont.alt')" />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <template v-if="item.id === '1'">
@@ -350,7 +306,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
               </template>
             </template>
             <template v-if="item.id === '3'">
-              <div class="btnNone">Speaking practice audio</div>
+              <div class="btnNone">{{ $t('courses.pagefont.spa') }}</div>
               <template v-if="user.id">
                 <template v-if="user.speak === 1">
                   <NuxtLink class="btn" :to="localePath(`/listen`)">
@@ -372,24 +328,18 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
           </div>
         </div>
         <div class="tips">
-          Thank you for your interest in our Speaking/Writing Guide! Please note that this is a virtual product. Once
-          purchased and downloaded, the product delivery is considered complete, and it is generally non-refundable.
-          Please confirm before making a purchase.
+          {{ $t('courses.pagefont.tips') }}
         </div>
       </div>
     </div>
     <div class="orange_block_wrapper">
       <div class="orange_block">
-        <div class="orange_title">Elite Language Educators</div>
+        <div class="orange_title">{{ $t('courses.pagefont.orange_title') }}</div>
         <div class="team_desc">
-          Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching
-          Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS,
-          and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching
-          approaches, and innovative methods, they are committed to helping each student achieve their highest potential
-          in English proficiency.
+          {{ $t('courses.pagefont.team_desc') }}
         </div>
         <div class="team_img">
-          <img :src="team_bg" alt="Elite Language Educators" />
+          <img :src="team_bg" :alt="$t('courses.pagefont.Elite_Language_Educators')" />
         </div>
       </div>
     </div>
