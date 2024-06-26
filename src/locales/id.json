@@ -445,5 +445,37 @@
       "team_desc": "Tim pendidik bahasa kami yang terkemuka, dengan kualifikasi terhormat seperti TESOL dan Sertifikat pengajaran lainnya, membawa pengalaman yang kaya dalam mempersiapkan siswa untuk tes bahasa Inggris utama seperti TOEFL, IELTS, dan Tes Bahasa Inggris Duolingo (DET). Terkenal karena keterampilan bahasa yang mengesankan, pendekatan pengajaran yang dipersonalisasi, dan metode inovatif, mereka berkomitmen untuk membantu setiap siswa mencapai potensi tertinggi mereka dalam kemahiran bahasa Inggris.",
       "Elite_Language_Educators": "Pendidik Bahasa Elit"
     }
+  },
+  "forget": {
+    "Please_enter": "Silakan masukkan alamat email Anda",
+    "Invalid_email": "Email tidak valid.",
+    "t1": "Lupa Kata Sandi?",
+    "t2": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
+    "Enter_your_email": "Masukkan email Anda",
+    "desc": "Kami akan mengirimkan email kepada Anda dengan kode reset",
+    "alt": "Praktik DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+    "Send_reset_code": "Kirim kode reset",
+    "Back_to_login": "Kembali ke login"
+  },
+  "listen": {
+    "Speaking_practice_audio": "Audio latihan berbicara",
+    "alt": "Praktik DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik"
+  },
+  "login": {
+    "peyea": "Silakan masukkan alamat email Anda.",
+    "ie": "Email tidak valid.",
+    "peyp": "Silakan masukkan kata sandi Anda.",
+    "Welcome_back": "Selamat datang kembali",
+    "h1": "Masuk untuk berlatih",
+    "Login_with_Google": "Masuk dengan Google",
+    "Or_continue_with": "Atau lanjutkan dengan",
+    "Email_address": "Alamat email",
+    "youexam": "anda@contoh.com",
+    "Password": "Kata Sandi",
+    "alt": "Praktik DET: Platform latihan Tes Bahasa Inggris Duolingo terbaik",
+    "Login": "Masuk",
+    "Forgot_password": "Lupa kata sandi?",
+    "Dont_have_an_account": "Tidak memiliki akun?",
+    "Sign_up_here": "Daftar di sini"
   }
 }

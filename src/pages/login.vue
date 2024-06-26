@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
@@ -39,18 +41,18 @@ const submit = async () => {
   errShow.value = false;
   if (!email) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = t('login.peyea');
     return false;
   }
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email)) {
     errShow.value = true;
-    errMessage.value = 'Invalid email.';
+    errMessage.value = t('login.ie');
     return false;
   }
   if (!password) {
     errShow.value = true;
-    errMessage.value = 'Please enter your password.';
+    errMessage.value = t('login.peyp');
     return false;
   }
   loading.value = true;
@@ -83,25 +85,31 @@ const googleLogin = async () => {
 <template>
   <div class="login">
     <div class="left">
-      <div class="t1">Welcome back</div>
-      <h1 class="t2">Login to practice</h1>
+      <div class="t1">{{ $t('login.Welcome_back') }}</div>
+      <h1 class="t2">{{ $t('login.h1') }}</h1>
       <div class="loginGoogle" @click="googleLogin">
-        <img src="/img/login/google_logo.svg" alt="Login with Google" />
-        <span style="margin-left: 16px">Login with Google</span>
+        <img src="/img/login/google_logo.svg" :alt="$t('login.Login_with_Google')" />
+        <span style="margin-left: 16px">{{ $t('login.Login_with_Google') }}</span>
       </div>
-      <el-divider class="fengeline"><span>Or continue with</span></el-divider>
+      <el-divider class="fengeline"
+        ><span>{{ $t('login.Or_continue_with') }}</span></el-divider
+      >
       <el-form ref="ruleFormRef" :model="formData" size="default" class="login-form" @submit.native.prevent>
         <el-form-item prop="email" label="">
-          Email address
-          <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
+          {{ $t('login.Email_address') }}
+          <el-input v-model="formData.email" :placeholder="$t('login.youexam')"> </el-input>
         </el-form-item>
         <el-form-item prop="password" label="">
-          Password
-          <el-input v-model="formData.password" :type="pwdShow ? 'text' : 'password'" placeholder="Password">
+          {{ $t('login.Password') }}
+          <el-input
+            v-model="formData.password"
+            :type="pwdShow ? 'text' : 'password'"
+            :placeholder="$t('login.Password')"
+          >
             <template #suffix>
               <img
                 :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
+                :alt="$t('login.alt')"
                 @click="pwdShow = !pwdShow"
               />
             </template>
@@ -109,27 +117,27 @@ const googleLogin = async () => {
         </el-form-item>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
           <div v-if="errShow" class="err-message">
-            <img
-              src="/img/login/errIcon.svg"
-              class="errIcon"
-              alt="DET Practice:The best Duolingo English Test Practice platform"
-            />
+            <img src="/img/login/errIcon.svg" class="errIcon" :alt="$t('login.alt')" />
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
             <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-              Login
+              {{ $t('login.Login') }}
             </el-button>
           </div>
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
             <div class="goforget">
-              <NuxtLink :to="localePath('/forget')" style="color: #f66442; cursor: pointer">Forgot password?</NuxtLink>
+              <NuxtLink :to="localePath('/forget')" style="color: #f66442; cursor: pointer">{{
+                $t('login.Forgot_password')
+              }}</NuxtLink>
             </div>
             <div class="goregister">
-              Don't have an account?
-              <NuxtLink :to="localePath('/register')" style="color: #f66442; cursor: pointer">Sign up here</NuxtLink>
+              {{ $t('login.Dont_have_an_account') }}
+              <NuxtLink :to="localePath('/register')" style="color: #f66442; cursor: pointer">{{
+                $t('login.Sign_up_here')
+              }}</NuxtLink>
             </div>
           </div>
         </el-form-item>

@@ -445,5 +445,37 @@
       "team_desc": "Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS, and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching approaches, and innovative methods, they are committed to helping each student achieve their highest potential in English proficiency.",
       "Elite_Language_Educators": "Elite Language Educators"
     }
+  },
+  "forget": {
+    "Please_enter": "Please enter your email address",
+    "Invalid_email": "Invalid email.",
+    "t1": "Forgot Password?",
+    "t2": "Please enter the email used to create your account",
+    "Enter_your_email": "Enter your email",
+    "desc": "We'll send you an email with the reset code",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Send_reset_code": "Send reset code",
+    "Back_to_login": "Back to login"
+  },
+  "listen": {
+    "Speaking_practice_audio": "Speaking practice audio",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform"
+  },
+  "login": {
+    "peyea": "Please enter your email address.",
+    "ie": "Invalid email.",
+    "peyp": "Please enter your password.",
+    "Welcome_back": "Welcome back",
+    "h1": "Login to practice",
+    "Login_with_Google": "Login with Google",
+    "Or_continue_with": "Or continue with",
+    "Email_address": " Email address",
+    "youexam": "you@example.com",
+    "Password": "Password",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Login": "Login",
+    "Forgot_password": "Forgot password?",
+    "Dont_have_an_account": "Don't have an account?",
+    "Sign_up_here": "Sign up here"
   }
 }
