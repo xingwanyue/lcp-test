@@ -11,37 +11,40 @@
     "Try_for_free": "Try for free",
     "prod1": {
       "title": "Duolingo English Test Practice",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "alt": "Duolingo English Test Practice",
       "font": "Achieve Excellence with Our Extensive Question Bank: Over 10,000 Questions, Regular Updates, and Smart Performance Tracking!"
     },
     "prod2": {
       "title": "Duolingo English Test Correction Service",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "alt": "Duolingo English Test Correction Service",
       "font": "Perfect Your Essays with AI-Powered Teacher Feedback: Accurate Corrections, Instant Reports, and Score Improvement within Two Weeks!"
     },
     "prod3": {
       "title": "Duolingo English Test Course",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "alt": "Duolingo English Test Course",
       "font": "Conquer Your Exam with Authentic Full-Length Mocks: In-depth Analysis and Instant Results, Available Anytime, Anywhere."
     },
     "prod4": {
       "title": "Duolingo English Test Mock",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "alt": "Duolingo English Test Mock",
       "font": "Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!"
     }
   },
   "footer": {
     "inc": "Our product has no connection with Duolingo,Inc",
     "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
-    "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy"],
+    "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap"],
     "show_more": "show more",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see"
+    "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
+    "newAlt": "DET Practice",
+    "close_icon_alt": "Cross Sign"
   },
   "index": {
     "seometa": {
-      "title": "DET Practice - Ace the Duolingo English Test",
-      "description": "'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses."
+      "title": "DET Practice - Duolingo English Language Test Online, English Proficiency Exam",
+      "description": "Prepare for the Duolingo english proficiency test online with DET Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam, Duolingo Proficiency Exam In English, Duolingo English Proficiency Exam, English Proficiency Test Duolingo, Duolingo Proficiency Test, Duolingo English Proficiency Test, Duolingo English Test, English Duolingo Test"
     },
     "power_by": "Powered by AI",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With <span class=\"seo_hack\">DET Practice</span>",
@@ -59,7 +62,7 @@
       "tips2": "Comprehensive coverage of all exam types with detailed explanations for every question.",
       "tips3": "In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.",
       "btn_font": "Discover More",
-      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+      "btn_img_alt": "Yellow Arrow Right"
     },
     "article2": {
       "title": "AI-Powered Essay Correction Service",
@@ -67,7 +70,7 @@
       "tips2": "Simply submit your essay and promptly receive a comprehensive report with a detailed band score.",
       "tips3": "Elevate your writing score in just 2 weeks.",
       "btn_font": "Learn More",
-      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+      "btn_img_alt": "Yellow Arrow Right"
     },
     "article3": {
       "title": "Duolingo English Test Mock",
@@ -75,7 +78,7 @@
       "tips2": "Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.",
       "tips3": "Take online mock exams at your convenience, with fast scoring provided within 30 minutes.",
       "btn_font": "Find Out More",
-      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+      "btn_img_alt": "Yellow Arrow Right"
     },
     "article4": {
       "title": "Duolingo English Test Course",
@@ -83,7 +86,7 @@
       "tips2": "Learn from ESL Experts. Utilize proven strategies to enhance your speaking and writing abilities, benefit from personalized learning paths, and engage in effective self-assessment.",
       "tips3": "Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is in perfect sync with current exam standards.",
       "btn_font": "Explore More",
-      "btn_img_alt": "DET Practice:The best Duolingo English Test Practice platform"
+      "btn_img_alt": "Yellow Arrow Right"
     },
     "thousand": "k",
     "Users": "Users",
@@ -108,18 +111,21 @@
   },
   "learn": {
     "seometa": {
-      "title": "DET Practice - Learn the expert Tips for the Duolingo English Test",
-      "description": "Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score."
+      "title": "Exam Preparation Tips for Duolingo English Test | DET Practice",
+      "description": "Discover effective exam preparation tips for the Duolingo English Test. Stay updated with timely insights on improving your test performance at DET Practice.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
     },
     "h1": "We will update the exam preparation tips of Duolingo English Test timely",
     "title2": " The lastest update is until {time}",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "down_icon": "Down Icon",
     "Show_more": "Show more"
   },
   "pricing": {
     "seometa": {
-      "title": "DET Practice - Duolingo Test Prep Membership and Services Pricing",
-      "description": "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams."
+      "title": "Duolingo English Test Preparation Pricing | DET Practice",
+      "description": "Choose the right plan with affordable pricing for your Duolingo English Test preparation. Personalized practice, expert reviews, and full-scale mock exams available.",
+      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Examwords"
     },
     "pagefont": {
       "h1": "Plans & Pricing",
@@ -139,7 +145,11 @@
       "Secure_Payment": "Secure Payment:",
       "faq": "Frequently Asked Questions",
       "Contact_Us": "Contact Us",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform"
+      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "check_icon": "Check",
+      "tip_icon": "Tip",
+      "green_check": "Green Check",
+      "arrow_down": "Down Arrow"
     },
     "aqList": [
       {
@@ -225,8 +235,8 @@
   },
   "blog": {
     "seometa": {
-      "title": "DET Practice - Duolingo English Test Tips and Tricks",
-      "description": "Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score."
+      "title": "DET Pratice Blog - Duolingo English Test Tips and Tricks",
+      "description": "Stay updated with essential Duolingo English Test tips and tricks on DET Practice's blog. Discover expert advice and strategies to excel in your test preparation."
     },
     "h1": "DET Pratice Blog",
     "alt": "DET Practice:The best Duolingo English Test Practice platform"
@@ -262,8 +272,8 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "About Us - DET Practice",
-      "description": ""
+      "title": "About DET Practice: Duolingo English Test Practice Platform",
+      "description": "DET Practice, the leading platform for Duolingo English Test preparation. Explore our extensive test bank, mock exams, correction services, and DET courses."
     },
     "title": "About DET Pratice",
     "oelet": "Our Esteemed Language Education Team",
@@ -286,7 +296,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Contact Us - DET Practice"
+      "title": "Contact Us | +44 7708 193347 | DET Practice",
+      "description": "Contact DET Practice for expert Duolingo English Test practice and guidance. Prepare with specialized resources and support for the optimal results.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
     },
     "checkEmail": "The email must be a valid email address.",
     "enterName": "Please enter your name.",
@@ -348,12 +360,16 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - AI Correction Service for your Duolingo Test",
-      "description": "Correction service provided by \"AI + Teachers\". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores."
+      "title": "Best AI Correction Service for Duolingo Test | DET Practice",
+      "description": "Achieve Duolingo test success with our specialized correction service. Get personalized guidance and support to maximize your score. Take the first step now!",
+      "keywords": "Correction Service for Duolingo Test, AI Correction Service for Duolingo Test"
     },
     "h1": "Discover the Best AI Correction Service for Duolingo Test",
     "desc": " Enhance your essays with our 'AI + Teachers' correction service. Get detailed feedback based on official scoring standards quickly after submission.",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "useralt": "User Icon",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
     "learners_have": "{number} learners have improved their writing with our correction service.",
     "Review_Now": "Review Now",
     "Correct_Now": "Correct Now",
@@ -383,8 +399,8 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Practice - Master Speaking and Writing with the Duolingo English Test Guide",
-      "description": "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice."
+      "title": "Duolingo English Test Course Online | DET Practice",
+      "description": "Explore our Duolingo English Test course online at DET Practice. Prepare effectively with our comprehensive resources and expert guidance. Enroll now!"
     },
     "article1": {
       "title": "Key Features of DET Speaking Exam Excellence:",
@@ -437,6 +453,8 @@
       "do": "$",
       "Buy_Now": "Buy Now",
       "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "white_arrow_right": "White Arrow Right",
+      "Double_Right_Arrow": "Double Right Arrow",
       "DET_Writing": "DET Writing Exam Excellence: A Comprehensive Guide",
       "How_to": "How to get the guide?",
       "spa": "Speaking practice audio",
@@ -480,12 +498,16 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Practice - Full-length Mock Exam for DET Preparation",
-      "description": "Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test."
+      "title": "Duolingo Mock Test: Prepare for Your Language Exam | DET Practice",
+      "description": "Experience realistic Duolingo Mock Tests with adaptive questions and AI scoring. Prepare effectively with DET Practice's full-length exams for the Duolingo English Test!",
+      "keywords": "Duolingo Mock Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
     },
     "h1": "Duolingo English Test 1:1 Mock Exam",
     "desc": "Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of the actual testing process before the real deal and quickly receive scores and detailed diagnostic reports to pinpoint areas for improvement.",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
     "learners_have": "{number} learners have taken our mock exams for self-assessment and practice.",
     "Mock_Now": "Mock Now",
     "Full_scale": "Duolingo 1:1 Full-scale Mock Exam",
@@ -508,13 +530,17 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Practice - The best platform for Duolingo practice test",
-      "description": "Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed."
+      "title": "Duolingo English Practice Test Online, DET Practice Test Score",
+      "description": "Prepare for the Duolingo english test with DET practice tests online. Improve your Duolingo English test score with effective practice sessions. Start now!",
+      "keywords": "Duolingo English Test Practice, Duolingo Practice English Test, Duolingo English Practice Test, Duolingo Practice Test Online, Duolingo Test Practice, Duolingo Practice Test, Duolingo Practice, Det Practice Test, Duolingo English Test Score"
     },
     "h1": "Duolingo Practice Question Bank",
     "desc": "Gain access to an extensive collection of test questions, enhanced with answer analysis, templates, AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and affordably with our AI-powered approach.",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "altbanner": "Duolingo Practice Question Bank",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
     "learners_have": "{number} learners have used our question bank for DET preparation.",
     "spn": "Start Practicing Now",
     "article1": {
@@ -540,7 +566,9 @@
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "Privacy Policy - DET Practice"
+      "title": "Privacy Policy: Keeping Your Data Safe | DET Practice",
+      "description": "Discover DET Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
     },
     "h1": "Privacy Policy",
     "q1": {

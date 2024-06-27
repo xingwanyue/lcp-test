@@ -133,7 +133,11 @@ const menus = computed(() => [
             popper-class="head-question-popover"
           >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
-              <NuxtLink :to="localePath('/practice')" class="one_card card1">
+              <NuxtLink
+                :to="localePath('/practice')"
+                title="Duolingo English Practice Test Online"
+                class="one_card card1"
+              >
                 <div class="icon">
                   <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
                 </div>
@@ -144,7 +148,11 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/correction')" class="one_card card2">
+              <NuxtLink
+                :to="localePath('/correction')"
+                title="AI Correction Service for Duolingo Test"
+                class="one_card card2"
+              >
                 <div class="icon">
                   <img src="/img/home/product_icon2.svg" :alt="$t('header.prod2.alt')" />
                 </div>
@@ -155,7 +163,7 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/mock-exam')" class="one_card card3">
+              <NuxtLink :to="localePath('/mock-exam')" title="Duolingo Mock Test" class="one_card card3">
                 <div class="icon">
                   <img src="/img/home/product_icon3.svg" :alt="$t('header.prod3.alt')" />
                 </div>
@@ -166,7 +174,7 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/courses')" class="one_card card4">
+              <NuxtLink :to="localePath('/courses')" title="Duolingo English Test Course Online" class="one_card card4">
                 <div class="icon">
                   <img src="/img/home/product_icon4.svg" :alt="$t('header.prod4.alt')" />
                 </div>
@@ -195,7 +203,7 @@ const menus = computed(() => [
               </div>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)"
+          <nuxt-link v-else :to="localePath(menu.path)" :title="menu.name"
             >{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
@@ -298,7 +306,7 @@ const menus = computed(() => [
               {{ $t('header.prod3.title') }}
             </nuxt-link>
           </div>
-          <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose">
+          <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose" :title="menu.name">
             {{ menu.name }}
           </nuxt-link>
         </div>

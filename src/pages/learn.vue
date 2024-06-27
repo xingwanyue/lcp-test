@@ -84,9 +84,11 @@ const handleChange = () => {
 useServerSeoMeta({
   title: t('learn.seometa.title'),
   description: t('learn.seometa.description'),
+  keywords: t('learn.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/learn` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/learn`, hreflang: 'en-GB' }],
 });
 </script>
 <template>
@@ -114,7 +116,7 @@ useHead({
         <div class="select">
           <div class="select-title" @click="state.drawerVisible = true">
             <span>{{ state.selConData.name }}</span>
-            <img src="/img/learn/down-icon.svg" class="img img-down" :alt="$t('learn.alt')" />
+            <img src="/img/learn/down-icon.svg" class="img img-down" :alt="$t('learn.down_icon')" />
           </div>
         </div>
         <div class="left">

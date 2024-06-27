@@ -11,9 +11,11 @@ const user = computed(() => store.user);
 useServerSeoMeta({
   title: t('mockexam.seometa.title'),
   description: t('mockexam.seometa.description'),
+  keywords: t('mockexam.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/mock-exam` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/mock-exam`, hreflang: 'en-GB' }],
 });
 // 获取平台数据
 const {
@@ -71,19 +73,19 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img src="/img/products/mock_user_icon1.png" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/mock_user_icon1.png" :alt="$t('mockexam.mock_user_icon')" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="/img/products/mock_user_icon2.png" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/mock_user_icon2.png" :alt="$t('mockexam.mock_user_icon')" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="/img/products/mock_user_icon3.png" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/mock_user_icon3.png" :alt="$t('mockexam.mock_user_icon')" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="/img/products/mock_user_icon4.png" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/mock_user_icon4.png" :alt="$t('mockexam.mock_user_icon')" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="/img/products/mock_user_icon5.png" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/mock_user_icon5.png" :alt="$t('mockexam.mock_user_icon')" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
@@ -98,7 +100,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
 
                 <div class="icon">
-                  <img src="/img/products/white_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('mockexam.white_arrow_right')" />
                 </div>
               </NuxtLink>
               <NuxtLink
@@ -109,7 +111,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
 
                 <div class="icon">
-                  <img src="/img/products/white_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('mockexam.white_arrow_right')" />
                 </div>
               </NuxtLink>
             </div>
@@ -142,7 +144,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -152,7 +154,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -176,7 +178,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -186,7 +188,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -210,7 +212,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -220,7 +222,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -244,7 +246,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -254,7 +256,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.alt')" />
+                    <img src="/img/products/orange_arrow_right.svg" :alt="$t('mockexam.orange_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>

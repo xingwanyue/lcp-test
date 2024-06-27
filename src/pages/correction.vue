@@ -10,9 +10,11 @@ const user = computed(() => store.user);
 useServerSeoMeta({
   title: t('correction.seometa.title'),
   description: t('correction.seometa.description'),
+  keywords: t('correction.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/correction` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/correction`, hreflang: 'en-GB' }],
 });
 // 获取平台数据
 const {
@@ -75,19 +77,19 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img src="/img/products/service_user_icon1.png" :alt="$t('correction.alt')" />
+                    <img src="/img/products/service_user_icon1.png" :alt="$t('correction.useralt')" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="/img/products/service_user_icon2.png" :alt="$t('correction.alt')" />
+                    <img src="/img/products/service_user_icon2.png" :alt="$t('correction.useralt')" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="/img/products/service_user_icon3.png" :alt="$t('correction.alt')" />
+                    <img src="/img/products/service_user_icon3.png" :alt="$t('correction.useralt')" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="/img/products/service_user_icon4.png" :alt="$t('correction.alt')" />
+                    <img src="/img/products/service_user_icon4.png" :alt="$t('correction.useralt')" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="/img/products/service_user_icon5.png" :alt="$t('correction.alt')" />
+                    <img src="/img/products/service_user_icon5.png" :alt="$t('correction.useralt')" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
@@ -101,7 +103,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :href="urlGet('/correct')">
                 <div class="font">{{ $t('correction.Review_Now') }}</div>
                 <div class="icon">
-                  <img src="/img/products/white_arrow_right.svg" :alt="$t('correction.alt')" />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('correction.white_arrow_right')" />
                 </div>
               </NuxtLink>
               <NuxtLink
@@ -111,7 +113,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               >
                 <div class="font">{{ $t('correction.Review_Now') }}</div>
                 <div class="icon">
-                  <img src="/img/products/white_arrow_right.svg" :alt="$t('correction.alt')" />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('correction.white_arrow_right')" />
                 </div>
               </NuxtLink>
             </div>
@@ -149,7 +151,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -159,7 +161,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -183,7 +185,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -193,7 +195,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 >
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -217,7 +219,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -227,7 +229,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -251,7 +253,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Enhance_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -261,7 +263,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 >
                   <div class="font">{{ $t('correction.Enhance_Now') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -285,7 +287,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Begin_Polishing') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -295,7 +297,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 >
                   <div class="font">{{ $t('correction.Begin_Polishing') }}</div>
                   <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.alt')" />
+                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>

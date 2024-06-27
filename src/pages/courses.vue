@@ -9,6 +9,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/courses` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/courses`, hreflang: 'en-GB' }],
 });
 const localePath = useLocalePath();
 const store = useStore();
@@ -177,13 +178,13 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                 >
                   <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
                   </div>
                 </div>
                 <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -221,13 +222,13 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
                 >
                   <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
                   </div>
                 </div>
                 <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                   <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.alt')" />
+                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -245,7 +246,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
             <div class="icon">
               <img :src="`${item.icon}`" :alt="$t('courses.pagefont.alt')" />
             </div>
-            <img src="/img/guid/Double_Right_Arrow.svg" class="Double_Right_Arrow" :alt="$t('courses.pagefont.alt')" />
+            <img
+              src="/img/guid/Double_Right_Arrow.svg"
+              class="Double_Right_Arrow"
+              :alt="$t('courses.pagefont.Double_Right_Arrow')"
+            />
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>
             <template v-if="item.id === '1'">

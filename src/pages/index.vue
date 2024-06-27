@@ -13,9 +13,11 @@ const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 useServerSeoMeta({
   title: t('index.seometa.title'),
   description: t('index.seometa.description'),
+  keywords: t('index.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/`, hreflang: 'en-GB' }],
 });
 
 const localePath = useLocalePath();
