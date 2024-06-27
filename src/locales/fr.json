@@ -1,0 +1,76 @@
+
+{
+  "test": "Pour test",
+  "Home": "Accueil",
+  "Products": "Produits",
+  "Learn": "Apprendre",
+  "Pricing": "Tarification",
+  "Blog": "Blog",
+  "footer": {
+    "inc": "Notre produit n'a aucun lien avec Duolingo, Inc"
+  },
+  "index": {
+    "power_by": "Propulsé par l'IA",
+    "h1Mobile": "Obtenez un meilleur score facilement<br />au test d'anglais de Duolingo <br />avec <span class=\"seo_hack\">DET Practice</span>",
+    "h1PC": "Obtenez un meilleur score facilement au <br />test d'anglais de Duolingo avec <span class=\"seo_hack\">DET Practice</span>",
+    "one_small_title": ["DET Practice", "Correction AI", "Simulation complète", "Cours DET"],
+    "Start_free_with_Google": "Commencer gratuitement avec Google",
+    "Start_free_with_email": "Commencer gratuitement avec l'email",
+    "Start_for_free": "Commencer gratuitement",
+    "trustedByWorldwide": "De confiance par {path} étudiants à travers le monde pour un boost de score au test d'anglais de Duolingo en 1 mois.",
+    "The_Best_Platform": "La meilleure plateforme pour booster vos scores au test d'anglais de Duolingo",
+    "Leverage_Our": "Tirez parti de nos ressources tout inclusives pour une amélioration rapide des scores",
+    "article1": {
+      "title": "Pratique du test d'anglais de Duolingo",
+      "tips1": "Avec plus de { number } questions de pratique, notre banque de questions en constante expansion est régulièrement mise à jour pour l'excellence.",
+      "tips2": "Couverture complète de tous les types d'examen avec des explications détaillées pour chaque question.",
+      "tips3": "Réponses approfondies, analyses intelligentes et notation pour permettre un suivi continu de vos performances.",
+      "btn_font": "Découvrir plus",
+      "btn_img_alt": "DET Practice : La meilleure plateforme de pratique pour le test d'anglais de Duolingo"
+    },
+    "article2": {
+      "title": "Service de correction de dissertation par IA",
+      "tips1": "Profitez de corrections précises de dissertations grâce à notre revue collaborative 'IA + Enseignant'.",
+      "tips2": "Soumettez simplement votre dissertation et recevez rapidement un rapport complet avec un score détaillé.",
+      "tips3": "Élevez votre score en écriture en seulement 2 semaines.",
+      "btn_font": "En savoir plus",
+      "btn_img_alt": "DET Practice : La meilleure plateforme de pratique pour le test d'anglais de Duolingo"
+    },
+    "article3": {
+      "title": "Simulation du test d'anglais de Duolingo",
+      "tips1": "Imitez le cadre réel de l'examen pour vous familiariser avec le processus de test et le contenu à l'avance.",
+      "tips2": "Recevez des rapports de test simulés approfondis pour une analyse précise de vos forces et faiblesses.",
+      "tips3": "Passez des examens simulés en ligne à votre convenance, avec une notation rapide fournie en 30 minutes.",
+      "btn_font": "En savoir plus",
+      "btn_img_alt": "DET Practice : La meilleure plateforme de pratique pour le test d'anglais de Duolingo"
+    },
+    "article4": {
+      "title": "Cours du test d'anglais de Duolingo",
+      "tips1": " Atteignez une maîtrise complète. Développez une compréhension approfondie des sections de parole et d'écriture du DET avec nos guides détaillés, assurant que vous abordiez chaque partie de l'examen avec confiance.",
+      "tips2": "Apprenez des experts ESL. Utilisez des stratégies éprouvées pour améliorer vos capacités de parole et d'écriture, profitez de parcours d'apprentissage personnalisés et engagez-vous dans une auto-évaluation efficace.",
+      "tips3": "Restez informé et en avance. Restez au courant des derniers formats et tendances du DET pour garantir que votre préparation est parfaitement synchronisée avec les standards actuels de l'examen.",
+      "btn_font": "Explorer plus",
+      "btn_img_alt": "DET Practice : La meilleure plateforme de pratique pour le test d'anglais de Duolingo"
+    },
+    "thousand": "k",
+    "Users": "Utilisateurs",
+    "Questions": "Questions",
+    "Mock_Exam": "Examen simulé",
+    "Join_Them": "Rejoignez-les"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Commencez votre chemin vers les meilleurs scores au</div><div class='font2'>test d'anglais de Duolingo !</div>",
+    "Start_free_with_Google": "Commencer gratuitement avec Google",
+    "Start_free_with_email": "Commencer gratuitement avec l'email",
+    "Start_for_free": " Commencer gratuitement"
+  },
+  "subscribe": {
+    "emailErrMessage1": "L'email doit être une adresse email valide.",
+    "emailErrMessage2": "Veuillez entrer votre adresse email.",
+    "Subscribe_successfully": "Abonnement réussi",
+    "Subscribe!": "S'abonner!",
+    "Subscribe_for": "Abonnez-vous pour les dernières idées et stratégies pour élever votre score.",
+    "Email": "Email",
+    "Subscribe": "S'abonner"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "test": "テスト用",
+  "Home": "ホーム",
+  "Products": "製品",
+  "Learn": "学ぶ",
+  "Pricing": "価格",
+  "Blog": "ブログ",
+  "footer": {
+    "inc": "当社の製品はDuolingo, Incとは無関係です"
+  },
+  "index": {
+    "power_by": "AIによって駆動",
+    "h1Mobile": "Duolingo英語テストで<br />簡単にスコアアップ<br /><span class=\"seo_hack\">DET Practice</span>と共に",
+    "h1PC": "Duolingo英語テストで<br />簡単にスコアアップ<br /><span class=\"seo_hack\">DET Practice</span>と共に",
+    "one_small_title": ["DET Practice", "AI訂正", "フルレングス模擬試験", "DETコース"],
+    "Start_free_with_Google": "Googleではじめる（無料）",
+    "Start_free_with_email": "メールではじめる（無料）",
+    "Start_for_free": "無料で始める",
+    "trustedByWorldwide": "世界中の{path}の学生が、1か月でDuolingo英語テストのスコアをブーストしています。",
+    "The_Best_Platform": "Duolingo英語テストのスコアを向上させるための最良のプラットフォーム",
+    "Leverage_Our": "迅速なスコア向上のために、包括的なリソースを活用してください",
+    "article1": {
+      "title": "Duolingo英語テスト練習",
+      "tips1": "{ number }以上の練習問題を備えた、定期的に更新される質問バンク。",
+      "tips2": "すべての試験タイプを網羅し、各問題の詳細な解説付き。",
+      "tips3": "詳細な回答、スマート分析、およびスコアリングにより、パフォーマンスの継続的な監視が可能。",
+      "btn_font": "もっと見る",
+      "btn_img_alt": "DET Practice：最高のDuolingo英語テスト練習プラットフォーム"
+    },
+    "article2": {
+      "title": "AI駆動のエッセイ訂正サービス",
+      "tips1": "'AI + 教師'による協働レビューで正確なエッセイ訂正を享受。",
+      "tips2": "エッセイを提出するだけで、詳細なバンドスコアを含む包括的なレポートをすぐに受け取れます。",
+      "tips3": "わずか2週間でライティングスコアを向上。",
+      "btn_font": "詳細を見る",
+      "btn_img_alt": "DET Practice：最高のDuolingo英語テスト練習プラットフォーム"
+    },
+    "article3": {
+      "title": "Duolingo英語テスト模擬試験",
+      "tips1": "実際の試験環境を模して、事前に試験プロセスと内容に慣れてください。",
+      "tips2": "強みと弱点の正確な分析を提供する詳細な模擬試験レポートを受け取ります。",
+      "tips3": "便利なオンライン模擬試験を受け、高速スコアリングを30分以内に提供。",
+      "btn_font": "もっと知る",
+      "btn_img_alt": "DET Practice：最高のDuolingo英語テスト練習プラットフォーム"
+    },
+    "article4": {
+      "title": "Duolingo英語テストコース",
+      "tips1": "包括的なマスタリーを達成。詳しいガイドでDETのスピーキングとライティングセクションを深く理解し、自信を持って試験の各部分に取り組めます。",
+      "tips2": "ESLの専門家から学ぶ。スピーキングとライティング能力を向上させるための実証済みの戦略を利用し、パーソナライズされた学習パスを受け取り、効果的な自己評価を行う。",
+      "tips3": "最新のDETフォーマットとトレンドを把握し、現在の試験基準に完璧に同期した準備を保証します。",
+      "btn_font": "もっと探る",
+      "btn_img_alt": "DET Practice：最高のDuolingo英語テスト練習プラットフォーム"
+    },
+    "thousand": "千",
+    "Users": "ユーザー",
+    "Questions": "質問",
+    "Mock_Exam": "模擬試験",
+    "Join_Them": "参加する"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Duolingo英語テストでトップスコアへの道を</div><div class='font2'>スタートしよう！</div>",
+    "Start_free_with_Google": "Googleではじめる（無料）",
+    "Start_free_with_email": "メールではじめる（無料）",
+    "Start_for_free": "無料で始める"
+  },
+  "subscribe": {
+    "emailErrMessage1": "メールアドレスは有効なメールアドレスである必要があります。",
+    "emailErrMessage2": "メールアドレスを入力してください。",
+    "Subscribe_successfully": "購読成功",
+    "Subscribe!": "購読！",
+    "Subscribe_for": "最新の洞察と戦略を購読して、スコアを向上させましょう。",
+    "Email": "メール",
+    "Subscribe": "購読"
+  }
+}
