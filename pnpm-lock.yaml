@@ -14,6 +14,9 @@ dependencies:
   axios:
     specifier: ^1.7.2
     version: 1.7.2
+  bluebird:
+    specifier: ^3.7.2
+    version: 3.7.2
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -39,13 +42,13 @@ devDependencies:
     version: 1.0.8(@element-plus/icons-vue@2.3.1)(element-plus@2.6.2)(rollup@4.14.3)
   '@nuxt/devtools':
     specifier: latest
-    version: 1.3.6(rollup@4.14.3)(vite@5.2.9)
+    version: 1.3.6(bluebird@3.7.2)(rollup@4.14.3)(vite@5.2.9)
   '@nuxtjs/i18n':
     specifier: ^8.3.0
     version: 8.3.0(rollup@4.14.3)(vue@3.4.23)
   nuxt:
     specifier: ^3.11.2
-    version: 3.11.2(rollup@4.14.3)(sass@1.75.0)(vite@5.2.9)
+    version: 3.11.2(bluebird@3.7.2)(rollup@4.14.3)(sass@1.75.0)(vite@5.2.9)
   nuxt-aos:
     specifier: ^1.2.4
     version: 1.2.4(nuxt@3.11.2)(rollup@4.14.3)(vite@5.2.9)
@@ -417,6 +420,7 @@ packages:
       magic-string: 0.27.0
       unplugin: 1.10.1
     transitivePeerDependencies:
+      - magicast
       - rollup
       - supports-color
     dev: true
@@ -728,7 +732,7 @@ packages:
       '@intlify/shared': 9.13.0
       '@rollup/pluginutils': 5.1.0(rollup@4.14.3)
       '@vue/compiler-sfc': 3.4.23
-      debug: 4.3.4
+      debug: 4.3.5
       fast-glob: 3.3.2
       js-yaml: 4.1.0
       json5: 2.2.3
@@ -893,7 +897,7 @@ packages:
       semver: 7.6.2
     dev: true
 
-  /@npmcli/git@5.0.6:
+  /@npmcli/git@5.0.6(bluebird@3.7.2):
     resolution: {integrity: sha512-4x/182sKXmQkf0EtXxT26GEsaOATpD7WVtza5hrYivWZeo6QefC6xq9KAXrnjtFKBZ4rZwR7aX/zClYYXgtwLw==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
@@ -901,7 +905,7 @@ packages:
       lru-cache: 10.2.0
       npm-pick-manifest: 9.0.0
       proc-log: 4.2.0
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1(bluebird@3.7.2)
       promise-retry: 2.0.1
       semver: 7.6.2
       which: 4.0.0
@@ -923,11 +927,11 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dev: true
 
-  /@npmcli/package-json@5.2.0:
+  /@npmcli/package-json@5.2.0(bluebird@3.7.2):
     resolution: {integrity: sha512-qe/kiqqkW0AGtvBjL8TJKZk/eBBSpnJkUWvHdQ9jM2lKHXRYYJuyNpJPlJw3c8QjC2ow6NZYiLExhUaeJelbxQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      '@npmcli/git': 5.0.6
+      '@npmcli/git': 5.0.6(bluebird@3.7.2)
       glob: 10.3.12
       hosted-git-info: 7.0.1
       json-parse-even-better-errors: 3.0.1
@@ -950,12 +954,12 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dev: true
 
-  /@npmcli/run-script@8.0.0:
+  /@npmcli/run-script@8.0.0(bluebird@3.7.2):
     resolution: {integrity: sha512-5noc+eCQmX1W9nlFUe65n5MIteikd3vOA2sEPdXtlUv68KWyHNFZnT/LDRXu/E4nZ5yxjciP30pADr/GQ97W1w==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/node-gyp': 3.0.0
-      '@npmcli/package-json': 5.2.0
+      '@npmcli/package-json': 5.2.0(bluebird@3.7.2)
       '@npmcli/promise-spawn': 7.0.1
       node-gyp: 10.1.0
       proc-log: 4.2.0
@@ -978,7 +982,7 @@ packages:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.14.3)
       '@nuxt/schema': 3.12.2(rollup@4.14.3)
       execa: 7.2.0
-      nuxt: 3.11.2(rollup@4.14.3)(sass@1.75.0)(vite@5.2.9)
+      nuxt: 3.11.2(bluebird@3.7.2)(rollup@4.14.3)(sass@1.75.0)(vite@5.2.9)
       vite: 5.2.9(sass@1.75.0)
     transitivePeerDependencies:
       - magicast
@@ -1017,7 +1021,7 @@ packages:
       semver: 7.6.2
     dev: true
 
-  /@nuxt/devtools@1.3.6(rollup@4.14.3)(vite@5.2.9):
+  /@nuxt/devtools@1.3.6(bluebird@3.7.2)(rollup@4.14.3)(vite@5.2.9):
     resolution: {integrity: sha512-M3sRQDKG/iK+iQmvIl9vfEgc/Nv1D6S7GFvhmq1s7ZCSkrmZPGWLxRkIAJOwZk+WnvjYUHkN6XCcoi9a1EWmrA==}
     hasBin: true
     peerDependencies:
@@ -1046,7 +1050,7 @@ packages:
       magicast: 0.3.4
       nypm: 0.3.8
       ohash: 1.1.3
-      pacote: 18.0.6
+      pacote: 18.0.6(bluebird@3.7.2)
       pathe: 1.1.2
       perfect-debounce: 1.0.0
       pkg-types: 1.1.1
@@ -1074,24 +1078,25 @@ packages:
     engines: {node: ^14.18.0 || >=16.10.0}
     dependencies:
       '@nuxt/schema': 3.11.2(rollup@4.14.3)
-      c12: 1.10.0
+      c12: 1.11.1(magicast@0.3.4)
       consola: 3.2.3
       defu: 6.1.4
       globby: 14.0.1
       hash-sum: 2.0.0
       ignore: 5.3.1
-      jiti: 1.21.0
+      jiti: 1.21.6
       knitwork: 1.1.0
-      mlly: 1.6.1
+      mlly: 1.7.1
       pathe: 1.1.2
-      pkg-types: 1.1.0
+      pkg-types: 1.1.1
       scule: 1.3.0
-      semver: 7.6.0
+      semver: 7.6.2
       ufo: 1.5.3
       unctx: 2.3.1
-      unimport: 3.7.1(rollup@4.14.3)
+      unimport: 3.7.2(rollup@4.14.3)
       untyped: 1.4.2
     transitivePeerDependencies:
+      - magicast
       - rollup
       - supports-color
 
@@ -1241,6 +1246,7 @@ packages:
       - eslint
       - less
       - lightningcss
+      - magicast
       - meow
       - optionator
       - rollup
@@ -1284,6 +1290,7 @@ packages:
       vue-i18n: 9.13.0(vue@3.4.23)
       vue-router: 4.3.2(vue@3.4.23)
     transitivePeerDependencies:
+      - magicast
       - petite-vue-i18n
       - rollup
       - supports-color
@@ -1445,6 +1452,7 @@ packages:
       pinia: 2.1.7(vue@3.4.23)
     transitivePeerDependencies:
       - '@vue/composition-api'
+      - magicast
       - rollup
       - supports-color
       - typescript
@@ -2362,6 +2370,9 @@ packages:
     resolution: {integrity: sha512-+hkTxhot+dWsLpp3gia5AkVHIsKlZybNT5gIYiDlNzJrmYPcTM9k5/w2uaj3IPpd7LlEYpmCj4Jj1nC41VhDFg==}
     dev: true
 
+  /bluebird@3.7.2:
+    resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==}
+
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
@@ -2444,6 +2455,7 @@ packages:
       perfect-debounce: 1.0.0
       pkg-types: 1.1.1
       rc9: 2.1.2
+    dev: true
 
   /c12@1.11.1(magicast@0.3.4):
     resolution: {integrity: sha512-KDU0TvSvVdaYcQKQ6iPHATGz/7p/KiVjPg4vQrB6Jg/wX9R0yl5RZxWm9IoZqaIHD2+6PZd81+KMGwRr/lRIUg==}
@@ -2466,7 +2478,6 @@ packages:
       perfect-debounce: 1.0.0
       pkg-types: 1.1.1
       rc9: 2.1.2
-    dev: true
 
   /cac@6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
@@ -3880,6 +3891,7 @@ packages:
   /jiti@1.21.0:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
+    dev: true
 
   /jiti@1.21.6:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
@@ -4068,12 +4080,6 @@ packages:
     dependencies:
       yallist: 3.1.1
 
-  /lru-cache@6.0.0:
-    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
-    engines: {node: '>=10'}
-    dependencies:
-      yallist: 4.0.0
-
   /magic-string-ast@0.3.0:
     resolution: {integrity: sha512-0shqecEPgdFpnI3AP90epXyxZy9g6CRZ+SZ7BcqFwYmtFEnZ1jpevcV5HoyVnlDS9gCnc1UIg3Rsvp3Ci7r8OA==}
     engines: {node: '>=16.14.0'}
@@ -4099,7 +4105,6 @@ packages:
       '@babel/parser': 7.24.4
       '@babel/types': 7.24.0
       source-map-js: 1.2.0
-    dev: true
 
   /make-dir@3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
@@ -4283,6 +4288,7 @@ packages:
       pathe: 1.1.2
       pkg-types: 1.1.1
       ufo: 1.5.3
+    dev: true
 
   /mlly@1.7.1:
     resolution: {integrity: sha512-rrVRZRELyQzrIUAVMHxP97kv+G786pHmOKzuFII8zDYahFBS7qnHh2AlYSl1GAHhaMPCz6/oHjVMcfFYgFYHgA==}
@@ -4642,7 +4648,7 @@ packages:
       - vite
     dev: true
 
-  /nuxt@3.11.2(rollup@4.14.3)(sass@1.75.0)(vite@5.2.9):
+  /nuxt@3.11.2(bluebird@3.7.2)(rollup@4.14.3)(sass@1.75.0)(vite@5.2.9):
     resolution: {integrity: sha512-Be1d4oyFo60pdF+diBolYDcfNemoMYM3R8PDjhnGrs/w3xJoDH1YMUVWHXXY8WhSmYZI7dyBehx/6kTfGFliVA==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
@@ -4656,7 +4662,7 @@ packages:
         optional: true
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.3.6(rollup@4.14.3)(vite@5.2.9)
+      '@nuxt/devtools': 1.3.6(bluebird@3.7.2)(rollup@4.14.3)(vite@5.2.9)
       '@nuxt/kit': 3.11.2(rollup@4.14.3)
       '@nuxt/schema': 3.11.2(rollup@4.14.3)
       '@nuxt/telemetry': 2.5.4(rollup@4.14.3)
@@ -4838,16 +4844,16 @@ packages:
       aggregate-error: 3.1.0
     dev: true
 
-  /pacote@18.0.6:
+  /pacote@18.0.6(bluebird@3.7.2):
     resolution: {integrity: sha512-+eK3G27SMwsB8kLIuj4h1FUhHtwiEUo21Tw8wNjmvdlpOEr613edv+8FUsTj/4F/VN5ywGE19X18N7CC2EJk6A==}
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
     dependencies:
-      '@npmcli/git': 5.0.6
+      '@npmcli/git': 5.0.6(bluebird@3.7.2)
       '@npmcli/installed-package-contents': 2.0.2
-      '@npmcli/package-json': 5.2.0
+      '@npmcli/package-json': 5.2.0(bluebird@3.7.2)
       '@npmcli/promise-spawn': 7.0.1
-      '@npmcli/run-script': 8.0.0
+      '@npmcli/run-script': 8.0.0(bluebird@3.7.2)
       cacache: 18.0.2
       fs-minipass: 3.0.3
       minipass: 7.0.4
@@ -4960,6 +4966,7 @@ packages:
       confbox: 0.1.7
       mlly: 1.7.1
       pathe: 1.1.2
+    dev: true
 
   /pkg-types@1.1.1:
     resolution: {integrity: sha512-ko14TjmDuQJ14zsotODv7dBlwxKhUKQEhuhmbqo1uCi9BB0Z2alo/wAXg6q1dTR5TyuqYyWhjtfe/Tsh+X28jQ==}
@@ -5294,13 +5301,15 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: true
 
-  /promise-inflight@1.0.1:
+  /promise-inflight@1.0.1(bluebird@3.7.2):
     resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
     peerDependencies:
       bluebird: '*'
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise-retry@2.0.1:
@@ -5531,18 +5540,10 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  /semver@7.6.0:
-    resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-
   /semver@7.6.2:
     resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
     engines: {node: '>=10'}
     hasBin: true
-    dev: true
 
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
@@ -5825,6 +5826,7 @@ packages:
     resolution: {integrity: sha512-PugKzOsyXpArk0yWmUwqOZecSO0GH0bPoctLcqNDH9J04pVW3lflYE0ujElBGTloevcxF5MofAOZ7C5l2b+wLg==}
     dependencies:
       acorn: 8.11.3
+    dev: true
 
   /strip-literal@2.1.0:
     resolution: {integrity: sha512-Op+UycaUt/8FbN/Z2TWPBLge3jWrP3xj10f3fnYxf052bKuS3EKs1ZQcVGjnEMdsNVAM+plXRdmjrZ/KgG3Skw==}
@@ -6086,6 +6088,7 @@ packages:
       unplugin: 1.10.1
     transitivePeerDependencies:
       - rollup
+    dev: true
 
   /unimport@3.7.2(rollup@4.14.3):
     resolution: {integrity: sha512-91mxcZTadgXyj3lFWmrGT8GyoRHWuE5fqPOjg5RVtF6vj+OfM5G6WCzXjuYtSgELE5ggB34RY4oiCSEP8I3AHw==}
@@ -6381,7 +6384,7 @@ packages:
       '@antfu/utils': 0.7.10
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.14.3)
       '@rollup/pluginutils': 5.1.0(rollup@4.14.3)
-      debug: 4.3.4
+      debug: 4.3.5
       error-stack-parser-es: 0.1.4
       fs-extra: 11.2.0
       open: 10.1.0
