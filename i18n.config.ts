@@ -1,9 +1,19 @@
 import en from '@/locales/en.json';
-import id from '@/locales/id.json';
-import fr from '@/locales/fr.json';
-import ja from '@/locales/ja.json';
-import pt from '@/locales/pt.json';
 import de from '@/locales/de.json';
+import pt from '@/locales/pt.json';
+import ja from '@/locales/ja.json';
+import fr from '@/locales/fr.json';
+import id from '@/locales/id.json';
+import es from '@/locales/es.json';
+import it from '@/locales/it.json';
+import th from '@/locales/th.json';
+import pl from '@/locales/pl.json';
+import ko from '@/locales/ko.json';
+import ar from '@/locales/ar.json';
+import nl from '@/locales/nl.json';
+import tr from '@/locales/tr.json';
+import nb from '@/locales/nb.json';
+import da from '@/locales/da.json';
 
 export default defineI18nConfig(() => ({
   legacy: false,
@@ -12,10 +22,20 @@ export default defineI18nConfig(() => ({
   seo: true,
   messages: {
     en,
-    id,
-    fr,
-    ja,
-    pt,
     de,
+    pt,
+    ja,
+    fr,
+    id,
+    es,
+    it,
+    th,
+    pl,
+    ko,
+    ar,
+    nl,
+    tr,
+    nb,
+    da,
   },
 }));
