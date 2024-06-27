@@ -42,6 +42,53 @@ export default defineNuxtConfig({
           src: '/js/googleAnalytics.js',
           async: true,
         },
+        {
+          type: 'application/ld+json',
+          innerHTML: `
+{
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AITOGETHER LTD",
+  "url": "https://www.detpractice.com/",
+  "logo": "https://www.detpractice.com/img/footer/small_logo.svg",
+  "image": "https://detcdn.zixuekeji.cn/store/portal/products/bank_picture1.png",
+  "description": "Prepare for the Duolingo english proficiency test online with DET Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!",
+  "pricerange":"£", 
+  "telephone": "7518886018",
+  "email" : "info@detpractice.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "71-75 Shelton Street, Covent Garden",
+    "addressLocality": "England",
+    "addressRegion": "London",
+    "postalCode": "WC2H 9JQ",
+    "addressCountry": "UK"
+  },
+ "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "880"
+  },
+    "review": {
+    "@type": "Review",
+    "reviewRating": {
+     "@type": "Rating",
+     "ratingValue": "4.9",
+     "bestRating": "5"
+   },
+      "author": {
+      "@type": "Person",
+      "name": "AITOGETHER LTD"
+    }
+      },
+  "sameAs": [
+    "https://www.facebook.com/detpractice",
+    "https://x.com/det_practice",
+    "https://www.instagram.com/detpractice/ ",
+    "https://www.detpractice.com/"
+  ]
+}`,
+        },
       ],
       title: 'DET Practice:The best Duolingo English Test Practice platform',
       meta: [
