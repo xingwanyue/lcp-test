@@ -1,0 +1,76 @@
+
+{
+  "test": "Zum Test",
+  "Home": "Startseite",
+  "Products": "Produkte",
+  "Learn": "Lernen",
+  "Pricing": "Preise",
+  "Blog": "Blog",
+  "footer": {
+    "inc": "Unser Produkt steht in keiner Verbindung zu Duolingo, Inc"
+  },
+  "index": {
+    "power_by": "Angetrieben von KI",
+    "h1Mobile": "Erreiche leicht eine höhere Punktzahl<br />beim Duolingo <br />Englisch-Test mit <span class=\"seo_hack\">DET Practice</span>",
+    "h1PC": "Erreiche leicht eine höhere Punktzahl beim <br />Duolingo Englisch-Test mit <span class=\"seo_hack\">DET Practice</span>",
+    "one_small_title": ["DET Practice", "KI-Korrektur", "Komplette Mock-Prüfung", "DET Kurse"],
+    "Start_free_with_Google": "Kostenlos mit Google starten",
+    "Start_free_with_email": "Kostenlos mit E-Mail starten",
+    "Start_for_free": "Kostenlos starten",
+    "trustedByWorldwide": "Vertraut von {path} Studenten weltweit für einen 1-monatigen Duolingo Englisch-Test-Punkte-Boost.",
+    "The_Best_Platform": "Die beste Plattform zur Steigerung deiner Duolingo Englisch-Test-Punktzahl",
+    "Leverage_Our": "Nutze unsere umfassenden Ressourcen für schnelle Punkteverbesserung",
+    "article1": {
+      "title": "Duolingo Englisch-Test Übungen",
+      "tips1": "Mit über {number} Übungsfragen wird unsere ständig wachsende Fragebank regelmäßig aktualisiert, um Exzellenz zu gewährleisten.",
+      "tips2": "Umfassende Abdeckung aller Prüfungstypen mit detaillierten Erklärungen zu jeder Frage.",
+      "tips3": "Detaillierte Antworten, intelligente Analysen und Bewertungen zur kontinuierlichen Überwachung deiner Leistung.",
+      "btn_font": "Mehr entdecken",
+      "btn_img_alt": "DET Practice:Die beste Duolingo Englisch-Test-Übungsplattform"
+    },
+    "article2": {
+      "title": "KI-gesteuerter Aufsatzkorrekturservice",
+      "tips1": "Profitiere von präzisen Aufsatzkorrekturen durch unsere 'KI + Lehrer' Kollaborationsbegutachtung.",
+      "tips2": "Reiche einfach deinen Aufsatz ein und erhalte umgehend einen umfassenden Bericht mit detaillierter Bandbewertung.",
+      "tips3": "Verbessere deine Schreibpunktzahl in nur 2 Wochen.",
+      "btn_font": "Mehr erfahren",
+      "btn_img_alt": "DET Practice:Die beste Duolingo Englisch-Test-Übungsplattform"
+    },
+    "article3": {
+      "title": "Duolingo Englisch-Test Mock",
+      "tips1": "Ahme die tatsächliche Prüfungssituation nach, um dich mit dem Prüfungsablauf und -inhalt vertraut zu machen.",
+      "tips2": "Erhalte detaillierte simulierte Prüfungsberichte für eine präzise Analyse deiner Stärken und Schwächen.",
+      "tips3": "Mach Online-Mock-Prüfungen nach deinem Belieben, mit schneller Bewertung innerhalb von 30 Minuten.",
+      "btn_font": "Mehr herausfinden",
+      "btn_img_alt": "DET Practice:Die beste Duolingo Englisch-Test-Übungsplattform"
+    },
+    "article4": {
+      "title": "Duolingo Englisch-Test Kurs",
+      "tips1": "Erziele umfassende Meisterschaft. Entwickle ein tiefgründiges Verständnis der DET-Sprech- und Schreibabschnitte mit unseren detaillierten Leitfäden, damit du jede Prüfungsteil mit Vertrauen angehen kannst.",
+      "tips2": "Lerne von ESL-Experten. Nutze bewährte Strategien zur Verbesserung deiner Sprech- und Schreibfähigkeiten, profitiere von personalisierten Lernwegen und nimm an effektiver Selbstbewertung teil.",
+      "tips3": "Bleibe informiert und voraus. Halte dich über die neuesten DET-Formate und -Trends auf dem Laufenden, um sicherzustellen, dass deine Vorbereitung perfekt mit den aktuellen Prüfungsstandards übereinstimmt.",
+      "btn_font": "Mehr entdecken",
+      "btn_img_alt": "DET Practice:Die beste Duolingo Englisch-Test-Übungsplattform"
+    },
+    "thousand": "k",
+    "Users": "Benutzer",
+    "Questions": "Fragen",
+    "Mock_Exam": "Mock-Prüfung",
+    "Join_Them": "Schließe dich ihnen an"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Beginne deinen Weg zu Top-Punktzahlen beim</div><div class='font2'>Duolingo Englisch-Test!</div>",
+    "Start_free_with_Google": "Kostenlos mit Google starten",
+    "Start_free_with_email": "Kostenlos mit E-Mail starten",
+    "Start_for_free": "Kostenlos starten"
+  },
+  "subscribe": {
+    "emailErrMessage1": "Die E-Mail muss eine gültige E-Mail-Adresse sein.",
+    "emailErrMessage2": "Bitte gib deine E-Mail-Adresse ein.",
+    "Subscribe_successfully": "Erfolgreich abonniert",
+    "Subscribe!": "Abonnieren!",
+    "Subscribe_for": "Abonniere die neuesten Einblicke und Strategien, um deine Punktzahl zu erhöhen.",
+    "Email": "E-Mail",
+    "Subscribe": "Abonnieren"
+  }
+}

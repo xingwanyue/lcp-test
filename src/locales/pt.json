@@ -1,0 +1,76 @@
+
+{
+  "test": "Para teste",
+  "Home": "Home",
+  "Products": "Produtos",
+  "Learn": "Aprender",
+  "Pricing": "Preços",
+  "Blog": "Blog",
+  "footer": {
+    "inc": "Nosso produto não tem conexão com Duolingo, Inc"
+  },
+  "index": {
+    "power_by": "Desenvolvido por IA",
+    "h1Mobile": "Obtenha uma Pontuação Mais Alta Facilmente<br />no Teste de Inglês Duolingo Com <span class=\"seo_hack\">DET Practice</span>",
+    "h1PC": "Obtenha uma Pontuação Mais Alta Facilmente no <br />Teste de Inglês Duolingo Com <span class=\"seo_hack\">DET Practice</span>",
+    "one_small_title": ["DET Practice", "Correção por IA", "Simulado Completo", "Cursos DET"],
+    "Start_free_with_Google": "Comece gratuitamente com o Google",
+    "Start_free_with_email": "Comece gratuitamente com e-mail",
+    "Start_for_free": "Comece gratuitamente",
+    "trustedByWorldwide": "Confiado por {path} estudantes em todo o mundo para um aumento de pontuação no Teste de Inglês Duolingo em 1 mês.",
+    "The_Best_Platform": "A Melhor Plataforma para Aumentar Suas Pontuações no Teste de Inglês Duolingo",
+    "Leverage_Our": "Aproveite Nossos Recursos Abrangentes para Melhoria Rápida da Pontuação",
+    "article1": {
+      "title": "Prática para o Teste de Inglês Duolingo",
+      "tips1": "Com mais de {number} perguntas práticas, nosso banco de questões em constante expansão é regularmente atualizado para excelência.",
+      "tips2": "Cobertura abrangente de todos os tipos de exame com explicações detalhadas para cada pergunta.",
+      "tips3": "Respostas detalhadas, análises inteligentes e pontuações para permitir monitoramento contínuo de seu desempenho.",
+      "btn_font": "Descubra Mais",
+      "btn_img_alt": "DET Practice: A melhor plataforma de prática para o Teste de Inglês Duolingo"
+    },
+    "article2": {
+      "title": "Serviço de Correção de Redação Alimentado por IA",
+      "tips1": "Beneficie-se de correções precisas de redação através da nossa revisão colaborativa 'IA + Professor'.",
+      "tips2": "Basta enviar sua redação e receber prontamente um relatório abrangente com uma pontuação detalhada.",
+      "tips3": "Eleve sua pontuação de escrita em apenas 2 semanas.",
+      "btn_font": "Saiba Mais",
+      "btn_img_alt": "DET Practice: A melhor plataforma de prática para o Teste de Inglês Duolingo"
+    },
+    "article3": {
+      "title": "Simulado do Teste de Inglês Duolingo",
+      "tips1": "Imite o ambiente real do exame para se familiarizar com o processo e conteúdo do teste antecipadamente.",
+      "tips2": "Receba relatórios simulados detalhados para uma análise precisa de seus pontos fortes e fracos.",
+      "tips3": "Faça exames simulados online à sua conveniência, com pontuação rápida fornecida em até 30 minutos.",
+      "btn_font": "Descubra Mais",
+      "btn_img_alt": "DET Practice: A melhor plataforma de prática para o Teste de Inglês Duolingo"
+    },
+    "article4": {
+      "title": "Curso para o Teste de Inglês Duolingo",
+      "tips1": "Alcance Domínio Completo. Desenvolva um conhecimento profundo das seções de fala e escrita do DET com nossos guias detalhados, garantindo que você aborde cada parte do exame com confiança.",
+      "tips2": "Aprenda com Especialistas em ESL. Utilize estratégias comprovadas para melhorar suas habilidades de fala e escrita, beneficie-se de caminhos de aprendizagem personalizados e envolva-se em autoavaliações eficazes.",
+      "tips3": "Fique Informado e à Frente. Mantenha-se atualizado com os formatos e tendências mais recentes do DET para garantir que sua preparação esteja perfeitamente sincronizada com os padrões atuais do exame.",
+      "btn_font": "Explore Mais",
+      "btn_img_alt": "DET Practice: A melhor plataforma de prática para o Teste de Inglês Duolingo"
+    },
+    "thousand": "k",
+    "Users": "Usuários",
+    "Questions": "Perguntas",
+    "Mock_Exam": "Simulado",
+    "Join_Them": "Junte-se a Eles"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Comece Seu Caminho para Pontuações Altas no</div><div class='font2'>Teste de Inglês Duolingo!</div>",
+    "Start_free_with_Google": "Comece gratuitamente com o Google",
+    "Start_free_with_email": "Comece gratuitamente com e-mail",
+    "Start_for_free": "Comece gratuitamente"
+  },
+  "subscribe": {
+    "emailErrMessage1": "O e-mail deve ser um endereço válido.",
+    "emailErrMessage2": "Por favor, insira seu endereço de e-mail.",
+    "Subscribe_successfully": "Inscrição realizada com sucesso",
+    "Subscribe!": "Inscreva-se!",
+    "Subscribe_for": "Inscreva-se para as Últimas Dicas e Estratégias para Elevar Sua Pontuação.",
+    "Email": "E-mail",
+    "Subscribe": "Inscrever-se"
+  }
+}
