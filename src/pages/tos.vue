@@ -6,10 +6,12 @@ import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: t('tos.seometa.title'),
-  description: '',
+  description: t('tos.seometa.description'),
+  keywords: t('tos.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/tos` }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/tos`, hreflang: 'en-GB' }],
 });
 </script>
 <template>
@@ -24,7 +26,9 @@ useHead({
         <div class="title">{{ $t('tos.q1.title') }}</div>
         <div class="content1">
           {{ $t('tos.q1.a1') }}
-          <nuxt-link to="https://detpractice.com" target="_blank" class="website"> https://detpractice.com </nuxt-link>
+          <nuxt-link to="https://www.detpractice.com/" target="_blank" class="website">
+            https://www.detpractice.com
+          </nuxt-link>
           {{ $t('tos.q1.a2') }}
           <div class="line-break"></div>
           {{ $t('tos.q1.a3') }}
