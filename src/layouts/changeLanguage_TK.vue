@@ -96,21 +96,22 @@ const changeLanguageTips = {
   },
 };
 const changeLanguage = (newVal) => {
-  console.log('切换为英语');
   setLocale(newVal);
   state.tkshow = false;
 };
 if (process.client) {
   state.language = navigator.language;
-  //   如果浏览器语言不是英语，且我们有这个语言 就显示弹框
+  //   如果浏览器语言不是英语 且我们有这个语言 就显示弹框
   if (navigator.language !== 'en') {
     if (wehaveLanguage[navigator.language]) {
       state.tkshow = true;
     }
-  } else {
-    changeLanguage('en');
   }
-  //   如果浏览器语言跟i18n的语言一样，就不显示弹框
+  //   else {
+  //     // 否则就自动切换到英语 这块逻辑对用户来说好像不需要
+  //     changeLanguage('en');
+  //   }
+  //   如果浏览器语言跟i18n切换后的的语言一样，取消上面的逻辑,不显示弹框
   if (locale.value === navigator.language) {
     state.tkshow = false;
   }
@@ -120,7 +121,7 @@ if (process.client) {
   <div v-if="state.tkshow" class="changeLanguage_tk_mc">
     <div class="changeLanguage_tk">
       <div class="header" @click="state.tkshow = false">
-        <div class="close_icon">x</div>
+        <div class="close_icon">X</div>
       </div>
       <div class="language_c_tip">{{ changeLanguageTips[state.language].tips }}</div>
       <div class="btn_out">
@@ -161,7 +162,7 @@ if (process.client) {
       .close_icon {
         width: 50px;
         height: 50px;
-
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,6 +187,7 @@ if (process.client) {
         font-weight: 500;
         font-size: 18px;
         color: #ffffff;
+        cursor: pointer;
       }
       .close_btn {
         padding: 12px 24px;
@@ -195,7 +197,6 @@ if (process.client) {
         color: #ffffff;
         cursor: pointer;
         text-align: center;
-
         box-sizing: border-box;
         border: 1px solid #201515;
         color: #201515;
