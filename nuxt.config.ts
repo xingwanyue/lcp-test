@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos'],
   css: ['@/assets/iconfont/iconfont.css'],
   i18n: {
-    locales: ['en', 'de', 'pt', 'ja', 'fr', 'id', 'es', 'it', 'th', 'pl', 'ko', 'ar', 'nl', 'tr', 'nb', 'da'],
+    locales: ['en', 'de', 'pt', 'ja', 'fr', 'id', 'es', 'it', 'th', 'pl', 'ko', 'ar', 'nl', 'tr', 'nb', 'da', 'ru'],
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts',
   },

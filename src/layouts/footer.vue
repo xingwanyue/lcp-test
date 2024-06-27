@@ -138,6 +138,7 @@ watch(language, (newVal) => {
 //   "Türkçe": "tr",
 //   "Norsk": "nb",
 //   "Dansk": "da"
+//   "Русский": "ru"
 // }
 const options = [
   {

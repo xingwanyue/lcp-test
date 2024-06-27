@@ -14,6 +14,7 @@ import nl from '@/locales/nl.json';
 import tr from '@/locales/tr.json';
 import nb from '@/locales/nb.json';
 import da from '@/locales/da.json';
+import ru from '@/locales/ru.json';
 
 export default defineI18nConfig(() => ({
   legacy: false,
@@ -37,5 +38,6 @@ export default defineI18nConfig(() => ({
     tr,
     nb,
     da,
+    ru,
   },
 }));
