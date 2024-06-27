@@ -32,8 +32,8 @@
   },
   "footer": {
     "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc",
-    "Produk": ["DET Practice", "Layanan Koreksi AI", "DET Mock", "Kursus Tes Bahasa Inggris Duolingo"],
-    "Perusahaan": ["Tentang Kami", "Hubungi Kami", "Syarat dan Ketentuan", "Kebijakan Privasi"],
+    "Products": ["DET Practice", "Layanan Koreksi AI", "DET Mock", "Kursus Tes Bahasa Inggris Duolingo"],
+    "Company": ["Tentang Kami", "Hubungi Kami", "Syarat dan Ketentuan", "Kebijakan Privasi"],
     "show_more": "tampilkan lebih banyak",
     "alt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik",
     "cookie_content": "DET Practice menggunakan cookie untuk meningkatkan konten berdasarkan Pengaturan browser Anda. Untuk detail lebih lanjut, lihat"
