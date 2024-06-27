@@ -668,7 +668,11 @@
     "btl": "Back to login"
   },
   "tos": {
-    "seometa": { "title": "Terms and Conditions - DET Practice" },
+    "seometa": {
+      "title": "Terms of Service | DET Practice",
+      "description": "Explore DET Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
     "title": "Terms of Service",
     "q1": {
       "title": "Last updated: 2023-11-20",
