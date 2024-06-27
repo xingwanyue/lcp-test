@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos'],
   css: ['@/assets/iconfont/iconfont.css'],
-  i18n: { locales: ['en', 'id', 'fr', 'ja', 'pt', 'de'], defaultLocale: 'en', vueI18n: './i18n.config.ts' },
+  i18n: {
+    locales: ['en', 'de', 'pt', 'ja', 'fr', 'id', 'es', 'it', 'th', 'pl', 'ko', 'ar', 'nl', 'tr', 'nb', 'da'],
+    defaultLocale: 'en',
+    vueI18n: './i18n.config.ts',
+  },
   plugins: [
     { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
