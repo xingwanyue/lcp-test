@@ -141,8 +141,12 @@ if (process.client) {
   z-index: 1000;
 
   .changeLanguage_tk {
-    width: 600px;
-    height: 250px;
+    max-width: 600px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
 
     position: fixed;
     top: 50%;
@@ -176,7 +180,7 @@ if (process.client) {
       align-items: center;
       margin-top: 30px;
       .change_btn {
-        padding: 9px 24px;
+        padding: 12px 24px;
         background-color: #f66442;
         border-radius: 22px;
         font-weight: 500;
