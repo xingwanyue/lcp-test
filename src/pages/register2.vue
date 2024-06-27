@@ -1,74 +1,6 @@
-<template>
-  <div class="login">
-    <div class="left">
-      <div class="t1">Sign up</div>
-      <div class="t2">Create your free DETPractice account</div>
-      <div class="loginGoogle" @click="googleRegister">
-        <img src="/img/login/google_logo.svg" alt="Sign up with Google" />
-        <span style="margin-left: 16px">Sign up with Google</span>
-      </div>
-      <el-divider class="fengeline"><span>Or continue with</span></el-divider>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
-        <el-form-item prop="code" label="">
-          Register code
-          <el-input v-model="formData.code" placeholder="Enter your code"> </el-input>
-        </el-form-item>
-        <el-form-item prop="nickname" label="">
-          Full Name
-          <el-input v-model="formData.nickname" maxlength="100" placeholder="Full Name"> </el-input>
-        </el-form-item>
-        <el-form-item prop="password" label="">
-          Password
-          <el-input
-            v-model="formData.password"
-            :type="pwdShow ? 'text' : 'password'"
-            maxlength="20"
-            placeholder="Password"
-          >
-            <template #suffix>
-              <img
-                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
-                style="cursor: pointer"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
-                @click="pwdShow = !pwdShow"
-              />
-            </template>
-          </el-input>
-        </el-form-item>
-        <el-form-item style="margin-top: 24px; margin-bottom: 16px">
-          <div v-if="errShow" class="err-message">
-            <img
-              src="/img/login/errIcon.svg"
-              class="errIcon"
-              alt="DET Practice:The best Duolingo English Test Practice platform"
-            />
-            <span>{{ errMessage }}</span>
-          </div>
-          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-            Create Account
-          </el-button>
-        </el-form-item>
-        <el-form-item>
-          <div class="zhuce">
-            <div class="goregister">
-              Already have an account?
-              <span style="color: #f66442; cursor: pointer" @click="goLogin">Login here.</span>
-            </div>
-          </div>
-        </el-form-item>
-      </el-form>
-    </div>
-  </div>
-</template>
-
 <script setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { register } from '@/api';
@@ -95,22 +27,22 @@ const submit = async () => {
   errShow.value = false;
   if (!code) {
     errShow.value = true;
-    errMessage.value = 'Please enter your code.';
+    errMessage.value = t('register2.peyc');
     return false;
   }
   if (!nickname) {
     errShow.value = true;
-    errMessage.value = 'Please enter your full name.';
+    errMessage.value = t('register2.peyfn');
     return false;
   }
   if (!password) {
     errShow.value = true;
-    errMessage.value = 'Please enter your password.';
+    errMessage.value = t('register2.peyp');
     return false;
   }
   if (password.length < 6) {
     errShow.value = true;
-    errMessage.value = 'Password too short.';
+    errMessage.value = t('register2.pts');
     return false;
   }
   const temp = {
@@ -140,6 +72,74 @@ const googleRegister = async () => {
   return oauth2SignIn();
 };
 </script>
+
+<template>
+  <div class="login">
+    <div class="left">
+      <div class="t1">{{ $t('register2.Sign_up') }}</div>
+      <div class="t2">{{ $t('register2.cyfda') }}</div>
+      <div class="loginGoogle" @click="googleRegister">
+        <img src="/img/login/google_logo.svg" :alt="$t('register2.Sign_up_with_Google')" />
+        <span style="margin-left: 16px">{{ $t('register2.Sign_up_with_Google') }}</span>
+      </div>
+      <el-divider class="fengeline"
+        ><span>{{ $t('register2.Or_continue_with') }}</span></el-divider
+      >
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
+        <el-form-item prop="code" label="">
+          {{ $t('register2.Register_code') }}
+          <el-input v-model="formData.code" :placeholder="$t('register2.Enter_your_code')"> </el-input>
+        </el-form-item>
+        <el-form-item prop="nickname" label="">
+          {{ $t('register2.Full_Name') }}
+          <el-input v-model="formData.nickname" maxlength="100" :placeholder="$t('register2.Full_Name')"> </el-input>
+        </el-form-item>
+        <el-form-item prop="password" label="">
+          {{ $t('register2.Password') }}
+          <el-input
+            v-model="formData.password"
+            :type="pwdShow ? 'text' : 'password'"
+            maxlength="20"
+            :placeholder="$t('register2.Password')"
+          >
+            <template #suffix>
+              <img
+                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                style="cursor: pointer"
+                :alt="$t('register2.alt')"
+                @click="pwdShow = !pwdShow"
+              />
+            </template>
+          </el-input>
+        </el-form-item>
+        <el-form-item style="margin-top: 24px; margin-bottom: 16px">
+          <div v-if="errShow" class="err-message">
+            <img src="/img/login/errIcon.svg" class="errIcon" :alt="$t('register2.alt')" />
+            <span>{{ errMessage }}</span>
+          </div>
+          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            {{ $t('register2.Create_Account') }}
+          </el-button>
+        </el-form-item>
+        <el-form-item>
+          <div class="zhuce">
+            <div class="goregister">
+              {{ $t('register2.ahaa') }}
+              <span style="color: #f66442; cursor: pointer" @click="goLogin">{{ $t('register2.Login_here') }}</span>
+            </div>
+          </div>
+        </el-form-item>
+      </el-form>
+    </div>
+  </div>
+</template>
 
 <style lang="scss">
 .login {

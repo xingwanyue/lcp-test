@@ -596,5 +596,23 @@
     "ahaa": "Sudah memiliki akun?",
     "Login_here": "Masuk di sini",
     "yec": "anda@contoh.com"
+  },
+  "register2": {
+    "Sign_up": "Daftar",
+    "cyfda": "Buat akun DETPractice gratis Anda",
+    "Sign_up_with_Google": "Daftar dengan Google",
+    "Or_continue_with": "Atau lanjutkan dengan",
+    "Register_code": "Kode Registrasi",
+    "Enter_your_code": "Masukkan kode Anda",
+    "Full_Name": "Nama Lengkap",
+    "Password": "Kata Sandi",
+    "alt": "DET Practice: Platform Praktik Tes Bahasa Inggris Duolingo terbaik",
+    "Create_Account": "Buat Akun",
+    "ahaa": "Sudah memiliki akun?",
+    "Login_here": "Masuk di sini.",
+    "peyc": "Silakan masukkan kode Anda.",
+    "peyfn": "Silakan masukkan nama lengkap Anda.",
+    "peyp": "Silakan masukkan kata sandi Anda.",
+    "pts": "Kata sandi terlalu pendek."
   }
 }

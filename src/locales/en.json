@@ -596,5 +596,23 @@
     "ahaa": "Already have an account?",
     "Login_here": "Login here",
     "yec": "you@example.com"
+  },
+  "register2": {
+    "Sign_up": "Sign up",
+    "cyfda": "Create your free DETPractice account",
+    "Sign_up_with_Google": "Sign up with Google",
+    "Or_continue_with": "Or continue with",
+    "Register_code": "Register code",
+    "Enter_your_code": "Enter your code",
+    "Full_Name": "Full Name",
+    "Password": "Password",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Create_Account": "Create Account",
+    "ahaa": "Already have an account?",
+    "Login_here": "Login here.",
+    "peyc": "Please enter your code.",
+    "peyfn": "Please enter your full name.",
+    "peyp": "Please enter your password.",
+    "pts": "Password too short."
   }
 }
