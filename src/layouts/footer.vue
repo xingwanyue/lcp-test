@@ -6,7 +6,8 @@ import { reactive } from 'vue';
 
 const localePath = useLocalePath();
 const store = useStore();
-const { locale, t } = useI18n();
+const { locale, t, setLocale } = useI18n();
+
 const state = reactive({
   isMore1: false,
   isMore2: false,
@@ -105,21 +106,15 @@ const Company = {
     },
   ],
 };
-const language = ref('en');
+const language = ref('');
 
-// 是否需要记住上次选择的语言
-// const userSelectLanguage = getStorage('detlanguage');
-
-// if (userSelectLanguage) {
-//   language.value = userSelectLanguage;
-//   locale.value = userSelectLanguage;
-//   store.userChangeLanguage(userSelectLanguage);
-// }
+language.value = locale.value;
 getLearn();
 getBlob();
 watch(language, (newVal) => {
-  locale.value = newVal;
-  saveStorage('detlanguage', newVal);
+  setLocale(newVal).then(() => {
+    window.location.reload();
+  });
 });
 
 const options = [
@@ -211,7 +206,7 @@ const closeCookie = () => {
         <div class="tips_out">{{ t('footer.inc') }}</div>
         <div v-if="options.length" class="select_out">
           <el-select v-model="language" placeholder="Select" style="width: 240px">
-            <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+            <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"> </el-option>
           </el-select>
         </div>
       </div>
