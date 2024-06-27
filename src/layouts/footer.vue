@@ -121,25 +121,29 @@ watch(language, (newVal) => {
 
 const options = [
   {
+    value: 'de',
+    label: 'Deutsch',
+  },
+  {
     value: 'en',
     label: 'English',
+  },
+  {
+    value: 'fr',
+    label: 'Français',
   },
   {
     value: 'id',
     label: 'Indonesian',
   },
-  // {
-  //   value: 'Option3',
-  //   label: 'Option3',
-  // },
-  // {
-  //   value: 'Option4',
-  //   label: 'Option4',
-  // },
-  // {
-  //   value: 'Option5',
-  //   label: 'Option5',
-  // },
+  {
+    value: 'ja',
+    label: '日本語',
+  },
+  {
+    value: 'pt',
+    label: 'Português',
+  },
 ];
 const closeCookie = () => {
   cookieShow.value = false;
