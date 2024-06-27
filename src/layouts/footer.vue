@@ -122,7 +122,23 @@ getBlob();
 watch(language, (newVal) => {
   setLocale(newVal);
 });
-
+// {
+//   "Deutsch": "de",
+//   "Português": "pt",
+//   "日本語": "ja",
+//   "Français": "fr",
+//   "Bahasa Indonesia": "id",
+//   "Español": "es",
+//   "Italiano": "it",
+//   "ไทย": "th",
+//   "Polski": "pl",
+//   "한국어": "ko",
+//   "العربية": "ar",
+//   "Nederlands": "nl",
+//   "Türkçe": "tr",
+//   "Norsk": "nb",
+//   "Dansk": "da"
+// }
 const options = [
   {
     value: 'de',
