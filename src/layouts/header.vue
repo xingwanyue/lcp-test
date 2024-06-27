@@ -82,7 +82,7 @@ const productClick = () => {
   isProductsMobile.value = !isProductsMobile.value;
 };
 
-const menus = [
+const menus = computed(() => [
   {
     name: t('Home'),
     path: '/',
@@ -103,7 +103,8 @@ const menus = [
     name: t('Blog'),
     path: '/blog',
   },
-];
+]);
+// const menus = ;
 </script>
 
 <template>

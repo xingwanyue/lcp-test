@@ -22,27 +22,29 @@ onMounted(() => {
     }
   }, 5000);
 });
-const prod = {
-  name: 'Products',
-  list: [
-    {
-      name: t('footer.Products[0]'),
-      url: '/practice',
-    },
-    {
-      name: t('footer.Products[1]'),
-      url: '/correction',
-    },
-    {
-      name: t('footer.Products[2]'),
-      url: '/mock-exam',
-    },
-    {
-      name: t('footer.Products[3]'),
-      url: '/courses',
-    },
-  ],
-};
+const prod = computed(() => {
+  return {
+    name: 'Products',
+    list: [
+      {
+        name: t('footer.Products[0]'),
+        url: '/practice',
+      },
+      {
+        name: t('footer.Products[1]'),
+        url: '/correction',
+      },
+      {
+        name: t('footer.Products[2]'),
+        url: '/mock-exam',
+      },
+      {
+        name: t('footer.Products[3]'),
+        url: '/courses',
+      },
+    ],
+  };
+});
 
 const Learn = ref({
   name: 'Learn',
@@ -84,37 +86,37 @@ const getBlob = async () => {
     };
   });
 };
+const Company = computed(() => {
+  return {
+    name: 'Company',
+    list: [
+      {
+        name: t('footer.Company[0]'),
+        url: '/about-us',
+      },
+      {
+        name: t('footer.Company[1]'),
+        url: '/contact-us',
+      },
+      {
+        name: t('footer.Company[2]'),
+        url: '/tos',
+      },
+      {
+        name: t('footer.Company[3]'),
+        url: '/privacy-policy',
+      },
+    ],
+  };
+});
 
-const Company = {
-  name: 'Company',
-  list: [
-    {
-      name: t('footer.Company[0]'),
-      url: '/about-us',
-    },
-    {
-      name: t('footer.Company[1]'),
-      url: '/contact-us',
-    },
-    {
-      name: t('footer.Company[2]'),
-      url: '/tos',
-    },
-    {
-      name: t('footer.Company[3]'),
-      url: '/privacy-policy',
-    },
-  ],
-};
 const language = ref('');
 
 language.value = locale.value;
 getLearn();
 getBlob();
 watch(language, (newVal) => {
-  setLocale(newVal).then(() => {
-    window.location.reload();
-  });
+  setLocale(newVal);
 });
 
 const options = [
