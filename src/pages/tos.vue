@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
-  title: 'Terms and Conditions - DET Practice',
+  title: t('tos.seometa.title'),
   description: '',
 });
 useHead({
@@ -14,103 +16,77 @@ useHead({
   <div class="termsService">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">Terms of Service</div>
+        <div class="title">Terms of Service{{ $t('tos.title') }}</div>
       </div>
     </div>
     <div class="bg">
       <div class="content margin-top0" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Last updated: 2023-11-20</div>
+        <div class="title">{{ $t('tos.q1.title') }}</div>
         <div class="content1">
-          Please read these Terms of Service (“Terms”, “TOS”) carefully before using the
+          {{ $t('tos.q1.a1') }}
           <nuxt-link to="https://detpractice.com" target="_blank" class="website"> https://detpractice.com </nuxt-link>
-          website (the “Service”) operated by DET Practice (“us”, “we”, or “our”).
+          {{ $t('tos.q1.a2') }}
           <div class="line-break"></div>
-          Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms.
-          These Terms apply to all visitors, users, and others who access or use the Service.
+          {{ $t('tos.q1.a3') }}
           <div class="line-break"></div>
-          By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the
-          terms then you may not access the Service.
+          {{ $t('tos.q1.a4') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Accounts</div>
+        <div class="title">{{ $t('tos.q2.title') }}</div>
         <div class="content1">
-          When you create an account with us, you must provide us with information that is accurate, complete, and
-          current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate
-          termination of your account on our Service.
+          {{ $t('tos.q2.a1') }}
           <div class="line-break"></div>
-          You are responsible for safeguarding the password that you use to access the Service and for any activities or
-          actions under your password, whether your password is with our Service or a third-party service.
+          {{ $t('tos.q2.a2') }}
           <div class="line-break"></div>
-          You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware
-          of any breach of security or unauthorized use of your account.
+          {{ $t('tos.q2.a3') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Links To Other Web Sites</div>
+        <div class="title">{{ $t('tos.q3.title') }}</div>
         <div class="content1">
-          Our Service may contain links to third-party websites or services that are not owned or controlled by DET
-          Practice.
+          {{ $t('tos.q3.a1') }}
           <div class="line-break"></div>
-          DET Practice has no control over and assumes no responsibility for, the content, privacy policies, or
-          practices of any third-party websites or services. You further acknowledge and agree that DET Practice shall
-          not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by
-          or in connection with the use of or reliance on any such content, goods, or services available on or through
-          any such web sites or services.
+          {{ $t('tos.q3.a2') }}
           <div class="line-break"></div>
-          We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or
-          services that you visit.
+          {{ $t('tos.q3.a3') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Termination</div>
+        <div class="title">{{ $t('tos.q4.title') }}</div>
         <div class="content1">
-          We may terminate or suspend your account immediately, without prior notice or liability, for any reason
-          whatsoever, including without limitation if you breach the Terms.
+          {{ $t('tos.q4.a1') }}
           <div class="line-break"></div>
-          Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account,
-          you may simply discontinue using the Service.
+          {{ $t('tos.q4.a2') }}
           <div class="line-break"></div>
-          All provisions of the Terms which by their nature should survive termination shall survive termination,
-          including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of
-          liability.
+          {{ $t('tos.q4.a3') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Disclaimer</div>
+        <div class="title">{{ $t('tos.q5.title') }}</div>
         <div class="content1">
-          Your use of the Service is at your sole risk. The Service is provided on an “AS IS” and “AS AVAILABLE” basis.
-          The Service is provided without warranties of any kind, whether express or implied, including, but not limited
-          to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of
-          performance.
+          {{ $t('tos.q5.a1') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Governing Law</div>
+        <div class="title">{{ $t('tos.q6.title') }}</div>
         <div class="content1">
-          These Terms shall be governed and construed in accordance with the laws of the United Kingdom without regard
-          to its conflict of law provisions.
+          {{ $t('tos.q6.a1') }}
           <div class="line-break"></div>
-          Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
-          If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of
-          these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our
-          Service and supersede and replace any prior agreements we might have between us regarding the Service.
+          {{ $t('tos.q6.a2') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Changes</div>
+        <div class="title">{{ $t('tos.q7.title') }}</div>
         <div class="content1">
-          We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is
-          material we will try to provide at least 15 days’ notice prior to any new terms taking effect. What
-          constitutes a material change will be determined at our sole discretion.
+          {{ $t('tos.q7.a1') }}
           <div class="line-break"></div>
-          By continuing to access or use our Service after those revisions become effective, you agree to be bound by
-          the revised terms. If you do not agree to the new terms, please stop using the Service.
+          {{ $t('tos.q7.a2') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Contact Us</div>
-        <div class="content1">If you have any questions about these Terms, please contact us.</div>
+        <div class="title">{{ $t('tos.q8.title') }}</div>
+        <div class="content1">{{ $t('tos.q8.a1') }}</div>
       </div>
     </div>
   </div>

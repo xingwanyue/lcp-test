@@ -614,5 +614,76 @@
     "peyfn": "Silakan masukkan nama lengkap Anda.",
     "peyp": "Silakan masukkan kata sandi Anda.",
     "pts": "Kata sandi terlalu pendek."
+  },
+  "resetPassword": {
+    "peuc": "Silakan masukkan kode Anda.",
+    "fp": "Lupa Kata Sandi?",
+    "pete": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
+    "Enter_your_code": "Masukkan kode Anda",
+    "pw": "Silakan tunggu selama 120 detik untuk mengatur ulang kode",
+    "alt": "DET Practice: Platform Praktik Tes Bahasa Inggris Duolingo terbaik",
+    "rpr": "Permintaan Atur Ulang Kata Sandi",
+    "btl": "Kembali ke login"
+  },
+  "resetPasswordStep2": {
+    "peue": "Silakan masukkan alamat email Anda.",
+    "pts": "Kata sandi terlalu pendek.",
+    "pi": "Ketidaksesuaian kata sandi.",
+    "fp": "Lupa Kata Sandi?",
+    "pete": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
+    "np": "Kata Sandi Baru",
+    "eanp": "Masukkan kata sandi baru",
+    "alt": "DET Practice: Platform Praktik Tes Bahasa Inggris Duolingo terbaik",
+    "cnp": "Konfirmasi Kata Sandi Baru",
+    "cynp": "Konfirmasi kata sandi baru Anda",
+    "rmp": "Atur Ulang Kata Sandiku",
+    "btl": "Kembali ke login"
+  },
+  "tos": {
+    "seometa": { "title": "Syarat dan Ketentuan - DET Practice" },
+    "title": "Syarat Layanan",
+    "q1": {
+      "title": "Terakhir diperbarui: 20-11-2023",
+      "a1": "Harap baca Syarat Layanan (“Syarat”, “TOS”) ini dengan saksama sebelum menggunakan",
+      "a2": "situs web (layanan “Service”) yang dioperasikan oleh DET Practice (“kami”, “kita”, atau “milik kami”).",
+      "a3": " Akses Anda ke dan penggunaan Layanan ini dikondisikan pada penerimaan dan kepatuhan Anda terhadap Syarat ini. Syarat ini berlaku untuk semua pengunjung, pengguna, dan lainnya yang mengakses atau menggunakan Layanan.",
+      "a4": "Dengan mengakses atau menggunakan Layanan Anda setuju untuk terikat dengan Syarat ini. Jika Anda tidak setuju dengan bagian dari syarat maka Anda mungkin tidak mengakses Layanan."
+    },
+    "q2": {
+      "title": "Akun",
+      "a1": "Ketika Anda membuat akun dengan kami, Anda harus memberikan kami informasi yang akurat, lengkap, dan terkini setiap saat. Kegagalan untuk melakukan hal tersebut merupakan pelanggaran terhadap Syarat, yang dapat mengakibatkan penghentian segera akun Anda pada Layanan kami.",
+      "a2": "Anda bertanggung jawab untuk menjaga keamanan kata sandi yang Anda gunakan untuk mengakses Layanan dan untuk setiap aktivitas atau tindakan di bawah kata sandi Anda, baik kata sandi Anda dengan Layanan kami atau layanan pihak ketiga.",
+      "a3": "Anda setuju untuk tidak mengungkapkan kata sandi Anda kepada pihak ketiga manapun. Anda harus memberitahu kami segera setelah menjadi sadar akan setiap pelanggaran keamanan atau penggunaan tidak sah dari akun Anda."
+    },
+    "q3": {
+      "title": "Tautan Ke Situs Web Lain",
+      "a1": "Layanan kami mungkin berisi tautan ke situs web atau layanan pihak ketiga yang tidak dimiliki atau dikontrol oleh DET Practice.",
+      "a2": "DET Practice tidak memiliki kontrol atas dan tidak bertanggung jawab atas, konten, kebijakan privasi, atau praktik dari situs web atau layanan pihak ketiga manapun. Anda lebih lanjut mengakui dan setuju bahwa DET Practice tidak akan bertanggung jawab atau dapat dituntut, secara langsung atau tidak langsung, atas kerusakan atau kerugian yang disebabkan atau diduga disebabkan oleh atau sehubungan dengan penggunaan atau ketergantungan pada konten, barang, atau layanan yang tersedia pada atau melalui situs web atau layanan tersebut.",
+      "a3": "Kami sangat menyarankan Anda untuk membaca syarat dan ketentuan dan kebijakan privasi dari situs web atau layanan pihak ketiga yang Anda kunjungi."
+    },
+    "q4": {
+      "title": "Penghentian",
+      "a1": "Kami dapat menghentikan atau menangguhkan akun Anda segera, tanpa pemberitahuan sebelumnya atau tanggung jawab, untuk alasan apa pun, termasuk tanpa batasan jika Anda melanggar Syarat.",
+      "a2": "Setelah penghentian, hak Anda untuk menggunakan Layanan akan segera berakhir. Jika Anda ingin menghentikan akun Anda, Anda dapat berhenti menggunakan Layanan.",
+      "a3": "Semua ketentuan dari Syarat yang oleh sifatnya harus bertahan setelah penghentian akan bertahan, termasuk, tanpa batasan, ketentuan kepemilikan, penafian garansi, ganti rugi, dan batasan tanggung jawab."
+    },
+    "q5": {
+      "title": "Penafian",
+      "a1": "Penggunaan Layanan adalah risiko Anda sendiri. Layanan disediakan pada basis “SEBAGAIMANA ADANYA” dan “SEBAGAIMANA TERSEDIA”. Layanan disediakan tanpa jaminan dari jenis apa pun, baik yang dinyatakan maupun yang tersirat, termasuk, tapi tidak terbatas pada, jaminan tersirat dari kelayakan untuk diperjualbelikan, kesesuaian untuk tujuan tertentu, tidak melanggar, atau jalannya kinerja."
+    },
+    "q6": {
+      "title": "Hukum yang Mengatur",
+      "a1": "Syarat ini akan diatur dan ditafsirkan sesuai dengan hukum Inggris Raya tanpa memperhatikan ketentuan hukum yang bertentangan.",
+      "a2": "Kegagalan kami untuk menegakkan hak atau ketentuan dari Syarat ini tidak akan dianggap sebagai pengabaian dari hak tersebut. Jika ketentuan dari Syarat ini dianggap tidak sah atau tidak dapat diberlakukan oleh pengadilan, ketentuan lain dari Syarat ini akan tetap berlaku. Syarat ini merupakan keseluruhan kesepakatan antara kami mengenai Layanan kami dan menggantikan dan mengganti setiap kesepakatan sebelumnya yang mungkin kami miliki antara kami mengenai Layanan."
+    },
+    "q7": {
+      "title": "Perubahan",
+      "a1": "Kami berhak, atas kebijakan kami sendiri, untuk memodifikasi atau mengganti Syarat ini kapan saja. Jika revisi adalah materi kami akan mencoba memberikan pemberitahuan setidaknya 15 hari sebelum syarat baru berlaku. Apa yang merupakan perubahan materi akan ditentukan atas kebijakan kami sendiri.",
+      "a2": "Dengan terus mengakses atau menggunakan Layanan kami setelah revisi tersebut menjadi efektif, Anda setuju untuk terikat oleh syarat yang direvisi. Jika Anda tidak setuju dengan syarat baru, silakan berhenti menggunakan Layanan."
+    },
+    "q8": {
+      "title": "Hubungi Kami",
+      "a1": "Jika Anda memiliki pertanyaan tentang Syarat ini, silakan hubungi kami."
+    }
   }
 }
