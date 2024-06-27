@@ -13,7 +13,6 @@ const state = reactive({
 });
 const cookieShow = ref(false);
 onMounted(() => {
-  console.log('mounted');
   setTimeout(() => {
     const cookieShowlocalStorage = localStorage.getItem('cookieShow');
     if (cookieShowlocalStorage !== 'true') {
@@ -107,13 +106,15 @@ const Company = {
   ],
 };
 const language = ref('en');
-const userSelectLanguage = getStorage('detlanguage');
 
-if (userSelectLanguage) {
-  language.value = userSelectLanguage;
-  locale.value = userSelectLanguage;
-  store.userChangeLanguage(userSelectLanguage);
-}
+// 是否需要记住上次选择的语言
+// const userSelectLanguage = getStorage('detlanguage');
+
+// if (userSelectLanguage) {
+//   language.value = userSelectLanguage;
+//   locale.value = userSelectLanguage;
+//   store.userChangeLanguage(userSelectLanguage);
+// }
 getLearn();
 getBlob();
 watch(language, (newVal) => {
