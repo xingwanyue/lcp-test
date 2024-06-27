@@ -76,7 +76,9 @@ const rateChange = async () => {
       </div>
       <div class="content">
         <div class="article-con">
-          <div class="title">{{ props.article.name }}</div>
+          <div class="title">
+            <h1>{{ props.article.name }}</h1>
+          </div>
           <div id="content" class="article-con1" v-html="props.article.content"></div>
         </div>
         <div class="article-title-list article-title-list1">

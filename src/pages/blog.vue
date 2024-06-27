@@ -13,6 +13,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/blog`, hreflang: 'en-GB' }],
 });
 const route = useRoute();
 const total = ref(0);
@@ -95,7 +96,7 @@ const handleCurrentChange = async (val: number) => {
           <div class="bottom">
             <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item.category }}</div>
             <div class="right_arrow">
-              <el-image src="/img/blog/right_arrow.svg" :alt="$t('blog.alt')"></el-image>
+              <el-image src="/img/blog/right_arrow.svg" alt="Right Arrow"></el-image>
             </div>
           </div>
         </NuxtLink>

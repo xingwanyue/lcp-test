@@ -56,17 +56,19 @@ const submit = async () => {
 };
 useServerSeoMeta({
   title: t('contactUs.seometa.title'),
-  description: '',
+  description: t('contactUs.seometa.description'),
+  keywords: t('contactUs.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/contact-us` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/contact-us`, hreflang: 'en-GB' }],
 });
 </script>
 <template>
   <div class="contactus">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">{{ $t('contactUs.Contact_Us') }}</div>
+        <h1 class="title">{{ $t('contactUs.Contact_Us') }}</h1>
         <div class="title2">{{ $t('contactUs.Questions') }}</div>
       </div>
     </div>

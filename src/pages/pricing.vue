@@ -6,9 +6,11 @@ import { useStore } from '@/store';
 useServerSeoMeta({
   title: t('pricing.seometa.title'),
   description: t('pricing.seometa.description'),
+  keywords: t('pricing.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/pricing` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/pricing`, hreflang: 'en-GB' }],
 });
 const store = useStore();
 const user = computed(() => store.user);
@@ -508,14 +510,14 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_qllist">
                 <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
-                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.alt')" />
+                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.check_icon')" />
                   </div>
                   <div class="font">
                     <div v-html="itemin.desc"></div>
                   </div>
                   <div v-if="itemin.tips" class="tips">
                     <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
-                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.alt')" />
+                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.tip_icon')" />
                     </el-tooltip>
                   </div>
                 </div>
@@ -523,7 +525,7 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_qllist" style="margin-top: 16px">
                 <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
                   <div class="icon">
-                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.alt')" />
+                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.check_icon')" />
                   </div>
                   <div class="font" :style="itemuc?.style">
                     <!-- <span class="bigger">30 days</span> -->
@@ -531,7 +533,7 @@ const formateMinToHour = (min: number) => {
                   </div>
                   <div v-if="itemuc.tips" class="tips">
                     <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
-                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.alt')" />
+                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.tip_icon')" />
                     </el-tooltip>
                   </div>
                 </div>
@@ -627,7 +629,7 @@ const formateMinToHour = (min: number) => {
             <el-carousel-item v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
-                  <img src="/img/pricing/green_check.svg" :alt="$t('pricing.pagefont.alt')" />
+                  <img src="/img/pricing/green_check.svg" :alt="$t('pricing.pagefont.green_check')" />
                 </div>
                 <div class="name">{{ item.data.nickname }}</div>
                 <div class="type">{{ $t('pricing.pagefont.purchased') }}</div>
@@ -694,7 +696,7 @@ const formateMinToHour = (min: number) => {
           >
             <div class="header" @click="openOrCloseOneQuestion(item)">
               <div class="icon">
-                <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.alt')" />
+                <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
               </div>
               <div class="qusetion">{{ item.name }}</div>
             </div>

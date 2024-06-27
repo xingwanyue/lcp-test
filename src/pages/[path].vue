@@ -22,6 +22,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: () => `https://www.${domain}/${article.value?.path}` }],
+  link: [{ rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}/${article.value?.path}` }],
 });
 </script>
 <template>

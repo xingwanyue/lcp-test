@@ -6,9 +6,12 @@ import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: t('privacyPolicy.seometa.title'),
+  description: t('privacyPolicy.seometa.description'),
+  keywords: t('privacyPolicy.seometa.keywords'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/privacy-policy` }],
+  link: [{ rel: 'alternate', href: `https://www.detpractice.com/privacy-policy`, hreflang: 'en-GB' }],
 });
 </script>
 <template>
@@ -29,7 +32,9 @@ useHead({
           {{ $t('privacyPolicy.q1.a3') }}
           <div class="line-break"></div>
           {{ $t('privacyPolicy.q1.a4') }}
-          <nuxt-link to="https://detpractice.com" target="_blank" class="website"> https://detpractice.com </nuxt-link>
+          <nuxt-link to="https://www.detpractice.com/" target="_blank" class="website">
+            https://www.detpractice.com
+          </nuxt-link>
           <div class="line-break"></div>
           {{ $t('privacyPolicy.q1.a5') }}
           <div class="line-break"></div>

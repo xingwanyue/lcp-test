@@ -6,7 +6,7 @@ import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: t('aboutUs.seometa.title'),
-  description: '',
+  description: t('aboutUs.seometa.description'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/about-us` }],
@@ -16,7 +16,9 @@ useHead({
   <div class="aboutus">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">{{ $t('aboutUs.title') }}</div>
+        <div class="title">
+          <h1>{{ $t('aboutUs.title') }}</h1>
+        </div>
       </div>
     </div>
     <div class="content padding">

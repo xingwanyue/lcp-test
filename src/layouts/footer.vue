@@ -22,27 +22,29 @@ onMounted(() => {
     }
   }, 5000);
 });
-const prod = {
-  name: 'Products',
-  list: [
-    {
-      name: t('footer.Products[0]'),
-      url: '/practice',
-    },
-    {
-      name: t('footer.Products[1]'),
-      url: '/correction',
-    },
-    {
-      name: t('footer.Products[2]'),
-      url: '/mock-exam',
-    },
-    {
-      name: t('footer.Products[3]'),
-      url: '/courses',
-    },
-  ],
-};
+const prod = computed(() => {
+  return {
+    name: 'Products',
+    list: [
+      {
+        name: t('footer.Products[0]'),
+        url: '/practice',
+      },
+      {
+        name: t('footer.Products[1]'),
+        url: '/correction',
+      },
+      {
+        name: t('footer.Products[2]'),
+        url: '/mock-exam',
+      },
+      {
+        name: t('footer.Products[3]'),
+        url: '/courses',
+      },
+    ],
+  };
+});
 
 const Learn = ref({
   name: 'Learn',
@@ -84,60 +86,68 @@ const getBlob = async () => {
     };
   });
 };
+const Company = computed(() => {
+  return {
+    name: 'Company',
+    list: [
+      {
+        name: t('footer.Company[0]'),
+        url: '/about-us',
+      },
+      {
+        name: t('footer.Company[1]'),
+        url: '/contact-us',
+      },
+      {
+        name: t('footer.Company[2]'),
+        url: '/tos',
+      },
+      {
+        name: t('footer.Company[3]'),
+        url: '/privacy-policy',
+      },
+      {
+        name: t('footer.Company[4]'),
+        url: '/sitemap',
+      },
+    ],
+  };
+});
 
-const Company = {
-  name: 'Company',
-  list: [
-    {
-      name: t('footer.Company[0]'),
-      url: '/about-us',
-    },
-    {
-      name: t('footer.Company[1]'),
-      url: '/contact-us',
-    },
-    {
-      name: t('footer.Company[2]'),
-      url: '/tos',
-    },
-    {
-      name: t('footer.Company[3]'),
-      url: '/privacy-policy',
-    },
-  ],
-};
 const language = ref('');
 
 language.value = locale.value;
 getLearn();
 getBlob();
 watch(language, (newVal) => {
-  setLocale(newVal).then(() => {
-    window.location.reload();
-  });
+  setLocale(newVal);
 });
 
 const options = [
+  {
+    value: 'de',
+    label: 'Deutsch',
+  },
   {
     value: 'en',
     label: 'English',
   },
   {
+    value: 'fr',
+    label: 'Français',
+  },
+  {
     value: 'id',
     label: 'Indonesian',
   },
-  // {
-  //   value: 'Option3',
-  //   label: 'Option3',
-  // },
-  // {
-  //   value: 'Option4',
-  //   label: 'Option4',
-  // },
-  // {
-  //   value: 'Option5',
-  //   label: 'Option5',
-  // },
+  {
+    value: 'ja',
+    label: '日本語',
+  },
+  {
+    value: 'pt',
+    label: 'Português',
+  },
 ];
 const closeCookie = () => {
   cookieShow.value = false;
@@ -150,7 +160,7 @@ const closeCookie = () => {
       <div class="one_link_list">
         <div class="one_link_list_title">{{ prod.name }}</div>
         <div v-for="(itemin, indexin) in prod.list" :key="indexin" class="one_link_list_detail">
-          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -160,7 +170,7 @@ const closeCookie = () => {
           :key="indexin"
           :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
         >
-          <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
@@ -170,24 +180,24 @@ const closeCookie = () => {
           :key="indexin"
           :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
         >
-          <NuxtLink :to="localePath(`/${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Company.name }}</div>
         <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
-          <NuxtLink :to="localePath(`${itemin.url}`)"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
     </div>
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
         <div class="logo_img_out">
-          <img src="/img/footer/small_logo.svg" :alt="$t('footer.alt')" />
+          <img src="/img/footer/small_logo.svg" :alt="$t('footer.newAlt')" />
         </div>
         <div class="logo_icon_out">
           <span class="Copyright">© 2024 DET Practice</span>
-          <NuxtLink to="https://www.youtube.com/@detpracticecom" target="_blank">
+          <NuxtLink to="https://www.youtube.com/@detpractice" target="_blank">
             <div class="one_icon youtube"></div>
           </NuxtLink>
           <!-- <NuxtLink to="">
@@ -214,15 +224,11 @@ const closeCookie = () => {
 
     <div v-if="cookieShow" class="cookie_out">
       <div class="cookie_header">
-        <img
-          :src="`/img/footer/close_icon.svg`"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
-          @click="closeCookie"
-        />
+        <img :src="`/img/footer/close_icon.svg`" :alt="$t('footer.close_icon_alt')" @click="closeCookie" />
       </div>
       <div class="cookie_contenr">
         {{ $t('footer.cookie_contenr') }}
-        <NuxtLink :to="localePath(`/cookie`)" class="see_cookei">Cookie Policy</NuxtLink>
+        <NuxtLink :to="localePath(`/cookie`)" title="Cookie Policy" class="see_cookei">Cookie Policy</NuxtLink>
       </div>
     </div>
   </div>
