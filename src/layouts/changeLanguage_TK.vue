@@ -171,7 +171,7 @@ if (process.client) {
       font-weight: 400;
       font-size: 18px;
       color: #403f3e;
-      margin-top: 24px;
+      margin-top: 18px;
       padding: 0 24px;
     }
     .btn_out {
