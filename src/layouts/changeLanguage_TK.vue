@@ -26,73 +26,73 @@ const wehaveLanguage = {
   ru: 'Русский',
 };
 const changeLanguageTips = {
-  //   de: {
-  //     area: 'Deutsch',
-  //     tips: '欢迎访问我们的网站，检测到您所在的地区为[Deutsch]。建议切换到[Deutsch]版本,以便更好地了解和使用我们的服务。',
-  //   },
+  cn: {
+    area: 'Deutsch',
+    tips: '欢迎访问我们的网站,你可以切换到[中文]版本,以便更好地了解和使用我们的服务。',
+  },
   de: {
     area: 'Deutsch',
-    tips: 'Willkommen auf unserer Website, wir haben festgestellt, dass Ihre Region [Deutsch] ist. Um unsere Dienste besser zu verstehen und zu nutzen, empfehlen wir Ihnen, auf die [Deutsch]-Version zu wechseln.',
+    tips: 'Willkommen auf unserer Website. Sie können auf die [Deutsch] Version wechseln, um unsere Dienste besser zu verstehen und zu nutzen.',
   },
   pt: {
     area: 'Português',
-    tips: 'Bem-vindo ao nosso site, detectamos que sua região é [Português]. Recomendamos que você mude para a versão [Português] para entender e usar melhor nossos serviços.',
+    tips: 'Bem-vindo ao nosso site. Você pode mudar para a versão [Português] para entender e usar melhor nossos serviços.',
   },
   ja: {
     area: '日本語',
-    tips: '当社のウェブサイトへようこそ。お客様の地域が[日本語]であることが検出されました。サービスをより良く理解し、利用するために、[日本語]バージョンに切り替えることをお勧めします。',
+    tips: '当社のウェブサイトへようこそ。[日本語]バージョンに切り替えると、サービスをより理解して利用できます。',
   },
   fr: {
     area: 'Français',
-    tips: 'Bienvenue sur notre site Web, nous avons détecté que votre région est [Français]. Nous vous recommandons de passer à la version [Français] pour mieux comprendre et utiliser nos services.',
+    tips: 'Bienvenue sur notre site. Vous pouvez passer à la version [Français] pour mieux comprendre et utiliser nos services.',
   },
   id: {
     area: 'Bahasa Indonesia',
-    tips: 'Selamat datang di situs web kami, kami mendeteksi bahwa wilayah Anda adalah [Bahasa Indonesia]. Kami sarankan Anda beralih ke versi [Bahasa Indonesia] untuk lebih memahami dan menggunakan layanan kami.',
+    tips: 'Selamat datang di situs web kami. Anda dapat beralih ke versi [Bahasa Indonesia] untuk lebih memahami dan menggunakan layanan kami.',
   },
   es: {
     area: 'Español',
-    tips: 'Bienvenido a nuestro sitio web, hemos detectado que su región es [Español]. Le recomendamos que cambie a la versión [Español] para comprender y utilizar mejor nuestros servicios.',
+    tips: 'Bienvenido a nuestro sitio web. Puede cambiar a la versión [Español] para comprender y utilizar mejor nuestros servicios.',
   },
   it: {
     area: 'Italiano',
-    tips: 'Benvenuti sul nostro sito web, abbiamo rilevato che la tua regione è [Italiano]. Ti consigliamo di passare alla versione [Italiano] per comprendere e utilizzare meglio i nostri servizi.',
+    tips: 'Benvenuti nel nostro sito. Puoi passare alla versione [Italiano] per comprendere e utilizzare meglio i nostri servizi.',
   },
   th: {
     area: 'ไทย',
-    tips: 'ยินดีต้อนรับสู่เว็บไซต์ของเรา เราตรวจพบว่าภูมิภาคของคุณคือ [ไทย] เราขอแนะนำให้คุณเปลี่ยนเป็นเวอร์ชัน [ไทย] เพื่อเข้าใจและใช้บริการของเราได้ดียิ่งขึ้น',
+    tips: 'ยินดีต้อนรับสู่เว็บไซต์ของเรา คุณสามารถเปลี่ยนเป็นเวอร์ชั่น [ไทย] เพื่อเข้าใจและใช้บริการของเราได้ดีขึ้น',
   },
   pl: {
     area: 'Polski',
-    tips: 'Witaj na naszej stronie internetowej, wykryliśmy, że Twoja lokalizacja to [Polski]. Zalecamy przełączenie się na wersję [Polski], aby lepiej zrozumieć i korzystać z naszych usług.',
+    tips: 'Witaj na naszej stronie. Możesz przełączyć się na wersję [Polski], aby lepiej zrozumieć i korzystać z naszych usług.',
   },
   ko: {
     area: '한국어',
-    tips: '저희 웹사이트에 오신 것을 환영합니다. 귀하의 지역이 [한국어]임을 감지했습니다. 서비스를 더 잘 이해하고 활용하기 위해 [한국어] 버전으로 전환하는 것을 권장합니다.',
+    tips: '당사 웹 사이트에 오신 것을 환영합니다. [한국어] 버전으로 전환하여 서비스를 더 잘 이해하고 활용할 수 있습니다.',
   },
   ar: {
     area: 'العربية',
-    tips: 'مرحبًا بك في موقعنا على الويب، لقد اكتشفنا أن منطقتك هي [العربية]. نوصيك بالتبديل إلى الإصدار [العربية] لفهم واستخدام خدماتنا بشكل أفضل.',
+    tips: 'مرحبًا بك في موقعنا. يمكنك التبديل إلى النسخة [العربية] لفهم واستخدام خدماتنا بشكل أفضل.',
   },
   nl: {
     area: 'Nederlands',
-    tips: 'Welkom op onze website, we hebben vastgesteld dat uw regio [Nederlands] is. We raden u aan over te schakelen naar de [Nederlands]-versie om onze diensten beter te begrijpen en te gebruiken.',
+    tips: 'Welkom op onze website. U kunt overschakelen naar de [Nederlands] versie om onze diensten beter te begrijpen en te gebruiken.',
   },
   tr: {
     area: 'Türkçe',
-    tips: 'Web sitemize hoş geldiniz, bölgenizin [Türkçe] olduğunu tespit ettik. Hizmetlerimizi daha iyi anlamak ve kullanmak için [Türkçe] sürümüne geçmenizi öneririz.',
+    tips: 'Web sitemize hoş geldiniz. Hizmetlerimizi daha iyi anlamak ve kullanmak için [Türkçe] sürümüne geçebilirsiniz.',
   },
   nb: {
     area: 'Norsk',
-    tips: 'Velkommen til nettstedet vårt, vi har oppdaget at regionen din er [Norsk]. Vi anbefaler at du bytter til [Norsk]-versjonen for å forstå og bruke tjenestene våre bedre.',
+    tips: 'Velkommen til nettstedet vårt. Du kan bytte til [Norsk] -versjonen for å forstå og bruke tjenestene våre bedre.',
   },
   da: {
     area: 'Dansk',
-    tips: 'Velkommen til vores hjemmeside, vi har opdaget, at din region er [Dansk]. Vi anbefaler, at du skifter til [Dansk]-versionen for bedre at forstå og bruge vores tjenester.',
+    tips: 'Velkommen til vores hjemmeside. Du kan skifte til [Dansk] versionen for at forstå og bruge vores tjenester bedre.',
   },
   ru: {
     area: 'Русский',
-    tips: 'Добро пожаловать на наш сайт, мы обнаружили, что ваш регион - [Русский]. Мы рекомендуем перейти на [Русский] версию, чтобы лучше понимать и использовать наши услуги.',
+    tips: 'Добро пожаловать на наш сайт. Вы можете переключиться на [Русский] версию, чтобы лучше понимать и использовать наши услуги.',
   },
 };
 const changeLanguage = (newVal) => {
