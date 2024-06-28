@@ -17,7 +17,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/`, hreflang: 'en-GB' }],
 });
 
 const localePath = useLocalePath();

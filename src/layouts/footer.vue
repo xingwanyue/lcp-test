@@ -23,7 +23,7 @@ onMounted(() => {
 });
 const prod = computed(() => {
   return {
-    name: 'Products',
+    name: t('footer.ProductsTitle'),
     list: [
       {
         name: t('footer.Products[0]'),
@@ -46,11 +46,11 @@ const prod = computed(() => {
 });
 
 const Learn = ref({
-  name: 'Learn',
+  name: t('footer.LearnTitle'),
   list: [] as any,
 });
 const Blog = ref({
-  name: 'Blog',
+  name: t('footer.BlogTitle'),
   list: [] as any,
 });
 const getLearn = async () => {
@@ -89,7 +89,7 @@ const getBlob = async () => {
 };
 const Company = computed(() => {
   return {
-    name: 'Company',
+    name: t('footer.CompanyTitle'),
     list: [
       {
         name: t('footer.Company[0]'),

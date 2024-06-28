@@ -110,7 +110,7 @@ const menus = computed(() => [
 <template>
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
     <div class="header-content">
-      <nuxt-link :to="localePath('/')" class="home-logo" title="DET Practice">
+      <nuxt-link :to="localePath('/')" class="home-logo" :title="t('header.home_logo_title')">
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
@@ -133,11 +133,7 @@ const menus = computed(() => [
             popper-class="head-question-popover"
           >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
-              <NuxtLink
-                :to="localePath('/practice')"
-                title="Duolingo English Practice Test Online"
-                class="one_card card1"
-              >
+              <NuxtLink :to="localePath('/practice')" :title="$t('header.path_practice_title')" class="one_card card1">
                 <div class="icon">
                   <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
                 </div>
@@ -150,7 +146,7 @@ const menus = computed(() => [
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/correction')"
-                title="AI Correction Service for Duolingo Test"
+                :title="$t('header.path_correction_title')"
                 class="one_card card2"
               >
                 <div class="icon">
@@ -163,7 +159,7 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/mock-exam')" title="Duolingo Mock Test" class="one_card card3">
+              <NuxtLink :to="localePath('/mock-exam')" :title="$t('header.path_mock_title')" class="one_card card3">
                 <div class="icon">
                   <img src="/img/home/product_icon3.svg" :alt="$t('header.prod3.alt')" />
                 </div>
@@ -174,7 +170,7 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/courses')" title="Duolingo English Test Course Online" class="one_card card4">
+              <NuxtLink :to="localePath('/courses')" :title="$t('header.path_course_title')" class="one_card card4">
                 <div class="icon">
                   <img src="/img/home/product_icon4.svg" :alt="$t('header.prod4.alt')" />
                 </div>

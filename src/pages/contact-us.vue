@@ -61,7 +61,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/contact-us` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/contact-us`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/contact-us`, hreflang: 'en-GB' }],
 });
 </script>
 <template>

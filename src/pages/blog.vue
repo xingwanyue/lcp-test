@@ -13,7 +13,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/blog`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/blog`, hreflang: 'en-GB' }],
 });
 const route = useRoute();
 const total = ref(0);

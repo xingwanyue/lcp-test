@@ -88,7 +88,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/learn` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/learn`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/learn`, hreflang: 'en-GB' }],
 });
 </script>
 <template>

@@ -11,7 +11,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/privacy-policy` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/privacy-policy`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/privacy-policy`, hreflang: 'en-GB' }],
 });
 </script>
 <template>
