@@ -87,6 +87,10 @@ const changeLanguage = (newVal) => {
   setLocale(newVal);
   state.tkshow = false;
 };
+const clickClose = () => {
+  state.tkshow = false;
+  localStorage.setItem('tkclickClose', 'true');
+};
 
 if (process.client) {
   state.language = navigator.language.slice(0, 2).toLowerCase() || 'en';
@@ -106,18 +110,22 @@ if (process.client) {
   if (locale.value === state.language) {
     state.tkshow = false;
   }
+  const tkclickClose = localStorage.getItem('tkclickClose');
+  if (tkclickClose === 'true') {
+    state.tkshow = false;
+  }
 }
 </script>
 <template>
   <div v-if="state.tkshow" class="changeLanguage_tk_mc">
     <div class="changeLanguage_tk">
-      <div class="header" @click="state.tkshow = false">
+      <div class="header" @click="clickClose">
         <div class="close_icon">X</div>
       </div>
       <div class="language_c_tip">{{ changeLanguageTips[state.language].tips }}</div>
       <div class="btn_out">
         <div class="change_btn" @click="changeLanguage(state.language)">{{ wehaveLanguage[state.language] }}</div>
-        <div class="close_btn" @click="state.tkshow = false">unset</div>
+        <div class="close_btn" @click="clickClose">unset</div>
       </div>
     </div>
   </div>
