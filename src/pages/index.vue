@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
 import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
@@ -35,7 +35,7 @@ const [
     server: false,
     lazy: true,
   }),
-  useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true }),
+  useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true, headers: { locale: locale.value } }),
   useFetch(`${api}/common/portalData?type=1`, {
     server: false,
     lazy: true,
@@ -68,7 +68,7 @@ const [
       return scorearr;
     },
   }),
-  useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true }),
+  useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true, headers: { locale: locale.value } }),
 ])) as any;
 const haveCookie = ref(false);
 const isMobile = ref(false);
