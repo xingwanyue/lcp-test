@@ -119,7 +119,10 @@ language.value = locale.value;
 getLearn();
 getBlob();
 watch(language, (newVal) => {
-  setLocale(newVal);
+  setLocale(newVal).then(() => {
+    getLearn();
+    getBlob();
+  });
 });
 // {
 //   "Deutsch": "de",
