@@ -143,6 +143,14 @@ watch(language, (newVal) => {
 // }
 const options = [
   {
+    value: 'ar',
+    label: 'العربية',
+  },
+  {
+    value: 'da',
+    label: 'Dansk',
+  },
+  {
     value: 'de',
     label: 'Deutsch',
   },
@@ -150,6 +158,11 @@ const options = [
     value: 'en',
     label: 'English',
   },
+  {
+    value: 'es',
+    label: 'Español',
+  },
+
   {
     value: 'fr',
     label: 'Français',
@@ -159,12 +172,48 @@ const options = [
     label: 'Indonesian',
   },
   {
+    value: 'it',
+    label: 'Italiano',
+  },
+  {
     value: 'ja',
     label: '日本語',
   },
   {
+    value: 'ko',
+    label: '한국어',
+  },
+  {
+    value: 'nb',
+    label: 'Norsk',
+  },
+  {
+    value: 'nl',
+    label: 'Nederlands',
+  },
+  {
+    value: 'pl',
+    label: 'Polski',
+  },
+  {
     value: 'pt',
     label: 'Português',
+  },
+  {
+    value: 'ru',
+    label: 'Русский',
+  },
+  {
+    value: 'th',
+    label: 'ไทย',
+  },
+  {
+    value: 'tr',
+    label: 'Türkçe',
+  },
+  {
+    value: 'zh',
+    label: '中文',
   },
 ];
 const closeCookie = () => {
