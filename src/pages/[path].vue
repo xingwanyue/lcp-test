@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { api } from '@/utils';
 import LearnDetail from '@/components/articleDetail.vue';
 
@@ -12,6 +12,7 @@ definePageMeta({
 
 const { data: article } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
   server: true,
+  headers: { locale: locale.value },
 })) as any;
 const isLearn = article.value?.type === '2' || article.value?.type === '1';
 
