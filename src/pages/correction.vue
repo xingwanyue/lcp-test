@@ -14,7 +14,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/correction` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/correction`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' }],
 });
 // 获取平台数据
 const {

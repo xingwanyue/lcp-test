@@ -10,7 +10,7 @@ useServerSeoMeta({
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/pricing` }],
-  link: [{ rel: 'alternate', href: `https://www.detpractice.com/pricing`, hreflang: 'en-GB' }],
+  link: [{ rel: 'alternate', href: `https://www.${domain}/pricing`, hreflang: 'en-GB' }],
 });
 const store = useStore();
 const user = computed(() => store.user);
