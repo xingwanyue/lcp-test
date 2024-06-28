@@ -63,7 +63,7 @@ const getLearn = async () => {
     query: { ...args },
     headers: { locale: locale.value },
   })) as any;
-  Learn.value.list = [...Learnjk.value?.data, { name: 'show more', path: 'learn' }].map((item: any) => {
+  Learn.value.list = [...Learnjk.value?.data, { name: t('footer.show_more'), path: 'learn' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
@@ -80,7 +80,7 @@ const getBlob = async () => {
     query: { ...args },
     headers: { locale: locale.value },
   })) as any;
-  Blog.value.list = [...blogsjk.value?.data, { name: 'show more', path: 'blog' }].map((item: any) => {
+  Blog.value.list = [...blogsjk.value?.data, { name: t('footer.show_more'), path: 'blog' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
