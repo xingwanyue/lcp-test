@@ -21,6 +21,9 @@ onMounted(() => {
     }
   }, 5000);
 });
+const showmorefont = computed(() => {
+  return t('footer.show_more');
+});
 const prod = computed(() => {
   return {
     name: t('footer.ProductsTitle'),
@@ -45,14 +48,8 @@ const prod = computed(() => {
   };
 });
 
-const Learn = ref({
-  name: t('footer.LearnTitle'),
-  list: [] as any,
-});
-const Blog = ref({
-  name: t('footer.BlogTitle'),
-  list: [] as any,
-});
+const Learn = ref([]);
+
 const getLearn = async () => {
   let args = { type: '2', flag: '1' } as any;
   if (!state.isMore2) {
@@ -63,13 +60,14 @@ const getLearn = async () => {
     query: { ...args },
     headers: { locale: locale.value },
   })) as any;
-  Learn.value.list = [...Learnjk.value?.data, { name: t('footer.show_more'), path: 'learn' }].map((item: any) => {
+  Learn.value = [...Learnjk.value?.data, { name: showmorefont, path: 'learn' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
     };
   });
 };
+const Blog = ref([]);
 const getBlob = async () => {
   let args = { type: '1', flag: '1' } as any;
   if (!state.isMore1) {
@@ -80,7 +78,7 @@ const getBlob = async () => {
     query: { ...args },
     headers: { locale: locale.value },
   })) as any;
-  Blog.value.list = [...blogsjk.value?.data, { name: t('footer.show_more'), path: 'blog' }].map((item: any) => {
+  Blog.value = [...blogsjk.value?.data, { name: showmorefont, path: 'blog' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
@@ -231,9 +229,9 @@ const closeCookie = () => {
         </div>
       </div>
       <div class="one_link_list">
-        <div class="one_link_list_title">{{ Learn.name }}</div>
+        <div class="one_link_list_title">{{ $t('footer.LearnTitle') }}</div>
         <div
-          v-for="(itemin, indexin) in Learn.list"
+          v-for="(itemin, indexin) in Learn"
           :key="indexin"
           :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
         >
@@ -241,9 +239,9 @@ const closeCookie = () => {
         </div>
       </div>
       <div class="one_link_list">
-        <div class="one_link_list_title">{{ Blog.name }}</div>
+        <div class="one_link_list_title">{{ $t('footer.BlogTitle') }}</div>
         <div
-          v-for="(itemin, indexin) in Blog.list"
+          v-for="(itemin, indexin) in Blog"
           :key="indexin"
           :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
         >
