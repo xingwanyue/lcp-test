@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { domain } from '@/utils';
 import dayjs from 'dayjs';
 
@@ -25,6 +25,7 @@ const { data: category } = (await useFetch(`${api}/common/article/category`, {
   query: {
     type: '1',
   },
+  headers: { locale: locale.value },
 })) as any;
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
@@ -34,6 +35,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
     page: route.query.page || 1,
     pageSize: 10,
   },
+  headers: { locale: locale.value },
   transform: (data: any) => {
     data.data = data.data.map((item: any) => {
       item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
@@ -55,6 +57,7 @@ const handleCurrentChange = async (val: number) => {
       page: val,
       pageSize: 10,
     },
+    headers: { locale: locale.value },
     transform: (data: any) => {
       data.data = data.data.map((item: any) => {
         item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;

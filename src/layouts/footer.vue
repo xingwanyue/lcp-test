@@ -7,7 +7,6 @@ import { reactive } from 'vue';
 const localePath = useLocalePath();
 const store = useStore();
 const { locale, t, setLocale } = useI18n();
-
 const state = reactive({
   isMore1: false,
   isMore2: false,
@@ -62,6 +61,7 @@ const getLearn = async () => {
   const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
     server: true,
     query: { ...args },
+    headers: { locale: locale.value },
   })) as any;
   Learn.value.list = [...Learnjk.value?.data, { name: 'show more', path: 'learn' }].map((item: any) => {
     return {
@@ -78,6 +78,7 @@ const getBlob = async () => {
   const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
     server: true,
     query: { ...args },
+    headers: { locale: locale.value },
   })) as any;
   Blog.value.list = [...blogsjk.value?.data, { name: 'show more', path: 'blog' }].map((item: any) => {
     return {
