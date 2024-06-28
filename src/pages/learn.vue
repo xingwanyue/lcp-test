@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { articleGet, articleCategoryGet, getTree, domain } from '@/utils';
 import { reactive } from 'vue';
 import dayjs from 'dayjs';
@@ -28,7 +28,10 @@ const state = reactive({
 });
 
 const getSelect = async () => {
-  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, { server: true })) as any;
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, {
+    server: true,
+    headers: { locale: locale.value },
+  })) as any;
   state.categories = data.value;
   state.selectList = getTree(data.value, null, null);
   if (route.query.c) {
@@ -54,6 +57,7 @@ const getInfo = async () => {
   const { data: { value = {} } = {} } = (await useFetch(`${articleGet}`, {
     server: true,
     query: { ...args },
+    headers: { locale: locale.value },
   })) as any;
   state.total = value?.total;
   state.learnLastestUpdateTime = value?.learnLastestUpdateTime;

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+const { t, locale } = useI18n();
 import { reactive } from 'vue';
 import find from 'lodash/find';
 import head from 'lodash/head';
@@ -31,7 +31,10 @@ state.rate = rate;
 state.averageScore = averageScore;
 
 const getSelect = async () => {
-  const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, { server: true })) as any;
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, {
+    server: true,
+    headers: { locale: locale.value },
+  })) as any;
   const { name } = head(data.value) as any;
   state.selectName = name;
 };
