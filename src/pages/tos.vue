@@ -10,8 +10,10 @@ useServerSeoMeta({
   keywords: t('tos.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/tos` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/tos`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/tos` },
+    { rel: 'alternate', href: `https://www.${domain}/tos`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>

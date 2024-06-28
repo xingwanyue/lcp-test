@@ -8,8 +8,10 @@ useServerSeoMeta({
   description: t('courses.seometa.description'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/courses` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/courses`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/courses` },
+    { rel: 'alternate', href: `https://www.${domain}/courses`, hreflang: 'en-GB' },
+  ],
 });
 const localePath = useLocalePath();
 const store = useStore();

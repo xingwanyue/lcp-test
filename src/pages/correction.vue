@@ -13,8 +13,10 @@ useServerSeoMeta({
   keywords: t('correction.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/correction` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/correction` },
+    { rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' },
+  ],
 });
 // 获取平台数据
 const {

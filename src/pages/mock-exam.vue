@@ -14,8 +14,10 @@ useServerSeoMeta({
   keywords: t('mockexam.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/mock-exam` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/mock-exam`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/mock-exam` },
+    { rel: 'alternate', href: `https://www.${domain}/mock-exam`, hreflang: 'en-GB' },
+  ],
 });
 // 获取平台数据
 const {

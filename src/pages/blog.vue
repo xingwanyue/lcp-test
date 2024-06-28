@@ -12,8 +12,10 @@ useServerSeoMeta({
   description: t('blog.seometa.description'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/blog`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/blog` },
+    { rel: 'alternate', href: `https://www.${domain}/blog`, hreflang: 'en-GB' },
+  ],
 });
 const route = useRoute();
 const total = ref(0);

@@ -10,8 +10,10 @@ useServerSeoMeta({
   keywords: t('sitemap.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/sitemap` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/sitemap`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/sitemap` },
+    { rel: 'alternate', href: `https://www.${domain}/sitemap`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>

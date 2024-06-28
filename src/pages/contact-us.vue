@@ -60,8 +60,10 @@ useServerSeoMeta({
   keywords: t('contactUs.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/contact-us` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/contact-us`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/contact-us` },
+    { rel: 'alternate', href: `https://www.${domain}/contact-us`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>

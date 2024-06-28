@@ -16,8 +16,10 @@ useServerSeoMeta({
   keywords: t('index.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/` },
+    { rel: 'alternate', href: `https://www.${domain}/`, hreflang: 'en-GB' },
+  ],
 });
 
 const localePath = useLocalePath();

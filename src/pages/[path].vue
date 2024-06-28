@@ -22,8 +22,10 @@ useServerSeoMeta({
   keywords: () => article.value?.keywords,
 });
 useHead({
-  link: [{ rel: 'canonical', href: () => `https://www.${domain}/${article.value?.path}` }],
-  link: [{ rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}/${article.value?.path}` }],
+  link: [
+    { rel: 'canonical', href: () => `https://www.${domain}/${article.value?.path}` },
+    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}/${article.value?.path}` },
+  ],
 });
 </script>
 <template>

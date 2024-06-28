@@ -10,8 +10,10 @@ useServerSeoMeta({
   keywords: t('privacyPolicy.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/privacy-policy` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/privacy-policy`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/privacy-policy` },
+    { rel: 'alternate', href: `https://www.${domain}/privacy-policy`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>

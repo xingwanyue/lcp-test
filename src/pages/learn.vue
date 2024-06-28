@@ -87,8 +87,10 @@ useServerSeoMeta({
   keywords: t('learn.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/learn` }],
-  link: [{ rel: 'alternate', href: `https://www.${domain}/learn`, hreflang: 'en-GB' }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/learn` },
+    { rel: 'alternate', href: `https://www.${domain}/learn`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>
