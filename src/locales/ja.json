@@ -508,6 +508,10 @@
   },
   "footer": {
     "inc": "私たちの製品はDuolingo,Incとは関係ありません",
+    "ProductsTitle": "製品",
+    "LearnTitle": "学ぶ",
+    "BlogTitle": "ブログ",
+    "CompanyTitle": "会社",
     "Products": ["DET 練習", "AI 訂正サービス", "デトロイト モック", "デュオリンゴ英語テストコース"],
     "Company": ["私たちについて", "お問い合わせ", "利用規約", "プライバシーポリシー"],
     "show_more": "さらに表示",

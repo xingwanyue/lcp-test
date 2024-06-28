@@ -6,6 +6,11 @@
   "Pricing": "Pricing",
   "Blog": "Blog",
   "header": {
+    "home_logo_title": "DET Practice",
+    "path_practice_title": "Duolingo English Practice Test Online",
+    "path_correction_title": "AI Correction Service for Duolingo Test",
+    "path_mock_title": "Duolingo Mock Test",
+    "path_course_title": "Duolingo English Test Course Online",
     "commonAlt": "DET Practice:The best Duolingo English Test Practice platform",
     "Get_started": " Get started ",
     "Try_for_free": "Try for free",
@@ -32,6 +37,10 @@
   },
   "footer": {
     "inc": "Our product has no connection with Duolingo,Inc",
+    "ProductsTitle": "Products",
+    "LearnTitle": "Learn",
+    "BlogTitle": "Blog",
+    "CompanyTitle": "Company",
     "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
     "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap"],
     "show_more": "show more",
