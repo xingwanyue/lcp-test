@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { urlGet, saveStorage, getStorage, host, getToken } from '@/utils';
 import { useStore } from '@/store';
+import last from 'lodash/last';
 const localePath = useLocalePath();
 const { t } = useI18n();
 const props = defineProps({
@@ -13,7 +14,7 @@ const store = useStore();
 const user = computed(() => store.user);
 
 const route = useRoute();
-const pathname = computed(() => route.path);
+const pathname = computed(() => `/${last(route.path.split('/'))}` || '/');
 const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
 const haveCookie = ref(false);
