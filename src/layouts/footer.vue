@@ -118,30 +118,34 @@ const language = ref('');
 language.value = locale.value;
 getLearn();
 getBlob();
-watch(language, (newVal) => {
-  setLocale(newVal).then(() => {
+
+const clickChangeLanguage = (item) => {
+  setLocale(item.value).then(() => {
     getLearn();
     getBlob();
   });
-});
-// {
-//   "Deutsch": "de",
-//   "Português": "pt",
-//   "日本語": "ja",
-//   "Français": "fr",
-//   "Bahasa Indonesia": "id",
-//   "Español": "es",
-//   "Italiano": "it",
-//   "ไทย": "th",
-//   "Polski": "pl",
-//   "한국어": "ko",
-//   "العربية": "ar",
-//   "Nederlands": "nl",
-//   "Türkçe": "tr",
-//   "Norsk": "nb",
-//   "Dansk": "da"
-//   "Русский": "ru"
-// }
+  language.value = item.value;
+};
+const wehaveLanguage = {
+  ar: 'العربية',
+  da: 'Dansk',
+  de: 'Deutsch',
+  en: 'English',
+  es: 'Español',
+  fr: 'Français',
+  id: 'Bahasa Indonesia',
+  it: 'Italiano',
+  ja: '日本語',
+  ko: '한국어',
+  nb: 'Norsk',
+  nl: 'Nederlands',
+  pl: 'Polski',
+  pt: 'Português',
+  ru: 'Русский',
+  th: 'ไทย',
+  tr: 'Türkçe',
+  zh: '中文',
+};
 const options = [
   {
     value: 'ar',
@@ -217,9 +221,12 @@ const options = [
     label: '中文',
   },
 ];
+
 const closeCookie = () => {
   cookieShow.value = false;
 };
+const earth = `${cdn}/store/portal/home/earth_icon.svg`;
+const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
 </script>
 
 <template>
@@ -288,9 +295,34 @@ const closeCookie = () => {
       <div class="footer_logo_right">
         <div class="tips_out">{{ t('footer.inc') }}</div>
         <div v-if="options.length" class="select_out">
-          <el-select v-model="language" placeholder="Select" style="width: 240px">
+          <!-- <el-select v-model="language" placeholder="Select" style="width: 240px">
             <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"> </el-option>
-          </el-select>
+          </el-select> -->
+          <el-popover popper-class="options_out_out" placement="top-start" trigger="hover" width="350px">
+            <div class="options_out">
+              <div
+                class="options_out_name"
+                v-for="item in options"
+                :key="item.value"
+                @click="clickChangeLanguage(item)"
+              >
+                {{ item.label }}
+              </div>
+            </div>
+            <template #reference>
+              <div class="popover_btn">
+                <div class="earth_icon">
+                  <el-image :src="earth" alt="earth_icon" />
+                </div>
+                <div class="language_font">
+                  {{ wehaveLanguage[language] }}
+                </div>
+                <div class="arrow_icon">
+                  <el-image :src="arrow_up_down" alt="arrow_up_down_arrow_icon" />
+                </div>
+              </div>
+            </template>
+          </el-popover>
         </div>
       </div>
     </div>
@@ -311,7 +343,7 @@ const closeCookie = () => {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 56px;
-  padding-bottom: 37px;
+  padding-bottom: 80px;
   .footer_link_dom {
     text-align: left;
     display: flex;
@@ -480,9 +512,6 @@ const closeCookie = () => {
         }
       }
       .select_out {
-        @media (max-width: 668px) {
-          text-align: center;
-        }
       }
     }
   }
@@ -516,6 +545,65 @@ const closeCookie = () => {
         font-weight: 600;
         text-decoration: underline;
         cursor: pointer;
+      }
+    }
+  }
+}
+</style>
+<style lang="scss">
+.popover_btn {
+  border: 1px red solid;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .earth_icon {
+    width: 16px;
+    height: 16px;
+    // border: 1px red solid;
+  }
+  .language_font {
+    font-weight: 400;
+    font-size: 14px;
+    color: #201515;
+    margin-left: 4px;
+    position: relative;
+    top: -1px;
+  }
+  .arrow_icon {
+    width: 16px;
+    height: 16px;
+    // border: 1px red solid;
+    margin-left: 33px;
+    transform: rotate(180deg);
+  }
+  &:hover {
+    .arrow_icon {
+      transform: rotate(0deg);
+    }
+  }
+}
+.options_out_out {
+  background: #ffffff;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+  .options_out {
+    background: #ffffff;
+    border-radius: 4px;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 12px;
+    .options_out_name {
+      font-weight: 400;
+      font-size: 14px;
+      color: #201515;
+      cursor: pointer;
+      &:hover {
+        color: #f66442;
       }
     }
   }
