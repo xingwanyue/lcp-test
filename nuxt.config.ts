@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts',
+    detectBrowserLanguage: false,
   },
   plugins: [
     { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
