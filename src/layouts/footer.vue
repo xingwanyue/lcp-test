@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { saveStorage, getStorage } from '@/utils';
+import { saveStorage, getStorage, domain } from '@/utils';
 import { useStore } from '@/store';
 import { reactive } from 'vue';
 
@@ -254,7 +254,12 @@ const closeCookie = () => {
       <div class="one_link_list">
         <div class="one_link_list_title">{{ Company.name }}</div>
         <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
-          <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+          <template v-if="itemin.url === '/sitemap'">
+            <NuxtLink :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+          </template>
+          <template v-else>
+            <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+          </template>
         </div>
       </div>
     </div>
