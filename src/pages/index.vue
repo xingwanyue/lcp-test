@@ -363,12 +363,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
-          {{ usersockerTopFontResponse[0].data }}
-        </div>
-        <div v-else class="title">
-          <el-skeleton :rows="1" animated />
-        </div>
+        <div class="title">{{ $t('index.bigtitle1') }}</div>
         <div v-if="platformData" class="user_nums_out">
           <div class="one_num">
             <div class="bigger_num">{{ toThousands(platformData?.userTotal) }}{{ $t('index.thousand') }}</div>
@@ -442,11 +437,8 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
-          {{ commentTopFontResponse[0].data }}
-        </div>
-        <div v-else class="review_title">
-          <el-skeleton :rows="1" animated />
+        <div class="review_title">
+          {{ $t('index.bigtitle2') }}
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
