@@ -71,12 +71,12 @@ useHead({
         <div class="content1">
           {{ $t('cookie.q4.a1') }}
           <div class="line-break"></div>
-          {{ $t('cookie.q4.a2') }}<span class="website"> {{ $t('cookie.q4.emailadderss') }}</span>
+          {{ $t('cookie.q4.a2') }}<span class="website">support@detpractice.com</span>
           <div class="line-break"></div>
           {{ $t('cookie.q4.a3') }}
 
           <nuxt-link to="https://www.detpractice.com/contact-us/" target="_blank" class="website">
-            {{ $t('cookie.q4.webseturl') }}
+            https://www.detpractice.com/contact-us/
           </nuxt-link>
         </div>
       </div>

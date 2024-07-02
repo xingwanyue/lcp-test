@@ -84,7 +84,7 @@ useHead({
           <el-image src="/img/aboutus/email.svg" class="email-img" :alt="$t('contactUs.email')"></el-image>
           <div class="info-right">
             <div class="name">{{ $t('contactUs.email') }}</div>
-            <div class="address">{{ $t('contactUs.emailAdderss') }}</div>
+            <div class="address">support@detpractice.com</div>
           </div>
         </div>
       </div>

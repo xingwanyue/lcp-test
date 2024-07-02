@@ -320,7 +320,6 @@
     "fill_in": "Fill in the form",
     "thank": " Thank you for choosing to get in touch with us. Please fill out this contact form and our staff will reach out to you as soon as possible to address your inquiries.",
     "email": "Email",
-    "emailAdderss": "support{'@'}detpractice.com",
     "Name": "Name",
     "Email_Address": "Email Address",
     "Message": "Message",
@@ -359,9 +358,7 @@
       "title": "Contact us",
       "a1": "If you have any questions about our Cookie Policy, please contact us :",
       "a2": "• By email: ",
-      "emailadderss": "support{'@'}detpractice.com",
-      "a3": "• By visiting this page on our website:",
-      "webseturl": "https://www.detpractice.com/contact-us/"
+      "a3": "• By visiting this page on our website:"
     },
     "q5": {
       "title": "Changes to our Cookie Policy",
