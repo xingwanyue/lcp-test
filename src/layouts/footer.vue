@@ -148,8 +148,32 @@ const wehaveLanguage = {
 };
 const options = [
   {
+    value: 'en',
+    label: 'English',
+  },
+  {
+    value: 'id',
+    label: 'Bahasa Indonesia',
+  },
+  {
+    value: 'ja',
+    label: '日本語',
+  },
+  {
+    value: 'ko',
+    label: '한국어',
+  },
+  {
     value: 'ar',
     label: 'العربية',
+  },
+  {
+    value: 'ru',
+    label: 'Русский',
+  },
+  {
+    value: 'tr',
+    label: 'Türkçe',
   },
   {
     value: 'da',
@@ -160,33 +184,16 @@ const options = [
     label: 'Deutsch',
   },
   {
-    value: 'en',
-    label: 'English',
-  },
-  {
     value: 'es',
     label: 'Español',
   },
-
   {
     value: 'fr',
     label: 'Français',
   },
   {
-    value: 'id',
-    label: 'Bahasa Indonesia',
-  },
-  {
     value: 'it',
     label: 'Italiano',
-  },
-  {
-    value: 'ja',
-    label: '日本語',
-  },
-  {
-    value: 'ko',
-    label: '한국어',
   },
   {
     value: 'nb',
@@ -205,16 +212,8 @@ const options = [
     label: 'Português',
   },
   {
-    value: 'ru',
-    label: 'Русский',
-  },
-  {
     value: 'th',
     label: 'ไทย',
-  },
-  {
-    value: 'tr',
-    label: 'Türkçe',
   },
   {
     value: 'zh',
