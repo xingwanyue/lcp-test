@@ -680,7 +680,7 @@ const formateMinToHour = (min: number) => {
         </div>
 
         <div class="bank_card">
-          <div class="title">Secure Payment:{{ $t('pricing.pagefont.Secure_Payment') }}</div>
+          <div class="title">{{ $t('pricing.pagefont.Secure_Payment') }}</div>
           <div class="img_self">
             <img src="/img/pricing/payment.png" :alt="$t('pricing.pagefont.Secure_Payment')" />
           </div>
