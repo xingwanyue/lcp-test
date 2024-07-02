@@ -498,7 +498,6 @@
     "Login_with_Google": "Login with Google",
     "Or_continue_with": "Or continue with",
     "Email_address": " Email address",
-    "youexam": "you{'@'}example.com",
     "Password": "Password",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "Login": "Login",
@@ -632,8 +631,7 @@
     "ywr": "You will receive your activation code by email",
     "cwe": "Continue with email",
     "ahaa": "Already have an account?",
-    "Login_here": "Login here",
-    "yec": "you{'@'}example.com"
+    "Login_here": "Login here"
   },
   "register2": {
     "Sign_up": "Sign up",
