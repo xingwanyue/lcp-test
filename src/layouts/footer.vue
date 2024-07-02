@@ -277,14 +277,17 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         </div>
         <div class="logo_icon_out">
           <span class="Copyright">© 2024 DET Practice</span>
-          <NuxtLink to="https://www.youtube.com/@detpractice" target="_blank">
+          <NuxtLink to="https://youtube.com/@duolingoenglishtestpractices" target="_blank">
             <div class="one_icon youtube"></div>
           </NuxtLink>
-          <!-- <NuxtLink to="">
+          <NuxtLink to="https://x.com/det_practice">
             <div class="one_icon x"></div>
-          </NuxtLink> -->
+          </NuxtLink>
           <NuxtLink to="https://www.facebook.com/detpractice" target="_blank">
             <div class="one_icon facebook"></div>
+          </NuxtLink>
+          <NuxtLink to=" https://www.instagram.com/detpractice" target="_blank">
+            <div class="one_icon ins"></div>
           </NuxtLink>
           <!-- <NuxtLink to="">
             <div class="one_icon tiktok"></div>
@@ -472,6 +475,13 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           background-size: cover;
           &:hover {
             background-image: url('/img/footer/facebook_logo_active.svg');
+          }
+        }
+        .ins {
+          background-image: url('/img/footer/ins_logo.svg');
+          background-size: cover;
+          &:hover {
+            background-image: url('/img/footer/ins_logo_active.svg');
           }
         }
         .tiktok {
