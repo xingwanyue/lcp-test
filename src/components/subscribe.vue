@@ -54,8 +54,8 @@ const sendEmail = async () => {
           @input="emailErrShow = false"
         >
           <template #append>
-            <el-button @click="sendEmail" class="subscribe-btn">{{ $t('subscribe.Subscribe') }}</el-button></template
-          >
+            <el-button @click="sendEmail" class="subscribe-btn">{{ $t('subscribe.Subscribe') }}</el-button>
+          </template>
         </el-input>
         <div class="errDom">
           <span v-if="emailErrShow">{{ emailErrMessage }}</span>
@@ -113,8 +113,9 @@ const sendEmail = async () => {
         padding-bottom: 20px;
       }
       .subscribe-btn {
-        width: 100%;
-        height: 100%;
+        width: 100% !important;
+        height: 100% !important;
+        color: #fff !important;
         border-radius: 0px 8px 8px 0px;
         background: #f66442;
         border-color: #f66442;
@@ -142,8 +143,8 @@ const sendEmail = async () => {
 .el-input-group__append {
   background: #f66442;
   color: #fff;
-  padding: 0px;
-  width: 150px;
+  padding: 0px !important;
+  width: 150px !important;
   box-shadow: none;
 }
 
