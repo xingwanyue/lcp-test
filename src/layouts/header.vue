@@ -162,23 +162,23 @@ const menus = computed(() => [
               </NuxtLink>
               <NuxtLink :to="localePath('/mock-exam')" :title="$t('header.path_mock_title')" class="one_card card3">
                 <div class="icon">
-                  <img src="/img/home/product_icon3.svg" :alt="$t('header.prod3.alt')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('header.prod3.title') }}</div>
-                  <div class="font">
-                    {{ $t('header.prod3.font') }}
-                  </div>
-                </div>
-              </NuxtLink>
-              <NuxtLink :to="localePath('/courses')" :title="$t('header.path_course_title')" class="one_card card4">
-                <div class="icon">
-                  <img src="/img/home/product_icon4.svg" :alt="$t('header.prod4.alt')" />
+                  <img src="/img/home/product_icon3.svg" :alt="$t('header.prod4.alt')" />
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('header.prod4.title') }}</div>
                   <div class="font">
                     {{ $t('header.prod4.font') }}
+                  </div>
+                </div>
+              </NuxtLink>
+              <NuxtLink :to="localePath('/courses')" :title="$t('header.path_course_title')" class="one_card card4">
+                <div class="icon">
+                  <img src="/img/home/product_icon4.svg" :alt="$t('header.prod3.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">{{ $t('header.prod3.title') }}</div>
+                  <div class="font">
+                    {{ $t('header.prod3.font') }}
                   </div>
                 </div>
               </NuxtLink>
