@@ -206,6 +206,7 @@ if (process.client) {
       color: #403f3e;
       // margin-top: 18px;
       padding: 0 24px;
+      line-height: 26px;
     }
     .btn_out {
       display: flex;
