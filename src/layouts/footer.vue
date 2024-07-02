@@ -280,7 +280,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           <NuxtLink to="https://youtube.com/@duolingoenglishtestpractices" target="_blank">
             <div class="one_icon youtube"></div>
           </NuxtLink>
-          <NuxtLink to="https://x.com/det_practice">
+          <NuxtLink to="https://x.com/det_practice" target="_blank">
             <div class="one_icon x"></div>
           </NuxtLink>
           <NuxtLink to="https://www.facebook.com/detpractice" target="_blank">
@@ -289,7 +289,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           <NuxtLink to=" https://www.instagram.com/detpractice" target="_blank">
             <div class="one_icon ins"></div>
           </NuxtLink>
-          <!-- <NuxtLink to="">
+          <!-- <NuxtLink to=""> 
             <div class="one_icon tiktok"></div>
           </NuxtLink> -->
         </div>
