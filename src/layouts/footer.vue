@@ -343,7 +343,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 56px;
-  padding-bottom: 80px;
+  padding-bottom: 36px;
   .footer_link_dom {
     text-align: left;
     display: flex;
