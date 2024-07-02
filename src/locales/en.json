@@ -234,8 +234,7 @@
       },
       "type2": {
         "font": "Email Us",
-        "tip": "Receive a response in 1 business day.",
-        "btn": "support{'@'}detpractice.com"
+        "tip": "Receive a response in 1 business day."
       },
       "type3": {
         "font": "Leave a message",

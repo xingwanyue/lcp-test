@@ -304,7 +304,7 @@ const contaceUsList = ref([
     icon: '/img/pricing/email.svg',
     font: t('pricing.contaceUsList.type2.font'),
     tip: t('pricing.contaceUsList.type2.tip'),
-    btn: t('pricing.contaceUsList.type2.btn'),
+    btn: 'support@detpractice.com',
   },
   {
     type: '3',
