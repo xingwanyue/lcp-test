@@ -6,69 +6,69 @@
   "Pricing": "Pricing",
   "Blog": "Blog",
   "header": {
-    "home_logo_title": "DET Practice",
-    "path_practice_title": "Duolingo English Practice Test Online",
-    "path_correction_title": "AI Correction Service for Duolingo Test",
-    "path_mock_title": "Duolingo Mock Test",
-    "path_course_title": "Duolingo English Test Course Online",
-    "commonAlt": "DET Practice:The best Duolingo English Test Practice platform",
+    "home_logo_title": "∑ Practice",
+    "path_practice_title": "π English Practice Test Online",
+    "path_correction_title": "AI Correction Service for π Test",
+    "path_mock_title": "π Mock Test",
+    "path_course_title": "≠ Course Online",
+    "commonAlt": "∑ Practice:The best ≠ Practice platform",
     "Get_started": " Get started ",
     "Try_for_free": "Try for free",
     "prod1": {
-      "title": "Duolingo English Test Practice",
-      "alt": "Duolingo English Test Practice",
+      "title": "≠ Practice",
+      "alt": "≠ Practice",
       "font": "Achieve Excellence with Our Extensive Question Bank: Over 10,000 Questions, Regular Updates, and Smart Performance Tracking!"
     },
     "prod2": {
-      "title": "Duolingo English Test Correction Service",
-      "alt": "Duolingo English Test Correction Service",
+      "title": "≠ Correction Service",
+      "alt": "≠ Correction Service",
       "font": "Perfect Your Essays with AI-Powered Teacher Feedback: Accurate Corrections, Instant Reports, and Score Improvement within Two Weeks!"
     },
     "prod3": {
-      "title": "Duolingo English Test Course",
-      "alt": "Duolingo English Test Course",
+      "title": "≠ Course",
+      "alt": "≠ Course",
       "font": "Conquer Your Exam with Authentic Full-Length Mocks: In-depth Analysis and Instant Results, Available Anytime, Anywhere."
     },
     "prod4": {
-      "title": "Duolingo English Test Mock",
-      "alt": "Duolingo English Test Mock",
-      "font": "Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!"
+      "title": "≠ Mock",
+      "alt": "≠ Mock",
+      "font": "Unlock ∑ Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!"
     }
   },
   "footer": {
-    "inc": "Our product has no connection with Duolingo,Inc",
+    "inc": "Our product has no connection with π,Inc",
     "ProductsTitle": "Products",
     "LearnTitle": "Learn",
     "BlogTitle": "Blog",
     "CompanyTitle": "Company",
-    "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
+    "Products": ["∑ Practice", "AI Correction Service", "∑ Mock", "≠ Course"],
     "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap"],
     "show_more": "show more",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
-    "newAlt": "DET Practice",
+    "alt": "∑ Practice:The best ≠ Practice platform",
+    "cookie_contenr": " ∑ Practice uses cookies to improve content based on your browser Settings. For more details, see",
+    "newAlt": "∑ Practice",
     "close_icon_alt": "Cross Sign"
   },
   "index": {
     "seometa": {
-      "title": "DET Practice - Duolingo English Language Test Online, English Proficiency Exam",
-      "description": "Prepare for the Duolingo english proficiency test online with DET Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam, Duolingo Proficiency Exam In English, Duolingo English Proficiency Exam, English Proficiency Test Duolingo, Duolingo Proficiency Test, Duolingo English Proficiency Test, Duolingo English Test, English Duolingo Test"
+      "title": "∑ Practice - π English Language Test Online, English Proficiency Exam",
+      "description": "Prepare for the π english proficiency test online with ∑ Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam, π Proficiency Exam In English, π English Proficiency Exam, English Proficiency Test π, π Proficiency Test, π English Proficiency Test, ≠, English π Test"
     },
     "bigtitle1": "Number of High Scorers (130+ Points)：10000+",
     "bigtitle2": "Exceptional 4.8/5 Rating from Over 850 Reviews!",
     "power_by": "Powered by AI",
-    "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With <span class=\"seo_hack\">DET Practice</span>",
-    "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With <span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "h1Mobile": "Get a Higher Score Easily<br />on the π <br />English Test With <span class=\"seo_hack\">∑ Practice</span>",
+    "h1PC": "Get a Higher Score Easily on the <br />≠ With <span class=\"seo_hack\">∑ Practice</span>",
+    "one_small_title": ["∑ Practice", "AI Correction", "Full-Length Mock", "∑ Courses"],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
-    "trustedByWorldwide": "Trusted by {path} students worldwide for a 1-month Duolingo English Test score boost.",
-    "The_Best_Platform": "The Best Platform for Boosting Your Duolingo English Test Scores",
+    "trustedByWorldwide": "Trusted by {path} students worldwide for a 1-month ≠ score boost.",
+    "The_Best_Platform": "The Best Platform for Boosting Your ≠ Scores",
     "Leverage_Our": "Leverage Our All-Inclusive Resources for Swift Score Improvement",
     "article1": {
-      "title": "Duolingo English Test Practice",
+      "title": "≠ Practice",
       "tips1": "With over {number} practice questions, our ever-expanding question bank is regularly updated for excellence.",
       "tips2": "Comprehensive coverage of all exam types with detailed explanations for every question.",
       "tips3": "In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.",
@@ -84,7 +84,7 @@
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article3": {
-      "title": "Duolingo English Test Mock",
+      "title": "≠ Mock",
       "tips1": "Mimic the actual exam setting to familiarize yourself with the testing process and content beforehand.",
       "tips2": "Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.",
       "tips3": "Take online mock exams at your convenience, with fast scoring provided within 30 minutes.",
@@ -92,10 +92,10 @@
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article4": {
-      "title": "Duolingo English Test Course",
-      "tips1": " Achieve Comprehensive Mastery. Develop an in-depth understanding of DET speaking and writing sections with our detailed guides, ensuring you approach every part of the exam with confidence.",
+      "title": "≠ Course",
+      "tips1": " Achieve Comprehensive Mastery. Develop an in-depth understanding of ∑ speaking and writing sections with our detailed guides, ensuring you approach every part of the exam with confidence.",
       "tips2": "Learn from ESL Experts. Utilize proven strategies to enhance your speaking and writing abilities, benefit from personalized learning paths, and engage in effective self-assessment.",
-      "tips3": "Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is in perfect sync with current exam standards.",
+      "tips3": "Stay Informed and Ahead. Keep abreast of the latest ∑ formats and trends to ensure your preparation is in perfect sync with current exam standards.",
       "btn_font": "Explore More",
       "btn_img_alt": "Yellow Arrow Right"
     },
@@ -106,7 +106,7 @@
     "Join_Them": "Join Them"
   },
   "slogen": {
-    "title": "<div class='font1'>Start Your Path to Top Scores on the</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Start Your Path to Top Scores on the</div><div class='font2'>≠ !</div>",
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": " Start for free"
@@ -122,21 +122,21 @@
   },
   "learn": {
     "seometa": {
-      "title": "Exam Preparation Tips for Duolingo English Test | DET Practice",
-      "description": "Discover effective exam preparation tips for the Duolingo English Test. Stay updated with timely insights on improving your test performance at DET Practice.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Exam Preparation Tips for ≠ | ∑ Practice",
+      "description": "Discover effective exam preparation tips for the ≠. Stay updated with timely insights on improving your test performance at ∑ Practice.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
     },
-    "h1": "We will update the exam preparation tips of Duolingo English Test timely",
+    "h1": "We will update the exam preparation tips of ≠ timely",
     "title2": " The lastest update is until {time}",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "down_icon": "Down Icon",
     "Show_more": "Show more"
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test Preparation Pricing | DET Practice",
-      "description": "Choose the right plan with affordable pricing for your Duolingo English Test preparation. Personalized practice, expert reviews, and full-scale mock exams available.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Examwords"
+      "title": "≠ Preparation Pricing | ∑ Practice",
+      "description": "Choose the right plan with affordable pricing for your ≠ preparation. Personalized practice, expert reviews, and full-scale mock exams available.",
+      "keywords": "keyDET π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Examwords"
     },
     "pagefont": {
       "h1": "Plans & Pricing",
@@ -156,7 +156,7 @@
       "Secure_Payment": "Secure Payment:",
       "faq": "Frequently Asked Questions",
       "Contact_Us": "Contact Us",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "alt": "∑ Practice:The best ≠ Practice platform",
       "check_icon": "Check",
       "tip_icon": "Tip",
       "green_check": "Green Check",
@@ -190,7 +190,7 @@
       {
         "name": "What is your refund policy?",
         "content1": "1. Free Account  <br>Usage is entirely free, so there are no refund issues.",
-        "content2": "<br>2. Subscription Plans  <br>Users may request a refund if DET Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect. Refunds will not be issued for subscriptions and services that have already become active after purchase.",
+        "content2": "<br>2. Subscription Plans  <br>Users may request a refund if ∑ Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect. Refunds will not be issued for subscriptions and services that have already become active after purchase.",
         "content3": "<br>3. Speaking/Writing Guide  <br>The Speaking/Writing Guide is considered a digital product. Once purchased and downloaded, the product delivery is deemed complete and is generally non-refundable. Please carefully read the purchase information before making a purchase.",
         "content4": "<br><br>Important Note:  <br>All refund requests must be processed through customer service, and relevant usage records must be provided for verification.<br>To prevent fraudulent refunds, each user account is limited to one refund request. Multiple requests will not be processed. <br>If you have any special circumstances or unique situations, please contact us, and we will work with you to find a resolution."
       }
@@ -245,15 +245,15 @@
   },
   "blog": {
     "seometa": {
-      "title": "DET Pratice Blog - Duolingo English Test Tips and Tricks",
-      "description": "Stay updated with essential Duolingo English Test tips and tricks on DET Practice's blog. Discover expert advice and strategies to excel in your test preparation."
+      "title": "∑ Pratice Blog - ≠ Tips and Tricks",
+      "description": "Stay updated with essential ≠ tips and tricks on ∑ Practice's blog. Discover expert advice and strategies to excel in your test preparation."
     },
-    "h1": "DET Pratice Blog",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform"
+    "h1": "∑ Pratice Blog",
+    "alt": "∑ Practice:The best ≠ Practice platform"
   },
   "embark": {
     "font1": "Embark on your journey to high scores on",
-    "font2": "Duolingo English Test !",
+    "font2": "≠ !",
     "Start_Now": "Start Now"
   },
   "articleDetail": {
@@ -276,39 +276,39 @@
   },
   "path": {
     "seometa": {
-      "title": "DET Pratice Blog",
-      "description": "DET Pratice Blog"
+      "title": "∑ Pratice Blog",
+      "description": "∑ Pratice Blog"
     }
   },
   "aboutUs": {
     "seometa": {
-      "title": "About DET Practice: Duolingo English Test Practice Platform",
-      "description": "DET Practice, the leading platform for Duolingo English Test preparation. Explore our extensive test bank, mock exams, correction services, and DET courses."
+      "title": "About ∑ Practice: ≠ Practice Platform",
+      "description": "∑ Practice, the leading platform for ≠ preparation. Explore our extensive test bank, mock exams, correction services, and ∑ courses."
     },
-    "title": "About DET Pratice",
+    "title": "About ∑ Pratice",
     "oelet": "Our Esteemed Language Education Team",
-    "oeletdesc": "At the heart of our language education services lies a team of dedicated, highly qualified, and experienced educators, each bringing their own unique expertise and passion to the forefront of language learning. Our team is comprised of elite professionals who are not only proficient in English but also experts in preparing students for major English proficiency tests like the TOEFL, IELTS, and Duolingo English Test (DET). Our educators hold prestigious certifications such as TESOL, and Cambridge English Teacher Training certificates, showcasing their commitment to delivering high-quality language education. They possess impressive language test scores, reflecting their deep understanding of the skills and strategies necessary to excel in these exams. The collective experience of our team spans several years, during which they have honed their ability to cater to diverse learning needs. They excel in identifying students’ individual strengths and weaknesses, ensuring personalized teaching approaches that maximize learning outcomes. This unique ability allows them to provide targeted guidance and feedback, helping students break through learning barriers and rapidly improve their language proficiency. Our educators are not just teachers; they are mentors who inspire confidence and enthusiasm in their students. They foster a dynamic and interactive learning environment, making the journey of language learning both enjoyable and effective. Their teaching methods are continuously evolving, integrating innovative techniques and materials to stay abreast of the latest trends in language education. The success of our students in achieving their language goals is a testament to our team’s expertise, dedication, and teaching excellence. As a unit, they represent the best of language education, committed to guiding students toward achieving their highest potential in English proficiency.",
+    "oeletdesc": "At the heart of our language education services lies a team of dedicated, highly qualified, and experienced educators, each bringing their own unique expertise and passion to the forefront of language learning. Our team is comprised of elite professionals who are not only proficient in English but also experts in preparing students for major English proficiency tests like the TOEFL, IELTS, and ≠ (∑). Our educators hold prestigious certifications such as TESOL, and Cambridge English Teacher Training certificates, showcasing their commitment to delivering high-quality language education. They possess impressive language test scores, reflecting their deep understanding of the skills and strategies necessary to excel in these exams. The collective experience of our team spans several years, during which they have honed their ability to cater to diverse learning needs. They excel in identifying students’ individual strengths and weaknesses, ensuring personalized teaching approaches that maximize learning outcomes. This unique ability allows them to provide targeted guidance and feedback, helping students break through learning barriers and rapidly improve their language proficiency. Our educators are not just teachers; they are mentors who inspire confidence and enthusiasm in their students. They foster a dynamic and interactive learning environment, making the journey of language learning both enjoyable and effective. Their teaching methods are continuously evolving, integrating innovative techniques and materials to stay abreast of the latest trends in language education. The success of our students in achieving their language goals is a testament to our team’s expertise, dedication, and teaching excellence. As a unit, they represent the best of language education, committed to guiding students toward achieving their highest potential in English proficiency.",
     "p1title": "Michael Z.",
     "p1author": "Tutor Supervisor",
-    "p1content1": " As the leading figure of our teaching team, Michael Z. embodies the pinnacle of language instruction. With extensive teaching experience that spans over a decade, Mike holds all the credentials of our esteemed teachers, including TESOL, Cambridge English Teacher Training Certificates, and other certificates. His exceptional language proficiency is reflected in his impressive scores: 115 on TOEFL, 8.5 on IELTS, and a perfect 150 on Duolingo English Test. Michael teaching philosophy combines the strengths of our diverse team, offering a comprehensive and dynamic approach to language learning. He is renowned for his ability to deeply understand and address the unique needs of each student, fostering a learning environment where students can thrive and surpass their goals. His classes are a blend of rigorous academic standards and engaging, interactive learning experiences. Beyond teaching, Michael is instrumental in developing cutting-edge curriculum and training methods, ensuring our courses remain at the forefront of language education. His dedication to excellence in teaching and his commitment to student success make him an invaluable leader and mentor both to our team and our students.",
+    "p1content1": " As the leading figure of our teaching team, Michael Z. embodies the pinnacle of language instruction. With extensive teaching experience that spans over a decade, Mike holds all the credentials of our esteemed teachers, including TESOL, Cambridge English Teacher Training Certificates, and other certificates. His exceptional language proficiency is reflected in his impressive scores: 115 on TOEFL, 8.5 on IELTS, and a perfect 150 on ≠. Michael teaching philosophy combines the strengths of our diverse team, offering a comprehensive and dynamic approach to language learning. He is renowned for his ability to deeply understand and address the unique needs of each student, fostering a learning environment where students can thrive and surpass their goals. His classes are a blend of rigorous academic standards and engaging, interactive learning experiences. Beyond teaching, Michael is instrumental in developing cutting-edge curriculum and training methods, ensuring our courses remain at the forefront of language education. His dedication to excellence in teaching and his commitment to student success make him an invaluable leader and mentor both to our team and our students.",
     "p2title": "Albert L.",
     "p2author": "Course Designer",
-    "p2content1": "Scoring 8.5 in IELTS, Albert has extensive experience in teaching IELTS, TOEFL, PTE, and DET. His teaching is known for its relaxed and lively atmosphere, making learning enjoyable. Albert’s approach is tailored to each student’s needs, enabling rapid improvement in English proficiency in a short period. Besides being an excellent teacher, Albert is also a talented course designer who has created and developed various online and offline courses for English learners of different levels and goals. He has a deep understanding of the curriculum standards and assessment criteria of various English tests, and he knows how to design effective and engaging learning activities and materials that can help students master the test skills and strategies. Albert has also collaborated with other teachers and experts to review and improve the quality and relevance of the courses, and he has received positive feedback and recognition from both students and peers. Albert is passionate about creating innovative and personalized courses that can cater to the diverse needs and interests of English learners.",
+    "p2content1": "Scoring 8.5 in IELTS, Albert has extensive experience in teaching IELTS, TOEFL, PTE, and ∑. His teaching is known for its relaxed and lively atmosphere, making learning enjoyable. Albert’s approach is tailored to each student’s needs, enabling rapid improvement in English proficiency in a short period. Besides being an excellent teacher, Albert is also a talented course designer who has created and developed various online and offline courses for English learners of different levels and goals. He has a deep understanding of the curriculum standards and assessment criteria of various English tests, and he knows how to design effective and engaging learning activities and materials that can help students master the test skills and strategies. Albert has also collaborated with other teachers and experts to review and improve the quality and relevance of the courses, and he has received positive feedback and recognition from both students and peers. Albert is passionate about creating innovative and personalized courses that can cater to the diverse needs and interests of English learners.",
     "p3title": "Rita T.",
     "p3author": "Senior Tutor",
-    "p3content1": "With 11 years of teaching experience, Rita is a seasoned expert in Duolingo English Test preparation and research. She is an ATI-certified advanced English teacher, holding a TESOL Advanced English Teacher Certificate and Cambridge English Teacher Training Certificate. Rita has impressive scores of 111 in TOEFL and 140 in DET. Her teaching is marked by an ability to precisely analyze students’ needs and provide targeted instruction, helping them break through barriers and enhance their language skills to achieve their desired scores swiftly. In addition, Rita is a passionate and enthusiastic teacher who always motivates and inspires her students to learn English with confidence and joy. She uses a variety of interactive and engaging methods, such as games, role-plays, debates, and simulations, to make her classes fun and effective. She also gives personalized feedback and guidance to each student, helping them improve their weak areas and overcome their challenges. Rita’s students love her warm and supportive personality, and they often praise her for being patient, friendly, and professional.",
+    "p3content1": "With 11 years of teaching experience, Rita is a seasoned expert in ≠ preparation and research. She is an ATI-certified advanced English teacher, holding a TESOL Advanced English Teacher Certificate and Cambridge English Teacher Training Certificate. Rita has impressive scores of 111 in TOEFL and 140 in ∑. Her teaching is marked by an ability to precisely analyze students’ needs and provide targeted instruction, helping them break through barriers and enhance their language skills to achieve their desired scores swiftly. In addition, Rita is a passionate and enthusiastic teacher who always motivates and inspires her students to learn English with confidence and joy. She uses a variety of interactive and engaging methods, such as games, role-plays, debates, and simulations, to make her classes fun and effective. She also gives personalized feedback and guidance to each student, helping them improve their weak areas and overcome their challenges. Rita’s students love her warm and supportive personality, and they often praise her for being patient, friendly, and professional.",
     "p4title": "Doris W.",
     "p4author": "Tutor",
-    "p4content1": "Doris, scoring 145 in DET and 8.0 in IELTS, is a versatile Duolingo English Test instructor known for her rich teaching experience. She excels in helping students of various levels quickly overcome difficulties to achieve their ideal results, having once helped a student improve by 30 points in just two weeks. Her classes are known for their lively atmosphere and clear logic, and her teaching style is rigorous yet passionate and responsible, making her a favorite among a wide range of students.",
+    "p4content1": "Doris, scoring 145 in ∑ and 8.0 in IELTS, is a versatile ≠ instructor known for her rich teaching experience. She excels in helping students of various levels quickly overcome difficulties to achieve their ideal results, having once helped a student improve by 30 points in just two weeks. Her classes are known for their lively atmosphere and clear logic, and her teaching style is rigorous yet passionate and responsible, making her a favorite among a wide range of students.",
     "p5title": "Laura K.",
     "p5author": "Test Researcher",
-    "p5content1": "Laura brings years of experience in Duolingo training, 110 in TOEFL, and 155 in DET. A specialist in Duolingo question research, Laura is adept in teaching adaptive test questions and writing. She has a deep understanding of DET exam techniques and trends, excelling in performance analysis to quickly identify and enhance students’ potential."
+    "p5content1": "Laura brings years of experience in π training, 110 in TOEFL, and 155 in ∑. A specialist in π question research, Laura is adept in teaching adaptive test questions and writing. She has a deep understanding of ∑ exam techniques and trends, excelling in performance analysis to quickly identify and enhance students’ potential."
   },
   "contactUs": {
     "seometa": {
-      "title": "Contact Us | +44 7708 193347 | DET Practice",
-      "description": "Contact DET Practice for expert Duolingo English Test practice and guidance. Prepare with specialized resources and support for the optimal results.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Contact Us | +44 7708 193347 | ∑ Practice",
+      "description": "Contact ∑ Practice for expert ≠ practice and guidance. Prepare with specialized resources and support for the optimal results.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
     },
     "checkEmail": "The email must be a valid email address.",
     "enterName": "Please enter your name.",
@@ -326,7 +326,7 @@
     "SUBMIT": " SUBMIT "
   },
   "cookie": {
-    "seometa": { "title": "Cookie Policy - DET Practice" },
+    "seometa": { "title": "Cookie Policy - ∑ Practice" },
     "Cookie_Policy": "Cookie Policy",
     "Last_updated": "Last updated: ",
     "Last_updated_time": "2024-03-27",
@@ -367,13 +367,13 @@
   },
   "correction": {
     "seometa": {
-      "title": "Best AI Correction Service for Duolingo Test | DET Practice",
-      "description": "Achieve Duolingo test success with our specialized correction service. Get personalized guidance and support to maximize your score. Take the first step now!",
-      "keywords": "Correction Service for Duolingo Test, AI Correction Service for Duolingo Test"
+      "title": "Best AI Correction Service for π Test | ∑ Practice",
+      "description": "Achieve π test success with our specialized correction service. Get personalized guidance and support to maximize your score. Take the first step now!",
+      "keywords": "Correction Service for π Test, AI Correction Service for π Test"
     },
-    "h1": "Discover the Best AI Correction Service for Duolingo Test",
+    "h1": "Discover the Best AI Correction Service for π Test",
     "desc": " Enhance your essays with our 'AI + Teachers' correction service. Get detailed feedback based on official scoring standards quickly after submission.",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
     "yellow_arrow_right": "yellow_arrow_right",
@@ -389,7 +389,7 @@
     },
     "h2_2": {
       "h2": "Comprehensive Assessment",
-      "right_desc": " Follows the official Duolingo English Test requirements to accurately capture writing skills and provide comprehensive assessment results."
+      "right_desc": " Follows the official ≠ requirements to accurately capture writing skills and provide comprehensive assessment results."
     },
     "h2_3": {
       "h2": "Writing Correction",
@@ -397,7 +397,7 @@
     },
     "h2_4": {
       "h2": "Teacher Guidance",
-      "right_desc": "Enhance your writing with expert analysis tailored to DET criteria, pinpointing areas for improvement to elevate your work."
+      "right_desc": "Enhance your writing with expert analysis tailored to ∑ criteria, pinpointing areas for improvement to elevate your work."
     },
     "h2_5": {
       "h2": "Original Text Polishing",
@@ -406,13 +406,13 @@
   },
   "courses": {
     "seometa": {
-      "title": "Duolingo English Test Course Online | DET Practice",
-      "description": "Explore our Duolingo English Test course online at DET Practice. Prepare effectively with our comprehensive resources and expert guidance. Enroll now!"
+      "title": "≠ Course Online | ∑ Practice",
+      "description": "Explore our ≠ course online at ∑ Practice. Prepare effectively with our comprehensive resources and expert guidance. Enroll now!"
     },
     "article1": {
-      "title": "Key Features of DET Speaking Exam Excellence:",
+      "title": "Key Features of ∑ Speaking Exam Excellence:",
       "list": [
-        { "content": "• In-depth exploration of all DET speaking task types" },
+        { "content": "• In-depth exploration of all ∑ speaking task types" },
         { "content": "• Practical strategies for approaching each speaking task" },
         { "content": "• Interactive exercises to improve speech clarity, fluency, and confidence" },
         { "content": "• Expert guidance on pronunciation, tone, and overall performance" },
@@ -420,20 +420,20 @@
         { "content": "• Audio demo answers to provide clear examples of effective responses" },
         { "content": "• Personalized learning approaches for different proficiency levels" },
         { "content": "• Focus on essential vocabulary and grammar for effective communication" },
-        { "content": "• Updated to incorporate the latest changes in the DET speaking format" }
+        { "content": "• Updated to incorporate the latest changes in the ∑ speaking format" }
       ]
     },
     "article2": {
-      "title": "Key Features of DET Writing Exam Excellence:",
+      "title": "Key Features of ∑ Writing Exam Excellence:",
       "list": [
-        { "content": "• Comprehensive coverage of DET writing tasks with analysis and examples" },
+        { "content": "• Comprehensive coverage of ∑ writing tasks with analysis and examples" },
         { "content": "• Step-by-step guidelines for planning and writing exceptional essays" },
-        { "content": "• Targeted exercises to hone DET-specific writing skills" },
+        { "content": "• Targeted exercises to hone ∑-specific writing skills" },
         { "content": "• Expert tips to improve clarity, coherence, and sophistication" },
         { "content": "• Annotated sample essays showcasing effective strategies and common pitfalls" },
         { "content": "• Adaptable learning paths for various proficiency levels" },
-        { "content": "• Emphasis on essential grammar and vocabulary for DET success" },
-        { "content": "• Updated to reflect the latest DET writing format trends" }
+        { "content": "• Emphasis on essential grammar and vocabulary for ∑ success" },
+        { "content": "• Updated to reflect the latest ∑ writing format trends" }
       ]
     },
     "contaceUsList": [
@@ -456,18 +456,18 @@
       }
     ],
     "pagefont": {
-      "h1": "DET Speaking Exam Excellence: A Comprehensive Guide",
+      "h1": "∑ Speaking Exam Excellence: A Comprehensive Guide",
       "do": "$",
       "Buy_Now": "Buy Now",
-      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "alt": "∑ Practice:The best ≠ Practice platform",
       "white_arrow_right": "White Arrow Right",
       "Double_Right_Arrow": "Double Right Arrow",
-      "DET_Writing": "DET Writing Exam Excellence: A Comprehensive Guide",
+      "DET_Writing": "∑ Writing Exam Excellence: A Comprehensive Guide",
       "How_to": "How to get the guide?",
       "spa": "Speaking practice audio",
       "tips": "Thank you for your interest in our Speaking/Writing Guide! Please note that this is a virtual product. Once purchased and downloaded, the product delivery is considered complete, and it is generally non-refundable. Please confirm before making a purchase.",
       "orange_title": "Elite Language Educators",
-      "team_desc": "Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS, and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching approaches, and innovative methods, they are committed to helping each student achieve their highest potential in English proficiency.",
+      "team_desc": "Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS, and ≠ (∑). Renowned for their impressive language skills, personalized teaching approaches, and innovative methods, they are committed to helping each student achieve their highest potential in English proficiency.",
       "Elite_Language_Educators": "Elite Language Educators"
     }
   },
@@ -478,13 +478,13 @@
     "t2": "Please enter the email used to create your account",
     "Enter_your_email": "Enter your email",
     "desc": "We'll send you an email with the reset code",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "Send_reset_code": "Send reset code",
     "Back_to_login": "Back to login"
   },
   "listen": {
     "Speaking_practice_audio": "Speaking practice audio",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform"
+    "alt": "∑ Practice:The best ≠ Practice platform"
   },
   "login": {
     "peyea": "Please enter your email address.",
@@ -496,7 +496,7 @@
     "Or_continue_with": "Or continue with",
     "Email_address": " Email address",
     "Password": "Password",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "Login": "Login",
     "Forgot_password": "Forgot password?",
     "Dont_have_an_account": "Don't have an account?",
@@ -504,19 +504,19 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo Mock Test: Prepare for Your Language Exam | DET Practice",
-      "description": "Experience realistic Duolingo Mock Tests with adaptive questions and AI scoring. Prepare effectively with DET Practice's full-length exams for the Duolingo English Test!",
-      "keywords": "Duolingo Mock Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
+      "title": "π Mock Test: Prepare for Your Language Exam | ∑ Practice",
+      "description": "Experience realistic π Mock Tests with adaptive questions and AI scoring. Prepare effectively with ∑ Practice's full-length exams for the ≠!",
+      "keywords": "π Mock Test, ∑ π, ∑ Test, π ∑, π Test, π Test Online"
     },
-    "h1": "Duolingo English Test 1:1 Mock Exam",
+    "h1": "≠ 1:1 Mock Exam",
     "desc": "Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of the actual testing process before the real deal and quickly receive scores and detailed diagnostic reports to pinpoint areas for improvement.",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "mock_user_icon": "Mock User Icon",
     "white_arrow_right": "White Arrow Right",
     "orange_arrow_right": "Orange Arrow Right",
     "learners_have": "{number} learners have taken our mock exams for self-assessment and practice.",
     "Mock_Now": "Mock Now",
-    "Full_scale": "Duolingo 1:1 Full-scale Mock Exam",
+    "Full_scale": "π 1:1 Full-scale Mock Exam",
     "article1": {
       "h2": "Algorithmic Intelligence",
       "right_desc": "Experience real exam conditions with our advanced adaptive testing algorithm. Quickly master various question types and gain precise assessments."
@@ -536,18 +536,18 @@
   },
   "practice": {
     "seometa": {
-      "title": "Duolingo English Practice Test Online, DET Practice Test Score",
-      "description": "Prepare for the Duolingo english test with DET practice tests online. Improve your Duolingo English test score with effective practice sessions. Start now!",
-      "keywords": "Duolingo English Test Practice, Duolingo Practice English Test, Duolingo English Practice Test, Duolingo Practice Test Online, Duolingo Test Practice, Duolingo Practice Test, Duolingo Practice, Det Practice Test, Duolingo English Test Score"
+      "title": "π English Practice Test Online, ∑ Practice Test Score",
+      "description": "Prepare for the π english test with ∑ practice tests online. Improve your π English test score with effective practice sessions. Start now!",
+      "keywords": "≠ Practice, π Practice English Test, π English Practice Test, π Practice Test Online, π Test Practice, π Practice Test, π Practice, Det Practice Test, ≠ Score"
     },
-    "h1": "Duolingo Practice Question Bank",
+    "h1": "π Practice Question Bank",
     "desc": "Gain access to an extensive collection of test questions, enhanced with answer analysis, templates, AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and affordably with our AI-powered approach.",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "altbanner": "Duolingo Practice Question Bank",
+    "alt": "∑ Practice:The best ≠ Practice platform",
+    "altbanner": "π Practice Question Bank",
     "bank_user_icon": "Bank User Icon",
     "white_arrow_right": "White Arrow Right",
     "blue_arrow_right": "Blue Arrow Right",
-    "learners_have": "{number} learners have used our question bank for DET preparation.",
+    "learners_have": "{number} learners have used our question bank for ∑ preparation.",
     "spn": "Start Practicing Now",
     "article1": {
       "h2": "Extensive Question Library",
@@ -572,14 +572,14 @@
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "Privacy Policy: Keeping Your Data Safe | DET Practice",
-      "description": "Discover DET Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Privacy Policy: Keeping Your Data Safe | ∑ Practice",
+      "description": "Discover ∑ Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
     },
     "h1": "Privacy Policy",
     "q1": {
       "title": "Last updated: 2023-11-20",
-      "a1": "DET Pratice (“us”, “we”, or “our”) operates the DET Pratice website (the “Service”).",
+      "a1": "∑ Pratice (“us”, “we”, or “our”) operates the ∑ Pratice website (the “Service”).",
       "a2": "This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service.",
       "a3": "We will not use or share your information with anyone except as described in this Privacy Policy.",
       "a4": "We use your Personal Information to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at",
@@ -621,7 +621,7 @@
     "Invalid_email": "Invalid email.",
     "Sign_up": "Sign up",
     "cya": "Create your free DETPractice account",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "suwg": "Sign up with Google",
     "ocw": "Or continue with",
     "Email_address": "Email address",
@@ -639,7 +639,7 @@
     "Enter_your_code": "Enter your code",
     "Full_Name": "Full Name",
     "Password": "Password",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "Create_Account": "Create Account",
     "ahaa": "Already have an account?",
     "Login_here": "Login here.",
@@ -654,7 +654,7 @@
     "pete": "Please enter the email used to create your account",
     "Enter_your_code": "Enter your code",
     "pw": "Please wait for 120 seconds to reset code",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "rpr": "Request Password Reset",
     "btl": "Back to login"
   },
@@ -666,7 +666,7 @@
     "pete": "Please enter the email used to create your account",
     "np": "New Password",
     "eanp": "Enter a new password",
-    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "alt": "∑ Practice:The best ≠ Practice platform",
     "cnp": "Confirm New Password",
     "cynp": "Confirm your new password",
     "rmp": "Reset my password",
@@ -674,15 +674,15 @@
   },
   "tos": {
     "seometa": {
-      "title": "Terms of Service | DET Practice",
-      "description": "Explore DET Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Terms of Service | ∑ Practice",
+      "description": "Explore ∑ Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
     },
     "title": "Terms of Service",
     "q1": {
       "title": "Last updated: 2023-11-20",
       "a1": "Please read these Terms of Service (“Terms”, “TOS”) carefully before using the",
-      "a2": "website (the “Service”) operated by DET Practice (“us”, “we”, or “our”).",
+      "a2": "website (the “Service”) operated by ∑ Practice (“us”, “we”, or “our”).",
       "a3": " Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.",
       "a4": "By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service."
     },
@@ -694,8 +694,8 @@
     },
     "q3": {
       "title": "Links To Other Web Sites",
-      "a1": "Our Service may contain links to third-party websites or services that are not owned or controlled by DET Practice.",
-      "a2": "DET Practice has no control over and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that DET Practice shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such web sites or services.",
+      "a1": "Our Service may contain links to third-party websites or services that are not owned or controlled by ∑ Practice.",
+      "a2": "∑ Practice has no control over and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that ∑ Practice shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such web sites or services.",
       "a3": "We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit."
     },
     "q4": {
@@ -725,9 +725,9 @@
   },
   "sitemap": {
     "seometa": {
-      "title": "DET Practice Sitemap: Find All Practice Tests & Resources",
-      "description": "Explore DET Practice's complete sitemap to access all practice tests, study resources, and guides. Navigate easily through our comprehensive test prep offerings.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "∑ Practice Sitemap: Find All Practice Tests & Resources",
+      "description": "Explore ∑ Practice's complete sitemap to access all practice tests, study resources, and guides. Navigate easily through our comprehensive test prep offerings.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
     },
     "h1": "Sitemap"
   }
