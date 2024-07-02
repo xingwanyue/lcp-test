@@ -174,7 +174,7 @@ const options = [
   },
   {
     value: 'id',
-    label: 'Indonesian',
+    label: 'Bahasa Indonesia',
   },
   {
     value: 'it',
@@ -575,7 +575,6 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
 </style>
 <style lang="scss">
 .popover_btn {
-  border: 1px red solid;
   padding: 12px;
   background: #ffffff;
   border-radius: 4px;
@@ -596,6 +595,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
     margin-left: 4px;
     position: relative;
     top: -1px;
+    min-width: 130px;
   }
   .arrow_icon {
     width: 16px;
