@@ -272,11 +272,14 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
     </div>
     <div class="footer_logo_dom">
       <div class="footer_logo_left">
-        <div class="logo_img_out">
-          <img src="/img/footer/small_logo.svg" :alt="$t('footer.newAlt')" />
+        <div class="footer_logo_left_left">
+          <div class="logo_img_out">
+            <img src="/img/footer/small_logo.svg" :alt="$t('footer.newAlt')" />
+          </div>
+          <div class="Copyright">© 2024 DET Practice</div>
         </div>
+
         <div class="logo_icon_out">
-          <span class="Copyright">© 2024 DET Practice</span>
           <NuxtLink to="https://youtube.com/@duolingoenglishtestpractices" target="_blank">
             <div class="one_icon youtube"></div>
           </NuxtLink>
@@ -417,25 +420,41 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
       grid-column-gap: 20px;
       //  border: 1px red solid;
       @media (max-width: 420px) {
-        grid-column-gap: 20px;
+        grid-gap: 20px;
       }
       @media (max-width: 1009px) {
         justify-content: center;
       }
-      .logo_img_out {
-        width: 132px;
-        height: 24px;
-        cursor: pointer;
-        img {
-          width: 100%;
-          height: 100%;
-        }
+      flex-wrap: wrap;
+      .footer_logo_left_left {
+        // border: 1px red solid;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        grid-column-gap: 20px;
+        .logo_img_out {
+          width: 132px;
+          height: 24px;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100%;
+          }
 
-        @media (max-width: 420px) {
-          width: 100px;
-          height: 18px;
+          @media (max-width: 420px) {
+            width: 100px;
+            height: 18px;
+          }
+        }
+        .Copyright {
+          font-weight: 400;
+          font-size: 14px;
+          color: #403f3e;
+          text-align: center;
+          margin-right: 22px;
         }
       }
+
       .logo_icon_out {
         display: flex;
         justify-content: flex-start;
@@ -493,13 +512,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         }
       }
     }
-    .Copyright {
-      font-weight: 400;
-      font-size: 14px;
-      color: #403f3e;
-      text-align: center;
-      margin-right: 22px;
-    }
+
     .footer_logo_right {
       display: flex;
       align-items: center;
