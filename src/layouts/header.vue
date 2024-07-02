@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { urlGet, saveStorage, getStorage, host, getToken } from '@/utils';
 import { useStore } from '@/store';
+import last from 'lodash/last';
 const localePath = useLocalePath();
 const { t } = useI18n();
 const props = defineProps({
@@ -13,7 +14,7 @@ const store = useStore();
 const user = computed(() => store.user);
 
 const route = useRoute();
-const pathname = computed(() => route.path);
+const pathname = computed(() => `/${last(route.path.split('/'))}` || '/');
 const headerColor = ref('#FFF4F1');
 const oldPath = ref('');
 const haveCookie = ref(false);
@@ -82,7 +83,7 @@ const productClick = () => {
   isProductsMobile.value = !isProductsMobile.value;
 };
 
-const menus = [
+const menus = computed(() => [
   {
     name: t('Home'),
     path: '/',
@@ -103,13 +104,14 @@ const menus = [
     name: t('Blog'),
     path: '/blog',
   },
-];
+]);
+// const menus = ;
 </script>
 
 <template>
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
     <div class="header-content">
-      <nuxt-link :to="localePath('/')" class="home-logo">
+      <nuxt-link :to="localePath('/')" class="home-logo" :title="t('header.home_logo_title')">
         <span class="icon iconfont icon-logo logo"></span>
       </nuxt-link>
       <div class="menus">
@@ -132,63 +134,51 @@ const menus = [
             popper-class="head-question-popover"
           >
             <div class="head-question-con" @mouseleave="popoverQuestions = false" @mouseover="popoverQuestions = true">
-              <NuxtLink :to="localePath('/practice')" class="one_card card1">
+              <NuxtLink :to="localePath('/practice')" :title="$t('header.path_practice_title')" class="one_card card1">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon1.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Practice</div>
+                  <div class="title">{{ $t('header.prod1.title') }}</div>
                   <div class="font">
-                    Achieve Excellence with Our Extensive Question Bank: Over 10,000 Questions, Regular Updates, and
-                    Smart Performance Tracking!
+                    {{ $t('header.prod1.font') }}
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/correction')" class="one_card card2">
+              <NuxtLink
+                :to="localePath('/correction')"
+                :title="$t('header.path_correction_title')"
+                class="one_card card2"
+              >
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon2.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/home/product_icon2.svg" :alt="$t('header.prod2.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Correction Service</div>
+                  <div class="title">{{ $t('header.prod2.title') }}</div>
                   <div class="font">
-                    Perfect Your Essays with AI-Powered Teacher Feedback: Accurate Corrections, Instant Reports, and
-                    Score Improvement within Two Weeks!
+                    {{ $t('header.prod2.font') }}
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/mock-exam')" class="one_card card3">
+              <NuxtLink :to="localePath('/mock-exam')" :title="$t('header.path_mock_title')" class="one_card card3">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon3.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/home/product_icon3.svg" :alt="$t('header.prod3.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Mock</div>
+                  <div class="title">{{ $t('header.prod3.title') }}</div>
                   <div class="font">
-                    Conquer Your Exam with Authentic Full-Length Mocks: In-depth Analysis and Instant Results, Available
-                    Anytime, Anywhere.
+                    {{ $t('header.prod3.font') }}
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/courses')" class="one_card card4">
+              <NuxtLink :to="localePath('/courses')" :title="$t('header.path_course_title')" class="one_card card4">
                 <div class="icon">
-                  <img
-                    src="/img/home/product_icon4.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/home/product_icon4.svg" :alt="$t('header.prod4.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Test Course</div>
+                  <div class="title">{{ $t('header.prod4.title') }}</div>
                   <div class="font">
-                    Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident
-                    Speaking and Writing Excellence!
+                    {{ $t('header.prod4.font') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -204,18 +194,13 @@ const menus = [
                   v-if="!popoverQuestions"
                   src="/img/learn/down-icon.svg"
                   class="down-icon"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
+                  :alt="$t('header.commonAlt')"
                 />
-                <el-image
-                  v-else
-                  src="/img/learn/up-icon.svg"
-                  class="down-icon"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" :alt="$t('header.commonAlt')" />
               </div>
             </template>
           </el-popover>
-          <nuxt-link v-else :to="localePath(menu.path)"
+          <nuxt-link v-else :to="localePath(menu.path)" :title="menu.name"
             >{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
             <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
@@ -238,22 +223,19 @@ const menus = [
           </template>
         </el-popover> -->
         <div class="loginbtn">
-          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor">{{
+            $t('header.Get_started')
+          }}</nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn">
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
         <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free common_btn_hover_bgColor">
-          Try for free
+          {{ $t('header.Try_for_free') }}
         </nuxt-link>
       </div>
       <div class="mobile">
-        <img
-          src="/img/menu.svg"
-          class="mobileMenus"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
-          @click="handleOpen"
-        />
+        <img src="/img/menu.svg" class="mobileMenus" :alt="$t('header.commonAlt')" @click="handleOpen" />
       </div>
     </div>
     <el-drawer
@@ -272,7 +254,7 @@ const menus = [
           class="mobile-cancel"
           @click="handleClose"
           src="/img/learn/mobile-close.svg"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
+          :alt="$t('header.commonAlt')"
         />
       </div>
       <div class="asideMenus">
@@ -284,14 +266,9 @@ const menus = [
                 v-if="!isProductsMobile"
                 src="/img/learn/down-mobile.svg"
                 class="down-icon-mobile"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
+                :alt="$t('header.commonAlt')"
               />
-              <el-image
-                v-else
-                src="/img/learn/up-mobile.svg"
-                class="down-icon-mobile"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
-              />
+              <el-image v-else src="/img/learn/up-mobile.svg" class="down-icon-mobile" :alt="$t('header.commonAlt')" />
             </div>
             <nuxt-link
               v-if="isProductsMobile"
@@ -299,7 +276,7 @@ const menus = [
               :to="localePath('/practice')"
               @click="handleClose"
             >
-              Duolingo English Test Practice
+              {{ $t('header.prod1.title') }}
             </nuxt-link>
             <nuxt-link
               v-if="isProductsMobile"
@@ -307,7 +284,7 @@ const menus = [
               :to="localePath('/correction')"
               @click="handleClose"
             >
-              Duolingo English Test Correction Service
+              {{ $t('header.prod2.title') }}
             </nuxt-link>
             <nuxt-link
               v-if="isProductsMobile"
@@ -315,7 +292,7 @@ const menus = [
               :to="localePath('/mock-exam')"
               @click="handleClose"
             >
-              Duolingo English Test Mock
+              {{ $t('header.prod4.title') }}
             </nuxt-link>
             <nuxt-link
               v-if="isProductsMobile"
@@ -323,22 +300,22 @@ const menus = [
               :to="localePath('/courses')"
               @click="handleClose"
             >
-              Duolingo English Test Course
+              {{ $t('header.prod3.title') }}
             </nuxt-link>
           </div>
-          <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose">
+          <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose" :title="menu.name">
             {{ menu.name }}
           </nuxt-link>
         </div>
       </div>
       <div v-if="user.id" href="/app">
         <div class="loginbtn-mobile">
-          <nuxt-link :href="urlGet('/home')" class="try_free"> Get started </nuxt-link>
+          <nuxt-link :href="urlGet('/home')" class="try_free">{{ $t('header.Get_started') }}</nuxt-link>
         </div>
       </div>
       <div v-else class="loginbtn-mobile">
         <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free">
-          Try for free
+          {{ $t('header.Try_for_free') }}
         </nuxt-link>
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font">Login</nuxt-link> -->
       </div>

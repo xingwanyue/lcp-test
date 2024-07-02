@@ -1,79 +1,6 @@
-<template>
-  <div class="login">
-    <div class="left">
-      <img src="/img/login/lock.svg" alt="" />
-      <div class="t1">Forgot Password?</div>
-      <div class="t2">Please enter the email used to create your account</div>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
-        <el-form-item prop="pwd" label="" style="margin-top: 80px">
-          New Password
-          <el-input
-            v-model="formData.pwd"
-            :type="pwdShow ? 'text' : 'password'"
-            maxlength="20"
-            placeholder="Enter a new password"
-          >
-            <template #suffix>
-              <img
-                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
-                style="cursor: pointer"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
-                @click="pwdShow = !pwdShow"
-              />
-            </template>
-          </el-input>
-        </el-form-item>
-        <el-form-item prop="pwd1" label="" style="margin-top: 0px">
-          Confirm New Password
-          <el-input
-            v-model="formData.pwd1"
-            :type="pwdShow1 ? 'text' : 'password'"
-            maxlength="20"
-            placeholder="Confirm your new password"
-          >
-            <template #suffix>
-              <img
-                :src="pwdShow1 ? '/img/login/look.svg' : '/img/login/unlook.svg'"
-                style="cursor: pointer"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
-                @click="pwdShow1 = !pwdShow1"
-              />
-            </template>
-          </el-input>
-        </el-form-item>
-        <el-form-item style="margin-top: 24px; margin-bottom: 16px">
-          <div v-if="errShow" class="err-message">
-            <img
-              src="/img/login/errIcon.svg"
-              class="errIcon"
-              alt="DET Practice:The best Duolingo English Test Practice platform"
-            />
-            <span>{{ errMessage }}</span>
-          </div>
-          <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-              Reset my password
-            </el-button>
-          </div>
-        </el-form-item>
-        <el-form-item>
-          <div class="zhuce">
-            <div class="goLogin" @click="goLogin">＜ Back to login</div>
-          </div>
-        </el-form-item>
-      </el-form>
-    </div>
-  </div>
-</template>
-
 <script setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { findPassword } from '@/api';
@@ -99,17 +26,17 @@ const submit = async () => {
   errShow.value = false;
   if (!pwd) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address.';
+    errMessage.value = t('resetPasswordStep2.peue');
     return false;
   }
   if (pwd.length < 6) {
     errShow.value = true;
-    errMessage.value = 'Password too short.';
+    errMessage.value = t('resetPasswordStep2.pts');
     return false;
   }
   if (pwd !== pwd1) {
     errShow.value = true;
-    errMessage.value = 'Password inconsistency.';
+    errMessage.value = t('resetPasswordStep2.pi');
     return false;
   }
   const temp = {
@@ -131,6 +58,76 @@ const goLogin = () => {
   router.push('/login');
 };
 </script>
+<template>
+  <div class="login">
+    <div class="left">
+      <img src="/img/login/lock.svg" :alt="$t('resetPasswordStep2.alt')" />
+      <div class="t1">{{ $t('resetPasswordStep2.fp') }}</div>
+      <div class="t2">{{ $t('resetPasswordStep2.pete') }}</div>
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.preven
+      >
+        <el-form-item prop="pwd" label="" style="margin-top: 80px">
+          {{ $t('resetPasswordStep2.np') }}
+          <el-input
+            v-model="formData.pwd"
+            :type="pwdShow ? 'text' : 'password'"
+            maxlength="20"
+            :placeholder="$t('resetPasswordStep2.eanp')"
+          >
+            <template #suffix>
+              <img
+                :src="pwdShow ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                style="cursor: pointer"
+                :alt="$t('resetPasswordStep2.alt')"
+                @click="pwdShow = !pwdShow"
+              />
+            </template>
+          </el-input>
+        </el-form-item>
+        <el-form-item prop="pwd1" label="" style="margin-top: 0px">
+          {{ $t('resetPasswordStep2.cnp') }}
+          <el-input
+            v-model="formData.pwd1"
+            :type="pwdShow1 ? 'text' : 'password'"
+            maxlength="20"
+            :placeholder="$t('resetPasswordStep2.cynp')"
+          >
+            <template #suffix>
+              <img
+                :src="pwdShow1 ? '/img/login/look.svg' : '/img/login/unlook.svg'"
+                style="cursor: pointer"
+                :alt="$t('resetPasswordStep2.alt')"
+                @click="pwdShow1 = !pwdShow1"
+              />
+            </template>
+          </el-input>
+        </el-form-item>
+        <el-form-item style="margin-top: 24px; margin-bottom: 16px">
+          <div v-if="errShow" class="err-message">
+            <img src="/img/login/errIcon.svg" class="errIcon" :alt="$t('resetPasswordStep2.alt')" />
+            <span>{{ errMessage }}</span>
+          </div>
+          <div class="login_btn_out">
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+              {{ $t('resetPasswordStep2.rmp') }}
+            </el-button>
+          </div>
+        </el-form-item>
+        <el-form-item>
+          <div class="zhuce">
+            <div class="goLogin" @click="goLogin">＜ {{ $t('resetPasswordStep2.btl') }}</div>
+          </div>
+        </el-form-item>
+      </el-form>
+    </div>
+  </div>
+</template>
 
 <style lang="scss">
 .login {

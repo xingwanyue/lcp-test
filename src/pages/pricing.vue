@@ -1,13 +1,18 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { staticUrlGet, urlGet, domain } from '@/utils';
 import { useStore } from '@/store';
 useServerSeoMeta({
-  title: 'DET Practice - Duolingo Test Prep Membership and Services Pricing',
-  description:
-    'Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.',
+  title: t('pricing.seometa.title'),
+  description: t('pricing.seometa.description'),
+  keywords: t('pricing.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/pricing` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/pricing` },
+    { rel: 'alternate', href: `https://www.${domain}/pricing`, hreflang: 'en-GB' },
+  ],
 });
 const store = useStore();
 const user = computed(() => store.user);
@@ -29,58 +34,40 @@ const { data: buyData = [] } = (await useFetch(`${api}/common/portalData?type=2`
 
 const aqList = ref([
   {
-    name: 'How does DETPractice’s plans and pricing work?',
-    content:
-      'We provide transparent plans and pricing for our users, with no hidden fees. Additionally, we offer add-on subscription packages so that you can choose services according to your needs.',
+    name: t('pricing.aqList[0].name'),
+    content: t('pricing.aqList[0].content'),
     open: false,
   },
   {
-    name: 'Is there a free trial?',
-    content: 'Yes! You can view 20 questions for free. Help you understand us before you buy more services.',
+    name: t('pricing.aqList[1].name'),
+    content: t('pricing.aqList[1].content'),
     open: false,
   },
   {
-    name: 'Do you offer any discounts?',
-    content:
-      "Yes! We offer tailored discounts for each service. However, when you opt for a 30-day service, you'll receive a greater discount compared to other services. Please refer to the price details above for more information.",
+    name: t('pricing.aqList[2].name'),
+    content: t('pricing.aqList[2].content'),
     open: false,
   },
   {
-    name: 'My payment was successful, but the upgrade failed.',
-    content:
-      "Please contact us via chat or email: <span class='email_address'>support@detpractice.com</span>. This is the simplest and fastest way to address your concerns.",
+    name: t('pricing.aqList[3].name'),
+    content: t('pricing.aqList[3].content'),
     open: false,
   },
   {
-    name: 'Can I change my plan later?',
-    content:
-      'Thank you for purchasing the service! Please note that this is a virtual product. Once purchased, product delivery is considered complete and is generally non-refundable. Please check before purchasing.',
+    name: t('pricing.aqList[4].name'),
+    content: t('pricing.aqList[4].content'),
     open: false,
   },
   {
-    name: 'Where do I send my feedback?',
-    content:
-      'You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class="email_address">support@detpractice.com</span>. Alternatively, you can leave a message directly in the "Contact Us" section.',
+    name: t('pricing.aqList[5].name'),
+    content: t('pricing.aqList[5].content'),
     open: false,
   },
   {
-    name: 'What is your refund policy?',
-    content: `
-    1. Free Account
-    <br>Usage is entirely free, so there are no refund issues.
-
-    <br>2. Subscription Plans
-    <br>Users may request a refund if DET Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect.
-        Refunds will not be issued for subscriptions and services that have already become active after purchase.
-    
-
-    <br>3. Speaking/Writing Guide
-    <br>The Speaking/Writing Guide is considered a digital product. Once purchased and downloaded, the product delivery is deemed complete and is generally non-refundable. Please carefully read the purchase information before making a purchase.
-
-    <br><br>Important Note:
-    <br>All refund requests must be processed through customer service, and relevant usage records must be provided for verification. 
-    <br>To prevent fraudulent refunds, each user account is limited to one refund request. Multiple requests will not be processed.
-    <br>If you have any special circumstances or unique situations, please contact us, and we will work with you to find a resolution.`,
+    name: t('pricing.aqList[6].name'),
+    content: `${t('pricing.aqList[6].content1')}${t('pricing.aqList[6].content2')}${t('pricing.aqList[6].content3')}${t(
+      'pricing.aqList[6].content4',
+    )}`,
     open: false,
   },
 ]) as any;
@@ -109,7 +96,7 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `<span class='bigger'>20</span> Practice Questions`,
+              desc: t('pricing.qlList.day0.name1Desc'),
               tips: '',
             },
             // {
@@ -140,15 +127,17 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              desc: t('pricing.qlList.day7.name1Desc'),
               tips: '',
               style: 'font-weight: 500;',
             },
             {
               name: 2,
-              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
+              desc: t('pricing.qlList.day7.name2Desc', {
+                correctNum: item.correctNum,
+              }),
               style: 'font-weight: 500;',
-              tips: 'For Speaking and Writing Questions',
+              tips: t('pricing.qlList.day7.name2Tips'),
             },
             // {
             //   name: 3,
@@ -158,7 +147,9 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             // },
             {
               name: 4,
-              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              desc: t('pricing.qlList.day7.name4Desc', {
+                examNum: item.examNum,
+              }),
               tips: '',
             },
             // {
@@ -184,14 +175,16 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              desc: t('pricing.qlList.day15.name1Desc'),
               tips: '',
             },
             {
               name: 2,
-              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
+              desc: t('pricing.qlList.day15.name2Desc', {
+                correctNum: item.correctNum,
+              }),
               style: 'font-weight: 500;',
-              tips: 'For Speaking and Writing Questions',
+              tips: t('pricing.qlList.day15.name2Tips'),
             },
             // {
             //   name: 3,
@@ -201,7 +194,9 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             // },
             {
               name: 4,
-              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              desc: t('pricing.qlList.day15.name4Desc', {
+                examNum: item.examNum,
+              }),
               tips: '',
             },
             // {
@@ -227,15 +222,17 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
           item.qlList = [
             {
               name: 1,
-              desc: `<span class='bigger'>Unlimited</span> for Practice Sessions`,
+              desc: t('pricing.qlList.day30.name1Desc'),
               tips: '',
               style: 'font-weight: 500;',
             },
             {
               name: 2,
-              desc: `<span class='bigger'>${item.correctNum}</span> Correction Services`,
+              desc: t('pricing.qlList.day30.name2Desc', {
+                correctNum: item.correctNum,
+              }),
               style: 'font-weight: 500;',
-              tips: 'For Speaking and Writing Questions',
+              tips: t('pricing.qlList.day30.name2Tips'),
             },
             // {
             //   name: 3,
@@ -245,7 +242,9 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
             // },
             {
               name: 4,
-              desc: `<span class='bigger'>${item.examNum}</span> Mock Exam`,
+              desc: t('pricing.qlList.day30.name4Desc', {
+                examNum: item.examNum,
+              }),
               tips: '',
             },
             // {
@@ -296,54 +295,54 @@ const contaceUsList = ref([
   {
     type: '1',
     icon: '/img/pricing/online.svg',
-    font: 'Online Customer Service',
-    tip: 'Available Mon-Fri, 10:00 - 19:00',
-    btn: 'Chat Live Now',
+    font: t('pricing.contaceUsList.type1.font'),
+    tip: t('pricing.contaceUsList.type1.tip'),
+    btn: t('pricing.contaceUsList.type1.btn'),
   },
   {
     type: '2',
     icon: '/img/pricing/email.svg',
-    font: 'Email Us',
-    tip: 'Receive a response in 1 business day.',
+    font: t('pricing.contaceUsList.type2.font'),
+    tip: t('pricing.contaceUsList.type2.tip'),
     btn: 'support@detpractice.com',
   },
   {
     type: '3',
     icon: '/img/pricing/message.svg',
-    font: 'Leave a message',
-    tip: 'We will respond to you within one business day.',
-    btn: 'Leave a message now',
+    font: t('pricing.contaceUsList.type3.font'),
+    tip: t('pricing.contaceUsList.type3.tip'),
+    btn: t('pricing.contaceUsList.type3.btn'),
   },
 ]);
 const membershipUnchanging = ref([
   {
     name: '1',
-    desc: 'Access all Practice Questions',
+    desc: t('pricing.membershipUnchanging[0]'),
     tips: '',
   },
   {
     name: '2',
-    desc: 'Browse High-scoring Demo Answers',
+    desc: t('pricing.membershipUnchanging[1]'),
     tips: '',
   },
   {
     name: '3',
-    desc: 'In-depth Question Analysis',
+    desc: t('pricing.membershipUnchanging[2]'),
     tips: '',
   },
   {
     name: '4',
-    desc: 'High-Frequency Exam Word Book',
+    desc: t('pricing.membershipUnchanging[3]'),
     tips: '',
   },
   {
     name: '5',
-    desc: 'Tailored Study Plan with Smart Question Selection',
+    desc: t('pricing.membershipUnchanging[4]'),
     tips: '',
   },
   {
     name: '6',
-    desc: 'AI-Powered Speaking Evaluations',
+    desc: t('pricing.membershipUnchanging[5]'),
     tips: '',
   },
 ]) as any;
@@ -427,17 +426,17 @@ const formateMinToHour = (min: number) => {
     <div class="part1_wrapper">
       <div class="part1">
         <div class="title1">
-          <h1>Plans & Pricing</h1>
+          <h1>{{ $t('pricing.pagefont.h1') }}</h1>
         </div>
         <div class="title2">
-          <h4>Act Now to Save! Grab your membership at today’s low prices – don’t miss out before costs rise.</h4>
+          <h4>{{ $t('pricing.pagefont.h4') }}</h4>
         </div>
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
-            Membership
+            {{ $t('pricing.pagefont.switch1') }}
           </div>
           <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
-            More Service
+            {{ $t('pricing.pagefont.switch2') }}
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
@@ -446,15 +445,18 @@ const formateMinToHour = (min: number) => {
             :key="index"
             :class="[item.flag === '1' ? 'one_price box_shadow' : 'one_price currentMembership_no']"
           >
-            <div class="title">Most Popular Choice</div>
+            <div class="title">{{ $t('pricing.pagefont.Most_Popular_Choice') }}</div>
             <div class="card_price">
               <div class="card_price_part1">
                 <div class="day">{{ item.tag }}</div>
                 <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
-                  <!-- <span v-if="Number(item.vipPrice)">
-                    {{ ((Number(item.vipPrice) / Number(item.originalPrice)) * 100).toFixed(0) }}% off
-                  </span> -->
-                  <span> {{ 100 - ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0) }}% off </span>
+                  <span
+                    >{{
+                      $t('pricing.pagefont.off', {
+                        off: 100 - ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0),
+                      })
+                    }}
+                  </span>
                 </div>
               </div>
               <div class="card_price_part2">{{ item.description }}</div>
@@ -463,13 +465,14 @@ const formateMinToHour = (min: number) => {
                   v-if="Number(item.vipPrice) && item.vipPrice !== item.price && Number(item.price) !== 0"
                   class="vip_price_top"
                 >
-                  <span class="symbol">$</span>{{ item.vipPrice / 100 }}
+                  <span class="symbol">{{ $t('pricing.pagefont.do') }}</span
+                  >{{ item.vipPrice / 100 }}
                 </div>
                 <div
                   v-if="Number(item.vipPrice) && item.vipPrice !== item.price && Number(item.price) !== 0"
                   class="vip_price_bottom"
                 >
-                  Member's price
+                  {{ $t('pricing.pagefont.mp') }}
                 </div>
               </div>
               <div class="card_price_part3">
@@ -485,10 +488,12 @@ const formateMinToHour = (min: number) => {
                   :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
                   @click="buyMembership(item.id)"
                 >
-                  Buy Now
+                  {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </div>
-                <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free"> Try for free </NuxtLink>
+                <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free">
+                  {{ $t('pricing.pagefont.tf') }}
+                </NuxtLink>
               </div>
               <div v-else>
                 <NuxtLink
@@ -496,31 +501,25 @@ const formateMinToHour = (min: number) => {
                   :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
                   :to="localePath(`/login?url=/pricing`)"
                 >
-                  Buy Now
+                  {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
                 <NuxtLink v-else class="card_price_buy_btn try_free" :to="localePath(`/login?url=/pricing`)">
-                  Try for free
+                  {{ $t('pricing.pagefont.tf') }}
                 </NuxtLink>
               </div>
 
               <div class="card_price_qllist">
                 <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
                   <div class="icon">
-                    <img
-                      src="/img/pricing/check.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.check_icon')" />
                   </div>
                   <div class="font">
                     <div v-html="itemin.desc"></div>
                   </div>
                   <div v-if="itemin.tips" class="tips">
                     <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
-                      <img
-                        src="/img/pricing/tip.svg"
-                        alt="DET Practice:The best Duolingo English Test Practice platform"
-                      />
+                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.tip_icon')" />
                     </el-tooltip>
                   </div>
                 </div>
@@ -528,10 +527,7 @@ const formateMinToHour = (min: number) => {
               <div class="card_price_qllist" style="margin-top: 16px">
                 <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
                   <div class="icon">
-                    <img
-                      src="/img/pricing/check.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.check_icon')" />
                   </div>
                   <div class="font" :style="itemuc?.style">
                     <!-- <span class="bigger">30 days</span> -->
@@ -539,10 +535,7 @@ const formateMinToHour = (min: number) => {
                   </div>
                   <div v-if="itemuc.tips" class="tips">
                     <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
-                      <img
-                        src="/img/pricing/tip.svg"
-                        alt="DET Practice:The best Duolingo English Test Practice platform"
-                      />
+                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.tip_icon')" />
                     </el-tooltip>
                   </div>
                 </div>
@@ -569,7 +562,7 @@ const formateMinToHour = (min: number) => {
             :class="[item.id === CurrentMembershipId ? 'one_price' : 'one_price currentMembership_no']"
             @click="changeCurrentMembershipId(item.id)"
           >
-            <div class="title">Most Popular Choice</div>
+            <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
             <div class="card_price">
               <div class="card_price_part1">{{ item.tag }}</div>
               <div class="card_price_part2">
@@ -577,34 +570,40 @@ const formateMinToHour = (min: number) => {
               </div>
 
               <div :class="[!isVip ? 'card_price_part4 min_heighthack' : 'card_price_part4 min_heighthack2']">
-                <div v-if="!isVip && item.day !== 7" class="your_price">your price</div>
-                <div class="off_price"><span class="small">$</span>{{ (item.price / 100).toFixed(2) }}</div>
+                <div v-if="!isVip && item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
+                <div class="off_price">
+                  <span class="small">{{ $t('pricing.pagefont.do') }}</span
+                  >{{ (item.price / 100).toFixed(2) }}
+                </div>
                 <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
-                <div class="no_member_font" v-if="item.day !== 7">Non-member</div>
+                <div class="no_member_font" v-if="item.day !== 7">{{ $t('pricing.pagefont.Non_member') }}</div>
               </div>
               <div class="card_price_part3">
                 <div class="your_price" v-if="isVip && item.day !== 7">
-                  <span>your price</span>
+                  <span>{{ $t('pricing.pagefont.your_price') }}</span>
                 </div>
                 <div class="member_price">
                   <span v-if="item.vipPrice !== item.price"
-                    ><span class="small">$</span>{{ (item.vipPrice / 100).toFixed(2) }}
+                    ><span class="small">{{ $t('pricing.pagefont.do') }}</span
+                    >{{ (item.vipPrice / 100).toFixed(2) }}
                   </span>
                 </div>
                 <div class="member_font">
-                  <span v-if="item.vipPrice !== item.price">Member's price</span>
+                  <span v-if="item.vipPrice !== item.price">
+                    {{ $t('pricing.pagefont.mp') }}
+                  </span>
                 </div>
               </div>
 
               <div v-if="user.id">
                 <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
-                  Buy Now
+                  {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
                 <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
-                  Buy Now
+                  {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
               </div>
@@ -632,13 +631,10 @@ const formateMinToHour = (min: number) => {
             <el-carousel-item v-for="item in buyData" :key="item.id" class="scroll_buyed">
               <div class="scroll_buyed_left">
                 <div class="icon">
-                  <img
-                    src="/img/pricing/green_check.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/pricing/green_check.svg" :alt="$t('pricing.pagefont.green_check')" />
                 </div>
                 <div class="name">{{ item.data.nickname }}</div>
-                <div class="type">purchased</div>
+                <div class="type">{{ $t('pricing.pagefont.purchased') }}</div>
                 <div class="days">{{ item.data.tag }}</div>
               </div>
               <div class="scroll_buyed_mid">
@@ -684,16 +680,16 @@ const formateMinToHour = (min: number) => {
         </div>
 
         <div class="bank_card">
-          <div class="title">Secure Payment:</div>
+          <div class="title">{{ $t('pricing.pagefont.Secure_Payment') }}</div>
           <div class="img_self">
-            <img src="/img/pricing/payment.png" alt="Secure Payment" />
+            <img src="/img/pricing/payment.png" :alt="$t('pricing.pagefont.Secure_Payment')" />
           </div>
         </div>
       </div>
     </div>
     <div class="part2_wrapper">
       <div class="part2">
-        <div class="title">Frequently Asked Questions</div>
+        <div class="title">{{ $t('pricing.pagefont.faq') }}</div>
         <div class="list_out">
           <div
             v-for="(item, index) in aqList"
@@ -702,10 +698,7 @@ const formateMinToHour = (min: number) => {
           >
             <div class="header" @click="openOrCloseOneQuestion(item)">
               <div class="icon">
-                <img
-                  src="/img/pricing/arrow_down.svg"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
               </div>
               <div class="qusetion">{{ item.name }}</div>
             </div>
@@ -718,11 +711,11 @@ const formateMinToHour = (min: number) => {
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div class="title">Contact Us</div>
+        <div class="title">{{ $t('pricing.pagefont.Contact_Us') }}</div>
         <div class="three_out">
           <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
             <div class="icon">
-              <img :src="`${item.icon}`" alt="DET Practice:The best Duolingo English Test Practice platform" />
+              <img :src="`${item.icon}`" :alt="$t('pricing.pagefont.alt')" />
             </div>
             <div class="method_font">{{ item.font }}</div>
             <div class="method_tip">{{ item.tip }}</div>

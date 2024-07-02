@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 import { reactive } from 'vue';
 import find from 'lodash/find';
 import head from 'lodash/head';
@@ -29,7 +31,10 @@ state.rate = rate;
 state.averageScore = averageScore;
 
 const getSelect = async () => {
-  const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, { server: true })) as any;
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, {
+    server: true,
+    headers: { locale: locale.value },
+  })) as any;
   const { name } = head(data.value) as any;
   state.selectName = name;
 };
@@ -54,7 +59,7 @@ const rateChange = async () => {
   if (!err) {
     props.article.rateNum += 1;
     props.article.rate = averageScore;
-    ElMessage({ type: 'success', message: 'Submitted successfully' });
+    ElMessage({ type: 'success', message: t('articleDetail.Submitted_successfully') });
   }
 };
 </script>
@@ -62,19 +67,25 @@ const rateChange = async () => {
   <div class="learndetail">
     <div class="learndetail-content">
       <div class="top">
-        <nuxt-link :to="localePath('/')" class=""> Home </nuxt-link>
+        <nuxt-link :to="localePath('/')" class="">{{ $t('articleDetail.Home') }}</nuxt-link>
         >
-        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class=""> Learn </nuxt-link>
-        <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class=""> Blog </nuxt-link>
+        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class="">{{
+          $t('articleDetail.Learn')
+        }}</nuxt-link>
+        <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class="">{{
+          $t('articleDetail.Blog')
+        }}</nuxt-link>
         > {{ state.selectName }}
       </div>
       <div class="content">
         <div class="article-con">
-          <div class="title">{{ props.article.name }}</div>
+          <div class="title">
+            <h1>{{ props.article.name }}</h1>
+          </div>
           <div id="content" class="article-con1" v-html="props.article.content"></div>
         </div>
         <div class="article-title-list article-title-list1">
-          <div class="title title1">Related Articles</div>
+          <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
           <div v-for="(val, key) in props.article.relatedArticles" :key="key">
             <nuxt-link :to="localePath(`/${val.path}`)" class="">
               <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
@@ -111,10 +122,12 @@ const rateChange = async () => {
             @change="rateChange"
           />
         </div>
-        <div>{{ state.rate ? 'Thanks for voting!' : 'Rate this article' }}</div>
+        <div>
+          {{ state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}` }}
+        </div>
       </div>
       <div class="article-title-list article-title-list2">
-        <div class="title title1">Related Articles</div>
+        <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
         <div v-for="(val, key) in props.article.relatedArticles" :key="key">
           <nuxt-link :to="localePath(`/${val.path}`)" class="">
             <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">

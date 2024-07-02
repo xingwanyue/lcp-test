@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
-  title: 'Cookie Policy - DET Practice',
+  title: t('cookie.seometa.title'),
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/cookie` }],
@@ -13,77 +15,65 @@ useHead({
   <div class="privacyPolicy">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <h1 class="title">Cookie Policy</h1>
+        <h1 class="title">{{ $t('cookie.Cookie_Policy') }}</h1>
       </div>
     </div>
     <div class="bg">
       <div class="content margin-top0" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Last updated: <span style="color: #f66442">2024-03-27</span></div>
+        <div class="title">
+          {{ $t('cookie.Last_updated') }}<span style="color: #f66442">{{ $t('cookie.Last_updated_time') }}</span>
+        </div>
         <div class="content1">
-          This Cookie Policy explains what cookies are, how we use them, and your choices regarding cookies on our
-          website.
+          {{ $t('cookie.cookie_ex') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">What are cookies?</div>
+        <div class="title">{{ $t('cookie.q1.title') }}</div>
         <div class="content1">
-          Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in
-          your web browser and allows the website or a third-party to recognize you and make your next visit easier and
-          the website more useful to you.
+          {{ $t('cookie.q1.a1') }}
           <div class="line-break"></div>
-          Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or
-          mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
+          {{ $t('cookie.q1.a2') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">How we use cookie</div>
+        <div class="title">{{ $t('cookie.q2.title') }}</div>
         <div class="content1">
-          When you use and access our website, we may place a number of cookies files in your web browser.
+          {{ $t('cookie.q2.a1') }}
           <div class="line-break"></div>
-          We use cookies for the following purposes :
+          {{ $t('cookie.q2.a2') }}
           <div class="line-break"></div>
-          • To enable certain functions of the website
+          {{ $t('cookie.q2.a3') }}
           <div class="line-break"></div>
-          • To provide analytics
+          {{ $t('cookie.q2.a4') }}
           <div class="line-break"></div>
-          • To store your preferences
+          {{ $t('cookie.q2.a5') }}
           <div class="line-break"></div>
-          • To enable advertisements delivery (which are cookies from a domain different than the domain of the website
-          you are visiting – for our advertising and marketing efforts.)
+          {{ $t('cookie.q2.a6') }}
+          {{ $t('cookie.q2.a7') }}
           <div class="line-break"></div>
-          We use both session and persistent cookies on our website and we use different types of cookies to run the
-          website:
+          {{ $t('cookie.q2.a8') }}
           <div class="line-break"></div>
-          • Essential cookies: We may use essential cookies to authenticate users and prevent fraudulent use of user
-          accounts.
+          {{ $t('cookie.q2.a9') }}
           <div class="line-break"></div>
-          • Analytical/performance cookies: We may use analytical/performance cookies to track user activity on the
-          website and gather data about how visitors use the website. This information is used to improve the website
-          experience for our users.
+          {{ $t('cookie.q2.a10') }}
           <div class="line-break"></div>
-          • Functionality cookies: We may use functionality cookies to recognize you when you return to the website and
-          personalize content for you.
-          <div class="line-break"></div>
-          • Targeting cookies: We may use targeting cookies to record your visit to the website, the pages you have
-          visited, and the links you have followed.
+          {{ $t('cookie.q2.a11') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Your choices regarding cookies</div>
+        <div class="title">{{ $t('cookie.q3.title') }}</div>
         <div class="content1">
-          If you prefer to avoid the use of cookies on our website, you must disable the use of cookies in your browser
-          and then delete the cookies saved in your browser associated with this website. You may use this option for
-          preventing the use of cookies at any time.
+          {{ $t('cookie.q3.a1') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Contact us</div>
+        <div class="title">{{ $t('cookie.q4.title') }}</div>
         <div class="content1">
-          If you have any questions about our Cookie Policy, please contact us :
+          {{ $t('cookie.q4.a1') }}
           <div class="line-break"></div>
-          • By email: <span class="website">support@detpractice.com</span>
+          {{ $t('cookie.q4.a2') }}<span class="website">support@detpractice.com</span>
           <div class="line-break"></div>
-          • By visiting this page on our website:
+          {{ $t('cookie.q4.a3') }}
 
           <nuxt-link to="https://www.detpractice.com/contact-us/" target="_blank" class="website">
             https://www.detpractice.com/contact-us/
@@ -91,17 +81,9 @@ useHead({
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">Changes to our Cookie Policy</div>
+        <div class="title">{{ $t('cookie.q5.title') }}</div>
         <div class="content1">
-          We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie
-          Policy on this page.
-          <!-- <nuxt-link to="https://stripe.com/us/legal" target="_blank" class="website">
-            https://stripe.com/us/legal
-          </nuxt-link>
-          &
-          <nuxt-link to="https://stripe.com/us/privacy" target="_blank" class="website">
-            https://stripe.com/us/privacy.
-          </nuxt-link> -->
+          {{ $t('cookie.q5.a1') }}
         </div>
       </div>
     </div>

@@ -1,50 +1,6 @@
-<template>
-  <div class="login">
-    <div class="left">
-      <img src="/img/login/lock.svg" alt="" />
-      <div class="t1">Forgot Password?</div>
-      <h1 class="t2">Please enter the email used to create your account</h1>
-      <el-form
-        ref="ruleFormRef"
-        :rules="rules"
-        :model="formData"
-        size="default"
-        class="login-form"
-        @submit.native.prevent
-      >
-        <el-form-item prop="email" label="" style="margin-top: 80px; margin-bottom: 16px">
-          <el-input v-model="formData.email" placeholder="Enter your email"> </el-input>
-        </el-form-item>
-        <div class="desc">We'll send you an email with the reset code</div>
-        <el-form-item style="margin-top: 24px; margin-bottom: 16px">
-          <div v-if="errShow" class="err-message">
-            <img
-              src="/img/login/errIcon.svg"
-              class="errIcon"
-              alt="DET Practice:The best Duolingo English Test Practice platform"
-            />
-            <span>{{ errMessage }}</span>
-          </div>
-          <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-              Send reset code
-            </el-button>
-          </div>
-        </el-form-item>
-        <el-form-item>
-          <div class="zhuce">
-            <NuxtLink class="goLogin" :to="localePath('/login')">＜ Back to login</NuxtLink>
-          </div>
-        </el-form-item>
-      </el-form>
-    </div>
-    <!-- <div class="right">
-      <el-image :src="loginImg" class="loginImg" fit="contain"></el-image>
-    </div> -->
-  </div>
-</template>
-
 <script setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { useRouter } from 'vue-router';
 import { sesCodeSend } from '@/api.js';
 import { fetchmy } from '@/utils/request';
@@ -65,13 +21,13 @@ const submit = async () => {
   errShow.value = false;
   if (!email) {
     errShow.value = true;
-    errMessage.value = 'Please enter your email address';
+    errMessage.value = t('forget.Please_enter');
     return false;
   }
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(email)) {
     errShow.value = true;
-    errMessage.value = 'Invalid email.';
+    errMessage.value = t('forget.Invalid_email');
     return false;
   }
   loading.value = true;
@@ -88,6 +44,48 @@ const submit = async () => {
   }
 };
 </script>
+
+<template>
+  <div class="login">
+    <div class="left">
+      <img src="/img/login/lock.svg" alt="" />
+      <div class="t1">{{ $t('forget.t1') }}</div>
+      <h1 class="t2">{{ $t('forget.t2') }}</h1>
+      <el-form
+        ref="ruleFormRef"
+        :rules="rules"
+        :model="formData"
+        size="default"
+        class="login-form"
+        @submit.native.prevent
+      >
+        <el-form-item prop="email" label="" style="margin-top: 80px; margin-bottom: 16px">
+          <el-input v-model="formData.email" :placeholder="$t('forget.Enter_your_email')"> </el-input>
+        </el-form-item>
+        <div class="desc">{{ $t('forget.desc') }}</div>
+        <el-form-item style="margin-top: 24px; margin-bottom: 16px">
+          <div v-if="errShow" class="err-message">
+            <img src="/img/login/errIcon.svg" class="errIcon" :alt="$t('forget.alt')" />
+            <span>{{ errMessage }}</span>
+          </div>
+          <div class="login_btn_out">
+            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+              Send reset code{{ $t('forget.Send_reset_code') }}
+            </el-button>
+          </div>
+        </el-form-item>
+        <el-form-item>
+          <div class="zhuce">
+            <NuxtLink class="goLogin" :to="localePath('/login')">＜ {{ $t('forget.Back_to_login') }}</NuxtLink>
+          </div>
+        </el-form-item>
+      </el-form>
+    </div>
+    <!-- <div class="right">
+      <el-image :src="loginImg" class="loginImg" fit="contain"></el-image>
+    </div> -->
+  </div>
+</template>
 
 <style lang="scss">
 .login {

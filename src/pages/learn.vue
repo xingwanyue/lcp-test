@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 import { articleGet, articleCategoryGet, getTree, domain } from '@/utils';
 import { reactive } from 'vue';
 import dayjs from 'dayjs';
@@ -26,7 +28,10 @@ const state = reactive({
 });
 
 const getSelect = async () => {
-  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, { server: true })) as any;
+  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, {
+    server: true,
+    headers: { locale: locale.value },
+  })) as any;
   state.categories = data.value;
   state.selectList = getTree(data.value, null, null);
   if (route.query.c) {
@@ -52,6 +57,7 @@ const getInfo = async () => {
   const { data: { value = {} } = {} } = (await useFetch(`${articleGet}`, {
     server: true,
     query: { ...args },
+    headers: { locale: locale.value },
   })) as any;
   state.total = value?.total;
   state.learnLastestUpdateTime = value?.learnLastestUpdateTime;
@@ -80,12 +86,15 @@ const handleChange = () => {
   state.selFatherData = find(state.selectList, { id: state.activeName }) || {};
 };
 useServerSeoMeta({
-  title: 'DET Practice - Learn the expert Tips for the Duolingo English Test',
-  description:
-    'Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score.',
+  title: t('learn.seometa.title'),
+  description: t('learn.seometa.description'),
+  keywords: t('learn.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/learn` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/learn` },
+    { rel: 'alternate', href: `https://www.${domain}/learn`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>
@@ -93,11 +102,17 @@ useHead({
     <div class="learn_hader" :style="`background-image: url(/img/learn/banner-learn.svg);`">
       <div class="learn_hader_content">
         <div>
-          <h1 class="title">We will update the exam preparation tips of Duolingo English Test timely</h1>
+          <h1 class="title">
+            {{ $t('learn.h1') }}
+          </h1>
         </div>
         <div>
           <div class="title2">
-            The lastest update is until {{ dayjs(state.learnLastestUpdateTime).format('MM-DD-YYYY') }}
+            {{
+              $t('learn.title2', {
+                time: dayjs(state.learnLastestUpdateTime).format('MM-DD-YYYY'),
+              })
+            }}
           </div>
         </div>
       </div>
@@ -107,11 +122,7 @@ useHead({
         <div class="select">
           <div class="select-title" @click="state.drawerVisible = true">
             <span>{{ state.selConData.name }}</span>
-            <img
-              src="/img/learn/down-icon.svg"
-              class="img img-down"
-              alt="DET Practice:The best Duolingo English Test Practice platform"
-            />
+            <img src="/img/learn/down-icon.svg" class="img img-down" :alt="$t('learn.down_icon')" />
           </div>
         </div>
         <div class="left">
@@ -144,7 +155,9 @@ useHead({
               <div class="description">{{ val.content }}</div>
             </nuxt-link>
           </div>
-          <div v-if="state.total > state.infoList.length" class="more" @click="getMore">Show more</div>
+          <div v-if="state.total > state.infoList.length" class="more" @click="getMore">
+            {{ $t('learn.Show_more') }}
+          </div>
         </div>
       </div>
       <el-drawer v-model="state.drawerVisible" direction="btt" :before-close="handleClose">

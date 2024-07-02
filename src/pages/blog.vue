@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 import { domain } from '@/utils';
 import dayjs from 'dayjs';
 
@@ -6,12 +8,14 @@ import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
 useServerSeoMeta({
-  title: 'DET Practice - Duolingo English Test Tips and Tricks',
-  description:
-    "Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score.",
+  title: t('blog.seometa.title'),
+  description: t('blog.seometa.description'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/blog` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/blog` },
+    { rel: 'alternate', href: `https://www.${domain}/blog`, hreflang: 'en-GB' },
+  ],
 });
 const route = useRoute();
 const total = ref(0);
@@ -23,6 +27,7 @@ const { data: category } = (await useFetch(`${api}/common/article/category`, {
   query: {
     type: '1',
   },
+  headers: { locale: locale.value },
 })) as any;
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
@@ -32,6 +37,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
     page: route.query.page || 1,
     pageSize: 10,
   },
+  headers: { locale: locale.value },
   transform: (data: any) => {
     data.data = data.data.map((item: any) => {
       item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
@@ -53,6 +59,7 @@ const handleCurrentChange = async (val: number) => {
       page: val,
       pageSize: 10,
     },
+    headers: { locale: locale.value },
     transform: (data: any) => {
       data.data = data.data.map((item: any) => {
         item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
@@ -74,7 +81,7 @@ const handleCurrentChange = async (val: number) => {
   <div class="blogs">
     <div class="bolgs_hader">
       <div class="bolgs_hader_content">
-        <h1>DET Pratice Blog</h1>
+        <h1>{{ $t('blog.h1') }}</h1>
       </div>
     </div>
     <div class="bolgs_content_wrapper" style="">
@@ -94,10 +101,7 @@ const handleCurrentChange = async (val: number) => {
           <div class="bottom">
             <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item.category }}</div>
             <div class="right_arrow">
-              <el-image
-                src="/img/blog/right_arrow.svg"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
-              ></el-image>
+              <el-image src="/img/blog/right_arrow.svg" alt="Right Arrow"></el-image>
             </div>
           </div>
         </NuxtLink>

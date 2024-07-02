@@ -1,0 +1,761 @@
+{
+  "test": "For test",
+  "Home": "Hjem",
+  "Products": "Produkter",
+  "Learn": "Lær",
+  "Pricing": "Prissætning",
+  "Blog": "Blog",
+  "header": {
+    "home_logo_title": "DET Øvelse",
+    "path_practice_title": "Duolingo Engelsk Prøve Online",
+    "path_correction_title": "AI Retningstjeneste for Duolingo Test",
+    "path_mock_title": "Duolingo Mock Test",
+    "path_course_title": "Duolingo English Test Kursus Online",
+    "commonAlt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "Get_started": "Kom godt i gang",
+    "Try_for_free": "Prøv gratis",
+    "prod1": {
+      "title": "Duolingo English Test Øve",
+      "alt": "Duolingo English Test Øvelse",
+      "font": "Opnå Ekspertise med Vores Omfattende Spørgsmålsbank: Over 10.000 Spørgsmål, Regelmæssige Opdateringer og Smart Præstationssporing!"
+    },
+    "prod2": {
+      "title": "Duolingo English Test Korrektionsservice",
+      "alt": "Duolingo English Test Korrektionsservice",
+      "font": "Perfektioner dine essays med AI-drevet lærerfeedback: Præcise rettelser, øjeblikkelige rapporter og forbedring af score inden for to uger!"
+    },
+    "prod3": {
+      "title": "Duolingo English Test Kursus",
+      "alt": "Duolingo English Test Kursus",
+      "font": "Erobr din eksamen med autentiske fuldlængdeprøver: Dybdegående analyse og øjeblikkelige resultater, tilgængelig når som helst, hvor som helst."
+    },
+    "prod4": {
+      "title": "Duolingo English Test Mock",
+      "alt": "Duolingo English Test Spot",
+      "font": "Lås op DET Succes: Omfattende mestring, gennemprøvede teknikker og opdaterede indsigter for selvsikker tale- og skriveekspertise!"
+    }
+  },
+  "footer": {
+    "inc": "Vores produkt har ingen forbindelse med Duolingo,Inc",
+    "ProductsTitle": "Produkter",
+    "LearnTitle": "Lære",
+    "BlogTitle": "Blog",
+    "CompanyTitle": "Firma",
+    "Products": ["DET Øve", "AI Korrektionsservice", "DET Narremock", "Duolingo English Test Kursus"],
+    "Company": ["Om os", "Kontakt os", "Vilkår og betingelser", "Privatlivspolitik", "Sitemap"],
+    "show_more": "vis mere",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "cookie_contenr": "DET Practice bruger cookies til at forbedre indhold baseret på dine browserindstillinger. For flere detaljer, se",
+    "newAlt": "DET Øvelse",
+    "close_icon_alt": "Krydsskilt"
+  },
+  "index": {
+    "seometa": {
+      "title": "DET Øvelse - Duolingo Engelsk Sprog Test Online, Engelsk Færdigheds Eksamen",
+      "description": "Forbered dig til Duolingo engelsk færdighedstest online med DET Practice. Få adgang til prøveeksamener, korrektionstjenester og omfattende kurser. Begynd at øve i dag!",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedseksamen, Duolingo Færdighedseksamen I Engelsk, Duolingo Engelsk Færdighedseksamen, Engelsk Færdighedsprøve Duolingo, Duolingo Færdighedsprøve, Duolingo Engelsk Færdighedsprøve, Duolingo English Test, Engelsk Duolingo Test"
+    },
+    "bigtitle1": "Antal høje scorere (130+ point)：10000+",
+    "bigtitle2": "Enestående 4,8/5 bedømmelse fra over 850 anmeldelser!",
+    "power_by": "Drevet af AI",
+    "h1Mobile": "Få en højere score nemt<br />på Duolingo <br />Engelsk Testen Med <span class=\"seo_hack\">DET Øvelse</span>",
+    "h1PC": "Få en højere score nemt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
+    "one_small_title": ["DET Øve", "AI Korrektion", "Fuld-Længde Mock", "DET Kurser"],
+    "Start_free_with_Google": "Start gratis med Google",
+    "Start_free_with_email": "Start gratis med e-mail",
+    "Start_for_free": "Start gratis",
+    "trustedByWorldwide": "Betroet af {path} studerende verden over for en 1-måneds Duolingo English Test scoreforøgelse.",
+    "The_Best_Platform": "Den bedste platform til at booste dine Duolingo English Test scores",
+    "Leverage_Our": "Udnyt vores altomfattende ressourcer til hurtig forbedring af resultater",
+    "article1": {
+      "title": "Duolingo English Test Øvelse",
+      "tips1": "Med over {number} øvelsesspørgsmål bliver vores stadigt voksende spørgsmål bank regelmæssigt opdateret for at sikre ekspertise.",
+      "tips2": "Omfattende dækning af alle eksamenstyper med detaljerede forklaringer for hvert spørgsmål.",
+      "tips3": "Indgående svar, smart analyse og scoring for at muliggøre kontinuerlig overvågning af din præstation.",
+      "btn_font": "Oplev Mere",
+      "btn_img_alt": "Gul Pil Højre"
+    },
+    "article2": {
+      "title": "AI-drevet essaykorrektionsservice",
+      "tips1": "Drag fordel af præcise essayrettelser gennem vores 'AI + Lærer' samarbejdsreview.",
+      "tips2": "Send blot dit essay, og modtag hurtigt en omfattende rapport med en detaljeret båndscore.",
+      "tips3": "Forøg din skrivescore på kun 2 uger.",
+      "btn_font": "Lær mere",
+      "btn_img_alt": "Gul Pil Højre"
+    },
+    "article3": {
+      "title": "Duolingo English Test Mock",
+      "tips1": "Efterlign den faktiske eksamenssituation for at gøre dig fortrolig med testprocessen og indholdet på forhånd.",
+      "tips2": "Modtag dybdegående simulerede testrapporter for en præcis analyse af dine styrker og svagheder.",
+      "tips3": "Tag online prøveeksamener når det passer dig, med hurtig scoring leveret inden for 30 minutter.",
+      "btn_font": "Find ud af mere",
+      "btn_img_alt": "Gul Pil Højre"
+    },
+    "article4": {
+      "title": "Duolingo English Test Kursus",
+      "tips1": "Opnå Grundig Beherskelse. Udvikl en dybdegående forståelse af DET tale- og skriveafsnit med vores detaljerede vejledninger, der sikrer, at du går til hver del af eksamenen med selvtillid.",
+      "tips2": "Lær af ESL-eksperter. Udnyt gennemprøvede strategier til at forbedre dine tale- og skriveevner, drage fordel af personlige læringsforløb, og deltage i effektiv selvevaluering.",
+      "tips3": "Hold dig informeret og forud. Hold dig ajour med de nyeste DET formater og tendenser for at sikre, at din forberedelse er i perfekt sync med de nuværende eksamensstandarder.",
+      "btn_font": "Udforsk mere",
+      "btn_img_alt": "Gul Pil Til Højre"
+    },
+    "thousand": "k",
+    "Users": "Brugere",
+    "Questions": "Spørgsmål",
+    "Mock_Exam": "Prøveeksamen",
+    "Join_Them": "Bliv medlem"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Start din vej til topkarakterer på</div><div class='font2'>Duolingo English Test !</div>",
+    "Start_free_with_Google": "Start gratis med Google",
+    "Start_free_with_email": "Start gratis med e-mail",
+    "Start_for_free": "Start gratis"
+  },
+  "subscribe": {
+    "emailErrMessage1": "E-mailen skal være en gyldig e-mailadresse.",
+    "emailErrMessage2": "Indtast venligst din e-mailadresse.",
+    "Subscribe_successfully": "Tilmeld dig med succes",
+    "Subscribe!": "Abonner!",
+    "Subscribe_for": "Abonner for de seneste indsigter og strategier til at hæve din score.",
+    "Email": "E-mail",
+    "Subscribe": "Abonner"
+  },
+  "learn": {
+    "seometa": {
+      "title": "Tips til eksamensforberedelse for Duolingo English Test | DET Øvelse",
+      "description": "Oplev effektive eksamensforberedelsestips til Duolingo English Test. Hold dig opdateret med rettidige indsigter om at forbedre din prøvepræstation ved DET Practice.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedseksamen"
+    },
+    "h1": "Vi vil opdatere eksamensforberedelsestipsene for Duolingo English Test rettidigt",
+    "title2": "Den seneste opdatering er indtil {time}",
+    "alt": "DET Øve: Den bedste Duolingo English Test Øve platform",
+    "down_icon": "Ned Ikon",
+    "Show_more": "Vis mere"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "Duolingo English Test Forberedelsespriser | DET Øvelse",
+      "description": "Vælg den rigtige plan med overkommelige priser for din Duolingo English Test forberedelse. Personlig træning, ekspertanmeldelser og fuldskala mock-eksamener tilgængelige.",
+      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogprøve, Duolingo Engelsk Eksamen, Duolingo Færdighedseksamenwords"
+    },
+    "pagefont": {
+      "h1": "Planer og priser",
+      "h4": "Handl nu for at spare! Få dit medlemskab til dagens lave priser – gå ikke glip af det, før priserne stiger.",
+      "switch1": "Medlemskab",
+      "switch2": "Mere service",
+      "Most_Popular_Choice": "Mest Populære Valg",
+      "off": "{off}% rabat",
+      "do": "$",
+      "mp": "Medlemspris",
+      "Buy_Now": "Køb nu",
+      "tf": "Prøv gratis",
+      "mpc": "Mest Populære Valg",
+      "your_price": "din pris",
+      "Non_member": "Ikke-medlem",
+      "purchased": "købt",
+      "Secure_Payment": "Sikker Betaling:",
+      "faq": "Ofte Stillede Spørgsmål",
+      "Contact_Us": "Kontakt os",
+      "alt": "DET Øve:Det bedste Duolingo English Test Øve platform",
+      "check_icon": "Tjek",
+      "tip_icon": "Tip",
+      "green_check": "Grøn Tjek",
+      "arrow_down": "Nedpil"
+    },
+    "aqList": [
+      {
+        "name": "Hvordan fungerer DETPractices planer og priser?",
+        "content": "Vi tilbyder gennemsigtige planer og priser for vores brugere, uden skjulte gebyrer. Derudover tilbyder vi tilkøbsabonnements-pakker, så du kan vælge tjenester ud fra dine behov."
+      },
+      {
+        "name": "Er der en gratis prøveperiode?",
+        "content": "Ja! Du kan se 20 spørgsmål gratis. Hjælp dig med at forstå os, før du køber flere tjenester."
+      },
+      {
+        "name": "Tilbyder du nogen rabatter?",
+        "content": "Ja! Vi tilbyder skræddersyede rabatter for hver tjeneste. Dog vil du, når du vælger en 30-dages service, modtage en større rabat sammenlignet med andre tjenester. Se venligst prisdetaljerne ovenfor for mere information."
+      },
+      {
+        "name": "Min betaling var vellykket, men opgraderingen mislykkedes.",
+        "content": "Kontakt os venligst via chat eller e-mail: <span class='email_address'>support{'@'}detpractice.com</span>. Dette er den enkleste og hurtigste måde at løse dine bekymringer på."
+      },
+      {
+        "name": "Kan jeg ændre min plan senere?",
+        "content": "Tak for at købe tjenesten! Bemærk venligst, at dette er et virtuelt produkt. Når det er købt, betragtes produktleveringen som fuldført og er generelt ikke refunderbar. Venligst kontroller inden køb."
+      },
+      {
+        "name": "Hvor sender jeg min feedback?",
+        "content": "Du kan sende feedback gennem supportchatten i nederste højre hjørne, eller kontakte os via e-mail på <span class='email_address'>support{'@'}detpractice.com</span>. Alternativt kan du efterlade en besked direkte i afsnittet \"Kontakt os\"."
+      },
+      {
+        "name": "Hvad er jeres refusionspolitik?",
+        "content1": "1. Gratis konto  <br>Brug er helt gratis, så der er ingen refusionsproblemer.",
+        "content2": "<br>2. Abonnementsplaner  <br>Brugere kan anmode om en refundering, hvis DET Practice ikke leverer den tilsvarende service, hvilket resulterer i, at brugeren ikke kan bruge den, eller hvis abonnementet endnu ikke er trådt i kraft. Refunderinger vil ikke blive udstedt for abonnementer og tjenester, der allerede er blevet aktive efter køb.",
+        "content3": "<br>3. Tale/skrivningsvejledning <br>Tale/skrivningsvejledningen betragtes som et digitalt produkt. Når produktet er købt og downloadet, anses produktleveringen for at være afsluttet og er generelt ikke-refunderbar. Læs venligst købsoplysningerne grundigt, inden du foretager et køb.",
+        "content4": "<br><br>Vigtig Bemærkning:  <br>Alle refusionsanmodninger skal behandles gennem kundeservice, og relevante brugsoptegnelser skal leveres til verificering.<br>For at forhindre svigagtige refusioner er hver brugerkonto begrænset til én refusionsanmodning. Flere anmodninger vil ikke blive behandlet. <br>Hvis du har særlige omstændigheder eller unikke situationer, bedes du kontakte os, og vi vil arbejde sammen med dig for at finde en løsning."
+      }
+    ],
+    "qlList": {
+      "day0": { "name1Desc": "<span class='bigger'>20</span> Øve Spørgsmål" },
+      "day7": {
+        "name1Desc": "<span class='bigger'>Ubegrænset</span> til Øvesessioner",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Korrektionsydelser",
+        "name2Tips": "For talende og skriftlige spørgsmål",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Prøveeksamen"
+      },
+      "day15": {
+        "name1Desc": "<span class='bigger'>Ubegrænset</span> til Øvesessioner",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Korrektionsydelser",
+        "name2Tips": "Til spørgsmål om taler og skrivning",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Prøveeksamen"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>Ubegrænset</span> til øvelsessessioner",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Korrektionsydelser",
+        "name2Tips": "For spørgsmål om tale og skrift",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Prøveeksamen"
+      }
+    },
+    "membershipUnchanging": [
+      "Adgang til alle praksisspørgsmål",
+      "Gennemse Demobesvarelser med Høje Scores",
+      "Indgående spørgsmål analyse",
+      "Højt-Frekvens Eksamen Ord Bog",
+      "Skræddersyet studieplan med intelligent udvælgelse af spørgsmål",
+      "AI-drevne talebedømmelser"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "Online kundeservice",
+        "tip": "Tilgængelig man-fre, 10:00 - 19:00",
+        "btn": "Chat Live Now"
+      },
+      "type2": {
+        "font": "Email os",
+        "tip": "Modtag et svar inden for 1 arbejdsdag."
+      },
+      "type3": {
+        "font": "Efterlad en besked",
+        "tip": "Vi vil svare dig inden for én arbejdsdag.",
+        "btn": "Efterlad en besked nu"
+      }
+    }
+  },
+  "blog": {
+    "seometa": {
+      "title": "DET Pratice Blog - Duolingo English Test Tips og tricks",
+      "description": "Hold dig opdateret med vigtige Duolingo English Test tips og tricks på DET Practice's blog. Opdag ekspert råd og strategier til at få succes med din testforberedelse."
+    },
+    "h1": "DET Pratice Blog",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform"
+  },
+  "embark": {
+    "font1": "Påbegynd din rejse mod høje scores på",
+    "font2": "Duolingo English Test !",
+    "Start_Now": "Start Nu"
+  },
+  "articleDetail": {
+    "Submitted_successfully": "Indsendt succesfuldt",
+    "Home": "Hjem",
+    "Learn": "Lære",
+    "Blog": "Blog",
+    "Related_Articles": "Relaterede artikler",
+    "Thanks_for_voting": "Tak for din stemme!",
+    "Rate_this_article": "Bedøm denne artikel"
+  },
+  "easyexam": {
+    "snfeep": "Start nu for nem eksamensforberedelse.",
+    "Start_Now": "Start nu"
+  },
+  "highscorewriting": {
+    "font1": "Accelerer din vej til",
+    "font2": "Højtscorende skriftsprog mestring.",
+    "Start_Now": "Start nu"
+  },
+  "path": {
+    "seometa": { "title": "DET Øve Blog", "description": "DET Pratice Blog" }
+  },
+  "aboutUs": {
+    "seometa": {
+      "title": "Om DET Øve: Duolingo English Test Øve Platform",
+      "description": "DET Øvning, den førende platform for Duolingo English Test forberedelse. Udforsk vores omfattende testbank, mock-eksamener, korrekturtjenester og DET kurser."
+    },
+    "title": "Om DET Pratice",
+    "oelet": "Vores ansete sprogundervisningsteam",
+    "oeletdesc": "I hjertet af vores sprogundervisningstjenester ligger et team af dedikerede, højt kvalificerede og erfarne undervisere, som hver især bringer deres unikke ekspertise og passion til spidsen af sprogindlæring. Vores team består af eliteprofessionelle, der ikke kun er dygtige på engelsk, men også eksperter i at forberede elever til store engelske færdighedsprøver som TOEFL, IELTS og Duolingo English Test (DET). Vores undervisere har prestigefyldte certificeringer som TESOL og Cambridge English Teacher Training-certifikater, hvilket viser deres engagement i at levere undervisning af høj kvalitet. De besidder imponerende sprogtestresultater, der afspejler deres dybe forståelse af de færdigheder og strategier, der er nødvendige for at klare sig godt i disse eksamener. Vores teams kollektive erfaring spænder over flere år, hvor de har finpudset deres evne til at imødekomme forskellige læringsbehov. De udmærker sig i at identificere elevernes individuelle styrker og svagheder, hvilket sikrer personlige undervisningsmetoder, der maksimerer læringsresultaterne. Denne unikke evne gør dem i stand til at give målrettet vejledning og feedback, hjælpe elever med at bryde læringsbarrierer og hurtigt forbedre deres sprogfærdigheder. Vores undervisere er ikke blot lærere; de er mentorer, der inspirerer tillid og entusiasme hos deres elever. De fremmer et dynamisk og interaktivt læringsmiljø, der gør sproglæringsrejsen både fornøjelig og effektiv. Deres undervisningsmetoder er konstant under udvikling, idet de integrerer innovative teknikker og materialer for at følge med de nyeste tendenser inden for sprogundervisning. Succesen for vores elever i at nå deres sprogsmål er et vidnesbyrd om vores teams ekspertise, dedikation og undervisningsmæssige excellence. Som enhed repræsenterer de det bedste inden for sprogundervisning, forpligtet til at vejlede elever mod at opnå deres højeste potentiale i engelskfærdigheder.",
+    "p1title": "Michael Z.",
+    "p1author": "Tutorvejleder",
+    "p1content1": "Som den ledende figur i vores undervisningsteam, legemliggør Michael Z. toppen af sprogundervisning. Med omfattende undervisningserfaring, der strækker sig over et årti, har Mike alle legitimationsoplysninger for vores anerkendte lærere, inklusive TESOL, Cambridge English Teacher Training Certificates og andre certifikater. Hans enestående sprogfærdigheder afspejles i hans imponerende resultater: 115 på TOEFL, 8.5 på IELTS og en perfekt 150 på Duolingo English Test. Michaels undervisningsfilosofi kombinerer styrkerne i vores diverse team og tilbyder en omfattende og dynamisk tilgang til sprogindlæring. Han er kendt for sin evne til at forstå og imødekomme de unikke behov hos hver enkelt elev, hvilket skaber en læringsmiljø, hvor elever kan trives og overgå deres mål. Hans klasser er en blanding af strenge akademiske standarder og engagerende, interaktive læringserfaringer. Udover undervisning er Michael afgørende i udviklingen af banebrydende læseplaner og træningsmetoder, hvilket sikrer, at vores kurser forbliver i fronten af sproguddannelse. Hans dedikation til undervisningskvalitet og hans engagement i elevernes succes gør ham til en uvurderlig leder og mentor både for vores team og vores elever.",
+    "p2title": "Albert L.",
+    "p2author": "Kursusdesigner",
+    "p2content1": "Scoring 8.5 i IELTS, Albert har omfattende erfaring med undervisning i IELTS, TOEFL, PTE og DET. Hans undervisning er kendt for sin afslappede og livlige atmosfære, hvilket gør læring fornøjelig. Alberts tilgang er skræddersyet til hver elevs behov, hvilket muliggør hurtig forbedring i engelsk færdigheder på kort tid. Udover at være en fremragende lærer, er Albert også en talentfuld kursusdesigner, der har skabt og udviklet forskellige online og offline kurser for engelsklærere på forskellige niveauer og mål. Han har en dyb forståelse af læseplanstandarderne og vurderingskriterierne for forskellige engelske tests, og han ved, hvordan man designer effektive og engagerende læringsaktiviteter og materialer, der kan hjælpe eleverne med at mestre testfærdigheder og strategier. Albert har også samarbejdet med andre lærere og eksperter for at gennemgå og forbedre kvaliteten og relevansen af kurserne, og han har modtaget positiv feedback og anerkendelse fra både elever og kollegaer. Albert brænder for at skabe innovative og personlige kurser, der kan imødekomme de forskellige behov og interesser hos engelsklærere.",
+    "p3title": "Rita T.",
+    "p3author": "Senior Tutor",
+    "p3content1": "Med 11 års undervisningserfaring er Rita en erfaren ekspert i Duolingo English Test forberedelse og forskning. Hun er en ATI-certificeret avanceret engelsklærer, der har et TESOL Advanced English Teacher Certificate og Cambridge English Teacher Training Certificate. Rita har imponerende scores på 111 i TOEFL og 140 i DET. Hendes undervisning er præget af en evne til præcist at analysere elevernes behov og give målrettet undervisning, hvilket hjælper dem med at bryde gennem barrierer og forbedre deres sprogkundskaber for hurtigt at opnå de ønskede resultater. Derudover er Rita en passioneret og entusiastisk lærer, der altid motiverer og inspirerer sine elever til at lære engelsk med selvtillid og glæde. Hun bruger en række interaktive og engagerende metoder, såsom spil, rollespil, debatter og simulationer, for at gøre hendes klasser sjove og effektive. Hun giver også personlig feedback og vejledning til hver elev, hvilket hjælper dem med at forbedre deres svage områder og overvinde deres udfordringer. Ritas elever elsker hendes varme og støttende personlighed, og de roser hende ofte for at være tålmodig, venlig og professionel.",
+    "p4title": "Doris W.",
+    "p4author": "Tutor",
+    "p4content1": "Doris, der scorer 145 i DET og 8,0 i IELTS, er en alsidig Duolingo English Test instruktør kendt for sin rige undervisningserfaring. Hun udmærker sig i at hjælpe elever på forskellige niveauer med hurtigt at overvinde vanskeligheder for at opnå deres ideelle resultater, idet hun én gang hjalp en elev med at forbedre sig med 30 point på blot to uger. Hendes timer er kendt for deres livlige atmosfære og klare logik, og hendes undervisningsstil er både grundig, passioneret og ansvarlig, hvilket gør hende til en favorit blandt et bredt udvalg af elever.",
+    "p5title": "Laura K.",
+    "p5author": "Forskningsmedarbejder",
+    "p5content1": "Laura bringer mange års erfaring i Duolingo træning, 110 i TOEFL og 155 i DET. En specialist i Duolingo spørgsmålsforskning, Laura er dygtig til at undervise i adaptive testspørgsmål og skrivning. Hun har en dyb forståelse af DET eksamensteknikker og tendenser og udmærker sig i præstationsanalyse for hurtigt at identificere og forbedre elevernes potentiale."
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "Kontakt os | +44 7708 193347 | DET Praksis",
+      "description": "Kontakt DET Øvning for ekspert Duolingo English Test øvelse og vejledning. Forbered dig med specialiserede ressourcer og støtte for de optimale resultater.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedsprøve"
+    },
+    "checkEmail": "E-mailen skal være en gyldig e-mailadresse.",
+    "enterName": "Indtast venligst dit navn.",
+    "enterEmail": "Indtast venligst din e-mailadresse.",
+    "entermessage": "Indtast venligst din besked.",
+    "subsuccess": "Indsendt med succes",
+    "Contact_Us": "Kontakt os",
+    "Questions": "Spørgsmål, fejlrapporter, feedback - vi er her for at hjælpe!",
+    "fill_in": "Udfyld formularen",
+    "thank": "Tak fordi du valgte at kontakte os. Udfyld venligst denne kontaktformular, og vores personale vil kontakte dig hurtigst muligt for at besvare dine forespørgsler.",
+    "email": "E-mail",
+    "Name": "Navn",
+    "Email_Address": "E-mailadresse",
+    "Message": "Besked",
+    "SUBMIT": "INDSEND"
+  },
+  "cookie": {
+    "seometa": { "title": "Cookiepolitik - DET Praktik" },
+    "Cookie_Policy": "Cookiepolitik",
+    "Last_updated": "Sidst opdateret:",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": "Denne cookiepolitik forklarer, hvad cookies er, hvordan vi bruger dem, og dine valg vedrørende cookies på vores hjemmeside.",
+    "q1": {
+      "title": "Hvad er cookies?",
+      "a1": "Cookies er små tekststykker, der sendes af din webbrowser fra et websted, du besøger. En cookie-fil gemmes i din webbrowser og gør det muligt for webstedet eller en tredjepart at genkende dig og gøre dit næste besøg nemmere og webstedet mere nyttigt for dig.",
+      "a2": "Cookies kan være \"vedvarende\" eller \"session\" cookies. Vedvarende cookies forbliver på din personlige computer eller mobile enhed, når du går offline, mens session cookies slettes, så snart du lukker din webbrowser."
+    },
+    "q2": {
+      "title": "Hvordan vi bruger cookies",
+      "a1": "Når du bruger og får adgang til vores hjemmeside, kan vi placere en række cookie-filer i din webbrowser.",
+      "a2": "Vi bruger cookies til følgende formål :",
+      "a3": "• For at aktivere bestemte funktioner på hjemmesiden",
+      "a4": "• At levere analyse",
+      "a5": "• For at gemme dine præferencer",
+      "a6": "• For at aktivere annoncer levering (som er cookies fra et domæne forskelligt fra domænet på den hjemmeside, du besøger – for vores reklame- og markedsføringsindsats.)",
+      "a7": "Vi bruger både session og vedvarende cookies på vores hjemmeside, og vi bruger forskellige typer af cookies til at drive hjemmesiden:",
+      "a8": "• Nødvendige cookies: Vi kan bruge nødvendige cookies til at autentificere brugere og forhindre svigagtig brug af brugerkonti.",
+      "a9": "• Analytiske/ydelsescookies: Vi kan bruge analytiske/ydelsescookies til at spore brugeraktivitet på hjemmesiden og indsamle data om, hvordan besøgende bruger hjemmesiden. Disse oplysninger bruges til at forbedre hjemmesideoplevelsen for vores brugere.",
+      "a10": "• Funktionscookies: Vi kan bruge funktionscookies til at genkende dig, når du vender tilbage til websitet og personliggøre indhold for dig.",
+      "a11": "• Målretningscookies: Vi kan bruge målretningscookies til at registrere dit besøg på hjemmesiden, de sider du har besøgt, og de links du har fulgt."
+    },
+    "q3": {
+      "title": "Dine valg vedrørende cookies",
+      "a1": "Hvis du foretrækker at undgå brugen af cookies på vores hjemmeside, skal du deaktivere brugen af cookies i din browser og derefter slette de cookies, der er gemt i din browser, som er forbundet med denne hjemmeside. Du kan bruge denne mulighed for at forhindre brugen af cookies når som helst."
+    },
+    "q4": {
+      "title": "Kontakt os",
+      "a1": "Hvis du har spørgsmål om vores Cookiepolitik, kontakt os venligst :",
+      "a2": "• Via e-mail:",
+      "a3": "• Ved at besøge denne side på vores hjemmeside:"
+    },
+    "q5": {
+      "title": "Ændringer i vores cookiepolitik",
+      "a1": "Vi kan opdatere vores Cookiepolitik fra tid til anden. Vi vil informere dig om eventuelle ændringer ved at lægge den nye Cookiepolitik op på denne side."
+    }
+  },
+  "correction": {
+    "seometa": {
+      "title": "Bedste AI-rettelsestjeneste for Duolingo Test | DET Øvelse",
+      "description": "Opnå Duolingo test succes med vores specialiserede korrektionsservice. Få personlig vejledning og støtte til at maksimere din score. Tag det første skridt nu!",
+      "keywords": "Korrektionsservice for Duolingo Test, AI Korrektionsservice for Duolingo Test"
+    },
+    "h1": "Oplev den bedste AI korrektionstjeneste til Duolingo test",
+    "desc": "Forbedre dine essays med vores 'AI + Lærere' korrektionsservice. Få detaljeret feedback baseret på officielle bedømmelsesstandarder hurtigt efter indsendelse.",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "useralt": "Brugerikon",
+    "white_arrow_right": "hvid_pil_højre",
+    "yellow_arrow_right": "gul_pil_højre",
+    "learners_have": "{number} elever har forbedret deres skrivning med vores korrektionstjeneste.",
+    "Review_Now": "Anmeld nu",
+    "Correct_Now": "Korrekt nu",
+    "Get_Scored_Now": "Få Scoret Nu",
+    "Enhance_Now": "Forbedr Nu",
+    "Begin_Polishing": "Begynd polering",
+    "h2_1": {
+      "h2": "Anmodninger om rettelser",
+      "right_desc": "På siderne med øve i tale og skrift kan du ansøge om korrektionsservice direkte."
+    },
+    "h2_2": {
+      "h2": "Omfattende vurdering",
+      "right_desc": "Følger de officielle Duolingo English Test krav for nøjagtigt at fange skrivefærdigheder og give omfattende vurderingsresultater."
+    },
+    "h2_3": {
+      "h2": "Skriftkorrektion",
+      "right_desc": "Opdag og forstå straks fejl i ordforråd og grammatik for at forbedre dine skrivefærdigheder."
+    },
+    "h2_4": {
+      "h2": "Lærervejledning",
+      "right_desc": "Forbedre din skrivning med ekspertanalyse tilpasset til DET kriterier, der præcist identificerer områder til forbedring for at løfte dit arbejde."
+    },
+    "h2_5": {
+      "h2": "Original tekst polering",
+      "right_desc": "Hæv hvert ord og hver sætning; forfina struktur og stil for en fornem og højt bedømt sammensætning."
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "Duolingo English Test Kursus Online | DET Øv",
+      "description": "Udforsk vores Duolingo English Test kursus online på DET Practice. Forbered dig effektivt med vores omfattende ressourcer og ekspertvejledning. Tilmeld dig nu!"
+    },
+    "article1": {
+      "title": "Nøglefunktioner ved DET Talende Eksamen Excellence:",
+      "list": [
+        { "content": "• Grundig udforskning af alle DET taletyper" },
+        {
+          "content": "• Praktiske strategier til at nærme sig hver talende opgave"
+        },
+        {
+          "content": "• Interaktive øvelser til at forbedre taleklarhed, flydende tale og selvtillid"
+        },
+        {
+          "content": "• Ekspertvejledning om udtale, tone og generel præstation"
+        },
+        {
+          "content": "• Virkelige talesamples og analyser, der demonstrerer succesfulde strategier"
+        },
+        {
+          "content": "• Lyd demo svar for at give klare eksempler på effektive svar"
+        },
+        {
+          "content": "• Personlige læringsmetoder til forskellige færdighedsniveauer"
+        },
+        {
+          "content": "• Fokus på væsentligt ordforråd og grammatik for effektiv kommunikation"
+        },
+        {
+          "content": "• Opdateret for at inkorporere de nyeste ændringer i DET taleformat"
+        }
+      ]
+    },
+    "article2": {
+      "title": "Vigtigste funktioner i DET Skriveeksamen Excellence:",
+      "list": [
+        {
+          "content": "• Omfattende dækning af DET skriveopgaver med analyse og eksempler"
+        },
+        {
+          "content": "• Trinvise retningslinjer for planlægning og skrivning af fremragende essays"
+        },
+        {
+          "content": "• Målrettede øvelser til at finpudse DET-specifikke skrivning færdigheder"
+        },
+        {
+          "content": "• Ekspert tips til at forbedre klarhed, sammenhæng og sofistikering"
+        },
+        {
+          "content": "• Annoterede eksempelessays, der viser effektive strategier og almindelige faldgruber"
+        },
+        {
+          "content": "• Fleksible læringsveje til forskellige færdighedsniveauer"
+        },
+        {
+          "content": "• Vægt på grundlæggende grammatik og ordforråd for DET succes"
+        },
+        {
+          "content": "• Opdateret for at afspejle de nyeste DET skriveformat tendenser"
+        }
+      ]
+    },
+    "contaceUsList": [
+      {
+        "font": "Vælg Din Guide",
+        "tip": "Vælg Speaking eller Writing Guide til målrettet eksamensforberedelse.",
+        "btn": "Køb talende guide",
+        "btn1": "Købskrivningsvejledning"
+      },
+      {
+        "font": "Øjeblikkelig Download",
+        "tip": "Få adgang til guiden straks efter køb.",
+        "btn": "Download Taleguide",
+        "btn1": "Download skrivningsvejledning"
+      },
+      {
+        "font": "Talende lydprøver",
+        "tip": "Udforsk de supplerende talelyd-demo-svar.",
+        "btn1": "Adgang til lydprøver"
+      }
+    ],
+    "pagefont": {
+      "h1": "DET Fremragende Mundtlig Eksamen: En Omfattende Guide",
+      "do": "$",
+      "Buy_Now": "Køb Nu",
+      "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+      "white_arrow_right": "Hvid Pil Højre",
+      "Double_Right_Arrow": "Dobbelt Højre Pil",
+      "DET_Writing": "DET Skriveeksamens Dygtighed: En Omfattende Guide",
+      "How_to": "Hvordan får man guiden?",
+      "spa": "Taleøvelse lyd",
+      "tips": "Tak for din interesse i vores Speaking/Writing Guide! Bemærk venligst, at dette er et virtuelt produkt. Når det er købt og downloadet, betragtes produktleveringen som fuldført, og det er generelt ikke-refunderbart. Bekræft venligst før du foretager et køb.",
+      "orange_title": "Elite Sprogpædagoger",
+      "team_desc": "Vores anerkendte team af sprogundervisere, med prestigefyldte kvalifikationer som TESOL og andre undervisningscertifikater, bringer en stor erfaring i at forberede studerende til store engelske prøver som TOEFL, IELTS og Duolingo English Test (DET). De er kendt for deres imponerende sprogfærdigheder, personlige undervisningsmetoder og innovative tilgange, og de er engagerede i at hjælpe hver studerende med at opnå deres højeste potentiale i engelsk færdighed.",
+      "Elite_Language_Educators": "Elite Sprogundervisere"
+    }
+  },
+  "forget": {
+    "Please_enter": "Indtast venligst din e-mailadresse",
+    "Invalid_email": "Ugyldig email.",
+    "t1": "Glemt adgangskode?",
+    "t2": "Indtast venligst den email, der blev brugt til at oprette din konto",
+    "Enter_your_email": "Indtast din e-mail",
+    "desc": "Vi sender dig en e-mail med nulstillingskoden",
+    "alt": "DET Praksis:Den bedste Duolingo English Test Praksis platform",
+    "Send_reset_code": "Send nulstillingskode",
+    "Back_to_login": "Tilbage til login"
+  },
+  "listen": {
+    "Speaking_practice_audio": "Taleøvelseslyd",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform"
+  },
+  "login": {
+    "peyea": "Indtast venligst din e-mailadresse.",
+    "ie": "Ugyldig email.",
+    "peyp": "Indtast venligst din adgangskode.",
+    "Welcome_back": "Velkommen tilbage",
+    "h1": "Log ind for at øve",
+    "Login_with_Google": "Log ind med Google",
+    "Or_continue_with": "Eller fortsæt med",
+    "Email_address": "E-mailadresse",
+    "Password": "Adgangskode",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelses platform",
+    "Login": "Log ind",
+    "Forgot_password": "Glemt adgangskode?",
+    "Dont_have_an_account": "Har du ikke en konto?",
+    "Sign_up_here": "Tilmeld dig her"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "Duolingo Mock Test: Forbered dig til din sprogprøve | DET Øv dig",
+      "description": "Oplev realistiske Duolingo Mock Tests med adaptive spørgsmål og AI scoring. Forbered dig effektivt med DET Practice's fuldlængde eksamener til Duolingo English Test!",
+      "keywords": "Duolingo Mock Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
+    },
+    "h1": "Duolingo English Test 1:1 prøveeksamen",
+    "desc": "Oplev en livagtig eksamensoplevelse med vores fuldskala prøveeksamener. Få en forsmag på den faktiske testproces før den rigtige eksamen og modtag hurtigt score og detaljerede diagnostiske rapporter for at identificere områder til forbedring.",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "mock_user_icon": "Mock brugerikon",
+    "white_arrow_right": "Hvid Pil Højre",
+    "orange_arrow_right": "Orange Pil Højre",
+    "learners_have": "{number} elever har taget vores prøveeksamener til selvevaluering og øvelse.",
+    "Mock_Now": "Mock Nu",
+    "Full_scale": "Duolingo 1:1 Fuldskala Mock Eksamen",
+    "article1": {
+      "h2": "Algoritmisk intelligens",
+      "right_desc": "Oplev ægte eksamensbetingelser med vores avancerede adaptive testalgoritme. Få hurtigt styr på forskellige spørgsmålstyper og opnå præcise vurderinger."
+    },
+    "article2": {
+      "h2": "Præcis Scoring & Dybdegående Rapporter",
+      "right_desc": "Detaljerede prøverapporter giver præcis diagnose og analyse af nuværende styrker og svagheder, som automatisk opdaterer studieplaner for at øge eksamensforberedelseseffektiviteten."
+    },
+    "article3": {
+      "h2": "Bekvem Eksamensoplevelse",
+      "right_desc": "Nyd fleksibel testtagning på din tidsplan, ingen aftaler nødvendige. Start din mock-eksamen med det samme efter køb og hav friheden til at sætte på pause eller genoptage når som helst."
+    },
+    "article4": {
+      "h2": "Hurtig resultatrapportering",
+      "right_desc": "Få dine mock-eksamensresultater leveret inden for 30 minutter, hvilket fremskynder din fremdriftsgennemgang."
+    }
+  },
+  "practice": {
+    "seometa": {
+      "title": "Duolingo Engelsk Øve Test Online, DET Øve Test Score",
+      "description": "Forbered dig til Duolingo engelsk test med DET øvelsestests online. Forbedre din Duolingo engelsk test score med effektive øvelsessessioner. Start nu!",
+      "keywords": "Duolingo English Test Praksis, Duolingo Praksis Engelsk Test, Duolingo Engelsk Praksis Test, Duolingo Praksis Test Online, Duolingo Test Praksis, Duolingo Praksis Test, Duolingo Praksis, Det Praksis Test, Duolingo English Test Score"
+    },
+    "h1": "Duolingo Øvelsesspørgsmålsbank",
+    "desc": "Få adgang til en omfattende samling af testspørgsmål, forbedret med svaranalyse, skabeloner, AI-drevne talebedømmelser og smart planlægning. Fremskynd din scoreforbedring effektivt og overkommeligt med vores AI-drevne tilgang.",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "altbanner": "Duolingo Øve Spørgsmål Bank",
+    "bank_user_icon": "Bank Bruger Ikon",
+    "white_arrow_right": "Hvid Pil Højre",
+    "blue_arrow_right": "Blå Pil Højre",
+    "learners_have": "{number} elever har brugt vores spørgebank til DET forberedelse.",
+    "spn": "Begynd at øve nu",
+    "article1": {
+      "h2": "Omfattende Spørgsmålsbibliotek",
+      "right_desc": "Udforsk vores omfattende bibliotek med over 10.000 spørgsmål på tværs af forskellige eksamenstyper, konstant opdateret for at holde din træning up-to-date. Vores spørgsmålsbank er designet til systematisk at styrke dine færdigheder i at tage prøver i forskellige spørgsmålformater.",
+      "btn": "Dyk Ned I Praksis"
+    },
+    "article2": {
+      "h2": "Intelligent anbefaling",
+      "right_desc": "Al-modellen vil tage højde for hver spørgsmåls type, sværhedsgrad, målscore, spørgsmålsvægt, nyhedsværdi af spørgsmålene, den seneste hyppighed af prøven, forberedelsestid og effektivitets vurdering osv. for nøjagtigt at anbefale spørgsmål til at hjælpe dig med effektivt at forberede dig til prøven.",
+      "btn": "Start Smart Study Journey"
+    },
+    "article3": {
+      "h2": "Evaluering af AI-tale",
+      "right_desc": "Forbedr din mundtlige færdighed med vores AI-drevne talebedømmelser. Indsend dit svar på et mundtligt sprogspørgsmål og modtag straks en detaljeret analyse af dine taleevner, hvilket hjælper dig med at forbedre dig med præcision og hastighed.",
+      "btn": "Begynd din evaluering"
+    },
+    "article4": {
+      "h2": "Svaranalyse",
+      "right_desc": "Dyk ned i omfattende svarforklaringer, der uddyber din forståelse af væsentlige begreber og problemløsningsteknikker. Vores detaljerede analyser guider dig ikke kun til de korrekte svar - de udvider din viden og øger din studieeffektivitet.",
+      "btn": "Udforsk svarindsigter"
+    }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Privatlivspolitik: Beskyttelse af dine data | DET Practice",
+      "description": "Opdag DET Practice's Privatlivspolitik: Læs om, hvordan vi håndterer data, beskytter informationer og sikrer dit privatliv. Læs mere om vores politikker nu.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelske Eksamen, Duolingo Færdighedseksamen"
+    },
+    "h1": "Privatlivspolitik",
+    "q1": {
+      "title": "Sidst opdateret: 2023-11-20",
+      "a1": "DET Pratice (\"os\", \"vi\" eller \"vores\") driver DET Pratice-webstedet (tjenesten).",
+      "a2": "Denne side informerer dig om vores politikker vedrørende indsamling, brug og videregivelse af personlige oplysninger, når du bruger vores service.",
+      "a3": "Vi vil ikke bruge eller dele dine oplysninger med nogen undtagen som beskrevet i denne Privacy Policy.",
+      "a4": "Vi bruger dine personlige oplysninger til at levere og forbedre tjenesten. Ved at bruge tjenesten accepterer du indsamling og brug af oplysninger i overensstemmelse med denne politik. Medmindre andet er defineret i denne privatlivspolitik, har termerne, der bruges i denne privatlivspolitik, de samme betydninger som i vores vilkår og betingelser, tilgængelige på",
+      "a5": "Indsamling og brug af oplysninger",
+      "a6": "Når du bruger vores service, kan vi bede dig om at give os visse personligt identificerbare oplysninger, der kan bruges til at kontakte eller identificere dig. Personligt identificerbare oplysninger (“Personlige Oplysninger”) kan omfatte, men er ikke begrænset til:",
+      "a7": "• Navn",
+      "a8": "• E-mail-adresse"
+    },
+    "q2": {
+      "title": "Logdata",
+      "a1": "Vi indsamler oplysninger, som din browser sender, når du besøger vores tjeneste (\"Log Data\"). Disse logdata kan omfatte oplysninger såsom din computers Internet Protocol (\"IP\") adresse, browsertype, browserversion, de sider på vores tjeneste, som du besøger, tidspunkt og dato for dit besøg, den tid, der er brugt på disse sider, og andre statistikker."
+    },
+    "q3": {
+      "title": "Cookies",
+      "a1": "Cookies er filer med en lille mængde data, som kan inkludere en anonym unik identifikator. Cookies sendes til din browser fra et websted og gemmes på din computers harddisk.",
+      "a2": "Vi bruger \"cookies\" til at indsamle information. Du kan instruere din browser til at afvise alle cookies eller til at angive, når en cookie bliver sendt. Men hvis du ikke accepterer cookies, kan du muligvis ikke bruge visse dele af vores Tjeneste."
+    },
+    "q4": {
+      "title": "Serviceudbydere",
+      "a1": "Vi kan ansætte tredjepartsfirmaer og -personer til at lette vores service, til at levere tjenesten på vores vegne, til at udføre tjenester relateret til tjenesten eller til at hjælpe os med at analysere, hvordan vores service bruges.",
+      "a2": "Disse tredjeparter har kun adgang til dine personlige oplysninger for at udføre disse opgaver på vores vegne og er forpligtede til ikke at videregive eller bruge dem til andre formål."
+    },
+    "q5": {
+      "title": "Sikkerhed",
+      "a1": "Sikkerheden af dine personlige oplysninger er vigtig for os, men husk, at ingen metode til transmission over internettet eller metode til elektronisk opbevaring er 100% sikker. Selvom vi bestræber os på at bruge kommercielt acceptable metoder til at beskytte dine personlige oplysninger, kan vi ikke garantere deres absolutte sikkerhed."
+    },
+    "q6": {
+      "title": "Betalingsinfo & Sikkerhed",
+      "a1": "For at indsamle betalinger på dine vegne fra dine kunder og give betalinger til dig, indsamler vi, ved at bruge Stripe som tredjeparts betalingsprocessor, betalingsinformation fra dig, dine deltagere og kunder, dine leverandører og andre parter, som vi giver betalinger til på dine vegne og fra hvem vi indsamler betalinger på dine vegne. Disse oplysninger bruges udelukkende til at indsamle og give betalinger relateret til Tjenesterne og opbevares kun af Stripe. Du bør gennemgå Stripe's servicevilkår og privatlivspolitikker, som er tilgængelige på"
+    },
+    "q7": {
+      "title": "Links til andre sider",
+      "a1": "Vores tjeneste kan indeholde links til andre sider, der ikke drives af os. Hvis du klikker på et tredjepartslink, vil du blive dirigeret til den tredjeparts side. Vi råder dig kraftigt til at gennemgå fortrolighedspolitikken for hver side, du besøger.",
+      "a2": "Vi har ingen kontrol over og påtager os intet ansvar for indholdet, privatlivspolitikker eller praksis på nogen tredjepartssider eller -tjenester."
+    }
+  },
+  "register": {
+    "peyea": "Indtast venligst din e-mailadresse.",
+    "Invalid_email": "Ugyldig email.",
+    "Sign_up": "Tilmeld dig",
+    "cya": "Opret din gratis DETPractice-konto",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "suwg": "Tilmeld dig med Google",
+    "ocw": "Eller fortsæt med",
+    "Email_address": "Emailadresse",
+    "ywr": "Du vil modtage din aktiveringskode via email",
+    "cwe": "Fortsæt med e-mail",
+    "ahaa": "Har du allerede en konto?",
+    "Login_here": "Log ind her"
+  },
+  "register2": {
+    "Sign_up": "Tilmeld dig",
+    "cyfda": "Opret din gratis DETPractice-konto",
+    "Sign_up_with_Google": "Tilmeld dig med Google",
+    "Or_continue_with": "Eller fortsæt med",
+    "Register_code": "Registreringskode",
+    "Enter_your_code": "Indtast din kode",
+    "Full_Name": "Fulde navn",
+    "Password": "Adgangskode",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "Create_Account": "Opret konto",
+    "ahaa": "Har du allerede en konto?",
+    "Login_here": "Log ind her.",
+    "peyc": "Indtast venligst din kode.",
+    "peyfn": "Indtast venligst dit fulde navn.",
+    "peyp": "Indtast venligst din adgangskode.",
+    "pts": "Adgangskode for kort."
+  },
+  "resetPassword": {
+    "peuc": "Indtast venligst din kode.",
+    "fp": "Glemt adgangskode?",
+    "pete": "Indtast venligst den e-mail, der blev brugt til at oprette din konto",
+    "Enter_your_code": "Indtast din kode",
+    "pw": "Vent venligst i 120 sekunder for at nulstille koden",
+    "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
+    "rpr": "Anmod om nulstilling af adgangskode",
+    "btl": "Tilbage til login"
+  },
+  "resetPasswordStep2": {
+    "peue": "Indtast venligst din emailadresse.",
+    "pts": "Adgangskode for kort.",
+    "pi": "Uoverensstemmelse i adgangskoden.",
+    "fp": "Glemt adgangskode?",
+    "pete": "Indtast venligst den e-mail, der blev brugt til at oprette din konto",
+    "np": "Nyt kodeord",
+    "eanp": "Indtast en ny adgangskode",
+    "alt": "DET Praksis:Den bedste Duolingo English Test Øvelsesplatform",
+    "cnp": "Bekræft ny adgangskode",
+    "cynp": "Bekræft din nye adgangskode",
+    "rmp": "Nulstil min adgangskode",
+    "btl": "Tilbage til login"
+  },
+  "tos": {
+    "seometa": {
+      "title": "Vilkår for brug | DET Practice",
+      "description": "Udforsk DET Practice's omfattende servicevilkår, inklusive vores privatlivspolitik og brugsretningslinjer. Sørg for gennemsigtighed og overholdelse.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprog Test, Duolingo Engelsk Eksamen, Duolingo Kompetence Eksamen"
+    },
+    "title": "Vilkår for brug",
+    "q1": {
+      "title": "Sidst opdateret: 2023-11-20",
+      "a1": "Læs venligst disse servicevilkår (“Vilkår”, “TOS”) omhyggeligt, før du bruger",
+      "a2": "website (den “Service”) drevet af DET Practice (“os”, “vi” eller “vores”).",
+      "a3": "Din adgang til og brug af tjenesten afhænger af din accept af og overholdelse af disse vilkår. Disse vilkår gælder for alle besøgende, brugere og andre, der får adgang til eller bruger tjenesten.",
+      "a4": "Ved at tilgå eller bruge Tjenesten accepterer du at være bundet af disse Vilkår. Hvis du er uenig i nogen del af vilkårene, må du ikke tilgå Tjenesten."
+    },
+    "q2": {
+      "title": "Konti",
+      "a1": "Når du opretter en konto hos os, skal du give os oplysninger, der er nøjagtige, komplette og aktuelle til enhver tid. Undladelse af dette udgør en overtrædelse af Vilkårene, hvilket kan resultere i øjeblikkelig opsigelse af din konto på vores tjeneste.",
+      "a2": "Du er ansvarlig for at beskytte den adgangskode, som du bruger til at få adgang til Tjenesten, og for alle aktiviteter eller handlinger under din adgangskode, uanset om din adgangskode er med vores Tjeneste eller en tredjepartstjeneste.",
+      "a3": "Du accepterer ikke at afsløre din adgangskode til nogen tredje part. Du skal straks underrette os, når du bliver opmærksom på ethvert sikkerhedsbrud eller uautoriseret brug af din konto."
+    },
+    "q3": {
+      "title": "Links til andre websteder",
+      "a1": "Vores tjeneste kan indeholde links til tredjepartswebsteder eller -tjenester, der ikke ejes eller kontrolleres af DET Practice.",
+      "a2": "DET Practice har ingen kontrol over og påtager sig intet ansvar for indholdet, privatlivspolitikker eller praksisser på tredjeparters websites eller tjenester. Du anerkender endvidere og accepterer, at DET Practice ikke skal være ansvarlig eller hæftende, direkte eller indirekte, for nogen skade eller tab forårsaget eller påstået at være forårsaget af eller i forbindelse med brugen af eller tilliden til sådant indhold, varer eller tjenester, der er tilgængelige på eller gennem sådanne websites eller tjenester.",
+      "a3": "Vi råder dig kraftigt til at læse vilkår og betingelser samt privatlivspolitikker for eventuelle tredjepartswebsteder eller -tjenester, som du besøger."
+    },
+    "q4": {
+      "title": "Opsigelse",
+      "a1": "Vi kan opsige eller suspendere din konto med det samme, uden forudgående varsel eller ansvar, af enhver årsag overhovedet, herunder uden begrænsning hvis du overtræder vilkårene.",
+      "a2": "Ved opsigelse vil din ret til at bruge Tjenesten straks ophøre. Hvis du ønsker at opsige din konto, kan du blot stoppe med at bruge Tjenesten.",
+      "a3": "Alle bestemmelser i vilkårene, som af deres natur bør overleve opsigelse, skal overleve opsigelse, herunder uden begrænsning ejerskabsbestemmelser, garantifritagelser, skadesløsholdelse og ansvarsbegrænsninger."
+    },
+    "q5": {
+      "title": "Ansvarsfraskrivelse",
+      "a1": "Din brug af tjenesten er på egen risiko. Tjenesten leveres på et \"SOM DEN ER\" og \"SOM TILGÆNGELIG\" grundlag. Tjenesten leveres uden nogen former for garantier, hverken udtrykkelige eller underforståede, herunder, men ikke begrænset til, underforståede garantier for salgbarhed, egnethed til et bestemt formål, ikke-krænkelse, eller ydeevneforløb."
+    },
+    "q6": {
+      "title": "Gældende lov",
+      "a1": "Disse vilkår skal være underlagt og fortolkes i overensstemmelse med lovene i Det Forenede Kongerige uden hensyn til dets lovkonfliktsbestemmelser.",
+      "a2": "Manglende håndhævelse af en hvilken som helst rettighed eller bestemmelse i disse Vilkår vil ikke blive betragtet som en frafaldelse af disse rettigheder. Hvis nogen bestemmelse i disse Vilkår anses for at være ugyldig eller uigennemførlig af en domstol, vil de resterende bestemmelser i disse Vilkår forblive i kraft. Disse Vilkår udgør hele aftalen mellem os vedrørende vores Service og erstatter og træder i stedet for eventuelle tidligere aftaler, vi måtte have mellem os vedrørende Servicen."
+    },
+    "q7": {
+      "title": "Ændringer",
+      "a1": "Vi forbeholder os retten, efter eget skøn, til at ændre eller erstatte disse Vilkår til enhver tid. Hvis en ændring er væsentlig, vil vi forsøge at give mindst 15 dages varsel før eventuelle nye vilkår træder i kraft. Hvad der udgør en væsentlig ændring vil blive bestemt efter vores eget skøn.",
+      "a2": "Ved at fortsætte med at få adgang til eller bruge vores service efter, at disse ændringer træder i kraft, accepterer du at være bundet af de reviderede vilkår. Hvis du ikke er enig i de nye vilkår, bedes du stoppe med at bruge servicen."
+    },
+    "q8": {
+      "title": "Kontakt os",
+      "a1": "Hvis du har spørgsmål om disse vilkår, bedes du kontakte os."
+    }
+  },
+  "sitemap": {
+    "seometa": {
+      "title": "DET Øv Sitemap: Find Alle Øvelsestests & Ressourcer",
+      "description": "Udforsk DET Practice's komplette sitemap for at få adgang til alle øvelsestests, studieressourcer og vejledninger. Naviger nemt gennem vores omfattende testforberedelsestilbud.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedsprøve"
+    },
+    "h1": "Sitemap"
+  }
+}

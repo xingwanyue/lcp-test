@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
 import vEmbark from '../components/embark.vue';
@@ -6,12 +8,15 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 useServerSeoMeta({
-  title: 'DET Practice - The best platform for Duolingo practice test',
-  description:
-    'Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.',
+  title: t('practice.seometa.title'),
+  description: t('practice.seometa.description'),
+  keywords: t('practice.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/duolingo-practice` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/practice` },
+    { rel: 'alternate', href: `https://www.${domain}/practice`, hreflang: 'en-GB' },
+  ],
 });
 // 获取平台数据
 const {
@@ -76,57 +81,41 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
           <div class="banner">
             <div class="banner_left">
               <div class="big_title">
-                <h1>Duolingo Practice Question Bank</h1>
+                <h1>{{ $t('practice.h1') }}</h1>
               </div>
               <div class="desc">
-                Gain access to an extensive collection of test questions, enhanced with answer analysis, templates,
-                AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and
-                affordably with our AI-powered approach.
+                {{ $t('practice.desc') }}
               </div>
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img
-                      src="/img/products/bank_user_icon1.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/bank_user_icon1.png" :alt="$t('practice.bank_user_icon')" />
                   </div>
                   <div class="one_icon left24">
-                    <img
-                      src="/img/products/bank_user_icon2.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/bank_user_icon2.png" :alt="$t('practice.bank_user_icon')" />
                   </div>
                   <div class="one_icon left48">
-                    <img
-                      src="/img/products/bank_user_icon3.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/bank_user_icon3.png" :alt="$t('practice.bank_user_icon')" />
                   </div>
                   <div class="one_icon left72">
-                    <img
-                      src="/img/products/bank_user_icon4.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/bank_user_icon4.png" :alt="$t('practice.bank_user_icon')" />
                   </div>
                   <div class="one_icon left96">
-                    <img
-                      src="/img/products/bank_user_icon5.png"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/bank_user_icon5.png" :alt="$t('practice.bank_user_icon')" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
-                  {{ platformData.userTotal }} learners have used our question bank for DET preparation.
+                  {{
+                    $t('practice.learners_have', {
+                      number: platformData.userTotal,
+                    })
+                  }}
                 </div>
               </div>
               <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :to="urlGet('/questions')">
-                <div class="font">Start Practicing Now</div>
+                <div class="font">{{ $t('practice.spn') }}</div>
                 <div class="icon">
-                  <img
-                    src="/img/products/white_arrow_right.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('practice.white_arrow_right')" />
                 </div>
               </NuxtLink>
               <NuxtLink
@@ -134,18 +123,15 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
               >
-                <div class="font">Start Practicing Now</div>
+                <div class="font">{{ $t('practice.spn') }}</div>
                 <div class="icon">
-                  <img
-                    src="/img/products/white_arrow_right.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
+                  <img src="/img/products/white_arrow_right.svg" :alt="$t('practice.white_arrow_right')" />
                 </div>
               </NuxtLink>
             </div>
             <div class="banner_right">
               <!-- <img src="/img/products/bank_banner.png" /> -->
-              <el-image v-show="isLoad" :src="bank_banner" alt="Duolingo Practice Question Bank" @load="onLoad" />
+              <el-image v-show="isLoad" :src="bank_banner" :alt="$t('practice.altbanner')" @load="onLoad" />
               <el-skeleton v-show="!isLoad" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -157,7 +143,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
-              <el-image v-show="isLoad1" :src="bank_picture1" alt="Extensive Question Library" @load="onLoad1" />
+              <el-image v-show="isLoad1" :src="bank_picture1" :alt="$t('practice.article1.h2')" @load="onLoad1" />
               <el-skeleton v-show="!isLoad1" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -166,19 +152,14 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Extensive Question Library</h2>
+                <h2 class="right_title">{{ $t('practice.article1.h2') }}</h2>
                 <div class="right_desc">
-                  Explore our extensive library of over 10,000 questions across diverse exam types, constantly refreshed
-                  to keep your practice up-to-date. Our question bank is designed to systematically bolster your
-                  test-taking skills across various question formats.
+                  {{ $t('practice.article1.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Dive Into Practice</div>
+                  <div class="font">{{ $t('practice.article1.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -186,12 +167,9 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">Dive Into Practice</div>
+                  <div class="font">{{ $t('practice.article1.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -199,7 +177,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad2" :src="bank_picture2" alt="Intelligent Recommendation" @load="onLoad2" />
+              <el-image v-show="isLoad2" :src="bank_picture2" :alt="$t('practice.article2.h2')" @load="onLoad2" />
               <el-skeleton v-show="!isLoad2" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -208,24 +186,14 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Intelligent Recommendation</h2>
+                <h2 class="right_title">{{ $t('practice.article2.h2') }}</h2>
                 <div class="right_desc">
-                  <!-- We have developed an intelligent learning knowledge graph to recommend a
-                  <span class="strong">personalized practice plan</span> for you. Through intelligent analysis of your
-                  daily learning behavior, we suggest the most suitable practice questions to help you study more
-                  intelligently. -->
-                  The Al model will take into account the mastery level of each question type, difficulty,target score,
-                  question weight, novelty of the questions, the recent frequency of the test, preparation time and
-                  efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the
-                  test.
+                  {{ $t('practice.article2.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Start Smart Study Journey</div>
+                  <div class="font">{{ $t('practice.article2.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -233,12 +201,9 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">Start Smart Study Journey</div>
+                  <div class="font">{{ $t('practice.article2.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -246,7 +211,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
           </div>
           <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad3" :src="bank_picture3" alt="AI Speaking Evaluation" @load="onLoad3" />
+              <el-image v-show="isLoad3" :src="bank_picture3" :alt="$t('practice.article3.h2')" @load="onLoad3" />
               <el-skeleton v-show="!isLoad3" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -255,19 +220,14 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">AI Speaking Evaluation</h2>
+                <h2 class="right_title">{{ $t('practice.article3.h2') }}</h2>
                 <div class="right_desc">
-                  Enhance your oral proficiency with our AI-driven speaking evaluations. Submit your response to a
-                  spoken language question and instantly receive a detailed analysis of your speaking skills, helping
-                  you improve with precision and speed.
+                  {{ $t('practice.article3.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Begin Your Evaluation</div>
+                  <div class="font">{{ $t('practice.article3.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -275,12 +235,9 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">Begin Your Evaluation</div>
+                  <div class="font">{{ $t('practice.article3.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>
@@ -288,7 +245,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
           </div>
           <div class="one_card img_right" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_card_left">
-              <el-image v-show="isLoad4" :src="bank_picture4" alt="Answer Analysis" @load="onLoad4" />
+              <el-image v-show="isLoad4" :src="bank_picture4" :alt="$t('practice.article4.h2')" @load="onLoad4" />
               <el-skeleton v-show="!isLoad4" style="width: 100%; height: 385px" animated>
                 <template #template>
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
@@ -297,19 +254,14 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
             </div>
             <div class="one_card_right">
               <div class="one_card_right_forMid">
-                <h2 class="right_title">Answer Analysis</h2>
+                <h2 class="right_title">{{ $t('practice.article4.h2') }}</h2>
                 <div class="right_desc">
-                  Delve into comprehensive answer explanations that deepen your understanding of essential concepts and
-                  problem-solving techniques. Our detailed analyses don’t just guide you to the correct answers—they
-                  expand your knowledge and boost your study efficiency.
+                  {{ $t('practice.article4.right_desc') }}
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
-                  <div class="font">Explore Answer Insights</div>
+                  <div class="font">{{ $t('practice.article4.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
                 <NuxtLink
@@ -317,12 +269,9 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">Explore Answer Insights</div>
+                  <div class="font">{{ $t('practice.article4.btn') }}</div>
                   <div class="arrow">
-                    <img
-                      src="/img/products/blue_arrow_right.svg"
-                      alt="DET Practice:The best Duolingo English Test Practice platform"
-                    />
+                    <img src="/img/products/blue_arrow_right.svg" :alt="$t('practice.blue_arrow_right')" />
                   </div>
                 </NuxtLink>
               </div>

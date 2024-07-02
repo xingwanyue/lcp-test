@@ -1,11 +1,763 @@
 {
-  "test": "Untuk tes",
+  "test": "Untuk uji coba",
   "Home": "Beranda",
   "Products": "Produk",
   "Learn": "Belajar",
   "Pricing": "Harga",
   "Blog": "Blog",
+  "header": {
+    "home_logo_title": "DET Latihan",
+    "path_practice_title": "Duolingo Tes Latihan Bahasa Inggris Online",
+    "path_correction_title": "Layanan Koreksi AI untuk Uji Duolingo",
+    "path_mock_title": "Duolingo Uji Coba Mock",
+    "path_course_title": "Duolingo English Test Kursus Online",
+    "commonAlt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
+    "Get_started": "Mulai",
+    "Try_for_free": "Coba gratis",
+    "prod1": {
+      "title": "Duolingo English Test Latihan",
+      "alt": "Duolingo English Test Praktek",
+      "font": "Raih Keunggulan dengan Bank Soal Ekstensif Kami: Lebih dari 10.000 Pertanyaan, Pembaruan Teratur, dan Pelacakan Kinerja Cerdas!"
+    },
+    "prod2": {
+      "title": "Duolingo English Test Layanan Koreksi",
+      "alt": "Duolingo English Test Layanan Koreksi",
+      "font": "Sempurnakan Esai Anda dengan Umpan Balik Dari Guru yang Didukung AI: Koreksi yang Akurat, Laporan Instan, dan Peningkatan Skor dalam Waktu Dua Minggu!"
+    },
+    "prod3": {
+      "title": "Duolingo English Test Kursus",
+      "alt": "Duolingo English Test Kursus",
+      "font": "Taklukkan Ujian Anda dengan Ujian Palsu Lengkap yang Otentik: Analisis Mendalam dan Hasil Instan, Tersedia Kapan Saja, Di Mana Saja."
+    },
+    "prod4": {
+      "title": "Duolingo English Test Tiruan",
+      "alt": "Duolingo English Test Olok-olok",
+      "font": "Buka DET Sukses: Penguasaan Komprehensif, Teknik Terbukti, dan Wawasan Terkini untuk Keunggulan Berbicara dan Menulis dengan Percaya Diri!"
+    }
+  },
   "footer": {
-    "inc": "Produk kami tidak memiliki koneksi dengan Duolingo, Inc"
+    "inc": "Produk kami tidak memiliki hubungan dengan Duolingo,Inc",
+    "ProductsTitle": "Produk",
+    "LearnTitle": "Belajar",
+    "BlogTitle": "Blog",
+    "CompanyTitle": "Perusahaan",
+    "Products": ["DET Latihan", "Layanan Koreksi AI", "DET Pura-Pura", "Duolingo English Test Kursus"],
+    "Company": ["Tentang kami", "Hubungi kami", "Syarat dan Ketentuan", "Kebijakan Privasi", "Peta Situs"],
+    "show_more": "tampilkan lebih banyak",
+    "alt": "DET Latihan: Platform Duolingo English Test Latihan terbaik",
+    "cookie_contenr": "DET Praktik menggunakan cookie untuk meningkatkan konten berdasarkan Pengaturan browser Anda. Untuk lebih jelasnya, lihat",
+    "newAlt": "DET Latihan",
+    "close_icon_alt": "Tanda Silang"
+  },
+  "index": {
+    "seometa": {
+      "title": "DET Praktek - Duolingo Tes Bahasa Inggris Online, Ujian Kecakapan Bahasa Inggris",
+      "description": "Persiapkan diri untuk tes kemahiran bahasa Inggris Duolingo secara online dengan DET Practice. Akses ujian tiruan, layanan koreksi, dan kursus komprehensif. Mulailah berlatih hari ini!",
+      "keywords": "DET Duolingo, DET Uji, Duolingo DET, Duolingo Ujian, Duolingo Ujian Online, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kemahiran, Duolingo Ujian Kemahiran Dalam Bahasa Inggris, Duolingo Ujian Kemahiran Bahasa Inggris, Ujian Kemahiran Bahasa Inggris Duolingo, Duolingo Ujian Kemahiran, Duolingo Ujian Kemahiran Bahasa Inggris, Duolingo English Test, Ujian Duolingo Bahasa Inggris"
+    },
+    "bigtitle1": "Jumlah Pencetak Skor Tinggi (130+ Poin)：10000+",
+    "bigtitle2": "Penilaian Luar Biasa 4.8/5 dari Lebih dari 850 Ulasan!",
+    "power_by": "Ditenagai oleh AI",
+    "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />pada Ujian Bahasa Inggris Duolingo <br />Dengan <span class=\"seo_hack\">DET Latihan</span>",
+    "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Duolingo English Test Dengan <span class=\"seo_hack\">DET Latihan</span>",
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "Start_free_with_Google": "Mulai gratis dengan Google",
+    "Start_free_with_email": "Mulai gratis dengan email",
+    "Start_for_free": "Mulai gratis",
+    "trustedByWorldwide": "Dipercaya oleh {path} siswa di seluruh dunia untuk peningkatan skor selama 1 bulan Duolingo English Test.",
+    "The_Best_Platform": "Platform Terbaik untuk Meningkatkan Skor Anda Duolingo English Test",
+    "Leverage_Our": "Manfaatkan Sumber Daya Kami yang Komprehensif untuk Peningkatan Skor yang Cepat",
+    "article1": {
+      "title": "Duolingo English Test Latihan",
+      "tips1": "Dengan lebih dari {number} soal latihan, bank soal kami yang terus berkembang selalu diperbarui untuk keunggulan.",
+      "tips2": "Cakupan komprehensif dari semua jenis ujian dengan penjelasan rinci untuk setiap pertanyaan.",
+      "tips3": "Jawaban mendalam, analitik cerdas, dan penilaian untuk memungkinkan pemantauan terus-menerus kinerja Anda.",
+      "btn_font": "Temukan Lebih Banyak",
+      "btn_img_alt": "Panah Kuning Kanan"
+    },
+    "article2": {
+      "title": "Layanan Koreksi Esai Berbasis AI",
+      "tips1": "Manfaatkan koreksi esai yang tepat melalui tinjauan kolaboratif 'AI + Guru' kami.",
+      "tips2": "Cukup kirimkan esai Anda dan segera menerima laporan komprehensif dengan skor band terperinci.",
+      "tips3": "Tingkatkan skor menulis Anda dalam hanya 2 minggu.",
+      "btn_font": "Pelajari Lebih Lanjut",
+      "btn_img_alt": "Panah Kuning Kanan"
+    },
+    "article3": {
+      "title": "Duolingo English Test Ejek",
+      "tips1": "Kenali situasi ujian yang sebenarnya untuk membiasakan diri dengan proses pengujian dan konten sebelumnya.",
+      "tips2": "Dapatkan laporan tes simulasi mendalam untuk analisis yang tepat tentang kekuatan dan kelemahan Anda.",
+      "tips3": "Ikuti ujian percobaan online sesuai kenyamanan Anda, dengan penilaian cepat yang diberikan dalam 30 menit.",
+      "btn_font": "Cari Tahu Lebih Lanjut",
+      "btn_img_alt": "Anak Panah Kuning Kanan"
+    },
+    "article4": {
+      "title": "Duolingo English Test Kursus",
+      "tips1": "Capai Penguasaan Komprehensif. Kembangkan pemahaman mendalam tentang DET bagian berbicara dan menulis dengan panduan terperinci kami, memastikan Anda mendekati setiap bagian ujian dengan percaya diri.",
+      "tips2": "Belajar dari Pakar ESL. Manfaatkan strategi yang terbukti untuk meningkatkan kemampuan berbicara dan menulis Anda, manfaatkan jalur pembelajaran yang dipersonalisasi, dan terlibat dalam penilaian diri yang efektif.",
+      "tips3": "Tetap Terinformasi dan Terdepan. Tetap mengikuti format dan tren terbaru DET untuk memastikan persiapan Anda sinkron sempurna dengan standar ujian saat ini.",
+      "btn_font": "Jelajahi Lebih Lanjut",
+      "btn_img_alt": "Panah Kuning Kanan"
+    },
+    "thousand": "k",
+    "Users": "Pengguna",
+    "Questions": "Pertanyaan",
+    "Mock_Exam": "Ujian Tiruan",
+    "Join_Them": "Bergabunglah dengan Mereka"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Mulailah Jalan Anda Menuju Skor Tertinggi pada</div><div class='font2'>Duolingo English Test !</div>",
+    "Start_free_with_Google": "Mulai gratis dengan Google",
+    "Start_free_with_email": "Mulai gratis dengan email",
+    "Start_for_free": "Mulai secara gratis"
+  },
+  "subscribe": {
+    "emailErrMessage1": "Email harus merupakan alamat email yang valid.",
+    "emailErrMessage2": "Silakan masukkan alamat email Anda.",
+    "Subscribe_successfully": "Berlangganan berhasil",
+    "Subscribe!": "Langganan!",
+    "Subscribe_for": "Langganan untuk Wawasan dan Strategi Terbaru untuk Meningkatkan Skor Anda.",
+    "Email": "Sure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nEmail",
+    "Subscribe": "Berlangganan"
+  },
+  "learn": {
+    "seometa": {
+      "title": "Tips Persiapan Ujian untuk Duolingo English Test | DET Praktik",
+      "description": "Temukan tips persiapan ujian yang efektif untuk Duolingo English Test. Tetap diperbarui dengan wawasan tepat waktu tentang meningkatkan kinerja tes Anda di DET Practice.",
+      "keywords": "DET Duolingo, DET Uji, Duolingo DET, Duolingo Uji, Duolingo Uji Online, Duolingo Tes Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kemahiran"
+    },
+    "h1": "Kami akan memperbarui tips persiapan ujian dari Duolingo English Test tepat waktu",
+    "title2": "Pembaruan terbaru hingga {time}",
+    "alt": "DET Praktik:Platform Duolingo English Test Praktik terbaik",
+    "down_icon": "Ikon Bawah",
+    "Show_more": "Tampilkan lebih banyak"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "Duolingo English Test Persiapan Penetapan Harga | DET Praktik",
+      "description": "Pilih rencana yang tepat dengan harga terjangkau untuk persiapan Duolingo English Test Anda. Latihan yang dipersonalisasi, ulasan ahli, dan ujian percobaan skala penuh tersedia.",
+      "keywords": "keyDET Duolingo, DET Ujian, Duolingo DET, Duolingo Ujian, Duolingo Ujian Online, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kecakapan"
+    },
+    "pagefont": {
+      "h1": "Rencana & Harga",
+      "h4": "Bertindak Sekarang untuk Menghemat! Dapatkan keanggotaan Anda dengan harga rendah hari ini – jangan lewatkan sebelum biaya naik.",
+      "switch1": "Keanggotaan",
+      "switch2": "Layanan Lebih",
+      "Most_Popular_Choice": "Pilihan Paling Populer",
+      "off": "{off}% diskon",
+      "do": "$",
+      "mp": "Harga anggota",
+      "Buy_Now": "Beli Sekarang",
+      "tf": "Coba gratis",
+      "mpc": "Pilihan Terpopuler",
+      "your_price": "harga Anda",
+      "Non_member": "Non-anggota",
+      "purchased": "dibeli",
+      "Secure_Payment": "Pembayaran Aman:",
+      "faq": "Pertanyaan yang Sering Diajukan",
+      "Contact_Us": "Hubungi Kami",
+      "alt": "DET Latihan: Platform Duolingo English Test Latihan terbaik",
+      "check_icon": "Periksa",
+      "tip_icon": "Tip",
+      "green_check": "Centang Hijau",
+      "arrow_down": "Panah Bawah"
+    },
+    "aqList": [
+      {
+        "name": "Bagaimana cara kerja rencana dan harga DETPractice?",
+        "content": "Kami menyediakan rencana dan harga yang transparan untuk pengguna kami, tanpa biaya tersembunyi. Selain itu, kami menawarkan paket langganan tambahan sehingga Anda dapat memilih layanan sesuai dengan kebutuhan Anda."
+      },
+      {
+        "name": "Apakah ada uji coba gratis?",
+        "content": "Ya! Anda dapat melihat 20 pertanyaan secara gratis. Membantu Anda memahami kami sebelum membeli lebih banyak layanan."
+      },
+      {
+        "name": "Apakah Anda menawarkan diskon?",
+        "content": "Ya! Kami menawarkan diskon yang disesuaikan untuk setiap layanan. Namun, saat Anda memilih layanan 30 hari, Anda akan menerima diskon yang lebih besar dibandingkan dengan layanan lainnya. Silakan merujuk ke detail harga di atas untuk informasi lebih lanjut."
+      },
+      {
+        "name": "Pembayaran saya berhasil, tetapi peningkatan gagal.",
+        "content": "Silakan hubungi kami melalui obrolan atau email: <span class='email_address'>support{'@'}detpractice.com</span>. Ini adalah cara paling sederhana dan tercepat untuk menangani kekhawatiran Anda."
+      },
+      {
+        "name": "Bisakah saya mengubah rencana saya nanti?",
+        "content": "Terima kasih telah membeli layanan ini! Harap dicatat bahwa ini adalah produk virtual. Setelah dibeli, pengiriman produk dianggap selesai dan umumnya tidak dapat dikembalikan. Mohon diperiksa sebelum membeli."
+      },
+      {
+        "name": "Ke mana saya mengirimkan umpan balik saya?",
+        "content": "Anda dapat mengirimkan umpan balik melalui obrolan dukungan di sudut kanan bawah, atau hubungi kami melalui email di <span class='email_address'>support{'@'}detpractice.com</span>. Atau, Anda bisa meninggalkan pesan langsung di bagian \"Hubungi Kami\"."
+      },
+      {
+        "name": "Apa kebijakan pengembalian dana Anda?",
+        "content1": "1. Akun Gratis  <br>Penggunaan sepenuhnya gratis, jadi tidak ada masalah pengembalian dana.",
+        "content2": "<br>2. Paket Berlangganan  <br>Pengguna dapat meminta pengembalian dana jika DET Practice gagal menyediakan layanan yang sesuai, sehingga pengguna tidak dapat menggunakannya, atau jika langganan belum berlaku. Pengembalian dana tidak akan diberikan untuk langganan dan layanan yang sudah aktif setelah pembelian.",
+        "content3": "<br>3. Panduan Berbicara/Menulis  <br>Panduan Berbicara/Menulis dianggap sebagai produk digital. Setelah dibeli dan diunduh, pengiriman produk dianggap selesai dan umumnya tidak dapat dikembalikan. Harap baca informasi pembelian dengan cermat sebelum melakukan pembelian.",
+        "content4": "<br><br>Catatan Penting:  <br>Semua permintaan pengembalian dana harus diproses melalui layanan pelanggan, dan catatan penggunaan yang relevan harus disediakan untuk verifikasi.<br>Untuk mencegah pengembalian dana yang curang, setiap akun pengguna dibatasi pada satu permintaan pengembalian dana. Permintaan ganda tidak akan diproses. <br>Jika Anda memiliki keadaan khusus atau situasi unik, silakan hubungi kami, dan kami akan bekerja sama dengan Anda untuk menemukan solusi."
+      }
+    ],
+    "qlList": {
+      "day0": { "name1Desc": "<span class='bigger'>20</span> Soal Latihan" },
+      "day7": {
+        "name1Desc": "<span class='bigger'>Tidak Terbatas</span> untuk Sesi Latihan",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
+        "name2Tips": "Untuk Pertanyaan Berbicara dan Menulis",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Ujian Tiruan"
+      },
+      "day15": {
+        "name1Desc": "<span class='bigger'>Tidak Terbatas</span> untuk Sesi Latihan",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
+        "name2Tips": "Untuk Pertanyaan Berbicara dan Menulis",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Ujian Tiruan"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>Tak Terbatas</span> untuk Sesi Latihan",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
+        "name2Tips": "Untuk Pertanyaan Berbicara dan Menulis",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Ujian Tiruan"
+      }
+    },
+    "membershipUnchanging": [
+      "Akses semua Pertanyaan Latihan",
+      "Telusuri Jawaban Demo dengan Skor Tinggi",
+      "Analisis Pertanyaan Mendalam",
+      "Buku Kata Ujian Frekuensi Tinggi",
+      "Rencana Belajar yang Disesuaikan dengan Pemilihan Pertanyaan Cerdas",
+      "Evaluasi Berbicara Bertenaga AI"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "Layanan Pelanggan Online",
+        "tip": "Tersedia Senin-Jumat, 10:00 - 19:00",
+        "btn": "Obrolan Langsung Sekarang"
+      },
+      "type2": {
+        "font": "Email Kami",
+        "tip": "Menerima tanggapan dalam 1 hari kerja."
+      },
+      "type3": {
+        "font": "Tinggalkan pesan",
+        "tip": "Kami akan merespons Anda dalam satu hari kerja.",
+        "btn": "Tinggalkan pesan sekarang"
+      }
+    }
+  },
+  "blog": {
+    "seometa": {
+      "title": "DET Blog Praktik - Duolingo English Test Tips dan Trik",
+      "description": "Tetap terupdate dengan Duolingo English Test tips dan trik penting di blog DET Practice. Temukan saran ahli dan strategi untuk unggul dalam persiapan ujian Anda."
+    },
+    "h1": "DET Blog Praktek",
+    "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik"
+  },
+  "embark": {
+    "font1": "Mulailah perjalanan Anda menuju skor tinggi di",
+    "font2": "Duolingo English Test !",
+    "Start_Now": "Mulai Sekarang"
+  },
+  "articleDetail": {
+    "Submitted_successfully": "Dikirim dengan sukses",
+    "Home": "Beranda",
+    "Learn": "Belajar",
+    "Blog": "Blog",
+    "Related_Articles": "Artikel Terkait",
+    "Thanks_for_voting": "Terima kasih atas suaranya!",
+    "Rate_this_article": "Beri nilai artikel ini"
+  },
+  "easyexam": {
+    "snfeep": "Mulai Sekarang untuk Persiapan Ujian yang Mudah.",
+    "Start_Now": "Mulai Sekarang"
+  },
+  "highscorewriting": {
+    "font1": "Percepat Jalur Anda menuju",
+    "font2": "Penguasaan Menulis Skor Tinggi.",
+    "Start_Now": "Mulai Sekarang"
+  },
+  "path": {
+    "seometa": { "title": "DET Blog Praktek", "description": "DET Blog Praktik" }
+  },
+  "aboutUs": {
+    "seometa": {
+      "title": "Tentang DET Praktik: Duolingo English Test Platform Praktik",
+      "description": "DET Practice, platform terkemuka untuk Duolingo English Test persiapan. Jelajahi bank soal kami yang luas, ujian tiruan, layanan koreksi, dan DET kursus."
+    },
+    "title": "Tentang DET Pratice",
+    "oelet": "Tim Pendidikan Bahasa Kami yang Terhormat",
+    "oeletdesc": "Di pusat layanan pendidikan bahasa kami terdapat tim pendidik yang berdedikasi, sangat berkualifikasi, dan berpengalaman, masing-masing membawa keahlian dan semangat unik mereka ke garis depan pembelajaran bahasa. Tim kami terdiri dari para profesional elit yang tidak hanya mahir berbahasa Inggris tetapi juga ahli dalam mempersiapkan siswa untuk tes kecakapan bahasa Inggris utama seperti TOEFL, IELTS, dan Duolingo English Test (DET). Para pendidik kami memiliki sertifikasi bergengsi seperti TESOL dan sertifikat Pelatihan Guru Bahasa Inggris Cambridge, yang menunjukkan komitmen mereka untuk memberikan pendidikan bahasa berkualitas tinggi. Mereka memiliki skor tes bahasa yang mengesankan, mencerminkan pemahaman mendalam mereka tentang keterampilan dan strategi yang diperlukan untuk unggul dalam ujian ini. Pengalaman kolektif tim kami mencakup beberapa tahun, di mana mereka telah mengasah kemampuan mereka untuk memenuhi kebutuhan belajar yang beragam. Mereka unggul dalam mengidentifikasi kekuatan dan kelemahan individu siswa, memastikan pendekatan pengajaran yang dipersonalisasi yang memaksimalkan hasil pembelajaran. Kemampuan unik ini memungkinkan mereka memberikan bimbingan dan umpan balik yang ditargetkan, membantu siswa menembus hambatan belajar dan dengan cepat meningkatkan kecakapan bahasa mereka. Para pendidik kami bukan hanya guru; mereka adalah mentor yang menginspirasi kepercayaan diri dan antusiasme pada siswa mereka. Mereka menciptakan lingkungan belajar yang dinamis dan interaktif, menjadikan perjalanan pembelajaran bahasa menyenangkan dan efektif. Metode pengajaran mereka terus berkembang, mengintegrasikan teknik dan materi inovatif untuk tetap mengikuti tren terbaru dalam pendidikan bahasa. Keberhasilan siswa kami dalam mencapai tujuan bahasa mereka adalah bukti keahlian, dedikasi, dan keunggulan pengajaran tim kami. Sebagai satu kesatuan, mereka mewakili yang terbaik dalam pendidikan bahasa, berkomitmen untuk membimbing siswa mencapai potensi tertinggi mereka dalam kecakapan bahasa Inggris.",
+    "p1title": "Michael Z.",
+    "p1author": "Pengawas Tutor",
+    "p1content1": "Sebagai tokoh utama tim pengajaran kami, Michael Z. mewujudkan puncak instruksi bahasa. Dengan pengalaman mengajar yang luas selama lebih dari satu dekade, Mike memiliki semua kredensial guru kami yang terhormat, termasuk TESOL, Sertifikat Pelatihan Guru Cambridge English, dan sertifikat lainnya. Kemampuan bahasa yang luar biasa tercermin dalam skor impresifnya: 115 pada TOEFL, 8.5 pada IELTS, dan sempurna 150 pada Duolingo English Test. Filosofi pengajaran Michael menggabungkan kekuatan tim kami yang beragam, menawarkan pendekatan komprehensif dan dinamis untuk pembelajaran bahasa. Dia terkenal karena kemampuannya memahami dan menangani kebutuhan unik setiap siswa, menciptakan lingkungan belajar di mana siswa dapat berkembang dan melampaui tujuan mereka. Kelasnya adalah perpaduan antara standar akademik yang ketat dan pengalaman belajar yang interaktif dan menarik. Selain mengajar, Michael berperan penting dalam mengembangkan kurikulum dan metode pelatihan mutakhir, memastikan kursus kami tetap berada di garis depan pendidikan bahasa. Dedikasinya terhadap keunggulan dalam pengajaran dan komitmennya terhadap keberhasilan siswa menjadikannya pemimpin dan mentor yang tak ternilai baik bagi tim kami maupun para siswa kami.",
+    "p2title": "Albert L.",
+    "p2author": "Perancang Kursus",
+    "p2content1": "Mendapatkan skor 8,5 di IELTS, Albert memiliki pengalaman luas dalam mengajar IELTS, TOEFL, PTE, dan DET. Metode pengajarannya dikenal dengan suasana yang santai dan hidup, sehingga membuat belajar menjadi menyenangkan. Pendekatan Albert disesuaikan dengan kebutuhan masing-masing siswa, memungkinkan peningkatan kemampuan bahasa Inggris dengan cepat dalam waktu singkat. Selain menjadi guru yang baik, Albert juga seorang desainer kursus berbakat yang telah menciptakan dan mengembangkan berbagai kursus online dan offline untuk pembelajar bahasa Inggris dari berbagai tingkat dan tujuan. Dia memiliki pemahaman yang mendalam tentang standar kurikulum dan kriteria penilaian dari berbagai tes bahasa Inggris, dan dia tahu bagaimana merancang aktivitas dan materi pembelajaran yang efektif dan menarik yang dapat membantu siswa menguasai keterampilan dan strategi tes. Albert juga telah berkolaborasi dengan guru dan pakar lain untuk meninjau dan meningkatkan kualitas serta relevansi kursus, dan dia telah menerima umpan balik positif dan pengakuan dari siswa dan rekan sejawat. Albert sangat bersemangat dalam menciptakan kursus inovatif dan personal yang dapat memenuhi kebutuhan dan minat yang beragam dari para pembelajar bahasa Inggris.",
+    "p3title": "Rita T.",
+    "p3author": "Senior Tutor",
+    "p3content1": "Dengan 11 tahun pengalaman mengajar, Rita adalah seorang ahli berpengalaman dalam persiapan dan penelitian Duolingo English Test. Dia adalah guru bahasa Inggris tingkat lanjut yang tersertifikasi ATI, memegang Sertifikat Guru Bahasa Inggris Lanjutan TESOL dan Sertifikat Pelatihan Guru Bahasa Inggris Cambridge. Rita memiliki skor mengesankan 111 dalam TOEFL dan 140 dalam DET. Pengajarannya ditandai dengan kemampuan untuk menganalisis kebutuhan siswa secara tepat dan memberikan instruksi yang ditargetkan, membantu mereka menembus hambatan dan meningkatkan keterampilan bahasa mereka untuk mencapai skor yang diinginkan dengan cepat. Selain itu, Rita adalah seorang guru yang penuh semangat dan antusias yang selalu memotivasi dan menginspirasi siswanya untuk belajar bahasa Inggris dengan percaya diri dan sukacita. Dia menggunakan berbagai metode interaktif dan menarik, seperti permainan, permainan peran, debat, dan simulasi, untuk membuat kelasnya menyenangkan dan efektif. Dia juga memberikan umpan balik dan bimbingan pribadi kepada setiap siswa, membantu mereka memperbaiki area yang lemah dan mengatasi tantangan mereka. Siswa-siswa Rita menyukai kepribadian hangat dan suportifnya, dan mereka sering memujinya karena kesabarannya, keramahan, dan profesionalismenya.",
+    "p4title": "Doris W.",
+    "p4author": "Tutor",
+    "p4content1": "Doris, mencetak 145 dalam DET dan 8.0 dalam IELTS, adalah instruktur serba bisa yang dikenal dengan pengalaman mengajarnya yang kaya. Dia unggul dalam membantu siswa dari berbagai tingkat dengan cepat mengatasi kesulitan untuk mencapai hasil ideal mereka, pernah membantu seorang siswa meningkat 30 poin hanya dalam dua minggu. Kelasnya dikenal dengan suasana yang hidup dan logika yang jelas, serta gaya mengajarnya yang ketat namun penuh semangat dan bertanggung jawab, menjadikannya favorit di kalangan berbagai siswa.",
+    "p5title": "Laura K.",
+    "p5author": "Peneliti Uji",
+    "p5content1": "Laura membawa bertahun-tahun pengalaman dalam pelatihan Duolingo, 110 di TOEFL, dan 155 di DET. Sebagai spesialis dalam penelitian pertanyaan Duolingo, Laura mahir dalam mengajar pertanyaan tes adaptif dan menulis. Dia memiliki pemahaman mendalam tentang teknik dan tren ujian DET, unggul dalam analisis kinerja untuk dengan cepat mengidentifikasi dan meningkatkan potensi siswa."
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "Hubungi Kami | +44 7708 193347 | DET Praktik",
+      "description": "Hubungi DET Praktik untuk ahli Duolingo English Test praktik dan panduan. Persiapkan dengan sumber daya khusus dan dukungan untuk hasil yang optimal.",
+      "keywords": "DET Duolingo, DET Uji, Duolingo DET, Duolingo Uji, Duolingo Ujian Online, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Bahasa, Duolingo Ujian Kemahiran"
+    },
+    "checkEmail": "Email harus berupa alamat email yang valid.",
+    "enterName": "Silakan masukkan nama Anda.",
+    "enterEmail": "Silakan masukkan alamat email Anda.",
+    "entermessage": "Silakan masukkan pesan Anda.",
+    "subsuccess": "Berhasil dikirim",
+    "Contact_Us": "Hubungi Kami",
+    "Questions": "Pertanyaan, laporan bug, umpan balik - kami di sini untuk membantu!",
+    "fill_in": "Isi formulir",
+    "thank": "Terima kasih telah memilih untuk menghubungi kami. Silakan isi formulir kontak ini dan staf kami akan menghubungi Anda secepat mungkin untuk menjawab pertanyaan Anda.",
+    "email": "Sure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nEmail",
+    "Name": "Nama",
+    "Email_Address": "Alamat Email",
+    "Message": "Pesan",
+    "SUBMIT": "KIRIM"
+  },
+  "cookie": {
+    "seometa": { "title": "Kebijakan Cookie - DET Practice" },
+    "Cookie_Policy": "Kebijakan Cookie",
+    "Last_updated": "Terakhir diperbarui:",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": "Kebijakan Cookie ini menjelaskan apa itu cookie, bagaimana kami menggunakannya, dan pilihan Anda terkait cookie di situs web kami.",
+    "q1": {
+      "title": "Apa itu cookies?",
+      "a1": "Cookie adalah potongan teks kecil yang dikirim oleh browser web Anda oleh situs web yang Anda kunjungi. File cookie disimpan di browser web Anda dan memungkinkan situs web atau pihak ketiga untuk mengenali Anda dan membuat kunjungan Anda berikutnya lebih mudah dan situs web lebih berguna bagi Anda.",
+      "a2": "Cookie dapat berupa \"persistent\" atau cookie \"session\". Cookie persistent tetap berada di komputer pribadi atau perangkat seluler Anda ketika Anda offline, sedangkan cookie session dihapus segera setelah Anda menutup browser web Anda."
+    },
+    "q2": {
+      "title": "Bagaimana cara kami menggunakan cookie",
+      "a1": "Ketika Anda menggunakan dan mengakses situs web kami, kami dapat menempatkan sejumlah file cookie di peramban web Anda.",
+      "a2": "Kami menggunakan cookie untuk tujuan berikut :",
+      "a3": "• Untuk mengaktifkan fungsi tertentu dari situs web",
+      "a4": "• Untuk menyediakan analisis",
+      "a5": "• Untuk menyimpan preferensi Anda",
+      "a6": "• Untuk mengaktifkan penyampaian iklan (yang merupakan cookie dari domain yang berbeda dari domain situs web yang Anda kunjungi – untuk upaya periklanan dan pemasaran kami.)",
+      "a7": "Kami menggunakan cookie sesi dan cookie persisten di situs web kami, dan kami menggunakan berbagai jenis cookie untuk menjalankan situs web:",
+      "a8": "• Cookie penting: Kami dapat menggunakan cookie penting untuk mengautentikasi pengguna dan mencegah penggunaan akun pengguna yang curang.",
+      "a9": "• Cookie analitis/kinerja: Kami dapat menggunakan cookie analitis/kinerja untuk melacak aktivitas pengguna di situs web dan mengumpulkan data tentang bagaimana pengunjung menggunakan situs web. Informasi ini digunakan untuk meningkatkan pengalaman situs web bagi pengguna kami.",
+      "a10": "• Kuki fungsionalitas: Kami dapat menggunakan kuki fungsionalitas untuk mengenali Anda saat kembali ke situs web dan mempersonalisasi konten untuk Anda.",
+      "a11": "• Cookie penargetan: Kami mungkin menggunakan cookie penargetan untuk mencatat kunjungan Anda ke situs web, halaman yang telah Anda kunjungi, dan tautan yang telah Anda ikuti."
+    },
+    "q3": {
+      "title": "Pilihan Anda mengenai cookie",
+      "a1": "Jika Anda lebih suka menghindari penggunaan cookie di situs web kami, Anda harus menonaktifkan penggunaan cookie di browser Anda dan kemudian menghapus cookie yang disimpan di browser Anda yang terkait dengan situs web ini. Anda dapat menggunakan opsi ini untuk mencegah penggunaan cookie kapan saja."
+    },
+    "q4": {
+      "title": "Hubungi kami",
+      "a1": "Jika Anda memiliki pertanyaan tentang Kebijakan Cookie kami, silakan hubungi kami :",
+      "a2": "• Melalui email:",
+      "a3": "• Dengan mengunjungi halaman ini di situs web kami:"
+    },
+    "q5": {
+      "title": "Perubahan pada Kebijakan Cookie Kami",
+      "a1": "Kami mungkin memperbarui Kebijakan Cookie kami dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan apa pun dengan memposting Kebijakan Cookie baru di halaman ini."
+    }
+  },
+  "correction": {
+    "seometa": {
+      "title": "Layanan Koreksi AI Terbaik untuk Uji Duolingo | Latihan DET",
+      "description": "Capai kesuksesan tes Duolingo dengan layanan koreksi khusus kami. Dapatkan panduan dan dukungan pribadi untuk memaksimalkan skor Anda. Ambil langkah pertama sekarang!",
+      "keywords": "Layanan Koreksi untuk Duolingo Test, Layanan Koreksi AI untuk Duolingo Test"
+    },
+    "h1": "Temukan Layanan Koreksi AI Terbaik untuk Tes Duolingo",
+    "desc": "Tingkatkan esai Anda dengan layanan koreksi 'AI + Guru' kami. Dapatkan umpan balik terperinci berdasarkan standar penilaian resmi dengan cepat setelah pengiriman.",
+    "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
+    "useralt": "Ikon Pengguna",
+    "white_arrow_right": "panah_putih_kanan",
+    "yellow_arrow_right": "panah_kuning_kanan",
+    "learners_have": "{number} pelajar telah meningkatkan tulisan mereka dengan layanan koreksi kami.",
+    "Review_Now": "Tinjau Sekarang",
+    "Correct_Now": "Benar Sekarang",
+    "Get_Scored_Now": "Dapatkan Skor Sekarang",
+    "Enhance_Now": "Tingkatkan Sekarang",
+    "Begin_Polishing": "Mulai Memoles",
+    "h2_1": {
+      "h2": "Permintaan untuk koreksi",
+      "right_desc": "Pada halaman latihan Berbicara dan Menulis, Anda dapat mengajukan layanan koreksi secara langsung."
+    },
+    "h2_2": {
+      "h2": "Penilaian Komprehensif",
+      "right_desc": "Mengikuti persyaratan resmi Duolingo English Test untuk secara akurat menangkap keterampilan menulis dan memberikan hasil penilaian yang komprehensif."
+    },
+    "h2_3": {
+      "h2": "Koreksi Penulisan",
+      "right_desc": "Segera temukan dan pahami kesalahan dalam kosakata dan tata bahasa untuk meningkatkan keterampilan menulis Anda."
+    },
+    "h2_4": {
+      "h2": "Panduan Guru",
+      "right_desc": "Tingkatkan tulisan Anda dengan analisis ahli yang disesuaikan dengan DET kriteria, mengidentifikasi area untuk peningkatan guna mengangkat karya Anda."
+    },
+    "h2_5": {
+      "h2": "Pemolesan Teks Asli",
+      "right_desc": "Tingkatkan setiap kata dan kalimat; perhalus struktur dan gaya untuk komposisi yang istimewa dan bernilai tinggi."
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "Duolingo English Test Kursus Online | DET Latihan",
+      "description": "Jelajahi Duolingo English Test kursus kami secara online di DET Practice. Persiapkan diri Anda secara efektif dengan sumber daya yang komprehensif dan bimbingan dari para ahli. Daftar sekarang!"
+    },
+    "article1": {
+      "title": "Fitur Utama dari DET Keunggulan Ujian Berbicara:",
+      "list": [
+        {
+          "content": "• Penjelajahan mendalam dari semua jenis tugas berbicara DET"
+        },
+        {
+          "content": "• Strategi praktis untuk mendekati setiap tugas berbicara"
+        },
+        {
+          "content": "• Latihan interaktif untuk meningkatkan kejernihan, kelancaran, dan kepercayaan diri berbicara"
+        },
+        {
+          "content": "• Bimbingan ahli tentang pengucapan, nada, dan kinerja secara keseluruhan"
+        },
+        {
+          "content": "• Contoh percakapan nyata dan analisis yang menunjukkan strategi sukses"
+        },
+        {
+          "content": "• Jawaban demo audio untuk memberikan contoh yang jelas tentang tanggapan yang efektif"
+        },
+        {
+          "content": "• Pendekatan pembelajaran yang dipersonalisasi untuk berbagai tingkat kemahiran"
+        },
+        {
+          "content": "• Fokus pada kosakata dan tata bahasa esensial untuk komunikasi yang efektif"
+        },
+        {
+          "content": "• Diperbarui untuk memasukkan perubahan terbaru dalam format berbicara DET"
+        }
+      ]
+    },
+    "article2": {
+      "title": "Fitur Utama dari DET Keunggulan Ujian Menulis:",
+      "list": [
+        {
+          "content": "• Cakupan menyeluruh dari DET tugas menulis dengan analisis dan contoh-contoh"
+        },
+        {
+          "content": "• Panduan langkah demi langkah untuk merencanakan dan menulis esai yang luar biasa"
+        },
+        {
+          "content": "• Latihan yang ditargetkan untuk mengasah keterampilan menulis DET-spesifik"
+        },
+        {
+          "content": "• Tips ahli untuk meningkatkan kejelasan, koherensi, dan kecanggihan"
+        },
+        {
+          "content": "• Contoh esai beranotasi yang menunjukkan strategi efektif dan kesalahan umum"
+        },
+        {
+          "content": "• Jalur pembelajaran yang dapat disesuaikan untuk berbagai tingkat kemahiran"
+        },
+        {
+          "content": "• Penekanan pada tata bahasa dan kosa kata penting untuk DET keberhasilan"
+        },
+        {
+          "content": "• Diperbarui untuk mencerminkan tren format penulisan DET terbaru"
+        }
+      ]
+    },
+    "contaceUsList": [
+      {
+        "font": "Pilih Panduan Anda",
+        "tip": "Pilih Panduan Berbicara atau Menulis untuk persiapan ujian yang terarah.",
+        "btn": "Beli Panduan Berbicara",
+        "btn1": "Beli Panduan Menulis"
+      },
+      {
+        "font": "Unduhan Instan",
+        "tip": "Dapatkan akses ke panduan segera setelah pembelian.",
+        "btn": "Unduh Panduan Berbicara",
+        "btn1": "Unduh Panduan Menulis"
+      },
+      {
+        "font": "Contoh Audio Berbicara",
+        "tip": "Jelajahi jawaban demo audio berbicara tambahan.",
+        "btn1": "Akses Contoh Audio"
+      }
+    ],
+    "pagefont": {
+      "h1": "DET Keunggulan Ujian Lisan: Panduan Komprehensif",
+      "do": "$",
+      "Buy_Now": "Beli Sekarang",
+      "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
+      "white_arrow_right": "Panah Putih Kanan",
+      "Double_Right_Arrow": "Panah Kanan Ganda",
+      "DET_Writing": "DET Menulis Ujian Keunggulan: Panduan Komprehensif",
+      "How_to": "Cara mendapatkan panduan?",
+      "spa": "Audio latihan berbicara",
+      "tips": "Terima kasih atas minat Anda pada Panduan Berbicara/Menulis kami! Harap dicatat bahwa ini adalah produk virtual. Setelah dibeli dan diunduh, pengiriman produk dianggap selesai, dan umumnya tidak dapat dikembalikan. Harap konfirmasi sebelum melakukan pembelian.",
+      "orange_title": "Pendidik Bahasa Elite",
+      "team_desc": "Tim pengajar bahasa kami yang terhormat, yang memiliki kualifikasi terkemuka seperti TESOL dan Sertifikat mengajar lainnya, membawa banyak pengalaman dalam mempersiapkan siswa untuk tes bahasa Inggris utama seperti TOEFL, IELTS, dan Duolingo English Test (DET). Dikenal karena keterampilan bahasa mereka yang mengesankan, pendekatan pengajaran yang dipersonalisasi, dan metode inovatif, mereka berkomitmen untuk membantu setiap siswa mencapai potensi tertinggi mereka dalam kemahiran berbahasa Inggris.",
+      "Elite_Language_Educators": "Pendidik Bahasa Elit"
+    }
+  },
+  "forget": {
+    "Please_enter": "Silakan masukkan alamat email Anda",
+    "Invalid_email": "Sure, here is the translated text:\n\nEmail tidak valid.",
+    "t1": "Lupa Kata Sandi?",
+    "t2": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
+    "Enter_your_email": "Masukkan email Anda",
+    "desc": "Kami akan mengirimkan email kepada Anda dengan kode reset",
+    "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
+    "Send_reset_code": "Kirim kode reset",
+    "Back_to_login": "Kembali ke login"
+  },
+  "listen": {
+    "Speaking_practice_audio": "Audio latihan berbicara",
+    "alt": "DET Praktek:Platform Praktek terbaik Duolingo English Test"
+  },
+  "login": {
+    "peyea": "Silakan masukkan alamat email Anda.",
+    "ie": "Email tidak valid.",
+    "peyp": "Silakan masukkan kata sandi Anda.",
+    "Welcome_back": "Selamat datang kembali",
+    "h1": "Masuk untuk berlatih",
+    "Login_with_Google": "Masuk dengan Google",
+    "Or_continue_with": "Atau lanjutkan dengan",
+    "Email_address": "Alamat email",
+    "Password": "Kata Sandi",
+    "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
+    "Login": "Masuk",
+    "Forgot_password": "Lupa kata sandi?",
+    "Dont_have_an_account": "Tidak punya akun?",
+    "Sign_up_here": "Daftar di sini"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "Duolingo Ujian Percobaan: Siapkan Diri untuk Ujian Bahasa Anda | DET Latihan",
+      "description": "Rasakan Tes Tiruan Duolingo yang realistis dengan pertanyaan adaptif dan penilaian AI. Persiapkan secara efektif dengan ujian penuh dari DET Practice untuk Duolingo English Test!",
+      "keywords": "Tes Mock Duolingo, DET Duolingo, DET Tes, Duolingo DET, Tes Duolingo, Tes Duolingo Online"
+    },
+    "h1": "Duolingo English Test 1:1 Ujian Mock",
+    "desc": "Benamkan diri Anda dalam pengalaman ujian yang benar-benar nyata dengan ujian tiruan skala penuh kami. Rasakan proses pengujian yang sebenarnya sebelum ujian yang sesungguhnya dan segera menerima skor serta laporan diagnostik terperinci untuk mengidentifikasi area yang perlu ditingkatkan.",
+    "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
+    "mock_user_icon": "Ikon Pengguna Tiruan",
+    "white_arrow_right": "Panah Putih Kanan",
+    "orange_arrow_right": "Panah Oranye Kanan",
+    "learners_have": "{number} pelajar telah mengikuti ujian tiruan kami untuk penilaian diri dan latihan.",
+    "Mock_Now": "Tiruan Sekarang",
+    "Full_scale": "Duolingo 1:1 Ujian Mock Skala Penuh",
+    "article1": {
+      "h2": "Kecerdasan Algoritma",
+      "right_desc": "Alami kondisi ujian yang sesungguhnya dengan algoritma pengujian adaptif kami yang canggih. Cepat kuasai berbagai jenis pertanyaan dan dapatkan penilaian yang tepat."
+    },
+    "article2": {
+      "h2": "Penilaian Tepat & Laporan Mendalam",
+      "right_desc": "Laporan ujian tiruan terperinci memberikan diagnosis dan analisis yang tepat mengenai kekuatan dan kelemahan saat ini, secara otomatis memperbarui rencana belajar untuk meningkatkan efisiensi persiapan ujian."
+    },
+    "article3": {
+      "h2": "Pengalaman Ujian yang Nyaman",
+      "right_desc": "Nikmati fleksibilitas saat mengambil ujian sesuai jadwal Anda, tanpa perlu janji temu. Mulai ujian uji coba Anda segera setelah pembelian dan memiliki kebebasan untuk jeda atau melanjutkan kapan saja."
+    },
+    "article4": {
+      "h2": "Pelaporan Skor Cepat",
+      "right_desc": "Dapatkan hasil ujian percobaan Anda dalam waktu 30 menit, mempercepat tinjauan kemajuan Anda."
+    }
+  },
+  "practice": {
+    "seometa": {
+      "title": "Duolingo Tes Praktik Bahasa Inggris Online, DET Skor Tes Praktik",
+      "description": "Persiapkan untuk tes bahasa Inggris Duolingo dengan DET tes latihan online. Tingkatkan skor tes bahasa Inggris Duolingo Anda dengan sesi latihan yang efektif. Mulai sekarang!",
+      "keywords": "Duolingo English Test Latihan, Duolingo Ujian Latihan Bahasa Inggris, Duolingo Tes Latihan Bahasa Inggris, Duolingo Latihan Tes Online, Duolingo Latihan Ujian, Duolingo Tes Latihan, Duolingo Latihan, Tes Latihan Det, Duolingo English Test Skor"
+    },
+    "h1": "Duolingo Bank Soal Latihan",
+    "desc": "Dapatkan akses ke koleksi soal tes yang luas, dilengkapi dengan analisis jawaban, template, evaluasi berbicara didorong oleh AI, dan perencanaan cerdas. Percepat peningkatan skor Anda secara efisien dan terjangkau dengan pendekatan bertenaga AI kami.",
+    "alt": "DET Latihan:Yang terbaik Duolingo English Test Platform latihan",
+    "altbanner": "Duolingo Bank Soal Latihan",
+    "bank_user_icon": "Ikon Pengguna Bank",
+    "white_arrow_right": "Panah Putih Kanan",
+    "blue_arrow_right": "Panah Biru Kanan",
+    "learners_have": "{number} pelajar telah menggunakan bank soal kami untuk persiapan DET.",
+    "spn": "Mulai Berlatih Sekarang",
+    "article1": {
+      "h2": "Perpustakaan Pertanyaan Ekstensif",
+      "right_desc": "Jelajahi perpustakaan kami yang luas dengan lebih dari 10.000 pertanyaan dalam berbagai jenis ujian, yang terus diperbarui untuk menjaga latihan Anda tetap terkini. Bank soal kami dirancang untuk secara sistematis memperkuat keterampilan Anda dalam menghadapi berbagai format pertanyaan.",
+      "btn": "Menyelami Latihan"
+    },
+    "article2": {
+      "h2": "Rekomendasi Cerdas",
+      "right_desc": "Model Al akan mempertimbangkan tingkat penguasaan setiap jenis pertanyaan, kesulitan, target skor, bobot pertanyaan, kebaruan pertanyaan, frekuensi tes terbaru, waktu persiapan dan efisiensi penilaian, dll. untuk merekomendasikan pertanyaan secara akurat guna membantu Anda mempersiapkan diri untuk tes dengan efisien.",
+      "btn": "Mulai Perjalanan Studi Pintar"
+    },
+    "article3": {
+      "h2": "Evaluasi Berbicara AI",
+      "right_desc": "Tingkatkan kemampuan berbicara Anda dengan evaluasi berbicara yang didukung oleh AI kami. Kirimkan jawaban Anda untuk pertanyaan bahasa lisan dan segera dapatkan analisis mendetail tentang keterampilan berbicara Anda, membantu Anda meningkatkan dengan presisi dan kecepatan.",
+      "btn": "Mulai Evaluasi Anda"
+    },
+    "article4": {
+      "h2": "Analisis Jawaban",
+      "right_desc": "Jelajahi penjelasan jawaban komprehensif yang memperdalam pemahaman Anda tentang konsep penting dan teknik pemecahan masalah. Analisis mendetail kami tidak hanya membimbing Anda menuju jawaban yang benar—mereka juga memperluas pengetahuan Anda dan meningkatkan efisiensi belajar Anda.",
+      "btn": "Jelajahi Wawasan Jawaban"
+    }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Kebijakan Privasi: Menjaga Data Anda Aman | DET Practice",
+      "description": "Temukan Kebijakan Privasi DET Practice: Pelajari bagaimana kami menangani data, melindungi informasi, dan memastikan privasi Anda. Baca lebih lanjut tentang kebijakan kami sekarang.",
+      "keywords": "DET Duolingo, DET Tes, Duolingo DET, Duolingo Tes, Duolingo Tes Online, Duolingo Tes Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kecakapan"
+    },
+    "h1": "Kebijakan Privasi",
+    "q1": {
+      "title": "Terakhir diperbarui: 2023-11-20",
+      "a1": "DET Pratice (\"kami\" atau \"milik kami\") mengoperasikan situs web DET Pratice (the \"Service\").",
+      "a2": "Halaman ini memberitahu Anda tentang kebijakan kami mengenai pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi ketika Anda menggunakan Layanan kami.",
+      "a3": "Kami tidak akan menggunakan atau membagikan informasi Anda dengan siapa pun kecuali seperti yang dijelaskan dalam Kebijakan Privasi ini.",
+      "a4": "Kami menggunakan Informasi Pribadi Anda untuk menyediakan dan meningkatkan Layanan. Dengan menggunakan Layanan, Anda setuju terhadap pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Kecuali didefinisikan lain dalam Kebijakan Privasi ini, istilah yang digunakan dalam Kebijakan Privasi ini memiliki arti yang sama seperti yang ada di Syarat dan Ketentuan kami, yang dapat diakses di",
+      "a5": "Pengumpulan dan Penggunaan Informasi",
+      "a6": "Saat menggunakan Layanan kami, kami mungkin meminta Anda untuk memberikan informasi pribadi tertentu yang dapat digunakan untuk menghubungi atau mengidentifikasi Anda. Informasi pribadi (“Informasi Pribadi”) mungkin termasuk, tetapi tidak terbatas pada:",
+      "a7": "• Nama",
+      "a8": "• Alamat email"
+    },
+    "q2": {
+      "title": "Data Log",
+      "a1": "Kami mengumpulkan informasi yang dikirimkan browser Anda setiap kali Anda mengunjungi Layanan kami (“Data Log”). Data Log ini dapat mencakup informasi seperti alamat Protokol Internet (“IP”) komputer Anda, jenis browser, versi browser, halaman-halaman Layanan kami yang Anda kunjungi, waktu dan tanggal kunjungan Anda, waktu yang dihabiskan di halaman-halaman tersebut, dan statistik lainnya."
+    },
+    "q3": {
+      "title": "Kuki",
+      "a1": "Cookies adalah file dengan sejumlah kecil data, yang mungkin termasuk pengenal unik anonim. Cookies dikirim ke browser Anda dari sebuah situs web dan disimpan di hard drive komputer Anda.",
+      "a2": "Kami menggunakan “cookies” untuk mengumpulkan informasi. Anda dapat mengatur browser Anda untuk menolak semua cookies atau untuk memberi tahu saat cookie sedang dikirim. Namun, jika Anda tidak menerima cookies, Anda mungkin tidak dapat menggunakan beberapa bagian dari Layanan kami."
+    },
+    "q4": {
+      "title": "Penyedia Layanan",
+      "a1": "Kami dapat mempekerjakan perusahaan dan individu pihak ketiga untuk memfasilitasi Layanan kami, untuk menyediakan Layanan atas nama kami, untuk melakukan layanan terkait Layanan, atau untuk membantu kami dalam menganalisis bagaimana Layanan kami digunakan.",
+      "a2": "Pihak ketiga ini memiliki akses ke Informasi Pribadi Anda hanya untuk melakukan tugas-tugas ini atas nama kami dan berkewajiban untuk tidak mengungkapkan atau menggunakannya untuk tujuan lain."
+    },
+    "q5": {
+      "title": "Keamanan",
+      "a1": "Keamanan Informasi Pribadi Anda penting bagi kami, namun ingatlah bahwa tidak ada metode transmisi melalui Internet, atau metode penyimpanan elektronik yang 100% aman. Meskipun kami berusaha untuk menggunakan cara yang dapat diterima secara komersial untuk melindungi Informasi Pribadi Anda, kami tidak dapat menjamin keamanannya secara mutlak."
+    },
+    "q6": {
+      "title": "Informasi Pembayaran & Keamanan",
+      "a1": "Untuk mengumpulkan pembayaran atas nama Anda dari pelanggan Anda, dan memberikan pembayaran kepada Anda, kami, dengan menggunakan Stripe sebagai pemroses pembayaran pihak ketiga, mengumpulkan informasi pembayaran dari Anda, peserta dan pelanggan Anda, vendor Anda, dan pihak lain yang kami berikan pembayaran atas nama Anda dan dari siapa kami mengumpulkan pembayaran atas nama Anda. Informasi ini digunakan semata-mata untuk mengumpulkan dan memberikan pembayaran terkait Layanan dan hanya disimpan oleh Stripe. Anda harus meninjau syarat layanan dan kebijakan privasi Stripe, yang tersedia di"
+    },
+    "q7": {
+      "title": "Tautan Ke Situs Lain",
+      "a1": "Layanan kami mungkin berisi tautan ke situs lain yang tidak dioperasikan oleh kami. Jika Anda mengklik tautan pihak ketiga, Anda akan diarahkan ke situs pihak ketiga tersebut. Kami sangat menyarankan Anda untuk meninjau Kebijakan Privasi dari setiap situs yang Anda kunjungi.",
+      "a2": "Kami tidak memiliki kendali atas dan tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik situs atau layanan pihak ketiga."
+    }
+  },
+  "register": {
+    "peyea": "Silakan masukkan alamat email Anda.",
+    "Invalid_email": "Sure, here's the translation:\n\nEmail tidak valid.",
+    "Sign_up": "Daftar",
+    "cya": "Buat akun DETPractice gratis Anda",
+    "alt": "DET Praktik:Platform Praktik terbaik Duolingo English Test",
+    "suwg": "Daftar dengan Google",
+    "ocw": "Atau lanjutkan dengan",
+    "Email_address": "Alamat email",
+    "ywr": "Anda akan menerima kode aktivasi Anda melalui email",
+    "cwe": "Lanjutkan dengan email",
+    "ahaa": "Sudah punya akun?",
+    "Login_here": "Masuk di sini"
+  },
+  "register2": {
+    "Sign_up": "Daftar",
+    "cyfda": "Buat akun DETPractice gratis Anda",
+    "Sign_up_with_Google": "Daftar dengan Google",
+    "Or_continue_with": "Atau lanjutkan dengan",
+    "Register_code": "Kode pendaftaran",
+    "Enter_your_code": "Masukkan kode Anda",
+    "Full_Name": "Nama Lengkap",
+    "Password": "Kata Sandi",
+    "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
+    "Create_Account": "Buat Akun",
+    "ahaa": "Sudah punya akun?",
+    "Login_here": "Masuk di sini.",
+    "peyc": "Silakan masukkan kode Anda.",
+    "peyfn": "Silakan masukkan nama lengkap Anda.",
+    "peyp": "Silakan masukkan kata sandi Anda.",
+    "pts": "Kata sandi terlalu pendek."
+  },
+  "resetPassword": {
+    "peuc": "Silakan masukkan kode Anda.",
+    "fp": "Lupa Kata Sandi?",
+    "pete": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
+    "Enter_your_code": "Masukkan kode Anda",
+    "pw": "Harap tunggu selama 120 detik untuk mengatur ulang kode",
+    "alt": "DET Praktek: Platform Praktek terbaik Duolingo English Test",
+    "rpr": "Permintaan Atur Ulang Kata Sandi",
+    "btl": "Kembali ke login"
+  },
+  "resetPasswordStep2": {
+    "peue": "Silakan masukkan alamat email Anda.",
+    "pts": "Kata sandi terlalu pendek.",
+    "pi": "Ketidakkonsistenan kata sandi.",
+    "fp": "Lupa Kata Sandi?",
+    "pete": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
+    "np": "Kata Sandi Baru",
+    "eanp": "Masukkan kata sandi baru",
+    "alt": "DET Latihan: Platform Latihan terbaik Duolingo English Test",
+    "cnp": "Konfirmasi Kata Sandi Baru",
+    "cynp": "Konfirmasikan kata sandi baru Anda",
+    "rmp": "Atur ulang kata sandi saya",
+    "btl": "Kembali ke login"
+  },
+  "tos": {
+    "seometa": {
+      "title": "Ketentuan Layanan | DET Practice",
+      "description": "Jelajahi Syarat Layanan DET Practice yang komprehensif, termasuk Kebijakan Privasi dan Pedoman Penggunaan kami. Pastikan transparansi dan kepatuhan.",
+      "keywords": "DET Duolingo, DET Uji, Duolingo DET, Duolingo Uji, Duolingo Uji Online, Duolingo Tes Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kemahiran"
+    },
+    "title": "Ketentuan Layanan",
+    "q1": {
+      "title": "Terakhir diperbarui: 2023-11-20",
+      "a1": "Silakan baca Syarat Layanan ini (\"Syarat\", \"TOS\") dengan seksama sebelum menggunakan",
+      "a2": "website (disebut “Layanan”) yang dioperasikan oleh DET Practice (“kami”, “kita”, atau “milik kami”).",
+      "a3": "Akses Anda ke dan penggunaan Layanan tergantung pada penerimaan dan kepatuhan Anda terhadap Syarat-Syarat ini. Syarat-Syarat ini berlaku untuk semua pengunjung, pengguna, dan lainnya yang mengakses atau menggunakan Layanan.",
+      "a4": "Dengan mengakses atau menggunakan Layanan, Anda setuju untuk terikat oleh Syarat-Syarat ini. Jika Anda tidak setuju dengan bagian mana pun dari syarat-syarat ini, maka Anda tidak boleh mengakses Layanan."
+    },
+    "q2": {
+      "title": "Akun",
+      "a1": "Ketika Anda membuat akun dengan kami, Anda harus memberikan informasi yang akurat, lengkap, dan terkini setiap saat. Kegagalan untuk melakukannya merupakan pelanggaran terhadap Ketentuan, yang dapat mengakibatkan penghentian segera akun Anda di Layanan kami.",
+      "a2": "Anda bertanggung jawab untuk menjaga keamanan kata sandi yang Anda gunakan untuk mengakses Layanan dan untuk setiap aktivitas atau tindakan di bawah kata sandi Anda, baik kata sandi Anda dengan Layanan kami atau layanan pihak ketiga.",
+      "a3": "Anda setuju untuk tidak mengungkapkan kata sandi Anda kepada pihak ketiga mana pun. Anda harus segera memberi tahu kami setelah mengetahui adanya pelanggaran keamanan atau penggunaan akun Anda yang tidak sah."
+    },
+    "q3": {
+      "title": "Tautan Ke Situs Web Lain",
+      "a1": "Layanan kami mungkin berisi tautan ke situs web atau layanan pihak ketiga yang tidak dimiliki atau dikendalikan oleh DET Practice.",
+      "a2": "DET Practice tidak memiliki kendali atas dan tidak bertanggung jawab atas, konten, kebijakan privasi, atau praktik dari situs web atau layanan pihak ketiga mana pun. Anda selanjutnya mengakui dan setuju bahwa DET Practice tidak akan bertanggung jawab, secara langsung atau tidak langsung, atas kerusakan atau kerugian apa pun yang disebabkan atau diduga disebabkan oleh atau sehubungan dengan penggunaan atau ketergantungan pada konten, barang, atau layanan yang tersedia di atau melalui situs web atau layanan tersebut.",
+      "a3": "Kami sangat menyarankan Anda untuk membaca syarat dan ketentuan serta kebijakan privasi dari situs web atau layanan pihak ketiga yang Anda kunjungi."
+    },
+    "q4": {
+      "title": "Pengakhiran",
+      "a1": "Kami dapat menghentikan atau menangguhkan akun Anda segera, tanpa pemberitahuan sebelumnya atau tanggung jawab, untuk alasan apa pun, termasuk tanpa batasan jika Anda melanggar Ketentuan.",
+      "a2": "Setelah penghentian, hak Anda untuk menggunakan Layanan akan segera berakhir. Jika Anda ingin menghentikan akun Anda, Anda dapat berhenti menggunakan Layanan.",
+      "a3": "Semua ketentuan dalam Persyaratan yang menurut sifatnya harus tetap berlaku setelah penghentian akan tetap berlaku setelah penghentian, termasuk, tanpa batasan, ketentuan kepemilikan, penolakan jaminan, ganti rugi, dan batasan tanggung jawab."
+    },
+    "q5": {
+      "title": "Penafian",
+      "a1": "Penggunaan Layanan ini sepenuhnya merupakan risiko Anda sendiri. Layanan ini disediakan berdasarkan “SEBAGAIMANA ADANYA” dan “SEBAGAIMANA TERSEDIA”. Layanan ini disediakan tanpa jaminan jenis apa pun, baik yang tersurat maupun tersirat, termasuk, tetapi tidak terbatas pada, jaminan tersirat tentang kelayakan jual, kesesuaian untuk tujuan tertentu, tidak melanggar, atau jalannya kinerja."
+    },
+    "q6": {
+      "title": "Hukum yang Mengatur",
+      "a1": "Syarat-syarat ini akan diatur dan ditafsirkan sesuai dengan hukum Inggris tanpa memperhatikan ketentuan konflik hukumnya.",
+      "a2": "Kegagalan kami untuk menegakkan hak atau ketentuan apa pun dari Ketentuan ini tidak akan dianggap sebagai pelepasan hak tersebut. Jika ada ketentuan dari Ketentuan ini yang dianggap tidak sah atau tidak dapat dilaksanakan oleh pengadilan, ketentuan lainnya dari Ketentuan ini akan tetap berlaku. Ketentuan ini merupakan keseluruhan perjanjian antara kami mengenai Layanan kami dan menggantikan serta menggantikan perjanjian sebelumnya yang mungkin kami miliki antara kami mengenai Layanan."
+    },
+    "q7": {
+      "title": "Perubahan",
+      "a1": "Kami berhak, atas kebijaksanaan kami sendiri, untuk mengubah atau mengganti Syarat-Syarat ini kapan saja. Jika suatu revisi bersifat material kami akan mencoba memberikan pemberitahuan setidaknya 15 hari sebelum syarat-syarat baru berlaku. Apa yang merupakan perubahan material akan ditentukan atas kebijaksanaan kami sendiri.",
+      "a2": "Dengan melanjutkan mengakses atau menggunakan Layanan kami setelah revisi tersebut berlaku, Anda setuju untuk terikat oleh syarat-syarat yang direvisi. Jika Anda tidak setuju dengan syarat-syarat baru, harap berhenti menggunakan Layanan."
+    },
+    "q8": {
+      "title": "Hubungi Kami",
+      "a1": "Jika Anda memiliki pertanyaan tentang Syarat-syarat ini, silakan hubungi kami."
+    }
+  },
+  "sitemap": {
+    "seometa": {
+      "title": "DET Peta Situs Praktik: Temukan Semua Ujian & Sumber Daya Praktik",
+      "description": "Jelajahi sitemap lengkap DET Practice untuk mengakses semua tes latihan, sumber belajar, dan panduan. Navigasikan dengan mudah melalui penawaran persiapan tes kami yang komprehensif.",
+      "keywords": "DET Duolingo, DET Ujian, Duolingo DET, Duolingo Ujian, Duolingo Ujian Online, Duolingo Tes Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kemampuan"
+    },
+    "h1": "Peta Situs"
   }
 }

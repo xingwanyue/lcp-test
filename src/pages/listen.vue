@@ -66,7 +66,7 @@ const onAudioEnd = () => {
   <div class="listen-page">
     <div class="listen-head">
       <div class="title">
-        <nuxt-link :to="localePath(`/courses`)" class=""> ＜ Speaking practice audio </nuxt-link>
+        <nuxt-link :to="localePath(`/courses`)" class=""> ＜ {{ $t('listen.Speaking_practice_audio') }} </nuxt-link>
       </div>
       <div>
         <el-radio-group v-model="state.type" size="large" @change="selectChange">
@@ -87,7 +87,7 @@ const onAudioEnd = () => {
           :key="key"
           src="/img/listen/play.svg"
           class="play-img"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
+          :alt="$t('listen.alt')"
           @click="playClick(val)"
         ></el-image>
         <span v-if="state.playData.path === val.path">
@@ -98,14 +98,14 @@ const onAudioEnd = () => {
                 :id="`playing-img${key}`"
                 src="/img/listen/playing.svg"
                 class="playing-img"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
+                :alt="$t('listen.alt')"
               ></el-image>
               <el-image
                 :key="`${key}a`"
                 :id="`playing-img${key}a`"
                 src="/img/listen/playing.svg"
                 class="playing-img"
-                alt="DET Practice:The best Duolingo English Test Practice platform"
+                :alt="$t('listen.alt')"
                 style="margin-left: 2px"
               ></el-image>
             </div>
@@ -116,7 +116,7 @@ const onAudioEnd = () => {
             :id="`playing-img${key}`"
             src="/img/listen/play.svg"
             class="playing-img-play"
-            alt="DET Practice:The best Duolingo English Test Practice platform"
+            :alt="$t('listen.alt')"
             @click="continuePlay"
           ></el-image>
         </span>
@@ -126,7 +126,7 @@ const onAudioEnd = () => {
           :key="key"
           src="/img/listen/pause.svg"
           class="pause-img"
-          alt="DET Practice:The best Duolingo English Test Practice platform"
+          :alt="$t('listen.alt')"
           @click="pauseClick()"
         ></el-image>
       </div>

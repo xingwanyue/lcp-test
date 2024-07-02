@@ -1,0 +1,721 @@
+{
+  "test": "为了测试",
+  "Home": "主页",
+  "Products": "产品",
+  "Learn": "学习",
+  "Pricing": "定价",
+  "Blog": "博客",
+  "header": {
+    "home_logo_title": "DET 练习",
+    "path_practice_title": "Duolingo 英语练习测试在线",
+    "path_correction_title": "AI 校正服务用于 Duolingo 测试",
+    "path_mock_title": "Duolingo 模拟测试",
+    "path_course_title": "Duolingo English Test 在线课程",
+    "commonAlt": "DET 练习：最好的 Duolingo English Test 练习 平台",
+    "Get_started": "开始使用",
+    "Try_for_free": "免费试用",
+    "prod1": {
+      "title": "Duolingo English Test 练习",
+      "alt": "Duolingo English Test 练习",
+      "font": "凭借我们广泛的问题库实现卓越：超过10,000个问题，定期更新，以及智能性能跟踪！"
+    },
+    "prod2": {
+      "title": "Duolingo English Test 校正服务",
+      "alt": "Duolingo English Test 校正服务",
+      "font": "利用人工智能教师反馈完善您的文章：精准修改、即时报告、两周内提高成绩！"
+    },
+    "prod3": {
+      "title": "Duolingo English Test 课程",
+      "alt": "Duolingo English Test 课程",
+      "font": "使用真实的全长模拟考试征服你的考试：深入分析和即时结果，随时随地可用。"
+    },
+    "prod4": {
+      "title": "Duolingo English Test 模考",
+      "alt": "Duolingo English Test 模考",
+      "font": "解锁 DET 成功：全面掌握、经过验证的技巧和最新见解，自信地说写出色！"
+    }
+  },
+  "footer": {
+    "inc": "我们的产品与Duolingo公司没有关系",
+    "ProductsTitle": "产品",
+    "LearnTitle": "学习",
+    "BlogTitle": "博客",
+    "CompanyTitle": "公司",
+    "Products": ["DET 练习", "AI修正服务", "DET 模拟", "Duolingo English Test 课程"],
+    "Company": ["关于我们", "联系我们", "条款和条件", "隐私政策", "网站地图"],
+    "show_more": "显示更多",
+    "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
+    "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
+    "newAlt": "DET 练习",
+    "close_icon_alt": "交叉标志"
+  },
+  "index": {
+    "seometa": {
+      "title": "DET 练习 - Duolingo 英语语言测试在线，英语水平考试",
+      "description": "在线准备Duolingo英语水平测试，使用DET实践。访问模拟考试、纠正服务和综合课程。今天就开始练习吧！",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练考试, Duolingo 英语熟练考试, Duolingo 英语熟练考试, 英语熟练测试 Duolingo, Duolingo 熟练测试, Duolingo 英语熟练测试, Duolingo English Test, 英语 Duolingo 测试"
+    },
+    "bigtitle1": "高分者数量（130+ 分）：10000+",
+    "bigtitle2": "超过850条评价的卓越4.8/5评分！",
+    "power_by": "由AI提供支持",
+    "h1Mobile": "轻松获得更高分数<br />在 Duolingo <br />英语测试中 使用 <span class=\"seo_hack\">DET 练习</span>",
+    "h1PC": "轻松拿到更高分数 <br />Duolingo English Test 通过 <span class=\"seo_hack\">DET 练习</span>",
+    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "Start_free_with_Google": "开始免费使用Google",
+    "Start_free_with_email": "以电子邮件免费开始",
+    "Start_for_free": "免费开始",
+    "trustedByWorldwide": "受到全球{path}学生的信任，1个月Duolingo English Test成绩提升。",
+    "The_Best_Platform": "提升您的 Duolingo English Test 分数的最佳平台",
+    "Leverage_Our": "利用我们全面的资源快速提升分数",
+    "article1": {
+      "title": "Duolingo English Test 练习",
+      "tips1": "拥有超过{number}个练习问题，我们不断扩展的问题库定期更新以追求卓越。",
+      "tips2": "涵盖所有考试类型的全面覆盖，并对每个问题进行详细解释。",
+      "tips3": "深入的答案、智能分析和评分，以实现对您表现的持续监控。",
+      "btn_font": "发现更多",
+      "btn_img_alt": "黄色箭头右"
+    },
+    "article2": {
+      "title": "AI驱动的作文纠正服务",
+      "tips1": "通过我们“AI + 老师”协作审查，从精确的文章修改中受益。",
+      "tips2": "只需提交您的文章，即可迅速收到包含详细分数的综合报告。",
+      "tips3": "在短短两周内提高您的写作成绩。",
+      "btn_font": "了解更多",
+      "btn_img_alt": "黄色箭头右"
+    },
+    "article3": {
+      "title": "Duolingo English Test 模拟",
+      "tips1": "在实际考试环境中模拟，以便提前熟悉测试过程和内容。",
+      "tips2": "接收深入的模拟测试报告，以精确分析你的优势和弱点。",
+      "tips3": "在您方便的时候进行在线模拟考试，并在30分钟内提供快速评分。",
+      "btn_font": "了解更多",
+      "btn_img_alt": "黄色箭头右"
+    },
+    "article4": {
+      "title": "Duolingo English Test 课程",
+      "tips1": "全面掌握。通过我们的详细指南，深入了解 DET 口语和写作部分，确保您自信地应对考试的每一部分。",
+      "tips2": "向ESL专家学习。利用行之有效的策略提升你的口语和写作能力，受益于个性化的学习路径，并进行有效的自我评估。",
+      "tips3": "保持知情和领先。了解最新的DET格式和趋势，确保你的准备与当前的考试标准完全同步。",
+      "btn_font": "探索更多",
+      "btn_img_alt": "黄箭头右"
+    },
+    "thousand": "k",
+    "Users": "用户",
+    "Questions": "问题",
+    "Mock_Exam": "模拟考试",
+    "Join_Them": "加入他们"
+  },
+  "slogen": {
+    "title": "<div class='font1'>开启你的高分之路</div><div class='font2'>Duolingo English Test !</div>",
+    "Start_free_with_Google": "开始免费使用 Google",
+    "Start_free_with_email": "用电子邮件免费开始",
+    "Start_for_free": "免费开始"
+  },
+  "subscribe": {
+    "emailErrMessage1": "电子邮件必须是有效的电子邮件地址。",
+    "emailErrMessage2": "请输入您的电子邮箱地址。",
+    "Subscribe_successfully": "订阅成功",
+    "Subscribe!": "订阅！",
+    "Subscribe_for": "订阅以获取最新的见解和策略，提升您的成绩。",
+    "Email": "电子邮件",
+    "Subscribe": "订阅"
+  },
+  "learn": {
+    "seometa": {
+      "title": "<Translate>考试准备技巧 Duolingo English Test | DET 练习",
+      "description": "发现有效的考试准备技巧，适用于Duolingo English Test。通过DET Practice，及时获取有关提高考试表现的最新见解。",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练考试"
+    },
+    "h1": "我们将及时更新考试准备提示Duolingo English Test",
+    "title2": "最新更新截至{time}",
+    "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
+    "down_icon": "向下图标",
+    "Show_more": "显示更多"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "Duolingo English Test 准备定价 | DET 实践",
+      "description": "选择合适的计划，以实惠的价格为您的 Duolingo English Test 准备。提供个性化练习、专家评审和全尺寸模拟考试。",
+      "keywords": "keyDET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练度考试words"
+    },
+    "pagefont": {
+      "h1": "计划和定价",
+      "h4": "立即采取行动以节省开支！以今天的低价获取您的会员资格——在成本上升之前不要错过。",
+      "switch1": "会员资格",
+      "switch2": "更多服务",
+      "Most_Popular_Choice": "最受欢迎的选择",
+      "off": "{off}% 折扣",
+      "do": "$",
+      "mp": "会员价",
+      "Buy_Now": "立即购买",
+      "tf": "免费试用",
+      "mpc": "最受欢迎的选择",
+      "your_price": "您的价格",
+      "Non_member": "非会员",
+      "purchased": "购买",
+      "Secure_Payment": "安全支付：",
+      "faq": "常见问题",
+      "Contact_Us": "联系我们",
+      "alt": "DET 练习：The best Duolingo English Test 练习平台",
+      "check_icon": "检查",
+      "tip_icon": "提示",
+      "green_check": "绿色检查",
+      "arrow_down": "向下箭头"
+    },
+    "aqList": [
+      {
+        "name": "DETPractice的计划和定价如何运作？",
+        "content": "我们为用户提供透明的计划和定价，没有隐藏费用。此外，我们还提供附加订阅套餐，以便您可以根据自己的需要选择服务。"
+      },
+      {
+        "name": "是否有免费试用？",
+        "content": "是的！你可以免费查看20个问题。帮助你在购买更多服务之前了解我们。"
+      },
+      {
+        "name": "你们提供任何折扣吗？",
+        "content": "是的！我们为每项服务提供量身定制的折扣。然而，当您选择30天服务时，您将获得比其他服务更大的折扣。有关更多信息，请参见上面的价格详情。"
+      },
+      {
+        "name": "我的付款成功了，但升级失败。",
+        "content": "请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。这是解决您问题的最简单和最快的方法。"
+      },
+      {
+        "name": "我可以以后更改我的计划吗？",
+        "content": "感谢您购买该服务！请注意，这是一个虚拟产品。购买后，产品交付即视为完成，通常无法退款。请在购买前仔细检查。"
+      },
+      {
+        "name": "我应将反馈发送到哪里？",
+        "content": "您可以通过右下角的支持聊天发送反馈，或通过<span class='email_address'>support{'@'}detpractice.com</span>通过电子邮件联系我们。或者，您可以直接在“联系我们”部分留言。"
+      },
+      {
+        "name": "您的退款政策是什么？",
+        "content1": "1. 免费账户 <br>使用完全免费，因此没有退款问题。",
+        "content2": "<br>2. 订阅计划 <br>用户可以在DET Practice未能提供相应服务，导致用户无法使用，或订阅尚未生效的情况下请求退款。对于已激活的订阅和服务，购买后将不予退款。",
+        "content3": "<br>3. 口语/写作指南 <br>口语/写作指南被视为数字产品。一旦购买并下载，产品交付即视为完成，通常不予退款。请在购买前仔细阅读购买信息。",
+        "content4": "<br><br>重要提示：<br>所有退款请求必须通过客户服务处理，并提供相关的使用记录以供验证。<br>为防止欺诈性退款，每个用户帐户限制一个退款请求。多个请求将不予处理。<br>如果您有任何特殊情况或独特情形，请联系我们，我们将与您合作找到解决方案。"
+      }
+    ],
+    "qlList": {
+      "day0": { "name1Desc": "<span class='bigger'>20</span> 练习题" },
+      "day7": {
+        "name1Desc": "<span class='bigger'>无限制</span> 练习课程",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> 修正服务",
+        "name2Tips": "口语和写作问题",
+        "name4Desc": "<span class='bigger'>{examNum}</span> 模拟考试"
+      },
+      "day15": {
+        "name1Desc": "<span class='bigger'>不限</span> 用于练习课程",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> 更正服务",
+        "name2Tips": "口语和写作问题",
+        "name4Desc": "<span class='bigger'>{examNum}</span> 模拟考试"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>无限</span>的练习课程",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> 修正服务",
+        "name2Tips": "对于口语和写作问题",
+        "name4Desc": "<span class='bigger'>{examNum}</span> 模拟考试"
+      }
+    },
+    "membershipUnchanging": [
+      "访问所有练习题",
+      "浏览高分演示答案",
+      "深入问题分析",
+      "高频考试词汇书",
+      "智能题目选择的定制学习计划",
+      "AI驱动的口语评估"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "在线客服",
+        "tip": "周一至周五，10:00 - 19:00",
+        "btn": "立即在线聊天"
+      },
+      "type2": { "font": "给我们发电子邮件", "tip": "在1个工作日内收到回复。" },
+      "type3": {
+        "font": "留言",
+        "tip": "我们将在一个工作日内回复您。",
+        "btn": "现在留言"
+      }
+    }
+  },
+  "blog": {
+    "seometa": {
+      "title": "DET 实践博客 - Duolingo English Test 提示和技巧",
+      "description": "及时了解DET Practice博客上的基本Duolingo English Test提示和技巧。发现专家建议和策略，以在测试准备中脱颖而出。"
+    },
+    "h1": "DET 实践博客",
+    "alt": "DET 练习：最好的 Duolingo English Test 练习平台"
+  },
+  "embark": {
+    "font1": "开始您的高分之旅",
+    "font2": "Duolingo English Test ！",
+    "Start_Now": "立即开始"
+  },
+  "articleDetail": {
+    "Submitted_successfully": "提交成功",
+    "Home": "主页",
+    "Learn": "学习",
+    "Blog": "博客",
+    "Related_Articles": "相关文章",
+    "Thanks_for_voting": "感谢投票！",
+    "Rate_this_article": "为此文章评分"
+  },
+  "easyexam": { "snfeep": "现在开始轻松备考。", "Start_Now": "立即开始" },
+  "highscorewriting": {
+    "font1": "加速您的路径到",
+    "font2": "高分写作大师。",
+    "Start_Now": "立即开始"
+  },
+  "path": { "seometa": { "title": "DET 实践博客", "description": "DET 实践博客" } },
+  "aboutUs": {
+    "seometa": {
+      "title": "关于 DET 练习： Duolingo English Test 练习平台",
+      "description": "DET Practice，领先的Duolingo English Test准备平台。探索我们广泛的题库、模拟考试、批改服务和DET课程。"
+    },
+    "title": "关于 DET Pratice",
+    "oelet": "我们尊敬的语言教育团队",
+    "oeletdesc": "我们语言教育服务的核心是一支敬业、高素质、经验丰富的教育团队，每位成员在语言学习的最前沿带来了他们独特的专业知识和激情。我们的团队由精英专业人士组成，他们不仅精通英语，还擅长准备学生参加托福、雅思和Duolingo English Test (DET)等主要英语水平测试。我们的教育者拥有如TESOL和剑桥英语教师培训证书等著名认证，展示了他们提供高质量语言教育的承诺。他们拥有令人印象深刻的语言测试成绩，反映了他们对在这些考试中取得优异成绩所需技能和策略的深刻理解。我们团队的集体经验跨越了若干年，在此期间他们不断提高自身能力，以满足不同的学习需求。他们善于识别学生的个别优缺点，确保个性化的教学方法以最大化学习效果。这种独特的能力使他们能够提供有针对性的指导和反馈，帮助学生突破学习障碍，迅速提高语言能力。我们的教育者不仅是教师，他们还是激发学生信心和热情的导师。他们营造了一个充满活力和互动的学习环境，使语言学习的旅程既愉快又有效。他们的教学方法不断演进，结合创新技术和材料，以跟上语言教育的最新趋势。我们的学生在实现语言目标方面的成功证明了我们团队的专业知识、奉献精神和卓越的教学水平。作为一个整体，他们代表了最佳的语言教育，致力于引导学生实现最高的英语水平。",
+    "p1title": "迈克尔·Z.",
+    "p1author": "导师主管",
+    "p1content1": "作为我们教学团队的领军人物，Michael Z. 体现了语言教学的顶峰。凭借超过十年的丰富教学经验，Mike 拥有我们尊敬的老师的所有资质，包括 TESOL、剑桥英语教师培训证书和其他证书。他卓越的语言能力体现在他令人印象深刻的成绩上：TOEFL 115 分，IELTS 8.5 分，Duolingo English Test 满分 150。Michael 的教学理念结合了我们多元化团队的优势，提供了全面且动态的语言学习方法。他以深刻理解和解决每个学生的独特需求而闻名，营造了一个学生能够茁壮成长并超越目标的学习环境。他的课堂既严格遵守学术标准，又充满互动和趣味性。除了教学，Michael 还在开发前沿课程和培训方法方面发挥了重要作用，确保我们的课程始终站在语言教育的前沿。他对教学卓越的追求和对学生成功的承诺，使他成为我们团队和学生们不可或缺的领导者和导师。",
+    "p2title": "艾伯特·L",
+    "p2author": "课程设计师",
+    "p2content1": "雅思得分8.5，Albert在教授雅思、托福、PTE以及DET方面拥有丰富的经验。他的教学以轻松活泼的氛围而闻名，使学习变得愉快。Albert的教学方法根据每个学生的需求量身定制，使英语水平在短时间内迅速提高。除了是一名优秀的教师外，Albert还是一名才华横溢的课程设计师，他为不同水平和目标的英语学习者创建并开发了各种在线和离线课程。他对各种英语测试的课程标准和评估标准有深刻的理解，并且知道如何设计有效且引人入胜的学习活动和材料，帮助学生掌握考试技能和策略。Albert还与其他教师和专家合作，审查并改进课程的质量和相关性，并获得了学生和同事的积极反馈与认可。Albert热衷于创造创新且个性化的课程，以满足英语学习者多样化的需求和兴趣。",
+    "p3title": "丽塔·T",
+    "p3author": "高级导师",
+    "p3content1": "拥有11年教学经验，Rita是一位经验丰富的Duolingo English Test准备和研究专家。她是ATI认证的高级英语教师，持有TESOL高级英语教师证书和剑桥英语教师培训证书。Rita在托福考试中取得了111分的优异成绩，并在DET中获得了140分。她的教学特点是能够准确分析学生的需求并提供有针对性的指导，帮助他们突破障碍，提高语言技能，以迅速达到预期的分数。此外，Rita是一位充满热情和激情的教师，总能激励和鼓舞学生自信快乐地学习英语。她使用多种互动和有趣的方法，例如游戏、角色扮演、辩论和模拟，使她的课堂既有趣又有效。她还对每个学生提供个性化的反馈和指导，帮助他们改善弱项，克服挑战。Rita的学生喜欢她温暖和支持性的个性，常常称赞她耐心、友好和专业。",
+    "p4title": "多丽丝·W.",
+    "p4author": "导师",
+    "p4content1": "多莉丝，在DET中得分145，在雅思中得分8.0，是一位多才多艺的Duolingo English Test讲师，以其丰富的教学经验而闻名。她擅长帮助各个层次的学生快速克服困难，达到理想的成绩，曾在短短两周内帮助一名学生提高了30分。她的课程以生动的气氛和清晰的逻辑著称，她的教学风格严谨而充满激情和责任感，使她成为众多学生中的最爱。",
+    "p5title": "劳拉·K.",
+    "p5author": "测试研究员",
+    "p5content1": "劳拉在Duolingo培训方面拥有多年的经验，TOEFL110分，DET155分。作为Duolingo问题研究的专家，劳拉擅长教授自适应测试问题和写作。她对DET考试技术和趋势有着深刻的理解，在绩效分析方面表现出色，能够快速识别和提升学生的潜力。"
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "联系我们 | +44 7708 193347 | DET 练习",
+      "description": "联系 DET 专家Duolingo English Test实践和指导练习。使用专业资源和支持准备，以获得最佳结果。",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练度考试"
+    },
+    "checkEmail": "电子邮件必须是有效的电子邮件地址。",
+    "enterName": "请输入您的姓名。",
+    "enterEmail": "请输入您的电子邮件地址。",
+    "entermessage": "请输入您的消息。",
+    "subsuccess": "提交成功",
+    "Contact_Us": "联系我们",
+    "Questions": "问题、错误报告、反馈——我们随时为您提供帮助！",
+    "fill_in": "填写表格",
+    "thank": "感谢您选择联系我们。请填写此联系表格，我们的工作人员会尽快与您联系，以解决您的疑问。",
+    "email": "电子邮件",
+    "Name": "名称",
+    "Email_Address": "电子邮件地址",
+    "Message": "消息",
+    "SUBMIT": "提交"
+  },
+  "cookie": {
+    "seometa": { "title": "Cookie 政策 - DET 实践" },
+    "Cookie_Policy": "Cookie 政策",
+    "Last_updated": "上次更新：",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": "此Cookie政策解释了什么是cookie，我们如何使用它们，以及您在我们网站上有关cookie的选择。",
+    "q1": {
+      "title": "什么是cookies？",
+      "a1": "Cookies是由您访问的网站通过网络浏览器发送的小块文本。Cookie文件存储在您的网络浏览器中，允许该网站或第三方识别您，使您的下次访问更容易，并使该网站对您更有用。",
+      "a2": "Cookies 可以是“持久”或“会话”cookies。持久 cookies 在您离线时仍保留在您的个人电脑或移动设备上，而会话 cookies 一旦您关闭网络浏览器就会被删除。"
+    },
+    "q2": {
+      "title": "我们如何使用cookie",
+      "a1": "当您使用和访问我们的网站时，我们可能会在您的网页浏览器中放置一些cookie文件。",
+      "a2": "我们使用cookies出于以下目的：",
+      "a3": "• 启用网站的某些功能",
+      "a4": "• 提供分析",
+      "a5": "• 存储你的偏好",
+      "a6": "• 为了启用广告投放（这些是来自不同于您正在访问的网站域的cookie - 用于我们的广告和营销工作。）",
+      "a7": "我们在我们的网站上使用会话和持久性cookies，并且我们使用不同类型的cookies来运行该网站：",
+      "a8": "• 必要的cookie：我们可能使用必要的cookie来验证用户身份并防止用户账户的欺诈使用。",
+      "a9": "• 分析/性能Cookies：我们可能会使用分析/性能Cookies来跟踪用户在网站上的活动，并收集访客如何使用网站的数据。这些信息用于改善我们用户的网站体验。",
+      "a10": "• 功能性Cookies：当您再次访问网站时，我们可能会使用功能性Cookies识别您的身份，并为您个性化内容。",
+      "a11": "• 定向cookie：我们可能会使用定向cookie记录您访问网站的情况、您浏览过的页面以及您点击过的链接。"
+    },
+    "q3": {
+      "title": "您对cookies的选择",
+      "a1": "如果您不希望在我们的网站上使用cookie，您必须在浏览器中禁用cookie的使用，然后删除与该网站相关的保存在浏览器中的cookie。您可以随时使用此选项来防止使用cookie。"
+    },
+    "q4": {
+      "title": "联系我们",
+      "a1": "如果您对我们的 Cookie 政策有任何疑问，请联系我们：",
+      "a2": "• 通过电子邮件:",
+      "a3": "• 通过访问我们网站上的此页面："
+    },
+    "q5": {
+      "title": "我们的Cookie政策变更",
+      "a1": "我们可能会不时更新我们的Cookie政策。我们将在此页面上发布新的Cookie政策以通知您任何更改。"
+    }
+  },
+  "correction": {
+    "seometa": {
+      "title": "最佳 AI 校正服务 用于 Duolingo 测试 | DET 练习",
+      "description": "实现Duolingo测试成功与我们的专业校正服务。获得个性化指导和支持以最大化您的分数。立即迈出第一步！",
+      "keywords": "Duolingo测试修正服务，AI修正服务Duolingo测试"
+    },
+    "h1": "发现最优的Duolingo测试AI校正服务",
+    "desc": "利用我们的“AI + Teachers”修改服务提升您的论文。在提交后快速获得基于官方评分标准的详细反馈。",
+    "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
+    "useralt": "用户图标",
+    "white_arrow_right": "白色_箭头_右",
+    "yellow_arrow_right": "黄色箭头右",
+    "learners_have": "{number} 名学习者通过我们的修改服务提高了他们的写作水平。",
+    "Review_Now": "立即评价",
+    "Correct_Now": "立即修正",
+    "Get_Scored_Now": "立即评分",
+    "Enhance_Now": "立即增强",
+    "Begin_Polishing": "开始抛光",
+    "h2_1": {
+      "h2": "更正请求",
+      "right_desc": "在口语和写作练习页面上，您可以直接申请修改服务。"
+    },
+    "h2_2": {
+      "h2": "全面评估",
+      "right_desc": "遵循官方Duolingo English Test要求，准确捕捉写作技巧并提供全面的评估结果。"
+    },
+    "h2_3": {
+      "h2": "写作纠正",
+      "right_desc": "即时发现并理解词汇和语法中的错误，以提高您的写作技能。"
+    },
+    "h2_4": {
+      "h2": "教师指导",
+      "right_desc": "根据DET标准，利用专家分析提升您的写作，精确找出需要改进的领域，以提升您的作品。"
+    },
+    "h2_5": {
+      "h2": "原文润色",
+      "right_desc": "提升每一个词句；精炼结构和风格，打造卓越的高分作文。"
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "Duolingo English Test 课程在线 | DET 练习",
+      "description": "在 DET Practice 在线探索我们Duolingo English Test课程。利用我们的全面资源和专家指导有效准备。立即报名！"
+    },
+    "article1": {
+      "title": "DET 口语考试卓越的关键特征：",
+      "list": [
+        { "content": "• 深入探索所有 DET 口语任务类型" },
+        { "content": "• 处理每个口语任务的实用策略" },
+        { "content": "• 互动练习，以提高语音清晰度、流利度和自信心" },
+        { "content": "• 专家指导发音、语调和整体表现" },
+        { "content": "• 实际语音样本和分析展示成功的策略" },
+        { "content": "• 提供清晰示例的音频演示答案" },
+        { "content": "• 为不同熟练程度量身定制的学习方法" },
+        { "content": "• 专注于基本词汇和语法以实现有效沟通" },
+        { "content": "• 更新以纳入DET演讲格式的最新更改" }
+      ]
+    },
+    "article2": {
+      "title": "写作考试卓越的关键特点：",
+      "list": [
+        { "content": "• 全面的 DET 写作任务覆盖，附有分析和示例" },
+        { "content": "• 规划和撰写杰出论文的分步指南" },
+        { "content": "• 针对性的练习以磨炼DET-特定的写作技巧" },
+        { "content": "• 提高清晰度、连贯性和复杂性的专家建议" },
+        { "content": "• 注释示例作文展示有效策略和常见陷阱" },
+        { "content": "• 为不同熟练程度量身定制的学习路径" },
+        { "content": "• 强调 DET 成功所需的基本语法和词汇" },
+        { "content": "• 更新以反映最新的 DET 写作格式趋势" }
+      ]
+    },
+    "contaceUsList": [
+      {
+        "font": "选择您的指南",
+        "tip": "选择口语或写作指南以进行有针对性的考试准备。",
+        "btn": "购买朗读指南",
+        "btn1": "购买写作指南"
+      },
+      {
+        "font": "即时下载",
+        "tip": "购买后立即获取指南。",
+        "btn": "下载说话指南",
+        "btn1": "下载写作指南"
+      },
+      {
+        "font": "讲话音频样本",
+        "tip": "探索补充的口语音频示范答案。",
+        "btn1": "访问音频样本"
+      }
+    ],
+    "pagefont": {
+      "h1": "DET 口语考试卓越: 综合指南",
+      "do": "$",
+      "Buy_Now": "立即购买",
+      "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
+      "white_arrow_right": "白色箭头右",
+      "Double_Right_Arrow": "双右箭头",
+      "DET_Writing": "DET 写作考试优秀:全面指南",
+      "How_to": "如何获取指南？",
+      "spa": "口语练习音频",
+      "tips": "感谢您对我们的口语/写作指南感兴趣！请注意，这是虚拟产品。购买并下载后，产品交付即视为完成，且一般不可退款。购买前请确认。",
+      "orange_title": "精英语言教育者",
+      "team_desc": "我们杰出的语言教育团队，拥有像TESOL和其他教学证书这样的卓越资质，带来了丰富的经验，为学生准备主要的英语考试，如TOEFL、IELTS和Duolingo English Test (DET)。他们以令人印象深刻的语言技能、个性化的教学方法和创新的方法而闻名，致力于帮助每位学生达到他们在英语水平方面的最高潜力。",
+      "Elite_Language_Educators": "精英语言教育者"
+    }
+  },
+  "forget": {
+    "Please_enter": "请输入您的邮箱地址",
+    "Invalid_email": "电子邮件无效。",
+    "t1": "忘记密码？",
+    "t2": "请输入您用于创建帐户的电子邮件",
+    "Enter_your_email": "输入您的电子邮件",
+    "desc": "我们会向您发送一封包含重置代码的电子邮件",
+    "alt": "DET 练习:最好的 Duolingo English Test 练习平台",
+    "Send_reset_code": "发送重置代码",
+    "Back_to_login": "返回登录"
+  },
+  "listen": {
+    "Speaking_practice_audio": "语音练习音频",
+    "alt": "DET 练习：最好的Duolingo English Test练习平台"
+  },
+  "login": {
+    "peyea": "请输入您的电子邮件地址。",
+    "ie": "电子邮件无效。",
+    "peyp": "请输入您的密码。",
+    "Welcome_back": "欢迎回来",
+    "h1": "登录以练习",
+    "Login_with_Google": "使用 Google 登录",
+    "Or_continue_with": "或者继续使用",
+    "Email_address": "电子邮件地址",
+    "Password": "密码",
+    "alt": "DET 实践：最好的Duolingo English Test实践平台",
+    "Login": "登录",
+    "Forgot_password": "忘记密码？",
+    "Dont_have_an_account": "还没有账号？",
+    "Sign_up_here": "在此注册"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "Duolingo 模拟考试：为您的语言考试做准备 | DET 练习",
+      "description": "体验真实的Duolingo模拟测验，具有自适应问题和AI评分。通过DET Practice的完整考试有效准备Duolingo English Test！",
+      "keywords": "Duolingo 模拟测试, DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试"
+    },
+    "h1": "Duolingo English Test 1:1 模拟考试",
+    "desc": "将自己沉浸在真实的考试体验中，通过我们的全真模拟考试。 在真正的考试之前，先体验实际的测试过程，并快速收到分数和详细的诊断报告，以确定需要改进的领域。",
+    "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
+    "mock_user_icon": "模拟用户图标",
+    "white_arrow_right": "白色箭头右",
+    "orange_arrow_right": "橙色箭头右",
+    "learners_have": "{number} 学员已经参加了我们的模拟考试进行自我评估和练习。",
+    "Mock_Now": "立即模拟",
+    "Full_scale": "Duolingo 1:1 完全模拟考试",
+    "article1": {
+      "h2": "算法智能",
+      "right_desc": "体验真实考试条件，利用我们先进的自适应测试算法。快速掌握各种题型并获得精确的评估。"
+    },
+    "article2": {
+      "h2": "精准评分与深入报告",
+      "right_desc": "详细的模拟考试报告提供了当前优缺点的精确诊断和分析，自动更新学习计划以提高备考效率。"
+    },
+    "article3": {
+      "h2": "便捷的考试体验",
+      "right_desc": "享受灵活的测试安排，无需预约。在购买后立即开始模拟考试，并可以随时暂停或继续。"
+    },
+    "article4": {
+      "h2": "快速评分报告",
+      "right_desc": "在30分钟内获得模拟考试结果，加快您的进度审查。"
+    }
+  },
+  "practice": {
+    "seometa": {
+      "title": "Duolingo 英语练习测试在线，DET 练习测试分数",
+      "description": "为Duolingo英语测试做好准备，在线进行DET练习测试。通过有效的练习课程提高您的Duolingo英语测试成绩。现在开始吧！",
+      "keywords": "Duolingo English Test 练习, Duolingo 练习英语测试, Duolingo 英语练习测试, Duolingo 在线练习测试, Duolingo 测试练习, Duolingo 练习测试, Duolingo 练习, 挪威语练习测试, Duolingo English Test 分数"
+    },
+    "h1": "Duolingo 练习题库",
+    "desc": "获取丰富的测试题库，配有答案解析、模板、AI驱动的口语评估和智能规划。通过我们的AI驱动方法，高效且经济地提升你的分数。",
+    "alt": "DET 练习:最好的 Duolingo English Test 练习平台",
+    "altbanner": "Duolingo 练习题库",
+    "bank_user_icon": "银行用户图标",
+    "white_arrow_right": "白色箭头向右",
+    "blue_arrow_right": "蓝色箭头右",
+    "learners_have": "{number} 名学习者已经使用我们的题库进行 DET 备考。",
+    "spn": "立即开始练习",
+    "article1": {
+      "h2": "广泛的问题库",
+      "right_desc": "探索我们涵盖各种考试类型的庞大题库，包含超过10,000道题目，并不断更新以确保您的练习始终与时俱进。我们的题库旨在系统地增强您在不同题型下的应试能力。",
+      "btn": "投入实践"
+    },
+    "article2": {
+      "h2": "智能推荐",
+      "right_desc": "Al模型将考虑每种题型的掌握程度、难度、目标分数、题目权重、新题的创新性、最近的测试频率、准备时间和评分效率等因素，精准推荐问题，帮助你高效备考。",
+      "btn": "开启智慧学习之旅"
+    },
+    "article3": {
+      "h2": "AI 语言表达评估",
+      "right_desc": "利用我们的AI驱动口语评估提高您的口语熟练度。提交您对口语问题的回答，并立即收到详细的口语技能分析，帮助您精确快速地提高。",
+      "btn": "开始您的评估"
+    },
+    "article4": {
+      "h2": "答案分析",
+      "right_desc": "深入了解全面的答案解释，深化您对基本概念和解决问题技巧的理解。我们的详细分析不仅引导您找到正确答案，还能扩展您的知识，提高您的学习效率。",
+      "btn": "探索答案洞察"
+    }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "隐私政策：保护您的数据安全 | DET Practice",
+      "description": "发现 DET Practice 的隐私政策：了解我们如何处理数据、保护信息并确保您的隐私。立即阅读更多关于我们政策的信息。",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练度考试"
+    },
+    "h1": "隐私政策",
+    "q1": {
+      "title": "上次更新：2023-11-20",
+      "a1": "DET Pratice（“我们”）运营 DET Pratice 网站（“服务”）。",
+      "a2": "本页面告知您在使用我们的服务时有关收集、使用和披露个人信息的政策。",
+      "a3": "我们不会在本隐私政策所述情况之外使用或分享您的信息。",
+      "a4": "我们使用您的个人信息来提供和改进服务。通过使用该服务，您同意根据本政策收集和使用信息。除非本隐私政策中另有定义，本隐私政策中使用的术语与我们的条款和条件中的术语具有相同的含义，可访问",
+      "a5": "信息收集和使用",
+      "a6": "在使用我们的服务时，我们可能会要求您提供某些个人身份信息，这些信息可用于联系或识别您。个人身份信息（“个人信息”）可能包括但不限于：",
+      "a7": "• 姓名",
+      "a8": "• 电子邮件地址"
+    },
+    "q2": {
+      "title": "日志数据",
+      "a1": "我们收集您每次访问我们的服务时，您的浏览器发送的信息（“日志数据”）。这些日志数据可能包括诸如您的计算机的互联网协议（“IP”）地址、浏览器类型、浏览器版本、您访问的服务页面、您访问的时间和日期、在那些页面上停留的时间及其他统计信息。"
+    },
+    "q3": {
+      "title": "Cookies",
+      "a1": "Cookies 是包含少量数据的文件，其中可能包括匿名唯一标识符。Cookies 从网站发送到您的浏览器并存储在您的计算机硬盘驱动器上。",
+      "a2": "我们使用“cookies”来收集信息。您可以指示您的浏览器拒绝所有cookies或在发送cookie时发出提示。不过，如果您不接受cookies，您可能无法使用我们服务的某些部分。"
+    },
+    "q4": {
+      "title": "服务提供商",
+      "a1": "我们可能会雇用第三方公司和个人来协助我们的服务，代表我们提供服务，执行与服务相关的服务，或协助我们分析我们的服务如何被使用。",
+      "a2": "这些第三方仅可访问您的个人信息以代表我们执行这些任务，并有义务不透露或将其用于任何其他目的。"
+    },
+    "q5": {
+      "title": "安全",
+      "a1": "我们非常重视您的个人信息安全，但请记住，通过互联网进行传输或电子存储的方法并非100%安全。尽管我们努力采用商业上可接受的方式来保护您的个人信息，但我们无法保证其绝对安全。"
+    },
+    "q6": {
+      "title": "支付信息和安全性",
+      "a1": "为了代表您从客户处收取付款，并向您提供付款，我们使用Stripe作为第三方支付处理器，收集您的付款信息、您的参与者和客户的信息、您的供应商以及我们代表您提供付款和收取付款的其他方的信息。这些信息仅用于与服务相关的付款收取和提供，并且仅由Stripe存储。您应查看Stripe的服务条款和隐私政策，这些可以在"
+    },
+    "q7": {
+      "title": "链接到其他网站",
+      "a1": "我们的服务可能包含指向其他非我们运营网站的链接。如果您点击第三方链接，您将被引导到该第三方的网站。我们强烈建议您查看每个您访问的网站的隐私政策。",
+      "a2": "我们无法控制并且不对任何第三方网站或服务的内容、隐私政策或做法负责。"
+    }
+  },
+  "register": {
+    "peyea": "请输入您的电子邮件地址。",
+    "Invalid_email": "电子邮件无效。",
+    "Sign_up": "注册",
+    "cya": "创建您的免费 DETPractice 账户",
+    "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
+    "suwg": "使用 Google 注册",
+    "ocw": "或者继续使用",
+    "Email_address": "电子邮件地址",
+    "ywr": "您将通过电子邮件收到您的激活码",
+    "cwe": "继续使用邮箱",
+    "ahaa": "已经有账号了？",
+    "Login_here": "在这里登录"
+  },
+  "register2": {
+    "Sign_up": "注册",
+    "cyfda": "创建您的免费 DETPractice 账户",
+    "Sign_up_with_Google": "使用 Google 注册",
+    "Or_continue_with": "或者继续使用",
+    "Register_code": "注册代码",
+    "Enter_your_code": "输入您的代码",
+    "Full_Name": "全名",
+    "Password": "密码",
+    "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
+    "Create_Account": "创建账户",
+    "ahaa": "已经有账号了？",
+    "Login_here": "在这里登录。",
+    "peyc": "请输入您的代码。",
+    "peyfn": "请输入您的全名。",
+    "peyp": "请输入您的密码。",
+    "pts": "密码太短。"
+  },
+  "resetPassword": {
+    "peuc": "请输入您的代码。",
+    "fp": "忘记密码？",
+    "pete": "请输入创建帐户时使用的电子邮箱地址",
+    "Enter_your_code": "请输入您的代码",
+    "pw": "请等待120秒以重置代码",
+    "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
+    "rpr": "请求重置密码",
+    "btl": "返回登录"
+  },
+  "resetPasswordStep2": {
+    "peue": "请输入您的电子邮件地址。",
+    "pts": "密码太短。",
+    "pi": "密码不一致。",
+    "fp": "忘记密码？",
+    "pete": "请输入用于创建账户的电子邮件",
+    "np": "新密码",
+    "eanp": "输入新密码",
+    "alt": "DET 练习:最好的 Duolingo English Test 练习平台",
+    "cnp": "确认新密码",
+    "cynp": "确认您的新密码",
+    "rmp": "重置我的密码",
+    "btl": "返回登录"
+  },
+  "tos": {
+    "seometa": {
+      "title": "服务条款 | DET 练习",
+      "description": "探索 DET Practice 的全面服务条款，包括我们的隐私政策和使用指南。确保透明度和合规性。",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练考试"
+    },
+    "title": "服务条款",
+    "q1": {
+      "title": "上次更新：2023-11-20",
+      "a1": "请仔细阅读这些服务条款（“条款”、“TOS”）然后再使用该",
+      "a2": "由DET Practice（“我们”或“我们的”）运营的网站（“服务”）。",
+      "a3": "您访问和使用本服务的前提是您接受并遵守这些条款。这些条款适用于所有访问或使用本服务的访客、用户和其他人。",
+      "a4": "通过访问或使用本服务，您同意受这些条款的约束。如果您不同意任何部分的条款，则您可能无法访问本服务。"
+    },
+    "q2": {
+      "title": "帐户",
+      "a1": "当您创建帐户时，您必须随时向我们提供准确、完整和最新的信息。不这样做将构成违反条款，这可能导致您的帐户在我们的服务中被立即终止。",
+      "a2": "您有责任保护用于访问{Service}的密码，以及对在您的密码下进行的任何活动或行为，无论您的密码是用于我们的{Service}还是第三方服务。",
+      "a3": "您同意不向任何第三方透露您的密码。您必须在发现任何安全漏洞或未经授权使用您的帐户时立即通知我们。"
+    },
+    "q3": {
+      "title": "指向其他网站的链接",
+      "a1": "我们的服务可能包含指向第三方网站或服务的链接，这些网站或服务不由DET Practice拥有或控制。",
+      "a2": "DET Practice 不控制也不承担任何第三方网站或服务的内容、隐私政策或实践的责任。您进一步承认并同意，DET Practice 不应对任何因使用或依赖任何此类网站或服务上的内容、商品或服务而导致或声称导致的任何损害或损失直接或间接负责。",
+      "a3": "我们强烈建议您阅读您访问的任何第三方网站或服务的条款和条件以及隐私政策。"
+    },
+    "q4": {
+      "title": "终止",
+      "a1": "我们可能会立即终止或暂停您的账户，恕不另行通知或承担责任，无论出于何种原因，包括但不限于如果您违反了条款。",
+      "a2": "一旦终止，您使用服务的权利将立即停止。如果您希望终止账户，您可以简单地停止使用该服务。",
+      "a3": "所有条款中按其性质应在终止后继续有效的规定将在终止后继续有效，包括但不限于所有权规定、免责声明、赔偿条款和责任限制。"
+    },
+    "q5": {
+      "title": "免责声明",
+      "a1": "您使用本服务的风险由您自己承担。本服务是在“按现状”和“按可用”基础上提供的。服务不提供任何种类的保证，无论是明示或默示的，包括但不限于对适销性、特定用途适用性、未侵权或履约过程的默示保证。"
+    },
+    "q6": {
+      "title": "管辖法律",
+      "a1": "这些条款应受英国法律管辖并依其解释，而不考虑其法律冲突规定。",
+      "a2": "我们未能执行这些条款的任何权利或规定，不会被视为对这些权利的放弃。如果这些条款的任何规定被法院认定为无效或不可执行，这些条款的其余规定将继续有效。这些条款构成我们之间关于服务的完整协议，并取代我们之间之前可能就服务达成的任何协议。"
+    },
+    "q7": {
+      "title": "更改",
+      "a1": "我们保留在我们自行决定的情况下随时修改或替换这些条款的权利。如果修订内容重大，我们将尝试在任何新条款生效之前至少提供15天的通知。重大变更的构成将由我们自行决定。",
+      "a2": "在这些修订生效后继续访问或使用我们的服务，即表示您同意受修订条款的约束。如果您不同意新条款，请停止使用该服务。"
+    },
+    "q8": {
+      "title": "联系我们",
+      "a1": "如果您对这些条款有任何疑问，请联系我们。"
+    }
+  },
+  "sitemap": {
+    "seometa": {
+      "title": "DET 练习站点地图: 查找所有练习测试和资源",
+      "description": "探索 DET Practice 的完整站点地图，以访问所有练习测试、学习资源和指南。轻松浏览我们全面的测试准备产品。",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语测试, Duolingo 英语考试, Duolingo 熟练程度考试"
+    },
+    "h1": "网站地图"
+  }
+}

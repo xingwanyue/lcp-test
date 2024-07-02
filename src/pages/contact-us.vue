@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 import { reactive } from 'vue';
 import { ref } from 'vue';
 import type { FormInstance } from 'element-plus';
@@ -14,18 +16,18 @@ const state = reactive({
 const checkEmail = (rules: any, value: string, callback: any) => {
   const pan = /\w+[@][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)+/;
   if (!pan.test(value)) {
-    callback('The email must be a valid email address.');
+    callback(t('contactUs.checkEmail'));
   } else {
     callback();
   }
 };
 const rules = reactive({
-  name: [{ required: true, message: 'Please enter your name.', trigger: 'blur' }],
+  name: [{ required: true, message: t('contactUs.enterName'), trigger: 'blur' }],
   email: [
-    { required: true, message: 'Please enter your email address.', trigger: 'blur' },
+    { required: true, message: t('contactUs.enterEmail'), trigger: 'blur' },
     { validator: checkEmail, trigger: 'blur' },
   ],
-  message: [{ required: true, message: 'Please enter your message.', trigger: 'blur' }],
+  message: [{ required: true, message: t('contactUs.entermessage'), trigger: 'blur' }],
 });
 
 const submit = async () => {
@@ -45,7 +47,7 @@ const submit = async () => {
         body: JSON.stringify(state.formData),
       })) as any;
       if (!err) {
-        ElMessage({ type: 'success', message: 'Submitted successfully' });
+        ElMessage({ type: 'success', message: t('contactUs.subsuccess') });
         state.formData = {};
       }
     }
@@ -53,32 +55,35 @@ const submit = async () => {
   });
 };
 useServerSeoMeta({
-  title: 'Contact Us - DET Practice',
-  description: '',
+  title: t('contactUs.seometa.title'),
+  description: t('contactUs.seometa.description'),
+  keywords: t('contactUs.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/contact-us` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/contact-us` },
+    { rel: 'alternate', href: `https://www.${domain}/contact-us`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>
   <div class="contactus">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">Contact Us</div>
-        <div class="title2">Questions, bug reports, feedback - we’re here to help!</div>
+        <h1 class="title">{{ $t('contactUs.Contact_Us') }}</h1>
+        <div class="title2">{{ $t('contactUs.Questions') }}</div>
       </div>
     </div>
     <div class="content">
       <div class="left">
-        <div class="title">Fill in the form</div>
+        <div class="title">{{ $t('contactUs.fill_in') }}</div>
         <div class="desc">
-          Thank you for choosing to get in touch with us. Please fill out this contact form and our staff will reach out
-          to you as soon as possible to address your inquiries.
+          {{ $t('contactUs.thank') }}
         </div>
         <div class="info">
-          <el-image src="/img/aboutus/email.svg" class="email-img" alt="email"></el-image>
+          <el-image src="/img/aboutus/email.svg" class="email-img" :alt="$t('contactUs.email')"></el-image>
           <div class="info-right">
-            <div class="name">Email</div>
+            <div class="name">{{ $t('contactUs.email') }}</div>
             <div class="address">support@detpractice.com</div>
           </div>
         </div>
@@ -93,16 +98,17 @@ useHead({
           @submit.native.prevent
         >
           <el-form-item prop="name" label="">
-            <el-input v-model="state.formData.name" placeholder="Name"> </el-input>
+            <el-input v-model="state.formData.name" :placeholder="$t('contactUs.Name')"> </el-input>
           </el-form-item>
           <el-form-item prop="email" label="">
-            <el-input v-model="state.formData.email" placeholder="Email Address"> </el-input>
+            <el-input v-model="state.formData.email" :placeholder="$t('contactUs.Email_Address')"> </el-input>
           </el-form-item>
           <el-form-item prop="message" label="">
-            <el-input v-model="state.formData.message" type="textarea" :rows="6" placeholder="Message"> </el-input>
+            <el-input v-model="state.formData.message" type="textarea" :rows="6" :placeholder="$t('contactUs.Message')">
+            </el-input>
           </el-form-item>
           <el-form-item style="margin-top: 32px; margin-bottom: 16px">
-            <el-button v-loading="state.loading" class="submit" @click="submit"> SUBMIT </el-button>
+            <el-button v-loading="state.loading" class="submit" @click="submit">{{ $t('contactUs.SUBMIT') }}</el-button>
           </el-form-item>
         </el-form>
       </div>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
 import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
@@ -9,25 +11,20 @@ import { staticUrlGet, formatNumber, cdn, domain, getToken } from '@/utils';
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useServerSeoMeta({
-  title: 'DET Practice - Ace the Duolingo English Test',
-  description:
-    'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.',
+  title: t('index.seometa.title'),
+  description: t('index.seometa.description'),
+  keywords: t('index.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/` },
+    { rel: 'alternate', href: `https://www.${domain}/`, hreflang: 'en-GB' },
+  ],
 });
 
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-// const isMobile = ref(false);
-// if (process.client) {
-//   isMobile.value = window.innerWidth < 450;
-// }
-
-// onMounted(() => {
-//   isMobile.value = window.innerWidth < 450;
-// });
 
 const [
   { data: platformData },
@@ -40,7 +37,7 @@ const [
     server: false,
     lazy: true,
   }),
-  useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true }),
+  useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true, headers: { locale: locale.value } }),
   useFetch(`${api}/common/portalData?type=1`, {
     server: false,
     lazy: true,
@@ -73,7 +70,7 @@ const [
       return scorearr;
     },
   }),
-  useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true }),
+  useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true, headers: { locale: locale.value } }),
 ])) as any;
 const haveCookie = ref(false);
 const isMobile = ref(false);
@@ -165,53 +162,50 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     <div class="part1_wrapper">
       <div class="bg_handle"></div>
       <div class="part1">
-        <div class="power_by">Powered by AI</div>
+        <div class="power_by">{{ $t('index.power_by') }}</div>
         <div class="page_title">
           <div v-if="isMobile" class="h_one isMobile">
-            <h1>
-              Get a Higher Score Easily<br />on the Duolingo <br />English Test With
-              <span class="seo_hack">DET Practice</span>
-            </h1>
+            <h1 v-html="$t('index.h1Mobile')"></h1>
           </div>
           <div v-if="!isMobile" class="h_one isnoMobile">
-            <h1>
-              Get a Higher Score Easily on the <br />
-              Duolingo English Test With <span class="seo_hack">DET Practice</span>
-            </h1>
+            <h1 v-html="$t('index.h1PC')"></h1>
           </div>
           <div class="animat_wrap">
             <div class="small_title_wrap">
-              <div class="one_small_title current">DET Practice</div>
-              <div class="one_small_title">AI Correction</div>
-              <div class="one_small_title">Full-Length Mock</div>
-              <div class="one_small_title">DET Courses</div>
+              <div class="one_small_title current">{{ $t('index.one_small_title[0]') }}</div>
+              <div class="one_small_title">{{ locale === 'zh' ? 'AI批改' : $t('index.one_small_title[1]') }}</div>
+              <div class="one_small_title">{{ locale === 'zh' ? '全真模拟' : $t('index.one_small_title[2]') }}{{}}</div>
+              <div class="one_small_title">{{ $t('index.one_small_title[3]') }}</div>
             </div>
           </div>
         </div>
         <div v-if="!user.id && !haveCookie" class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
-            <img src="/img/home/google_icon.svg" alt="Start free with Google" />
-            Start free with Google
+            <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
+            {{ $t('index.Start_free_with_Google') }}
           </div>
           <NuxtLink
             :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
             class="common_btn common_btn_hover_borderCu white"
           >
-            Start free with email
+            {{ $t('index.Start_free_with_email') }}
           </NuxtLink>
         </div>
         <div v-else class="two_btn_out">
           <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white">
-            Start for free
+            {{ $t('index.Start_for_free') }}
           </NuxtLink>
         </div>
-        <div class="all_stu_nums">
-          Trusted by
-          <span class="yellow"
-            >{{ platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000' }} students</span
-          >
-          worldwide for a 1-month Duolingo English Test score boost.
-        </div>
+        <div
+          class="all_stu_nums"
+          v-html="
+            $t('index.trustedByWorldwide', {
+              path: `<span class='yellow'>
+              ${platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000'} 
+              </span>`,
+            })
+          "
+        ></div>
         <div class="big_img_out">
           <div class="big_img">
             <video
@@ -236,18 +230,14 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     <div class="part2_wrapper">
       <div class="part2">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-          <div>
-            <!-- The best platform for enhancing your scores in the<br />
-            Duolingo English Test -->
-            The Best Platform for Boosting Your Duolingo English Test Scores
-          </div>
+          <div>{{ $t('index.The_Best_Platform') }}</div>
         </div>
         <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <div>Leverage Our All-Inclusive Resources for Swift Score Improvement</div>
+          <div>{{ $t('index.Leverage_Our') }}</div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad" :src="home1" alt="Duolingo English Test Practice" @load="onLoad" />
+            <el-image v-show="isLoad" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
             <el-skeleton v-show="!isLoad" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -256,32 +246,32 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>Duolingo English Test Practice</h2>
+              <h2>{{ $t('index.article1.title') }}</h2>
             </div>
             <div class="tips">
-              With over {{ formatNumber(platformData?.questionTotal) }} practice questions, our ever-expanding question
-              bank is regularly updated for excellence.
+              {{
+                $t('index.article1.tips1', {
+                  number: `${formatNumber(platformData?.questionTotal)}`,
+                })
+              }}
             </div>
             <div class="tips">
-              Comprehensive coverage of all exam types with detailed explanations for every question.
+              {{ $t('index.article1.tips2') }}
             </div>
             <div class="tips">
-              In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.
+              {{ $t('index.article1.tips3') }}
             </div>
             <NuxtLink class="get_more" :to="localePath('/practice')">
-              <div class="font">Discover More</div>
+              <div class="font">{{ $t('index.article1.btn_font') }}</div>
               <div class="icon">
-                <img
-                  src="/img/home/yellow_arrow_right.svg"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article1.btn_img_alt')" />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad2" :src="home2" alt="Correction Service powered by AI" @load="onLoad2" />
+            <el-image v-show="isLoad2" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
             <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -290,29 +280,28 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>AI-Powered Essay Correction Service</h2>
+              <h2>{{ $t('index.article2.title') }}</h2>
             </div>
             <div class="tips">
-              Benefit from precise essay corrections through our 'AI + Teacher' collaborative review.
+              {{ $t('index.article2.tips1') }}
             </div>
             <div class="tips">
-              Simply submit your essay and promptly receive a comprehensive report with a detailed band score.
+              {{ $t('index.article2.tips2') }}
             </div>
-            <div class="tips">Elevate your writing score in just 2 weeks.</div>
+            <div class="tips">
+              {{ $t('index.article2.tips3') }}
+            </div>
             <NuxtLink class="get_more" :to="localePath('/correction')">
-              <div class="font">Learn More</div>
+              <div class="font">{{ $t('index.article2.btn_font') }}</div>
               <div class="icon">
-                <img
-                  src="/img/home/yellow_arrow_right.svg"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article2.btn_img_alt')" />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad3" :src="home3" alt="Duolingo English Test Mock" @load="onLoad3" />
+            <el-image v-show="isLoad3" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
             <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -321,31 +310,28 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>Duolingo English Test Mock</h2>
+              <h2>{{ $t('index.article3.title') }}</h2>
             </div>
             <div class="tips">
-              Mimic the actual exam setting to familiarize yourself with the testing process and content beforehand.
+              {{ $t('index.article3.tips1') }}
             </div>
             <div class="tips">
-              Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.
+              {{ $t('index.article3.tips2') }}
             </div>
             <div class="tips">
-              Take online mock exams at your convenience, with fast scoring provided within 30 minutes.
+              {{ $t('index.article3.tips3') }}
             </div>
             <NuxtLink class="get_more" :to="localePath('/mock-exam')">
-              <div class="font">Find Out More</div>
+              <div class="font">{{ $t('index.article3.btn_font') }}</div>
               <div class="icon">
-                <img
-                  src="/img/home/yellow_arrow_right.svg"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
               </div>
             </NuxtLink>
           </div>
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad4" :src="home4" alt="Duolingo English Test Course" @load="onLoad4" />
+            <el-image v-show="isLoad4" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -354,27 +340,21 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>Duolingo English Test Course</h2>
+              <h2>{{ $t('index.article4.title') }}</h2>
             </div>
             <div class="tips">
-              Achieve Comprehensive Mastery. Develop an in-depth understanding of DET speaking and writing sections with
-              our detailed guides, ensuring you approach every part of the exam with confidence.
+              {{ $t('index.article4.tips1') }}
             </div>
             <div class="tips">
-              Learn from ESL Experts. Utilize proven strategies to enhance your speaking and writing abilities, benefit
-              from personalized learning paths, and engage in effective self-assessment.
+              {{ $t('index.article4.tips2') }}
             </div>
             <div class="tips">
-              Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is
-              in perfect sync with current exam standards.
+              {{ $t('index.article4.tips3') }}
             </div>
             <NuxtLink class="get_more" :to="localePath('/courses')">
-              <div class="font">Explore More</div>
+              <div class="font">{{ $t('index.article4.btn_font') }}</div>
               <div class="icon">
-                <img
-                  src="/img/home/yellow_arrow_right.svg"
-                  alt="DET Practice:The best Duolingo English Test Practice platform"
-                />
+                <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article4.btn_img_alt')" />
               </div>
             </NuxtLink>
           </div>
@@ -383,24 +363,19 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     </div>
     <div class="part3_wrapper">
       <div class="part3">
-        <div v-if="usersockerTopFontResponse && usersockerTopFontResponse.length" class="title">
-          {{ usersockerTopFontResponse[0].data }}
-        </div>
-        <div v-else class="title">
-          <el-skeleton :rows="1" animated />
-        </div>
+        <div class="title">{{ $t('index.bigtitle1') }}</div>
         <div v-if="platformData" class="user_nums_out">
           <div class="one_num">
-            <div class="bigger_num">{{ toThousands(platformData?.userTotal) }}k</div>
-            <div class="small_font">Users</div>
+            <div class="bigger_num">{{ toThousands(platformData?.userTotal) }}{{ $t('index.thousand') }}</div>
+            <div class="small_font">{{ $t('index.Users') }}</div>
           </div>
           <div class="one_num">
-            <div class="bigger_num">{{ toThousands(platformData?.questionTotal) }}k</div>
-            <div class="small_font">Questions</div>
+            <div class="bigger_num">{{ toThousands(platformData?.questionTotal) }}{{ $t('index.thousand') }}</div>
+            <div class="small_font">{{ $t('index.Questions') }}</div>
           </div>
           <div class="one_num">
-            <div class="bigger_num">{{ toThousands(platformData?.examTotal) }}k</div>
-            <div class="small_font">Mock Exam</div>
+            <div class="bigger_num">{{ toThousands(platformData?.examTotal) }}{{ $t('index.thousand') }}</div>
+            <div class="small_font">{{ $t('index.Mock_Exam') }}</div>
           </div>
         </div>
         <div v-else class="user_nums_out">
@@ -420,10 +395,10 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
             class="common_btn common_btn_hover_bgColor yellow"
           >
-            Join Them
+            {{ $t('index.Join_Them') }}
           </NuxtLink>
           <NuxtLink v-else :to="urlGet('/home')" class="common_btn common_btn_hover_bgColor yellow">
-            Join Them
+            {{ $t('index.Join_Them') }}
           </NuxtLink>
         </div>
         <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
@@ -462,11 +437,8 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
 
     <div class="review_wrapper">
       <div class="review">
-        <div v-if="commentTopFontResponse && commentTopFontResponse.length" class="review_title">
-          {{ commentTopFontResponse[0].data }}
-        </div>
-        <div v-else class="review_title">
-          <el-skeleton :rows="1" animated />
+        <div class="review_title">
+          {{ $t('index.bigtitle2') }}
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
@@ -627,7 +599,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               font-size: 24px;
             }
           }
-          .seo_hack {
+          :deep(.seo_hack) {
             display: none;
           }
         }
@@ -751,7 +723,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         color: #201515;
         text-align: center;
         margin-top: 40px;
-        .yellow {
+        :deep(.yellow) {
           color: #f66442;
         }
       }

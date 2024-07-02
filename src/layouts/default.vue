@@ -6,6 +6,7 @@ import { useStore } from '@/store';
 import { sinupEvent } from '@/utils/gtag';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
+import vChangeLanguagetk from './changeLanguage_TK.vue';
 
 const router = useRouter();
 
@@ -58,6 +59,7 @@ onMounted(async () => {
     <el-footer class="footer_wrap">
       <v-footer />
     </el-footer>
+    <v-changeLanguagetk />
   </el-container>
 </template>
 <style lang="scss" scoped>
