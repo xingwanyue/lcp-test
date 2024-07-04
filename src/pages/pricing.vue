@@ -99,28 +99,6 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
               desc: t('pricing.qlList.day0.name1Desc'),
               tips: '',
             },
-            // {
-            //   name: 2,
-            //   desc: `<span class='bigger'>$${correct.price / 100} / 5</span> Correction Services`,
-            //   tips: '',
-            // },
-            // {
-            //   name: 3,
-            //   desc: `<span class='bigger'>$${exam.price / 100} / 1 </span> Mock Exam`,
-            //   tips: '',
-            // },
-            // {
-            //   name: 4,
-            //   desc: `<span class='bigger'>$${speak.price / 100}</span> / Speaking Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-            // {
-            //   name: 5,
-            //   desc: `<span class='bigger'>$${write.price / 100}</span> / Writing Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
           ];
         }
         if (item.day === 7) {
@@ -347,39 +325,6 @@ const membershipUnchanging = ref([
   },
 ]) as any;
 
-// const copy = async (email: any) => {
-//   if (navigator.clipboard) {
-//     // 尝试使用 Clipboard API
-//     try {
-//       // 请求剪贴板权限
-//       const permission = await navigator.permissions.query({ name: 'clipboard-write' });
-//       if (permission.state === 'granted' || permission.state === 'prompt') {
-//         await navigator.clipboard.writeText(email);
-//         ElMessage.success('Copy successfully');
-//       } else {
-//         throw new Error('Clipboard permission denied');
-//       }
-//     } catch (err) {
-//       ElMessage.error('Failed to copy text: ' + err);
-//     }
-//   } else if (document.execCommand) {
-//     // 尝试使用 document.execCommand
-//     const textarea = document.createElement('textarea');
-//     textarea.value = email;
-//     document.body.appendChild(textarea);
-//     textarea.select();
-//     try {
-//       document.execCommand('copy');
-//       ElMessage.success('Copy successfully');
-//     } catch (err) {
-//       ElMessage.error('Failed to copy text: ' + err);
-//     } finally {
-//       document.body.removeChild(textarea);
-//     }
-//   } else {
-//     ElMessage.error('Your browser does not support copying text to clipboard.');
-//   }
-// };
 const copy = async (text: any) => {
   if (navigator.clipboard) {
     // 尝试使用 Clipboard API
@@ -437,6 +382,15 @@ const formateMinToHour = (min: number) => {
           </div>
           <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch2') }}
+          </div>
+        </div>
+        <div class="free_white_dom">
+          <div class="free_white_dom_left">
+            <div class="free_font">Free</div>
+            <div class="free_tips">With your current plan you only get access to 20 questions</div>
+          </div>
+          <div class="free_white_dom_right">
+            <div class="try_btn">Try for free</div>
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
@@ -841,6 +795,54 @@ const formateMinToHour = (min: number) => {
         .yellow {
           background: #f66442;
           color: #ffffff;
+        }
+      }
+      .free_white_dom {
+        border: 1px red solid;
+        background: white;
+        padding: 16px 24px;
+        border-radius: 8px;
+        border: 1px solid #e9e9e9;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+        grid-gap: 12px;
+
+        .free_white_dom_left {
+          .free_font {
+            font-weight: 600;
+            font-size: 20px;
+            color: #333333;
+          }
+          .free_tips {
+            font-weight: 400;
+            font-size: 14px;
+            color: #403f3e;
+          }
+        }
+        .free_white_dom_right {
+          @media (max-width: 450px) {
+            flex-grow: 1;
+          }
+
+          .try_btn {
+            padding: 11px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #201515;
+            font-weight: 500;
+            font-size: 16px;
+            color: #201515;
+
+            display: block;
+            cursor: pointer;
+            &:hover {
+              border: 2px solid #201515;
+              padding: 10px;
+            }
+          }
         }
       }
 
