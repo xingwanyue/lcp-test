@@ -103,8 +103,8 @@ const faqList = ref([
   <div class="aff_out">
     <div class="aff_header">
       <div class="aff_header_content" :style="`background-image: url(/img/affiliate/30off.svg);`">
-        <div class="tag">Affiliate Program</div>
-        <h1 class="title">Earn <span class="yellow_font">30% Commission</span> From Your Every Referral</h1>
+        <div class="tag">{{ $t('affiliate.tag') }}</div>
+        <h1 class="title" v-html="$t('affiliate.h1')"></h1>
         <NuxtLink class="sing_up_now common_btn_hover_bgColor">Sign Up Now</NuxtLink>
       </div>
     </div>
@@ -300,6 +300,9 @@ const faqList = ref([
         max-width: 1000px;
         text-align: center;
         margin: 0 auto;
+        ::v-deep(.yellow_font) {
+          color: #f66442;
+        }
 
         margin-top: 40px;
         @media (max-width: 906px) {
@@ -337,6 +340,9 @@ const faqList = ref([
       box-sizing: border-box;
       max-width: 1260px;
       padding: 0px 30px;
+      @media (max-width: 450px) {
+        padding: 0px 15px;
+      }
 
       .join {
         padding: 120px 0;
@@ -527,6 +533,9 @@ const faqList = ref([
       box-sizing: border-box;
       max-width: 1260px;
       padding: 0px 30px;
+      @media (max-width: 450px) {
+        padding: 0px 15px;
+      }
       .white_dom {
         // border: 1px red solid;
         padding: 120px 0;
@@ -592,8 +601,12 @@ const faqList = ref([
     .dos_dom_out {
     }
     .dos_dom_out_wrapper {
-      padding: 0px 30px;
       background: #f2f4f6;
+      padding: 0px 30px;
+      @media (max-width: 450px) {
+        padding: 0px 15px;
+      }
+
       .dos_dom_out {
         padding: 120px 0;
         max-width: 1200px;
@@ -639,6 +652,9 @@ const faqList = ref([
       box-sizing: border-box;
       max-width: 1260px;
       padding: 0px 30px;
+      @media (max-width: 450px) {
+        padding: 0px 15px;
+      }
       .aff_faq {
         padding: 120px 0;
         .title {
@@ -651,7 +667,7 @@ const faqList = ref([
         .aff_faq_article_out {
           display: grid;
           grid-gap: 24px 80px;
-          grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
           .one_faq {
             padding: 23px 0px;
             border-bottom: 1px solid #e9e9e9;
@@ -676,8 +692,12 @@ const faqList = ref([
       }
     }
     .start_earn_out_wrapper {
-      padding: 0px 30px;
       background: #fff4f1;
+      padding: 0px 30px;
+      @media (max-width: 450px) {
+        padding: 0px 15px;
+      }
+
       .start_earn_out {
         padding: 80px 0;
         max-width: 1200px;
