@@ -757,5 +757,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedsprøve"
     },
     "h1": "Sitemap"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Affiliate Program | DET Practice",
+      "description": "Deltag i DET Practices lukrative affiliateprogram og tjen op til 30% kommission for hver henvisning. Samarbejd med os for at hjælpe eleverne med at opnå deres bedste resultater.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "tag": "Affiliate Program",
+    "h1": "Tjen <span class='yellow_font'>30% Kommission</span> fra hver af dine henvisninger",
+    "sun": "Tilmeld dig nu",
+    "join_title": "Deltag i Detpractices <span class='yellow_font'>lukrative</span> affiliateprogram",
+    "join_tips": "Tilmeld dig affiliateprogrammet hos Detpractice.com. Alle kan nemt få en højere score i Duolingo English Test med Detpractice.com. Bliv vores partner og få op til 30% kommission for hver henvisning.",
+    "earth_with_title": "Tjen penge med Detpractices forskellige produktsortiment",
+    "question_bank": "Spørgsmålsbank",
+    "acs": "AI Korrektionsservice",
+    "Mock_Test": "Mock Test",
+    "Courses": "Kurser",
+    "bada": "Bliv en Detpractice-affiliate i 3 trin",
+    "hep": "Høj indtjeningspotentiale",
+    "heptips": [
+      "Konkurrencedygtige kommissionssatser: 30% på alle indtægter fra dit affiliate-link",
+      "Potentiale for langsigtede partnerskaber: Vi værdsætter vores affiliates og stræber efter at udvikle langsigtede, gensidigt fordelagtige forhold."
+    ],
+    "ctw": "Skabere vi elsker at arbejde med",
+    "ctwtips": [
+      "1. Du er en skaber med et publikum bestående af studerende (At lære Duolingo English Test er et plus!)",
+      "2. Du er begejstret for en mere effektiv måde at lære DET på",
+      "3. Du er en uddannelsesinstitution, der underviser i Duolingo English Test"
+    ],
+    "dos": "Gør",
+    "dos_icon_alt": "grøn højre ikon",
+    "donts": "Gør ikke",
+    "donts_icon_alt": "rød fejl ikon",
+    "faqs": "FAQs",
+    "sew": "Begynd at tjene med vores affiliateprogram nu",
+    "contaceUsList": [
+      {
+        "font": "Tilmeld dig vores affiliateprogram og få dit henvisningslink.",
+        "btn": "Tilmeld dig nu"
+      },
+      {
+        "font": "Del dit link på din hjemmeside eller andre platforme.",
+        "btn": "Gå og del"
+      },
+      {
+        "font": "Tjen kommissioner fra salg, som du og dine underaffiliates driver.",
+        "btn": "Tjek ud"
+      }
+    ],
+    "dosList": [
+      { "font": "Prøv Detpractice.com for dig selv" },
+      { "font": "Promover Detpractice.com etisk og ærligt" },
+      { "font": "Opret kvalitetsindhold, der er relevant" },
+      { "font": "Oplys om dit affiliateforhold" }
+    ],
+    "dontsList": [
+      { "font": "Lav ikke vildledende eller falske påstande om Detpractice.com" },
+      { "font": "Promover ikke på platforme med upassende eller ulovligt indhold" },
+      { "font": "Promover ikke på nogen kuponside" },
+      {
+        "font": "Opret ikke annoncer ved hjælp af vores brandnavn, eller sæt vores domænenavn i dine annonces destination URLs"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Hvem kan ansøge om DET Practices affiliateprogram?",
+        "a": "Hvis du er en skaber med et publikum bestående af studerende, en uddannelsesinstitution, der underviser i Duolingo English Test, eller en influencer, kan du tilmelde dig vores affiliateprogram og tjene penge."
+      },
+      {
+        "q": "Hvordan kan jeg følge mine kommissioner?",
+        "a": "Når du har tilmeldt dig vores affiliateprogram, vil du få adgang til din dedikerede admin-side, hvor du kan følge konverteringer fra dine henvisningslinks."
+      },
+      {
+        "q": "Får jeg kommission, hvis en kunde, jeg henviser, abonnerer eller opgraderer?",
+        "a": "Ja, efter at en bruger har tilmeldt sig gennem dit link, tjener du kommission hver gang brugeren foretager et køb og opgraderer."
+      },
+      {
+        "q": "Hvad er den præcise procentdel af kommission, jeg kan tjene?",
+        "a": "For de første 3 ordrer modtager du 10% kommission; for mere end 3 ordrer modtager du 30% kommission."
+      },
+      {
+        "q": "Hvad sker der, hvis en kunde, jeg har henvist, annullerer deres køb?",
+        "a": "Hvis en kunde annullerer et køb eller får en refusion af nogen grund, vil den kommission, du har tjent for den person, blive trukket fra din konto."
+      },
+      {
+        "q": "Hvornår og hvordan får jeg mine penge?",
+        "a": "Vi behandler betalinger den 15. i hver måned for alle de kommissioner, du har tjent i den foregående måned. Du kan modtage betalinger via PayPal."
+      },
+      {
+        "q": "Hvad hvis jeg har andre spørgsmål om jeres affiliate internet marketing program?",
+        "a": "Bare kontakt os på \"<span class='yellow_font'>support@detpractice.com</span>\" og vi vil være glade for at hjælpe dig med eventuelle spørgsmål, du måtte have."
+      }
+    ]
   }
 }

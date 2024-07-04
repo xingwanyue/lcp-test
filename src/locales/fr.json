@@ -770,5 +770,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test En Ligne, Duolingo Test de Langue Anglaise, Duolingo Examen d'Anglais, Duolingo Examen de Compétence"
     },
     "h1": "Plan du site"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Programme d'affiliation | DET Practice",
+      "description": "Rejoignez le programme d'affiliation lucratif de DET Practice et gagnez jusqu'à 30% de commission pour chaque parrainage. Partenariat avec nous pour aider les étudiants à atteindre leurs meilleurs scores.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test d'anglais, Duolingo Examen d'anglais, Duolingo Examen de compétence"
+    },
+    "tag": "Programme d'affiliation",
+    "h1": "Gagnez <span class='yellow_font'>30% de commission</span> pour chaque parrainage",
+    "sun": "Inscrivez-vous maintenant",
+    "join_title": "Rejoignez le <span class='yellow_font'>lucratif</span> programme d'affiliation de Detpractice",
+    "join_tips": "Inscrivez-vous au programme d'affiliation de Detpractice.com. Tout le monde peut facilement obtenir un score plus élevé sur Duolingo English Test avec Detpractice.com. Devenez notre partenaire et gagnez jusqu'à 30% de commission pour chaque parrainage.",
+    "earth_with_title": "Gagnez avec la gamme diversifiée de produits de Detpractice",
+    "question_bank": "Banque de questions",
+    "acs": "Service de correction IA",
+    "Mock_Test": "Test blanc",
+    "Courses": "Cours",
+    "bada": "Devenez un affilié de Detpractice en 3 étapes",
+    "hep": "Potentiel de gains élevés",
+    "heptips": [
+      "Taux de commission compétitifs : 30% sur tous les revenus générés à partir de votre lien d'affiliation",
+      "Potentiel pour des partenariats à long terme : Nous valorisons nos affiliés et nous efforçons de développer des relations durables et mutuellement bénéfiques."
+    ],
+    "ctw": "Créateurs avec lesquels nous aimons travailler",
+    "ctwtips": [
+      "1. Vous êtes un créateur avec un public composé d'étudiants (apprendre Duolingo English Test est un plus !)",
+      "2. Vous êtes enthousiaste à l'idée d'une manière plus efficace d'apprendre DET",
+      "3. Vous êtes une institution de formation qui enseigne Duolingo English Test"
+    ],
+    "dos": "À faire",
+    "dos_icon_alt": "Icône de coche verte",
+    "donts": "À ne pas faire",
+    "donts_icon_alt": "Icône d'erreur rouge",
+    "faqs": "FAQ",
+    "sew": "Commencez à gagner avec notre programme d'affiliation maintenant",
+    "contaceUsList": [
+      {
+        "font": "Inscrivez-vous à notre programme d'affiliation et obtenez votre lien de parrainage.",
+        "btn": "Inscrivez-vous maintenant"
+      },
+      {
+        "font": "Partagez votre lien sur votre site web ou d'autres plateformes.",
+        "btn": "Allez et partagez"
+      },
+      {
+        "font": "Gagnez des commissions sur les ventes que vous et vos sous-affiliés générez.",
+        "btn": "Vérifiez maintenant"
+      }
+    ],
+    "dosList": [
+      { "font": "Essayez Detpractice.com par vous-même" },
+      { "font": "Promouvez Detpractice.com de manière éthique et honnête" },
+      { "font": "Créez du contenu de qualité et pertinent" },
+      { "font": "Divulguez votre relation d'affiliation" }
+    ],
+    "dontsList": [
+      { "font": "Ne faites pas de déclarations trompeuses ou fausses sur Detpractice.com" },
+      { "font": "Ne faites pas de promotion sur des plateformes contenant du contenu inapproprié ou illégal" },
+      { "font": "Ne faites pas de promotion sur des sites de coupons" },
+      {
+        "font": "Ne créez pas de campagnes publicitaires utilisant notre nom de marque, ou en mettant notre nom de domaine dans les URL de destination de vos annonces"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Qui peut s'inscrire au programme d'affiliation de DET Practice?",
+        "a": "Si vous êtes un créateur avec un public composé d'étudiants, une institution de formation qui enseigne Duolingo English Test, ou un influenceur, vous pouvez vous inscrire à notre programme d'affiliation et gagner de l'argent."
+      },
+      {
+        "q": "Comment puis-je suivre mes commissions?",
+        "a": "Une fois que vous vous êtes inscrit à notre programme d'affiliation, vous aurez accès à votre page d'administration dédiée où vous pourrez suivre les conversions de vos liens de parrainage."
+      },
+      {
+        "q": "Est-ce que je reçois une commission si un client que je parraine s'abonne ou effectue une mise à niveau?",
+        "a": "Oui, après qu'un utilisateur se soit inscrit via votre lien, vous gagnez une commission chaque fois que l'utilisateur effectue un achat et une mise à niveau."
+      },
+      {
+        "q": "Quel est le pourcentage exact de commission que je peux gagner?",
+        "a": "Pour les 3 premières commandes, vous recevrez une commission de 10%; pour plus de 3 commandes, vous recevrez une commission de 30%."
+      },
+      {
+        "q": "Que se passe-t-il si un client que j'ai parrainé annule son achat?",
+        "a": "Si un client annule un achat ou obtient un remboursement pour une raison quelconque, la commission que vous avez gagnée pour cette personne sera déduite de votre compte."
+      },
+      {
+        "q": "Quand et comment suis-je payé?",
+        "a": "Nous traitons les paiements le 15 de chaque mois pour toutes les commissions que vous avez gagnées le mois précédent. Vous pouvez recevoir des paiements via PayPal."
+      },
+      {
+        "q": "Que faire si j'ai d'autres questions sur votre programme de marketing d'affiliation sur Internet?",
+        "a": "Contactez-nous simplement à \"<span class='yellow_font'>support@detpractice.com</span>\" et nous serons heureux de vous aider avec toutes les questions que vous pourriez avoir."
+      }
+    ]
   }
 }

@@ -757,5 +757,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engels Taaltest, Duolingo Engels Examen, Duolingo Vaardigheidsexamen"
     },
     "h1": "Sitemap"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Affiliate Programma | DET Oefening",
+      "description": "Doe mee aan het lucratieve affiliate programma van DET Oefening en verdien tot 30% commissie voor elke verwijzing. Werk met ons samen om studenten te helpen hun beste scores te behalen.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelse Taaltest, Duolingo Engelse Examen, Duolingo Bekwaamheidstest"
+    },
+    "tag": "Affiliate Programma",
+    "h1": "Verdien <span class='yellow_font'>30% commissie</span> voor elke verwijzing",
+    "sun": "Nu aanmelden",
+    "join_title": "Word lid van het lucratieve affiliate programma van Detpractice",
+    "join_tips": "Meld je aan voor het affiliate programma van Detpractice.com. Iedereen kan gemakkelijk een hogere score behalen op Duolingo English Test met Detpractice.com. Word onze partner en verdien tot 30% commissie voor elke verwijzing.",
+    "earth_with_title": "Verdien met het diverse productaanbod van Detpractice",
+    "question_bank": "Vraagbank",
+    "acs": "AI Correctiedienst",
+    "Mock_Test": "Oefenexamen",
+    "Courses": "Cursussen",
+    "bada": "Word een Detpractice Affiliate in 3 stappen",
+    "hep": "Hoog Verdienpotentieel",
+    "heptips": [
+      "Concurrerende commissietarieven: 30% op alle inkomsten die voortkomen uit jouw affiliate link",
+      "Potentieel voor langetermijnpartnerschappen: We waarderen onze affiliates en streven naar het ontwikkelen van langdurige, wederzijds voordelige relaties."
+    ],
+    "ctw": "Makers met wie we graag samenwerken",
+    "ctwtips": [
+      "1. Je bent een maker met een publiek bestaande uit studenten (Kennis van Duolingo English Test is een plus!)",
+      "2. Je bent enthousiast over een effectievere manier om DET te leren",
+      "3. Je bent een onderwijsinstelling die Duolingo English Test onderwijst"
+    ],
+    "dos": "Do’s",
+    "dos_icon_alt": "groen Juist icoon",
+    "donts": "Niet doen",
+    "donts_icon_alt": "rood Fout icoon",
+    "faqs": "Veelgestelde vragen",
+    "sew": "Begin nu met verdienen met ons affiliate programma",
+    "contaceUsList": [
+      {
+        "font": "Meld je aan voor ons affiliate programma en krijg je verwijzingslink.",
+        "btn": "Nu aanmelden"
+      },
+      {
+        "font": "Deel je link op je website of andere platforms.",
+        "btn": "Ga en deel"
+      },
+      {
+        "font": "Verdien commissies uit verkopen die jij en je sub-affiliates genereren.",
+        "btn": "Bekijk"
+      }
+    ],
+    "dosList": [
+      { "font": "Probeer Detpractice.com zelf uit" },
+      { "font": "Promoot Detpractice.com op ethische en eerlijke wijze" },
+      { "font": "Creëer kwalitatieve en relevante content" },
+      { "font": "Maak je affiliate relatie bekend" }
+    ],
+    "dontsList": [
+      { "font": "Maak misleidende of valse claims over Detpractice.com" },
+      { "font": "Promoot op platforms met ongepaste of illegale inhoud" },
+      { "font": "Promoot op een willekeurige kortingswebsite" },
+      {
+        "font": "Stel advertentiecampagnes op met ons merknaam, of plaats ons domeinnaam in de bestemmings-URLs van je advertenties"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Wie kan zich aanmelden voor het affiliate programma van DET Oefening?",
+        "a": "Als je een maker bent met een publiek bestaande uit studenten, een onderwijsinstelling die Duolingo English Test onderwijst, of een influencer, dan kun je je aanmelden voor ons affiliate programma en geld verdienen."
+      },
+      {
+        "q": "Hoe kan ik mijn commissies bijhouden?",
+        "a": "Nadat je je hebt aangemeld voor ons affiliate programma, krijg je toegang tot je eigen beheerderspagina waar je conversies kunt bijhouden van je verwijzingslinks."
+      },
+      {
+        "q": "Krijg ik commissie als een door mij doorverwezen klant zich abonneert of upgradet?",
+        "a": "Ja, nadat een gebruiker zich heeft aangemeld via jouw link, verdien je commissie telkens wanneer de gebruiker een aankoop doet en upgrade."
+      },
+      {
+        "q": "Wat is het exacte percentage aan commissie dat ik kan verdienen?",
+        "a": "Voor de eerste 3 bestellingen ontvang je 10% commissie; voor meer dan 3 bestellingen ontvang je 30% commissie."
+      },
+      {
+        "q": "Wat gebeurt er als een door mij doorverwezen klant zijn aankoop annuleert?",
+        "a": "Als een klant een aankoop annuleert of om welke reden dan ook een terugbetaling krijgt, wordt de commissie die je hebt verdiend voor die persoon afgetrokken van je account."
+      },
+      {
+        "q": "Wanneer en hoe word ik betaald?",
+        "a": "We verwerken betalingen op de 15e van elke maand voor alle commissies die je hebt verdiend in de voorgaande maand. Je kunt betalingen ontvangen via PayPal."
+      },
+      {
+        "q": "Wat als ik andere vragen heb over jullie affiliate internet marketing programma?",
+        "a": "Neem gewoon contact met ons op via \"<span class='yellow_font'>support@detpractice.com</span>\" en we helpen je graag met eventuele vragen die je hebt."
+      }
+    ]
   }
 }

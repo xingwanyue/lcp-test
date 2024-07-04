@@ -770,5 +770,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test Języka Angielskiego, Duolingo Egzamin z Języka Angielskiego, Duolingo Egzamin Biegłości"
     },
     "h1": "Mapa strony"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Program Partnerski | DET Ćwiczenia",
+      "description": "Dołącz do lukratywnego programu partnerskiego DET Ćwiczenia i zarabiaj nawet do 30% prowizji za każde polecenie. Współpracuj z nami, aby pomagać studentom osiągać najlepsze wyniki.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test Języka Angielskiego, Duolingo Egzamin Językowy, Duolingo Egzamin Umiejętności"
+    },
+    "tag": "Program Partnerski",
+    "h1": "Zarabiaj <span class='yellow_font'>30% prowizji</span> za każde polecenie",
+    "sun": "Zapisz się teraz",
+    "join_title": "Dołącz do lukratywnego programu partnerskiego Detpractice",
+    "join_tips": "Zapisz się do programu partnerskiego Detpractice.com. Każdy może łatwo osiągnąć wyższy wynik na Duolingo English Test dzięki Detpractice.com. Zostań naszym partnerem i zarabiaj nawet do 30% prowizji za każde polecenie.",
+    "earth_with_title": "Zarabiaj dzięki różnorodnej ofercie produktów Detpractice",
+    "question_bank": "Bank pytań",
+    "acs": "Usługa Korekty AI",
+    "Mock_Test": "Test próbny",
+    "Courses": "Kursy",
+    "bada": "Zostań Partnerem Detpractice w 3 krokach",
+    "hep": "Wysoki Potencjał Zarobkowy",
+    "heptips": [
+      "Konkurencyjne stawki prowizji: 30% od całych dochodów generowanych z Twojego linku partnerskiego",
+      "Potencjał długoterminowej współpracy: Cenimy naszych partnerów i dążymy do budowania długoterminowych, wzajemnie korzystnych relacji."
+    ],
+    "ctw": "Kreatorzy, z którymi lubimy współpracować",
+    "ctwtips": [
+      "1. Jesteś twórcą, który ma publiczność składającą się z uczniów (Znajomość Duolingo English Test to dodatkowy atut!)",
+      "2. Jesteś zainteresowany bardziej efektywnym sposobem nauki DET",
+      "3. Jesteś instytucją szkoleniową, która naucza Duolingo English Test"
+    ],
+    "dos": "Co należy robić",
+    "dos_icon_alt": "zielona Ikona poprawności",
+    "donts": "Czego nie należy robić",
+    "donts_icon_alt": "czerwona Ikona błędu",
+    "faqs": "Najczęściej zadawane pytania",
+    "sew": "Zacznij zarabiać dzięki naszemu programowi partnerskiemu już teraz",
+    "contaceUsList": [
+      {
+        "font": "Zapisz się do naszego programu partnerskiego i otrzymaj swój link polecający.",
+        "btn": "Zapisz się teraz"
+      },
+      {
+        "font": "Udostępnij swój link na swojej stronie internetowej lub innych platformach.",
+        "btn": "Idź i udostępnij"
+      },
+      {
+        "font": "Zarabiaj prowizję od sprzedaży generowanej przez Ciebie i Twoich podpartnerów.",
+        "btn": "Sprawdź"
+      }
+    ],
+    "dosList": [
+      { "font": "Wypróbuj Detpractice.com na własną rękę" },
+      { "font": "Promuj Detpractice.com w sposób etyczny i uczciwy" },
+      { "font": "Twórz wysokiej jakości i trafne treści" },
+      { "font": "Ujawniaj swoje partnerstwo afiliacyjne" }
+    ],
+    "dontsList": [
+      { "font": "Publikuj mylące lub fałszywe informacje na temat Detpractice.com" },
+      { "font": "Promuj na platformach z nieodpowiednimi lub nielegalnymi treściami" },
+      { "font": "Promuj na dowolnej stronie z kuponami" },
+      {
+        "font": "Ustawiaj kampanie reklamowe używając naszej nazwy handlowej lub umieszczając naszą nazwę domeny w URL-ach docelowych Twoich reklam"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Kto może aplikować do programu partnerskiego DET Ćwiczenia?",
+        "a": "Jeśli jesteś twórcą z publicznością składającą się z uczniów, instytucją szkoleniową uczącą Duolingo English Test, lub influencerem, możesz zapisać się do naszego programu partnerskiego i zarabiać pieniądze."
+      },
+      {
+        "q": "Jak śledzić moje prowizje?",
+        "a": "Po zapisaniu się do naszego programu partnerskiego, będziesz mieć dostęp do swojej dedykowanej strony administracyjnej, gdzie będziesz mógł śledzić konwersje generowane przez Twoje linki polecające."
+      },
+      {
+        "q": "Czy otrzymuję prowizję, jeśli klient, którego poleciłem, subskrybuje lub dokona aktualizacji?",
+        "a": "Tak, po zarejestrowaniu się przez Twój link, zarabiasz prowizję za każdym razem, gdy użytkownik dokona zakupu lub dokona aktualizacji."
+      },
+      {
+        "q": "Jaka jest dokładna wysokość prowizji, jaką mogę zarobić?",
+        "a": "Za pierwsze 3 zamówienia otrzymasz 10% prowizji; za więcej niż 3 zamówienia otrzymasz 30% prowizji."
+      },
+      {
+        "q": "Co się dzieje, jeśli klient, którego poleciłem, anuluje swoje zamówienie?",
+        "a": "Jeśli klient anuluje zamówienie lub otrzymuje zwrot pieniędzy z jakiegokolwiek powodu, prowizja, którą zarobiłeś na tę osobę, zostanie odjęta z Twojego konta."
+      },
+      {
+        "q": "Kiedy i jak otrzymam płatność?",
+        "a": "Przetwarzamy płatności 15. każdego miesiąca za wszystkie prowizje, które zarobiłeś w poprzednim miesiącu. Możesz otrzymać płatności za pośrednictwem PayPal."
+      },
+      {
+        "q": "Co jeśli mam inne pytania dotyczące waszego programu partnerskiego internetowego?",
+        "a": "Skontaktuj się z nami pod adresem \"<span class='yellow_font'>support@detpractice.com</span>\", chętnie pomożemy odpowiedzieć na wszystkie Twoje pytania."
+      }
+    ]
   }
 }

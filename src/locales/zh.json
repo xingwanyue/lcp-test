@@ -717,5 +717,96 @@
       "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语测试, Duolingo 英语考试, Duolingo 熟练程度考试"
     },
     "h1": "网站地图"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "联盟计划 | DET 练习",
+      "description": "加入 DET 练习的丰厚联盟计划，通过每个推荐赚取高达 30% 的佣金。与我们合作，帮助学生取得最佳成绩。",
+      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 英语水平考试"
+    },
+    "tag": "联盟计划",
+    "h1": "通过每个推荐赚取 <span class='yellow_font'>30% 的佣金</span>",
+    "sun": "立即注册",
+    "join_title": "加入 Detpractice 的 <span class='yellow_font'>丰厚</span> 联盟计划",
+    "join_tips": "注册 Detpractice.com 的联盟计划。任何人都可以通过 Detpractice.com 轻松获得更高的 Duolingo English Test 分数。成为我们的合作伙伴，每个推荐可获得高达 30% 的佣金。",
+    "earth_with_title": "通过 Detpractice 的多样化产品范围赚取收益",
+    "question_bank": "题库",
+    "acs": "AI 纠错服务",
+    "Mock_Test": "模拟测试",
+    "Courses": "课程",
+    "bada": "3 步成为 Detpractice 的联盟会员",
+    "hep": "高收入潜力",
+    "heptips": [
+      "竞争力的佣金率：通过您的联盟链接获得的所有收入的 30%",
+      "长期合作的潜力：我们重视我们的联盟伙伴，并努力建立长期、互惠互利的关系。"
+    ],
+    "ctw": "我们喜爱的内容创作者",
+    "ctwtips": [
+      "1. 您是一个受众由学生组成的创作者（学习 Duolingo English Test 是加分项！）",
+      "2. 您对更有效的学习 DET 感到兴奋",
+      "3. 您是一家教授 Duolingo English Test 的培训机构"
+    ],
+    "dos": "注意事项",
+    "dos_icon_alt": "绿色对勾图标",
+    "donts": "禁忌事项",
+    "donts_icon_alt": "红色错误图标",
+    "faqs": "常见问题解答",
+    "sew": "立即开始通过我们的联盟计划赚钱",
+    "contaceUsList": [
+      {
+        "font": "注册我们的联盟计划并获取您的推荐链接。",
+        "btn": "立即注册"
+      },
+      {
+        "font": "在您的网站或其他平台上分享您的链接。",
+        "btn": "去分享"
+      },
+      {
+        "font": "从您和您的子联盟会员带来的销售中赚取佣金。",
+        "btn": "查看详情"
+      }
+    ],
+    "dosList": [
+      { "font": "亲自体验 Detpractice.com" },
+      { "font": "以道德和诚实的方式推广 Detpractice.com" },
+      { "font": "创建优质和相关的内容" },
+      { "font": "披露您的联盟关系" }
+    ],
+    "dontsList": [
+      { "font": "对 Detpractice.com 做出误导或虚假的声明" },
+      { "font": "在有不适当或非法内容的平台上推广" },
+      { "font": "在任何优惠券网站上推广" },
+      { "font": "使用我们的品牌名称设置广告活动，或在您的广告目标 URL 中放置我们的域名" }
+    ],
+    "faqList": [
+      {
+        "q": "谁可以申请 DET 练习的联盟计划？",
+        "a": "如果您是一个受众由学生组成的创作者、一个教授 Duolingo English Test 的培训机构或一个网红，您可以注册我们的联盟计划并赚钱。"
+      },
+      {
+        "q": "如何跟踪我的佣金？",
+        "a": "一旦您注册了我们的联盟计划，您将可以访问专用的管理页面，跟踪您的推荐链接带来的转化。"
+      },
+      {
+        "q": "如果我推荐的客户订阅或升级，我会得到佣金吗？",
+        "a": "是的，当用户通过您的链接注册后，每当用户进行购买和升级时，您都会赚取佣金。"
+      },
+      {
+        "q": "我可以赚取的佣金百分比是多少？",
+        "a": "对于前 3 个订单，您将获得 10% 的佣金；超过 3 个订单，您将获得 30% 的佣金。"
+      },
+      {
+        "q": "如果我推荐的客户取消购买怎么办？",
+        "a": "如果客户因任何原因取消购买或获得退款，您为该客户赚取的佣金将从您的账户中扣除。"
+      },
+      {
+        "q": "我什么时候以及如何收到付款？",
+        "a": "我们会在每月 15 日处理您上个月赚取的所有佣金。您可以通过 PayPal 收到付款。"
+      },
+      {
+        "q": "如果我对您的联盟互联网营销计划有其他问题怎么办？",
+        "a": "只需通过 \"<span class='yellow_font'>support@detpractice.com</span>\" 联系我们，我们会很高兴解答您的任何问题。"
+      }
+    ]
   }
 }

@@ -761,5 +761,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Proficiency"
     },
     "h1": "Mappa del sito"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Programma di affiliazione | DET Practice",
+      "description": "Unisciti al programma di affiliazione redditizio di DET Practice e guadagna fino al 30% di commissione per ogni referral. Collabora con noi per aiutare gli studenti a raggiungere i loro migliori punteggi.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di inglese, Duolingo Esame di inglese, Duolingo Esame di competenza"
+    },
+    "tag": "Programma di affiliazione",
+    "h1": "Guadagna <span class='yellow_font'>30% di commissione</span> per ogni referral",
+    "sun": "Iscriviti ora",
+    "join_title": "Unisciti al programma di affiliazione <span class='yellow_font'>redditizio</span> di Detpractice",
+    "join_tips": "Iscriviti al programma di affiliazione di Detpractice.com. Chiunque può ottenere facilmente un punteggio più alto su Duolingo English Test con Detpractice.com. Diventa nostro partner e guadagna fino al 30% di commissione per ogni referral.",
+    "earth_with_title": "Guadagna con la gamma diversificata di prodotti di Detpractice",
+    "question_bank": "Banca di domande",
+    "acs": "Servizio di correzione AI",
+    "Mock_Test": "Test simulato",
+    "Courses": "Corsi",
+    "bada": "Diventa un affiliato di Detpractice in 3 passaggi",
+    "hep": "Alto potenziale di guadagno",
+    "heptips": [
+      "Tariffe di commissione competitive: 30% su tutti i ricavi generati dal tuo link di affiliazione",
+      "Potenziale per partnership a lungo termine: Valutiamo i nostri affiliati e ci sforziamo di sviluppare relazioni durature e reciprocamente vantaggiose."
+    ],
+    "ctw": "Creatori con cui ci piace lavorare",
+    "ctwtips": [
+      "1. Sei un creatore con un pubblico composto da studenti (imparare Duolingo English Test è un plus!)",
+      "2. Sei entusiasta di un modo più efficace per imparare DET",
+      "3. Sei un'istituzione di formazione che insegna Duolingo English Test"
+    ],
+    "dos": "Cose da fare",
+    "dos_icon_alt": "Icona verde giusto",
+    "donts": "Cose da non fare",
+    "donts_icon_alt": "Icona rossa errata",
+    "faqs": "FAQ",
+    "sew": "Inizia a guadagnare con il nostro programma di affiliazione ora",
+    "contaceUsList": [
+      {
+        "font": "Iscriviti al nostro programma di affiliazione e ottieni il tuo link di referral.",
+        "btn": "Iscriviti ora"
+      },
+      {
+        "font": "Condividi il tuo link sul tuo sito web o altre piattaforme.",
+        "btn": "Vai e condividi"
+      },
+      {
+        "font": "Guadagna commissioni dalle vendite che tu e i tuoi sotto-affiliati generate.",
+        "btn": "Controlla ora"
+      }
+    ],
+    "dosList": [
+      { "font": "Prova Detpractice.com per te stesso" },
+      { "font": "Promuovi Detpractice.com in modo etico e onesto" },
+      { "font": "Crea contenuti di qualità e pertinenti" },
+      { "font": "Divulga la tua relazione di affiliazione" }
+    ],
+    "dontsList": [
+      { "font": "Non fare affermazioni fuorvianti o false su Detpractice.com" },
+      { "font": "Non promuovere su piattaforme con contenuti inappropriati o illegali" },
+      { "font": "Non promuovere su siti di coupon" },
+      {
+        "font": "Non creare campagne pubblicitarie usando il nostro nome di marca o inserendo il nostro nome di dominio negli URL di destinazione degli annunci"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Chi può iscriversi al programma di affiliazione di DET Practice?",
+        "a": "Se sei un creatore con un pubblico composto da studenti, un'istituzione di formazione che insegna Duolingo English Test, o un influencer, puoi iscriverti al nostro programma di affiliazione e guadagnare denaro."
+      },
+      {
+        "q": "Come posso tracciare le mie commissioni?",
+        "a": "Una volta iscritto al nostro programma di affiliazione, avrai accesso alla tua pagina di amministrazione dedicata dove potrai tracciare le conversioni dai tuoi link di referral."
+      },
+      {
+        "q": "Ricevo una commissione se un cliente che ho riferito si iscrive o effettua un upgrade?",
+        "a": "Sì, dopo che un utente si è iscritto tramite il tuo link, guadagni una commissione ogni volta che l'utente effettua un acquisto e un upgrade."
+      },
+      {
+        "q": "Qual è la percentuale esatta di commissione che posso guadagnare?",
+        "a": "Per i primi 3 ordini, riceverai una commissione del 10%; per più di 3 ordini, riceverai una commissione del 30%."
+      },
+      {
+        "q": "Cosa succede se un cliente che ho riferito annulla il suo acquisto?",
+        "a": "Se un cliente annulla un acquisto o ottiene un rimborso per qualsiasi motivo, la commissione che hai guadagnato per quella persona sarà dedotta dal tuo account."
+      },
+      {
+        "q": "Quando e come vengo pagato?",
+        "a": "Processiamo i pagamenti il 15 di ogni mese per tutte le commissioni che hai guadagnato nel mese precedente. Puoi ricevere i pagamenti tramite PayPal."
+      },
+      {
+        "q": "Cosa succede se ho altre domande sul vostro programma di marketing di affiliazione su internet?",
+        "a": "Contattaci semplicemente a \"<span class='yellow_font'>support@detpractice.com</span>\" e saremo felici di aiutarti con qualsiasi domanda tu possa avere."
+      }
+    ]
   }
 }
