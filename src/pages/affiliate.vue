@@ -5,97 +5,101 @@ import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
-  title: t('aboutUs.seometa.title'),
-  description: t('aboutUs.seometa.description'),
+  title: t('affiliate.seometa.title'),
+  description: t('affiliate.seometa.description'),
+  keywords: t('affiliate.seometa.keywords'),
 });
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/about-us` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}/affiliate` },
+    { rel: 'alternate', href: `https://www.${domain}/affiliate`, hreflang: 'en-GB' },
+  ],
 });
 const contaceUsList = ref([
   {
     type: '1',
     icon: '/img/affiliate/user_add_icon.svg',
-    font: 'Sign up for our affiliate program and get your referral link.',
-    btn: 'Sign Up Now',
+    font: t('affiliate.contaceUsList[0].font'),
+    btn: t('affiliate.contaceUsList[0].btn'),
   },
   {
     type: '2',
     icon: '/img/affiliate/share_icon.svg',
-    font: 'Share your link on your website or other platforms.',
-    btn: 'Go and Share',
+    font: t('affiliate.contaceUsList[1].font'),
+    btn: t('affiliate.contaceUsList[1].btn'),
   },
   {
     type: '3',
     icon: '/img/affiliate/do_icon.svg',
-    font: 'Earn commissions from sales you and your sub-affiliates drive.',
-    btn: 'Check Out',
+    font: t('affiliate.contaceUsList[2].font'),
+    btn: t('affiliate.contaceUsList[2].btn'),
   },
 ]);
 const dosList = ref([
   {
     id: '1',
-    font: 'Try out Detpractice.com for yourself',
+    font: t('affiliate.dosList[0].font'),
   },
   {
     id: '2',
-    font: 'Promote Detpractice.com ethically and honestly',
+    font: t('affiliate.dosList[1].font'),
   },
-  { id: '3', font: 'Create quality and relevant content' },
-  { id: '4', font: 'Disclose your affiliate relationship' },
+  { id: '3', font: t('affiliate.dosList[2].font') },
+  { id: '4', font: t('affiliate.dosList[3].font') },
 ]);
 const dontsList = ref([
   {
     id: '1',
-    font: 'Make misleading or false claims about Detpractice.com',
+    font: t('affiliate.dontsList[0].font'),
   },
   {
     id: '2',
-    font: 'Promote on platforms that have inappropriate or illegal content',
+    font: t('affiliate.dontsList[1].font'),
   },
   {
     id: '3',
-    font: 'Promote on any coupon site',
+    font: t('affiliate.dontsList[2].font'),
   },
   {
     id: '4',
-    font: "Set up ad campaigns using our brand name, or putting our domain name in your ads' destination URLs",
+    font: t('affiliate.dontsList[3].font'),
   },
 ]);
 const faqList = ref([
   {
     id: '1',
-    q: "Who can apply for DET PracticeI's affiliate program?",
-    a: 'If you are a creator that has an audience composed of students,a training institution that teaches Duolingo English Test,or an influencer,you can sign up for our affiliate program and earn money.',
+    q: t('affiliate.faqList[0].q'),
+    a: t('affiliate.faqList[0].a'),
   },
   {
     id: '2',
-    q: 'How do I track my commissions?',
-    a: "Once you've signed up for our affiliate program, you'll have access to your dedicated admin page where you can track conversions from your referral links.",
+    q: t('affiliate.faqList[1].q'),
+    a: t('affiliate.faqList[1].a'),
   },
   {
     id: '3',
-    q: 'Do I get a commission if a customer I refer subscribes or upgrades?',
-    a: 'Yes, after a user signs up through your link, you earn a commission every time the user makes a purchase and upgrades.',
+    q: t('affiliate.faqList[2].q'),
+    a: t('affiliate.faqList[2].a'),
   },
   {
     id: '4',
-    q: 'What is the exact percentage of commission I can earn?',
-    a: 'For the first 3 orders, you will receive 10% commission; for more than 3 orders, you will receive 30% commission.',
+    q: t('affiliate.faqList[3].q'),
+    a: t('affiliate.faqList[3].a'),
   },
   {
     id: '5',
-    q: 'What if a customer I referred cancels their purchase?',
-    a: 'If a customer cancels a purchase or gets a refund for any reason, the commission you earned for that person will be deducted from your account.',
+    q: t('affiliate.faqList[4].q'),
+    a: t('affiliate.faqList[4].a'),
   },
   {
     id: '6',
-    q: 'When and how do I get paid?',
-    a: 'We process payments on the 15th of each month for all commissions you have earned in the previous month. You can receive payments via PayPal.',
+    q: t('affiliate.faqList[5].q'),
+    a: t('affiliate.faqList[5].a'),
   },
   {
     id: '7',
-    q: 'What if I have other questions about your affiliate internet marketing program?',
-    a: 'Just contact us at "<span class="yellow_font">support@detpractice.com</span>" and we\'ll be happy to help you with any questions you may have.',
+    q: t('affiliate.faqList[6].q'),
+    a: t('affiliate.faqList[6].a'),
   },
 ]);
 </script>
@@ -105,47 +109,46 @@ const faqList = ref([
       <div class="aff_header_content" :style="`background-image: url(/img/affiliate/30off.svg);`">
         <div class="tag">{{ $t('affiliate.tag') }}</div>
         <h1 class="title" v-html="$t('affiliate.h1')"></h1>
-        <NuxtLink class="sing_up_now common_btn_hover_bgColor">Sign Up Now</NuxtLink>
+        <NuxtLink class="sing_up_now common_btn_hover_bgColor" :title="$t('affiliate.sun')">{{
+          $t('affiliate.sun')
+        }}</NuxtLink>
       </div>
     </div>
     <div class="content">
       <div class="join_out">
         <div class="join">
           <div class="jion_top_content">
-            <div class="join_title">
-              Join Detpractice's <span class="yellow_font">Lucrative</span> Affiliate Program
-            </div>
+            <div class="join_title" v-html="$t('affiliate.join_title')"></div>
             <div class="join_tips">
-              Sign up for the affiliate program of Detpractice.com. Anyone can get a higher score easily on the Duolingo
-              English Test with Detpractice.com. Become our partner and get up to 30% commission for every referral.
+              {{ $t('affiliate.join_tips') }}
             </div>
           </div>
           <div class="jion_bottom_content">
-            <div class="earth_with_title">Earn With Detpractice's Diverse Product Range</div>
+            <div class="earth_with_title">{{ $t('affiliate.earth_with_title') }}</div>
             <div class="earth_with_content">
               <div class="one_block one_block_blue">
                 <div class="one_block_icon">
-                  <img src="/img/home/product_icon1.svg" :alt="$t('pricing.pagefont.alt')" />
+                  <img src="/img/home/product_icon1.svg" :alt="$t('affiliate.question_bank')" />
                 </div>
-                <div class="one_block_title">Question bank</div>
+                <div class="one_block_title">{{ $t('affiliate.question_bank') }}</div>
               </div>
               <div class="one_block one_block_red">
                 <div class="one_block_icon">
-                  <img src="/img/home/product_icon2.svg" :alt="$t('pricing.pagefont.alt')" />
+                  <img src="/img/home/product_icon2.svg" :alt="$t('affiliate.acs')" />
                 </div>
-                <div class="one_block_title">AI Correction Service</div>
+                <div class="one_block_title">{{ $t('affiliate.acs') }}</div>
               </div>
               <div class="one_block one_block_yellow">
                 <div class="one_block_icon">
-                  <img src="/img/home/product_icon3.svg" :alt="$t('pricing.pagefont.alt')" />
+                  <img src="/img/home/product_icon3.svg" :alt="$t('affiliate.Mock_Test')" />
                 </div>
-                <div class="one_block_title">Mock Test</div>
+                <div class="one_block_title">{{ $t('affiliate.Mock_Test') }}</div>
               </div>
               <div class="one_block one_block_green">
                 <div class="one_block_icon">
-                  <img src="/img/home/product_icon4.svg" :alt="$t('pricing.pagefont.alt')" />
+                  <img src="/img/home/product_icon4.svg" :alt="$t('affiliate.Courses')" />
                 </div>
-                <div class="one_block_title">Courses</div>
+                <div class="one_block_title">{{ $t('affiliate.Courses') }}</div>
               </div>
             </div>
           </div>
@@ -154,21 +157,21 @@ const faqList = ref([
       <!-- <div class="become_out_wrapper"></div> -->
       <div class="become_out_wrapper">
         <div class="part3">
-          <div class="title">Become a Detpractice Affiliate in 3 Steps</div>
+          <div class="title">{{ $t('affiliate.bada') }}</div>
           <div class="three_out">
             <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
               <div class="icon">
-                <img :src="`${item.icon}`" :alt="$t('pricing.pagefont.alt')" />
+                <img :src="`${item.icon}`" :alt="item.font" />
               </div>
               <div class="method_font">{{ item.font }}</div>
               <!-- <div class="method_tip">{{ item.tip }}</div> -->
-              <div v-if="item.type === '1'" class="btn" @click="openchat">
+              <NuxtLink v-if="item.type === '1'" class="btn" :title="item.btn">
                 {{ item.btn }}
-              </div>
-              <div v-if="item.type === '2'" class="btn" @click="copy(item.btn)">
+              </NuxtLink>
+              <NuxtLink v-if="item.type === '2'" class="btn" :title="item.btn">
                 {{ item.btn }}
-              </div>
-              <NuxtLink v-if="item.type === '3'" class="btn" :to="localePath(`/contact-us`)">
+              </NuxtLink>
+              <NuxtLink v-if="item.type === '3'" class="btn" :title="item.btn">
                 <div>{{ item.btn }}</div>
               </NuxtLink>
             </div>
@@ -179,35 +182,33 @@ const faqList = ref([
         <div class="white_dom">
           <div class="img_left_dom">
             <div class="img_content">
-              <img src="/img/affiliate/high_earning_potenti.svg" alt="High Earning Potential" />
+              <img src="/img/affiliate/high_earning_potenti.svg" :alt="$t('affiliate.hep')" />
             </div>
             <div class="font_content">
-              <div class="font_content_tite">High Earning Potential</div>
+              <div class="font_content_tite">{{ $t('affiliate.hep') }}</div>
               <div class="font_content_tips">
                 <div class="one_tips">
-                  Competitive commission rates: 30% on all revenue contributed from your affiliate link
+                  {{ $t('affiliate.heptips[0]') }}
                 </div>
                 <div class="one_tips">
-                  Potential for long-term partnerships: We value our affiliates and strive to develop long-term,
-                  mutually beneficial relationships.
+                  {{ $t('affiliate.heptips[1]') }}
                 </div>
               </div>
             </div>
           </div>
           <div class="img_right_dom img_left_dom">
             <div class="font_content">
-              <div class="font_content_tite">Creators That We Love to Work With</div>
+              <div class="font_content_tite">{{ $t('affiliate.ctw') }}</div>
               <div class="font_content_tips">
                 <div class="one_tips">
-                  1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a
-                  plus!)
+                  {{ $t('affiliate.ctwtips[0]') }}
                 </div>
-                <div class="one_tips">2.You are excited by a more effective way to learn DET</div>
-                <div class="one_tips">3.You are a training institution that teaches Duolingo English Test</div>
+                <div class="one_tips">{{ $t('affiliate.ctwtips[1]') }}</div>
+                <div class="one_tips">{{ $t('affiliate.ctwtips[2]') }}</div>
               </div>
             </div>
             <div class="img_content">
-              <img src="/img/affiliate/cre_th_w_l.svg" alt="Creators That We Love to Work With" />
+              <img src="/img/affiliate/cre_th_w_l.svg" :alt="$t('affiliate.ctw')" />
             </div>
           </div>
         </div>
@@ -215,19 +216,19 @@ const faqList = ref([
       <div class="dos_dom_out_wrapper">
         <div class="dos_dom_out">
           <div class="do_dom">
-            <div class="title">Do’s</div>
+            <div class="title">{{ $t('affiliate.dos') }}</div>
             <div v-for="item in dosList" :key="item.id" class="one_tips">
               <div class="icon">
-                <img src="/img/affiliate/green_right_icon.svg" :alt="$t('pricing.pagefont.alt')" />
+                <img src="/img/affiliate/green_right_icon.svg" :alt="$t('affiliate.dos_icon_alt')" />
               </div>
               <div class="font">{{ item.font }}</div>
             </div>
           </div>
           <div class="do_dom">
-            <div class="title title_red">Don’ts</div>
+            <div class="title title_red">{{ $t('affiliate.donts') }}</div>
             <div v-for="item in dosList" :key="item.id" class="one_tips">
               <div class="icon">
-                <img src="/img/affiliate/red_err_icon.svg" :alt="$t('pricing.pagefont.alt')" />
+                <img src="/img/affiliate/red_err_icon.svg" :alt="$t('affiliate.donts_icon_alt')" />
               </div>
               <div class="font">{{ item.font }}</div>
             </div>
@@ -236,7 +237,7 @@ const faqList = ref([
       </div>
       <div class="aff_faq_out">
         <div class="aff_faq">
-          <div class="title">FAQs</div>
+          <div class="title">{{ $t('affiliate.faqs') }}</div>
           <div class="aff_faq_article_out">
             <div v-for="item in faqList" :key="item.id" class="one_faq">
               <div class="one_faq_question">{{ item.q }}</div>
@@ -247,8 +248,10 @@ const faqList = ref([
       </div>
       <div class="start_earn_out_wrapper">
         <div class="start_earn_out">
-          <div class="title">Start Earning with Our Affiliate Program Now</div>
-          <NuxtLink class="btn common_btn_hover_bgColor">Sign Up Now</NuxtLink>
+          <div class="title">{{ $t('affiliate.sew') }}</div>
+          <NuxtLink class="btn common_btn_hover_bgColor" :title="$t('affiliate.sun')">{{
+            $t('affiliate.sun')
+          }}</NuxtLink>
         </div>
       </div>
     </div>
@@ -359,6 +362,9 @@ const faqList = ref([
             font-size: 40px;
             color: #201515;
             line-height: 56px;
+            ::v-deep(.yellow_font) {
+              color: #f66442;
+            }
           }
           .join_tips {
             font-weight: 400;
