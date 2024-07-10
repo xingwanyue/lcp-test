@@ -95,9 +95,19 @@ const changeMockBuyTimes = () => {
   <div class="new_mb_price_out">
     <div class="new_mb_price_left">
       <div class="new_mb_price_left_top">
-        <div v-for="item in props.membershipArr" :key="item.id" class="one_card_new">
+        <div
+          v-for="item in props.membershipArr"
+          :key="item.id"
+          :class="item.day === 365 ? 'one_card_new one_card_new_365' : 'one_card_new'"
+        >
           <div>
-            <div class="title">{{ item.tag }}</div>
+            <div class="title_out">
+              <div class="title">{{ item.tag }}</div>
+              <div v-if="item.day === 365" class="save_tag">
+                save {{ 100 - ((item.price / item.originalPrice) * 100).toFixed(0) }}%
+              </div>
+            </div>
+
             <div class="price_out">
               <div class="do">$</div>
               <template v-if="item.day === 7">
@@ -160,13 +170,13 @@ const changeMockBuyTimes = () => {
         </div>
 
         <div v-if="!props.membershipArr.length" class="one_card_new">
-          <el-skeleton :rows="9" animated />
+          <el-skeleton :rows="6" animated />
         </div>
         <div v-if="!props.membershipArr.length" class="one_card_new">
-          <el-skeleton :rows="9" animated />
+          <el-skeleton :rows="6" animated />
         </div>
         <div v-if="!props.membershipArr.length" class="one_card_new">
-          <el-skeleton :rows="9" animated />
+          <el-skeleton :rows="6" animated />
         </div>
       </div>
       <div v-if="props.membershipArr.length" class="new_mb_price_left_bottom">
@@ -225,7 +235,7 @@ const changeMockBuyTimes = () => {
         </div>
       </div>
       <div v-if="!props.membershipArr.length" class="one_card_new">
-        <el-skeleton :rows="9" animated />
+        <el-skeleton :rows="6" animated />
       </div>
       <div v-if="props.membershipArr.length" class="mock_quanyi_list">
         <div v-for="item in state.mockQuanYiList" class="one_qyuanyi">
@@ -333,18 +343,33 @@ const changeMockBuyTimes = () => {
     grid-template-columns: 0.8fr 1fr 0.5fr;
     align-items: center;
   }
-  @media (max-width: 608px) {
+  @media (max-width: 728px) {
     display: unset;
   }
   padding: 24px 16px;
   background: rgba(250, 250, 250, 0.05);
   border-radius: 8px;
   border: 1px solid #e9e9e9;
-  .title {
-    font-weight: 600;
-    font-size: 20px;
-    color: #333333;
+  .title_out {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 20px;
+    .title {
+      font-weight: 600;
+      font-size: 20px;
+      color: #333333;
+    }
+    .save_tag {
+      padding: 4px 10px;
+      background: #edc295;
+      border-radius: 16px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #4c2929;
+    }
   }
+
   .price_out {
     display: flex;
     justify-content: flex-start;
@@ -414,6 +439,12 @@ const changeMockBuyTimes = () => {
         color: white;
       }
     }
+  }
+}
+.one_card_new_365 {
+  background: rgba(246, 100, 66, 0.05);
+  .card_price_buy_btn {
+    background: #4c2929 !important;
   }
 }
 /* 左右滚动效果 */
