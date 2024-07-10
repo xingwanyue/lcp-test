@@ -79,13 +79,13 @@ const buyMembership = (item: any) => {
   console.log(item);
   const { id, correctTimesid } = item;
   console.log(id, correctTimesid);
-  // store.stripePay({ vipId: `${(id, correctTimesid)}` });
+  store.stripePay({ vipId: `${id},${correctTimesid}` });
 };
 
 const buyMockTimes = () => {
   console.log('buyMockTimes');
   console.log(state.mockBuyTimsId);
-  // store.stripePay({ vipId: state.mockBuyTimsId });
+  store.stripePay({ vipId: state.mockBuyTimsId });
 };
 const changeMockBuyTimes = () => {
   state.mockBuyItem = props.mockSelectBuyTimes.find((item: any) => item.id === state.mockBuyTimsId);
@@ -181,7 +181,9 @@ const changeMockBuyTimes = () => {
       </div>
       <div v-if="props.membershipArr.length" class="new_mb_price_left_bottom">
         <div v-for="item in state.leftQuanYiList" :key="item.key" class="one_quanyi">
-          <div class="icon"></div>
+          <div class="icon">
+            <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.Secure_Payment')" />
+          </div>
           <div class="font">{{ item.font }}</div>
         </div>
       </div>
@@ -216,7 +218,6 @@ const changeMockBuyTimes = () => {
                 </el-option>
               </el-select>
             </div>
-            <!-- <div class="select_font">/month</div> -->
           </div>
         </div>
         <div class="but_btn_new">
@@ -238,8 +239,10 @@ const changeMockBuyTimes = () => {
         <el-skeleton :rows="6" animated />
       </div>
       <div v-if="props.membershipArr.length" class="mock_quanyi_list">
-        <div v-for="item in state.mockQuanYiList" class="one_qyuanyi">
-          <div class="icon"></div>
+        <div v-for="item in state.mockQuanYiList" class="one_quanyi">
+          <div class="icon">
+            <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.Secure_Payment')" />
+          </div>
           <div class="font">{{ item.font }}</div>
         </div>
       </div>
@@ -297,7 +300,13 @@ const changeMockBuyTimes = () => {
         .icon {
           width: 12px;
           height: 10px;
-          border: 1px red solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
         .font {
           font-weight: 400;
@@ -314,7 +323,7 @@ const changeMockBuyTimes = () => {
     border-radius: 8px;
     .mock_quanyi_list {
       margin-top: 20px;
-      .one_qyuanyi {
+      .one_quanyi {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -323,7 +332,13 @@ const changeMockBuyTimes = () => {
         .icon {
           width: 12px;
           height: 10px;
-          border: 1px red solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
         .font {
           font-weight: 400;
@@ -435,6 +450,7 @@ const changeMockBuyTimes = () => {
       margin-top: 32px;
       position: relative;
       display: block;
+      cursor: pointer;
       a {
         color: white;
       }
