@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import { reactive } from 'vue';
+import { formatCash } from '@/utils';
 
 // import subscribe from '@/components/subscribe.vue';
 import { useStore } from '@/store';
@@ -10,10 +11,9 @@ const user = computed(() => store.user);
 const localePath = useLocalePath();
 const props = defineProps({
   membershipArr: Array,
-  type1SelectBuyTimes: Array,
+  correctSelectBuyTimes: Array,
   mockSelectBuyTimes: Array,
 }) as any;
-console.log(props.membershipArr);
 
 const state = reactive({
   leftQuanYiList: [
@@ -55,13 +55,40 @@ const state = reactive({
     { key: 'm6', font: 'Results will be available within 5-30 minutes' },
   ],
   mockBuyTimsId: '',
+  mockBuyItem: {},
 });
+
+watch(
+  () => props.mockSelectBuyTimes,
+  (newVal) => {
+    if (newVal.length) {
+      console.log('4565465');
+      console.log(newVal[0].id);
+      state.mockBuyTimsId = newVal[0].id;
+      state.mockBuyItem = newVal[0];
+    }
+  },
+);
+const changeBuyCorrectTimes = (item: any) => {
+  const { id, correctTimesid } = item;
+  const correctTimes = props.correctSelectBuyTimes.find((item: any) => item.id === correctTimesid);
+  item.correctPrice = correctTimes.price;
+};
 
 const buyMembership = (item: any) => {
   console.log(item);
+  const { id, correctTimesid } = item;
+  console.log(id, correctTimesid);
+  // store.stripePay({ vipId: `${(id, correctTimesid)}` });
 };
-const changebuyTimes = (item: any) => {
-  console.log(item);
+
+const buyMockTimes = () => {
+  console.log('buyMockTimes');
+  console.log(state.mockBuyTimsId);
+  // store.stripePay({ vipId: state.mockBuyTimsId });
+};
+const changeMockBuyTimes = () => {
+  state.mockBuyItem = props.mockSelectBuyTimes.find((item: any) => item.id === state.mockBuyTimsId);
 };
 </script>
 <template>
@@ -73,19 +100,33 @@ const changebuyTimes = (item: any) => {
             <div class="title">{{ item.tag }}</div>
             <div class="price_out">
               <div class="do">$</div>
-              <div class="price">{{ item.price }}</div>
-              <div class="unit">/week</div>
+              <template v-if="item.day === 7">
+                <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
+                <div class="unit">/week</div>
+              </template>
+              <template v-if="item.day === 30">
+                <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
+                <div class="unit">/month</div>
+              </template>
+              <template v-if="item.day === 365">
+                <div class="price">{{ formatCash(Number(item.price) / 12 + Number(item.correctPrice || 0)) }}</div>
+                <div class="unit">/month</div>
+              </template>
             </div>
-            <div class="bill">Billed $ 107.94/year</div>
+            <div class="bill">
+              <span v-if="item.day === 365">
+                Billed $ {{ formatCash(Number(item.price) + Number(item.correctPrice || 0) * 12) }}/year</span
+              >
+            </div>
           </div>
 
           <div class="select_out_new">
             <div class="select_out_new_font">AI-powered Correction Service</div>
             <div class="sleect_out_wrapper">
               <div class="select_out">
-                <el-select v-model="item.buyTimesid" placeholder="Select" @change="changebuyTimes(item)">
+                <el-select v-model="item.correctTimesid" placeholder="Select" @change="changeBuyCorrectTimes(item)">
                   <el-option
-                    v-for="itemTimes in props.type1SelectBuyTimes"
+                    v-for="itemTimes in props.correctSelectBuyTimes"
                     :key="itemTimes.id"
                     :label="`${itemTimes.correctNum} times`"
                     :value="itemTimes.id"
@@ -94,7 +135,7 @@ const changebuyTimes = (item: any) => {
                     <span
                       style="float: right; color: var(--el-text-color-secondary); font-size: 13px; margin-left: 60px"
                     >
-                      ${{ itemTimes.price }}
+                      ${{ formatCash(itemTimes.price) }}
                     </span>
                   </el-option>
                 </el-select>
@@ -117,8 +158,18 @@ const changebuyTimes = (item: any) => {
             </div>
           </div>
         </div>
+
+        <div v-if="!props.membershipArr.length" class="one_card_new">
+          <el-skeleton :rows="9" animated />
+        </div>
+        <div v-if="!props.membershipArr.length" class="one_card_new">
+          <el-skeleton :rows="9" animated />
+        </div>
+        <div v-if="!props.membershipArr.length" class="one_card_new">
+          <el-skeleton :rows="9" animated />
+        </div>
       </div>
-      <div class="new_mb_price_left_bottom">
+      <div v-if="props.membershipArr.length" class="new_mb_price_left_bottom">
         <div v-for="item in state.leftQuanYiList" :key="item.key" class="one_quanyi">
           <div class="icon"></div>
           <div class="font">{{ item.font }}</div>
@@ -126,41 +177,41 @@ const changebuyTimes = (item: any) => {
       </div>
     </div>
     <div class="new_mb_price_right">
-      <div class="one_card_new">
+      <div v-if="props.membershipArr.length" class="one_card_new">
         <div>
           <div class="title">MOCK Test</div>
           <div class="price_out">
             <div class="do">$</div>
-            <div class="price">100</div>
-            <div class="unit">/week</div>
+            <div class="price">{{ formatCash(state.mockBuyItem.price) }}</div>
+            <!-- <div class="unit">/week</div> -->
           </div>
-          <div class="bill">Billed $ 107.94/year</div>
+          <div class="bill"></div>
         </div>
 
         <div class="select_out_new">
           <div class="select_out_new_font">AI-powered Correction Service</div>
           <div class="sleect_out_wrapper">
             <div class="select_out">
-              <el-select v-model="mockBuyTimsId" placeholder="Select">
+              <el-select v-model="state.mockBuyTimsId" placeholder="Select" @change="changeMockBuyTimes()">
                 <el-option
-                  v-for="itemTimes in props.type1SelectBuyTimes"
+                  v-for="itemTimes in props.mockSelectBuyTimes"
                   :key="itemTimes.id"
-                  :label="`${itemTimes.correctNum} times`"
+                  :label="`${itemTimes.examNum} times`"
                   :value="itemTimes.id"
                 >
-                  <span style="float: left">{{ itemTimes.correctNum }}times</span>
+                  <span style="float: left">{{ itemTimes.examNum }}times</span>
                   <span style="float: right; color: var(--el-text-color-secondary); font-size: 13px; margin-left: 60px">
-                    ${{ itemTimes.price }}
+                    ${{ formatCash(itemTimes.price) }}
                   </span>
                 </el-option>
               </el-select>
             </div>
-            <div class="select_font">/month</div>
+            <!-- <div class="select_font">/month</div> -->
           </div>
         </div>
         <div class="but_btn_new">
           <div v-if="user?.id">
-            <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
+            <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMockTimes()">
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
             </div>
@@ -173,7 +224,10 @@ const changebuyTimes = (item: any) => {
           </div>
         </div>
       </div>
-      <div class="mock_quanyi_list">
+      <div v-if="!props.membershipArr.length" class="one_card_new">
+        <el-skeleton :rows="9" animated />
+      </div>
+      <div v-if="props.membershipArr.length" class="mock_quanyi_list">
         <div v-for="item in state.mockQuanYiList" class="one_qyuanyi">
           <div class="icon"></div>
           <div class="font">{{ item.font }}</div>
@@ -210,6 +264,16 @@ const changebuyTimes = (item: any) => {
       display: flex;
       @media (max-width: 1100px) {
         flex-direction: column;
+      }
+      .no-load {
+        background: #fff;
+        display: block;
+        border: 1px solid #e9e9e9;
+        border-radius: 8px;
+        padding: 20px;
+        @media (max-width: 750px) {
+          padding: 10px;
+        }
       }
     }
     .new_mb_price_left_bottom {

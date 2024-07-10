@@ -87,46 +87,20 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
 
-    const type1SelectBuyTimes = vips.filter((item: any) => item.type === '3');
+    const correctSelectBuyTimes = vips.filter((item: any) => item.type === '3');
     const mockSelectBuyTimes = vips.filter((item: any) => item.type === '4');
     vips.forEach((item: any) => {
-      if (item.type === '1' && item.day !== 0) {
-        item.nochangePriceHack = item.price;
+      if (item.type === '1') {
+        item.correctTimesid = correctSelectBuyTimes[0].id;
         membershipArr.push(item);
       } else if (item.type === '2') {
         moreServiceArr.push(item);
       }
     });
-    return { membershipArr, moreServiceArr, type1SelectBuyTimes, mockSelectBuyTimes };
+    return { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
   },
 })) as any;
-const cities = ref([
-  {
-    value: 0,
-    label: '0 times',
-    price: 0,
-  },
-  {
-    value: 5,
-    label: '5 times',
-    price: 8.97,
-  },
-  {
-    value: 10,
-    label: '10 times',
-    price: 11.97,
-  },
-  {
-    value: 20,
-    label: '20 times',
-    price: 13.97,
-  },
-  {
-    value: 30,
-    label: '30 times',
-    price: 14.97,
-  },
-]);
+
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
@@ -137,9 +111,9 @@ const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
 };
 const buyMembership = (item) => {
-  const { id, buyTimes } = item;
+  const { id } = item;
   console.log(id);
-  console.log(buyTimes);
+
   // store.stripePay({ vipId: id });
 };
 
@@ -243,14 +217,6 @@ const formateMinToHour = (min: number) => {
   }
   return `${hour}h ${minute}mins ago`;
 };
-const changebuyTimes = (item) => {
-  console.log(item);
-  const { buyTimes } = item;
-  // 找到cities中对应的price
-  const price = cities.value.find((city) => city.value === buyTimes)?.price;
-  console.log(price);
-  item.price = Number(item.nochangePriceHack) + Number(price * 100);
-};
 </script>
 <template>
   <div class="pricing">
@@ -270,147 +236,21 @@ const changebuyTimes = (item) => {
             {{ $t('pricing.pagefont.switch2') }}
           </div>
         </div>
-        <div class="free_white_dom">
+        <div v-if="!user.id" class="free_white_dom">
           <div class="free_white_dom_left">
             <div class="free_font">Free</div>
             <div class="free_tips">With your current plan you only get access to 20 questions</div>
           </div>
           <div class="free_white_dom_right">
-            <div class="try_btn">Try for free</div>
+            <NuxtLink class="try_btn" :to="localePath(`/login?url=/pricing`)">Try for free</NuxtLink>
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
           <v-membershipprice
             :membershipArr="vipsData?.membershipArr || []"
-            :type1SelectBuyTimes="vipsData?.type1SelectBuyTimes || []"
+            :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
             :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
           ></v-membershipprice>
-          <div
-            v-if="false"
-            v-for="(item, index) in vipsData?.membershipArr || []"
-            :key="index"
-            :class="[item.flag === '1' ? 'one_price box_shadow' : 'one_price box_shadow']"
-          >
-            <div class="card_price">
-              <div class="card_in_card">
-                <div class="card_price_part1">
-                  <div class="day">{{ item.tag }}</div>
-                  <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
-                    <span
-                      >{{
-                        $t('pricing.pagefont.off', {
-                          off: 100 - ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0),
-                        })
-                      }}
-                    </span>
-                  </div>
-                </div>
-                <div class="card_price_part2">{{ item.description }}</div>
-
-                <div class="card_price_part3">
-                  <div class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
-                </div>
-                <div class="card_price_part4">
-                  <div class="tip_font">AI-powered Correction Service</div>
-                  <div class="sleect_out_wrapper">
-                    <div class="select_out">
-                      <el-select v-model="item.buyTimes" placeholder="Select" @change="changebuyTimes(item)">
-                        <el-option
-                          v-for="itemTimes in cities"
-                          :key="itemTimes.value"
-                          :label="itemTimes.label"
-                          :value="itemTimes.value"
-                        >
-                          <span style="float: left">{{ itemTimes.label }}</span>
-                          <span
-                            style="
-                              float: right;
-                              color: var(--el-text-color-secondary);
-                              font-size: 13px;
-                              margin-left: 60px;
-                            "
-                          >
-                            ${{ itemTimes.price }}
-                          </span>
-                        </el-option>
-                      </el-select>
-                    </div>
-                    <div class="select_font">/month</div>
-                  </div>
-                </div>
-                <div v-if="!user.id">
-                  <div
-                    v-if="item.day !== 0"
-                    :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
-                    @click="buyMembership(item)"
-                  >
-                    {{ $t('pricing.pagefont.Buy_Now') }}
-                    <div class="scroll-line"></div>
-                  </div>
-                  <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free">
-                    {{ $t('pricing.pagefont.tf') }}
-                  </NuxtLink>
-                </div>
-                <div v-else>
-                  <NuxtLink
-                    v-if="item.day !== 0"
-                    :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
-                    :to="localePath(`/login?url=/pricing`)"
-                  >
-                    {{ $t('pricing.pagefont.Buy_Now') }}
-                    <div class="scroll-line"></div>
-                  </NuxtLink>
-                  <NuxtLink v-else class="card_price_buy_btn try_free" :to="localePath(`/login?url=/pricing`)">
-                    {{ $t('pricing.pagefont.tf') }}
-                  </NuxtLink>
-                </div>
-              </div>
-
-              <div class="card_price_qllist">
-                <div v-for="(itemin, indexin) in item.qlList" :key="index * 10 + indexin" class="one_ql">
-                  <div class="icon">
-                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.check_icon')" />
-                  </div>
-                  <div class="font">
-                    <div v-html="itemin.desc"></div>
-                  </div>
-                  <div v-if="itemin.tips" class="tips">
-                    <el-tooltip :content="itemin.tips" placement="right-start" effect="light">
-                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.tip_icon')" />
-                    </el-tooltip>
-                  </div>
-                </div>
-              </div>
-              <div class="card_price_qllist" style="margin-top: 16px">
-                <div v-for="(itemuc, indexin) in membershipUnchanging" :key="itemuc.name" class="one_ql">
-                  <div class="icon">
-                    <img src="/img/pricing/check.svg" :alt="$t('pricing.pagefont.check_icon')" />
-                  </div>
-                  <div class="font" :style="itemuc?.style">
-                    <!-- <span class="bigger">30 days</span> -->
-                    {{ itemuc.desc }}
-                  </div>
-                  <div v-if="itemuc.tips" class="tips">
-                    <el-tooltip :content="itemuc.tips" placement="right-start" effect="light">
-                      <img src="/img/pricing/tip.svg" :alt="$t('pricing.pagefont.tip_icon')" />
-                    </el-tooltip>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div v-if="!vipsData?.membershipArr" class="no-load">
-            <el-skeleton :rows="15" animated />
-          </div>
-          <div v-if="!vipsData?.membershipArr" class="no-load">
-            <el-skeleton :rows="15" animated />
-          </div>
-          <div v-if="!vipsData?.membershipArr" class="no-load">
-            <el-skeleton :rows="15" animated />
-          </div>
-          <div v-if="!vipsData?.membershipArr" class="no-load">
-            <el-skeleton :rows="15" animated />
-          </div> -->
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
           <div
