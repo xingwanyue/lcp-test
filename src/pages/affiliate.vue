@@ -226,7 +226,7 @@ const faqList = ref([
           </div>
           <div class="do_dom">
             <div class="title title_red">{{ $t('affiliate.donts') }}</div>
-            <div v-for="item in dosList" :key="item.id" class="one_tips">
+            <div v-for="item in dontsList" :key="item.id" class="one_tips">
               <div class="icon">
                 <img src="/img/affiliate/red_err_icon.svg" :alt="$t('affiliate.donts_icon_alt')" />
               </div>
