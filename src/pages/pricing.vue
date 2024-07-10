@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, urlGet, domain } from '@/utils';
 import { useStore } from '@/store';
 useServerSeoMeta({
@@ -78,180 +79,54 @@ const aqList = ref([
 //   },
 // })) as any;
 // aqList.value = aqlistjk.value.data;
-const memberShipVipPriceShow = ref(false);
+
 const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   server: false,
   lazy: true,
   transform: ({ freeNum, correct, exam, speak, write, data: vips }: any) => {
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
+
+    const type1SelectBuyTimes = vips.filter((item: any) => item.type === '3');
+    const mockSelectBuyTimes = vips.filter((item: any) => item.type === '4');
     vips.forEach((item: any) => {
-      if (item.type === '1') {
-        if (item.vipPrice !== item.price) {
-          if (Number(item.vipPrice) !== 0) {
-            memberShipVipPriceShow.value = true;
-          }
-        }
-        if (item.day === 0) {
-          item.qlList = [
-            {
-              name: 1,
-              desc: t('pricing.qlList.day0.name1Desc'),
-              tips: '',
-            },
-          ];
-        }
-        if (item.day === 7) {
-          item.qlList = [
-            {
-              name: 1,
-              desc: t('pricing.qlList.day7.name1Desc'),
-              tips: '',
-              style: 'font-weight: 500;',
-            },
-            {
-              name: 2,
-              desc: t('pricing.qlList.day7.name2Desc', {
-                correctNum: item.correctNum,
-              }),
-              style: 'font-weight: 500;',
-              tips: t('pricing.qlList.day7.name2Tips'),
-            },
-            // {
-            //   name: 3,
-            //   desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
-            //   style: 'font-weight: 500;',
-            //   tips: 'Exclusive Discount',
-            // },
-            {
-              name: 4,
-              desc: t('pricing.qlList.day7.name4Desc', {
-                examNum: item.examNum,
-              }),
-              tips: '',
-            },
-            // {
-            //   name: 5,
-            //   desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-            //   tips: '',
-            // },
-            // {
-            //   name: 6,
-            //   desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-            // {
-            //   name: 7,
-            //   desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-          ];
-        }
-        if (item.day === 15) {
-          item.qlList = [
-            {
-              name: 1,
-              desc: t('pricing.qlList.day15.name1Desc'),
-              tips: '',
-            },
-            {
-              name: 2,
-              desc: t('pricing.qlList.day15.name2Desc', {
-                correctNum: item.correctNum,
-              }),
-              style: 'font-weight: 500;',
-              tips: t('pricing.qlList.day15.name2Tips'),
-            },
-            // {
-            //   name: 3,
-            //   desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
-            //   style: 'font-weight: 500;',
-            //   tips: 'Exclusive Discount',
-            // },
-            {
-              name: 4,
-              desc: t('pricing.qlList.day15.name4Desc', {
-                examNum: item.examNum,
-              }),
-              tips: '',
-            },
-            // {
-            //   name: 5,
-            //   desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-            //   tips: '',
-            // },
-            // {
-            //   name: 6,
-            //   desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-            // {
-            //   name: 7,
-            //   desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-          ];
-        }
-        if (item.day === 30) {
-          item.qlList = [
-            {
-              name: 1,
-              desc: t('pricing.qlList.day30.name1Desc'),
-              tips: '',
-              style: 'font-weight: 500;',
-            },
-            {
-              name: 2,
-              desc: t('pricing.qlList.day30.name2Desc', {
-                correctNum: item.correctNum,
-              }),
-              style: 'font-weight: 500;',
-              tips: t('pricing.qlList.day30.name2Tips'),
-            },
-            // {
-            //   name: 3,
-            //   desc: `<span class='bigger'>$${correct.vipPrice / 100} / 5</span> Correction Services`,
-            //   style: 'font-weight: 500;',
-            //   tips: 'Exclusive Discount',
-            // },
-            {
-              name: 4,
-              desc: t('pricing.qlList.day30.name4Desc', {
-                examNum: item.examNum,
-              }),
-              tips: '',
-            },
-            // {
-            //   name: 5,
-            //   desc: `<span class='bigger'>$${exam.vipPrice / 100} / 1</span> Mock Exam`,
-            //   tips: '',
-            // },
-            // {
-            //   name: 6,
-            //   desc: `<span class='bigger'>$${speak.vipPrice / 100}</span> / Speaking Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-            // {
-            //   name: 7,
-            //   desc: `<span class='bigger'>$${write.vipPrice / 100}</span> / Writing Guide`,
-            //   tips: '',
-            //   style: 'font-weight: 500;',
-            // },
-          ];
-        }
+      if (item.type === '1' && item.day !== 0) {
+        item.nochangePriceHack = item.price;
         membershipArr.push(item);
-      } else {
+      } else if (item.type === '2') {
         moreServiceArr.push(item);
       }
     });
-    return { membershipArr, moreServiceArr };
+    return { membershipArr, moreServiceArr, type1SelectBuyTimes, mockSelectBuyTimes };
   },
 })) as any;
+const cities = ref([
+  {
+    value: 0,
+    label: '0 times',
+    price: 0,
+  },
+  {
+    value: 5,
+    label: '5 times',
+    price: 8.97,
+  },
+  {
+    value: 10,
+    label: '10 times',
+    price: 11.97,
+  },
+  {
+    value: 20,
+    label: '20 times',
+    price: 13.97,
+  },
+  {
+    value: 30,
+    label: '30 times',
+    price: 14.97,
+  },
+]);
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
   switchType.value = type;
@@ -261,8 +136,11 @@ const CurrentMembershipId = ref(0);
 const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
 };
-const buyMembership = (id: number) => {
-  store.stripePay({ vipId: id });
+const buyMembership = (item) => {
+  const { id, buyTimes } = item;
+  console.log(id);
+  console.log(buyTimes);
+  // store.stripePay({ vipId: id });
 };
 
 const openOrCloseOneQuestion = (item: any) => {
@@ -365,6 +243,14 @@ const formateMinToHour = (min: number) => {
   }
   return `${hour}h ${minute}mins ago`;
 };
+const changebuyTimes = (item) => {
+  console.log(item);
+  const { buyTimes } = item;
+  // 找到cities中对应的price
+  const price = cities.value.find((city) => city.value === buyTimes)?.price;
+  console.log(price);
+  item.price = Number(item.nochangePriceHack) + Number(price * 100);
+};
 </script>
 <template>
   <div class="pricing">
@@ -394,73 +280,90 @@ const formateMinToHour = (min: number) => {
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
+          <v-membershipprice
+            :membershipArr="vipsData?.membershipArr || []"
+            :type1SelectBuyTimes="vipsData?.type1SelectBuyTimes || []"
+            :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
+          ></v-membershipprice>
           <div
+            v-if="false"
             v-for="(item, index) in vipsData?.membershipArr || []"
             :key="index"
-            :class="[item.flag === '1' ? 'one_price box_shadow' : 'one_price currentMembership_no']"
+            :class="[item.flag === '1' ? 'one_price box_shadow' : 'one_price box_shadow']"
           >
-            <div class="title">{{ $t('pricing.pagefont.Most_Popular_Choice') }}</div>
             <div class="card_price">
-              <div class="card_price_part1">
-                <div class="day">{{ item.tag }}</div>
-                <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
-                  <span
-                    >{{
-                      $t('pricing.pagefont.off', {
-                        off: 100 - ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0),
-                      })
-                    }}
-                  </span>
+              <div class="card_in_card">
+                <div class="card_price_part1">
+                  <div class="day">{{ item.tag }}</div>
+                  <div v-if="Number(item.originalPrice)" :class="`off ${item.flag === '1' ? 'off1' : ''}`">
+                    <span
+                      >{{
+                        $t('pricing.pagefont.off', {
+                          off: 100 - ((Number(item.price) / Number(item.originalPrice)) * 100).toFixed(0),
+                        })
+                      }}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div class="card_price_part2">{{ item.description }}</div>
-              <div v-if="memberShipVipPriceShow" class="vip_price_out">
-                <div
-                  v-if="Number(item.vipPrice) && item.vipPrice !== item.price && Number(item.price) !== 0"
-                  class="vip_price_top"
-                >
-                  <span class="symbol">{{ $t('pricing.pagefont.do') }}</span
-                  >{{ item.vipPrice / 100 }}
+                <div class="card_price_part2">{{ item.description }}</div>
+
+                <div class="card_price_part3">
+                  <div class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
                 </div>
-                <div
-                  v-if="Number(item.vipPrice) && item.vipPrice !== item.price && Number(item.price) !== 0"
-                  class="vip_price_bottom"
-                >
-                  {{ $t('pricing.pagefont.mp') }}
+                <div class="card_price_part4">
+                  <div class="tip_font">AI-powered Correction Service</div>
+                  <div class="sleect_out_wrapper">
+                    <div class="select_out">
+                      <el-select v-model="item.buyTimes" placeholder="Select" @change="changebuyTimes(item)">
+                        <el-option
+                          v-for="itemTimes in cities"
+                          :key="itemTimes.value"
+                          :label="itemTimes.label"
+                          :value="itemTimes.value"
+                        >
+                          <span style="float: left">{{ itemTimes.label }}</span>
+                          <span
+                            style="
+                              float: right;
+                              color: var(--el-text-color-secondary);
+                              font-size: 13px;
+                              margin-left: 60px;
+                            "
+                          >
+                            ${{ itemTimes.price }}
+                          </span>
+                        </el-option>
+                      </el-select>
+                    </div>
+                    <div class="select_font">/month</div>
+                  </div>
                 </div>
-              </div>
-              <div class="card_price_part3">
-                <!-- <div v-if="isVip" class="big_price"><span class="symbol">$</span>{{ item.vipPrice / 100 }}</div> -->
-                <div class="big_price"><span class="symbol">$</span>{{ item.price / 100 }}</div>
-                <div v-if="Number(item.originalPrice)" class="small_price">
-                  ${{ (item.originalPrice / 100).toFixed(2) }}
+                <div v-if="!user.id">
+                  <div
+                    v-if="item.day !== 0"
+                    :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
+                    @click="buyMembership(item)"
+                  >
+                    {{ $t('pricing.pagefont.Buy_Now') }}
+                    <div class="scroll-line"></div>
+                  </div>
+                  <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free">
+                    {{ $t('pricing.pagefont.tf') }}
+                  </NuxtLink>
                 </div>
-              </div>
-              <div v-if="user.id">
-                <div
-                  v-if="item.day !== 0"
-                  :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
-                  @click="buyMembership(item.id)"
-                >
-                  {{ $t('pricing.pagefont.Buy_Now') }}
-                  <div class="scroll-line"></div>
+                <div v-else>
+                  <NuxtLink
+                    v-if="item.day !== 0"
+                    :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
+                    :to="localePath(`/login?url=/pricing`)"
+                  >
+                    {{ $t('pricing.pagefont.Buy_Now') }}
+                    <div class="scroll-line"></div>
+                  </NuxtLink>
+                  <NuxtLink v-else class="card_price_buy_btn try_free" :to="localePath(`/login?url=/pricing`)">
+                    {{ $t('pricing.pagefont.tf') }}
+                  </NuxtLink>
                 </div>
-                <NuxtLink v-else :href="urlGet('/home')" class="card_price_buy_btn try_free">
-                  {{ $t('pricing.pagefont.tf') }}
-                </NuxtLink>
-              </div>
-              <div v-else>
-                <NuxtLink
-                  v-if="item.day !== 0"
-                  :class="['card_price_buy_btn common_btn_hover_bgColor', item.flag === '1' && 'card_price_buy_btn1']"
-                  :to="localePath(`/login?url=/pricing`)"
-                >
-                  {{ $t('pricing.pagefont.Buy_Now') }}
-                  <div class="scroll-line"></div>
-                </NuxtLink>
-                <NuxtLink v-else class="card_price_buy_btn try_free" :to="localePath(`/login?url=/pricing`)">
-                  {{ $t('pricing.pagefont.tf') }}
-                </NuxtLink>
               </div>
 
               <div class="card_price_qllist">
@@ -496,7 +399,7 @@ const formateMinToHour = (min: number) => {
               </div>
             </div>
           </div>
-          <div v-if="!vipsData?.membershipArr" class="no-load">
+          <!-- <div v-if="!vipsData?.membershipArr" class="no-load">
             <el-skeleton :rows="15" animated />
           </div>
           <div v-if="!vipsData?.membershipArr" class="no-load">
@@ -507,13 +410,13 @@ const formateMinToHour = (min: number) => {
           </div>
           <div v-if="!vipsData?.membershipArr" class="no-load">
             <el-skeleton :rows="15" animated />
-          </div>
+          </div> -->
         </div>
         <div v-if="switchType === '2'" class="Service_dom">
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price' : 'one_price currentMembership_no']"
+            :class="[item.id === CurrentMembershipId ? 'one_price' : 'one_price ']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
@@ -550,7 +453,7 @@ const formateMinToHour = (min: number) => {
               </div>
 
               <div v-if="user.id">
-                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item.id)">
+                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </div>
@@ -848,9 +751,9 @@ const formateMinToHour = (min: number) => {
 
       .Membership_dom {
         margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-        grid-gap: 16px;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        // grid-gap: 16px;
         @media (max-width: 450px) {
           margin-top: 20px;
         }
@@ -858,156 +761,148 @@ const formateMinToHour = (min: number) => {
         .one_price {
           border-radius: 8px;
           display: grid;
-          background: #4c2929;
-          padding: 0px 4px;
-          padding-bottom: 4px;
-          grid-template-rows: 50px 1fr !important;
-          @media (max-width: 450px) {
-            grid-template-rows: 50px 1fr !important;
-          }
           cursor: pointer;
-
-          .title {
-            font-weight: 600;
-            font-size: 16px;
-            color: #ffffff;
-            text-align: center;
-            flex: 1;
-            padding: 9px 0px;
-            line-height: 32px;
-          }
 
           .card_price {
             padding: 20px;
             background: #ffffff;
             border-radius: 8px;
             border: 1px solid #e9e9e9;
+            .card_in_card {
+              padding: 24px 16px;
+              background: rgba(250, 250, 250, 0.05);
+              border-radius: 8px;
+              border: 1px solid #e9e9e9;
+              .card_price_part1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-            .card_price_part1 {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-
-              .day {
-                font-weight: 600;
-                font-size: 24px;
-                color: #4c2929;
-                @media (max-width: 450px) {
-                  font-size: 18px;
-                }
-              }
-
-              .off {
-                padding: 4px 10px;
-                background: #edc295;
-                border-radius: 16px;
-                font-weight: 500;
-                font-size: 14px;
-                color: #fff;
-              }
-              .off1 {
-                color: #4c2929;
-              }
-            }
-
-            .card_price_part2 {
-              font-weight: 400;
-              font-size: 14px;
-              color: #403f3e;
-              margin-top: 11px;
-              min-height: 61px;
-              // border: 1px red solid;
-            }
-            .vip_price_out {
-              margin-top: 16px;
-              // border: 1px red solid;
-              min-height: 72px;
-              .vip_price_top {
-                font-size: 40px;
-                color: #f66442;
-                font-weight: 600;
-                .symbol {
-                  font-size: 20px;
+                .day {
+                  font-weight: 600;
+                  font-size: 24px;
+                  color: #4c2929;
                   @media (max-width: 450px) {
-                    font-size: 16px;
+                    font-size: 18px;
                   }
                 }
-              }
-              .vip_price_bottom {
-                font-weight: 400;
-                font-size: 14px;
-                color: #f66442;
-              }
-            }
 
-            .card_price_part3 {
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              margin-top: 24px;
-              grid-gap: 8px;
-
-              .big_price {
-                font-weight: 600;
-                font-size: 40px;
-                color: #4c2929;
-                @media (max-width: 450px) {
-                  font-size: 40px;
+                .off {
+                  padding: 4px 10px;
+                  background: #edc295;
+                  border-radius: 16px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: #fff;
                 }
-                .symbol {
-                  font-size: 20px;
-                  @media (max-width: 450px) {
-                    font-size: 16px;
-                  }
+                .off1 {
+                  color: #4c2929;
                 }
               }
 
-              .small_price {
+              .card_price_part2 {
+                display: none;
                 font-weight: 400;
                 font-size: 14px;
                 color: #403f3e;
-                position: relative;
-                top: 10px;
-                text-decoration: line-through;
+                margin-top: 11px;
+                min-height: 61px;
+                // border: 1px red solid;
               }
-            }
 
-            .card_price_buy_btn {
-              padding: 11px 0px;
-              background: #f66442;
-              border-radius: 4px;
-              font-weight: 500;
-              font-size: 16px;
-              color: white;
-              text-align: center;
-              margin-top: 32px;
-              position: relative;
-              display: block;
-              a {
+              .card_price_part3 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 24px;
+                grid-gap: 8px;
+
+                .big_price {
+                  font-weight: 600;
+                  font-size: 40px;
+                  color: #4c2929;
+                  @media (max-width: 450px) {
+                    font-size: 40px;
+                  }
+                  .symbol {
+                    font-size: 20px;
+                    @media (max-width: 450px) {
+                      font-size: 16px;
+                    }
+                  }
+                }
+
+                .small_price {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #403f3e;
+                  position: relative;
+                  top: 10px;
+                  text-decoration: line-through;
+                }
+              }
+              .card_price_part4 {
+                .tip_font {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #333333;
+                  margin-bottom: 10px;
+                }
+
+                .sleect_out_wrapper {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  grid-gap: 8px;
+                  .select_out {
+                    width: 136px;
+                    height: 32px;
+                    border-radius: 4px;
+                  }
+                  .select_font {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(51, 51, 51, 0.88);
+                  }
+                }
+              }
+              .card_price_buy_btn {
+                padding: 11px 0px;
+                background: #f66442;
+                border-radius: 4px;
+                font-weight: 500;
+                font-size: 16px;
                 color: white;
+                text-align: center;
+                margin-top: 32px;
+                position: relative;
+                display: block;
+                a {
+                  color: white;
+                }
               }
-            }
-            .card_price_buy_btn1 {
-              color: #4c2929 !important;
-              background: #edc295;
+              .card_price_buy_btn1 {
+                color: #4c2929 !important;
+                background: #edc295;
 
-              &:hover {
-                background: #d0aa83 !important;
+                &:hover {
+                  background: #d0aa83 !important;
+                }
               }
-            }
-            .try_free {
-              background: white;
-              border: 1px solid #201515;
-              font-size: 16px;
-              color: #201515;
-              display: block;
-              a {
-                color: #4c2929;
-              }
-              &:hover {
-                padding: 10px 0px;
+              .try_free {
                 background: white;
-                border: 2px solid #201515;
+                border: 1px solid #201515;
+                font-size: 16px;
+                color: #201515;
+                display: block;
+                a {
+                  color: #4c2929;
+                }
+                &:hover {
+                  padding: 10px 0px;
+                  background: white;
+                  border: 2px solid #201515;
+                }
               }
             }
 
@@ -1054,28 +949,6 @@ const formateMinToHour = (min: number) => {
           }
         }
 
-        .currentMembership_no {
-          background: rgba(76, 41, 41, 0);
-          grid-template-rows: 50px 1fr;
-          @media (max-width: 450px) {
-            grid-template-rows: 0px 1fr !important;
-          }
-
-          .title {
-            color: rgba(76, 41, 41, 0);
-          }
-
-          .off {
-            background: linear-gradient(90deg, #f7ba96 0%, #f66442 100%) !important;
-          }
-
-          .card_price {
-            border: 1px solid #e9e9e9;
-            &:hover {
-              box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
-            }
-          }
-        }
         .no-load {
           background: #fff;
           display: block;
