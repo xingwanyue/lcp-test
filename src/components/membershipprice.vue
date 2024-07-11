@@ -199,7 +199,7 @@ const changeMockBuyTimes = () => {
             <div class="title title_blue">{{ $t('pricing.pagefont.mt') }}</div>
           </div>
           <div class="price_out">
-            <div class="do"></div>
+            <div class="do price_blue">{{ $t('pricing.pagefont.do') }}</div>
             <div class="price price_blue">{{ formatCash(state.mockBuyItem.price) }}</div>
             <!-- <div class="unit">/week</div> -->
           </div>
@@ -327,6 +327,9 @@ const changeMockBuyTimes = () => {
     background: white;
     border: 1px solid #e9e9e9;
     border-radius: 8px;
+    .one_card_new {
+      background: rgba(255, 225, 188, 0.1) !important;
+    }
     .mock_quanyi_list {
       margin-top: 20px;
       .one_quanyi {
@@ -478,6 +481,18 @@ const changeMockBuyTimes = () => {
 }
 .one_card_new_365 {
   background: rgba(246, 100, 66, 0.05);
+  .title {
+    color: #4c2929 !important;
+  }
+  .do {
+    color: #4c2929 !important;
+  }
+  .price {
+    color: #4c2929 !important;
+  }
+  .unit {
+    color: #4c2929 !important;
+  }
   .card_price_buy_btn {
     background: #4c2929 !important;
     &:hover {
