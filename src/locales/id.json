@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
     "Products": ["DET Latihan", "Layanan Koreksi AI", "DET Pura-Pura", "Duolingo English Test Kursus"],
-    "Company": ["Tentang kami", "Hubungi kami", "Syarat dan Ketentuan", "Kebijakan Privasi", "Peta Situs"],
+    "Company": [
+      "Tentang kami",
+      "Hubungi kami",
+      "Syarat dan Ketentuan",
+      "Kebijakan Privasi",
+      "Peta Situs",
+      "Program Afiliasi"
+    ],
     "show_more": "tampilkan lebih banyak",
     "alt": "DET Latihan: Platform Duolingo English Test Latihan terbaik",
     "cookie_contenr": "DET Praktik menggunakan cookie untuk meningkatkan konten berdasarkan Pengaturan browser Anda. Untuk lebih jelasnya, lihat",

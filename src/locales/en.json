@@ -42,7 +42,7 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Company",
     "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
-    "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap"],
+    "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap", "Affiliate Program"],
     "show_more": "show more",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",

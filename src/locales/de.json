@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
     "Products": ["DET Üben", "KI-Korrekturservice", "DET Attrappe", "Duolingo English Test Kurs"],
-    "Company": ["Über uns", "Kontaktieren Sie uns", "Geschäftsbedingungen", "Datenschutzerklärung", "Sitemap"],
+    "Company": [
+      "Über uns",
+      "Kontaktieren Sie uns",
+      "Geschäftsbedingungen",
+      "Datenschutzerklärung",
+      "Sitemap",
+      "Partnerprogramm"
+    ],
     "show_more": "mehr anzeigen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",

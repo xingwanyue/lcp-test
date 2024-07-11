@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Şirket",
     "Products": ["DET Pratik", "AI Düzeltme Servisi", "DET Sahte", "Duolingo English Test Kurs"],
-    "Company": ["Hakkımızda", "Bize ulaşın", "Şartlar ve Koşullar", "Gizlilik Politikası", "Site Haritası"],
+    "Company": [
+      "Hakkımızda",
+      "Bize ulaşın",
+      "Şartlar ve Koşullar",
+      "Gizlilik Politikası",
+      "Site Haritası",
+      "Ortaklık Programı"
+    ],
     "show_more": "daha fazla göster",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "cookie_contenr": "DET Uygulama, tarayıcı Ayarlarınıza göre içeriği iyileştirmek için çerezler kullanır. Daha fazla bilgi için bkz",

@@ -109,6 +109,10 @@ const Company = computed(() => {
         name: t('footer.Company[4]'),
         url: '/sitemap',
       },
+      {
+        name: t('footer.Company[5]'),
+        url: '/affiliate',
+      },
     ],
   };
 });

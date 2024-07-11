@@ -42,7 +42,7 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
     "Products": ["DET Øve", "AI Korrektionsservice", "DET Narremock", "Duolingo English Test Kursus"],
-    "Company": ["Om os", "Kontakt os", "Vilkår og betingelser", "Privatlivspolitik", "Sitemap"],
+    "Company": ["Om os", "Kontakt os", "Vilkår og betingelser", "Privatlivspolitik", "Sitemap", "Affiliate Program"],
     "show_more": "vis mere",
     "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
     "cookie_contenr": "DET Practice bruger cookies til at forbedre indhold baseret på dine browserindstillinger. For flere detaljer, se",

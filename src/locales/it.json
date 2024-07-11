@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Azienda",
     "Products": ["DET Pratica", "Servizio di Correzione AI", "DET Simulazione", "Duolingo English Test Corso"],
-    "Company": ["Chi siamo", "Contattaci", "Termini e Condizioni", "Informativa sulla privacy", "Mappa del sito"],
+    "Company": [
+      "Chi siamo",
+      "Contattaci",
+      "Termini e Condizioni",
+      "Informativa sulla privacy",
+      "Mappa del sito",
+      "Programma di Affiliazione"
+    ],
     "show_more": "mostra di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",

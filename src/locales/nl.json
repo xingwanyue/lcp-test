@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Bedrijf",
     "Products": ["DET Oefenen", "AI Correctiedienst", "DET Nep", "Duolingo English Test Cursus"],
-    "Company": ["Over ons", "Neem contact met ons op", "Algemene voorwaarden", "Privacybeleid", "Sitemap"],
+    "Company": [
+      "Over ons",
+      "Neem contact met ons op",
+      "Algemene voorwaarden",
+      "Privacybeleid",
+      "Sitemap",
+      "Partnerprogramma"
+    ],
     "show_more": "toon meer",
     "alt": "DET Oefening:Het beste Duolingo English Test Oefeningsplatform",
     "cookie_contenr": "DET Praktijk gebruikt cookies om de inhoud te verbeteren op basis van je browserinstellingen. Voor meer details, zie",
