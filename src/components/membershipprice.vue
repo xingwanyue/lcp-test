@@ -228,16 +228,13 @@ const changeMockBuyTimes = () => {
         </div>
         <div class="but_btn_new">
           <div v-if="user?.id">
-            <div class="card_price_buy_btn card_price_buy_btn_mock common_btn_hover_bgColor" @click="buyMockTimes()">
+            <div class="card_price_buy_btn card_price_buy_btn_mock" @click="buyMockTimes()">
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
             </div>
           </div>
           <div v-else>
-            <NuxtLink
-              class="card_price_buy_btn card_price_buy_btn_mock common_btn_hover_bgColor"
-              :to="localePath(`/login?url=/pricing`)"
-            >
+            <NuxtLink class="card_price_buy_btn card_price_buy_btn_mock" :to="localePath(`/login?url=/pricing`)">
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
             </NuxtLink>
@@ -473,6 +470,9 @@ const changeMockBuyTimes = () => {
     .card_price_buy_btn_mock {
       background: #ffe1bc;
       color: #3c5d86;
+      &:hover {
+        background: #f2d5b2;
+      }
     }
   }
 }
@@ -480,6 +480,9 @@ const changeMockBuyTimes = () => {
   background: rgba(246, 100, 66, 0.05);
   .card_price_buy_btn {
     background: #4c2929 !important;
+    &:hover {
+      background: #412323 !important;
+    }
   }
 }
 /* 左右滚动效果 */
