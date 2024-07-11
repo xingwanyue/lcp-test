@@ -160,7 +160,19 @@
       "check_icon": "Check",
       "tip_icon": "Tip",
       "green_check": "Green Check",
-      "arrow_down": "Down Arrow"
+      "arrow_down": "Down Arrow",
+      "free_font": "Free",
+      "free_tips": "With your current plan you only get access to 20 questions",
+      "tff": "Try for free",
+      "save": "save {num}% ",
+      "week": "/week",
+      "month": "/month",
+      "Billed": "Billed ${num} /year",
+      "apcs": "AI-powered Correction Service",
+      "times": "times",
+      "bci": "black_check_icon",
+      "mt": "Mock Test",
+      "apmt": "AI-powered Mock Test"
     },
     "aqList": [
       {

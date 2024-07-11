@@ -160,7 +160,19 @@
       "check_icon": "Tjek",
       "tip_icon": "Tip",
       "green_check": "Grøn Tjek",
-      "arrow_down": "Nedpil"
+      "arrow_down": "Nedpil",
+      "free_font": "Gratis",
+      "free_tips": "Med din nuværende plan har du kun adgang til 20 spørgsmål",
+      "tff": "Prøv gratis",
+      "save": "spar {num}%",
+      "week": "/uge",
+      "month": "/måned",
+      "Billed": "Faktureret ${num} /år",
+      "apcs": "AI-drevet Korrektionsservice",
+      "times": "gange",
+      "bci": "sort_tjek_ikon",
+      "mt": "Prøvetest",
+      "apmt": "AI-drevet Prøvetest"
     },
     "aqList": [
       {

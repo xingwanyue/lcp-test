@@ -160,7 +160,19 @@
       "check_icon": "Sjekk",
       "tip_icon": "Tips",
       "green_check": "Grønn Sjekk",
-      "arrow_down": "Nedoverpil"
+      "arrow_down": "Nedoverpil",
+      "free_font": "Gratis",
+      "free_tips": "Med din nåværende plan har du kun tilgang til 20 spørsmål",
+      "tff": "Prøv gratis",
+      "save": "spar {num}%",
+      "week": "/uke",
+      "month": "/måned",
+      "Billed": "Fakturert ${num} /år",
+      "apcs": "AI-drevet Korreksjonstjeneste",
+      "times": "ganger",
+      "bci": "svart_sjekk_ikon",
+      "mt": "Prøvetest",
+      "apmt": "AI-drevet Prøvetest"
     },
     "aqList": [
       {

@@ -160,7 +160,19 @@
       "check_icon": "Revisar",
       "tip_icon": "Consejo",
       "green_check": "Cheque verde",
-      "arrow_down": "Flecha hacia abajo"
+      "arrow_down": "Flecha hacia abajo",
+      "free_font": "Gratis",
+      "free_tips": "Con tu plan actual solo tienes acceso a 20 preguntas",
+      "tff": "Prueba gratis",
+      "save": "ahorra {num}%",
+      "week": "/semana",
+      "month": "/mes",
+      "Billed": "Facturado ${num} /año",
+      "apcs": "Servicio de Corrección impulsado por IA",
+      "times": "veces",
+      "bci": "icono_de_verificación_negro",
+      "mt": "Prueba Simulada",
+      "apmt": "Prueba Simulada impulsada por IA"
     },
     "aqList": [
       {

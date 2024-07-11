@@ -160,7 +160,19 @@
       "check_icon": "Periksa",
       "tip_icon": "Tip",
       "green_check": "Centang Hijau",
-      "arrow_down": "Panah Bawah"
+      "arrow_down": "Panah Bawah",
+      "free_font": "Gratis",
+      "free_tips": "Dengan rencana Anda saat ini, Anda hanya mendapatkan akses ke 20 pertanyaan",
+      "tff": "Coba gratis",
+      "save": "hemat {num}%",
+      "week": "/minggu",
+      "month": "/bulan",
+      "Billed": "Ditagih ${num} /tahun",
+      "apcs": "Layanan Koreksi Bertenaga AI",
+      "times": "kali",
+      "bci": "ikon_periksa_hitam",
+      "mt": "Tes Tiruan",
+      "apmt": "Tes Tiruan Bertenaga AI"
     },
     "aqList": [
       {

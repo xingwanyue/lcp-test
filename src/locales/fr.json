@@ -166,7 +166,19 @@
       "check_icon": "Vérifier",
       "tip_icon": "Astuce",
       "green_check": "Vérification verte",
-      "arrow_down": "Flèche vers le bas"
+      "arrow_down": "Flèche vers le bas",
+      "free_font": "Gratuit",
+      "free_tips": "Avec votre plan actuel, vous n'avez accès qu'à 20 questions",
+      "tff": "Essayer gratuitement",
+      "save": "économisez {num}%",
+      "week": "/semaine",
+      "month": "/mois",
+      "Billed": "Facturé ${num} /an",
+      "apcs": "Service de correction alimenté par l'IA",
+      "times": "fois",
+      "bci": "icône_de_vérification_noire",
+      "mt": "Test simulé",
+      "apmt": "Test simulé alimenté par l'IA"
     },
     "aqList": [
       {

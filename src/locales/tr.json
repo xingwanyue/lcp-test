@@ -160,7 +160,19 @@
       "check_icon": "Kontrol Et",
       "tip_icon": "İpucu",
       "green_check": "Yeşil Onay İşareti",
-      "arrow_down": "Aşağı Ok"
+      "arrow_down": "Aşağı Ok",
+      "free_font": "Ücretsiz",
+      "free_tips": "Mevcut planınızla yalnızca 20 soruya erişiminiz var",
+      "tff": "Ücretsiz dene",
+      "save": "{num}% tasarruf et",
+      "week": "/hafta",
+      "month": "/ay",
+      "Billed": "Faturalandırılan ${num} /yıl",
+      "apcs": "Yapay Zeka Destekli Düzeltme Hizmeti",
+      "times": "kez",
+      "bci": "siyah_onay_ikonu",
+      "mt": "Deneme Sınavı",
+      "apmt": "Yapay Zeka Destekli Deneme Sınavı"
     },
     "aqList": [
       {

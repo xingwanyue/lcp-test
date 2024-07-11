@@ -160,7 +160,19 @@
       "check_icon": "Controleren",
       "tip_icon": "Tip",
       "green_check": "Groene Controle",
-      "arrow_down": "Pijl omlaag"
+      "arrow_down": "Pijl omlaag",
+      "free_font": "Gratis",
+      "free_tips": "Met je huidige plan heb je alleen toegang tot 20 vragen",
+      "tff": "Probeer gratis",
+      "save": "bespaar {num}%",
+      "week": "/week",
+      "month": "/maand",
+      "Billed": "Gefactureerd ${num} /jaar",
+      "apcs": "AI-aangedreven Correctieservice",
+      "times": "keer",
+      "bci": "zwart_controle_icoon",
+      "mt": "Oefentoets",
+      "apmt": "AI-aangedreven Oefentoets"
     },
     "aqList": [
       {

@@ -160,7 +160,19 @@
       "check_icon": "检查",
       "tip_icon": "提示",
       "green_check": "绿色检查",
-      "arrow_down": "向下箭头"
+      "arrow_down": "向下箭头",
+      "free_font": "免费",
+      "free_tips": "在您当前的计划中，您只能访问20个问题",
+      "tff": "免费试用",
+      "save": "节省 {num}%",
+      "week": "/周",
+      "month": "/月",
+      "Billed": "每年收费 ${num}",
+      "apcs": "AI驱动的校正服务",
+      "times": "次",
+      "bci": "黑色检查图标",
+      "mt": "模拟测试",
+      "apmt": "AI驱动的模拟测试"
     },
     "aqList": [
       {

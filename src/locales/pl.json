@@ -166,7 +166,19 @@
       "check_icon": "Sprawdź",
       "tip_icon": "Porada",
       "green_check": "Zielony Check",
-      "arrow_down": "Strzałka w dół"
+      "arrow_down": "Strzałka w dół",
+      "free_font": "Darmowy",
+      "free_tips": "W ramach obecnego planu masz dostęp tylko do 20 pytań",
+      "tff": "Wypróbuj za darmo",
+      "save": "zaoszczędź {num}%",
+      "week": "/tydzień",
+      "month": "/miesiąc",
+      "Billed": "Fakturowane ${num} /rok",
+      "apcs": "Usługa Korekty wspierana przez AI",
+      "times": "razy",
+      "bci": "czarna_ikona_sprawdzenia",
+      "mt": "Test próbny",
+      "apmt": "Test próbny wspierany przez AI"
     },
     "aqList": [
       {

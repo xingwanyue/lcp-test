@@ -166,7 +166,19 @@
       "check_icon": "Verificar",
       "tip_icon": "Dica",
       "green_check": "Verificação Verde",
-      "arrow_down": "Seta para Baixo"
+      "arrow_down": "Seta para Baixo",
+      "free_font": "Grátis",
+      "free_tips": "Com o seu plano atual, você só tem acesso a 20 perguntas",
+      "tff": "Experimente grátis",
+      "save": "economize {num}%",
+      "week": "/semana",
+      "month": "/mês",
+      "Billed": "Faturado ${num} /ano",
+      "apcs": "Serviço de Correção com IA",
+      "times": "vezes",
+      "bci": "ícone_de_verificação_preto",
+      "mt": "Teste Simulado",
+      "apmt": "Teste Simulado com IA"
     },
     "aqList": [
       {

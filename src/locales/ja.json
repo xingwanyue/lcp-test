@@ -160,7 +160,19 @@
       "check_icon": "チェック",
       "tip_icon": "ヒント",
       "green_check": "グリーンチェック",
-      "arrow_down": "下矢印"
+      "arrow_down": "下矢印",
+      "free_font": "無料",
+      "free_tips": "現在のプランでは、20問の質問にしかアクセスできません",
+      "tff": "無料で試す",
+      "save": "{num}% 節約",
+      "week": "/週",
+      "month": "/月",
+      "Billed": "年間 ${num} 請求",
+      "apcs": "AI駆動の修正サービス",
+      "times": "回",
+      "bci": "黒いチェックアイコン",
+      "mt": "模擬テスト",
+      "apmt": "AI駆動の模擬テスト"
     },
     "aqList": [
       {

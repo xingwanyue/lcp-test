@@ -160,7 +160,19 @@
       "check_icon": "Überprüfen",
       "tip_icon": "Tipp",
       "green_check": "Grüner Haken",
-      "arrow_down": "Nach unten gerichteter Pfeil"
+      "arrow_down": "Nach unten gerichteter Pfeil",
+      "free_font": "Kostenlos",
+      "free_tips": "Mit Ihrem aktuellen Plan haben Sie nur Zugriff auf 20 Fragen",
+      "tff": "Kostenlos ausprobieren",
+      "save": "sparen {num}%",
+      "week": "/Woche",
+      "month": "/Monat",
+      "Billed": "Abgerechnet ${num} /Jahr",
+      "apcs": "KI-gestützter Korrekturservice",
+      "times": "Mal",
+      "bci": "schwarzes_kontrollsymbol",
+      "mt": "Probetest",
+      "apmt": "KI-gestützter Probetest"
     },
     "aqList": [
       {

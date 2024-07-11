@@ -160,7 +160,19 @@
       "check_icon": "Controlla",
       "tip_icon": "Suggerimento",
       "green_check": "Verifica Verde",
-      "arrow_down": "Freccia giù"
+      "arrow_down": "Freccia giù",
+      "free_font": "Gratuito",
+      "free_tips": "Con il tuo piano attuale hai accesso solo a 20 domande",
+      "tff": "Prova gratis",
+      "save": "risparmia {num}%",
+      "week": "/settimana",
+      "month": "/mese",
+      "Billed": "Fatturato ${num} /anno",
+      "apcs": "Servizio di Correzione Alimentato da AI",
+      "times": "volte",
+      "bci": "icona_di_controllo_nera",
+      "mt": "Test Simulato",
+      "apmt": "Test Simulato Alimentato da AI"
     },
     "aqList": [
       {

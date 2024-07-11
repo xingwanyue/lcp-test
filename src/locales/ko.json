@@ -160,7 +160,19 @@
       "check_icon": "확인",
       "tip_icon": "팁",
       "green_check": "그린 체크",
-      "arrow_down": "아래쪽 화살표"
+      "arrow_down": "아래쪽 화살표",
+      "free_font": "무료",
+      "free_tips": "현재 플랜으로는 20개의 질문에만 접근할 수 있습니다",
+      "tff": "무료로 시도",
+      "save": "{num}% 절약",
+      "week": "/주",
+      "month": "/월",
+      "Billed": "연간 ${num} 청구",
+      "apcs": "AI 기반 수정 서비스",
+      "times": "회",
+      "bci": "검은색_체크_아이콘",
+      "mt": "모의 테스트",
+      "apmt": "AI 기반 모의 테스트"
     },
     "aqList": [
       {
