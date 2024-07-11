@@ -251,7 +251,24 @@
         "tip": "Kami akan merespons Anda dalam satu hari kerja.",
         "btn": "Tinggalkan pesan sekarang"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Tidak terbatas untuk Sesi Latihan",
+      "Akses semua Pertanyaan Latihan",
+      "Jelajahi Jawaban Contoh dengan Skor Tinggi",
+      "Analisis Pertanyaan Mendalam",
+      "Buku Kata Ujian Frekuensi Tinggi",
+      "Rencana Studi yang Disesuaikan dengan Pemilihan Pertanyaan Cerdas",
+      "Evaluasi Berbicara yang Didukung AI"
+    ],
+    "mockQuanYiList": [
+      "Ujian tiruan skala penuh",
+      "Tes kapan saja",
+      "Mendekati ujian DET yang sebenarnya",
+      "Skor penilaian yang akurat",
+      "Laporan evaluasi terperinci",
+      "Hasil akan tersedia dalam 5-30 menit"
+    ]
   },
   "blog": {
     "seometa": {

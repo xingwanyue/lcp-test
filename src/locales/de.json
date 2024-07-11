@@ -251,7 +251,24 @@
         "tip": "Wir werden Ihnen innerhalb eines Geschäftstags antworten.",
         "btn": "Hinterlassen Sie jetzt eine Nachricht"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Unbegrenzt für Übungssitzungen",
+      "Zugriff auf alle Übungsfragen",
+      "Durchsuchen von hoch bewerteten Musterantworten",
+      "Tiefgehende Frageanalyse",
+      "Häufige Prüfungswortliste",
+      "Maßgeschneiderter Studienplan mit intelligenter Frageauswahl",
+      "KI-gestützte Sprechbewertungen"
+    ],
+    "mockQuanYiList": [
+      "Vollständige Probeklausuren",
+      "Testen jederzeit",
+      "Nahe an der echten DET-Prüfung",
+      "Genau Bewertungsergebnisse",
+      "Detaillierter Bewertungsbericht",
+      "Ergebnisse sind innerhalb von 5-30 Minuten verfügbar"
+    ]
   },
   "blog": {
     "seometa": {

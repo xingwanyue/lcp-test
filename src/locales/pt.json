@@ -259,7 +259,24 @@
         "tip": "Responderemos a você dentro de um dia útil.",
         "btn": "Deixe uma mensagem agora"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Sessões de prática ilimitadas",
+      "Acesse todas as perguntas de prática",
+      "Navegue por respostas de amostra de alta pontuação",
+      "Análise aprofundada das perguntas",
+      "Livro de palavras de exame de alta frequência",
+      "Plano de estudo personalizado com seleção inteligente de perguntas",
+      "Avaliações de fala com IA"
+    ],
+    "mockQuanYiList": [
+      "Exames simulados em escala total",
+      "Teste a qualquer momento",
+      "Próximo ao exame DET real",
+      "Pontuações de avaliação precisas",
+      "Relatório de avaliação detalhado",
+      "Os resultados estarão disponíveis em 5-30 minutos"
+    ]
   },
   "blog": {
     "seometa": {

@@ -259,7 +259,24 @@
         "tip": "Odpowiemy Ci w ciągu jednego dnia roboczego.",
         "btn": "Zostaw wiadomość teraz"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Nieograniczone sesje ćwiczeniowe",
+      "Dostęp do wszystkich pytań ćwiczeniowych",
+      "Przeglądaj odpowiedzi próbne o wysokiej punktacji",
+      "Dogłębna analiza pytań",
+      "Książka słów egzaminacyjnych o wysokiej częstotliwości",
+      "Dostosowany plan nauki z inteligentnym wyborem pytań",
+      "Oceny mówienia wspierane przez AI"
+    ],
+    "mockQuanYiList": [
+      "Pełnoskalowe egzaminy próbne",
+      "Testuj w dowolnym momencie",
+      "Blisko prawdziwego egzaminu DET",
+      "Dokładne oceny",
+      "Szczegółowy raport oceny",
+      "Wyniki będą dostępne w ciągu 5-30 minut"
+    ]
   },
   "blog": {
     "seometa": {

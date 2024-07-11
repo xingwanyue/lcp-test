@@ -253,7 +253,24 @@
         "tip": "We will respond to you within one business day.",
         "btn": "Leave a message now"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Unlimited for Practice Sessions",
+      "Access all Practice Questions",
+      "Browse High-scoring Sample Answers",
+      "In-depth Question Analysis",
+      "High-Frequency Exam Word Book",
+      "Tailored Study Plan with Smart Question Selection",
+      "AI-Powered Speaking Evaluations"
+    ],
+    "mockQuanYiList": [
+      "Full-scale mock exams",
+      "Test at any time",
+      "Close to real DET exam",
+      "Accurate assessment scores",
+      "Detailed evaluation report",
+      "Results will be available within 5-30 minutes"
+    ]
   },
   "blog": {
     "seometa": {

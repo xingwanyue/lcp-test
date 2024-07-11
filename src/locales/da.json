@@ -251,7 +251,24 @@
         "tip": "Vi vil svare dig inden for én arbejdsdag.",
         "btn": "Efterlad en besked nu"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Ubegrænset til træningssessioner",
+      "Adgang til alle øvelsesspørgsmål",
+      "Gennemse højtscorende prøvebesvarelser",
+      "Dybdegående spørgsmål analyse",
+      "Højfrekvent eksamensordbog",
+      "Skræddersyet studieplan med smart spørgsmål udvælgelse",
+      "AI-drevne taleevalueringer"
+    ],
+    "mockQuanYiList": [
+      "Fuldskala mock eksamener",
+      "Test når som helst",
+      "Tæt på den rigtige DET eksamen",
+      "Nøjagtige vurderingsresultater",
+      "Detaljeret evalueringsrapport",
+      "Resultater vil være tilgængelige inden for 5-30 minutter"
+    ]
   },
   "blog": {
     "seometa": {

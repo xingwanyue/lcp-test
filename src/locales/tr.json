@@ -253,7 +253,24 @@
         "tip": "Size bir iş günü içinde cevap vereceğiz.",
         "btn": "Şimdi bir mesaj bırakın"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Sınırsız pratik oturumları",
+      "Tüm pratik sorularına erişim",
+      "Yüksek puanlı örnek cevapları inceleyin",
+      "Derinlemesine soru analizi",
+      "Yüksek frekanslı sınav kelime kitabı",
+      "Akıllı soru seçimi ile kişiselleştirilmiş çalışma planı",
+      "Yapay Zeka Destekli Konuşma Değerlendirmeleri"
+    ],
+    "mockQuanYiList": [
+      "Tam ölçekli deneme sınavları",
+      "Her zaman test yapın",
+      "Gerçek DET sınavına yakın",
+      "Doğru değerlendirme puanları",
+      "Detaylı değerlendirme raporu",
+      "Sonuçlar 5-30 dakika içinde hazır olacak"
+    ]
   },
   "blog": {
     "seometa": {

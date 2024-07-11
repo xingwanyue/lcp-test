@@ -251,7 +251,24 @@
         "tip": "We zullen u binnen één werkdag antwoorden.",
         "btn": "Laat nu een bericht achter"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Onbeperkt voor oefensessies",
+      "Toegang tot alle oefenvragen",
+      "Blader door hoog scorende voorbeeldantwoorden",
+      "Diepgaande vraaganalyse",
+      "Hoogfrequent examenwoordenboek",
+      "Op maat gemaakt studieplan met slimme vraagselectie",
+      "AI-aangedreven spreekbeoordelingen"
+    ],
+    "mockQuanYiList": [
+      "Volledige proefexamens",
+      "Test op elk moment",
+      "Dicht bij het echte DET-examen",
+      "Nauwkeurige beoordelingsscores",
+      "Gedetailleerd evaluatierapport",
+      "Resultaten zijn binnen 5-30 minuten beschikbaar"
+    ]
   },
   "blog": {
     "seometa": {

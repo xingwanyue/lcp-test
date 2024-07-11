@@ -19,40 +19,40 @@ const state = reactive({
   leftQuanYiList: [
     {
       key: '1',
-      font: 'Unlimited for Practice Sessions',
+      font: t('pricing.leftQuanYiList[0]'),
     },
     {
       key: '2',
-      font: 'Access all Practice Questions',
+      font: t('pricing.leftQuanYiList[1]'),
     },
     {
       key: '3',
-      font: 'Browse High-scoring Sample Answers',
+      font: t('pricing.leftQuanYiList[2]'),
     },
     {
       key: '4',
-      font: 'In-depth Question Analysis',
+      font: t('pricing.leftQuanYiList[3]'),
     },
     {
       key: '5',
-      font: 'High-Frequency Exam Word Book',
+      font: t('pricing.leftQuanYiList[4]'),
     },
     {
       key: '6',
-      font: 'Tailored Study Plan with Smart Question Selection',
+      font: t('pricing.leftQuanYiList[5]'),
     },
     {
       key: '7',
-      font: 'AI-Powered Speaking Evaluations',
+      font: t('pricing.leftQuanYiList[6]'),
     },
   ],
   mockQuanYiList: [
-    { key: 'm1', font: 'Full-scale mock exams' },
-    { key: 'm2', font: 'Test at any time' },
-    { key: 'm3', font: 'Close to real DET exam' },
-    { key: 'm4', font: 'Accurate assessment scores' },
-    { key: 'm5', font: 'Detailed evaluation report' },
-    { key: 'm6', font: 'Results will be available within 5-30 minutes' },
+    { key: 'm1', font: t('pricing.mockQuanYiList[0]') },
+    { key: 'm2', font: t('pricing.mockQuanYiList[1]') },
+    { key: 'm3', font: t('pricing.mockQuanYiList[2]') },
+    { key: 'm4', font: t('pricing.mockQuanYiList[3]') },
+    { key: 'm5', font: t('pricing.mockQuanYiList[4]') },
+    { key: 'm6', font: t('pricing.mockQuanYiList[5]') },
   ],
   mockBuyTimsId: '',
   mockBuyItem: {},
