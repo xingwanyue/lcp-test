@@ -62,8 +62,6 @@ watch(
   () => props.mockSelectBuyTimes,
   (newVal) => {
     if (newVal.length) {
-      console.log('4565465');
-      console.log(newVal[0].id);
       state.mockBuyTimsId = newVal[0].id;
       state.mockBuyItem = newVal[0];
     }
@@ -83,8 +81,6 @@ const buyMembership = (item: any) => {
 };
 
 const buyMockTimes = () => {
-  console.log('buyMockTimes');
-  console.log(state.mockBuyTimsId);
   store.stripePay({ vipId: state.mockBuyTimsId });
 };
 const changeMockBuyTimes = () => {
@@ -104,53 +100,61 @@ const changeMockBuyTimes = () => {
             <div class="title_out">
               <div class="title">{{ item.tag }}</div>
               <div v-if="item.day === 365" class="save_tag">
-                save {{ 100 - ((item.price / item.originalPrice) * 100).toFixed(0) }}%
+                {{
+                  $t('pricing.pagefont.save', {
+                    num: 100 - ((item.price / item.originalPrice) * 100).toFixed(0),
+                  })
+                }}
               </div>
             </div>
 
             <div class="price_out">
-              <div class="do">$</div>
+              <div class="do">{{ $t('pricing.pagefont.do') }}</div>
               <template v-if="item.day === 7">
                 <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
-                <div class="unit">/week</div>
+                <div class="unit">{{ $t('pricing.pagefont.week') }}</div>
               </template>
               <template v-if="item.day === 30">
                 <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
-                <div class="unit">/month</div>
+                <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.day === 365">
                 <div class="price">{{ formatCash(Number(item.price) / 12 + Number(item.correctPrice || 0)) }}</div>
-                <div class="unit">/month</div>
+                <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
             </div>
             <div class="bill">
               <span v-if="item.day === 365">
-                Billed $ {{ formatCash(Number(item.price) + Number(item.correctPrice || 0) * 12) }}/year</span
-              >
+                {{
+                  $t('pricing.pagefont.Billed', {
+                    num: formatCash(Number(item.price) + Number(item.correctPrice || 0) * 12),
+                  })
+                }}
+              </span>
             </div>
           </div>
 
           <div class="select_out_new">
-            <div class="select_out_new_font">AI-powered Correction Service</div>
+            <div class="select_out_new_font">{{ $t('pricing.pagefont.apcs') }}</div>
             <div class="sleect_out_wrapper">
               <div class="select_out">
                 <el-select v-model="item.correctTimesid" placeholder="Select" @change="changeBuyCorrectTimes(item)">
                   <el-option
                     v-for="itemTimes in props.correctSelectBuyTimes"
                     :key="itemTimes.id"
-                    :label="`${itemTimes.correctNum} times`"
+                    :label="`${itemTimes.correctNum} ${$t('pricing.pagefont.times')}`"
                     :value="itemTimes.id"
                   >
-                    <span style="float: left">{{ itemTimes.correctNum }}times</span>
+                    <span style="float: left">{{ itemTimes.correctNum }}{{ $t('pricing.pagefont.times') }}</span>
                     <span
                       style="float: right; color: var(--el-text-color-secondary); font-size: 13px; margin-left: 60px"
                     >
-                      ${{ formatCash(itemTimes.price) }}
+                      {{ $t('pricing.pagefont.do') }}{{ formatCash(itemTimes.price) }}
                     </span>
                   </el-option>
                 </el-select>
               </div>
-              <div class="select_font">/month</div>
+              <div class="select_font">{{ $t('pricing.pagefont.month') }}</div>
             </div>
           </div>
           <div class="but_btn_new">
@@ -182,7 +186,7 @@ const changeMockBuyTimes = () => {
       <div v-if="props.membershipArr.length" class="new_mb_price_left_bottom">
         <div v-for="item in state.leftQuanYiList" :key="item.key" class="one_quanyi">
           <div class="icon">
-            <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.Secure_Payment')" />
+            <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
           </div>
           <div class="font">{{ item.font }}</div>
         </div>
@@ -191,27 +195,29 @@ const changeMockBuyTimes = () => {
     <div class="new_mb_price_right">
       <div v-if="props.membershipArr.length" class="one_card_new">
         <div>
-          <div class="title">MOCK Test</div>
+          <div class="title_out">
+            <div class="title title_blue">{{ $t('pricing.pagefont.mt') }}</div>
+          </div>
           <div class="price_out">
-            <div class="do">$</div>
-            <div class="price">{{ formatCash(state.mockBuyItem.price) }}</div>
+            <div class="do"></div>
+            <div class="price price_blue">{{ formatCash(state.mockBuyItem.price) }}</div>
             <!-- <div class="unit">/week</div> -->
           </div>
           <div class="bill"></div>
         </div>
 
         <div class="select_out_new">
-          <div class="select_out_new_font">AI-powered Correction Service</div>
+          <div class="select_out_new_font">{{ $t('pricing.pagefont.apmt') }}</div>
           <div class="sleect_out_wrapper">
             <div class="select_out">
               <el-select v-model="state.mockBuyTimsId" placeholder="Select" @change="changeMockBuyTimes()">
                 <el-option
                   v-for="itemTimes in props.mockSelectBuyTimes"
                   :key="itemTimes.id"
-                  :label="`${itemTimes.examNum} times`"
+                  :label="`${itemTimes.examNum} ${$t('pricing.pagefont.times')}`"
                   :value="itemTimes.id"
                 >
-                  <span style="float: left">{{ itemTimes.examNum }}times</span>
+                  <span style="float: left">{{ itemTimes.examNum }}{{ $t('pricing.pagefont.times') }}</span>
                   <span style="float: right; color: var(--el-text-color-secondary); font-size: 13px; margin-left: 60px">
                     ${{ formatCash(itemTimes.price) }}
                   </span>
@@ -241,7 +247,7 @@ const changeMockBuyTimes = () => {
       <div v-if="props.membershipArr.length" class="mock_quanyi_list">
         <div v-for="item in state.mockQuanYiList" class="one_quanyi">
           <div class="icon">
-            <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.Secure_Payment')" />
+            <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
           </div>
           <div class="font">{{ item.font }}</div>
         </div>
@@ -375,6 +381,9 @@ const changeMockBuyTimes = () => {
       font-size: 20px;
       color: #333333;
     }
+    .title_blue {
+      color: #063156;
+    }
     .save_tag {
       padding: 4px 10px;
       background: #edc295;
@@ -400,6 +409,9 @@ const changeMockBuyTimes = () => {
       font-weight: 600;
       font-size: 40px;
       color: #333333;
+    }
+    .price_blue {
+      color: #063156;
     }
     .unit {
       font-weight: 600;

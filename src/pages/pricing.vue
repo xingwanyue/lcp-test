@@ -238,11 +238,15 @@ const formateMinToHour = (min: number) => {
         </div>
         <div v-if="!user.id" class="free_white_dom">
           <div class="free_white_dom_left">
-            <div class="free_font">Free</div>
-            <div class="free_tips">With your current plan you only get access to 20 questions</div>
+            <div class="free_font">{{ $t('pricing.pagefont.free_font') }}</div>
+            <div class="free_tips">
+              {{ $t('pricing.pagefont.free_tips') }}
+            </div>
           </div>
           <div class="free_white_dom_right">
-            <NuxtLink class="try_btn" :to="localePath(`/login?url=/pricing`)">Try for free</NuxtLink>
+            <NuxtLink class="try_btn" :to="localePath(`/login?url=/pricing`)">{{
+              $t('pricing.pagefont.tff')
+            }}</NuxtLink>
           </div>
         </div>
         <div v-if="switchType === '1'" class="Membership_dom">
@@ -343,37 +347,6 @@ const formateMinToHour = (min: number) => {
               </div>
             </el-carousel-item>
           </el-carousel>
-          <!-- <Carousel
-            :itemsToShow="1"
-            :autoplay="2000"
-            :wrap-around="true"
-            :pauseAutoplayOnHover="true"
-          >
-            <Slide v-for="item in buyData" :key="item.id" class="scroll_buyed">
-              <div class="scroll_buyed_left">
-                <div class="icon">
-                  <img
-                    src="/img/pricing/green_check.svg"
-                    alt="DET Practice:The best Duolingo English Test Practice platform"
-                  />
-                </div>
-                <div class="name">{{ item.data.nickname }}</div>
-                <div class="type">purchased</div>
-                <div class="days">{{ item.data.tag }}</div>
-              </div>
-              <div class="scroll_buyed_mid">
-                <div class="flag">
-                  <img
-                    v-if="item.data.avatar"
-                    :src="staticUrlGet(item.data.avatar)"
-                    :alt="item.data.country"
-                  />
-                </div>
-                <div class="country_name">{{ item.data.country }}</div>
-                <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
-              </div>
-            </Slide>
-          </Carousel> -->
         </div>
 
         <div class="bank_card">
