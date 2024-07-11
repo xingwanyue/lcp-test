@@ -527,4 +527,14 @@ const changeMockBuyTimes = () => {
   }
 }
 </style>
-<style lang="scss"></style>
+<style lang="scss">
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: #f66442 !important;
+}
+.el-select__wrapper.is-focused {
+  box-shadow: 0 0 0 1px #f66442 !important;
+}
+.el-select-dropdown__item.is-selected {
+  color: #f66442 !important;
+}
+</style>
