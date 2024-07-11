@@ -228,13 +228,16 @@ const changeMockBuyTimes = () => {
         </div>
         <div class="but_btn_new">
           <div v-if="user?.id">
-            <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMockTimes()">
+            <div class="card_price_buy_btn card_price_buy_btn_mock common_btn_hover_bgColor" @click="buyMockTimes()">
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
             </div>
           </div>
           <div v-else>
-            <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+            <NuxtLink
+              class="card_price_buy_btn card_price_buy_btn_mock common_btn_hover_bgColor"
+              :to="localePath(`/login?url=/pricing`)"
+            >
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
             </NuxtLink>
@@ -466,6 +469,10 @@ const changeMockBuyTimes = () => {
       a {
         color: white;
       }
+    }
+    .card_price_buy_btn_mock {
+      background: #ffe1bc;
+      color: #3c5d86;
     }
   }
 }
