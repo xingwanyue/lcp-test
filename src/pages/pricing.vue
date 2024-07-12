@@ -536,6 +536,7 @@ const formateMinToHour = (min: number) => {
             font-weight: 400;
             font-size: 14px;
             color: #403f3e;
+            margin-top: 4px;
           }
         }
         .free_white_dom_right {
@@ -563,7 +564,7 @@ const formateMinToHour = (min: number) => {
       }
 
       .Membership_dom {
-        margin-top: 40px;
+        margin-top: 16px;
         // display: grid;
         // grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         // grid-gap: 16px;
@@ -775,7 +776,7 @@ const formateMinToHour = (min: number) => {
       }
 
       .Service_dom {
-        margin-top: 80px;
+        margin-top: 16px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
         grid-gap: 16px;
@@ -812,7 +813,7 @@ const formateMinToHour = (min: number) => {
               font-size: 24px;
               color: #201515;
               // border: 1px red solid;
-              min-height: 56px;
+              min-height: 26px;
             }
 
             .card_price_part2 {

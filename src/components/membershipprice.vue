@@ -71,6 +71,7 @@ const changeBuyCorrectTimes = (item: any) => {
   const { id, correctTimesid } = item;
   const correctTimes = props.correctSelectBuyTimes.find((item: any) => item.id === correctTimesid);
   item.correctPrice = correctTimes.price;
+  item.correctOriginalPrice = correctTimes.originalPrice;
 };
 
 const buyMembership = (item: any) => {
@@ -85,6 +86,13 @@ const buyMockTimes = () => {
 };
 const changeMockBuyTimes = () => {
   state.mockBuyItem = props.mockSelectBuyTimes.find((item: any) => item.id === state.mockBuyTimsId);
+};
+const saveCaculate = (item) => {
+  const { price = 0, originalPrice = 0, correctPrice = 0, correctOriginalPrice = 0 } = item;
+  return (
+    100 -
+    ((Number(price) + Number(correctPrice) * 12) / (Number(originalPrice) + Number(correctOriginalPrice) * 12)) * 100
+  );
 };
 </script>
 <template>
@@ -102,7 +110,7 @@ const changeMockBuyTimes = () => {
               <div v-if="item.day === 365" class="save_tag">
                 {{
                   $t('pricing.pagefont.save', {
-                    num: 100 - ((item.price / item.originalPrice) * 100).toFixed(0),
+                    num: saveCaculate(item).toFixed(0),
                   })
                 }}
               </div>
@@ -145,10 +153,8 @@ const changeMockBuyTimes = () => {
                     :label="`${itemTimes.correctNum} ${$t('pricing.pagefont.times')}`"
                     :value="itemTimes.id"
                   >
-                    <span style="float: left">{{ itemTimes.correctNum }}{{ $t('pricing.pagefont.times') }}</span>
-                    <span
-                      style="float: right; color: var(--el-text-color-secondary); font-size: 13px; margin-left: 60px"
-                    >
+                    <span style="float: left">{{ itemTimes.correctNum }} {{ $t('pricing.pagefont.times') }}</span>
+                    <span style="float: right; font-size: 13px; margin-left: 60px">
                       {{ $t('pricing.pagefont.do') }}{{ formatCash(itemTimes.price) }}
                     </span>
                   </el-option>
@@ -217,8 +223,8 @@ const changeMockBuyTimes = () => {
                   :label="`${itemTimes.examNum} ${$t('pricing.pagefont.times')}`"
                   :value="itemTimes.id"
                 >
-                  <span style="float: left">{{ itemTimes.examNum }}{{ $t('pricing.pagefont.times') }}</span>
-                  <span style="float: right; color: var(--el-text-color-secondary); font-size: 13px; margin-left: 60px">
+                  <span style="float: left">{{ itemTimes.examNum }} {{ $t('pricing.pagefont.times') }}</span>
+                  <span style="float: right; font-size: 13px; margin-left: 60px">
                     ${{ formatCash(itemTimes.price) }}
                   </span>
                 </el-option>
@@ -536,5 +542,8 @@ const changeMockBuyTimes = () => {
 }
 .el-select-dropdown__item.is-selected {
   color: #f66442 !important;
+}
+.el-select-dropdown__item.is-hovering {
+  background-color: rgba(246, 100, 66, 0.05);
 }
 </style>
