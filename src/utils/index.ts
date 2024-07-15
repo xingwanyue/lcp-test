@@ -5,7 +5,7 @@ export const domain = 'detpractice.com';
 
 // 应用地址
 export const host = `https://app.${domain}`;
-export const api = `https://api.duolingopractice.com/weapp/api`;
+export const api = `https://www.duolingopractice.com/weapp/api`;
 // export const api = `http://192.168.1.22:9000/api`;
 
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
