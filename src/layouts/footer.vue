@@ -125,6 +125,11 @@ const clickChangeLanguage = (item) => {
     getBlob();
   });
   language.value = item.value;
+  // if (item.value === 'ar') {
+  //   document.documentElement.setAttribute('dir', 'rtl');
+  // } else {
+  //   document.documentElement.setAttribute('dir', 'ltr');
+  // }
 };
 const wehaveLanguage = {
   ar: 'العربية',
