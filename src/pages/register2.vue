@@ -6,6 +6,7 @@ import { useRouter, useRoute } from 'vue-router';
 import { register } from '@/api';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { sinupEvent } from '@/utils/gtag';
+import { getCookie } from '@/utils';
 
 definePageMeta({
   layout: 'noheaderfooter',
@@ -52,6 +53,10 @@ const submit = async () => {
     password,
   };
   loading.value = true;
+  const InviteCode = getCookie('InviteCode');
+  if (InviteCode) {
+    temp.referrerCode = InviteCode;
+  }
   const { err } = await register(temp);
   loading.value = false;
   if (!err) {
