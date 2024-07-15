@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
     "Products": ["DET Üben", "KI-Korrekturservice", "DET Attrappe", "Duolingo English Test Kurs"],
-    "Company": ["Über uns", "Kontaktieren Sie uns", "Geschäftsbedingungen", "Datenschutzerklärung", "Sitemap"],
+    "Company": [
+      "Über uns",
+      "Kontaktieren Sie uns",
+      "Geschäftsbedingungen",
+      "Datenschutzerklärung",
+      "Sitemap",
+      "Partnerprogramm"
+    ],
     "show_more": "mehr anzeigen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -160,7 +167,19 @@
       "check_icon": "Überprüfen",
       "tip_icon": "Tipp",
       "green_check": "Grüner Haken",
-      "arrow_down": "Nach unten gerichteter Pfeil"
+      "arrow_down": "Nach unten gerichteter Pfeil",
+      "free_font": "Kostenlos",
+      "free_tips": "Mit Ihrem aktuellen Plan haben Sie nur Zugriff auf 20 Fragen",
+      "tff": "Kostenlos ausprobieren",
+      "save": "sparen {num}%",
+      "week": "/Woche",
+      "month": "/Monat",
+      "Billed": "Abgerechnet ${num} /Jahr",
+      "apcs": "KI-gestützter Korrekturservice",
+      "times": "Mal",
+      "bci": "schwarzes_kontrollsymbol",
+      "mt": "Probeklausur",
+      "apmt": "KI-gestützter Probetest"
     },
     "aqList": [
       {
@@ -239,7 +258,24 @@
         "tip": "Wir werden Ihnen innerhalb eines Geschäftstags antworten.",
         "btn": "Hinterlassen Sie jetzt eine Nachricht"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Unbegrenzt für Übungssitzungen",
+      "Zugriff auf alle Übungsfragen",
+      "Durchsuchen von hoch bewerteten Musterantworten",
+      "Tiefgehende Frageanalyse",
+      "Häufige Prüfungswortliste",
+      "Maßgeschneiderter Studienplan mit intelligenter Frageauswahl",
+      "KI-gestützte Sprechbewertungen"
+    ],
+    "mockQuanYiList": [
+      "Vollständige Probeklausuren",
+      "Testen jederzeit",
+      "Nahe an der echten DET-Prüfung",
+      "Genau Bewertungsergebnisse",
+      "Detaillierter Bewertungsbericht",
+      "Ergebnisse sind innerhalb von 5-30 Minuten verfügbar"
+    ]
   },
   "blog": {
     "seometa": {
@@ -757,5 +793,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englisch Sprachtest, Duolingo Englischprüfung, Duolingo Kompetenzprüfung"
     },
     "h1": "Sitemap"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Partnerprogramm | DET Practice",
+      "description": "Treten Sie dem lukrativen Partnerprogramm von DET Practice bei und verdienen Sie bis zu 30% Provision für jede Empfehlung. Arbeiten Sie mit uns zusammen, um Schülern zu helfen, ihre besten Ergebnisse zu erzielen.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englischtest, Duolingo Englischprüfung, Duolingo Sprachtest"
+    },
+    "tag": "Partnerprogramm",
+    "h1": "Verdienen Sie <span class='yellow_font'>30% Provision</span> für jede Ihrer Empfehlungen",
+    "sun": "Jetzt anmelden",
+    "join_title": "Treten Sie dem <span class='yellow_font'>lukrativen</span> Partnerprogramm von Detpractice bei",
+    "join_tips": "Melden Sie sich für das Partnerprogramm von Detpractice.com an. Jeder kann mit Detpractice.com leicht eine höhere Punktzahl in Duolingo English Test erreichen. Werden Sie unser Partner und verdienen Sie bis zu 30% Provision für jede Empfehlung.",
+    "earth_with_title": "Verdienen Sie mit der vielfältigen Produktpalette von Detpractice",
+    "question_bank": "Fragenbank",
+    "acs": "KI-Korrekturservice",
+    "Mock_Test": "Probetest",
+    "Courses": "Kurse",
+    "bada": "Werden Sie in 3 Schritten ein Detpractice-Partner",
+    "hep": "Hohes Verdienstpotenzial",
+    "heptips": [
+      "Wettbewerbsfähige Provisionssätze: 30% auf alle Einnahmen von Ihrem Partnerlink",
+      "Potenzial für langfristige Partnerschaften: Wir schätzen unsere Partner und streben an, langfristige, gegenseitig vorteilhafte Beziehungen zu entwickeln."
+    ],
+    "ctw": "Kreative Köpfe, mit denen wir gerne zusammenarbeiten",
+    "ctwtips": [
+      "1. Sie sind ein Kreativer mit einem Publikum, das aus Studenten besteht (Das Lernen von Duolingo English Test ist ein Plus!)",
+      "2. Sie sind begeistert von einer effektiveren Methode, DET zu lernen",
+      "3. Sie sind eine Bildungseinrichtung, die Duolingo English Test unterrichtet"
+    ],
+    "dos": "Dos",
+    "dos_icon_alt": "grünes Häkchen-Symbol",
+    "donts": "Don'ts",
+    "donts_icon_alt": "rotes Fehlersymbol",
+    "faqs": "FAQs",
+    "sew": "Beginnen Sie jetzt mit unserem Partnerprogramm zu verdienen",
+    "contaceUsList": [
+      {
+        "font": "Melden Sie sich für unser Partnerprogramm an und erhalten Sie Ihren Empfehlungslink.",
+        "btn": "Jetzt anmelden"
+      },
+      {
+        "font": "Teilen Sie Ihren Link auf Ihrer Website oder anderen Plattformen.",
+        "btn": "Gehen und teilen"
+      },
+      {
+        "font": "Verdienen Sie Provisionen aus den Verkäufen, die Sie und Ihre Unterpartner erzielen.",
+        "btn": "Jetzt prüfen"
+      }
+    ],
+    "dosList": [
+      { "font": "Probieren Sie Detpractice.com selbst aus" },
+      { "font": "Bewerben Sie Detpractice.com ethisch und ehrlich" },
+      { "font": "Erstellen Sie qualitativ hochwertigen und relevanten Inhalt" },
+      { "font": "Geben Sie Ihre Partnerschaftsbeziehung bekannt" }
+    ],
+    "dontsList": [
+      { "font": "Machen Sie keine irreführenden oder falschen Aussagen über Detpractice.com" },
+      { "font": "Werben Sie nicht auf Plattformen mit unangemessenem oder illegalem Inhalt" },
+      { "font": "Werben Sie nicht auf Gutscheinseiten" },
+      {
+        "font": "Erstellen Sie keine Werbekampagnen mit unserem Markennamen oder setzen Sie unseren Domainnamen in die Ziel-URLs Ihrer Anzeigen"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Wer kann sich für das Partnerprogramm von DET Practice bewerben?",
+        "a": "Wenn Sie ein Kreativer mit einem Publikum aus Studenten sind, eine Bildungseinrichtung, die Duolingo English Test unterrichtet, oder ein Influencer, können Sie sich für unser Partnerprogramm anmelden und Geld verdienen."
+      },
+      {
+        "q": "Wie kann ich meine Provisionen verfolgen?",
+        "a": "Sobald Sie sich für unser Partnerprogramm angemeldet haben, haben Sie Zugriff auf Ihre eigene Verwaltungsseite, auf der Sie die Conversions Ihrer Empfehlungslinks verfolgen können."
+      },
+      {
+        "q": "Erhalte ich eine Provision, wenn ein von mir empfohlener Kunde abonniert oder ein Upgrade durchführt?",
+        "a": "Ja, nachdem ein Benutzer sich über Ihren Link angemeldet hat, verdienen Sie jedes Mal eine Provision, wenn der Benutzer einen Kauf tätigt und ein Upgrade durchführt."
+      },
+      {
+        "q": "Wie hoch ist der genaue Prozentsatz der Provision, den ich verdienen kann?",
+        "a": "Für die ersten 3 Bestellungen erhalten Sie 10% Provision; für mehr als 3 Bestellungen erhalten Sie 30% Provision."
+      },
+      {
+        "q": "Was passiert, wenn ein von mir empfohlener Kunde seinen Kauf storniert?",
+        "a": "Wenn ein Kunde einen Kauf storniert oder aus irgendeinem Grund eine Rückerstattung erhält, wird die für diese Person verdiente Provision von Ihrem Konto abgezogen."
+      },
+      {
+        "q": "Wann und wie erhalte ich meine Auszahlung?",
+        "a": "Wir bearbeiten Zahlungen am 15. jedes Monats für alle Provisionen, die Sie im vorherigen Monat verdient haben. Sie können Zahlungen über PayPal erhalten."
+      },
+      {
+        "q": "Was, wenn ich weitere Fragen zu Ihrem Affiliate-Internet-Marketing-Programm habe?",
+        "a": "Kontaktieren Sie uns einfach unter \"<span class='yellow_font'>support@detpractice.com</span>\" und wir helfen Ihnen gerne bei allen Fragen, die Sie haben."
+      }
+    ]
   }
 }

@@ -42,7 +42,7 @@
     "BlogTitle": "Blogg",
     "CompanyTitle": "Firma",
     "Products": ["DET Øvelse", "AI Korreksjonstjeneste", "DET Narre", "Duolingo English Test Kurs"],
-    "Company": ["Om oss", "Kontakt oss", "Vilkår og betingelser", "Personvernregler", "Sidekart"],
+    "Company": ["Om oss", "Kontakt oss", "Vilkår og betingelser", "Personvernregler", "Sidekart", "Affiliate Program"],
     "show_more": "vis mer",
     "alt": "DET Praksis:Den beste Duolingo English Test Praksisplattformen",
     "cookie_contenr": "DET Øvelse bruker informasjonskapsler for å forbedre innholdet basert på dine nettleserinnstillinger. For mer informasjon, se",
@@ -160,7 +160,19 @@
       "check_icon": "Sjekk",
       "tip_icon": "Tips",
       "green_check": "Grønn Sjekk",
-      "arrow_down": "Nedoverpil"
+      "arrow_down": "Nedoverpil",
+      "free_font": "Gratis",
+      "free_tips": "Med din nåværende plan har du kun tilgang til 20 spørsmål",
+      "tff": "Prøv gratis",
+      "save": "spar {num}%",
+      "week": "/uke",
+      "month": "/måned",
+      "Billed": "Fakturert ${num} /år",
+      "apcs": "AI-drevet Korreksjonstjeneste",
+      "times": "ganger",
+      "bci": "svart_sjekk_ikon",
+      "mt": "Prøveeksamen",
+      "apmt": "AI-drevet Prøvetest"
     },
     "aqList": [
       {
@@ -239,7 +251,24 @@
         "tip": "Vi vil svare deg innen én virkedag.",
         "btn": "Legg igjen en melding nå"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Ubegrenset for øvelsesøkter",
+      "Tilgang til alle øvelsesspørsmål",
+      "Bla gjennom høyscorende prøvebesvarelser",
+      "Grundig spørsmålsanalyse",
+      "Høyfrekvent eksamensordbok",
+      "Skreddersydd studieplan med smart spørsmål utvalg",
+      "AI-drevne taleevalueringer"
+    ],
+    "mockQuanYiList": [
+      "Fullskala mock eksamener",
+      "Test når som helst",
+      "Nær den virkelige DET-eksamen",
+      "Nøyaktige vurderingsresultater",
+      "Detaljert evalueringsrapport",
+      "Resultater vil være tilgjengelige innen 5-30 minutter"
+    ]
   },
   "blog": {
     "seometa": {
@@ -757,5 +786,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Språktest, Duolingo Engelsk Eksamen, Duolingo Ferdighetseksamen"
     },
     "h1": "Nettstedskart"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Affiliate Program | DET Practice",
+      "description": "Bli med i DET Practice's lukrative tilknytningsprogram og tjen opptil 30% provisjon for hver henvisning. Samarbeid med oss for å hjelpe studenter med å oppnå sine beste resultater.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Språk Test, Duolingo Engelsk Eksamen, Duolingo Ferdighetsprøve"
+    },
+    "tag": "Tilknytningsprogram",
+    "h1": "Tjen <span class='yellow_font'>30% provisjon</span> for hver henvisning",
+    "sun": "Registrer deg nå",
+    "join_title": "Bli med i Detpractice's <span class='yellow_font'>lukrative</span> tilknytningsprogram",
+    "join_tips": "Registrer deg for Detpractice.com sitt tilknytningsprogram. Alle kan enkelt oppnå høyere poengsum på Duolingo English Test med Detpractice.com. Bli vår partner og tjen opptil 30% provisjon for hver henvisning.",
+    "earth_with_title": "Tjen med Detpractice's varierte produktutvalg",
+    "question_bank": "Spørsmålsbank",
+    "acs": "AI Korreksjonstjeneste",
+    "Mock_Test": "Prøveprøve",
+    "Courses": "Kurs",
+    "bada": "Bli en Detpractice tilknyttet på 3 trinn",
+    "hep": "Høyt inntjeningspotensial",
+    "heptips": [
+      "Konkurransedyktige provisjonsrater: 30% på all inntekt bidratt fra din tilknytningslenke",
+      "Potensial for langsiktige partnerskap: Vi verdsetter våre tilknyttede selskaper og streber etter å utvikle langsiktige, gjensidig fordelaktige relasjoner."
+    ],
+    "ctw": "Skapere vi elsker å jobbe med",
+    "ctwtips": [
+      "1. Du er en skaper som har et publikum bestående av studenter (Å lære Duolingo English Test er en fordel!)",
+      "2. Du er spent på en mer effektiv måte å lære DET på",
+      "3. Du er en opplæringsinstitusjon som underviser i Duolingo English Test"
+    ],
+    "dos": "Gjør",
+    "dos_icon_alt": "grønn Riktig ikon",
+    "donts": "Ikke gjør",
+    "donts_icon_alt": "rød Feil ikon",
+    "faqs": "Ofte stilte spørsmål",
+    "sew": "Begynn å tjene med vårt tilknytningsprogram nå",
+    "contaceUsList": [
+      {
+        "font": "Registrer deg for vårt tilknytningsprogram og få din henvisningslenke.",
+        "btn": "Registrer deg nå"
+      },
+      {
+        "font": "Del lenken din på din nettside eller andre plattformer.",
+        "btn": "Gå og del"
+      },
+      {
+        "font": "Tjen provisjon fra salg du og dine under-tilknyttede driver.",
+        "btn": "Sjekk ut"
+      }
+    ],
+    "dosList": [
+      { "font": "Prøv ut Detpractice.com selv" },
+      { "font": "Promoter Detpractice.com på en etisk og ærlig måte" },
+      { "font": "Lag kvalitets- og relevant innhold" },
+      { "font": "Offentliggjør ditt tilknytningsforhold" }
+    ],
+    "dontsList": [
+      { "font": "Gjør misledende eller falske påstander om Detpractice.com" },
+      { "font": "Promoter på plattformer som har upassende eller ulovlig innhold" },
+      { "font": "Promoter på hvilken som helst kupongside" },
+      {
+        "font": "Sett opp reklamekampanjer ved å bruke vårt varemerke eller legge vårt domenenavn i dine annonse-destinasjons-URLer"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Hvem kan søke om DET Practice's tilknytningsprogram?",
+        "a": "Hvis du er en skaper som har et publikum bestående av studenter, en opplæringsinstitusjon som underviser i Duolingo English Test, eller en influencer, kan du melde deg på vårt tilknytningsprogram og tjene penger."
+      },
+      {
+        "q": "Hvordan sporer jeg mine provisjoner?",
+        "a": "Når du har meldt deg på vårt tilknytningsprogram, vil du få tilgang til din dedikerte admin-side hvor du kan spore konverteringer fra dine henvisningslenker."
+      },
+      {
+        "q": "Får jeg provisjon hvis en kunde jeg henviser abonnerer eller oppgraderer?",
+        "a": "Ja, etter at en bruker har registrert seg gjennom din lenke, tjener du provisjon hver gang brukeren gjør et kjøp og oppgraderer."
+      },
+      {
+        "q": "Hva er den nøyaktige prosentandelen av provisjon jeg kan tjene?",
+        "a": "For de første 3 bestillingene vil du motta 10% provisjon; for mer enn 3 bestillinger vil du motta 30% provisjon."
+      },
+      {
+        "q": "Hva skjer hvis en kunde jeg henviser avbryter sitt kjøp?",
+        "a": "Hvis en kunde avbryter et kjøp eller får refusjon av noen grunn, vil provisjonen du har tjent for den personen bli trukket fra kontoen din."
+      },
+      {
+        "q": "Når og hvordan får jeg betalt?",
+        "a": "Vi behandler betalinger den 15. hver måned for all provisjon du har tjent i forrige måned. Du kan motta betalinger via PayPal."
+      },
+      {
+        "q": "Hva hvis jeg har andre spørsmål om deres tilknytnings internet markedsføringsprogram?",
+        "a": "Bare kontakt oss på \"<span class='yellow_font'>support@detpractice.com</span>\" så hjelper vi deg gjerne med eventuelle spørsmål du måtte ha."
+      }
+    ]
   }
 }

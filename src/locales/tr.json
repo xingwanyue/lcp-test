@@ -42,7 +42,14 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Şirket",
     "Products": ["DET Pratik", "AI Düzeltme Servisi", "DET Sahte", "Duolingo English Test Kurs"],
-    "Company": ["Hakkımızda", "Bize ulaşın", "Şartlar ve Koşullar", "Gizlilik Politikası", "Site Haritası"],
+    "Company": [
+      "Hakkımızda",
+      "Bize ulaşın",
+      "Şartlar ve Koşullar",
+      "Gizlilik Politikası",
+      "Site Haritası",
+      "Ortaklık Programı"
+    ],
     "show_more": "daha fazla göster",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "cookie_contenr": "DET Uygulama, tarayıcı Ayarlarınıza göre içeriği iyileştirmek için çerezler kullanır. Daha fazla bilgi için bkz",
@@ -160,7 +167,19 @@
       "check_icon": "Kontrol Et",
       "tip_icon": "İpucu",
       "green_check": "Yeşil Onay İşareti",
-      "arrow_down": "Aşağı Ok"
+      "arrow_down": "Aşağı Ok",
+      "free_font": "Ücretsiz",
+      "free_tips": "Mevcut planınızla yalnızca 20 soruya erişiminiz var",
+      "tff": "Ücretsiz dene",
+      "save": "{num}% tasarruf et",
+      "week": "/hafta",
+      "month": "/ay",
+      "Billed": "Faturalandırılan ${num} /yıl",
+      "apcs": "Yapay Zeka Destekli Düzeltme Hizmeti",
+      "times": "kez",
+      "bci": "siyah_onay_ikonu",
+      "mt": "Deneme Sınavı",
+      "apmt": "Yapay Zeka Destekli Deneme Sınavı"
     },
     "aqList": [
       {
@@ -241,7 +260,24 @@
         "tip": "Size bir iş günü içinde cevap vereceğiz.",
         "btn": "Şimdi bir mesaj bırakın"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Sınırsız pratik oturumları",
+      "Tüm pratik sorularına erişim",
+      "Yüksek puanlı örnek cevapları inceleyin",
+      "Derinlemesine soru analizi",
+      "Yüksek frekanslı sınav kelime kitabı",
+      "Akıllı soru seçimi ile kişiselleştirilmiş çalışma planı",
+      "Yapay Zeka Destekli Konuşma Değerlendirmeleri"
+    ],
+    "mockQuanYiList": [
+      "Tam ölçekli deneme sınavları",
+      "Her zaman test yapın",
+      "Gerçek DET sınavına yakın",
+      "Doğru değerlendirme puanları",
+      "Detaylı değerlendirme raporu",
+      "Sonuçlar 5-30 dakika içinde hazır olacak"
+    ]
   },
   "blog": {
     "seometa": {
@@ -755,5 +791,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
     },
     "h1": "Site Haritası"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Bağlı Programı | DET Uygulaması",
+      "description": "DET Uygulaması'nın kazançlı bağlı programına katılın ve her yönlendirme için %30'a kadar komisyon kazanın. Öğrencilerin en iyi puanlarına ulaşmalarına yardımcı olmak için bizimle ortak olun.",
+      "keywords": "DET Duolingo, DET Testi, Duolingo DET, Duolingo Testi, Duolingo Testi Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+    },
+    "tag": "Bağlı Programı",
+    "h1": "Her Yönlendirmenizden <span class='yellow_font'>%30 Komisyon</span> Kazanın",
+    "sun": "Şimdi Kaydolun",
+    "join_title": "Detpractice'ın <span class='yellow_font'>Kazançlı</span> Bağlı Programına Katılın",
+    "join_tips": "Detpractice.com'un bağlı programına kaydolun. Herkes Detpractice.com ile Duolingo English Test üzerinde kolayca daha yüksek bir puan alabilir. Bizim ortağımız olun ve her yönlendirme için %30'a kadar komisyon kazanın.",
+    "earth_with_title": "Detpractice'ın Çeşitli Ürün Yelpazesiyle Kazanın",
+    "question_bank": "Soru Bankası",
+    "acs": "AI Düzeltme Hizmeti",
+    "Mock_Test": "Deneme Testi",
+    "Courses": "Kurslar",
+    "bada": "3 Adımda Detpractice Bağlısı Olun",
+    "hep": "Yüksek Kazanç Potansiyeli",
+    "heptips": [
+      "Rekabetçi komisyon oranları: Bağlantınızdan gelen tüm gelirlerde %30",
+      "Uzun vadeli ortaklık potansiyeli: Bağlılarımızı değerli buluyor ve uzun vadeli, karşılıklı yarar sağlayan ilişkiler geliştirmeyi hedefliyoruz."
+    ],
+    "ctw": "Çalışmayı Sevdiğimiz İçerik Üreticileri",
+    "ctwtips": [
+      "1. İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisiniz (Duolingo English Test Öğrenmek bir artıdır!)",
+      "2. DET öğrenmenin daha etkili bir yoluyla heyecanlanıyorsunuz",
+      "3. Duolingo English Test öğreten bir eğitim kurumusunuz"
+    ],
+    "dos": "Yapılması Gerekenler",
+    "dos_icon_alt": "yeşil Doğru İkonu",
+    "donts": "Yapılmaması Gerekenler",
+    "donts_icon_alt": "kırmızı Hata İkonu",
+    "faqs": "SSS",
+    "sew": "Bağlı Programımızla Şimdi Kazanmaya Başlayın",
+    "contaceUsList": [
+      {
+        "font": "Bağlı programımıza kaydolun ve yönlendirme bağlantınızı alın.",
+        "btn": "Şimdi Kaydolun"
+      },
+      {
+        "font": "Bağlantınızı web sitenizde veya diğer platformlarda paylaşın.",
+        "btn": "Gidin ve Paylaşın"
+      },
+      {
+        "font": "Sizin ve alt bağlılarınızın sağladığı satışlardan komisyon kazanın.",
+        "btn": "Kontrol Edin"
+      }
+    ],
+    "dosList": [
+      { "font": "Detpractice.com'u kendiniz deneyin" },
+      { "font": "Detpractice.com'u etik ve dürüst bir şekilde tanıtın" },
+      { "font": "Kaliteli ve ilgili içerikler oluşturun" },
+      { "font": "Bağlılık ilişkinizi açıklayın" }
+    ],
+    "dontsList": [
+      { "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunun" },
+      { "font": "Uygunsuz veya yasa dışı içeriğe sahip platformlarda tanıtım yapın" },
+      { "font": "Herhangi bir kupon sitesinde tanıtım yapın" },
+      {
+        "font": "Marka adımızı kullanarak reklam kampanyaları düzenleyin veya reklamlarınızın hedef URL'lerine alan adımızı koyun"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "DET Uygulaması'nın bağlı programına kimler başvurabilir?",
+        "a": "İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisi, Duolingo English Test öğreten bir eğitim kurumu veya bir influencer iseniz, bağlı programımıza kaydolup para kazanabilirsiniz."
+      },
+      {
+        "q": "Komisyonlarımı nasıl takip ederim?",
+        "a": "Bağlı programımıza kaydolduğunuzda, yönlendirme bağlantılarınızdan gelen dönüşümleri takip edebileceğiniz özel bir yönetici sayfasına erişiminiz olacak."
+      },
+      {
+        "q": "Yönlendirdiğim bir müşteri abone olur veya yükseltirse komisyon alır mıyım?",
+        "a": "Evet, bir kullanıcı bağlantınız üzerinden kaydolduktan sonra, kullanıcı her satın alma ve yükseltme yaptığında komisyon kazanırsınız."
+      },
+      {
+        "q": "Kazandığım komisyonun tam yüzdesi nedir?",
+        "a": "İlk 3 sipariş için %10 komisyon alacaksınız; 3'ten fazla sipariş için %30 komisyon alacaksınız."
+      },
+      {
+        "q": "Yönlendirdiğim bir müşteri satın alımını iptal ederse ne olur?",
+        "a": "Bir müşteri herhangi bir nedenle satın alımını iptal eder veya geri ödeme alırsa, o kişi için kazandığınız komisyon hesabınızdan düşülür."
+      },
+      {
+        "q": "Ödemelerimi ne zaman ve nasıl alırım?",
+        "a": "Önceki ay kazandığınız tüm komisyonlar için her ayın 15'inde ödemeleri işliyoruz. Ödemeleri PayPal aracılığıyla alabilirsiniz."
+      },
+      {
+        "q": "İnternet pazarlama programınızla ilgili başka sorularım olursa ne yapmalıyım?",
+        "a": "\"<span class='yellow_font'>support@detpractice.com</span>\" adresinden bizimle iletişime geçin, sorularınızı cevaplamaktan memnuniyet duyarız."
+      }
+    ]
   }
 }
