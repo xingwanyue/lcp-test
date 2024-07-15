@@ -85,7 +85,9 @@ onMounted(async () => {
     });
     // 获取路由参数code
     const code = route.query.code;
-    setCookie('InviteCode', code, 30);
+    if (code) {
+      setCookie('InviteCode', code, 30);
+    }
   }
 
   const token = await getToken();
