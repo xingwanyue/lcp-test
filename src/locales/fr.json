@@ -178,7 +178,7 @@
       "apcs": "Service de correction alimenté par l'IA",
       "times": "fois",
       "bci": "icône_de_vérification_noire",
-      "mt": "Test simulé",
+      "mt": "Examen blanc",
       "apmt": "Test simulé alimenté par l'IA"
     },
     "aqList": [
