@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Company",
     "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
-    "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap", "Affiliate Program"],
+    "Company": [
+      "About us",
+      "Contact us",
+      "Terms and Conditions",
+      "Privacy Policy",
+      "Sitemap",
+      "Affiliate Program",
+      "Refund Policy"
+    ],
     "show_more": "show more",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
@@ -201,10 +209,7 @@
       },
       {
         "name": "What is your refund policy?",
-        "content1": "1. Free Account  <br>Usage is entirely free, so there are no refund issues.",
-        "content2": "<br>2. Subscription Plans  <br>Users may request a refund if DET Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect. Refunds will not be issued for subscriptions and services that have already become active after purchase.",
-        "content3": "<br>3. Speaking/Writing Guide  <br>The Speaking/Writing Guide is considered a digital product. Once purchased and downloaded, the product delivery is deemed complete and is generally non-refundable. Please carefully read the purchase information before making a purchase.",
-        "content4": "<br><br>Important Note:  <br>All refund requests must be processed through customer service, and relevant usage records must be provided for verification.<br>To prevent fraudulent refunds, each user account is limited to one refund request. Multiple requests will not be processed. <br>If you have any special circumstances or unique situations, please contact us, and we will work with you to find a resolution."
+        "content1": "For information on how to get a refund and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -643,6 +648,41 @@
       "title": "Links To Other Sites",
       "a1": "Our Service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third-party’s site. We strongly advise you to review the Privacy Policy of every site you visit.",
       "a2": "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Refund Policy: Learn About Our Refund Process | DET Practice",
+      "description": "Discover DET Practice's Refund Policy: Learn how we handle refund requests, eligibility criteria, and the process for obtaining a refund. Read more about our policies now.",
+      "keywords": "Refund Policy, DET Practice Refund, DET Practice Policy, Refund Process, Eligibility for Refund"
+    },
+    "h1": "Refund Policy",
+    "q1": {
+      "a1": "Thank you for choosing and purchasing our services. We strive to provide the best learning experience for our customers. However, if you are not entirely satisfied with your purchase, we're here to help."
+    },
+    "q2": {
+      "title": "Eligibility for Refunds",
+      "a1": "• Member Services: Refund requests for member services must be made within 3 days of purchase.",
+      "a2": "• Accessed Content: If you have not accessed more than 20 questions, you are eligible for a refund.",
+      "a3": "• Digital Courses: Once a digital product is downloaded or accessed, it is considered used and used products cannot be refunded."
+    },
+    "q3": {
+      "title": "How to Request a Refund / Cancel Subscription",
+      "a1": "To request a refund, please follow these steps:",
+      "a2": "1.Cancel Subscription: Login to your account, find and click the \"Manage your billing\" link at the bottom of the membership page. You will be redirected to a confirmation page where you can confirm your decision to unsubscribe.",
+      "a3": "2.Contact Our Support: Contact our customer support team at <span class='website'>support@detpractice.com</span> with your order number and the reason for the refund request.",
+      "a4": "3.Our team will review your request and respond within 3 business days."
+    },
+    "q4": {
+      "title": "Exclusions",
+      "a1": "The following are not eligible for refunds:",
+      "a2": "• Digital products that have been downloaded.",
+      "a3": "• Products and services purchased through third-party vendors."
+    },
+    "q5": {
+      "title": "Contact Us",
+      "a1": "If you have any questions about our refund policy or need assistance with your purchase, please contact us at:",
+      "a2": "Email: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {
