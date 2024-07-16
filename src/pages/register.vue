@@ -1,5 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
+import { oauth2SignIn } from '@/utils/googleAuth';
+import { urlGet } from '@/utils';
 const { t } = useI18n();
 import { useRouter } from 'vue-router';
 import { sesCodeSend } from '@/api';
@@ -45,7 +47,14 @@ const goLogin = () => {
   router.push('/login');
 };
 
-const googleRegister = () => {};
+const googleRegister = async () => {
+  const InviteCode = getCookie('InviteCode');
+  const args = {};
+  if (InviteCode) {
+    args.channel = `${InviteCode}-1`;
+  }
+  return oauth2SignIn(urlGet('/home'), args);
+};
 </script>
 <template>
   <div class="login">

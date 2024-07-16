@@ -8,7 +8,7 @@ const YOUR_REDIRECT_URI = '/oauth';
 /*
  * Create form to request access token from Google's OAuth 2.0 server.
  */
-export function oauth2SignIn(url?: string) {
+export function oauth2SignIn(url?: string, args?: any) {
   // Google's OAuth 2.0 endpoint for requesting an access token
   const oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
 
@@ -30,6 +30,12 @@ export function oauth2SignIn(url?: string) {
     include_granted_scopes: 'true',
     response_type: 'token',
   } as any;
+  if (args) {
+    const { channel } = args;
+    if (channel) {
+      params.state = channel;
+    }
+  }
 
   if (url) {
     saveStorage('custom_url', url);
