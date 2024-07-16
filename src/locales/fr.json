@@ -48,7 +48,8 @@
       "Conditions générales",
       "Politique de confidentialité",
       "Plan du site",
-      "Programme d'affiliation"
+      "Programme d'affiliation",
+      "Politique de remboursement"
     ],
     "show_more": "afficher plus",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
@@ -208,10 +209,7 @@
       },
       {
         "name": "Quelle est votre politique de remboursement ?",
-        "content1": "1. Compte gratuit  <br>L'utilisation est entièrement gratuite, donc il n'y a pas de problèmes de remboursement.",
-        "content2": "<br>2. Plans d'abonnement <br>Les utilisateurs peuvent demander un remboursement si DET Practice ne parvient pas à fournir le service correspondant, entraînant l'incapacité de l'utilisateur à l'utiliser, ou si l'abonnement n'a pas encore pris effet. Aucun remboursement ne sera accordé pour les abonnements et services déjà activés après l'achat.",
-        "content3": "<br>3. Guide de Parole/Écriture  <br>Le Guide de Parole/Écriture est considéré comme un produit numérique. Une fois acheté et téléchargé, la livraison du produit est considérée comme terminée et est généralement non remboursable. Veuillez lire attentivement les informations d'achat avant de faire un achat.",
-        "content4": "<br><br>Note importante : <br>Toutes les demandes de remboursement doivent être traitées par le service client, et les relevés d'utilisation pertinents doivent être fournis pour vérification.<br>Pour prévenir les remboursements frauduleux, chaque compte utilisateur est limité à une seule demande de remboursement. Les demandes multiples ne seront pas traitées. <br>Si vous avez des circonstances particulières ou des situations uniques, veuillez nous contacter, et nous travaillerons avec vous pour trouver une solution."
+        "content1": "Pour obtenir des informations sur comment obtenir un remboursement et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de Remboursement\" en bas de la page en priorité, ou nous contacter à l'adresse suivante: <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -684,6 +682,41 @@
       "title": "Liens vers d'autres sites",
       "a1": "Notre Service peut contenir des liens vers d'autres sites qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons fortement de consulter la Politique de Confidentialité de chaque site que vous visitez.",
       "a2": "Nous n'avons aucun contrôle sur et n'assumons aucune responsabilité pour le contenu, les politiques de confidentialité ou les pratiques de tout site ou service tiers."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Politique de Remboursement: Apprenez Comment Nous Procédons aux Remboursements | DET Pratique",
+      "description": "Découvrez la politique de remboursement de DET Practice : Apprenez comment nous traitons les demandes de remboursement, les critères d'éligibilité et le processus pour obtenir un remboursement. En savoir plus sur nos politiques maintenant.",
+      "keywords": "Politique de remboursement, DET Remboursement d'entraînement, DET Politique d'entraînement, Processus de remboursement, Éligibilité au remboursement"
+    },
+    "h1": "Politique de remboursement",
+    "q1": {
+      "a1": "Merci d'avoir choisi et acheté nos services. Nous nous efforçons de fournir la meilleure expérience d'apprentissage à nos clients. Cependant, si vous n'êtes pas entièrement satisfait de votre achat, nous sommes là pour vous aider."
+    },
+    "q2": {
+      "title": "Éligibilité aux remboursements",
+      "a1": "• Services aux membres : Les demandes de remboursement pour les services aux membres doivent être effectuées dans les 3 jours suivant l'achat.",
+      "a2": "• Contenu consulté : Si vous n'avez pas consulté plus de 20 questions, vous êtes éligible pour un remboursement.",
+      "a3": "• Cours numériques : Une fois qu'un produit numérique est téléchargé ou consulté, il est considéré comme utilisé et les produits utilisés ne peuvent pas être remboursés."
+    },
+    "q3": {
+      "title": "Comment demander un remboursement / Annuler l'abonnement",
+      "a1": "Pour demander un remboursement, veuillez suivre ces étapes :",
+      "a2": "1. Annuler l'abonnement: Connectez-vous à votre compte, trouvez et cliquez sur le lien \"Gérer votre facturation\" en bas de la page d'adhésion. Vous serez redirigé vers une page de confirmation où vous pourrez confirmer votre décision de vous désabonner.",
+      "a3": "2. Contactez notre support : Contactez notre équipe d'assistance clientèle à l'adresse <span class='website'>support@detpractice.com</span> avec votre numéro de commande et la raison de la demande de remboursement.",
+      "a4": "3. Notre équipe examinera votre demande et vous répondra dans un délai de 3 jours ouvrables."
+    },
+    "q4": {
+      "title": "Exclusions",
+      "a1": "Les éléments suivants ne sont pas éligibles pour un remboursement :",
+      "a2": "• Produits numériques téléchargés.",
+      "a3": "• Produits et services achetés via des vendeurs tiers."
+    },
+    "q5": {
+      "title": "Nous contacter",
+      "a1": "Si vous avez des questions sur notre politique de remboursement ou si vous avez besoin d'aide pour votre achat, veuillez nous contacter à:",
+      "a2": "Courriel : <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {

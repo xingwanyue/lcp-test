@@ -48,7 +48,8 @@
       "Algemene voorwaarden",
       "Privacybeleid",
       "Sitemap",
-      "Partnerprogramma"
+      "Partnerprogramma",
+      "Retourbeleid"
     ],
     "show_more": "toon meer",
     "alt": "DET Oefening:Het beste Duolingo English Test Oefeningsplatform",
@@ -208,10 +209,7 @@
       },
       {
         "name": "Wat is uw restitutiebeleid?",
-        "content1": "1. Gratis Account  <br>Het gebruik is volledig gratis, dus er zijn geen terugbetalingsproblemen.",
-        "content2": "<br>2. Abonnementsplannen  <br>Gebruikers kunnen om een terugbetaling vragen als DET Practice er niet in slaagt de overeenkomstige dienst te leveren, waardoor de gebruiker deze niet kan gebruiken, of als het abonnement nog niet van kracht is geworden. Er worden geen terugbetalingen gedaan voor abonnementen en diensten die na aankoop al actief zijn geworden.",
-        "content3": "<br>3. Spreek-/Schrijfgids <br>De Spreek-/Schrijfgids wordt beschouwd als een digitaal product. Zodra het product is gekocht en gedownload, wordt de levering van het product als voltooid beschouwd en is deze over het algemeen niet-restitueerbaar. Lees de aankoopinformatie zorgvuldig door voordat u tot aankoop overgaat.",
-        "content4": "<br><br>Belangrijke Opmerking: <br>Alle terugbetalingsverzoeken moeten via de klantenservice worden verwerkt, en relevante gebruiksrecords moeten worden verstrekt voor verificatie.<br>Om frauduleuze terugbetalingen te voorkomen, is elk gebruikersaccount beperkt tot één terugbetalingsverzoek. Meerdere verzoeken zullen niet worden verwerkt. <br>Als u speciale omstandigheden of unieke situaties heeft, neem dan contact met ons op, en we zullen samen met u naar een oplossing zoeken."
+        "content1": "Voor informatie over hoe u een terugbetaling kunt krijgen en instructies over hoe u een terugbetaling kunt krijgen, kunt u als eerste verwijzen naar de link \"Refund Policy\" onderaan de pagina of contact met ons opnemen op <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -677,6 +675,41 @@
       "title": "Links naar andere sites",
       "a1": "Onze service kan links bevatten naar andere sites die niet door ons worden beheerd. Als je op een link van een derde partij klikt, word je naar de site van die derde partij geleid. We raden je sterk aan om het privacybeleid van elke site die je bezoekt te bekijken.",
       "a2": "We hebben geen controle over en aanvaarden geen verantwoordelijkheid voor de inhoud, privacybeleid of praktijken van sites of diensten van derden."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Restitutiebeleid: Lees meer over ons restitutieproces | DET Oefenen",
+      "description": "Ontdek het Restitutiebeleid van DET Practice: Leer hoe wij verzoeken om restitutie afhandelen, de criteria voor in aanmerking komen en het proces voor het verkrijgen van restitutie. Lees nu meer over onze beleidsregels.",
+      "keywords": "Restitutiebeleid, DET Oefenrestitutie, DET Oefenbeleid, Restitutieproces, In aanmerking komen voor restitutie"
+    },
+    "h1": "Retourbeleid",
+    "q1": {
+      "a1": "Bedankt voor het kiezen en aanschaffen van onze diensten. We streven ernaar om de beste leerervaring te bieden voor onze klanten. Mocht u echter niet volledig tevreden zijn met uw aankoop, dan staan wij voor u klaar om u te helpen."
+    },
+    "q2": {
+      "title": "Gerechtigdheid voor Teruggaven",
+      "a1": "• Lidmaatschapsdiensten: Terugbetalingsverzoeken voor lidmaatschapsdiensten moeten binnen 3 dagen na aankoop worden aangevraagd.",
+      "a2": "• Toegang tot inhoud: Als u minder dan 20 vragen hebt bekeken, komt u in aanmerking voor een terugbetaling.",
+      "a3": "• Digitale cursussen: Zodra een digitaal product is gedownload of geopend, wordt het beschouwd als gebruikt en kunnen gebruikte producten niet worden terugbetaald."
+    },
+    "q3": {
+      "title": "Hoe u een Terugbetaling / Abonnement Annuleert Aanvraagt",
+      "a1": "Om een terugbetaling aan te vragen, volg deze stappen:",
+      "a2": "1. Abonnement annuleren: Log in op uw account, zoek en klik op de link \"Uw facturatie beheren\" onderaan de lidmaatschapspagina. U wordt doorgestuurd naar een bevestigingspagina waar u uw beslissing om op te zeggen kunt bevestigen.",
+      "a3": "2. Neem Contact op met Onze Ondersteuning: Neem contact op met ons klantenserviceteam op <span class='website'>support@detpractice.com</span> met uw bestelnummer en de reden voor het verzoek tot terugbetaling.",
+      "a4": "3. Ons team zal uw aanvraag bekijken en binnen 3 werkdagen reageren."
+    },
+    "q4": {
+      "title": "Uitsluitingen",
+      "a1": "De volgende items komen niet in aanmerking voor restitutie:",
+      "a2": "• Digitale producten die zijn gedownload.",
+      "a3": "• Producten en diensten die zijn gekocht via derde partijen."
+    },
+    "q5": {
+      "title": "Neem contact met ons op",
+      "a1": "Als u vragen heeft over ons restitutiebeleid of hulp nodig heeft bij uw aankoop, neem dan contact met ons op via:",
+      "a2": "E-mail: <span class = 'website'>support@detpractice.com</ span>"
     }
   },
   "register": {

@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
     "Products": ["DET Øve", "AI Korrektionsservice", "DET Narremock", "Duolingo English Test Kursus"],
-    "Company": ["Om os", "Kontakt os", "Vilkår og betingelser", "Privatlivspolitik", "Sitemap", "Affiliate Program"],
+    "Company": [
+      "Om os",
+      "Kontakt os",
+      "Vilkår og betingelser",
+      "Privatlivspolitik",
+      "Sitemap",
+      "Affiliate Program",
+      "Tilbagebetalingspolitik"
+    ],
     "show_more": "vis mere",
     "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
     "cookie_contenr": "DET Practice bruger cookies til at forbedre indhold baseret på dine browserindstillinger. For flere detaljer, se",
@@ -201,10 +209,7 @@
       },
       {
         "name": "Hvad er jeres refusionspolitik?",
-        "content1": "1. Gratis konto  <br>Brug er helt gratis, så der er ingen refusionsproblemer.",
-        "content2": "<br>2. Abonnementsplaner  <br>Brugere kan anmode om en refundering, hvis DET Practice ikke leverer den tilsvarende service, hvilket resulterer i, at brugeren ikke kan bruge den, eller hvis abonnementet endnu ikke er trådt i kraft. Refunderinger vil ikke blive udstedt for abonnementer og tjenester, der allerede er blevet aktive efter køb.",
-        "content3": "<br>3. Tale/skrivningsvejledning <br>Tale/skrivningsvejledningen betragtes som et digitalt produkt. Når produktet er købt og downloadet, anses produktleveringen for at være afsluttet og er generelt ikke-refunderbar. Læs venligst købsoplysningerne grundigt, inden du foretager et køb.",
-        "content4": "<br><br>Vigtig Bemærkning:  <br>Alle refusionsanmodninger skal behandles gennem kundeservice, og relevante brugsoptegnelser skal leveres til verificering.<br>For at forhindre svigagtige refusioner er hver brugerkonto begrænset til én refusionsanmodning. Flere anmodninger vil ikke blive behandlet. <br>Hvis du har særlige omstændigheder eller unikke situationer, bedes du kontakte os, og vi vil arbejde sammen med dig for at finde en løsning."
+        "content1": "For information om, hvordan du kan få refusion og vejledning om, hvordan du kan få refusion, kan du med prioritet henvise til linket \"Refusionspolitik\" i bunden af siden, eller kontakte os på <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -670,6 +675,41 @@
       "title": "Links til andre sider",
       "a1": "Vores tjeneste kan indeholde links til andre sider, der ikke drives af os. Hvis du klikker på et tredjepartslink, vil du blive dirigeret til den tredjeparts side. Vi råder dig kraftigt til at gennemgå fortrolighedspolitikken for hver side, du besøger.",
       "a2": "Vi har ingen kontrol over og påtager os intet ansvar for indholdet, privatlivspolitikker eller praksis på nogen tredjepartssider eller -tjenester."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Refusionspolitik: Lær om vores refusionsproces | DET Træning",
+      "description": "Opdag DET Practice's refusionspolitik: Lær hvordan vi håndterer refusionsanmodninger, kriterier for berettigelse og processen for at få en refusion. Læs mere om vores politikker nu.",
+      "keywords": "Refunderingspolitik, DET Praksis Refusion, DET Praksis Politik, Refusionsproces, Berettigelse til Refusion"
+    },
+    "h1": "Tilbagebetalingspolitik",
+    "q1": {
+      "a1": "Tak for at vælge og købe vores tjenester. Vi bestræber os på at give den bedste læringsoplevelse for vores kunder. Hvis du dog ikke er fuldt tilfreds med dit køb, er vi her for at hjælpe."
+    },
+    "q2": {
+      "title": "Berettigelse til Refusion",
+      "a1": "• Medlemstjenester: Refusionsanmodninger for medlemstjenester skal ske inden 3 dage efter købet.",
+      "a2": "• Adgang til indhold: Hvis du ikke har fået adgang til mere end 20 spørgsmål, er du berettiget til en refusion.",
+      "a3": "• Digitale kurser: Når et digitalt produkt er downloadet eller tilgået, anses det for at være brugt, og brugte produkter kan ikke refunderes."
+    },
+    "q3": {
+      "title": "Sådan Anmoder du om En Refusion / Afbestiller Abonnement",
+      "a1": "For at anmode en refusion, følg venligst disse trin:",
+      "a2": "1. Afslut Abonnement: Log ind på din konto, find og klik på linket \"Administrer din betaling\" i bunden af medlemsskabssiden. Du vil blive omdirigeret til en bekræftelsesside, hvor du kan bekræfte din beslutning om at afmelde.",
+      "a3": "2. Kontakt vores support: Kontakt vores kundesupportteam på <span class='website'>support@detpractice.com</span> med dit ordrenummer og årsagen til anmodningen om refusion.",
+      "a4": "3. Vores team vil gennemgå din anmodning og svare inden for 3 arbejdsdage."
+    },
+    "q4": {
+      "title": "Undtagelser",
+      "a1": "Følgende er ikke berettiget til tilbagebetaling:",
+      "a2": "• Digitale produkter, der er blevet downloadet.",
+      "a3": "• Produkter og tjenester købt gennem tredjepartsleverandører."
+    },
+    "q5": {
+      "title": "Kontakt Os",
+      "a1": "Hvis du har spørgsmål om vores refusionspolitik eller har brug for hjælp til dit køb, bedes du kontakte os på:",
+      "a2": "E-mail: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {

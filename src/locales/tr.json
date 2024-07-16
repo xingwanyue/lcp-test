@@ -48,7 +48,8 @@
       "Şartlar ve Koşullar",
       "Gizlilik Politikası",
       "Site Haritası",
-      "Ortaklık Programı"
+      "Ortaklık Programı",
+      "İade Politikası"
     ],
     "show_more": "daha fazla göster",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
@@ -208,10 +209,7 @@
       },
       {
         "name": "İade politikası nedir?",
-        "content1": "1. Ücretsiz Hesap  <br>Kullanım tamamen ücretsizdir, bu yüzden geri ödeme sorunları yoktur.",
-        "content2": "<br>2. Abonelik Planları  <br>Kullanıcılar, DET Practice'ın ilgili hizmeti sağlayamaması ve bu nedenle kullanıcının hizmetten yararlanamaması durumunda veya abonelik henüz yürürlüğe girmemişse geri ödeme talep edebilirler. Satın alım sonrası aktif hale gelmiş abonelikler ve hizmetler için geri ödeme yapılmayacaktır.",
-        "content3": "<br>3. Konuşma/Yazma Rehberi <br>Konuşma/Yazma Rehberi dijital bir ürün olarak kabul edilir. Satın alındıktan ve indirildikten sonra, ürün teslimatı tamamlanmış sayılır ve genellikle iade edilmez. Lütfen satın almadan önce satın alma bilgilerini dikkatlice okuyun.",
-        "content4": "<br><br>Önemli Not:  <br>Tüm geri ödeme talepleri müşteri hizmetleri aracılığıyla işlenmelidir ve doğrulama için ilgili kullanım kayıtları sağlanmalıdır.<br>Sahte geri ödemeleri önlemek için, her kullanıcı hesabı bir geri ödeme talebiyle sınırlıdır. Birden fazla talep işlenmeyecektir. <br>Eğer özel durumlarınız veya benzersiz durumlarınız varsa, lütfen bizimle iletişime geçin, sizinle birlikte bir çözüm bulmaya çalışacağız."
+        "content1": "Öncelikle bir iade almanın yolları ve talimatları hakkında bilgi almak için, sayfanın altındaki \"İade Politikası\" bağlantısına başvurabilirsiniz veya <span class='email_address'>support@detpractice.com</span> adresinden bizimle iletişime geçebilirsiniz."
       }
     ],
     "qlList": {
@@ -675,6 +673,41 @@
       "title": "Diğer Siteler İçin Bağlantılar",
       "a1": "Hizmetimiz, tarafımızca işletilmeyen diğer sitelere bağlantılar içerebilir. Üçüncü taraf bir bağlantıya tıklarsanız, o üçüncü tarafın sitesine yönlendirileceksiniz. Ziyaret ettiğiniz her sitenin Gizlilik Politikasını gözden geçirmenizi şiddetle tavsiye ederiz.",
       "a2": "İçerik, gizlilik politikaları veya herhangi bir üçüncü taraf siteleri veya hizmetleri uygulamaları üzerinde hiçbir kontrolümüz yoktur ve sorumluluk kabul etmiyoruz."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "İade Politikası: İade Sürecimiz Hakkında Bilgi Edinin | DET Uygulama",
+      "description": "Discover DET Practice'nin İade Politikasını öğrenin: İade taleplerinin nasıl ele alındığı, uygunluk kriterleri ve iade alma süreci hakkında bilgi edinin. Politikalarımız hakkında daha fazla bilgi edinin şimdi.",
+      "keywords": "İade Politikası, DET Uygulama İadesi, DET Uygulama Politikası, İade Süreci, İade İçin Eligibility"
+    },
+    "h1": "İade Politikası",
+    "q1": {
+      "a1": "Servislerimizi seçtiğiniz ve satın aldığınız için teşekkür ederiz. Müşterilerimize en iyi öğrenme deneyimini sağlamak için çaba gösteriyoruz. Ancak, satın alma işleminizden tamamen memnun değilseniz, size yardımcı olmak için buradayız."
+    },
+    "q2": {
+      "title": "İade İşlemi için Uygunluk",
+      "a1": "• Üye Hizmetleri: Üye hizmetleri için geri ödeme talepleri satın alınmadan sonraki 3 gün içinde yapılmalıdır.",
+      "a2": "• Erişilen İçerik: 20 sorudan fazlasına erişmediyseniz, para iadesi için uygunsunuz.",
+      "a3": "• Dijital Kurslar: Bir dijital ürün indirildiğinde veya erişildiğinde, kullanılmış kabul edilir ve kullanılan ürünler iade edilemez."
+    },
+    "q3": {
+      "title": "Nasıl İade İsteği Yapılır / Aboneliği İptal Etmek İçin",
+      "a1": "İade isteği için lütfen şu adımları izleyin:",
+      "a2": "1. Aboneliği İptal Et: Hesabınıza giriş yapın, üyelik sayfasının altında bulunan \"Fatura işlemlerini yönetin\" bağlantısını bulun ve tıklayın. Aboneliğinizden çıkmaya karar verdiğinizi onaylayabileceğiniz bir doğrulama sayfasına yönlendirileceksiniz.",
+      "a3": "2. Destek Ekibi İle İletişime Geçin: İade talebi nedeninizi ve sipariş numaranızı içeren bir e-posta göndererek müşteri destek ekibimizle <span class='website'>support@detpractice.com</span> adresinden iletişime geçin.",
+      "a4": "3. Ekibimiz talebinizi inceleyecek ve 3 iş günü içinde yanıt verecektir."
+    },
+    "q4": {
+      "title": "Hariç Tutulanlar",
+      "a1": "Aşağıdakiler iade için uygun değildir:",
+      "a2": "• İndirilen dijital ürünler.",
+      "a3": "• Üçüncü taraf satıcılar aracılığıyla satın alınan ürünler ve hizmetler."
+    },
+    "q5": {
+      "title": "Bize Ulaşın",
+      "a1": "Satın alma işleminizde herhangi bir sorunuz varsa veya iade politikamız hakkında yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
+      "a2": "E-posta: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {

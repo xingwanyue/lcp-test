@@ -48,7 +48,8 @@
       "Warunki korzystania z usługi",
       "Polityka prywatności",
       "Mapa witryny",
-      "Program Partnerski"
+      "Program Partnerski",
+      "Polityka zwrotów"
     ],
     "show_more": "pokaż więcej",
     "alt": "DET Praktyka: Najlepsza platforma Duolingo English Test Praktyki",
@@ -208,10 +209,7 @@
       },
       {
         "name": "Jaka jest Twoja polityka zwrotów?",
-        "content1": "1. Darmowe konto  <br>Korzystanie jest całkowicie bezpłatne, więc nie ma problemów ze zwrotem pieniędzy.",
-        "content2": "<br>2. Plany subskrypcyjne <br>Użytkownicy mogą zażądać zwrotu pieniędzy, jeśli DET Practice nie zapewni odpowiedniej usługi, w wyniku czego użytkownik nie będzie mógł z niej skorzystać, lub jeśli subskrypcja jeszcze nie weszła w życie. Zwroty nie będą wydawane za subskrypcje i usługi, które już stały się aktywne po zakupie.",
-        "content3": "<br>3. Przewodnik Mówienia/Pisania  <br>Przewodnik Mówienia/Pisania jest uznawany za produkt cyfrowy. Po zakupieniu i pobraniu, dostarczenie produktu jest uważane za zakończone i zazwyczaj nie podlega zwrotowi. Prosimy o dokładne zapoznanie się z informacjami o zakupie przed dokonaniem zakupu.",
-        "content4": "<br><br>Ważna uwaga:  <br>Wszystkie wnioski o zwrot muszą być przetwarzane przez obsługę klienta, a odpowiednie zapisy użytkowania muszą być dostarczone do weryfikacji.<br>Aby zapobiec oszukańczym zwrotom, każde konto użytkownika jest ograniczone do jednego wniosku o zwrot. Wielokrotne wnioski nie będą przetwarzane. <br>Jeśli masz jakieś szczególne okoliczności lub wyjątkowe sytuacje, prosimy o kontakt z nami, a my postaramy się znaleźć rozwiązanie."
+        "content1": "Aby uzyskać informacje na temat zwrotu pieniędzy i instrukcje dotyczące procedury zwrotu, można w pierwszej kolejności odwołać się do linku \"Polityka zwrotów\" na dole strony lub skontaktować się z nami pod adresem <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -684,6 +682,41 @@
       "title": "Linki do innych stron",
       "a1": "Nasza Usługa może zawierać linki do innych stron, które nie są przez nas obsługiwane. Jeśli klikniesz na link strony trzeciej, zostaniesz skierowany na stronę tej strony trzeciej. Zdecydowanie zalecamy zapoznanie się z Polityką Prywatności każdej odwiedzanej strony.",
       "a2": "Nie mamy kontroli nad treściami, politykami prywatności ani praktykami stron lub usług osób trzecich i nie ponosimy za nie odpowiedzialności."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Polityka zwrotów: Dowiedz się o naszym procesie zwrotów | DET Ćwiczenie",
+      "description": "Odkryj politykę zwrotów DET Praktyka: Dowiedz się, jak obsługujemy żądania zwrotu, kryteria uprawniające do zwrotu oraz proces uzyskiwania zwrotu. Przeczytaj teraz więcej o naszych zasadach.",
+      "keywords": "Polityka zwrotów, DET Zwrot w praktyce, DET Polityka praktyki, Proces zwrotów, Uprawnienia do zwrotu"
+    },
+    "h1": "Polityka zwrotów",
+    "q1": {
+      "a1": "Dziękujemy za wybór i zakup naszych usług. Dążymy do zapewnienia najlepszych doświadczeń edukacyjnych naszym klientom. Jednakże, jeśli nie jesteś całkowicie zadowolony ze swojego zakupu, jesteśmy tutaj, aby pomóc."
+    },
+    "q2": {
+      "title": "Zakwalifikowanie się do zwrotu pieniędzy",
+      "a1": "• Usługi dla Członków: Wnioski o zwrot kosztów za usługi dla członków muszą być złożone w ciągu 3 dni od zakupu.",
+      "a2": "• Obejrzane Treści: Jeśli nie obejrzałeś więcej niż 20 pytań, jesteś uprawniony do zwrotu pieniędzy.",
+      "a3": "• Kursy cyfrowe: Po pobraniu lub uzyskaniu dostępu do produktu cyfrowego uważa się go za użyty, a użytych produktów nie można zwrócić."
+    },
+    "q3": {
+      "title": "Jak złożyć wniosek o zwrot środków / Anulować subskrypcję",
+      "a1": "Aby poprosić o zwrot środków, proszę postępować zgodnie z poniższymi instrukcjami:",
+      "a2": "1. Anuluj subskrypcję: Zaloguj się do swojego konta, znajdź i kliknij link \"Zarządzaj swoim rachunkiem\" na dole strony członkostwa. Zostaniesz przekierowany na stronę potwierdzenia, gdzie będziesz mógł potwierdzić swoją decyzję o rezygnacji z subskrypcji.",
+      "a3": "2. Skontaktuj się z naszym wsparciem: Skontaktuj się z naszym zespołem wsparcia klienta pod adresem <span class='website'>support@detpractice.com</span> podając numer zamówienia oraz powód żądania zwrotu.",
+      "a4": "3. Nasz zespół przejrzy Twoją prośbę i odpowie w ciągu 3 dni roboczych."
+    },
+    "q4": {
+      "title": "Wykluczenia",
+      "a1": "Następujące elementy nie są objęte zwrotem pieniędzy:",
+      "a2": "• Cyberprzedmioty, które zostały pobrane.",
+      "a3": "• Produkty i usługi zakupione za pośrednictwem zewnętrznych dostawców."
+    },
+    "q5": {
+      "title": "Kontakt",
+      "a1": "Jeśli masz pytania dotyczące naszej polityki zwrotów lub potrzebujesz pomocy przy dokonywaniu zakupu, skontaktuj się z nami pod adresem:",
+      "a2": "Email: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {

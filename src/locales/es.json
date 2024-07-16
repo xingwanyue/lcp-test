@@ -48,7 +48,8 @@
       "Términos y Condiciones",
       "Política de Privacidad",
       "Mapa del sitio",
-      "Programa de Afiliados"
+      "Programa de Afiliados",
+      "Política de reembolso"
     ],
     "show_more": "mostrar más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
@@ -208,10 +209,7 @@
       },
       {
         "name": "¿Cuál es su política de reembolso?",
-        "content1": "1. Cuenta gratuita  <br>El uso es completamente gratuito, por lo que no hay problemas de reembolso.",
-        "content2": "<br>2. Planes de suscripción  <br>Los usuarios pueden solicitar un reembolso si DET Practice no proporciona el servicio correspondiente, lo que resulta en que el usuario no pueda usarlo, o si la suscripción aún no ha entrado en vigor. No se emitirán reembolsos para suscripciones y servicios que ya hayan sido activados después de la compra.",
-        "content3": "<br>3. Guía de Habla/Escritura <br>La Guía de Habla/Escritura se considera un producto digital. Una vez comprado y descargado, la entrega del producto se considera completa y generalmente no es reembolsable. Por favor, lea cuidadosamente la información de compra antes de realizar una compra.",
-        "content4": "<br><br>Nota Importante:  <br>Todas las solicitudes de reembolso deben ser procesadas a través del servicio al cliente, y deben proporcionarse los registros de uso relevantes para la verificación.<br>Para prevenir reembolsos fraudulentos, cada cuenta de usuario está limitada a una solicitud de reembolso. Las solicitudes múltiples no serán procesadas. <br>Si tienes alguna circunstancia especial o situación única, por favor contáctanos, y trabajaremos contigo para encontrar una solución."
+        "content1": "Para obtener información sobre cómo obtener un reembolso y las instrucciones para obtener un reembolso, puede consultar el enlace \"Política de reembolso\" en la parte inferior de la página como prioridad, o contáctenos en <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -684,6 +682,41 @@
       "title": "Enlaces a otros sitios",
       "a1": "Nuestro servicio puede contener enlaces a otros sitios que no son operados por nosotros. Si hace clic en un enlace de terceros, será dirigido al sitio de ese tercero. Le recomendamos encarecidamente que revise la Política de Privacidad de cada sitio que visite.",
       "a2": "No tenemos control ni asumimos responsabilidad por el contenido, las políticas de privacidad o las prácticas de sitios o servicios de terceros."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Política de reembolso: Aprenda sobre nuestro proceso de reembolso | DET Práctica",
+      "description": "Descubra la política de reembolso de DET Practice: Aprenda cómo manejamos las solicitudes de reembolso, los criterios de elegibilidad y el proceso para obtener un reembolso. Lea más sobre nuestras políticas ahora.",
+      "keywords": "Política de reembolso, DET Reembolso de práctica, DET Política de prácticas, Proceso de reembolso, Elegibilidad para el reembolso."
+    },
+    "h1": "Política de reembolso",
+    "q1": {
+      "a1": "Gracias por elegir y adquirir nuestros servicios. Nos esforzamos por brindar la mejor experiencia de aprendizaje para nuestros clientes. Sin embargo, si no está completamente satisfecho con su compra, estamos aquí para ayudarlo."
+    },
+    "q2": {
+      "title": "Elegibilidad para Reembolsos",
+      "a1": "• Servicios para miembros: Las solicitudes de reembolso de servicios para miembros deben ser realizadas dentro de los 3 días posteriores a la compra.",
+      "a2": "• Contenido accedido: Si no ha accedido a más de 20 preguntas, usted es elegible para un reembolso.",
+      "a3": "• Cursos digitales: Una vez que se descarga o se accede a un producto digital, se considera utilizado y los productos usados no pueden ser reembolsados."
+    },
+    "q3": {
+      "title": "Cómo solicitar un reembolso / Cancelar suscripción",
+      "a1": "Para solicitar un reembolso, por favor, siga estos pasos:",
+      "a2": "1. Cancelar suscripción: Inicie sesión en su cuenta, encuentre y haga clic en el enlace \"Administrar su facturación\" en la parte inferior de la página de membresía. Será redirigido a una página de confirmación donde podrá confirmar su decisión de darse de baja.",
+      "a3": "2. Contacte con nuestro soporte: Contacte con nuestro equipo de soporte al cliente en <span class='website'>support@detpractice.com</span> con su número de pedido y la razón de la solicitud de reembolso.",
+      "a4": "3. Nuestro equipo revisará tu solicitud y responderá en un plazo de 3 días hábiles."
+    },
+    "q4": {
+      "title": "Exclusiones",
+      "a1": "Los siguientes no son elegibles para reembolsos:",
+      "a2": "• Productos digitales que han sido descargados.",
+      "a3": "• Productos y servicios adquiridos a través de proveedores externos."
+    },
+    "q5": {
+      "title": "Contáctanos",
+      "a1": "Si tiene alguna pregunta sobre nuestra política de reembolso o necesita ayuda con su compra, contáctenos en:",
+      "a2": "Correo electrónico: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {

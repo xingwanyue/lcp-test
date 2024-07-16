@@ -42,7 +42,15 @@
     "BlogTitle": "Blogg",
     "CompanyTitle": "Firma",
     "Products": ["DET Øvelse", "AI Korreksjonstjeneste", "DET Narre", "Duolingo English Test Kurs"],
-    "Company": ["Om oss", "Kontakt oss", "Vilkår og betingelser", "Personvernregler", "Sidekart", "Affiliate Program"],
+    "Company": [
+      "Om oss",
+      "Kontakt oss",
+      "Vilkår og betingelser",
+      "Personvernregler",
+      "Sidekart",
+      "Affiliate Program",
+      "Refusjonspolitikk"
+    ],
     "show_more": "vis mer",
     "alt": "DET Praksis:Den beste Duolingo English Test Praksisplattformen",
     "cookie_contenr": "DET Øvelse bruker informasjonskapsler for å forbedre innholdet basert på dine nettleserinnstillinger. For mer informasjon, se",
@@ -201,10 +209,7 @@
       },
       {
         "name": "Hva er din refusjonspolicy?",
-        "content1": "1. Gratis konto <br>Bruken er helt gratis, så det er ingen refusjonsproblemer.",
-        "content2": "<br>2. Abonnementsplaner <br>Brukere kan be om refusjon hvis DET Practice ikke klarer å levere den tilsvarende tjenesten, noe som resulterer i at brukeren ikke kan bruke den, eller hvis abonnementet ennå ikke har trådt i kraft. Refusjoner vil ikke bli utstedt for abonnementer og tjenester som allerede har blitt aktive etter kjøpet.",
-        "content3": "<br>3. Snakke/Skrive Veiledning <br>Snakke/Skrive Veiledningen anses som et digitalt produkt. Når det er kjøpt og lastet ned, anses produktleveringen som fullført og er generelt ikke refunderbar. Vennligst les kjøpsinformasjonen nøye før du foretar et kjøp.",
-        "content4": "<br><br>Viktig merknad:  <br>Alle refusjonsforespørsler må behandles gjennom kundeservice, og relevante bruksoppføringer må gis for verifikasjon.<br>For å forhindre svindelrefusjoner er hver brukerkonto begrenset til én refusjonsforespørsel. Flere forespørsler vil ikke bli behandlet. <br>Hvis du har spesielle omstendigheter eller unike situasjoner, vennligst kontakt oss, så vil vi samarbeide med deg for å finne en løsning."
+        "content1": "For informasjon om hvordan du kan få tilbakebetaling og instruksjoner om hvordan du kan få tilbakebetaling, kan du først og fremst se på \"Tilbakebetalingspolicy\"-lenken nederst på siden, eller kontakte oss på <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -670,6 +675,41 @@
       "title": "Lenker til andre nettsteder",
       "a1": "Vår tjeneste kan inneholde lenker til andre nettsteder som ikke drives av oss. Hvis du klikker på en tredjepartslenke, vil du bli dirigert til den tredjepartens nettsted. Vi anbefaler sterkt at du gjennomgår personvernreglene for hvert nettsted du besøker.",
       "a2": "Vi har ingen kontroll over og påtar oss intet ansvar for innholdet, personvernreglene eller praksisene til tredjeparts nettsteder eller tjenester."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Refusjonsregler: Lær om vår refusjonsprosess | DET Praksis",
+      "description": "Oppdag DET Praksis sin refusjonspolitikk: Lær hvordan vi håndterer refusjonsforespørsler, kriteriene for kvalifisering og prosessen for å få tilbakebetaling. Les mer om våre retningslinjer nå.",
+      "keywords": "Returrett, DET Praksisretur, DET Praksispolitikk, Refusjonsprosess, Kvalifikasjoner for refusjon."
+    },
+    "h1": "Returpolicy",
+    "q1": {
+      "a1": "Takk for at du valgte og kjøpte våre tjenester. Vi streber etter å tilby den beste læringsopplevelsen for våre kunder. Hvis du likevel ikke er helt fornøyd med kjøpet ditt, er vi her for å hjelpe."
+    },
+    "q2": {
+      "title": "Kvalifisering for refusjon",
+      "a1": "• Medlemstjenester: Refusjonsforespørsler for medlemstjenester må gjøres innen 3 dager etter kjøpet.",
+      "a2": "• Tilgjengelig innhold: Hvis du ikke har tilgang til mer enn 20 spørsmål, kan du få refundert pengene.",
+      "a3": "• Digitale kurs: Når et digitalt produkt lastes ned eller tilbys tilgang til, anses det som brukt og brukte produkter kan ikke refunderes."
+    },
+    "q3": {
+      "title": "Hvordan be om refusjon / avbryt abonnement",
+      "a1": "For å be om refusjon, vennligst følg disse trinnene:",
+      "a2": "1. Avslutt abonnement: Logg inn på kontoen din, finn og klikk på \"Administrer betalingene dine\"-lenken nederst på medlemskapssiden. Du vil bli omdirigert til en bekreftelsesside der du kan bekrefte at du ønsker å si opp abonnementet ditt.",
+      "a3": "2.Kontakt vår støtte: Kontakt vårt kundestøtteteam på <span class='website'>support@detpractice.com</span> med ordrenummeret ditt og grunnen til refusjonsforespørselen.",
+      "a4": "3. Vårt team vil gjennomgå din forespørsel og svare innen 3 arbeidsdager."
+    },
+    "q4": {
+      "title": "Unntak",
+      "a1": "Følgende er ikke kvalifisert for refusjoner:",
+      "a2": "• Digitale produkter som er lastet ned.",
+      "a3": "• Produkter og tjenester kjøpt gjennom tredjepartsleverandører."
+    },
+    "q5": {
+      "title": "Kontakt oss",
+      "a1": "Hvis du har noen spørsmål om vår refusjonspolitikk eller trenger hjelp med kjøpet ditt, vennligst kontakt oss på:",
+      "a2": "E-post: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {

@@ -48,7 +48,8 @@
       "Termini e Condizioni",
       "Informativa sulla privacy",
       "Mappa del sito",
-      "Programma di Affiliazione"
+      "Programma di Affiliazione",
+      "Politica di rimborso"
     ],
     "show_more": "mostra di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
@@ -208,10 +209,7 @@
       },
       {
         "name": "Qual è la vostra politica di rimborso?",
-        "content1": "1. Account Gratuito  <br>L'uso è completamente gratuito, quindi non ci sono problemi di rimborso.",
-        "content2": "<br>2. Piani di abbonamento <br>Gli utenti possono richiedere un rimborso se DET Practice non riesce a fornire il servizio corrispondente, risultando nell'impossibilità dell'utente di utilizzarlo, o se l'abbonamento non è ancora entrato in vigore. I rimborsi non verranno emessi per gli abbonamenti e i servizi che sono già diventati attivi dopo l'acquisto.",
-        "content3": "<br>3. Guida alla Conversazione/Scrittura <br>La Guida alla Conversazione/Scrittura è considerata un prodotto digitale. Una volta acquistato e scaricato, la consegna del prodotto è considerata completa e generalmente non rimborsabile. Si prega di leggere attentamente le informazioni sull'acquisto prima di procedere con l'acquisto.",
-        "content4": "<br><br>Nota Importante:  <br>Tutte le richieste di rimborso devono essere processate attraverso il servizio clienti, e i relativi registri di utilizzo devono essere forniti per la verifica.<br>Per prevenire rimborsi fraudolenti, ogni account utente è limitato a una richiesta di rimborso. Richieste multiple non saranno processate.<br>Se hai circostanze speciali o situazioni uniche, contattaci e collaboreremo con te per trovare una soluzione."
+        "content1": "Per informazioni su come ottenere il rimborso e istruzioni su come ottenere il rimborso, è possibile fare riferimento al link \"Politica di rimborso\" in fondo alla pagina come questione prioritaria, o contattarci all'indirizzo <span class='email_address'>support@detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -681,6 +679,41 @@
       "title": "Link ad altri siti",
       "a1": "Il nostro servizio può contenere collegamenti ad altri siti che non sono gestiti da noi. Se fai clic su un collegamento di terze parti, sarai indirizzato al sito di quella terza parte. Ti consigliamo vivamente di esaminare l'Informativa sulla privacy di ogni sito che visiti.",
       "a2": "Non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Politica di Rimborso: Scopri il Nostro Processo di Rimborso | DET Esercizio",
+      "description": "Scopri la politica di rimborso di DET Practice: Scopri come gestiamo le richieste di rimborso, i criteri di ammissibilità e il processo per ottenere un rimborso. Leggi di più sulle nostre politiche ora.",
+      "keywords": "Politica di rimborso, DET Rimborso pratica, DET Pratica della politica, Processo di rimborso, Idoneità al rimborso"
+    },
+    "h1": "Politica di rimborso",
+    "q1": {
+      "a1": "Grazie per aver scelto e acquistato i nostri servizi. Ci sforziamo di fornire la migliore esperienza di apprendimento per i nostri clienti. Tuttavia, se non sei completamente soddisfatto del tuo acquisto, siamo qui per aiutarti."
+    },
+    "q2": {
+      "title": "Ammissibilità ai rimborsi",
+      "a1": "• Servizi per i membri: Le richieste di rimborso per i servizi ai membri devono essere fatte entro 3 giorni dall'acquisto.",
+      "a2": "• Contenuto Accessato: Se non hai acceduto a più di 20 domande, sei idoneo per un rimborso.",
+      "a3": "• Corsi digitali: Una volta che un prodotto digitale viene scaricato o accesso, viene considerato usato e i prodotti usati non possono essere rimborsati."
+    },
+    "q3": {
+      "title": "Come richiedere un rimborso / annullare l'iscrizione",
+      "a1": "Per richiedere un rimborso, segui questi passaggi:",
+      "a2": "1. Annulla abbonamento: Accedi al tuo account, trova e clicca sul link \"Gestisci la fatturazione\" in fondo alla pagina di abbonamento. Sarai reindirizzato a una pagina di conferma dove potrai confermare la tua decisione di disiscriverti.",
+      "a3": "2. Contatta il nostro supporto: contatta il nostro team di supporto clienti all'indirizzo <span class='website'>support@detpractice.com</span> fornendo il numero d'ordine e il motivo della richiesta di rimborso.",
+      "a4": "3. Il nostro team valuterà la tua richiesta e risponderà entro 3 giorni lavorativi."
+    },
+    "q4": {
+      "title": "Esclusioni",
+      "a1": "I seguenti non sono idonei per i rimborsi:",
+      "a2": "• Prodotti digitali scaricati.",
+      "a3": "• Prodotti e servizi acquistati tramite fornitori di terze parti."
+    },
+    "q5": {
+      "title": "Contattaci",
+      "a1": "Se hai domande sulla nostra politica di rimborso o hai bisogno di assistenza con il tuo acquisto, contattaci al:",
+      "a2": "Email: <span class='website'>support@detpractice.com</span>"
     }
   },
   "register": {
