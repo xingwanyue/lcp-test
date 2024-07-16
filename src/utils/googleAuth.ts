@@ -33,7 +33,7 @@ export function oauth2SignIn(url?: string, args?: any) {
   if (args) {
     const { channel } = args;
     if (channel) {
-      params.state = channel;
+      params.channel = channel;
     }
   }
 
