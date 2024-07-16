@@ -209,7 +209,7 @@
       },
       {
         "name": "Wie lautet Ihre Rückerstattungsrichtlinie?",
-        "content1": "Für Informationen zur Rückerstattung und Anweisungen zur Rückerstattung können Sie in erster Linie auf den Link \"Rückerstattungsrichtlinien\" am unteren Rand der Seite verweisen oder uns unter <span class='email_address'>support@detpractice.com</span> kontaktieren."
+        "content1": "Für Informationen zur Rückerstattung und Anweisungen zur Rückerstattung können Sie in erster Linie auf den Link \"Rückerstattungsrichtlinien\" am unteren Rand der Seite verweisen oder uns unter <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren."
       }
     ],
     "qlList": {
@@ -697,7 +697,7 @@
       "title": "Wie man eine Rückerstattung anfordert / ein Abonnement storniert",
       "a1": "Um eine Rückerstattung zu beantragen, befolgen Sie bitte diese Schritte:",
       "a2": "1. Abonnement kündigen: Melden Sie sich in Ihrem Konto an, finden Sie den Link \"Ihre Abrechnung verwalten\" am Ende der Mitgliedschaftsseite und klicken Sie darauf. Sie werden zu einer Bestätigungsseite weitergeleitet, auf der Sie Ihre Entscheidung zum Abbestellen bestätigen können.",
-      "a3": "2. Kontaktieren Sie unseren Support: Kontaktieren Sie unser Kundensupport-Team unter <span class='website'>support@detpractice.com</span> mit Ihrer Bestellnummer und dem Grund für die Erstattungsanfrage.",
+      "a3": "2. Kontaktieren Sie unseren Support: Kontaktieren Sie unser Kundensupport-Team unter <span class='website'>support{'@'}detpractice.com</span> mit Ihrer Bestellnummer und dem Grund für die Erstattungsanfrage.",
       "a4": "3. Unser Team wird Ihre Anfrage überprüfen und innerhalb von 3 Werktagen antworten."
     },
     "q4": {
@@ -709,7 +709,7 @@
     "q5": {
       "title": "Kontaktiere uns",
       "a1": "Wenn Sie Fragen zu unserer Rückerstattungsrichtlinie haben oder Hilfe bei Ihrem Kauf benötigen, kontaktieren Sie uns bitte unter:",
-      "a2": "E-Mail: <span class='website'>support@detpractice.com</span>"
+      "a2": "E-Mail: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -916,7 +916,7 @@
       },
       {
         "q": "Was, wenn ich weitere Fragen zu Ihrem Affiliate-Internet-Marketing-Programm habe?",
-        "a": "Kontaktieren Sie uns einfach unter \"<span class='yellow_font'>support@detpractice.com</span>\" und wir helfen Ihnen gerne bei allen Fragen, die Sie haben."
+        "a": "Kontaktieren Sie uns einfach unter \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" und wir helfen Ihnen gerne bei allen Fragen, die Sie haben."
       }
     ]
   }

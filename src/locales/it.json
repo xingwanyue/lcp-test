@@ -209,7 +209,7 @@
       },
       {
         "name": "Qual è la vostra politica di rimborso?",
-        "content1": "Per informazioni su come ottenere il rimborso e istruzioni su come ottenere il rimborso, è possibile fare riferimento al link \"Politica di rimborso\" in fondo alla pagina come questione prioritaria, o contattarci all'indirizzo <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Per informazioni su come ottenere il rimborso e istruzioni su come ottenere il rimborso, è possibile fare riferimento al link \"Politica di rimborso\" in fondo alla pagina come questione prioritaria, o contattarci all'indirizzo <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -701,7 +701,7 @@
       "title": "Come richiedere un rimborso / annullare l'iscrizione",
       "a1": "Per richiedere un rimborso, segui questi passaggi:",
       "a2": "1. Annulla abbonamento: Accedi al tuo account, trova e clicca sul link \"Gestisci la fatturazione\" in fondo alla pagina di abbonamento. Sarai reindirizzato a una pagina di conferma dove potrai confermare la tua decisione di disiscriverti.",
-      "a3": "2. Contatta il nostro supporto: contatta il nostro team di supporto clienti all'indirizzo <span class='website'>support@detpractice.com</span> fornendo il numero d'ordine e il motivo della richiesta di rimborso.",
+      "a3": "2. Contatta il nostro supporto: contatta il nostro team di supporto clienti all'indirizzo <span class='website'>support{'@'}detpractice.com</span> fornendo il numero d'ordine e il motivo della richiesta di rimborso.",
       "a4": "3. Il nostro team valuterà la tua richiesta e risponderà entro 3 giorni lavorativi."
     },
     "q4": {
@@ -713,7 +713,7 @@
     "q5": {
       "title": "Contattaci",
       "a1": "Se hai domande sulla nostra politica di rimborso o hai bisogno di assistenza con il tuo acquisto, contattaci al:",
-      "a2": "Email: <span class='website'>support@detpractice.com</span>"
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -920,7 +920,7 @@
       },
       {
         "q": "Cosa succede se ho altre domande sul vostro programma di marketing di affiliazione su internet?",
-        "a": "Contattaci semplicemente a \"<span class='yellow_font'>support@detpractice.com</span>\" e saremo felici di aiutarti con qualsiasi domanda tu possa avere."
+        "a": "Contattaci semplicemente a \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" e saremo felici di aiutarti con qualsiasi domanda tu possa avere."
       }
     ]
   }

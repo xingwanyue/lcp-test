@@ -209,7 +209,7 @@
       },
       {
         "name": "Apa kebijakan pengembalian dana Anda?",
-        "content1": "Untuk informasi tentang cara mendapatkan pengembalian dana dan petunjuk tentang cara mendapatkan pengembalian dana, Anda dapat merujuk tautan \"Kebijakan Pengembalian\" di bagian bawah halaman sebagai prioritas utama, atau menghubungi kami di <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Untuk informasi tentang cara mendapatkan pengembalian dana dan petunjuk tentang cara mendapatkan pengembalian dana, Anda dapat merujuk tautan \"Kebijakan Pengembalian\" di bagian bawah halaman sebagai prioritas utama, atau menghubungi kami di <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -699,7 +699,7 @@
       "title": "Bagaimana Cara Meminta Pengembalian Dana / Membatalkan Langganan",
       "a1": "Untuk meminta pengembalian dana, silakan ikuti langkah-langkah berikut:",
       "a2": "1. Batalkan Berlangganan: Masuk ke akun Anda, cari dan klik link \"Kelola tagihan Anda\" di bagian bawah halaman keanggotaan. Anda akan diarahkan ke halaman konfirmasi di mana Anda dapat mengonfirmasi keputusan untuk berhenti berlangganan.",
-      "a3": "2. Hubungi Dukungan Kami: Hubungi tim dukungan pelanggan kami di <span class='website'>support@detpractice.com</span> dengan nomor pesanan Anda dan alasan untuk permintaan pengembalian dana.",
+      "a3": "2. Hubungi Dukungan Kami: Hubungi tim dukungan pelanggan kami di <span class='website'>support{'@'}detpractice.com</span> dengan nomor pesanan Anda dan alasan untuk permintaan pengembalian dana.",
       "a4": "3. Tim kami akan meninjau permintaan Anda dan merespons dalam waktu 3 hari kerja."
     },
     "q4": {
@@ -711,7 +711,7 @@
     "q5": {
       "title": "Hubungi Kami",
       "a1": "Jika Anda memiliki pertanyaan tentang kebijakan pengembalian dana kami atau membutuhkan bantuan dalam pembelian Anda, silakan hubungi kami di:",
-      "a2": "Email: <span class='website'>support@detpractice.com</span>"
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -918,7 +918,7 @@
       },
       {
         "q": "Bagaimana jika saya memiliki pertanyaan lain tentang program pemasaran afiliasi internet Anda?",
-        "a": "Cukup hubungi kami di \"<span class='yellow_font'>support@detpractice.com</span>\" dan kami akan dengan senang hati membantu Anda dengan pertanyaan apa pun yang mungkin Anda miliki."
+        "a": "Cukup hubungi kami di \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" dan kami akan dengan senang hati membantu Anda dengan pertanyaan apa pun yang mungkin Anda miliki."
       }
     ]
   }

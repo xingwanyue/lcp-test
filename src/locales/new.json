@@ -1,5 +1,5 @@
 {
-  "content1": "For information on how to get a refund and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'>support@detpractice.com</span>.",
+  "content1": "For information on how to get a refund and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'>support{'@'}detpractice.com</span>.",
   "Company": ["Refund Policy"],
   "refundPolicy": {
     "seometa": {
@@ -20,7 +20,7 @@
       "title": "How to Request a Refund / Cancel Subscription",
       "a1": "To request a refund, please follow these steps:",
       "a2": "1.Cancel Subscription: Login to your account, find and click the \"Manage your billing\" link at the bottom of the membership page. You will be redirected to a confirmation page where you can confirm your decision to unsubscribe.",
-      "a3": "2.Contact Our Support: Contact our customer support team at <span class='website'>support@detpractice.com</span> with your order number and the reason for the refund request.",
+      "a3": "2.Contact Our Support: Contact our customer support team at <span class='website'>support{'@'}detpractice.com</span> with your order number and the reason for the refund request.",
       "a4": "3.Our team will review your request and respond within 3 business days."
     },
     "q4": {
@@ -32,7 +32,7 @@
     "q5": {
       "title": "Contact Us",
       "a1": "If you have any questions about our refund policy or need assistance with your purchase, please contact us at:",
-      "a2": "Email: <span class='website'>support@detpractice.com</span>"
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   }
 }

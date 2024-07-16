@@ -209,7 +209,7 @@
       },
       {
         "name": "返金ポリシーは何ですか？",
-        "content1": "下記は優先的にページ下部の「返金ポリシー」リンクから返金に関する情報および手順を入手する方法です。または、<span class ='email_address'>support@detpractice.com</span> までお問い合わせください。"
+        "content1": "下記は優先的にページ下部の「返金ポリシー」リンクから返金に関する情報および手順を入手する方法です。または、<span class ='email_address'>support{'@'}detpractice.com</span> までお問い合わせください。"
       }
     ],
     "qlList": {
@@ -686,7 +686,7 @@
       "title": "払い戻しを要求する方法/サブスクリプションをキャンセルする方法",
       "a1": "返金をリクエストするには、以下の手順に従ってください：",
       "a2": "1. サブスクリプションのキャンセル: アカウントにログインし、メンバーシップページの下部にある「請求を管理する」リンクを見つけ、クリックしてください。購読解除の決定を確認できる確認ページにリダイレクトされます。",
-      "a3": "2. サポートにご連絡ください: 注文番号および払い戻しの理由とともに、<span class='website'>support@detpractice.com</span> のカスタマーサポートチームにご連絡ください。",
+      "a3": "2. サポートにご連絡ください: 注文番号および払い戻しの理由とともに、<span class='website'>support{'@'}detpractice.com</span> のカスタマーサポートチームにご連絡ください。",
       "a4": "3. 私たちのチームは、あなたのリクエストをレビューし、3営業日以内に返信します。"
     },
     "q4": {
@@ -698,7 +698,7 @@
     "q5": {
       "title": "お問い合わせ",
       "a1": "もし返金ポリシーについてご質問がある場合や、購入に関するアシスタンスが必要な場合は、下記の連絡先にお問い合わせください:",
-      "a2": "Email: <span class='website'>support@detpractice.com</span>"
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -903,7 +903,7 @@
       },
       {
         "q": "インターネットマーケティングプログラムについて他に質問がある場合はどうすればよいですか？",
-        "a": "\"<span class='yellow_font'>support@detpractice.com</span>\" にご連絡いただければ、喜んでお手伝いさせていただきます。"
+        "a": "\"<span class='yellow_font'>support{'@'}detpractice.com</span>\" にご連絡いただければ、喜んでお手伝いさせていただきます。"
       }
     ]
   }

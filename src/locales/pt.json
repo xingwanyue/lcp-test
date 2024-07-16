@@ -209,7 +209,7 @@
       },
       {
         "name": "Qual é a sua política de reembolso?",
-        "content1": "Para obter informações sobre como obter um reembolso e instruções sobre como obter um reembolso, você pode consultar o link \"Política de Reembolso\" na parte inferior da página como uma questão prioritária, ou entrar em contato conosco em <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Para obter informações sobre como obter um reembolso e instruções sobre como obter um reembolso, você pode consultar o link \"Política de Reembolso\" na parte inferior da página como uma questão prioritária, ou entrar em contato conosco em <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -704,7 +704,7 @@
       "title": "Como Solicitar Reembolso / Cancelar Assinatura",
       "a1": "Para solicitar um reembolso, por favor, siga estes passos:",
       "a2": "1. Cancelar assinatura: Faça login na sua conta, encontre e clique no link \"Gerenciar sua fatura\" localizado na parte inferior da página de associação. Você será redirecionado para uma página de confirmação onde poderá confirmar sua decisão de cancelar a assinatura.",
-      "a3": "2. Contate o nosso suporte: Contate a nossa equipe de suporte ao cliente em <span class ='website'>support@detpractice.com</span> com o número do seu pedido e o motivo da solicitação de reembolso.",
+      "a3": "2. Contate o nosso suporte: Contate a nossa equipe de suporte ao cliente em <span class ='website'>support{'@'}detpractice.com</span> com o número do seu pedido e o motivo da solicitação de reembolso.",
       "a4": "3. A nossa equipa irá rever o seu pedido e responder dentro de 3 dias úteis."
     },
     "q4": {
@@ -923,7 +923,7 @@
       },
       {
         "q": "E se eu tiver outras perguntas sobre seu programa de marketing de afiliados?",
-        "a": "Basta entrar em contato conosco em \"<span class='yellow_font'>support@detpractice.com</span>\" e ficaremos felizes em ajudar com quaisquer dúvidas que você possa ter."
+        "a": "Basta entrar em contato conosco em \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" e ficaremos felizes em ajudar com quaisquer dúvidas que você possa ter."
       }
     ]
   }

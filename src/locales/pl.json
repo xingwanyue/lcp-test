@@ -209,7 +209,7 @@
       },
       {
         "name": "Jaka jest Twoja polityka zwrotów?",
-        "content1": "Aby uzyskać informacje na temat zwrotu pieniędzy i instrukcje dotyczące procedury zwrotu, można w pierwszej kolejności odwołać się do linku \"Polityka zwrotów\" na dole strony lub skontaktować się z nami pod adresem <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Aby uzyskać informacje na temat zwrotu pieniędzy i instrukcje dotyczące procedury zwrotu, można w pierwszej kolejności odwołać się do linku \"Polityka zwrotów\" na dole strony lub skontaktować się z nami pod adresem <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -704,7 +704,7 @@
       "title": "Jak złożyć wniosek o zwrot środków / Anulować subskrypcję",
       "a1": "Aby poprosić o zwrot środków, proszę postępować zgodnie z poniższymi instrukcjami:",
       "a2": "1. Anuluj subskrypcję: Zaloguj się do swojego konta, znajdź i kliknij link \"Zarządzaj swoim rachunkiem\" na dole strony członkostwa. Zostaniesz przekierowany na stronę potwierdzenia, gdzie będziesz mógł potwierdzić swoją decyzję o rezygnacji z subskrypcji.",
-      "a3": "2. Skontaktuj się z naszym wsparciem: Skontaktuj się z naszym zespołem wsparcia klienta pod adresem <span class='website'>support@detpractice.com</span> podając numer zamówienia oraz powód żądania zwrotu.",
+      "a3": "2. Skontaktuj się z naszym wsparciem: Skontaktuj się z naszym zespołem wsparcia klienta pod adresem <span class='website'>support{'@'}detpractice.com</span> podając numer zamówienia oraz powód żądania zwrotu.",
       "a4": "3. Nasz zespół przejrzy Twoją prośbę i odpowie w ciągu 3 dni roboczych."
     },
     "q4": {
@@ -716,7 +716,7 @@
     "q5": {
       "title": "Kontakt",
       "a1": "Jeśli masz pytania dotyczące naszej polityki zwrotów lub potrzebujesz pomocy przy dokonywaniu zakupu, skontaktuj się z nami pod adresem:",
-      "a2": "Email: <span class='website'>support@detpractice.com</span>"
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -923,7 +923,7 @@
       },
       {
         "q": "Co jeśli mam inne pytania dotyczące waszego programu partnerskiego internetowego?",
-        "a": "Skontaktuj się z nami pod adresem \"<span class='yellow_font'>support@detpractice.com</span>\", chętnie pomożemy odpowiedzieć na wszystkie Twoje pytania."
+        "a": "Skontaktuj się z nami pod adresem \"<span class='yellow_font'>support{'@'}detpractice.com</span>\", chętnie pomożemy odpowiedzieć na wszystkie Twoje pytania."
       }
     ]
   }

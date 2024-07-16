@@ -209,7 +209,7 @@
       },
       {
         "name": "Quelle est votre politique de remboursement ?",
-        "content1": "Pour obtenir des informations sur comment obtenir un remboursement et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de Remboursement\" en bas de la page en priorité, ou nous contacter à l'adresse suivante: <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Pour obtenir des informations sur comment obtenir un remboursement et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de Remboursement\" en bas de la page en priorité, ou nous contacter à l'adresse suivante: <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -704,7 +704,7 @@
       "title": "Comment demander un remboursement / Annuler l'abonnement",
       "a1": "Pour demander un remboursement, veuillez suivre ces étapes :",
       "a2": "1. Annuler l'abonnement: Connectez-vous à votre compte, trouvez et cliquez sur le lien \"Gérer votre facturation\" en bas de la page d'adhésion. Vous serez redirigé vers une page de confirmation où vous pourrez confirmer votre décision de vous désabonner.",
-      "a3": "2. Contactez notre support : Contactez notre équipe d'assistance clientèle à l'adresse <span class='website'>support@detpractice.com</span> avec votre numéro de commande et la raison de la demande de remboursement.",
+      "a3": "2. Contactez notre support : Contactez notre équipe d'assistance clientèle à l'adresse <span class='website'>support{'@'}detpractice.com</span> avec votre numéro de commande et la raison de la demande de remboursement.",
       "a4": "3. Notre équipe examinera votre demande et vous répondra dans un délai de 3 jours ouvrables."
     },
     "q4": {
@@ -716,7 +716,7 @@
     "q5": {
       "title": "Nous contacter",
       "a1": "Si vous avez des questions sur notre politique de remboursement ou si vous avez besoin d'aide pour votre achat, veuillez nous contacter à:",
-      "a2": "Courriel : <span class='website'>support@detpractice.com</span>"
+      "a2": "Courriel : <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -923,7 +923,7 @@
       },
       {
         "q": "Que faire si j'ai d'autres questions sur votre programme de marketing d'affiliation sur Internet?",
-        "a": "Contactez-nous simplement à \"<span class='yellow_font'>support@detpractice.com</span>\" et nous serons heureux de vous aider avec toutes les questions que vous pourriez avoir."
+        "a": "Contactez-nous simplement à \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" et nous serons heureux de vous aider avec toutes les questions que vous pourriez avoir."
       }
     ]
   }

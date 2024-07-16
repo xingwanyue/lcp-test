@@ -201,7 +201,7 @@
       },
       {
         "name": "您的退款政策是什么？",
-        "content1": "关于如何获得退款以及获得退款的具体指令，请优先参考页面底部的“退款政策”链接，或联系我们：<span class='email_address'>support@detpractice.com</span>。"
+        "content1": "关于如何获得退款以及获得退款的具体指令，请优先参考页面底部的“退款政策”链接，或联系我们：<span class='email_address'>support{'@'}detpractice.com</span>。"
       }
     ],
     "qlList": {
@@ -649,7 +649,7 @@
       "title": "如何申请退款/取消订阅",
       "a1": "要申请退款，请按照以下步骤操作：",
       "a2": "1.取消订阅：登陆您的账户，在会员页面底部找到并点击“管理您的账单”链接。您将被重定向到确认页面，您可以在该页面确认您的退订决定。",
-      "a3": "2.联系我们的支持团队：通过电子邮件<span class='website'>support@detpractice.com</span>与我们的客户支持团队联系，提供您的订单号和退款申请原因。",
+      "a3": "2.联系我们的支持团队：通过电子邮件<span class='website'>support{'@'}detpractice.com</span>与我们的客户支持团队联系，提供您的订单号和退款申请原因。",
       "a4": "3. 我们的团队将审核您的请求，并在3个工作日内做出回复。"
     },
     "q4": {
@@ -661,7 +661,7 @@
     "q5": {
       "title": "联系我们",
       "a1": "如果您对我们的退款政策有任何疑问或需要购买帮助，请联系我们：",
-      "a2": "电子邮件： <span class='website'>support@detpractice.com</span>"
+      "a2": "电子邮件： <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -866,7 +866,7 @@
       },
       {
         "q": "如果我对您的联盟互联网营销计划有其他问题怎么办？",
-        "a": "只需通过 \"<span class='yellow_font'>support@detpractice.com</span>\" 联系我们，我们会很高兴解答您的任何问题。"
+        "a": "只需通过 \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" 联系我们，我们会很高兴解答您的任何问题。"
       }
     ]
   }

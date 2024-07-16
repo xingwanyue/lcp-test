@@ -209,7 +209,7 @@
       },
       {
         "name": "Hvad er jeres refusionspolitik?",
-        "content1": "For information om, hvordan du kan få refusion og vejledning om, hvordan du kan få refusion, kan du med prioritet henvise til linket \"Refusionspolitik\" i bunden af siden, eller kontakte os på <span class='email_address'>support@detpractice.com</span>."
+        "content1": "For information om, hvordan du kan få refusion og vejledning om, hvordan du kan få refusion, kan du med prioritet henvise til linket \"Refusionspolitik\" i bunden af siden, eller kontakte os på <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -697,7 +697,7 @@
       "title": "Sådan Anmoder du om En Refusion / Afbestiller Abonnement",
       "a1": "For at anmode en refusion, følg venligst disse trin:",
       "a2": "1. Afslut Abonnement: Log ind på din konto, find og klik på linket \"Administrer din betaling\" i bunden af medlemsskabssiden. Du vil blive omdirigeret til en bekræftelsesside, hvor du kan bekræfte din beslutning om at afmelde.",
-      "a3": "2. Kontakt vores support: Kontakt vores kundesupportteam på <span class='website'>support@detpractice.com</span> med dit ordrenummer og årsagen til anmodningen om refusion.",
+      "a3": "2. Kontakt vores support: Kontakt vores kundesupportteam på <span class='website'>support{'@'}detpractice.com</span> med dit ordrenummer og årsagen til anmodningen om refusion.",
       "a4": "3. Vores team vil gennemgå din anmodning og svare inden for 3 arbejdsdage."
     },
     "q4": {
@@ -709,7 +709,7 @@
     "q5": {
       "title": "Kontakt Os",
       "a1": "Hvis du har spørgsmål om vores refusionspolitik eller har brug for hjælp til dit køb, bedes du kontakte os på:",
-      "a2": "E-mail: <span class='website'>support@detpractice.com</span>"
+      "a2": "E-mail: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -916,7 +916,7 @@
       },
       {
         "q": "Hvad hvis jeg har andre spørgsmål om jeres affiliate internet marketing program?",
-        "a": "Bare kontakt os på \"<span class='yellow_font'>support@detpractice.com</span>\" og vi vil være glade for at hjælpe dig med eventuelle spørgsmål, du måtte have."
+        "a": "Bare kontakt os på \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" og vi vil være glade for at hjælpe dig med eventuelle spørgsmål, du måtte have."
       }
     ]
   }

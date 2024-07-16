@@ -209,7 +209,7 @@
       },
       {
         "name": "İade politikası nedir?",
-        "content1": "Öncelikle bir iade almanın yolları ve talimatları hakkında bilgi almak için, sayfanın altındaki \"İade Politikası\" bağlantısına başvurabilirsiniz veya <span class='email_address'>support@detpractice.com</span> adresinden bizimle iletişime geçebilirsiniz."
+        "content1": "Öncelikle bir iade almanın yolları ve talimatları hakkında bilgi almak için, sayfanın altındaki \"İade Politikası\" bağlantısına başvurabilirsiniz veya <span class='email_address'>support{'@'}detpractice.com</span> adresinden bizimle iletişime geçebilirsiniz."
       }
     ],
     "qlList": {
@@ -695,7 +695,7 @@
       "title": "Nasıl İade İsteği Yapılır / Aboneliği İptal Etmek İçin",
       "a1": "İade isteği için lütfen şu adımları izleyin:",
       "a2": "1. Aboneliği İptal Et: Hesabınıza giriş yapın, üyelik sayfasının altında bulunan \"Fatura işlemlerini yönetin\" bağlantısını bulun ve tıklayın. Aboneliğinizden çıkmaya karar verdiğinizi onaylayabileceğiniz bir doğrulama sayfasına yönlendirileceksiniz.",
-      "a3": "2. Destek Ekibi İle İletişime Geçin: İade talebi nedeninizi ve sipariş numaranızı içeren bir e-posta göndererek müşteri destek ekibimizle <span class='website'>support@detpractice.com</span> adresinden iletişime geçin.",
+      "a3": "2. Destek Ekibi İle İletişime Geçin: İade talebi nedeninizi ve sipariş numaranızı içeren bir e-posta göndererek müşteri destek ekibimizle <span class='website'>support{'@'}detpractice.com</span> adresinden iletişime geçin.",
       "a4": "3. Ekibimiz talebinizi inceleyecek ve 3 iş günü içinde yanıt verecektir."
     },
     "q4": {
@@ -707,7 +707,7 @@
     "q5": {
       "title": "Bize Ulaşın",
       "a1": "Satın alma işleminizde herhangi bir sorunuz varsa veya iade politikamız hakkında yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
-      "a2": "E-posta: <span class='website'>support@detpractice.com</span>"
+      "a2": "E-posta: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -914,7 +914,7 @@
       },
       {
         "q": "İnternet pazarlama programınızla ilgili başka sorularım olursa ne yapmalıyım?",
-        "a": "\"<span class='yellow_font'>support@detpractice.com</span>\" adresinden bizimle iletişime geçin, sorularınızı cevaplamaktan memnuniyet duyarız."
+        "a": "\"<span class='yellow_font'>support{'@'}detpractice.com</span>\" adresinden bizimle iletişime geçin, sorularınızı cevaplamaktan memnuniyet duyarız."
       }
     ]
   }

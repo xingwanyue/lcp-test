@@ -209,7 +209,7 @@
       },
       {
         "name": "¿Cuál es su política de reembolso?",
-        "content1": "Para obtener información sobre cómo obtener un reembolso y las instrucciones para obtener un reembolso, puede consultar el enlace \"Política de reembolso\" en la parte inferior de la página como prioridad, o contáctenos en <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Para obtener información sobre cómo obtener un reembolso y las instrucciones para obtener un reembolso, puede consultar el enlace \"Política de reembolso\" en la parte inferior de la página como prioridad, o contáctenos en <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -704,7 +704,7 @@
       "title": "Cómo solicitar un reembolso / Cancelar suscripción",
       "a1": "Para solicitar un reembolso, por favor, siga estos pasos:",
       "a2": "1. Cancelar suscripción: Inicie sesión en su cuenta, encuentre y haga clic en el enlace \"Administrar su facturación\" en la parte inferior de la página de membresía. Será redirigido a una página de confirmación donde podrá confirmar su decisión de darse de baja.",
-      "a3": "2. Contacte con nuestro soporte: Contacte con nuestro equipo de soporte al cliente en <span class='website'>support@detpractice.com</span> con su número de pedido y la razón de la solicitud de reembolso.",
+      "a3": "2. Contacte con nuestro soporte: Contacte con nuestro equipo de soporte al cliente en <span class='website'>support{'@'}detpractice.com</span> con su número de pedido y la razón de la solicitud de reembolso.",
       "a4": "3. Nuestro equipo revisará tu solicitud y responderá en un plazo de 3 días hábiles."
     },
     "q4": {
@@ -716,7 +716,7 @@
     "q5": {
       "title": "Contáctanos",
       "a1": "Si tiene alguna pregunta sobre nuestra política de reembolso o necesita ayuda con su compra, contáctenos en:",
-      "a2": "Correo electrónico: <span class='website'>support@detpractice.com</span>"
+      "a2": "Correo electrónico: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -923,7 +923,7 @@
       },
       {
         "q": "¿Qué hago si tengo otras preguntas sobre su programa de marketing de afiliados en Internet?",
-        "a": "Simplemente contáctanos en \"<span class='yellow_font'>support@detpractice.com</span>\" y estaremos encantados de ayudarte con cualquier pregunta que puedas tener."
+        "a": "Simplemente contáctanos en \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" y estaremos encantados de ayudarte con cualquier pregunta que puedas tener."
       }
     ]
   }

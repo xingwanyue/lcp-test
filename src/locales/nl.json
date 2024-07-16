@@ -209,7 +209,7 @@
       },
       {
         "name": "Wat is uw restitutiebeleid?",
-        "content1": "Voor informatie over hoe u een terugbetaling kunt krijgen en instructies over hoe u een terugbetaling kunt krijgen, kunt u als eerste verwijzen naar de link \"Refund Policy\" onderaan de pagina of contact met ons opnemen op <span class='email_address'>support@detpractice.com</span>."
+        "content1": "Voor informatie over hoe u een terugbetaling kunt krijgen en instructies over hoe u een terugbetaling kunt krijgen, kunt u als eerste verwijzen naar de link \"Refund Policy\" onderaan de pagina of contact met ons opnemen op <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -697,7 +697,7 @@
       "title": "Hoe u een Terugbetaling / Abonnement Annuleert Aanvraagt",
       "a1": "Om een terugbetaling aan te vragen, volg deze stappen:",
       "a2": "1. Abonnement annuleren: Log in op uw account, zoek en klik op de link \"Uw facturatie beheren\" onderaan de lidmaatschapspagina. U wordt doorgestuurd naar een bevestigingspagina waar u uw beslissing om op te zeggen kunt bevestigen.",
-      "a3": "2. Neem Contact op met Onze Ondersteuning: Neem contact op met ons klantenserviceteam op <span class='website'>support@detpractice.com</span> met uw bestelnummer en de reden voor het verzoek tot terugbetaling.",
+      "a3": "2. Neem Contact op met Onze Ondersteuning: Neem contact op met ons klantenserviceteam op <span class='website'>support{'@'}detpractice.com</span> met uw bestelnummer en de reden voor het verzoek tot terugbetaling.",
       "a4": "3. Ons team zal uw aanvraag bekijken en binnen 3 werkdagen reageren."
     },
     "q4": {
@@ -709,7 +709,7 @@
     "q5": {
       "title": "Neem contact met ons op",
       "a1": "Als u vragen heeft over ons restitutiebeleid of hulp nodig heeft bij uw aankoop, neem dan contact met ons op via:",
-      "a2": "E-mail: <span class = 'website'>support@detpractice.com</ span>"
+      "a2": "E-mail: <span class = 'website'>support{'@'}detpractice.com</ span>"
     }
   },
   "register": {
@@ -916,7 +916,7 @@
       },
       {
         "q": "Wat als ik andere vragen heb over jullie affiliate internet marketing programma?",
-        "a": "Neem gewoon contact met ons op via \"<span class='yellow_font'>support@detpractice.com</span>\" en we helpen je graag met eventuele vragen die je hebt."
+        "a": "Neem gewoon contact met ons op via \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" en we helpen je graag met eventuele vragen die je hebt."
       }
     ]
   }

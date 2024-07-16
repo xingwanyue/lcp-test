@@ -209,7 +209,7 @@
       },
       {
         "name": "Hva er din refusjonspolicy?",
-        "content1": "For informasjon om hvordan du kan få tilbakebetaling og instruksjoner om hvordan du kan få tilbakebetaling, kan du først og fremst se på \"Tilbakebetalingspolicy\"-lenken nederst på siden, eller kontakte oss på <span class='email_address'>support@detpractice.com</span>."
+        "content1": "For informasjon om hvordan du kan få tilbakebetaling og instruksjoner om hvordan du kan få tilbakebetaling, kan du først og fremst se på \"Tilbakebetalingspolicy\"-lenken nederst på siden, eller kontakte oss på <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -697,7 +697,7 @@
       "title": "Hvordan be om refusjon / avbryt abonnement",
       "a1": "For å be om refusjon, vennligst følg disse trinnene:",
       "a2": "1. Avslutt abonnement: Logg inn på kontoen din, finn og klikk på \"Administrer betalingene dine\"-lenken nederst på medlemskapssiden. Du vil bli omdirigert til en bekreftelsesside der du kan bekrefte at du ønsker å si opp abonnementet ditt.",
-      "a3": "2.Kontakt vår støtte: Kontakt vårt kundestøtteteam på <span class='website'>support@detpractice.com</span> med ordrenummeret ditt og grunnen til refusjonsforespørselen.",
+      "a3": "2.Kontakt vår støtte: Kontakt vårt kundestøtteteam på <span class='website'>support{'@'}detpractice.com</span> med ordrenummeret ditt og grunnen til refusjonsforespørselen.",
       "a4": "3. Vårt team vil gjennomgå din forespørsel og svare innen 3 arbeidsdager."
     },
     "q4": {
@@ -709,7 +709,7 @@
     "q5": {
       "title": "Kontakt oss",
       "a1": "Hvis du har noen spørsmål om vår refusjonspolitikk eller trenger hjelp med kjøpet ditt, vennligst kontakt oss på:",
-      "a2": "E-post: <span class='website'>support@detpractice.com</span>"
+      "a2": "E-post: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -916,7 +916,7 @@
       },
       {
         "q": "Hva hvis jeg har andre spørsmål om deres tilknytnings internet markedsføringsprogram?",
-        "a": "Bare kontakt oss på \"<span class='yellow_font'>support@detpractice.com</span>\" så hjelper vi deg gjerne med eventuelle spørsmål du måtte ha."
+        "a": "Bare kontakt oss på \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" så hjelper vi deg gjerne med eventuelle spørsmål du måtte ha."
       }
     ]
   }
