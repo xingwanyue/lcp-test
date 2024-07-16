@@ -74,12 +74,7 @@ const goLogin = () => {
 };
 
 const googleRegister = async () => {
-  const InviteCode = getCookie('InviteCode');
-  const args = {};
-  if (InviteCode) {
-    args.channel = `${InviteCode}-1`;
-  }
-  return oauth2SignIn(urlGet('/home'), args);
+  return oauth2SignIn(urlGet('/home'));
 };
 </script>
 

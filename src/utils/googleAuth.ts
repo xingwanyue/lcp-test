@@ -8,7 +8,7 @@ const YOUR_REDIRECT_URI = '/oauth';
 /*
  * Create form to request access token from Google's OAuth 2.0 server.
  */
-export function oauth2SignIn(url?: string, args?: any) {
+export function oauth2SignIn(url?: string) {
   // Google's OAuth 2.0 endpoint for requesting an access token
   const oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
 
@@ -30,12 +30,6 @@ export function oauth2SignIn(url?: string, args?: any) {
     include_granted_scopes: 'true',
     response_type: 'token',
   } as any;
-  if (args) {
-    const { channel } = args;
-    if (channel) {
-      params.channel = channel;
-    }
-  }
 
   if (url) {
     saveStorage('custom_url', url);
@@ -59,9 +53,21 @@ export const loginBycredential = async (credential: string) => {
     body: JSON.stringify({ credential }),
   });
   const { email, picture, name } = data;
+  const InviteCode = getCookie('InviteCode');
+  const args = {
+    channel: '',
+    email,
+    avatar: picture,
+    nickname: name,
+    google: true,
+    type: 'pc',
+  };
+  if (InviteCode) {
+    args.channel = `${InviteCode}-1`;
+  }
   return fetchmy(`${api}/common/login`, {
     method: 'post',
-    body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+    body: JSON.stringify(args),
   });
 };
 
@@ -84,6 +90,18 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
+    const InviteCode = getCookie('InviteCode');
+    const args = {
+      channel: '',
+      email,
+      avatar: picture,
+      nickname: name,
+      google: true,
+      type: 'pc',
+    };
+    if (InviteCode) {
+      args.channel = `${InviteCode}-1`;
+    }
     return fetchmy(`${api}/common/login`, {
       method: 'post',
       body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
