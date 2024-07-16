@@ -109,9 +109,12 @@ const faqList = ref([
       <div class="aff_header_content" :style="`background-image: url(/img/affiliate/30off.svg);`">
         <div class="tag">{{ $t('affiliate.tag') }}</div>
         <h1 class="title" v-html="$t('affiliate.h1')"></h1>
-        <NuxtLink class="sing_up_now common_btn_hover_bgColor" :title="$t('affiliate.sun')">{{
-          $t('affiliate.sun')
-        }}</NuxtLink>
+        <NuxtLink
+          :to="`https://www.${domain}/sitemap.xml`"
+          class="sing_up_now common_btn_hover_bgColor"
+          :title="$t('affiliate.sun')"
+          >{{ $t('affiliate.sun') }}</NuxtLink
+        >
       </div>
     </div>
     <div class="content">
@@ -249,9 +252,12 @@ const faqList = ref([
       <div class="start_earn_out_wrapper">
         <div class="start_earn_out">
           <div class="title">{{ $t('affiliate.sew') }}</div>
-          <NuxtLink class="btn common_btn_hover_bgColor" :title="$t('affiliate.sun')">{{
-            $t('affiliate.sun')
-          }}</NuxtLink>
+          <NuxtLink
+            :to="`https://www.${domain}/sitemap.xml`"
+            class="btn common_btn_hover_bgColor"
+            :title="$t('affiliate.sun')"
+            >{{ $t('affiliate.sun') }}</NuxtLink
+          >
         </div>
       </div>
     </div>
