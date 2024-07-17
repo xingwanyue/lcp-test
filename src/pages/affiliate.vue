@@ -168,13 +168,28 @@ const faqList = ref([
               </div>
               <div class="method_font">{{ item.font }}</div>
               <!-- <div class="method_tip">{{ item.tip }}</div> -->
-              <NuxtLink v-if="item.type === '1'" class="btn" :title="item.btn">
+              <NuxtLink
+                :to="`https://www.${domain}/sitemap.xml`"
+                v-if="item.type === '1'"
+                class="btn"
+                :title="item.btn"
+              >
                 {{ item.btn }}
               </NuxtLink>
-              <NuxtLink v-if="item.type === '2'" class="btn" :title="item.btn">
+              <NuxtLink
+                :to="`https://www.${domain}/sitemap.xml`"
+                v-if="item.type === '2'"
+                class="btn"
+                :title="item.btn"
+              >
                 {{ item.btn }}
               </NuxtLink>
-              <NuxtLink v-if="item.type === '3'" class="btn" :title="item.btn">
+              <NuxtLink
+                :to="`https://www.${domain}/sitemap.xml`"
+                v-if="item.type === '3'"
+                class="btn"
+                :title="item.btn"
+              >
                 <div>{{ item.btn }}</div>
               </NuxtLink>
             </div>
