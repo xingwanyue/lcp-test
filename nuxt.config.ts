@@ -72,7 +72,7 @@ export default defineNuxtConfig({
   "url": "https://www.detpractice.com/",
   "logo": "https://www.detpractice.com/img/footer/small_logo.svg",
   "image": "https://detcdn.zixuekeji.cn/store/portal/products/bank_picture1.png",
-  "description": "Prepare for the Duolingo english proficiency test online with DET Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!",
+  "description": "DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.",
   "pricerange":"£", 
   "telephone": "7518886018",
   "email" : "info@detpractice.com",
@@ -110,7 +110,7 @@ export default defineNuxtConfig({
 }`,
         },
       ],
-      title: 'DET Practice:The best Duolingo English Test Practice platform',
+      title: 'DET Practice - Ace the Duolingo English Test',
       meta: [
         { charset: 'utf-8' },
         // {
@@ -121,7 +121,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'msvalidate.01', content: 'AB8D0671C60241C25BF7B5B9E68F5683' },
         //
-        { name: 'DC.title', content: 'Duolingo English Language Test Online, English Proficiency Exam' },
+        { name: 'DC.title', content: 'DET Practice - Ace the Duolingo English Test' },
         { name: 'geo.region', content: 'GB-LND' },
         { name: 'geo.placename', content: 'England' },
         { name: 'geo.position', content: '54.702355;-3.276575' },
@@ -129,11 +129,11 @@ export default defineNuxtConfig({
 
         { property: 'og:locale', content: 'en_GB' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'Duolingo English Language Test Online, English Proficiency Exam' },
+        { property: 'og:title', content: 'DET Practice - Ace the Duolingo English Test' },
         {
           property: 'og:description',
           content:
-            'Prepare for the Duolingo english proficiency test online with DET Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!',
+            'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.',
         },
         { property: 'og:url', content: 'https://www.detpractice.com/' },
         { property: 'og:site_name', content: 'DET Practice' },
@@ -142,11 +142,11 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@det_practice' },
         { name: 'twitter:creator', content: 'DET Practice' },
-        { name: 'twitter:title', content: 'Duolingo English Language Test Online, English Proficiency Exam' },
+        { name: 'twitter:title', content: 'DET Practice - Ace the Duolingo English Test' },
         {
           name: 'twitter:description',
           content:
-            'Prepare for the Duolingo english proficiency test online with DET Practice. Access mock exams, correction services, and comprehensive courses. Start practicing today!',
+            'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.',
         },
         { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
       ],
