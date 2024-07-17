@@ -6,7 +6,7 @@ import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: t('privacyPolicy.seometa.title'),
-  description: t('privacyPolicy.seometa.description'),
+  // description: t('privacyPolicy.seometa.description'),
   keywords: t('privacyPolicy.seometa.keywords'),
 });
 useHead({
