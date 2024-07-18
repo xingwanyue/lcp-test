@@ -317,7 +317,7 @@
   "aboutUs": {
     "seometa": {
       "title": "À propos de nous - DET Pratique",
-      "description": "DET Pratique, la principale plateforme pour Duolingo English Test préparation. Explorez notre vaste banque de tests, examens simulés, services de correction et DET cours."
+      "description": ""
     },
     "title": "À propos de DET Pratice",
     "oelet": "Notre estimée équipe d'éducation linguistique",
@@ -341,7 +341,7 @@
   "contactUs": {
     "seometa": {
       "title": "Nous Contacter - DET Pratique",
-      "description": "Contactez DET Pratique pour expert Duolingo English Test pratique et orientation. Préparez-vous avec des ressources spécialisées et un soutien pour des résultats optimaux.",
+      "description": "",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
     },
     "checkEmail": "L'e-mail doit être une adresse e-mail valide.",
