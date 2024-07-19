@@ -48,7 +48,8 @@
       "利用規約",
       "プライバシーポリシー",
       "サイトマップ",
-      "アフィリエイトプログラム"
+      "アフィリエイトプログラム",
+      "返金ポリシー"
     ],
     "show_more": "もっと見る",
     "alt": "DET 練習：最高のDuolingo English Test練習プラットフォーム",
@@ -58,8 +59,8 @@
   },
   "index": {
     "seometa": {
-      "title": "DET 練習 - Duolingo 英語言語テストオンライン、英語能力試験",
-      "description": "オンラインでDuolingo英語能力試験の準備をDET Practiceで始めましょう。模擬試験、添削サービス、包括的なコースにアクセスできます。今日から練習を始めましょう！",
+      "title": "DET 練習 - Duolingo English Test を制覇する",
+      "description": "DET 練習は、Duolingo English Test練習に最適なプラットフォームです。私たちは最大のテストバンク、フルレングス模擬試験、修正サービス、DETコースを提供しています。",
       "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo テストオンライン, Duolingo 英語テスト, Duolingo 英語試験, Duolingo 熟練度試験, Duolingo 英語熟練度試験, Duolingo 英語熟練度試験, 英語熟練度試験 Duolingo, Duolingo 熟練度試験, Duolingo 英語熟練度試験, Duolingo English Test, 英語 Duolingo テスト"
     },
     "bigtitle1": "高得点者数（130ポイント以上）：10000+",
@@ -129,8 +130,8 @@
   },
   "learn": {
     "seometa": {
-      "title": "試験準備のためのヒント Duolingo English Test | DET 練習",
-      "description": "効果的な試験準備のコツを見つけてください Duolingo English Test。あなたの試験成績を向上させるためのタイムリーな洞察で常に最新情報を DET Practice で入手しましょう。",
+      "title": "DET 練習 - Duolingo English Testの専門的なヒントを学ぶ",
+      "description": "Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score.",
       "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語言語テスト, Duolingo 英語試験, Duolingo 熟練度試験"
     },
     "h1": "Duolingo English Test時期に試験準備のヒントを更新します",
@@ -141,8 +142,8 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test 準備 価格 | DET 実践",
-      "description": "ご準備のために手頃な価格で適切なプランを選んでください。パーソナライズされた練習、専門家によるレビュー、そして本格的な模擬試験が利用可能です。",
+      "title": "DET 練習 - Duolingo テスト準備会員およびサービスの価格設定",
+      "description": "あなたの準備に合った適切なプランを選択してください。個人的な練習、専門家によるレビュー、そして本格的な模擬試験に対応した手頃な価格のオプションがあります。",
       "keywords": "keyDET Duolingo、DET テスト、Duolingo DET、Duolingo テスト、Duolingo テストオンライン、Duolingo 英語テスト、Duolingo 英語試験、Duolingo 適正試験words"
     },
     "pagefont": {
@@ -208,10 +209,7 @@
       },
       {
         "name": "返金ポリシーは何ですか？",
-        "content1": "1. 無料アカウント <br>使用は完全に無料であるため、返金問題はありません。",
-        "content2": "<br>2. 定期購入プラン <br>ユーザーは、DET Practiceが対応するサービスを提供できず、ユーザーがそれを利用できない場合や、定期購入がまだ発効していない場合に返金をリクエストすることができます。 購入後に定期購入やサービスがすでに有効になった場合、返金は行われません。",
-        "content3": "<br>3. スピーキング/ライティングガイド  <br>スピーキング/ライティングガイドはデジタル製品と見なされます。一度購入してダウンロードすると、製品の配信は完了したものと見なされ、通常は返金不可となります。購入する前に購入情報をよく読んでください。",
-        "content4": "<br><br>重要なお知らせ:  <br>すべての返金リクエストはカスタマーサービスを通じて処理される必要があり、確認のために関連する使用記録を提供する必要があります。<br>不正な返金を防ぐために、各ユーザーアカウントは1つの返金リクエストに制限されています。複数のリクエストは処理されません。 <br>特別な事情やユニークな状況がある場合は、お問い合わせいただければ、解決策を見つけるために協力いたします。"
+        "content1": "下記は優先的にページ下部の「返金ポリシー」リンクから返金に関する情報および手順を入手する方法です。または、<span class ='email_address'>support{'@'}detpractice.com</span> までお問い合わせください。"
       }
     ],
     "qlList": {
@@ -279,8 +277,8 @@
   },
   "blog": {
     "seometa": {
-      "title": "DET 練習ブログ - Duolingo English Test ティップスとトリック",
-      "description": "最新のDuolingo English TestヒントやコツをDETPracticeのブログでチェックしてください。テスト準備で成功するための専門的なアドバイスと戦略を見つけましょう。"
+      "title": "DET 練習 - Duolingo English Test ヒントとコツ",
+      "description": "Discover essential Duolingo English TestのヒントやトリックをDET Practiceのブログで見つけてください。専門家の戦略、スコアリングの洞察力、そして深いガイドにダイブし、すべての Duolingo English Testのセクションで優れたパフォーマンスを発揮し、最高のスコアを達成してください。"
     },
     "h1": "DET 練習ブログ",
     "alt": "DET 練習:最適なDuolingo English Test練習プラットフォーム"
@@ -316,8 +314,8 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "DET Practiceについて: Duolingo English Test Practiceプラットフォーム",
-      "description": "DET Practice、Duolingo English Test準備のための主要なプラットフォームです。私たちの広範なテストバンク、模擬試験、添削サービス、および DET コースを探索してください。"
+      "title": "私たちについて - DET 練習",
+      "description": ""
     },
     "title": "DETプラクティスについて",
     "oelet": "私たちの尊敬する言語教育チーム",
@@ -340,8 +338,8 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "お問い合わせ | +44 7708 193347 | DET 練習",
-      "description": "お問い合わせDETエキスパートのための実践Duolingo English Test実践と指導。最適な結果のために、専門的なリソースとサポートで準備してください。",
+      "title": "お問い合わせ - DET 練習",
+      "description": "",
       "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語能力テスト, Duolingo 英語試験, Duolingo 熟練度試験"
     },
     "checkEmail": "メールアドレスは有効なものでなければなりません。",
@@ -401,8 +399,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "最高のAI修正サービス | DET 練習",
-      "description": "専門の修正サービスでDuolingoテストの成功を達成しましょう。スコアを最大化するために、パーソナライズされたガイダンスとサポートを受けましょう。今すぐ最初の一歩を踏み出しましょう！",
+      "title": "DET 練習 - あなたのDuolingoテストに対するAI修正サービス",
+      "description": "\"AI + 教師\"によって提供される修正サービス。言語専門家から個別のフィードバックを受けて、応答と戦略を改善してより高いDETスコアを獲得しましょう。",
       "keywords": "パイテストの訂正サービス、パイテストのAI訂正サービス"
     },
     "h1": "最高のAI校正サービスを見つけてください Duolingo テスト",
@@ -440,8 +438,8 @@
   },
   "courses": {
     "seometa": {
-      "title": "Duolingo English Test コースオンライン | DET 練習",
-      "description": "オンラインでDuolingo English TestコースをDETPracticeで探検しよう。包括的なリソースと専門家の指導で効果的に準備しましょう。今すぐ登録！"
+      "title": "DET 練習 - ガイドとともに話し言葉と文章を習得する",
+      "description": "私たちの Duolingo English Test ガイドであなたのポテンシャルを開放しましょう。包括的な戦略、専門家のヒント、そして最新の DET の練習によって話し方や書き方の卓越性を深く掘り下げます。"
     },
     "article1": {
       "title": "優れたスピーキング試験の主要機能：",
@@ -556,8 +554,8 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo 模擬試験: 言語試験の準備 | DET 練習",
-      "description": "リアルなDuolingo模擬試験を、適応型質問とAIスコアリングで体験してください。Duolingo English TestのためにDETPracticeのフルレングス試験で効果的に準備しましょう！",
+      "title": "DET練習 - DET準備のためのフルレングス模擬試験",
+      "description": "DET Practiceのフルレングス・テストでリアルなDuolingo模擬試験を体験してみましょう。知的適応問題とAIスコアリングを使っているため、我々の模擬試験は正確な評価を提供し、あなたを効果的にDuolingo English Testに備えます。",
       "keywords": "Duolingo 模擬試験, DET Duolingo, DET 試験, Duolingo DET, Duolingo 試験, Duolingo 試験オンライン"
     },
     "h1": "Duolingo English Test 1:1 模擬試験",
@@ -588,8 +586,8 @@
   },
   "practice": {
     "seometa": {
-      "title": "Duolingo 英語練習テストオンライン, DET 練習テストスコア",
-      "description": "オンラインでDET練習テストと共にDuolingo英語テストの準備をしましょう。効果的な練習セッションでDuolingo英語テストのスコアを向上させましょう。今すぐ始めましょう！",
+      "title": "DET 練習 - Duolingoの練習テストに最適なプラットフォーム",
+      "description": "私たちのDETテストバンクには、詳細な説明とAI分析を含む数千の問題が含まれており、広範なトレーニングに役立ちます。成功するための支援をします。",
       "keywords": "Duolingo English Test 練習, Duolingo 練習英語テスト, Duolingo 英語練習テスト, Duolingo 練習テストオンライン, Duolingo テスト練習, Duolingo 練習テスト, Duolingo 練習, Det 練習テスト, Duolingo English Test スコア"
     },
     "h1": "Duolingo 練習問題集",
@@ -624,8 +622,8 @@
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "プライバシーポリシー: あなたのデータを安全に保つ | DET Practice",
-      "description": "DET Practiceのプライバシーポリシーを発見: 私たちがデータを取り扱い、情報を保護し、プライバシーを確保する方法を学びましょう。私たちのポリシーについてもっと読む。",
+      "title": "プライバシーポリシー - DET プラクティス",
+      "description": "Discover DET Practiceのプライバシーポリシー：データの処理、情報の保護、およびプライバシーの確保方法について学びましょう。今すぐポリシーについて詳しく読んでください。",
       "keywords": "DET Duolingo、 DET テスト、 Duolingo DET、 Duolingo テスト、 Duolingo テストオンライン、 Duolingo 英語力テスト、 Duolingo 英語試験、 Duolingo 熟練度試験"
     },
     "h1": "プライバシーポリシー",
@@ -666,6 +664,41 @@
       "title": "他のサイトへのリンク",
       "a1": "私たちのサービスには、私たちが運営していない他のサイトへのリンクが含まれている場合があります。 {If you click on a third-party link, you will be directed to that third-party’s site.} 私たちは、訪問するすべてのサイトのプライバシーポリシーを確認することを強くお勧めします。",
       "a2": "制御できないため、{content}、プライバシーポリシー、または第三者のサイトやサービスの慣行について一切責任を負いません。"
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "返金ポリシー：返金プロセスについて学ぶ | DET 練習",
+      "description": "Discover DET Practiceの返金ポリシー：返金リクエストの処理方法、対象条件、および返金手続きについて学びましょう。今すぐ私たちのポリシーについて詳しく読んでください。",
+      "keywords": "返金ポリシー、DET練習の返金、DET練習ポリシー、返金プロセス、返金の対象条件"
+    },
+    "h1": "払い戻しポリシー",
+    "q1": {
+      "a1": "ご利用いただきありがとうございます。お客様にとって最高の学習体験を提供するよう努めておりますが、もし製品にご満足いただけない場合は、お手伝い致します。"
+    },
+    "q2": {
+      "title": "返金の対象条件",
+      "a1": "• メンバーサービス：メンバーサービスの払い戻し申請は、購入日から3日以内に行う必要があります。",
+      "a2": "• アクセスしたコンテンツ：20以上の質問にアクセスしていない場合、返金の対象となります。",
+      "a3": "• デジタルコース：デジタル製品がダウンロードまたはアクセスされると、使用済みと見なされます。使用済みの製品は返金できません。"
+    },
+    "q3": {
+      "title": "払い戻しを要求する方法/サブスクリプションをキャンセルする方法",
+      "a1": "返金をリクエストするには、以下の手順に従ってください：",
+      "a2": "1. サブスクリプションのキャンセル: アカウントにログインし、メンバーシップページの下部にある「請求を管理する」リンクを見つけ、クリックしてください。購読解除の決定を確認できる確認ページにリダイレクトされます。",
+      "a3": "2. サポートにご連絡ください: 注文番号および払い戻しの理由とともに、<span class='website'>support{'@'}detpractice.com</span> のカスタマーサポートチームにご連絡ください。",
+      "a4": "3. 私たちのチームは、あなたのリクエストをレビューし、3営業日以内に返信します。"
+    },
+    "q4": {
+      "title": "除外事項",
+      "a1": "次のものは払い戻しの対象外となります：",
+      "a2": "• ダウンロードされたデジタル製品。",
+      "a3": "• サードパーティーベンダーを通じて購入された製品やサービス。"
+    },
+    "q5": {
+      "title": "お問い合わせ",
+      "a1": "もし返金ポリシーについてご質問がある場合や、購入に関するアシスタンスが必要な場合は、下記の連絡先にお問い合わせください:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -726,8 +759,8 @@
   },
   "tos": {
     "seometa": {
-      "title": "利用規約 | DET Practice",
-      "description": "{Explore DET Practice}の包括的な利用規約には、プライバシーポリシーと使用ガイドラインが含まれています。透明性と遵守を確保してください。",
+      "title": "利用規約 - DET 練習",
+      "description": "Explore DET Practiceの包括的な利用規約を確認してください。当社のプライバシーポリシーや使用ガイドラインも含まれます。透明性と法令遵守を確保してください。",
       "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語言語テスト, Duolingo 英語試験, Duolingo 能力試験"
     },
     "title": "利用規約",
@@ -870,7 +903,7 @@
       },
       {
         "q": "インターネットマーケティングプログラムについて他に質問がある場合はどうすればよいですか？",
-        "a": "\"<span class='yellow_font'>support@detpractice.com</span>\" にご連絡いただければ、喜んでお手伝いさせていただきます。"
+        "a": "\"<span class='yellow_font'>support{'@'}detpractice.com</span>\" にご連絡いただければ、喜んでお手伝いさせていただきます。"
       }
     ]
   }

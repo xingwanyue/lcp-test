@@ -5,8 +5,9 @@ import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { register } from '@/api';
 import { oauth2SignIn } from '@/utils/googleAuth';
+
 import { sinupEvent } from '@/utils/gtag';
-import { getCookie } from '@/utils';
+import { getCookie, urlGet } from '@/utils';
 
 definePageMeta({
   layout: 'noheaderfooter',
@@ -55,7 +56,7 @@ const submit = async () => {
   loading.value = true;
   const InviteCode = getCookie('InviteCode');
   if (InviteCode) {
-    temp.referrerCode = InviteCode;
+    temp.channel = `${InviteCode}-1`;
   }
   const { err } = await register(temp);
   loading.value = false;
@@ -73,8 +74,7 @@ const goLogin = () => {
 };
 
 const googleRegister = async () => {
-  // TODO: Implement Google registration
-  return oauth2SignIn();
+  return oauth2SignIn(urlGet('/home'));
 };
 </script>
 

@@ -48,7 +48,8 @@
       "Termini e Condizioni",
       "Informativa sulla privacy",
       "Mappa del sito",
-      "Programma di Affiliazione"
+      "Programma di Affiliazione",
+      "Politica di rimborso"
     ],
     "show_more": "mostra di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
@@ -58,8 +59,8 @@
   },
   "index": {
     "seometa": {
-      "title": "DET Pratica - Duolingo Test di Lingua Inglese Online, Esame di Competenza in Inglese",
-      "description": "Prepara per il test di inglese Duolingo online con DET Practice. Accedi a simulazioni d'esame, servizi di correzione e corsi completi. Inizia a esercitarti oggi!",
+      "title": "DET Esercitati - Dominare il Duolingo English Test",
+      "description": "DET La pratica è la migliore piattaforma per Duolingo English Test la pratica. Abbiamo la più grande banca dati di test, esami simulati a lunghezza intera, servizio di correzione e corsi DET.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di lingua inglese, Duolingo Esame di inglese, Duolingo Esame di competenza, Duolingo Esame di competenza in inglese, Duolingo Esame di competenza in inglese, Test di competenza in inglese Duolingo, Duolingo Test di competenza, Duolingo Test di competenza in inglese, Duolingo English Test, Test di inglese Duolingo"
     },
     "bigtitle1": "Numero di punteggi alti (130+ punti)：10000+",
@@ -129,8 +130,8 @@
   },
   "learn": {
     "seometa": {
-      "title": "Suggerimenti per la preparazione agli esami per Duolingo English Test | DET Pratica",
-      "description": "Scopri suggerimenti efficaci per la preparazione agli esami per il Duolingo English Test. Resta aggiornato con approfondimenti tempestivi su come migliorare le tue prestazioni nei test su DET Practice.",
+      "title": "DET Pratica - Impara i consigli degli esperti per il Duolingo English Test",
+      "description": "Esplora strategie esperte e metodi di studio per il Duolingo English Test. Offriamo suggerimenti utili e intuizioni per migliorare la tua preparazione e aumentare il tuo punteggio.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Proficienza"
     },
     "h1": "Aggiorneremo tempestivamente i consigli per la preparazione agli esami di Duolingo English Test",
@@ -141,8 +142,8 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test Preparazione Prezzi | DET Pratica",
-      "description": "Scegli il piano giusto con prezzi accessibili per la tua Duolingo English Test preparazione. Pratica personalizzata, recensioni di esperti e simulazioni complete disponibili.",
+      "title": "DET Pratica - Preparazione ai Test Iscrizione e Servizi Prezzi",
+      "description": "Scegli il piano giusto per la tua preparazione Duolingo English Test. Opzioni di prezzo accessibili per la pratica personalizzata, le recensioni degli esperti e gli esami simulati a scala completa.",
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di lingua inglese, Duolingo Esame di inglese, Duolingo Esame di competenzawords"
     },
     "pagefont": {
@@ -208,10 +209,7 @@
       },
       {
         "name": "Qual è la vostra politica di rimborso?",
-        "content1": "1. Account Gratuito  <br>L'uso è completamente gratuito, quindi non ci sono problemi di rimborso.",
-        "content2": "<br>2. Piani di abbonamento <br>Gli utenti possono richiedere un rimborso se DET Practice non riesce a fornire il servizio corrispondente, risultando nell'impossibilità dell'utente di utilizzarlo, o se l'abbonamento non è ancora entrato in vigore. I rimborsi non verranno emessi per gli abbonamenti e i servizi che sono già diventati attivi dopo l'acquisto.",
-        "content3": "<br>3. Guida alla Conversazione/Scrittura <br>La Guida alla Conversazione/Scrittura è considerata un prodotto digitale. Una volta acquistato e scaricato, la consegna del prodotto è considerata completa e generalmente non rimborsabile. Si prega di leggere attentamente le informazioni sull'acquisto prima di procedere con l'acquisto.",
-        "content4": "<br><br>Nota Importante:  <br>Tutte le richieste di rimborso devono essere processate attraverso il servizio clienti, e i relativi registri di utilizzo devono essere forniti per la verifica.<br>Per prevenire rimborsi fraudolenti, ogni account utente è limitato a una richiesta di rimborso. Richieste multiple non saranno processate.<br>Se hai circostanze speciali o situazioni uniche, contattaci e collaboreremo con te per trovare una soluzione."
+        "content1": "Per informazioni su come ottenere il rimborso e istruzioni su come ottenere il rimborso, è possibile fare riferimento al link \"Politica di rimborso\" in fondo alla pagina come questione prioritaria, o contattarci all'indirizzo <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -281,8 +279,8 @@
   },
   "blog": {
     "seometa": {
-      "title": "DET Blog di Pratica - Duolingo English Test Consigli e Trucchi",
-      "description": "Rimani aggiornato con essenziali Duolingo English Test consigli e trucchi sul blog di DET Practice. Scopri consigli e strategie degli esperti per eccellere nella tua preparazione ai test."
+      "title": "DET Esercizio - Duolingo English Test Consigli e Trucchi",
+      "description": "Scopri consigli e trucchi essenziali con il blog di DET Practice. Approfondisci le strategie degli esperti, le informazioni sul punteggio e le guide approfondite per eccellere in ogni sezione del Duolingo English Test e ottenere il tuo miglior punteggio."
     },
     "h1": "DET Blog di pratica",
     "alt": "DET Pratica:La migliore piattaforma Duolingo English Test di pratica"
@@ -315,8 +313,8 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Informazioni DET Pratica: Duolingo English Test Piattaforma di Pratica",
-      "description": "DET Practice, la piattaforma leader per la Duolingo English Test preparazione. Esplora il nostro vasto archivio di test, esami simulati, servizi di correzione e corsi DET."
+      "title": "Su di noi - DET Pratica",
+      "description": ""
     },
     "title": "Informazioni su DET Pratice",
     "oelet": "Il nostro stimato team di educazione linguistica",
@@ -339,8 +337,8 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Contattaci | +44 7708 193347 | DET Pratica",
-      "description": "Contatto DET Pratica per esperto Duolingo English Test pratica e guida. Preparati con risorse specializzate e supporto per i risultati ottimali.",
+      "title": "Contattaci - DET Esercizio",
+      "description": "",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Competenza"
     },
     "checkEmail": "L'email deve essere un indirizzo email valido.",
@@ -400,8 +398,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "Il miglior servizio di correzione AI per il test Duolingo | DET Pratica",
-      "description": "Ottieni il successo nel test Duolingo con il nostro servizio di correzione specializzato. Ricevi orientamento e supporto personalizzati per massimizzare il tuo punteggio. Fai il primo passo ora!",
+      "title": "DET Pratica - Servizio di correzione AI per il tuo test Duolingo",
+      "description": "Servizio di correzione fornito da \"AI + Insegnanti\". Ricevi un feedback personalizzato da esperti linguistici per migliorare le tue risposte e le strategie per punteggi più alti.",
       "keywords": "Servizio di Correzione per il Test di Duolingo, Servizio di Correzione AI per il Test di Duolingo"
     },
     "h1": "Scopri il miglior servizio di correzione AI per il test Duolingo",
@@ -439,8 +437,8 @@
   },
   "courses": {
     "seometa": {
-      "title": "Duolingo English Test Corso Online | DET Pratica",
-      "description": "Esplora il nostro Duolingo English Test corso online su DET Practice. Preparati efficacemente con le nostre risorse complete e la guida degli esperti. Iscriviti ora!"
+      "title": "DET Pratica - Padrona Parlare e Scrivere con la Duolingo English Test Guida",
+      "description": "Sblocca il tuo potenziale con la nostra Duolingo English Test Guida. Approfondisci l'eccellenza nella parola scritta e parlata con strategie complete, consigli degli esperti e una pratica DET aggiornata."
     },
     "article1": {
       "title": "Caratteristiche principali di DET Eccellenza dell'Esame Orale:",
@@ -571,8 +569,8 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo Prova Simulata: Preparati per il Tuo Esame di Lingua | DET Pratica",
-      "description": "Sperimenta test di simulazione realistici Duolingo con domande adattive e punteggio AI. Preparati efficacemente con gli esami completi di DET Practice per il Duolingo English Test!",
+      "title": "DET Pratica - Esame simulato a lunga durata per la preparazione di DET",
+      "description": "Vivi un realistico esame di simulazione Duolingo con gli esami a lunghezza intera di DET Practice. Con domande intelligenti e adattive e punteggi AI, i nostri esami di simulazione offrono una valutazione accurata per prepararti efficacemente per il Duolingo English Test.",
       "keywords": "Duolingo Test di prova, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test online"
     },
     "h1": "Duolingo English Test 1:1 Esame Simulato",
@@ -603,8 +601,8 @@
   },
   "practice": {
     "seometa": {
-      "title": "Duolingo Test di pratica di inglese online, DET Punteggio del test di pratica",
-      "description": "Prepara per il test d'inglese Duolingo con DET test di pratica online. Migliora il tuo punteggio nel test d'inglese Duolingo con sessioni di pratica efficaci. Inizia ora!",
+      "title": "DET Pratica - La migliore piattaforma per il test di pratica Duolingo",
+      "description": "Il nostro database di test DET include migliaia di domande per un'ampia preparazione, complete di spiegazioni dettagliate e analisi AI per aiutarti a raggiungere il successo.",
       "keywords": "Duolingo English Test Pratica, Duolingo Pratica Test di Inglese, Duolingo Test di Pratica Inglese, Duolingo Test di Pratica Online, Duolingo Test di Pratica, Duolingo Test di Pratica, Duolingo Pratica, Det Test di Pratica, Duolingo English Test Punteggio"
     },
     "h1": "Banca di Domande PraticheDuolingo",
@@ -639,8 +637,8 @@
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "Politica sulla privacy: Proteggere i tuoi dati | DET Practice",
-      "description": "Scopri la Politica sulla Privacy di DET Practice: Scopri come gestiamo i dati, proteggiamo le informazioni e garantiamo la tua privacy. Leggi di più sulle nostre politiche ora.",
+      "title": "Informativa sulla Privacy - DET Pratica",
+      "description": "Scopri l'informativa sulla privacy di DET Practice: scopri come gestiamo i dati, proteggiamo le informazioni e garantiamo la tua privacy. Leggi di più sulle nostre politiche adesso.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Competenza"
     },
     "h1": "Informativa sulla privacy",
@@ -681,6 +679,41 @@
       "title": "Link ad altri siti",
       "a1": "Il nostro servizio può contenere collegamenti ad altri siti che non sono gestiti da noi. Se fai clic su un collegamento di terze parti, sarai indirizzato al sito di quella terza parte. Ti consigliamo vivamente di esaminare l'Informativa sulla privacy di ogni sito che visiti.",
       "a2": "Non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Politica di Rimborso: Scopri il Nostro Processo di Rimborso | DET Esercizio",
+      "description": "Scopri la politica di rimborso di DET Practice: Scopri come gestiamo le richieste di rimborso, i criteri di ammissibilità e il processo per ottenere un rimborso. Leggi di più sulle nostre politiche ora.",
+      "keywords": "Politica di rimborso, DET Rimborso pratica, DET Pratica della politica, Processo di rimborso, Idoneità al rimborso"
+    },
+    "h1": "Politica di rimborso",
+    "q1": {
+      "a1": "Grazie per aver scelto e acquistato i nostri servizi. Ci sforziamo di fornire la migliore esperienza di apprendimento per i nostri clienti. Tuttavia, se non sei completamente soddisfatto del tuo acquisto, siamo qui per aiutarti."
+    },
+    "q2": {
+      "title": "Ammissibilità ai rimborsi",
+      "a1": "• Servizi per i membri: Le richieste di rimborso per i servizi ai membri devono essere fatte entro 3 giorni dall'acquisto.",
+      "a2": "• Contenuto Accessato: Se non hai acceduto a più di 20 domande, sei idoneo per un rimborso.",
+      "a3": "• Corsi digitali: Una volta che un prodotto digitale viene scaricato o accesso, viene considerato usato e i prodotti usati non possono essere rimborsati."
+    },
+    "q3": {
+      "title": "Come richiedere un rimborso / annullare l'iscrizione",
+      "a1": "Per richiedere un rimborso, segui questi passaggi:",
+      "a2": "1. Annulla abbonamento: Accedi al tuo account, trova e clicca sul link \"Gestisci la fatturazione\" in fondo alla pagina di abbonamento. Sarai reindirizzato a una pagina di conferma dove potrai confermare la tua decisione di disiscriverti.",
+      "a3": "2. Contatta il nostro supporto: contatta il nostro team di supporto clienti all'indirizzo <span class='website'>support{'@'}detpractice.com</span> fornendo il numero d'ordine e il motivo della richiesta di rimborso.",
+      "a4": "3. Il nostro team valuterà la tua richiesta e risponderà entro 3 giorni lavorativi."
+    },
+    "q4": {
+      "title": "Esclusioni",
+      "a1": "I seguenti non sono idonei per i rimborsi:",
+      "a2": "• Prodotti digitali scaricati.",
+      "a3": "• Prodotti e servizi acquistati tramite fornitori di terze parti."
+    },
+    "q5": {
+      "title": "Contattaci",
+      "a1": "Se hai domande sulla nostra politica di rimborso o hai bisogno di assistenza con il tuo acquisto, contattaci al:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -741,8 +774,8 @@
   },
   "tos": {
     "seometa": {
-      "title": "Termini di servizio | DET Pratica",
-      "description": "Esplora i Termini di Servizio completi di DET Practice, inclusa la nostra Informativa sulla Privacy e le Linee Guida sull'Uso. Garantire trasparenza e conformità.",
+      "title": "Termini e Condizioni - DET Esercitazione",
+      "description": "Esplora i completi Termini di Servizio di DET Practice, inclusa la nostra Politica sulla privacy e le Linee guida d'utilizzo. Garantiamo trasparenza e conformità.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Competenza"
     },
     "title": "Termini di servizio",
@@ -887,7 +920,7 @@
       },
       {
         "q": "Cosa succede se ho altre domande sul vostro programma di marketing di affiliazione su internet?",
-        "a": "Contattaci semplicemente a \"<span class='yellow_font'>support@detpractice.com</span>\" e saremo felici di aiutarti con qualsiasi domanda tu possa avere."
+        "a": "Contattaci semplicemente a \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" e saremo felici di aiutarti con qualsiasi domanda tu possa avere."
       }
     ]
   }

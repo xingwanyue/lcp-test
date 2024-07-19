@@ -66,9 +66,7 @@ const aqList = ref([
   },
   {
     name: t('pricing.aqList[6].name'),
-    content: `${t('pricing.aqList[6].content1')}${t('pricing.aqList[6].content2')}${t('pricing.aqList[6].content3')}${t(
-      'pricing.aqList[6].content4',
-    )}`,
+    content: `${t('pricing.aqList[6].content1')}`,
     open: false,
   },
 ]) as any;

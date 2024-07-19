@@ -1,93 +1,83 @@
 {
-  "affiliate": {
+  "index": {
     "seometa": {
-      "title": "Affiliate Program | DET Practice",
-      "description": "Join DET Practice's lucrative affiliate program and earn up to 30% commission for every referral. Partner with us to help students achieve their best scores.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
-    },
-    "tag": "Affiliate Program",
-    "h1": "Earn <span class='yellow_font'>30% Commission</span> From Your Every Referral",
-    "sun": "Sign Up Now",
-    "join_title": "Join Detpractice's <span class='yellow_font'>Lucrative</span> Affiliate Program",
-    "join_tips": "Sign up for the affiliate program of Detpractice.com. Anyone can get a higher score easily on the Duolingo English Test with Detpractice.com. Become our partner and get up to 30% commission for every referral.",
-    "earth_with_title": "Earn With Detpractice's Diverse Product Range",
-    "question_bank": "Question bank",
-    "acs": "AI Correction Service",
-    "Mock_Test": "Mock Test",
-    "Courses": "Courses",
-    "bada": "Become a Detpractice Affiliate in 3 Steps",
-    "hep": "High Earning Potential",
-    "heptips": [
-      "Competitive commission rates: 30% on all revenue contributed from your affiliate link",
-      "Potential for long-term partnerships: We value our affiliates and strive to develop long-term, mutually beneficial relationships."
-    ],
-    "ctw": "Creators That We Love to Work With",
-    "ctwtips": [
-      " 1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
-      "2.You are excited by a more effective way to learn DET",
-      "3.You are a training institution that teaches Duolingo English Test"
-    ],
-    "dos": "Do’s",
-    "dos_icon_alt": "green Right Icon",
-    "donts": "Don’ts",
-    "donts_icon_alt": "red Err Icon",
-    "faqs": "FAQs",
-    "sew": "Start Earning with Our Affiliate Program Now",
-    "contaceUsList": [
-      {
-        "font": "Sign up for our affiliate program and get your referral link.",
-        "btn": "Sign Up Now"
-      },
-      {
-        "font": "Share your link on your website or other platforms.",
-        "btn": "Go and Share"
-      },
-      {
-        "font": "Earn commissions from sales you and your sub-affiliates drive.",
-        "btn": "Check Out"
-      }
-    ],
-    "dosList": [
-      { "font": "Try out Detpractice.com for yourself" },
-      { "font": "Promote Detpractice.com ethically and honestly" },
-      { "font": "Create quality and relevant content" },
-      { "font": "Disclose your affiliate relationship" }
-    ],
-    "dontsList": [
-      { "font": "Make misleading or false claims about Detpractice.com" },
-      { "font": "Promote on platforms that have inappropriate or illegal content" },
-      { "font": "Promote on any coupon site" },
-      { "font": "Set up ad campaigns using our brand name, or putting our domain name in your ads' destination URLs" }
-    ],
-    "faqList": [
-      {
-        "q": "Who can apply for DET PracticeI's affiliate program?",
-        "a": "If you are a creator that has an audience composed of students,a training institution that teaches Duolingo English Test,or an influencer,you can sign up for our affiliate program and earn money."
-      },
-      {
-        "q": "How do I track my commissions?",
-        "a": "Once you've signed up for our affiliate program, you'll have access to your dedicated admin page where you can track conversions from your referral links."
-      },
-      {
-        "q": "Do I get a commission if a customer I refer subscribes or upgrades?",
-        "a": "Yes, after a user signs up through your link, you earn a commission every time the user makes a purchase and upgrades."
-      },
-      {
-        "q": "What is the exact percentage of commission I can earn?",
-        "a": "For the first 3 orders, you will receive 10% commission; for more than 3 orders, you will receive 30% commission."
-      },
-      {
-        "q": "What if a customer I referred cancels their purchase?",
-        "a": "If a customer cancels a purchase or gets a refund for any reason, the commission you earned for that person will be deducted from your account."
-      },
-      {
-        "q": "When and how do I get paid?",
-        "a": "We process payments on the 15th of each month for all commissions you have earned in the previous month. You can receive payments via PayPal."
-      },
-      {
-        "q": "What if I have other questions about your affiliate internet marketing program?",
-        "a": "Just contact us at \"<span class='yellow_font'>support@detpractice.com</span>\" and we'll be happy to help you with any questions you may have."
-      }
-    ]
+      "title": "∑ Practice - Ace the ≠",
+      "description": "∑ Practice is the best platform for ≠ Practice. We have the largest test bank, full-length mock exam, correction service, and ∑ courses.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam, π Proficiency Exam In English, π English Proficiency Exam, English Proficiency Test π, π Proficiency Test, π English Proficiency Test, ≠, English π Test"
+    }
+  },
+  "learn": {
+    "seometa": {
+      "title": "∑ Practice - Learn the expert Tips for the ≠",
+      "description": "Explore expert strategies and study methods for the ≠. We offer actionable tips and insights to enhance your preparation and boost your score.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+    }
+  },
+  "pricing": {
+    "seometa": {
+      "title": "∑ Practice - π Test Prep Membership and Services Pricing",
+      "description": "Choose the right plan for your ≠ preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
+      "keywords": "keyDET π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Examwords"
+    }
+  },
+  "blog": {
+    "seometa": {
+      "title": "∑ Practice - ≠ Tips and Tricks",
+      "description": "Discover essential ≠ tips and tricks with ∑ Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the ≠ and achieve your best score."
+    }
+  },
+  "aboutUs": {
+    "seometa": {
+      "title": "About Us - ∑ Practice",
+      "description": ""
+    }
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "Contact Us - ∑ Practice",
+      "description": "",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+    }
+  },
+  "correction": {
+    "seometa": {
+      "title": "∑ Practice - AI Correction Service for your π Test",
+      "description": "Correction service provided by \"AI + Teachers\". Get personalized feedback from language experts to improve your responses and strategies for higher ∑ scores.",
+      "keywords": "Correction Service for π Test, AI Correction Service for π Test"
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "∑ Practice - Master Speaking and Writing with the ≠ Guide",
+      "description": "Unlock your potential with our ≠ Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated ∑ practice."
+    }
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "∑ Practice - Full-length Mock Exam for ∑ Preparation",
+      "description": "Experience a realistic π Mock Test with ∑ Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the ≠.",
+      "keywords": "π Mock Test, ∑ π, ∑ Test, π ∑, π Test, π Test Online"
+    }
+  },
+  "practice": {
+    "seometa": {
+      "title": "∑ Practice - The best platform for π practice test",
+      "description": "Our ∑ test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.",
+      "keywords": "≠ Practice, π Practice English Test, π English Practice Test, π Practice Test Online, π Test Practice, π Practice Test, π Practice, Det Practice Test, ≠ Score"
+    }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Privacy Policy - ∑ Practice",
+      "description": "Discover ∑ Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+    }
+  },
+  "tos": {
+    "seometa": {
+      "title": "Terms and Conditions - ∑ Practice",
+      "description": "Explore ∑ Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
+      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+    }
   }
 }

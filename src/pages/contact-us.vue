@@ -56,7 +56,7 @@ const submit = async () => {
 };
 useServerSeoMeta({
   title: t('contactUs.seometa.title'),
-  description: t('contactUs.seometa.description'),
+  description: '',
   keywords: t('contactUs.seometa.keywords'),
 });
 useHead({

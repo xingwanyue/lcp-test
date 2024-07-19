@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
     "Products": ["DET Øve", "AI Korrektionsservice", "DET Narremock", "Duolingo English Test Kursus"],
-    "Company": ["Om os", "Kontakt os", "Vilkår og betingelser", "Privatlivspolitik", "Sitemap", "Affiliate Program"],
+    "Company": [
+      "Om os",
+      "Kontakt os",
+      "Vilkår og betingelser",
+      "Privatlivspolitik",
+      "Sitemap",
+      "Affiliate Program",
+      "Tilbagebetalingspolitik"
+    ],
     "show_more": "vis mere",
     "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
     "cookie_contenr": "DET Practice bruger cookies til at forbedre indhold baseret på dine browserindstillinger. For flere detaljer, se",
@@ -51,8 +59,8 @@
   },
   "index": {
     "seometa": {
-      "title": "DET Øvelse - Duolingo Engelsk Sprog Test Online, Engelsk Færdigheds Eksamen",
-      "description": "Forbered dig til Duolingo engelsk færdighedstest online med DET Practice. Få adgang til prøveeksamener, korrektionstjenester og omfattende kurser. Begynd at øve i dag!",
+      "title": "DET Øv - Mestr forskelle Duolingo English Test",
+      "description": "DET Træning er den bedste platform for Duolingo English Test Træning. Vi har den største testbank, fuld-længde prøveeksamen, rettelses-service og DET kurser.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedseksamen, Duolingo Færdighedseksamen I Engelsk, Duolingo Engelsk Færdighedseksamen, Engelsk Færdighedsprøve Duolingo, Duolingo Færdighedsprøve, Duolingo Engelsk Færdighedsprøve, Duolingo English Test, Engelsk Duolingo Test"
     },
     "bigtitle1": "Antal høje scorere (130+ point)：10000+",
@@ -122,8 +130,8 @@
   },
   "learn": {
     "seometa": {
-      "title": "Tips til eksamensforberedelse for Duolingo English Test | DET Øvelse",
-      "description": "Oplev effektive eksamensforberedelsestips til Duolingo English Test. Hold dig opdateret med rettidige indsigter om at forbedre din prøvepræstation ved DET Practice.",
+      "title": "DET Øv - Lær de ekspertråd til Duolingo English Test",
+      "description": "Udforsk ekspertstrategier og studiemetoder til Duolingo English Test. Vi tilbyder brugbare tips og indsigt for at forbedre din forberedelse og øge dit score.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedseksamen"
     },
     "h1": "Vi vil opdatere eksamensforberedelsestipsene for Duolingo English Test rettidigt",
@@ -134,8 +142,8 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test Forberedelsespriser | DET Øvelse",
-      "description": "Vælg den rigtige plan med overkommelige priser for din Duolingo English Test forberedelse. Personlig træning, ekspertanmeldelser og fuldskala mock-eksamener tilgængelige.",
+      "title": "DET Øvning - Duolingo Testforberedelse Medlemsskab og tjenester Prisfastsættelse",
+      "description": "Vælg det rigtige plan for din Duolingo English Test forberedelse. Overkommelige prisindstillinger til personlig træning, ekspertanmeldelser og fuldscalede prøveeksamener.",
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogprøve, Duolingo Engelsk Eksamen, Duolingo Færdighedseksamenwords"
     },
     "pagefont": {
@@ -201,10 +209,7 @@
       },
       {
         "name": "Hvad er jeres refusionspolitik?",
-        "content1": "1. Gratis konto  <br>Brug er helt gratis, så der er ingen refusionsproblemer.",
-        "content2": "<br>2. Abonnementsplaner  <br>Brugere kan anmode om en refundering, hvis DET Practice ikke leverer den tilsvarende service, hvilket resulterer i, at brugeren ikke kan bruge den, eller hvis abonnementet endnu ikke er trådt i kraft. Refunderinger vil ikke blive udstedt for abonnementer og tjenester, der allerede er blevet aktive efter køb.",
-        "content3": "<br>3. Tale/skrivningsvejledning <br>Tale/skrivningsvejledningen betragtes som et digitalt produkt. Når produktet er købt og downloadet, anses produktleveringen for at være afsluttet og er generelt ikke-refunderbar. Læs venligst købsoplysningerne grundigt, inden du foretager et køb.",
-        "content4": "<br><br>Vigtig Bemærkning:  <br>Alle refusionsanmodninger skal behandles gennem kundeservice, og relevante brugsoptegnelser skal leveres til verificering.<br>For at forhindre svigagtige refusioner er hver brugerkonto begrænset til én refusionsanmodning. Flere anmodninger vil ikke blive behandlet. <br>Hvis du har særlige omstændigheder eller unikke situationer, bedes du kontakte os, og vi vil arbejde sammen med dig for at finde en løsning."
+        "content1": "For information om, hvordan du kan få refusion og vejledning om, hvordan du kan få refusion, kan du med prioritet henvise til linket \"Refusionspolitik\" i bunden af siden, eller kontakte os på <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -272,8 +277,8 @@
   },
   "blog": {
     "seometa": {
-      "title": "DET Pratice Blog - Duolingo English Test Tips og tricks",
-      "description": "Hold dig opdateret med vigtige Duolingo English Test tips og tricks på DET Practice's blog. Opdag ekspert råd og strategier til at få succes med din testforberedelse."
+      "title": "DET Øvning - Duolingo English Test Tips og tricks",
+      "description": "Opdag essentielle Duolingo English Test tips og tricks med DET Practice's blog. Dyk ned i ekspertstrategier, scoreindsigter og dybdegående guider til at excelere i hver sektion af Duolingo English Test og opnå din bedste score."
     },
     "h1": "DET Pratice Blog",
     "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform"
@@ -306,8 +311,8 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Om DET Øve: Duolingo English Test Øve Platform",
-      "description": "DET Øvning, den førende platform for Duolingo English Test forberedelse. Udforsk vores omfattende testbank, mock-eksamener, korrekturtjenester og DET kurser."
+      "title": "Om Os - DET Praksis",
+      "description": ""
     },
     "title": "Om DET Pratice",
     "oelet": "Vores ansete sprogundervisningsteam",
@@ -330,8 +335,8 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Kontakt os | +44 7708 193347 | DET Praksis",
-      "description": "Kontakt DET Øvning for ekspert Duolingo English Test øvelse og vejledning. Forbered dig med specialiserede ressourcer og støtte for de optimale resultater.",
+      "title": "Kontakt os - DET Praksis",
+      "description": "",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelsk Eksamen, Duolingo Færdighedsprøve"
     },
     "checkEmail": "E-mailen skal være en gyldig e-mailadresse.",
@@ -391,8 +396,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "Bedste AI-rettelsestjeneste for Duolingo Test | DET Øvelse",
-      "description": "Opnå Duolingo test succes med vores specialiserede korrektionsservice. Få personlig vejledning og støtte til at maksimere din score. Tag det første skridt nu!",
+      "title": "DET Praksis - AI-korrektionstjeneste til din Duolingo Test",
+      "description": "Korrekturservice leveret af \"AI + Lærere\". Få personlig feedback fra sprog eksperter for at forbedre dine svar og strategier til højere DET scores.",
       "keywords": "Korrektionsservice for Duolingo Test, AI Korrektionsservice for Duolingo Test"
     },
     "h1": "Oplev den bedste AI korrektionstjeneste til Duolingo test",
@@ -430,8 +435,8 @@
   },
   "courses": {
     "seometa": {
-      "title": "Duolingo English Test Kursus Online | DET Øv",
-      "description": "Udforsk vores Duolingo English Test kursus online på DET Practice. Forbered dig effektivt med vores omfattende ressourcer og ekspertvejledning. Tilmeld dig nu!"
+      "title": "DET Øv - Mestr talen og skrivning med Duolingo English Test Guiden",
+      "description": "Lås op for dit potentiale med vores Duolingo English Test Guide. Dyk ned i tale- og skriveexcellence med omfattende strategier, eksperttips og opdateret DET praksis."
     },
     "article1": {
       "title": "Nøglefunktioner ved DET Talende Eksamen Excellence:",
@@ -560,8 +565,8 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo Mock Test: Forbered dig til din sprogprøve | DET Øv dig",
-      "description": "Oplev realistiske Duolingo Mock Tests med adaptive spørgsmål og AI scoring. Forbered dig effektivt med DET Practice's fuldlængde eksamener til Duolingo English Test!",
+      "title": "DET Øvning - Fuld længde efterlignings eksamen for DET Forberedelse",
+      "description": "Oplev en realistisk Duolingo Mock Test med DET Practice's fuldlængde eksamener. Med intelligente adaptive spørgsmål og AI-score giver vores mock tests en nøjagtig vurdering, der forbereder dig effektivt til Duolingo English Test.",
       "keywords": "Duolingo Mock Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
     },
     "h1": "Duolingo English Test 1:1 prøveeksamen",
@@ -592,8 +597,8 @@
   },
   "practice": {
     "seometa": {
-      "title": "Duolingo Engelsk Øve Test Online, DET Øve Test Score",
-      "description": "Forbered dig til Duolingo engelsk test med DET øvelsestests online. Forbedre din Duolingo engelsk test score med effektive øvelsessessioner. Start nu!",
+      "title": "DET Øvelse - Den bedste platform til Duolingo øvelsesprøve",
+      "description": "Vores DET testbank inkluderer tusindvis af spørgsmål til omfattende træning, komplet med detaljerede forklaringer og AI-analyse for at hjælpe dig med at lykkes.",
       "keywords": "Duolingo English Test Praksis, Duolingo Praksis Engelsk Test, Duolingo Engelsk Praksis Test, Duolingo Praksis Test Online, Duolingo Test Praksis, Duolingo Praksis Test, Duolingo Praksis, Det Praksis Test, Duolingo English Test Score"
     },
     "h1": "Duolingo Øvelsesspørgsmålsbank",
@@ -628,8 +633,8 @@
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "Privatlivspolitik: Beskyttelse af dine data | DET Practice",
-      "description": "Opdag DET Practice's Privatlivspolitik: Læs om, hvordan vi håndterer data, beskytter informationer og sikrer dit privatliv. Læs mere om vores politikker nu.",
+      "title": "Fortrolighedspolitik - DET Praksis",
+      "description": "Opdag DET Practice's privatlivspolitik: Lær hvordan vi håndterer data, beskytter information og sikrer dit privatliv. Læs mere om vores politikker nu.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprogtest, Duolingo Engelske Eksamen, Duolingo Færdighedseksamen"
     },
     "h1": "Privatlivspolitik",
@@ -670,6 +675,41 @@
       "title": "Links til andre sider",
       "a1": "Vores tjeneste kan indeholde links til andre sider, der ikke drives af os. Hvis du klikker på et tredjepartslink, vil du blive dirigeret til den tredjeparts side. Vi råder dig kraftigt til at gennemgå fortrolighedspolitikken for hver side, du besøger.",
       "a2": "Vi har ingen kontrol over og påtager os intet ansvar for indholdet, privatlivspolitikker eller praksis på nogen tredjepartssider eller -tjenester."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Refusionspolitik: Lær om vores refusionsproces | DET Træning",
+      "description": "Opdag DET Practice's refusionspolitik: Lær hvordan vi håndterer refusionsanmodninger, kriterier for berettigelse og processen for at få en refusion. Læs mere om vores politikker nu.",
+      "keywords": "Refunderingspolitik, DET Praksis Refusion, DET Praksis Politik, Refusionsproces, Berettigelse til Refusion"
+    },
+    "h1": "Tilbagebetalingspolitik",
+    "q1": {
+      "a1": "Tak for at vælge og købe vores tjenester. Vi bestræber os på at give den bedste læringsoplevelse for vores kunder. Hvis du dog ikke er fuldt tilfreds med dit køb, er vi her for at hjælpe."
+    },
+    "q2": {
+      "title": "Berettigelse til Refusion",
+      "a1": "• Medlemstjenester: Refusionsanmodninger for medlemstjenester skal ske inden 3 dage efter købet.",
+      "a2": "• Adgang til indhold: Hvis du ikke har fået adgang til mere end 20 spørgsmål, er du berettiget til en refusion.",
+      "a3": "• Digitale kurser: Når et digitalt produkt er downloadet eller tilgået, anses det for at være brugt, og brugte produkter kan ikke refunderes."
+    },
+    "q3": {
+      "title": "Sådan Anmoder du om En Refusion / Afbestiller Abonnement",
+      "a1": "For at anmode en refusion, følg venligst disse trin:",
+      "a2": "1. Afslut Abonnement: Log ind på din konto, find og klik på linket \"Administrer din betaling\" i bunden af medlemsskabssiden. Du vil blive omdirigeret til en bekræftelsesside, hvor du kan bekræfte din beslutning om at afmelde.",
+      "a3": "2. Kontakt vores support: Kontakt vores kundesupportteam på <span class='website'>support{'@'}detpractice.com</span> med dit ordrenummer og årsagen til anmodningen om refusion.",
+      "a4": "3. Vores team vil gennemgå din anmodning og svare inden for 3 arbejdsdage."
+    },
+    "q4": {
+      "title": "Undtagelser",
+      "a1": "Følgende er ikke berettiget til tilbagebetaling:",
+      "a2": "• Digitale produkter, der er blevet downloadet.",
+      "a3": "• Produkter og tjenester købt gennem tredjepartsleverandører."
+    },
+    "q5": {
+      "title": "Kontakt Os",
+      "a1": "Hvis du har spørgsmål om vores refusionspolitik eller har brug for hjælp til dit køb, bedes du kontakte os på:",
+      "a2": "E-mail: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -730,8 +770,8 @@
   },
   "tos": {
     "seometa": {
-      "title": "Vilkår for brug | DET Practice",
-      "description": "Udforsk DET Practice's omfattende servicevilkår, inklusive vores privatlivspolitik og brugsretningslinjer. Sørg for gennemsigtighed og overholdelse.",
+      "title": "Betingelser og vilkår - DET Praksis",
+      "description": "Udforsk DET Practice's omfattende servicevilkår, herunder vores privatlivspolitik og brugsanvisninger. Sørg for gennemsigtighed og overholdelse.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelsk Sprog Test, Duolingo Engelsk Eksamen, Duolingo Kompetence Eksamen"
     },
     "title": "Vilkår for brug",
@@ -876,7 +916,7 @@
       },
       {
         "q": "Hvad hvis jeg har andre spørgsmål om jeres affiliate internet marketing program?",
-        "a": "Bare kontakt os på \"<span class='yellow_font'>support@detpractice.com</span>\" og vi vil være glade for at hjælpe dig med eventuelle spørgsmål, du måtte have."
+        "a": "Bare kontakt os på \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" og vi vil være glade for at hjælpe dig med eventuelle spørgsmål, du måtte have."
       }
     ]
   }

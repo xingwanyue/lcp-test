@@ -106,6 +106,10 @@ const Company = computed(() => {
         url: '/privacy-policy',
       },
       {
+        name: t('footer.Company[6]'),
+        url: '/refund-policy',
+      },
+      {
         name: t('footer.Company[4]'),
         url: '/sitemap',
       },

@@ -5,100 +5,76 @@ import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
-  title: t('tos.seometa.title'),
-  // description: t('tos.seometa.description'),
-  // keywords: t('tos.seometa.keywords'),
+  title: t('refundPolicy.seometa.title'),
+  description: t('refundPolicy.seometa.description'),
+  keywords: t('privacyPolicy.seometa.keywords'),
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/tos` },
-    { rel: 'alternate', href: `https://www.${domain}/tos`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}/refund-policy` },
+    { rel: 'alternate', href: `https://www.${domain}/refund-policy`, hreflang: 'en-GB' },
   ],
 });
 </script>
 <template>
-  <div class="termsService">
+  <div class="privacyPolicy">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">Terms of Service{{ $t('tos.title') }}</div>
+        <h1 class="title">{{ $t('refundPolicy.h1') }}</h1>
       </div>
     </div>
     <div class="bg">
       <div class="content margin-top0" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q1.title') }}</div>
+        <!-- <div class="title">{{ $t('refundPolicy.q1.title') }}</div> -->
         <div class="content1">
-          {{ $t('tos.q1.a1') }}
-          <nuxt-link to="https://www.detpractice.com/" target="_blank" class="website">
-            https://www.detpractice.com
-          </nuxt-link>
-          {{ $t('tos.q1.a2') }}
-          <div class="line-break"></div>
-          {{ $t('tos.q1.a3') }}
-          <div class="line-break"></div>
-          {{ $t('tos.q1.a4') }}
+          {{ $t('refundPolicy.q1.a1') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q2.title') }}</div>
+        <div class="title">{{ $t('refundPolicy.q2.title') }}</div>
         <div class="content1">
-          {{ $t('tos.q2.a1') }}
+          {{ $t('refundPolicy.q2.a1') }}
           <div class="line-break"></div>
-          {{ $t('tos.q2.a2') }}
+          {{ $t('refundPolicy.q2.a2') }}
           <div class="line-break"></div>
-          {{ $t('tos.q2.a3') }}
+          {{ $t('refundPolicy.q2.a3') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q3.title') }}</div>
+        <div class="title">{{ $t('refundPolicy.q3.title') }}</div>
         <div class="content1">
-          {{ $t('tos.q3.a1') }}
+          {{ $t('refundPolicy.q3.a1') }}
           <div class="line-break"></div>
-          {{ $t('tos.q3.a2') }}
+          {{ $t('refundPolicy.q3.a2') }}
           <div class="line-break"></div>
-          {{ $t('tos.q3.a3') }}
+          <div v-html="$t('refundPolicy.q3.a3')"></div>
+          <div class="line-break"></div>
+          {{ $t('refundPolicy.q3.a4') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q4.title') }}</div>
+        <div class="title">{{ $t('refundPolicy.q4.title') }}</div>
         <div class="content1">
-          {{ $t('tos.q4.a1') }}
+          {{ $t('refundPolicy.q4.a1') }}
           <div class="line-break"></div>
-          {{ $t('tos.q4.a2') }}
+          {{ $t('refundPolicy.q4.a2') }}
           <div class="line-break"></div>
-          {{ $t('tos.q4.a3') }}
+          {{ $t('refundPolicy.q4.a3') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q5.title') }}</div>
+        <div class="title">{{ $t('refundPolicy.q5.title') }}</div>
         <div class="content1">
-          {{ $t('tos.q5.a1') }}
-        </div>
-      </div>
-      <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q6.title') }}</div>
-        <div class="content1">
-          {{ $t('tos.q6.a1') }}
+          {{ $t('refundPolicy.q5.a1') }}
           <div class="line-break"></div>
-          {{ $t('tos.q6.a2') }}
+          <div v-html="$t('refundPolicy.q5.a2')"></div>
         </div>
-      </div>
-      <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q7.title') }}</div>
-        <div class="content1">
-          {{ $t('tos.q7.a1') }}
-          <div class="line-break"></div>
-          {{ $t('tos.q7.a2') }}
-        </div>
-      </div>
-      <div class="content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="title">{{ $t('tos.q8.title') }}</div>
-        <div class="content1">{{ $t('tos.q8.a1') }}</div>
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-.termsService {
+.privacyPolicy {
   .learn_hader {
     text-align: center;
     background-repeat: no-repeat;
@@ -107,7 +83,7 @@ useHead({
     .learn_hader_content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 120px 0;
+      padding: 120px 0px;
       .title {
         font-weight: 600;
         font-size: 56px;
@@ -147,6 +123,9 @@ useHead({
       .line-break {
         margin-top: 8px;
       }
+      ::v-deep .website {
+        color: #f66442;
+      }
       .website {
         color: #f66442;
       }
@@ -154,7 +133,7 @@ useHead({
   }
 }
 @media (max-width: 800px) {
-  .termsService {
+  .privacyPolicy {
     .learn_hader {
       .learn_hader_content {
         max-width: 100%;

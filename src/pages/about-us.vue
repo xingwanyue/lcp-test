@@ -6,7 +6,7 @@ import { domain } from '@/utils';
 const state = reactive({});
 useServerSeoMeta({
   title: t('aboutUs.seometa.title'),
-  description: t('aboutUs.seometa.description'),
+  description: '',
 });
 useHead({
   link: [{ rel: 'canonical', href: `https://www.${domain}/about-us` }],
