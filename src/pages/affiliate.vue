@@ -352,6 +352,7 @@ const faqList = ref([
 
       .join {
         padding: 120px 0;
+        padding-bottom: 0;
         .jion_top_content {
           display: grid;
           grid-template-columns: 1fr 1fr;
