@@ -513,7 +513,7 @@
     "Enter_your_email": "Enter your email",
     "desc": "We'll send you an email with the reset code",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "Send_reset_code": "Send reset code",
+    "Send_reset_code": "Send Reset Code",
     "Back_to_login": "Back to login"
   },
   "listen": {
@@ -691,18 +691,18 @@
     "Sign_up": "Sign up",
     "cya": "Create your free DETPractice account",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "suwg": "Sign up with Google",
+    "suwg": "Sign Up With Google",
     "ocw": "Or continue with",
     "Email_address": "Email address",
     "ywr": "You will receive your activation code by email",
-    "cwe": "Continue with email",
+    "cwe": "Continue With Email",
     "ahaa": "Already have an account?",
     "Login_here": "Login here"
   },
   "register2": {
     "Sign_up": "Sign up",
     "cyfda": "Create your free DETPractice account",
-    "Sign_up_with_Google": "Sign up with Google",
+    "Sign_up_with_Google": "Sign Up With Google",
     "Or_continue_with": "Or continue with",
     "Register_code": "Register code",
     "Enter_your_code": "Enter your code",
@@ -738,7 +738,7 @@
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "cnp": "Confirm New Password",
     "cynp": "Confirm your new password",
-    "rmp": "Reset my password",
+    "rmp": "Reset My Password",
     "btl": "Back to login"
   },
   "tos": {
