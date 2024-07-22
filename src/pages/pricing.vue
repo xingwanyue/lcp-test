@@ -110,9 +110,7 @@ const changeCurrentMembershipId = (id: number) => {
 };
 const buyMembership = (item) => {
   const { id } = item;
-  console.log(id);
-
-  // store.stripePay({ vipId: id });
+  store.stripePay({ vipId: id });
 };
 
 const openOrCloseOneQuestion = (item: any) => {
