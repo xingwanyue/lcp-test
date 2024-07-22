@@ -374,7 +374,7 @@ const saveCaculate = (item) => {
     align-items: center;
   }
   @media (max-width: 728px) {
-    display: unset;
+    display: block;
   }
   padding: 24px 16px;
   background: rgba(250, 250, 250, 0.05);
