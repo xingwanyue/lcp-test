@@ -110,12 +110,12 @@ const Company = computed(() => {
         url: '/refund-policy',
       },
       {
-        name: t('footer.Company[4]'),
-        url: '/sitemap',
-      },
-      {
         name: t('footer.Company[5]'),
         url: '/affiliate',
+      },
+      {
+        name: t('footer.Company[4]'),
+        url: '/sitemap',
       },
     ],
   };
@@ -274,7 +274,9 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div class="one_link_list_title">{{ Company.name }}</div>
         <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
           <template v-if="itemin.url === '/sitemap'">
-            <NuxtLink :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+            <NuxtLink style="display: none" :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name">
+              {{ itemin.name }}</NuxtLink
+            >
           </template>
           <template v-else>
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
