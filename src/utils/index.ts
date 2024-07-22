@@ -4,7 +4,7 @@ export const domain = 'detpractice.com';
 
 // 应用地址
 // export const host = `https://app.${domain}`;
-export const host = `https://dev.zixuekeji.cn/`;
+export const host = `https://dev2.zixuekeji.cn/login`;
 // export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
 export const api = `https://dev2.zixuekeji.cn/weapp/api`;
