@@ -109,9 +109,13 @@ const faqList = ref([
       <div class="aff_header_content" :style="`background-image: url(/img/affiliate/30off.svg);`">
         <div class="tag">{{ $t('affiliate.tag') }}</div>
         <h1 class="title" v-html="$t('affiliate.h1')"></h1>
-        <NuxtLink :to="`${affurl}`" class="sing_up_now common_btn_hover_bgColor" :title="$t('affiliate.sun')">{{
-          $t('affiliate.sun')
-        }}</NuxtLink>
+        <NuxtLink
+          :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
+          class="sing_up_now common_btn_hover_bgColor"
+          :title="$t('affiliate.sun')"
+        >
+          {{ $t('affiliate.sun') }}
+        </NuxtLink>
       </div>
     </div>
     <div class="content">
@@ -165,7 +169,12 @@ const faqList = ref([
               </div>
               <div class="method_font">{{ item.font }}</div>
               <!-- <div class="method_tip">{{ item.tip }}</div> -->
-              <NuxtLink :to="`${affurl}`" v-if="item.type === '1'" class="btn" :title="item.btn">
+              <NuxtLink
+                :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
+                v-if="item.type === '1'"
+                class="btn"
+                :title="item.btn"
+              >
                 {{ item.btn }}
               </NuxtLink>
               <NuxtLink :to="`${affurl}`" v-if="item.type === '2'" class="btn" :title="item.btn">
