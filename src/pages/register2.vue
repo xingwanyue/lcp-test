@@ -7,7 +7,7 @@ import { register } from '@/api';
 import { oauth2SignIn } from '@/utils/googleAuth';
 
 import { sinupEvent } from '@/utils/gtag';
-import { getCookie, urlGet } from '@/utils';
+import { getStorage, urlGet } from '@/utils';
 
 definePageMeta({
   layout: 'noheaderfooter',
@@ -54,7 +54,7 @@ const submit = async () => {
     password,
   };
   loading.value = true;
-  const InviteCode = getCookie('InviteCode');
+  const InviteCode = getStorage('InviteCode');
   if (InviteCode) {
     temp.channel = `${InviteCode}-1`;
   }

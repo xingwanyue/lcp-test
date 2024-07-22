@@ -147,8 +147,8 @@
       "keywords": "kluczDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test Języka Angielskiego, Duolingo Egzamin z Angielskiego, Duolingo Egzamin Biegłościowywords"
     },
     "pagefont": {
-      "h1": "Plany i Ceny",
-      "h4": "Działaj teraz, aby zaoszczędzić! Zdobądź swoje członkostwo po dzisiejszych niskich cenach - nie przegap przed wzrostem kosztów.",
+      "h1": "Wybierz plan, który Ci odpowiada",
+      "h4": "Bezpieczna płatność! Anuluj w dowolnym momencie! Opanuj DET teraz!",
       "switch1": "Członkostwo",
       "switch2": "Więcej Usług",
       "Most_Popular_Choice": "Najbardziej popularny wybór",
@@ -170,7 +170,7 @@
       "green_check": "Zielony Check",
       "arrow_down": "Strzałka w dół",
       "free_font": "Darmowy",
-      "free_tips": "W ramach obecnego planu masz dostęp tylko do 20 pytań",
+      "free_tips": "Możesz zobaczyć 20 pytań za darmo, wypróbuj naszą platformę i zobacz, czy spełnia Twoje potrzeby.",
       "tff": "Wypróbuj za darmo",
       "save": "zaoszczędź {num}%",
       "week": "/tydzień",
