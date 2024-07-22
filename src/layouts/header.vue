@@ -172,7 +172,7 @@ const menus = computed(() => [
                 <div class="right">
                   <div class="title">{{ $t('header.prod4.title') }}</div>
                   <div class="font">
-                    {{ $t('header.prod4.font') }}
+                    {{ $t('header.prod3.font') }}
                   </div>
                 </div>
               </NuxtLink>
@@ -183,7 +183,7 @@ const menus = computed(() => [
                 <div class="right">
                   <div class="title">{{ $t('header.prod3.title') }}</div>
                   <div class="font">
-                    {{ $t('header.prod3.font') }}
+                    {{ $t('header.prod4.font') }}
                   </div>
                 </div>
               </NuxtLink>
