@@ -147,8 +147,8 @@
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavıwords"
     },
     "pagefont": {
-      "h1": "Planlar ve Fiyatlandırma",
-      "h4": "Hemen Hareket Edin ve Tasarruf Edin! Üyeliğinizi bugünün düşük fiyatlarıyla kapın - maliyetler artmadan kaçırmayın.",
+      "h1": "Size Uygun Planı Seçin",
+      "h4": "Güvenli ödeme! Herhangi bir zamanda iptal edin! Şimdi DET'yi ustalaşın!",
       "switch1": "Üyelik",
       "switch2": "Daha Fazla Hizmet",
       "Most_Popular_Choice": "En Popüler Seçim",
@@ -170,7 +170,7 @@
       "green_check": "Yeşil Onay İşareti",
       "arrow_down": "Aşağı Ok",
       "free_font": "Ücretsiz",
-      "free_tips": "Mevcut planınızla yalnızca 20 soruya erişiminiz var",
+      "free_tips": "20 soruyu ücretsiz olarak görüntüleyebilirsiniz, platformumuzu deneyin ve ihtiyaçlarınıza uygun olup olmadığını görün.",
       "tff": "Ücretsiz dene",
       "save": "{num}% tasarruf et",
       "week": "/hafta",
