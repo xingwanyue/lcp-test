@@ -192,8 +192,8 @@
         "content": "请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。这是解决您问题的最简单和最快的方法。"
       },
       {
-        "name": "我可以以后更改我的计划吗？",
-        "content": "感谢您购买该服务！请注意，这是一个虚拟产品。购买后，产品交付即视为完成，通常无法退款。请在购买前仔细检查。"
+        "name": "我购买了课程但无法查看？",
+        "content": "成功购买课程后，您可以前往课程描述页面 <span class='email_address'>https://www.detpractice.com/courses</span> 查看和下载课程信息。如果您找不到课程信息，请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。"
       },
       {
         "name": "我应将反馈发送到哪里？",

@@ -192,8 +192,8 @@
         "content": "문의 사항이 있으시면 채팅 또는 이메일을 통해 연락해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>. 이는 고객님의 우려 사항을 해결하는 가장 간단하고 빠른 방법입니다."
       },
       {
-        "name": "나중에 요금제를 변경할 수 있나요?",
-        "content": "서비스를 구매해 주셔서 감사합니다! 이 제품은 가상 제품임을 유의해 주십시오. 구매가 완료되면 제품 인도는 완료된 것으로 간주되며, 일반적으로 환불이 불가능합니다. 구매 전에 확인해 주시기 바랍니다."
+        "name": "코스를 구매했지만 볼 수 없어요?",
+        "content": "코스를 성공적으로 구매한 후, 코스 설명 페이지 <span class='email_address'>https://www.detpractice.com/courses</span>로 이동하여 코스 정보를 보고 다운로드할 수 있습니다. 코스 정보를 찾을 수 없는 경우, 채팅이나 이메일을 통해 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "피드백은 어디로 보내면 되나요?",

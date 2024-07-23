@@ -200,8 +200,8 @@
         "content": "チャットまたはメールでお問い合わせください：<span class='email_address'>support{'@'}detpractice.com</span>。これは、あなたの懸念を解決する最も簡単で迅速な方法です。"
       },
       {
-        "name": "後でプランを変更できますか？",
-        "content": "サービスをご購入いただきありがとうございます！これは仮想商品であることにご注意ください。購入後、商品の配送は完了したと見なされ、通常は返金不可です。ご購入前にご確認ください。"
+        "name": "コースを購入したが、表示できない？",
+        "content": "コースを正常に購入した後、コースの説明ページ <span class='email_address'>https://www.detpractice.com/courses</span> にアクセスして、コース情報を表示およびダウンロードできます。コース情報が見つからない場合は、チャットまたはメールでお問い合わせください: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "フィードバックはどこに送れば良いですか？",
