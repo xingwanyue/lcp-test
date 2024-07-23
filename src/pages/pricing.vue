@@ -245,14 +245,14 @@ const formateMinToHour = (min: number) => {
             }}</NuxtLink>
           </div>
         </div>
-        <div v-if="switchType === '1'" class="Membership_dom">
+        <div v-show="switchType === '1'" class="Membership_dom">
           <v-membershipprice
             :membershipArr="vipsData?.membershipArr || []"
             :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
             :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
           ></v-membershipprice>
         </div>
-        <div v-if="switchType === '2'" class="Service_dom">
+        <div v-show="switchType === '2'" class="Service_dom">
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
