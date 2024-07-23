@@ -132,9 +132,7 @@ export const useStore = defineStore({
       const token = await getToken(false);
       if (!token) {
         const router = useRouter();
-        console.log(router);
         const localePath = useLocalePath();
-        console.log(localePath('/login'));
         router.push(localePath('/login'));
         return;
       }
@@ -147,6 +145,11 @@ export const useStore = defineStore({
           this.checkPayStatus(logVipId, token);
           window.open(url, '_blank');
         }
+      } else {
+        ElMessage({
+          message: err,
+          type: 'error',
+        });
       }
     },
     async logout() {

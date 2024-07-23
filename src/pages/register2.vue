@@ -129,7 +129,7 @@ const googleRegister = async () => {
             <img src="/img/login/errIcon.svg" class="errIcon" :alt="$t('register2.alt')" />
             <span>{{ errMessage }}</span>
           </div>
-          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+          <el-button v-loading="loading" type="primary" class="submit" @click="submit">
             {{ $t('register2.Create_Account') }}
           </el-button>
         </el-form-item>

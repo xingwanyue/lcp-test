@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import vMembershipprice from '../components/membershipprice.vue';
-import { staticUrlGet, urlGet, domain } from '@/utils';
+import { staticUrlGet, urlGet, domain, host } from '@/utils';
 import { useStore } from '@/store';
 useServerSeoMeta({
   title: t('pricing.seometa.title'),
@@ -110,9 +110,7 @@ const changeCurrentMembershipId = (id: number) => {
 };
 const buyMembership = (item) => {
   const { id } = item;
-  console.log(id);
-
-  // store.stripePay({ vipId: id });
+  store.stripePay({ vipId: id });
 };
 
 const openOrCloseOneQuestion = (item: any) => {
@@ -242,7 +240,7 @@ const formateMinToHour = (min: number) => {
             </div>
           </div>
           <div class="free_white_dom_right">
-            <NuxtLink class="try_btn" :to="localePath(`/login?url=/pricing`)">{{
+            <NuxtLink class="try_btn" :to="localePath(`/login?url=${encodeURIComponent(host)}`)">{{
               $t('pricing.pagefont.tff')
             }}</NuxtLink>
           </div>
