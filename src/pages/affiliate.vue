@@ -112,7 +112,6 @@ const faqList = ref([
         <NuxtLink
           :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
           class="sing_up_now common_btn_hover_bgColor"
-          :title="$t('affiliate.sun')"
         >
           {{ $t('affiliate.sun') }}
         </NuxtLink>
@@ -169,18 +168,13 @@ const faqList = ref([
               </div>
               <div class="method_font">{{ item.font }}</div>
               <!-- <div class="method_tip">{{ item.tip }}</div> -->
-              <NuxtLink
-                :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
-                v-if="item.type === '1'"
-                class="btn"
-                :title="item.btn"
-              >
+              <NuxtLink :to="`${affurl}/#/?url=${encodeURIComponent('register')}`" v-if="item.type === '1'" class="btn">
                 {{ item.btn }}
               </NuxtLink>
-              <NuxtLink :to="`${affurl}`" v-if="item.type === '2'" class="btn" :title="item.btn">
+              <NuxtLink :to="`${affurl}`" v-if="item.type === '2'" class="btn">
                 {{ item.btn }}
               </NuxtLink>
-              <NuxtLink :to="`${affurl}`" v-if="item.type === '3'" class="btn" :title="item.btn">
+              <NuxtLink :to="`${affurl}`" v-if="item.type === '3'" class="btn">
                 <div>{{ item.btn }}</div>
               </NuxtLink>
             </div>
@@ -258,12 +252,9 @@ const faqList = ref([
       <div class="start_earn_out_wrapper">
         <div class="start_earn_out">
           <div class="title">{{ $t('affiliate.sew') }}</div>
-          <NuxtLink
-            :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
-            class="btn common_btn_hover_bgColor"
-            :title="$t('affiliate.sun')"
-            >{{ $t('affiliate.sun') }}</NuxtLink
-          >
+          <NuxtLink :to="`${affurl}/#/?url=${encodeURIComponent('register')}`" class="btn common_btn_hover_bgColor">{{
+            $t('affiliate.sun')
+          }}</NuxtLink>
         </div>
       </div>
     </div>
