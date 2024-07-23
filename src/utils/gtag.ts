@@ -36,7 +36,6 @@ export const payEvent = (transaction_id = '', value = 100) => {
       send_to: 'AW-998843228/i-HNCPG91pYZENzGpNwD',
       transaction_id,
       value: value / 1000, // 不传输默认1美元  但传给ads 默认为10分之一
-      currency: 'CNY',
     });
 
     window.gtag('event', 'conversion_event_paid', {
