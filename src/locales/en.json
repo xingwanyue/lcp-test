@@ -149,8 +149,8 @@
     "pagefont": {
       "h1": "Choose The Plan That Works For You",
       "h4": "Secure payment! Cancel anytime! Ace the DET now!",
-      "switch1": "Membership",
-      "switch2": "More Service",
+      "switch1": "Service",
+      "switch2": "Courses",
       "Most_Popular_Choice": "Most Popular Choice",
       "off": " {off}% off ",
       "do": "$",

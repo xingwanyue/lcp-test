@@ -1,83 +1,138 @@
 {
-  "index": {
-    "seometa": {
-      "title": "∑ Practice - Ace the ≠",
-      "description": "∑ Practice is the best platform for ≠ Practice. We have the largest test bank, full-length mock exam, correction service, and ∑ courses.",
-      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam, π Proficiency Exam In English, π English Proficiency Exam, English Proficiency Test π, π Proficiency Test, π English Proficiency Test, ≠, English π Test"
+  "ar": {
+    "index": {
+      "seometa": {
+        "switch1": "الخدمة",
+        "switch2": "الدورات"
+      }
     }
   },
-  "learn": {
-    "seometa": {
-      "title": "∑ Practice - Learn the expert Tips for the ≠",
-      "description": "Explore expert strategies and study methods for the ≠. We offer actionable tips and insights to enhance your preparation and boost your score.",
-      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+  "da": {
+    "index": {
+      "seometa": {
+        "switch1": "Service",
+        "switch2": "Kurser"
+      }
     }
   },
-  "pricing": {
-    "seometa": {
-      "title": "∑ Practice - π Test Prep Membership and Services Pricing",
-      "description": "Choose the right plan for your ≠ preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
-      "keywords": "keyDET π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Examwords"
+  "de": {
+    "index": {
+      "seometa": {
+        "switch1": "Dienst",
+        "switch2": "Kurse"
+      }
     }
   },
-  "blog": {
-    "seometa": {
-      "title": "∑ Practice - ≠ Tips and Tricks",
-      "description": "Discover essential ≠ tips and tricks with ∑ Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the ≠ and achieve your best score."
+  "es": {
+    "index": {
+      "seometa": {
+        "switch1": "Servicio",
+        "switch2": "Cursos"
+      }
     }
   },
-  "aboutUs": {
-    "seometa": {
-      "title": "About Us - ∑ Practice",
-      "description": ""
+  "fr": {
+    "index": {
+      "seometa": {
+        "switch1": "Service",
+        "switch2": "Cours"
+      }
     }
   },
-  "contactUs": {
-    "seometa": {
-      "title": "Contact Us - ∑ Practice",
-      "description": "",
-      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+  "id": {
+    "index": {
+      "seometa": {
+        "switch1": "Layanan",
+        "switch2": "Kursus"
+      }
     }
   },
-  "correction": {
-    "seometa": {
-      "title": "∑ Practice - AI Correction Service for your π Test",
-      "description": "Correction service provided by \"AI + Teachers\". Get personalized feedback from language experts to improve your responses and strategies for higher ∑ scores.",
-      "keywords": "Correction Service for π Test, AI Correction Service for π Test"
+  "it": {
+    "index": {
+      "seometa": {
+        "switch1": "Servizio",
+        "switch2": "Corsi"
+      }
     }
   },
-  "courses": {
-    "seometa": {
-      "title": "∑ Practice - Master Speaking and Writing with the ≠ Guide",
-      "description": "Unlock your potential with our ≠ Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated ∑ practice."
+  "ja": {
+    "index": {
+      "seometa": {
+        "switch1": "サービス",
+        "switch2": "コース"
+      }
     }
   },
-  "mockexam": {
-    "seometa": {
-      "title": "∑ Practice - Full-length Mock Exam for ∑ Preparation",
-      "description": "Experience a realistic π Mock Test with ∑ Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the ≠.",
-      "keywords": "π Mock Test, ∑ π, ∑ Test, π ∑, π Test, π Test Online"
+  "ko": {
+    "index": {
+      "seometa": {
+        "switch1": "서비스",
+        "switch2": "코스"
+      }
     }
   },
-  "practice": {
-    "seometa": {
-      "title": "∑ Practice - The best platform for π practice test",
-      "description": "Our ∑ test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.",
-      "keywords": "≠ Practice, π Practice English Test, π English Practice Test, π Practice Test Online, π Test Practice, π Practice Test, π Practice, Det Practice Test, ≠ Score"
+  "nb": {
+    "index": {
+      "seometa": {
+        "switch1": "Tjeneste",
+        "switch2": "Kurs"
+      }
     }
   },
-  "privacyPolicy": {
-    "seometa": {
-      "title": "Privacy Policy - ∑ Practice",
-      "description": "Discover ∑ Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
-      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+  "nl": {
+    "index": {
+      "seometa": {
+        "switch1": "Service",
+        "switch2": "Cursussen"
+      }
     }
   },
-  "tos": {
-    "seometa": {
-      "title": "Terms and Conditions - ∑ Practice",
-      "description": "Explore ∑ Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
-      "keywords": "∑ π, ∑ Test, π ∑, π Test, π Test Online, π English Language Test, π English Exam, π Proficiency Exam"
+  "pl": {
+    "index": {
+      "seometa": {
+        "switch1": "Usługa",
+        "switch2": "Kursy"
+      }
+    }
+  },
+  "pt": {
+    "index": {
+      "seometa": {
+        "switch1": "Serviço",
+        "switch2": "Cursos"
+      }
+    }
+  },
+  "ru": {
+    "index": {
+      "seometa": {
+        "switch1": "Сервис",
+        "switch2": "Курсы"
+      }
+    }
+  },
+  "th": {
+    "index": {
+      "seometa": {
+        "switch1": "บริการ",
+        "switch2": "หลักสูตร"
+      }
+    }
+  },
+  "tr": {
+    "index": {
+      "seometa": {
+        "switch1": "Hizmet",
+        "switch2": "Kurslar"
+      }
+    }
+  },
+  "zh": {
+    "index": {
+      "seometa": {
+        "switch1": "服务",
+        "switch2": "课程"
+      }
     }
   }
 }

@@ -149,8 +149,8 @@
     "pagefont": {
       "h1": "Wählen Sie den Plan, der zu Ihnen passt",
       "h4": "Sichere Zahlung! Jederzeit kündbar! Meistern Sie den DET jetzt!",
-      "switch1": "Mitgliedschaft",
-      "switch2": "Mehr Service",
+      "switch1": "Dienst",
+      "switch2": "Kurse",
       "Most_Popular_Choice": "Beliebteste Wahl",
       "off": "{off}% Rabatt",
       "do": "$",

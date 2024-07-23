@@ -149,8 +149,8 @@
     "pagefont": {
       "h1": "Choisissez le plan qui vous convient",
       "h4": "Paiement sécurisé ! Annulez à tout moment ! Maîtrisez le DET maintenant !",
-      "switch1": "Adhésion",
-      "switch2": "Plus de Service",
+      "switch1": "Service",
+      "switch2": "Cours",
       "Most_Popular_Choice": "Choix le plus populaire",
       "off": "{off}% de réduction",
       "do": "$",
