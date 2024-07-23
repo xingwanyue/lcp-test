@@ -259,7 +259,7 @@ const faqList = ref([
         <div class="start_earn_out">
           <div class="title">{{ $t('affiliate.sew') }}</div>
           <NuxtLink
-            :to="`https://www.${domain}/sitemap.xml`"
+            :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
             class="btn common_btn_hover_bgColor"
             :title="$t('affiliate.sun')"
             >{{ $t('affiliate.sun') }}</NuxtLink
