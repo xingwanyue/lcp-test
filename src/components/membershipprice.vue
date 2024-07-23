@@ -315,6 +315,7 @@ const saveCaculate = (item) => {
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-shrink: 0;
           img {
             width: 100%;
             height: 100%;
@@ -350,6 +351,7 @@ const saveCaculate = (item) => {
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-shrink: 0;
           img {
             width: 100%;
             height: 100%;
