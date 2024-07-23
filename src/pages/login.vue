@@ -97,7 +97,7 @@ const googleLogin = async () => {
       <el-form ref="ruleFormRef" :model="formData" size="default" class="login-form" @submit.native.prevent>
         <el-form-item prop="email" label="">
           {{ $t('login.Email_address') }}
-          <el-input v-model="formData.email" placeholder="You@example.com"> </el-input>
+          <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
         </el-form-item>
         <el-form-item prop="password" label="">
           {{ $t('login.Password') }}

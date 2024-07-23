@@ -73,7 +73,7 @@ const googleRegister = async () => {
       >
         <el-form-item prop="email" label="" style="margin-bottom: 16px">
           {{ $t('register.Email_address') }}
-          <el-input v-model="formData.email" placeholder="You@example.com"> </el-input>
+          <el-input v-model="formData.email" placeholder="you@example.com"> </el-input>
         </el-form-item>
         <div class="desc">{{ $t('register.ywr') }}</div>
         <el-form-item style="margin-top: 24px; margin-bottom: 16px">
