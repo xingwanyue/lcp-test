@@ -112,6 +112,13 @@ const buyMembership = (item) => {
   const { id } = item;
   store.stripePay({ vipId: id });
 };
+const coursrBuyedVisible = ref(false);
+const openCoursrBuyed = () => {
+  coursrBuyedVisible.value = true;
+};
+const handleCloseCoursrBuyed = () => {
+  coursrBuyedVisible.value = false;
+};
 
 const openOrCloseOneQuestion = (item: any) => {
   item.open = !item.open;
@@ -293,10 +300,40 @@ const formateMinToHour = (min: number) => {
               </div>
 
               <div v-if="user.id">
-                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
-                  {{ $t('pricing.pagefont.Buy_Now') }}
-                  <div class="scroll-line"></div>
-                </div>
+                <template v-if="item.write === 1">
+                  <template v-if="user.write">
+                    <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
+                      {{ $t('pricing.pagefont.Buy_Now') }}
+                      <!-- <div class="scroll-line"></div> -->
+                    </div>
+                  </template>
+                  <template v-else>
+                    <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
+                      {{ $t('pricing.pagefont.Buy_Now') }}
+                      <div class="scroll-line"></div>
+                    </div>
+                  </template>
+                </template>
+                <template v-if="item.speak === 1">
+                  <template v-if="user.speak">
+                    <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
+                      {{ $t('pricing.pagefont.Buy_Now') }}
+                      <!-- <div class="scroll-line"></div> -->
+                    </div>
+                  </template>
+                  <template v-else>
+                    <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
+                      {{ $t('pricing.pagefont.Buy_Now') }}
+                      <div class="scroll-line"></div>
+                    </div>
+                  </template>
+                </template>
+                <template v-if="item.speak !== 1 && item.write !== 1">
+                  <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
+                    {{ $t('pricing.pagefont.Buy_Now') }}
+                    <div class="scroll-line"></div>
+                  </div>
+                </template>
               </div>
               <div v-else>
                 <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
@@ -398,6 +435,20 @@ const formateMinToHour = (min: number) => {
         </div>
       </div>
     </div>
+    <el-dialog
+      title="Purchase courses"
+      v-model="coursrBuyedVisible"
+      :before-close="handleCloseCoursrBuyed"
+      class="pay_result_dialog"
+    >
+      <span class="no_wrap"
+        >You have successfully purchased the course, you only need to purchase it once, please visit
+        <span class="yellow">https://www.detpractice.com/courses</span> to view and download your course information.
+      </span>
+      <template #footer>
+        <div class="footer_wrapp"><div class="close_btn" @click="handleCloseCoursrBuyed">I get it</div></div>
+      </template>
+    </el-dialog>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -901,6 +952,12 @@ const formateMinToHour = (min: number) => {
                 color: white;
               }
             }
+            .card_price_buy_btn_dis {
+              opacity: 0.5;
+              &:hover {
+                opacity: 0.5;
+              }
+            }
           }
         }
         .no-load {
@@ -1242,6 +1299,40 @@ const formateMinToHour = (min: number) => {
           }
         }
       }
+    }
+  }
+}
+</style>
+<style lang="scss">
+.pay_result_dialog {
+  width: 500px;
+  @media screen and (max-width: 524px) {
+    width: 360px;
+  }
+
+  .no_wrap {
+    word-break: normal;
+    line-height: 1.2;
+    .yellow {
+      color: #f66442;
+    }
+  }
+  .footer_wrapp {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .close_btn {
+    color: red;
+    padding: 10px 14px;
+    background: #f66442;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    width: fit-content;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
     }
   }
 }

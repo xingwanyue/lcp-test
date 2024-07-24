@@ -93,7 +93,7 @@ export const useStore = defineStore({
       console.log('checkPayStatus');
       const { err, data = {} } = await stripePayStatusGet(logVipId, token);
       if (!err) {
-        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount } = data;
+        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak } = data;
         if (code === 1) {
           payEvent(id, amount);
           this.user.vipEndTime = vipEndTime;
@@ -115,6 +115,19 @@ export const useStore = defineStore({
             days premium package purchased successfully! Membership valid until 
             ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
           }
+          if (write) {
+            this.user.write = true;
+            message.push(
+              `"Writing Guide"has been successfully purchased, please visit the course details page on the official website to view or download.`,
+            );
+          }
+          if (speak) {
+            this.user.speak = true;
+            message.push(
+              `"Speaking Guide"has been successfully purchased, please visit the course details page on the official website to view or download.`,
+            );
+          }
+
           if (message.length) {
             ElMessage({
               dangerouslyUseHTMLString: true,
