@@ -209,7 +209,7 @@
       },
       {
         "name": "What is your refund policy?",
-        "content1": "For information on how to get a refund and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'> support{'@'}detpractice.com </span>."
+        "content1": "For information and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'> support{'@'}detpractice.com </span>."
       }
     ],
     "qlList": {
