@@ -18,7 +18,7 @@ export const domainGet = () => {
       return window.location.hostname;
     }
     const domains = window.location.hostname.split('.').reverse();
-    return `.${domains[1]}.${domains[0]}`;
+    return `${domains[1]}.${domains[0]}`;
   }
   // 非浏览器环境
   return domain;
