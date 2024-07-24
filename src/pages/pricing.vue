@@ -44,11 +44,11 @@ const aqList = ref([
     content: t('pricing.aqList[1].content'),
     open: false,
   },
-  {
-    name: t('pricing.aqList[2].name'),
-    content: t('pricing.aqList[2].content'),
-    open: false,
-  },
+  // {
+  //   name: t('pricing.aqList[2].name'),
+  //   content: t('pricing.aqList[2].content'),
+  //   open: false,
+  // },
   {
     name: t('pricing.aqList[3].name'),
     content: t('pricing.aqList[3].content'),
