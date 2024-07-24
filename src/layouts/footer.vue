@@ -111,7 +111,7 @@ const Company = computed(() => {
       },
       {
         name: t('footer.Company[5]'),
-        url: '/affiliate',
+        url: '/affiliate-program',
       },
       {
         name: t('footer.Company[4]'),
