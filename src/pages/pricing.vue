@@ -1304,6 +1304,13 @@ const formateMinToHour = (min: number) => {
 }
 </style>
 <style lang="scss">
+.el-button--primary {
+  background: #f66442 !important;
+  border-color: #f66442 !important;
+}
+.el-message-box__content {
+  margin-top: 10px;
+}
 .pay_result_dialog {
   width: 500px;
   @media screen and (max-width: 524px) {

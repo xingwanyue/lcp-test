@@ -90,7 +90,6 @@ export const useStore = defineStore({
       this.userSelectLanguage = language;
     },
     async checkPayStatus(logVipId: string, token: string) {
-      console.log('checkPayStatus');
       const { err, data = {} } = await stripePayStatusGet(logVipId, token);
       if (!err) {
         const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak } = data;
@@ -129,10 +128,15 @@ export const useStore = defineStore({
           }
 
           if (message.length) {
-            ElMessage({
-              dangerouslyUseHTMLString: true,
-              message: message.join('<br>'),
-              type: 'success',
+            // ElMessage({
+            //   dangerouslyUseHTMLString: true,
+            //   message: message.join('<br>'),
+            //   type: 'success',
+            // });
+            ElMessageBox.alert(`${message.join('<br>')}`, '', {
+              // if you want to disable its autofocus
+              // autofocus: false,
+              confirmButtonText: 'Confirm',
             });
           }
         } else {
