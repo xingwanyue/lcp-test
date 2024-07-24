@@ -89,7 +89,9 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     const mockSelectBuyTimes = vips.filter((item: any) => item.type === '4');
     vips.forEach((item: any) => {
       if (item.type === '1') {
-        item.correctTimesid = correctSelectBuyTimes[0].id;
+        item.correctTimesid = correctSelectBuyTimes[1].id;
+        item.correctPrice = correctSelectBuyTimes[1].price;
+        item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
         membershipArr.push(item);
       } else if (item.type === '2') {
         moreServiceArr.push(item);
