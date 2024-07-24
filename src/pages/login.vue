@@ -121,7 +121,7 @@ const googleLogin = async () => {
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+            <el-button v-loading="loading" type="primary" class="submit" @click="submit">
               {{ $t('login.Login') }}
             </el-button>
           </div>

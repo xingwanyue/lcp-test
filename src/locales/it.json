@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Azienda",
     "Products": ["DET Pratica", "Servizio di Correzione AI", "DET Simulazione", "Duolingo English Test Corso"],
-    "Company": ["Chi siamo", "Contattaci", "Termini e Condizioni", "Informativa sulla privacy", "Mappa del sito"],
+    "Company": [
+      "Chi siamo",
+      "Contattaci",
+      "Termini e Condizioni",
+      "Informativa sulla privacy",
+      "Mappa del sito",
+      "Programma di Affiliazione",
+      "Politica di rimborso"
+    ],
     "show_more": "mostra di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -139,10 +147,10 @@
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di lingua inglese, Duolingo Esame di inglese, Duolingo Esame di competenzawords"
     },
     "pagefont": {
-      "h1": "Piani e Prezzi",
-      "h4": "Agisci ora per risparmiare! Prendi il tuo abbonamento ai prezzi bassi di oggi – non perderlo prima che i costi aumentino.",
-      "switch1": "Iscrizione",
-      "switch2": "Più Servizio",
+      "h1": "Scegli il piano che fa per te",
+      "h4": "Pagamento sicuro! Annulla in qualsiasi momento! Padroneggia il DET ora!",
+      "switch1": "Servizio",
+      "switch2": "Corsi",
       "Most_Popular_Choice": "Scelta più popolare",
       "off": "{sconto}% di sconto",
       "do": "$",
@@ -160,7 +168,19 @@
       "check_icon": "Controlla",
       "tip_icon": "Suggerimento",
       "green_check": "Verifica Verde",
-      "arrow_down": "Freccia giù"
+      "arrow_down": "Freccia giù",
+      "free_font": "Gratuito",
+      "free_tips": " Puoi visualizzare 20 domande gratuitamente, prova la nostra piattaforma e vedi se soddisfa le tue esigenze.",
+      "tff": "Prova gratis",
+      "save": "risparmia {num}%",
+      "week": "/settimana",
+      "month": "/mese",
+      "Billed": "Fatturato ${num} /anno",
+      "apcs": "Servizio di Correzione Alimentato da AI",
+      "times": "volte",
+      "bci": "icona_di_controllo_nera",
+      "mt": "Esame simulato",
+      "apmt": "Test Simulato Alimentato da AI"
     },
     "aqList": [
       {
@@ -180,8 +200,8 @@
         "content": "Si prega di contattarci tramite chat o email: <span class='email_address'>support{'@'}detpractice.com</span>. Questo è il modo più semplice e veloce per affrontare le vostre preoccupazioni."
       },
       {
-        "name": "Posso cambiare il mio piano in seguito?",
-        "content": "Grazie per aver acquistato il servizio! Si prega di notare che questo è un prodotto virtuale. Una volta acquistato, la consegna del prodotto è considerata completa e generalmente non è rimborsabile. Si prega di controllare prima di acquistare."
+        "name": "Ho acquistato il corso ma non riesco a visualizzarlo?",
+        "content": "Dopo aver acquistato con successo il corso, puoi andare alla pagina di descrizione del corso <span class='email_address'>https://www.detpractice.com/courses</span> per visualizzare e scaricare le informazioni sul corso. Se non riesci a trovare le informazioni sul corso, contattaci tramite chat o email: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "Dove devo inviare il mio feedback?",
@@ -189,10 +209,7 @@
       },
       {
         "name": "Qual è la vostra politica di rimborso?",
-        "content1": "1. Account Gratuito  <br>L'uso è completamente gratuito, quindi non ci sono problemi di rimborso.",
-        "content2": "<br>2. Piani di abbonamento <br>Gli utenti possono richiedere un rimborso se DET Practice non riesce a fornire il servizio corrispondente, risultando nell'impossibilità dell'utente di utilizzarlo, o se l'abbonamento non è ancora entrato in vigore. I rimborsi non verranno emessi per gli abbonamenti e i servizi che sono già diventati attivi dopo l'acquisto.",
-        "content3": "<br>3. Guida alla Conversazione/Scrittura <br>La Guida alla Conversazione/Scrittura è considerata un prodotto digitale. Una volta acquistato e scaricato, la consegna del prodotto è considerata completa e generalmente non rimborsabile. Si prega di leggere attentamente le informazioni sull'acquisto prima di procedere con l'acquisto.",
-        "content4": "<br><br>Nota Importante:  <br>Tutte le richieste di rimborso devono essere processate attraverso il servizio clienti, e i relativi registri di utilizzo devono essere forniti per la verifica.<br>Per prevenire rimborsi fraudolenti, ogni account utente è limitato a una richiesta di rimborso. Richieste multiple non saranno processate.<br>Se hai circostanze speciali o situazioni uniche, contattaci e collaboreremo con te per trovare una soluzione."
+        "content1": "Per informazioni su come ottenere il rimborso e istruzioni su come ottenere il rimborso, è possibile fare riferimento al link \"Politica di rimborso\" in fondo alla pagina come questione prioritaria, o contattarci all'indirizzo <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -241,7 +258,24 @@
         "tip": "Risponderemo entro un giorno lavorativo.",
         "btn": "Lascia un messaggio ora"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Illimitato per le sessioni di pratica",
+      "Accedi a tutte le domande di pratica",
+      "Sfoglia le risposte campione ad alto punteggio",
+      "Analisi approfondita delle domande",
+      "Libro delle parole d'esame ad alta frequenza",
+      "Piano di studio personalizzato con selezione intelligente delle domande",
+      "Valutazioni di conversazione alimentate dall'IA"
+    ],
+    "mockQuanYiList": [
+      "Esami simulati a tutto campo",
+      "Test in qualsiasi momento",
+      "Vicino all'esame DET reale",
+      "Punteggi di valutazione accurati",
+      "Rapporto di valutazione dettagliato",
+      "I risultati saranno disponibili entro 5-30 minuti"
+    ]
   },
   "blog": {
     "seometa": {
@@ -647,6 +681,41 @@
       "a2": "Non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti."
     }
   },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Politica di Rimborso: Scopri il Nostro Processo di Rimborso | DET Esercizio",
+      "description": "Scopri la politica di rimborso di DET Practice: Scopri come gestiamo le richieste di rimborso, i criteri di ammissibilità e il processo per ottenere un rimborso. Leggi di più sulle nostre politiche ora.",
+      "keywords": "Politica di rimborso, DET Rimborso pratica, DET Pratica della politica, Processo di rimborso, Idoneità al rimborso"
+    },
+    "h1": "Politica di rimborso",
+    "q1": {
+      "a1": "Grazie per aver scelto e acquistato i nostri servizi. Ci sforziamo di fornire la migliore esperienza di apprendimento per i nostri clienti. Tuttavia, se non sei completamente soddisfatto del tuo acquisto, siamo qui per aiutarti."
+    },
+    "q2": {
+      "title": "Ammissibilità ai rimborsi",
+      "a1": "• Servizi per i membri: Le richieste di rimborso per i servizi ai membri devono essere fatte entro 3 giorni dall'acquisto.",
+      "a2": "• Contenuto Accessato: Se non hai acceduto a più di 20 domande, sei idoneo per un rimborso.",
+      "a3": "• Corsi digitali: Una volta che un prodotto digitale viene scaricato o accesso, viene considerato usato e i prodotti usati non possono essere rimborsati."
+    },
+    "q3": {
+      "title": "Come richiedere un rimborso / annullare l'iscrizione",
+      "a1": "Per richiedere un rimborso, segui questi passaggi:",
+      "a2": "1. Annulla abbonamento: Accedi al tuo account, trova e clicca sul link \"Gestisci la fatturazione\" in fondo alla pagina di abbonamento. Sarai reindirizzato a una pagina di conferma dove potrai confermare la tua decisione di disiscriverti.",
+      "a3": "2. Contatta il nostro supporto: contatta il nostro team di supporto clienti all'indirizzo <span class='website'>support{'@'}detpractice.com</span> fornendo il numero d'ordine e il motivo della richiesta di rimborso.",
+      "a4": "3. Il nostro team valuterà la tua richiesta e risponderà entro 3 giorni lavorativi."
+    },
+    "q4": {
+      "title": "Esclusioni",
+      "a1": "I seguenti non sono idonei per i rimborsi:",
+      "a2": "• Prodotti digitali scaricati.",
+      "a3": "• Prodotti e servizi acquistati tramite fornitori di terze parti."
+    },
+    "q5": {
+      "title": "Contattaci",
+      "a1": "Se hai domande sulla nostra politica di rimborso o hai bisogno di assistenza con il tuo acquisto, contattaci al:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
+    }
+  },
   "register": {
     "peyea": "Per favore inserisci il tuo indirizzo email.",
     "Invalid_email": "Email non valida.",
@@ -761,5 +830,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Proficiency"
     },
     "h1": "Mappa del sito"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Programma di affiliazione | DET Practice",
+      "description": "Unisciti al programma di affiliazione redditizio di DET Practice e guadagna fino al 30% di commissione per ogni referral. Collabora con noi per aiutare gli studenti a raggiungere i loro migliori punteggi.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di inglese, Duolingo Esame di inglese, Duolingo Esame di competenza"
+    },
+    "tag": "Programma di affiliazione",
+    "h1": "Guadagna <span class='yellow_font'>30% di commissione</span> per ogni referral",
+    "sun": "Iscriviti ora",
+    "join_title": "Unisciti al programma di affiliazione <span class='yellow_font'>redditizio</span> di Detpractice",
+    "join_tips": "Iscriviti al programma di affiliazione di Detpractice.com. Chiunque può ottenere facilmente un punteggio più alto su Duolingo English Test con Detpractice.com. Diventa nostro partner e guadagna fino al 30% di commissione per ogni referral.",
+    "earth_with_title": "Guadagna con la gamma diversificata di prodotti di Detpractice",
+    "question_bank": "Banca di domande",
+    "acs": "Servizio di correzione AI",
+    "Mock_Test": "Test simulato",
+    "Courses": "Corsi",
+    "bada": "Diventa un affiliato di Detpractice in 3 passaggi",
+    "hep": "Alto potenziale di guadagno",
+    "heptips": [
+      "Tariffe di commissione competitive: 30% su tutti i ricavi generati dal tuo link di affiliazione",
+      "Potenziale per partnership a lungo termine: Valutiamo i nostri affiliati e ci sforziamo di sviluppare relazioni durature e reciprocamente vantaggiose."
+    ],
+    "ctw": "Creatori con cui ci piace lavorare",
+    "ctwtips": [
+      "1. Sei un creatore con un pubblico composto da studenti (imparare Duolingo English Test è un plus!)",
+      "2. Sei entusiasta di un modo più efficace per imparare DET",
+      "3. Sei un'istituzione di formazione che insegna Duolingo English Test"
+    ],
+    "dos": "Cose da fare",
+    "dos_icon_alt": "Icona verde giusto",
+    "donts": "Cose da non fare",
+    "donts_icon_alt": "Icona rossa errata",
+    "faqs": "FAQ",
+    "sew": "Inizia a guadagnare con il nostro programma di affiliazione ora",
+    "contaceUsList": [
+      {
+        "font": "Iscriviti al nostro programma di affiliazione e ottieni il tuo link di referral.",
+        "btn": "Iscriviti ora"
+      },
+      {
+        "font": "Condividi il tuo link sul tuo sito web o altre piattaforme.",
+        "btn": "Vai e condividi"
+      },
+      {
+        "font": "Guadagna commissioni dalle vendite che tu e i tuoi sotto-affiliati generate.",
+        "btn": "Controlla ora"
+      }
+    ],
+    "dosList": [
+      { "font": "Prova Detpractice.com per te stesso" },
+      { "font": "Promuovi Detpractice.com in modo etico e onesto" },
+      { "font": "Crea contenuti di qualità e pertinenti" },
+      { "font": "Divulga la tua relazione di affiliazione" }
+    ],
+    "dontsList": [
+      { "font": "Non fare affermazioni fuorvianti o false su Detpractice.com" },
+      { "font": "Non promuovere su piattaforme con contenuti inappropriati o illegali" },
+      { "font": "Non promuovere su siti di coupon" },
+      {
+        "font": "Non creare campagne pubblicitarie usando il nostro nome di marca o inserendo il nostro nome di dominio negli URL di destinazione degli annunci"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Chi può iscriversi al programma di affiliazione di DET Practice?",
+        "a": "Se sei un creatore con un pubblico composto da studenti, un'istituzione di formazione che insegna Duolingo English Test, o un influencer, puoi iscriverti al nostro programma di affiliazione e guadagnare denaro."
+      },
+      {
+        "q": "Come posso tracciare le mie commissioni?",
+        "a": "Una volta iscritto al nostro programma di affiliazione, avrai accesso alla tua pagina di amministrazione dedicata dove potrai tracciare le conversioni dai tuoi link di referral."
+      },
+      {
+        "q": "Ricevo una commissione se un cliente che ho riferito si iscrive o effettua un upgrade?",
+        "a": "Sì, dopo che un utente si è iscritto tramite il tuo link, guadagni una commissione ogni volta che l'utente effettua un acquisto e un upgrade."
+      },
+      {
+        "q": "Qual è la percentuale esatta di commissione che posso guadagnare?",
+        "a": "Per i primi 3 ordini, riceverai una commissione del 10%; per più di 3 ordini, riceverai una commissione del 30%."
+      },
+      {
+        "q": "Cosa succede se un cliente che ho riferito annulla il suo acquisto?",
+        "a": "Se un cliente annulla un acquisto o ottiene un rimborso per qualsiasi motivo, la commissione che hai guadagnato per quella persona sarà dedotta dal tuo account."
+      },
+      {
+        "q": "Quando e come vengo pagato?",
+        "a": "Processiamo i pagamenti il 15 di ogni mese per tutte le commissioni che hai guadagnato nel mese precedente. Puoi ricevere i pagamenti tramite PayPal."
+      },
+      {
+        "q": "Cosa succede se ho altre domande sul vostro programma di marketing di affiliazione su internet?",
+        "a": "Contattaci semplicemente a \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" e saremo felici di aiutarti con qualsiasi domanda tu possa avere."
+      }
+    ]
   }
 }

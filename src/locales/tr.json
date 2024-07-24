@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Şirket",
     "Products": ["DET Pratik", "AI Düzeltme Servisi", "DET Sahte", "Duolingo English Test Kurs"],
-    "Company": ["Hakkımızda", "Bize ulaşın", "Şartlar ve Koşullar", "Gizlilik Politikası", "Site Haritası"],
+    "Company": [
+      "Hakkımızda",
+      "Bize ulaşın",
+      "Şartlar ve Koşullar",
+      "Gizlilik Politikası",
+      "Site Haritası",
+      "Ortaklık Programı",
+      "İade Politikası"
+    ],
     "show_more": "daha fazla göster",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "cookie_contenr": "DET Uygulama, tarayıcı Ayarlarınıza göre içeriği iyileştirmek için çerezler kullanır. Daha fazla bilgi için bkz",
@@ -139,10 +147,10 @@
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavıwords"
     },
     "pagefont": {
-      "h1": "Planlar ve Fiyatlandırma",
-      "h4": "Hemen Hareket Edin ve Tasarruf Edin! Üyeliğinizi bugünün düşük fiyatlarıyla kapın - maliyetler artmadan kaçırmayın.",
-      "switch1": "Üyelik",
-      "switch2": "Daha Fazla Hizmet",
+      "h1": "Size Uygun Planı Seçin",
+      "h4": "Güvenli ödeme! Herhangi bir zamanda iptal edin! Şimdi DET'yi ustalaşın!",
+      "switch1": "Hizmet",
+      "switch2": "Kurslar",
       "Most_Popular_Choice": "En Popüler Seçim",
       "off": "{off}% indirim",
       "do": "$",
@@ -160,7 +168,19 @@
       "check_icon": "Kontrol Et",
       "tip_icon": "İpucu",
       "green_check": "Yeşil Onay İşareti",
-      "arrow_down": "Aşağı Ok"
+      "arrow_down": "Aşağı Ok",
+      "free_font": "Ücretsiz",
+      "free_tips": "20 soruyu ücretsiz olarak görüntüleyebilirsiniz, platformumuzu deneyin ve ihtiyaçlarınıza uygun olup olmadığını görün.",
+      "tff": "Ücretsiz dene",
+      "save": "{num}% tasarruf et",
+      "week": "/hafta",
+      "month": "/ay",
+      "Billed": "Faturalandırılan ${num} /yıl",
+      "apcs": "Yapay Zeka Destekli Düzeltme Hizmeti",
+      "times": "kez",
+      "bci": "siyah_onay_ikonu",
+      "mt": "Deneme Sınavı",
+      "apmt": "Yapay Zeka Destekli Deneme Sınavı"
     },
     "aqList": [
       {
@@ -180,8 +200,8 @@
         "content": "Lütfen bizimle chat veya e-posta yoluyla iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>. Bu, endişelerinizi gidermenin en basit ve hızlı yoludur."
       },
       {
-        "name": "Planımı daha sonra değiştirebilir miyim?",
-        "content": "Hizmeti satın aldığınız için teşekkür ederiz! Lütfen bunun sanal bir ürün olduğunu unutmayın. Satın alındığında, ürün teslimatı tamamlanmış sayılır ve genellikle iade edilemez. Lütfen satın almadan önce kontrol edin."
+        "name": "Kursu satın aldım ama görüntüleyemiyorum?",
+        "content": "Kursu başarıyla satın aldıktan sonra, kurs bilgilerini görüntülemek ve indirmek için kurs tanım sayfasına <span class='email_address'>https://www.detpractice.com/courses</span> gidebilirsiniz. Kurs bilgilerini bulamazsanız, lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "Geri bildirimi nereye gönderebilirim?",
@@ -189,10 +209,7 @@
       },
       {
         "name": "İade politikası nedir?",
-        "content1": "1. Ücretsiz Hesap  <br>Kullanım tamamen ücretsizdir, bu yüzden geri ödeme sorunları yoktur.",
-        "content2": "<br>2. Abonelik Planları  <br>Kullanıcılar, DET Practice'ın ilgili hizmeti sağlayamaması ve bu nedenle kullanıcının hizmetten yararlanamaması durumunda veya abonelik henüz yürürlüğe girmemişse geri ödeme talep edebilirler. Satın alım sonrası aktif hale gelmiş abonelikler ve hizmetler için geri ödeme yapılmayacaktır.",
-        "content3": "<br>3. Konuşma/Yazma Rehberi <br>Konuşma/Yazma Rehberi dijital bir ürün olarak kabul edilir. Satın alındıktan ve indirildikten sonra, ürün teslimatı tamamlanmış sayılır ve genellikle iade edilmez. Lütfen satın almadan önce satın alma bilgilerini dikkatlice okuyun.",
-        "content4": "<br><br>Önemli Not:  <br>Tüm geri ödeme talepleri müşteri hizmetleri aracılığıyla işlenmelidir ve doğrulama için ilgili kullanım kayıtları sağlanmalıdır.<br>Sahte geri ödemeleri önlemek için, her kullanıcı hesabı bir geri ödeme talebiyle sınırlıdır. Birden fazla talep işlenmeyecektir. <br>Eğer özel durumlarınız veya benzersiz durumlarınız varsa, lütfen bizimle iletişime geçin, sizinle birlikte bir çözüm bulmaya çalışacağız."
+        "content1": "Öncelikle bir iade almanın yolları ve talimatları hakkında bilgi almak için, sayfanın altındaki \"İade Politikası\" bağlantısına başvurabilirsiniz veya <span class='email_address'>support{'@'}detpractice.com</span> adresinden bizimle iletişime geçebilirsiniz."
       }
     ],
     "qlList": {
@@ -241,7 +258,24 @@
         "tip": "Size bir iş günü içinde cevap vereceğiz.",
         "btn": "Şimdi bir mesaj bırakın"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Sınırsız pratik oturumları",
+      "Tüm pratik sorularına erişim",
+      "Yüksek puanlı örnek cevapları inceleyin",
+      "Derinlemesine soru analizi",
+      "Yüksek frekanslı sınav kelime kitabı",
+      "Akıllı soru seçimi ile kişiselleştirilmiş çalışma planı",
+      "Yapay Zeka Destekli Konuşma Değerlendirmeleri"
+    ],
+    "mockQuanYiList": [
+      "Tam ölçekli deneme sınavları",
+      "Her zaman test yapın",
+      "Gerçek DET sınavına yakın",
+      "Doğru değerlendirme puanları",
+      "Detaylı değerlendirme raporu",
+      "Sonuçlar 5-30 dakika içinde hazır olacak"
+    ]
   },
   "blog": {
     "seometa": {
@@ -641,6 +675,41 @@
       "a2": "İçerik, gizlilik politikaları veya herhangi bir üçüncü taraf siteleri veya hizmetleri uygulamaları üzerinde hiçbir kontrolümüz yoktur ve sorumluluk kabul etmiyoruz."
     }
   },
+  "refundPolicy": {
+    "seometa": {
+      "title": "İade Politikası: İade Sürecimiz Hakkında Bilgi Edinin | DET Uygulama",
+      "description": "Discover DET Practice'nin İade Politikasını öğrenin: İade taleplerinin nasıl ele alındığı, uygunluk kriterleri ve iade alma süreci hakkında bilgi edinin. Politikalarımız hakkında daha fazla bilgi edinin şimdi.",
+      "keywords": "İade Politikası, DET Uygulama İadesi, DET Uygulama Politikası, İade Süreci, İade İçin Eligibility"
+    },
+    "h1": "İade Politikası",
+    "q1": {
+      "a1": "Servislerimizi seçtiğiniz ve satın aldığınız için teşekkür ederiz. Müşterilerimize en iyi öğrenme deneyimini sağlamak için çaba gösteriyoruz. Ancak, satın alma işleminizden tamamen memnun değilseniz, size yardımcı olmak için buradayız."
+    },
+    "q2": {
+      "title": "İade İşlemi için Uygunluk",
+      "a1": "• Üye Hizmetleri: Üye hizmetleri için geri ödeme talepleri satın alınmadan sonraki 3 gün içinde yapılmalıdır.",
+      "a2": "• Erişilen İçerik: 20 sorudan fazlasına erişmediyseniz, para iadesi için uygunsunuz.",
+      "a3": "• Dijital Kurslar: Bir dijital ürün indirildiğinde veya erişildiğinde, kullanılmış kabul edilir ve kullanılan ürünler iade edilemez."
+    },
+    "q3": {
+      "title": "Nasıl İade İsteği Yapılır / Aboneliği İptal Etmek İçin",
+      "a1": "İade isteği için lütfen şu adımları izleyin:",
+      "a2": "1. Aboneliği İptal Et: Hesabınıza giriş yapın, üyelik sayfasının altında bulunan \"Fatura işlemlerini yönetin\" bağlantısını bulun ve tıklayın. Aboneliğinizden çıkmaya karar verdiğinizi onaylayabileceğiniz bir doğrulama sayfasına yönlendirileceksiniz.",
+      "a3": "2. Destek Ekibi İle İletişime Geçin: İade talebi nedeninizi ve sipariş numaranızı içeren bir e-posta göndererek müşteri destek ekibimizle <span class='website'>support{'@'}detpractice.com</span> adresinden iletişime geçin.",
+      "a4": "3. Ekibimiz talebinizi inceleyecek ve 3 iş günü içinde yanıt verecektir."
+    },
+    "q4": {
+      "title": "Hariç Tutulanlar",
+      "a1": "Aşağıdakiler iade için uygun değildir:",
+      "a2": "• İndirilen dijital ürünler.",
+      "a3": "• Üçüncü taraf satıcılar aracılığıyla satın alınan ürünler ve hizmetler."
+    },
+    "q5": {
+      "title": "Bize Ulaşın",
+      "a1": "Satın alma işleminizde herhangi bir sorunuz varsa veya iade politikamız hakkında yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
+      "a2": "E-posta: <span class='website'>support{'@'}detpractice.com</span>"
+    }
+  },
   "register": {
     "peyea": "Lütfen email adresinizi girin.",
     "Invalid_email": "Geçersiz e-posta.",
@@ -755,5 +824,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
     },
     "h1": "Site Haritası"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Bağlı Programı | DET Uygulaması",
+      "description": "DET Uygulaması'nın kazançlı bağlı programına katılın ve her yönlendirme için %30'a kadar komisyon kazanın. Öğrencilerin en iyi puanlarına ulaşmalarına yardımcı olmak için bizimle ortak olun.",
+      "keywords": "DET Duolingo, DET Testi, Duolingo DET, Duolingo Testi, Duolingo Testi Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+    },
+    "tag": "Bağlı Programı",
+    "h1": "Her Yönlendirmenizden <span class='yellow_font'>%30 Komisyon</span> Kazanın",
+    "sun": "Şimdi Kaydolun",
+    "join_title": "Detpractice'ın <span class='yellow_font'>Kazançlı</span> Bağlı Programına Katılın",
+    "join_tips": "Detpractice.com'un bağlı programına kaydolun. Herkes Detpractice.com ile Duolingo English Test üzerinde kolayca daha yüksek bir puan alabilir. Bizim ortağımız olun ve her yönlendirme için %30'a kadar komisyon kazanın.",
+    "earth_with_title": "Detpractice'ın Çeşitli Ürün Yelpazesiyle Kazanın",
+    "question_bank": "Soru Bankası",
+    "acs": "AI Düzeltme Hizmeti",
+    "Mock_Test": "Deneme Testi",
+    "Courses": "Kurslar",
+    "bada": "3 Adımda Detpractice Bağlısı Olun",
+    "hep": "Yüksek Kazanç Potansiyeli",
+    "heptips": [
+      "Rekabetçi komisyon oranları: Bağlantınızdan gelen tüm gelirlerde %30",
+      "Uzun vadeli ortaklık potansiyeli: Bağlılarımızı değerli buluyor ve uzun vadeli, karşılıklı yarar sağlayan ilişkiler geliştirmeyi hedefliyoruz."
+    ],
+    "ctw": "Çalışmayı Sevdiğimiz İçerik Üreticileri",
+    "ctwtips": [
+      "1. İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisiniz (Duolingo English Test Öğrenmek bir artıdır!)",
+      "2. DET öğrenmenin daha etkili bir yoluyla heyecanlanıyorsunuz",
+      "3. Duolingo English Test öğreten bir eğitim kurumusunuz"
+    ],
+    "dos": "Yapılması Gerekenler",
+    "dos_icon_alt": "yeşil Doğru İkonu",
+    "donts": "Yapılmaması Gerekenler",
+    "donts_icon_alt": "kırmızı Hata İkonu",
+    "faqs": "SSS",
+    "sew": "Bağlı Programımızla Şimdi Kazanmaya Başlayın",
+    "contaceUsList": [
+      {
+        "font": "Bağlı programımıza kaydolun ve yönlendirme bağlantınızı alın.",
+        "btn": "Şimdi Kaydolun"
+      },
+      {
+        "font": "Bağlantınızı web sitenizde veya diğer platformlarda paylaşın.",
+        "btn": "Gidin ve Paylaşın"
+      },
+      {
+        "font": "Sizin ve alt bağlılarınızın sağladığı satışlardan komisyon kazanın.",
+        "btn": "Kontrol Edin"
+      }
+    ],
+    "dosList": [
+      { "font": "Detpractice.com'u kendiniz deneyin" },
+      { "font": "Detpractice.com'u etik ve dürüst bir şekilde tanıtın" },
+      { "font": "Kaliteli ve ilgili içerikler oluşturun" },
+      { "font": "Bağlılık ilişkinizi açıklayın" }
+    ],
+    "dontsList": [
+      { "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunun" },
+      { "font": "Uygunsuz veya yasa dışı içeriğe sahip platformlarda tanıtım yapın" },
+      { "font": "Herhangi bir kupon sitesinde tanıtım yapın" },
+      {
+        "font": "Marka adımızı kullanarak reklam kampanyaları düzenleyin veya reklamlarınızın hedef URL'lerine alan adımızı koyun"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "DET Uygulaması'nın bağlı programına kimler başvurabilir?",
+        "a": "İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisi, Duolingo English Test öğreten bir eğitim kurumu veya bir influencer iseniz, bağlı programımıza kaydolup para kazanabilirsiniz."
+      },
+      {
+        "q": "Komisyonlarımı nasıl takip ederim?",
+        "a": "Bağlı programımıza kaydolduğunuzda, yönlendirme bağlantılarınızdan gelen dönüşümleri takip edebileceğiniz özel bir yönetici sayfasına erişiminiz olacak."
+      },
+      {
+        "q": "Yönlendirdiğim bir müşteri abone olur veya yükseltirse komisyon alır mıyım?",
+        "a": "Evet, bir kullanıcı bağlantınız üzerinden kaydolduktan sonra, kullanıcı her satın alma ve yükseltme yaptığında komisyon kazanırsınız."
+      },
+      {
+        "q": "Kazandığım komisyonun tam yüzdesi nedir?",
+        "a": "İlk 3 sipariş için %10 komisyon alacaksınız; 3'ten fazla sipariş için %30 komisyon alacaksınız."
+      },
+      {
+        "q": "Yönlendirdiğim bir müşteri satın alımını iptal ederse ne olur?",
+        "a": "Bir müşteri herhangi bir nedenle satın alımını iptal eder veya geri ödeme alırsa, o kişi için kazandığınız komisyon hesabınızdan düşülür."
+      },
+      {
+        "q": "Ödemelerimi ne zaman ve nasıl alırım?",
+        "a": "Önceki ay kazandığınız tüm komisyonlar için her ayın 15'inde ödemeleri işliyoruz. Ödemeleri PayPal aracılığıyla alabilirsiniz."
+      },
+      {
+        "q": "İnternet pazarlama programınızla ilgili başka sorularım olursa ne yapmalıyım?",
+        "a": "\"<span class='yellow_font'>support{'@'}detpractice.com</span>\" adresinden bizimle iletişime geçin, sorularınızı cevaplamaktan memnuniyet duyarız."
+      }
+    ]
   }
 }

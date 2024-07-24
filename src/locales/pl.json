@@ -47,7 +47,9 @@
       "Skontaktuj się z nami",
       "Warunki korzystania z usługi",
       "Polityka prywatności",
-      "Mapa witryny"
+      "Mapa witryny",
+      "Program Partnerski",
+      "Polityka zwrotów"
     ],
     "show_more": "pokaż więcej",
     "alt": "DET Praktyka: Najlepsza platforma Duolingo English Test Praktyki",
@@ -145,10 +147,10 @@
       "keywords": "kluczDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test Języka Angielskiego, Duolingo Egzamin z Angielskiego, Duolingo Egzamin Biegłościowywords"
     },
     "pagefont": {
-      "h1": "Plany i Ceny",
-      "h4": "Działaj teraz, aby zaoszczędzić! Zdobądź swoje członkostwo po dzisiejszych niskich cenach - nie przegap przed wzrostem kosztów.",
-      "switch1": "Członkostwo",
-      "switch2": "Więcej Usług",
+      "h1": "Wybierz plan, który Ci odpowiada",
+      "h4": "Bezpieczna płatność! Anuluj w dowolnym momencie! Opanuj DET teraz!",
+      "switch1": "Usługa",
+      "switch2": "Kursy",
       "Most_Popular_Choice": "Najbardziej popularny wybór",
       "off": "{off}% taniej",
       "do": "$",
@@ -166,7 +168,19 @@
       "check_icon": "Sprawdź",
       "tip_icon": "Porada",
       "green_check": "Zielony Check",
-      "arrow_down": "Strzałka w dół"
+      "arrow_down": "Strzałka w dół",
+      "free_font": "Darmowy",
+      "free_tips": "Możesz zobaczyć 20 pytań za darmo, wypróbuj naszą platformę i zobacz, czy spełnia Twoje potrzeby.",
+      "tff": "Wypróbuj za darmo",
+      "save": "zaoszczędź {num}%",
+      "week": "/tydzień",
+      "month": "/miesiąc",
+      "Billed": "Fakturowane ${num} /rok",
+      "apcs": "Usługa Korekty wspierana przez AI",
+      "times": "razy",
+      "bci": "czarna_ikona_sprawdzenia",
+      "mt": "Egzamin próbny",
+      "apmt": "Test próbny wspierany przez AI"
     },
     "aqList": [
       {
@@ -186,8 +200,8 @@
         "content": "Proszę skontaktować się z nami poprzez czat lub e-mail: <span class='email_address'>support{'@'}detpractice.com</span>. Jest to najprostszy i najszybszy sposób na rozwiązanie Twoich problemów."
       },
       {
-        "name": "Czy mogę później zmienić mój plan?",
-        "content": "Dziękujemy za zakup usługi! Proszę zauważyć, że jest to produkt wirtualny. Po dokonaniu zakupu, dostawa produktu jest uważana za zakończoną i zazwyczaj nie podlega zwrotowi. Prosimy o sprawdzenie przed zakupem."
+        "name": "Kupiłem kurs, ale nie mogę go zobaczyć?",
+        "content": "Po pomyślnym zakupie kursu, możesz przejść do strony opisu kursu <span class='email_address'>https://www.detpractice.com/courses</span>, aby wyświetlić i pobrać informacje o kursie. Jeśli nie możesz znaleźć informacji o kursie, skontaktuj się z nami za pośrednictwem czatu lub e-maila: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "Gdzie mogę wysłać swoją opinię?",
@@ -195,10 +209,7 @@
       },
       {
         "name": "Jaka jest Twoja polityka zwrotów?",
-        "content1": "1. Darmowe konto  <br>Korzystanie jest całkowicie bezpłatne, więc nie ma problemów ze zwrotem pieniędzy.",
-        "content2": "<br>2. Plany subskrypcyjne <br>Użytkownicy mogą zażądać zwrotu pieniędzy, jeśli DET Practice nie zapewni odpowiedniej usługi, w wyniku czego użytkownik nie będzie mógł z niej skorzystać, lub jeśli subskrypcja jeszcze nie weszła w życie. Zwroty nie będą wydawane za subskrypcje i usługi, które już stały się aktywne po zakupie.",
-        "content3": "<br>3. Przewodnik Mówienia/Pisania  <br>Przewodnik Mówienia/Pisania jest uznawany za produkt cyfrowy. Po zakupieniu i pobraniu, dostarczenie produktu jest uważane za zakończone i zazwyczaj nie podlega zwrotowi. Prosimy o dokładne zapoznanie się z informacjami o zakupie przed dokonaniem zakupu.",
-        "content4": "<br><br>Ważna uwaga:  <br>Wszystkie wnioski o zwrot muszą być przetwarzane przez obsługę klienta, a odpowiednie zapisy użytkowania muszą być dostarczone do weryfikacji.<br>Aby zapobiec oszukańczym zwrotom, każde konto użytkownika jest ograniczone do jednego wniosku o zwrot. Wielokrotne wnioski nie będą przetwarzane. <br>Jeśli masz jakieś szczególne okoliczności lub wyjątkowe sytuacje, prosimy o kontakt z nami, a my postaramy się znaleźć rozwiązanie."
+        "content1": "Aby uzyskać informacje na temat zwrotu pieniędzy i instrukcje dotyczące procedury zwrotu, można w pierwszej kolejności odwołać się do linku \"Polityka zwrotów\" na dole strony lub skontaktować się z nami pod adresem <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -247,7 +258,24 @@
         "tip": "Odpowiemy Ci w ciągu jednego dnia roboczego.",
         "btn": "Zostaw wiadomość teraz"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Nieograniczone sesje ćwiczeniowe",
+      "Dostęp do wszystkich pytań ćwiczeniowych",
+      "Przeglądaj odpowiedzi próbne o wysokiej punktacji",
+      "Dogłębna analiza pytań",
+      "Książka słów egzaminacyjnych o wysokiej częstotliwości",
+      "Dostosowany plan nauki z inteligentnym wyborem pytań",
+      "Oceny mówienia wspierane przez AI"
+    ],
+    "mockQuanYiList": [
+      "Pełnoskalowe egzaminy próbne",
+      "Testuj w dowolnym momencie",
+      "Blisko prawdziwego egzaminu DET",
+      "Dokładne oceny",
+      "Szczegółowy raport oceny",
+      "Wyniki będą dostępne w ciągu 5-30 minut"
+    ]
   },
   "blog": {
     "seometa": {
@@ -656,6 +684,41 @@
       "a2": "Nie mamy kontroli nad treściami, politykami prywatności ani praktykami stron lub usług osób trzecich i nie ponosimy za nie odpowiedzialności."
     }
   },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Polityka zwrotów: Dowiedz się o naszym procesie zwrotów | DET Ćwiczenie",
+      "description": "Odkryj politykę zwrotów DET Praktyka: Dowiedz się, jak obsługujemy żądania zwrotu, kryteria uprawniające do zwrotu oraz proces uzyskiwania zwrotu. Przeczytaj teraz więcej o naszych zasadach.",
+      "keywords": "Polityka zwrotów, DET Zwrot w praktyce, DET Polityka praktyki, Proces zwrotów, Uprawnienia do zwrotu"
+    },
+    "h1": "Polityka zwrotów",
+    "q1": {
+      "a1": "Dziękujemy za wybór i zakup naszych usług. Dążymy do zapewnienia najlepszych doświadczeń edukacyjnych naszym klientom. Jednakże, jeśli nie jesteś całkowicie zadowolony ze swojego zakupu, jesteśmy tutaj, aby pomóc."
+    },
+    "q2": {
+      "title": "Zakwalifikowanie się do zwrotu pieniędzy",
+      "a1": "• Usługi dla Członków: Wnioski o zwrot kosztów za usługi dla członków muszą być złożone w ciągu 3 dni od zakupu.",
+      "a2": "• Obejrzane Treści: Jeśli nie obejrzałeś więcej niż 20 pytań, jesteś uprawniony do zwrotu pieniędzy.",
+      "a3": "• Kursy cyfrowe: Po pobraniu lub uzyskaniu dostępu do produktu cyfrowego uważa się go za użyty, a użytych produktów nie można zwrócić."
+    },
+    "q3": {
+      "title": "Jak złożyć wniosek o zwrot środków / Anulować subskrypcję",
+      "a1": "Aby poprosić o zwrot środków, proszę postępować zgodnie z poniższymi instrukcjami:",
+      "a2": "1. Anuluj subskrypcję: Zaloguj się do swojego konta, znajdź i kliknij link \"Zarządzaj swoim rachunkiem\" na dole strony członkostwa. Zostaniesz przekierowany na stronę potwierdzenia, gdzie będziesz mógł potwierdzić swoją decyzję o rezygnacji z subskrypcji.",
+      "a3": "2. Skontaktuj się z naszym wsparciem: Skontaktuj się z naszym zespołem wsparcia klienta pod adresem <span class='website'>support{'@'}detpractice.com</span> podając numer zamówienia oraz powód żądania zwrotu.",
+      "a4": "3. Nasz zespół przejrzy Twoją prośbę i odpowie w ciągu 3 dni roboczych."
+    },
+    "q4": {
+      "title": "Wykluczenia",
+      "a1": "Następujące elementy nie są objęte zwrotem pieniędzy:",
+      "a2": "• Cyberprzedmioty, które zostały pobrane.",
+      "a3": "• Produkty i usługi zakupione za pośrednictwem zewnętrznych dostawców."
+    },
+    "q5": {
+      "title": "Kontakt",
+      "a1": "Jeśli masz pytania dotyczące naszej polityki zwrotów lub potrzebujesz pomocy przy dokonywaniu zakupu, skontaktuj się z nami pod adresem:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
+    }
+  },
   "register": {
     "peyea": "Proszę podać swój adres e-mail.",
     "Invalid_email": "Nieprawidłowy email.",
@@ -770,5 +833,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test Języka Angielskiego, Duolingo Egzamin z Języka Angielskiego, Duolingo Egzamin Biegłości"
     },
     "h1": "Mapa strony"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Program Partnerski | DET Ćwiczenia",
+      "description": "Dołącz do lukratywnego programu partnerskiego DET Ćwiczenia i zarabiaj nawet do 30% prowizji za każde polecenie. Współpracuj z nami, aby pomagać studentom osiągać najlepsze wyniki.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test Języka Angielskiego, Duolingo Egzamin Językowy, Duolingo Egzamin Umiejętności"
+    },
+    "tag": "Program Partnerski",
+    "h1": "Zarabiaj <span class='yellow_font'>30% prowizji</span> za każde polecenie",
+    "sun": "Zapisz się teraz",
+    "join_title": "Dołącz do lukratywnego programu partnerskiego Detpractice",
+    "join_tips": "Zapisz się do programu partnerskiego Detpractice.com. Każdy może łatwo osiągnąć wyższy wynik na Duolingo English Test dzięki Detpractice.com. Zostań naszym partnerem i zarabiaj nawet do 30% prowizji za każde polecenie.",
+    "earth_with_title": "Zarabiaj dzięki różnorodnej ofercie produktów Detpractice",
+    "question_bank": "Bank pytań",
+    "acs": "Usługa Korekty AI",
+    "Mock_Test": "Test próbny",
+    "Courses": "Kursy",
+    "bada": "Zostań Partnerem Detpractice w 3 krokach",
+    "hep": "Wysoki Potencjał Zarobkowy",
+    "heptips": [
+      "Konkurencyjne stawki prowizji: 30% od całych dochodów generowanych z Twojego linku partnerskiego",
+      "Potencjał długoterminowej współpracy: Cenimy naszych partnerów i dążymy do budowania długoterminowych, wzajemnie korzystnych relacji."
+    ],
+    "ctw": "Kreatorzy, z którymi lubimy współpracować",
+    "ctwtips": [
+      "1. Jesteś twórcą, który ma publiczność składającą się z uczniów (Znajomość Duolingo English Test to dodatkowy atut!)",
+      "2. Jesteś zainteresowany bardziej efektywnym sposobem nauki DET",
+      "3. Jesteś instytucją szkoleniową, która naucza Duolingo English Test"
+    ],
+    "dos": "Co należy robić",
+    "dos_icon_alt": "zielona Ikona poprawności",
+    "donts": "Czego nie należy robić",
+    "donts_icon_alt": "czerwona Ikona błędu",
+    "faqs": "Najczęściej zadawane pytania",
+    "sew": "Zacznij zarabiać dzięki naszemu programowi partnerskiemu już teraz",
+    "contaceUsList": [
+      {
+        "font": "Zapisz się do naszego programu partnerskiego i otrzymaj swój link polecający.",
+        "btn": "Zapisz się teraz"
+      },
+      {
+        "font": "Udostępnij swój link na swojej stronie internetowej lub innych platformach.",
+        "btn": "Idź i udostępnij"
+      },
+      {
+        "font": "Zarabiaj prowizję od sprzedaży generowanej przez Ciebie i Twoich podpartnerów.",
+        "btn": "Sprawdź"
+      }
+    ],
+    "dosList": [
+      { "font": "Wypróbuj Detpractice.com na własną rękę" },
+      { "font": "Promuj Detpractice.com w sposób etyczny i uczciwy" },
+      { "font": "Twórz wysokiej jakości i trafne treści" },
+      { "font": "Ujawniaj swoje partnerstwo afiliacyjne" }
+    ],
+    "dontsList": [
+      { "font": "Publikuj mylące lub fałszywe informacje na temat Detpractice.com" },
+      { "font": "Promuj na platformach z nieodpowiednimi lub nielegalnymi treściami" },
+      { "font": "Promuj na dowolnej stronie z kuponami" },
+      {
+        "font": "Ustawiaj kampanie reklamowe używając naszej nazwy handlowej lub umieszczając naszą nazwę domeny w URL-ach docelowych Twoich reklam"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Kto może aplikować do programu partnerskiego DET Ćwiczenia?",
+        "a": "Jeśli jesteś twórcą z publicznością składającą się z uczniów, instytucją szkoleniową uczącą Duolingo English Test, lub influencerem, możesz zapisać się do naszego programu partnerskiego i zarabiać pieniądze."
+      },
+      {
+        "q": "Jak śledzić moje prowizje?",
+        "a": "Po zapisaniu się do naszego programu partnerskiego, będziesz mieć dostęp do swojej dedykowanej strony administracyjnej, gdzie będziesz mógł śledzić konwersje generowane przez Twoje linki polecające."
+      },
+      {
+        "q": "Czy otrzymuję prowizję, jeśli klient, którego poleciłem, subskrybuje lub dokona aktualizacji?",
+        "a": "Tak, po zarejestrowaniu się przez Twój link, zarabiasz prowizję za każdym razem, gdy użytkownik dokona zakupu lub dokona aktualizacji."
+      },
+      {
+        "q": "Jaka jest dokładna wysokość prowizji, jaką mogę zarobić?",
+        "a": "Za pierwsze 3 zamówienia otrzymasz 10% prowizji; za więcej niż 3 zamówienia otrzymasz 30% prowizji."
+      },
+      {
+        "q": "Co się dzieje, jeśli klient, którego poleciłem, anuluje swoje zamówienie?",
+        "a": "Jeśli klient anuluje zamówienie lub otrzymuje zwrot pieniędzy z jakiegokolwiek powodu, prowizja, którą zarobiłeś na tę osobę, zostanie odjęta z Twojego konta."
+      },
+      {
+        "q": "Kiedy i jak otrzymam płatność?",
+        "a": "Przetwarzamy płatności 15. każdego miesiąca za wszystkie prowizje, które zarobiłeś w poprzednim miesiącu. Możesz otrzymać płatności za pośrednictwem PayPal."
+      },
+      {
+        "q": "Co jeśli mam inne pytania dotyczące waszego programu partnerskiego internetowego?",
+        "a": "Skontaktuj się z nami pod adresem \"<span class='yellow_font'>support{'@'}detpractice.com</span>\", chętnie pomożemy odpowiedzieć na wszystkie Twoje pytania."
+      }
+    ]
   }
 }

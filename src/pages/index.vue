@@ -6,8 +6,9 @@ import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
-import { staticUrlGet, formatNumber, cdn, domain, getToken } from '@/utils';
-
+import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
+import { useRoute } from 'vue-router';
+const route = useRoute();
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useServerSeoMeta({
@@ -82,6 +83,11 @@ onMounted(async () => {
     window.addEventListener('resize', () => {
       isMobile.value = window.innerWidth < 450;
     });
+    // 获取路由参数code
+    const code = route.query.code;
+    if (code) {
+      saveStorage('InviteCode', code, true);
+    }
   }
 
   const token = await getToken();

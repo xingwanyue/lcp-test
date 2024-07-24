@@ -106,6 +106,14 @@ const Company = computed(() => {
         url: '/privacy-policy',
       },
       {
+        name: t('footer.Company[6]'),
+        url: '/refund-policy',
+      },
+      {
+        name: t('footer.Company[5]'),
+        url: '/affiliate-program',
+      },
+      {
         name: t('footer.Company[4]'),
         url: '/sitemap',
       },
@@ -247,7 +255,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div
           v-for="(itemin, indexin) in Learn"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
+          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
         >
           <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
@@ -257,7 +265,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div
           v-for="(itemin, indexin) in Blog"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? $t('footer.show_more') : ''}`"
+          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
         >
           <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
@@ -266,7 +274,9 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div class="one_link_list_title">{{ Company.name }}</div>
         <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
           <template v-if="itemin.url === '/sitemap'">
-            <NuxtLink :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+            <NuxtLink style="display: none" :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name">
+              {{ itemin.name }}</NuxtLink
+            >
           </template>
           <template v-else>
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>

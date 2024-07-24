@@ -90,10 +90,9 @@ export const useStore = defineStore({
       this.userSelectLanguage = language;
     },
     async checkPayStatus(logVipId: string, token: string) {
-      console.log('checkPayStatus');
       const { err, data = {} } = await stripePayStatusGet(logVipId, token);
       if (!err) {
-        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount } = data;
+        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak } = data;
         if (code === 1) {
           payEvent(id, amount);
           this.user.vipEndTime = vipEndTime;
@@ -115,11 +114,29 @@ export const useStore = defineStore({
             days premium package purchased successfully! Membership valid until 
             ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
           }
+          if (write) {
+            this.user.write = true;
+            message.push(
+              `"Writing Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
+            );
+          }
+          if (speak) {
+            this.user.speak = true;
+            message.push(
+              `"Speaking Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
+            );
+          }
+
           if (message.length) {
-            ElMessage({
-              dangerouslyUseHTMLString: true,
-              message: message.join('<br>'),
-              type: 'success',
+            // ElMessage({
+            //   dangerouslyUseHTMLString: true,
+            //   message: message.join('<br>'),
+            //   type: 'success',
+            // });
+            ElMessageBox.alert(`${message.join('<br>')}`, '', {
+              // if you want to disable its autofocus
+              // autofocus: false,
+              confirmButtonText: 'Confirm',
             });
           }
         } else {
@@ -132,9 +149,7 @@ export const useStore = defineStore({
       const token = await getToken(false);
       if (!token) {
         const router = useRouter();
-        console.log(router);
         const localePath = useLocalePath();
-        console.log(localePath('/login'));
         router.push(localePath('/login'));
         return;
       }
@@ -147,6 +162,11 @@ export const useStore = defineStore({
           this.checkPayStatus(logVipId, token);
           window.open(url, '_blank');
         }
+      } else {
+        ElMessage({
+          message: err,
+          type: 'error',
+        });
       }
     },
     async logout() {

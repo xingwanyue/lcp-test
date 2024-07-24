@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Company",
     "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
-    "Company": ["About us", "Contact us", "Terms and Conditions", "Privacy Policy", "Sitemap"],
+    "Company": [
+      "About us",
+      "Contact us",
+      "Terms and Conditions",
+      "Privacy Policy",
+      "Sitemap",
+      "Affiliate Program",
+      "Refund Policy"
+    ],
     "show_more": "show more",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
@@ -139,10 +147,10 @@
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Examwords"
     },
     "pagefont": {
-      "h1": "Plans & Pricing",
-      "h4": "Act Now to Save! Grab your membership at today’s low prices – don’t miss out before costs rise.",
-      "switch1": "Membership",
-      "switch2": "More Service",
+      "h1": "Choose The Plan That Works For You",
+      "h4": "Secure payment! Cancel anytime! Ace the DET now!",
+      "switch1": "Service",
+      "switch2": "Courses",
       "Most_Popular_Choice": "Most Popular Choice",
       "off": " {off}% off ",
       "do": "$",
@@ -160,7 +168,19 @@
       "check_icon": "Check",
       "tip_icon": "Tip",
       "green_check": "Green Check",
-      "arrow_down": "Down Arrow"
+      "arrow_down": "Down Arrow",
+      "free_font": "Free",
+      "free_tips": "You can view 20 questions for free, try our platform and see if it fits your needs.",
+      "tff": "Try for free",
+      "save": "save {num}% ",
+      "week": "/week",
+      "month": "/month",
+      "Billed": "Billed ${num} /year",
+      "apcs": "AI-powered Correction Service",
+      "times": "times",
+      "bci": "black_check_icon",
+      "mt": "Mock Exam",
+      "apmt": "AI-powered Mock Test"
     },
     "aqList": [
       {
@@ -180,8 +200,8 @@
         "content": "Please contact us via chat or email: <span class='email_address'>support{'@'}detpractice.com</span>. This is the simplest and fastest way to address your concerns."
       },
       {
-        "name": "Can I change my plan later?",
-        "content": "Thank you for purchasing the service! Please note that this is a virtual product. Once purchased, product delivery is considered complete and is generally non-refundable. Please check before purchasing."
+        "name": "I purchased the course but can't view it?",
+        "content": "After successfully purchasing the course, you can go to the course description page <span class='email_address'>https://www.detpractice.com/courses</span> to view and download the course information. If you can't find the course information, please contact us via chat or email: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "Where do I send my feedback?",
@@ -189,10 +209,7 @@
       },
       {
         "name": "What is your refund policy?",
-        "content1": "1. Free Account  <br>Usage is entirely free, so there are no refund issues.",
-        "content2": "<br>2. Subscription Plans  <br>Users may request a refund if DET Practice fails to provide the corresponding service, resulting in the user being unable to use it, or if the subscription has not yet taken effect. Refunds will not be issued for subscriptions and services that have already become active after purchase.",
-        "content3": "<br>3. Speaking/Writing Guide  <br>The Speaking/Writing Guide is considered a digital product. Once purchased and downloaded, the product delivery is deemed complete and is generally non-refundable. Please carefully read the purchase information before making a purchase.",
-        "content4": "<br><br>Important Note:  <br>All refund requests must be processed through customer service, and relevant usage records must be provided for verification.<br>To prevent fraudulent refunds, each user account is limited to one refund request. Multiple requests will not be processed. <br>If you have any special circumstances or unique situations, please contact us, and we will work with you to find a resolution."
+        "content1": "For information on how to get a refund and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'> support{'@'}detpractice.com </span>."
       }
     ],
     "qlList": {
@@ -241,7 +258,24 @@
         "tip": "We will respond to you within one business day.",
         "btn": "Leave a message now"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Unlimited for Practice Sessions",
+      "Access all Practice Questions",
+      "Browse High-scoring Sample Answers",
+      "In-depth Question Analysis",
+      "High-Frequency Exam Word Book",
+      "Tailored Study Plan with Smart Question Selection",
+      "AI-Powered Speaking Evaluations"
+    ],
+    "mockQuanYiList": [
+      "Full-scale mock exams",
+      "Test at any time",
+      "Close to real DET exam",
+      "Accurate assessment scores",
+      "Detailed evaluation report",
+      "Results will be available within 5-30 minutes"
+    ]
   },
   "blog": {
     "seometa": {
@@ -479,7 +513,7 @@
     "Enter_your_email": "Enter your email",
     "desc": "We'll send you an email with the reset code",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "Send_reset_code": "Send reset code",
+    "Send_reset_code": "Send Reset Code",
     "Back_to_login": "Back to login"
   },
   "listen": {
@@ -616,28 +650,63 @@
       "a2": "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
     }
   },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Refund Policy: Learn About Our Refund Process | DET Practice",
+      "description": "Discover DET Practice's Refund Policy: Learn how we handle refund requests, eligibility criteria, and the process for obtaining a refund. Read more about our policies now.",
+      "keywords": "Refund Policy, DET Practice Refund, DET Practice Policy, Refund Process, Eligibility for Refund"
+    },
+    "h1": "Refund Policy",
+    "q1": {
+      "a1": "Thank you for choosing and purchasing our services. We strive to provide the best learning experience for our customers. However, if you are not entirely satisfied with your purchase, we're here to help."
+    },
+    "q2": {
+      "title": "Eligibility for Refunds",
+      "a1": "• Member Services: Refund requests for member services must be made within 3 days of purchase.",
+      "a2": "• Accessed Content: If you have not accessed more than 20 questions, you are eligible for a refund.",
+      "a3": "• Digital Courses: Once a digital product is downloaded or accessed, it is considered used and used products cannot be refunded."
+    },
+    "q3": {
+      "title": "How to Request a Refund / Cancel Subscription",
+      "a1": "To request a refund, please follow these steps:",
+      "a2": "1.Cancel Subscription: Login to your account, find and click the \"Manage your billing\" link at the bottom of the membership page. You will be redirected to a confirmation page where you can confirm your decision to unsubscribe.",
+      "a3": "2.Contact Our Support: Contact our customer support team at <span class='website'>support{'@'}detpractice.com</span> with your order number and the reason for the refund request.",
+      "a4": "3.Our team will review your request and respond within 3 business days."
+    },
+    "q4": {
+      "title": "Exclusions",
+      "a1": "The following are not eligible for refunds:",
+      "a2": "• Digital products that have been downloaded.",
+      "a3": "• Products and services purchased through third-party vendors."
+    },
+    "q5": {
+      "title": "Contact Us",
+      "a1": "If you have any questions about our refund policy or need assistance with your purchase, please contact us at:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
+    }
+  },
   "register": {
     "peyea": "Please enter your email address.",
     "Invalid_email": "Invalid email.",
     "Sign_up": "Sign up",
     "cya": "Create your free DETPractice account",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "suwg": "Sign up with Google",
+    "suwg": "Sign Up With Google",
     "ocw": "Or continue with",
     "Email_address": "Email address",
     "ywr": "You will receive your activation code by email",
-    "cwe": "Continue with email",
+    "cwe": "Continue With Email",
     "ahaa": "Already have an account?",
     "Login_here": "Login here"
   },
   "register2": {
     "Sign_up": "Sign up",
     "cyfda": "Create your free DETPractice account",
-    "Sign_up_with_Google": "Sign up with Google",
+    "Sign_up_with_Google": "Sign Up With Google",
     "Or_continue_with": "Or continue with",
     "Register_code": "Register code",
     "Enter_your_code": "Enter your code",
-    "Full_Name": "Full Name",
+    "Full_Name": "Full name",
     "Password": "Password",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "Create_Account": "Create Account",
@@ -664,12 +733,12 @@
     "pi": "Password inconsistency.",
     "fp": "Forgot Password?",
     "pete": "Please enter the email used to create your account",
-    "np": "New Password",
+    "np": "New password",
     "eanp": "Enter a new password",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
-    "cnp": "Confirm New Password",
+    "cnp": "Confirm new password",
     "cynp": "Confirm your new password",
-    "rmp": "Reset my password",
+    "rmp": "Reset My Password",
     "btl": "Back to login"
   },
   "tos": {
@@ -730,5 +799,96 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
     },
     "h1": "Sitemap"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Affiliate Program | DET Practice",
+      "description": "Join DET Practice's lucrative affiliate program and earn up to 30% commission for every referral. Partner with us to help students achieve their best scores.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "tag": "Affiliate Program",
+    "h1": "Earn <span class='yellow_font'>30% Commission</span> From Your Every Referral",
+    "sun": "Sign Up Now",
+    "join_title": "Join Detpractice's <span class='yellow_font'>Lucrative</span> Affiliate Program",
+    "join_tips": "Sign up for the affiliate program of Detpractice.com. Anyone can get a higher score easily on the Duolingo English Test with Detpractice.com. Become our partner and get up to 30% commission for every referral.",
+    "earth_with_title": "Earn With Detpractice's Diverse Product Range",
+    "question_bank": "Question bank",
+    "acs": "AI Correction Service",
+    "Mock_Test": "Mock Test",
+    "Courses": "Courses",
+    "bada": "Become a Detpractice Affiliate in 3 Steps",
+    "hep": "High Earning Potential",
+    "heptips": [
+      "Competitive commission rates: 30% on all revenue contributed from your affiliate link",
+      "Potential for long-term partnerships: We value our affiliates and strive to develop long-term, mutually beneficial relationships."
+    ],
+    "ctw": "Creators That We Love to Work With",
+    "ctwtips": [
+      " 1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
+      "2.You are excited by a more effective way to learn DET",
+      "3.You are a training institution that teaches Duolingo English Test"
+    ],
+    "dos": "Do’s",
+    "dos_icon_alt": "green Right Icon",
+    "donts": "Don’ts",
+    "donts_icon_alt": "red Err Icon",
+    "faqs": "FAQs",
+    "sew": "Start Earning with Our Affiliate Program Now",
+    "contaceUsList": [
+      {
+        "font": "Sign up for our affiliate program and get your referral link.",
+        "btn": "Sign Up Now"
+      },
+      {
+        "font": "Share your link on your website or other platforms.",
+        "btn": "Go and Share"
+      },
+      {
+        "font": "Earn commissions from sales you and your sub-affiliates drive.",
+        "btn": "Check Out"
+      }
+    ],
+    "dosList": [
+      { "font": "Try out Detpractice.com for yourself" },
+      { "font": "Promote Detpractice.com ethically and honestly" },
+      { "font": "Create quality and relevant content" },
+      { "font": "Disclose your affiliate relationship" }
+    ],
+    "dontsList": [
+      { "font": "Make misleading or false claims about Detpractice.com" },
+      { "font": "Promote on platforms that have inappropriate or illegal content" },
+      { "font": "Promote on any coupon site" },
+      { "font": "Set up ad campaigns using our brand name, or putting our domain name in your ads' destination URLs" }
+    ],
+    "faqList": [
+      {
+        "q": "Who can apply for DET PracticeI's affiliate program?",
+        "a": "If you are a creator that has an audience composed of students,a training institution that teaches Duolingo English Test,or an influencer,you can sign up for our affiliate program and earn money."
+      },
+      {
+        "q": "How do I track my commissions?",
+        "a": "Once you've signed up for our affiliate program, you'll have access to your dedicated admin page where you can track conversions from your referral links."
+      },
+      {
+        "q": "Do I get a commission if a customer I refer subscribes or upgrades?",
+        "a": "Yes, after a user signs up through your link, you earn a commission every time the user makes a purchase and upgrades."
+      },
+      {
+        "q": "What is the exact percentage of commission I can earn?",
+        "a": "For the first 3 orders, you will receive 10% commission; for more than 3 orders, you will receive 30% commission."
+      },
+      {
+        "q": "What if a customer I referred cancels their purchase?",
+        "a": "If a customer cancels a purchase or gets a refund for any reason, the commission you earned for that person will be deducted from your account."
+      },
+      {
+        "q": "When and how do I get paid?",
+        "a": "We process payments on the 15th of each month for all commissions you have earned in the previous month. You can receive payments via PayPal."
+      },
+      {
+        "q": "What if I have other questions about your affiliate internet marketing program?",
+        "a": "Just contact us at <span class='yellow_font'>support{'@'}detpractice.com</span> and we'll be happy to help you with any questions you may have."
+      }
+    ]
   }
 }

@@ -5,7 +5,9 @@ import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { register } from '@/api';
 import { oauth2SignIn } from '@/utils/googleAuth';
+
 import { sinupEvent } from '@/utils/gtag';
+import { getStorage, urlGet } from '@/utils';
 
 definePageMeta({
   layout: 'noheaderfooter',
@@ -52,6 +54,10 @@ const submit = async () => {
     password,
   };
   loading.value = true;
+  const InviteCode = getStorage('InviteCode');
+  if (InviteCode) {
+    temp.channel = `${InviteCode}-1`;
+  }
   const { err } = await register(temp);
   loading.value = false;
   if (!err) {
@@ -68,8 +74,7 @@ const goLogin = () => {
 };
 
 const googleRegister = async () => {
-  // TODO: Implement Google registration
-  return oauth2SignIn();
+  return oauth2SignIn(urlGet('/home'));
 };
 </script>
 
@@ -124,7 +129,7 @@ const googleRegister = async () => {
             <img src="/img/login/errIcon.svg" class="errIcon" :alt="$t('register2.alt')" />
             <span>{{ errMessage }}</span>
           </div>
-          <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
+          <el-button v-loading="loading" type="primary" class="submit" @click="submit">
             {{ $t('register2.Create_Account') }}
           </el-button>
         </el-form-item>

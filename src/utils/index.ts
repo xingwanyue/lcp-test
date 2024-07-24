@@ -1,15 +1,28 @@
-export const cdn = 'https://detcdn.zixuekeji.cn';
+export const cdn = 'https://cdn.detpractice.com';
 
 export const domain = 'detpractice.com';
-// export const domain = 'detpractice.com';
 
 // 应用地址
 export const host = `https://app.${domain}`;
-export const api = `https://www.duolingopractice.com/api`;
+// export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
+// export const api = `https://dev2.zixuekeji.cn/weapp/api`;
+export const api = `https://api.duolingopractice.com/weapp/api`;
+export const affurl = `https://affiliate.detpractice.com`;
 
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
-
+export const domainGet = () => {
+  // 浏览器环境
+  if (process.client) {
+    if (window.location.hostname.startsWith('192.168.1.') || window.location.hostname === 'localhost') {
+      return window.location.hostname;
+    }
+    const domains = window.location.hostname.split('.').reverse();
+    return `.${domains[1]}.${domains[0]}`;
+  }
+  // 非浏览器环境
+  return domain;
+};
 export const staticPcUrlGet = (path: string) => `${cdn}/store/pc/${path}`;
 export const staticUrlGet = (path: string) => {
   if (!path) {
@@ -26,8 +39,7 @@ export const setCookie = (name: string, value: string, days: number) => {
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     expires = `; expires=${date.toUTCString()}`;
   }
-
-  document.cookie = `${name}=${value || ''}${expires}; domain=.${domain}; path=/`;
+  document.cookie = `${name}=${value || ''}${expires}; domain=.${domainGet()}; path=/`;
 };
 
 export const getCookie = (name: string) => {

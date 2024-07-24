@@ -42,7 +42,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Bedrijf",
     "Products": ["DET Oefenen", "AI Correctiedienst", "DET Nep", "Duolingo English Test Cursus"],
-    "Company": ["Over ons", "Neem contact met ons op", "Algemene voorwaarden", "Privacybeleid", "Sitemap"],
+    "Company": [
+      "Over ons",
+      "Neem contact met ons op",
+      "Algemene voorwaarden",
+      "Privacybeleid",
+      "Sitemap",
+      "Partnerprogramma",
+      "Retourbeleid"
+    ],
     "show_more": "toon meer",
     "alt": "DET Oefening:Het beste Duolingo English Test Oefeningsplatform",
     "cookie_contenr": "DET Praktijk gebruikt cookies om de inhoud te verbeteren op basis van je browserinstellingen. Voor meer details, zie",
@@ -139,10 +147,10 @@
       "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelse Taal Test, Duolingo Engels Examen, Duolingo Bekwaamheids Examenwords"
     },
     "pagefont": {
-      "h1": "Plannen & prijzen",
-      "h4": "Handel nu om te besparen! Pak uw lidmaatschap tegen de lage prijzen van vandaag – mis het niet voordat de kosten stijgen.",
-      "switch1": "Lidmaatschap",
-      "switch2": "Meer service",
+      "h1": "Kies het plan dat bij je past",
+      "h4": "Veilige betaling! Op elk moment annuleren! Beheers de DET nu!",
+      "switch1": "Service",
+      "switch2": "Cursussen",
       "Most_Popular_Choice": "Meest Populaire Keuze",
       "off": "{off}% korting",
       "do": "$",
@@ -160,7 +168,19 @@
       "check_icon": "Controleren",
       "tip_icon": "Tip",
       "green_check": "Groene Controle",
-      "arrow_down": "Pijl omlaag"
+      "arrow_down": "Pijl omlaag",
+      "free_font": "Gratis",
+      "free_tips": "Je kunt 20 vragen gratis bekijken, probeer ons platform en zie of het aan je behoeften voldoet.",
+      "tff": "Probeer gratis",
+      "save": "bespaar {num}%",
+      "week": "/week",
+      "month": "/maand",
+      "Billed": "Gefactureerd ${num} /jaar",
+      "apcs": "AI-aangedreven Correctieservice",
+      "times": "keer",
+      "bci": "zwart_controle_icoon",
+      "mt": "Proefexamen",
+      "apmt": "AI-aangedreven Oefentoets"
     },
     "aqList": [
       {
@@ -180,8 +200,8 @@
         "content": "Neem contact met ons op via chat of e-mail: <span class='email_address'>support{'@'}detpractice.com</span>. Dit is de eenvoudigste en snelste manier om uw zorgen te bespreken."
       },
       {
-        "name": "Kan ik mijn plan later wijzigen?",
-        "content": "Bedankt voor het aanschaffen van de dienst! Houd er rekening mee dat dit een virtueel product is. Zodra het is aangeschaft, wordt de levering van het product als voltooid beschouwd en is het over het algemeen niet-restitueerbaar. Controleer alstublieft voordat u koopt."
+        "name": "Ik heb de cursus gekocht, maar kan deze niet bekijken?",
+        "content": "Na succesvolle aankoop van de cursus, kunt u naar de cursusbeschrijvingspagina <span class='email_address'>https://www.detpractice.com/courses</span> gaan om de cursusinformatie te bekijken en te downloaden. Als u de cursusinformatie niet kunt vinden, neem dan contact met ons op via chat of e-mail: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "Waar stuur ik mijn feedback naartoe?",
@@ -189,10 +209,7 @@
       },
       {
         "name": "Wat is uw restitutiebeleid?",
-        "content1": "1. Gratis Account  <br>Het gebruik is volledig gratis, dus er zijn geen terugbetalingsproblemen.",
-        "content2": "<br>2. Abonnementsplannen  <br>Gebruikers kunnen om een terugbetaling vragen als DET Practice er niet in slaagt de overeenkomstige dienst te leveren, waardoor de gebruiker deze niet kan gebruiken, of als het abonnement nog niet van kracht is geworden. Er worden geen terugbetalingen gedaan voor abonnementen en diensten die na aankoop al actief zijn geworden.",
-        "content3": "<br>3. Spreek-/Schrijfgids <br>De Spreek-/Schrijfgids wordt beschouwd als een digitaal product. Zodra het product is gekocht en gedownload, wordt de levering van het product als voltooid beschouwd en is deze over het algemeen niet-restitueerbaar. Lees de aankoopinformatie zorgvuldig door voordat u tot aankoop overgaat.",
-        "content4": "<br><br>Belangrijke Opmerking: <br>Alle terugbetalingsverzoeken moeten via de klantenservice worden verwerkt, en relevante gebruiksrecords moeten worden verstrekt voor verificatie.<br>Om frauduleuze terugbetalingen te voorkomen, is elk gebruikersaccount beperkt tot één terugbetalingsverzoek. Meerdere verzoeken zullen niet worden verwerkt. <br>Als u speciale omstandigheden of unieke situaties heeft, neem dan contact met ons op, en we zullen samen met u naar een oplossing zoeken."
+        "content1": "Voor informatie over hoe u een terugbetaling kunt krijgen en instructies over hoe u een terugbetaling kunt krijgen, kunt u als eerste verwijzen naar de link \"Refund Policy\" onderaan de pagina of contact met ons opnemen op <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -239,7 +256,24 @@
         "tip": "We zullen u binnen één werkdag antwoorden.",
         "btn": "Laat nu een bericht achter"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Onbeperkt voor oefensessies",
+      "Toegang tot alle oefenvragen",
+      "Blader door hoog scorende voorbeeldantwoorden",
+      "Diepgaande vraaganalyse",
+      "Hoogfrequent examenwoordenboek",
+      "Op maat gemaakt studieplan met slimme vraagselectie",
+      "AI-aangedreven spreekbeoordelingen"
+    ],
+    "mockQuanYiList": [
+      "Volledige proefexamens",
+      "Test op elk moment",
+      "Dicht bij het echte DET-examen",
+      "Nauwkeurige beoordelingsscores",
+      "Gedetailleerd evaluatierapport",
+      "Resultaten zijn binnen 5-30 minuten beschikbaar"
+    ]
   },
   "blog": {
     "seometa": {
@@ -643,6 +677,41 @@
       "a2": "We hebben geen controle over en aanvaarden geen verantwoordelijkheid voor de inhoud, privacybeleid of praktijken van sites of diensten van derden."
     }
   },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Restitutiebeleid: Lees meer over ons restitutieproces | DET Oefenen",
+      "description": "Ontdek het Restitutiebeleid van DET Practice: Leer hoe wij verzoeken om restitutie afhandelen, de criteria voor in aanmerking komen en het proces voor het verkrijgen van restitutie. Lees nu meer over onze beleidsregels.",
+      "keywords": "Restitutiebeleid, DET Oefenrestitutie, DET Oefenbeleid, Restitutieproces, In aanmerking komen voor restitutie"
+    },
+    "h1": "Retourbeleid",
+    "q1": {
+      "a1": "Bedankt voor het kiezen en aanschaffen van onze diensten. We streven ernaar om de beste leerervaring te bieden voor onze klanten. Mocht u echter niet volledig tevreden zijn met uw aankoop, dan staan wij voor u klaar om u te helpen."
+    },
+    "q2": {
+      "title": "Gerechtigdheid voor Teruggaven",
+      "a1": "• Lidmaatschapsdiensten: Terugbetalingsverzoeken voor lidmaatschapsdiensten moeten binnen 3 dagen na aankoop worden aangevraagd.",
+      "a2": "• Toegang tot inhoud: Als u minder dan 20 vragen hebt bekeken, komt u in aanmerking voor een terugbetaling.",
+      "a3": "• Digitale cursussen: Zodra een digitaal product is gedownload of geopend, wordt het beschouwd als gebruikt en kunnen gebruikte producten niet worden terugbetaald."
+    },
+    "q3": {
+      "title": "Hoe u een Terugbetaling / Abonnement Annuleert Aanvraagt",
+      "a1": "Om een terugbetaling aan te vragen, volg deze stappen:",
+      "a2": "1. Abonnement annuleren: Log in op uw account, zoek en klik op de link \"Uw facturatie beheren\" onderaan de lidmaatschapspagina. U wordt doorgestuurd naar een bevestigingspagina waar u uw beslissing om op te zeggen kunt bevestigen.",
+      "a3": "2. Neem Contact op met Onze Ondersteuning: Neem contact op met ons klantenserviceteam op <span class='website'>support{'@'}detpractice.com</span> met uw bestelnummer en de reden voor het verzoek tot terugbetaling.",
+      "a4": "3. Ons team zal uw aanvraag bekijken en binnen 3 werkdagen reageren."
+    },
+    "q4": {
+      "title": "Uitsluitingen",
+      "a1": "De volgende items komen niet in aanmerking voor restitutie:",
+      "a2": "• Digitale producten die zijn gedownload.",
+      "a3": "• Producten en diensten die zijn gekocht via derde partijen."
+    },
+    "q5": {
+      "title": "Neem contact met ons op",
+      "a1": "Als u vragen heeft over ons restitutiebeleid of hulp nodig heeft bij uw aankoop, neem dan contact met ons op via:",
+      "a2": "E-mail: <span class = 'website'>support{'@'}detpractice.com</ span>"
+    }
+  },
   "register": {
     "peyea": "Voer alstublieft uw e-mailadres in.",
     "Invalid_email": "Ongeldig e-mailadres.",
@@ -757,5 +826,98 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engels Taaltest, Duolingo Engels Examen, Duolingo Vaardigheidsexamen"
     },
     "h1": "Sitemap"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Affiliate Programma | DET Oefening",
+      "description": "Doe mee aan het lucratieve affiliate programma van DET Oefening en verdien tot 30% commissie voor elke verwijzing. Werk met ons samen om studenten te helpen hun beste scores te behalen.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Engelse Taaltest, Duolingo Engelse Examen, Duolingo Bekwaamheidstest"
+    },
+    "tag": "Affiliate Programma",
+    "h1": "Verdien <span class='yellow_font'>30% commissie</span> voor elke verwijzing",
+    "sun": "Nu aanmelden",
+    "join_title": "Word lid van het lucratieve affiliate programma van Detpractice",
+    "join_tips": "Meld je aan voor het affiliate programma van Detpractice.com. Iedereen kan gemakkelijk een hogere score behalen op Duolingo English Test met Detpractice.com. Word onze partner en verdien tot 30% commissie voor elke verwijzing.",
+    "earth_with_title": "Verdien met het diverse productaanbod van Detpractice",
+    "question_bank": "Vraagbank",
+    "acs": "AI Correctiedienst",
+    "Mock_Test": "Oefenexamen",
+    "Courses": "Cursussen",
+    "bada": "Word een Detpractice Affiliate in 3 stappen",
+    "hep": "Hoog Verdienpotentieel",
+    "heptips": [
+      "Concurrerende commissietarieven: 30% op alle inkomsten die voortkomen uit jouw affiliate link",
+      "Potentieel voor langetermijnpartnerschappen: We waarderen onze affiliates en streven naar het ontwikkelen van langdurige, wederzijds voordelige relaties."
+    ],
+    "ctw": "Makers met wie we graag samenwerken",
+    "ctwtips": [
+      "1. Je bent een maker met een publiek bestaande uit studenten (Kennis van Duolingo English Test is een plus!)",
+      "2. Je bent enthousiast over een effectievere manier om DET te leren",
+      "3. Je bent een onderwijsinstelling die Duolingo English Test onderwijst"
+    ],
+    "dos": "Do’s",
+    "dos_icon_alt": "groen Juist icoon",
+    "donts": "Niet doen",
+    "donts_icon_alt": "rood Fout icoon",
+    "faqs": "Veelgestelde vragen",
+    "sew": "Begin nu met verdienen met ons affiliate programma",
+    "contaceUsList": [
+      {
+        "font": "Meld je aan voor ons affiliate programma en krijg je verwijzingslink.",
+        "btn": "Nu aanmelden"
+      },
+      {
+        "font": "Deel je link op je website of andere platforms.",
+        "btn": "Ga en deel"
+      },
+      {
+        "font": "Verdien commissies uit verkopen die jij en je sub-affiliates genereren.",
+        "btn": "Bekijk"
+      }
+    ],
+    "dosList": [
+      { "font": "Probeer Detpractice.com zelf uit" },
+      { "font": "Promoot Detpractice.com op ethische en eerlijke wijze" },
+      { "font": "Creëer kwalitatieve en relevante content" },
+      { "font": "Maak je affiliate relatie bekend" }
+    ],
+    "dontsList": [
+      { "font": "Maak misleidende of valse claims over Detpractice.com" },
+      { "font": "Promoot op platforms met ongepaste of illegale inhoud" },
+      { "font": "Promoot op een willekeurige kortingswebsite" },
+      {
+        "font": "Stel advertentiecampagnes op met ons merknaam, of plaats ons domeinnaam in de bestemmings-URLs van je advertenties"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Wie kan zich aanmelden voor het affiliate programma van DET Oefening?",
+        "a": "Als je een maker bent met een publiek bestaande uit studenten, een onderwijsinstelling die Duolingo English Test onderwijst, of een influencer, dan kun je je aanmelden voor ons affiliate programma en geld verdienen."
+      },
+      {
+        "q": "Hoe kan ik mijn commissies bijhouden?",
+        "a": "Nadat je je hebt aangemeld voor ons affiliate programma, krijg je toegang tot je eigen beheerderspagina waar je conversies kunt bijhouden van je verwijzingslinks."
+      },
+      {
+        "q": "Krijg ik commissie als een door mij doorverwezen klant zich abonneert of upgradet?",
+        "a": "Ja, nadat een gebruiker zich heeft aangemeld via jouw link, verdien je commissie telkens wanneer de gebruiker een aankoop doet en upgrade."
+      },
+      {
+        "q": "Wat is het exacte percentage aan commissie dat ik kan verdienen?",
+        "a": "Voor de eerste 3 bestellingen ontvang je 10% commissie; voor meer dan 3 bestellingen ontvang je 30% commissie."
+      },
+      {
+        "q": "Wat gebeurt er als een door mij doorverwezen klant zijn aankoop annuleert?",
+        "a": "Als een klant een aankoop annuleert of om welke reden dan ook een terugbetaling krijgt, wordt de commissie die je hebt verdiend voor die persoon afgetrokken van je account."
+      },
+      {
+        "q": "Wanneer en hoe word ik betaald?",
+        "a": "We verwerken betalingen op de 15e van elke maand voor alle commissies die je hebt verdiend in de voorgaande maand. Je kunt betalingen ontvangen via PayPal."
+      },
+      {
+        "q": "Wat als ik andere vragen heb over jullie affiliate internet marketing programma?",
+        "a": "Neem gewoon contact met ons op via \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" en we helpen je graag met eventuele vragen die je hebt."
+      }
+    ]
   }
 }

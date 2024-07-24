@@ -47,7 +47,9 @@
       "Entre em contato conosco",
       "Termos e Condições",
       "Política de Privacidade",
-      "Mapa do Site"
+      "Mapa do Site",
+      "Programa de Afiliados",
+      "Política de Reembolso"
     ],
     "show_more": "mostrar mais",
     "alt": "DET Prática: A melhor Duolingo English Test plataforma de prática",
@@ -145,10 +147,10 @@
       "keywords": "keyDET Duolingo, DET Teste, Duolingo DET, Duolingo Teste, Duolingo Teste Online, Duolingo Teste de Língua Inglesa, Duolingo Exame de Inglês, Duolingo Exame de Proficiência"
     },
     "pagefont": {
-      "h1": "Planos & Preços",
-      "h4": "Aja agora para economizar! Adquira sua assinatura pelos preços baixos de hoje – não perca antes que os custos aumentem.",
-      "switch1": "Membresia",
-      "switch2": "Mais Serviço",
+      "h1": "Escolha o plano que funciona para você",
+      "h4": "Pagamento seguro! Cancele a qualquer momento! Domine o DET agora!",
+      "switch1": "Serviço",
+      "switch2": "Cursos",
       "Most_Popular_Choice": "Escolha Mais Popular",
       "off": "{off}% de desconto",
       "do": "$",
@@ -166,7 +168,19 @@
       "check_icon": "Verificar",
       "tip_icon": "Dica",
       "green_check": "Verificação Verde",
-      "arrow_down": "Seta para Baixo"
+      "arrow_down": "Seta para Baixo",
+      "free_font": "Grátis",
+      "free_tips": "Você pode visualizar 20 perguntas gratuitamente, experimente nossa plataforma e veja se ela atende às suas necessidades.",
+      "tff": "Experimente grátis",
+      "save": "economize {num}%",
+      "week": "/semana",
+      "month": "/mês",
+      "Billed": "Faturado ${num} /ano",
+      "apcs": "Serviço de Correção com IA",
+      "times": "vezes",
+      "bci": "ícone_de_verificação_preto",
+      "mt": "Exame simulado",
+      "apmt": "Teste Simulado com IA"
     },
     "aqList": [
       {
@@ -186,8 +200,8 @@
         "content": "Por favor, entre em contato conosco via chat ou email: <span class='email_address'>support{'@'}detpractice.com</span>. Esta é a maneira mais simples e rápida de resolver suas preocupações."
       },
       {
-        "name": "Posso mudar meu plano mais tarde?",
-        "content": "Obrigado por adquirir o serviço! Por favor, note que este é um produto virtual. Uma vez adquirido, a entrega do produto é considerada completa e geralmente não é reembolsável. Por favor, verifique antes de comprar."
+        "name": "Comprei o curso mas não consigo visualizá-lo?",
+        "content": "Após a compra bem-sucedida do curso, você pode ir para a página de descrição do curso <span class='email_address'>https://www.detpractice.com/courses</span> para visualizar e baixar as informações do curso. Se você não conseguir encontrar as informações do curso, por favor, entre em contato conosco via chat ou e-mail: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "Para onde devo enviar meu feedback?",
@@ -195,10 +209,7 @@
       },
       {
         "name": "Qual é a sua política de reembolso?",
-        "content1": "1. Conta Gratuita <br>O uso é totalmente gratuito, portanto, não há problemas de reembolso.",
-        "content2": "<br>2. Planos de Assinatura  <br>Os usuários podem solicitar um reembolso se DET Practice não fornecer o serviço correspondente, resultando na impossibilidade de uso por parte do usuário, ou se a assinatura ainda não tiver entrado em vigor. Não serão emitidos reembolsos para assinaturas e serviços que já tenham se tornado ativos após a compra.",
-        "content3": "<br>3. Guia de Fala/Escrita  <br>O Guia de Fala/Escrita é considerado um produto digital. Uma vez comprado e baixado, a entrega do produto é considerada completa e geralmente não é reembolsável. Por favor, leia atentamente as informações de compra antes de fazer uma compra.",
-        "content4": "<br><br>Nota Importante:  <br>Todas as solicitações de reembolso devem ser processadas através do atendimento ao cliente, e os registros de uso relevantes devem ser fornecidos para verificação.<br>Para evitar reembolsos fraudulentos, cada conta de usuário está limitada a uma solicitação de reembolso. Solicitações múltiplas não serão processadas. <br>Se você tiver quaisquer circunstâncias especiais ou situações únicas, por favor, entre em contato conosco, e trabalharemos com você para encontrar uma solução."
+        "content1": "Para obter informações sobre como obter um reembolso e instruções sobre como obter um reembolso, você pode consultar o link \"Política de Reembolso\" na parte inferior da página como uma questão prioritária, ou entrar em contato conosco em <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -247,7 +258,24 @@
         "tip": "Responderemos a você dentro de um dia útil.",
         "btn": "Deixe uma mensagem agora"
       }
-    }
+    },
+    "leftQuanYiList": [
+      "Sessões de prática ilimitadas",
+      "Acesse todas as perguntas de prática",
+      "Navegue por respostas de amostra de alta pontuação",
+      "Análise aprofundada das perguntas",
+      "Livro de palavras de exame de alta frequência",
+      "Plano de estudo personalizado com seleção inteligente de perguntas",
+      "Avaliações de fala com IA"
+    ],
+    "mockQuanYiList": [
+      "Exames simulados em escala total",
+      "Teste a qualquer momento",
+      "Próximo ao exame DET real",
+      "Pontuações de avaliação precisas",
+      "Relatório de avaliação detalhado",
+      "Os resultados estarão disponíveis em 5-30 minutos"
+    ]
   },
   "blog": {
     "seometa": {
@@ -656,6 +684,41 @@
       "a2": "Não temos controle sobre e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros."
     }
   },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Política de Reembolso: Saiba Mais Sobre Nosso Processo de Reembolso | DET Prática",
+      "description": "Descubra a Política de Reembolso do DET Practice: Saiba como lidamos com solicitações de reembolso, critérios de elegibilidade e o processo para obter um reembolso. Leia mais sobre nossas políticas agora.",
+      "keywords": "Política de reembolso, DET Prática de reembolso, DET Política de prática, Processo de reembolso, Elegibilidade para reembolso."
+    },
+    "h1": "Política de reembolso",
+    "q1": {
+      "a1": "Obrigado por escolher e adquirir nossos serviços. Nos esforçamos para fornecer a melhor experiência de aprendizado para nossos clientes. No entanto, se você não estiver completamente satisfeito com sua compra, estamos aqui para ajudar."
+    },
+    "q2": {
+      "title": "Elegibilidade para Reembolsos",
+      "a1": "• Serviços de Membro: Os pedidos de reembolso para serviços de membro devem ser feitos dentro de 3 dias da compra.",
+      "a2": "• Conteúdo Acessado: Se você não acessou mais de 20 perguntas, você tem direito a um reembolso.",
+      "a3": "• Cursos Digitais: Uma vez que um produto digital seja baixado ou acessado, ele é considerado usado e produtos usados não podem ser reembolsados."
+    },
+    "q3": {
+      "title": "Como Solicitar Reembolso / Cancelar Assinatura",
+      "a1": "Para solicitar um reembolso, por favor, siga estes passos:",
+      "a2": "1. Cancelar assinatura: Faça login na sua conta, encontre e clique no link \"Gerenciar sua fatura\" localizado na parte inferior da página de associação. Você será redirecionado para uma página de confirmação onde poderá confirmar sua decisão de cancelar a assinatura.",
+      "a3": "2. Contate o nosso suporte: Contate a nossa equipe de suporte ao cliente em <span class ='website'>support{'@'}detpractice.com</span> com o número do seu pedido e o motivo da solicitação de reembolso.",
+      "a4": "3. A nossa equipa irá rever o seu pedido e responder dentro de 3 dias úteis."
+    },
+    "q4": {
+      "title": "Exclusões",
+      "a1": "Os seguintes não são elegíveis para reembolso:",
+      "a2": "• Produtos digitais que foram baixados.",
+      "a3": "• Produtos e serviços adquiridos por meio de fornecedores terceirizados."
+    },
+    "q5": {
+      "title": "Entre em contato conosco",
+      "a1": "Se tiver alguma dúvida sobre nossa política de reembolso ou precisar de ajuda com sua compra, entre em contato conosco em:",
+      "a2": "Email: <span class='website'>suporte@detpractice.com</span>"
+    }
+  },
   "register": {
     "peyea": "Por favor, insira seu endereço de email.",
     "Invalid_email": "Email inválido.",
@@ -770,5 +833,98 @@
       "keywords": "DET Duolingo, DET Teste, Duolingo DET, Duolingo Teste, Duolingo Teste Online, Duolingo Teste de Língua Inglesa, Duolingo Exame de Inglês, Duolingo Exame de Proficiência"
     },
     "h1": "Mapa do site"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Programa de Afiliados | Prática DET",
+      "description": "Junte-se ao lucrativo programa de afiliados da Prática DET e ganhe até 30% de comissão por cada indicação. Parceria conosco para ajudar os alunos a alcançarem suas melhores pontuações.",
+      "keywords": "DET Duolingo, DET Teste, Duolingo DET, Duolingo Teste, Duolingo Teste Online, Duolingo Teste de Língua Inglesa, Duolingo Exame de Inglês, Duolingo Exame de Proficiência"
+    },
+    "tag": "Programa de Afiliados",
+    "h1": "Ganhe <span class='yellow_font'>30% de comissão</span> por cada indicação",
+    "sun": "Inscreva-se agora",
+    "join_title": "Junte-se ao lucrativo programa de afiliados da Detpractice",
+    "join_tips": "Inscreva-se no programa de afiliados da Detpractice.com. Qualquer um pode facilmente obter uma pontuação mais alta em Duolingo English Test com a Detpractice.com. Torne-se nosso parceiro e ganhe até 30% de comissão por cada indicação.",
+    "earth_with_title": "Ganhe com a ampla gama de produtos da Detpractice",
+    "question_bank": "Banco de Questões",
+    "acs": "Serviço de Correção por IA",
+    "Mock_Test": "Teste Simulado",
+    "Courses": "Cursos",
+    "bada": "Torne-se um Afiliado da Detpractice em 3 Passos",
+    "hep": "Alto Potencial de Ganho",
+    "heptips": [
+      "Taxas de comissão competitivas: 30% em todas as receitas geradas pelo seu link de afiliado",
+      "Potencial para parcerias de longo prazo: Valorizamos nossos afiliados e buscamos desenvolver relacionamentos mutuamente benéficos de longo prazo."
+    ],
+    "ctw": "Criadores com quem adoramos trabalhar",
+    "ctwtips": [
+      "1. Você é um criador que tem uma audiência composta por estudantes (Conhecer Duolingo English Test é uma vantagem!)",
+      "2. Você está entusiasmado com uma maneira mais eficaz de aprender DET",
+      "3. Você é uma instituição de treinamento que ensina Duolingo English Test"
+    ],
+    "dos": "O que fazer",
+    "dos_icon_alt": "Ícone Verde de Correto",
+    "donts": "O que não fazer",
+    "donts_icon_alt": "Ícone Vermelho de Erro",
+    "faqs": "Perguntas Frequentes",
+    "sew": "Comece a ganhar com nosso programa de afiliados agora",
+    "contaceUsList": [
+      {
+        "font": "Inscreva-se em nosso programa de afiliados e obtenha seu link de indicação.",
+        "btn": "Inscreva-se agora"
+      },
+      {
+        "font": "Compartilhe seu link em seu site ou outras plataformas.",
+        "btn": "Ir e Compartilhar"
+      },
+      {
+        "font": "Ganhe comissões das vendas que você e seus sub-afiliados geram.",
+        "btn": "Verificar"
+      }
+    ],
+    "dosList": [
+      { "font": "Experimente Detpractice.com por si mesmo" },
+      { "font": "Promova Detpractice.com de forma ética e honesta" },
+      { "font": "Crie conteúdo de qualidade e relevante" },
+      { "font": "Divulgue seu relacionamento de afiliado" }
+    ],
+    "dontsList": [
+      { "font": "Fazer afirmações enganosas ou falsas sobre Detpractice.com" },
+      { "font": "Promover em plataformas com conteúdo inadequado ou ilegal" },
+      { "font": "Promover em qualquer site de cupons" },
+      {
+        "font": "Configurar campanhas de anúncios usando nosso nome de marca ou colocando nosso nome de domínio nos URLs de destino de seus anúncios"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Quem pode se candidatar ao programa de afiliados da Prática DET?",
+        "a": "Se você é um criador com uma audiência composta por estudantes, uma instituição de treinamento que ensina Duolingo English Test, ou um influenciador, você pode se inscrever em nosso programa de afiliados e ganhar dinheiro."
+      },
+      {
+        "q": "Como acompanho minhas comissões?",
+        "a": "Depois de se inscrever em nosso programa de afiliados, você terá acesso à sua página administrativa dedicada onde poderá acompanhar as conversões de seus links de indicação."
+      },
+      {
+        "q": "Eu recebo comissão se um cliente que eu indicar se inscrever ou fizer upgrade?",
+        "a": "Sim, depois que um usuário se inscreve através do seu link, você ganha uma comissão sempre que o usuário fizer uma compra ou fizer upgrade."
+      },
+      {
+        "q": "Qual é a porcentagem exata de comissão que posso ganhar?",
+        "a": "Para as primeiras 3 compras, você receberá 10% de comissão; para mais de 3 compras, você receberá 30% de comissão."
+      },
+      {
+        "q": "O que acontece se um cliente que eu indiquei cancelar sua compra?",
+        "a": "Se um cliente cancelar uma compra ou receber um reembolso por qualquer motivo, a comissão que você ganhou para essa pessoa será deduzida de sua conta."
+      },
+      {
+        "q": "Quando e como recebo o pagamento?",
+        "a": "Processamos os pagamentos no dia 15 de cada mês para todas as comissões que você ganhou no mês anterior. Você pode receber pagamentos via PayPal."
+      },
+      {
+        "q": "E se eu tiver outras perguntas sobre seu programa de marketing de afiliados?",
+        "a": "Basta entrar em contato conosco em \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" e ficaremos felizes em ajudar com quaisquer dúvidas que você possa ter."
+      }
+    ]
   }
 }

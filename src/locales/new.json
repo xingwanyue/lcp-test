@@ -1,0 +1,70 @@
+{
+  "ar": {
+    "name": "اشتريت الدورة ولكن لا أستطيع مشاهدتها؟",
+    "content": "بعد شراء الدورة بنجاح، يمكنك الذهاب إلى صفحة وصف الدورة <span class='email_address'>https://www.detpractice.com/courses</span> لمشاهدة وتحميل معلومات الدورة. إذا لم تتمكن من العثور على معلومات الدورة، يرجى الاتصال بنا عبر الدردشة أو البريد الإلكتروني: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "da": {
+    "name": "Jeg har købt kurset, men kan ikke se det?",
+    "content": "Efter succesfuldt køb af kurset, kan du gå til kursusbeskrivelsessiden <span class='email_address'>https://www.detpractice.com/courses</span> for at se og downloade kursusinformationen. Hvis du ikke kan finde kursusinformationen, bedes du kontakte os via chat eller e-mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "de": {
+    "name": "Ich habe den Kurs gekauft, kann ihn aber nicht sehen?",
+    "content": "Nach dem erfolgreichen Kauf des Kurses können Sie zur Kursbeschreibungsseite <span class='email_address'>https://www.detpractice.com/courses</span> gehen, um die Kursinformationen anzusehen und herunterzuladen. Wenn Sie die Kursinformationen nicht finden können, kontaktieren Sie uns bitte über Chat oder E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "es": {
+    "name": "Compré el curso pero no puedo verlo?",
+    "content": "Después de comprar el curso con éxito, puedes ir a la página de descripción del curso <span class='email_address'>https://www.detpractice.com/courses</span> para ver y descargar la información del curso. Si no puedes encontrar la información del curso, por favor contáctanos a través del chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "fr": {
+    "name": "J'ai acheté le cours mais je ne peux pas le voir?",
+    "content": "Après avoir acheté le cours avec succès, vous pouvez aller à la page de description du cours <span class='email_address'>https://www.detpractice.com/courses</span> pour voir et télécharger les informations du cours. Si vous ne trouvez pas les informations du cours, veuillez nous contacter via le chat ou l'email: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "id": {
+    "name": "Saya telah membeli kursus tetapi tidak bisa melihatnya?",
+    "content": "Setelah berhasil membeli kursus, Anda dapat pergi ke halaman deskripsi kursus <span class='email_address'>https://www.detpractice.com/courses</span> untuk melihat dan mengunduh informasi kursus. Jika Anda tidak dapat menemukan informasi kursus, silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "it": {
+    "name": "Ho acquistato il corso ma non riesco a visualizzarlo?",
+    "content": "Dopo aver acquistato con successo il corso, puoi andare alla pagina di descrizione del corso <span class='email_address'>https://www.detpractice.com/courses</span> per visualizzare e scaricare le informazioni sul corso. Se non riesci a trovare le informazioni sul corso, contattaci tramite chat o email: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "ja": {
+    "name": "コースを購入したが、表示できない？",
+    "content": "コースを正常に購入した後、コースの説明ページ <span class='email_address'>https://www.detpractice.com/courses</span> にアクセスして、コース情報を表示およびダウンロードできます。コース情報が見つからない場合は、チャットまたはメールでお問い合わせください: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "ko": {
+    "name": "코스를 구매했지만 볼 수 없어요?",
+    "content": "코스를 성공적으로 구매한 후, 코스 설명 페이지 <span class='email_address'>https://www.detpractice.com/courses</span>로 이동하여 코스 정보를 보고 다운로드할 수 있습니다. 코스 정보를 찾을 수 없는 경우, 채팅이나 이메일을 통해 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "nb": {
+    "name": "Jeg kjøpte kurset, men kan ikke se det?",
+    "content": "Etter å ha kjøpt kurset vellykket, kan du gå til kursbeskrivelsessiden <span class='email_address'>https://www.detpractice.com/courses</span> for å se og laste ned kursinformasjonen. Hvis du ikke finner kursinformasjonen, vennligst kontakt oss via chat eller e-post: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "nl": {
+    "name": "Ik heb de cursus gekocht, maar kan deze niet bekijken?",
+    "content": "Na succesvolle aankoop van de cursus, kunt u naar de cursusbeschrijvingspagina <span class='email_address'>https://www.detpractice.com/courses</span> gaan om de cursusinformatie te bekijken en te downloaden. Als u de cursusinformatie niet kunt vinden, neem dan contact met ons op via chat of e-mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "pl": {
+    "name": "Kupiłem kurs, ale nie mogę go zobaczyć?",
+    "content": "Po pomyślnym zakupie kursu, możesz przejść do strony opisu kursu <span class='email_address'>https://www.detpractice.com/courses</span>, aby wyświetlić i pobrać informacje o kursie. Jeśli nie możesz znaleźć informacji o kursie, skontaktuj się z nami za pośrednictwem czatu lub e-maila: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "pt": {
+    "name": "Comprei o curso mas não consigo visualizá-lo?",
+    "content": "Após a compra bem-sucedida do curso, você pode ir para a página de descrição do curso <span class='email_address'>https://www.detpractice.com/courses</span> para visualizar e baixar as informações do curso. Se você não conseguir encontrar as informações do curso, por favor, entre em contato conosco via chat ou e-mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "ru": {
+    "name": "Я купил курс, но не могу его просмотреть?",
+    "content": "После успешной покупки курса вы можете перейти на страницу описания курса <span class='email_address'>https://www.detpractice.com/courses</span>, чтобы просмотреть и скачать информацию о курсе. Если вы не можете найти информацию о курсе, пожалуйста, свяжитесь с нами через чат или электронную почту: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "th": {
+    "name": "ฉันซื้อคอร์สแล้วแต่ไม่สามารถดูได้?",
+    "content": "หลังจากซื้อคอร์สเรียบร้อยแล้ว คุณสามารถไปที่หน้ารายละเอียดคอร์ส <span class='email_address'>https://www.detpractice.com/courses</span> เพื่อดูและดาวน์โหลดข้อมูลคอร์ส หากคุณไม่พบข้อมูลคอร์ส กรุณาติดต่อเราผ่านทางแชทหรืออีเมล: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "tr": {
+    "name": "Kursu satın aldım ama görüntüleyemiyorum?",
+    "content": "Kursu başarıyla satın aldıktan sonra, kurs bilgilerini görüntülemek ve indirmek için kurs tanım sayfasına <span class='email_address'>https://www.detpractice.com/courses</span> gidebilirsiniz. Kurs bilgilerini bulamazsanız, lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>."
+  },
+  "zh": {
+    "name": "我购买了课程但无法查看？",
+    "content": "成功购买课程后，您可以前往课程描述页面 <span class='email_address'>https://www.detpractice.com/courses</span> 查看和下载课程信息。如果您找不到课程信息，请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。"
+  }
+}

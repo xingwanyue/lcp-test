@@ -69,8 +69,8 @@ const submit = async () => {
             <span>{{ errMessage }}</span>
           </div>
           <div class="login_btn_out">
-            <el-button v-loading="loading" type="primary" native-type="submit" class="submit" @click="submit">
-              Send reset code{{ $t('forget.Send_reset_code') }}
+            <el-button v-loading="loading" type="primary" class="submit" @click="submit">
+              {{ $t('forget.Send_reset_code') }}
             </el-button>
           </div>
         </el-form-item>

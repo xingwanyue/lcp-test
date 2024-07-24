@@ -53,9 +53,21 @@ export const loginBycredential = async (credential: string) => {
     body: JSON.stringify({ credential }),
   });
   const { email, picture, name } = data;
+  const InviteCode = getCookie('InviteCode');
+  const args = {
+    channel: '',
+    email,
+    avatar: picture,
+    nickname: name,
+    google: true,
+    type: 'pc',
+  };
+  if (InviteCode) {
+    args.channel = `${InviteCode}-1`;
+  }
   return fetchmy(`${api}/common/login`, {
     method: 'post',
-    body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+    body: JSON.stringify(args),
   });
 };
 
@@ -78,6 +90,18 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
+    const InviteCode = getCookie('InviteCode');
+    const args = {
+      channel: '',
+      email,
+      avatar: picture,
+      nickname: name,
+      google: true,
+      type: 'pc',
+    };
+    if (InviteCode) {
+      args.channel = `${InviteCode}-1`;
+    }
     return fetchmy(`${api}/common/login`, {
       method: 'post',
       body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
