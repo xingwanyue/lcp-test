@@ -209,7 +209,7 @@
       },
       {
         "name": "Quelle est votre politique de remboursement ?",
-        "content1": "Pour obtenir des informations sur comment obtenir un remboursement et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de Remboursement\" en bas de la page en priorité, ou nous contacter à l'adresse suivante: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "content1": "Pour des informations et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de remboursement\" en bas de la page en priorité, ou nous contacter à <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {

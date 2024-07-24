@@ -75,9 +75,7 @@ const changeBuyCorrectTimes = (item: any) => {
 };
 
 const buyMembership = (item: any) => {
-  console.log(item);
   const { id, correctTimesid } = item;
-  console.log(id, correctTimesid);
   store.stripePay({ vipId: `${id},${correctTimesid}` });
 };
 
@@ -160,7 +158,10 @@ const saveCaculate = (item) => {
                   </el-option>
                 </el-select>
               </div>
-              <div class="select_font">{{ $t('pricing.pagefont.month') }}</div>
+              <div class="select_font">
+                <template v-if="item.day === 7"> {{ $t('pricing.pagefont.week') }}</template>
+                <template v-else>{{ $t('pricing.pagefont.month') }}</template>
+              </div>
             </div>
           </div>
           <div class="but_btn_new">
