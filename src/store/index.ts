@@ -117,13 +117,13 @@ export const useStore = defineStore({
           if (write) {
             this.user.write = true;
             message.push(
-              `"Writing Guide"has been successfully purchased, please visit the course details page on the official website to view or download.`,
+              `"Writing Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
             );
           }
           if (speak) {
             this.user.speak = true;
             message.push(
-              `"Speaking Guide"has been successfully purchased, please visit the course details page on the official website to view or download.`,
+              `"Speaking Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
             );
           }
 
