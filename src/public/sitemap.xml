@@ -1,334 +1,411 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://www.detpractice.com/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/practice</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/correction</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/mock-exam</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/courses</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/learn</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/pricing</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/blog</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/2024-read-and-select</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/2024-Fill-in-the-Blanks</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/what-is-the-duolingo-english-test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/2024-Interactive-Writing</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/interactive-writing-2024</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-update-2024</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-read-then-write</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/how-to-prepare-for-the-duolingo-english-test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/about-us</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/contact-us</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/tos</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/privacy-policy</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-read-then-speak</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-write-about-the-photo</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/speak-about-the-photo-duolingo-english-test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/interactive-listening</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-writing-preparation</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-speaking-practice</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-results-valid</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/How-often-can-I-take-the-Duolingo-English-Test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/How-long-does-the-Duolingo-English-Test-take</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/How-to-take-the-Duolingo-English-Test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-tips-4</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-tips-3</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-test-tips-2</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-test-tips-1</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/mock-exam/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/master-duolingo-english-practice-test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-scores</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/guide-to-the-duolingo-test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/overall-scores</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/production</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/conversation</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/comprehension</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/literacy</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/compared-with-CEFR</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/compared-with-TOEFL</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/compared-with-IELTS</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/writing-score-1</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/sending-your-result</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/test-rules-1</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/speaking-sample</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/writing-sample</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/interactive-writing</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/write-about-the-photo</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/read-then-speak</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-tips-3/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-scores/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/guide-to-the-duolingo-test/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-mock-test</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-test-practice</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-test-tips-1/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/det-test-tips-2/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/duolingo-english-test-tips-4/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/blog/</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/listen-then-speak</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://www.detpractice.com/interactive-reading</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.41</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator https://www.eptimize.app -->
+  <url>
+    <loc>https://www.detpractice.com/guide-to-the-duolingo-test/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=3</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/mock-exam/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/tos</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/overall-scores</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/How-to-take-the-Duolingo-English-Test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/literacy</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-tips-4/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/listen-then-speak</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=20</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/det-write-about-the-photo</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/pricing</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/about-us</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=23</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
 
-
+  <url>
+    <loc>https://www.detpractice.com/duolingo-test-practice</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-tips-4</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/courses</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=22</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/det-writing-preparation</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/master-duolingo-english-practice-test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/interactive-listening</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/affiliate-program</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-speaking-practice</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=19</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/2024-Interactive-Writing</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/cdn-cgi/l/email-protection</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/det-test-tips-2/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/speak-about-the-photo-duolingo-english-test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/interactive-writing-2024</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-results-valid</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/blog?page=2</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/privacy-policy</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/blog/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/refund-policy</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/compared-with-TOEFL</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/2024-Fill-in-the-Blanks</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/writing-sample</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/how-to-prepare-for-the-duolingo-english-test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=24</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/compared-with-CEFR</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/mock-exam</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-scores</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/guide-to-the-duolingo-test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/forget</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-tips-3/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/det-read-then-write</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/det-test-tips-2</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=18</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/read-then-speak</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/comprehension</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-read-then-speak</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/speaking-sample</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/sitemap.xml</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/How-often-can-I-take-the-Duolingo-English-Test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/correction</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-update-2024</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/production</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-scores/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/contact-us</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-mock-test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/interactive-writing</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=5</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/2024-read-and-select</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/conversation</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/interactive-reading</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/sending-your-result</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/write-about-the-photo</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/blog?page=1</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/what-is-the-duolingo-english-test</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=21</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/writing-score-1</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/How-long-does-the-Duolingo-English-Test-take</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/blog</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/learn?c=25</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/practice</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/duolingo-english-test-tips-3</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/compared-with-IELTS</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.detpractice.com/test-rules-1</loc>
+    <lastmod>2024-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -115,7 +115,7 @@ const Company = computed(() => {
       },
       {
         name: t('footer.Company[4]'),
-        url: '/sitemap',
+        url: '/sitemap.xml',
       },
     ],
   };
