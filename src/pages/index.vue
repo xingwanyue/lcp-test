@@ -27,7 +27,6 @@ const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 const userPingLunResponse = computed(() => {
-  // portalData[0]
   const pinglunArr = [] as any;
   let pinglunMid = [] as any;
   for (let i = 0; i < portalData[0].length; i += 2) {

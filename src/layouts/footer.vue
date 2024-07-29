@@ -484,7 +484,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
             height: 100%;
           }
 
-          @media (max-width: 420px) {
+          @media (max-width: 450px) {
             width: 24px;
             height: 24px;
           }
