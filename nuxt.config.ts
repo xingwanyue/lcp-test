@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: '/css/carousel.css' },
         {
           rel: 'stylesheet',
-          href: '/css/font.css',
+          href: '/font/index.css',
         },
       ],
       htmlAttrs: {
