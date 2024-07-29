@@ -318,7 +318,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           <!-- <el-select v-model="language" placeholder="Select" style="width: 240px">
             <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"> </el-option>
           </el-select> -->
-          <el-popover popper-class="options_out_out" placement="top-start" trigger="hover" width="350px">
+          <el-popover popper-class="options_out_out" placement="top" trigger="hover" width="100%">
             <div class="options_out">
               <div
                 class="options_out_name"
