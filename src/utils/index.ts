@@ -90,6 +90,7 @@ export const getStorage = (key: String) => {
 };
 
 export function removeToken() {
+  document.cookie = `${TOKEN}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=.${domainGet()}`;
   sessionStorage.removeItem(TOKEN);
   localStorage.removeItem(TOKEN);
 }
