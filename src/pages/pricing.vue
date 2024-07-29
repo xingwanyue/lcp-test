@@ -1092,9 +1092,9 @@ const formateMinToHour = (min: number) => {
     @media screen and (max-width: 450px) {
       padding: 0px 15px;
     }
-    margin-top: 120px;
+    margin-top: 60px;
     @media (max-width: 450px) {
-      margin-top: 60px;
+      margin-top: 30px;
     }
 
     .part2 {
