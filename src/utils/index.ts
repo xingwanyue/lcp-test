@@ -8,7 +8,6 @@ export const host = `https://app.${domain}`;
 // export const api = `http://192.168.1.22:9000/api`;
 // export const api = `https://dev2.zixuekeji.cn/weapp/api`;
 export const api = `https://www.duolingopractice.com/weapp/api`;
-// export const api = `https://det.xingwanyue.com/weapp2/api`;
 export const affurl = `https://affiliate.detpractice.com`;
 
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
@@ -19,7 +18,7 @@ export const domainGet = () => {
       return window.location.hostname;
     }
     const domains = window.location.hostname.split('.').reverse();
-    return `.${domains[1]}.${domains[0]}`;
+    return `${domains[1]}.${domains[0]}`;
   }
   // 非浏览器环境
   return domain;
