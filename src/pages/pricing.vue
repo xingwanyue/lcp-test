@@ -3,7 +3,6 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, domain, host } from '@/utils';
-import { portalData } from '@/api';
 import { useStore } from '@/store';
 useServerSeoMeta({
   title: t('pricing.seometa.title'),
@@ -21,7 +20,6 @@ const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
 
-const buyData = portalData[1];
 
 const aqList = ref([
   {
@@ -350,28 +348,6 @@ const formateMinToHour = (min: number) => {
           <div v-if="!vipsData?.moreServiceArr" class="no-load">
             <el-skeleton :rows="9" animated />
           </div>
-        </div>
-        <!-- {{buyData}} -->
-        <div v-if="buyData && buyData.length" class="scroll_buyed_wrapper">
-          <el-carousel height="46px" direction="vertical" :autoplay="true" indicator-position="none">
-            <el-carousel-item v-for="item in buyData" :key="item.id" class="scroll_buyed">
-              <div class="scroll_buyed_left">
-                <div class="icon">
-                  <img src="/img/pricing/green_check.svg" :alt="$t('pricing.pagefont.green_check')" />
-                </div>
-                <div class="name">{{ item.data.nickname }}</div>
-                <div class="type">{{ $t('pricing.pagefont.purchased') }}</div>
-                <div class="days">{{ item.data.tag }}</div>
-              </div>
-              <div class="scroll_buyed_mid">
-                <div class="flag">
-                  <img v-if="item.data.avatar" :src="staticUrlGet(item.data.avatar)" :alt="item.data.country" />
-                </div>
-                <div class="country_name">{{ item.data.country }}</div>
-                <div class="time">{{ formateMinToHour(item.diffMinute) }}</div>
-              </div>
-            </el-carousel-item>
-          </el-carousel>
         </div>
 
         <div class="bank_card">

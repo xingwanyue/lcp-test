@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
-import vMyimage from '../components/myimage.vue';
 import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
@@ -39,14 +38,6 @@ const userPingLunResponse = computed(() => {
     pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
   }
   return pinglunArr;
-});
-const usersockerArrResponse = computed(() => {
-  const scorearr = [] as any;
-  portalData[2].forEach((item: any) => {
-    item.data = JSON.parse(item.data);
-    scorearr.push(item);
-  });
-  return scorearr;
 });
 const haveCookie = ref(false);
 const isMobile = ref(false);
@@ -339,79 +330,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               </div>
             </NuxtLink>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="part3_wrapper">
-      <div class="part3">
-        <div class="title">{{ $t('index.bigtitle1') }}</div>
-        <div v-if="platformData" class="user_nums_out">
-          <div class="one_num">
-            <div class="bigger_num">{{ toThousands(platformData?.userTotal) }}{{ $t('index.thousand') }}</div>
-            <div class="small_font">{{ $t('index.Users') }}</div>
-          </div>
-          <div class="one_num">
-            <div class="bigger_num">{{ toThousands(platformData?.questionTotal) }}{{ $t('index.thousand') }}</div>
-            <div class="small_font">{{ $t('index.Questions') }}</div>
-          </div>
-          <div class="one_num">
-            <div class="bigger_num">{{ toThousands(platformData?.examTotal) }}{{ $t('index.thousand') }}</div>
-            <div class="small_font">{{ $t('index.Mock_Exam') }}</div>
-          </div>
-        </div>
-        <div v-else class="user_nums_out">
-          <div class="one_num">
-            <el-skeleton :rows="1" animated />
-          </div>
-          <div class="one_num">
-            <el-skeleton :rows="1" animated />
-          </div>
-          <div class="one_num">
-            <el-skeleton :rows="1" animated />
-          </div>
-        </div>
-        <div class="btn_out">
-          <NuxtLink
-            v-if="!user.id"
-            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
-            class="common_btn common_btn_hover_bgColor yellow"
-          >
-            {{ $t('index.Join_Them') }}
-          </NuxtLink>
-          <NuxtLink v-else :to="urlGet('/home')" class="common_btn common_btn_hover_bgColor yellow">
-            {{ $t('index.Join_Them') }}
-          </NuxtLink>
-        </div>
-        <div v-if="usersockerArrResponse && usersockerArrResponse.length" class="score_scroll_out">
-          <!-- {{ usersockerArr }} -->
-          <Carousel :itemsToShow="6" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-            <Slide v-for="(item, index) in usersockerArrResponse" :key="index" class="one_score">
-              <div class="one_score_content">
-                <div class="one_score_head">
-                  <div class="user_icon">
-                    <el-image :src="staticUrlGet(item.data.avatar)" :alt="item.data.nickname">
-                      <template #placeholder>
-                        <div class="image-slot">
-                          <el-icon><icon-picture /></el-icon>
-                        </div>
-                      </template>
-                    </el-image>
-                  </div>
-                  <div class="user_detail">
-                    <div class="user_name">{{ item.data.nickname }}</div>
-                    <div class="user_country">{{ item.data.country }}</div>
-                  </div>
-                </div>
-                <div class="one_score_content_img">
-                  <!-- <el-image > -->
-                  <v-myimage :src="item.data.scoreImg" :alt="item.data.nickname" />
-                </div>
-              </div>
-            </Slide>
-          </Carousel>
-        </div>
-        <div v-else class="score_scroll_out">
-          <el-skeleton :rows="10" animated />
         </div>
       </div>
     </div>

@@ -18,20 +18,6 @@ useHead({
     { rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' },
   ],
 });
-// 获取平台数据
-// 获取平台数据
-const {
-  data: platformData = {
-    v1Total: 0,
-    userTotal: 0,
-    questionTotal: 0,
-    examTotal: 0,
-    correctTotal: 0,
-  },
-} = (await useFetch(`${api}/common/platformData`, {
-  server: false,
-  lazy: true,
-})) as any;
 const isLoad = ref(false);
 const onLoad = () => {
   isLoad.value = true;

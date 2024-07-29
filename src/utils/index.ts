@@ -18,7 +18,7 @@ export const domainGet = () => {
       return window.location.hostname;
     }
     const domains = window.location.hostname.split('.').reverse();
-    return `${domains[1]}.${domains[0]}`;
+    return `.${domains[1]}.${domains[0]}`;
   }
   // 非浏览器环境
   return domain;
@@ -39,7 +39,7 @@ export const setCookie = (name: string, value: string, days: number) => {
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     expires = `; expires=${date.toUTCString()}`;
   }
-  document.cookie = `${name}=${value || ''}${expires}; domain=.${domainGet()}; path=/`;
+  document.cookie = `${name}=${value || ''}${expires}; domain=${domainGet()}; path=/`;
 };
 
 export const getCookie = (name: string) => {
@@ -90,7 +90,7 @@ export const getStorage = (key: String) => {
 };
 
 export function removeToken() {
-  document.cookie = `${TOKEN}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=.${domainGet()}`;
+  document.cookie = `${TOKEN}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=${domainGet()}`;
   sessionStorage.removeItem(TOKEN);
   localStorage.removeItem(TOKEN);
 }
