@@ -3,7 +3,9 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
+import { platformData } from '@/api';
 import vEmbark from '../components/embark.vue';
+
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -18,18 +20,6 @@ useHead({
     { rel: 'alternate', href: `https://www.${domain}/practice`, hreflang: 'en-GB' },
   ],
 });
-// 获取平台数据
-const {
-  data: platformData = {
-    v1Total: 0,
-    userTotal: 0,
-    questionTotal: 0,
-    examTotal: 0,
-  },
-} = (await useFetch(`${api}/common/platformData`, {
-  server: false,
-  lazy: true,
-})) as any;
 
 // 将数字格式化 306281变为306k 3062811变为3061k
 // const toThousands = (num) => {

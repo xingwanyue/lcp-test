@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { saveStorage, getStorage, domain } from '@/utils';
+import { domain } from '@/utils';
 import { useStore } from '@/store';
 import { reactive } from 'vue';
 
@@ -48,7 +48,7 @@ const prod = computed(() => {
   };
 });
 
-const Learn = ref([]);
+const Learn = ref([] as any);
 
 const getLearn = async () => {
   let args = { type: '2', flag: '1' } as any;

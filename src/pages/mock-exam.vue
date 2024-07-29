@@ -3,6 +3,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { urlGet, host, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
+import { platformData } from '@/api';
 import vEasyexam from '../components/easyexam.vue';
 
 const localePath = useLocalePath();
@@ -19,18 +20,6 @@ useHead({
     { rel: 'alternate', href: `https://www.${domain}/mock-exam`, hreflang: 'en-GB' },
   ],
 });
-// 获取平台数据
-const {
-  data: platformData = {
-    v1Total: 0,
-    userTotal: 0,
-    questionTotal: 0,
-    examTotal: 0,
-  },
-} = (await useFetch(`${api}/common/platformData`, {
-  server: false,
-  lazy: true,
-})) as any;
 
 const isLoad = ref(false);
 const onLoad = () => {

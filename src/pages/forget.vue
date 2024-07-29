@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { useRouter } from 'vue-router';
-import { sesCodeSend } from '@/api.js';
+import { sesCodeSend } from '@/api';
 import { fetchmy } from '@/utils/request';
 definePageMeta({
   layout: 'noheaderfooter',

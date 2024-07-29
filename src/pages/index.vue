@@ -7,6 +7,7 @@ import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
+import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
 const route = useRoute();
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
@@ -26,53 +27,27 @@ useHead({
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-
-const [
-  { data: platformData },
-  { data: commentTopFontResponse },
-  { data: userPingLunResponse },
-  { data: usersockerArrResponse },
-  { data: usersockerTopFontResponse },
-] = (await Promise.all([
-  useFetch(`${api}/common/platformData`, {
-    server: false,
-    lazy: true,
-  }),
-  useFetch(`${api}/common/portalData?type=5`, { server: false, lazy: true, headers: { locale: locale.value } }),
-  useFetch(`${api}/common/portalData?type=1`, {
-    server: false,
-    lazy: true,
-    transform: (data: any) => {
-      const pinglunArr = [] as any;
-      let pinglunMid = [] as any;
-      for (let i = 0; i < data.length; i += 2) {
-        pinglunMid[i] = JSON.parse(data[i].data);
-        pinglunMid[i + 1] = JSON.parse(data[i + 1].data);
-        pinglunMid[i].rate = Number(pinglunMid[i].rate);
-        pinglunMid[i + 1].rate = Number(pinglunMid[i + 1].rate);
-        pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
-      }
-      return pinglunArr;
-    },
-  }),
-  useFetch(`${api}/common/portalData?type=3`, {
-    server: false,
-    lazy: true,
-    transform: (data: any) => {
-      const scorearr = [] as any;
-      data.forEach((item: any) => {
-        try {
-          item.data = JSON.parse(item.data);
-          scorearr.push(item);
-        } catch (error) {
-          console.log(error);
-        }
-      });
-      return scorearr;
-    },
-  }),
-  useFetch(`${api}/common/portalData?type=4`, { server: false, lazy: true, headers: { locale: locale.value } }),
-])) as any;
+const userPingLunResponse = computed(() => {
+  // portalData[0]
+  const pinglunArr = [] as any;
+  let pinglunMid = [] as any;
+  for (let i = 0; i < portalData[0].length; i += 2) {
+    pinglunMid[i] = JSON.parse(portalData[0][i].data);
+    pinglunMid[i + 1] = JSON.parse(portalData[0][i + 1].data);
+    pinglunMid[i].rate = Number(pinglunMid[i].rate);
+    pinglunMid[i + 1].rate = Number(pinglunMid[i + 1].rate);
+    pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
+  }
+  return pinglunArr;
+});
+const usersockerArrResponse = computed(() => {
+  const scorearr = [] as any;
+  portalData[2].forEach((item: any) => {
+    item.data = JSON.parse(item.data);
+    scorearr.push(item);
+  });
+  return scorearr;
+});
 const haveCookie = ref(false);
 const isMobile = ref(false);
 onMounted(async () => {
@@ -84,7 +59,7 @@ onMounted(async () => {
       isMobile.value = window.innerWidth < 450;
     });
     // 获取路由参数code
-    const code = route.query.code;
+    const code = route.query.code as string;
     if (code) {
       saveStorage('InviteCode', code, true);
     }

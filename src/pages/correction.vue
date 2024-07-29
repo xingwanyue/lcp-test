@@ -2,8 +2,8 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { urlGet, domain, cdn, host } from '@/utils';
+import { platformData } from '@/api';
 import { useStore } from '@/store';
-import vHighscorewriting from '../components/highscorewriting.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -18,6 +18,7 @@ useHead({
     { rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' },
   ],
 });
+// 获取平台数据
 // 获取平台数据
 const {
   data: platformData = {
