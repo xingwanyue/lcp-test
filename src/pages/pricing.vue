@@ -21,6 +21,8 @@ const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
 
+const buyData = portalData[1];
+
 const aqList = ref([
   {
     name: t('pricing.aqList[0].name'),
