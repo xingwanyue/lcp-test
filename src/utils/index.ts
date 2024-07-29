@@ -7,7 +7,7 @@ export const host = `https://app.${domain}`;
 // export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
 // export const api = `https://dev2.zixuekeji.cn/weapp/api`;
-export const api = `https://api.duolingopractice.com/weapp/api`;
+export const api = `https://www.duolingopractice.com/weapp/api`;
 // export const api = `https://det.xingwanyue.com/weapp2/api`;
 export const affurl = `https://affiliate.detpractice.com`;
 
