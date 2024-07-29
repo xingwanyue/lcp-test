@@ -433,7 +433,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
       align-items: center;
       grid-column-gap: 20px;
       //  border: 1px red solid;
-      @media (max-width: 420px) {
+      @media (max-width: 550px) {
         grid-gap: 20px;
       }
       @media (max-width: 1009px) {
@@ -484,7 +484,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
             height: 100%;
           }
 
-          @media (max-width: 450px) {
+          @media (max-width: 420px) {
             width: 24px;
             height: 24px;
           }
