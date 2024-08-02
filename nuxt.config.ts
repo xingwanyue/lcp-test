@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', '@nuxt/image'],
   css: ['@/assets/iconfont/iconfont.css'],
   i18n: {
     locales: [
