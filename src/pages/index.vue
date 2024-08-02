@@ -9,7 +9,6 @@ import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '
 import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
 const route = useRoute();
-const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useServerSeoMeta({
   title: t('index.seometa.title'),
@@ -177,25 +176,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             })
           "
         ></div>
-        <div class="big_img_out">
-          <div class="big_img">
-            <video
-              width="100%"
-              height="100%"
-              muted
-              autoplay
-              loop
-              controlslist="nodownload"
-              webkit-playsinline="true"
-              playsinline="true"
-              x5-video-player-fullscreen="true"
-              x5-video-orientation="portraint"
-              x5-video-player-type="h5"
-              :src="videoUrl"
-            ></video>
-            <!-- <img :src="bannerImg" /> -->
-          </div>
-        </div>
       </div>
     </div>
     <div class="part2_wrapper">
