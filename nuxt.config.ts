@@ -3,8 +3,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', '@nuxt/image'],
+  modules: ['@pinia/nuxt', '@nuxtjs/i18n', '@nuxt/image'],
   css: ['@/assets/iconfont/iconfont.css'],
+  build: {
+    transpile: ['element-plus'],
+  },
   i18n: {
     locales: [
       'en',
@@ -34,6 +37,7 @@ export default defineNuxtConfig({
     { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/crisp.js', mode: 'client' },
+    { src: '@/plugins/element.ts', mode: 'client' },
   ],
   features: {
     inlineStyles: false,
