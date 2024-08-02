@@ -1,0 +1,16 @@
+{
+  "id": "4513987",
+  "name": "det-i18n",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "det-i18n",
+  "glyphs": [
+    {
+      "icon_id": "40009865",
+      "name": "logo",
+      "font_class": "logo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "test": "For test",
+  "Home": "Home",
+  "Products": "Products",
+  "Learn": "Learn",
+  "Pricing": "Pricing",
+  "Blog": "Blog",
+  "header": {
+    "home_logo_title": "DET Practice",
+    "path_practice_title": "Duolingo English Practice Test Online",
+    "path_correction_title": "AI Correction Service for Duolingo Test",
+    "path_mock_title": "Duolingo Mock Test",
+    "path_course_title": "Duolingo English Test Course Online",
+    "commonAlt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Get_started": " Get started ",
+    "Try_for_free": "Try for free",
+    "prod1": {
+      "title": "Duolingo English Test Practice",
+      "alt": "Duolingo English Test Practice",
+      "font": "Achieve Excellence with Our Extensive Question Bank: Over 10,000 Questions, Regular Updates, and Smart Performance Tracking!"
+    },
+    "prod2": {
+      "title": "Duolingo English Test Correction Service",
+      "alt": "Duolingo English Test Correction Service",
+      "font": "Perfect Your Essays with AI-Powered Teacher Feedback: Accurate Corrections, Instant Reports, and Score Improvement within Two Weeks!"
+    },
+    "prod3": {
+      "title": "Duolingo English Test Course",
+      "alt": "Duolingo English Test Course",
+      "font": "Conquer Your Exam with Authentic Full-Length Mocks: In-depth Analysis and Instant Results, Available Anytime, Anywhere."
+    },
+    "prod4": {
+      "title": "Duolingo English Test Mock",
+      "alt": "Duolingo English Test Mock",
+      "font": "Unlock DET Success: Comprehensive Mastery, Proven Techniques, and Up-to-Date Insights for Confident Speaking and Writing Excellence!"
+    }
+  },
+  "footer": {
+    "inc": "Our product has no connection with Duolingo,Inc",
+    "ProductsTitle": "Products",
+    "LearnTitle": "Learn",
+    "BlogTitle": "Blog",
+    "CompanyTitle": "Company",
+    "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
+    "Company": [
+      "About us",
+      "Contact us",
+      "Terms and Conditions",
+      "Privacy Policy",
+      "Sitemap",
+      "Affiliate Program",
+      "Refund Policy"
+    ],
+    "show_more": "show more",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
+    "newAlt": "DET Practice",
+    "close_icon_alt": "Cross Sign"
+  },
+  "index": {
+    "seometa": {
+      "title": "DET Practice - Ace the Duolingo English Test",
+      "description": "DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam, Duolingo Proficiency Exam In English, Duolingo English Proficiency Exam, English Proficiency Test Duolingo, Duolingo Proficiency Test, Duolingo English Proficiency Test, Duolingo English Test, English Duolingo Test"
+    },
+    "bigtitle1": "Number of High Scorers (130+ Points)：10000+",
+    "bigtitle2": "Exceptional 4.8/5 Rating from Over 850 Reviews!",
+    "power_by": "Powered by AI",
+    "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With <span class=\"seo_hack\">DET Practice</span>",
+    "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With <span class=\"seo_hack\">DET Practice</span>",
+    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "Start_free_with_Google": "Start free with Google",
+    "Start_free_with_email": "Start free with email",
+    "Start_for_free": "Start for free",
+    "trustedByWorldwide": "Trusted by {path} students worldwide for a 1-month Duolingo English Test score boost.",
+    "The_Best_Platform": "The Best Platform for Boosting Your Duolingo English Test Scores",
+    "Leverage_Our": "Leverage Our All-Inclusive Resources for Swift Score Improvement",
+    "article1": {
+      "title": "Duolingo English Test Practice",
+      "tips1": "With over {number} practice questions, our ever-expanding question bank is regularly updated for excellence.",
+      "tips2": "Comprehensive coverage of all exam types with detailed explanations for every question.",
+      "tips3": "In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.",
+      "btn_font": "Discover More",
+      "btn_img_alt": "Yellow Arrow Right"
+    },
+    "article2": {
+      "title": "AI-Powered Essay Correction Service",
+      "tips1": "Benefit from precise essay corrections through our 'AI + Teacher' collaborative review.",
+      "tips2": "Simply submit your essay and promptly receive a comprehensive report with a detailed band score.",
+      "tips3": "Elevate your writing score in just 2 weeks.",
+      "btn_font": "Learn More",
+      "btn_img_alt": "Yellow Arrow Right"
+    },
+    "article3": {
+      "title": "Duolingo English Test Mock",
+      "tips1": "Mimic the actual exam setting to familiarize yourself with the testing process and content beforehand.",
+      "tips2": "Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.",
+      "tips3": "Take online mock exams at your convenience, with fast scoring provided within 30 minutes.",
+      "btn_font": "Find Out More",
+      "btn_img_alt": "Yellow Arrow Right"
+    },
+    "article4": {
+      "title": "Duolingo English Test Course",
+      "tips1": " Achieve Comprehensive Mastery. Develop an in-depth understanding of DET speaking and writing sections with our detailed guides, ensuring you approach every part of the exam with confidence.",
+      "tips2": "Learn from ESL Experts. Utilize proven strategies to enhance your speaking and writing abilities, benefit from personalized learning paths, and engage in effective self-assessment.",
+      "tips3": "Stay Informed and Ahead. Keep abreast of the latest DET formats and trends to ensure your preparation is in perfect sync with current exam standards.",
+      "btn_font": "Explore More",
+      "btn_img_alt": "Yellow Arrow Right"
+    },
+    "thousand": "k",
+    "Users": "Users",
+    "Questions": "Questions",
+    "Mock_Exam": "Mock Exam",
+    "Join_Them": "Join Them"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Start Your Path to Top Scores on the</div><div class='font2'>Duolingo English Test !</div>",
+    "Start_free_with_Google": "Start free with Google",
+    "Start_free_with_email": "Start free with email",
+    "Start_for_free": " Start for free"
+  },
+  "subscribe": {
+    "emailErrMessage1": "The email must be a valid email address.",
+    "emailErrMessage2": "Please enter your email address.",
+    "Subscribe_successfully": "Subscribe successfully",
+    "Subscribe!": "Subscribe!",
+    "Subscribe_for": "Subscribe for the Latest Insights and Strategies to Elevate Your Score.",
+    "Email": "Email",
+    "Subscribe": "Subscribe"
+  },
+  "learn": {
+    "seometa": {
+      "title": "DET Practice - Learn the expert Tips for the Duolingo English Test",
+      "description": "Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "h1": "We will update the exam preparation tips of Duolingo English Test timely",
+    "title2": " The lastest update is until {time}",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "down_icon": "Down Icon",
+    "Show_more": "Show more"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "DET Practice - Duolingo Test Prep Membership and Services Pricing",
+      "description": "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
+      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Examwords"
+    },
+    "pagefont": {
+      "h1": "Choose The Plan That Works For You",
+      "h4": "Secure payment! Cancel anytime! Ace the DET now!",
+      "switch1": "Service",
+      "switch2": "Courses",
+      "Most_Popular_Choice": "Most Popular Choice",
+      "off": " {off}% off ",
+      "do": "$",
+      "mp": "Member's price",
+      "Buy_Now": "Buy Now",
+      "tf": " Try for free ",
+      "mpc": "Most Popular Choice",
+      "your_price": "your price",
+      "Non_member": "Non-member",
+      "purchased": "purchased",
+      "Secure_Payment": "Secure Payment:",
+      "faq": "Frequently Asked Questions",
+      "Contact_Us": "Contact Us",
+      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "check_icon": "Check",
+      "tip_icon": "Tip",
+      "green_check": "Green Check",
+      "arrow_down": "Down Arrow",
+      "free_font": "Free",
+      "free_tips": "You can view 20 questions for free, try our platform and see if it fits your needs.",
+      "tff": "Try for free",
+      "save": "save {num}% ",
+      "week": "/week",
+      "month": "/month",
+      "Billed": "Billed ${num} /year",
+      "apcs": "AI-powered Correction Service",
+      "times": "times",
+      "bci": "black_check_icon",
+      "mt": "Mock Exam",
+      "apmt": "AI-powered Mock Test"
+    },
+    "aqList": [
+      {
+        "name": "How does DETPractice’s plans and pricing work?",
+        "content": "We provide transparent plans and pricing for our users, with no hidden fees. Additionally, we offer add-on subscription packages so that you can choose services according to your needs."
+      },
+      {
+        "name": "Is there a free trial?",
+        "content": "Yes! You can view 20 questions for free. Help you understand us before you buy more services."
+      },
+      {
+        "name": "Do you offer any discounts?",
+        "content": "Yes! We offer tailored discounts for each service. However, when you opt for a 30-day service, you'll receive a greater discount compared to other services. Please refer to the price details above for more information."
+      },
+      {
+        "name": "My payment was successful, but the upgrade failed.",
+        "content": "Please contact us via chat or email: <span class='email_address'>support{'@'}detpractice.com</span>. This is the simplest and fastest way to address your concerns."
+      },
+      {
+        "name": "I purchased the course but can't view it?",
+        "content": "After successfully purchasing the course, you can go to the course description page <span class='email_address'>https://www.detpractice.com/courses</span> to view and download the course information. If you can't find the course information, please contact us via chat or email: <span class='email_address'>support{'@'}detpractice.com</span>."
+      },
+      {
+        "name": "Where do I send my feedback?",
+        "content": "You can send feedback through the support chat in the bottom right corner, or contact us via email at <span class='email_address'>support{'@'}detpractice.com</span>. Alternatively, you can leave a message directly in the \"Contact Us\" section."
+      },
+      {
+        "name": "What is your refund policy?",
+        "content1": "For information and instructions on how to get a refund, you can refer to the \"Refund Policy\" link at the bottom of the page as a matter of priority, or contact us at <span class='email_address'> support{'@'}detpractice.com </span>."
+      }
+    ],
+    "qlList": {
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Practice Questions"
+      },
+      "day7": {
+        "name1Desc": "<span class='bigger'>Unlimited</span> for Practice Sessions",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Correction Services",
+        "name2Tips": "For Speaking and Writing Questions",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Mock Exam"
+      },
+      "day15": {
+        "name1Desc": "`<span class='bigger'>Unlimited</span> for Practice Sessions",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Correction Services",
+        "name2Tips": "For Speaking and Writing Questions",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Mock Exam"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>Unlimited</span> for Practice Sessions",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Correction Services",
+        "name2Tips": "For Speaking and Writing Questions",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Mock Exam"
+      }
+    },
+    "membershipUnchanging": [
+      "Access all Practice Questions",
+      "Browse High-scoring Demo Answers",
+      "In-depth Question Analysis",
+      "High-Frequency Exam Word Book",
+      "Tailored Study Plan with Smart Question Selection",
+      "AI-Powered Speaking Evaluations"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "Online Customer Service",
+        "tip": "Available Mon-Fri, 10:00 - 19:00",
+        "btn": "Chat Live Now"
+      },
+      "type2": {
+        "font": "Email Us",
+        "tip": "Receive a response in 1 business day."
+      },
+      "type3": {
+        "font": "Leave a message",
+        "tip": "We will respond to you within one business day.",
+        "btn": "Leave a message now"
+      }
+    },
+    "leftQuanYiList": [
+      "Unlimited for Practice Sessions",
+      "Access all Practice Questions",
+      "Browse High-scoring Sample Answers",
+      "In-depth Question Analysis",
+      "High-Frequency Exam Word Book",
+      "Tailored Study Plan with Smart Question Selection",
+      "AI-Powered Speaking Evaluations"
+    ],
+    "mockQuanYiList": [
+      "Full-scale mock exams",
+      "Test at any time",
+      "Close to real DET exam",
+      "Accurate assessment scores",
+      "Detailed evaluation report",
+      "Results will be available within 5-30 minutes"
+    ]
+  },
+  "blog": {
+    "seometa": {
+      "title": "DET Practice - Duolingo English Test Tips and Tricks",
+      "description": "Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score."
+    },
+    "h1": "DET Pratice Blog",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform"
+  },
+  "embark": {
+    "font1": "Embark on your journey to high scores on",
+    "font2": "Duolingo English Test !",
+    "Start_Now": "Start Now"
+  },
+  "articleDetail": {
+    "Submitted_successfully": "Submitted successfully",
+    "Home": " Home ",
+    "Learn": " Learn ",
+    "Blog": " Blog ",
+    "Related_Articles": "Related Articles",
+    "Thanks_for_voting": "Thanks for voting!",
+    "Rate_this_article": "Rate this article"
+  },
+  "easyexam": {
+    "snfeep": "Start Now for Easy Exam Preparation.",
+    "Start_Now": " Start Now"
+  },
+  "highscorewriting": {
+    "font1": "Accelerate Your Path to",
+    "font2": "High-Scoring Writing Mastery.",
+    "Start_Now": "Start Now"
+  },
+  "path": {
+    "seometa": {
+      "title": "DET Pratice Blog",
+      "description": "DET Pratice Blog"
+    }
+  },
+  "aboutUs": {
+    "seometa": {
+      "title": "About Us - DET Practice",
+      "description": ""
+    },
+    "title": "About DET Pratice",
+    "oelet": "Our Esteemed Language Education Team",
+    "oeletdesc": "At the heart of our language education services lies a team of dedicated, highly qualified, and experienced educators, each bringing their own unique expertise and passion to the forefront of language learning. Our team is comprised of elite professionals who are not only proficient in English but also experts in preparing students for major English proficiency tests like the TOEFL, IELTS, and Duolingo English Test (DET). Our educators hold prestigious certifications such as TESOL, and Cambridge English Teacher Training certificates, showcasing their commitment to delivering high-quality language education. They possess impressive language test scores, reflecting their deep understanding of the skills and strategies necessary to excel in these exams. The collective experience of our team spans several years, during which they have honed their ability to cater to diverse learning needs. They excel in identifying students’ individual strengths and weaknesses, ensuring personalized teaching approaches that maximize learning outcomes. This unique ability allows them to provide targeted guidance and feedback, helping students break through learning barriers and rapidly improve their language proficiency. Our educators are not just teachers; they are mentors who inspire confidence and enthusiasm in their students. They foster a dynamic and interactive learning environment, making the journey of language learning both enjoyable and effective. Their teaching methods are continuously evolving, integrating innovative techniques and materials to stay abreast of the latest trends in language education. The success of our students in achieving their language goals is a testament to our team’s expertise, dedication, and teaching excellence. As a unit, they represent the best of language education, committed to guiding students toward achieving their highest potential in English proficiency.",
+    "p1title": "Michael Z.",
+    "p1author": "Tutor Supervisor",
+    "p1content1": " As the leading figure of our teaching team, Michael Z. embodies the pinnacle of language instruction. With extensive teaching experience that spans over a decade, Mike holds all the credentials of our esteemed teachers, including TESOL, Cambridge English Teacher Training Certificates, and other certificates. His exceptional language proficiency is reflected in his impressive scores: 115 on TOEFL, 8.5 on IELTS, and a perfect 150 on Duolingo English Test. Michael teaching philosophy combines the strengths of our diverse team, offering a comprehensive and dynamic approach to language learning. He is renowned for his ability to deeply understand and address the unique needs of each student, fostering a learning environment where students can thrive and surpass their goals. His classes are a blend of rigorous academic standards and engaging, interactive learning experiences. Beyond teaching, Michael is instrumental in developing cutting-edge curriculum and training methods, ensuring our courses remain at the forefront of language education. His dedication to excellence in teaching and his commitment to student success make him an invaluable leader and mentor both to our team and our students.",
+    "p2title": "Albert L.",
+    "p2author": "Course Designer",
+    "p2content1": "Scoring 8.5 in IELTS, Albert has extensive experience in teaching IELTS, TOEFL, PTE, and DET. His teaching is known for its relaxed and lively atmosphere, making learning enjoyable. Albert’s approach is tailored to each student’s needs, enabling rapid improvement in English proficiency in a short period. Besides being an excellent teacher, Albert is also a talented course designer who has created and developed various online and offline courses for English learners of different levels and goals. He has a deep understanding of the curriculum standards and assessment criteria of various English tests, and he knows how to design effective and engaging learning activities and materials that can help students master the test skills and strategies. Albert has also collaborated with other teachers and experts to review and improve the quality and relevance of the courses, and he has received positive feedback and recognition from both students and peers. Albert is passionate about creating innovative and personalized courses that can cater to the diverse needs and interests of English learners.",
+    "p3title": "Rita T.",
+    "p3author": "Senior Tutor",
+    "p3content1": "With 11 years of teaching experience, Rita is a seasoned expert in Duolingo English Test preparation and research. She is an ATI-certified advanced English teacher, holding a TESOL Advanced English Teacher Certificate and Cambridge English Teacher Training Certificate. Rita has impressive scores of 111 in TOEFL and 140 in DET. Her teaching is marked by an ability to precisely analyze students’ needs and provide targeted instruction, helping them break through barriers and enhance their language skills to achieve their desired scores swiftly. In addition, Rita is a passionate and enthusiastic teacher who always motivates and inspires her students to learn English with confidence and joy. She uses a variety of interactive and engaging methods, such as games, role-plays, debates, and simulations, to make her classes fun and effective. She also gives personalized feedback and guidance to each student, helping them improve their weak areas and overcome their challenges. Rita’s students love her warm and supportive personality, and they often praise her for being patient, friendly, and professional.",
+    "p4title": "Doris W.",
+    "p4author": "Tutor",
+    "p4content1": "Doris, scoring 145 in DET and 8.0 in IELTS, is a versatile Duolingo English Test instructor known for her rich teaching experience. She excels in helping students of various levels quickly overcome difficulties to achieve their ideal results, having once helped a student improve by 30 points in just two weeks. Her classes are known for their lively atmosphere and clear logic, and her teaching style is rigorous yet passionate and responsible, making her a favorite among a wide range of students.",
+    "p5title": "Laura K.",
+    "p5author": "Test Researcher",
+    "p5content1": "Laura brings years of experience in Duolingo training, 110 in TOEFL, and 155 in DET. A specialist in Duolingo question research, Laura is adept in teaching adaptive test questions and writing. She has a deep understanding of DET exam techniques and trends, excelling in performance analysis to quickly identify and enhance students’ potential."
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "Contact Us - DET Practice",
+      "description": "",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "checkEmail": "The email must be a valid email address.",
+    "enterName": "Please enter your name.",
+    "enterEmail": "Please enter your email address.",
+    "entermessage": "Please enter your message.",
+    "subsuccess": "Submitted successfully",
+    "Contact_Us": "Contact Us",
+    "Questions": "Questions, bug reports, feedback - we’re here to help!",
+    "fill_in": "Fill in the form",
+    "thank": " Thank you for choosing to get in touch with us. Please fill out this contact form and our staff will reach out to you as soon as possible to address your inquiries.",
+    "email": "Email",
+    "Name": "Name",
+    "Email_Address": "Email Address",
+    "Message": "Message",
+    "SUBMIT": " SUBMIT "
+  },
+  "cookie": {
+    "seometa": { "title": "Cookie Policy - DET Practice" },
+    "Cookie_Policy": "Cookie Policy",
+    "Last_updated": "Last updated: ",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": " This Cookie Policy explains what cookies are, how we use them, and your choices regarding cookies on our website.",
+    "q1": {
+      "title": "What are cookies?",
+      "a1": "Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in your web browser and allows the website or a third-party to recognize you and make your next visit easier and the website more useful to you.",
+      "a2": "Cookies can be \"persistent\" or \"session\" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser."
+    },
+    "q2": {
+      "title": "How we use cookie",
+      "a1": "When you use and access our website, we may place a number of cookies files in your web browser.",
+      "a2": "We use cookies for the following purposes :",
+      "a3": "• To enable certain functions of the website",
+      "a4": "• To provide analytics",
+      "a5": "• To store your preferences",
+      "a6": "• To enable advertisements delivery (which are cookies from a domain different than the domain of the website you are visiting – for our advertising and marketing efforts.)",
+      "a7": "We use both session and persistent cookies on our website and we use different types of cookies to run the website:",
+      "a8": "• Essential cookies: We may use essential cookies to authenticate users and prevent fraudulent use of user accounts.",
+      "a9": "• Analytical/performance cookies: We may use analytical/performance cookies to track user activity on the website and gather data about how visitors use the website. This information is used to improve the website experience for our users.",
+      "a10": "• Functionality cookies: We may use functionality cookies to recognize you when you return to the website and personalize content for you.",
+      "a11": "• Targeting cookies: We may use targeting cookies to record your visit to the website, the pages you have visited, and the links you have followed."
+    },
+    "q3": {
+      "title": "Your choices regarding cookies",
+      "a1": "If you prefer to avoid the use of cookies on our website, you must disable the use of cookies in your browser and then delete the cookies saved in your browser associated with this website. You may use this option for preventing the use of cookies at any time."
+    },
+    "q4": {
+      "title": "Contact us",
+      "a1": "If you have any questions about our Cookie Policy, please contact us :",
+      "a2": "• By email: ",
+      "a3": "• By visiting this page on our website:"
+    },
+    "q5": {
+      "title": "Changes to our Cookie Policy",
+      "a1": "We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page."
+    }
+  },
+  "correction": {
+    "seometa": {
+      "title": "DET Practice - AI Correction Service for your Duolingo Test",
+      "description": "Correction service provided by \"AI + Teachers\". Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.",
+      "keywords": "Correction Service for Duolingo Test, AI Correction Service for Duolingo Test"
+    },
+    "h1": "Discover the Best AI Correction Service for Duolingo Test",
+    "desc": " Enhance your essays with our 'AI + Teachers' correction service. Get detailed feedback based on official scoring standards quickly after submission.",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "useralt": "User Icon",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "{number} learners have improved their writing with our correction service.",
+    "Review_Now": "Review Now",
+    "Correct_Now": "Correct Now",
+    "Get_Scored_Now": "Get Scored Now",
+    "Enhance_Now": "Enhance Now",
+    "Begin_Polishing": "Begin Polishing",
+    "h2_1": {
+      "h2": "Requests for corrections",
+      "right_desc": "On the Speaking and Writing practice pages, you can apply for the correction service directly."
+    },
+    "h2_2": {
+      "h2": "Comprehensive Assessment",
+      "right_desc": " Follows the official Duolingo English Test requirements to accurately capture writing skills and provide comprehensive assessment results."
+    },
+    "h2_3": {
+      "h2": "Writing Correction",
+      "right_desc": "Instantly spot and understand errors in vocabulary and grammar to enhance your writing skills."
+    },
+    "h2_4": {
+      "h2": "Teacher Guidance",
+      "right_desc": "Enhance your writing with expert analysis tailored to DET criteria, pinpointing areas for improvement to elevate your work."
+    },
+    "h2_5": {
+      "h2": "Original Text Polishing",
+      "right_desc": "Elevate every word and sentence;refine structure and style for a distinguished and high-scoring composition."
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "DET Practice - Master Speaking and Writing with the Duolingo English Test Guide",
+      "description": "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice."
+    },
+    "article1": {
+      "title": "Key Features of DET Speaking Exam Excellence:",
+      "list": [
+        { "content": "• In-depth exploration of all DET speaking task types" },
+        { "content": "• Practical strategies for approaching each speaking task" },
+        { "content": "• Interactive exercises to improve speech clarity, fluency, and confidence" },
+        { "content": "• Expert guidance on pronunciation, tone, and overall performance" },
+        { "content": "• Real-life speech samples and analyses demonstrating successful strategies" },
+        { "content": "• Audio demo answers to provide clear examples of effective responses" },
+        { "content": "• Personalized learning approaches for different proficiency levels" },
+        { "content": "• Focus on essential vocabulary and grammar for effective communication" },
+        { "content": "• Updated to incorporate the latest changes in the DET speaking format" }
+      ]
+    },
+    "article2": {
+      "title": "Key Features of DET Writing Exam Excellence:",
+      "list": [
+        { "content": "• Comprehensive coverage of DET writing tasks with analysis and examples" },
+        { "content": "• Step-by-step guidelines for planning and writing exceptional essays" },
+        { "content": "• Targeted exercises to hone DET-specific writing skills" },
+        { "content": "• Expert tips to improve clarity, coherence, and sophistication" },
+        { "content": "• Annotated sample essays showcasing effective strategies and common pitfalls" },
+        { "content": "• Adaptable learning paths for various proficiency levels" },
+        { "content": "• Emphasis on essential grammar and vocabulary for DET success" },
+        { "content": "• Updated to reflect the latest DET writing format trends" }
+      ]
+    },
+    "contaceUsList": [
+      {
+        "font": "Select Your Guide",
+        "tip": "Choose the Speaking or Writing Guide for targeted exam prep.",
+        "btn": "Buy Speaking Guide",
+        "btn1": "Buy Writing Guide"
+      },
+      {
+        "font": "Instant Download",
+        "tip": "Gain access to the guide immediately after purchase.",
+        "btn": "Download Speaking Guide",
+        "btn1": "Download Writing Guide"
+      },
+      {
+        "font": "Speaking Audio Samples",
+        "tip": "Explore the supplementary speaking audio demo answers.",
+        "btn1": "Access Audio Samples"
+      }
+    ],
+    "pagefont": {
+      "h1": "DET Speaking Exam Excellence: A Comprehensive Guide",
+      "do": "$",
+      "Buy_Now": "Buy Now",
+      "alt": "DET Practice:The best Duolingo English Test Practice platform",
+      "white_arrow_right": "White Arrow Right",
+      "Double_Right_Arrow": "Double Right Arrow",
+      "DET_Writing": "DET Writing Exam Excellence: A Comprehensive Guide",
+      "How_to": "How to get the guide?",
+      "spa": "Speaking practice audio",
+      "tips": "Thank you for your interest in our Speaking/Writing Guide! Please note that this is a virtual product. Once purchased and downloaded, the product delivery is considered complete, and it is generally non-refundable. Please confirm before making a purchase.",
+      "orange_title": "Elite Language Educators",
+      "team_desc": "Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS, and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching approaches, and innovative methods, they are committed to helping each student achieve their highest potential in English proficiency.",
+      "Elite_Language_Educators": "Elite Language Educators"
+    }
+  },
+  "forget": {
+    "Please_enter": "Please enter your email address",
+    "Invalid_email": "Invalid email.",
+    "t1": "Forgot Password?",
+    "t2": "Please enter the email used to create your account",
+    "Enter_your_email": "Enter your email",
+    "desc": "We'll send you an email with the reset code",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Send_reset_code": "Send Reset Code",
+    "Back_to_login": "Back to login"
+  },
+  "listen": {
+    "Speaking_practice_audio": "Speaking practice audio",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform"
+  },
+  "login": {
+    "peyea": "Please enter your email address.",
+    "ie": "Invalid email.",
+    "peyp": "Please enter your password.",
+    "Welcome_back": "Welcome back",
+    "h1": "Login to practice",
+    "Login_with_Google": "Login with Google",
+    "Or_continue_with": "Or continue with",
+    "Email_address": " Email address",
+    "Password": "Password",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Login": "Login",
+    "Forgot_password": "Forgot password?",
+    "Dont_have_an_account": "Don't have an account?",
+    "Sign_up_here": "Sign up here"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "DET Practice - Full-length Mock Exam for DET Preparation",
+      "description": "Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test.",
+      "keywords": "Duolingo Mock Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
+    },
+    "h1": "Duolingo English Test 1:1 Mock Exam",
+    "desc": "Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of the actual testing process before the real deal and quickly receive scores and detailed diagnostic reports to pinpoint areas for improvement.",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "{number} learners have taken our mock exams for self-assessment and practice.",
+    "Mock_Now": "Mock Now",
+    "Full_scale": "Duolingo 1:1 Full-scale Mock Exam",
+    "article1": {
+      "h2": "Algorithmic Intelligence",
+      "right_desc": "Experience real exam conditions with our advanced adaptive testing algorithm. Quickly master various question types and gain precise assessments."
+    },
+    "article2": {
+      "h2": "Precise Scoring & In-Depth Reports",
+      "right_desc": "Detailed mock exam reports provide precise diagnosis and analysis of current strengths and weaknesses, automatically updating study plans to enhance exam preparation efficiency."
+    },
+    "article3": {
+      "h2": "Convenient Exam Experience",
+      "right_desc": "Enjoy flexible test-taking on your schedule, no appointments needed. Start your mock exam immediately after purchase and have the freedom to pause or resume anytime."
+    },
+    "article4": {
+      "h2": "Rapid Score Reporting",
+      "right_desc": "Get your mock exam results delivered within 30 minutes, fast-tracking your progress review."
+    }
+  },
+  "practice": {
+    "seometa": {
+      "title": "DET Practice - The best platform for Duolingo practice test",
+      "description": "Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.",
+      "keywords": "Duolingo English Test Practice, Duolingo Practice English Test, Duolingo English Practice Test, Duolingo Practice Test Online, Duolingo Test Practice, Duolingo Practice Test, Duolingo Practice, Det Practice Test, Duolingo English Test Score"
+    },
+    "h1": "Duolingo Practice Question Bank",
+    "desc": "Gain access to an extensive collection of test questions, enhanced with answer analysis, templates, AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and affordably with our AI-powered approach.",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "altbanner": "Duolingo Practice Question Bank",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "{number} learners have used our question bank for DET preparation.",
+    "spn": "Start Practicing Now",
+    "article1": {
+      "h2": "Extensive Question Library",
+      "right_desc": "Explore our extensive library of over 10,000 questions across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats.",
+      "btn": "Dive Into Practice"
+    },
+    "article2": {
+      "h2": "Intelligent Recommendation",
+      "right_desc": " The Al model will take into account the mastery level of each question type, difficulty,target score, question weight, novelty of the questions, the recent frequency of the test, preparation time and efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the test.",
+      "btn": "Start Smart Study Journey"
+    },
+    "article3": {
+      "h2": "AI Speaking Evaluation",
+      "right_desc": "Enhance your oral proficiency with our AI-driven speaking evaluations. Submit your response to a spoken language question and instantly receive a detailed analysis of your speaking skills, helping you improve with precision and speed.",
+      "btn": "Begin Your Evaluation"
+    },
+    "article4": {
+      "h2": "Answer Analysis",
+      "right_desc": "Delve into comprehensive answer explanations that deepen your understanding of essential concepts and problem-solving techniques. Our detailed analyses don’t just guide you to the correct answers—they expand your knowledge and boost your study efficiency.",
+      "btn": "Explore Answer Insights"
+    }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Privacy Policy - DET Practice",
+      "description": "Discover DET Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "h1": "Privacy Policy",
+    "q1": {
+      "title": "Last updated: 2023-11-20",
+      "a1": "DET Pratice (“us”, “we”, or “our”) operates the DET Pratice website (the “Service”).",
+      "a2": "This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service.",
+      "a3": "We will not use or share your information with anyone except as described in this Privacy Policy.",
+      "a4": "We use your Personal Information to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at",
+      "a5": "Information Collection And Use",
+      "a6": "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information (“Personal Information”) may include, but is not limited to:",
+      "a7": "• Name",
+      "a8": "• Email address"
+    },
+    "q2": {
+      "title": "Log Data",
+      "a1": "We collect information that your browser sends whenever you visit our Service (“Log Data”). This Log Data may include information such as your computer’s Internet Protocol (“IP”) address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics."
+    },
+    "q3": {
+      "title": "Cookies",
+      "a1": "Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your computer’s hard drive.",
+      "a2": " We use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service."
+    },
+    "q4": {
+      "title": "Service Providers",
+      "a1": "We may employ third-party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services, or to assist us in analyzing how our Service is used.",
+      "a2": "These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose."
+    },
+    "q5": {
+      "title": "Security",
+      "a1": "The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security."
+    },
+    "q6": {
+      "title": "Payment Info & Security",
+      "a1": "In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees and customers, your vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on your behalf. This information is used solely to collect and provide payments related to the Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at"
+    },
+    "q7": {
+      "title": "Links To Other Sites",
+      "a1": "Our Service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third-party’s site. We strongly advise you to review the Privacy Policy of every site you visit.",
+      "a2": "We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Refund Policy: Learn About Our Refund Process | DET Practice",
+      "description": "Discover DET Practice's Refund Policy: Learn how we handle refund requests, eligibility criteria, and the process for obtaining a refund. Read more about our policies now.",
+      "keywords": "Refund Policy, DET Practice Refund, DET Practice Policy, Refund Process, Eligibility for Refund"
+    },
+    "h1": "Refund Policy",
+    "q1": {
+      "a1": "Thank you for choosing and purchasing our services. We strive to provide the best learning experience for our customers. However, if you are not entirely satisfied with your purchase, we're here to help."
+    },
+    "q2": {
+      "title": "Eligibility for Refunds",
+      "a1": "• Member Services: Refund requests for member services must be made within 3 days of purchase.",
+      "a2": "• Accessed Content: If you have not accessed more than 20 questions, you are eligible for a refund.",
+      "a3": "• Digital Courses: Once a digital product is downloaded or accessed, it is considered used and used products cannot be refunded."
+    },
+    "q3": {
+      "title": "How to Request a Refund / Cancel Subscription",
+      "a1": "To request a refund, please follow these steps:",
+      "a2": "1.Cancel Subscription: Login to your account, find and click the \"Manage your billing\" link at the bottom of the membership page. You will be redirected to a confirmation page where you can confirm your decision to unsubscribe.",
+      "a3": "2.Contact Our Support: Contact our customer support team at <span class='website'>support{'@'}detpractice.com</span> with your order number and the reason for the refund request.",
+      "a4": "3.Our team will review your request and respond within 3 business days."
+    },
+    "q4": {
+      "title": "Exclusions",
+      "a1": "The following are not eligible for refunds:",
+      "a2": "• Digital products that have been downloaded.",
+      "a3": "• Products and services purchased through third-party vendors."
+    },
+    "q5": {
+      "title": "Contact Us",
+      "a1": "If you have any questions about our refund policy or need assistance with your purchase, please contact us at:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
+    }
+  },
+  "register": {
+    "peyea": "Please enter your email address.",
+    "Invalid_email": "Invalid email.",
+    "Sign_up": "Sign up",
+    "cya": "Create your free DETPractice account",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "suwg": "Sign Up With Google",
+    "ocw": "Or continue with",
+    "Email_address": "Email address",
+    "ywr": "You will receive your activation code by email",
+    "cwe": "Continue With Email",
+    "ahaa": "Already have an account?",
+    "Login_here": "Login here"
+  },
+  "register2": {
+    "Sign_up": "Sign up",
+    "cyfda": "Create your free DETPractice account",
+    "Sign_up_with_Google": "Sign Up With Google",
+    "Or_continue_with": "Or continue with",
+    "Register_code": "Register code",
+    "Enter_your_code": "Enter your code",
+    "Full_Name": "Full name",
+    "Password": "Password",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "Create_Account": "Create Account",
+    "ahaa": "Already have an account?",
+    "Login_here": "Login here.",
+    "peyc": "Please enter your code.",
+    "peyfn": "Please enter your full name.",
+    "peyp": "Please enter your password.",
+    "pts": "Password too short."
+  },
+  "resetPassword": {
+    "peuc": "Please enter your code.",
+    "fp": "Forgot Password?",
+    "pete": "Please enter the email used to create your account",
+    "Enter_your_code": "Enter your code",
+    "pw": "Please wait for 120 seconds to reset code",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "rpr": "Request Password Reset",
+    "btl": "Back to login"
+  },
+  "resetPasswordStep2": {
+    "peue": "Please enter your email address.",
+    "pts": "Password too short.",
+    "pi": "Password inconsistency.",
+    "fp": "Forgot Password?",
+    "pete": "Please enter the email used to create your account",
+    "np": "New password",
+    "eanp": "Enter a new password",
+    "alt": "DET Practice:The best Duolingo English Test Practice platform",
+    "cnp": "Confirm new password",
+    "cynp": "Confirm your new password",
+    "rmp": "Reset My Password",
+    "btl": "Back to login"
+  },
+  "tos": {
+    "seometa": {
+      "title": "Terms and Conditions - DET Practice",
+      "description": "Explore DET Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "title": "Terms of Service",
+    "q1": {
+      "title": "Last updated: 2023-11-20",
+      "a1": "Please read these Terms of Service (“Terms”, “TOS”) carefully before using the",
+      "a2": "website (the “Service”) operated by DET Practice (“us”, “we”, or “our”).",
+      "a3": " Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.",
+      "a4": "By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service."
+    },
+    "q2": {
+      "title": "Accounts",
+      "a1": "When you create an account with us, you must provide us with information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.",
+      "a2": "You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.",
+      "a3": "You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account."
+    },
+    "q3": {
+      "title": "Links To Other Web Sites",
+      "a1": "Our Service may contain links to third-party websites or services that are not owned or controlled by DET Practice.",
+      "a2": "DET Practice has no control over and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that DET Practice shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such web sites or services.",
+      "a3": "We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit."
+    },
+    "q4": {
+      "title": "Termination",
+      "a1": "We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.",
+      "a2": "Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.",
+      "a3": "All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability."
+    },
+    "q5": {
+      "title": "Disclaimer",
+      "a1": "Your use of the Service is at your sole risk. The Service is provided on an “AS IS” and “AS AVAILABLE” basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance."
+    },
+    "q6": {
+      "title": "Governing Law",
+      "a1": "These Terms shall be governed and construed in accordance with the laws of the United Kingdom without regard to its conflict of law provisions.",
+      "a2": "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have between us regarding the Service."
+    },
+    "q7": {
+      "title": "Changes",
+      "a1": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 15 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.",
+      "a2": "By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service."
+    },
+    "q8": {
+      "title": "Contact Us",
+      "a1": "If you have any questions about these Terms, please contact us."
+    }
+  },
+  "sitemap": {
+    "seometa": {
+      "title": "DET Practice Sitemap: Find All Practice Tests & Resources",
+      "description": "Explore DET Practice's complete sitemap to access all practice tests, study resources, and guides. Navigate easily through our comprehensive test prep offerings.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "h1": "Sitemap"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Affiliate Program | DET Practice",
+      "description": "Join DET Practice's lucrative affiliate program and earn up to 30% commission for every referral. Partner with us to help students achieve their best scores.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+    },
+    "tag": "Affiliate Program",
+    "h1": "Earn <span class='yellow_font'>30% Commission</span> From Your Every Referral",
+    "sun": "Sign Up Now",
+    "join_title": "Join Detpractice's <span class='yellow_font'>Lucrative</span> Affiliate Program",
+    "join_tips": "Sign up for the affiliate program of Detpractice.com. Anyone can get a higher score easily on the Duolingo English Test with Detpractice.com. Become our partner and get up to 30% commission for every referral.",
+    "earth_with_title": "Earn With Detpractice's Diverse Product Range",
+    "question_bank": "Question bank",
+    "acs": "AI Correction Service",
+    "Mock_Test": "Mock Test",
+    "Courses": "Courses",
+    "bada": "Become a Detpractice Affiliate in 3 Steps",
+    "hep": "High Earning Potential",
+    "heptips": [
+      "Competitive commission rates: 30% on all revenue contributed from your affiliate link",
+      "Potential for long-term partnerships: We value our affiliates and strive to develop long-term, mutually beneficial relationships."
+    ],
+    "ctw": "Creators That We Love to Work With",
+    "ctwtips": [
+      " 1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
+      "2.You are excited by a more effective way to learn DET",
+      "3.You are a training institution that teaches Duolingo English Test"
+    ],
+    "dos": "Do’s",
+    "dos_icon_alt": "green Right Icon",
+    "donts": "Don’ts",
+    "donts_icon_alt": "red Err Icon",
+    "faqs": "FAQs",
+    "sew": "Start Earning with Our Affiliate Program Now",
+    "contaceUsList": [
+      {
+        "font": "Sign up for our affiliate program and get your referral link.",
+        "btn": "Sign Up Now"
+      },
+      {
+        "font": "Share your link on your website or other platforms.",
+        "btn": "Go and Share"
+      },
+      {
+        "font": "Earn commissions from sales you and your sub-affiliates drive.",
+        "btn": "Check Out"
+      }
+    ],
+    "dosList": [
+      { "font": "Try out Detpractice.com for yourself" },
+      { "font": "Promote Detpractice.com ethically and honestly" },
+      { "font": "Create quality and relevant content" },
+      { "font": "Disclose your affiliate relationship" }
+    ],
+    "dontsList": [
+      { "font": "Make misleading or false claims about Detpractice.com" },
+      { "font": "Promote on platforms that have inappropriate or illegal content" },
+      { "font": "Promote on any coupon site" },
+      { "font": "Set up ad campaigns using our brand name, or putting our domain name in your ads' destination URLs" }
+    ],
+    "faqList": [
+      {
+        "q": "Who can apply for DET PracticeI's affiliate program?",
+        "a": "If you are a creator that has an audience composed of students,a training institution that teaches Duolingo English Test,or an influencer,you can sign up for our affiliate program and earn money."
+      },
+      {
+        "q": "How do I track my commissions?",
+        "a": "Once you've signed up for our affiliate program, you'll have access to your dedicated admin page where you can track conversions from your referral links."
+      },
+      {
+        "q": "Do I get a commission if a customer I refer subscribes or upgrades?",
+        "a": "Yes, after a user signs up through your link, you earn a commission every time the user makes a purchase and upgrades."
+      },
+      {
+        "q": "What is the exact percentage of commission I can earn?",
+        "a": "For the first 3 orders, you will receive 10% commission; for more than 3 orders, you will receive 30% commission."
+      },
+      {
+        "q": "What if a customer I referred cancels their purchase?",
+        "a": "If a customer cancels a purchase or gets a refund for any reason, the commission you earned for that person will be deducted from your account."
+      },
+      {
+        "q": "When and how do I get paid?",
+        "a": "We process payments on the 15th of each month for all commissions you have earned in the previous month. You can receive payments via PayPal."
+      },
+      {
+        "q": "What if I have other questions about your affiliate internet marketing program?",
+        "a": "Just contact us at <span class='yellow_font'>support{'@'}detpractice.com</span> and we'll be happy to help you with any questions you may have."
+      }
+    ]
+  }
+}

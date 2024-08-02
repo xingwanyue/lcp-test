@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.</name>
+		<atom:author>
+			<atom:name>AITOGETHER LTD</atom:name>
+		</atom:author>
+		<atom:link rel="related" href="https://www.detpractice.com" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[AITOGETHER LTD]]></name>
+				<address><![CDATA[71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom]]></address>
+				<phoneNumber><![CDATA[00447518886018]]></phoneNumber>
+				<description><![CDATA[DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.]]></description>
+				<Point>
+					<coordinates>-0.1235464,51.5149056,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>
