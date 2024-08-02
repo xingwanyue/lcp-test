@@ -86,7 +86,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" format="webp" quality="50" />
+            <nuxt-img :src="home1" :alt="$t('index.article1.title')" format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -115,7 +115,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" format="webp" quality="50" />
+            <nuxt-img :src="home2" :alt="$t('index.article2.title')" format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -140,7 +140,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" format="webp" quality="50" />
+            <nuxt-img :src="home3" :alt="$t('index.article3.title')" format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -165,14 +165,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img
-              loading="lazy"
-              :src="home4"
-              :alt="$t('index.article4.title')"
-              placeholder
-              format="webp"
-              quality="50"
-            />
+            <nuxt-img :src="home4" :alt="$t('index.article4.title')" placeholder format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -271,109 +264,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         width: fit-content;
         margin: 0 auto;
         margin-top: 56px;
-      }
-      .page_title {
-        .h_one {
-          font-weight: 600;
-          font-size: 56px;
-          color: #201515;
-          h1 {
-            text-align: center;
-            font-weight: 600;
-            font-size: 56px;
-            color: #201515;
-            padding: 0px;
-            margin: 0px;
-            @media (max-width: 906px) {
-              font-size: 46px;
-            }
-            @media (max-width: 744px) {
-              font-size: 36px;
-            }
-            @media (max-width: 570px) {
-              font-size: 26px;
-            }
-            @media (max-width: 450px) {
-              font-size: 24px;
-            }
-          }
-          :deep(.seo_hack) {
-            display: none;
-          }
-        }
-        // .isMobile {
-        //   display: none;
-        //   @media (max-width: 450px) {
-        //     display: block;
-        //   }
-        // }
-        // .isnoMobile {
-        //   display: block;
-        //   @media (max-width: 450px) {
-        //     display: none;
-        //   }
-        // }
-        .animat_wrap {
-          text-align: center;
-          font-weight: 600;
-          font-size: 56px;
-          color: #f66442;
-          padding: 0px;
-          margin: 0px;
-          // height: 1em;
-          @media (max-width: 906px) {
-            font-size: 46px;
-          }
-          @media (max-width: 744px) {
-            font-size: 36px;
-          }
-          @media (max-width: 570px) {
-            font-size: 26px;
-          }
-          @media (max-width: 450px) {
-            font-size: 22px;
-          }
-
-          .small_title_wrap {
-            height: 1em;
-            @media (max-width: 570px) {
-              height: 0.5em;
-            }
-            position: relative;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 26px;
-            overflow: hidden;
-          }
-          .one_small_title {
-            color: #ff4f00;
-            position: absolute;
-            // bottom: -1em;
-            z-index: 1;
-            opacity: 0;
-          }
-
-          .current {
-            color: #ff4f00;
-            position: absolute;
-            bottom: -1em;
-            z-index: 1;
-            opacity: 0;
-            bottom: 0.1em;
-            opacity: 1;
-          }
-          .per {
-            color: #ff4f00;
-            position: absolute;
-            bottom: -1em;
-            z-index: 1;
-            opacity: 0;
-            bottom: 1em;
-            opacity: 0;
-          }
-        }
       }
       .two_btn_out {
         clear: both;
