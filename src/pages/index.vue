@@ -46,11 +46,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       <div class="bg_handle"></div>
       <div class="part1">
         <div class="power_by">{{ $t('index.power_by') }}</div>
-        <div class="page_title">
-          <div class="h_one isnoMobile">
-            <h1>Get a Higher Score Easily on the Duolingo English Test With</h1>
-          </div>
-        </div>
+
         <div class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
