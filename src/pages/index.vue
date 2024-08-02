@@ -59,7 +59,6 @@ onMounted(async () => {
   }
 });
 
-
 // 将数字格式化 306281变为306k 3062811变为3061k
 const toThousands = (num: any) => {
   if (!num) {
@@ -78,22 +77,6 @@ const toThousands = (num: any) => {
 const googleLogin = () => {
   oauth2SignIn(urlGet('/home'));
 };
-const isLoad = ref(false);
-const onLoad = () => {
-  isLoad.value = true;
-};
-const isLoad2 = ref(false);
-const onLoad2 = () => {
-  isLoad2.value = true;
-};
-const isLoad3 = ref(false);
-const onLoad3 = () => {
-  isLoad3.value = true;
-};
-const isLoad4 = ref(false);
-const onLoad4 = () => {
-  isLoad4.value = true;
-};
 
 // 引入cdn图片
 const bannerImg = `${cdn}/store/portal/home/banner.svg`;
@@ -111,15 +94,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         <div class="power_by">{{ $t('index.power_by') }}</div>
         <div class="page_title">
           <div class="h_one isnoMobile">
-            <h1 v-html="$t('index.h1PC')"></h1>
-          </div>
-          <div class="animat_wrap">
-            <div class="small_title_wrap">
-              <div class="one_small_title current">{{ $t('index.one_small_title[0]') }}</div>
-              <div class="one_small_title">{{ locale === 'zh' ? 'AI批改' : $t('index.one_small_title[1]') }}</div>
-              <div class="one_small_title">{{ locale === 'zh' ? '全真模拟' : $t('index.one_small_title[2]') }}{{}}</div>
-              <div class="one_small_title">{{ $t('index.one_small_title[3]') }}</div>
-            </div>
+            <h1>Get a Higher Score Easily on the Duolingo English Test With</h1>
           </div>
         </div>
         <div v-if="!user.id && !haveCookie" class="two_btn_out">
@@ -161,7 +136,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
+            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -190,7 +165,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
+            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -215,7 +190,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
+            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -240,7 +215,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" placeholder />
+            <nuxt-img loading="lazy" :src="home4" :alt="$t('index.article4.title')" placeholder />
           </div>
           <div class="article_out">
             <div class="article_out_title">
