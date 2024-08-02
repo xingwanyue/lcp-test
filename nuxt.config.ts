@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     inlineStyles: false,
   },
   experimental: {
-    writeEarlyHints: true,
+    writeEarlyHints: false,
   },
   app: {
     head: {
