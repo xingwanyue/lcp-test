@@ -46,7 +46,11 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       <div class="bg_handle"></div>
       <div class="part1">
         <div class="power_by">{{ $t('index.power_by') }}</div>
-
+        <div class="page_title">
+          <div class="h_one isnoMobile">
+            <h1>Get a Higher Score Easily on the Duolingo English Test With</h1>
+          </div>
+        </div>
         <div class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
@@ -82,7 +86,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" />
+            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -111,7 +115,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" />
+            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -136,7 +140,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" />
+            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" format="webp" quality="50" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -161,7 +165,14 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home4" :alt="$t('index.article4.title')" placeholder />
+            <nuxt-img
+              loading="lazy"
+              :src="home4"
+              :alt="$t('index.article4.title')"
+              placeholder
+              format="webp"
+              quality="50"
+            />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -342,9 +353,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             // bottom: -1em;
             z-index: 1;
             opacity: 0;
-            transform: rotate(10deg);
-            transform-origin: left;
-            transition: none;
           }
 
           .current {
@@ -353,13 +361,8 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             bottom: -1em;
             z-index: 1;
             opacity: 0;
-            transform: rotate(10deg);
-            transform-origin: left;
-            transition: none;
             bottom: 0.1em;
             opacity: 1;
-            transform: none;
-            transition: all 500ms cubic-bezier(0.65, 0, 0.35, 1);
           }
           .per {
             color: #ff4f00;
@@ -367,13 +370,8 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             bottom: -1em;
             z-index: 1;
             opacity: 0;
-            transform: rotate(10deg);
-            transform-origin: left;
-            transition: none;
             bottom: 1em;
             opacity: 0;
-            transform: rotate(-10deg);
-            transition: all 500ms cubic-bezier(0.65, 0, 0.35, 1);
           }
         }
       }
@@ -573,11 +571,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               .font {
                 border-bottom: 1px #f66442 solid;
               }
-
-              .icon {
-                transform: translateX(8px);
-                transition: all 0.2s;
-              }
             }
           }
         }
@@ -675,10 +668,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             &:hover {
               .font {
                 border-bottom: 1px #f66442 solid;
-              }
-              .icon {
-                transform: translateX(8px);
-                transition: all 0.2s;
               }
             }
           }
@@ -959,14 +948,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           height: 550px;
         }
       }
-    }
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0); /* 初始位置 */
-    }
-    100% {
-      transform: translateX(-100%); /* 向上滚动 100% 的高度 */
     }
   }
 }
