@@ -25,55 +25,9 @@ useHead({
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-const userPingLunResponse = computed(() => {
-  const pinglunArr = [] as any;
-  let pinglunMid = [] as any;
-  for (let i = 0; i < portalData[0].length; i += 2) {
-    pinglunMid[i] = JSON.parse(portalData[0][i].data);
-    pinglunMid[i + 1] = JSON.parse(portalData[0][i + 1].data);
-    pinglunMid[i].rate = Number(pinglunMid[i].rate);
-    pinglunMid[i + 1].rate = Number(pinglunMid[i + 1].rate);
-    pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
-  }
-  return pinglunArr;
-});
+
 const haveCookie = ref(false);
-const isMobile = ref(false);
-onMounted(async () => {
-  // 如果是在浏览器环境下，执行movePingLun
-  if (process.client) {
-    // 监听窗口大小 改变isMobile
-    window.addEventListener('resize', () => {
-      isMobile.value = window.innerWidth < 450;
-    });
-    // 获取路由参数code
-    const code = route.query.code as string;
-    if (code) {
-      saveStorage('InviteCode', code, true);
-    }
-  }
 
-  const token = await getToken();
-  if (token) {
-    haveCookie.value = true;
-  }
-});
-
-// 将数字格式化 306281变为306k 3062811变为3061k
-const toThousands = (num: any) => {
-  if (!num) {
-    return 0;
-  }
-  let result = '';
-  const numStr = num.toString();
-  for (let i = 0; i < numStr.length; i++) {
-    if (i % 3 === 0 && i !== 0) {
-      result = ``;
-    }
-    result = numStr[numStr.length - i - 1] + result;
-  }
-  return result;
-};
 const googleLogin = () => {
   oauth2SignIn(urlGet('/home'));
 };
@@ -97,7 +51,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             <h1>Get a Higher Score Easily on the Duolingo English Test With</h1>
           </div>
         </div>
-        <div v-if="!user.id && !haveCookie" class="two_btn_out">
+        <div class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
             {{ $t('index.Start_free_with_Google') }}
@@ -109,11 +63,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             {{ $t('index.Start_free_with_email') }}
           </NuxtLink>
         </div>
-        <div v-else class="two_btn_out">
-          <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white">
-            {{ $t('index.Start_for_free') }}
-          </NuxtLink>
-        </div>
+
         <div
           class="all_stu_nums"
           v-html="

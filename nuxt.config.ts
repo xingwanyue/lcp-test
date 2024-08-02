@@ -31,7 +31,6 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
   },
   plugins: [
-    { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
@@ -45,7 +44,6 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        { rel: 'stylesheet', href: '/css/carousel.css' },
         {
           rel: 'stylesheet',
           href: '/font/index.css',
