@@ -54,14 +54,6 @@ export default defineNuxtConfig({
       },
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-BTN96NLD4D',
-          async: true,
-        },
-        {
-          src: '/js/googleAnalytics.js',
-          async: true,
-        },
-        {
           type: 'application/ld+json',
           innerHTML: `
 {

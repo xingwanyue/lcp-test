@@ -13,41 +13,12 @@ const router = useRouter();
 const store = useStore();
 const layouProps = useAttrs();
 
-useHead({
-  script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
-});
 declare global {
   interface Window {
     google: any;
   }
 }
-onMounted(async () => {
-  const token = await getToken();
-  if (token) {
-    store.getUserInfo();
-    return;
-  }
-  window.google?.accounts?.id?.initialize({
-    client_id: '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com',
-    use_fedcm_for_prompt: false,
-    callback: async function (response: any) {
-      console.log(response.credential);
-      const {
-        data: { token, isNew },
-        err,
-      } = await loginBycredential(response.credential);
-      if (!err) {
-        if (isNew) {
-          sinupEvent();
-        }
-        await saveToken(token);
-        store.getUserInfo();
-        router.push('/');
-      }
-    },
-  });
-  window.google?.accounts?.id?.prompt();
-});
+
 </script>
 
 <template>
