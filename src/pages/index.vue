@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
-import vSlogen from '../components/slogen.vue';
-import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
