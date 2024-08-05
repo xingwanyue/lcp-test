@@ -116,9 +116,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
 
   .part1_wrapper {
     padding: 0px 30px;
-    @media (max-width: 450px) {
-      padding: 0px 15px;
-    }
     position: relative;
     .bg_handle {
       position: absolute;
@@ -128,10 +125,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       height: 808px;
       z-index: -1;
       background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 100%);
-      @media (max-width: 1290px) {
-        height: 100%;
-        padding-bottom: 40px;
-      }
     }
 
     .part1 {
@@ -163,35 +156,11 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             color: #201515;
             padding: 0px;
             margin: 0px;
-            @media (max-width: 906px) {
-              font-size: 46px;
-            }
-            @media (max-width: 744px) {
-              font-size: 36px;
-            }
-            @media (max-width: 570px) {
-              font-size: 26px;
-            }
-            @media (max-width: 450px) {
-              font-size: 24px;
-            }
           }
           :deep(.seo_hack) {
             display: none;
           }
         }
-        // .isMobile {
-        //   display: none;
-        //   @media (max-width: 450px) {
-        //     display: block;
-        //   }
-        // }
-        // .isnoMobile {
-        //   display: block;
-        //   @media (max-width: 450px) {
-        //     display: none;
-        //   }
-        // }
         .animat_wrap {
           text-align: center;
           font-weight: 600;
@@ -199,25 +168,9 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           color: #f66442;
           padding: 0px;
           margin: 0px;
-          // height: 1em;
-          @media (max-width: 906px) {
-            font-size: 46px;
-          }
-          @media (max-width: 744px) {
-            font-size: 36px;
-          }
-          @media (max-width: 570px) {
-            font-size: 26px;
-          }
-          @media (max-width: 450px) {
-            font-size: 22px;
-          }
 
           .small_title_wrap {
             height: 1em;
-            @media (max-width: 570px) {
-              height: 0.5em;
-            }
             position: relative;
             text-align: center;
             display: flex;
@@ -261,9 +214,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         align-items: center;
         margin-top: 40px;
         grid-gap: 16px;
-        @media (max-width: 730px) {
-          flex-direction: column;
-        }
 
         .yellow {
           background: #f66442;
@@ -294,9 +244,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       .big_img_out {
         padding: 0px 60px;
         margin-top: 40px;
-        @media (max-width: 730px) {
-          padding: 0px 0px;
-        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -315,9 +262,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
 
   .part2_wrapper {
     padding: 0px 30px;
-    @media (max-width: 450px) {
-      padding: 0px 15px;
-    }
     box-sizing: border-box;
     .part2 {
       max-width: 1200px;
@@ -332,47 +276,27 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           padding: 0px;
           margin: 0px;
           margin-top: 120px;
-          @media (max-width: 450px) {
-            font-size: 23px;
-          }
         }
       }
       .title2 {
         margin-top: 32px;
         margin-bottom: 80px;
-        @media (max-width: 450px) {
-          margin-top: 20px;
-          margin-bottom: 40px;
-        }
         div {
           font-weight: 500;
           font-size: 24px;
           color: #201515;
           text-align: center;
           margin: 0;
-          @media (max-width: 450px) {
-            font-size: 18px;
-          }
         }
       }
       .one_img_article {
         // border:1px red solid;
         display: grid;
         margin-bottom: 120px;
-        @media (max-width: 450px) {
-          margin-bottom: 30px;
-          grid-row-gap: 0px;
-        }
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
         grid-template-areas: 'img_out  article_out';
-        @media (max-width: 926px) {
-          grid-template-columns: 1fr;
-          grid-template-areas:
-            'img_out'
-            'article_out';
-        }
         .img_out {
           grid-area: img_out;
           min-height: 300px;
@@ -391,9 +315,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         }
         .article_out {
           grid-area: article_out;
-          // @media (max-width: 926px) {
-          //   text-align: center;
-          // }
           .article_out_title {
             h2 {
               font-weight: 500;
@@ -401,9 +322,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
-              @media (max-width: 450px) {
-                font-size: 22px;
-              }
             }
             h4 {
               font-weight: 500;
@@ -411,9 +329,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
-              @media (max-width: 450px) {
-                font-size: 22px;
-              }
             }
           }
           .tips {
@@ -421,9 +336,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
-            @media (max-width: 450px) {
-              font-size: 16px;
-            }
           }
           .get_more {
             display: flex;
@@ -433,9 +345,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             // border: 1px red solid;
             margin-top: 34px;
             grid-column-gap: 8px;
-            // @media (max-width: 926px) {
-            //   justify-content: center;
-            // }
             cursor: pointer;
             .font {
               font-weight: 500;
@@ -459,20 +368,10 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       .one_article_img {
         display: grid;
         margin-bottom: 120px;
-        @media (max-width: 450px) {
-          margin-bottom: 30px;
-          grid-row-gap: 0px;
-        }
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
         grid-template-areas: ' article_out img_out';
-        @media (max-width: 926px) {
-          grid-template-columns: 1fr;
-          grid-template-areas:
-            'img_out'
-            'article_out';
-        }
         .img_out {
           grid-area: img_out;
           min-height: 300px;
@@ -491,9 +390,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         }
         .article_out {
           grid-area: article_out;
-          // @media (max-width: 926px) {
-          //   text-align: center;
-          // }
           .article_out_title {
             h2 {
               font-weight: 500;
@@ -501,9 +397,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
-              @media (max-width: 450px) {
-                font-size: 22px;
-              }
             }
             h4 {
               font-weight: 500;
@@ -511,9 +404,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
-              @media (max-width: 450px) {
-                font-size: 22px;
-              }
             }
           }
           .tips {
@@ -521,9 +411,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
-            @media (max-width: 450px) {
-              font-size: 16px;
-            }
           }
           .get_more {
             display: flex;
@@ -533,9 +420,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             // border: 1px red solid;
             margin-top: 34px;
             grid-column-gap: 8px;
-            // @media (max-width: 926px) {
-            //   justify-content: center;
-            // }
             cursor: pointer;
             .font {
               font-weight: 500;
@@ -561,9 +445,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     overflow: hidden;
     background: #f2f4f6;
     padding-bottom: 72px;
-    @media (max-width: 450px) {
-      padding-bottom: 40px;
-    }
     .part3 {
       .title {
         font-weight: 500;
@@ -571,9 +452,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         color: #201515;
         text-align: center;
         margin-top: 100px;
-        @media (max-width: 450px) {
-          font-size: 23px;
-        }
       }
       .user_nums_out {
         display: flex;
@@ -582,17 +460,8 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         grid-column-gap: 24px;
         margin-top: 40px;
 
-        @media (max-width: 450px) {
-          flex-wrap: wrap;
-          grid-column-gap: 12px;
-          grid-row-gap: 12px;
-        }
-
         .one_num {
           padding: 4px 32px;
-          @media (max-width: 450px) {
-            padding: 4px 16px;
-          }
           background: #ffffff;
           border-radius: 25px;
           display: flex;
@@ -603,17 +472,11 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-weight: 500;
             font-size: 32px;
             color: #201515;
-            @media (max-width: 450px) {
-              font-size: 22px;
-            }
           }
           .small_font {
             font-weight: 400;
             font-size: 18px;
             color: #201515;
-            @media (max-width: 450px) {
-              font-size: 16px;
-            }
           }
         }
       }
@@ -633,10 +496,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         position: relative;
         .one_score {
           width: 312px !important;
-          @media (max-width: 450px) {
-            width: 176px !important;
-            margin-left: 12px;
-          }
           box-sizing: border-box;
           height: fit-content;
           // border: 1px blue solid;
@@ -660,10 +519,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                 border-radius: 50%;
                 overflow: hidden;
                 flex-shrink: 0;
-                @media (max-width: 450px) {
-                  width: 28px;
-                  height: 28px;
-                }
                 img {
                   width: 100%;
                   height: 100%;
@@ -675,18 +530,12 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                   font-size: 16px;
                   color: #201515;
                   text-align: left;
-                  @media (max-width: 450px) {
-                    font-size: 12px;
-                  }
                 }
                 .user_country {
                   font-weight: 400;
                   font-size: 14px;
                   color: #403f3e;
                   text-align: left;
-                  @media (max-width: 450px) {
-                    font-size: 10px;
-                  }
                 }
               }
             }
@@ -719,11 +568,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         padding: 0 10px;
         text-align: center;
         margin-bottom: 64px;
-        @media (max-width: 450px) {
-          font-size: 23px;
-          margin-top: 50px;
-          margin-bottom: 34px;
-        }
       }
       .review_scroll_out {
         // padding: 0 20px;
@@ -735,9 +579,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             // border: 1px red solid;
             margin-left: 12px;
             width: 432px !important;
-            @media (max-width: 450px) {
-              width: 366px !important;
-            }
 
             display: flex;
             justify-content: center;
@@ -766,10 +607,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                   flex-shrink: 0;
                   border-radius: 50%;
                   overflow: hidden;
-                  @media (max-width: 450px) {
-                    width: 28px;
-                    height: 28px;
-                  }
                   img {
                     width: 100%;
                     height: 100%;
@@ -781,9 +618,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     font-size: 16px;
                     color: #201515;
                     text-align: left;
-                    @media (max-width: 450px) {
-                      font-size: 14px;
-                    }
                   }
                   .country {
                     margin-top: 4px;
@@ -791,9 +625,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     font-size: 14px;
                     color: #403f3e;
                     text-align: left;
-                    @media (max-width: 450px) {
-                      font-size: 10px;
-                    }
                   }
                 }
               }
@@ -820,9 +651,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               color: #201515;
               margin-top: 24px;
               text-align: left;
-              @media (max-width: 450px) {
-                font-size: 16px;
-              }
             }
           }
         }
