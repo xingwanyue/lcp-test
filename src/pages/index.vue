@@ -89,25 +89,6 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
 .v-header {
   background: #fff4f1 !important;
 }
-.home {
-  .scrolls {
-    // border: 1px red solid;
-    display: flex;
-    align-items: flex-start;
-    animation-name: around;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes around {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-}
 </style>
 <style lang="scss" scoped>
 .home {
