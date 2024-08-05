@@ -43,7 +43,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     <div class="part1_wrapper">
       <div class="bg_handle"></div>
       <div class="part1">
-        <div class="power_by">{{ $t('index.power_by') }}</div>
+        <div class="power_by">Get a Higher Score Easily on the Duolingo English Test With</div>
         <div class="page_title">
           <div class="h_one isnoMobile">
             <h1>Get a Higher Score Easily on the Duolingo English Test With</h1>
@@ -51,27 +51,18 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
-            <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
-            {{ $t('index.Start_free_with_Google') }}
+            <img src="/img/home/google_icon.svg" alt="Get a Higher Score Easily on the Duolingo English Test With" />
+            Get a Higher Score Easily on the Duolingo English Test With
           </div>
           <NuxtLink
             :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
             class="common_btn common_btn_hover_borderCu white"
           >
-            {{ $t('index.Start_free_with_email') }}
+            Get a Higher Score Easily on the Duolingo English Test With
           </NuxtLink>
         </div>
 
-        <div
-          class="all_stu_nums"
-          v-html="
-            $t('index.trustedByWorldwide', {
-              path: `<span class='yellow'>
-              ${platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000'} 
-              </span>`,
-            })
-          "
-        ></div>
+        <div class="all_stu_nums" v-html="'Get a Higher Score Easily on the Duolingo English Test With'"></div>
       </div>
     </div>
 
