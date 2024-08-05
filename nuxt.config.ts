@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
   features: {
-    inlineStyles: false,
+    inlineStyles: true,
   },
   experimental: {
     writeEarlyHints: true,
