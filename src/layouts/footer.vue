@@ -10,6 +10,7 @@ const { locale, t, setLocale } = useI18n();
 const state = reactive({
   isMore1: false,
   isMore2: false,
+  iconHoverIndex: -1,
 });
 const cookieShow = ref(false);
 onMounted(() => {
@@ -237,6 +238,9 @@ const options = [
 const closeCookie = () => {
   cookieShow.value = false;
 };
+const iconHover = (index: number) => {
+  state.iconHoverIndex = index;
+};
 const earth = `${cdn}/store/portal/home/earth_icon.svg`;
 const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
 </script>
@@ -295,16 +299,28 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
 
         <div class="logo_icon_out">
           <NuxtLink to="https://youtube.com/@duolingoenglishtestpractices" target="_blank">
-            <div class="one_icon youtube"></div>
+            <div class="one_icon youtube" @mouseover="iconHover(0)" @mouseleave="iconHover(-1)">
+              <img v-show="state.iconHoverIndex !== 0" src="/img/footer/youtube_logo.svg" />
+              <img v-show="state.iconHoverIndex === 0" src="/img/footer/youtube_logo_active.svg" />
+            </div>
           </NuxtLink>
           <NuxtLink to="https://x.com/det_practice" target="_blank">
-            <div class="one_icon x"></div>
+            <div class="one_icon x" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)">
+              <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
+              <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
+            </div>
           </NuxtLink>
           <NuxtLink to="https://www.facebook.com/detpractice" target="_blank">
-            <div class="one_icon facebook"></div>
+            <div class="one_icon facebook" @mouseover="iconHover(2)" @mouseleave="iconHover(-1)">
+              <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
+              <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
+            </div>
           </NuxtLink>
           <NuxtLink to=" https://www.instagram.com/detpractice" target="_blank">
-            <div class="one_icon ins"></div>
+            <div class="one_icon ins" @mouseover="iconHover(3)" @mouseleave="iconHover(-1)">
+              <img v-show="state.iconHoverIndex !== 3" src="/img/footer/ins_logo.svg" />
+              <img v-show="state.iconHoverIndex === 3" src="/img/footer/ins_logo_active.svg" />
+            </div>
           </NuxtLink>
           <!-- <NuxtLink to=""> 
             <div class="one_icon tiktok"></div>
@@ -489,34 +505,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
             height: 24px;
           }
         }
-        .youtube {
-          background-image: url('/img/footer/youtube_logo.svg');
-          background-size: cover;
-          &:hover {
-            background-image: url('/img/footer/youtube_logo_active.svg');
-          }
-        }
-        .x {
-          background-image: url('/img/footer/x_logo.svg');
-          background-size: cover;
-          &:hover {
-            background-image: url('/img/footer/x_logo_active.svg');
-          }
-        }
-        .facebook {
-          background-image: url('/img/footer/facebook_logo.svg');
-          background-size: cover;
-          &:hover {
-            background-image: url('/img/footer/facebook_logo_active.svg');
-          }
-        }
-        .ins {
-          background-image: url('/img/footer/ins_logo.svg');
-          background-size: cover;
-          &:hover {
-            background-image: url('/img/footer/ins_logo_active.svg');
-          }
-        }
+
         .tiktok {
           background-image: url('/img/footer/tiktok_logo.svg');
           background-size: cover;
