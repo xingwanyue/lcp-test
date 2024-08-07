@@ -130,7 +130,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('mockexam.article1.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('mockexam.article1.right_desc') }}
+                  <span v-html="$t('mockexam.article1.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
@@ -164,7 +164,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('mockexam.article2.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('mockexam.article2.right_desc') }}
+                  <span v-html="$t('mockexam.article2.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
@@ -232,7 +232,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('mockexam.article4.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('mockexam.article4.right_desc') }}
+                  <span v-html="$t('mockexam.article4.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/exam')">
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>

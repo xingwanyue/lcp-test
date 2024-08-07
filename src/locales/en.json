@@ -77,7 +77,7 @@
     "Leverage_Our": "Leverage Our All-Inclusive Resources for Swift Score Improvement",
     "article1": {
       "title": "Duolingo English Test Practice",
-      "tips1": "With over {number} practice questions, our ever-expanding question bank is regularly updated for excellence.",
+      "tips1": "With over {number} <span class='yellow'>practice questions</span>, our ever-expanding question bank is regularly updated for excellence.",
       "tips2": "Comprehensive coverage of all exam types with detailed explanations for every question.",
       "tips3": "In-depth answers, smart analytics, and scoring to enable continuous monitoring of your performance.",
       "btn_font": "Discover More",
@@ -85,7 +85,7 @@
     },
     "article2": {
       "title": "AI-Powered Essay Correction Service",
-      "tips1": "Benefit from precise essay corrections through our 'AI + Teacher' collaborative review.",
+      "tips1": "Benefit from precise essay corrections through our <span class='yellow'>'AI + Teacher'</span> collaborative review.",
       "tips2": "Simply submit your essay and promptly receive a comprehensive report with a detailed band score.",
       "tips3": "Elevate your writing score in just 2 weeks.",
       "btn_font": "Learn More",
@@ -95,7 +95,7 @@
       "title": "Duolingo English Test Mock",
       "tips1": "Mimic the actual exam setting to familiarize yourself with the testing process and content beforehand.",
       "tips2": "Receive in-depth simulated test reports for a precise analysis of your strengths and weaknesses.",
-      "tips3": "Take online mock exams at your convenience, with fast scoring provided within 30 minutes.",
+      "tips3": "Take online mock exams at your convenience, with fast scoring provided within <span class='yellow'>30 minutes</span>.",
       "btn_font": "Find Out More",
       "btn_img_alt": "Yellow Arrow Right"
     },
@@ -565,7 +565,7 @@
     },
     "article4": {
       "h2": "Rapid Score Reporting",
-      "right_desc": "Get your mock exam results delivered within 30 minutes, fast-tracking your progress review."
+      "right_desc": "Get your mock exam results delivered within <span class='zdfont'>30 minutes</span>, fast-tracking your progress review."
     }
   },
   "practice": {
@@ -585,17 +585,17 @@
     "spn": "Start Practicing Now",
     "article1": {
       "h2": "Extensive Question Library",
-      "right_desc": "Explore our extensive library of over 10,000 questions across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats.",
+      "right_desc": "Explore our extensive library of over <span class='zdfont'>18,000+ questions</span> across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats.",
       "btn": "Dive Into Practice"
     },
     "article2": {
       "h2": "Intelligent Recommendation",
-      "right_desc": " The Al model will take into account the mastery level of each question type, difficulty,target score, question weight, novelty of the questions, the recent frequency of the test, preparation time and efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the test.",
+      "right_desc": " The <span class='zdfont'>AI model</span> will take into account the mastery level of each question type, difficulty,target score, question weight, novelty of the questions, the recent frequency of the test, preparation time and efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the test.",
       "btn": "Start Smart Study Journey"
     },
     "article3": {
       "h2": "AI Speaking Evaluation",
-      "right_desc": "Enhance your oral proficiency with our AI-driven speaking evaluations. Submit your response to a spoken language question and instantly receive a detailed analysis of your speaking skills, helping you improve with precision and speed.",
+      "right_desc": "Enhance your oral proficiency with our <span class='zdfont'>AI-driven speaking evaluations</span>. Submit your response to a spoken language question and instantly receive a detailed analysis of your speaking skills, helping you improve with precision and speed.",
       "btn": "Begin Your Evaluation"
     },
     "article4": {

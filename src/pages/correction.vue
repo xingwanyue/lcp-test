@@ -135,7 +135,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('correction.h2_1.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('correction.h2_1.right_desc') }}
+                  <span v-html="$t('correction.h2_1.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
@@ -169,7 +169,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('correction.h2_2.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('correction.h2_2.right_desc') }}
+                  <span v-html="$t('correction.h2_2.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
@@ -203,7 +203,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('correction.h2_3.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('correction.h2_3.right_desc') }}
+                  <span v-html="$t('correction.h2_3.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
@@ -237,7 +237,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('correction.h2_4.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('correction.h2_4.right_desc') }}
+                  <span v-html="$t('correction.h2_4.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('correction.Enhance_Now') }}</div>
