@@ -282,6 +282,13 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
               {{ itemin.name }}</NuxtLink
             >
           </template>
+          <template v-if="itemin.url === '/contact-us'">
+            <el-tooltip class="box-item" effect="light" content="support@detpractice.com" placement="top">
+              <a rel="nofollow" :href="`mailto:support@detpractice.com`">
+                {{ itemin.name }}
+              </a>
+            </el-tooltip>
+          </template>
           <template v-else>
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
           </template>
@@ -411,6 +418,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         line-height: 20px;
         cursor: pointer;
         max-width: 350px;
+
         &:hover {
           a {
             color: #f66442;

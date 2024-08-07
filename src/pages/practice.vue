@@ -144,7 +144,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('practice.article1.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('practice.article1.right_desc') }}
+                  <span v-html="$t('practice.article1.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">{{ $t('practice.article1.btn') }}</div>
@@ -178,7 +178,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('practice.article2.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('practice.article2.right_desc') }}
+                  <span v-html="$t('practice.article2.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">{{ $t('practice.article2.btn') }}</div>
@@ -212,7 +212,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
               <div class="one_card_right_forMid">
                 <h2 class="right_title">{{ $t('practice.article3.h2') }}</h2>
                 <div class="right_desc">
-                  {{ $t('practice.article3.right_desc') }}
+                  <span v-html="$t('practice.article3.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
                   <div class="font">{{ $t('practice.article3.btn') }}</div>

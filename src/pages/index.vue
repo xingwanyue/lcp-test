@@ -220,11 +220,13 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article1.title') }}</h2>
             </div>
             <div class="tips">
-              {{
-                $t('index.article1.tips1', {
-                  number: `${formatNumber(platformData?.questionTotal)}`,
-                })
-              }}
+              <span
+                v-html="
+                  $t('index.article1.tips1', {
+                    number: `<span class='yellow'>${formatNumber(platformData?.questionTotal)}</span>`,
+                  })
+                "
+              ></span>
             </div>
             <div class="tips">
               {{ $t('index.article1.tips2') }}
@@ -254,7 +256,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article2.title') }}</h2>
             </div>
             <div class="tips">
-              {{ $t('index.article2.tips1') }}
+              <span v-html="$t('index.article2.tips1')"></span>
             </div>
             <div class="tips">
               {{ $t('index.article2.tips2') }}
@@ -290,7 +292,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               {{ $t('index.article3.tips2') }}
             </div>
             <div class="tips">
-              {{ $t('index.article3.tips3') }}
+              <span v-html="$t('index.article3.tips3')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/mock-exam')">
               <div class="font">{{ $t('index.article3.btn_font') }}</div>
@@ -724,6 +726,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           }
         }
         .article_out {
+          // border: 1px red solid;
           grid-area: article_out;
           // @media (max-width: 926px) {
           //   text-align: center;
@@ -755,6 +758,9 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
+            ::v-deep(.yellow) {
+              font-weight: 650;
+            }
             @media (max-width: 450px) {
               font-size: 16px;
             }
@@ -827,6 +833,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           }
         }
         .article_out {
+          // border: 1px blue solid;
           grid-area: article_out;
           // @media (max-width: 926px) {
           //   text-align: center;
@@ -858,6 +865,9 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
+            ::v-deep(.yellow) {
+              font-weight: 650;
+            }
             @media (max-width: 450px) {
               font-size: 16px;
             }
