@@ -283,7 +283,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
             >
           </template>
           <template v-if="itemin.url === '/contact-us'">
-            <el-tooltip class="box-item" effect="light" content="support@detpractice.com" placement="top">
+            <el-tooltip class="box-item" effect="customized" content="support@detpractice.com" placement="top">
               <a rel="nofollow" :href="`mailto:support@detpractice.com`">
                 {{ itemin.name }}
               </a>
@@ -585,6 +585,13 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
 }
 </style>
 <style lang="scss">
+.el-popper {
+  color: white;
+  background: #f66442 !important;
+}
+.el-popper__arrow:before {
+  background: #f66442 !important;
+}
 .popover_btn {
   padding: 12px;
   background: #ffffff;
