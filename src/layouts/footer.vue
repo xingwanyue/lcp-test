@@ -282,13 +282,13 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
               {{ itemin.name }}
             </NuxtLink>
           </template>
-          <template v-else-if="itemin.url === '/contact-us'">
+          <!-- <template v-else-if="itemin.url === '/contact-us'">
             <el-tooltip class="box-item" effect="customized12" content="support@detpractice.com" placement="top">
               <a rel="nofollow" :href="`mailto:support@detpractice.com`">
                 {{ itemin.name }}
               </a>
             </el-tooltip>
-          </template>
+          </template> -->
           <template v-else>
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
           </template>
