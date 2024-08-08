@@ -41,8 +41,6 @@ const userPingLunResponse = computed(() => {
 const haveCookie = ref(false);
 const isMobile = ref(false);
 
-
-
 const googleLogin = () => {
   oauth2SignIn(urlGet('/home'));
 };
@@ -143,13 +141,13 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
     </div>
     <div class="part2_wrapper">
       <div class="part2">
-        <div class="title1" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title1">
           <div>{{ $t('index.The_Best_Platform') }}</div>
         </div>
-        <div class="title2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title2">
           <div>{{ $t('index.Leverage_Our') }}</div>
         </div>
-        <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
+        <div class="one_img_article">
           <div class="img_out">
             <el-image v-show="isLoad" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
             <el-skeleton v-show="!isLoad" style="width: 100%" animated>
@@ -183,7 +181,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             </NuxtLink>
           </div>
         </div>
-        <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
+        <div class="one_article_img">
           <div class="img_out">
             <el-image v-show="isLoad2" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
             <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
@@ -213,7 +211,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             </NuxtLink>
           </div>
         </div>
-        <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
+        <div class="one_img_article">
           <div class="img_out">
             <el-image v-show="isLoad3" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
             <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
@@ -243,7 +241,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             </NuxtLink>
           </div>
         </div>
-        <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
+        <div class="one_article_img">
           <div class="img_out">
             <el-image v-show="isLoad4" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
