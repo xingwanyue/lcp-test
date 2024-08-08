@@ -40,66 +40,9 @@ const userPingLunResponse = computed(() => {
 });
 const haveCookie = ref(false);
 const isMobile = ref(false);
-onMounted(async () => {
-  // 如果是在浏览器环境下，执行movePingLun
-  if (process.client) {
-    moveAnamit();
-    // 监听窗口大小 改变isMobile
-    window.addEventListener('resize', () => {
-      isMobile.value = window.innerWidth < 450;
-    });
-    // 获取路由参数code
-    const code = route.query.code as string;
-    if (code) {
-      saveStorage('InviteCode', code, true);
-    }
-  }
 
-  const token = await getToken();
-  if (token) {
-    haveCookie.value = true;
-  }
-});
 
-const moveAnamit = () => {
-  const small_title_wrap = document.querySelector('.small_title_wrap');
-  const small_title = document.querySelectorAll('.one_small_title');
-  let index = 0;
-  let timer = null;
-  timer = setInterval(() => {
-    small_title.forEach((item) => {
-      item.classList.remove('current');
-      item.classList.remove('per');
-      item.classList.remove('start');
-    });
-    small_title[index].classList.add('current');
-    if (index === 0) {
-      small_title[small_title.length - 1].classList.add('per');
-    } else {
-      small_title[index - 1].classList.add('per');
-    }
-    index++;
-    if (index === small_title.length) {
-      index = 0;
-    }
-  }, 2000);
-};
 
-// 将数字格式化 306281变为306k 3062811变为3061k
-const toThousands = (num: any) => {
-  if (!num) {
-    return 0;
-  }
-  let result = '';
-  const numStr = num.toString();
-  for (let i = 0; i < numStr.length; i++) {
-    if (i % 3 === 0 && i !== 0) {
-      result = ``;
-    }
-    result = numStr[numStr.length - i - 1] + result;
-  }
-  return result;
-};
 const googleLogin = () => {
   oauth2SignIn(urlGet('/home'));
 };
