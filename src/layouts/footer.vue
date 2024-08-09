@@ -279,16 +279,16 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
           <template v-if="itemin.url === '/sitemap'">
             <NuxtLink style="display: none" :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name">
-              {{ itemin.name }}</NuxtLink
-            >
+              {{ itemin.name }}
+            </NuxtLink>
           </template>
-          <template v-if="itemin.url === '/contact-us'">
+          <!-- <template v-else-if="itemin.url === '/contact-us'">
             <el-tooltip class="box-item" effect="customized12" content="support@detpractice.com" placement="top">
               <a rel="nofollow" :href="`mailto:support@detpractice.com`">
                 {{ itemin.name }}
               </a>
             </el-tooltip>
-          </template>
+          </template> -->
           <template v-else>
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
           </template>

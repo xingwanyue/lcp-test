@@ -195,7 +195,7 @@ const saveCaculate = (item) => {
           <div class="icon">
             <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
           </div>
-          <div class="font">{{ item.font }}</div>
+          <div class="font" v-html="item.font"></div>
         </div>
       </div>
     </div>
@@ -256,7 +256,7 @@ const saveCaculate = (item) => {
           <div class="icon">
             <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
           </div>
-          <div class="font">{{ item.font }}</div>
+          <div class="font" v-html="item.font"></div>
         </div>
       </div>
     </div>
@@ -326,6 +326,9 @@ const saveCaculate = (item) => {
           font-weight: 400;
           font-size: 14px;
           color: #403f3e;
+          ::v-deep(.strongfont) {
+            font-weight: 650;
+          }
         }
       }
     }
@@ -362,6 +365,9 @@ const saveCaculate = (item) => {
           font-weight: 400;
           font-size: 14px;
           color: #403f3e;
+          ::v-deep(.strongfont) {
+            font-weight: 650;
+          }
         }
       }
     }
