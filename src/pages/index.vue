@@ -8,6 +8,10 @@ import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
 import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
+definePageMeta({
+  layout: 'noheaderfooter',
+});
+
 const route = useRoute();
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`

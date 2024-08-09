@@ -43,6 +43,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
+        { rel: 'preload', href: '/css/main.css' },
+        { rel: 'preload', href: '/font/index.css' },
         { rel: 'stylesheet', href: '/css/main.css' },
         {
           rel: 'stylesheet',
