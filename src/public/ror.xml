@@ -1,544 +1,703 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
-<channel>
-  <title>ROR Sitemap for https://www.detpractice.com/</title>
-  <link>https://www.detpractice.com/</link>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/">
+     <channel>
+          <title>ROR Sitemap for https://www.detpractice.com/</title>
+          <link>https://www.detpractice.com/</link>
 
-<item>
-     <link>https://www.detpractice.com/</link>
-     <title>DET Practice - Ace the Duolingo English Test</title>
-     <description>DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>0</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/practice</link>
-     <title>DET Practice - The best platform for Duolingo practice test</title>
-     <description>Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/correction</link>
-     <title>DET Practice - AI Correction Service for your Duolingo Test</title>
-     <description>Correction service provided by &amp;quot;AI + Teachers&amp;quot;. Get personalized feedback from language experts to improve your responses and strategies for higher DET scores.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/mock-exam</link>
-     <title>DET Practice - Full-length Mock Exam for DET Preparation</title>
-     <description>Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/courses</link>
-     <title>DET Practice - Master Speaking and Writing with the Duolingo English Test Guide</title>
-     <description>Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET practice.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/learn</link>
-     <title>DET Practice - Learn the expert Tips for the Duolingo English Test</title>
-     <description>Explore expert strategies and study methods for the Duolingo English Test. We offer actionable tips and insights to enhance your preparation and boost your score.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/pricing</link>
-     <title>DET Practice - Duolingo Test Prep Membership and Services Pricing</title>
-     <description>Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/blog</link>
-     <title>DET Practice - Duolingo English Test Tips and Tricks</title>
-     <description>Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/2024-read-and-select</link>
-     <title>2024 DET Update: Read and select changed</title>
-     <description>Beginning April 2, 2024, the Duolingo English Test is changing the Read and select question. </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/2024-Fill-in-the-Blanks</link>
-     <title>2024 DET Update: New Fill in the Blanks question</title>
-     <description>Beginning April 2, 2024, the Duolingo English Test is adding a new Fill in the Blanks question.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/what-is-the-duolingo-english-test</link>
-     <title>What is the Duolingo English Test?</title>
-     <description>The Duolingo English Test is a modern English proficiency assessment for today’s international students and institutions. The test is available online, on demand. </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/2024-Interactive-Writing</link>
-     <title>2024 DET Update: New Interactive Writing question</title>
-     <description>Beginning April 2, 2024, the Duolingo English Test is adding a new Interactive Writing component to help improve the assessment of your writing proficiency. </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/interactive-writing-2024</link>
-     <title>Mastering the New Interactive Writing Question Type in Duolingo English Test 2024 - DET Practice-Ace the Duolingo English Test</title>
-     <description>Learn effective strategies and templates to ace the new Interactive Writing question type in the Duolingo English Test 2024. Boost your writing score with our expert tips and sample answers.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-update-2024</link>
-     <title>Mastering the New Duolingo English Test Updates in 2024: Tips and Strategies - DET Practice-Ace the Duolingo English Test</title>
-     <description>Discover the latest Duolingo English Test updates effective April 2024 and learn expert tips to master the new Interactive Writing, Fill in the Blanks, and Read and Select questions with our comprehensive guide for success.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-read-then-write</link>
-     <title>Mastering the &amp;#x27;Read, Then Write&amp;#x27; Challenge in the Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>This post offers comprehensive strategies and practical templates for mastering the 'Read, Then Write' section of the Duolingo English Test. It covers understanding prompts, time management, structuring responses, emphasizing depth, utilizing rich vocabulary, and proofreading practices. Tailored for test-takers aiming to enhance their writing skills, it provides actionable advice to improve performance in this critical exam component, making it a must-read for those seeking to excel in the DET.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/how-to-prepare-for-the-duolingo-english-test</link>
-     <title>How to Prepare for the Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>Unlock success in the Duolingo English Test with our expert guide. Discover essential tips, strategies, and insights for effective preparation, test-taking techniques, and achieving a high score. Perfect for students aiming to showcase their English proficiency globally.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/about-us</link>
-     <title>About Us - DET Practice</title>
-     <description>About Us - DET Practice</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/contact-us</link>
-     <title>Contact Us - DET Practice</title>
-     <description>Contact Us - DET Practice</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/tos</link>
-     <title>Terms and Conditions - DET Practice</title>
-     <description>Terms and Conditions - DET Practice</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/privacy-policy</link>
-     <title>Privacy Policy - DET Practice</title>
-     <description>Privacy Policy - DET Practice</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-read-then-speak</link>
-     <title>Mastering the &amp;quot;Read, Then Speak&amp;quot; Section of the Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>Learn how to master the “Read, Then Speak” section of the Duolingo English Test and boost your Conversation and Production subscores. Discover tips and strategies for preparing, structuring, delivering, and enhancing your answer.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-write-about-the-photo</link>
-     <title>Mastering the &amp;quot;Write About the Photo&amp;quot; Section in the Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>Master the 'Write About the Photo' section of the Duolingo English Test with our expert tips and sample analyses. Enhance your description skills and boost your test performance with our comprehensive guide. Dive into practical strategies for vivid storytelling and linguistic precision that will elevate your English proficiency score. Read now!</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/speak-about-the-photo-duolingo-english-test</link>
-     <title>Top Techniques for Duolingo English Test Speaking: Mastering the &amp;#x27;Speak about the Photo&amp;#x27; Task - DET Practice-Ace the Duolingo English Test</title>
-     <description>Learn how to ace the ‘Speak about the Photo’ question in the Duolingo English Test with these easy and effective strategies. Find out how to describe, comment, associate, and express your feelings about any photo in 90 seconds or less.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/interactive-listening</link>
-     <title>Interactive Listening Made Easy: A Simple Framework to Nail the New DET Question Type - DET Practice-Ace the Duolingo English Test</title>
-     <description>Do you want to ace the Interactive Listening questions in the Duolingo English Test? In this post, we will show you a simple framework to summarize the conversations and boost your score. Learn how to use the Scenario, the scripts, and the writing structure to nail the new DET question type.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-writing-preparation</link>
-     <title>Boost Your DET Score: Proven Writing Practices and Secrets Revealed - DET Practice-Ace the Duolingo English Test</title>
-     <description>Here is a suggested meta description for this blog post as an SEO expert would write:Learn proven strategies and insider techniques to master the Duolingo English Test (DET) writing section. From understanding scoring criteria to avoiding common mistakes, this in-depth guide reveals the secrets to crafting clear, coherent, compelling responses that will elevate your score. For test-takers seeking the keys to unlock success in the DET writing tasks.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-speaking-practice</link>
-     <title>Duolingo English Test Speaking Practice: A Step-by-Step Improvement Guide - DET Practice-Ace the Duolingo English Test</title>
-     <description>Unlock the secrets to acing the Duolingo English Test speaking section with our comprehensive guide. Discover expert strategies for each question type, from 'Listen, Then Speak' to 'Speak About the Photo,' and learn how to enhance your fluency, vocabulary, and confidence. This step-by-step guide is your key to mastering the DET speaking tasks and boosting your score. Start your journey to speaking proficiency today!</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/blog?page=1</link>
-     <title>DET Practice - Duolingo English Test Tips and Tricks</title>
-     <description>Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/blog?page=2</link>
-     <title>DET Practice - Duolingo English Test Tips and Tricks</title>
-     <description>Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-results-valid</link>
-     <title>How long are my Duolingo English Test results valid?</title>
-     <description>Your Duolingo English Test results are valid for two years from the date of the test. </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/How-often-can-I-take-the-Duolingo-English-Test</link>
-     <title>How often can I take the Duolingo English Test?</title>
-     <description>According to the information in the official exam guide, you can purchase up to 3 Duolingo English Tests within any 30-day period. This means you can take the test a maximum of three times within a month.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/How-long-does-the-Duolingo-English-Test-take</link>
-     <title>How long does the Duolingo English Test take?</title>
-     <description>According to the provided official exam guide, the Duolingo English Test (DET) consists of the following parts, which take approximately 1 hour to complete.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/How-to-take-the-Duolingo-English-Test</link>
-     <title>How to take the Duolingo English Test</title>
-     <description>To take the Duolingo English Test (DET), you should follow a series of steps that include understanding the test format, preparing for it, and going through the actual test process. </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-tips-4</link>
-     <title>Duolingo English Test Tips 4 - DET Practice-Ace the Duolingo English Test</title>
-     <description>In this article, we will explain why some Duolingo English Test scores are not certified and how to avoid this problem. I will identify and discuss the common causes of non-certification.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-tips-3</link>
-     <title>Duolingo English Test Tips 3 - DET Practice-Ace the Duolingo English Test</title>
-     <description>Welcome to DET Practice. In this article, we'll dive deep into the different types of questions you'll encounter on the Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-test-tips-2</link>
-     <title>Duolingo English Test Tips 2 - DET Practice-Ace the Duolingo English Test</title>
-     <description>In the previous article Duolingo English Test Tips 1, we learned what Duolingo English Test is and the difference between Duolingo English Test and the TOEFL and IELTS exams. This time we will focus on explaining the test types and structure of Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-test-tips-1</link>
-     <title>Duolingo English Test Tips 1 - DET Practice-Ace the Duolingo English Test</title>
-     <description>DET Pratice Blog</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/mock-exam/</link>
-     <title>DET Practice - Full-length Mock Exam for DET Preparation</title>
-     <description>Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/master-duolingo-english-practice-test</link>
-     <title>Mastering the DET with our Duolingo English Practice Test: Exclusive Insights from DET Practice - DET Practice-Ace the Duolingo English Test</title>
-     <description>Discover the ultimate guide to mastering the Duolingo English practice test with DET Practice. Explore our in-depth test bank, personalized AI learning, and realistic mock exams. Tailor your study plan with expert guidance and flexible resources. Start your journey to success with DET Practice today – your partner in Duolingo English test preparation.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-scores</link>
-     <title>Duolingo English Test Scores: Insights and Comparisons - DET Practice-Ace the Duolingo English Test</title>
-     <description>Explore the comprehensive guide to the Duolingo English Test (DET). Dive into detailed insights on scoring, comparisons with TOEFL and IELTS, practical tips for test preparation, and the future of English proficiency testing. Understand how DET's innovative approach and subscores can enhance your language certification journey.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/guide-to-the-duolingo-test</link>
-     <title>The Ultimate Guide to the Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>The Duolingo English Test (DET) emerges as a standout option for non-native English speakers, offering a unique blend of convenience, affordability, and reliability. This comprehensive guide delves into every aspect of the DET, providing you with all the information you need to decide if it's the right tool for achieving your language learning goals.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/overall-scores</link>
-     <title>Duolingo English Test: Overall scores</title>
-     <description>The Duolingo English Test provides a total score that encapsulates an individual's overall proficiency in the English language.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/production</link>
-     <title>Duolingo English Test: Production</title>
-     <description>The Production component of the Duolingo English Test (DET) assesses a candidate's ability to produce language, which includes both speaking and writing skills.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/conversation</link>
-     <title>Duolingo English Test: Conversation</title>
-     <description>The Conversation component of the Duolingo English Test (DET) evaluates a candidate's ability to understand and participate in spoken exchanges in English.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/comprehension</link>
-     <title>Duolingo English Test: Comprehension</title>
-     <description>The Comprehension component of the Duolingo English Test (DET) assesses a candidate's ability to understand spoken and written English.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/literacy</link>
-     <title>Duolingo English Test: Literacy</title>
-     <description>The Literacy component of the Duolingo English Test (DET) evaluates a candidate's proficiency in reading and writing in English.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/compared-with-CEFR</link>
-     <title>Duolingo English Test: Compared with CEFR</title>
-     <description>The Duolingo English Test (DET) and the Common European Framework of Reference for Languages (CEFR) are both systems for assessing language proficiency.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/compared-with-TOEFL</link>
-     <title>Duolingo English Test: Compared with TOEFL</title>
-     <description>The Duolingo English Test (DET) and the Test of English as a Foreign Language (TOEFL) are two widely recognized assessments of English language proficiency.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/compared-with-IELTS</link>
-     <title>Duolingo English Test: Compared with IELTS</title>
-     <description>The Duolingo English Test and the International English Language Testing System (IELTS) are both internationally recognized assessments of English language proficiency.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/writing-score-1</link>
-     <title>How to improve the writing score in the DET</title>
-     <description>Improve your writing score in the Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/sending-your-result</link>
-     <title>Sending your Duolingo English Test result</title>
-     <description>DET Pratice Blog</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/test-rules-1</link>
-     <title>Duolingo English Test Rules</title>
-     <description>If you break any of the rules of the Duolingo English Test, Duolingo reserves the right to not certify your test results, or to invalidate any previously certified results, without providing a refund.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/speaking-sample</link>
-     <title>Duolingo English Test: Speaking Sample</title>
-     <description>According to the official exam guide, the &amp;quot;Speaking Sample&amp;quot; section is a part of the Duolingo English Test (DET).</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/writing-sample</link>
-     <title>Duolingo English Test: Writing Sample</title>
-     <description>According to the official exam guide, the &amp;quot;Writing Sample&amp;quot; section is a part of the Duolingo English Test (DET).</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/interactive-writing</link>
-     <title>Duolingo English Test: Interactive Writing</title>
-     <description>This question type starts with a prompt that asks candidates to write a response to a given topic or question. </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/write-about-the-photo</link>
-     <title>Duolingo English Test: Write About the Photo</title>
-     <description>This question type asks candidates to &amp;quot;write one or more sentences that describe the image.&amp;quot; </description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/read-then-speak</link>
-     <title>Duolingo English Test: Read, Then Speak</title>
-     <description>This question type requires candidates to read a given text or question and then provide a spoken response.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-tips-3/</link>
-     <title>Duolingo English Test Tips 3 - DET Practice-Ace the Duolingo English Test</title>
-     <description>Welcome to DET Practice. In this article, we'll dive deep into the different types of questions you'll encounter on the Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-scores/</link>
-     <title>Duolingo English Test Scores: Insights and Comparisons - DET Practice-Ace the Duolingo English Test</title>
-     <description>Explore the comprehensive guide to the Duolingo English Test (DET). Dive into detailed insights on scoring, comparisons with TOEFL and IELTS, practical tips for test preparation, and the future of English proficiency testing. Understand how DET's innovative approach and subscores can enhance your language certification journey.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/guide-to-the-duolingo-test/</link>
-     <title>The Ultimate Guide to the Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>The Duolingo English Test (DET) emerges as a standout option for non-native English speakers, offering a unique blend of convenience, affordability, and reliability. This comprehensive guide delves into every aspect of the DET, providing you with all the information you need to decide if it's the right tool for achieving your language learning goals.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-mock-test</link>
-     <title>Enhance Your Duolingo Test Strategy: Discover DET Practice&amp;#x27;s Comprehensive Duolingo Mock Test - DET Practice-Ace the Duolingo English Test</title>
-     <description>Take Duolingo mock tests with DET Practice for smarter Duolingo English Test prep. Our mock exams utilize smart testing technology to simulate the real DET and feature precise scoring by AI for accurate benchmarking. Detailed feedback analysis spotlights areas to improve your strategy. Affordable solo, trio &amp; five-exam bundles are available. Integrating tailored mock tests into your prep transforms readiness through time management and focused improvement. Start preparing with DET Practice's Duo</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-test-practice</link>
-     <title>Insider&amp;#x27;s Guide to Duolingo Test Practice: Top Secrets for Boosting Your DET Score - DET Practice-Ace the Duolingo English Test</title>
-     <description>DET Pratice Blog</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-test-tips-1/</link>
-     <title>Duolingo English Test Tips 1 - DET Practice-Ace the Duolingo English Test</title>
-     <description>DET Pratice Blog</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/det-test-tips-2/</link>
-     <title>Duolingo English Test Tips 2 - DET Practice-Ace the Duolingo English Test</title>
-     <description>In the previous article Duolingo English Test Tips 1, we learned what Duolingo English Test is and the difference between Duolingo English Test and the TOEFL and IELTS exams. This time we will focus on explaining the test types and structure of Duolingo English Test.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/duolingo-english-test-tips-4/</link>
-     <title>Duolingo English Test Tips 4 - DET Practice-Ace the Duolingo English Test</title>
-     <description>In this article, we will explain why some Duolingo English Test scores are not certified and how to avoid this problem. I will identify and discuss the common causes of non-certification.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/blog/</link>
-     <title>DET Practice - Duolingo English Test Tips and Tricks</title>
-     <description>Discover essential Duolingo English Test tips and tricks with DET Practice's blog. Dive into expert strategies, scoring insights, and in-depth guides to excel in every section of the Duolingo English Test and achieve your best score.</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/listen-then-speak</link>
-     <title>Duolingo English Test: Listen, Then Speak</title>
-     <description>The &amp;quot;Listen, Then Speak&amp;quot; section is an open-ended question type within the Duolingo English Test (DET) .</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>4</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://www.detpractice.com/interactive-reading</link>
-     <title>Duolingo English Test: Interactive Reading</title>
-     <description>The &amp;quot;Interactive Reading&amp;quot; section, as described in the official guide, is an adaptive testing component within the Duolingo English Test (DET).</description>
-     <ror:updatePeriod>monthly</ror:updatePeriod>
-     <ror:sortOrder>4</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-</channel>
+          <item>
+               <link>https://www.detpractice.com/</link>
+               <title>DET Practice - Ace the Duolingo English Test</title>
+               <description>DET Practice is the best platform for Duolingo English Test Practice. We
+                    have the largest test bank, full-length mock exam, correction service, and DET
+                    courses.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>0</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/practice</link>
+               <title>DET Practice - The best platform for Duolingo practice test</title>
+               <description>Our DET test bank includes thousands of questions for extensive
+                    training, complete with detailed explanations and AI analysis to help you
+                    succeed.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/correction</link>
+               <title>DET Practice - AI Correction Service for your Duolingo Test</title>
+               <description>Correction service provided by &amp;quot;AI + Teachers&amp;quot;. Get
+                    personalized feedback from language experts to improve your responses and
+                    strategies for higher DET scores.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/mock-exam</link>
+               <title>DET Practice - Full-length Mock Exam for DET Preparation</title>
+               <description>Experience a realistic Duolingo Mock Test with DET Practice's
+                    full-length exams. Featuring intelligent adaptive questions and AI scoring, our
+                    mock tests offer an accurate assessment to prepare you effectively for the
+                    Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/courses</link>
+               <title>DET Practice - Master Speaking and Writing with the Duolingo English Test
+                    Guide</title>
+               <description>Unlock your potential with our Duolingo English Test Guide. Delve into
+                    speaking and writing excellence with comprehensive strategies, expert tips, and
+                    updated DET practice.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/learn</link>
+               <title>DET Practice - Learn the expert Tips for the Duolingo English Test</title>
+               <description>Explore expert strategies and study methods for the Duolingo English
+                    Test. We offer actionable tips and insights to enhance your preparation and
+                    boost your score.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/pricing</link>
+               <title>DET Practice - Duolingo Test Prep Membership and Services Pricing</title>
+               <description>Choose the right plan for your Duolingo English Test preparation.
+                    Affordable pricing options for personalized practice, expert reviews, and
+                    full-scale mock exams.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/blog</link>
+               <title>DET Practice - Duolingo English Test Tips and Tricks</title>
+               <description>Discover essential Duolingo English Test tips and tricks with DET
+                    Practice's blog. Dive into expert strategies, scoring insights, and in-depth
+                    guides to excel in every section of the Duolingo English Test and achieve your
+                    best score.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/2024-read-and-select</link>
+               <title>2024 DET Update: Read and select changed</title>
+               <description>Beginning April 2, 2024, the Duolingo English Test is changing the Read
+                    and select question. </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/2024-Fill-in-the-Blanks</link>
+               <title>2024 DET Update: New Fill in the Blanks question</title>
+               <description>Beginning April 2, 2024, the Duolingo English Test is adding a new Fill
+                    in the Blanks question.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/what-is-the-duolingo-english-test</link>
+               <title>What is the Duolingo English Test?</title>
+               <description>The Duolingo English Test is a modern English proficiency assessment for
+                    today’s international students and institutions. The test is available online,
+                    on demand. </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/2024-Interactive-Writing</link>
+               <title>2024 DET Update: New Interactive Writing question</title>
+               <description>Beginning April 2, 2024, the Duolingo English Test is adding a new
+                    Interactive Writing component to help improve the assessment of your writing
+                    proficiency. </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/interactive-writing-2024</link>
+               <title>Mastering the New Interactive Writing Question Type in Duolingo English Test
+                    2024 - DET Practice-Ace the Duolingo English Test</title>
+               <description>Learn effective strategies and templates to ace the new Interactive
+                    Writing question type in the Duolingo English Test 2024. Boost your writing
+                    score with our expert tips and sample answers.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-update-2024</link>
+               <title>Mastering the New Duolingo English Test Updates in 2024: Tips and Strategies -
+                    DET Practice-Ace the Duolingo English Test</title>
+               <description>Discover the latest Duolingo English Test updates effective April 2024
+                    and learn expert tips to master the new Interactive Writing, Fill in the Blanks,
+                    and Read and Select questions with our comprehensive guide for success.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-read-then-write</link>
+               <title>Mastering the &amp;#x27;Read, Then Write&amp;#x27; Challenge in the Duolingo
+                    English Test - DET Practice-Ace the Duolingo English Test</title>
+               <description>This post offers comprehensive strategies and practical templates for
+                    mastering the 'Read, Then Write' section of the Duolingo English Test. It covers
+                    understanding prompts, time management, structuring responses, emphasizing
+                    depth, utilizing rich vocabulary, and proofreading practices. Tailored for
+                    test-takers aiming to enhance their writing skills, it provides actionable
+                    advice to improve performance in this critical exam component, making it a
+                    must-read for those seeking to excel in the DET.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/how-to-prepare-for-the-duolingo-english-test</link>
+               <title>How to Prepare for the Duolingo English Test - DET Practice-Ace the Duolingo
+                    English Test</title>
+               <description>Unlock success in the Duolingo English Test with our expert guide.
+                    Discover essential tips, strategies, and insights for effective preparation,
+                    test-taking techniques, and achieving a high score. Perfect for students aiming
+                    to showcase their English proficiency globally.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/about-us</link>
+               <title>About Us - DET Practice</title>
+               <description>About Us - DET Practice</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/contact-us</link>
+               <title>Contact Us - DET Practice</title>
+               <description>Contact Us - DET Practice</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/tos</link>
+               <title>Terms and Conditions - DET Practice</title>
+               <description>Terms and Conditions - DET Practice</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/privacy-policy</link>
+               <title>Privacy Policy - DET Practice</title>
+               <description>Privacy Policy - DET Practice</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>1</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-read-then-speak</link>
+               <title>Mastering the &amp;quot;Read, Then Speak&amp;quot; Section of the Duolingo
+                    English Test - DET Practice-Ace the Duolingo English Test</title>
+               <description>Learn how to master the “Read, Then Speak” section of the Duolingo
+                    English Test and boost your Conversation and Production subscores. Discover tips
+                    and strategies for preparing, structuring, delivering, and enhancing your
+                    answer.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-write-about-the-photo</link>
+               <title>Mastering the &amp;quot;Write About the Photo&amp;quot; Section in the
+                    Duolingo English Test - DET Practice-Ace the Duolingo English Test</title>
+               <description>Master the 'Write About the Photo' section of the Duolingo English Test
+                    with our expert tips and sample analyses. Enhance your description skills and
+                    boost your test performance with our comprehensive guide. Dive into practical
+                    strategies for vivid storytelling and linguistic precision that will elevate
+                    your English proficiency score. Read now!</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/speak-about-the-photo-duolingo-english-test</link>
+               <title>Top Techniques for Duolingo English Test Speaking: Mastering the
+                    &amp;#x27;Speak about the Photo&amp;#x27; Task - DET Practice-Ace the Duolingo
+                    English Test</title>
+               <description>Learn how to ace the ‘Speak about the Photo’ question in the Duolingo
+                    English Test with these easy and effective strategies. Find out how to describe,
+                    comment, associate, and express your feelings about any photo in 90 seconds or
+                    less.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/interactive-listening</link>
+               <title>Interactive Listening Made Easy: A Simple Framework to Nail the New DET
+                    Question Type - DET Practice-Ace the Duolingo English Test</title>
+               <description>Do you want to ace the Interactive Listening questions in the Duolingo
+                    English Test? In this post, we will show you a simple framework to summarize the
+                    conversations and boost your score. Learn how to use the Scenario, the scripts,
+                    and the writing structure to nail the new DET question type.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-writing-preparation</link>
+               <title>Boost Your DET Score: Proven Writing Practices and Secrets Revealed - DET
+                    Practice-Ace the Duolingo English Test</title>
+               <description>Here is a suggested meta description for this blog post as an SEO expert
+                    would write:Learn proven strategies and insider techniques to master the
+                    Duolingo English Test (DET) writing section. From understanding scoring criteria
+                    to avoiding common mistakes, this in-depth guide reveals the secrets to crafting
+                    clear, coherent, compelling responses that will elevate your score. For
+                    test-takers seeking the keys to unlock success in the DET writing tasks.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-speaking-practice</link>
+               <title>Duolingo English Test Speaking Practice: A Step-by-Step Improvement Guide -
+                    DET Practice-Ace the Duolingo English Test</title>
+               <description>Unlock the secrets to acing the Duolingo English Test speaking section
+                    with our comprehensive guide. Discover expert strategies for each question type,
+                    from 'Listen, Then Speak' to 'Speak About the Photo,' and learn how to enhance
+                    your fluency, vocabulary, and confidence. This step-by-step guide is your key to
+                    mastering the DET speaking tasks and boosting your score. Start your journey to
+                    speaking proficiency today!</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/blog?page=1</link>
+               <title>DET Practice - Duolingo English Test Tips and Tricks</title>
+               <description>Discover essential Duolingo English Test tips and tricks with DET
+                    Practice's blog. Dive into expert strategies, scoring insights, and in-depth
+                    guides to excel in every section of the Duolingo English Test and achieve your
+                    best score.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/blog?page=2</link>
+               <title>DET Practice - Duolingo English Test Tips and Tricks</title>
+               <description>Discover essential Duolingo English Test tips and tricks with DET
+                    Practice's blog. Dive into expert strategies, scoring insights, and in-depth
+                    guides to excel in every section of the Duolingo English Test and achieve your
+                    best score.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-results-valid</link>
+               <title>How long are my Duolingo English Test results valid?</title>
+               <description>Your Duolingo English Test results are valid for two years from the date
+                    of the test. </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/How-often-can-I-take-the-Duolingo-English-Test</link>
+               <title>How often can I take the Duolingo English Test?</title>
+               <description>According to the information in the official exam guide, you can
+                    purchase up to 3 Duolingo English Tests within any 30-day period. This means you
+                    can take the test a maximum of three times within a month.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/How-long-does-the-Duolingo-English-Test-take</link>
+               <title>How long does the Duolingo English Test take?</title>
+               <description>According to the provided official exam guide, the Duolingo English Test
+                    (DET) consists of the following parts, which take approximately 1 hour to
+                    complete.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/How-to-take-the-Duolingo-English-Test</link>
+               <title>How to take the Duolingo English Test</title>
+               <description>To take the Duolingo English Test (DET), you should follow a series of
+                    steps that include understanding the test format, preparing for it, and going
+                    through the actual test process. </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-tips-4</link>
+               <title>Duolingo English Test Tips 4 - DET Practice-Ace the Duolingo English Test</title>
+               <description>In this article, we will explain why some Duolingo English Test scores
+                    are not certified and how to avoid this problem. I will identify and discuss the
+                    common causes of non-certification.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-tips-3</link>
+               <title>Duolingo English Test Tips 3 - DET Practice-Ace the Duolingo English Test</title>
+               <description>Welcome to DET Practice. In this article, we'll dive deep into the
+                    different types of questions you'll encounter on the Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-test-tips-2</link>
+               <title>Duolingo English Test Tips 2 - DET Practice-Ace the Duolingo English Test</title>
+               <description>In the previous article Duolingo English Test Tips 1, we learned what
+                    Duolingo English Test is and the difference between Duolingo English Test and
+                    the TOEFL and IELTS exams. This time we will focus on explaining the test types
+                    and structure of Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-test-tips-1</link>
+               <title>Duolingo English Test Tips 1 - DET Practice-Ace the Duolingo English Test</title>
+               <description>DET practice Blog</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/mock-exam/</link>
+               <title>DET Practice - Full-length Mock Exam for DET Preparation</title>
+               <description>Experience a realistic Duolingo Mock Test with DET Practice's
+                    full-length exams. Featuring intelligent adaptive questions and AI scoring, our
+                    mock tests offer an accurate assessment to prepare you effectively for the
+                    Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/master-duolingo-english-practice-test</link>
+               <title>Mastering the DET with our Duolingo English Practice Test: Exclusive Insights
+                    from DET Practice - DET Practice-Ace the Duolingo English Test</title>
+               <description>Discover the ultimate guide to mastering the Duolingo English practice
+                    test with DET Practice. Explore our in-depth test bank, personalized AI
+                    learning, and realistic mock exams. Tailor your study plan with expert guidance
+                    and flexible resources. Start your journey to success with DET Practice today –
+                    your partner in Duolingo English test preparation.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-scores</link>
+               <title>Duolingo English Test Scores: Insights and Comparisons - DET Practice-Ace the
+                    Duolingo English Test</title>
+               <description>Explore the comprehensive guide to the Duolingo English Test (DET). Dive
+                    into detailed insights on scoring, comparisons with TOEFL and IELTS, practical
+                    tips for test preparation, and the future of English proficiency testing.
+                    Understand how DET's innovative approach and subscores can enhance your language
+                    certification journey.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/guide-to-the-duolingo-test</link>
+               <title>The Ultimate Guide to the Duolingo English Test - DET Practice-Ace the
+                    Duolingo English Test</title>
+               <description>The Duolingo English Test (DET) emerges as a standout option for
+                    non-native English speakers, offering a unique blend of convenience,
+                    affordability, and reliability. This comprehensive guide delves into every
+                    aspect of the DET, providing you with all the information you need to decide if
+                    it's the right tool for achieving your language learning goals.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>2</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/overall-scores</link>
+               <title>Duolingo English Test: Overall scores</title>
+               <description>The Duolingo English Test provides a total score that encapsulates an
+                    individual's overall proficiency in the English language.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/production</link>
+               <title>Duolingo English Test: Production</title>
+               <description>The Production component of the Duolingo English Test (DET) assesses a
+                    candidate's ability to produce language, which includes both speaking and
+                    writing skills.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/conversation</link>
+               <title>Duolingo English Test: Conversation</title>
+               <description>The Conversation component of the Duolingo English Test (DET) evaluates
+                    a candidate's ability to understand and participate in spoken exchanges in
+                    English.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/comprehension</link>
+               <title>Duolingo English Test: Comprehension</title>
+               <description>The Comprehension component of the Duolingo English Test (DET) assesses
+                    a candidate's ability to understand spoken and written English.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/literacy</link>
+               <title>Duolingo English Test: Literacy</title>
+               <description>The Literacy component of the Duolingo English Test (DET) evaluates a
+                    candidate's proficiency in reading and writing in English.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/compared-with-CEFR</link>
+               <title>Duolingo English Test: Compared with CEFR</title>
+               <description>The Duolingo English Test (DET) and the Common European Framework of
+                    Reference for Languages (CEFR) are both systems for assessing language
+                    proficiency.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/compared-with-TOEFL</link>
+               <title>Duolingo English Test: Compared with TOEFL</title>
+               <description>The Duolingo English Test (DET) and the Test of English as a Foreign
+                    Language (TOEFL) are two widely recognized assessments of English language
+                    proficiency.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/compared-with-IELTS</link>
+               <title>Duolingo English Test: Compared with IELTS</title>
+               <description>The Duolingo English Test and the International English Language Testing
+                    System (IELTS) are both internationally recognized assessments of English
+                    language proficiency.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/writing-score-1</link>
+               <title>How to improve the writing score in the DET</title>
+               <description>Improve your writing score in the Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/sending-your-result</link>
+               <title>Sending your Duolingo English Test result</title>
+               <description>DET practice Blog</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/test-rules-1</link>
+               <title>Duolingo English Test Rules</title>
+               <description>If you break any of the rules of the Duolingo English Test, Duolingo
+                    reserves the right to not certify your test results, or to invalidate any
+                    previously certified results, without providing a refund.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/speaking-sample</link>
+               <title>Duolingo English Test: Speaking Sample</title>
+               <description>According to the official exam guide, the &amp;quot;Speaking
+                    Sample&amp;quot; section is a part of the Duolingo English Test (DET).</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/writing-sample</link>
+               <title>Duolingo English Test: Writing Sample</title>
+               <description>According to the official exam guide, the &amp;quot;Writing
+                    Sample&amp;quot; section is a part of the Duolingo English Test (DET).</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/interactive-writing</link>
+               <title>Duolingo English Test: Interactive Writing</title>
+               <description>This question type starts with a prompt that asks candidates to write a
+                    response to a given topic or question. </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/write-about-the-photo</link>
+               <title>Duolingo English Test: Write About the Photo</title>
+               <description>This question type asks candidates to &amp;quot;write one or more
+                    sentences that describe the image.&amp;quot; </description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/read-then-speak</link>
+               <title>Duolingo English Test: Read, Then Speak</title>
+               <description>This question type requires candidates to read a given text or question
+                    and then provide a spoken response.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-tips-3/</link>
+               <title>Duolingo English Test Tips 3 - DET Practice-Ace the Duolingo English Test</title>
+               <description>Welcome to DET Practice. In this article, we'll dive deep into the
+                    different types of questions you'll encounter on the Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-scores/</link>
+               <title>Duolingo English Test Scores: Insights and Comparisons - DET Practice-Ace the
+                    Duolingo English Test</title>
+               <description>Explore the comprehensive guide to the Duolingo English Test (DET). Dive
+                    into detailed insights on scoring, comparisons with TOEFL and IELTS, practical
+                    tips for test preparation, and the future of English proficiency testing.
+                    Understand how DET's innovative approach and subscores can enhance your language
+                    certification journey.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/guide-to-the-duolingo-test/</link>
+               <title>The Ultimate Guide to the Duolingo English Test - DET Practice-Ace the
+                    Duolingo English Test</title>
+               <description>The Duolingo English Test (DET) emerges as a standout option for
+                    non-native English speakers, offering a unique blend of convenience,
+                    affordability, and reliability. This comprehensive guide delves into every
+                    aspect of the DET, providing you with all the information you need to decide if
+                    it's the right tool for achieving your language learning goals.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-mock-test</link>
+               <title>Enhance Your Duolingo Test Strategy: Discover DET Practice&amp;#x27;s
+                    Comprehensive Duolingo Mock Test - DET Practice-Ace the Duolingo English Test</title>
+               <description>Take Duolingo mock tests with DET Practice for smarter Duolingo English
+                    Test prep. Our mock exams utilize smart testing technology to simulate the real
+                    DET and feature precise scoring by AI for accurate benchmarking. Detailed
+                    feedback analysis spotlights areas to improve your strategy. Affordable solo,
+                    trio &amp; five-exam bundles are available. Integrating tailored mock tests into
+                    your prep transforms readiness through time management and focused improvement.
+                    Start preparing with DET Practice's Duo</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-test-practice</link>
+               <title>Insider&amp;#x27;s Guide to Duolingo Test Practice: Top Secrets for Boosting
+                    Your DET Score - DET Practice-Ace the Duolingo English Test</title>
+               <description>DET practice Blog</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-test-tips-1/</link>
+               <title>Duolingo English Test Tips 1 - DET Practice-Ace the Duolingo English Test</title>
+               <description>DET practice Blog</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/det-test-tips-2/</link>
+               <title>Duolingo English Test Tips 2 - DET Practice-Ace the Duolingo English Test</title>
+               <description>In the previous article Duolingo English Test Tips 1, we learned what
+                    Duolingo English Test is and the difference between Duolingo English Test and
+                    the TOEFL and IELTS exams. This time we will focus on explaining the test types
+                    and structure of Duolingo English Test.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/duolingo-english-test-tips-4/</link>
+               <title>Duolingo English Test Tips 4 - DET Practice-Ace the Duolingo English Test</title>
+               <description>In this article, we will explain why some Duolingo English Test scores
+                    are not certified and how to avoid this problem. I will identify and discuss the
+                    common causes of non-certification.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/blog/</link>
+               <title>DET Practice - Duolingo English Test Tips and Tricks</title>
+               <description>Discover essential Duolingo English Test tips and tricks with DET
+                    Practice's blog. Dive into expert strategies, scoring insights, and in-depth
+                    guides to excel in every section of the Duolingo English Test and achieve your
+                    best score.</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>3</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/listen-then-speak</link>
+               <title>Duolingo English Test: Listen, Then Speak</title>
+               <description>The &amp;quot;Listen, Then Speak&amp;quot; section is an open-ended
+                    question type within the Duolingo English Test (DET) .</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>4</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+          <item>
+               <link>https://www.detpractice.com/interactive-reading</link>
+               <title>Duolingo English Test: Interactive Reading</title>
+               <description>The &amp;quot;Interactive Reading&amp;quot; section, as described in the
+                    official guide, is an adaptive testing component within the Duolingo English
+                    Test (DET).</description>
+               <ror:updatePeriod>monthly</ror:updatePeriod>
+               <ror:sortOrder>4</ror:sortOrder>
+               <ror:resourceOf>sitemap</ror:resourceOf>
+          </item>
+     </channel>
 </rss>
