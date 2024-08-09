@@ -35,7 +35,7 @@ export const payEvent = (transaction_id = '', value = 100) => {
     window.gtag('event', 'conversion', {
       send_to: 'AW-998843228/i-HNCPG91pYZENzGpNwD',
       transaction_id,
-      value,
+      value: value / 100,
       currency: 'CNY',
     });
 

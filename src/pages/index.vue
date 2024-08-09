@@ -227,12 +227,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
-            <el-skeleton v-show="!isLoad" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -270,12 +265,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad2" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
-            <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -307,12 +297,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad3" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
-            <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -344,12 +329,13 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad4" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" />
-            <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <nuxt-img
+              loading="lazy"
+              :src="home4"
+              :alt="$t('index.article4.title')"
+              @load="onLoad4"
+              placeholder
+            />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -433,7 +419,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
+                          <nuxt-img loading="lazy" :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -450,7 +436,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
+                          <nuxt-img loading="lazy" :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>

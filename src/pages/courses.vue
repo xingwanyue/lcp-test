@@ -145,7 +145,7 @@ const onLoad2 = () => {
 // 引入cdn图片
 const guide1 = `${cdn}/store/portal/guid/guide111.png`;
 const guide2 = `${cdn}/store/portal/guid/guide222.png`;
-const team_bg = `${cdn}/store/portal/guid/team_bg.svg`;
+const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
 </script>
 
 <template>
