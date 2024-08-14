@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos', 'nuxt-vitalizer'],
   css: ['@/assets/iconfont/iconfont.css'],
   vitalizer: {
     disableStylesheets: 'entry',
