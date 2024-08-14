@@ -995,10 +995,13 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             .tips_icon {
               width: 18px;
               height: 18px;
-              border: 1px red solid;
               position: relative;
               top: 2px;
               flex-shrink: 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
             }
             ::v-deep(.yellow) {
               font-weight: 650;
