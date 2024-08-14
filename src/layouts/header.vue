@@ -58,11 +58,17 @@ const changeHeaderColor = (pathname: string) => {
     case '/practice':
       headerColor.value = '#ECF7FF';
       break;
+    case '/writing-ai-correction':
+      headerColor.value = '#FFF4F1';
+      break;
     case '/mock-exam':
       headerColor.value = '#FFEFE1';
       break;
     case '/courses':
       headerColor.value = '#E7FDEC';
+      break;
+    case '/speaking-ai-correction':
+      headerColor.value = '#EAEAFEFF';
       break;
     default:
       headerColor.value = '#FFF4F1';
@@ -150,21 +156,6 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink
-                :to="localePath('/correction')"
-                :title="$t('header.path_correction_title')"
-                class="one_card card2"
-              >
-                <div class="icon">
-                  <img src="/img/home/product_icon2.svg" :alt="$t('header.prod2.alt')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('header.prod2.title') }}</div>
-                  <div class="font">
-                    {{ $t('header.prod2.font') }}
-                  </div>
-                </div>
-              </NuxtLink>
               <NuxtLink :to="localePath('/mock-exam')" :title="$t('header.path_mock_title')" class="one_card card3">
                 <div class="icon">
                   <img src="/img/home/product_icon3.svg" :alt="$t('header.prod4.alt')" />
@@ -176,9 +167,40 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
+              <NuxtLink
+                :to="localePath('/writing-ai-correction')"
+                :title="$t('header.path_correction_title')"
+                class="one_card card2"
+              >
+                <div class="icon">
+                  <img src="/img/home/product_icon2.svg" :alt="$t('header.prodwriting.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">{{ $t('header.prodwriting.title') }}</div>
+                  <div class="font">
+                    {{ $t('header.prodwriting.font') }}
+                  </div>
+                </div>
+              </NuxtLink>
+
+              <NuxtLink
+                :to="localePath('/speaking-ai-correction')"
+                :title="$t('header.path_course_title')"
+                class="one_card card5"
+              >
+                <div class="icon">
+                  <img src="/img/home/head_speak.svg" :alt="$t('header.prodspeaking.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">{{ $t('header.prodspeaking.title') }}</div>
+                  <div class="font">
+                    {{ $t('header.prodspeaking.font') }}
+                  </div>
+                </div>
+              </NuxtLink>
               <NuxtLink :to="localePath('/courses')" :title="$t('header.path_course_title')" class="one_card card4">
                 <div class="icon">
-                  <img src="/img/home/product_icon4.svg" :alt="$t('header.prod3.alt')" />
+                  <img src="/img/home/head_course.svg" :alt="$t('header.prod3.alt')" />
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('header.prod3.title') }}</div>
@@ -286,19 +308,28 @@ const menus = computed(() => [
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
-              :to="localePath('/correction')"
-              @click="handleClose"
-            >
-              {{ $t('header.prod2.title') }}
-            </nuxt-link>
-            <nuxt-link
-              v-if="isProductsMobile"
-              :class="`product-child`"
               :to="localePath('/mock-exam')"
               @click="handleClose"
             >
               {{ $t('header.prod4.title') }}
             </nuxt-link>
+            <nuxt-link
+              v-if="isProductsMobile"
+              :class="`product-child`"
+              :to="localePath('/writing-ai-correction')"
+              @click="handleClose"
+            >
+              {{ $t('header.prodwriting.title') }}
+            </nuxt-link>
+            <nuxt-link
+              v-if="isProductsMobile"
+              :class="`product-child`"
+              :to="localePath('/speaking-ai-correction')"
+              @click="handleClose"
+            >
+              {{ $t('header.prodspeaking.title') }}
+            </nuxt-link>
+
             <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
@@ -550,6 +581,17 @@ const menus = computed(() => [
           }
         }
         background: linear-gradient(0, #f2fff6 0%, #e7fdec 100%);
+        color: #fff;
+      }
+    }
+    .card5 {
+      &:hover {
+        .right {
+          .title {
+            color: #201515ff;
+          }
+        }
+        background: linear-gradient(180deg, #eaeafe 0%, #fbf9ff 100%);
         color: #fff;
       }
     }
