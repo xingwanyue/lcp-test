@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import vMembershipprice from '../components/membershipprice.vue';
-import { staticUrlGet, domain, host } from '@/utils';
+import { staticUrlGet, domain, host, cdn } from '@/utils';
 import { useStore } from '@/store';
 useServerSeoMeta({
   title: t('pricing.seometa.title'),
@@ -15,11 +15,12 @@ useHead({
     { rel: 'alternate', href: `https://www.${domain}/pricing`, hreflang: 'en-GB' },
   ],
 });
+
+const circle_check_icon = `${cdn}/store/portal/pricing/circle_check_icon.svg`;
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
-
 
 const aqList = ref([
   {
@@ -227,6 +228,20 @@ const formateMinToHour = (min: number) => {
           </div>
           <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch2') }}
+          </div>
+        </div>
+        <div class="three_out_new">
+          <div class="one">
+            <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
+            <div class="one_font">{{ $t('pricing.pagefont.sep') }}</div>
+          </div>
+          <div class="one">
+            <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
+            <div class="one_font">{{ $t('pricing.pagefont.ca') }}</div>
+          </div>
+          <div class="one">
+            <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
+            <div class="one_font">{{ $t('pricing.pagefont.atde') }}</div>
           </div>
         </div>
         <div v-if="!user.id" class="free_white_dom">
@@ -526,6 +541,38 @@ const formateMinToHour = (min: number) => {
         .yellow {
           background: #f66442;
           color: #ffffff;
+        }
+      }
+      .three_out_new {
+        margin-top: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 56px;
+        flex-wrap: wrap;
+        @media (max-width: 800px) {
+          grid-gap: 16px;
+        }
+
+        .one {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-gap: 8px;
+          .one_icon {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .one_font {
+            font-weight: 400;
+            font-size: 16px;
+            color: #403f3e;
+          }
         }
       }
       .free_white_dom {

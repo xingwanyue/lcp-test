@@ -259,16 +259,6 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               </div>
             </div>
           </div>
-          <div class="one_card img_left" data-aos="fade-up" data-aos-duration="1000">
-            <div class="one_card_left">
-              <el-image v-show="isLoad5" :src="service_picture5" :alt="$t('correction.h2_5.h2')" @load="onLoad5" />
-              <el-skeleton v-show="!isLoad5" style="width: 100%; height: 385px" animated>
-                <template #template>
-                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
-                </template>
-              </el-skeleton>
-            </div>
-          </div>
         </div>
       </div>
     </div>
