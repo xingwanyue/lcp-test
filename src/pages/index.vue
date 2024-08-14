@@ -227,7 +227,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
+            <img loading="lazy" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -265,7 +265,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
+            <img loading="lazy" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -297,7 +297,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img loading="lazy" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
+            <img loading="lazy" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -329,13 +329,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <nuxt-img
-              loading="lazy"
-              :src="home4"
-              :alt="$t('index.article4.title')"
-              @load="onLoad4"
-              placeholder
-            />
+            <img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" placeholder />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -419,7 +413,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <nuxt-img loading="lazy" :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
+                          <img loading="lazy" :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -436,7 +430,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <nuxt-img loading="lazy" :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
+                          <img loading="lazy" :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>
