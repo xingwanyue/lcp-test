@@ -6,6 +6,9 @@ import { useStore } from '@/store';
 import { platformData } from '@/api';
 import vEasyexam from '../components/easyexam.vue';
 
+const vsImgBig = `${cdn}/store/portal/products/vs_img_big.png`;
+const vsImgSmall = `${cdn}/store/portal/products/vs_img_small.png`;
+
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
@@ -253,6 +256,16 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               </div>
             </div>
           </div>
+          <div class="vs_out">
+            <h2>DET Practice Mock VS DET Test Scores</h2>
+            <div class="vs_tips">
+              Score comparison of students who took the Duolingo English test and used our mock test
+            </div>
+            <div class="vs_img">
+              <img class="vs_img_self big_img" :src="vsImgBig" alt="vs_img" />
+              <img class="vs_img_self big_small" :src="vsImgSmall" alt="vs_img" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -262,4 +275,51 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
 
 <style lang="scss" scoped>
 @import '@/assets/prod.scss';
+.mock_out {
+  .content {
+    .vs_out {
+      padding-bottom: 120px;
+      @media (max-width: 768px) {
+        padding-bottom: 60px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+        color: #201515;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      .vs_tips {
+        font-weight: 500;
+        font-size: 24px;
+        color: #201515;
+        text-align: center;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      .vs_img {
+        text-align: center;
+        .vs_img_self {
+          width: 100%;
+          margin-top: 47px;
+        }
+        .big_img {
+          display: block;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        .big_small {
+          display: none;
+          @media (max-width: 768px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
