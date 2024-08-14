@@ -7,7 +7,9 @@ import { useRoute, useRouter } from 'vue-router';
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { getToken, saveToken } from '@/utils';
-
+useHead({
+  meta: [{ name: 'robots', content: 'index' }],
+});
 const localePath = useLocalePath();
 const route = useRoute();
 const router = useRouter();
