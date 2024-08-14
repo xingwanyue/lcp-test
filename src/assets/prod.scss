@@ -338,3 +338,21 @@
 
     }
 }
+
+.speaking_out {
+    .bank_wrapper {
+        background: linear-gradient(#EAEAFEFF 0%, #ffffff 657px, #ffffff 0px, #ffffff);
+    }
+
+    .right_click {
+        .font {
+            color: #635DF7FF !important;
+
+            &:hover {
+                border-bottom: 1px #635DF7FF solid !important;
+            }
+        }
+
+
+    }
+}

@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { urlGet, domain, cdn, host } from '@/utils';
 import { platformData } from '@/api';
-import vHighscorewriting from '../components/highscorewriting.vue';
+import vHighscorewriting from '../components/highscorewritingnew.vue';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const store = useStore();
@@ -15,8 +15,8 @@ useServerSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/correction` },
-    { rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}/writing-ai-correction` },
+    { rel: 'alternate', href: `https://www.${domain}/writing-ai-correction`, hreflang: 'en-GB' },
   ],
 });
 const isLoad = ref(false);
@@ -267,30 +267,6 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
                 </template>
               </el-skeleton>
-            </div>
-            <div class="one_card_right">
-              <div class="one_card_right_forMid">
-                <h2 class="right_title">{{ $t('correction.h2_5.h2') }}</h2>
-                <div class="right_desc">
-                  {{ $t('correction.h2_5.right_desc') }}
-                </div>
-                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">{{ $t('correction.Begin_Polishing') }}</div>
-                  <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
-                  </div>
-                </NuxtLink>
-                <NuxtLink
-                  v-else
-                  class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
-                >
-                  <div class="font">{{ $t('correction.Begin_Polishing') }}</div>
-                  <div class="arrow">
-                    <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
-                  </div>
-                </NuxtLink>
-              </div>
             </div>
           </div>
         </div>
