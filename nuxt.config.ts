@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', '@nuxt/image', 'nuxt-vitalizer'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos', 'nuxt-vitalizer'],
   css: ['@/assets/iconfont/iconfont.css'],
   vitalizer: {
     disableStylesheets: 'entry',
@@ -45,6 +45,9 @@ export default defineNuxtConfig({
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/crisp.js', mode: 'client' },
   ],
+  aos: {
+    disable: 'mobile',
+  },
   features: {
     inlineStyles: false,
   },
