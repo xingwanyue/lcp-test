@@ -37,7 +37,9 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
       <div class="four_prod_out">
         <div class="one_prod bank">
           <div class="one_prod_top">
-            <div class="one_prod_icon"></div>
+            <div class="one_prod_icon">
+              <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
+            </div>
             <div class="one_prod_title">{{ $t('aboutUs.check_out.qbt') }}</div>
           </div>
           <div class="one_prod_bottom">
@@ -46,7 +48,9 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         </div>
         <div class="one_prod mock">
           <div class="one_prod_top">
-            <div class="one_prod_icon"></div>
+            <div class="one_prod_icon">
+              <img src="/img/home/product_icon3.svg" :alt="$t('header.prod4.alt')" />
+            </div>
             <div class="one_prod_title">{{ $t('aboutUs.check_out.flm') }}</div>
           </div>
           <div class="one_prod_bottom">
@@ -55,7 +59,9 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         </div>
         <div class="one_prod service">
           <div class="one_prod_top">
-            <div class="one_prod_icon"></div>
+            <div class="one_prod_icon">
+              <img src="/img/home/product_icon2.svg" :alt="$t('header.prodwriting.alt')" />
+            </div>
             <div class="one_prod_title">
               {{ $t('aboutUs.check_out.acs') }}
             </div>
@@ -66,7 +72,9 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         </div>
         <div class="one_prod courses">
           <div class="one_prod_top">
-            <div class="one_prod_icon"></div>
+            <div class="one_prod_icon">
+              <img src="/img/home/head_course.svg" :alt="$t('header.prod3.alt')" />
+            </div>
             <div class="one_prod_title">{{ $t('aboutUs.check_out.dc') }}</div>
           </div>
           <div class="one_prod_bottom">
@@ -175,8 +183,11 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
           .one_prod_icon {
             width: 48px;
             height: 48px;
-            border: 1px red solid;
             flex-shrink: 0;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
           .one_prod_title {
             font-weight: 500;
