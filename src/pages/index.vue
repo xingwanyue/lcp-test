@@ -130,6 +130,7 @@ const home1 = `${cdn}/store/portal/home/home1.png`;
 const home2 = `${cdn}/store/portal/home/home2.png`;
 const home3 = `${cdn}/store/portal/home/home3.png`;
 const home4 = `${cdn}/store/portal/home/home4.png`;
+const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 </script>
 
 <template>
@@ -234,7 +235,9 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article1.title') }}</h2>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon">
+                <img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" />
+              </div>
               <span
                 v-html="
                   $t('index.article1.tips1', {
@@ -244,15 +247,15 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               ></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article1.tips2')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article1.tips3')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article1.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/practice')">
@@ -272,19 +275,19 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article2.title') }}</h2>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips1')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips2')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips3')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/correction')">
@@ -304,19 +307,19 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article3.title') }}</h2>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips1')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips2')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips3')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/mock-exam')">
@@ -336,19 +339,19 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article4.title') }}</h2>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips1')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips2')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips3')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/courses')">
@@ -373,19 +376,19 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article5.title') }}</h2>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips1')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips2')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips3')"></span>
             </div>
             <div class="tips">
-              <div class="tips_icon"></div>
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/mock-exam')">
@@ -870,10 +873,13 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             .tips_icon {
               width: 18px;
               height: 18px;
-              border: 1px red solid;
               position: relative;
               top: 2px;
               flex-shrink: 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
             }
             ::v-deep(.yellow) {
               font-weight: 650;
