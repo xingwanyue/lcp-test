@@ -59,13 +59,6 @@ const aqList = ref([
     open: false,
   },
 ]) as any;
-// const { data: aqlistjk } = (await useFetch(`${api}/common/article`, {
-//   server: true,
-//   query: {
-//     type: "3",
-//   },
-// })) as any;
-// aqList.value = aqlistjk.value.data;
 
 const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
   server: false,
@@ -79,6 +72,8 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
     vips.forEach((item: any) => {
       if (item.type === '1') {
         item.correctTimesid = correctSelectBuyTimes[1].id;
+        onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
+        onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
         item.correctPrice = correctSelectBuyTimes[1].price;
         item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
         membershipArr.push(item);
@@ -103,6 +98,7 @@ const buyMembership = (item: any) => {
   const { id } = item;
   store.stripePay({ vipId: id });
 };
+
 const coursrBuyedVisible = ref(false);
 const openCoursrBuyed = () => {
   coursrBuyedVisible.value = true;
@@ -211,6 +207,44 @@ const formateMinToHour = (min: number) => {
   }
   return `${hour}h ${minute}mins ago`;
 };
+
+const correctServiceQuanYi = ref([
+  {
+    name: '1',
+    desc: t('pricing.correctServiceQuanYi[0]'),
+    tips: '',
+  },
+  {
+    name: '2',
+    desc: t('pricing.correctServiceQuanYi[1]'),
+    tips: '',
+  },
+  {
+    name: '3',
+    desc: t('pricing.correctServiceQuanYi[2]'),
+    tips: '',
+  },
+  {
+    name: '4',
+    desc: t('pricing.correctServiceQuanYi[3]'),
+    tips: '',
+  },
+  {
+    name: '5',
+    desc: t('pricing.correctServiceQuanYi[4]'),
+    tips: '',
+  },
+]);
+
+const onlycorrectTimesid = ref(0);
+const onlycorrectTimesprice = ref(0);
+const buyCorrectNum = () => {
+  store.stripePay({ vipId: onlycorrectTimesid.value });
+};
+const changeBuyCorrectTimes = () => {
+  const correctTimes = vipsData.value.correctSelectBuyTimes.find((item: any) => item.id === onlycorrectTimesid.value);
+  onlycorrectTimesprice.value = correctTimes.price;
+};
 </script>
 <template>
   <div class="pricing">
@@ -265,6 +299,74 @@ const formateMinToHour = (min: number) => {
           ></v-membershipprice>
         </div>
         <div v-show="switchType === '2'" class="Service_dom">
+          <!-- 固定一个批改购买 -->
+          <div class="one_price">
+            <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
+            <div class="card_price">
+              <div class="card_price_part1">Correction Services</div>
+              <div class="card_price_part2">Can be used for writing and speaking during your membership</div>
+              <div class="card_price_part4 min_heighthack">
+                <div class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
+                <div class="off_price">
+                  <span class="small">{{ $t('pricing.pagefont.do') }}</span
+                  >{{ (onlycorrectTimesprice / 100).toFixed(2) }}
+                </div>
+                <div class="no_member_font">{{ $t('pricing.pagefont.Non_member') }}</div>
+              </div>
+              <div class="card_price_part3">
+                <div class="select_out_new">
+                  <div class="select_out_new_font">{{ $t('pricing.pagefont.apcs1') }}</div>
+                  <div class="sleect_out_wrapper">
+                    <div class="select_out">
+                      <el-select v-model="onlycorrectTimesid" placeholder="Select" @change="changeBuyCorrectTimes()">
+                        <el-option
+                          v-for="itemTimes in vipsData?.correctSelectBuyTimes?.filter((item) => item.price !== 0) || []"
+                          :key="itemTimes.id"
+                          :label="`${itemTimes.correctNum} ${$t('pricing.pagefont.times')}`"
+                          :value="itemTimes.id"
+                        >
+                          <span style="float: left">{{ itemTimes.correctNum }} {{ $t('pricing.pagefont.times') }}</span>
+                          <span style="float: right; font-size: 13px; margin-left: 60px">
+                            {{ $t('pricing.pagefont.do') }}{{ formatCash(itemTimes.price) }}
+                          </span>
+                        </el-option>
+                      </el-select>
+                    </div>
+                    <!-- <div class="select_font">
+                      <template v-if="item.day === 7"> {{ $t('pricing.pagefont.week') }}</template>
+                      <template v-else>{{ $t('pricing.pagefont.month') }}</template>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <!-- 11 -->
+              <div v-if="user.id">
+                <div
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  style="margin-top: 2px"
+                  @click="buyCorrectNum()"
+                >
+                  {{ $t('pricing.pagefont.Buy_Now') }}
+                  <div class="scroll-line"></div>
+                </div>
+              </div>
+              <div v-else>
+                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+                  {{ $t('pricing.pagefont.Buy_Now') }}
+                  <div class="scroll-line"></div>
+                </NuxtLink>
+              </div>
+              <div class="correct_service_quanyi">
+                <div v-for="item in correctServiceQuanYi" class="one_quanyi">
+                  <div class="icon">
+                    <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
+                  </div>
+                  <div class="font" v-html="item.desc"></div>
+                </div>
+              </div>
+              <!-- 55 -->
+            </div>
+          </div>
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
@@ -347,12 +449,6 @@ const formateMinToHour = (min: number) => {
                 </NuxtLink>
               </div>
             </div>
-          </div>
-          <div v-if="!vipsData?.moreServiceArr" class="no-load">
-            <el-skeleton :rows="9" animated />
-          </div>
-          <div v-if="!vipsData?.moreServiceArr" class="no-load">
-            <el-skeleton :rows="9" animated />
           </div>
           <div v-if="!vipsData?.moreServiceArr" class="no-load">
             <el-skeleton :rows="9" animated />
@@ -865,7 +961,6 @@ const formateMinToHour = (min: number) => {
             background: #ffffff;
             border-radius: 8px;
             border: 1px solid #e9e9e9;
-
             &:hover {
               box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
             }
@@ -890,6 +985,30 @@ const formateMinToHour = (min: number) => {
               height: 84px;
               margin-top: 24px;
               // border: 1px red solid;
+              .select_out_new {
+                .select_out_new_font {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #333333;
+                }
+                .sleect_out_wrapper {
+                  margin-top: 10px;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  grid-gap: 8px;
+                  .select_out {
+                    width: 100%;
+                    height: 32px;
+                    border-radius: 4px;
+                  }
+                  .select_font {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(51, 51, 51, 0.88);
+                  }
+                }
+              }
               .member_price {
                 font-weight: 600;
                 font-size: 32px;
@@ -971,6 +1090,37 @@ const formateMinToHour = (min: number) => {
               opacity: 0.5;
               &:hover {
                 opacity: 0.5;
+              }
+            }
+
+            .correct_service_quanyi {
+              margin-top: 20px;
+              .one_quanyi {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-gap: 8px;
+                margin-bottom: 8px;
+                .icon {
+                  width: 12px;
+                  height: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-shrink: 0;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .font {
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #403f3e;
+                  ::v-deep(.strongfont) {
+                    font-weight: 650;
+                  }
+                }
               }
             }
           }
