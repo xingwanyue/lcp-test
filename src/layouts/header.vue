@@ -185,7 +185,7 @@ const menus = computed(() => [
 
               <NuxtLink
                 :to="localePath('/speaking-ai-correction')"
-                :title="$t('header.path_course_title')"
+                :title="$t('header.path_correction_title')"
                 class="one_card card5"
               >
                 <div class="icon">
