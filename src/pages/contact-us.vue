@@ -81,11 +81,15 @@ useHead({
           {{ $t('contactUs.thank') }}
         </div>
         <div class="info">
-          <el-image src="/img/aboutus/email.svg" class="email-img" :alt="$t('contactUs.email')"></el-image>
+          <a rel="nofollow" :href="`mailto:support@detpractice.com`">
+            <el-image src="/img/aboutus/email.svg" class="email-img" :alt="$t('contactUs.email')"></el-image>
+          </a>
+
           <div class="info-right">
             <div class="name">{{ $t('contactUs.email') }}</div>
             <div class="address">support@detpractice.com</div>
           </div>
+          <a rel="nofollow" :href="`mailto:support@detpractice.com`" class="send_btn">Send</a>
         </div>
       </div>
       <div class="right">
@@ -179,6 +183,7 @@ useHead({
     .info {
       margin-top: 48px;
       display: flex;
+      align-items: center;
       .email-img {
         width: 56px;
         height: 56px;
@@ -186,18 +191,29 @@ useHead({
       }
       .info-right {
         margin-left: 16px;
+        .name {
+          font-weight: 600;
+          font-size: 20px;
+          color: #201515;
+          line-height: 32px;
+        }
+        .address {
+          font-size: 16px;
+          color: #403f3e;
+
+          line-height: 20px;
+          margin-top: 4px;
+        }
       }
-      .name {
-        font-weight: 600;
-        font-size: 20px;
-        color: #201515;
-        line-height: 32px;
-      }
-      .address {
+      .send_btn {
+        height: fit-content;
+        padding: 9px 24px;
+        border-radius: 8px;
+        border: 1px solid #201515;
+        font-weight: 400;
         font-size: 16px;
-        color: #403f3e;
-        line-height: 20px;
-        margin-top: 4px;
+        color: #201515;
+        margin-left: auto;
       }
     }
   }
