@@ -127,9 +127,10 @@ const onLoad5 = () => {
 // 引入cdn图片
 const bannerImg = `${cdn}/store/portal/home/banner.svg`;
 const home1 = `${cdn}/store/portal/home/home1.png`;
-const home2 = `${cdn}/store/portal/home/home2.png`;
-const home3 = `${cdn}/store/portal/home/home3.png`;
-const home4 = `${cdn}/store/portal/home/home4.png`;
+const home2 = `${cdn}/store/portal/home/home3.png`;
+const home3 = `${cdn}/store/portal/home/home2.png`;
+const home4 = `${cdn}/store/portal/home/home55.png`;
+const home5 = `${cdn}/store/portal/home/home4.png`;
 const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 </script>
 
@@ -333,6 +334,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" placeholder />
+            <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
+              <template #template>
+                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
+              </template>
+            </el-skeleton>
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -364,7 +370,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad5" :src="home3" :alt="$t('index.article3.title')" @load="onLoad5" />
+            <el-image v-show="isLoad5" :src="home5" :alt="$t('index.article3.title')" @load="onLoad5" />
             <el-skeleton v-show="!isLoad5" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -953,6 +959,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             width: 100%;
             height: auto;
             border-radius: 16px;
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           }
         }
         .article_out {

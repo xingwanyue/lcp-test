@@ -141,11 +141,13 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
       margin: 0 auto;
       padding: 100px 0;
       .title {
-        font-weight: 600;
-        font-size: 56px;
-        color: #201515;
-        line-height: 72px;
-        margin: 0px;
+        h1 {
+          font-weight: 600;
+          font-size: 56px;
+          color: #201515;
+          line-height: 72px;
+          margin: 0px;
+        }
       }
       .titledesc {
         font-weight: 400;

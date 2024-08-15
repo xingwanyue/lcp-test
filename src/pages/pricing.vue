@@ -253,9 +253,9 @@ const changeBuyCorrectTimes = () => {
         <div class="title1">
           <h1>{{ $t('pricing.pagefont.h1') }}</h1>
         </div>
-        <div class="title2">
+        <!-- <div class="title2">
           <h4>{{ $t('pricing.pagefont.h4') }}</h4>
-        </div>
+        </div> -->
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch1') }}

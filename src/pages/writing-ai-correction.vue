@@ -45,11 +45,10 @@ const onLoad1 = () => {
 };
 // 引入cdn图片
 const service_banner = `${cdn}/store/portal/products/service_banner.png`;
-const service_picture1 = `${cdn}/store/portal/products/service_picture1.png`;
-const service_picture2 = `${cdn}/store/portal/products/service_picture2.png`;
-const service_picture3 = `${cdn}/store/portal/products/service_picture3.png`;
-const service_picture4 = `${cdn}/store/portal/products/service_picture4.png`;
-const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
+const service_picture1 = `${cdn}/store/portal/products/writing_picture1.png`;
+const service_picture2 = `${cdn}/store/portal/products/writing_picture2.png`;
+const service_picture3 = `${cdn}/store/portal/products/writing_picture3.png`;
+const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
 </script>
 <template>
   <div class="bankW100 service_out">
@@ -241,7 +240,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   <span v-html="$t('correction.h2_4.right_desc')"></span>
                 </div>
                 <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
-                  <div class="font">{{ $t('correction.Enhance_Now') }}</div>
+                  <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
@@ -251,7 +250,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
                 >
-                  <div class="font">{{ $t('correction.Enhance_Now') }}</div>
+                  <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
                     <img src="/img/products/yellow_arrow_right.svg" :alt="$t('correction.yellow_arrow_right')" />
                   </div>
