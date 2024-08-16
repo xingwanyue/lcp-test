@@ -20,7 +20,7 @@ useHead({
   <div class="termsService">
     <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
       <div class="learn_hader_content">
-        <div class="title">Terms of Service{{ $t('tos.title') }}</div>
+        <div class="title">{{ $t('tos.title') }}</div>
       </div>
     </div>
     <div class="bg">
