@@ -51,12 +51,7 @@
     "LearnTitle": "Aprender",
     "BlogTitle": "Blog",
     "CompanyTitle": "Compañía",
-    "Products": [
-      "DET Práctica",
-      "Servicio de Corrección de IA",
-      "DET Simulación",
-      "Duolingo English Test Curso"
-    ],
+    "Products": ["DET Práctica", "Servicio de Corrección de IA", "DET Simulación", "Duolingo English Test Curso"],
     "Company": [
       "Sobre nosotros",
       "Contáctenos",
@@ -83,12 +78,7 @@
     "power_by": "Impulsado por IA",
     "h1Mobile": "Obtén una Puntuación Más Alta Fácilmente<br />en la prueba de Duolingo <br />Inglés Con <span class=\"seo_hack\">DET Práctica</span>",
     "h1PC": "Obtén una Puntuación Más Alta Fácilmente en el <br />Duolingo English Test Con <span class=\"seo_hack\">DET Práctica</span>",
-    "one_small_title": [
-      "DET Práctica",
-      "Corrección de IA",
-      "Simulacro Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -420,7 +410,7 @@
     "Contact_Us": "Contáctenos",
     "Questions": "Preguntas, informes de errores, comentarios - ¡estamos aquí para ayudar!",
     "fill_in": "Rellene el formulario",
-    "thank": "Gracias por elegir ponerse en contacto con nosotros. \nEnvíenos un correo electrónico y nuestro personal se comunicará con usted lo antes posible para atender sus consultas.",
+    "thank": "Gracias por elegir ponerse en contacto con nosotros. Envíenos un correo electrónico y nuestro personal se comunicará con usted lo antes posible para atender sus consultas.",
     "email": "Correo electrónico",
     "Name": "Nombre",
     "Email_Address": "Correo Electrónico",
