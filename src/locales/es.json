@@ -30,9 +30,19 @@
       "font": "Conquista tu examen con simulacros completos y auténticos: análisis en profundidad y resultados instantáneos, disponibles en cualquier momento y lugar."
     },
     "prod4": {
-      "title": "Duolingo English Test Burla",
-      "alt": "Duolingo English Test Simular",
+      "title": "∑ Test de Prueba Completo",
+      "alt": "∑ Examen simulado de longitud completa",
       "font": "Desbloquea DET Éxito: Dominio Integral, Técnicas Comprobadas y Perspectivas Actualizadas para la Excelencia en Hablar y Escribir con Confianza!"
+    },
+    "prodwriting": {
+      "title": "∑ Corrección de Escritura AI",
+      "alt": "∑ Escritura de corrección de IA",
+      "font": "Obtén puntuaciones precisas e informes detallados para que puedas mejorar tus habilidades de escritura más rápido. ¡Soporta todas las preguntas de escritura!"
+    },
+    "prodspeaking": {
+      "title": "∑ Corrección de IA Hablante",
+      "alt": "∑ Corrección de IA Hablante",
+      "font": "Aprovecha la poderosa IA para mejorar tu ∑ puntuación de expresión oral de manera enfocada. ¡Soporta todas las preguntas de expresión oral!"
     }
   },
   "footer": {
@@ -74,37 +84,54 @@
     "Start_for_free": "Empieza gratis",
     "trustedByWorldwide": "Confiado por {path} estudiantes en todo el mundo para un aumento de puntuación de 1 mes Duolingo English Test.",
     "The_Best_Platform": "La Mejor Plataforma para Aumentar Tus Duolingo English Test Puntuaciones",
+    "Tu": "Total de Usuarios",
+    "questions": "Preguntas",
+    "mockTest": "Prueba de Simulación",
     "Leverage_Our": "Aproveche nuestros recursos todo incluido para una mejora rápida de la puntuación",
+    "yellow_check_icon_alt": "icono_de_verificación_amarillo",
     "article1": {
       "title": "Duolingo English Test Práctica",
-      "tips1": "Con más de {number} preguntas de práctica, nuestro banco de preguntas en constante expansión se actualiza regularmente para la excelencia.",
-      "tips2": "Cobertura completa de todos los tipos de exámenes con explicaciones detalladas para cada pregunta.",
-      "tips3": "Respuestas detalladas, análisis inteligentes y puntuación para permitir la monitorización continua de tu rendimiento.",
+      "tips1": "El <span class='yellow'>Banco de Preguntas</span> más grande, {number} Preguntas de Práctica",
+      "tips2": "Continuamente <span class='yellow'>actualizado todos los días</span>",
+      "tips3": "Proporcionar respuestas de alta puntuación y explicaciones detalladas",
+      "tips4": "Evaluación de IA para Leer en Voz Alta",
       "btn_font": "Descubre Más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "article2": {
-      "title": "Servicio de Corrección de Ensayos Potenciado por IA",
-      "tips1": "Benefíciese de correcciones precisas en sus ensayos gracias a nuestra revisión 'IA + Profesor'.",
-      "tips2": "Simplemente envíe su ensayo y reciba rápidamente un informe completo con una puntuación detallada.",
-      "tips3": "Mejora tu puntuación de escritura en solo 2 semanas.",
+      "title": "∑ Examen Simulado Completo",
+      "tips1": "El Mock Test Más <span class='yellow'>Poderoso</span>, Cercano al <span class='yellow'>Examen Real ∑</span>",
+      "tips2": "Exámenes Adaptativos y Puntuación por IA",
+      "tips3": "Puntuaciones de Evaluación Precisas, Informe de Evaluación Detallado",
+      "tips4": "Los resultados estarán disponibles en <span class='yellow'>5-30 minutos</span>",
       "btn_font": "Más información",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "article3": {
-      "title": "Duolingo English Test Simular",
-      "tips1": "Imita el entorno real del examen para familiarizarte con el proceso de prueba y el contenido de antemano.",
-      "tips2": "Reciba informes de prueba simulados detallados para un análisis preciso de sus fortalezas y debilidades.",
-      "tips3": "Realiza exámenes simulados en línea a tu conveniencia, con calificación rápida proporcionada dentro de 30 minutos.",
+      "title": "∑ Corrección de Escritura AI",
+      "tips1": "Soporte \"Escribir sobre la Foto\",\"Escritura Interactiva\",\"Muestra de Escritura\"",
+      "tips2": "Puntuación por IA, Corrección por IA, Orientación del Profesor",
+      "tips3": "Puntuaciones Precisas de Evaluación, Informe Detallado de Evaluación",
+      "tips4": "Los resultados estarán disponibles en <span class='yellow'>1-5 minutos</span>",
       "btn_font": "Descubre más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "article4": {
-      "title": "Duolingo English Test Curso",
-      "tips1": "Logra un dominio completo. Desarrolla una comprensión profunda de DET secciones de habla y escritura con nuestras guías detalladas, asegurándote de abordar cada parte del examen con confianza.",
-      "tips2": "Aprenda de expertos en ESL. Utilice estrategias comprobadas para mejorar sus habilidades de habla y escritura, benefíciese de rutas de aprendizaje personalizadas y participe en una autoevaluación eficaz.",
-      "tips3": "Mantente informado y a la vanguardia. Mantente al tanto de los últimos formatos DET y tendencias para asegurar que tu preparación esté en perfecta sincronía con los estándares actuales del examen.",
+      "title": "∑ Corrección de AI para hablar",
+      "tips1": "Apoyar \"Escuchar, luego hablar \", \"Hablar sobre la foto\", \"Leer, luego hablar\", \"Muestra de habla\"",
+      "tips2": "Puntuación de IA, Resultados de Evaluación de IA, Orientación del Profesorado",
+      "tips3": "Puntuaciones Precisas de Evaluación, Informe Detallado de Evaluación",
+      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5 minutos</span>",
       "btn_font": "Explorar más",
+      "btn_img_alt": "Flecha Derecha Amarilla"
+    },
+    "article5": {
+      "title": "∫ Curso",
+      "tips1": "Desarrolla una <span class='yellow'>comprensión profunda</span> de las secciones de ∑ habla y escritura con nuestras guías detalladas",
+      "tips2": "Logra un Dominio Integral",
+      "tips3": "Aprende de expertos en ESL",
+      "tips4": "Mantente informado y adelantado",
+      "btn_font": "Explorar Más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "thousand": "k",
@@ -151,6 +178,10 @@
       "h4": "¡Pago seguro! ¡Cancela en cualquier momento! ¡Domina el DET ahora!",
       "switch1": "Servicio",
       "switch2": "Cursos",
+      "sep": "Pago seguro",
+      "ca": "Cancelar en cualquier momento",
+      "atde": "Acierta la ∑ ahora",
+      "circle_check_icon": "círculo_comprobar_icono",
       "Most_Popular_Choice": "Elección Más Popular",
       "off": "{off}% de descuento",
       "do": "$",
@@ -177,6 +208,7 @@
       "month": "/mes",
       "Billed": "Facturado ${num} /año",
       "apcs": "Servicio de Corrección impulsado por IA",
+      "apcs1": "Servicio de Corrección de IA",
       "times": "veces",
       "bci": "icono_de_verificación_negro",
       "mt": "Examen de práctica",
@@ -243,6 +275,13 @@
       "Plan de estudio personalizado con selección inteligente de preguntas",
       "Evaluaciones de habla impulsadas por IA"
     ],
+    "correctServiceQuanYi": [
+      "Puede ser utilizado para ∑ escribir y hablar",
+      "Puntuación de IA, Puntuación precisa",
+      "Resultados de la Evaluación de IA",
+      "Informe de Evaluación Detallado",
+      "Los resultados estarán disponibles en <span class='strongfont'>1-5 minutos</span>"
+    ],
     "contaceUsList": {
       "type1": {
         "font": "Servicio de atención al cliente en línea",
@@ -260,21 +299,21 @@
       }
     },
     "leftQuanYiList": [
-      "Ilimitado para sesiones de práctica",
-      "Acceso a todas las preguntas de práctica",
-      "Explorar respuestas de muestra de alta puntuación",
-      "Análisis profundo de preguntas",
-      "Libro de palabras de examen de alta frecuencia",
-      "Plan de estudio personalizado con selección inteligente de preguntas",
-      "Evaluaciones de habla impulsadas por IA"
+      "<span class='strongfont'>Ilimitado</span> para Sesiones de Práctica",
+      "Acceso a <span class='strongfont'>18000+</span> preguntas de práctica",
+      "Navegar <span class='strongfont'>Respuestas de muestra de alta puntuación</span>",
+      "<span class='strongfont'>Análisis de Preguntas en Profundidad</span>",
+      "Libro de Palabras para Exámenes <span class='strongfont'>de Alta Frecuencia</span>",
+      "Plan de Estudio <span class='strongfont'>Personalizado</span> con Selección Inteligente de Preguntas",
+      "Evaluaciones de Habla Impulsadas por IA"
     ],
     "mockQuanYiList": [
-      "Exámenes simulados a gran escala",
+      "<span class='strongfont'>Exámenes simulados de duración completa</span>",
       "Prueba en cualquier momento",
-      "Cercano al examen DET real",
+      "Cercano a <span class='strongfont'>examen real ∑</span>",
       "Puntuaciones de evaluación precisas",
       "Informe de evaluación detallado",
-      "Los resultados estarán disponibles en 5-30 minutos"
+      "Los resultados estarán disponibles dentro de <span class='strongfont'>5-30 minutos</span>"
     ]
   },
   "blog": {
@@ -308,6 +347,16 @@
     "font2": "Maestría en Escritura de Alta Puntuación.",
     "Start_Now": "Empieza Ahora"
   },
+  "highscorespeaking": {
+    "font1": "Embarca inmediatamente en tu viaje a",
+    "font2": "¡Hablar con Alta Puntuación!",
+    "Start_Now": "Empieza Ahora"
+  },
+  "highscorewritingnew": {
+    "font1": "Inmediatamente embárcate en tu viaje a",
+    "font2": "¡Escritura de alta puntuación!",
+    "Start_Now": "Empieza Ahora"
+  },
   "path": {
     "seometa": {
       "title": "DET Práctica Blog",
@@ -320,23 +369,32 @@
       "description": ""
     },
     "title": "Acerca de DET Practice",
-    "oelet": "Nuestro Estimado Equipo de Educación de Idiomas",
-    "oeletdesc": "En el corazón de nuestros servicios de educación lingüística se encuentra un equipo de educadores dedicados, altamente calificados y con experiencia, cada uno aportando su propia experiencia única y pasión al aprendizaje de idiomas. Nuestro equipo está compuesto por profesionales de élite que no solo son competentes en inglés, sino que también son expertos en preparar a los estudiantes para pruebas importantes de competencia en inglés como TOEFL, IELTS y Duolingo English Test (DET). Nuestros educadores poseen certificaciones prestigiosas como TESOL y certificados de capacitación de profesores de Cambridge English, que demuestran su compromiso con la entrega de una educación lingüística de alta calidad. Poseen puntajes impresionantes en pruebas de idiomas, lo que refleja su profundo entendimiento de las habilidades y estrategias necesarias para sobresalir en estos exámenes. La experiencia colectiva de nuestro equipo abarca varios años, durante los cuales han perfeccionado su capacidad para atender diversas necesidades de aprendizaje. Sobresalen en identificar las fortalezas y debilidades individuales de los estudiantes, asegurando enfoques de enseñanza personalizados que maximizan los resultados de aprendizaje. Esta habilidad única les permite proporcionar orientación y retroalimentación específicas, ayudando a los estudiantes a superar barreras de aprendizaje y mejorar rápidamente su competencia lingüística. Nuestros educadores no son solo maestros; son mentores que inspiran confianza y entusiasmo en sus estudiantes. Fomentan un ambiente de aprendizaje dinámico e interactivo, haciendo el viaje del aprendizaje de idiomas tanto agradable como efectivo. Sus métodos de enseñanza están en continua evolución, integrando técnicas y materiales innovadores para mantenerse al tanto de las últimas tendencias en educación lingüística. El éxito de nuestros estudiantes al alcanzar sus objetivos lingüísticos es un testimonio de la experiencia, dedicación y excelencia pedagógica de nuestro equipo. Como unidad, representan lo mejor de la educación lingüística, comprometidos a guiar a los estudiantes hacia el logro de su máximo potencial en la competencia en inglés.",
-    "p1title": "Michael Z.",
-    "p1author": "Supervisor de Tutor",
-    "p1content1": "Como la figura principal de nuestro equipo de enseñanza, Michael Z. encarna el pináculo de la instrucción en idiomas. Con una extensa experiencia docente que abarca más de una década, Mike posee todas las credenciales de nuestros estimados profesores, incluyendo TESOL, Certificados de Formación de Profesores de Cambridge English y otros certificados. Su excepcional dominio del idioma se refleja en sus impresionantes puntajes: 115 en TOEFL, 8.5 en IELTS y un perfecto 150 en Duolingo English Test. La filosofía de enseñanza de Michael combina las fortalezas de nuestro equipo diverso, ofreciendo un enfoque integral y dinámico para el aprendizaje de idiomas. Es reconocido por su capacidad de comprender y abordar profundamente las necesidades únicas de cada estudiante, fomentando un entorno de aprendizaje donde los estudiantes pueden prosperar y superar sus objetivos. Sus clases son una mezcla de rigurosos estándares académicos y experiencias de aprendizaje interactivas y atractivas. Más allá de la enseñanza, Michael es fundamental en el desarrollo de currículos de vanguardia y métodos de formación, asegurando que nuestros cursos se mantengan a la vanguardia de la educación en idiomas. Su dedicación a la excelencia en la enseñanza y su compromiso con el éxito de los estudiantes lo convierten en un líder y mentor invaluable tanto para nuestro equipo como para nuestros estudiantes.",
-    "p2title": "Albert L.",
-    "p2author": "Diseñador de cursos",
-    "p2content1": "Obteniendo una puntuación de 8.5 en IELTS, Albert tiene una amplia experiencia en la enseñanza de IELTS, TOEFL, PTE y DET. Su enseñanza es conocida por su ambiente relajado y animado, haciendo que el aprendizaje sea agradable. El enfoque de Albert está adaptado a las necesidades de cada estudiante, lo que permite una rápida mejora en la competencia del inglés en un corto período. Además de ser un excelente profesor, Albert también es un talentoso diseñador de cursos que ha creado y desarrollado varios cursos en línea y presenciales para estudiantes de inglés de diferentes niveles y objetivos. Tiene un profundo conocimiento de los estándares del currículo y los criterios de evaluación de diversas pruebas de inglés, y sabe cómo diseñar actividades y materiales de aprendizaje efectivos y atractivos que pueden ayudar a los estudiantes a dominar las habilidades y estrategias de las pruebas. Albert también ha colaborado con otros profesores y expertos para revisar y mejorar la calidad y relevancia de los cursos, y ha recibido comentarios positivos y reconocimiento tanto de los estudiantes como de sus colegas. Albert siente pasión por crear cursos innovadores y personalizados que puedan satisfacer las diversas necesidades e intereses de los estudiantes de inglés.",
-    "p3title": "Rita T.",
-    "p3author": "Tutor Sénior",
-    "p3content1": "Con 11 años de experiencia docente, Rita es una experta veterana en Duolingo English Test preparación e investigación. Ella es una profesora certificada avanzada de inglés por ATI, con un Certificado de Profesor de Inglés Avanzado TESOL y un Certificado de Capacitación de Profesores de Inglés de Cambridge. Rita tiene puntuaciones impresionantes de 111 en TOEFL y 140 en DET. Su enseñanza se caracteriza por una capacidad para analizar con precisión las necesidades de los estudiantes y proporcionar instrucción específica, ayudándolos a superar barreras y mejorar sus habilidades lingüísticas para alcanzar rápidamente las puntuaciones deseadas. Además, Rita es una profesora apasionada y entusiasta que siempre motiva e inspira a sus estudiantes a aprender inglés con confianza y alegría. Utiliza una variedad de métodos interactivos y atractivos, como juegos, juegos de rol, debates y simulaciones, para hacer que sus clases sean divertidas y efectivas. También brinda retroalimentación y orientación personalizada a cada estudiante, ayudándolos a mejorar sus áreas débiles y superar sus desafíos. Los estudiantes de Rita adoran su personalidad cálida y comprensiva, y a menudo la elogian por ser paciente, amigable y profesional.",
-    "p4title": "Doris W.",
-    "p4author": "Tutor",
-    "p4content1": "Doris, con una puntuación de 145 en DET y 8.0 en IELTS, es una versátil Duolingo English Test instructora conocida por su rica experiencia docente. Ella se destaca en ayudar a estudiantes de varios niveles a superar rápidamente las dificultades para lograr sus resultados ideales, habiendo ayudado una vez a un estudiante a mejorar 30 puntos en solo dos semanas. Sus clases son conocidas por su ambiente animado y lógica clara, y su estilo de enseñanza es riguroso pero apasionado y responsable, lo que la convierte en una favorita entre una amplia gama de estudiantes.",
-    "p5title": "Laura K.",
-    "p5author": "Investigador de pruebas",
-    "p5content1": "Laura aporta años de experiencia en la formación de Duolingo, 110 en TOEFL y 155 en DET. Especialista en la investigación de preguntas de Duolingo, Laura es experta en enseñar preguntas adaptativas de pruebas y escritura. Tiene un profundo conocimiento de las técnicas y tendencias del examen DET, destacándose en el análisis de rendimiento para identificar y mejorar rápidamente el potencial de los estudiantes."
+    "title_desc": "DETPractice.com es la mejor plataforma para ∫ Practicar y Aprender.",
+    "check_out": {
+      "h2": "Descubre lo que podemos hacer",
+      "qbt": "∑ Banco de Preguntas",
+      "qbtdesc": "Tenemos el banco de preguntas más grande y lo actualizamos todos los días. Puedes mejorar rápidamente tu puntuación ∫ practicando las preguntas.",
+      "flm": "∑ Simulacro Completo",
+      "flmdesc": "    Tenemos la prueba simulada más poderosa ∑, que te permite evaluar con precisión tus puntajes de prueba a un costo menor.",
+      "acs": "∑ Servicio de Corrección de IA",
+      "acsdesc": "Puede utilizar las herramientas de corrección de IA que proporcionamos para mejorar rápidamente sus ∑ puntuaciones de habla y escritura.",
+      "dc": "∑ Cursos",
+      "dedesc": "Continuaremos desarrollando materiales de preparación para exámenes y cursos basados en las últimas características del examen de ∑."
+    },
+    "three_our_our": {
+      "h2": "Aunque joven, pero fuerte",
+      "ov": "Nuestra Visión",
+      "me": "Mejorar la educación a través de la IA",
+      "om": "Nuestra Misión",
+      "omdesc": "Asegúrate de que la inteligencia general <br />artificial beneficie a todos los estudiantes.",
+      "ovs": "Nuestros Valores",
+      "ovsdesc": "Sinceridad, cooperación y beneficio<br /> mutuo"
+    },
+    "get_in_touch": {
+      "h2": "Póngase en contacto",
+      "goytb": "Ir a YouTube",
+      "getmore": "Obtén más de DETPractice en YouTube\n"
+    }
   },
   "contactUs": {
     "seometa": {
@@ -401,47 +459,43 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Práctica - Servicio de corrección de AI para tu prueba de Duolingo",
-      "description": "Servicio de corrección proporcionado por \"AI + Teachers\". Obtenga comentarios personalizados de expertos en idiomas para mejorar sus respuestas y estrategias para obtener puntajes más altos.",
-      "keywords": "Servicio de Corrección para la Prueba de Duolingo, Servicio de Corrección de IA para la Prueba de Duolingo"
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
     },
-    "h1": "Descubre el Mejor Servicio de Corrección de IA para la Prueba de Duolingo",
-    "desc": "Mejora tus ensayos con nuestro servicio de corrección 'IA + Profesores'. Obtén comentarios detallados basados en los estándares oficiales de puntuación rápidamente después de la entrega.",
+    "h1": "∑ Escritura de Corrección de IA",
+    "desc": "∑ Servicio de corrección de escritura AI proporcionado por AI comparable a maestros profesionales. Su ensayo será corregido según las ∑ reglas de puntuación, y recibirá comentarios detallados en un plazo de 1-5 minutos.",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de práctica",
     "useralt": "Icono de Usuario",
     "white_arrow_right": "flecha_blanca_derecha",
     "yellow_arrow_right": "flecha_amarilla_derecha",
-    "learners_have": "{number} estudiantes han mejorado su escritura con nuestro servicio de corrección.",
-    "Review_Now": "Revisar ahora",
-    "Correct_Now": "Correcto Ahora",
-    "Get_Scored_Now": "Obtén tu puntuación ahora",
+    "learners_have": "{número} personas utilizaron el servicio de Corrección de Escritura AI de ∑.",
+    "Review_Now": "Comenzar",
+    "Correct_Now": "Empieza a experimentar",
+    "Get_Scored_Now": "Comienza a experimentar",
     "Enhance_Now": "Mejorar Ahora",
     "Begin_Polishing": "Comenzar pulido",
     "h2_1": {
-      "h2": "Solicitudes de correcciones",
-      "right_desc": "En las páginas de práctica de Hablar y Escribir, puedes solicitar el servicio de corrección directamente."
+      "h2": "Puntuación precisa",
+      "right_desc": "Envía tu ensayo desde el banco de preguntas, y puedes recibir un informe claro y detallado con puntuación en 1-5 minutos."
     },
     "h2_2": {
-      "h2": "Evaluación Integral",
-      "right_desc": "Sigue los requisitos oficiales Duolingo English Test para capturar con precisión las habilidades de escritura y proporcionar resultados de evaluación completos."
+      "h2": "Corrección de escritura",
+      "right_desc": "Puedes ver de inmediato tus errores de vocabulario, errores gramaticales y aprender cómo evitarlos."
     },
     "h2_3": {
-      "h2": "Corrección de Escritura",
-      "right_desc": "Detecta y comprende al instante los errores en vocabulario y gramática para mejorar tus habilidades de escritura."
+      "h2": "Guía profesional",
+      "right_desc": "Según los elementos de puntuación ∑, proporcionamos orientación profesional para ayudarte a identificar las debilidades en tu documento y hacerlo perfecto."
     },
     "h2_4": {
-      "h2": "Orientación del maestro",
-      "right_desc": "Mejore su escritura con un análisis experto adaptado a los criterios DET, identificando áreas de mejora para elevar su trabajo."
-    },
-    "h2_5": {
-      "h2": "Pulido de texto original",
-      "right_desc": "Eleva cada palabra y oración; refina la estructura y el estilo para una composición distinguida y de alta puntuación."
+      "h2": "Pulido de ensayo",
+      "right_desc": "Modifica con precisión cada palabra y oración, ajusta razonablemente la estructura del párrafo y revitaliza el estilo de escritura para mejorar aún más tu composición y transformarla en una de alta puntuación."
     }
   },
   "courses": {
     "seometa": {
       "title": "DET Práctica - Domina Hablar y Escribir con la Duolingo English Test Guía",
-      "description": "Desbloquea tu potencial con nuestra Guía Duolingo English Test. Adéntrate en la excelencia del habla y la escritura con estrategias integrales, consejos expertos y práctica DET actualizada."
+      "description": "Desbloquea tu potencial con nuestra ∫ Guía. Sumérgete en la excelencia en hablar y escribir con estrategias completas, consejos de expertos y ∑ Práctica actualizada."
     },
     "article1": {
       "title": "Características clave de DET Speaking Exam Excellence:",
@@ -576,7 +630,7 @@
       "description": "Experimenta un examen de prueba de Duolingo realista con los exámenes completos de DET Practice. Con preguntas adaptativas inteligentes y puntuación de IA, nuestros exámenes de prueba ofrecen una evaluación precisa para prepararte eficazmente para el Duolingo English Test.",
       "keywords": "Prueba simulada de Duolingo, DET Duolingo, DET Prueba, Duolingo DET, Prueba de Duolingo, Prueba de Duolingo en línea"
     },
-    "h1": "Duolingo English Test 1:1 Examen Simulado",
+    "h1": "∑ Examen Simulado Completo",
     "desc": "Sumérgete en una experiencia de examen realista con nuestros exámenes simulados a gran escala. Prueba el proceso de examen real antes del verdadero y recibe rápidamente las puntuaciones e informes diagnósticos detallados para identificar áreas de mejora.",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de práctica",
     "mock_user_icon": "Icono de usuario simulado",
@@ -586,7 +640,7 @@
     "Mock_Now": "Burlarse ahora",
     "Full_scale": "Duolingo 1:1 Examen Simulado a Escala Completa",
     "article1": {
-      "h2": "Inteligencia Algorítmica",
+      "h2": "Cerca del Examen Real",
       "right_desc": "Experimenta las condiciones reales del examen con nuestro avanzado algoritmo de prueba adaptativa. Domina rápidamente varios tipos de preguntas y obtén evaluaciones precisas."
     },
     "article2": {
@@ -599,7 +653,7 @@
     },
     "article4": {
       "h2": "Informe Rápido de Puntuaciones",
-      "right_desc": "Reciba los resultados de su examen simulado en 30 minutos, acelerando la revisión de su progreso."
+      "right_desc": "Reciba los resultados de su examen de práctica en un plazo de <span class='zdfont'>5-30 minutos</span>, acelerando su revisión de progreso."
     }
   },
   "practice": {
@@ -608,34 +662,65 @@
       "description": "Nuestra base de datos de pruebas DET incluye miles de preguntas para un entrenamiento exhaustivo, completo con explicaciones detalladas y análisis de IA para ayudarte a alcanzar el éxito.",
       "keywords": "Duolingo English Test Práctica, Duolingo Práctica Examen de Inglés, Duolingo Práctica de Examen de Inglés, Duolingo Examen de Práctica en Línea, Duolingo Práctica para Examen, Duolingo Examen de Práctica, Duolingo Práctica, Examen de Práctica Det, Duolingo English Test Puntuación"
     },
-    "h1": "Banco de Preguntas de Práctica de Duolingo",
+    "h1": "∫ Practicar",
     "desc": "Accede a una amplia colección de preguntas de prueba, mejorada con análisis de respuestas, plantillas, evaluaciones de habla impulsadas por IA y planificación inteligente. Acelera la mejora de tu puntuación de manera eficiente y asequible con nuestro enfoque impulsado por IA.",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
-    "altbanner": "Banco de preguntas de práctica de Duolingo",
+    "altbanner": "∫ Práctica",
     "bank_user_icon": "Icono de usuario del banco",
     "white_arrow_right": "Flecha Blanca Derecha",
     "blue_arrow_right": "Flecha Azul Derecha",
     "learners_have": "{number} estudiantes han utilizado nuestro banco de preguntas para la preparación de DET.",
     "spn": "Empieza a Practicar Ahora",
     "article1": {
-      "h2": "Biblioteca extensa de preguntas",
-      "right_desc": "Explora nuestra extensa biblioteca de más de 10,000 preguntas en diversos tipos de exámenes, constantemente actualizadas para mantener tu práctica al día. Nuestro banco de preguntas está diseñado para fortalecer sistemáticamente tus habilidades para tomar exámenes en varios formatos de preguntas.",
+      "h2": "El Banco de Preguntas Más Grande",
+      "right_desc": " Explora nuestra extensa biblioteca de más de <span class='zdfont'>18,000+ preguntas</span> en diversos tipos de exámenes, constantemente actualizada para mantener tu práctica al día. Nuestro banco de preguntas está diseñado para fortalecer sistemáticamente tus habilidades para tomar exámenes en varios formatos de preguntas.",
       "btn": "Sumérgete en la práctica"
     },
     "article2": {
       "h2": "Recomendación Inteligente",
-      "right_desc": "El modelo de IA tendrá en cuenta el nivel de dominio de cada tipo de pregunta, la dificultad, la puntuación objetivo, el peso de la pregunta, la novedad de las preguntas, la frecuencia reciente del examen, el tiempo de preparación y la eficiencia de la puntuación, etc. para recomendar preguntas con precisión y ayudarte a prepararte eficientemente para el examen.",
+      "right_desc": "El <span class='zdfont'>modelo de IA</span> tendrá en cuenta el nivel de dominio de cada tipo de pregunta, la dificultad, el puntaje objetivo, el peso de la pregunta, la novedad de las preguntas, la frecuencia reciente del examen, el tiempo de preparación y la eficiencia en la calificación, etc., para recomendar preguntas de manera precisa que te ayuden a prepararte eficientemente para el examen.",
       "btn": "Inicia un Viaje de Estudio Inteligente"
     },
     "article3": {
       "h2": "Evaluación de habla por IA",
-      "right_desc": "Mejore su competencia oral con nuestras evaluaciones de habla impulsadas por IA. Envíe su respuesta a una pregunta de idioma hablado y reciba al instante un análisis detallado de sus habilidades orales, ayudándole a mejorar con precisión y rapidez.",
+      "right_desc": "Mejore su competencia oral con nuestras <span class='zdfont'>evaluaciones de habla impulsadas por IA</span>. Envíe su respuesta a una pregunta de idioma hablado y reciba al instante un análisis detallado de sus habilidades de habla, ayudándole a mejorar con precisión y rapidez.",
       "btn": "Comience su evaluación"
     },
     "article4": {
       "h2": "Análisis de Respuestas",
       "right_desc": "Adéntrate en explicaciones completas de respuestas que profundizan tu comprensión de conceptos esenciales y técnicas de resolución de problemas. Nuestros análisis detallados no solo te guían hacia las respuestas correctas, sino que también amplían tu conocimiento y mejoran tu eficiencia de estudio.",
       "btn": "Explorar información de respuestas"
+    }
+  },
+  "speakingaicorrection": {
+    "seometa": {
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
+    },
+    "h1": "∑ Corrección de IA Hablante",
+    "desc": "∑ Servicio de corrección de expresión oral proporcionado por una poderosa IA. Soporta todo tipo de preguntas de expresión oral y proporciona orientación profesional para ayudarte a mejorar fácilmente tu ∑ puntuación de expresión oral.",
+    "alt": "∑ Práctica:La mejor ∑ plataforma de Corrección de Habla por IA",
+    "altbanner": "∑ Corrección de IA de habla",
+    "bank_user_icon": "Icono de Usuario del Banco",
+    "white_arrow_right": "Flecha Blanca Derecha",
+    "purple_arrow_right": "Flecha Morada Derecha",
+    "learners_have": "{number} personas usaron el servicio de Corrección de AI de ∑ Speaking.",
+    "spn": "Comenzar",
+    "article1": {
+      "h2": "Puntuación precisa",
+      "right_desc": "Envía tu ensayo ingresándolo o desde el banco de preguntas, y podrás recibir un informe claro y detallado con la puntuación de inmediato.",
+      "btn": "Empieza a experimentar"
+    },
+    "article2": {
+      "h2": "Evaluación de Habla",
+      "right_desc": "Puedes ver inmediatamente tu error de pronunciación, interrupción inesperada, pausa faltante, lectura en voz alta sospechada, repetición sospechada y aprender cómo evitarlos.",
+      "btn": "Empieza a experimentar"
+    },
+    "article3": {
+      "h2": "Guía profesional",
+      "right_desc": "Según los elementos de puntuación ∑, proporcionamos orientación profesional para ayudarte a identificar las debilidades en tu manera de hablar y perfeccionarla.",
+      "btn": "Comienza a experimentar"
     }
   },
   "privacyPolicy": {
@@ -647,7 +732,7 @@
     "h1": "Política de Privacidad",
     "q1": {
       "title": "Última actualización: 20/11/2023",
-      "a1": "DET Practice (“nosotros” o “nuestro”) opera el sitio web DET Practice (el “Servicio”).",
+      "a1": "∑ Practice (“nosotros”, “nos” o “nuestro”) opera el sitio web de ∑ Practice (el “Servicio”).",
       "a2": "Esta página le informa sobre nuestras políticas con respecto a la recopilación, uso y divulgación de Información Personal cuando utiliza nuestro Servicio.",
       "a3": "No usaremos ni compartiremos su información con nadie excepto como se describe en esta Política de Privacidad.",
       "a4": "Utilizamos su Información Personal para proporcionar y mejorar el Servicio. Al usar el Servicio, usted acepta la recopilación y el uso de información de acuerdo con esta política. A menos que se defina lo contrario en esta Política de Privacidad, los términos utilizados en esta Política de Privacidad tienen los mismos significados que en nuestros Términos y Condiciones, accesibles en",
@@ -701,9 +786,10 @@
       "a3": "• Cursos digitales: Una vez que se descarga o se accede a un producto digital, se considera utilizado y los productos usados no pueden ser reembolsados."
     },
     "q3": {
+      "title0": "Sin embargo, DETPractice le da la bienvenida a <strong>Contactarnos</strong> para resolver sus problemas en cualquier situación. Intentaremos hacer nuestro mejor esfuerzo para proporcionar una solución que le satisfaga.",
       "title": "Cómo solicitar un reembolso / Cancelar suscripción",
       "a1": "Para solicitar un reembolso, por favor, siga estos pasos:",
-      "a2": "1. Cancelar suscripción: Inicie sesión en su cuenta, encuentre y haga clic en el enlace \"Administrar su facturación\" en la parte inferior de la página de membresía. Será redirigido a una página de confirmación donde podrá confirmar su decisión de darse de baja.",
+      "a2": "1.Cancelar suscripción: Inicie sesión en su cuenta, busque y haga clic en el enlace <span class='websiteStrong'>\"Gestionar su facturación\"</span> en la parte inferior de la página de membresía. Será redirigido a una página de confirmación donde podrá confirmar su decisión de darse de baja.",
       "a3": "2. Contacte con nuestro soporte: Contacte con nuestro equipo de soporte al cliente en <span class='website'>support{'@'}detpractice.com</span> con su número de pedido y la razón de la solicitud de reembolso.",
       "a4": "3. Nuestro equipo revisará tu solicitud y responderá en un plazo de 3 días hábiles."
     },

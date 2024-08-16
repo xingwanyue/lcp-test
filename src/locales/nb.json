@@ -30,9 +30,19 @@
       "font": "Erobre eksamen din med autentiske full-lengde mocks: Grundig analyse og umiddelbare resultater, tilgjengelig når som helst, hvor som helst."
     },
     "prod4": {
-      "title": "Duolingo English Test Mock",
-      "alt": "Duolingo English Test Hån",
+      "title": "∑ Fullstendig Prøveeksamen",
+      "alt": "∑ Full-Length Mock Test",
       "font": "Lås opp DET suksess: omfattende mestring, velprøvde teknikker og oppdaterte innsikter for selvsikker tale- og skrivekompetanse!"
+    },
+    "prodwriting": {
+      "title": "∑ Skrive AI Korreksjon",
+      "alt": "∑ Skrive AI-korrigering",
+      "font": "Få nøyaktige resultater og detaljerte rapporter slik at du kan forbedre skriveferdighetene dine raskere. Støtt alle skrive spørsmål!"
+    },
+    "prodspeaking": {
+      "title": "∑ Snakkende AI Korreksjon",
+      "alt": "∑ Snakkende AI Korreksjon",
+      "font": "Utnytt kraftig AI for å forbedre din ∑ talepoengsum på en målrettet måte. Støtte alle spørsmål om tale!"
     }
   },
   "footer": {
@@ -74,36 +84,53 @@
     "Start_for_free": "Start gratis",
     "trustedByWorldwide": "Stolt brukt av {path} studenter over hele verden for en 1-måneders Duolingo English Test poengøkning.",
     "The_Best_Platform": "Den beste plattformen for å øke dine Duolingo English Test poengsum",
+    "Tu": "Totalt antall brukere",
+    "questions": "Spørsmål",
+    "mockTest": "Mock Test",
+    "yellow_check_icon_alt": "gul_sjekk_ikon",
     "Leverage_Our": "Utnytt våre altomfattende ressurser for rask forbedring av poengsummen",
     "article1": {
       "title": "Duolingo English Test Øvelse",
-      "tips1": "Med over {number} øvingsspørsmål blir vår stadig voksende spørsmålsbank jevnlig oppdatert for kvalitet.",
-      "tips2": "Omfattende dekning av alle eksamens typer med detaljerte forklaringer for hvert spørsmål.",
-      "tips3": "Dybdegående svar, smarte analyser og poenggiving for å muliggjøre kontinuerlig overvåking av din ytelse.",
+      "tips1": "Den <span class='yellow'>Største</span> Spørsmålsbanken, {number} Øvingsspørsmål",
+      "tips2": "Kontinuerlig <span class='yellow'>oppdatert hver dag</span>",
+      "tips3": "Gi høyscorende svar og detaljerte forklaringer",
+      "tips4": "AI-poenggiving for høytlesing",
       "btn_font": "Oppdag mer",
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article2": {
-      "title": "AI-drevet essaykorrigeringsservice",
-      "tips1": "Dra nytte av presise essayrettelser gjennom vår 'AI + Lærer' samarbeidsgjennomgang.",
-      "tips2": "Send ganske enkelt inn essayet ditt og motta raskt en omfattende rapport med en detaljert bandskåre.",
-      "tips3": "Hev skrivepoengene dine på bare 2 uker.",
+      "title": "∑ Full-Long Mock Test",
+      "tips1": "Den Mest <span class='yellow'>Kraftfulle</span> Prøven, Nær <span class='yellow'>Ekte ∑ Eksamen</span>",
+      "tips2": "Adaptive eksamener og AI-vurdering",
+      "tips3": "Nøyaktige vurderingspoeng, detaljert evalueringsrapport",
+      "tips4": "Resultatene vil være tilgjengelige innen <span class='yellow'>5-30 minutter</span>",
       "btn_font": "Lær mer",
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article3": {
-      "title": "Duolingo English Test Mock",
-      "tips1": "Etterlign den faktiske eksamenssituasjonen for å gjøre deg kjent med testprosessen og innholdet på forhånd.",
-      "tips2": "Motta grundige simulerte testrapporter for en presis analyse av dine styrker og svakheter.",
-      "tips3": "Ta nettbaserte prøveeksamener når det passer deg, med rask vurdering levert innen 30 minutter.",
+      "title": "∑ Skrive AI Korreksjon",
+      "tips1": "Støtte \"Skriv om bildet\", \"Interaktiv skriving\", \"Skriveprøve\"",
+      "tips2": "AI Scoring, AI Korrektering, Lærerveiledning",
+      "tips3": "Nøyaktige vurderingspoeng, Detaljert evalueringsrapport",
+      "tips4": "Resultater vil være tilgjengelige innen <span class='yellow'>1-5 minutter</span>",
       "btn_font": "Finn ut mer",
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article4": {
-      "title": "Duolingo English Test Kurs",
-      "tips1": "Oppnå omfattende mestring. Utvikle en grundig forståelse av DET muntlige og skriftlige deler med våre detaljerte guider, slik at du kan nærme deg hver del av eksamenen med selvtillit.",
-      "tips2": "Lær fra ESL-eksperter. Utnytt velprøvde strategier for å forbedre dine tale- og skriveferdigheter, dra nytte av personlige læringsveier, og delta i effektiv selvvurdering.",
-      "tips3": "Hold deg informert og forut. Hold deg oppdatert på de nyeste DET formatene og trendene for å sikre at forberedelsene dine er i perfekt harmoni med gjeldende eksamensstandarder.",
+      "title": "∑ Talende AI Korreksjon",
+      "tips1": "Støtte \"Lytt, så snakk\", \"Snakk om bildet\", \"Les, så snakk\", \"Taleprøve\"",
+      "tips2": "AI Poengsum, AI Evalueringsresultater, Lærer Veiledning",
+      "tips3": "Nøyaktige vurderingspoeng, detaljert evalueringsrapport",
+      "tips4": "Resultatene vil være tilgjengelige innen <span class='yellow'>1-5 minutter</span>",
+      "btn_font": "Utforsk mer",
+      "btn_img_alt": "Gul Pil Høyre"
+    },
+    "article5": {
+      "title": "∫ Kurs",
+      "tips1": "Utvikle en <span class='yellow'>grundig forståelse</span> av ∑ tale- og skrivedeler med våre detaljerte veiledninger",
+      "tips2": "Oppnå omfattende mestring",
+      "tips3": "Lær av ESL-eksperter",
+      "tips4": "Hold deg informert og foran",
       "btn_font": "Utforsk mer",
       "btn_img_alt": "Gul Pil Høyre"
     },
@@ -151,6 +178,11 @@
       "h4": "Sikker betaling! Avbryt når som helst! Mestre DET nå!",
       "switch1": "Tjeneste",
       "switch2": "Kurs",
+      "sep": "Sikker betaling",
+      "ca": "Avbryt når som helst",
+      "atde": "Ace ∑ nå",
+      "circle_check_icon": "sirkel_sjekk_ikon",
+      "apcs1": "AI Korreksjonstjeneste",
       "Most_Popular_Choice": "Mest Populære Valg",
       "off": "{off}% rabatt",
       "do": "$",
@@ -241,6 +273,13 @@
       "Tilpasset studieplan med smart spørsmålvalg",
       "AI-drevne taleevalueringer"
     ],
+    "correctServiceQuanYi": [
+      "Kan brukes til ∑ skriving og tale",
+      "AI Poenggivning, Nøyaktig poengsum",
+      "Evaluering av AI-resultater",
+      "Detaljert Evalueringsrapport",
+      "Resultatene vil være tilgjengelige innen <span class='strongfont'>1-5 minutter</span>"
+    ],
     "contaceUsList": {
       "type1": {
         "font": "Online kundeservice",
@@ -258,21 +297,21 @@
       }
     },
     "leftQuanYiList": [
-      "Ubegrenset for øvelsesøkter",
-      "Tilgang til alle øvelsesspørsmål",
-      "Bla gjennom høyscorende prøvebesvarelser",
-      "Grundig spørsmålsanalyse",
-      "Høyfrekvent eksamensordbok",
-      "Skreddersydd studieplan med smart spørsmål utvalg",
+      "<span class='strongfont'>Ubegrenset</span> for øvingsøkter",
+      "Tilgang til <span class='strongfont'>18000+</span> øvelsesspørsmål",
+      "Bla gjennom <span class='strongfont'>Høyscorende</span> Eksempel Svar",
+      "<span class='strongfont'>Grundig</span> spørsmål analyse",
+      "Høyfrekvent eksamen <span class='strongfont'>Ordbok</span>",
+      "Skreddersydd <span class='strongfont'>studieplan</span> med smart utvalg av spørsmål",
       "AI-drevne taleevalueringer"
     ],
     "mockQuanYiList": [
-      "Fullskala mock eksamener",
+      "<span class='strongfont'>Fullstendige</span> prøveeksamener",
       "Test når som helst",
-      "Nær den virkelige DET-eksamen",
-      "Nøyaktige vurderingsresultater",
+      "Nær <span class='strongfont'>ekte ∑ eksamen</span>",
+      "Nøyaktige vurderingspoeng",
       "Detaljert evalueringsrapport",
-      "Resultater vil være tilgjengelige innen 5-30 minutter"
+      "Resultatene vil være tilgjengelige innen <span class='strongfont'>5-30 minutter</span>"
     ]
   },
   "blog": {
@@ -306,6 +345,16 @@
     "font2": "Mestring av høytscorende skriving.",
     "Start_Now": "Start nå"
   },
+  "highscorespeaking": {
+    "font1": "Start umiddelbart på reisen din til",
+    "font2": "High-Scoring Speaking!",
+    "Start_Now": "Start nå"
+  },
+  "highscorewritingnew": {
+    "font1": "Start umiddelbart på reisen din til",
+    "font2": "Høytscorende skriving!",
+    "Start_Now": "Start nå"
+  },
   "path": {
     "seometa": { "title": "DET Practice Blog", "description": "DET Practice Blog" }
   },
@@ -315,23 +364,33 @@
       "description": ""
     },
     "title": "Om DET Practice",
-    "oelet": "Vårt anerkjente språkutdanningsteam",
-    "oeletdesc": "I hjertet av våre språkopplæringstjenester ligger et team av dedikerte, høyt kvalifiserte og erfarne lærere, som hver bringer med seg sin unike ekspertise og lidenskap til sentrum av språklæring. Vårt team består av eliteprofesjonelle som ikke bare er flytende i engelsk, men også eksperter i å forberede studenter til store engelskkunnskapstester som TOEFL, IELTS og Duolingo English Test (DET). Våre lærere har prestisjefylte sertifiseringer som TESOL, og Cambridge English Teacher Training-sertifikater, som viser deres forpliktelse til å levere språkopplæring av høy kvalitet. De har imponerende språktestresultater, som reflekterer deres dype forståelse av ferdighetene og strategiene som kreves for å utmerke seg i disse eksamenene. Den kollektive erfaringen til vårt team strekker seg over flere år, hvor de har finpusset sin evne til å imøtekomme ulike læringsbehov. De utmerker seg i å identifisere studentenes individuelle styrker og svakheter, og sikrer personlige undervisningsmetoder som maksimerer læringsutbyttet. Denne unike evnen lar dem gi målrettet veiledning og tilbakemelding, og hjelper studentene å bryte gjennom læringsbarrierer og raskt forbedre språkkunnskapene sine. Våre lærere er ikke bare lærere; de er mentorer som inspirerer selvtillit og entusiasme hos sine studenter. De fremmer et dynamisk og interaktivt læringsmiljø, noe som gjør reisen med språklæring både hyggelig og effektiv. Deres undervisningsmetoder utvikler seg kontinuerlig, integrerer innovative teknikker og materialer for å holde tritt med de nyeste trendene innen språkopplæring. Våre studenters suksess i å nå sine språkmål er et bevis på teamets ekspertise, dedikasjon og undervisningsfortreffelighet. Som en enhet representerer de det beste av språkopplæring, forpliktet til å veilede studenter mot å oppnå sitt høyeste potensial i engelskkunnskaper.",
-    "p1title": "Michael Z.",
-    "p1author": "Veileder veileder",
-    "p1content1": "Som den ledende figuren i vårt undervisningsteam, er Michael Z. selve toppen av språkundervisning. Med omfattende undervisningserfaring som strekker seg over et tiår, innehar Mike alle kvalifikasjonene til våre anerkjente lærere, inkludert TESOL, Cambridge English Teacher Training Certificates og andre sertifikater. Hans eksepsjonelle språkkunnskaper reflekteres i hans imponerende resultater: 115 på TOEFL, 8,5 på IELTS, og en perfekt 150 på Duolingo English Test. Michaels undervisningsfilosofi kombinerer styrkene til vårt mangfoldige team, og tilbyr en omfattende og dynamisk tilnærming til språkopplæring. Han er kjent for sin evne til å dykke dypt ned i og adressere de unike behovene til hver student, og skape et læringsmiljø hvor studentene kan trives og overgå sine mål. Hans klasser er en blanding av strenge akademiske standarder og engasjerende, interaktive læringsopplevelser. Utover undervisningen er Michael instrumentell i utviklingen av banebrytende læreplaner og treningsmetoder, noe som sikrer at våre kurs forblir i forkant av språkutdanning. Hans dedikasjon til fremragende undervisning og hans engasjement for studentenes suksess gjør ham til en uvurderlig leder og mentor både for vårt team og våre studenter.",
-    "p2title": "Albert L.",
-    "p2author": "Kursdesigner",
-    "p2content1": "Med en score på 8,5 i IELTS har Albert omfattende erfaring i å undervise i IELTS, TOEFL, PTE og DET. Hans undervisning er kjent for sin avslappede og livlige atmosfære, noe som gjør læring morsomt. Alberts tilnærming er skreddersydd til hver students behov, noe som muliggjør rask forbedring i engelskferdigheter på kort tid. Foruten å være en utmerket lærer, er Albert også en talentfull kursdesigner som har laget og utviklet ulike nettbaserte og fysiske kurs for engelskelever på forskjellige nivåer og med forskjellige mål. Han har en dyp forståelse av læreplanstandardene og vurderingskriteriene for forskjellige engelsktester, og han vet hvordan man designer effektive og engasjerende læringsaktiviteter og materialer som kan hjelpe elever med å mestre testferdigheter og strategier. Albert har også samarbeidet med andre lærere og eksperter for å gjennomgå og forbedre kvaliteten og relevansen av kursene, og han har mottatt positive tilbakemeldinger og anerkjennelse fra både elever og kolleger. Albert brenner for å lage innovative og personlige kurs som kan imøtekomme de ulike behovene og interessene til engelskelever.",
-    "p3title": "Rita T.",
-    "p3author": "Senior veileder",
-    "p3content1": "Med 11 års undervisningserfaring er Rita en erfaren ekspert i Duolingo English Test forberedelse og forskning. Hun er en ATI-sertifisert avansert engelsklærer, med et TESOL Advanced English Teacher Certificate og Cambridge English Teacher Training Certificate. Rita har imponerende score på 111 i TOEFL og 140 i DET. Hennes undervisning kjennetegnes av en evne til å analysere studentenes behov nøyaktig og gi målrettet instruksjon, som hjelper dem med å bryte gjennom barrierer og forbedre sine språkkunnskaper for å oppnå ønskede resultater raskt. I tillegg er Rita en lidenskapelig og entusiastisk lærer som alltid motiverer og inspirerer elevene sine til å lære engelsk med selvtillit og glede. Hun bruker en rekke interaktive og engasjerende metoder, som spill, rollespill, debatter og simuleringer, for å gjøre klassene sine morsomme og effektive. Hun gir også personlig tilbakemelding og veiledning til hver student, og hjelper dem med å forbedre svake områder og overvinne utfordringer. Ritas studenter elsker hennes varme og støttende personlighet, og de roser henne ofte for å være tålmodig, vennlig og profesjonell.",
-    "p4title": "Doris W.",
-    "p4author": "Veileder",
-    "p4content1": "Doris, som skårer 145 i DET og 8.0 i IELTS, er en allsidig Duolingo English Test instruktør kjent for sin rike undervisningserfaring. Hun utmerker seg i å hjelpe studenter på ulike nivåer raskt å overvinne vanskeligheter for å oppnå sine ideelle resultater, etter å ha hjulpet en student med å forbedre seg med 30 poeng på bare to uker. Hennes klasser er kjent for sin livlige atmosfære og klare logikk, og hennes undervisningsstil er streng, men lidenskapelig og ansvarlig, noe som gjør henne til en favoritt blant et bredt spekter av studenter.",
-    "p5title": "Laura K.",
-    "p5author": "Testforsker",
-    "p5content1": "Laura bringer mange års erfaring innen Duolingo-trening, 110 i TOEFL og 155 i DET. En spesialist i Duolingo-spørsmålsforskning, Laura er dyktig i å undervise tilpasningsdyktige testspørsmål og skriving. Hun har en dyp forståelse av DET-eksamensteknikker og trender, og utmerker seg i ytelsesanalyse for raskt å identifisere og forbedre studenters potensial."
+
+    "title_desc": "DETPractice.com er den beste plattformen for ∫ Øving og Læring.",
+    "check_out": {
+      "h2": "Sjekk ut hva vi kan gjøre",
+      "qbt": "∑ Spørsmål Bank",
+      "qbtdesc": "Vi har den største spørsmålsbanken og oppdaterer den hver dag. Du kan raskt forbedre din ∫ poengsum ved å øve på spørsmålene.",
+      "flm": "∑ Full-Length Mock",
+      "flmdesc": "Vi har den kraftigste ∑ prøveprøven, som gjør at du nøyaktig kan evaluere testresultatene dine til en lavere kostnad.",
+      "acs": "∑ AI Korreksjonstjeneste",
+      "acsdesc": "Du kan bruke AI-korrigeringsverktøyene vi tilbyr for raskt å forbedre dine ∑ tale- og skrivepoeng.",
+      "dc": "∑ Kurs",
+      "dedesc": "Vi vil fortsette å utvikle forberedelsesmaterialer og kurs basert på ∑s nyeste testfunksjoner."
+    },
+    "three_our_our": {
+      "h2": "Selv om ung, men sterk",
+      "ov": "Vår visjon",
+      "me": "Gjøre utdanning bedre gjennom AI",
+      "om": "Vårt oppdrag",
+      "omdesc": "Sørg for at kunstig generell <br />intelligens gagner alle studenter.",
+      "ovs": "Våre Verdier",
+      "ovsdesc": "Oppriktighet, samarbeid og gjensidig<br /> nytte"
+    },
+    "get_in_touch": {
+      "h2": "Ta kontakt",
+      "goytb": "Gå til YouTube",
+      "getmore": "Få mer fra DETPractice på YouTube"
+    }
   },
   "contactUs": {
     "seometa": {
@@ -398,47 +457,43 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Øv - AI-korreksjonstjeneste for din Duolingo-test",
-      "description": "Korrekturtjeneste levert av \"AI + lærere\". Få personlig tilbakemelding fra språkeksperter for å forbedre svarene dine og strategier for høyere DET-poeng.",
-      "keywords": "Korreksjonstjeneste for Duolingo Test, AI Korreksjonstjeneste for Duolingo Test"
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
     },
-    "h1": "Oppdag den beste AI-korrigeringstjenesten for Duolingo Test",
-    "desc": "Forbedre essayene dine med vår 'AI + Lærere' korrekturtjeneste. Få detaljert tilbakemelding basert på offisielle vurderingsstandarder raskt etter innsending.",
+    "h1": "∑ Skrive AI Korreksjon",
+    "desc": "∑ Skrive AI Korreksjonstjeneste levert av AI sammenlignbar med profesjonelle lærere. Din essay vil bli rettet basert på ∑ vurderingsregler, og du vil motta detaljert tilbakemelding innen 1-5 minutter.",
     "alt": "DET Praktisering:Den beste Duolingo English Test treningsplattformen",
     "useralt": "Brukerikon",
     "white_arrow_right": "hvit_pil_høyre",
     "yellow_arrow_right": "gul_pil_høyre",
-    "learners_have": "{number} elever har forbedret skrivingen sin med vår korrekturtjeneste.",
-    "Review_Now": "Anmeld nå",
-    "Correct_Now": "Korrekt nå",
-    "Get_Scored_Now": "Få poeng nå",
+    "learners_have": "{number} personer brukte ∑ Writing AI Correction-tjenesten.",
+    "Review_Now": "Kom i gang",
+    "Correct_Now": "Begynn å oppleve",
+    "Get_Scored_Now": "Begynn å oppleve",
     "Enhance_Now": "Forbedre Nå",
     "Begin_Polishing": "Begynn polering",
     "h2_1": {
-      "h2": "Forespørsler om rettelser",
-      "right_desc": "På sidene for tale- og skrivepraksis kan du søke om korrekturtjenesten direkte."
+      "h2": "Nøyaktig poengsum",
+      "right_desc": "Send inn essayet ditt fra spørsmålbanken, og du kan motta en klar og detaljert rapport og poengsum innen 1-5 minutter."
     },
     "h2_2": {
-      "h2": "Omfattende vurdering",
-      "right_desc": "Følger de offisielle Duolingo English Test kravene for nøyaktig å fange skriveferdigheter og gi omfattende vurderingsresultater."
+      "h2": "Skrivekorreksjon",
+      "right_desc": "Du kan umiddelbart se dine ordforråd feil, grammatikkfeil, og lære hvordan du unngår dem."
     },
     "h2_3": {
-      "h2": "Skrivekorreksjon",
-      "right_desc": "Oppdag og forstå umiddelbart feil i ordforråd og grammatikk for å forbedre dine skriveferdigheter."
+      "h2": "Profesjonell veiledning",
+      "right_desc": "Ifølge ∑-poengberegningselementene gir vi profesjonell veiledning for å hjelpe deg med å identifisere svakhetene i oppgaven din og gjøre den perfekt."
     },
     "h2_4": {
-      "h2": "Lærerveiledning",
-      "right_desc": "Forbedre skrivingen din med ekspertanalyse skreddersydd til DET kriterier, som identifiserer områder for forbedring for å løfte arbeidet ditt."
-    },
-    "h2_5": {
-      "h2": "Originaltekst Polering",
-      "right_desc": "Løft hvert ord og hver setning; foredle struktur og stil for en distinguert og høy poenggivende komposisjon."
+      "h2": "Essay polering",
+      "right_desc": "Nøyaktig endre hvert ord og setning, juster rimelig avsnittsstrukturen, og revitaliser skrivestilen for å ytterligere forbedre din komposisjon og gjøre den til en høyt poenggivende."
     }
   },
   "courses": {
     "seometa": {
       "title": "DET Øv - Mester tale og skriving med Duolingo English Test Guiden",
-      "description": "Lås opp potensialet ditt med vår Duolingo English Test Guide. Gå inn i snakke- og skriveexcellence med omfattende strategier, eksperttips og oppdatert DET praksis."
+      "description": "Lås opp ditt potensial med vår ∫ Guide. Fordyp deg i tale- og skriveekspertise med omfattende strategier, ekspertips og oppdatert ∑ Praksis."
     },
     "article1": {
       "title": "Nøkkelfunksjoner i DET Snakkeeksamen Fremragende:",
@@ -569,7 +624,7 @@
       "description": "Opplev en realistisk Duolingo prøve med DET Practice's full-lengde eksamener. Med intelligente tilpassede spørsmål og AI-score, gir våre prøver en nøyaktig vurdering for å forberede deg effektivt på Duolingo English Test.",
       "keywords": "Duolingo Prøveprøve, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
     },
-    "h1": "Duolingo English Test 1:1 Mock Eksamen",
+    "h1": "∑ Fullverdig Prøvetest",
     "desc": "Bli med på en virkelighetsnær eksamensopplevelse med våre fullskala prøveeksamener. Få en forsmak på den faktiske testprosessen før den ekte prøven og motta raskt poeng og detaljerte diagnostiske rapporter for å identifisere forbedringsområder.",
     "alt": "DET Øvelse:Den beste Duolingo English Test Øvelsesplattformen",
     "mock_user_icon": "Brukerikon for testing purposes",
@@ -579,7 +634,7 @@
     "Mock_Now": "Juks nå",
     "Full_scale": "Duolingo 1:1 Fullskala Prøveeksamen",
     "article1": {
-      "h2": "Algoritmisk intelligens",
+      "h2": "Nær den ekte eksamen",
       "right_desc": "Opplev virkelige eksamensforhold med vår avanserte adaptive testalgoritme. Mestre raskt ulike spørsmålstyper og få presise vurderinger."
     },
     "article2": {
@@ -592,7 +647,7 @@
     },
     "article4": {
       "h2": "Rask Resultatrapportering",
-      "right_desc": "Få dine prøveresultater levert innen 30 minutter, noe som fremskynder din fremdriftsgjennomgang."
+      "right_desc": "Få dine prøveeksamensresultater levert innen <span class='zdfont'>5-30 minutter</span>, slik at du kan raskt gjennomgå fremdriften din."
     }
   },
   "practice": {
@@ -601,23 +656,23 @@
       "description": "Vår DET testbank inneholder tusenvis av spørsmål for omfattende trening, komplett med detaljerte forklaringer og AI-analyse for å hjelpe deg å lykkes.",
       "keywords": "Duolingo English Test Øv, Duolingo Øv Engelsk Test, Duolingo Engelsk Øvingstest, Duolingo Øvingstest På Nett, Duolingo Testøving, Duolingo Øvingstest, Duolingo Øv, Det Øvingstest, Duolingo English Test Poeng"
     },
-    "h1": "Duolingo Øvingsspørsmålsbank",
+    "h1": "∫ Øvelse",
     "desc": "Få tilgang til en omfattende samling med testspørsmål, forbedret med svaranalyser, maler, AI-drevne talevurderinger og smart planlegging. Akselerer din poengforbedring effektivt og rimelig med vår AI-drevne tilnærming.",
     "alt": "DET Praksis:Den beste Duolingo English Test praksisplattformen",
-    "altbanner": "Duolingo Praktiseringsspørsmål Bank",
+    "altbanner": "∫ Øvelse",
     "bank_user_icon": "Ikon for bankbruker",
     "white_arrow_right": "Hvit Pil Høyre",
     "blue_arrow_right": "Blå Pil Høyre",
     "learners_have": "{number} elever har brukt vår spørsmålsbank for DET forberedelse.",
     "spn": "Begynn å øve nå",
     "article1": {
-      "h2": "Omfattende spørsmål bibliotek",
-      "right_desc": "Utforsk vårt omfattende bibliotek med over 10 000 spørsmål på tvers av ulike eksamenstyper, kontinuerlig oppdatert for å holde din praksis oppdatert. Vår spørsmålsbank er designet for å systematisk styrke dine ferdigheter innen testtaking på tvers av forskjellige spørsmålsformater.",
+      "h2": "Den største spørsmålsbanken",
+      "right_desc": " Utforsk vårt omfattende bibliotek med over <span class='zdfont'>18,000+ spørsmål</span> på tvers av ulike eksamenstyper, stadig oppdatert for å holde øvelsene dine oppdatert. Vår spørsmålsbank er designet for systematisk å styrke dine evner til å ta tester gjennom forskjellige spørsmålsformater.",
       "btn": "Dykke inn i praksis"
     },
     "article2": {
       "h2": "Intelligent Anbefaling",
-      "right_desc": "Modellen Al vil ta hensyn til mestringsnivået for hver spørsmålstype, vanskelighetsgrad, målpoeng, spørsmålvekt, nyheten i spørsmålene, den nylige frekvensen av testen, forberedelsestiden og effektiviteten av poenggivningen, osv. for å nøyaktig anbefale spørsmål som hjelper deg med å effektivt forberede deg til testen.",
+      "right_desc": "<span class='zdfont'>AI-modellen</span> vil ta hensyn til mestringsnivået for hver spørsmålstype, vanskelighetsgrad, målscore, spørsmålsvekt, nyhet av spørsmålene, den nylige hyppigheten av testen, forberedelsestid og effektivitet i poenggivning, osv. for nøyaktig å anbefale spørsmål som hjelper deg å forberede deg effektivt til testen.",
       "btn": "Start smart studie reise"
     },
     "article3": {
@@ -631,6 +686,37 @@
       "btn": "Utforsk svarinnsikter"
     }
   },
+  "speakingaicorrection": {
+    "seometa": {
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
+    },
+    "h1": "∑ Talende AI Korreksjon",
+    "desc": "∑ AI-snakketjeneste for tale-korreksjon levert av kraftig AI. Støtter alle typer spørsmål for tale, og tilbyr profesjonell veiledning for å hjelpe deg å enkelt forbedre din ∑ talepoengsum.",
+    "alt": "∑ Øvelse:Den beste ∑ Snakke AI-korrigeringsplattformen",
+    "altbanner": "∑ Tale AI Korreksjon",
+    "bank_user_icon": "Bank Bruker Ikon",
+    "white_arrow_right": "Hvite Pil Høyre",
+    "purple_arrow_right": "Lilla Pil Høyre",
+    "learners_have": "{number} personer brukte ∑ Speaking AI rettingstjeneste.",
+    "spn": "Kom i gang",
+    "article1": {
+      "h2": "Nøyaktig poengsum",
+      "right_desc": "Send inn essayet ditt ved å skrive det inn eller fra spørsmålbanken, og du kan motta en klar og detaljert rapport og poengsum umiddelbart.",
+      "btn": "Start å oppleve"
+    },
+    "article2": {
+      "h2": "Taleevaluering",
+      "right_desc": "Du kan umiddelbart se uttalefeilen din, uventet avbrudd, manglende pause, mistenkt høytlesning, mistenkt repetisjon, og lære hvordan du kan unngå dem.",
+      "btn": "Begynn å oppleve"
+    },
+    "article3": {
+      "h2": "Profesjonell veiledning",
+      "right_desc": "I henhold til ∑ vurderingselementene, gir vi profesjonell veiledning for å hjelpe deg med å identifisere svakhetene i din tale og gjøre den perfekt.",
+      "btn": "Begynn å oppleve"
+    }
+  },
   "privacyPolicy": {
     "seometa": {
       "title": "Personvernerklæring - DET Praksis",
@@ -640,7 +726,7 @@
     "h1": "Personvernregler",
     "q1": {
       "title": "Sist oppdatert: 2023-11-20",
-      "a1": "DET Practice (“oss”, “vi” eller “vår”) driver DET Practice nettstedet (tjenesten).",
+      "a1": "∑ Practice (“oss”, “vi” eller “vår”) driver ∑ Practice-nettstedet (tjenesten).",
       "a2": "Denne siden informerer deg om våre retningslinjer angående innsamling, bruk og avsløring av personlig informasjon når du bruker vår tjeneste.",
       "a3": "Vi vil ikke bruke eller dele informasjonen din med noen, bortsett fra som beskrevet i denne personvernerklæringen.",
       "a4": "Vi bruker din personlige informasjon for å levere og forbedre tjenesten. Ved å bruke tjenesten godtar du innsamling og bruk av informasjon i samsvar med denne policyen. Med mindre annet er definert i denne personvernerklæringen, har vilkår brukt i denne personvernerklæringen de samme betydninger som i våre vilkår og betingelser, tilgjengelig på",
@@ -694,9 +780,10 @@
       "a3": "• Digitale kurs: Når et digitalt produkt lastes ned eller tilbys tilgang til, anses det som brukt og brukte produkter kan ikke refunderes."
     },
     "q3": {
+      "title0": "Men DETPractice ønsker deg velkommen til å <a href=\"contact\">kontakte oss</a> for å løse dine problemer i enhver situasjon. Vi vil gjøre vårt beste for å tilby en løsning som tilfredsstiller deg.",
       "title": "Hvordan be om refusjon / avbryt abonnement",
       "a1": "For å be om refusjon, vennligst følg disse trinnene:",
-      "a2": "1. Avslutt abonnement: Logg inn på kontoen din, finn og klikk på \"Administrer betalingene dine\"-lenken nederst på medlemskapssiden. Du vil bli omdirigert til en bekreftelsesside der du kan bekrefte at du ønsker å si opp abonnementet ditt.",
+      "a2": "1. Avbryt abonnement: Logg inn på kontoen din, finn og klikk på <span class='websiteStrong'>\"Administrer fakturering\"</span>-lenken nederst på medlemssiden. Du vil bli omdirigert til en bekreftelsesside hvor du kan bekrefte din beslutning om å avslutte abonnementet.",
       "a3": "2.Kontakt vår støtte: Kontakt vårt kundestøtteteam på <span class='website'>support{'@'}detpractice.com</span> med ordrenummeret ditt og grunnen til refusjonsforespørselen.",
       "a4": "3. Vårt team vil gjennomgå din forespørsel og svare innen 3 arbeidsdager."
     },

@@ -30,9 +30,19 @@
       "font": "Taklukkan Ujian Anda dengan Ujian Palsu Lengkap yang Otentik: Analisis Mendalam dan Hasil Instan, Tersedia Kapan Saja, Di Mana Saja."
     },
     "prod4": {
-      "title": "Duolingo English Test Tiruan",
-      "alt": "Duolingo English Test Olok-olok",
+      "title": "∑ Ujian Tiruan Panjang Penuh",
+      "alt": "∑ Ujian Tiruan Penuh",
       "font": "Buka DET Sukses: Penguasaan Komprehensif, Teknik Terbukti, dan Wawasan Terkini untuk Keunggulan Berbicara dan Menulis dengan Percaya Diri!"
+    },
+    "prodwriting": {
+      "title": "∑ Menulis Koreksi AI",
+      "alt": "∑ Penulisan Koreksi AI",
+      "font": "Dapatkan skor yang akurat dan laporan terperinci sehingga Anda dapat meningkatkan keterampilan menulis Anda dengan lebih cepat. Dukung semua pertanyaan menulis!"
+    },
+    "prodspeaking": {
+      "title": "∑ Koreksi AI Berbicara",
+      "alt": "∑ Koreksi AI Berbicara",
+      "font": "Manfaatkan AI yang kuat untuk meningkatkan skor ∑ berbicara Anda secara terarah. Dukung semua pertanyaan berbicara!"
     }
   },
   "footer": {
@@ -74,38 +84,55 @@
     "Start_for_free": "Mulai gratis",
     "trustedByWorldwide": "Dipercaya oleh {path} siswa di seluruh dunia untuk peningkatan skor selama 1 bulan Duolingo English Test.",
     "The_Best_Platform": "Platform Terbaik untuk Meningkatkan Skor Anda Duolingo English Test",
+    "Tu": "Total Pengguna",
+    "questions": "Pertanyaan",
+    "mockTest": "Tes Tiruan",
     "Leverage_Our": "Manfaatkan Sumber Daya Kami yang Komprehensif untuk Peningkatan Skor yang Cepat",
+    "yellow_check_icon_alt": "ikon_periksa_kuning",
     "article1": {
       "title": "Duolingo English Test Latihan",
-      "tips1": "Dengan lebih dari {number} soal latihan, bank soal kami yang terus berkembang selalu diperbarui untuk keunggulan.",
-      "tips2": "Cakupan komprehensif dari semua jenis ujian dengan penjelasan rinci untuk setiap pertanyaan.",
-      "tips3": "Jawaban mendalam, analitik cerdas, dan penilaian untuk memungkinkan pemantauan terus-menerus kinerja Anda.",
+      "tips1": "The <span class='yellow'>Terbesar</span> Bank Soal, {number} Soal Latihan",
+      "tips2": "Diperbarui <span class='yellow'>setiap hari</span> secara terus-menerus",
+      "tips3": "Berikan jawaban dengan skor tinggi dan penjelasan yang rinci",
+      "tips4": "Penilaian AI untuk Membaca Nyaring",
       "btn_font": "Temukan Lebih Banyak",
       "btn_img_alt": "Panah Kuning Kanan"
     },
     "article2": {
-      "title": "Layanan Koreksi Esai Berbasis AI",
-      "tips1": "Manfaatkan koreksi esai yang tepat melalui tinjauan kolaboratif 'AI + Guru' kami.",
-      "tips2": "Cukup kirimkan esai Anda dan segera menerima laporan komprehensif dengan skor band terperinci.",
-      "tips3": "Tingkatkan skor menulis Anda dalam hanya 2 minggu.",
+      "title": "∑ Ujian Percobaan Penuh",
+      "tips1": "The Most <span class='yellow'>Powerful</span> Mock Test, Close to <span class='yellow'>Real ∑ Exam</span>",
+      "tips2": "Ujian Adaptif, dan Penilaian AI",
+      "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Terperinci",
+      "tips4": "Hasil akan tersedia dalam <span class='yellow'>5-30 menit</span>",
       "btn_font": "Pelajari Lebih Lanjut",
       "btn_img_alt": "Panah Kuning Kanan"
     },
     "article3": {
-      "title": "Duolingo English Test Ejek",
-      "tips1": "Kenali situasi ujian yang sebenarnya untuk membiasakan diri dengan proses pengujian dan konten sebelumnya.",
-      "tips2": "Dapatkan laporan tes simulasi mendalam untuk analisis yang tepat tentang kekuatan dan kelemahan Anda.",
-      "tips3": "Ikuti ujian percobaan online sesuai kenyamanan Anda, dengan penilaian cepat yang diberikan dalam 30 menit.",
+      "title": "∑ Penulisan Koreksi AI",
+      "tips1": "Dukung \"Menulis tentang Foto\",\"Menulis Interaktif\",\"Contoh Menulis\"",
+      "tips2": "Penilaian AI, Koreksi AI, Bimbingan Guru",
+      "tips3": "Skor Penilaian yang Akurat, Laporan Evaluasi yang Terperinci",
+      "tips4": "Hasil akan tersedia dalam <span class='yellow'>1-5 menit</span>",
       "btn_font": "Cari Tahu Lebih Lanjut",
       "btn_img_alt": "Anak Panah Kuning Kanan"
     },
     "article4": {
-      "title": "Duolingo English Test Kursus",
-      "tips1": "Capai Penguasaan Komprehensif. Kembangkan pemahaman mendalam tentang DET bagian berbicara dan menulis dengan panduan terperinci kami, memastikan Anda mendekati setiap bagian ujian dengan percaya diri.",
-      "tips2": "Belajar dari Pakar ESL. Manfaatkan strategi yang terbukti untuk meningkatkan kemampuan berbicara dan menulis Anda, manfaatkan jalur pembelajaran yang dipersonalisasi, dan terlibat dalam penilaian diri yang efektif.",
-      "tips3": "Tetap Terinformasi dan Terdepan. Tetap mengikuti format dan tren terbaru DET untuk memastikan persiapan Anda sinkron sempurna dengan standar ujian saat ini.",
-      "btn_font": "Jelajahi Lebih Lanjut",
+      "title": "∑ Koreksi AI Berbicara",
+      "tips1": "Dukung \"Dengar, Lalu Bicara\", \"Bicara Tentang Foto\", \"Baca, lalu Bicara\", \"Contoh Berbicara\"",
+      "tips2": "Penilaian AI, Hasil Evaluasi AI, Panduan Guru",
+      "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Terperinci",
+      "tips4": "Hasil akan tersedia dalam <span class='yellow'>1-5 menit</span>",
+      "btn_font": "Jelajahi Lebih Banyak",
       "btn_img_alt": "Panah Kuning Kanan"
+    },
+    "article5": {
+      "title": "∫ Kursus",
+      "tips1": "Kembangkan <span class='yellow'>pemahaman mendalam</span> tentang ∑ bagian berbicara dan menulis dengan panduan rinci kami",
+      "tips2": "Capai Penguasaan Menyeluruh",
+      "tips3": "Belajar dari Ahli ESL",
+      "tips4": "Tetap Terinformasi dan Terdepan",
+      "btn_font": "Jelajahi Lebih Banyak",
+      "btn_img_alt": "Panah Kanan Kuning"
     },
     "thousand": "k",
     "Users": "Pengguna",
@@ -151,6 +178,10 @@
       "h4": "Pembayaran aman! Batalkan kapan saja! Kuasai DET sekarang!",
       "switch1": "Layanan",
       "switch2": "Kursus",
+      "sep": "Pembayaran aman",
+      "ca": "Batalkan kapan saja",
+      "atde": "Kuasi sekarang ∑",
+      "circle_check_icon": "circle_check_icon",
       "Most_Popular_Choice": "Pilihan Paling Populer",
       "off": "{off}% diskon",
       "do": "$",
@@ -177,6 +208,7 @@
       "month": "/bulan",
       "Billed": "Ditagih ${num} /tahun",
       "apcs": "Layanan Koreksi Bertenaga AI",
+      "apcs1": "Layanan Koreksi AI",
       "times": "kali",
       "bci": "ikon_periksa_hitam",
       "mt": "Ujian Tiruan",
@@ -241,6 +273,13 @@
       "Rencana Belajar yang Disesuaikan dengan Pemilihan Pertanyaan Cerdas",
       "Evaluasi Berbicara Bertenaga AI"
     ],
+    "correctServiceQuanYi": [
+      "Dapat digunakan untuk ∑ menulis dan berbicara",
+      "Penilaian AI, Skor akurat",
+      "Hasil Evaluasi AI",
+      "Laporan Evaluasi Terperinci",
+      "Hasil akan tersedia dalam <span class='strongfont'>1-5 menit</span>"
+    ],
     "contaceUsList": {
       "type1": {
         "font": "Layanan Pelanggan Online",
@@ -258,21 +297,21 @@
       }
     },
     "leftQuanYiList": [
-      "Tidak terbatas untuk Sesi Latihan",
-      "Akses semua Pertanyaan Latihan",
-      "Jelajahi Jawaban Contoh dengan Skor Tinggi",
-      "Analisis Pertanyaan Mendalam",
-      "Buku Kata Ujian Frekuensi Tinggi",
-      "Rencana Studi yang Disesuaikan dengan Pemilihan Pertanyaan Cerdas",
-      "Evaluasi Berbicara yang Didukung AI"
+      "<span class='strongfont'>Tidak Terbatas</span> untuk Sesi Latihan",
+      "Akses <span class='strongfont'>18000+</span> Soal Latihan",
+      "Telusuri <span class='strongfont'>Jawaban Contoh</span> dengan Skor Tinggi",
+      "<span class='strongfont'>Analisis Pertanyaan Mendalam</span>",
+      "Buku Kata <span class='strongfont'>Ujian Frekuensi Tinggi</span>",
+      "Rencana Belajar <span class='strongfont'>Khusus</span> dengan Pemilihan Pertanyaan Cerdas",
+      "Evaluasi Berbicara dengan Kekuatan AI"
     ],
     "mockQuanYiList": [
-      "Ujian tiruan skala penuh",
-      "Tes kapan saja",
-      "Mendekati ujian DET yang sebenarnya",
-      "Skor penilaian yang akurat",
+      "<span class='strongfont'>Ujian Tiruan Penuh</span>",
+      "Uji kapan saja",
+      "Dekat dengan <span class='strongfont'>ujian ∑ yang sebenarnya</span>",
+      "Nilai penilaian yang akurat",
       "Laporan evaluasi terperinci",
-      "Hasil akan tersedia dalam 5-30 menit"
+      "Hasil akan tersedia dalam <span class='strongfont'>5-30 menit</span>"
     ]
   },
   "blog": {
@@ -306,6 +345,16 @@
     "font2": "Penguasaan Menulis Skor Tinggi.",
     "Start_Now": "Mulai Sekarang"
   },
+  "highscorespeaking": {
+    "font1": "Segera memulai perjalanan Anda ke",
+    "font2": "Berbicara dengan Skor Tinggi!",
+    "Start_Now": "Mulai Sekarang"
+  },
+  "highscorewritingnew": {
+    "font1": "Segera memulai perjalanan Anda ke",
+    "font2": "Penulisan Skor Tinggi!",
+    "Start_Now": "Mulai Sekarang"
+  },
   "path": {
     "seometa": { "title": "DET Blog Praktek", "description": "DET Blog Praktik" }
   },
@@ -315,23 +364,33 @@
       "description": ""
     },
     "title": "Tentang DET Practice",
-    "oelet": "Tim Pendidikan Bahasa Kami yang Terhormat",
-    "oeletdesc": "Di pusat layanan pendidikan bahasa kami terdapat tim pendidik yang berdedikasi, sangat berkualifikasi, dan berpengalaman, masing-masing membawa keahlian dan semangat unik mereka ke garis depan pembelajaran bahasa. Tim kami terdiri dari para profesional elit yang tidak hanya mahir berbahasa Inggris tetapi juga ahli dalam mempersiapkan siswa untuk tes kecakapan bahasa Inggris utama seperti TOEFL, IELTS, dan Duolingo English Test (DET). Para pendidik kami memiliki sertifikasi bergengsi seperti TESOL dan sertifikat Pelatihan Guru Bahasa Inggris Cambridge, yang menunjukkan komitmen mereka untuk memberikan pendidikan bahasa berkualitas tinggi. Mereka memiliki skor tes bahasa yang mengesankan, mencerminkan pemahaman mendalam mereka tentang keterampilan dan strategi yang diperlukan untuk unggul dalam ujian ini. Pengalaman kolektif tim kami mencakup beberapa tahun, di mana mereka telah mengasah kemampuan mereka untuk memenuhi kebutuhan belajar yang beragam. Mereka unggul dalam mengidentifikasi kekuatan dan kelemahan individu siswa, memastikan pendekatan pengajaran yang dipersonalisasi yang memaksimalkan hasil pembelajaran. Kemampuan unik ini memungkinkan mereka memberikan bimbingan dan umpan balik yang ditargetkan, membantu siswa menembus hambatan belajar dan dengan cepat meningkatkan kecakapan bahasa mereka. Para pendidik kami bukan hanya guru; mereka adalah mentor yang menginspirasi kepercayaan diri dan antusiasme pada siswa mereka. Mereka menciptakan lingkungan belajar yang dinamis dan interaktif, menjadikan perjalanan pembelajaran bahasa menyenangkan dan efektif. Metode pengajaran mereka terus berkembang, mengintegrasikan teknik dan materi inovatif untuk tetap mengikuti tren terbaru dalam pendidikan bahasa. Keberhasilan siswa kami dalam mencapai tujuan bahasa mereka adalah bukti keahlian, dedikasi, dan keunggulan pengajaran tim kami. Sebagai satu kesatuan, mereka mewakili yang terbaik dalam pendidikan bahasa, berkomitmen untuk membimbing siswa mencapai potensi tertinggi mereka dalam kecakapan bahasa Inggris.",
-    "p1title": "Michael Z.",
-    "p1author": "Pengawas Tutor",
-    "p1content1": "Sebagai tokoh utama tim pengajaran kami, Michael Z. mewujudkan puncak instruksi bahasa. Dengan pengalaman mengajar yang luas selama lebih dari satu dekade, Mike memiliki semua kredensial guru kami yang terhormat, termasuk TESOL, Sertifikat Pelatihan Guru Cambridge English, dan sertifikat lainnya. Kemampuan bahasa yang luar biasa tercermin dalam skor impresifnya: 115 pada TOEFL, 8.5 pada IELTS, dan sempurna 150 pada Duolingo English Test. Filosofi pengajaran Michael menggabungkan kekuatan tim kami yang beragam, menawarkan pendekatan komprehensif dan dinamis untuk pembelajaran bahasa. Dia terkenal karena kemampuannya memahami dan menangani kebutuhan unik setiap siswa, menciptakan lingkungan belajar di mana siswa dapat berkembang dan melampaui tujuan mereka. Kelasnya adalah perpaduan antara standar akademik yang ketat dan pengalaman belajar yang interaktif dan menarik. Selain mengajar, Michael berperan penting dalam mengembangkan kurikulum dan metode pelatihan mutakhir, memastikan kursus kami tetap berada di garis depan pendidikan bahasa. Dedikasinya terhadap keunggulan dalam pengajaran dan komitmennya terhadap keberhasilan siswa menjadikannya pemimpin dan mentor yang tak ternilai baik bagi tim kami maupun para siswa kami.",
-    "p2title": "Albert L.",
-    "p2author": "Perancang Kursus",
-    "p2content1": "Mendapatkan skor 8,5 di IELTS, Albert memiliki pengalaman luas dalam mengajar IELTS, TOEFL, PTE, dan DET. Metode pengajarannya dikenal dengan suasana yang santai dan hidup, sehingga membuat belajar menjadi menyenangkan. Pendekatan Albert disesuaikan dengan kebutuhan masing-masing siswa, memungkinkan peningkatan kemampuan bahasa Inggris dengan cepat dalam waktu singkat. Selain menjadi guru yang baik, Albert juga seorang desainer kursus berbakat yang telah menciptakan dan mengembangkan berbagai kursus online dan offline untuk pembelajar bahasa Inggris dari berbagai tingkat dan tujuan. Dia memiliki pemahaman yang mendalam tentang standar kurikulum dan kriteria penilaian dari berbagai tes bahasa Inggris, dan dia tahu bagaimana merancang aktivitas dan materi pembelajaran yang efektif dan menarik yang dapat membantu siswa menguasai keterampilan dan strategi tes. Albert juga telah berkolaborasi dengan guru dan pakar lain untuk meninjau dan meningkatkan kualitas serta relevansi kursus, dan dia telah menerima umpan balik positif dan pengakuan dari siswa dan rekan sejawat. Albert sangat bersemangat dalam menciptakan kursus inovatif dan personal yang dapat memenuhi kebutuhan dan minat yang beragam dari para pembelajar bahasa Inggris.",
-    "p3title": "Rita T.",
-    "p3author": "Senior Tutor",
-    "p3content1": "Dengan 11 tahun pengalaman mengajar, Rita adalah seorang ahli berpengalaman dalam persiapan dan penelitian Duolingo English Test. Dia adalah guru bahasa Inggris tingkat lanjut yang tersertifikasi ATI, memegang Sertifikat Guru Bahasa Inggris Lanjutan TESOL dan Sertifikat Pelatihan Guru Bahasa Inggris Cambridge. Rita memiliki skor mengesankan 111 dalam TOEFL dan 140 dalam DET. Pengajarannya ditandai dengan kemampuan untuk menganalisis kebutuhan siswa secara tepat dan memberikan instruksi yang ditargetkan, membantu mereka menembus hambatan dan meningkatkan keterampilan bahasa mereka untuk mencapai skor yang diinginkan dengan cepat. Selain itu, Rita adalah seorang guru yang penuh semangat dan antusias yang selalu memotivasi dan menginspirasi siswanya untuk belajar bahasa Inggris dengan percaya diri dan sukacita. Dia menggunakan berbagai metode interaktif dan menarik, seperti permainan, permainan peran, debat, dan simulasi, untuk membuat kelasnya menyenangkan dan efektif. Dia juga memberikan umpan balik dan bimbingan pribadi kepada setiap siswa, membantu mereka memperbaiki area yang lemah dan mengatasi tantangan mereka. Siswa-siswa Rita menyukai kepribadian hangat dan suportifnya, dan mereka sering memujinya karena kesabarannya, keramahan, dan profesionalismenya.",
-    "p4title": "Doris W.",
-    "p4author": "Tutor",
-    "p4content1": "Doris, mencetak 145 dalam DET dan 8.0 dalam IELTS, adalah instruktur serba bisa yang dikenal dengan pengalaman mengajarnya yang kaya. Dia unggul dalam membantu siswa dari berbagai tingkat dengan cepat mengatasi kesulitan untuk mencapai hasil ideal mereka, pernah membantu seorang siswa meningkat 30 poin hanya dalam dua minggu. Kelasnya dikenal dengan suasana yang hidup dan logika yang jelas, serta gaya mengajarnya yang ketat namun penuh semangat dan bertanggung jawab, menjadikannya favorit di kalangan berbagai siswa.",
-    "p5title": "Laura K.",
-    "p5author": "Peneliti Uji",
-    "p5content1": "Laura membawa bertahun-tahun pengalaman dalam pelatihan Duolingo, 110 di TOEFL, dan 155 di DET. Sebagai spesialis dalam penelitian pertanyaan Duolingo, Laura mahir dalam mengajar pertanyaan tes adaptif dan menulis. Dia memiliki pemahaman mendalam tentang teknik dan tren ujian DET, unggul dalam analisis kinerja untuk dengan cepat mengidentifikasi dan meningkatkan potensi siswa."
+
+    "title_desc": "DETPractice.com adalah platform terbaik untuk ∫ Berlatih dan Belajar.",
+    "check_out": {
+      "h2": "Lihat Apa yang Bisa Kami Lakukan",
+      "qbt": "∑ Bank Soal",
+      "qbtdesc": "Kami memiliki bank soal terbesar dan memperbaruinya setiap hari. Anda dapat dengan cepat meningkatkan skor ∫ Anda dengan berlatih soal-soal tersebut.",
+      "flm": "∑ Ujian Coba Penuh",
+      "flmdesc": "Kami memiliki tes simulasi ∑ yang paling kuat, yang memungkinkan Anda untuk mengevaluasi skor tes Anda dengan akurat dengan biaya yang lebih rendah.",
+      "acs": "∑ Layanan Koreksi AI",
+      "acsdesc": "Anda dapat menggunakan alat koreksi AI yang kami sediakan untuk dengan cepat meningkatkan skor berbicara dan menulis Anda.",
+      "dc": "∑ Kursus",
+      "dedesc": "Kami akan terus mengembangkan materi persiapan ujian dan kursus berdasarkan fitur ujian terbaru dari ∑."
+    },
+    "three_our_our": {
+      "h2": "Meskipun Muda, Tapi Kuat",
+      "ov": "Visi Kami",
+      "me": "Meningkatkan pendidikan melalui AI",
+      "om": "Misi Kami",
+      "omdesc": "Pastikan bahwa kecerdasan umum buatan <br />menguntungkan semua siswa.",
+      "ovs": "Nilai-Nilai Kami",
+      "ovsdesc": "Ketulusan, kerja sama, dan manfaat bersama<br />"
+    },
+    "get_in_touch": {
+      "h2": "Hubungi Kami",
+      "goytb": "Pergi ke YouTube",
+      "getmore": "Dapatkan lebih banyak dari DETPractice di YouTube"
+    }
   },
   "contactUs": {
     "seometa": {
@@ -396,47 +455,43 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Latihan - Layanan Koreksi AI untuk Tes Duolingo Anda",
-      "description": "Layanan koreksi disediakan oleh \"AI + Guru\". Dapatkan umpan balik yang dipersonalisasi dari para ahli bahasa untuk meningkatkan respons Anda dan strategi untuk skor DET yang lebih tinggi.",
-      "keywords": "Layanan Koreksi untuk Duolingo Test, Layanan Koreksi AI untuk Duolingo Test"
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
     },
-    "h1": "Temukan Layanan Koreksi AI Terbaik untuk Tes Duolingo",
-    "desc": "Tingkatkan esai Anda dengan layanan koreksi 'AI + Guru' kami. Dapatkan umpan balik terperinci berdasarkan standar penilaian resmi dengan cepat setelah pengiriman.",
+    "h1": "∑ Menulis Koreksi AI",
+    "desc": "∑ Layanan Koreksi AI yang disediakan oleh AI setara dengan guru profesional. Esai Anda akan dikoreksi berdasarkan aturan penilaian ∑, dan Anda akan menerima umpan balik terperinci dalam waktu 1-5 menit.",
     "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
     "useralt": "Ikon Pengguna",
     "white_arrow_right": "panah_putih_kanan",
     "yellow_arrow_right": "panah_kuning_kanan",
-    "learners_have": "{number} pelajar telah meningkatkan tulisan mereka dengan layanan koreksi kami.",
-    "Review_Now": "Tinjau Sekarang",
-    "Correct_Now": "Benar Sekarang",
-    "Get_Scored_Now": "Dapatkan Skor Sekarang",
+    "learners_have": "{number} orang menggunakan layanan ∑ Koreksi AI Penulisan.",
+    "Review_Now": "Mulai",
+    "Correct_Now": "Mulailah mengalami",
+    "Get_Scored_Now": "Mulai mengalami",
     "Enhance_Now": "Tingkatkan Sekarang",
     "Begin_Polishing": "Mulai Memoles",
     "h2_1": {
-      "h2": "Permintaan untuk koreksi",
-      "right_desc": "Pada halaman latihan Berbicara dan Menulis, Anda dapat mengajukan layanan koreksi secara langsung."
+      "h2": "Skor akurat",
+      "right_desc": "Kirimkan esai Anda dari bank soal, dan Anda dapat menerima laporan dan skor yang jelas dan rinci dalam waktu 1-5 menit."
     },
     "h2_2": {
-      "h2": "Penilaian Komprehensif",
-      "right_desc": "Mengikuti persyaratan resmi Duolingo English Test untuk secara akurat menangkap keterampilan menulis dan memberikan hasil penilaian yang komprehensif."
+      "h2": "Koreksi tulisan",
+      "right_desc": "Anda dapat segera melihat kesalahan kosakata Anda, kesalahan tata bahasa, dan belajar cara menghindarinya."
     },
     "h2_3": {
-      "h2": "Koreksi Penulisan",
-      "right_desc": "Segera temukan dan pahami kesalahan dalam kosakata dan tata bahasa untuk meningkatkan keterampilan menulis Anda."
+      "h2": "Panduan profesional",
+      "right_desc": "Menurut elemen penilaian ∑, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam makalah Anda dan membuatnya sempurna."
     },
     "h2_4": {
-      "h2": "Panduan Guru",
-      "right_desc": "Tingkatkan tulisan Anda dengan analisis ahli yang disesuaikan dengan DET kriteria, mengidentifikasi area untuk peningkatan guna mengangkat karya Anda."
-    },
-    "h2_5": {
-      "h2": "Pemolesan Teks Asli",
-      "right_desc": "Tingkatkan setiap kata dan kalimat; perhalus struktur dan gaya untuk komposisi yang istimewa dan bernilai tinggi."
+      "h2": "Pemolesan esai",
+      "right_desc": "Memodifikasi setiap kata dan kalimat dengan akurat, menyesuaikan struktur paragraf secara wajar, dan menghidupkan kembali gaya penulisan untuk lebih meningkatkan komposisi Anda dan mengubahnya menjadi karya dengan skor tinggi."
     }
   },
   "courses": {
     "seometa": {
       "title": "DET Praktik - Kuasai Berbicara dan Menulis dengan Panduan Duolingo English Test",
-      "description": "Buka potensi Anda dengan Petunjuk Duolingo English Test kami. Telusuri keunggulan berbicara dan menulis dengan strategi komprehensif, tips ahli, dan latihan terbaru DET."
+      "description": "Unlock potensi Anda dengan Panduan ∫ kami. Jelajahi keunggulan berbicara dan menulis dengan strategi komprehensif, tips ahli, dan Praktik ∑ terbaru."
     },
     "article1": {
       "title": "Fitur Utama dari DET Keunggulan Ujian Berbicara:",
@@ -571,7 +626,7 @@
       "description": "Pengalaman uji coba Duolingo yang realistis dengan ujian panjang penuh praktek DET oleh Practice. Menampilkan pertanyaan adaptif cerdas dan penilaian AI, ujian coba kami menawarkan penilaian yang akurat untuk mempersiapkan Anda secara efektif untuk Duolingo English Test.",
       "keywords": "Tes Mock Duolingo, DET Duolingo, DET Tes, Duolingo DET, Tes Duolingo, Tes Duolingo Online"
     },
-    "h1": "Duolingo English Test 1:1 Ujian Mock",
+    "h1": "∑ Tes Percobaan Lengkap",
     "desc": "Benamkan diri Anda dalam pengalaman ujian yang benar-benar nyata dengan ujian tiruan skala penuh kami. Rasakan proses pengujian yang sebenarnya sebelum ujian yang sesungguhnya dan segera menerima skor serta laporan diagnostik terperinci untuk mengidentifikasi area yang perlu ditingkatkan.",
     "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
     "mock_user_icon": "Ikon Pengguna Tiruan",
@@ -581,7 +636,7 @@
     "Mock_Now": "Tiruan Sekarang",
     "Full_scale": "Duolingo 1:1 Ujian Mock Skala Penuh",
     "article1": {
-      "h2": "Kecerdasan Algoritma",
+      "h2": "Dekat Dengan Ujian Sebenarnya",
       "right_desc": "Alami kondisi ujian yang sesungguhnya dengan algoritma pengujian adaptif kami yang canggih. Cepat kuasai berbagai jenis pertanyaan dan dapatkan penilaian yang tepat."
     },
     "article2": {
@@ -594,7 +649,7 @@
     },
     "article4": {
       "h2": "Pelaporan Skor Cepat",
-      "right_desc": "Dapatkan hasil ujian percobaan Anda dalam waktu 30 menit, mempercepat tinjauan kemajuan Anda."
+      "right_desc": "Dapatkan hasil ujian tiruan Anda dalam <span class='zdfont'>5-30 menit</span>, mempercepat tinjauan kemajuan Anda."
     }
   },
   "practice": {
@@ -603,34 +658,65 @@
       "description": "Bank soal DET kami mencakup ribuan pertanyaan untuk pelatihan yang mendalam, lengkap dengan penjelasan terperinci dan analisis AI untuk membantu Anda berhasil.",
       "keywords": "Duolingo English Test Latihan, Duolingo Ujian Latihan Bahasa Inggris, Duolingo Tes Latihan Bahasa Inggris, Duolingo Latihan Tes Online, Duolingo Latihan Ujian, Duolingo Tes Latihan, Duolingo Latihan, Tes Latihan Det, Duolingo English Test Skor"
     },
-    "h1": "Duolingo Bank Soal Latihan",
+    "h1": "∫ Latihan",
     "desc": "Dapatkan akses ke koleksi soal tes yang luas, dilengkapi dengan analisis jawaban, template, evaluasi berbicara didorong oleh AI, dan perencanaan cerdas. Percepat peningkatan skor Anda secara efisien dan terjangkau dengan pendekatan bertenaga AI kami.",
     "alt": "DET Latihan:Yang terbaik Duolingo English Test Platform latihan",
-    "altbanner": "Duolingo Bank Soal Latihan",
+    "altbanner": "∫ Latihan",
     "bank_user_icon": "Ikon Pengguna Bank",
     "white_arrow_right": "Panah Putih Kanan",
     "blue_arrow_right": "Panah Biru Kanan",
     "learners_have": "{number} pelajar telah menggunakan bank soal kami untuk persiapan DET.",
     "spn": "Mulai Berlatih Sekarang",
     "article1": {
-      "h2": "Perpustakaan Pertanyaan Ekstensif",
-      "right_desc": "Jelajahi perpustakaan kami yang luas dengan lebih dari 10.000 pertanyaan dalam berbagai jenis ujian, yang terus diperbarui untuk menjaga latihan Anda tetap terkini. Bank soal kami dirancang untuk secara sistematis memperkuat keterampilan Anda dalam menghadapi berbagai format pertanyaan.",
+      "h2": "Bank Soal Terbesar",
+      "right_desc": " Jelajahi perpustakaan kami yang luas dengan lebih dari <span class='zdfont'>18,000+ pertanyaan</span> di berbagai jenis ujian, yang terus diperbarui agar latihan Anda selalu terkini. Bank soal kami dirancang untuk secara sistematis memperkuat keterampilan mengerjakan ujian Anda melalui berbagai format pertanyaan.",
       "btn": "Menyelami Latihan"
     },
     "article2": {
       "h2": "Rekomendasi Cerdas",
-      "right_desc": "Model Al akan mempertimbangkan tingkat penguasaan setiap jenis pertanyaan, kesulitan, target skor, bobot pertanyaan, kebaruan pertanyaan, frekuensi tes terbaru, waktu persiapan dan efisiensi penilaian, dll. untuk merekomendasikan pertanyaan secara akurat guna membantu Anda mempersiapkan diri untuk tes dengan efisien.",
+      "right_desc": "Model <span class='zdfont'>AI</span> akan mempertimbangkan tingkat penguasaan dari setiap jenis pertanyaan, kesulitan, skor target, bobot pertanyaan, kebaruan pertanyaan, frekuensi terbaru dari tes, waktu persiapan dan efisiensi penilaian, dll. untuk merekomendasikan pertanyaan secara akurat agar membantu Anda mempersiapkan diri dengan efisien untuk tes tersebut.",
       "btn": "Mulai Perjalanan Studi Pintar"
     },
     "article3": {
       "h2": "Evaluasi Berbicara AI",
-      "right_desc": "Tingkatkan kemampuan berbicara Anda dengan evaluasi berbicara yang didukung oleh AI kami. Kirimkan jawaban Anda untuk pertanyaan bahasa lisan dan segera dapatkan analisis mendetail tentang keterampilan berbicara Anda, membantu Anda meningkatkan dengan presisi dan kecepatan.",
+      "right_desc": "Tingkatkan kemahiran lisan Anda dengan <span class='zdfont'>evaluasi berbicara yang didukung oleh AI</span> kami. Kirimkan jawaban Anda untuk pertanyaan bahasa lisan dan segera terima analisis mendetail tentang keterampilan berbicara Anda, membantu Anda meningkatkan dengan presisi dan kecepatan.",
       "btn": "Mulai Evaluasi Anda"
     },
     "article4": {
       "h2": "Analisis Jawaban",
       "right_desc": "Jelajahi penjelasan jawaban komprehensif yang memperdalam pemahaman Anda tentang konsep penting dan teknik pemecahan masalah. Analisis mendetail kami tidak hanya membimbing Anda menuju jawaban yang benar—mereka juga memperluas pengetahuan Anda dan meningkatkan efisiensi belajar Anda.",
       "btn": "Jelajahi Wawasan Jawaban"
+    }
+  },
+  "speakingaicorrection": {
+    "seometa": {
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
+    },
+    "h1": "∑ Koreksi AI Berbicara",
+    "desc": "∑ Layanan Koreksi AI Berbicara yang disediakan oleh AI yang kuat. Mendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda dengan mudah meningkatkan nilai ∑ berbicara Anda.",
+    "alt": "∑ Latihan:Platform Koreksi AI Berbicara Terbaik ∑",
+    "altbanner": "∑ Koreksi AI Berbicara",
+    "bank_user_icon": "Ikon Pengguna Bank",
+    "white_arrow_right": "Panah Putih Kanan",
+    "purple_arrow_right": "Panah Ungu Kanan",
+    "learners_have": "{number} orang menggunakan layanan Koreksi AI Berbicara ∑.",
+    "spn": "Mulai",
+    "article1": {
+      "h2": "Skor akurat",
+      "right_desc": "Kirimkan esai Anda dengan memasukkan atau dari bank soal, dan Anda bisa menerima laporan dan skor yang jelas dan terperinci secara langsung.",
+      "btn": "Mulai mengalami"
+    },
+    "article2": {
+      "h2": "Evaluasi Berbicara",
+      "right_desc": "Anda dapat segera melihat kesalahan pengucapan Anda, gangguan yang tidak diharapkan, jeda yang hilang, dugaan membaca keras-keras, dugaan pengulangan, dan belajar cara menghindarinya.",
+      "btn": "Mulai mengalami"
+    },
+    "article3": {
+      "h2": "Panduan profesional",
+      "right_desc": "Menurut elemen penilaian ∑, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam berbicara dan membuatnya sempurna.",
+      "btn": "Mulai merasakan"
     }
   },
   "privacyPolicy": {
@@ -642,7 +728,7 @@
     "h1": "Kebijakan Privasi",
     "q1": {
       "title": "Terakhir diperbarui: 2023-11-20",
-      "a1": "DET Practice (\"kami\" atau \"milik kami\") mengoperasikan situs web DET Practice (the \"Service\").",
+      "a1": "∑ Practice (\"kami\" atau \"milik kami\") mengoperasikan situs web ∑ Practice (the \"Service\").",
       "a2": "Halaman ini memberitahu Anda tentang kebijakan kami mengenai pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi ketika Anda menggunakan Layanan kami.",
       "a3": "Kami tidak akan menggunakan atau membagikan informasi Anda dengan siapa pun kecuali seperti yang dijelaskan dalam Kebijakan Privasi ini.",
       "a4": "Kami menggunakan Informasi Pribadi Anda untuk menyediakan dan meningkatkan Layanan. Dengan menggunakan Layanan, Anda setuju terhadap pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Kecuali didefinisikan lain dalam Kebijakan Privasi ini, istilah yang digunakan dalam Kebijakan Privasi ini memiliki arti yang sama seperti yang ada di Syarat dan Ketentuan kami, yang dapat diakses di",
@@ -696,9 +782,10 @@
       "a3": "• Kursus Digital: Setelah produk digital diunduh atau diakses, dianggap sudah digunakan dan produk yang sudah digunakan tidak dapat dikembalikan."
     },
     "q3": {
+      "title0": "Namun, DETPractice menyambut Anda untuk <strong>Hubungi kami</strong> untuk menyelesaikan masalah Anda dalam situasi apapun. Kami akan berusaha sebaik mungkin untuk memberikan solusi yang memuaskan Anda.",
       "title": "Bagaimana Cara Meminta Pengembalian Dana / Membatalkan Langganan",
       "a1": "Untuk meminta pengembalian dana, silakan ikuti langkah-langkah berikut:",
-      "a2": "1. Batalkan Berlangganan: Masuk ke akun Anda, cari dan klik link \"Kelola tagihan Anda\" di bagian bawah halaman keanggotaan. Anda akan diarahkan ke halaman konfirmasi di mana Anda dapat mengonfirmasi keputusan untuk berhenti berlangganan.",
+      "a2": "1. Batalkan Langganan: Masuk ke akun Anda, temukan dan klik tautan <span class='websiteStrong'>\"Kelola penagihan Anda\"</span> di bagian bawah halaman keanggotaan. Anda akan diarahkan ke halaman konfirmasi di mana Anda dapat mengonfirmasi keputusan Anda untuk berhenti berlangganan.",
       "a3": "2. Hubungi Dukungan Kami: Hubungi tim dukungan pelanggan kami di <span class='website'>support{'@'}detpractice.com</span> dengan nomor pesanan Anda dan alasan untuk permintaan pengembalian dana.",
       "a4": "3. Tim kami akan meninjau permintaan Anda dan merespons dalam waktu 3 hari kerja."
     },

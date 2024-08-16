@@ -30,9 +30,19 @@
       "font": "Erobern Sie Ihre Prüfung mit authentischen, vollständigen Mock-Tests: Detaillierte Analyse und sofortige Ergebnisse, jederzeit und überall verfügbar."
     },
     "prod4": {
-      "title": "Duolingo English Test Verspotten",
-      "alt": "Duolingo English Test Verspotten",
+      "title": "∑ Vollständiger Probetest",
+      "alt": "∑ Vollständiger Probetest",
       "font": "Entschlüsseln DET Erfolg: Umfassende Beherrschung, Bewährte Techniken und Aktuelle Einblicke für Selbstbewusste Sprech- und Schreibkompetenz!"
+    },
+    "prodwriting": {
+      "title": "∑ KI-Korrektur schreiben",
+      "alt": "∑ Schreiben AI-Korrektur",
+      "font": "Erhalten Sie genaue Bewertungen und detaillierte Berichte, damit Sie Ihre Schreibfähigkeiten schneller verbessern können. Unterstützung für alle Schreibfragen!"
+    },
+    "prodspeaking": {
+      "title": "∑ Sprechende KI-Korrektur",
+      "alt": "∑ Sprechen AI-Korrektur",
+      "font": "Nutzen Sie leistungsstarke KI, um Ihr ∑ Sprechen gezielt zu verbessern. Unterstützung für alle Sprechfragen!"
     }
   },
   "footer": {
@@ -74,37 +84,54 @@
     "Start_for_free": "Kostenlos starten",
     "trustedByWorldwide": "Vertraut von {path} Studenten weltweit für einen 1-monatigen Duolingo English Test Punktesteigerung.",
     "The_Best_Platform": "Die beste Plattform zur Steigerung Ihrer Duolingo English Test Scores",
+    "Tu": "Gesamtbenutzer",
+    "questions": "Fragen",
+    "mockTest": "Mock-Test",
     "Leverage_Our": "Nutzen Sie unsere umfassenden Ressourcen für eine schnelle Verbesserung der Punktzahl",
+    "yellow_check_icon_alt": "gelbes_kontrollsymbol",
     "article1": {
       "title": "Duolingo English Test Übung",
-      "tips1": "Mit über {number} Übungsfragen wird unsere ständig wachsende Fragenbank regelmäßig für Exzellenz aktualisiert.",
-      "tips2": "Umfassende Abdeckung aller Prüfungsarten mit detaillierten Erklärungen zu jeder Frage.",
-      "tips3": "Detaillierte Antworten, intelligente Analysen und Bewertungsfunktionen ermöglichen die kontinuierliche Überwachung Ihrer Leistung.",
+      "tips1": "Die <span class='yellow'>größte</span> Fragenbank, {number} Übungsfragen\n",
+      "tips2": "Kontinuierlich <span class='yellow'>täglich aktualisiert</span>",
+      "tips3": "<span>Bieten Sie hoch bewertete Antworten und detaillierte Erklärungen an</span>",
+      "tips4": "KI-Bewertung für Lautes Lesen",
       "btn_font": "Entdecken Sie mehr",
       "btn_img_alt": "Gelber Pfeil rechts"
     },
     "article2": {
-      "title": "AI-gestützter Aufsatzkorrekturservice",
-      "tips1": "Profitieren Sie von präzisen Essay-Korrekturen durch unsere 'KI + Lehrer' Zusammenarbeit.",
-      "tips2": "Reichen Sie einfach Ihren Aufsatz ein und erhalten Sie umgehend einen umfassenden Bericht mit einer detaillierten Bandbewertung.",
-      "tips3": "Verbessern Sie Ihre Schreibnote in nur 2 Wochen.",
+      "title": "∑ Vollständiger Probetest",
+      "tips1": "Der <span class='yellow'>mächtigste</span> Probetest, nah an der <span class='yellow'>realen ∑ Prüfung</span>",
+      "tips2": "Adaptive Prüfungen und KI-Bewertung",
+      "tips3": "Genaue Bewertungsergebnisse, Detaillierter Bewertungsbericht",
+      "tips4": "Die Ergebnisse werden innerhalb von <span class='yellow'>5-30 Minuten</span> verfügbar sein.",
       "btn_font": "Erfahren Sie mehr",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "article3": {
-      "title": "Duolingo English Test Verspotten",
-      "tips1": "Imitieren Sie die tatsächliche Prüfungssituation, um sich im Voraus mit dem Testprozess und -inhalt vertraut zu machen.",
-      "tips2": "Erhalten Sie detaillierte simulierte Testberichte für eine genaue Analyse Ihrer Stärken und Schwächen.",
-      "tips3": "Machen Sie Online-Probeklausuren nach Belieben, mit einer schnellen Bewertung innerhalb von 30 Minuten.",
+      "title": "∑ Schreiben KI-Korrektur",
+      "tips1": "Unterstützung \"Schreiben über das Foto\", \"Interaktives Schreiben\", \"Schreibbeispiel\"",
+      "tips2": "KI-Bewertung, KI-Korrektur, Lehreranleitung",
+      "tips3": "Genauere Bewertungsergebnisse, Detaillierter Bewertungsbericht",
+      "tips4": "Ergebnisse werden innerhalb von <span class='yellow'>1-5 Minuten</span> verfügbar sein.",
       "btn_font": "Erfahren Sie mehr",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "article4": {
-      "title": "Duolingo English Test Kurs",
-      "tips1": "Erreichen Sie umfassende Beherrschung. Entwickeln Sie ein tiefes Verständnis der DET Sprech- und Schreibabschnitte mit unseren detaillierten Anleitungen, damit Sie jeden Teil der Prüfung mit Vertrauen angehen können.",
-      "tips2": "Lernen Sie von ESL-Experten. Nutzen Sie bewährte Strategien, um Ihre Sprach- und Schreibfähigkeiten zu verbessern, profitieren Sie von personalisierten Lernpfaden und nehmen Sie an effektiver Selbstbewertung teil.",
-      "tips3": "Bleiben Sie informiert und voraus. Bleiben Sie über die neuesten DET Formate und Trends auf dem Laufenden, um sicherzustellen, dass Ihre Vorbereitung perfekt mit den aktuellen Prüfungsstandards übereinstimmt.",
-      "btn_font": "Mehr entdecken",
+      "title": "∑ Sprach-AI Korrektur",
+      "tips1": "Unterstützung \"Hören, dann Sprechen\", \"Über das Foto sprechen\", \"Lesen, dann Sprechen\", \"Sprechprobe\"",
+      "tips2": "AI-Bewertung, Ergebnisse der AI-Evaluierung, Lehreranleitung",
+      "tips3": "Genaue Bewertungsergebnisse, Detaillierter Bewertungsbericht",
+      "tips4": "Die Ergebnisse werden innerhalb von <span class='yellow'>1-5 Minuten</span> verfügbar sein.",
+      "btn_font": "Mehr Entdecken",
+      "btn_img_alt": "Gelber Pfeil nach rechts"
+    },
+    "article5": {
+      "title": "∫ Kurs",
+      "tips1": "Entwickeln Sie ein <span class='yellow'>tiefgehendes Verständnis</span> der ∑ Sprech- und Schreibabschnitte mit unseren detaillierten Anleitungen",
+      "tips2": "Erreichen Sie umfassende Beherrschung",
+      "tips3": "Lernen Sie von ESL-Experten",
+      "tips4": "Bleiben Sie informiert und voraus\n",
+      "btn_font": "Mehr erfahren",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "thousand": "k",
@@ -151,6 +178,10 @@
       "h4": "Sichere Zahlung! Jederzeit kündbar! Meistern Sie den DET jetzt!",
       "switch1": "Dienst",
       "switch2": "Kurse",
+      "sep": "Sichere Zahlung",
+      "ca": "Jederzeit kündigen",
+      "atde": "Gehe jetzt zur ∑",
+      "circle_check_icon": "Kreis_kontrollsymbol",
       "Most_Popular_Choice": "Beliebteste Wahl",
       "off": "{off}% Rabatt",
       "do": "$",
@@ -177,6 +208,7 @@
       "month": "/Monat",
       "Billed": "Abgerechnet ${num} /Jahr",
       "apcs": "KI-gestützter Korrekturservice",
+      "apcs1": "KI-Korrekturservice",
       "times": "Mal",
       "bci": "schwarzes_kontrollsymbol",
       "mt": "Probeklausur",
@@ -241,6 +273,13 @@
       "Maßgeschneiderter Studienplan mit intelligenter Fragenauswahl",
       "KI-gesteuerte Sprechbewertungen"
     ],
+    "correctServiceQuanYi": [
+      "Kann für ∑ Schreiben und Sprechen verwendet werden",
+      "KI-Bewertung, Genaues Ergebnis",
+      "Ergebnisse der KI-Bewertung",
+      "Detaillierter Bewertungsbericht",
+      "Ergebnisse werden innerhalb von <span class='strongfont'>1-5 Minuten</span> verfügbar sein."
+    ],
     "contaceUsList": {
       "type1": {
         "font": "Online-Kundendienst",
@@ -258,21 +297,21 @@
       }
     },
     "leftQuanYiList": [
-      "Unbegrenzt für Übungssitzungen",
-      "Zugriff auf alle Übungsfragen",
-      "Durchsuchen von hoch bewerteten Musterantworten",
-      "Tiefgehende Frageanalyse",
-      "Häufige Prüfungswortliste",
-      "Maßgeschneiderter Studienplan mit intelligenter Frageauswahl",
-      "KI-gestützte Sprechbewertungen"
+      "<span class='strongfont'>Unbegrenzt</span> für Übungseinheiten",
+      "Zugriff auf <span class='strongfont'>18000+</span> Übungsfragen",
+      "Durchsuchen Sie <span class='strongfont'>höchstbewertete</span> Musterantworten",
+      "<span class='strongfont'>Umfassende</span> Frageanalyse",
+      "High-Frequency Exam <span class='strongfont'>Wort Buch</span>",
+      "Maßgeschneiderter <span class='strongfont'>Studienplan</span> mit intelligenter Fragenauswahl",
+      "KI-gesteuerte Sprechbewertungen"
     ],
     "mockQuanYiList": [
-      "Vollständige Probeklausuren",
-      "Testen jederzeit",
-      "Nahe an der echten DET-Prüfung",
+      "<span class='strongfont'>Vollständige</span> Übungsprüfungen",
+      "Testen Sie jederzeit",
+      "Nah an der <span class='strongfont'>realen ∑ Prüfung</span>",
       "Genau Bewertungsergebnisse",
       "Detaillierter Bewertungsbericht",
-      "Ergebnisse sind innerhalb von 5-30 Minuten verfügbar"
+      "Ergebnisse werden innerhalb von <span class='strongfont'>5-30 Minuten</span> verfügbar sein."
     ]
   },
   "blog": {
@@ -306,6 +345,16 @@
     "font2": "High-Scoring Schreibbeherrschung.",
     "Start_Now": "Jetzt starten"
   },
+  "highscorespeaking": {
+    "font1": "Beginnen Sie sofort Ihre Reise zu",
+    "font2": "Hochwertiges Sprechen!",
+    "Start_Now": "Jetzt starten\n"
+  },
+  "highscorewritingnew": {
+    "font1": "Beginnen Sie sofort Ihre Reise zu",
+    "font2": "Schreiben mit hoher Punktzahl!",
+    "Start_Now": "Jetzt starten"
+  },
   "path": {
     "seometa": { "title": "DET Übungsblog", "description": "DET Praxis-Blog" }
   },
@@ -315,23 +364,32 @@
       "description": ""
     },
     "title": "Über DET Übung",
-    "oelet": "Unser geschätztes Sprachbildungsteam",
-    "oeletdesc": "Im Mittelpunkt unserer Sprachbildungsdienste steht ein Team engagierter, hochqualifizierter und erfahrener Pädagogen, die jeweils ihre eigene einzigartige Expertise und Leidenschaft in den Vordergrund des Sprachenlernens bringen. Unser Team besteht aus Elite-Profis, die nicht nur Englisch beherrschen, sondern auch Experten darin sind, Schüler auf wichtige Englischprüfungen wie den TOEFL, IELTS und Duolingo English Test (DET) vorzubereiten. Unsere Pädagogen besitzen angesehene Zertifikate wie TESOL und Cambridge English Teacher Training-Zertifikate, die ihr Engagement für die Bereitstellung von qualitativ hochwertiger Sprachausbildung zeigen. Sie verfügen über beeindruckende Sprachtestergebnisse, die ihr tiefes Verständnis der notwendigen Fähigkeiten und Strategien zur Exzellenz in diesen Prüfungen widerspiegeln. Die kollektive Erfahrung unseres Teams erstreckt sich über mehrere Jahre, in denen sie ihre Fähigkeit verfeinert haben, auf verschiedene Lernbedürfnisse einzugehen. Sie zeichnen sich darin aus, die individuellen Stärken und Schwächen der Schüler zu erkennen und personalisierte Lehransätze sicherzustellen, die die Lernergebnisse maximieren. Diese einzigartige Fähigkeit ermöglicht es ihnen, gezielte Anleitung und Feedback zu geben, wodurch Schüler Lernbarrieren durchbrechen und ihre Sprachkenntnisse schnell verbessern können. Unsere Pädagogen sind nicht nur Lehrer; sie sind Mentoren, die Vertrauen und Begeisterung bei ihren Schülern wecken. Sie fördern eine dynamische und interaktive Lernumgebung, die die Reise des Sprachenlernens sowohl angenehm als auch effektiv macht. Ihre Lehrmethoden entwickeln sich ständig weiter, indem sie innovative Techniken und Materialien integrieren, um mit den neuesten Trends in der Sprachbildung Schritt zu halten. Der Erfolg unserer Schüler beim Erreichen ihrer Sprachziele ist ein Zeugnis für das Fachwissen, die Hingabe und die Lehrkompetenz unseres Teams. Als Einheit repräsentieren sie das Beste der Sprachbildung und sind bestrebt, Schüler auf dem Weg zu ihrem höchsten Potenzial in Englisch zu begleiten.",
-    "p1title": "Michael Z.",
-    "p1author": "Tutor Aufsichtsperson",
-    "p1content1": "Als führende Figur unseres Lehrerteams verkörpert Michael Z. den Höhepunkt des Sprachunterrichts. Mit umfangreicher Lehrerfahrung, die sich über ein Jahrzehnt erstreckt, besitzt Mike alle Qualifikationen unserer angesehenen Lehrer, einschließlich TESOL, Cambridge English Teacher Training Certificates und anderen Zertifikaten. Seine außergewöhnliche Sprachkompetenz zeigt sich in seinen beeindruckenden Ergebnissen: 115 auf TOEFL, 8.5 auf IELTS und eine perfekte 150 auf Duolingo English Test. Michaels Lehrphilosophie kombiniert die Stärken unseres vielfältigen Teams und bietet einen umfassenden und dynamischen Ansatz für das Sprachenlernen. Er ist bekannt für seine Fähigkeit, die einzigartigen Bedürfnisse jedes Schülers tief zu verstehen und anzusprechen und eine Lernumgebung zu fördern, in der die Schüler gedeihen und ihre Ziele übertreffen können. Seine Klassen sind eine Mischung aus strengen akademischen Standards und ansprechenden, interaktiven Lernerfahrungen. Neben dem Unterrichten ist Michael maßgeblich an der Entwicklung hochmoderner Lehrpläne und Trainingsmethoden beteiligt und stellt sicher, dass unsere Kurse an der Spitze der Sprachausbildung bleiben. Sein Engagement für Exzellenz im Unterricht und sein Einsatz für den Erfolg der Schüler machen ihn zu einem unschätzbaren Leiter und Mentor sowohl für unser Team als auch für unsere Schüler.",
-    "p2title": "Albert L.",
-    "p2author": "Kursdesigner",
-    "p2content1": "Mit einer Punktzahl von 8,5 im IELTS hat Albert umfangreiche Erfahrung im Unterrichten von IELTS, TOEFL, PTE und DET. Sein Unterricht ist bekannt für seine entspannte und lebendige Atmosphäre, die das Lernen angenehm macht. Alberts Ansatz ist auf die Bedürfnisse jedes Schülers zugeschnitten und ermöglicht eine schnelle Verbesserung der Englischkenntnisse in kurzer Zeit. Neben seiner ausgezeichneten Unterrichtstätigkeit ist Albert auch ein talentierter Kursdesigner, der verschiedene Online- und Offline-Kurse für Englischlernende unterschiedlicher Niveaus und Ziele erstellt und entwickelt hat. Er hat ein tiefes Verständnis der Lehrplanstandards und Bewertungskriterien verschiedener Englischtests und weiß, wie man effektive und ansprechende Lernaktivitäten und Materialien gestaltet, die den Schülern helfen können, die Testfertigkeiten und -strategien zu beherrschen. Albert hat auch mit anderen Lehrern und Experten zusammengearbeitet, um die Qualität und Relevanz der Kurse zu überprüfen und zu verbessern, und er hat positives Feedback und Anerkennung sowohl von Schülern als auch von Kollegen erhalten. Albert ist leidenschaftlich daran interessiert, innovative und personalisierte Kurse zu erstellen, die den vielfältigen Bedürfnissen und Interessen der Englischlernenden gerecht werden.",
-    "p3title": "Rita T.",
-    "p3author": "Senior Tutor",
-    "p3content1": "Mit 11 Jahren Lehrerfahrung ist Rita eine erfahrene Expertin in Duolingo English Test Vorbereitung und Forschung. Sie ist eine ATI-zertifizierte fortgeschrittene Englischlehrerin, die ein TESOL Advanced English Teacher Certificate und ein Cambridge English Teacher Training Certificate besitzt. Rita hat beeindruckende Ergebnisse von 111 im TOEFL und 140 in DET. Ihr Unterricht zeichnet sich durch die Fähigkeit aus, die Bedürfnisse der Schüler genau zu analysieren und gezielten Unterricht zu bieten, der ihnen hilft, Barrieren zu überwinden und ihre Sprachkenntnisse zu verbessern, um ihre gewünschten Ergebnisse schnell zu erreichen. Darüber hinaus ist Rita eine leidenschaftliche und begeisterte Lehrerin, die ihre Schüler immer motiviert und inspiriert, Englisch mit Selbstvertrauen und Freude zu lernen. Sie verwendet eine Vielzahl interaktiver und ansprechender Methoden, wie Spiele, Rollenspiele, Debatten und Simulationen, um ihren Unterricht unterhaltsam und effektiv zu gestalten. Sie gibt auch jedem Schüler personalisiertes Feedback und Anleitung, um ihnen zu helfen, ihre Schwächen zu verbessern und ihre Herausforderungen zu überwinden. Ritas Schüler lieben ihre warme und unterstützende Persönlichkeit und loben sie oft dafür, geduldig, freundlich und professionell zu sein.",
-    "p4title": "Doris W.",
-    "p4author": "Tutor",
-    "p4content1": "Doris, die 145 in DET und 8,0 im IELTS erzielt hat, ist eine vielseitige Duolingo English Test Lehrerin, die für ihre reiche Unterrichtserfahrung bekannt ist. Sie glänzt darin, Schülern verschiedener Niveaus zu helfen, Schwierigkeiten schnell zu überwinden und ihre idealen Ergebnisse zu erzielen, da sie einmal einem Schüler innerhalb von nur zwei Wochen geholfen hat, sich um 30 Punkte zu verbessern. Ihre Klassen sind bekannt für ihre lebendige Atmosphäre und klare Logik, und ihr Unterrichtsstil ist rigoros, aber leidenschaftlich und verantwortungsbewusst, was sie bei einer breiten Palette von Schülern beliebt macht.",
-    "p5title": "Laura K.",
-    "p5author": "Testforscher",
-    "p5content1": "Laura bringt jahrelange Erfahrung im Duolingo-Training, 110 im TOEFL und 155 in DET mit. Als Spezialistin in der Duolingo-Fragenforschung ist Laura versiert im Unterrichten von adaptiven Testfragen und Schreiben. Sie hat ein tiefes Verständnis für DET-Prüfungstechniken und -trends und zeichnet sich in der Leistungsanalyse aus, um das Potenzial der Schüler schnell zu erkennen und zu fördern."
+    "title_desc": "DETPractice.com ist die beste Plattform für ∫ Üben und Lernen.",
+    "check_out": {
+      "h2": "Überprüfen Sie, was wir tun können",
+      "qbt": "∑ Fragenbank",
+      "qbtdesc": "Wir haben die größte Fragensammlung und aktualisieren sie täglich. Sie können Ihre ∫ Punktzahl schnell verbessern, indem Sie die Fragen üben.",
+      "flm": "∑ Ganzkörper-Mock",
+      "flmdesc": " Wir haben den leistungsstärksten ∑-Praxistest, der es Ihnen ermöglicht, Ihre Testergebnisse genau zu bewerten und dabei Kosten zu sparen.",
+      "acs": "∑ KI-Korrekturservice",
+      "acsdesc": "Sie können die von uns bereitgestellten KI-Korrekturwerkzeuge verwenden, um Ihre ∑ Sprech- und Schreibpunktzahlen schnell zu verbessern.",
+      "dc": "∑ Kurse",
+      "dedesc": "Wir werden weiterhin Vorbereitungsmaterialien und -kurse basierend auf den neuesten Testfunktionen von ∑ entwickeln."
+    },
+    "three_our_our": {
+      "h2": "Obwohl Jung, Aber Stark",
+      "ov": "Unsere Vision",
+      "me": "Bildung durch KI verbessern",
+      "om": "Unsere Mission",
+      "omdesc": "Stellen Sie sicher, dass künstliche allgemeine <br />Intelligenz allen Schülern zugutekommt.",
+      "ovs": "Unsere Werte",
+      "ovsdesc": "Aufrichtigkeit, Zusammenarbeit und gegenseitiger<br /> Nutzen"
+    },
+    "get_in_touch": {
+      "h2": "Kontakt aufnehmen",
+      "goytb": "Gehe zu YouTube",
+      "getmore": "Holen Sie mehr von DETPractice auf YouTube"
+    }
   },
   "contactUs": {
     "seometa": {
@@ -396,47 +454,43 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Übung - KI-Korrekturdienst für Ihren Duolingo-Test",
-      "description": "Korrekturservice bereitgestellt von \"KI + Lehrern\". Erhalten Sie personalisiertes Feedback von Sprachexperten, um Ihre Antworten und Strategien für höhere DET-Scores zu verbessern.",
-      "keywords": "Korrekturdienst für Duolingo Test, AI Korrekturdienst für Duolingo Test"
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
     },
-    "h1": "Entdecken Sie den besten KI-Korrekturservice für Duolingo-Test",
-    "desc": "Verbessern Sie Ihre Aufsätze mit unserem 'KI + Lehrer'-Korrekturservice. Erhalten Sie detailliertes Feedback basierend auf offiziellen Bewertungskriterien schnell nach der Einreichung.",
+    "h1": "∑ KI-Korrektur schreiben",
+    "desc": "∑ Schreibkorrekturservice von AI, vergleichbar mit professionellen Lehrern. Ihr Aufsatz wird basierend auf ∑ Bewertungsregeln korrigiert, und Sie erhalten innerhalb von 1-5 Minuten detailliertes Feedback.",
     "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
     "useralt": "Benutzer-Symbol",
     "white_arrow_right": "weißer_pfeil_rechts",
     "yellow_arrow_right": "gelber_pfeil_rechts",
-    "learners_have": "{number} Lernende haben ihre Schreibfähigkeiten mit unserem Korrekturservice verbessert.",
-    "Review_Now": "Überprüfen Sie jetzt",
-    "Correct_Now": "Jetzt korrigieren",
-    "Get_Scored_Now": "Jetzt bewerten lassen",
+    "learners_have": "{number} Personen nutzten den ∑ Writing AI Correction-Dienst.",
+    "Review_Now": "Loslegen",
+    "Correct_Now": "Beginnen Sie zu erleben",
+    "Get_Scored_Now": "Starten Sie das Erlebnis",
     "Enhance_Now": "Jetzt verbessern",
     "Begin_Polishing": "Polieren beginnen",
     "h2_1": {
-      "h2": "Korrekturanfragen",
-      "right_desc": "Auf den Seiten für Sprech- und Schreibübungen können Sie direkt den Korrekturservice beantragen."
+      "h2": "Genauer Spielstand",
+      "right_desc": "Reichen Sie Ihren Aufsatz aus der Fragenbank ein, und Sie können innerhalb von 1-5 Minuten einen klaren und detaillierten Bericht und eine Bewertung erhalten."
     },
     "h2_2": {
-      "h2": "Umfassende Bewertung",
-      "right_desc": "Folgt den offiziellen Duolingo English Test Anforderungen, um Schreibfähigkeiten genau zu erfassen und umfassende Bewertungsergebnisse bereitzustellen."
+      "h2": "Schreibkorrektur\n      ",
+      "right_desc": "Sie können sofort Ihre Vokabelfehler und Grammatikfehler sehen und lernen, wie Sie sie vermeiden können."
     },
     "h2_3": {
-      "h2": "Schreibkorrektur",
-      "right_desc": "Erkennen Sie sofort Fehler im Wortschatz und in der Grammatik, um Ihre Schreibfähigkeiten zu verbessern."
+      "h2": "Professionelle Beratung",
+      "right_desc": "Laut den ∑ Bewertungsfaktoren bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Papier zu identifizieren und es perfekt zu machen."
     },
     "h2_4": {
-      "h2": "Lehrer Anleitung",
-      "right_desc": "Verbessern Sie Ihr Schreiben mit einer Expertenanalyse, die auf DET Kriterien zugeschnitten ist und die Bereiche zur Verbesserung aufzeigt, um Ihre Arbeit zu steigern."
-    },
-    "h2_5": {
-      "h2": "Originaltext Polieren",
-      "right_desc": "Heben Sie jedes Wort und jeden Satz hervor; verfeinern Sie Struktur und Stil für eine herausragende und hoch bewertete Komposition."
+      "h2": "Essay-Überarbeitung",
+      "right_desc": "Ändern Sie jeden Satz und jedes Wort genau, passen Sie die Absatzstruktur vernünftig an und beleben Sie den Schreibstil, um Ihre Komposition weiter zu verbessern und sie in eine hoch bewertete zu verwandeln."
     }
   },
   "courses": {
     "seometa": {
       "title": "DET Übung - Beherrschen Sie Sprechen und Schreiben mit dem Duolingo English Test Leitfaden",
-      "description": "Entdecken Sie Ihr Potenzial mit unserem Duolingo English Test Leitfaden. Tauchen Sie ein in eine exzellente Sprach- und Schreibweise mit umfassenden Strategien, Expertentipps und aktualisiertem DET Training."
+      "description": "Entfesseln Sie Ihr Potenzial mit unserem ∫ Leitfaden. Tauchen Sie ein in Sprach- und Schreibexzellenz mit umfassenden Strategien, Expertentipps und aktualisiertem ∑ Übungsmaterial."
     },
     "article1": {
       "title": "Hauptmerkmale der DET Prüfung zur Sprachbeherrschung:",
@@ -569,7 +623,7 @@
       "description": "Erleben Sie einen realistischen Duolingo-Probetest mit DET Practice's Vollzeit-Prüfungen. Mit intelligenten adaptiven Fragen und KI-Bewertung bieten unsere Probetests eine genaue Bewertung, um Sie effektiv auf das Duolingo English Test vorzubereiten.",
       "keywords": "Duolingo Mock-Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
     },
-    "h1": "Duolingo English Test 1:1 Probeklausur",
+    "h1": "∑ Vollständiger Probetest",
     "desc": "Tauchen Sie ein in eine realistische Prüfungserfahrung mit unseren groß angelegten Übungsprüfungen. Erhalten Sie einen Vorgeschmack auf den tatsächlichen Prüfungsprozess, bevor es ernst wird und erhalten Sie schnell Ergebnisse und detaillierte Diagnoseberichte, um Verbesserungsbereiche zu identifizieren.",
     "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
     "mock_user_icon": "Benutzersymbol simulieren",
@@ -579,7 +633,7 @@
     "Mock_Now": "Jetzt simulieren",
     "Full_scale": "Duolingo 1:1 Vollständige Prüfungssimulation",
     "article1": {
-      "h2": "Algorithmische Intelligenz",
+      "h2": "Nahe an der echten Prüfung",
       "right_desc": "Erleben Sie reale Prüfungsbedingungen mit unserem fortschrittlichen adaptiven Testalgorithmus. Beherrschen Sie schnell verschiedene Fragetypen und erhalten Sie präzise Bewertungen."
     },
     "article2": {
@@ -592,7 +646,7 @@
     },
     "article4": {
       "h2": "Schnelle Ergebnismeldung",
-      "right_desc": "Erhalten Sie Ihre Mock-Testergebnisse innerhalb von 30 Minuten, beschleunigen Sie Ihre Fortschrittsüberprüfung."
+      "right_desc": "Erhalten Sie Ihre Prüfungsergebnisse innerhalb von <span class='zdfont'>5-30 Minuten</span>, um Ihren Fortschritt schnell zu überprüfen."
     }
   },
   "practice": {
@@ -601,34 +655,65 @@
       "description": "Unsere DET Testbank umfasst Tausende von Fragen für umfangreiches Training, vollständig mit detaillierten Erklärungen und AI-Analyse, um Ihnen zum Erfolg zu verhelfen.",
       "keywords": "Duolingo English Test Übung, Duolingo Übungsprüfung Englisch, Duolingo Englisch-Übungsprüfung, Duolingo Übungsprüfung online, Duolingo Prüfungsübung, Duolingo Übungsprüfung, Duolingo Übung, Det Übungsprüfung, Duolingo English Test Punktzahl"
     },
-    "h1": "Duolingo Übungsfragenbank",
+    "h1": "∫ Übung",
     "desc": "Erhalten Sie Zugang zu einer umfangreichen Sammlung von Testfragen, ergänzt durch Antwortanalysen, Vorlagen, KI-gesteuerte Sprechbewertungen und intelligente Planung. Beschleunigen Sie Ihre Punktzahlverbesserung effizient und kostengünstig mit unserem KI-gestützten Ansatz.",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
-    "altbanner": "Duolingo Praxisfragenbank",
+    "altbanner": "∫ Übung",
     "bank_user_icon": "Bankbenutzer-Symbol",
     "white_arrow_right": "Weißer Pfeil rechts",
     "blue_arrow_right": "Blauer Pfeil nach rechts",
     "learners_have": "{number} Lernende haben unsere Fragenbank für DET-Vorbereitung genutzt.",
     "spn": "Jetzt mit dem Üben beginnen",
     "article1": {
-      "h2": "Umfangreiche Fragenbibliothek",
-      "right_desc": "Entdecken Sie unsere umfangreiche Bibliothek mit über 10.000 Fragen zu verschiedenen Prüfungsarten, die ständig aktualisiert werden, um Ihr Üben auf dem neuesten Stand zu halten. Unsere Fragenbank ist so konzipiert, dass sie Ihre Prüfungsfähigkeiten systematisch in verschiedenen Frageformaten stärkt.",
+      "h2": "Die größte Fragensammlung",
+      "right_desc": "Entdecken Sie unsere umfangreiche Bibliothek mit über <span class='zdfont'>18.000+ Fragen</span> zu verschiedenen Prüfungsarten, die ständig aktualisiert wird, um Ihr Üben auf dem neuesten Stand zu halten. Unsere Fragenbank ist darauf ausgelegt, Ihre Testfähigkeiten systematisch in verschiedenen Frageformaten zu stärken.",
       "btn": "Tauchen Sie in die Praxis ein"
     },
     "article2": {
       "h2": "Intelligente Empfehlung",
-      "right_desc": "Das Al-Modell berücksichtigt das Beherrschungsniveau jedes Fragetypus, die Schwierigkeit, das Zielergebnis, das Fragegewicht, die Neuartigkeit der Fragen, die jüngste Häufigkeit des Tests, die Vorbereitungszeit und die Effizienz der Punktevergabe usw., um Ihnen genau Fragen zu empfehlen, die Ihnen bei der effizienten Vorbereitung auf den Test helfen.",
+      "right_desc": "Das <span class='zdfont'>KI-Modell</span> berücksichtigt das Beherrschungsniveau jedes Fragetypus, die Schwierigkeit, die Zielpunktzahl, das Gewicht der Fragen, die Neuheit der Fragen, die jüngste Häufigkeit des Tests, die Vorbereitungszeit und die Effizienz der Bewertung, etc., um Ihnen präzise Fragen zu empfehlen, die Ihnen helfen, sich effizient auf den Test vorzubereiten.",
       "btn": "Starten Sie kluges Studienreise"
     },
     "article3": {
       "h2": "KI Sprechbewertung",
-      "right_desc": "Verbessern Sie Ihre mündliche Kompetenz mit unseren KI-gestützten Sprechbewertungen. Reichen Sie Ihre Antwort auf eine gesprochene Sprachfrage ein und erhalten Sie sofort eine detaillierte Analyse Ihrer Sprechfähigkeiten, die Ihnen hilft, sich mit Präzision und Geschwindigkeit zu verbessern.",
+      "right_desc": "Verbessern Sie Ihre mündliche Kompetenz mit unseren <span class='zdfont'>KI-gesteuerten Sprechbewertungen</span>. Reichen Sie Ihre Antwort auf eine Sprachfrage ein und erhalten Sie sofort eine detaillierte Analyse Ihrer Sprechfähigkeiten, die Ihnen hilft, sich präzise und schnell zu verbessern.",
       "btn": "Beginnen Sie Ihre Bewertung"
     },
     "article4": {
       "h2": "Antwortanalyse",
       "right_desc": "Tauchen Sie ein in umfassende Antworterklärungen, die Ihr Verständnis wesentlicher Konzepte und Problemlösungstechniken vertiefen. Unsere detaillierten Analysen führen Sie nicht nur zu den richtigen Antworten – sie erweitern Ihr Wissen und steigern Ihre Lerneffizienz.",
       "btn": "Erkunden Sie Antworteinblicke"
+    }
+  },
+  "speakingaicorrection": {
+    "seometa": {
+      "title": "Benötigt",
+      "description": "Muss bereitgestellt werden",
+      "keywords": "Benötigt werden"
+    },
+    "h1": "∑ Sprechende KI Korrektur",
+    "desc": "∑ Sprachkorrekturdienst bereitgestellt von leistungsstarker KI. Unterstützt alle Arten von Sprechaufgaben und bietet professionelle Anleitung, um Ihnen zu helfen, Ihre ∑ Sprechbewertung einfach zu verbessern.",
+    "alt": "∑ Übung: Die beste ∑ Plattform für KI-gestützte Sprachkorrektur",
+    "altbanner": "∑ Sprechende KI-Korrektur",
+    "bank_user_icon": "Bank Nutzer Icon",
+    "white_arrow_right": "Weißer Pfeil nach rechts",
+    "purple_arrow_right": "Lila Pfeil nach rechts",
+    "learners_have": "{number} Personen haben den ∑ Speaking AI-Korrekturservice genutzt.",
+    "spn": "Loslegen",
+    "article1": {
+      "h2": "Genaues Ergebnis",
+      "right_desc": "Reichen Sie Ihren Aufsatz ein, indem Sie ihn eingeben oder aus der Fragenbank auswählen, und Sie erhalten sofort einen klaren und detaillierten Bericht sowie eine Bewertung.",
+      "btn": "Beginnen Sie zu erleben"
+    },
+    "article2": {
+      "h2": "Sprechbewertung",
+      "right_desc": "Sie können sofort Ihren Aussprachefehler, unerwartete Unterbrechung, fehlende Pause, vermutetes lautes Lesen, vermutete Wiederholung sehen und lernen, wie Sie diese vermeiden können.",
+      "btn": "Beginnen Sie mit dem Erleben"
+    },
+    "article3": {
+      "h2": "Professionelle Beratung",
+      "right_desc": "Gemäß den ∑ Bewertungselementen bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Sprechen zu identifizieren und es perfekt zu machen.",
+      "btn": "Beginnen Sie zu erleben"
     }
   },
   "privacyPolicy": {
@@ -640,7 +725,7 @@
     "h1": "Datenschutzerklärung",
     "q1": {
       "title": "Zuletzt aktualisiert: 2023-11-20",
-      "a1": "DET Practice („uns“, „wir“ oder „unser“) betreibt die DET Practice-Website (der „Dienst“).",
+      "a1": "∑ Practice („uns“, „wir“ oder „unser“) betreibt die ∑ Practice-Website (den „Service“).",
       "a2": "Diese Seite informiert Sie über unsere Richtlinien bezüglich der Erhebung, Nutzung und Offenlegung von persönlichen Informationen, wenn Sie unseren Service nutzen.",
       "a3": "Wir werden Ihre Informationen nicht verwenden oder weitergeben, außer wie in dieser Datenschutzrichtlinie beschrieben.",
       "a4": "Wir verwenden Ihre persönlichen Informationen, um den Service bereitzustellen und zu verbessern. Durch die Nutzung des Services stimmen Sie der Erfassung und Verwendung von Informationen gemäß dieser Richtlinie zu. Sofern in dieser Datenschutzrichtlinie nicht anders definiert, haben Begriffe in dieser Datenschutzrichtlinie die gleiche Bedeutung wie in unseren Allgemeinen Geschäftsbedingungen, zugänglich unter",
@@ -694,9 +779,10 @@
       "a3": "• Digitale Kurse: Sobald ein digitales Produkt heruntergeladen oder darauf zugegriffen wurde, gilt es als genutzt und genutzte Produkte können nicht erstattet werden."
     },
     "q3": {
+      "title0": "Dennoch heißt DETPractice Sie willkommen, uns zu kontaktieren, um Ihre Probleme in jeder Situation zu lösen. Wir werden unser Bestes tun, um eine Lösung zu bieten, die Sie zufriedenstellt.",
       "title": "Wie man eine Rückerstattung anfordert / ein Abonnement storniert",
       "a1": "Um eine Rückerstattung zu beantragen, befolgen Sie bitte diese Schritte:",
-      "a2": "1. Abonnement kündigen: Melden Sie sich in Ihrem Konto an, finden Sie den Link \"Ihre Abrechnung verwalten\" am Ende der Mitgliedschaftsseite und klicken Sie darauf. Sie werden zu einer Bestätigungsseite weitergeleitet, auf der Sie Ihre Entscheidung zum Abbestellen bestätigen können.",
+      "a2": "1. Abonnement kündigen: Melden Sie sich bei Ihrem Konto an, suchen Sie den Link <span class='websiteStrong'>\"Verwalten Sie Ihre Abrechnung\"</span> am unteren Rand der Mitgliedschaftsseite und klicken Sie darauf. Sie werden zu einer Bestätigungsseite weitergeleitet, auf der Sie Ihre Entscheidung zum Abbestellen bestätigen können.",
       "a3": "2. Kontaktieren Sie unseren Support: Kontaktieren Sie unser Kundensupport-Team unter <span class='website'>support{'@'}detpractice.com</span> mit Ihrer Bestellnummer und dem Grund für die Erstattungsanfrage.",
       "a4": "3. Unser Team wird Ihre Anfrage überprüfen und innerhalb von 3 Werktagen antworten."
     },

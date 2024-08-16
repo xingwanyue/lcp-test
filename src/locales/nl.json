@@ -30,9 +30,19 @@
       "font": "Verover je examen met authentieke simulaties op volledige lengte: diepteanalyse en onmiddellijke resultaten, beschikbaar altijd en overal."
     },
     "prod4": {
-      "title": "Duolingo English Test Mok",
-      "alt": "Duolingo English Test Namaak",
+      "title": "∑ Volledige Lengte Oefentoets",
+      "alt": "∑ Volledige Lange Oefentoets",
       "font": "Ontgrendel DET Succes: Uitgebreide Beheersing, Bewezen Technieken, en Actuele Inzichten voor Zelfverzekerd Spreken en Schrijfvaardigheid!"
+    },
+    "prodwriting": {
+      "title": "∑ Schrijven AI Correctie",
+      "alt": "∑ Schrijven AI Correctie",
+      "font": "Krijg nauwkeurige scores en gedetailleerde rapporten zodat je je schrijfvaardigheden sneller kunt verbeteren. Ondersteun alle schrijfvragen!"
+    },
+    "prodspeaking": {
+      "title": "∑ Sprekende AI Correctie",
+      "alt": "∑ Spreken AI Correctie",
+      "font": "Maak gebruik van krachtige AI om je ∑ spreekvaardigheidsscore op een gerichte manier te verbeteren. Ondersteun alle spreekvragen!"
     }
   },
   "footer": {
@@ -74,37 +84,54 @@
     "Start_for_free": "Begin gratis",
     "trustedByWorldwide": "Vertrouwd door {path} studenten wereldwijd voor een 1-maand Duolingo English Test scoreboost.",
     "The_Best_Platform": "Het Beste Platform om Uw Duolingo English Test Scores te Verhogen",
+    "Tu": "Totale Gebruikers",
+    "questions": "Vragen",
+    "mockTest": "Mock Test",
+    "yellow_check_icon_alt": "gele_vinkje_icoon",
     "Leverage_Our": "Maak gebruik van onze allesomvattende middelen voor snelle scoreverbetering",
     "article1": {
       "title": "Duolingo English Test Oefening",
-      "tips1": "Met meer dan {number} oefenvragen wordt onze steeds groter wordende vraagbank regelmatig bijgewerkt voor uitmuntendheid.",
-      "tips2": "Uitgebreide dekking van alle examensoorten met gedetailleerde uitleg bij elke vraag.",
-      "tips3": "Diepgaande antwoorden, slimme analyses en scores om continue monitoring van uw prestaties mogelijk te maken.",
+      "tips1": "De <span class='yellow'>Grootste</span> Vragenbank, {number} Oefenvragen",
+      "tips2": "Continu continu <span class='yellow'>elke dag bijgewerkt</span>",
+      "tips3": "Geef antwoorden met hoge scores en gedetailleerde uitleg",
+      "tips4": "AI-score voor hardop lezen",
       "btn_font": "Ontdek Meer",
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "article2": {
-      "title": "AI-aangedreven opstelcorrectieservice",
-      "tips1": "Profiteer van nauwkeurige essaycorrecties dankzij onze 'AI + Leraar' samenwerkingsbeoordeling.",
-      "tips2": "Dien eenvoudigweg je essay in en ontvang snel een uitgebreid rapport met een gedetailleerde bandscore.",
-      "tips3": "Verhoog je schrijfscores in slechts 2 weken.",
+      "title": "∑ Volledige Mock Test",
+      "tips1": "The Meest <span class='yellow'>Krachtige</span> Oefentoets, Dicht bij <span class='yellow'>Echte ∑ Exam</span>",
+      "tips2": "Adaptieve Examens en AI Beoordeling",
+      "tips3": "Nauwkeurige Beoordelingsscores, Gedetailleerd Evaluatierapport",
+      "tips4": "Resultaten zullen beschikbaar zijn binnen <span class='yellow'>5-30 minuten</span>",
       "btn_font": "Meer informatie",
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "article3": {
-      "title": "Duolingo English Test Spottend",
-      "tips1": "Boots de daadwerkelijke examensituatie na om jezelf vooraf vertrouwd te maken met het testproces en de inhoud.",
-      "tips2": "Ontvang diepgaande gesimuleerde testrapporten voor een nauwkeurige analyse van je sterke en zwakke punten.",
-      "tips3": "Maak online proefexamens op uw gemak, met snelle scores binnen 30 minuten.",
+      "title": "∑ Schrijven AI Correctie",
+      "tips1": "Ondersteuning \"Schrijf over de Foto\",\"Interactief Schrijven\",\"Schrijfsample\"",
+      "tips2": "AI Scoring, AI Correctie, Leraar Begeleiding",
+      "tips3": "Nauwkeurige Beoordelingsscores, Gedetailleerd Evaluatierapport",
+      "tips4": "Resultaten zullen beschikbaar zijn binnen <span class='yellow'>1-5 minuten</span>",
       "btn_font": "Ontdek Meer",
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "article4": {
-      "title": "Duolingo English Test Cursus",
-      "tips1": "Bereik Uitgebreide Beheersing. Ontwikkel een diepgaand begrip van DET spreken en schrijven secties met onze gedetailleerde gidsen, zodat je elk deel van het examen vol vertrouwen benadert.",
-      "tips2": "Leer van ESL-experts. Gebruik bewezen strategieën om uw spreek- en schrijfvaardigheden te verbeteren, profiteer van gepersonaliseerde leertrajecten en neem deel aan effectieve zelfevaluatie.",
-      "tips3": "Blijf geïnformeerd en voorop. Blijf op de hoogte van de nieuwste DET formats en trends om ervoor te zorgen dat je voorbereiding perfect in lijn is met de huidige examennormen.",
+      "title": "∑ AI-correctie spreken",
+      "tips1": "Ondersteun \"Luister, dan Spreek\", \"Spreek over de Foto\", \"Lees, dan Spreek\", \"Voorbeeld Spreken\"",
+      "tips2": "AI Scoring, AI Evaluatieresultaten, Leraargids",
+      "tips3": "Nauwkeurige Beoordelingsscores, Gedetailleerd Evaluatierapport",
+      "tips4": "Resultaten zullen beschikbaar zijn binnen <span class='yellow'>1-5 minuten</span>",
       "btn_font": "Ontdek Meer",
+      "btn_img_alt": "Gele Pijl Naar Rechts"
+    },
+    "article5": {
+      "title": "∫ Cursus",
+      "tips1": "Ontwikkel een <span class='yellow'>diepgaand begrip</span> van ∑ spreek- en schrijfgedeelten met onze gedetailleerde gidsen",
+      "tips2": "Behaal Uitgebreide Beheersing",
+      "tips3": "Leer van ESL-experts",
+      "tips4": "Blijf geïnformeerd en vooruit",
+      "btn_font": "Verken Meer",
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "thousand": "k",
@@ -151,6 +178,11 @@
       "h4": "Veilige betaling! Op elk moment annuleren! Beheers de DET nu!",
       "switch1": "Service",
       "switch2": "Cursussen",
+      "sep": "Veilige betaling",
+      "ca": "Annuleer op elk moment",
+      "atde": "Versla de ∑ nu",
+      "circle_check_icon": "circle_check_icon",
+      "apcs1": "AI Correctiedienst",
       "Most_Popular_Choice": "Meest Populaire Keuze",
       "off": "{off}% korting",
       "do": "$",
@@ -241,6 +273,13 @@
       "Op maat gemaakt studieplan met slimme vraagselectie",
       "AI-gestuurde spraakbeoordelingen"
     ],
+    "correctServiceQuanYi": [
+      "Kan worden gebruikt voor ∑ schrijven en spreken",
+      "AI-score, Nauwkeurige score",
+      "Resultaten van AI-evaluatie",
+      "Gedetailleerd Evaluatierapport",
+      "Resultaten zullen beschikbaar zijn binnen <span class='strongfont'>1-5 minuten</span>"
+    ],
     "contaceUsList": {
       "type1": {
         "font": "Online Klantenservice",
@@ -258,21 +297,21 @@
       }
     },
     "leftQuanYiList": [
-      "Onbeperkt voor oefensessies",
-      "Toegang tot alle oefenvragen",
-      "Blader door hoog scorende voorbeeldantwoorden",
-      "Diepgaande vraaganalyse",
-      "Hoogfrequent examenwoordenboek",
-      "Op maat gemaakt studieplan met slimme vraagselectie",
-      "AI-aangedreven spreekbeoordelingen"
+      "<span class='strongfont'>Onbeperkt</span> voor Oefensessies",
+      "Toegang tot <span class='strongfont'>18000+</span> oefenvragen",
+      "Blader door <span class='strongfont'>Hoogscorende</span> Voorbeeldantwoorden",
+      "<span class='strongfont'>Diepgaande</span> Vraaganalyse",
+      "Hoge-Frequentie Examen <span class='strongfont'>Woordenboek</span>",
+      "Op maat gemaakt <span class='strongfont'>Studeerplan</span> met Slimme Vraagselectie",
+      "AI-Aangedreven Spreekbeoordelingen"
     ],
     "mockQuanYiList": [
-      "Volledige proefexamens",
+      "<span class='strongfont'>Volledige</span> proefexamens",
       "Test op elk moment",
-      "Dicht bij het echte DET-examen",
+      "Dichtbij <span class='strongfont'>echte ∑ examen</span>",
       "Nauwkeurige beoordelingsscores",
       "Gedetailleerd evaluatierapport",
-      "Resultaten zijn binnen 5-30 minuten beschikbaar"
+      "Resultaten zullen beschikbaar zijn binnen <span class='strongfont'>5-30 minuten</span>"
     ]
   },
   "blog": {
@@ -306,6 +345,16 @@
     "font2": "Beheersing van Hoog Scorend Schrijven.",
     "Start_Now": "Begin nu"
   },
+  "highscorespeaking": {
+    "font1": "Begin onmiddellijk aan uw reis naar",
+    "font2": "Hoog-scorend spreken!",
+    "Start_Now": "Begin nu"
+  },
+  "highscorewritingnew": {
+    "font1": "Begin onmiddellijk aan je reis naar",
+    "font2": "Schrift met hoge scores!",
+    "Start_Now": "Begin Nu"
+  },
   "path": {
     "seometa": { "title": "DET Oefenblog", "description": "DET Oefenblog" }
   },
@@ -315,23 +364,33 @@
       "description": ""
     },
     "title": "Over DET Practice",
-    "oelet": "Ons Geachte Taalonderwijsteam",
-    "oeletdesc": "In het hart van onze taaleducatiediensten ligt een team van toegewijde, hooggekwalificeerde en ervaren docenten, die elk hun eigen unieke expertise en passie naar de voorgrond van taalonderwijs brengen. Ons team bestaat uit elite professionals die niet alleen vaardig zijn in het Engels, maar ook experts zijn in het voorbereiden van studenten op grote Engelse vaardigheidstests zoals de TOEFL, IELTS en Duolingo English Test (DET). Onze docenten hebben prestigieuze certificeringen zoals TESOL en Cambridge English Teacher Training-certificaten, wat hun inzet toont om hoogwaardige taaleducatie te leveren. Ze beschikken over indrukwekkende taaltestresultaten, wat hun diepgaande begrip weerspiegelt van de vaardigheden en strategieën die nodig zijn om te excelleren in deze examens. De collectieve ervaring van ons team beslaat meerdere jaren, waarin zij hun vermogen hebben verfijnd om aan diverse leerbehoeften te voldoen. Ze excelleren in het identificeren van de individuele sterke en zwakke punten van studenten, wat zorgt voor gepersonaliseerde lesmethoden die de leerresultaten maximaliseren. Dit unieke vermogen stelt hen in staat gerichte begeleiding en feedback te geven, waardoor studenten leermuren doorbreken en hun taalvaardigheid snel verbeteren. Onze docenten zijn niet alleen leraren; ze zijn mentoren die vertrouwen en enthousiasme wekken bij hun studenten. Ze bevorderen een dynamische en interactieve leeromgeving, waardoor de reis van taal leren zowel plezierig als effectief wordt. Hun lesmethoden evolueren voortdurend, waarbij ze innovatieve technieken en materialen integreren om op de hoogte te blijven van de nieuwste trends in taaleducatie. Het succes van onze studenten bij het bereiken van hun taaldoelen is een bewijs van de expertise, toewijding en lesuitmuntendheid van ons team. Als een eenheid vertegenwoordigen ze het beste van taaleducatie, vastbesloten om studenten te begeleiden naar het bereiken van hun hoogste potentieel in Engelse taalvaardigheid.",
-    "p1title": "Michael Z.",
-    "p1author": "Tutor Begeleider",
-    "p1content1": "Als de leidende figuur van ons docententeam belichaamt Michael Z. het toppunt van taalonderwijs. Met uitgebreide onderwijservaring die meer dan tien jaar beslaat, bezit Mike alle kwalificaties van onze gerenommeerde docenten, inclusief TESOL, Cambridge English Teacher Training Certificaten, en andere certificaten. Zijn uitzonderlijke taalvaardigheid wordt weerspiegeld in zijn indrukwekkende scores: 115 op TOEFL, 8.5 op IELTS, en een perfecte 150 op Duolingo English Test. Michael's onderwijsfilosofie combineert de sterke punten van ons diverse team en biedt een uitgebreide en dynamische benadering van taal leren. Hij staat bekend om zijn vermogen om de unieke behoeften van elke student diepgaand te begrijpen en aan te pakken, waardoor een leeromgeving ontstaat waarin studenten kunnen gedijen en hun doelen kunnen overtreffen. Zijn lessen zijn een mix van rigoureuze academische standaarden en boeiende, interactieve leerervaringen. Naast lesgeven is Michael instrumenteel in het ontwikkelen van baanbrekende curricula en trainingsmethoden, waardoor onze cursussen aan de voorhoede van taalonderwijs blijven. Zijn toewijding aan excellentie in onderwijs en zijn inzet voor het succes van studenten maken hem tot een onschatbare leider en mentor zowel voor ons team als onze studenten.",
-    "p2title": "Albert L.",
-    "p2author": "Cursusontwerper",
-    "p2content1": "Met een score van 8.5 in IELTS, heeft Albert uitgebreide ervaring in het lesgeven van IELTS, TOEFL, PTE en DET. Zijn lessen staan bekend om de ontspannen en levendige sfeer, waardoor leren plezierig wordt. Albert’s aanpak is afgestemd op de behoeften van elke student, waardoor snelle verbetering van de Engelse taalvaardigheid in korte tijd mogelijk is. Naast dat hij een uitstekende leraar is, is Albert ook een getalenteerde cursusontwerper die verschillende online en offline cursussen heeft gecreëerd en ontwikkeld voor Engelse taalleerders van verschillende niveaus en doelen. Hij heeft een diepgaand begrip van de curriculumstandaarden en beoordelingscriteria van verschillende Engelse toetsen, en hij weet hoe hij effectieve en boeiende leeractiviteiten en -materialen kan ontwerpen die studenten kunnen helpen de testvaardigheden en strategieën te beheersen. Albert heeft ook samengewerkt met andere leraren en experts om de kwaliteit en relevantie van de cursussen te beoordelen en te verbeteren, en hij heeft positieve feedback en erkenning ontvangen van zowel studenten als collega's. Albert is gepassioneerd over het creëren van innovatieve en gepersonaliseerde cursussen die kunnen voldoen aan de diverse behoeften en interesses van Engelse taalleerders.",
-    "p3title": "Rita T.",
-    "p3author": "Senior Tutor",
-    "p3content1": "Met 11 jaar onderwijservaring is Rita een doorgewinterde expert in Duolingo English Test voorbereiding en onderzoek. Ze is een ATI-gecertificeerde geavanceerde Engelse lerares, in het bezit van een TESOL Advanced English Teacher Certificate en Cambridge English Teacher Training Certificate. Rita heeft indrukwekkende scores behaald van 111 in TOEFL en 140 in DET. Haar lesgeven wordt gekenmerkt door een vermogen om de behoeften van studenten nauwkeurig te analyseren en gerichte instructies te geven, waardoor ze barrières doorbreken en hun taalvaardigheden verbeteren om snel de gewenste scores te bereiken. Bovendien is Rita een gepassioneerde en enthousiaste lerares die altijd haar studenten motiveert en inspireert om met zelfvertrouwen en plezier Engels te leren. Ze gebruikt een verscheidenheid aan interactieve en boeiende methoden, zoals spelletjes, rollenspellen, debatten en simulaties, om haar lessen leuk en effectief te maken. Ze geeft ook gepersonaliseerde feedback en begeleiding aan elke student, waardoor ze hun zwakke punten verbeteren en hun uitdagingen overwinnen. Studenten van Rita houden van haar warme en ondersteunende persoonlijkheid en prijzen haar vaak om haar geduld, vriendelijkheid en professionaliteit.",
-    "p4title": "Doris W.",
-    "p4author": "Bijlesdocent",
-    "p4content1": "Doris, scoort 145 in DET en 8.0 in IELTS, is een veelzijdige Duolingo English Test instructeur die bekend staat om haar rijke leservaring. Ze blinkt uit in het helpen van studenten van verschillende niveaus om snel moeilijkheden te overwinnen en hun ideale resultaten te behalen, waarbij ze ooit een student heeft geholpen om binnen twee weken met 30 punten te verbeteren. Haar lessen staan bekend om hun levendige sfeer en duidelijke logica, en haar lesstijl is rigoureus maar gepassioneerd en verantwoordelijk, waardoor ze favoriet is bij een breed scala aan studenten.",
-    "p5title": "Laura K.",
-    "p5author": "Testonderzoeker",
-    "p5content1": "Laura brengt jarenlange ervaring in Duolingo training, 110 in TOEFL, en 155 in DET. Als specialist in Duolingo vraagonderzoek is Laura bedreven in het lesgeven van adaptieve testvragen en schrijven. Ze heeft een diepgaand inzicht in DET examtechnieken en -trends, excelleert in prestatieanalyse om snel het potentieel van studenten te identificeren en te verbeteren."
+
+    "title_desc": "DETPractice.com is het beste platform voor ∫ Oefenen en Leren.",
+    "check_out": {
+      "h2": "Bekijk Wat We Kunnen Doen",
+      "qbt": "∑ Vragenbank",
+      "qbtdesc": "We hebben de grootste vragenbank en werken deze elke dag bij. Je kunt je ∫ score snel verbeteren door de vragen te oefenen.",
+      "flm": "∑ Volledige Mock",
+      "flmdesc": "We hebben de meest krachtige ∑ oefentoets, die je in staat stelt om je testresultaten nauwkeurig te evalueren tegen lagere kosten.",
+      "acs": "∑ AI Correctiedienst",
+      "acsdesc": "Je kunt de AI-correctietools die we aanbieden gebruiken om snel je ∑ spreek- en schrijfscores te verbeteren.",
+      "dc": "∑ Cursussen",
+      "dedesc": "We zullen doorgaan met het ontwikkelen van testvoorbereidingsmateriaal en cursussen gebaseerd op ∑'s nieuwste testfuncties."
+    },
+    "three_our_our": {
+      "h2": "Hoewel Jong, Maar Sterk",
+      "ov": "Onze Visie",
+      "me": "Onderwijs verbeteren door middel van AI",
+      "om": "Onze missie",
+      "omdesc": "Zorg ervoor dat kunstmatige algemene <br />intelligentie ten goede komt aan alle studenten.",
+      "ovs": "Onze Waarden",
+      "ovsdesc": "Oprechtheid, samenwerking en wederzijds<br /> voordeel"
+    },
+    "get_in_touch": {
+      "h2": "Neem contact op",
+      "goytb": "Ga naar YouTube",
+      "getmore": "Krijg meer van DETPractice op YouTube"
+    }
   },
   "contactUs": {
     "seometa": {
@@ -396,47 +455,43 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Oefenen - AI-correctieservice voor jouw Duolingo-test",
-      "description": "Correctieservice geleverd door \"AI + leraren\". Ontvang persoonlijk feedback van taalexperts om uw antwoorden en strategieën te verbeteren voor hogere DET scores.",
-      "keywords": "Correctiedienst voor Duolingo Test, AI Correctiedienst voor Duolingo Test"
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
     },
-    "h1": "Ontdek de Beste AI Correctiedienst voor Duolingo Test",
-    "desc": "Verbeter je essays met onze 'AI + Leraren' correctieservice. Krijg snel gedetailleerde feedback op basis van officiële beoordelingsnormen na inzending.",
+    "h1": "∑ Schrijven AI Correctie",
+    "desc": "∑ Schrijf AI Correctieservice geleverd door AI vergelijkbaar met professionele docenten. Je essay wordt gecorrigeerd op basis van ∑ beoordelingsregels, en je ontvangt gedetailleerde feedback binnen 1-5 minuten.",
     "alt": "DET Oefenen:De beste Duolingo English Test Oefenplatform",
     "useralt": "Gebruikerspictogram",
     "white_arrow_right": "witte_pijl_rechts",
     "yellow_arrow_right": "gele_pijl_rechts",
-    "learners_have": "{number} leerlingen hebben hun schrijven verbeterd met onze correctiedienst.",
-    "Review_Now": "Beoordeling Nu",
-    "Correct_Now": "Corrigeer nu",
-    "Get_Scored_Now": "Nu scoren",
+    "learners_have": "{number} mensen maakten gebruik van de ∑ Schrijf AI Correctie service.",
+    "Review_Now": "Aan de slag",
+    "Correct_Now": "Begin met ervaren",
+    "Get_Scored_Now": "Begin met ervaren",
     "Enhance_Now": "Verbeter nu",
     "Begin_Polishing": "Begin met polijsten",
     "h2_1": {
-      "h2": "Verzoeken om correcties",
-      "right_desc": "Op de pagina's voor Spreek- en Schrijfoefeningen kunt u direct de correctiedienst aanvragen."
+      "h2": "Nauwkeurige score",
+      "right_desc": "Dien je essay in uit de vragenbank, en je kunt binnen 1-5 minuten een duidelijk en gedetailleerd rapport en score ontvangen."
     },
     "h2_2": {
-      "h2": "Uitgebreide Beoordeling",
-      "right_desc": "Volgt de officiële Duolingo English Test vereisten om schrijfvaardigheden nauwkeurig vast te leggen en uitgebreide beoordelingsresultaten te bieden."
+      "h2": "Schrijfcorrectie",
+      "right_desc": "Je kunt onmiddellijk je vocabulairefouten en grammaticale fouten zien en leren hoe je ze kunt vermijden."
     },
     "h2_3": {
-      "h2": "Schrijfcorrectie",
-      "right_desc": "Identificeer en begrijp onmiddellijk fouten in woordenschat en grammatica om je schrijfvaardigheden te verbeteren."
+      "h2": "Professionele begeleiding",
+      "right_desc": "Volgens de ∑ scorende elementen, bieden we professionele begeleiding om je te helpen de zwakke punten in je paper te identificeren en deze perfect te maken."
     },
     "h2_4": {
-      "h2": "Begeleiding door leraar",
-      "right_desc": "Verbeter uw schrijven met deskundige analyse op maat van DET criteria, waarbij gebieden voor verbetering worden geïdentificeerd om uw werk naar een hoger niveau te tillen."
-    },
-    "h2_5": {
-      "h2": "Originele Tekst Polijsten",
-      "right_desc": "Verhef elk woord en elke zin; verfijn structuur en stijl voor een onderscheidende en hoog scorende samenstelling."
+      "h2": "Essay bijwerken",
+      "right_desc": "Pas elk woord en elke zin nauwkeurig aan, stel de alinea-structuur redelijk bij, en revitaliseer de schrijfstijl om je compositie verder te verbeteren en deze om te vormen tot een hoog scorende."
     }
   },
   "courses": {
     "seometa": {
       "title": "DET Oefenen - Beheers spreken en schrijven met de Duolingo English Test gids",
-      "description": "Ontgrendel je potentieel met onze Duolingo English Test Gids. Duik in uitmuntend spreken en schrijven met uitgebreide strategieën, deskundige tips en bijgewerkte DET oefeningen."
+      "description": "Ontgrendel je potentieel met onze ∫ Gids. Verdiep je in spreek- en schrijfvaardigheid met uitgebreide strategieën, deskundige tips en geactualiseerde ∑ Oefeningen."
     },
     "article1": {
       "title": "Belangrijkste Kenmerken van DET Spreekexamen Uitmuntendheid:",
@@ -569,7 +624,7 @@
       "description": "Ervaar een realistische Duolingo Oefentoets met de volledige examens van DET Practice. Met intelligente adaptieve vragen en AI-score bieden onze oefentoetsen een nauwkeurige beoordeling om je effectief voor te bereiden op de Duolingo English Test.",
       "keywords": "Duolingo Oefentoets, DET Duolingo, DET Toets, Duolingo DET, Duolingo Toets, Duolingo Toets Online"
     },
-    "h1": "Duolingo English Test 1:1 Oefenexamen",
+    "h1": "∑ Volledige Lange Proefexamen",
     "desc": "Dompel jezelf onder in een levensechte examenervaring met onze grootschalige proefexamens. Krijg een voorproefje van het daadwerkelijke testproces voordat je aan de echte toets begint en ontvang snel scores en gedetailleerde diagnostische rapporten om verbeterpunten te identificeren.",
     "alt": "DET Oefen:De beste Duolingo English Test Oefenplatform",
     "mock_user_icon": "Nep Gebruikerspictogram",
@@ -579,7 +634,7 @@
     "Mock_Now": "Nep Nu",
     "Full_scale": "Duolingo 1:1 Volledige schaal proefexamen",
     "article1": {
-      "h2": "Algorithmische Intelligentie",
+      "h2": "Dicht bij het echte examen",
       "right_desc": "Ervaar echte examenomstandigheden met ons geavanceerde adaptieve testalgoritme. Beheers snel verschillende vraagtypes en krijg nauwkeurige beoordelingen."
     },
     "article2": {
@@ -592,7 +647,7 @@
     },
     "article4": {
       "h2": "Snelle Score Rapportage",
-      "right_desc": "Ontvang je proefexamenuitslagen binnen 30 minuten, waardoor je voortgangsbeoordeling wordt versneld."
+      "right_desc": "Ontvang je resultaten van het proefexamen binnen <span class='zdfont'>5-30 minuten</span>, zodat je je voortgang snel kunt beoordelen."
     }
   },
   "practice": {
@@ -601,34 +656,65 @@
       "description": "Onze DET testbank bevat duizenden vragen voor uitgebreide training, compleet met gedetailleerde uitleg en AI-analyse om u te helpen slagen.",
       "keywords": "Duolingo English Test Oefenen, Duolingo Oefentoets Engels, Duolingo Engelse Oefentoets, Duolingo Oefentoets Online, Duolingo Toetsoefening, Duolingo Oefentoets, Duolingo Oefenen, Det Oefentoets, Duolingo English Test Score"
     },
-    "h1": "Duolingo Oefenvragenbank",
+    "h1": "∫ Oefenen",
     "desc": "Krijg toegang tot een uitgebreide verzameling toetsvragen, verbeterd met antwoordanalyse, sjablonen, AI-gestuurde spreekbeoordelingen en slimme planning. Versnel je scoreverbetering efficiënt en betaalbaar met onze AI-gestuurde aanpak.",
     "alt": "DET Oefening:Het beste Duolingo English Test Oefenplatform",
-    "altbanner": "Duolingo Oefenvragenbank",
+    "altbanner": "∫ Oefenen",
     "bank_user_icon": "Bankgebruikerspictogram",
     "white_arrow_right": "Witte Pijl Rechts",
     "blue_arrow_right": "Blauwe Pijl Rechts",
     "learners_have": "{number} leerlingen hebben gebruik gemaakt van onze vragenbank voor DET voorbereiding.",
     "spn": "Begin Nu met Oefenen",
     "article1": {
-      "h2": "Uitgebreide Vragenbibliotheek",
-      "right_desc": "Verken onze uitgebreide bibliotheek met meer dan 10.000 vragen over diverse examensoorten, die voortdurend worden vernieuwd om uw oefening actueel te houden. Onze vragenbank is ontworpen om systematisch uw testvaardigheden te versterken in verschillende vraagformaten.",
+      "h2": "De Grootste Vragenbank",
+      "right_desc": " Ontdek onze uitgebreide bibliotheek van meer dan <span class='zdfont'>18.000+ vragen</span> over diverse examensoorten, die voortdurend worden vernieuwd om je oefening up-to-date te houden. Onze vraagdatabase is ontworpen om systematisch je testvaardigheden te versterken over verschillende vraagformaten.",
       "btn": "Duik in de praktijk"
     },
     "article2": {
       "h2": "Intelligente Aanbeveling",
-      "right_desc": "Het AI-model zal rekening houden met het beheersingsniveau van elk vraagtype, moeilijkheidsgraad, doelscore, vraaggewicht, nieuwheid van de vragen, de recente frequentie van de test, voorbereidingstijd en efficiëntie van het scoren, enz. om nauwkeurig vragen aan te bevelen om je efficiënt te helpen voorbereiden op de test.",
+      "right_desc": "De <span class='zdfont'>AI-model</span> zal rekening houden met het beheersingsniveau van elk vraagtype, moeilijkheidsgraad, doelscore, vraaggewicht, nieuwheid van de vragen, de recente frequentie van de toets, voorbereidingstijd en efficiëntie van scoren, enz. om nauwkeurig vragen aan te bevelen die u helpen efficiënt voor de toets te bereiden.",
       "btn": "Begin Slimme Studie Reis"
     },
     "article3": {
       "h2": "AI Spreekevaluatie",
-      "right_desc": "Verbeter uw mondelinge vaardigheid met onze AI-gestuurde spreekbeoordelingen. Dien uw antwoord in op een gesproken taalkwestie en ontvang direct een gedetailleerde analyse van uw spreekvaardigheden, zodat u met precisie en snelheid kunt verbeteren.",
+      "right_desc": "Verbeter je spreekvaardigheid met onze <span class='zdfont'>AI-gestuurde spreekevaluaties</span>. Dien je antwoord in op een mondelinge taalvraag en ontvang direct een gedetailleerde analyse van je spreekvaardigheden, zodat je gericht en snel kunt verbeteren.",
       "btn": "Begin uw evaluatie"
     },
     "article4": {
       "h2": "Antwoordanalyse",
       "right_desc": "Verdiep je in uitgebreide antwoordverklaringen die je begrip van essentiële concepten en probleemoplossende technieken verdiepen. Onze gedetailleerde analyses leiden je niet alleen naar de juiste antwoorden—ze vergroten je kennis en verhogen je studie-efficiëntie.",
       "btn": "Verken Antwoord Inzichten"
+    }
+  },
+  "speakingaicorrection": {
+    "seometa": {
+      "title": "需要提供",
+      "description": "需要提供",
+      "keywords": "需要提供"
+    },
+    "h1": "∑ Spreken AI Correctie",
+    "desc": "∑ Spreek-AI-correctieservice verzorgd door krachtige AI. Ondersteunt alle soorten spreekvragen en biedt professionele begeleiding om je te helpen gemakkelijk je ∑ spreekscore te verbeteren.",
+    "alt": "∑ Oefening:De beste ∑ Spreek AI Correctie platform",
+    "altbanner": "∑ Spraak AI Correctie",
+    "bank_user_icon": "Bank Gebruiker Icoon",
+    "white_arrow_right": "Witte Pijl Rechts",
+    "purple_arrow_right": "Paarse Pijl Rechts",
+    "learners_have": "{number} mensen hebben gebruik gemaakt van de ∑ Speaking AI Correctiedienst.",
+    "spn": "Aan de slag",
+    "article1": {
+      "h2": "Nauwkeurige score",
+      "right_desc": "Dien je essay in door het in te voeren of uit de vragenbank te selecteren, en je ontvangt direct een duidelijk en gedetailleerd rapport en score.",
+      "btn": "Begin met ervaren"
+    },
+    "article2": {
+      "h2": "Spreekevaluatie",
+      "right_desc": "U kunt onmiddellijk uw uitspraakfout, onverwachte onderbreking, ontbrekende pauze, vermoedelijk hardop lezen, vermoedelijke herhaling zien en leren hoe u deze kunt vermijden.",
+      "btn": "Begin met ervaren"
+    },
+    "article3": {
+      "h2": "Professionele begeleiding",
+      "right_desc": "Volgens de ∑ beoordelingscriteria bieden wij professionele begeleiding om u te helpen de zwakke punten in uw spreken te identificeren en het perfect te maken.",
+      "btn": "Begin met ervaren"
     }
   },
   "privacyPolicy": {
@@ -640,7 +726,7 @@
     "h1": "Privacybeleid",
     "q1": {
       "title": "Laatst bijgewerkt: 2023-11-20",
-      "a1": "DET Practice (\"ons\", \"wij\" of \"onze\") beheert de DET Practice-website (de \"Service\").",
+      "a1": "∑ Practice (“ons”, “wij” of “onze”) beheert de ∑ Practice website (de “Service”).",
       "a2": "Deze pagina informeert u over ons beleid met betrekking tot het verzamelen, gebruiken en openbaar maken van Persoonlijke Informatie wanneer u onze Dienst gebruikt.",
       "a3": "We zullen uw informatie niet gebruiken of delen met iemand anders behalve zoals beschreven in dit Privacybeleid.",
       "a4": "We gebruiken uw Persoonlijke Informatie om de Dienst te leveren en te verbeteren. Door gebruik te maken van de Dienst, stemt u in met het verzamelen en gebruiken van informatie in overeenstemming met dit beleid. Tenzij anders gedefinieerd in dit Privacybeleid, hebben termen die in dit Privacybeleid worden gebruikt dezelfde betekenis als in onze Algemene Voorwaarden, toegankelijk op",
@@ -694,9 +780,10 @@
       "a3": "• Digitale cursussen: Zodra een digitaal product is gedownload of geopend, wordt het beschouwd als gebruikt en kunnen gebruikte producten niet worden terugbetaald."
     },
     "q3": {
+      "title0": "Echter, <b>DETPractice</b> verwelkomt u om <a href=\"contact.html\">Contact op te nemen</a> om uw problemen in elke situatie op te lossen. We zullen ons best doen om een oplossing te bieden die u tevreden stelt.",
       "title": "Hoe u een Terugbetaling / Abonnement Annuleert Aanvraagt",
       "a1": "Om een terugbetaling aan te vragen, volg deze stappen:",
-      "a2": "1. Abonnement annuleren: Log in op uw account, zoek en klik op de link \"Uw facturatie beheren\" onderaan de lidmaatschapspagina. U wordt doorgestuurd naar een bevestigingspagina waar u uw beslissing om op te zeggen kunt bevestigen.",
+      "a2": "1. Abonnement annuleren: Log in op je account, zoek en klik op de <span class='websiteStrong'>\"Beheer je facturering\"</span> link onderaan de lidmaatschapspagina. Je wordt doorgestuurd naar een bevestigingspagina waar je je beslissing om je uit te schrijven kunt bevestigen.",
       "a3": "2. Neem Contact op met Onze Ondersteuning: Neem contact op met ons klantenserviceteam op <span class='website'>support{'@'}detpractice.com</span> met uw bestelnummer en de reden voor het verzoek tot terugbetaling.",
       "a4": "3. Ons team zal uw aanvraag bekijken en binnen 3 werkdagen reageren."
     },
