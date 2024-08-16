@@ -30,18 +30,18 @@
       "font": "실제와 같은 모의고사로 시험 정복하기: 심층 분석 및 즉각적인 결과, 언제 어디서나 이용 가능."
     },
     "prod4": {
-      "title": "∑ 풀-길이 모의고사",
-      "alt": "∑ 전체 길이 모의고사",
+      "title": "DET 풀-길이 모의고사",
+      "alt": "DET 전체 길이 모의고사",
       "font": "성공 DET 잠금 해제: 자신 있는 말하기와 글쓰기 우수성을 위한 포괄적인 숙달, 검증된 기법, 최신 통찰력!"
     },
     "prodwriting": {
-      "title": "∑ 작성 AI 수정",
-      "alt": "∑ 인공지능 글쓰기 수정",
+      "title": "DET 작성 AI 수정",
+      "alt": "DET 인공지능 글쓰기 수정",
       "font": "정확한 점수와 자세한 보고서를 받아 더 빠르게 글쓰기 실력을 향상시킬 수 있습니다. 모든 글쓰기 질문을 지원합니다!"
     },
     "prodspeaking": {
-      "title": "∑ AI 교정 말하기",
-      "alt": "∑ 말하는 인공지능 수정",
+      "title": "DET AI 교정 말하기",
+      "alt": "DET 말하는 인공지능 수정",
       "font": "강력한 AI를 활용하여 목표 지향적인 방식으로 말하기 점수를 향상시키세요. 모든 말하기 질문을 지원합니다!"
     }
   },
@@ -91,8 +91,8 @@
       "btn_img_alt": "노란 화살표 오른쪽"
     },
     "article2": {
-      "title": "∑ 전체 모의 시험",
-      "tips1": "가장 <span class='yellow'>강력한</span> 모의 시험, 실제 <span class='yellow'>∑ 시험</span>에 가까운",
+      "title": "DET 전체 모의 시험",
+      "tips1": "가장 <span class='yellow'>강력한</span> 모의 시험, 실제 <span class='yellow'>DET 시험</span>에 가까운",
       "tips2": "적응형 시험 및 AI 채점",
       "tips3": "정확한 평가 점수, 상세 평가 보고서",
       "tips4": "결과는 <span class='yellow'>5-30분</span> 내에 제공됩니다",
@@ -100,7 +100,7 @@
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "article3": {
-      "title": "∑ 쓰기 AI 수정\n",
+      "title": "DET 쓰기 AI 수정\n",
       "tips1": "\"사진에 대해 쓰기\", \"인터랙티브 라이팅\", \"라이팅 샘플\" 지원",
       "tips2": "AI 채점, AI 수정, 교사 지도\n",
       "tips3": "정확한 평가 점수, 상세한 평가 보고서",
@@ -109,7 +109,7 @@
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "article4": {
-      "title": "∑ 말하는 AI 수정",
+      "title": "DET 말하는 AI 수정",
       "tips1": "지원 \"듣고, 말하기\", \"사진에 대해 말하기\", \"읽고, 말하기\", \"말하기 샘플\"",
       "tips2": "AI 채점, AI 평가 결과, 교사 지침",
       "tips3": "정확한 평가 점수, 상세한 평가 보고서",
@@ -118,8 +118,8 @@
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "article5": {
-      "title": "∫ 과정",
-      "tips1": "우리의 자세한 가이드로 <span class='yellow'>심층적인 이해</span>를 발달시키십시오 ∑ 말하기 및 쓰기 섹션에 대해",
+      "title": "Duolingo English Test 과정",
+      "tips1": "우리의 자세한 가이드로 <span class='yellow'>심층적인 이해</span>를 발달시키십시오 DET 말하기 및 쓰기 섹션에 대해",
       "tips2": "종합적인 숙달 달성",
       "tips3": "ESL 전문가에게 배우기",
       "tips4": "정보를 빠르고 앞서게 유지하세요",
@@ -172,7 +172,7 @@
       "switch2": "코스",
       "sep": "안전한 결제",
       "ca": "언제든지 취소 가능합니다",
-      "atde": "∑ 지금 성공하세요",
+      "atde": "DET 지금 성공하세요",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI 교정 서비스",
       "Most_Popular_Choice": "가장 인기 있는 선택",
@@ -268,7 +268,7 @@
       "AI 기반 말하기 평가"
     ],
     "correctServiceQuanYi": [
-      "쓰기 및 말하기에 사용할 수 있습니다 ∑",
+      "쓰기 및 말하기에 사용할 수 있습니다 DET",
       "AI 점수, 정확한 점수",
       "AI 평가 결과",
       "상세 평가 보고서",
@@ -302,7 +302,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>풀-랭스</span> 모의 시험",
       "언제든지 테스트하세요",
-      "실제 <span class='strongfont'>∑ 시험</span>에 가깝습니다",
+      "실제 <span class='strongfont'>DET 시험</span>에 가깝습니다",
       "정확한 평가 점수",
       "상세 평가 보고서",
       "결과는 <span class='strongfont'>5-30분</span> 이내에 확인할 수 있습니다"
@@ -361,17 +361,17 @@
       "description": ""
     },
     "title": "DET Practice에 대하여",
-    "title_desc": "DETPractice.com은 ∫ 연습하고 배우기에 가장 좋은 플랫폼입니다.",
+    "title_desc": "DETPractice.com은 Duolingo English Test 연습하고 배우기에 가장 좋은 플랫폼입니다.",
     "check_out": {
       "h2": "무엇을 할 수 있는지 확인하세요",
-      "qbt": "∑ 질문 은행",
-      "qbtdesc": "우리는 최대 규모의 문제 은행을 보유하고 있으며 매일 업데이트합니다. 질문을 연습하여 ∫ 점수를 빠르게 향상시킬 수 있습니다.",
-      "flm": "∑ 전체 길이 모의고사",
-      "flmdesc": "우리는 가장 강력한 ∑ 모의 테스트를 보유하고 있으며, 이를 통해 더 낮은 비용으로 정확하게 시험 점수를 평가할 수 있습니다.",
-      "acs": "∑ AI 교정 서비스",
-      "acsdesc": "저희가 제공하는 AI 교정 도구를 사용하여 빠르게 귀하의 ∑ 말하기 및 쓰기 점수를 향상시킬 수 있습니다.",
-      "dc": "∑ 코스",
-      "dedesc": "∑의 최신 시험 특징을 기반으로 시험 준비 자료와 과정을 개발해 나갈 것입니다."
+      "qbt": "DET 질문 은행",
+      "qbtdesc": "우리는 최대 규모의 문제 은행을 보유하고 있으며 매일 업데이트합니다. 질문을 연습하여 Duolingo English Test 점수를 빠르게 향상시킬 수 있습니다.",
+      "flm": "DET 전체 길이 모의고사",
+      "flmdesc": "우리는 가장 강력한 DET 모의 테스트를 보유하고 있으며, 이를 통해 더 낮은 비용으로 정확하게 시험 점수를 평가할 수 있습니다.",
+      "acs": "DET AI 교정 서비스",
+      "acsdesc": "저희가 제공하는 AI 교정 도구를 사용하여 빠르게 귀하의 DET 말하기 및 쓰기 점수를 향상시킬 수 있습니다.",
+      "dc": "DET 코스",
+      "dedesc": "DET의 최신 시험 특징을 기반으로 시험 준비 자료와 과정을 개발해 나갈 것입니다."
     },
     "three_our_our": {
       "h2": "비록 젊지만 강하다",
@@ -457,13 +457,13 @@
       "description": "전문교사 수준의 AI를 활용한 DET 글쓰기 AI 교정 서비스입니다. \n귀하의 에세이는 DET 채점 규칙에 따라 교정되며, 1~5분 이내에 자세한 피드백을 받으실 수 있습니다.",
       "keywords": "Duolingo 시험 교정 서비스, Duolingo 시험 AI 교정 서비스"
     },
-    "h1": "∑ 글쓰기 AI 수정",
-    "desc": "∑ AI 첨삭 서비스는 전문 교사에 버금가는 AI가 제공합니다. 귀하의 에세이는 ∑ 채점 규칙에 따라 수정되며, 1-5분 내에 자세한 피드백을 받게 됩니다.",
+    "h1": "DET 글쓰기 AI 수정",
+    "desc": "DET AI 첨삭 서비스는 전문 교사에 버금가는 AI가 제공합니다. 귀하의 에세이는 DET 채점 규칙에 따라 수정되며, 1-5분 내에 자세한 피드백을 받게 됩니다.",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "useralt": "사용자 아이콘",
     "white_arrow_right": "하얀_화살표_오른쪽",
     "yellow_arrow_right": "노란색_화살표_오른쪽",
-    "learners_have": "{number} 명이 ∑ Writing AI Correction 서비스를 이용했습니다.",
+    "learners_have": "{number} 명이 DET Writing AI Correction 서비스를 이용했습니다.",
     "Review_Now": "시작하기",
     "Correct_Now": "시작하여 경험하기",
     "Get_Scored_Now": "시작해 보세요",
@@ -479,7 +479,7 @@
     },
     "h2_3": {
       "h2": "전문 지도",
-      "right_desc": "∑ 채점 요소에 따라, 저희는 귀하의 논문의 약점을 식별하고 완벽하게 만들 수 있도록 전문 지침을 제공합니다."
+      "right_desc": "DET 채점 요소에 따라, 저희는 귀하의 논문의 약점을 식별하고 완벽하게 만들 수 있도록 전문 지침을 제공합니다."
     },
     "h2_4": {
       "h2": "에세이 다듬기",
@@ -489,7 +489,7 @@
   "courses": {
     "seometa": {
       "title": "DET 연습 - Duolingo English Test 가이드로 구사 및 작문 습득하기",
-      "description": "잠재력을 발휘하세요 ∫ 가이드와 함께. 철저한 전략, 전문가 팁, 업데이트된 ∑ 연습으로 말하기와 글쓰기의 탁월함을 탐구해보세요."
+      "description": "잠재력을 발휘하세요 Duolingo English Test 가이드와 함께. 철저한 전략, 전문가 팁, 업데이트된 DET 연습으로 말하기와 글쓰기의 탁월함을 탐구해보세요."
     },
     "article1": {
       "title": "DET 스피킹 시험 우수성의 주요 특징:",
@@ -624,7 +624,7 @@
       "description": "DET Practice의 전체 길이 시험으로 현실적인 Duolingo 모의 시험 경험을해보세요. 지능적인 적응형 질문과 AI 점수가 특징인 우리의 모의 시험은 Duolingo English Test에 대한 효과적인 준비를 위한 정확한 평가를 제공합니다.",
       "keywords": "모의 시험, DET Duolingo, DET 시험, Duolingo DET, Duolingo 시험, Duolingo 시험 온라인"
     },
-    "h1": "∑ 전체 길이 모의 시험",
+    "h1": "DET 전체 길이 모의 시험",
     "desc": "실제와 같은 모의고사로 진짜 시험과 같은 경험을 해보세요. 실제 시험 전에 테스트 과정을 경험하고, 빠르게 점수와 상세한 진단 보고서를 받아서 개선이 필요한 부분을 정확히 파악하세요.",
     "alt": "DET 연습: 최고의 Duolingo English Test 연습 플랫폼",
     "mock_user_icon": "모의 사용자 아이콘",
@@ -656,10 +656,10 @@
       "description": "저희 DET 시험 은행은 자세한 설명과 AI 분석이 포함된 광범위한 연습을 위해 수천 개의 문제를 포함하고 있어 성공에 도움이 됩니다.",
       "keywords": "Duolingo English Test 연습, Duolingo 영어 연습 테스트, Duolingo 영어 연습 테스트, Duolingo 온라인 연습 테스트, Duolingo 테스트 연습, Duolingo 연습 테스트, Duolingo 연습, Det 연습 테스트, Duolingo English Test 점수"
     },
-    "h1": "∫ 연습",
+    "h1": "Duolingo English Test 연습",
     "desc": "방대한 시험 문제 컬렉션에 접근하고, 답안 분석, 템플릿, AI 기반 말하기 평가 및 스마트 계획 기능이 향상되었습니다. AI 구동 방식을 통해 효율적이고 저렴하게 점수 향상을 가속화하십시오.",
     "alt": "DET 연습: 최고의 Duolingo English Test 연습 플랫폼",
-    "altbanner": "∫ 연습",
+    "altbanner": "Duolingo English Test 연습",
     "bank_user_icon": "뱅크 유저 아이콘",
     "white_arrow_right": "흰색 화살표 오른쪽",
     "blue_arrow_right": "파란색 화살표 오른쪽",
@@ -692,14 +692,14 @@
       "description": "강력한 AI가 제공하는 DET 말하기 AI 교정 서비스입니다. \n모든 말하기 질문 유형을 지원하고, DET 말하기 점수를 쉽게 향상시킬 수 있도록 전문적인 지도를 제공합니다.",
       "keywords": "需要提供"
     },
-    "h1": "∑ AI 교정 말하기",
-    "desc": "∑ 강력한 AI가 제공하는 말하기 AI 교정 서비스입니다. 모든 말하기 질문 유형을 지원하며, 쉽게 말하기 점수를 향상시킬 수 있도록 전문적인 지침을 제공합니다.",
-    "alt": "∑ 연습: 최고의 ∑ AI 발음 교정 플랫폼",
-    "altbanner": "∑ 말하는 AI 교정",
+    "h1": "DET AI 교정 말하기",
+    "desc": "DET 강력한 AI가 제공하는 말하기 AI 교정 서비스입니다. 모든 말하기 질문 유형을 지원하며, 쉽게 말하기 점수를 향상시킬 수 있도록 전문적인 지침을 제공합니다.",
+    "alt": "DET 연습: 최고의 DET AI 발음 교정 플랫폼",
+    "altbanner": "DET 말하는 AI 교정",
     "bank_user_icon": "은행 사용자 아이콘",
     "white_arrow_right": "흰색 화살표 오른쪽",
     "purple_arrow_right": "보라색 화살표 오른쪽",
-    "learners_have": "{number} 명이 ∑ Speaking AI 교정 서비스를 사용했습니다.",
+    "learners_have": "{number} 명이 DET Speaking AI 교정 서비스를 사용했습니다.",
     "spn": "시작하기",
     "article1": {
       "h2": "정확한 점수",
@@ -713,7 +713,7 @@
     },
     "article3": {
       "h2": "전문적인 안내",
-      "right_desc": "∑ 채점 요소에 따라, 우리는 당신의 말하기 약점을 식별하고 완벽하게 만드는 데 도움을 주기 위해 전문적인 지침을 제공합니다.",
+      "right_desc": "DET 채점 요소에 따라, 우리는 당신의 말하기 약점을 식별하고 완벽하게 만드는 데 도움을 주기 위해 전문적인 지침을 제공합니다.",
       "btn": "시작 경험"
     }
   },
@@ -726,7 +726,7 @@
     "h1": "개인정보 보호정책",
     "q1": {
       "title": "마지막 업데이트: 2023-11-20",
-      "a1": "∑ Practice(\"저희\", \"우리\" 또는 \"우리의\")는 ∑ Practice 웹사이트(이하 \"서비스\")를 운영합니다.",
+      "a1": "DET Practice(\"저희\", \"우리\" 또는 \"우리의\")는 DET Practice 웹사이트(이하 \"서비스\")를 운영합니다.",
       "a2": "이 페이지는 귀하가 당사의 서비스를 이용할 때 개인 정보의 수집, 사용 및 공개에 관한 당사의 정책을 알려드립니다.",
       "a3": "저희는 본 개인정보 보호정책에 설명된 경우를 제외하고 귀하의 정보를 사용하거나 공유하지 않습니다.",
       "a4": "저희는 서비스를 제공하고 개선하기 위해 귀하의 개인정보를 사용합니다. 서비스를 사용함으로써, 귀하는 본 정책에 따라 정보 수집 및 사용에 동의하는 것입니다. 본 개인정보 보호정책에서 별도로 정의되지 않는 한, 본 개인정보 보호정책에서 사용되는 용어는 저희 이용약관에 명시된 것과 동일한 의미를 갖습니다.",

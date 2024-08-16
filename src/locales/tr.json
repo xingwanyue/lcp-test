@@ -30,18 +30,18 @@
       "font": "Gerçek Uzunlukta Denemelerle Sınavınızı Fethedin: Kapsamlı Analiz ve Anında Sonuçlar, Her Zaman, Her Yerde Mevcut."
     },
     "prod4": {
-      "title": "∑ Tam Uzunlukta Deneme Sınavı",
-      "alt": "∑ Tam Uzunlukta Deneme Testi",
+      "title": "DET Tam Uzunlukta Deneme Sınavı",
+      "alt": "DET Tam Uzunlukta Deneme Testi",
       "font": "Başarıyı DET Açın: Kapsamlı Ustalık, Kanıtlanmış Teknikler ve Güvenli Konuşma ve Yazma Mükemmelliği için Güncel Bilgiler!"
     },
     "prodwriting": {
-      "title": "∑ Yazma AI Düzeltme",
-      "alt": "∑ Yazma AI Düzeltme",
+      "title": "DET Yazma AI Düzeltme",
+      "alt": "DET Yazma AI Düzeltme",
       "font": "Doğru puanlar ve ayrıntılı raporlar alın, böylece yazma becerilerinizi daha hızlı geliştirebilirsiniz. Tüm yazı sorularını destekleyin!"
     },
     "prodspeaking": {
-      "title": "∑ Konuşan AI Düzeltmesi",
-      "alt": "∑ Konuşan AI Düzeltme",
+      "title": "DET Konuşan AI Düzeltmesi",
+      "alt": "DET Konuşan AI Düzeltme",
       "font": "Güçlü yapay zekayı kullanarak konuşma skorunuzu hedefli bir şekilde artırın. Tüm konuşma sorularını destekleyin!"
     }
   },
@@ -99,8 +99,8 @@
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article2": {
-      "title": "∑ Tam Uzunlukta Deneme Sınavı",
-      "tips1": "En <span class='yellow'>Güçlü</span> Deneme Sınavı, <span class='yellow'>Gerçek ∑ Sınavına</span> Yakın",
+      "title": "DET Tam Uzunlukta Deneme Sınavı",
+      "tips1": "En <span class='yellow'>Güçlü</span> Deneme Sınavı, <span class='yellow'>Gerçek DET Sınavına</span> Yakın",
       "tips2": "Uyarlamalı Sınavlar ve Yapay Zeka Değerlendirmesi",
       "tips3": "Doğru Değerlendirme Puanları, Detaylı Değerlendirme Raporu",
       "tips4": "Sonuçlar <span class='yellow'>5-30 dakika</span> içinde hazır olacaktır",
@@ -108,7 +108,7 @@
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article3": {
-      "title": "∑ Yazı AI Düzeltmesi",
+      "title": "DET Yazı AI Düzeltmesi",
       "tips1": "Destek \"Fotoğraf Hakkında Yaz\",\"Etkileşimli Yazma\",\"Yazı Örneği\"",
       "tips2": "Yapay Zeka Puanlama, Yapay Zeka Düzeltme, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Detaylı Değerlendirme Raporu",
@@ -117,7 +117,7 @@
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article4": {
-      "title": "∑ Konuşma AI Düzeltme",
+      "title": "DET Konuşma AI Düzeltme",
       "tips1": "Destek \"Dinle, Sonra Konuş\", \"Fotoğraf Hakkında Konuş\", \"Oku, sonra Konuş\", \"Konuşma Örneği\"",
       "tips2": "AI Puanlama, AI Değerlendirme Sonuçları, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
@@ -126,8 +126,8 @@
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article5": {
-      "title": "∫ Kurs",
-      "tips1": "Kapsamlı rehberlerimizle konuşma ve yazma bölümlerinin <span class='yellow'>derinlemesine bir anlayışını</span> geliştirin ∑",
+      "title": "Duolingo English Test Kurs",
+      "tips1": "Kapsamlı rehberlerimizle konuşma ve yazma bölümlerinin <span class='yellow'>derinlemesine bir anlayışını</span> geliştirin DET",
       "tips2": "Kapsamlı Ustalık Sağlayın",
       "tips3": "ESL Uzmanlarından Öğrenin",
       "tips4": "Haberdar Olun ve Önde Kalın",
@@ -180,7 +180,7 @@
       "switch2": "Kurslar",
       "sep": "Güvenli ödeme",
       "ca": "İstediğiniz zaman iptal edin",
-      "atde": "Şimdi ∑'yi kazanın",
+      "atde": "Şimdi DET'yi kazanın",
       "circle_check_icon": "daire_kontrol_ikonu",
       "apcs1": "Yapay Zeka Düzeltme Servisi",
       "Most_Popular_Choice": "En Popüler Seçim",
@@ -276,7 +276,7 @@
       "Yapay Zeka Destekli Konuşma Değerlendirmeleri"
     ],
     "correctServiceQuanYi": [
-      "∑ yazma ve konuşma için kullanılabilir",
+      "DET yazma ve konuşma için kullanılabilir",
       "AI Puanlama, Doğru puan",
       "Yapay Zeka Değerlendirme Sonuçları",
       "Detaylı Değerlendirme Raporu",
@@ -310,7 +310,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>Tam Uzunlukta</span> deneme sınavları",
       "Her zaman test et",
-      "Gerçek <span class='strongfont'>∑ sınavına</span> yakın",
+      "Gerçek <span class='strongfont'>DET sınavına</span> yakın",
       "Doğru değerlendirme puanları",
       "Detaylı değerlendirme raporu",
       "Sonuçlar <span class='strongfont'>5-30 dakika</span> içinde mevcut olacak"
@@ -372,14 +372,14 @@
     "title_desc": "DETPractice.com, Pratik Yapmak ve Öğrenmek için en iyi platformdur.",
     "check_out": {
       "h2": "Neler Yapabileceğimizi İnceleyin",
-      "qbt": "∑ Soru Bankası",
-      "qbtdesc": "En büyük soru bankasına sahibiz ve her gün güncelliyoruz. Soruları çözerek ∫ puanınızı hızla artırabilirsiniz.",
-      "flm": "∑ Tam Uzunlukta Deneme",
-      "flmdesc": "En güçlü ∑ deneme testine sahibiz, bu sayede test sonuçlarınızı daha düşük bir maliyetle doğru bir şekilde değerlendirebilirsiniz.",
-      "acs": "∑ AI Düzeltme Hizmeti",
+      "qbt": "DET Soru Bankası",
+      "qbtdesc": "En büyük soru bankasına sahibiz ve her gün güncelliyoruz. Soruları çözerek Duolingo English Test puanınızı hızla artırabilirsiniz.",
+      "flm": "DET Tam Uzunlukta Deneme",
+      "flmdesc": "En güçlü DET deneme testine sahibiz, bu sayede test sonuçlarınızı daha düşük bir maliyetle doğru bir şekilde değerlendirebilirsiniz.",
+      "acs": "DET AI Düzeltme Hizmeti",
       "acsdesc": "Sunmuş olduğumuz yapay zeka düzeltme araçlarını kullanarak konuşma ve yazma puanlarınızı hızlı bir şekilde artırabilirsiniz.",
-      "dc": "∑ Dersler",
-      "dedesc": "En son ∑ test özelliklerine dayalı olarak test hazırlık materyalleri ve kursları geliştirmeye devam edeceğiz."
+      "dc": "DET Dersler",
+      "dedesc": "En son DET test özelliklerine dayalı olarak test hazırlık materyalleri ve kursları geliştirmeye devam edeceğiz."
     },
     "three_our_our": {
       "h2": "Genç Ama Güçlü",
@@ -465,13 +465,13 @@
       "description": "Yapay zeka tarafından sağlanan DET Yazma Yapay Zeka Düzeltme hizmeti, profesyonel öğretmenlerle karşılaştırılabilir. \nMakaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Yapay Zeka Düzeltme Yazma",
-    "desc": "∑ Profesyonel öğretmenlerle karşılaştırılabilir AI tarafından sağlanan Yazma AI Düzeltme hizmeti. Makaleniz ∑ puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
+    "h1": "DET Yapay Zeka Düzeltme Yazma",
+    "desc": "DET Profesyonel öğretmenlerle karşılaştırılabilir AI tarafından sağlanan Yazma AI Düzeltme hizmeti. Makaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "useralt": "Kullanıcı Simgesi",
     "white_arrow_right": "beyaz_ok_sağa",
     "yellow_arrow_right": "sarı_ok_sağa",
-    "learners_have": "{number} kişi ∑ Yazı AI Düzeltme hizmetini kullandı.",
+    "learners_have": "{number} kişi DET Yazı AI Düzeltme hizmetini kullandı.",
     "Review_Now": "Başlayın",
     "Correct_Now": "Deneyimlemeye başla",
     "Get_Scored_Now": "Deneyimlemeye başlayın",
@@ -487,7 +487,7 @@
     },
     "h2_3": {
       "h2": "Profesyonel rehberlik",
-      "right_desc": "∑ puanlama unsurlarına göre, makalenizdeki zayıf noktaları belirlemenize yardımcı olmak ve mükemmel hale getirmek için profesyonel rehberlik sağlıyoruz."
+      "right_desc": "DET puanlama unsurlarına göre, makalenizdeki zayıf noktaları belirlemenize yardımcı olmak ve mükemmel hale getirmek için profesyonel rehberlik sağlıyoruz."
     },
     "h2_4": {
       "h2": "Deneme cilalama",
@@ -497,7 +497,7 @@
   "courses": {
     "seometa": {
       "title": "DET Uygulama - Duolingo English Test Kılavuz ile Konuşma ve Yazma Becerilerini Geliştirin",
-      "description": "Potansiyelinizi açığa çıkarın ∫ Rehberimiz ile. Kapsamlı stratejiler, uzman ipuçları ve güncel ∑ Pratik ile konuşma ve yazmada mükemmelliğe dalın."
+      "description": "Potansiyelinizi açığa çıkarın Duolingo English Test Rehberimiz ile. Kapsamlı stratejiler, uzman ipuçları ve güncel DET Pratik ile konuşma ve yazmada mükemmelliğe dalın."
     },
     "article1": {
       "title": "DET Konuşma Sınavı Mükemmelliğinin Ana Özellikleri:",
@@ -632,7 +632,7 @@
       "description": "Tam ölçekli sınavlarla gerçekçi bir Duolingo Deneme Sınavı deneyimi yaşayın. Akıllı uyumlu sorular ve yapay zeka puanlama özelliklerinin yer aldığı deneme sınavlarımız, Duolingo English Test için etkili bir hazırlık sağlayacak doğru bir değerlendirme sunar.",
       "keywords": "Duolingo Deneme Sınavı, DET Duolingo, DET Sınav, Duolingo DET, Duolingo Sınav, Duolingo Çevrimiçi Sınav"
     },
-    "h1": "∑ Tam Uzunlukta Deneme Sınavı",
+    "h1": "DET Tam Uzunlukta Deneme Sınavı",
     "desc": "Gerçek bir sınav deneyimiyle kendinizi şımartın. Gerçek sınav sürecinin tadına bakın ve geliştirilmesi gereken alanları belirlemek için hızla puanlar ve ayrıntılı teşhis raporları alın.",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "mock_user_icon": "Sahte Kullanıcı Simgesi",
@@ -664,10 +664,10 @@
       "description": "DET Test bankımız, detaylı açıklamalar ve başarınıza yardımcı olacak AI analiziyle uzun süreli eğitim için binlerce soru içerir.",
       "keywords": "Duolingo English Test Pratik, Duolingo İngilizce Testi Pratik, Duolingo İngilizce Pratik Testi, Duolingo Çevrimiçi Pratik Testi, Duolingo Test Pratiği, Duolingo Pratik Test, Duolingo Pratik, Det Pratik Testi, Duolingo English Test Puan"
     },
-    "h1": "∫ Pratik",
+    "h1": "Duolingo English Test Pratik",
     "desc": "Geniş bir test soruları koleksiyonuna erişim sağlayın, cevap analizi, şablonlar, AI destekli konuşma değerlendirmeleri ve akıllı planlama ile geliştirin. AI destekli yaklaşımımızla puan artırma sürecinizi verimli ve ekonomik bir şekilde hızlandırın.",
     "alt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
-    "altbanner": "∫ Uygulama",
+    "altbanner": "Duolingo English Test Uygulama",
     "bank_user_icon": "Banka Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "blue_arrow_right": "Mavi Ok Sağ",
@@ -700,14 +700,14 @@
       "description": "Güçlü yapay zeka tarafından sağlanan DET Konuşma Yapay Zekası Düzeltme hizmeti. \nTüm konuşma sorusu türlerini destekler ve DET konuşma puanınızı kolayca geliştirmenize yardımcı olacak profesyonel rehberlik sağlar.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Konuşan AI Düzeltme",
-    "desc": "∑ Güçlü AI tarafından sağlanan Konuşma AI Düzeltme hizmeti. Tüm konuşma soru türlerini destekler ve ∑ konuşma puanınızı kolayca artırmanıza yardımcı olmak için profesyonel rehberlik sağlar.",
-    "alt": "∑ Pratik:En iyi ∑ Konuşma AI Düzeltme platformu",
-    "altbanner": "∑ Konuşan Yapay Zeka Düzeltme",
+    "h1": "DET Konuşan AI Düzeltme",
+    "desc": "DET Güçlü AI tarafından sağlanan Konuşma AI Düzeltme hizmeti. Tüm konuşma soru türlerini destekler ve DET konuşma puanınızı kolayca artırmanıza yardımcı olmak için profesyonel rehberlik sağlar.",
+    "alt": "DET Pratik:En iyi DET Konuşma AI Düzeltme platformu",
+    "altbanner": "DET Konuşan Yapay Zeka Düzeltme",
     "bank_user_icon": "Banka Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "purple_arrow_right": "Mor Ok Sağ",
-    "learners_have": "{number} kişi ∑ Konuşma AI Düzeltme hizmetini kullandı.",
+    "learners_have": "{number} kişi DET Konuşma AI Düzeltme hizmetini kullandı.",
     "spn": "Başlayın",
     "article1": {
       "h2": "Doğru skor",
@@ -721,7 +721,7 @@
     },
     "article3": {
       "h2": "Profesyonel rehberlik",
-      "right_desc": "∑ puanlama öğelerine göre, konuşmanızdaki zayıflıkları belirlemenize yardımcı olmak ve onu mükemmelleştirmek için profesyonel rehberlik sağlıyoruz.",
+      "right_desc": "DET puanlama öğelerine göre, konuşmanızdaki zayıflıkları belirlemenize yardımcı olmak ve onu mükemmelleştirmek için profesyonel rehberlik sağlıyoruz.",
       "btn": "Başlamaya"
     }
   },
@@ -734,7 +734,7 @@
     "h1": "Gizlilik Politikası",
     "q1": {
       "title": "Son güncelleme: 2023-11-20",
-      "a1": "∑ Practice (\"biz\", \"bize\" veya \"bizim\") ∑ Practice web sitesini (\"Hizmet\") işletir.",
+      "a1": "DET Practice (\"biz\", \"bize\" veya \"bizim\") DET Practice web sitesini (\"Hizmet\") işletir.",
       "a2": "Bu sayfa, Hizmetimizi kullandığınızda Kişisel Bilgilerin toplanması, kullanılması ve açıklanmasıyla ilgili politikalarımız hakkında sizi bilgilendirir.",
       "a3": "Bilgilerinizi bu Gizlilik Politikası'nda belirtilenler dışında hiç kimseyle kullanmayacak veya paylaşmayacağız.",
       "a4": "Hizmeti sağlamak ve geliştirmek için Kişisel Bilgilerinizi kullanıyoruz. Hizmeti kullanarak, bilgilerin bu politikaya uygun olarak toplanmasına ve kullanılmasına izin vermiş olursunuz. Bu Gizlilik Politikasında aksi belirtilmedikçe, bu Gizlilik Politikasında kullanılan terimler, {Terms and Conditions} adresinde erişilebilen Şartlar ve Koşullarımızdaki ile aynı anlamlara sahiptir.",

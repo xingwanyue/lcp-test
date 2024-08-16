@@ -30,19 +30,19 @@
       "font": "Verover je examen met authentieke simulaties op volledige lengte: diepteanalyse en onmiddellijke resultaten, beschikbaar altijd en overal."
     },
     "prod4": {
-      "title": "∑ Volledige Lengte Oefentoets",
-      "alt": "∑ Volledige Lange Oefentoets",
+      "title": "DET Volledige Lengte Oefentoets",
+      "alt": "DET Volledige Lange Oefentoets",
       "font": "Ontgrendel DET Succes: Uitgebreide Beheersing, Bewezen Technieken, en Actuele Inzichten voor Zelfverzekerd Spreken en Schrijfvaardigheid!"
     },
     "prodwriting": {
-      "title": "∑ Schrijven AI Correctie",
-      "alt": "∑ Schrijven AI Correctie",
+      "title": "DET Schrijven AI Correctie",
+      "alt": "DET Schrijven AI Correctie",
       "font": "Krijg nauwkeurige scores en gedetailleerde rapporten zodat je je schrijfvaardigheden sneller kunt verbeteren. Ondersteun alle schrijfvragen!"
     },
     "prodspeaking": {
-      "title": "∑ Sprekende AI Correctie",
-      "alt": "∑ Spreken AI Correctie",
-      "font": "Maak gebruik van krachtige AI om je ∑ spreekvaardigheidsscore op een gerichte manier te verbeteren. Ondersteun alle spreekvragen!"
+      "title": "DET Sprekende AI Correctie",
+      "alt": "DET Spreken AI Correctie",
+      "font": "Maak gebruik van krachtige AI om je DET spreekvaardigheidsscore op een gerichte manier te verbeteren. Ondersteun alle spreekvragen!"
     }
   },
   "footer": {
@@ -99,8 +99,8 @@
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "article2": {
-      "title": "∑ Volledige Mock Test",
-      "tips1": "The Meest <span class='yellow'>Krachtige</span> Oefentoets, Dicht bij <span class='yellow'>Echte ∑ Exam</span>",
+      "title": "DET Volledige Mock Test",
+      "tips1": "The Meest <span class='yellow'>Krachtige</span> Oefentoets, Dicht bij <span class='yellow'>Echte DET Exam</span>",
       "tips2": "Adaptieve Examens en AI Beoordeling",
       "tips3": "Nauwkeurige Beoordelingsscores, Gedetailleerd Evaluatierapport",
       "tips4": "Resultaten zullen beschikbaar zijn binnen <span class='yellow'>5-30 minuten</span>",
@@ -108,7 +108,7 @@
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "article3": {
-      "title": "∑ Schrijven AI Correctie",
+      "title": "DET Schrijven AI Correctie",
       "tips1": "Ondersteuning \"Schrijf over de Foto\",\"Interactief Schrijven\",\"Schrijfsample\"",
       "tips2": "AI Scoring, AI Correctie, Leraar Begeleiding",
       "tips3": "Nauwkeurige Beoordelingsscores, Gedetailleerd Evaluatierapport",
@@ -117,7 +117,7 @@
       "btn_img_alt": "Gele Pijl Rechts"
     },
     "article4": {
-      "title": "∑ AI-correctie spreken",
+      "title": "DET AI-correctie spreken",
       "tips1": "Ondersteun \"Luister, dan Spreek\", \"Spreek over de Foto\", \"Lees, dan Spreek\", \"Voorbeeld Spreken\"",
       "tips2": "AI Scoring, AI Evaluatieresultaten, Leraargids",
       "tips3": "Nauwkeurige Beoordelingsscores, Gedetailleerd Evaluatierapport",
@@ -126,8 +126,8 @@
       "btn_img_alt": "Gele Pijl Naar Rechts"
     },
     "article5": {
-      "title": "∫ Cursus",
-      "tips1": "Ontwikkel een <span class='yellow'>diepgaand begrip</span> van ∑ spreek- en schrijfgedeelten met onze gedetailleerde gidsen",
+      "title": "Duolingo English Test Cursus",
+      "tips1": "Ontwikkel een <span class='yellow'>diepgaand begrip</span> van DET spreek- en schrijfgedeelten met onze gedetailleerde gidsen",
       "tips2": "Behaal Uitgebreide Beheersing",
       "tips3": "Leer van ESL-experts",
       "tips4": "Blijf geïnformeerd en vooruit",
@@ -180,7 +180,7 @@
       "switch2": "Cursussen",
       "sep": "Veilige betaling",
       "ca": "Annuleer op elk moment",
-      "atde": "Versla de ∑ nu",
+      "atde": "Versla de DET nu",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI Correctiedienst",
       "Most_Popular_Choice": "Meest Populaire Keuze",
@@ -276,7 +276,7 @@
       "AI-gestuurde spraakbeoordelingen"
     ],
     "correctServiceQuanYi": [
-      "Kan worden gebruikt voor ∑ schrijven en spreken",
+      "Kan worden gebruikt voor DET schrijven en spreken",
       "AI-score, Nauwkeurige score",
       "Resultaten van AI-evaluatie",
       "Gedetailleerd Evaluatierapport",
@@ -310,7 +310,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>Volledige</span> proefexamens",
       "Test op elk moment",
-      "Dichtbij <span class='strongfont'>echte ∑ examen</span>",
+      "Dichtbij <span class='strongfont'>echte DET examen</span>",
       "Nauwkeurige beoordelingsscores",
       "Gedetailleerd evaluatierapport",
       "Resultaten zullen beschikbaar zijn binnen <span class='strongfont'>5-30 minuten</span>"
@@ -369,17 +369,17 @@
       "description": ""
     },
     "title": "Over DET Practice",
-    "title_desc": "DETPractice.com is het beste platform voor ∫ Oefenen en Leren.",
+    "title_desc": "DETPractice.com is het beste platform voor Duolingo English Test Oefenen en Leren.",
     "check_out": {
       "h2": "Bekijk Wat We Kunnen Doen",
-      "qbt": "∑ Vragenbank",
-      "qbtdesc": "We hebben de grootste vragenbank en werken deze elke dag bij. Je kunt je ∫ score snel verbeteren door de vragen te oefenen.",
-      "flm": "∑ Volledige Mock",
-      "flmdesc": "We hebben de meest krachtige ∑ oefentoets, die je in staat stelt om je testresultaten nauwkeurig te evalueren tegen lagere kosten.",
-      "acs": "∑ AI Correctiedienst",
-      "acsdesc": "Je kunt de AI-correctietools die we aanbieden gebruiken om snel je ∑ spreek- en schrijfscores te verbeteren.",
-      "dc": "∑ Cursussen",
-      "dedesc": "We zullen doorgaan met het ontwikkelen van testvoorbereidingsmateriaal en cursussen gebaseerd op ∑'s nieuwste testfuncties."
+      "qbt": "DET Vragenbank",
+      "qbtdesc": "We hebben de grootste vragenbank en werken deze elke dag bij. Je kunt je Duolingo English Test score snel verbeteren door de vragen te oefenen.",
+      "flm": "DET Volledige Mock",
+      "flmdesc": "We hebben de meest krachtige DET oefentoets, die je in staat stelt om je testresultaten nauwkeurig te evalueren tegen lagere kosten.",
+      "acs": "DET AI Correctiedienst",
+      "acsdesc": "Je kunt de AI-correctietools die we aanbieden gebruiken om snel je DET spreek- en schrijfscores te verbeteren.",
+      "dc": "DET Cursussen",
+      "dedesc": "We zullen doorgaan met het ontwikkelen van testvoorbereidingsmateriaal en cursussen gebaseerd op DET's nieuwste testfuncties."
     },
     "three_our_our": {
       "h2": "Hoewel Jong, Maar Sterk",
@@ -465,13 +465,13 @@
       "description": "DET Schrijven AI Correctieservice aangeboden door AI vergelijkbaar met professionele leraren. \nJe essay wordt gecorrigeerd op basis van DET-scoreregels en je ontvangt binnen 1-5 minuten gedetailleerde feedback.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Schrijven AI Correctie",
-    "desc": "∑ Schrijf AI Correctieservice geleverd door AI vergelijkbaar met professionele docenten. Je essay wordt gecorrigeerd op basis van ∑ beoordelingsregels, en je ontvangt gedetailleerde feedback binnen 1-5 minuten.",
+    "h1": "DET Schrijven AI Correctie",
+    "desc": "DET Schrijf AI Correctieservice geleverd door AI vergelijkbaar met professionele docenten. Je essay wordt gecorrigeerd op basis van DET beoordelingsregels, en je ontvangt gedetailleerde feedback binnen 1-5 minuten.",
     "alt": "DET Oefenen:De beste Duolingo English Test Oefenplatform",
     "useralt": "Gebruikerspictogram",
     "white_arrow_right": "witte_pijl_rechts",
     "yellow_arrow_right": "gele_pijl_rechts",
-    "learners_have": "{number} mensen maakten gebruik van de ∑ Schrijf AI Correctie service.",
+    "learners_have": "{number} mensen maakten gebruik van de DET Schrijf AI Correctie service.",
     "Review_Now": "Aan de slag",
     "Correct_Now": "Begin met ervaren",
     "Get_Scored_Now": "Begin met ervaren",
@@ -487,7 +487,7 @@
     },
     "h2_3": {
       "h2": "Professionele begeleiding",
-      "right_desc": "Volgens de ∑ scorende elementen, bieden we professionele begeleiding om je te helpen de zwakke punten in je paper te identificeren en deze perfect te maken."
+      "right_desc": "Volgens de DET scorende elementen, bieden we professionele begeleiding om je te helpen de zwakke punten in je paper te identificeren en deze perfect te maken."
     },
     "h2_4": {
       "h2": "Essay bijwerken",
@@ -497,7 +497,7 @@
   "courses": {
     "seometa": {
       "title": "DET Oefenen - Beheers spreken en schrijven met de Duolingo English Test gids",
-      "description": "Ontgrendel je potentieel met onze ∫ Gids. Verdiep je in spreek- en schrijfvaardigheid met uitgebreide strategieën, deskundige tips en geactualiseerde ∑ Oefeningen."
+      "description": "Ontgrendel je potentieel met onze Duolingo English Test Gids. Verdiep je in spreek- en schrijfvaardigheid met uitgebreide strategieën, deskundige tips en geactualiseerde DET Oefeningen."
     },
     "article1": {
       "title": "Belangrijkste Kenmerken van DET Spreekexamen Uitmuntendheid:",
@@ -632,7 +632,7 @@
       "description": "Ervaar een realistische Duolingo Oefentoets met de volledige examens van DET Practice. Met intelligente adaptieve vragen en AI-score bieden onze oefentoetsen een nauwkeurige beoordeling om je effectief voor te bereiden op de Duolingo English Test.",
       "keywords": "Duolingo Oefentoets, DET Duolingo, DET Toets, Duolingo DET, Duolingo Toets, Duolingo Toets Online"
     },
-    "h1": "∑ Volledige Lange Proefexamen",
+    "h1": "DET Volledige Lange Proefexamen",
     "desc": "Dompel jezelf onder in een levensechte examenervaring met onze grootschalige proefexamens. Krijg een voorproefje van het daadwerkelijke testproces voordat je aan de echte toets begint en ontvang snel scores en gedetailleerde diagnostische rapporten om verbeterpunten te identificeren.",
     "alt": "DET Oefen:De beste Duolingo English Test Oefenplatform",
     "mock_user_icon": "Nep Gebruikerspictogram",
@@ -664,10 +664,10 @@
       "description": "Onze DET testbank bevat duizenden vragen voor uitgebreide training, compleet met gedetailleerde uitleg en AI-analyse om u te helpen slagen.",
       "keywords": "Duolingo English Test Oefenen, Duolingo Oefentoets Engels, Duolingo Engelse Oefentoets, Duolingo Oefentoets Online, Duolingo Toetsoefening, Duolingo Oefentoets, Duolingo Oefenen, Det Oefentoets, Duolingo English Test Score"
     },
-    "h1": "∫ Oefenen",
+    "h1": "Duolingo English Test Oefenen",
     "desc": "Krijg toegang tot een uitgebreide verzameling toetsvragen, verbeterd met antwoordanalyse, sjablonen, AI-gestuurde spreekbeoordelingen en slimme planning. Versnel je scoreverbetering efficiënt en betaalbaar met onze AI-gestuurde aanpak.",
     "alt": "DET Oefening:Het beste Duolingo English Test Oefenplatform",
-    "altbanner": "∫ Oefenen",
+    "altbanner": "Duolingo English Test Oefenen",
     "bank_user_icon": "Bankgebruikerspictogram",
     "white_arrow_right": "Witte Pijl Rechts",
     "blue_arrow_right": "Blauwe Pijl Rechts",
@@ -700,14 +700,14 @@
       "description": "DET Sprekende AI Correctieservice geleverd door krachtige AI. \nOndersteunt alle typen spreekvragen en biedt professionele begeleiding waarmee u eenvoudig uw DET-spreekscore kunt verbeteren.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Spreken AI Correctie",
-    "desc": "∑ Spreek-AI-correctieservice verzorgd door krachtige AI. Ondersteunt alle soorten spreekvragen en biedt professionele begeleiding om je te helpen gemakkelijk je ∑ spreekscore te verbeteren.",
-    "alt": "∑ Oefening:De beste ∑ Spreek AI Correctie platform",
-    "altbanner": "∑ Spraak AI Correctie",
+    "h1": "DET Spreken AI Correctie",
+    "desc": "DET Spreek-AI-correctieservice verzorgd door krachtige AI. Ondersteunt alle soorten spreekvragen en biedt professionele begeleiding om je te helpen gemakkelijk je DET spreekscore te verbeteren.",
+    "alt": "DET Oefening:De beste DET Spreek AI Correctie platform",
+    "altbanner": "DET Spraak AI Correctie",
     "bank_user_icon": "Bank Gebruiker Icoon",
     "white_arrow_right": "Witte Pijl Rechts",
     "purple_arrow_right": "Paarse Pijl Rechts",
-    "learners_have": "{number} mensen hebben gebruik gemaakt van de ∑ Speaking AI Correctiedienst.",
+    "learners_have": "{number} mensen hebben gebruik gemaakt van de DET Speaking AI Correctiedienst.",
     "spn": "Aan de slag",
     "article1": {
       "h2": "Nauwkeurige score",
@@ -721,7 +721,7 @@
     },
     "article3": {
       "h2": "Professionele begeleiding",
-      "right_desc": "Volgens de ∑ beoordelingscriteria bieden wij professionele begeleiding om u te helpen de zwakke punten in uw spreken te identificeren en het perfect te maken.",
+      "right_desc": "Volgens de DET beoordelingscriteria bieden wij professionele begeleiding om u te helpen de zwakke punten in uw spreken te identificeren en het perfect te maken.",
       "btn": "Begin met ervaren"
     }
   },
@@ -734,7 +734,7 @@
     "h1": "Privacybeleid",
     "q1": {
       "title": "Laatst bijgewerkt: 2023-11-20",
-      "a1": "∑ Practice (“ons”, “wij” of “onze”) beheert de ∑ Practice website (de “Service”).",
+      "a1": "DET Practice (“ons”, “wij” of “onze”) beheert de DET Practice website (de “Service”).",
       "a2": "Deze pagina informeert u over ons beleid met betrekking tot het verzamelen, gebruiken en openbaar maken van Persoonlijke Informatie wanneer u onze Dienst gebruikt.",
       "a3": "We zullen uw informatie niet gebruiken of delen met iemand anders behalve zoals beschreven in dit Privacybeleid.",
       "a4": "We gebruiken uw Persoonlijke Informatie om de Dienst te leveren en te verbeteren. Door gebruik te maken van de Dienst, stemt u in met het verzamelen en gebruiken van informatie in overeenstemming met dit beleid. Tenzij anders gedefinieerd in dit Privacybeleid, hebben termen die in dit Privacybeleid worden gebruikt dezelfde betekenis als in onze Algemene Voorwaarden, toegankelijk op",

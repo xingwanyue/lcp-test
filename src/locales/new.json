@@ -1,15 +1,15 @@
 {
   "header": {
-    "prod4": { "title": "∑ Full-Length Mock Test", "alt": "∑ Full-Length Mock Test" },
+    "prod4": { "title": "DET Full-Length Mock Test", "alt": "DET Full-Length Mock Test" },
     "prodwriting": {
-      "title": "∑ Writing AI Correction",
-      "alt": "∑ Writing AI Correction",
+      "title": "DET Writing AI Correction",
+      "alt": "DET Writing AI Correction",
       "font": "Get accurate scores and detailed reports so that you can improve your writing skills faster. Support all writing questions!"
     },
     "prodspeaking": {
-      "title": "∑ Speaking AI Correction",
-      "alt": "∑ Speaking AI Correction",
-      "font": "Leverage powerful AI to improve your ∑ speaking score in a targeted manner. Support all speaking questions!"
+      "title": "DET Speaking AI Correction",
+      "alt": "DET Speaking AI Correction",
+      "font": "Leverage powerful AI to improve your DET speaking score in a targeted manner. Support all speaking questions!"
     }
   },
   "index": {
@@ -24,21 +24,21 @@
       "tips4": "AI Scoring for Read Aloud"
     },
     "article2": {
-      "title": "∑ Full-Length Mock Test",
-      "tips1": "The Most <span class='yellow'>Powerful</span> Mock Test, Close to <span class='yellow'>Real ∑ Exam</span>",
+      "title": "DET Full-Length Mock Test",
+      "tips1": "The Most <span class='yellow'>Powerful</span> Mock Test, Close to <span class='yellow'>Real DET Exam</span>",
       "tips2": "Adaptive Exams, and AI Scoring",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
       "tips4": "Results will be available within <span class='yellow'>5-30 minutes</span>"
     },
     "article3": {
-      "title": "∑ Writing AI Correction",
+      "title": "DET Writing AI Correction",
       "tips1": "Support \"Write about the Photo\",\"Interactice Writing\",\"Writing Sample\"",
       "tips2": "AI Scoring, AI Correction, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
       "tips4": "Results will be available within <span class='yellow'>1-5 minutes</span>"
     },
     "article4": {
-      "title": "∑ Speaking AI Correction",
+      "title": "DET Speaking AI Correction",
       "tips1": "Support \"Listen,Then Speak \",\"Speak About the Photo \",\"Read, then Speak\",\"Speaking Sample\"",
       "tips2": "AI Scoring, AI Evaluation Results, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
@@ -47,8 +47,8 @@
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article5": {
-      "title": "∫ Course",
-      "tips1": "Develop an <span class='yellow'>in-depth understanding</span> of ∑ speaking and writing sections with our detailed guides",
+      "title": "Duolingo English Test Course",
+      "tips1": "Develop an <span class='yellow'>in-depth understanding</span> of DET speaking and writing sections with our detailed guides",
       "tips2": "Achieve Comprehensive Mastery",
       "tips3": "Learn from ESL Experts",
       "tips4": "Stay Informed and Ahead",
@@ -60,13 +60,13 @@
     "pagefont": {
       "sep": "Secure payment",
       "ca": "Cancel anytime",
-      "atde": "Ace the ∑ now",
+      "atde": "Ace the DET now",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI Correction Service"
     }
   },
   "correctServiceQuanYi": [
-    "Can be used for ∑ writing and speaking",
+    "Can be used for DET writing and speaking",
     "AI Scoring, Accurate score",
     "AI Evaluation Results",
     "Detailed Evaluation Report",
@@ -84,7 +84,7 @@
   "mockQuanYiList": [
     "<span class='strongfont'>Full-Length</span> mock exams",
     "Test at any time",
-    "Close to <span class='strongfont'>real ∑ exam</span>",
+    "Close to <span class='strongfont'>real DET exam</span>",
     "Accurate assessment scores",
     "Detailed evaluation report",
     "Results will be available within <span class='strongfont'>5-30 minutes</span>"
@@ -100,17 +100,17 @@
     "Start_Now": "Start Now"
   },
   "aboutUs": {
-    "title_desc": "DETPractice.com is the best platform for ∫ Practicing and Learning.",
+    "title_desc": "DETPractice.com is the best platform for Duolingo English Test Practicing and Learning.",
     "check_out": {
       "h2": "Check Out What We Can Do",
-      "qbt": "∑ Question Bank",
-      "qbtdesc": "We have the largest question bank and update it every day.You can quickly improve your ∫ score by practicing the questions.",
-      "flm": "∑ Full-Length Mock",
-      "flmdesc": " We have the most powerful ∑ mock test , which allows you to accurately evaluate your test scores at a lower cost.",
-      "acs": "∑ AI Correction Service",
-      "acsdesc": "You can use the AI ​​correction tools we provide to quickly improve your ∑ speaking and writing scores.",
-      "dc": "∑ Courses",
-      "dedesc": "We will continue to develop test preparation materials and courses based on ∑'s latest test features."
+      "qbt": "DET Question Bank",
+      "qbtdesc": "We have the largest question bank and update it every day.You can quickly improve your Duolingo English Test score by practicing the questions.",
+      "flm": "DET Full-Length Mock",
+      "flmdesc": " We have the most powerful DET mock test , which allows you to accurately evaluate your test scores at a lower cost.",
+      "acs": "DET AI Correction Service",
+      "acsdesc": "You can use the AI ​​correction tools we provide to quickly improve your DET speaking and writing scores.",
+      "dc": "DET Courses",
+      "dedesc": "We will continue to develop test preparation materials and courses based on DET's latest test features."
     },
     "three_our_our": {
       "h2": "Although Young, But Strong",
@@ -133,9 +133,9 @@
       "description": "需要提供",
       "keywords": "需要提供"
     },
-    "h1": "∑ Writing AI Correction",
-    "desc": "∑ Writing AI Correction service provided by AI comparable to professional teachers. Your essay will be corrected based on ∑ scoring rules, and you will receive detailed feedback within 1-5 mins.",
-    "learners_have": "{number} people used ∑ Writing AI Correction service.",
+    "h1": "DET Writing AI Correction",
+    "desc": "DET Writing AI Correction service provided by AI comparable to professional teachers. Your essay will be corrected based on DET scoring rules, and you will receive detailed feedback within 1-5 mins.",
+    "learners_have": "{number} people used DET Writing AI Correction service.",
     "Review_Now": "Get Started",
     "Correct_Now": "Start experiencing",
     "Get_Scored_Now": "Start experiencing",
@@ -149,7 +149,7 @@
     },
     "h2_3": {
       "h2": "Professional guidance",
-      "right_desc": "According to the ∑ scoring elements, we provide professional guidance to help you identify the weaknesses in your paper and make it perfect."
+      "right_desc": "According to the DET scoring elements, we provide professional guidance to help you identify the weaknesses in your paper and make it perfect."
     },
     "h2_4": {
       "h2": "Essay polishing",
@@ -158,19 +158,19 @@
   },
   "courses": {
     "seometa": {
-      "description": "Unlock your potential with our ∫ Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated ∑ Practice."
+      "description": "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET Practice."
     }
   },
   "mockexam": {
-    "h1": "∑ Full-Length Mock Test",
+    "h1": "DET Full-Length Mock Test",
     "article1": { "h2": "Close To Real Exam" },
     "article4": {
       "right_desc": "Get your mock exam results delivered within <span class='zdfont'>5-30 minutes</span>, fast-tracking your progress review."
     }
   },
   "practice": {
-    "h1": "∫ Practice",
-    "altbanner": "∫ Practice",
+    "h1": "Duolingo English Test Practice",
+    "altbanner": "Duolingo English Test Practice",
     "article1": {
       "h2": "The Largest Question Bank",
       "right_desc": " Explore our extensive library of over <span class='zdfont'>18,000+ questions</span> across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats."
@@ -188,14 +188,14 @@
       "description": "需要提供",
       "keywords": "需要提供"
     },
-    "h1": "∑ Speaking AI Correction",
-    "desc": "∑ Speaking AI Correction service provided by powerful AI. Support all speaking question types, and provides professional guidance to help you easily improve your ∑ speaking score.",
-    "alt": "∑ Practice:The best ∑ Speaking AI Correction platform",
-    "altbanner": "∑ Speaking AI Correction",
+    "h1": "DET Speaking AI Correction",
+    "desc": "DET Speaking AI Correction service provided by powerful AI. Support all speaking question types, and provides professional guidance to help you easily improve your DET speaking score.",
+    "alt": "DET Practice:The best DET Speaking AI Correction platform",
+    "altbanner": "DET Speaking AI Correction",
     "bank_user_icon": "Bank User Icon",
     "white_arrow_right": "White Arrow Right",
     "purple_arrow_right": "Purple Arrow Right",
-    "learners_have": "{number} people used ∑ Speaking AI Correction service.",
+    "learners_have": "{number} people used DET Speaking AI Correction service.",
     "spn": "Get Started",
     "article1": {
       "h2": "Accurate score",
@@ -209,12 +209,12 @@
     },
     "article3": {
       "h2": "Professional guidance",
-      "right_desc": "According to the ∑ scoring elements, we provide professional guidance to help you identify the weaknesses in your speaking and make it perfect.",
+      "right_desc": "According to the DET scoring elements, we provide professional guidance to help you identify the weaknesses in your speaking and make it perfect.",
       "btn": "Start experiencing"
     }
   },
   "privacyPolicy": {
-    "q1": { "a1": "∑ Practice (“us”, “we”, or “our”) operates the ∑ Practice website (the “Service”)." }
+    "q1": { "a1": "DET Practice (“us”, “we”, or “our”) operates the DET Practice website (the “Service”)." }
   },
   "refundPolicy": {
     "q3": {

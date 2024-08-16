@@ -30,19 +30,19 @@
       "font": "Erobre eksamen din med autentiske full-lengde mocks: Grundig analyse og umiddelbare resultater, tilgjengelig når som helst, hvor som helst."
     },
     "prod4": {
-      "title": "∑ Fullstendig Prøveeksamen",
-      "alt": "∑ Full-Length Mock Test",
+      "title": "DET Fullstendig Prøveeksamen",
+      "alt": "DET Full-Length Mock Test",
       "font": "Lås opp DET suksess: omfattende mestring, velprøvde teknikker og oppdaterte innsikter for selvsikker tale- og skrivekompetanse!"
     },
     "prodwriting": {
-      "title": "∑ Skrive AI Korreksjon",
-      "alt": "∑ Skrive AI-korrigering",
+      "title": "DET Skrive AI Korreksjon",
+      "alt": "DET Skrive AI-korrigering",
       "font": "Få nøyaktige resultater og detaljerte rapporter slik at du kan forbedre skriveferdighetene dine raskere. Støtt alle skrive spørsmål!"
     },
     "prodspeaking": {
-      "title": "∑ Snakkende AI Korreksjon",
-      "alt": "∑ Snakkende AI Korreksjon",
-      "font": "Utnytt kraftig AI for å forbedre din ∑ talepoengsum på en målrettet måte. Støtte alle spørsmål om tale!"
+      "title": "DET Snakkende AI Korreksjon",
+      "alt": "DET Snakkende AI Korreksjon",
+      "font": "Utnytt kraftig AI for å forbedre din DET talepoengsum på en målrettet måte. Støtte alle spørsmål om tale!"
     }
   },
   "footer": {
@@ -99,8 +99,8 @@
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article2": {
-      "title": "∑ Full-Long Mock Test",
-      "tips1": "Den Mest <span class='yellow'>Kraftfulle</span> Prøven, Nær <span class='yellow'>Ekte ∑ Eksamen</span>",
+      "title": "DET Full-Long Mock Test",
+      "tips1": "Den Mest <span class='yellow'>Kraftfulle</span> Prøven, Nær <span class='yellow'>Ekte DET Eksamen</span>",
       "tips2": "Adaptive eksamener og AI-vurdering",
       "tips3": "Nøyaktige vurderingspoeng, detaljert evalueringsrapport",
       "tips4": "Resultatene vil være tilgjengelige innen <span class='yellow'>5-30 minutter</span>",
@@ -108,7 +108,7 @@
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article3": {
-      "title": "∑ Skrive AI Korreksjon",
+      "title": "DET Skrive AI Korreksjon",
       "tips1": "Støtte \"Skriv om bildet\", \"Interaktiv skriving\", \"Skriveprøve\"",
       "tips2": "AI Scoring, AI Korrektering, Lærerveiledning",
       "tips3": "Nøyaktige vurderingspoeng, Detaljert evalueringsrapport",
@@ -117,7 +117,7 @@
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article4": {
-      "title": "∑ Talende AI Korreksjon",
+      "title": "DET Talende AI Korreksjon",
       "tips1": "Støtte \"Lytt, så snakk\", \"Snakk om bildet\", \"Les, så snakk\", \"Taleprøve\"",
       "tips2": "AI Poengsum, AI Evalueringsresultater, Lærer Veiledning",
       "tips3": "Nøyaktige vurderingspoeng, detaljert evalueringsrapport",
@@ -126,8 +126,8 @@
       "btn_img_alt": "Gul Pil Høyre"
     },
     "article5": {
-      "title": "∫ Kurs",
-      "tips1": "Utvikle en <span class='yellow'>grundig forståelse</span> av ∑ tale- og skrivedeler med våre detaljerte veiledninger",
+      "title": "Duolingo English Test Kurs",
+      "tips1": "Utvikle en <span class='yellow'>grundig forståelse</span> av DET tale- og skrivedeler med våre detaljerte veiledninger",
       "tips2": "Oppnå omfattende mestring",
       "tips3": "Lær av ESL-eksperter",
       "tips4": "Hold deg informert og foran",
@@ -180,7 +180,7 @@
       "switch2": "Kurs",
       "sep": "Sikker betaling",
       "ca": "Avbryt når som helst",
-      "atde": "Ace ∑ nå",
+      "atde": "Ace DET nå",
       "circle_check_icon": "sirkel_sjekk_ikon",
       "apcs1": "AI Korreksjonstjeneste",
       "Most_Popular_Choice": "Mest Populære Valg",
@@ -276,7 +276,7 @@
       "AI-drevne taleevalueringer"
     ],
     "correctServiceQuanYi": [
-      "Kan brukes til ∑ skriving og tale",
+      "Kan brukes til DET skriving og tale",
       "AI Poenggivning, Nøyaktig poengsum",
       "Evaluering av AI-resultater",
       "Detaljert Evalueringsrapport",
@@ -310,7 +310,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>Fullstendige</span> prøveeksamener",
       "Test når som helst",
-      "Nær <span class='strongfont'>ekte ∑ eksamen</span>",
+      "Nær <span class='strongfont'>ekte DET eksamen</span>",
       "Nøyaktige vurderingspoeng",
       "Detaljert evalueringsrapport",
       "Resultatene vil være tilgjengelige innen <span class='strongfont'>5-30 minutter</span>"
@@ -369,17 +369,17 @@
       "description": ""
     },
     "title": "Om DET Practice",
-    "title_desc": "DETPractice.com er den beste plattformen for ∫ Øving og Læring.",
+    "title_desc": "DETPractice.com er den beste plattformen for Duolingo English Test Øving og Læring.",
     "check_out": {
       "h2": "Sjekk ut hva vi kan gjøre",
-      "qbt": "∑ Spørsmål Bank",
-      "qbtdesc": "Vi har den største spørsmålsbanken og oppdaterer den hver dag. Du kan raskt forbedre din ∫ poengsum ved å øve på spørsmålene.",
-      "flm": "∑ Full-Length Mock",
-      "flmdesc": "Vi har den kraftigste ∑ prøveprøven, som gjør at du nøyaktig kan evaluere testresultatene dine til en lavere kostnad.",
-      "acs": "∑ AI Korreksjonstjeneste",
-      "acsdesc": "Du kan bruke AI-korrigeringsverktøyene vi tilbyr for raskt å forbedre dine ∑ tale- og skrivepoeng.",
-      "dc": "∑ Kurs",
-      "dedesc": "Vi vil fortsette å utvikle forberedelsesmaterialer og kurs basert på ∑s nyeste testfunksjoner."
+      "qbt": "DET Spørsmål Bank",
+      "qbtdesc": "Vi har den største spørsmålsbanken og oppdaterer den hver dag. Du kan raskt forbedre din Duolingo English Test poengsum ved å øve på spørsmålene.",
+      "flm": "DET Full-Length Mock",
+      "flmdesc": "Vi har den kraftigste DET prøveprøven, som gjør at du nøyaktig kan evaluere testresultatene dine til en lavere kostnad.",
+      "acs": "DET AI Korreksjonstjeneste",
+      "acsdesc": "Du kan bruke AI-korrigeringsverktøyene vi tilbyr for raskt å forbedre dine DET tale- og skrivepoeng.",
+      "dc": "DET Kurs",
+      "dedesc": "Vi vil fortsette å utvikle forberedelsesmaterialer og kurs basert på DETs nyeste testfunksjoner."
     },
     "three_our_our": {
       "h2": "Selv om ung, men sterk",
@@ -465,13 +465,13 @@
       "description": "DET Writing AI Correction-tjeneste levert av AI som kan sammenlignes med profesjonelle lærere. \nEssayet ditt vil bli korrigert basert på DET-scoringsregler, og du vil motta detaljert tilbakemelding innen 1-5 minutter.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Skrive AI Korreksjon",
-    "desc": "∑ Skrive AI Korreksjonstjeneste levert av AI sammenlignbar med profesjonelle lærere. Din essay vil bli rettet basert på ∑ vurderingsregler, og du vil motta detaljert tilbakemelding innen 1-5 minutter.",
+    "h1": "DET Skrive AI Korreksjon",
+    "desc": "DET Skrive AI Korreksjonstjeneste levert av AI sammenlignbar med profesjonelle lærere. Din essay vil bli rettet basert på DET vurderingsregler, og du vil motta detaljert tilbakemelding innen 1-5 minutter.",
     "alt": "DET Praktisering:Den beste Duolingo English Test treningsplattformen",
     "useralt": "Brukerikon",
     "white_arrow_right": "hvit_pil_høyre",
     "yellow_arrow_right": "gul_pil_høyre",
-    "learners_have": "{number} personer brukte ∑ Writing AI Correction-tjenesten.",
+    "learners_have": "{number} personer brukte DET Writing AI Correction-tjenesten.",
     "Review_Now": "Kom i gang",
     "Correct_Now": "Begynn å oppleve",
     "Get_Scored_Now": "Begynn å oppleve",
@@ -487,7 +487,7 @@
     },
     "h2_3": {
       "h2": "Profesjonell veiledning",
-      "right_desc": "Ifølge ∑-poengberegningselementene gir vi profesjonell veiledning for å hjelpe deg med å identifisere svakhetene i oppgaven din og gjøre den perfekt."
+      "right_desc": "Ifølge DET-poengberegningselementene gir vi profesjonell veiledning for å hjelpe deg med å identifisere svakhetene i oppgaven din og gjøre den perfekt."
     },
     "h2_4": {
       "h2": "Essay polering",
@@ -497,7 +497,7 @@
   "courses": {
     "seometa": {
       "title": "DET Øv - Mester tale og skriving med Duolingo English Test Guiden",
-      "description": "Lås opp ditt potensial med vår ∫ Guide. Fordyp deg i tale- og skriveekspertise med omfattende strategier, ekspertips og oppdatert ∑ Praksis."
+      "description": "Lås opp ditt potensial med vår Duolingo English Test Guide. Fordyp deg i tale- og skriveekspertise med omfattende strategier, ekspertips og oppdatert DET Praksis."
     },
     "article1": {
       "title": "Nøkkelfunksjoner i DET Snakkeeksamen Fremragende:",
@@ -632,7 +632,7 @@
       "description": "Opplev en realistisk Duolingo prøve med DET Practice's full-lengde eksamener. Med intelligente tilpassede spørsmål og AI-score, gir våre prøver en nøyaktig vurdering for å forberede deg effektivt på Duolingo English Test.",
       "keywords": "Duolingo Prøveprøve, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
     },
-    "h1": "∑ Fullverdig Prøvetest",
+    "h1": "DET Fullverdig Prøvetest",
     "desc": "Bli med på en virkelighetsnær eksamensopplevelse med våre fullskala prøveeksamener. Få en forsmak på den faktiske testprosessen før den ekte prøven og motta raskt poeng og detaljerte diagnostiske rapporter for å identifisere forbedringsområder.",
     "alt": "DET Øvelse:Den beste Duolingo English Test Øvelsesplattformen",
     "mock_user_icon": "Brukerikon for testing purposes",
@@ -664,10 +664,10 @@
       "description": "Vår DET testbank inneholder tusenvis av spørsmål for omfattende trening, komplett med detaljerte forklaringer og AI-analyse for å hjelpe deg å lykkes.",
       "keywords": "Duolingo English Test Øv, Duolingo Øv Engelsk Test, Duolingo Engelsk Øvingstest, Duolingo Øvingstest På Nett, Duolingo Testøving, Duolingo Øvingstest, Duolingo Øv, Det Øvingstest, Duolingo English Test Poeng"
     },
-    "h1": "∫ Øvelse",
+    "h1": "Duolingo English Test Øvelse",
     "desc": "Få tilgang til en omfattende samling med testspørsmål, forbedret med svaranalyser, maler, AI-drevne talevurderinger og smart planlegging. Akselerer din poengforbedring effektivt og rimelig med vår AI-drevne tilnærming.",
     "alt": "DET Praksis:Den beste Duolingo English Test praksisplattformen",
-    "altbanner": "∫ Øvelse",
+    "altbanner": "Duolingo English Test Øvelse",
     "bank_user_icon": "Ikon for bankbruker",
     "white_arrow_right": "Hvit Pil Høyre",
     "blue_arrow_right": "Blå Pil Høyre",
@@ -700,14 +700,14 @@
       "description": "DET Speaking AI Correction-tjeneste levert av kraftig AI. \nStøtt alle typer talespørsmål, og gir profesjonell veiledning for å hjelpe deg med å enkelt forbedre DET-taleresultatet.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Talende AI Korreksjon",
-    "desc": "∑ AI-snakketjeneste for tale-korreksjon levert av kraftig AI. Støtter alle typer spørsmål for tale, og tilbyr profesjonell veiledning for å hjelpe deg å enkelt forbedre din ∑ talepoengsum.",
-    "alt": "∑ Øvelse:Den beste ∑ Snakke AI-korrigeringsplattformen",
-    "altbanner": "∑ Tale AI Korreksjon",
+    "h1": "DET Talende AI Korreksjon",
+    "desc": "DET AI-snakketjeneste for tale-korreksjon levert av kraftig AI. Støtter alle typer spørsmål for tale, og tilbyr profesjonell veiledning for å hjelpe deg å enkelt forbedre din DET talepoengsum.",
+    "alt": "DET Øvelse:Den beste DET Snakke AI-korrigeringsplattformen",
+    "altbanner": "DET Tale AI Korreksjon",
     "bank_user_icon": "Bank Bruker Ikon",
     "white_arrow_right": "Hvite Pil Høyre",
     "purple_arrow_right": "Lilla Pil Høyre",
-    "learners_have": "{number} personer brukte ∑ Speaking AI rettingstjeneste.",
+    "learners_have": "{number} personer brukte DET Speaking AI rettingstjeneste.",
     "spn": "Kom i gang",
     "article1": {
       "h2": "Nøyaktig poengsum",
@@ -721,7 +721,7 @@
     },
     "article3": {
       "h2": "Profesjonell veiledning",
-      "right_desc": "I henhold til ∑ vurderingselementene, gir vi profesjonell veiledning for å hjelpe deg med å identifisere svakhetene i din tale og gjøre den perfekt.",
+      "right_desc": "I henhold til DET vurderingselementene, gir vi profesjonell veiledning for å hjelpe deg med å identifisere svakhetene i din tale og gjøre den perfekt.",
       "btn": "Begynn å oppleve"
     }
   },
@@ -734,7 +734,7 @@
     "h1": "Personvernregler",
     "q1": {
       "title": "Sist oppdatert: 2023-11-20",
-      "a1": "∑ Practice (“oss”, “vi” eller “vår”) driver ∑ Practice-nettstedet (tjenesten).",
+      "a1": "DET Practice (“oss”, “vi” eller “vår”) driver DET Practice-nettstedet (tjenesten).",
       "a2": "Denne siden informerer deg om våre retningslinjer angående innsamling, bruk og avsløring av personlig informasjon når du bruker vår tjeneste.",
       "a3": "Vi vil ikke bruke eller dele informasjonen din med noen, bortsett fra som beskrevet i denne personvernerklæringen.",
       "a4": "Vi bruker din personlige informasjon for å levere og forbedre tjenesten. Ved å bruke tjenesten godtar du innsamling og bruk av informasjon i samsvar med denne policyen. Med mindre annet er definert i denne personvernerklæringen, har vilkår brukt i denne personvernerklæringen de samme betydninger som i våre vilkår og betingelser, tilgjengelig på",

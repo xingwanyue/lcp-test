@@ -30,19 +30,19 @@
       "font": "Conquista il tuo esame con mock completi autentici: analisi approfondita e risultati istantanei, disponibili in qualsiasi momento, ovunque."
     },
     "prod4": {
-      "title": "∑ Test Simulato Completo",
-      "alt": "∑ Test Completo",
+      "title": "DET Test Simulato Completo",
+      "alt": "DET Test Completo",
       "font": "Sblocca DET Successo: Padronanza Completa, Tecniche Provate e Intuizioni Aggiornate per un'Eccellenza Sicura nel Parlare e nello Scrivere!"
     },
     "prodwriting": {
-      "title": "∑ Scrittura Correzione AI",
-      "alt": "∑ Scrivere Correzione AI",
+      "title": "DET Scrittura Correzione AI",
+      "alt": "DET Scrivere Correzione AI",
       "font": "Ottieni punteggi precisi e rapporti dettagliati così da poter migliorare le tue abilità di scrittura più velocemente. Supporta tutte le domande sulla scrittura!"
     },
     "prodspeaking": {
-      "title": "∑ Correzione AI Parlante",
-      "alt": "∑ Correzione AI di Parlato",
-      "font": "Sfrutta la potente IA per migliorare il tuo punteggio di ∑ orale in modo mirato. Supporta tutte le domande orali!"
+      "title": "DET Correzione AI Parlante",
+      "alt": "DET Correzione AI di Parlato",
+      "font": "Sfrutta la potente IA per migliorare il tuo punteggio di DET orale in modo mirato. Supporta tutte le domande orali!"
     }
   },
   "footer": {
@@ -99,8 +99,8 @@
       "btn_img_alt": "Freccia Gialla Destra"
     },
     "article2": {
-      "title": "∑ Test Completo Simulato",
-      "tips1": "Il più <span class='yellow'>Potente</span> Test Simulato, Vicino al <span class='yellow'>Vero Esame ∑</span>",
+      "title": "DET Test Completo Simulato",
+      "tips1": "Il più <span class='yellow'>Potente</span> Test Simulato, Vicino al <span class='yellow'>Vero Esame DET</span>",
       "tips2": "Esami Adattivi e Valutazione AI",
       "tips3": "Punteggi di Valutazione Accurati, Rapporto di Valutazione Dettagliato",
       "tips4": "I risultati saranno disponibili entro <span class='yellow'>5-30 minuti</span>",
@@ -108,7 +108,7 @@
       "btn_img_alt": "Freccia Gialla Destra"
     },
     "article3": {
-      "title": "∑ Scrittura Correzione AI",
+      "title": "DET Scrittura Correzione AI",
       "tips1": "Supporto \"Scrivere sulla Foto\",\"Scrittura Interattiva\",\"Esempio di Scrittura\"",
       "tips2": "Valutazione AI, Correzione AI, Guida dell'Insegnante",
       "tips3": "Punteggi di Valutazione Accurati, Rapporto di Valutazione Dettagliato",
@@ -117,7 +117,7 @@
       "btn_img_alt": "Freccia Gialla Destra"
     },
     "article4": {
-      "title": "∑ Correzione AI parlante",
+      "title": "DET Correzione AI parlante",
       "tips1": "Supporto \"Ascolta, poi Parla\", \"Parla della Foto\", \"Leggi, poi Parla\", \"Esempio di Parlato\"",
       "tips2": "Risultati della valutazione AI, Punteggio AI, Guida dell'insegnante",
       "tips3": "Punteggi di Valutazione Accurati, Rapporto di Valutazione Dettagliato",
@@ -126,8 +126,8 @@
       "btn_img_alt": "Freccia Destra Gialla"
     },
     "article5": {
-      "title": "∫ Corso",
-      "tips1": "Sviluppa una <span class='yellow'>comprensione approfondita</span> delle sezioni di ∑ parlato e scritto con le nostre guide dettagliate",
+      "title": "Duolingo English Test Corso",
+      "tips1": "Sviluppa una <span class='yellow'>comprensione approfondita</span> delle sezioni di DET parlato e scritto con le nostre guide dettagliate",
       "tips2": "Ottieni una Padronanza Completa",
       "tips3": "Impara dagli esperti di ESL",
       "tips4": "Rimani informato e avanti",
@@ -180,7 +180,7 @@
       "switch2": "Corsi",
       "sep": "Pagamento sicuro",
       "ca": "Annulla in qualsiasi momento",
-      "atde": "Domina la ∑ ora",
+      "atde": "Domina la DET ora",
       "circle_check_icon": "icona_di_controllo_cerchio",
       "Most_Popular_Choice": "Scelta più popolare",
       "off": "{sconto}% di sconto",
@@ -276,7 +276,7 @@
       "Valutazioni vocali basate sull'Intelligenza Artificiale"
     ],
     "correctServiceQuanYi": [
-      "Può essere usato per ∑ scrivere e parlare",
+      "Può essere usato per DET scrivere e parlare",
       "Punteggio AI, Punteggio accurato",
       "Risultati della valutazione dell'IA",
       "Rapporto di Valutazione Dettagliato",
@@ -310,7 +310,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>Simulazioni di esami completi</span>",
       "Prova in qualsiasi momento",
-      "Vicino all'<span class='strongfont'>esame reale ∑</span>",
+      "Vicino all'<span class='strongfont'>esame reale DET</span>",
       "Punteggi di valutazione accurati",
       "Rapporto di valutazione dettagliato",
       "I risultati saranno disponibili entro <span class='strongfont'>5-30 minuti</span>"
@@ -369,17 +369,17 @@
       "description": ""
     },
     "title": "Informazioni su DET Practice",
-    "title_desc": "DETPractice.com è la migliore piattaforma per ∫ Praticare e Imparare.",
+    "title_desc": "DETPractice.com è la migliore piattaforma per Duolingo English Test Praticare e Imparare.",
     "check_out": {
       "h2": "Scopri Cosa Possiamo Fare",
-      "qbt": "∑ Banca delle Domande",
-      "qbtdesc": "Abbiamo la più grande banca di domande e la aggiorniamo ogni giorno. Puoi migliorare rapidamente il tuo punteggio ∫ praticando le domande.",
-      "flm": "∑ Simulazione Completa",
-      "flmdesc": "Abbiamo il più potente ∑ mock test, che ti permette di valutare accuratamente i tuoi punteggi dei test a un costo inferiore.",
-      "acs": "∑ Servizio di Correzione AI",
-      "acsdesc": "Puoi utilizzare gli strumenti di correzione AI che forniamo per migliorare rapidamente i tuoi punteggi di ∑ espressione orale e scrittura.",
-      "dc": "∑ Corsi",
-      "dedesc": "Continueremo a sviluppare materiali di preparazione ai test e corsi basati sulle ultime caratteristiche dei test di ∑."
+      "qbt": "DET Banca delle Domande",
+      "qbtdesc": "Abbiamo la più grande banca di domande e la aggiorniamo ogni giorno. Puoi migliorare rapidamente il tuo punteggio Duolingo English Test praticando le domande.",
+      "flm": "DET Simulazione Completa",
+      "flmdesc": "Abbiamo il più potente DET mock test, che ti permette di valutare accuratamente i tuoi punteggi dei test a un costo inferiore.",
+      "acs": "DET Servizio di Correzione AI",
+      "acsdesc": "Puoi utilizzare gli strumenti di correzione AI che forniamo per migliorare rapidamente i tuoi punteggi di DET espressione orale e scrittura.",
+      "dc": "DET Corsi",
+      "dedesc": "Continueremo a sviluppare materiali di preparazione ai test e corsi basati sulle ultime caratteristiche dei test di DET."
     },
     "three_our_our": {
       "h2": "Anche se Giovane, Ma Forte",
@@ -465,13 +465,13 @@
       "description": "DET Writing AI Servizio di correzione fornito da AI paragonabile a insegnanti professionisti. \nIl tuo saggio verrà corretto in base alle regole di punteggio DET e riceverai un feedback dettagliato entro 1-5 minuti.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Scrittura AI Correzione",
-    "desc": "∑ Servizio di correzione AI fornito da AI paragonabile a insegnanti professionisti. Il tuo saggio sarà corretto in base alle ∑ regole di valutazione e riceverai un feedback dettagliato entro 1-5 minuti.",
+    "h1": "DET Scrittura AI Correzione",
+    "desc": "DET Servizio di correzione AI fornito da AI paragonabile a insegnanti professionisti. Il tuo saggio sarà corretto in base alle DET regole di valutazione e riceverai un feedback dettagliato entro 1-5 minuti.",
     "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di Pratica",
     "useralt": "Icona utente",
     "white_arrow_right": "freccia_bianca_destra",
     "yellow_arrow_right": "freccia_gialla_destra",
-    "learners_have": "{number} persone hanno utilizzato il servizio di Correzione AI ∑ Writing.",
+    "learners_have": "{number} persone hanno utilizzato il servizio di Correzione AI DET Writing.",
     "Review_Now": "Inizia",
     "Correct_Now": "Inizia a sperimentare",
     "Get_Scored_Now": "Inizia a sperimentare",
@@ -487,7 +487,7 @@
     },
     "h2_3": {
       "h2": "Guida professionale",
-      "right_desc": "Secondo gli elementi di punteggio ∑, forniamo una consulenza professionale per aiutarti a individuare i punti deboli del tuo documento e renderlo perfetto."
+      "right_desc": "Secondo gli elementi di punteggio DET, forniamo una consulenza professionale per aiutarti a individuare i punti deboli del tuo documento e renderlo perfetto."
     },
     "h2_4": {
       "h2": "Lucidatura del saggio",
@@ -497,7 +497,7 @@
   "courses": {
     "seometa": {
       "title": "DET Pratica - Padrona Parlare e Scrivere con la Duolingo English Test Guida",
-      "description": "Sblocca il tuo potenziale con la nostra ∫ Guida. Immergiti nell'eccellenza del parlare e dello scrivere con strategie complete, consigli di esperti e ∑ Pratiche aggiornate."
+      "description": "Sblocca il tuo potenziale con la nostra Duolingo English Test Guida. Immergiti nell'eccellenza del parlare e dello scrivere con strategie complete, consigli di esperti e DET Pratiche aggiornate."
     },
     "article1": {
       "title": "Caratteristiche principali di DET Eccellenza dell'Esame Orale:",
@@ -632,7 +632,7 @@
       "description": "Vivi un realistico esame di simulazione Duolingo con gli esami a lunghezza intera di DET Practice. Con domande intelligenti e adattive e punteggi AI, i nostri esami di simulazione offrono una valutazione accurata per prepararti efficacemente per il Duolingo English Test.",
       "keywords": "Duolingo Test di prova, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test online"
     },
-    "h1": "∑ Test Completo di Simulazione",
+    "h1": "DET Test Completo di Simulazione",
     "desc": "Immergiti in un'esperienza d'esame realistica con i nostri esami simulati a grandezza naturale. Assapora il vero processo di test prima dell'evento reale e ricevi rapidamente punteggi e report diagnostici dettagliati per individuare le aree da migliorare.",
     "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di practice",
     "mock_user_icon": "Icona utente simulata",
@@ -664,10 +664,10 @@
       "description": "Il nostro database di test DET include migliaia di domande per un'ampia preparazione, complete di spiegazioni dettagliate e analisi AI per aiutarti a raggiungere il successo.",
       "keywords": "Duolingo English Test Pratica, Duolingo Pratica Test di Inglese, Duolingo Test di Pratica Inglese, Duolingo Test di Pratica Online, Duolingo Test di Pratica, Duolingo Test di Pratica, Duolingo Pratica, Det Test di Pratica, Duolingo English Test Punteggio"
     },
-    "h1": "∫ Pratica",
+    "h1": "Duolingo English Test Pratica",
     "desc": "Accedi a un'ampia raccolta di domande di test, arricchita con analisi delle risposte, modelli, valutazioni del parlato guidate dall'IA e pianificazione intelligente. Accelera il miglioramento del tuo punteggio in modo efficiente ed economico con il nostro approccio alimentato dall'IA.",
     "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di Pratica",
-    "altbanner": "∫ Pratica",
+    "altbanner": "Duolingo English Test Pratica",
     "bank_user_icon": "Icona Utente della Banca",
     "white_arrow_right": "Freccia Bianca Destra",
     "blue_arrow_right": "Freccia Blu a Destra",
@@ -700,14 +700,14 @@
       "description": "Servizio di correzione AI parlante DET fornito da una potente intelligenza artificiale. \nSupporta tutti i tipi di domande sulla conversazione e fornisce una guida professionale per aiutarti a migliorare facilmente il tuo punteggio di conversazione DET.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Correzione dell'IA di parola",
-    "desc": "∑ Servizio di correzione del parlato fornito da un potente AI. Supporta tutti i tipi di domande orali e fornisce una guida professionale per aiutarti a migliorare facilmente il tuo ∑ punteggio di speaking.",
-    "alt": "∑ Pratica:La migliore ∑ piattaforma di correzione per il parlato AI",
-    "altbanner": "∑ Correzione AI Parlante",
+    "h1": "DET Correzione dell'IA di parola",
+    "desc": "DET Servizio di correzione del parlato fornito da un potente AI. Supporta tutti i tipi di domande orali e fornisce una guida professionale per aiutarti a migliorare facilmente il tuo DET punteggio di speaking.",
+    "alt": "DET Pratica:La migliore DET piattaforma di correzione per il parlato AI",
+    "altbanner": "DET Correzione AI Parlante",
     "bank_user_icon": "Icona Utente della Banca",
     "white_arrow_right": "Freccia Bianca Destra",
     "purple_arrow_right": "Freccia Viola Destra",
-    "learners_have": "{number} persone hanno utilizzato il servizio di correzione vocale ∑ Speaking AI.",
+    "learners_have": "{number} persone hanno utilizzato il servizio di correzione vocale DET Speaking AI.",
     "spn": "Inizia",
     "article1": {
       "h2": "Punteggio accurato",
@@ -721,7 +721,7 @@
     },
     "article3": {
       "h2": "Guida professionale",
-      "right_desc": "Secondo gli elementi di punteggio ∑, forniamo una guida professionale per aiutarti a identificare le debolezze nel tuo parlare e renderlo perfetto.",
+      "right_desc": "Secondo gli elementi di punteggio DET, forniamo una guida professionale per aiutarti a identificare le debolezze nel tuo parlare e renderlo perfetto.",
       "btn": "Inizia a sperimentare"
     }
   },
@@ -734,7 +734,7 @@
     "h1": "Informativa sulla privacy",
     "q1": {
       "title": "Ultimo aggiornamento: 2023-11-20",
-      "a1": "∑ Practice (“noi”, “ci” o “nostro”) gestisce il sito web ∑ Practice (il “Servizio”).",
+      "a1": "DET Practice (“noi”, “ci” o “nostro”) gestisce il sito web DET Practice (il “Servizio”).",
       "a2": "Questa pagina ti informa delle nostre politiche riguardanti la raccolta, l'uso e la divulgazione delle Informazioni Personali quando usi il nostro Servizio.",
       "a3": "Non utilizzeremo né condivideremo le tue informazioni con nessuno, tranne che come descritto in questa Informativa sulla privacy.",
       "a4": "Utilizziamo le tue Informazioni Personali per fornire e migliorare il Servizio. Utilizzando il Servizio, acconsenti alla raccolta e all'uso delle informazioni in conformità con questa politica. Salvo diversa definizione nella presente Informativa sulla Privacy, i termini utilizzati nella presente Informativa sulla Privacy hanno lo stesso significato dei nostri Termini e Condizioni, accessibili su",

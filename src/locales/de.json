@@ -30,19 +30,19 @@
       "font": "Erobern Sie Ihre Prüfung mit authentischen, vollständigen Mock-Tests: Detaillierte Analyse und sofortige Ergebnisse, jederzeit und überall verfügbar."
     },
     "prod4": {
-      "title": "∑ Vollständiger Probetest",
-      "alt": "∑ Vollständiger Probetest",
+      "title": "DET Vollständiger Probetest",
+      "alt": "DET Vollständiger Probetest",
       "font": "Entschlüsseln DET Erfolg: Umfassende Beherrschung, Bewährte Techniken und Aktuelle Einblicke für Selbstbewusste Sprech- und Schreibkompetenz!"
     },
     "prodwriting": {
-      "title": "∑ KI-Korrektur schreiben",
-      "alt": "∑ Schreiben AI-Korrektur",
+      "title": "DET KI-Korrektur schreiben",
+      "alt": "DET Schreiben AI-Korrektur",
       "font": "Erhalten Sie genaue Bewertungen und detaillierte Berichte, damit Sie Ihre Schreibfähigkeiten schneller verbessern können. Unterstützung für alle Schreibfragen!"
     },
     "prodspeaking": {
-      "title": "∑ Sprechende KI-Korrektur",
-      "alt": "∑ Sprechen AI-Korrektur",
-      "font": "Nutzen Sie leistungsstarke KI, um Ihr ∑ Sprechen gezielt zu verbessern. Unterstützung für alle Sprechfragen!"
+      "title": "DET Sprechende KI-Korrektur",
+      "alt": "DET Sprechen AI-Korrektur",
+      "font": "Nutzen Sie leistungsstarke KI, um Ihr DET Sprechen gezielt zu verbessern. Unterstützung für alle Sprechfragen!"
     }
   },
   "footer": {
@@ -99,8 +99,8 @@
       "btn_img_alt": "Gelber Pfeil rechts"
     },
     "article2": {
-      "title": "∑ Vollständiger Probetest",
-      "tips1": "Der <span class='yellow'>mächtigste</span> Probetest, nah an der <span class='yellow'>realen ∑ Prüfung</span>",
+      "title": "DET Vollständiger Probetest",
+      "tips1": "Der <span class='yellow'>mächtigste</span> Probetest, nah an der <span class='yellow'>realen DET Prüfung</span>",
       "tips2": "Adaptive Prüfungen und KI-Bewertung",
       "tips3": "Genaue Bewertungsergebnisse, Detaillierter Bewertungsbericht",
       "tips4": "Die Ergebnisse werden innerhalb von <span class='yellow'>5-30 Minuten</span> verfügbar sein.",
@@ -108,7 +108,7 @@
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "article3": {
-      "title": "∑ Schreiben KI-Korrektur",
+      "title": "DET Schreiben KI-Korrektur",
       "tips1": "Unterstützung \"Schreiben über das Foto\", \"Interaktives Schreiben\", \"Schreibbeispiel\"",
       "tips2": "KI-Bewertung, KI-Korrektur, Lehreranleitung",
       "tips3": "Genauere Bewertungsergebnisse, Detaillierter Bewertungsbericht",
@@ -117,7 +117,7 @@
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "article4": {
-      "title": "∑ Sprach-AI Korrektur",
+      "title": "DET Sprach-AI Korrektur",
       "tips1": "Unterstützung \"Hören, dann Sprechen\", \"Über das Foto sprechen\", \"Lesen, dann Sprechen\", \"Sprechprobe\"",
       "tips2": "AI-Bewertung, Ergebnisse der AI-Evaluierung, Lehreranleitung",
       "tips3": "Genaue Bewertungsergebnisse, Detaillierter Bewertungsbericht",
@@ -126,8 +126,8 @@
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "article5": {
-      "title": "∫ Kurs",
-      "tips1": "Entwickeln Sie ein <span class='yellow'>tiefgehendes Verständnis</span> der ∑ Sprech- und Schreibabschnitte mit unseren detaillierten Anleitungen",
+      "title": "Duolingo English Test Kurs",
+      "tips1": "Entwickeln Sie ein <span class='yellow'>tiefgehendes Verständnis</span> der DET Sprech- und Schreibabschnitte mit unseren detaillierten Anleitungen",
       "tips2": "Erreichen Sie umfassende Beherrschung",
       "tips3": "Lernen Sie von ESL-Experten",
       "tips4": "Bleiben Sie informiert und voraus\n",
@@ -180,7 +180,7 @@
       "switch2": "Kurse",
       "sep": "Sichere Zahlung",
       "ca": "Jederzeit kündigen",
-      "atde": "Gehe jetzt zur ∑",
+      "atde": "Gehe jetzt zur DET",
       "circle_check_icon": "Kreis_kontrollsymbol",
       "Most_Popular_Choice": "Beliebteste Wahl",
       "off": "{off}% Rabatt",
@@ -276,7 +276,7 @@
       "KI-gesteuerte Sprechbewertungen"
     ],
     "correctServiceQuanYi": [
-      "Kann für ∑ Schreiben und Sprechen verwendet werden",
+      "Kann für DET Schreiben und Sprechen verwendet werden",
       "KI-Bewertung, Genaues Ergebnis",
       "Ergebnisse der KI-Bewertung",
       "Detaillierter Bewertungsbericht",
@@ -310,7 +310,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>Vollständige</span> Übungsprüfungen",
       "Testen Sie jederzeit",
-      "Nah an der <span class='strongfont'>realen ∑ Prüfung</span>",
+      "Nah an der <span class='strongfont'>realen DET Prüfung</span>",
       "Genau Bewertungsergebnisse",
       "Detaillierter Bewertungsbericht",
       "Ergebnisse werden innerhalb von <span class='strongfont'>5-30 Minuten</span> verfügbar sein."
@@ -369,17 +369,17 @@
       "description": ""
     },
     "title": "Über DET Übung",
-    "title_desc": "DETPractice.com ist die beste Plattform für ∫ Üben und Lernen.",
+    "title_desc": "DETPractice.com ist die beste Plattform für Duolingo English Test Üben und Lernen.",
     "check_out": {
       "h2": "Überprüfen Sie, was wir tun können",
-      "qbt": "∑ Fragenbank",
-      "qbtdesc": "Wir haben die größte Fragensammlung und aktualisieren sie täglich. Sie können Ihre ∫ Punktzahl schnell verbessern, indem Sie die Fragen üben.",
-      "flm": "∑ Ganzkörper-Mock",
-      "flmdesc": " Wir haben den leistungsstärksten ∑-Praxistest, der es Ihnen ermöglicht, Ihre Testergebnisse genau zu bewerten und dabei Kosten zu sparen.",
-      "acs": "∑ KI-Korrekturservice",
-      "acsdesc": "Sie können die von uns bereitgestellten KI-Korrekturwerkzeuge verwenden, um Ihre ∑ Sprech- und Schreibpunktzahlen schnell zu verbessern.",
-      "dc": "∑ Kurse",
-      "dedesc": "Wir werden weiterhin Vorbereitungsmaterialien und -kurse basierend auf den neuesten Testfunktionen von ∑ entwickeln."
+      "qbt": "DET Fragenbank",
+      "qbtdesc": "Wir haben die größte Fragensammlung und aktualisieren sie täglich. Sie können Ihre Duolingo English Test Punktzahl schnell verbessern, indem Sie die Fragen üben.",
+      "flm": "DET Ganzkörper-Mock",
+      "flmdesc": " Wir haben den leistungsstärksten DET-Praxistest, der es Ihnen ermöglicht, Ihre Testergebnisse genau zu bewerten und dabei Kosten zu sparen.",
+      "acs": "DET KI-Korrekturservice",
+      "acsdesc": "Sie können die von uns bereitgestellten KI-Korrekturwerkzeuge verwenden, um Ihre DET Sprech- und Schreibpunktzahlen schnell zu verbessern.",
+      "dc": "DET Kurse",
+      "dedesc": "Wir werden weiterhin Vorbereitungsmaterialien und -kurse basierend auf den neuesten Testfunktionen von DET entwickeln."
     },
     "three_our_our": {
       "h2": "Obwohl Jung, Aber Stark",
@@ -465,13 +465,13 @@
       "description": "Der von AI bereitgestellte DET Writing AI-Korrekturdienst ist mit professionellen Lehrern vergleichbar. \nIhr Aufsatz wird anhand der DET-Bewertungsregeln korrigiert und Sie erhalten innerhalb von 1–5 Minuten ein detailliertes Feedback.",
       "keywords": "需要提供"
     },
-    "h1": "∑ KI-Korrektur schreiben",
-    "desc": "∑ Schreibkorrekturservice von AI, vergleichbar mit professionellen Lehrern. Ihr Aufsatz wird basierend auf ∑ Bewertungsregeln korrigiert, und Sie erhalten innerhalb von 1-5 Minuten detailliertes Feedback.",
+    "h1": "DET KI-Korrektur schreiben",
+    "desc": "DET Schreibkorrekturservice von AI, vergleichbar mit professionellen Lehrern. Ihr Aufsatz wird basierend auf DET Bewertungsregeln korrigiert, und Sie erhalten innerhalb von 1-5 Minuten detailliertes Feedback.",
     "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
     "useralt": "Benutzer-Symbol",
     "white_arrow_right": "weißer_pfeil_rechts",
     "yellow_arrow_right": "gelber_pfeil_rechts",
-    "learners_have": "{number} Personen nutzten den ∑ Writing AI Correction-Dienst.",
+    "learners_have": "{number} Personen nutzten den DET Writing AI Correction-Dienst.",
     "Review_Now": "Loslegen",
     "Correct_Now": "Beginnen Sie zu erleben",
     "Get_Scored_Now": "Starten Sie das Erlebnis",
@@ -487,7 +487,7 @@
     },
     "h2_3": {
       "h2": "Professionelle Beratung",
-      "right_desc": "Laut den ∑ Bewertungsfaktoren bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Papier zu identifizieren und es perfekt zu machen."
+      "right_desc": "Laut den DET Bewertungsfaktoren bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Papier zu identifizieren und es perfekt zu machen."
     },
     "h2_4": {
       "h2": "Essay-Überarbeitung",
@@ -497,7 +497,7 @@
   "courses": {
     "seometa": {
       "title": "DET Übung - Beherrschen Sie Sprechen und Schreiben mit dem Duolingo English Test Leitfaden",
-      "description": "Entfesseln Sie Ihr Potenzial mit unserem ∫ Leitfaden. Tauchen Sie ein in Sprach- und Schreibexzellenz mit umfassenden Strategien, Expertentipps und aktualisiertem ∑ Übungsmaterial."
+      "description": "Entfesseln Sie Ihr Potenzial mit unserem Duolingo English Test Leitfaden. Tauchen Sie ein in Sprach- und Schreibexzellenz mit umfassenden Strategien, Expertentipps und aktualisiertem DET Übungsmaterial."
     },
     "article1": {
       "title": "Hauptmerkmale der DET Prüfung zur Sprachbeherrschung:",
@@ -632,7 +632,7 @@
       "description": "Erleben Sie einen realistischen Duolingo-Probetest mit DET Practice's Vollzeit-Prüfungen. Mit intelligenten adaptiven Fragen und KI-Bewertung bieten unsere Probetests eine genaue Bewertung, um Sie effektiv auf das Duolingo English Test vorzubereiten.",
       "keywords": "Duolingo Mock-Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
     },
-    "h1": "∑ Vollständiger Probetest",
+    "h1": "DET Vollständiger Probetest",
     "desc": "Tauchen Sie ein in eine realistische Prüfungserfahrung mit unseren groß angelegten Übungsprüfungen. Erhalten Sie einen Vorgeschmack auf den tatsächlichen Prüfungsprozess, bevor es ernst wird und erhalten Sie schnell Ergebnisse und detaillierte Diagnoseberichte, um Verbesserungsbereiche zu identifizieren.",
     "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
     "mock_user_icon": "Benutzersymbol simulieren",
@@ -664,10 +664,10 @@
       "description": "Unsere DET Testbank umfasst Tausende von Fragen für umfangreiches Training, vollständig mit detaillierten Erklärungen und AI-Analyse, um Ihnen zum Erfolg zu verhelfen.",
       "keywords": "Duolingo English Test Übung, Duolingo Übungsprüfung Englisch, Duolingo Englisch-Übungsprüfung, Duolingo Übungsprüfung online, Duolingo Prüfungsübung, Duolingo Übungsprüfung, Duolingo Übung, Det Übungsprüfung, Duolingo English Test Punktzahl"
     },
-    "h1": "∫ Übung",
+    "h1": "Duolingo English Test Übung",
     "desc": "Erhalten Sie Zugang zu einer umfangreichen Sammlung von Testfragen, ergänzt durch Antwortanalysen, Vorlagen, KI-gesteuerte Sprechbewertungen und intelligente Planung. Beschleunigen Sie Ihre Punktzahlverbesserung effizient und kostengünstig mit unserem KI-gestützten Ansatz.",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
-    "altbanner": "∫ Übung",
+    "altbanner": "Duolingo English Test Übung",
     "bank_user_icon": "Bankbenutzer-Symbol",
     "white_arrow_right": "Weißer Pfeil rechts",
     "blue_arrow_right": "Blauer Pfeil nach rechts",
@@ -700,14 +700,14 @@
       "description": "DET Sprechender KI-Korrekturdienst, bereitgestellt durch leistungsstarke KI. \nUnterstützt alle Arten von Sprechfragen und bietet professionelle Anleitung, die Ihnen dabei hilft, Ihre DET-Punktzahl für Sprechfragen auf einfache Weise zu verbessern.",
       "keywords": "Benötigt werden"
     },
-    "h1": "∑ Sprechende KI Korrektur",
-    "desc": "∑ Sprachkorrekturdienst bereitgestellt von leistungsstarker KI. Unterstützt alle Arten von Sprechaufgaben und bietet professionelle Anleitung, um Ihnen zu helfen, Ihre ∑ Sprechbewertung einfach zu verbessern.",
-    "alt": "∑ Übung: Die beste ∑ Plattform für KI-gestützte Sprachkorrektur",
-    "altbanner": "∑ Sprechende KI-Korrektur",
+    "h1": "DET Sprechende KI Korrektur",
+    "desc": "DET Sprachkorrekturdienst bereitgestellt von leistungsstarker KI. Unterstützt alle Arten von Sprechaufgaben und bietet professionelle Anleitung, um Ihnen zu helfen, Ihre DET Sprechbewertung einfach zu verbessern.",
+    "alt": "DET Übung: Die beste DET Plattform für KI-gestützte Sprachkorrektur",
+    "altbanner": "DET Sprechende KI-Korrektur",
     "bank_user_icon": "Bank Nutzer Icon",
     "white_arrow_right": "Weißer Pfeil nach rechts",
     "purple_arrow_right": "Lila Pfeil nach rechts",
-    "learners_have": "{number} Personen haben den ∑ Speaking AI-Korrekturservice genutzt.",
+    "learners_have": "{number} Personen haben den DET Speaking AI-Korrekturservice genutzt.",
     "spn": "Loslegen",
     "article1": {
       "h2": "Genaues Ergebnis",
@@ -721,7 +721,7 @@
     },
     "article3": {
       "h2": "Professionelle Beratung",
-      "right_desc": "Gemäß den ∑ Bewertungselementen bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Sprechen zu identifizieren und es perfekt zu machen.",
+      "right_desc": "Gemäß den DET Bewertungselementen bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Sprechen zu identifizieren und es perfekt zu machen.",
       "btn": "Beginnen Sie zu erleben"
     }
   },
@@ -734,7 +734,7 @@
     "h1": "Datenschutzerklärung",
     "q1": {
       "title": "Zuletzt aktualisiert: 2023-11-20",
-      "a1": "∑ Practice („uns“, „wir“ oder „unser“) betreibt die ∑ Practice-Website (den „Service“).",
+      "a1": "DET Practice („uns“, „wir“ oder „unser“) betreibt die DET Practice-Website (den „Service“).",
       "a2": "Diese Seite informiert Sie über unsere Richtlinien bezüglich der Erhebung, Nutzung und Offenlegung von persönlichen Informationen, wenn Sie unseren Service nutzen.",
       "a3": "Wir werden Ihre Informationen nicht verwenden oder weitergeben, außer wie in dieser Datenschutzrichtlinie beschrieben.",
       "a4": "Wir verwenden Ihre persönlichen Informationen, um den Service bereitzustellen und zu verbessern. Durch die Nutzung des Services stimmen Sie der Erfassung und Verwendung von Informationen gemäß dieser Richtlinie zu. Sofern in dieser Datenschutzrichtlinie nicht anders definiert, haben Begriffe in dieser Datenschutzrichtlinie die gleiche Bedeutung wie in unseren Allgemeinen Geschäftsbedingungen, zugänglich unter",

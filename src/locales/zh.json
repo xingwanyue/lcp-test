@@ -30,19 +30,19 @@
       "font": "使用真实的全长模拟考试征服你的考试：深入分析和即时结果，随时随地可用。"
     },
     "prod4": {
-      "title": "∑ 全长模拟测试",
-      "alt": "∑ 全长模拟测试",
+      "title": "DET 全长模拟测试",
+      "alt": "DET 全长模拟测试",
       "font": "解锁 DET 成功：全面掌握、经过验证的技巧和最新见解，自信地说写出色！"
     },
     "prodwriting": {
-      "title": "∑ 写作人工智能纠正",
-      "alt": "∑ 编写 AI 校正",
+      "title": "DET 写作人工智能纠正",
+      "alt": "DET 编写 AI 校正",
       "font": "获取准确的分数和详细的报告，以便您可以更快地提高写作技能。支持所有写作问题！"
     },
     "prodspeaking": {
-      "title": "∑ 语音 AI 修正",
-      "alt": "∑ 语音 AI 校正",
-      "font": "利用强大的AI以有针对性的方式提高你的∑口语分数。支持所有口语问题！"
+      "title": "DET 语音 AI 修正",
+      "alt": "DET 语音 AI 校正",
+      "font": "利用强大的AI以有针对性的方式提高你的DET口语分数。支持所有口语问题！"
     }
   },
   "footer": {
@@ -91,8 +91,8 @@
       "btn_img_alt": "黄色箭头右"
     },
     "article2": {
-      "title": "∑完整模拟测试",
-      "tips1": "最 <span class='yellow'>强大的</span> 模拟测试，接近 <span class='yellow'>真实 ∑ 考试</span>",
+      "title": "DET完整模拟测试",
+      "tips1": "最 <span class='yellow'>强大的</span> 模拟测试，接近 <span class='yellow'>真实 DET 考试</span>",
       "tips2": "自适应考试和人工智能评分",
       "tips3": "准确的评估分数，详细的评估报告",
       "tips4": "结果将在<span class='yellow'>5-30分钟</span>内可用",
@@ -100,7 +100,7 @@
       "btn_img_alt": "黄色箭头右"
     },
     "article3": {
-      "title": "∑ 编写人工智能校正",
+      "title": "DET 编写人工智能校正",
       "tips1": "支持 \"写关于照片\", \"互动写作\", \"写作样本\"",
       "tips2": "AI评分, AI修正, 教师指导",
       "tips3": "准确的评估分数，详细的评估报告",
@@ -109,7 +109,7 @@
       "btn_img_alt": "黄色箭头右"
     },
     "article4": {
-      "title": "∑ 说话 AI 纠正",
+      "title": "DET 说话 AI 纠正",
       "tips1": "支持 \"先听，然后说\", \"谈谈照片\", \"阅读后说\", \"口语样本\"",
       "tips2": "AI评分, AI评估结果, 教师指导",
       "tips3": "准确的评估分数，详细的评估报告",
@@ -118,8 +118,8 @@
       "btn_img_alt": "黄色箭头右"
     },
     "article5": {
-      "title": "∫ 课程",
-      "tips1": "开发对 <span class='yellow'>深入了解</span> ∑ 口语和写作部分的深入理解与我们的详细指南",
+      "title": "Duolingo English Test 课程",
+      "tips1": "开发对 <span class='yellow'>深入了解</span> DET 口语和写作部分的深入理解与我们的详细指南",
       "tips2": "实现全面掌握",
       "tips3": "向ESL专家学习",
       "tips4": "保持知情，走在前列",
@@ -172,7 +172,7 @@
       "switch2": "课程",
       "sep": "安全支付",
       "ca": "随时取消",
-      "atde": "掌握∑现在",
+      "atde": "掌握DET现在",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI校正服务",
       "Most_Popular_Choice": "最受欢迎的选择",
@@ -268,7 +268,7 @@
       "AI驱动的口语评估"
     ],
     "correctServiceQuanYi": [
-      "可以用于∑写作和口语",
+      "可以用于DET写作和口语",
       "AI评分，准确评分",
       "AI评估结果",
       "详细评估报告",
@@ -302,7 +302,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>全长</span> 模拟考试",
       "随时测试",
-      "接近 <span class='strongfont'>真实 ∑ 考试</span>",
+      "接近 <span class='strongfont'>真实 DET 考试</span>",
       "准确的评估分数",
       "详细评估报告",
       "结果将在<span class='strongfont'>5-30分钟</span>内可用"
@@ -361,17 +361,17 @@
       "description": ""
     },
     "title": "关于 DET Practice",
-    "title_desc": "DETPractice.com 是最好的 ∫ 练习和学习平台。",
+    "title_desc": "DETPractice.com 是最好的 Duolingo English Test 练习和学习平台。",
     "check_out": {
       "h2": "查看我们的能耐",
-      "qbt": "∑ 题库",
-      "qbtdesc": "我们拥有最大的题库，并每天更新。通过练习这些问题，您可以快速提高您的∫成绩。",
-      "flm": "∑ 全真模拟",
-      "flmdesc": "我们有最强大的∑模拟测试，它能让你以更低的成本准确评估你的测试成绩。",
-      "acs": "∑ AI 校对服务",
-      "acsdesc": "您可以使用我们提供的AI校正工具来快速提高您的∑口语和写作成绩。",
-      "dc": "∑ 课程",
-      "dedesc": "我们将继续基于 ∑ 的最新测试功能开发考试准备材料和课程。"
+      "qbt": "DET 题库",
+      "qbtdesc": "我们拥有最大的题库，并每天更新。通过练习这些问题，您可以快速提高您的Duolingo English Test成绩。",
+      "flm": "DET 全真模拟",
+      "flmdesc": "我们有最强大的DET模拟测试，它能让你以更低的成本准确评估你的测试成绩。",
+      "acs": "DET AI 校对服务",
+      "acsdesc": "您可以使用我们提供的AI校正工具来快速提高您的DET口语和写作成绩。",
+      "dc": "DET 课程",
+      "dedesc": "我们将继续基于 DET 的最新测试功能开发考试准备材料和课程。"
     },
     "three_our_our": {
       "h2": "虽然年轻，但坚强",
@@ -457,13 +457,13 @@
       "description": "AI提供的DET写作AI批改服务可媲美专业老师。您的论文将根据DET评分规则进行批改，您将在1-5分钟内收到详细的反馈。",
       "keywords": "需要提供"
     },
-    "h1": "∑ 编写人工智能校正",
-    "desc": "∑ 由人工智能提供的写作纠正服务媲美专业教师。您的文章将根据∑评分规则进行纠正，并且您将在1-5分钟内收到详细反馈。",
+    "h1": "DET 编写人工智能校正",
+    "desc": "DET 由人工智能提供的写作纠正服务媲美专业教师。您的文章将根据DET评分规则进行纠正，并且您将在1-5分钟内收到详细反馈。",
     "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
     "useralt": "用户图标",
     "white_arrow_right": "白色_箭头_右",
     "yellow_arrow_right": "黄色箭头右",
-    "learners_have": "{number} 人使用了 ∑ 写作AI校正服务。",
+    "learners_have": "{number} 人使用了 DET 写作AI校正服务。",
     "Review_Now": "开始使用",
     "Correct_Now": "开始体验",
     "Get_Scored_Now": "开始体验",
@@ -479,7 +479,7 @@
     },
     "h2_3": {
       "h2": "专业指导",
-      "right_desc": "根据∑评分元素，我们提供专业指导，帮助您识别论文中的弱点并使其完美。"
+      "right_desc": "根据DET评分元素，我们提供专业指导，帮助您识别论文中的弱点并使其完美。"
     },
     "h2_4": {
       "h2": "文章润色",
@@ -489,7 +489,7 @@
   "courses": {
     "seometa": {
       "title": "DET 练习 - 跟着Duolingo English Test指南掌握说和写的技巧",
-      "description": "解锁你的潜力与我们的∫指南。通过全面的策略、专家建议和最新的∑练习，深入探讨口语和写作的卓越之处。"
+      "description": "解锁你的潜力与我们的Duolingo English Test指南。通过全面的策略、专家建议和最新的DET练习，深入探讨口语和写作的卓越之处。"
     },
     "article1": {
       "title": "DET 口语考试卓越的关键特征：",
@@ -624,7 +624,7 @@
       "description": "使用DET练习的全长考试体验逼真的Duolingo模拟测试。我们的模拟测试具有智能自适应问题和人工智能评分，提供准确的评估，使您有效准备Duolingo English Test。",
       "keywords": "Duolingo 模拟测试, DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试"
     },
-    "h1": "∑ 全长模拟测试",
+    "h1": "DET 全长模拟测试",
     "desc": "将自己沉浸在真实的考试体验中，通过我们的全真模拟考试。 在真正的考试之前，先体验实际的测试过程，并快速收到分数和详细的诊断报告，以确定需要改进的领域。",
     "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
     "mock_user_icon": "模拟用户图标",
@@ -656,10 +656,10 @@
       "description": "我们的 DET 试题库包括数千个问题，供广泛练习，配有详细解释和 AI 分析，帮助您成功。",
       "keywords": "Duolingo English Test 练习, Duolingo 练习英语测试, Duolingo 英语练习测试, Duolingo 在线练习测试, Duolingo 测试练习, Duolingo 练习测试, Duolingo 练习, 挪威语练习测试, Duolingo English Test 分数"
     },
-    "h1": "∫ 练习",
+    "h1": "Duolingo English Test 练习",
     "desc": "获取丰富的测试题库，配有答案解析、模板、AI驱动的口语评估和智能规划。通过我们的AI驱动方法，高效且经济地提升你的分数。",
     "alt": "DET 练习:最好的 Duolingo English Test 练习平台",
-    "altbanner": "∫ 练习",
+    "altbanner": "Duolingo English Test 练习",
     "bank_user_icon": "银行用户图标",
     "white_arrow_right": "白色箭头向右",
     "blue_arrow_right": "蓝色箭头右",
@@ -692,14 +692,14 @@
       "description": "DET口语AI纠正服务由强大的AI提供。支持所有口语题型，并提供专业指导，帮助您轻松提高DET口语成绩。",
       "keywords": "需要提供"
     },
-    "h1": "∑ 说话 AI 更正",
-    "desc": "∑ 由强大的AI提供的口语纠正服务。支持所有口语题型，并提供专业指导，帮助你轻松提高 ∑ 口语分数。",
-    "alt": "∑ 练习: 最佳 ∑ 口语 AI 纠正平台",
-    "altbanner": "∑ 说话 AI 修正",
+    "h1": "DET 说话 AI 更正",
+    "desc": "DET 由强大的AI提供的口语纠正服务。支持所有口语题型，并提供专业指导，帮助你轻松提高 DET 口语分数。",
+    "alt": "DET 练习: 最佳 DET 口语 AI 纠正平台",
+    "altbanner": "DET 说话 AI 修正",
     "bank_user_icon": "银行用户图标",
     "white_arrow_right": "白色右箭头",
     "purple_arrow_right": "紫色箭头右",
-    "learners_have": "{number} 人使用了 ∑ Speaking AI 校正服务。",
+    "learners_have": "{number} 人使用了 DET Speaking AI 校正服务。",
     "spn": "开始使用",
     "article1": {
       "h2": "准确得分",
@@ -713,7 +713,7 @@
     },
     "article3": {
       "h2": "专业指导",
-      "right_desc": "根据 ∑ 评分元素，我们提供专业指导，帮助您识别口语中的弱点并使其完美。",
+      "right_desc": "根据 DET 评分元素，我们提供专业指导，帮助您识别口语中的弱点并使其完美。",
       "btn": "开始体验"
     }
   },
@@ -726,7 +726,7 @@
     "h1": "隐私政策",
     "q1": {
       "title": "上次更新：2023-11-20",
-      "a1": "∑ Practice（“我们”或“我们的”）运营 ∑ Practice 网站（“服务”）。",
+      "a1": "DET Practice（“我们”或“我们的”）运营 DET Practice 网站（“服务”）。",
       "a2": "本页面告知您在使用我们的服务时有关收集、使用和披露个人信息的政策。",
       "a3": "我们不会在本隐私政策所述情况之外使用或分享您的信息。",
       "a4": "我们使用您的个人信息来提供和改进服务。通过使用该服务，您同意根据本政策收集和使用信息。除非本隐私政策中另有定义，本隐私政策中使用的术语与我们的条款和条件中的术语具有相同的含义，可访问",

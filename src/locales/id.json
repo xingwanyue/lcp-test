@@ -30,19 +30,19 @@
       "font": "Taklukkan Ujian Anda dengan Ujian Palsu Lengkap yang Otentik: Analisis Mendalam dan Hasil Instan, Tersedia Kapan Saja, Di Mana Saja."
     },
     "prod4": {
-      "title": "∑ Ujian Tiruan Panjang Penuh",
-      "alt": "∑ Ujian Tiruan Penuh",
+      "title": "DET Ujian Tiruan Panjang Penuh",
+      "alt": "DET Ujian Tiruan Penuh",
       "font": "Buka DET Sukses: Penguasaan Komprehensif, Teknik Terbukti, dan Wawasan Terkini untuk Keunggulan Berbicara dan Menulis dengan Percaya Diri!"
     },
     "prodwriting": {
-      "title": "∑ Menulis Koreksi AI",
-      "alt": "∑ Penulisan Koreksi AI",
+      "title": "DET Menulis Koreksi AI",
+      "alt": "DET Penulisan Koreksi AI",
       "font": "Dapatkan skor yang akurat dan laporan terperinci sehingga Anda dapat meningkatkan keterampilan menulis Anda dengan lebih cepat. Dukung semua pertanyaan menulis!"
     },
     "prodspeaking": {
-      "title": "∑ Koreksi AI Berbicara",
-      "alt": "∑ Koreksi AI Berbicara",
-      "font": "Manfaatkan AI yang kuat untuk meningkatkan skor ∑ berbicara Anda secara terarah. Dukung semua pertanyaan berbicara!"
+      "title": "DET Koreksi AI Berbicara",
+      "alt": "DET Koreksi AI Berbicara",
+      "font": "Manfaatkan AI yang kuat untuk meningkatkan skor DET berbicara Anda secara terarah. Dukung semua pertanyaan berbicara!"
     }
   },
   "footer": {
@@ -99,8 +99,8 @@
       "btn_img_alt": "Panah Kuning Kanan"
     },
     "article2": {
-      "title": "∑ Ujian Percobaan Penuh",
-      "tips1": "The Most <span class='yellow'>Powerful</span> Mock Test, Close to <span class='yellow'>Real ∑ Exam</span>",
+      "title": "DET Ujian Percobaan Penuh",
+      "tips1": "The Most <span class='yellow'>Powerful</span> Mock Test, Close to <span class='yellow'>Real DET Exam</span>",
       "tips2": "Ujian Adaptif, dan Penilaian AI",
       "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Terperinci",
       "tips4": "Hasil akan tersedia dalam <span class='yellow'>5-30 menit</span>",
@@ -108,7 +108,7 @@
       "btn_img_alt": "Panah Kuning Kanan"
     },
     "article3": {
-      "title": "∑ Penulisan Koreksi AI",
+      "title": "DET Penulisan Koreksi AI",
       "tips1": "Dukung \"Menulis tentang Foto\",\"Menulis Interaktif\",\"Contoh Menulis\"",
       "tips2": "Penilaian AI, Koreksi AI, Bimbingan Guru",
       "tips3": "Skor Penilaian yang Akurat, Laporan Evaluasi yang Terperinci",
@@ -117,7 +117,7 @@
       "btn_img_alt": "Anak Panah Kuning Kanan"
     },
     "article4": {
-      "title": "∑ Koreksi AI Berbicara",
+      "title": "DET Koreksi AI Berbicara",
       "tips1": "Dukung \"Dengar, Lalu Bicara\", \"Bicara Tentang Foto\", \"Baca, lalu Bicara\", \"Contoh Berbicara\"",
       "tips2": "Penilaian AI, Hasil Evaluasi AI, Panduan Guru",
       "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Terperinci",
@@ -126,8 +126,8 @@
       "btn_img_alt": "Panah Kuning Kanan"
     },
     "article5": {
-      "title": "∫ Kursus",
-      "tips1": "Kembangkan <span class='yellow'>pemahaman mendalam</span> tentang ∑ bagian berbicara dan menulis dengan panduan rinci kami",
+      "title": "Duolingo English Test Kursus",
+      "tips1": "Kembangkan <span class='yellow'>pemahaman mendalam</span> tentang DET bagian berbicara dan menulis dengan panduan rinci kami",
       "tips2": "Capai Penguasaan Menyeluruh",
       "tips3": "Belajar dari Ahli ESL",
       "tips4": "Tetap Terinformasi dan Terdepan",
@@ -180,7 +180,7 @@
       "switch2": "Kursus",
       "sep": "Pembayaran aman",
       "ca": "Batalkan kapan saja",
-      "atde": "Kuasi sekarang ∑",
+      "atde": "Kuasi sekarang DET",
       "circle_check_icon": "circle_check_icon",
       "Most_Popular_Choice": "Pilihan Paling Populer",
       "off": "{off}% diskon",
@@ -276,7 +276,7 @@
       "Evaluasi Berbicara Bertenaga AI"
     ],
     "correctServiceQuanYi": [
-      "Dapat digunakan untuk ∑ menulis dan berbicara",
+      "Dapat digunakan untuk DET menulis dan berbicara",
       "Penilaian AI, Skor akurat",
       "Hasil Evaluasi AI",
       "Laporan Evaluasi Terperinci",
@@ -310,7 +310,7 @@
     "mockQuanYiList": [
       "<span class='strongfont'>Ujian Tiruan Penuh</span>",
       "Uji kapan saja",
-      "Dekat dengan <span class='strongfont'>ujian ∑ yang sebenarnya</span>",
+      "Dekat dengan <span class='strongfont'>ujian DET yang sebenarnya</span>",
       "Nilai penilaian yang akurat",
       "Laporan evaluasi terperinci",
       "Hasil akan tersedia dalam <span class='strongfont'>5-30 menit</span>"
@@ -369,17 +369,17 @@
       "description": ""
     },
     "title": "Tentang DET Practice",
-    "title_desc": "DETPractice.com adalah platform terbaik untuk ∫ Berlatih dan Belajar.",
+    "title_desc": "DETPractice.com adalah platform terbaik untuk Duolingo English Test Berlatih dan Belajar.",
     "check_out": {
       "h2": "Lihat Apa yang Bisa Kami Lakukan",
-      "qbt": "∑ Bank Soal",
-      "qbtdesc": "Kami memiliki bank soal terbesar dan memperbaruinya setiap hari. Anda dapat dengan cepat meningkatkan skor ∫ Anda dengan berlatih soal-soal tersebut.",
-      "flm": "∑ Ujian Coba Penuh",
-      "flmdesc": "Kami memiliki tes simulasi ∑ yang paling kuat, yang memungkinkan Anda untuk mengevaluasi skor tes Anda dengan akurat dengan biaya yang lebih rendah.",
-      "acs": "∑ Layanan Koreksi AI",
+      "qbt": "DET Bank Soal",
+      "qbtdesc": "Kami memiliki bank soal terbesar dan memperbaruinya setiap hari. Anda dapat dengan cepat meningkatkan skor Duolingo English Test Anda dengan berlatih soal-soal tersebut.",
+      "flm": "DET Ujian Coba Penuh",
+      "flmdesc": "Kami memiliki tes simulasi DET yang paling kuat, yang memungkinkan Anda untuk mengevaluasi skor tes Anda dengan akurat dengan biaya yang lebih rendah.",
+      "acs": "DET Layanan Koreksi AI",
       "acsdesc": "Anda dapat menggunakan alat koreksi AI yang kami sediakan untuk dengan cepat meningkatkan skor berbicara dan menulis Anda.",
-      "dc": "∑ Kursus",
-      "dedesc": "Kami akan terus mengembangkan materi persiapan ujian dan kursus berdasarkan fitur ujian terbaru dari ∑."
+      "dc": "DET Kursus",
+      "dedesc": "Kami akan terus mengembangkan materi persiapan ujian dan kursus berdasarkan fitur ujian terbaru dari DET."
     },
     "three_our_our": {
       "h2": "Meskipun Muda, Tapi Kuat",
@@ -465,13 +465,13 @@
       "description": "Layanan Koreksi AI Penulisan DET yang disediakan oleh AI sebanding dengan guru profesional. \nEsai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima masukan terperinci dalam 1-5 menit.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Menulis Koreksi AI",
-    "desc": "∑ Layanan Koreksi AI yang disediakan oleh AI setara dengan guru profesional. Esai Anda akan dikoreksi berdasarkan aturan penilaian ∑, dan Anda akan menerima umpan balik terperinci dalam waktu 1-5 menit.",
+    "h1": "DET Menulis Koreksi AI",
+    "desc": "DET Layanan Koreksi AI yang disediakan oleh AI setara dengan guru profesional. Esai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima umpan balik terperinci dalam waktu 1-5 menit.",
     "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
     "useralt": "Ikon Pengguna",
     "white_arrow_right": "panah_putih_kanan",
     "yellow_arrow_right": "panah_kuning_kanan",
-    "learners_have": "{number} orang menggunakan layanan ∑ Koreksi AI Penulisan.",
+    "learners_have": "{number} orang menggunakan layanan DET Koreksi AI Penulisan.",
     "Review_Now": "Mulai",
     "Correct_Now": "Mulailah mengalami",
     "Get_Scored_Now": "Mulai mengalami",
@@ -487,7 +487,7 @@
     },
     "h2_3": {
       "h2": "Panduan profesional",
-      "right_desc": "Menurut elemen penilaian ∑, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam makalah Anda dan membuatnya sempurna."
+      "right_desc": "Menurut elemen penilaian DET, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam makalah Anda dan membuatnya sempurna."
     },
     "h2_4": {
       "h2": "Pemolesan esai",
@@ -497,7 +497,7 @@
   "courses": {
     "seometa": {
       "title": "DET Praktik - Kuasai Berbicara dan Menulis dengan Panduan Duolingo English Test",
-      "description": "Unlock potensi Anda dengan Panduan ∫ kami. Jelajahi keunggulan berbicara dan menulis dengan strategi komprehensif, tips ahli, dan Praktik ∑ terbaru."
+      "description": "Unlock potensi Anda dengan Panduan Duolingo English Test kami. Jelajahi keunggulan berbicara dan menulis dengan strategi komprehensif, tips ahli, dan Praktik DET terbaru."
     },
     "article1": {
       "title": "Fitur Utama dari DET Keunggulan Ujian Berbicara:",
@@ -632,7 +632,7 @@
       "description": "Pengalaman uji coba Duolingo yang realistis dengan ujian panjang penuh praktek DET oleh Practice. Menampilkan pertanyaan adaptif cerdas dan penilaian AI, ujian coba kami menawarkan penilaian yang akurat untuk mempersiapkan Anda secara efektif untuk Duolingo English Test.",
       "keywords": "Tes Mock Duolingo, DET Duolingo, DET Tes, Duolingo DET, Tes Duolingo, Tes Duolingo Online"
     },
-    "h1": "∑ Tes Percobaan Lengkap",
+    "h1": "DET Tes Percobaan Lengkap",
     "desc": "Benamkan diri Anda dalam pengalaman ujian yang benar-benar nyata dengan ujian tiruan skala penuh kami. Rasakan proses pengujian yang sebenarnya sebelum ujian yang sesungguhnya dan segera menerima skor serta laporan diagnostik terperinci untuk mengidentifikasi area yang perlu ditingkatkan.",
     "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
     "mock_user_icon": "Ikon Pengguna Tiruan",
@@ -664,10 +664,10 @@
       "description": "Bank soal DET kami mencakup ribuan pertanyaan untuk pelatihan yang mendalam, lengkap dengan penjelasan terperinci dan analisis AI untuk membantu Anda berhasil.",
       "keywords": "Duolingo English Test Latihan, Duolingo Ujian Latihan Bahasa Inggris, Duolingo Tes Latihan Bahasa Inggris, Duolingo Latihan Tes Online, Duolingo Latihan Ujian, Duolingo Tes Latihan, Duolingo Latihan, Tes Latihan Det, Duolingo English Test Skor"
     },
-    "h1": "∫ Latihan",
+    "h1": "Duolingo English Test Latihan",
     "desc": "Dapatkan akses ke koleksi soal tes yang luas, dilengkapi dengan analisis jawaban, template, evaluasi berbicara didorong oleh AI, dan perencanaan cerdas. Percepat peningkatan skor Anda secara efisien dan terjangkau dengan pendekatan bertenaga AI kami.",
     "alt": "DET Latihan:Yang terbaik Duolingo English Test Platform latihan",
-    "altbanner": "∫ Latihan",
+    "altbanner": "Duolingo English Test Latihan",
     "bank_user_icon": "Ikon Pengguna Bank",
     "white_arrow_right": "Panah Putih Kanan",
     "blue_arrow_right": "Panah Biru Kanan",
@@ -700,14 +700,14 @@
       "description": "Layanan Koreksi AI Berbicara DET disediakan oleh AI yang kuat. \nMendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda meningkatkan skor berbicara DET Anda dengan mudah.",
       "keywords": "需要提供"
     },
-    "h1": "∑ Koreksi AI Berbicara",
-    "desc": "∑ Layanan Koreksi AI Berbicara yang disediakan oleh AI yang kuat. Mendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda dengan mudah meningkatkan nilai ∑ berbicara Anda.",
-    "alt": "∑ Latihan:Platform Koreksi AI Berbicara Terbaik ∑",
-    "altbanner": "∑ Koreksi AI Berbicara",
+    "h1": "DET Koreksi AI Berbicara",
+    "desc": "DET Layanan Koreksi AI Berbicara yang disediakan oleh AI yang kuat. Mendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda dengan mudah meningkatkan nilai DET berbicara Anda.",
+    "alt": "DET Latihan:Platform Koreksi AI Berbicara Terbaik DET",
+    "altbanner": "DET Koreksi AI Berbicara",
     "bank_user_icon": "Ikon Pengguna Bank",
     "white_arrow_right": "Panah Putih Kanan",
     "purple_arrow_right": "Panah Ungu Kanan",
-    "learners_have": "{number} orang menggunakan layanan Koreksi AI Berbicara ∑.",
+    "learners_have": "{number} orang menggunakan layanan Koreksi AI Berbicara DET.",
     "spn": "Mulai",
     "article1": {
       "h2": "Skor akurat",
@@ -721,7 +721,7 @@
     },
     "article3": {
       "h2": "Panduan profesional",
-      "right_desc": "Menurut elemen penilaian ∑, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam berbicara dan membuatnya sempurna.",
+      "right_desc": "Menurut elemen penilaian DET, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam berbicara dan membuatnya sempurna.",
       "btn": "Mulai merasakan"
     }
   },
@@ -734,7 +734,7 @@
     "h1": "Kebijakan Privasi",
     "q1": {
       "title": "Terakhir diperbarui: 2023-11-20",
-      "a1": "∑ Practice (\"kami\" atau \"milik kami\") mengoperasikan situs web ∑ Practice (the \"Service\").",
+      "a1": "DET Practice (\"kami\" atau \"milik kami\") mengoperasikan situs web DET Practice (the \"Service\").",
       "a2": "Halaman ini memberitahu Anda tentang kebijakan kami mengenai pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi ketika Anda menggunakan Layanan kami.",
       "a3": "Kami tidak akan menggunakan atau membagikan informasi Anda dengan siapa pun kecuali seperti yang dijelaskan dalam Kebijakan Privasi ini.",
       "a4": "Kami menggunakan Informasi Pribadi Anda untuk menyediakan dan meningkatkan Layanan. Dengan menggunakan Layanan, Anda setuju terhadap pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Kecuali didefinisikan lain dalam Kebijakan Privasi ini, istilah yang digunakan dalam Kebijakan Privasi ini memiliki arti yang sama seperti yang ada di Syarat dan Ketentuan kami, yang dapat diakses di",
