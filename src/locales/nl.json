@@ -51,7 +51,12 @@
     "LearnTitle": "Leren",
     "BlogTitle": "Blog",
     "CompanyTitle": "Bedrijf",
-    "Products": ["DET Oefenen", "AI Correctiedienst", "DET Nep", "Duolingo English Test Cursus"],
+    "Products": [
+      "DET Oefenen",
+      "AI Correctiedienst",
+      "DET Nep",
+      "Duolingo English Test Cursus"
+    ],
     "Company": [
       "Over ons",
       "Neem contact met ons op",
@@ -78,7 +83,12 @@
     "power_by": "Aangedreven door AI",
     "h1Mobile": "Behaal gemakkelijk een hogere score<br />op de Duolingo <br />Engelse test met <span class=\"seo_hack\">DET Oefening</span>",
     "h1PC": "Behaal eenvoudig een hogere score op de <br />Duolingo English Test Met <span class=\"seo_hack\">DET oefenen</span>",
-    "one_small_title": ["DET Oefening", "AI Correctie", "Volledige Lengte Mock", "DET Cursussen"],
+    "one_small_title": [
+      "DET Oefening",
+      "AI Correctie",
+      "Volledige Lengte Mock",
+      "DET Cursussen"
+    ],
     "Start_free_with_Google": "Begin gratis met Google",
     "Start_free_with_email": "Begin gratis met e-mail",
     "Start_for_free": "Begin gratis",
@@ -410,7 +420,7 @@
     "Contact_Us": "Neem contact met ons op",
     "Questions": "Vragen, bugrapportages, feedback - wij zijn hier om te helpen!",
     "fill_in": "Vul het formulier in",
-    "thank": "Bedankt dat u ervoor gekozen heeft om contact met ons op te nemen. Vul alstublieft dit contactformulier in en ons personeel zal zo spoedig mogelijk contact met u opnemen om uw vragen te beantwoorden.",
+    "thank": "Bedankt dat u ervoor heeft gekozen contact met ons op te nemen. \nStuur ons een e-mail en onze medewerkers nemen zo snel mogelijk contact met u op om uw vragen te beantwoorden.",
     "email": "E-mail",
     "Name": "Naam",
     "Email_Address": "E-mailadres",

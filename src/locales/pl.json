@@ -51,7 +51,12 @@
     "LearnTitle": "Nauka",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Praktyka", "Usługa Korekty AI", "DET Makieta", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Praktyka",
+      "Usługa Korekty AI",
+      "DET Makieta",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "O nas",
       "Skontaktuj się z nami",
@@ -78,7 +83,12 @@
     "power_by": "Zasilane przez AI",
     "h1Mobile": "Uzyskaj wyższy wynik z łatwością<br />na Duolingo <br />angielskim teście dzięki <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Zdobądź wyższy wynik łatwo na <br />Duolingo English Test Z <span class=\"seo_hack\">DET ćwiczeń</span>",
-    "one_small_title": ["DET Praktyka", "Poprawa AI", "Pełnowymiarowy Mock", "DET Kursy"],
+    "one_small_title": [
+      "DET Praktyka",
+      "Poprawa AI",
+      "Pełnowymiarowy Mock",
+      "DET Kursy"
+    ],
     "Start_free_with_Google": "Rozpocznij za darmo z Google",
     "Start_free_with_email": "Zacznij za darmo z {email}",
     "Start_for_free": "Zacznij za darmo",
@@ -410,7 +420,7 @@
     "Contact_Us": "Skontaktuj się z nami",
     "Questions": "Pytania, zgłoszenia błędów, opinie - jesteśmy tutaj, aby pomóc!",
     "fill_in": "Wypełnij formularz",
-    "thank": "Dziękujemy za skontaktowanie się z nami. Proszę wypełnić ten formularz kontaktowy, a nasz personel skontaktuje się z Państwem jak najszybciej, aby odpowiedzieć na Państwa pytania.",
+    "thank": "Dziękujemy, że zdecydowałeś się na kontakt z nami. \nWyślij nam e-mail, a nasz personel skontaktuje się z Tobą tak szybko, jak to możliwe, aby odpowiedzieć na Twoje pytania.",
     "email": "E-mail",
     "Name": "Imię",
     "Email_Address": "Adres e-mail",

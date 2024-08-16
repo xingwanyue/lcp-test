@@ -51,7 +51,12 @@
     "LearnTitle": "Aprender",
     "BlogTitle": "Blog",
     "CompanyTitle": "Empresa",
-    "Products": ["DET Prática", "Serviço de Correção de IA", "DET Simulação", "Duolingo English Test Curso"],
+    "Products": [
+      "DET Prática",
+      "Serviço de Correção de IA",
+      "DET Simulação",
+      "Duolingo English Test Curso"
+    ],
     "Company": [
       "Sobre nós",
       "Entre em contato conosco",
@@ -78,7 +83,12 @@
     "power_by": "Desenvolvido por IA",
     "h1Mobile": "Obtenha uma Pontuação Mais Alta Facilmente<br />no Teste de Inglês Duolingo <br />com <span class=\"seo_hack\">DET Prática</span>",
     "h1PC": "Obtenha uma Pontuação Maior Facilmente no <br />Duolingo English Test Com <span class=\"seo_hack\">DET Prática</span>",
-    "one_small_title": ["DET Prática", "Correção de IA", "Simulado Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Prática",
+      "Correção de IA",
+      "Simulado Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comece grátis com o Google",
     "Start_free_with_email": "Comece grátis com email",
     "Start_for_free": "Comece gratuitamente",
@@ -410,7 +420,7 @@
     "Contact_Us": "Contacte-nos",
     "Questions": "Perguntas, relatórios de bugs, feedback - estamos aqui para ajudar!",
     "fill_in": "Preencha o formulário",
-    "thank": "Obrigado por optar por entrar em contato conosco. Por favor, preencha este formulário de contato e nossa equipe entrará em contato com você o mais breve possível para responder às suas perguntas.",
+    "thank": "Obrigado por escolher entrar em contato conosco. \nEnvie-nos um e-mail e nossa equipe entrará em contato com você o mais breve possível para esclarecer suas dúvidas.",
     "email": "Email",
     "Name": "Nome",
     "Email_Address": "Endereço de Email",

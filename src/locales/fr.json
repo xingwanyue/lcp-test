@@ -51,7 +51,12 @@
     "LearnTitle": "Apprendre",
     "BlogTitle": "Blog",
     "CompanyTitle": "Entreprise",
-    "Products": ["DET Pratique", "Service de correction d'IA", "DET Moquer", "Duolingo English Test Cours"],
+    "Products": [
+      "DET Pratique",
+      "Service de correction d'IA",
+      "DET Moquer",
+      "Duolingo English Test Cours"
+    ],
     "Company": [
       "À propos de nous",
       "Contactez-nous",
@@ -78,7 +83,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez un score plus élevé facilement<br />au test d'anglais Duolingo <br />avec <span class=\"seo_hack\">DET Pratique</span>",
     "h1PC": "Obtenez un meilleur score facilement sur le <br />Duolingo English Test Avec <span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un e-mail",
     "Start_for_free": "Commencez gratuitement",
@@ -410,7 +420,7 @@
     "Contact_Us": "Contactez-nous",
     "Questions": "Questions, rapports de bogues, commentaires - nous sommes là pour vous aider !",
     "fill_in": "Remplissez le formulaire",
-    "thank": "Merci d'avoir choisi de nous contacter. Veuillez remplir ce formulaire de contact et notre personnel vous contactera dès que possible pour répondre à vos questions.",
+    "thank": "Merci d'avoir choisi de nous contacter. \nVeuillez nous envoyer un e-mail et notre personnel vous contactera dans les plus brefs délais pour répondre à vos demandes.",
     "email": "E-mail",
     "Name": "Nom",
     "Email_Address": "Adresse email",

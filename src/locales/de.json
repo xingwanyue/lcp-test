@@ -51,7 +51,12 @@
     "LearnTitle": "Lernen",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Üben", "KI-Korrekturservice", "DET Attrappe", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Üben",
+      "KI-Korrekturservice",
+      "DET Attrappe",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "Über uns",
       "Kontaktieren Sie uns",
@@ -78,7 +83,12 @@
     "power_by": "Betrieben durch KI",
     "h1Mobile": "Erzielen Sie leicht eine höhere Punktzahl<br />beim Duolingo <br />Englischtest mit <span class=\"seo_hack\">DET Übung</span>",
     "h1PC": "Erzielen Sie ganz einfach eine höhere Punktzahl im <br />Duolingo English Test Mit <span class=\"seo_hack\">DET Übung</span>",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos mit Google starten",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten",
@@ -410,7 +420,7 @@
     "Contact_Us": "Kontaktieren Sie uns",
     "Questions": "Fragen, Fehlerberichte, Feedback - wir sind hier, um zu helfen!",
     "fill_in": "Füllen Sie das Formular aus",
-    "thank": "Danke, dass Sie sich mit uns in Verbindung setzen möchten. Bitte füllen Sie dieses Kontaktformular aus, und unser Team wird sich so schnell wie möglich bei Ihnen melden, um Ihre Anfragen zu beantworten.",
+    "thank": "Vielen Dank, dass Sie sich entschieden haben, mit uns in Kontakt zu treten. \nBitte senden Sie uns eine E-Mail und unsere Mitarbeiter werden sich so schnell wie möglich mit Ihnen in Verbindung setzen, um Ihre Anfragen zu beantworten.",
     "email": "E-Mail",
     "Name": "Name",
     "Email_Address": "E-Mail-Adresse",

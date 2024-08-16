@@ -51,7 +51,12 @@
     "LearnTitle": "Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": ["DET Latihan", "Layanan Koreksi AI", "DET Pura-Pura", "Duolingo English Test Kursus"],
+    "Products": [
+      "DET Latihan",
+      "Layanan Koreksi AI",
+      "DET Pura-Pura",
+      "Duolingo English Test Kursus"
+    ],
     "Company": [
       "Tentang kami",
       "Hubungi kami",
@@ -78,7 +83,12 @@
     "power_by": "Ditenagai oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />pada Ujian Bahasa Inggris Duolingo <br />Dengan <span class=\"seo_hack\">DET Latihan</span>",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Duolingo English Test Dengan <span class=\"seo_hack\">DET Latihan</span>",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -410,7 +420,7 @@
     "Contact_Us": "Hubungi Kami",
     "Questions": "Pertanyaan, laporan bug, umpan balik - kami di sini untuk membantu!",
     "fill_in": "Isi formulir",
-    "thank": "Terima kasih telah memilih untuk menghubungi kami. Silakan isi formulir kontak ini dan staf kami akan menghubungi Anda secepat mungkin untuk menjawab pertanyaan Anda.",
+    "thank": "Terima kasih telah memilih untuk menghubungi kami. \nSilakan kirim email kepada kami dan staf kami akan menghubungi Anda sesegera mungkin untuk menjawab pertanyaan Anda.",
     "email": "Sure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nEmail",
     "Name": "Nama",
     "Email_Address": "Alamat Email",
