@@ -516,7 +516,7 @@ const menus = computed(() => [
   .head-question-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
     grid-gap: 16px;
     .one_card {
       padding: 16px;
