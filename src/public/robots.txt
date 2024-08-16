@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /login
 Disallow: /forget
 Disallow: /register2
 Disallow: /resetPassword

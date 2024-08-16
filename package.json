@@ -16,6 +16,7 @@
     "@nuxt/image": "^1.7.0",
     "nuxt": "^3.11.2",
     "nuxt-aos": "^1.2.4",
+    "nuxt-vitalizer": "^0.10.0",
     "vue": "^3.4.23",
     "vue-router": "^4.3.2"
   },
@@ -26,7 +27,6 @@
     "bluebird": "^3.7.2",
     "dayjs": "^1.11.10",
     "element-plus": "^2.6.2",
-    "lru-cache": "^10.2.0",
     "pinia": "^2.1.7",
     "sass": "^1.75.0",
     "vue3-carousel": "^0.3.3"
