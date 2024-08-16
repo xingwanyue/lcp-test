@@ -12,7 +12,6 @@ const user = computed(() => store.user);
 useServerSeoMeta({
   title: t('speakingaicorrection.seometa.title'),
   description: t('speakingaicorrection.seometa.description'),
-  keywords: t('speakingaicorrection.seometa.keywords'),
 });
 useHead({
   link: [

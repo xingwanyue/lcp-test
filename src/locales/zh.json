@@ -237,7 +237,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> 练习题" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> 练习题"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>无限制</span> 练习课程",
         "name2Desc": "<span class='bigger'>{correctNum}</span> 修正服务",
@@ -278,7 +280,10 @@
         "tip": "周一至周五，10:00 - 19:00",
         "btn": "立即在线聊天"
       },
-      "type2": { "font": "给我们发电子邮件", "tip": "在1个工作日内收到回复。" },
+      "type2": {
+        "font": "给我们发电子邮件",
+        "tip": "在1个工作日内收到回复。"
+      },
       "type3": {
         "font": "留言",
         "tip": "我们将在一个工作日内回复您。",
@@ -325,7 +330,10 @@
     "Thanks_for_voting": "感谢投票！",
     "Rate_this_article": "为此文章评分"
   },
-  "easyexam": { "snfeep": "现在开始轻松备考。", "Start_Now": "立即开始" },
+  "easyexam": {
+    "snfeep": "现在开始轻松备考。",
+    "Start_Now": "立即开始"
+  },
   "highscorewriting": {
     "font1": "加速您的路径到",
     "font2": "高分写作大师。",
@@ -341,14 +349,18 @@
     "font2": "高分写作！",
     "Start_Now": "立即开始"
   },
-  "path": { "seometa": { "title": "DET 实践博客", "description": "DET 实践博客" } },
+  "path": {
+    "seometa": {
+      "title": "DET 实践博客",
+      "description": "DET 实践博客"
+    }
+  },
   "aboutUs": {
     "seometa": {
       "title": "关于我们 - DET 实践",
       "description": ""
     },
     "title": "关于 DET Practice",
-
     "title_desc": "DETPractice.com 是最好的 ∫ 练习和学习平台。",
     "check_out": {
       "h2": "查看我们的能耐",
@@ -398,7 +410,9 @@
     "SUBMIT": "提交"
   },
   "cookie": {
-    "seometa": { "title": "Cookie 政策 - DET 实践" },
+    "seometa": {
+      "title": "Cookie 政策 - DET 实践"
+    },
     "Cookie_Policy": "Cookie 政策",
     "Last_updated": "上次更新：",
     "Last_updated_time": "2024-03-27",
@@ -439,8 +453,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET 练习 - 为您的 Duolingo 英语测试提供人工智能写作批改服务",
+      "description": "AI提供的DET写作AI批改服务可媲美专业老师。您的论文将根据DET评分规则进行批改，您将在1-5分钟内收到详细的反馈。",
       "keywords": "需要提供"
     },
     "h1": "∑ 编写人工智能校正",
@@ -480,28 +494,62 @@
     "article1": {
       "title": "DET 口语考试卓越的关键特征：",
       "list": [
-        { "content": "• 深入探索所有 DET 口语任务类型" },
-        { "content": "• 处理每个口语任务的实用策略" },
-        { "content": "• 互动练习，以提高语音清晰度、流利度和自信心" },
-        { "content": "• 专家指导发音、语调和整体表现" },
-        { "content": "• 实际语音样本和分析展示成功的策略" },
-        { "content": "• 提供清晰示例的音频演示答案" },
-        { "content": "• 为不同熟练程度量身定制的学习方法" },
-        { "content": "• 专注于基本词汇和语法以实现有效沟通" },
-        { "content": "• 更新以纳入DET演讲格式的最新更改" }
+        {
+          "content": "• 深入探索所有 DET 口语任务类型"
+        },
+        {
+          "content": "• 处理每个口语任务的实用策略"
+        },
+        {
+          "content": "• 互动练习，以提高语音清晰度、流利度和自信心"
+        },
+        {
+          "content": "• 专家指导发音、语调和整体表现"
+        },
+        {
+          "content": "• 实际语音样本和分析展示成功的策略"
+        },
+        {
+          "content": "• 提供清晰示例的音频演示答案"
+        },
+        {
+          "content": "• 为不同熟练程度量身定制的学习方法"
+        },
+        {
+          "content": "• 专注于基本词汇和语法以实现有效沟通"
+        },
+        {
+          "content": "• 更新以纳入DET演讲格式的最新更改"
+        }
       ]
     },
     "article2": {
       "title": "写作考试卓越的关键特点：",
       "list": [
-        { "content": "• 全面的 DET 写作任务覆盖，附有分析和示例" },
-        { "content": "• 规划和撰写杰出论文的分步指南" },
-        { "content": "• 针对性的练习以磨炼DET-特定的写作技巧" },
-        { "content": "• 提高清晰度、连贯性和复杂性的专家建议" },
-        { "content": "• 注释示例作文展示有效策略和常见陷阱" },
-        { "content": "• 为不同熟练程度量身定制的学习路径" },
-        { "content": "• 强调 DET 成功所需的基本语法和词汇" },
-        { "content": "• 更新以反映最新的 DET 写作格式趋势" }
+        {
+          "content": "• 全面的 DET 写作任务覆盖，附有分析和示例"
+        },
+        {
+          "content": "• 规划和撰写杰出论文的分步指南"
+        },
+        {
+          "content": "• 针对性的练习以磨炼DET-特定的写作技巧"
+        },
+        {
+          "content": "• 提高清晰度、连贯性和复杂性的专家建议"
+        },
+        {
+          "content": "• 注释示例作文展示有效策略和常见陷阱"
+        },
+        {
+          "content": "• 为不同熟练程度量身定制的学习路径"
+        },
+        {
+          "content": "• 强调 DET 成功所需的基本语法和词汇"
+        },
+        {
+          "content": "• 更新以反映最新的 DET 写作格式趋势"
+        }
       ]
     },
     "contaceUsList": [
@@ -640,8 +688,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET 练习 - 为您的 Duolingo 英语测试提供人工智能口语批改服务",
+      "description": "DET口语AI纠正服务由强大的AI提供。支持所有口语题型，并提供专业指导，帮助您轻松提高DET口语成绩。",
       "keywords": "需要提供"
     },
     "h1": "∑ 说话 AI 更正",
@@ -915,16 +963,32 @@
       }
     ],
     "dosList": [
-      { "font": "亲自体验 Detpractice.com" },
-      { "font": "以道德和诚实的方式推广 Detpractice.com" },
-      { "font": "创建优质和相关的内容" },
-      { "font": "披露您的联盟关系" }
+      {
+        "font": "亲自体验 Detpractice.com"
+      },
+      {
+        "font": "以道德和诚实的方式推广 Detpractice.com"
+      },
+      {
+        "font": "创建优质和相关的内容"
+      },
+      {
+        "font": "披露您的联盟关系"
+      }
     ],
     "dontsList": [
-      { "font": "对 Detpractice.com 做出误导或虚假的声明" },
-      { "font": "在有不适当或非法内容的平台上推广" },
-      { "font": "在任何优惠券网站上推广" },
-      { "font": "使用我们的品牌名称设置广告活动，或在您的广告目标 URL 中放置我们的域名" }
+      {
+        "font": "对 Detpractice.com 做出误导或虚假的声明"
+      },
+      {
+        "font": "在有不适当或非法内容的平台上推广"
+      },
+      {
+        "font": "在任何优惠券网站上推广"
+      },
+      {
+        "font": "使用我们的品牌名称设置广告活动，或在您的广告目标 URL 中放置我们的域名"
+      }
     ],
     "faqList": [
       {

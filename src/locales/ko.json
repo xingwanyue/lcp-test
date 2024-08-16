@@ -237,7 +237,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> 연습 문제" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> 연습 문제"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>무제한</span> 연습 세션용",
         "name2Desc": "<span class='bigger'>{correctNum}</span> 교정 서비스",
@@ -348,7 +350,10 @@
     "Start_Now": "지금 시작하세요"
   },
   "path": {
-    "seometa": { "title": "DET 연습 블로그", "description": "DET 연습 블로그" }
+    "seometa": {
+      "title": "DET 연습 블로그",
+      "description": "DET 연습 블로그"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -405,7 +410,9 @@
     "SUBMIT": "제출"
   },
   "cookie": {
-    "seometa": { "title": "쿠키 정책 - DET Practice" },
+    "seometa": {
+      "title": "쿠키 정책 - DET Practice"
+    },
     "Cookie_Policy": "쿠키 정책",
     "Last_updated": "마지막 업데이트:",
     "Last_updated_time": "2024-03-27",
@@ -446,8 +453,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET 연습 - 당신의 Duolingo 시험에 대한 AI 교정 서비스",
-      "description": "\"AI + 교사\"가 제공하는 교정 서비스. 언어 전문가로부터 맞춤형 피드백을 받아 응시자의 응답 및 고득점 전략을 개선하세요.",
+      "title": "DET Practice - 듀오링고 영어 시험을 위한 AI 작문 교정 서비스",
+      "description": "전문교사 수준의 AI를 활용한 DET 글쓰기 AI 교정 서비스입니다. \n귀하의 에세이는 DET 채점 규칙에 따라 교정되며, 1~5분 이내에 자세한 피드백을 받으실 수 있습니다.",
       "keywords": "Duolingo 시험 교정 서비스, Duolingo 시험 AI 교정 서비스"
     },
     "h1": "∑ 글쓰기 AI 수정",
@@ -487,17 +494,27 @@
     "article1": {
       "title": "DET 스피킹 시험 우수성의 주요 특징:",
       "list": [
-        { "content": "• 모든 DET 말하기 과제 유형에 대한 심층 탐구" },
-        { "content": "• 각 말하기 과제를 접근하기 위한 실용적인 전략" },
+        {
+          "content": "• 모든 DET 말하기 과제 유형에 대한 심층 탐구"
+        },
+        {
+          "content": "• 각 말하기 과제를 접근하기 위한 실용적인 전략"
+        },
         {
           "content": "• 발음 명확성, 유창성 및 자신감을 향상시키기 위한 상호작용 연습"
         },
-        { "content": "• 발음, 억양 및 전반적인 퍼포먼스에 대한 전문가의 지도" },
-        { "content": "• 성공적인 전략을 보여주는 실제 음성 샘플 및 분석" },
+        {
+          "content": "• 발음, 억양 및 전반적인 퍼포먼스에 대한 전문가의 지도"
+        },
+        {
+          "content": "• 성공적인 전략을 보여주는 실제 음성 샘플 및 분석"
+        },
         {
           "content": "• 오디오 데모 답변은 효과적인 응답의 명확한 예시를 제공합니다"
         },
-        { "content": "• 다른 숙련도 수준을 위한 맞춤형 학습 접근 방식" },
+        {
+          "content": "• 다른 숙련도 수준을 위한 맞춤형 학습 접근 방식"
+        },
         {
           "content": "• 효과적인 의사소통을 위한 주요 어휘 및 문법에 집중하기"
         },
@@ -509,15 +526,27 @@
     "article2": {
       "title": "Writing Exam Excellence의 주요 특징:",
       "list": [
-        { "content": "• 분석과 예제를 포함한 DET 글쓰기 과제의 포괄적인 다루기" },
-        { "content": "• 예외적인 에세이를 계획하고 작성하기 위한 단계별 지침" },
-        { "content": "• DET-특정 글쓰기 기술을 연마하기 위한 타겟 연습" },
-        { "content": "• 명확성, 일관성, 세련미를 향상시키기 위한 전문가 팁" },
+        {
+          "content": "• 분석과 예제를 포함한 DET 글쓰기 과제의 포괄적인 다루기"
+        },
+        {
+          "content": "• 예외적인 에세이를 계획하고 작성하기 위한 단계별 지침"
+        },
+        {
+          "content": "• DET-특정 글쓰기 기술을 연마하기 위한 타겟 연습"
+        },
+        {
+          "content": "• 명확성, 일관성, 세련미를 향상시키기 위한 전문가 팁"
+        },
         {
           "content": "• 주석이 달린 샘플 에세이는 효과적인 전략과 흔한 함정을 보여줍니다"
         },
-        { "content": "• 다양한 숙련도 수준에 맞춘 적응형 학습 경로" },
-        { "content": "• 필수 문법과 어휘 강조 DET 성공" },
+        {
+          "content": "• 다양한 숙련도 수준에 맞춘 적응형 학습 경로"
+        },
+        {
+          "content": "• 필수 문법과 어휘 강조 DET 성공"
+        },
         {
           "content": "• 최신 DET 작성 형식 트렌드를 반영하도록 업데이트되었습니다"
         }
@@ -659,8 +688,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - 듀오링고 영어 시험을 위한 AI 말하기 교정 서비스",
+      "description": "강력한 AI가 제공하는 DET 말하기 AI 교정 서비스입니다. \n모든 말하기 질문 유형을 지원하고, DET 말하기 점수를 쉽게 향상시킬 수 있도록 전문적인 지도를 제공합니다.",
       "keywords": "需要提供"
     },
     "h1": "∑ AI 교정 말하기",
@@ -934,16 +963,32 @@
       }
     ],
     "dosList": [
-      { "font": "Detpractice.com을 직접 사용해보세요" },
-      { "font": "Detpractice.com을 윤리적이고 정직하게 홍보하세요" },
-      { "font": "품질 높고 관련성 있는 콘텐츠를 만드세요" },
-      { "font": "제휴 관계를 공개하세요" }
+      {
+        "font": "Detpractice.com을 직접 사용해보세요"
+      },
+      {
+        "font": "Detpractice.com을 윤리적이고 정직하게 홍보하세요"
+      },
+      {
+        "font": "품질 높고 관련성 있는 콘텐츠를 만드세요"
+      },
+      {
+        "font": "제휴 관계를 공개하세요"
+      }
     ],
     "dontsList": [
-      { "font": "Detpractice.com에 대해 오해를 일으키거나 거짓 주장을 하지 마세요" },
-      { "font": "부적절하거나 불법적인 콘텐츠가 있는 플랫폼에서 홍보하지 마세요" },
-      { "font": "쿠폰 사이트에서 홍보하지 마세요" },
-      { "font": "브랜드 이름을 사용하거나 광고의 목적지 URL에 도메인 이름을 넣어 광고 캠페인을 설정하지 마세요" }
+      {
+        "font": "Detpractice.com에 대해 오해를 일으키거나 거짓 주장을 하지 마세요"
+      },
+      {
+        "font": "부적절하거나 불법적인 콘텐츠가 있는 플랫폼에서 홍보하지 마세요"
+      },
+      {
+        "font": "쿠폰 사이트에서 홍보하지 마세요"
+      },
+      {
+        "font": "브랜드 이름을 사용하거나 광고의 목적지 URL에 도메인 이름을 넣어 광고 캠페인을 설정하지 마세요"
+      }
     ],
     "faqList": [
       {

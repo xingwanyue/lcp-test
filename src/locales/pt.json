@@ -369,7 +369,6 @@
       "description": ""
     },
     "title": "Sobre DET Practice",
-
     "title_desc": "DETPractice.com é a melhor plataforma para ∫ Praticar e Aprender.",
     "check_out": {
       "h2": "Confira o Que Podemos Fazer",
@@ -419,7 +418,9 @@
     "SUBMIT": "ENVIAR"
   },
   "cookie": {
-    "seometa": { "title": "Política de Cookies - DET Prática" },
+    "seometa": {
+      "title": "Política de Cookies - DET Prática"
+    },
     "Cookie_Policy": "Política de Cookies",
     "Last_updated": "Última atualização:",
     "Last_updated_time": "2024-03-27",
@@ -460,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - Serviço de correção de escrita de IA para seu teste de inglês Duolingo",
+      "description": "Serviço de correção DET Writing AI fornecido pela AI comparável a professores profissionais. \nSua redação será corrigida com base nas regras de pontuação do DET e você receberá feedback detalhado dentro de 1 a 5 minutos.",
       "keywords": "需要提供"
     },
     "h1": "∑ Correção de Escrita por IA",
@@ -695,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - Serviço de correção de fala de IA para seu teste de inglês Duolingo",
+      "description": "Serviço de correção DET Speaking AI fornecido por uma IA poderosa. \nApoie todos os tipos de perguntas orais e forneça orientação profissional para ajudá-lo a melhorar facilmente sua pontuação oral no DET.",
       "keywords": "需要提供"
     },
     "h1": "∑ Falando AI Correção",
@@ -970,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Experimente Detpractice.com por si mesmo" },
-      { "font": "Promova Detpractice.com de forma ética e honesta" },
-      { "font": "Crie conteúdo de qualidade e relevante" },
-      { "font": "Divulgue seu relacionamento de afiliado" }
+      {
+        "font": "Experimente Detpractice.com por si mesmo"
+      },
+      {
+        "font": "Promova Detpractice.com de forma ética e honesta"
+      },
+      {
+        "font": "Crie conteúdo de qualidade e relevante"
+      },
+      {
+        "font": "Divulgue seu relacionamento de afiliado"
+      }
     ],
     "dontsList": [
-      { "font": "Fazer afirmações enganosas ou falsas sobre Detpractice.com" },
-      { "font": "Promover em plataformas com conteúdo inadequado ou ilegal" },
-      { "font": "Promover em qualquer site de cupons" },
+      {
+        "font": "Fazer afirmações enganosas ou falsas sobre Detpractice.com"
+      },
+      {
+        "font": "Promover em plataformas com conteúdo inadequado ou ilegal"
+      },
+      {
+        "font": "Promover em qualquer site de cupons"
+      },
       {
         "font": "Configurar campanhas de anúncios usando nosso nome de marca ou colocando nosso nome de domínio nos URLs de destino de seus anúncios"
       }

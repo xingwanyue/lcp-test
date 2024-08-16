@@ -245,7 +245,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> Übungsfragen" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Übungsfragen"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>Unbegrenzt</span> für Übungssitzungen",
         "name2Desc": "<span class='bigger'>{correctNum}</span> Korrekturdienste",
@@ -356,7 +358,10 @@
     "Start_Now": "Jetzt starten"
   },
   "path": {
-    "seometa": { "title": "DET Übungsblog", "description": "DET Praxis-Blog" }
+    "seometa": {
+      "title": "DET Übungsblog",
+      "description": "DET Praxis-Blog"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -413,7 +418,9 @@
     "SUBMIT": " SUBMIT "
   },
   "cookie": {
-    "seometa": { "title": "Cookie-Richtlinie - DET Practice" },
+    "seometa": {
+      "title": "Cookie-Richtlinie - DET Practice"
+    },
     "Cookie_Policy": "Cookie-Richtlinie",
     "Last_updated": "Zuletzt aktualisiert:",
     "Last_updated_time": "2024-03-27",
@@ -454,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice – KI-Schreibkorrekturservice für Ihren Duolingo-Englischtest",
+      "description": "Der von AI bereitgestellte DET Writing AI-Korrekturdienst ist mit professionellen Lehrern vergleichbar. \nIhr Aufsatz wird anhand der DET-Bewertungsregeln korrigiert und Sie erhalten innerhalb von 1–5 Minuten ein detailliertes Feedback.",
       "keywords": "需要提供"
     },
     "h1": "∑ KI-Korrektur schreiben",
@@ -495,7 +502,9 @@
     "article1": {
       "title": "Hauptmerkmale der DET Prüfung zur Sprachbeherrschung:",
       "list": [
-        { "content": "• Tiefgehende Erkundung aller DET Sprechaufgabentypen" },
+        {
+          "content": "• Tiefgehende Erkundung aller DET Sprechaufgabentypen"
+        },
         {
           "content": "• Praktische Strategien für die Herangehensweise an jede Sprechaufgabe"
         },
@@ -687,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Benötigt",
-      "description": "Muss bereitgestellt werden",
+      "title": "DET Practice – KI-Sprachkorrekturdienst für Ihren Duolingo-Englischtest",
+      "description": "DET Sprechender KI-Korrekturdienst, bereitgestellt durch leistungsstarke KI. \nUnterstützt alle Arten von Sprechfragen und bietet professionelle Anleitung, die Ihnen dabei hilft, Ihre DET-Punktzahl für Sprechfragen auf einfache Weise zu verbessern.",
       "keywords": "Benötigt werden"
     },
     "h1": "∑ Sprechende KI Korrektur",
@@ -962,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Probieren Sie Detpractice.com selbst aus" },
-      { "font": "Bewerben Sie Detpractice.com ethisch und ehrlich" },
-      { "font": "Erstellen Sie qualitativ hochwertigen und relevanten Inhalt" },
-      { "font": "Geben Sie Ihre Partnerschaftsbeziehung bekannt" }
+      {
+        "font": "Probieren Sie Detpractice.com selbst aus"
+      },
+      {
+        "font": "Bewerben Sie Detpractice.com ethisch und ehrlich"
+      },
+      {
+        "font": "Erstellen Sie qualitativ hochwertigen und relevanten Inhalt"
+      },
+      {
+        "font": "Geben Sie Ihre Partnerschaftsbeziehung bekannt"
+      }
     ],
     "dontsList": [
-      { "font": "Machen Sie keine irreführenden oder falschen Aussagen über Detpractice.com" },
-      { "font": "Werben Sie nicht auf Plattformen mit unangemessenem oder illegalem Inhalt" },
-      { "font": "Werben Sie nicht auf Gutscheinseiten" },
+      {
+        "font": "Machen Sie keine irreführenden oder falschen Aussagen über Detpractice.com"
+      },
+      {
+        "font": "Werben Sie nicht auf Plattformen mit unangemessenem oder illegalem Inhalt"
+      },
+      {
+        "font": "Werben Sie nicht auf Gutscheinseiten"
+      },
       {
         "font": "Erstellen Sie keine Werbekampagnen mit unserem Markennamen oder setzen Sie unseren Domainnamen in die Ziel-URLs Ihrer Anzeigen"
       }

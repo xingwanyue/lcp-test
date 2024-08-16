@@ -245,7 +245,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> Soal Latihan" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Soal Latihan"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>Tidak Terbatas</span> untuk Sesi Latihan",
         "name2Desc": "<span class='bigger'>{correctNum}</span> Layanan Koreksi",
@@ -356,7 +358,10 @@
     "Start_Now": "Mulai Sekarang"
   },
   "path": {
-    "seometa": { "title": "DET Blog Praktek", "description": "DET Blog Praktik" }
+    "seometa": {
+      "title": "DET Blog Praktek",
+      "description": "DET Blog Praktik"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -364,7 +369,6 @@
       "description": ""
     },
     "title": "Tentang DET Practice",
-
     "title_desc": "DETPractice.com adalah platform terbaik untuk ∫ Berlatih dan Belajar.",
     "check_out": {
       "h2": "Lihat Apa yang Bisa Kami Lakukan",
@@ -414,7 +418,9 @@
     "SUBMIT": "KIRIM"
   },
   "cookie": {
-    "seometa": { "title": "Kebijakan Cookie - DET Practice" },
+    "seometa": {
+      "title": "Kebijakan Cookie - DET Practice"
+    },
     "Cookie_Policy": "Kebijakan Cookie",
     "Last_updated": "Terakhir diperbarui:",
     "Last_updated_time": "2024-03-27",
@@ -455,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "Latihan DET - Layanan Koreksi Penulisan AI untuk Tes Bahasa Inggris Duolingo Anda",
+      "description": "Layanan Koreksi AI Penulisan DET yang disediakan oleh AI sebanding dengan guru profesional. \nEsai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima masukan terperinci dalam 1-5 menit.",
       "keywords": "需要提供"
     },
     "h1": "∑ Menulis Koreksi AI",
@@ -690,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "Latihan DET - Layanan Koreksi Berbicara AI untuk Tes Bahasa Inggris Duolingo Anda",
+      "description": "Layanan Koreksi AI Berbicara DET disediakan oleh AI yang kuat. \nMendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda meningkatkan skor berbicara DET Anda dengan mudah.",
       "keywords": "需要提供"
     },
     "h1": "∑ Koreksi AI Berbicara",
@@ -965,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Cobalah Detpractice.com untuk diri Anda sendiri" },
-      { "font": "Promosikan Detpractice.com secara etis dan jujur" },
-      { "font": "Buat konten berkualitas dan relevan" },
-      { "font": "Ungkapkan hubungan afiliasi Anda" }
+      {
+        "font": "Cobalah Detpractice.com untuk diri Anda sendiri"
+      },
+      {
+        "font": "Promosikan Detpractice.com secara etis dan jujur"
+      },
+      {
+        "font": "Buat konten berkualitas dan relevan"
+      },
+      {
+        "font": "Ungkapkan hubungan afiliasi Anda"
+      }
     ],
     "dontsList": [
-      { "font": "Jangan membuat klaim yang menyesatkan atau salah tentang Detpractice.com" },
-      { "font": "Jangan promosikan di platform yang memiliki konten yang tidak pantas atau ilegal" },
-      { "font": "Jangan promosikan di situs kupon" },
+      {
+        "font": "Jangan membuat klaim yang menyesatkan atau salah tentang Detpractice.com"
+      },
+      {
+        "font": "Jangan promosikan di platform yang memiliki konten yang tidak pantas atau ilegal"
+      },
+      {
+        "font": "Jangan promosikan di situs kupon"
+      },
       {
         "font": "Jangan buat kampanye iklan menggunakan nama merek kami, atau menempatkan nama domain kami di URL tujuan iklan Anda"
       }

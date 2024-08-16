@@ -358,7 +358,10 @@
     "Start_Now": "Şimdi Başla"
   },
   "path": {
-    "seometa": { "title": "DET Pratik Blog", "description": "DET Pratik Blog" }
+    "seometa": {
+      "title": "DET Pratik Blog",
+      "description": "DET Pratik Blog"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -415,7 +418,9 @@
     "SUBMIT": "GÖNDER"
   },
   "cookie": {
-    "seometa": { "title": "Çerez Politikası - DET Practice" },
+    "seometa": {
+      "title": "Çerez Politikası - DET Practice"
+    },
     "Cookie_Policy": "Çerez Politikası",
     "Last_updated": "Son güncelleme:",
     "Last_updated_time": "2024-03-27",
@@ -456,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Yazım Düzeltme Hizmeti",
+      "description": "Yapay zeka tarafından sağlanan DET Yazma Yapay Zeka Düzeltme hizmeti, profesyonel öğretmenlerle karşılaştırılabilir. \nMakaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
       "keywords": "需要提供"
     },
     "h1": "∑ Yapay Zeka Düzeltme Yazma",
@@ -497,8 +502,12 @@
     "article1": {
       "title": "DET Konuşma Sınavı Mükemmelliğinin Ana Özellikleri:",
       "list": [
-        { "content": "• Tüm DET konuşma görev türlerinin derinlemesine keşfi" },
-        { "content": "• Her bir konuşma görevi için pratik stratejiler" },
+        {
+          "content": "• Tüm DET konuşma görev türlerinin derinlemesine keşfi"
+        },
+        {
+          "content": "• Her bir konuşma görevi için pratik stratejiler"
+        },
         {
           "content": "• Konuşma netliğini, akıcılığını ve güvenini artırmak için interaktif alıştırmalar"
         },
@@ -525,7 +534,9 @@
     "article2": {
       "title": "DET Yazı Sınavı Mükemmelliğinin Ana Özellikleri:",
       "list": [
-        { "content": "• Analiz ve örneklerle kapsamlı DET yazma görevleri" },
+        {
+          "content": "• Analiz ve örneklerle kapsamlı DET yazma görevleri"
+        },
         {
           "content": "• Olağanüstü makaleler planlama ve yazma için adım adım kılavuzlar"
         },
@@ -685,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Konuşma Düzeltme Hizmeti",
+      "description": "Güçlü yapay zeka tarafından sağlanan DET Konuşma Yapay Zekası Düzeltme hizmeti. \nTüm konuşma sorusu türlerini destekler ve DET konuşma puanınızı kolayca geliştirmenize yardımcı olacak profesyonel rehberlik sağlar.",
       "keywords": "需要提供"
     },
     "h1": "∑ Konuşan AI Düzeltme",
@@ -960,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Detpractice.com'u kendiniz deneyin" },
-      { "font": "Detpractice.com'u etik ve dürüst bir şekilde tanıtın" },
-      { "font": "Kaliteli ve ilgili içerikler oluşturun" },
-      { "font": "Bağlılık ilişkinizi açıklayın" }
+      {
+        "font": "Detpractice.com'u kendiniz deneyin"
+      },
+      {
+        "font": "Detpractice.com'u etik ve dürüst bir şekilde tanıtın"
+      },
+      {
+        "font": "Kaliteli ve ilgili içerikler oluşturun"
+      },
+      {
+        "font": "Bağlılık ilişkinizi açıklayın"
+      }
     ],
     "dontsList": [
-      { "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunun" },
-      { "font": "Uygunsuz veya yasa dışı içeriğe sahip platformlarda tanıtım yapın" },
-      { "font": "Herhangi bir kupon sitesinde tanıtım yapın" },
+      {
+        "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunun"
+      },
+      {
+        "font": "Uygunsuz veya yasa dışı içeriğe sahip platformlarda tanıtım yapın"
+      },
+      {
+        "font": "Herhangi bir kupon sitesinde tanıtım yapın"
+      },
       {
         "font": "Marka adımızı kullanarak reklam kampanyaları düzenleyin veya reklamlarınızın hedef URL'lerine alan adımızı koyun"
       }

@@ -245,7 +245,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> Oefenvragen" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Oefenvragen"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>Onbeperkt</span> voor Oefensessies",
         "name2Desc": "<span class='bigger'>{correctNum}</span> Correctiediensten",
@@ -356,7 +358,10 @@
     "Start_Now": "Begin Nu"
   },
   "path": {
-    "seometa": { "title": "DET Oefenblog", "description": "DET Oefenblog" }
+    "seometa": {
+      "title": "DET Oefenblog",
+      "description": "DET Oefenblog"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -364,7 +369,6 @@
       "description": ""
     },
     "title": "Over DET Practice",
-
     "title_desc": "DETPractice.com is het beste platform voor ∫ Oefenen en Leren.",
     "check_out": {
       "h2": "Bekijk Wat We Kunnen Doen",
@@ -414,7 +418,9 @@
     "SUBMIT": "VERZENDEN"
   },
   "cookie": {
-    "seometa": { "title": "Cookiebeleid - DET Praktijk" },
+    "seometa": {
+      "title": "Cookiebeleid - DET Praktijk"
+    },
     "Cookie_Policy": "Cookiebeleid",
     "Last_updated": "Laatst bijgewerkt:",
     "Last_updated_time": "2024-03-27",
@@ -455,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET-praktijk - AI-schrijfcorrectieservice voor uw Duolingo-test Engels",
+      "description": "DET Schrijven AI Correctieservice aangeboden door AI vergelijkbaar met professionele leraren. \nJe essay wordt gecorrigeerd op basis van DET-scoreregels en je ontvangt binnen 1-5 minuten gedetailleerde feedback.",
       "keywords": "需要提供"
     },
     "h1": "∑ Schrijven AI Correctie",
@@ -496,7 +502,9 @@
     "article1": {
       "title": "Belangrijkste Kenmerken van DET Spreekexamen Uitmuntendheid:",
       "list": [
-        { "content": "• Diepgaand onderzoek van alle DET spreekoefeningstypes" },
+        {
+          "content": "• Diepgaand onderzoek van alle DET spreekoefeningstypes"
+        },
         {
           "content": "• Praktische strategieën voor het benaderen van elke spreekoefening"
         },
@@ -688,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET-praktijk - AI-spraakcorrectieservice voor uw Duolingo-test Engels",
+      "description": "DET Sprekende AI Correctieservice geleverd door krachtige AI. \nOndersteunt alle typen spreekvragen en biedt professionele begeleiding waarmee u eenvoudig uw DET-spreekscore kunt verbeteren.",
       "keywords": "需要提供"
     },
     "h1": "∑ Spreken AI Correctie",
@@ -963,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Probeer Detpractice.com zelf uit" },
-      { "font": "Promoot Detpractice.com op ethische en eerlijke wijze" },
-      { "font": "Creëer kwalitatieve en relevante content" },
-      { "font": "Maak je affiliate relatie bekend" }
+      {
+        "font": "Probeer Detpractice.com zelf uit"
+      },
+      {
+        "font": "Promoot Detpractice.com op ethische en eerlijke wijze"
+      },
+      {
+        "font": "Creëer kwalitatieve en relevante content"
+      },
+      {
+        "font": "Maak je affiliate relatie bekend"
+      }
     ],
     "dontsList": [
-      { "font": "Maak misleidende of valse claims over Detpractice.com" },
-      { "font": "Promoot op platforms met ongepaste of illegale inhoud" },
-      { "font": "Promoot op een willekeurige kortingswebsite" },
+      {
+        "font": "Maak misleidende of valse claims over Detpractice.com"
+      },
+      {
+        "font": "Promoot op platforms met ongepaste of illegale inhoud"
+      },
+      {
+        "font": "Promoot op een willekeurige kortingswebsite"
+      },
       {
         "font": "Stel advertentiecampagnes op met ons merknaam, of plaats ons domeinnaam in de bestemmings-URLs van je advertenties"
       }

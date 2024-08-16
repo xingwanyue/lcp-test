@@ -245,7 +245,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> Øve Spørgsmål" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Øve Spørgsmål"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>Ubegrænset</span> til Øvesessioner",
         "name2Desc": "<span class='bigger'>{correctNum}</span> Korrektionsydelser",
@@ -356,7 +358,10 @@
     "Start_Now": "Start nu"
   },
   "path": {
-    "seometa": { "title": "DET Øve Blog", "description": "DET Practice Blog" }
+    "seometa": {
+      "title": "DET Øve Blog",
+      "description": "DET Practice Blog"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -413,7 +418,9 @@
     "SUBMIT": "INDSEND"
   },
   "cookie": {
-    "seometa": { "title": "Cookiepolitik - DET Praktik" },
+    "seometa": {
+      "title": "Cookiepolitik - DET Praktik"
+    },
     "Cookie_Policy": "Cookiepolitik",
     "Last_updated": "Sidst opdateret:",
     "Last_updated_time": "2024-03-27",
@@ -454,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要需要提供需要提供需要提供提供",
-      "description": "需要提供需要提供需要提供",
+      "title": "DET Practice - AI Writing Correction Service til din Duolingo English Test",
+      "description": "DET Writing AI Correction service leveret af AI, der kan sammenlignes med professionelle lærere. \nDit essay vil blive rettet ud fra DET-scoringsregler, og du vil modtage detaljeret feedback inden for 1-5 minutter.",
       "keywords": "需要提供"
     },
     "h1": "∑ Skrivning af AI Korrektion",
@@ -495,7 +502,9 @@
     "article1": {
       "title": "Nøglefunktioner ved DET Talende Eksamen Excellence:",
       "list": [
-        { "content": "• Grundig udforskning af alle DET taletyper" },
+        {
+          "content": "• Grundig udforskning af alle DET taletyper"
+        },
         {
           "content": "• Praktiske strategier til at nærme sig hver talende opgave"
         },
@@ -687,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Behov for at levere",
-      "description": "Har brug for at levere",
+      "title": "DET Practice - AI Speaking Correction Service til din Duolingo English Test",
+      "description": "DET Speaking AI Correction service leveret af kraftfuld AI. \nStøt alle talespørgsmålstyper og giver professionel vejledning til at hjælpe dig med nemt at forbedre din DET-talescore.",
       "keywords": "Har brug for at levere"
     },
     "h1": "∑ Talende AI Korrektion",
@@ -962,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Prøv Detpractice.com for dig selv" },
-      { "font": "Promover Detpractice.com etisk og ærligt" },
-      { "font": "Opret kvalitetsindhold, der er relevant" },
-      { "font": "Oplys om dit affiliateforhold" }
+      {
+        "font": "Prøv Detpractice.com for dig selv"
+      },
+      {
+        "font": "Promover Detpractice.com etisk og ærligt"
+      },
+      {
+        "font": "Opret kvalitetsindhold, der er relevant"
+      },
+      {
+        "font": "Oplys om dit affiliateforhold"
+      }
     ],
     "dontsList": [
-      { "font": "Lav ikke vildledende eller falske påstande om Detpractice.com" },
-      { "font": "Promover ikke på platforme med upassende eller ulovligt indhold" },
-      { "font": "Promover ikke på nogen kuponside" },
+      {
+        "font": "Lav ikke vildledende eller falske påstande om Detpractice.com"
+      },
+      {
+        "font": "Promover ikke på platforme med upassende eller ulovligt indhold"
+      },
+      {
+        "font": "Promover ikke på nogen kuponside"
+      },
       {
         "font": "Opret ikke annoncer ved hjælp af vores brandnavn, eller sæt vores domænenavn i dine annonces destination URLs"
       }

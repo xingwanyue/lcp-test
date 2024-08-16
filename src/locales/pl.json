@@ -418,7 +418,9 @@
     "SUBMIT": "WYŚLIJ"
   },
   "cookie": {
-    "seometa": { "title": "Polityka dotycząca plików cookie - DET Practice" },
+    "seometa": {
+      "title": "Polityka dotycząca plików cookie - DET Practice"
+    },
     "Cookie_Policy": "Polityka plików cookie",
     "Last_updated": "Ostatnia aktualizacja:",
     "Last_updated_time": "2024-03-27",
@@ -459,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice — usługa korekty tekstu AI do testu z języka angielskiego w Duolingo",
+      "description": "Usługa korekcji DET Writing AI świadczona przez sztuczną inteligencję porównywalna z profesjonalnymi nauczycielami. \nTwój esej zostanie poprawiony w oparciu o zasady punktacji DET, a szczegółową informację zwrotną otrzymasz w ciągu 1-5 minut.",
       "keywords": "需要提供"
     },
     "h1": "∑ Pisanie AI Korekta",
@@ -495,7 +497,6 @@
   "courses": {
     "seometa": {
       "title": "DET Ćwicz - Opanuj Mówienie i Pisanie z Duolingo English Test Przewodnikiem",
-
       "description": "Odkryj swój potencjał z naszym ∫ Przewodnikiem. Zagłębiaj się w doskonałość mówienia i pisania dzięki kompleksowym strategiom, fachowym wskazówkom i zaktualizowanym ∑ Ćwiczeniom."
     },
     "article1": {
@@ -695,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice — usługa korekty wymowy AI dla Twojego testu z języka angielskiego w Duolingo",
+      "description": "Usługa korekcji DET Speaking AI świadczona przez potężną sztuczną inteligencję. \nObsługuje wszystkie typy pytań związanych z mówieniem i zapewnia profesjonalne wskazówki, które pomogą Ci łatwo poprawić wynik mówienia DET.",
       "keywords": "需要提供"
     },
     "h1": "∑ Poprawa AI mówiącego",
@@ -970,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Wypróbuj Detpractice.com na własną rękę" },
-      { "font": "Promuj Detpractice.com w sposób etyczny i uczciwy" },
-      { "font": "Twórz wysokiej jakości i trafne treści" },
-      { "font": "Ujawniaj swoje partnerstwo afiliacyjne" }
+      {
+        "font": "Wypróbuj Detpractice.com na własną rękę"
+      },
+      {
+        "font": "Promuj Detpractice.com w sposób etyczny i uczciwy"
+      },
+      {
+        "font": "Twórz wysokiej jakości i trafne treści"
+      },
+      {
+        "font": "Ujawniaj swoje partnerstwo afiliacyjne"
+      }
     ],
     "dontsList": [
-      { "font": "Publikuj mylące lub fałszywe informacje na temat Detpractice.com" },
-      { "font": "Promuj na platformach z nieodpowiednimi lub nielegalnymi treściami" },
-      { "font": "Promuj na dowolnej stronie z kuponami" },
+      {
+        "font": "Publikuj mylące lub fałszywe informacje na temat Detpractice.com"
+      },
+      {
+        "font": "Promuj na platformach z nieodpowiednimi lub nielegalnymi treściami"
+      },
+      {
+        "font": "Promuj na dowolnej stronie z kuponami"
+      },
       {
         "font": "Ustawiaj kampanie reklamowe używając naszej nazwy handlowej lub umieszczając naszą nazwę domeny w URL-ach docelowych Twoich reklam"
       }

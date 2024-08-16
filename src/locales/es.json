@@ -418,7 +418,9 @@
     "SUBMIT": "ENVIAR"
   },
   "cookie": {
-    "seometa": { "title": "Política de Cookies - DET Practice" },
+    "seometa": {
+      "title": "Política de Cookies - DET Practice"
+    },
     "Cookie_Policy": "Política de cookies",
     "Last_updated": "Última actualización:",
     "Last_updated_time": "2024-03-27",
@@ -459,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "Práctica DET: servicio de corrección de escritura con IA para tu examen de inglés de Duolingo",
+      "description": "Servicio de corrección de IA de escritura DET proporcionado por IA comparable al de los profesores profesionales. \nSu ensayo se corregirá según las reglas de puntuación del DET y recibirá comentarios detallados en un plazo de 1 a 5 minutos.",
       "keywords": "需要提供"
     },
     "h1": "∑ Escritura de Corrección de IA",
@@ -694,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "Práctica DET: servicio de corrección del habla con IA para tu examen de inglés de Duolingo",
+      "description": "Servicio DET Speaking AI Correction proporcionado por una potente IA. \nAdmite todo tipo de preguntas orales y brinda orientación profesional para ayudarlo a mejorar fácilmente su puntaje de conversación DET.",
       "keywords": "需要提供"
     },
     "h1": "∑ Corrección de IA Hablante",
@@ -969,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Prueba Detpractice.com por ti mismo" },
-      { "font": "Promociona Detpractice.com ética y honestamente" },
-      { "font": "Crea contenido de calidad y relevante" },
-      { "font": "Divulga tu relación de afiliado" }
+      {
+        "font": "Prueba Detpractice.com por ti mismo"
+      },
+      {
+        "font": "Promociona Detpractice.com ética y honestamente"
+      },
+      {
+        "font": "Crea contenido de calidad y relevante"
+      },
+      {
+        "font": "Divulga tu relación de afiliado"
+      }
     ],
     "dontsList": [
-      { "font": "No hagas afirmaciones engañosas o falsas sobre Detpractice.com" },
-      { "font": "No promociones en plataformas con contenido inapropiado o ilegal" },
-      { "font": "No promociones en sitios de cupones" },
+      {
+        "font": "No hagas afirmaciones engañosas o falsas sobre Detpractice.com"
+      },
+      {
+        "font": "No promociones en plataformas con contenido inapropiado o ilegal"
+      },
+      {
+        "font": "No promociones en sitios de cupones"
+      },
       {
         "font": "No configures campañas publicitarias usando nuestro nombre de marca, o colocando nuestro nombre de dominio en las URL de destino de tus anuncios"
       }

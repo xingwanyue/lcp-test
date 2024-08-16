@@ -245,7 +245,9 @@
       }
     ],
     "qlList": {
-      "day0": { "name1Desc": "<span class='bigger'>20</span> Øvingsspørsmål" },
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Øvingsspørsmål"
+      },
       "day7": {
         "name1Desc": "<span class='bigger'>Ubegrenset</span> for øvelsesøkter",
         "name2Desc": "<span class='bigger'>{correctNum}</span> Korreksjonstjenester",
@@ -356,7 +358,10 @@
     "Start_Now": "Start nå"
   },
   "path": {
-    "seometa": { "title": "DET Practice Blog", "description": "DET Practice Blog" }
+    "seometa": {
+      "title": "DET Practice Blog",
+      "description": "DET Practice Blog"
+    }
   },
   "aboutUs": {
     "seometa": {
@@ -364,7 +369,6 @@
       "description": ""
     },
     "title": "Om DET Practice",
-
     "title_desc": "DETPractice.com er den beste plattformen for ∫ Øving og Læring.",
     "check_out": {
       "h2": "Sjekk ut hva vi kan gjøre",
@@ -457,8 +461,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - AI Writing Correction Service for din Duolingo English Test",
+      "description": "DET Writing AI Correction-tjeneste levert av AI som kan sammenlignes med profesjonelle lærere. \nEssayet ditt vil bli korrigert basert på DET-scoringsregler, og du vil motta detaljert tilbakemelding innen 1-5 minutter.",
       "keywords": "需要提供"
     },
     "h1": "∑ Skrive AI Korreksjon",
@@ -498,7 +502,9 @@
     "article1": {
       "title": "Nøkkelfunksjoner i DET Snakkeeksamen Fremragende:",
       "list": [
-        { "content": "• Grundig utforskning av alle DET taleoppgavetyper" },
+        {
+          "content": "• Grundig utforskning av alle DET taleoppgavetyper"
+        },
         {
           "content": "• Praktiske strategier for å nærme seg hver taleoppgave"
         },
@@ -543,7 +549,9 @@
         {
           "content": "• Kommenterte eksempeloppgaver som viser effektive strategier og vanlige fallgruver"
         },
-        { "content": "• Tilpassbare læringsstier for ulike ferdighetsnivåer" },
+        {
+          "content": "• Tilpassbare læringsstier for ulike ferdighetsnivåer"
+        },
         {
           "content": "• Vekt på essensiell grammatikk og ordforråd for DET suksess"
         },
@@ -688,8 +696,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "需要提供",
-      "description": "需要提供",
+      "title": "DET Practice - AI Speaking Correction Service for din Duolingo English Test",
+      "description": "DET Speaking AI Correction-tjeneste levert av kraftig AI. \nStøtt alle typer talespørsmål, og gir profesjonell veiledning for å hjelpe deg med å enkelt forbedre DET-taleresultatet.",
       "keywords": "需要提供"
     },
     "h1": "∑ Talende AI Korreksjon",
@@ -963,15 +971,29 @@
       }
     ],
     "dosList": [
-      { "font": "Prøv ut Detpractice.com selv" },
-      { "font": "Promoter Detpractice.com på en etisk og ærlig måte" },
-      { "font": "Lag kvalitets- og relevant innhold" },
-      { "font": "Offentliggjør ditt tilknytningsforhold" }
+      {
+        "font": "Prøv ut Detpractice.com selv"
+      },
+      {
+        "font": "Promoter Detpractice.com på en etisk og ærlig måte"
+      },
+      {
+        "font": "Lag kvalitets- og relevant innhold"
+      },
+      {
+        "font": "Offentliggjør ditt tilknytningsforhold"
+      }
     ],
     "dontsList": [
-      { "font": "Gjør misledende eller falske påstander om Detpractice.com" },
-      { "font": "Promoter på plattformer som har upassende eller ulovlig innhold" },
-      { "font": "Promoter på hvilken som helst kupongside" },
+      {
+        "font": "Gjør misledende eller falske påstander om Detpractice.com"
+      },
+      {
+        "font": "Promoter på plattformer som har upassende eller ulovlig innhold"
+      },
+      {
+        "font": "Promoter på hvilken som helst kupongside"
+      },
       {
         "font": "Sett opp reklamekampanjer ved å bruke vårt varemerke eller legge vårt domenenavn i dine annonse-destinasjons-URLer"
       }
