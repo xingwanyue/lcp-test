@@ -59,19 +59,19 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
               <div class="people_num">
                 <div class="icon_continer">
                   <div class="one_icon left0">
-                    <img src="/img/products/service_user_icon5.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
+                    <img src="/img/products/speaking_user_icon4.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
                   </div>
                   <div class="one_icon left24">
-                    <img src="/img/products/service_user_icon4.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
+                    <img src="/img/products/speaking_user_icon5.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
                   </div>
                   <div class="one_icon left48">
-                    <img src="/img/products/service_user_icon3.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
+                    <img src="/img/products/speaking_user_icon3.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
                   </div>
                   <div class="one_icon left72">
-                    <img src="/img/products/service_user_icon2.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
+                    <img src="/img/products/speaking_user_icon2.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
                   </div>
                   <div class="one_icon left96">
-                    <img src="/img/products/service_user_icon1.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
+                    <img src="/img/products/speaking_user_icon1.png" :alt="$t('speakingaicorrection.bank_user_icon')" />
                   </div>
                 </div>
                 <div v-if="platformData" class="font">
