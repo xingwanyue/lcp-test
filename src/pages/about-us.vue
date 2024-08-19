@@ -102,7 +102,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
             <div class="right_one values">
               <div class="right_one_title">{{ $t('aboutUs.three_our_our.ovs') }}</div>
               <div class="right_one_desc" v-html="$t('aboutUs.three_our_our.ovsdesc')"></div>
-              <div class="bg_img" :style="`background-image: url(${our_val_bg});`"></div>
+              <div class="bg_img bigger" :style="`background-image: url(${our_val_bg});`"></div>
             </div>
           </div>
         </div>
@@ -256,10 +256,14 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
             height: 100%;
             position: absolute;
             right: 0;
+            left: 20px;
             top: 0;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            @media (max-width: 1200px) {
+              left: 0;
+            }
           }
         }
         .right {
@@ -298,6 +302,9 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
               background-position: center;
               background-repeat: no-repeat;
               z-index: 0;
+            }
+            .bigger {
+              height: 100%;
             }
           }
           .mission {
