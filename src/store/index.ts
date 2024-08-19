@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
 import { useRouter } from 'vue-router';
-import { payEvent, beginCheckoutEvent } from '@/utils/gtag';
+import { payEvent, beginCheckoutEvent, setUserData } from '@/utils/gtag';
 
 import { api, saveToken, getToken, removeToken, delay } from '@/utils';
 import { fetchmy } from '@/utils/request';
@@ -42,6 +42,7 @@ export const useStore = defineStore({
       });
       const { token, user } = await res.json();
       this.user = user;
+      setUserData({ email: user.email });
       saveToken(token);
     },
     async userClickLogin(args: any) {
@@ -81,6 +82,7 @@ export const useStore = defineStore({
             this.isVip = true;
           }
           this.user = user;
+          setUserData({ email: user.email });
         }
       } catch (e) {
         console.log(e);

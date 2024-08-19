@@ -47,3 +47,9 @@ export const payEvent = (transaction_id = '', value = 100) => {
   }
   return false;
 };
+
+export const setUserData = async (user: any) => {
+  window.gtag('set', 'user_data', {
+    email: user.email,
+  });
+};
