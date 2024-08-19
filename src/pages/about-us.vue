@@ -177,6 +177,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
       .one_prod {
         padding: 32px;
         border-radius: 8px;
+        min-height: 138px;
         .one_prod_top {
           display: flex;
           align-items: center;
@@ -469,6 +470,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         grid-gap: 16px;
         .one_prod {
           padding: 15px;
+
           .one_prod_top {
             .one_prod_icon {
               width: 24px;
