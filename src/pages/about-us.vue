@@ -26,7 +26,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
           <h1>{{ $t('aboutUs.title') }}</h1>
         </div>
         <div class="titledesc">
-          <h2>{{ $t('aboutUs.title_desc') }}</h2>
+          <h2 v-html="$t('aboutUs.title_desc')"></h2>
         </div>
       </div>
     </div>
@@ -150,9 +150,11 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         }
       }
       .titledesc {
-        font-weight: 400;
-        font-size: 32px;
-        color: #201515;
+        h2 {
+          font-weight: 400;
+          font-size: 32px;
+          color: #201515;
+        }
       }
     }
   }
