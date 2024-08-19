@@ -9,6 +9,7 @@ import { oauth2SignIn } from '@/utils/googleAuth';
 import { getToken, saveToken } from '@/utils';
 useHead({
   meta: [{ name: 'robots', content: 'index' }],
+  link: [{ rel: 'canonical', href: 'https://www.detpractice.com' }],
 });
 const localePath = useLocalePath();
 const route = useRoute();
