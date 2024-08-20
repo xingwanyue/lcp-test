@@ -77,7 +77,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <div v-if="platformData" class="font">
                   {{
                     $t('speakingaicorrection.learners_have', {
-                      number: platformData.correctTotal,
+                      number: platformData.speakingTotal,
                     })
                   }}
                 </div>
