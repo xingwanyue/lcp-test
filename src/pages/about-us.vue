@@ -476,6 +476,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         grid-gap: 16px;
         .one_prod {
           padding: 15px;
+          min-height: unset;
 
           .one_prod_top {
             .one_prod_icon {
@@ -502,8 +503,10 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         }
         .three_dom_out {
           grid-template-columns: 1fr;
+          grid-gap: 16px;
           .left {
             padding: 15px;
+            min-height: 200px;
             .left_title {
               font-size: 20px;
             }
@@ -511,9 +514,15 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
               font-size: 14px;
               margin-top: 8px;
             }
+            .bg_img {
+              background-size: contain;
+              background-position: right;
+            }
           }
           .right {
+            grid-gap: 16px;
             .right_one {
+              min-height: 140px;
               padding: 15px;
               .right_one_title {
                 font-size: 20px;
@@ -542,7 +551,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
       }
     }
     .get_in_touch_wrapper {
-      margin-top: 50px;
+      margin-top: 40px;
       .get_in_touch {
         padding: 50px 15px;
         .get_in_touch_title {
@@ -555,7 +564,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
           margin-top: 8px;
         }
         .youtube_out {
-          height: 300px;
+          height: 110px;
           .youtube_btn {
             .youtube_icon {
               width: 24px;
