@@ -123,7 +123,7 @@
       "tips2": "Score d'IA, Correction d'IA, Orientation de l'enseignant",
       "tips3": "Scores d'Évaluation Précis, Rapport d'Évaluation Détaillé",
       "tips4": "Les résultats seront disponibles dans un délai de <span class='yellow'>1 à 5 minutes</span>",
-      "btn_font": "En savoir plus",
+      "btn_font": "Apprendre encore plus",
       "btn_img_alt": "Flèche Droite Jaune"
     },
     "article4": {
@@ -132,7 +132,7 @@
       "tips2": "Résultats d'évaluation par IA, Évaluation par IA, Orientation des enseignants",
       "tips3": "Scores d'Évaluation Précis, Rapport d'Évaluation Détaillé",
       "tips4": "Les résultats seront disponibles dans <span class='yellow'>1-5 minutes</span>",
-      "btn_font": "Explorez plus",
+      "btn_font": "Apprendre encore plus",
       "btn_img_alt": "Flèche Jaune Droite"
     },
     "article5": {
@@ -141,7 +141,7 @@
       "tips2": "Atteindre une Maîtrise Complète",
       "tips3": "Apprenez des experts en ESL",
       "tips4": "Restez informé et en avance",
-      "btn_font": "Explorez plus",
+      "btn_font": "Explorer davantage",
       "btn_img_alt": "Flèche droite jaune"
     },
     "thousand": "k",

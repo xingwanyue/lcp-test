@@ -398,7 +398,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <span v-html="$t('index.article5.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/courses')">
-              <div class="font">{{ $t('index.article3.btn_font') }}</div>
+              <div class="font">{{ $t('index.article5.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
               </div>

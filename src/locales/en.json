@@ -95,7 +95,7 @@
       "tips2": "Continuously <span class='yellow'>updated every day</span>",
       "tips3": "Provide high-scoring answers and detailed explanations",
       "tips4": "AI Scoring for Read Aloud",
-      "btn_font": "Discover More",
+      "btn_font": "Discover more",
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article2": {
@@ -104,7 +104,7 @@
       "tips2": "Adaptive Exams, and AI Scoring",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
       "tips4": "Results will be available within <span class='yellow'>5-30 minutes</span>",
-      "btn_font": "Learn More",
+      "btn_font": "Find out more",
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article3": {
@@ -113,7 +113,7 @@
       "tips2": "AI Scoring, AI Correction, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
       "tips4": "Results will be available within <span class='yellow'>1-5 minutes</span>",
-      "btn_font": "Find Out More",
+      "btn_font": "Learn more",
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article4": {
@@ -122,7 +122,7 @@
       "tips2": "AI Scoring, AI Evaluation Results, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
       "tips4": "Results will be available within <span class='yellow'>1-5minutes</span>",
-      "btn_font": "Explore More",
+      "btn_font": "Learn more",
       "btn_img_alt": "Yellow Arrow Right"
     },
     "article5": {
@@ -131,7 +131,7 @@
       "tips2": "Achieve Comprehensive Mastery",
       "tips3": "Learn from ESL Experts",
       "tips4": "Stay Informed and Ahead",
-      "btn_font": "Explore More",
+      "btn_font": "Explore more",
       "btn_img_alt": "Yellow Arrow Right"
     },
     "thousand": "k",
