@@ -327,7 +327,7 @@ const changeBuyCorrectTimes = () => {
                         >
                           <span style="float: left">{{ itemTimes.correctNum }} {{ $t('pricing.pagefont.times') }}</span>
                           <span style="float: right; font-size: 13px; margin-left: 60px">
-                            {{ $t('pricing.pagefont.do') }}{{ formatCash(itemTimes.price) }}
+                            {{ $t('pricing.pagefont.do') }}{{ (itemTimes.price / 100).toFixed(2) }}
                           </span>
                         </el-option>
                       </el-select>
