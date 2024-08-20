@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test ฝึกฝน",
       "alt": "Duolingo English Test ฝึกฝน",
-      "font": "บรรลุความเป็นเลิศด้วยคลังคำถามของเราที่ยิ่งใหญ่: มากกว่า 10,000 คำถาม, อัปเดตเป็นประจำ, และการติดตามผลงานอย่างชาญฉลาด!"
+      "font": "บรรลุความเป็นเลิศด้วยคลังคำถามที่ครอบคลุมของเรา: มากกว่า 18,000 คำถาม การอัปเดตเป็นประจำ และการติดตามประสิทธิภาพอันชาญฉลาด!"
     },
     "prod2": {
       "title": "Duolingo English Test บริการแก้ไข",
@@ -51,7 +51,12 @@
     "LearnTitle": "เรียนรู้",
     "BlogTitle": "บล็อก",
     "CompanyTitle": "บริษัท",
-    "Products": ["DET ฝึกฝน", "บริการแก้ไขโดย AI", "DET ม็อค", "Duolingo English Test หลักสูตร"],
+    "Products": [
+      "DET ฝึกฝน",
+      "บริการแก้ไขโดย AI",
+      "DET ม็อค",
+      "Duolingo English Test หลักสูตร"
+    ],
     "Company": [
       "เกี่ยวกับเรา",
       "ติดต่อเรา",
@@ -78,7 +83,12 @@
     "power_by": "ขับเคลื่อนโดย AI",
     "h1Mobile": "รับคะแนนที่สูงขึ้นได้อย่างง่ายดาย<br />ในแบบทดสอบภาษาอังกฤษ Duolingo <br />ด้วย <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "ได้คะแนนสูงขึ้นง่ายๆ บน <br />Duolingo English Test ด้วย <span class=\"seo_hack\">DET ฝึกฝน</span>",
-    "one_small_title": ["DET การฝึกหัด", "การแก้ไข AI", "การจำลองเต็มรูปแบบ", "DET หลักสูตร"],
+    "one_small_title": [
+      "DET การฝึกหัด",
+      "การแก้ไข AI",
+      "การจำลองเต็มรูปแบบ",
+      "DET หลักสูตร"
+    ],
     "Start_free_with_Google": "เริ่มต้นฟรีกับ Google",
     "Start_free_with_email": "เริ่มฟรีด้วยอีเมล",
     "Start_for_free": "เริ่มฟรี",

@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test ممارسة",
       "alt": "Duolingo English Test ممارسة",
-      "font": "حقق التميز من خلال بنك الأسئلة الشامل لدينا: أكثر من 10000 سؤال، تحديثات منتظمة، وتتبع ذكي للأداء!"
+      "font": "حقق التميز من خلال بنك الأسئلة الشامل الخاص بنا: أكثر من 18000 سؤال وتحديثات منتظمة وتتبع الأداء الذكي!"
     },
     "prod2": {
       "title": "Duolingo English Test خدمة التصحيح",
@@ -51,7 +51,12 @@
     "LearnTitle": "تعلم",
     "BlogTitle": "مدونة",
     "CompanyTitle": "شركة",
-    "Products": ["DET ممارسة", "خدمة التصحيح باستخدام الذكاء الاصطناعي", "DET محاكاة", "Duolingo English Test الدورة"],
+    "Products": [
+      "DET ممارسة",
+      "خدمة التصحيح باستخدام الذكاء الاصطناعي",
+      "DET محاكاة",
+      "Duolingo English Test الدورة"
+    ],
     "Company": [
       "معلومات عنا",
       "اتصل بنا",
@@ -78,7 +83,12 @@
     "power_by": "مدعوم بالذكاء الاصطناعي",
     "h1Mobile": "احصل على درجة أعلى بسهولة<br />في اختبار Duolingo <br />الإنجليزي مع <span class=\"seo_hack\">DET ممارسة</span>",
     "h1PC": "احصل على درجة أعلى بسهولة على <br />Duolingo English Test مع <span class=\"seo_hack\">DET ممارسة</span>",
-    "one_small_title": ["DET ممارسة", "تصحيح الذكاء الاصطناعي", "اختبار تجريبي كامل", "DET الدورات"],
+    "one_small_title": [
+      "DET ممارسة",
+      "تصحيح الذكاء الاصطناعي",
+      "اختبار تجريبي كامل",
+      "DET الدورات"
+    ],
     "Start_free_with_Google": "ابدأ مجانًا مع Google",
     "Start_free_with_email": "ابدأ مجانًا بالبريد الإلكتروني",
     "Start_for_free": "ابدأ مجانًا",

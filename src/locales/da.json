@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Øve",
       "alt": "Duolingo English Test Øvelse",
-      "font": "Opnå Ekspertise med Vores Omfattende Spørgsmålsbank: Over 10.000 Spørgsmål, Regelmæssige Opdateringer og Smart Præstationssporing!"
+      "font": "Opnå fremragende kvalitet med vores omfattende spørgsmålsbank: Over 18.000 spørgsmål, regelmæssige opdateringer og smart præstationssporing!"
     },
     "prod2": {
       "title": "Duolingo English Test Korrektionsservice",
@@ -51,7 +51,12 @@
     "LearnTitle": "Lære",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Øve", "AI Korrektionsservice", "DET Narremock", "Duolingo English Test Kursus"],
+    "Products": [
+      "DET Øve",
+      "AI Korrektionsservice",
+      "DET Narremock",
+      "Duolingo English Test Kursus"
+    ],
     "Company": [
       "Om os",
       "Kontakt os",
@@ -78,7 +83,12 @@
     "power_by": "Drevet af AI",
     "h1Mobile": "Få en højere score nemt<br />på Duolingo <br />Engelsk Testen Med <span class=\"seo_hack\">DET Øvelse</span>",
     "h1PC": "Få en højere score nemt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
-    "one_small_title": ["DET Øve", "AI Korrektion", "Fuld-Længde Mock", "DET Kurser"],
+    "one_small_title": [
+      "DET Øve",
+      "AI Korrektion",
+      "Fuld-Længde Mock",
+      "DET Kurser"
+    ],
     "Start_free_with_Google": "Start gratis med Google",
     "Start_free_with_email": "Start gratis med e-mail",
     "Start_for_free": "Start gratis",
@@ -358,7 +368,10 @@
     "Start_Now": "Start nu"
   },
   "path": {
-    "seometa": { "title": "DET Øve Blog", "description": "DET Pratice Blog" }
+    "seometa": {
+      "title": "DET Øve Blog",
+      "description": "DET Pratice Blog"
+    }
   },
   "aboutUs": {
     "seometa": {

@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test 연습",
       "alt": "Duolingo English Test 연습",
-      "font": "방대한 문제 은행으로 탁월함을 달성하십시오: 10,000개 이상의 질문, 정기적인 업데이트 및 스마트 성능 추적!"
+      "font": "광범위한 질문 은행: 18,000개 이상의 질문, 정기적인 업데이트 및 스마트 성과 추적으로 우수성을 달성하세요!"
     },
     "prod2": {
       "title": "Duolingo English Test 교정 서비스",
@@ -51,8 +51,21 @@
     "LearnTitle": "배우기",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사",
-    "Products": ["DET 연습", "AI 교정 서비스", "DET 목", "Duolingo English Test 코스"],
-    "Company": ["회사 소개", "문의하기", "이용 약관", "개인 정보 보호 정책", "사이트맵", "제휴 프로그램", "환불 정책"],
+    "Products": [
+      "DET 연습",
+      "AI 교정 서비스",
+      "DET 목",
+      "Duolingo English Test 코스"
+    ],
+    "Company": [
+      "회사 소개",
+      "문의하기",
+      "이용 약관",
+      "개인 정보 보호 정책",
+      "사이트맵",
+      "제휴 프로그램",
+      "환불 정책"
+    ],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -70,7 +83,12 @@
     "power_by": "AI에 의해 구동됨",
     "h1Mobile": "더 높은 점수를 쉽게 받으세요<br /> Duolingo <br />영어 시험에서 <span class=\"seo_hack\">DET 연습</span>으로",
     "h1PC": "더 높은 점수를 쉽게 받으세요 <br />Duolingo English Test <span class=\"seo_hack\">DET 연습</span>와 함께",
-    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
+    "one_small_title": [
+      "DET 연습",
+      "AI 수정",
+      "풀-길이 모의 시험",
+      "DET 코스"
+    ],
     "Start_free_with_Google": "Google로 무료로 시작하세요",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",

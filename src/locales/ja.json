@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test 練習",
       "alt": "Duolingo English Test 練習",
-      "font": "私たちの広範な質問バンクで卓越性を達成しましょう: 10,000以上の質問、定期的な更新、スマートなパフォーマンストラッキング！"
+      "font": "当社の広範な質問バンクで優秀さを達成しましょう: 18,000 を超える質問、定期的な更新、スマートなパフォーマンス追跡!"
     },
     "prod2": {
       "title": "Duolingo English Test 訂正サービス",
@@ -51,7 +51,12 @@
     "LearnTitle": "学ぶ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "会社",
-    "Products": ["DET 練習", "AI修正サービス", "DET モック", "Duolingo English Test コース"],
+    "Products": [
+      "DET 練習",
+      "AI修正サービス",
+      "DET モック",
+      "Duolingo English Test コース"
+    ],
     "Company": [
       "私たちについて",
       "お問い合わせ",
@@ -78,7 +83,12 @@
     "power_by": "AIによって提供されました",
     "h1Mobile": "簡単に高得点を取得する<br />Duolingo <br />英語テストで<span class=\"seo_hack\">DET 練習</span>",
     "h1PC": "スコアを簡単に上げる <br />Duolingo English Test <span class=\"seo_hack\">DET 練習</span>で",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
