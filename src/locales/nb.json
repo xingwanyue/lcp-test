@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Øvelse",
       "alt": "Duolingo English Test Øvelse",
-      "font": "Oppnå fortreffelighet med vår omfattende spørsmålsbank: Over 18 000 spørsmål, regelmessige oppdateringer og smart ytelsessporing!"
+      "font": "Oppnå dyktighet med vår omfattende spørsmålsbank: 18 000+ spørsmål, regelmessige oppdateringer og smart ytelsessporing!"
     },
     "prod2": {
       "title": "Duolingo English Test Korreksjonstjeneste",
@@ -51,12 +51,7 @@
     "LearnTitle": "Lær",
     "BlogTitle": "Blogg",
     "CompanyTitle": "Firma",
-    "Products": [
-      "DET Øvelse",
-      "AI Korreksjonstjeneste",
-      "DET Narre",
-      "Duolingo English Test Kurs"
-    ],
+    "Products": ["DET Øvelse", "AI Korreksjonstjeneste", "DET Narre", "Duolingo English Test Kurs"],
     "Company": [
       "Om oss",
       "Kontakt oss",
@@ -83,12 +78,7 @@
     "power_by": "Drevet av AI",
     "h1Mobile": "Få en høyere poengsum enkelt<br />på Duolingo <br />engelsktesten med <span class=\"seo_hack\">DET praksis</span>",
     "h1PC": "Få en høyere poengsum enkelt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
-    "one_small_title": [
-      "DET Øvelse",
-      "AI Korrigering",
-      "Full-Length Mock",
-      "DET Kurs"
-    ],
+    "one_small_title": ["DET Øvelse", "AI Korrigering", "Full-Length Mock", "DET Kurs"],
     "Start_free_with_Google": "Start gratis med Google",
     "Start_free_with_email": "Start gratis med e-post",
     "Start_for_free": "Start gratis",
