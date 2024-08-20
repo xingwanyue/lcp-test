@@ -77,7 +77,7 @@ onMounted(async () => {
   }
   .main {
     padding: 60px 0 0 0;
-    min-height: calc(100vh - 60px);
+    // min-height: calc(100vh - 60px);
   }
   .footer_wrap {
     padding: 0 30px;
