@@ -114,7 +114,7 @@ export const useStore = defineStore({
           if (vipDays) {
             message.push(`${vipDays}
             days premium package purchased successfully! Membership valid until 
-            ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
+            ${dayjs(vipEndTime).format('YYYY-MM-DD')}.`);
           }
           if (write) {
             this.user.write = 1;
