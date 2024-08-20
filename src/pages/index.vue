@@ -291,7 +291,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/correction')">
+            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
               <div class="font">{{ $t('index.article2.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article2.btn_img_alt')" />
@@ -323,7 +323,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
+            <NuxtLink class="get_more" :to="localePath('/writing-ai-correction')">
               <div class="font">{{ $t('index.article3.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
@@ -360,7 +360,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/courses')">
+            <NuxtLink class="get_more" :to="localePath('/speaking-ai-correction')">
               <div class="font">{{ $t('index.article4.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article4.btn_img_alt')" />
@@ -397,7 +397,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
+            <NuxtLink class="get_more" :to="localePath('/courses')">
               <div class="font">{{ $t('index.article3.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
