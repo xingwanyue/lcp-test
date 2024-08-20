@@ -77,12 +77,12 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <div v-if="platformData" class="font">
                   {{
                     $t('speakingaicorrection.learners_have', {
-                      number: platformData.correctTotal,
+                      number: platformData.speakingTotal,
                     })
                   }}
                 </div>
               </div>
-              <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :to="urlGet('/questions')">
+              <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :to="urlGet('/correct')">
                 <div class="font">{{ $t('speakingaicorrection.spn') }}</div>
                 <div class="icon">
                   <img src="/img/products/white_arrow_right.svg" :alt="$t('speakingaicorrection.white_arrow_right')" />
@@ -91,7 +91,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
               >
                 <div class="font">{{ $t('speakingaicorrection.spn') }}</div>
                 <div class="icon">
@@ -131,7 +131,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <div class="right_desc">
                   <span v-html="$t('speakingaicorrection.article1.right_desc')"></span>
                 </div>
-                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('speakingaicorrection.article1.btn') }}</div>
                   <div class="arrow">
                     <img
@@ -143,7 +143,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article1.btn') }}</div>
                   <div class="arrow">
@@ -176,7 +176,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <div class="right_desc">
                   <span v-html="$t('speakingaicorrection.article2.right_desc')"></span>
                 </div>
-                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('speakingaicorrection.article2.btn') }}</div>
                   <div class="arrow">
                     <img
@@ -188,7 +188,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article2.btn') }}</div>
                   <div class="arrow">
@@ -221,7 +221,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <div class="right_desc">
                   <span v-html="$t('speakingaicorrection.article3.right_desc')"></span>
                 </div>
-                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/questions')">
+                <NuxtLink v-if="user.id" class="right_click" :to="urlGet('/correct')">
                   <div class="font">{{ $t('speakingaicorrection.article3.btn') }}</div>
                   <div class="arrow">
                     <img
@@ -233,7 +233,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article3.btn') }}</div>
                   <div class="arrow">

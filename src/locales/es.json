@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Práctica",
       "alt": "Duolingo English Test Práctica",
-      "font": "¡Logra la Excelencia con Nuestro Amplio Banco de Preguntas: Más de 10,000 Preguntas, Actualizaciones Regulares y Seguimiento Inteligente del Rendimiento!"
+      "font": "Logre la excelencia con nuestro amplio banco de preguntas: ¡más de 18 000 preguntas, actualizaciones periódicas y seguimiento inteligente del rendimiento!"
     },
     "prod2": {
       "title": "Duolingo English Test Servicio de Corrección",
@@ -51,7 +51,12 @@
     "LearnTitle": "Aprender",
     "BlogTitle": "Blog",
     "CompanyTitle": "Compañía",
-    "Products": ["DET Práctica", "Servicio de Corrección de IA", "DET Simulación", "Duolingo English Test Curso"],
+    "Products": [
+      "DET Práctica",
+      "Servicio de Corrección de IA",
+      "DET Simulación",
+      "Duolingo English Test Curso"
+    ],
     "Company": [
       "Sobre nosotros",
       "Contáctenos",
@@ -78,7 +83,12 @@
     "power_by": "Impulsado por IA",
     "h1Mobile": "Obtén una Puntuación Más Alta Fácilmente<br />en la prueba de Duolingo <br />Inglés Con <span class=\"seo_hack\">DET Práctica</span>",
     "h1PC": "Obtén una Puntuación Más Alta Fácilmente en el <br />Duolingo English Test Con <span class=\"seo_hack\">DET Práctica</span>",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -104,7 +114,7 @@
       "tips2": "Exámenes Adaptativos y Puntuación por IA",
       "tips3": "Puntuaciones de Evaluación Precisas, Informe de Evaluación Detallado",
       "tips4": "Los resultados estarán disponibles en <span class='yellow'>5-30 minutos</span>",
-      "btn_font": "Más información",
+      "btn_font": "Descubra más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "article3": {
@@ -113,7 +123,7 @@
       "tips2": "Puntuación por IA, Corrección por IA, Orientación del Profesor",
       "tips3": "Puntuaciones Precisas de Evaluación, Informe Detallado de Evaluación",
       "tips4": "Los resultados estarán disponibles en <span class='yellow'>1-5 minutos</span>",
-      "btn_font": "Descubre más",
+      "btn_font": "Más información",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "article4": {
@@ -122,7 +132,7 @@
       "tips2": "Puntuación de IA, Resultados de Evaluación de IA, Orientación del Profesorado",
       "tips3": "Puntuaciones Precisas de Evaluación, Informe Detallado de Evaluación",
       "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5 minutos</span>",
-      "btn_font": "Explorar más",
+      "btn_font": "Más información",
       "btn_img_alt": "Flecha Derecha Amarilla"
     },
     "article5": {
@@ -131,7 +141,7 @@
       "tips2": "Logra un Dominio Integral",
       "tips3": "Aprende de expertos en ESL",
       "tips4": "Mantente informado y adelantado",
-      "btn_font": "Explorar Más",
+      "btn_font": "Explora más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "thousand": "k",

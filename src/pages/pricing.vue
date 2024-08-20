@@ -351,7 +351,11 @@ const changeBuyCorrectTimes = () => {
                 </div>
               </div>
               <div v-else>
-                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+                <NuxtLink
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  style="margin-top: 2px"
+                  :to="localePath(`/login?url=/pricing`)"
+                >
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
@@ -443,7 +447,11 @@ const changeBuyCorrectTimes = () => {
                 </template>
               </div>
               <div v-else>
-                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+                <NuxtLink
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  style="margin-top: 2px"
+                  :to="localePath(`/login?url=/pricing`)"
+                >
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
@@ -983,7 +991,7 @@ const changeBuyCorrectTimes = () => {
 
             .card_price_part3 {
               height: 84px;
-              margin-top: 24px;
+              margin-top: 16px;
               // border: 1px red solid;
               .select_out_new {
                 .select_out_new_font {

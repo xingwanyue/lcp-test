@@ -26,7 +26,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
           <h1>{{ $t('aboutUs.title') }}</h1>
         </div>
         <div class="titledesc">
-          <h2>{{ $t('aboutUs.title_desc') }}</h2>
+          <h2 v-html="$t('aboutUs.title_desc')"></h2>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
             <div class="right_one values">
               <div class="right_one_title">{{ $t('aboutUs.three_our_our.ovs') }}</div>
               <div class="right_one_desc" v-html="$t('aboutUs.three_our_our.ovsdesc')"></div>
-              <div class="bg_img" :style="`background-image: url(${our_val_bg});`"></div>
+              <div class="bg_img bigger" :style="`background-image: url(${our_val_bg});`"></div>
             </div>
           </div>
         </div>
@@ -150,9 +150,11 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         }
       }
       .titledesc {
-        font-weight: 400;
-        font-size: 32px;
-        color: #201515;
+        h2 {
+          font-weight: 400;
+          font-size: 32px;
+          color: #201515;
+        }
       }
     }
   }
@@ -177,6 +179,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
       .one_prod {
         padding: 32px;
         border-radius: 8px;
+        min-height: 138px;
         .one_prod_top {
           display: flex;
           align-items: center;
@@ -256,10 +259,14 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
             height: 100%;
             position: absolute;
             right: 0;
+            left: 20px;
             top: 0;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            @media (max-width: 1200px) {
+              left: 0;
+            }
           }
         }
         .right {
@@ -298,6 +305,9 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
               background-position: center;
               background-repeat: no-repeat;
               z-index: 0;
+            }
+            .bigger {
+              height: 100%;
             }
           }
           .mission {
@@ -462,6 +472,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         grid-gap: 16px;
         .one_prod {
           padding: 15px;
+
           .one_prod_top {
             .one_prod_icon {
               width: 24px;

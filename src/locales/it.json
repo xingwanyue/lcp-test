@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Pratica",
       "alt": "Duolingo English Test Pratica",
-      "font": "Raggiungi l'Eccellenza con il Nostro Ampio Archivio di Domande: Oltre 10.000 Domande, Aggiornamenti Regolari e Monitoraggio Intelligente delle Prestazioni!"
+      "font": "Raggiungi l'eccellenza con la nostra vasta banca di domande: oltre 18.000 domande, aggiornamenti regolari e monitoraggio intelligente delle prestazioni!"
     },
     "prod2": {
       "title": "Duolingo English Test Servizio di correzione",
@@ -51,7 +51,12 @@
     "LearnTitle": "Impara",
     "BlogTitle": "Blog",
     "CompanyTitle": "Azienda",
-    "Products": ["DET Pratica", "Servizio di Correzione AI", "DET Simulazione", "Duolingo English Test Corso"],
+    "Products": [
+      "DET Pratica",
+      "Servizio di Correzione AI",
+      "DET Simulazione",
+      "Duolingo English Test Corso"
+    ],
     "Company": [
       "Chi siamo",
       "Contattaci",
@@ -78,7 +83,12 @@
     "power_by": "Alimentato da AI",
     "h1Mobile": "Ottieni un punteggio più alto facilmente<br />sul test di inglese Duolingo <br />con <span class=\"seo_hack\">DET Pratica</span>",
     "h1PC": "Ottieni un punteggio più alto facilmente sul <br />Duolingo English Test Con <span class=\"seo_hack\">DET Pratica</span>",
-    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
+    "one_small_title": [
+      "DET Pratica",
+      "Correzione AI",
+      "Simulazione Completa",
+      "DET Corsi"
+    ],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con l'email",
     "Start_for_free": "Inizia gratis",
@@ -113,7 +123,7 @@
       "tips2": "Valutazione AI, Correzione AI, Guida dell'Insegnante",
       "tips3": "Punteggi di Valutazione Accurati, Rapporto di Valutazione Dettagliato",
       "tips4": "I risultati saranno disponibili entro <span class='yellow'>1-5 minuti</span>",
-      "btn_font": "Scopri di più",
+      "btn_font": "Saperne di più",
       "btn_img_alt": "Freccia Gialla Destra"
     },
     "article4": {
@@ -122,7 +132,7 @@
       "tips2": "Risultati della valutazione AI, Punteggio AI, Guida dell'insegnante",
       "tips3": "Punteggi di Valutazione Accurati, Rapporto di Valutazione Dettagliato",
       "tips4": "I risultati saranno disponibili entro <span class='yellow'>1-5 minuti</span>",
-      "btn_font": "Esplora di più",
+      "btn_font": "Saperne di più",
       "btn_img_alt": "Freccia Destra Gialla"
     },
     "article5": {

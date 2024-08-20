@@ -291,7 +291,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/correction')">
+            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
               <div class="font">{{ $t('index.article2.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article2.btn_img_alt')" />
@@ -323,7 +323,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
+            <NuxtLink class="get_more" :to="localePath('/writing-ai-correction')">
               <div class="font">{{ $t('index.article3.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
@@ -360,7 +360,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/courses')">
+            <NuxtLink class="get_more" :to="localePath('/speaking-ai-correction')">
               <div class="font">{{ $t('index.article4.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article4.btn_img_alt')" />
@@ -397,8 +397,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
-              <div class="font">{{ $t('index.article3.btn_font') }}</div>
+            <NuxtLink class="get_more" :to="localePath('/courses')">
+              <div class="font">{{ $t('index.article5.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
               </div>
@@ -814,7 +814,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           grid-row-gap: 0px;
         }
         grid-template-columns: 1fr 0.75fr;
-        grid-column-gap: 80px;
+        grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-areas: 'img_out  article_out';
         @media (max-width: 926px) {
@@ -842,9 +842,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         .article_out {
           // border: 1px red solid;
           grid-area: article_out;
-          // @media (max-width: 926px) {
-          //   text-align: center;
-          // }
+          padding-top: 24px;
+          @media (max-width: 926px) {
+            padding-top: 0px;
+          }
           .article_out_title {
             h2 {
               font-weight: 500;
@@ -936,7 +937,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           grid-row-gap: 0px;
         }
         grid-template-columns: 0.75fr 1fr;
-        grid-column-gap: 80px;
+        grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-areas: ' article_out img_out';
         @media (max-width: 926px) {
@@ -965,9 +966,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         .article_out {
           // border: 1px blue solid;
           grid-area: article_out;
-          // @media (max-width: 926px) {
-          //   text-align: center;
-          // }
+          padding-top: 24px;
+          @media (max-width: 926px) {
+            padding-top: 0px;
+          }
           .article_out_title {
             h2 {
               font-weight: 500;

@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test 练习",
       "alt": "Duolingo English Test 练习",
-      "font": "凭借我们广泛的问题库实现卓越：超过10,000个问题，定期更新，以及智能性能跟踪！"
+      "font": "通过我们广泛的问题库实现卓越：超过 18,000 个问题、定期更新和智能绩效跟踪！"
     },
     "prod2": {
       "title": "Duolingo English Test 校正服务",
@@ -51,8 +51,21 @@
     "LearnTitle": "学习",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET 练习", "AI修正服务", "DET 模拟", "Duolingo English Test 课程"],
-    "Company": ["关于我们", "联系我们", "条款和条件", "隐私政策", "网站地图", "联盟计划", "退款政策"],
+    "Products": [
+      "DET 练习",
+      "AI修正服务",
+      "DET 模拟",
+      "Duolingo English Test 课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "条款和条件",
+      "隐私政策",
+      "网站地图",
+      "联盟计划",
+      "退款政策"
+    ],
     "show_more": "显示更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -70,7 +83,12 @@
     "power_by": "由AI提供支持",
     "h1Mobile": "轻松获得更高分数<br />在 Duolingo <br />英语测试中 使用 <span class=\"seo_hack\">DET 练习</span>",
     "h1PC": "轻松拿到更高分数 <br />Duolingo English Test 通过 <span class=\"seo_hack\">DET 练习</span>",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "开始免费使用Google",
     "Start_free_with_email": "以电子邮件免费开始",
     "Start_for_free": "免费开始",
@@ -114,7 +132,7 @@
       "tips2": "AI评分, AI评估结果, 教师指导",
       "tips3": "准确的评估分数，详细的评估报告",
       "tips4": "结果将在<span class='yellow'>1-5分钟</span>内可用",
-      "btn_font": "探索更多",
+      "btn_font": "了解更多",
       "btn_img_alt": "黄色箭头右"
     },
     "article5": {

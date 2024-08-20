@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Übung",
       "alt": "Duolingo English Test Übung",
-      "font": "Erreichen Sie Exzellenz mit unserer umfangreichen Fragensammlung: Über 10.000 Fragen, regelmäßige Updates und intelligente Leistungsüberwachung!"
+      "font": "Erreichen Sie Spitzenleistungen mit unserer umfangreichen Fragendatenbank: Über 18.000 Fragen, regelmäßige Updates und intelligente Leistungsverfolgung!"
     },
     "prod2": {
       "title": "Duolingo English Test Korrekturservice",
@@ -51,7 +51,12 @@
     "LearnTitle": "Lernen",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Üben", "KI-Korrekturservice", "DET Attrappe", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Üben",
+      "KI-Korrekturservice",
+      "DET Attrappe",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "Über uns",
       "Kontaktieren Sie uns",
@@ -78,7 +83,12 @@
     "power_by": "Betrieben durch KI",
     "h1Mobile": "Erzielen Sie leicht eine höhere Punktzahl<br />beim Duolingo <br />Englischtest mit <span class=\"seo_hack\">DET Übung</span>",
     "h1PC": "Erzielen Sie ganz einfach eine höhere Punktzahl im <br />Duolingo English Test Mit <span class=\"seo_hack\">DET Übung</span>",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos mit Google starten",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten",
@@ -122,7 +132,7 @@
       "tips2": "AI-Bewertung, Ergebnisse der AI-Evaluierung, Lehreranleitung",
       "tips3": "Genaue Bewertungsergebnisse, Detaillierter Bewertungsbericht",
       "tips4": "Die Ergebnisse werden innerhalb von <span class='yellow'>1-5 Minuten</span> verfügbar sein.",
-      "btn_font": "Mehr Entdecken",
+      "btn_font": "Erfahren Sie mehr",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "article5": {
@@ -131,7 +141,7 @@
       "tips2": "Erreichen Sie umfassende Beherrschung",
       "tips3": "Lernen Sie von ESL-Experten",
       "tips4": "Bleiben Sie informiert und voraus\n",
-      "btn_font": "Mehr erfahren",
+      "btn_font": "Entdecken Sie mehr",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
     "thousand": "k",
