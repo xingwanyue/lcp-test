@@ -311,7 +311,7 @@ const changeBuyCorrectTimes = () => {
                   <span class="small">{{ $t('pricing.pagefont.do') }}</span
                   >{{ (onlycorrectTimesprice / 100).toFixed(2) }}
                 </div>
-                <div class="no_member_font">{{ $t('pricing.pagefont.Non_member') }}</div>
+                <div class="no_member_font"></div>
               </div>
               <div class="card_price_part3">
                 <div class="select_out_new">

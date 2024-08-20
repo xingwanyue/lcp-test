@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Pratique",
       "alt": "Duolingo English Test Pratique",
-      "font": "Atteignez l'excellence grâce à notre vaste banque de questions : plus de 18 000 questions, des mises à jour régulières et un suivi intelligent des performances !"
+      "font": "Atteignez l'excellence avec notre vaste banque de questions : plus de 18 000 questions, mises à jour régulières et suivi intelligent des performances !"
     },
     "prod2": {
       "title": "Duolingo English Test Service de correction",
@@ -51,12 +51,7 @@
     "LearnTitle": "Apprendre",
     "BlogTitle": "Blog",
     "CompanyTitle": "Entreprise",
-    "Products": [
-      "DET Pratique",
-      "Service de correction d'IA",
-      "DET Moquer",
-      "Duolingo English Test Cours"
-    ],
+    "Products": ["DET Pratique", "Service de correction d'IA", "DET Moquer", "Duolingo English Test Cours"],
     "Company": [
       "À propos de nous",
       "Contactez-nous",
@@ -83,12 +78,7 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez un score plus élevé facilement<br />au test d'anglais Duolingo <br />avec <span class=\"seo_hack\">DET Pratique</span>",
     "h1PC": "Obtenez un meilleur score facilement sur le <br />Duolingo English Test Avec <span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": [
-      "DET Pratique",
-      "Correction de l'IA",
-      "Simulation complète",
-      "DET Cours"
-    ],
+    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un e-mail",
     "Start_for_free": "Commencez gratuitement",

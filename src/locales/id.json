@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Latihan",
       "alt": "Duolingo English Test Praktek",
-      "font": "Raih Keunggulan dengan Bank Soal Kami yang Luas: Lebih dari 18.000 Pertanyaan, Pembaruan Reguler, dan Pelacakan Kinerja Cerdas!"
+      "font": "Raih Keunggulan dengan Bank Soal Kami yang Luas: 18.000+ Pertanyaan, Pembaruan Reguler, dan Pelacakan Kinerja Cerdas!"
     },
     "prod2": {
       "title": "Duolingo English Test Layanan Koreksi",
@@ -51,12 +51,7 @@
     "LearnTitle": "Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": [
-      "DET Latihan",
-      "Layanan Koreksi AI",
-      "DET Pura-Pura",
-      "Duolingo English Test Kursus"
-    ],
+    "Products": ["DET Latihan", "Layanan Koreksi AI", "DET Pura-Pura", "Duolingo English Test Kursus"],
     "Company": [
       "Tentang kami",
       "Hubungi kami",
@@ -83,12 +78,7 @@
     "power_by": "Ditenagai oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />pada Ujian Bahasa Inggris Duolingo <br />Dengan <span class=\"seo_hack\">DET Latihan</span>",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Duolingo English Test Dengan <span class=\"seo_hack\">DET Latihan</span>",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",

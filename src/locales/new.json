@@ -42,7 +42,7 @@
       "tips1": "Support \"Listen,Then Speak \",\"Speak About the Photo \",\"Read, then Speak\",\"Speaking Sample\"",
       "tips2": "AI Scoring, AI Evaluation Results, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
-      "tips4": "Results will be available within <span class='yellow'>1-5minutes</span>",
+      "tips4": "Results will be available within <span class='yellow'>1-5 minutes</span>",
       "btn_font": "Explore More",
       "btn_img_alt": "Yellow Arrow Right"
     },
@@ -70,7 +70,7 @@
     "AI Scoring, Accurate score",
     "AI Evaluation Results",
     "Detailed Evaluation Report",
-    "Results will be available within <span class='strongfont'>1-5minutes</span>"
+    "Results will be available within <span class='strongfont'>1-5 minutes</span>"
   ],
   "leftQuanYiList": [
     "<span class='strongfont'>Unlimited</span> for Practice Sessions",

@@ -449,11 +449,15 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         margin: 0 auto;
         padding: 30px 15px;
         .title {
-          font-size: 24px;
-          line-height: 30px;
+          h1 {
+            font-size: 24px;
+            line-height: 30px;
+          }
         }
         .titledesc {
-          font-size: 12px;
+          h2 {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -464,7 +468,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
 
       .check_out {
         h2 {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
       .four_prod_out {
@@ -472,6 +476,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         grid-gap: 16px;
         .one_prod {
           padding: 15px;
+          min-height: unset;
 
           .one_prod_top {
             .one_prod_icon {
@@ -493,13 +498,15 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         margin-top: 50px;
         .young_title {
           h2 {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
         .three_dom_out {
           grid-template-columns: 1fr;
+          grid-gap: 16px;
           .left {
             padding: 15px;
+            min-height: 200px;
             .left_title {
               font-size: 20px;
             }
@@ -507,9 +514,15 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
               font-size: 14px;
               margin-top: 8px;
             }
+            .bg_img {
+              background-size: contain;
+              background-position: right;
+            }
           }
           .right {
+            grid-gap: 16px;
             .right_one {
+              min-height: 140px;
               padding: 15px;
               .right_one_title {
                 font-size: 20px;
@@ -538,7 +551,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
       }
     }
     .get_in_touch_wrapper {
-      margin-top: 50px;
+      margin-top: 40px;
       .get_in_touch {
         padding: 50px 15px;
         .get_in_touch_title {
@@ -551,7 +564,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
           margin-top: 8px;
         }
         .youtube_out {
-          height: 300px;
+          height: 200px;
           .youtube_btn {
             .youtube_icon {
               width: 24px;

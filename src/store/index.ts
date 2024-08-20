@@ -106,24 +106,24 @@ export const useStore = defineStore({
           }
           const message = [];
           if (examNum) {
-            message.push(`${examNum} mock exams purchased successfully!Remaining times ${this.user.examNum}`);
+            message.push(`${examNum} mock exams purchased successfully !`);
           }
           if (correctNum) {
-            message.push(`${correctNum} grading purchases successful!Remaining times ${this.user.correctNum}`);
+            message.push(`${correctNum} correction services purchased successfully !`);
           }
           if (vipDays) {
             message.push(`${vipDays}
             days premium package purchased successfully! Membership valid until 
-            ${dayjs(vipEndTime).format('YYYY-MM-DD')}`);
+            ${dayjs(vipEndTime).format('YYYY-MM-DD')}.`);
           }
           if (write) {
-            this.user.write = true;
+            this.user.write = 1;
             message.push(
               `"Writing Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
             );
           }
           if (speak) {
-            this.user.speak = true;
+            this.user.speak = 1;
             message.push(
               `"Speaking Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
             );

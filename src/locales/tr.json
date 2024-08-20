@@ -17,7 +17,7 @@
     "prod1": {
       "title": "Duolingo English Test Uygulama",
       "alt": "Duolingo English Test Uygulama",
-      "font": "Kapsamlı Soru Bankamızla Mükemmelliğe Ulaşın: 18.000'den Fazla Soru, Düzenli Güncellemeler ve Akıllı Performans Takibi!"
+      "font": "Kapsamlı Soru Bankamız ile Mükemmelliğe Ulaşın: 18.000+ Soru, Düzenli Güncellemeler ve Akıllı Performans Takibi!"
     },
     "prod2": {
       "title": "Duolingo English Test Düzeltme Servisi",
@@ -51,12 +51,7 @@
     "LearnTitle": "Öğren",
     "BlogTitle": "Blog",
     "CompanyTitle": "Şirket",
-    "Products": [
-      "DET Pratik",
-      "AI Düzeltme Servisi",
-      "DET Sahte",
-      "Duolingo English Test Kurs"
-    ],
+    "Products": ["DET Pratik", "AI Düzeltme Servisi", "DET Sahte", "Duolingo English Test Kurs"],
     "Company": [
       "Hakkımızda",
       "Bize ulaşın",
@@ -83,12 +78,7 @@
     "power_by": "AI Tarafından Desteklenmektedir",
     "h1Mobile": "Daha Yüksek Puan Alın<br />Duolingo <br />İngilizce Testinde<span class=\"seo_hack\">DET Pratik</span> ile",
     "h1PC": "Daha Yüksek Bir Puan Alın <br />Duolingo English Test <span class=\"seo_hack\">DET Uygulama</span> ile",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "E-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
