@@ -15,7 +15,7 @@ const user = computed(() => store.user);
         <div>
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
-            :to="localePath(`/login?url=${urlGet('/questions')}`)"
+            :to="localePath(`/login?url=${urlGet('/correct')}`)"
           >
             {{ $t('highscorespeaking.Start_Now') }}</NuxtLink
           >
@@ -23,7 +23,7 @@ const user = computed(() => store.user);
       </div>
       <div v-else class="two_btn_out">
         <div>
-          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/questions')}`)">
+          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/correct')}`)">
             {{ $t('highscorespeaking.Start_Now') }}
           </NuxtLink>
         </div>
