@@ -564,7 +564,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
           margin-top: 8px;
         }
         .youtube_out {
-          height: 110px;
+          height: 200px;
           .youtube_btn {
             .youtube_icon {
               width: 24px;
