@@ -449,11 +449,15 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         margin: 0 auto;
         padding: 30px 15px;
         .title {
-          font-size: 24px;
-          line-height: 30px;
+          h1 {
+            font-size: 24px;
+            line-height: 30px;
+          }
         }
         .titledesc {
-          font-size: 12px;
+          h2 {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -464,7 +468,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
 
       .check_out {
         h2 {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
       .four_prod_out {
@@ -493,7 +497,7 @@ const youtube_icon = `${cdn}/store/portal/aboutus/youtube_icon.svg`;
         margin-top: 50px;
         .young_title {
           h2 {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
         .three_dom_out {
