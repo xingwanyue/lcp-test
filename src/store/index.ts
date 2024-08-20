@@ -106,10 +106,10 @@ export const useStore = defineStore({
           }
           const message = [];
           if (examNum) {
-            message.push(`${examNum} mock exams purchased successfully! Remaining times ${this.user.examNum}`);
+            message.push(`${examNum} mock exams purchased successfully !`);
           }
           if (correctNum) {
-            message.push(`${correctNum} grading purchases successful! Remaining times ${this.user.correctNum}`);
+            message.push(`${correctNum} correction services purchased successfully !`);
           }
           if (vipDays) {
             message.push(`${vipDays}
