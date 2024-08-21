@@ -217,13 +217,13 @@ const menus = computed(() => [
                 @mouseleave="popoverQuestions = false"
               >
                 {{ menu.name }}
-                <el-image
+                <img
                   v-if="!popoverQuestions"
                   src="/img/learn/down-icon.svg"
                   class="down-icon"
                   :alt="$t('header.commonAlt')"
                 />
-                <el-image v-else src="/img/learn/up-icon.svg" class="down-icon" :alt="$t('header.commonAlt')" />
+                <img v-else src="/img/learn/up-icon.svg" class="down-icon" :alt="$t('header.commonAlt')" />
               </div>
             </template>
           </el-popover>
