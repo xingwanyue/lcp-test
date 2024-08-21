@@ -51,7 +51,13 @@
     "LearnTitle": "Learn",
     "BlogTitle": "Blog",
     "CompanyTitle": "Company",
-    "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
+    "Products": [
+      "DET Practice",
+      "DET Writing AI Correction",
+      "DET Speaking AI Correction",
+      "DET Mock",
+      "Duolingo English Test Course"
+    ],
     "Company": [
       "About us",
       "Contact us",

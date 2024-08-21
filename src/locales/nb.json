@@ -51,7 +51,13 @@
     "LearnTitle": "Lær",
     "BlogTitle": "Blogg",
     "CompanyTitle": "Firma",
-    "Products": ["DET Øvelse", "AI Korreksjonstjeneste", "DET Narre", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Øvelse",
+      "DET Skrive AI Korreksjon",
+      "DET Tale AI Korreksjon",
+      "DET Narre",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "Om oss",
       "Kontakt oss",

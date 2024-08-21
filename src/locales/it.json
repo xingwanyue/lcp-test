@@ -51,7 +51,13 @@
     "LearnTitle": "Impara",
     "BlogTitle": "Blog",
     "CompanyTitle": "Azienda",
-    "Products": ["DET Pratica", "Servizio di Correzione AI", "DET Simulazione", "Duolingo English Test Corso"],
+    "Products": [
+      "DET Pratica",
+      "Correzione AI di scrittura DET",
+      "Correzione AI di parlato DET",
+      "DET Simulazione",
+      "Duolingo English Test Corso"
+    ],
     "Company": [
       "Chi siamo",
       "Contattaci",

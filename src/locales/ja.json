@@ -51,7 +51,7 @@
     "LearnTitle": "学ぶ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "会社",
-    "Products": ["DET 練習", "AI修正サービス", "DET モック", "Duolingo English Test コース"],
+    "Products": ["DET 練習", "DET 書き取りAI修正", "DET 話し言葉AI修正", "DET モック", "Duolingo English Test コース"],
     "Company": [
       "私たちについて",
       "お問い合わせ",

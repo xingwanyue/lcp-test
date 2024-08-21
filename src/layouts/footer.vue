@@ -35,14 +35,18 @@ const prod = computed(() => {
       },
       {
         name: t('footer.Products[1]'),
-        url: '/correction',
+        url: '/writing-ai-correction',
       },
       {
         name: t('footer.Products[2]'),
-        url: '/mock-exam',
+        url: '/speaking-ai-correction',
       },
       {
         name: t('footer.Products[3]'),
+        url: '/courses',
+      },
+      {
+        name: t('footer.Products[4]'),
         url: '/courses',
       },
     ],
