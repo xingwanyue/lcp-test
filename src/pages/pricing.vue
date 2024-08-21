@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { formatCash } from '@/utils';
 const { t } = useI18n();
 import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, domain, host, cdn } from '@/utils';
