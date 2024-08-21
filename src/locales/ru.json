@@ -51,7 +51,13 @@
     "LearnTitle": "Учиться",
     "BlogTitle": "Блог",
     "CompanyTitle": "Компания",
-    "Products": ["DET Практика", "Служба коррекции ИИ", "DET Макет", "Duolingo English Test Курс"],
+    "Products": [
+      "DET Практика",
+      "Коррекция письма ИИ DET",
+      "Коррекция речи ИИ DET",
+      "DET Макет",
+      "Duolingo English Test Курс"
+    ],
     "Company": [
       "О нас",
       "Свяжитесь с нами",

@@ -51,7 +51,13 @@
     "LearnTitle": "Nauka",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Praktyka", "Usługa Korekty AI", "DET Makieta", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Praktyka",
+      "DET Korekta AI Pisania",
+      "DET Korekta AI Mówienia",
+      "DET Makieta",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "O nas",
       "Skontaktuj się z nami",

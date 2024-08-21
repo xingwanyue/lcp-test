@@ -51,7 +51,13 @@
     "LearnTitle": "Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": ["DET Latihan", "Layanan Koreksi AI", "DET Pura-Pura", "Duolingo English Test Kursus"],
+    "Products": [
+      "DET Latihan",
+      "Koreksi AI Menulis DET",
+      "Koreksi AI Berbicara DET",
+      "DET Pura-Pura",
+      "Duolingo English Test Kursus"
+    ],
     "Company": [
       "Tentang kami",
       "Hubungi kami",

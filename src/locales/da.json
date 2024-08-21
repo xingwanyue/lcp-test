@@ -51,7 +51,13 @@
     "LearnTitle": "Lære",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Øve", "AI Korrektionsservice", "DET Narremock", "Duolingo English Test Kursus"],
+    "Products": [
+      "DET Øve",
+      "DET Skrive AI Korrektion",
+      "DET Tale AI Korrektion",
+      "DET Narremock",
+      "Duolingo English Test Kursus"
+    ],
     "Company": [
       "Om os",
       "Kontakt os",

@@ -51,7 +51,13 @@
     "LearnTitle": "Leren",
     "BlogTitle": "Blog",
     "CompanyTitle": "Bedrijf",
-    "Products": ["DET Oefenen", "AI Correctiedienst", "DET Nep", "Duolingo English Test Cursus"],
+    "Products": [
+      "DET Oefenen",
+      "DET Schrijven AI Correctie",
+      "DET Spreken AI Correctie",
+      "DET Nep",
+      "Duolingo English Test Cursus"
+    ],
     "Company": [
       "Over ons",
       "Neem contact met ons op",

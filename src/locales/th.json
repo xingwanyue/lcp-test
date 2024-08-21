@@ -51,7 +51,13 @@
     "LearnTitle": "เรียนรู้",
     "BlogTitle": "บล็อก",
     "CompanyTitle": "บริษัท",
-    "Products": ["DET ฝึกฝน", "บริการแก้ไขโดย AI", "DET ม็อค", "Duolingo English Test หลักสูตร"],
+    "Products": [
+      "DET ฝึกฝน",
+      "การแก้ไข AI การเขียน DET",
+      "การแก้ไข AI การพูด DET",
+      "DET ม็อค",
+      "Duolingo English Test หลักสูตร"
+    ],
     "Company": [
       "เกี่ยวกับเรา",
       "ติดต่อเรา",

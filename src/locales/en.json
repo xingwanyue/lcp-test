@@ -51,7 +51,13 @@
     "LearnTitle": "Learn",
     "BlogTitle": "Blog",
     "CompanyTitle": "Company",
-    "Products": ["DET Practice", "AI Correction Service", "DET Mock", "Duolingo English Test Course"],
+    "Products": [
+      "DET Practice",
+      "DET Writing AI Correction",
+      "DET Speaking AI Correction",
+      "DET Mock",
+      "Duolingo English Test Course"
+    ],
     "Company": [
       "About us",
       "Contact us",
@@ -638,7 +644,7 @@
     "spn": "Start Practicing Now",
     "article1": {
       "h2": "The Largest Question Bank",
-      "right_desc": " Explore our extensive library of over <span class='zdfont'>18,000+ questions</span> across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats.",
+      "right_desc": " Explore our extensive library of <span class='zdfont'>18,000+ questions</span> across diverse exam types, constantly refreshed to keep your practice up-to-date. Our question bank is designed to systematically bolster your test-taking skills across various question formats.",
       "btn": "Dive Into Practice"
     },
     "article2": {

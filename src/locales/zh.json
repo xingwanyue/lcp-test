@@ -51,7 +51,7 @@
     "LearnTitle": "学习",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET 练习", "AI修正服务", "DET 模拟", "Duolingo English Test 课程"],
+    "Products": ["DET 练习", "DET 写作 AI 校正", "DET 口语 AI 校正", "DET 模拟", "Duolingo English Test 课程"],
     "Company": ["关于我们", "联系我们", "条款和条件", "隐私政策", "网站地图", "联盟计划", "退款政策"],
     "show_more": "显示更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",

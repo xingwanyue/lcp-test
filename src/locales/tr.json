@@ -51,7 +51,13 @@
     "LearnTitle": "Öğren",
     "BlogTitle": "Blog",
     "CompanyTitle": "Şirket",
-    "Products": ["DET Pratik", "AI Düzeltme Servisi", "DET Sahte", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Pratik",
+      "DET Yazma AI Düzeltme",
+      "DET Konuşma AI Düzeltme",
+      "DET Sahte",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "Hakkımızda",
       "Bize ulaşın",

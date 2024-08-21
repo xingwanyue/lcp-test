@@ -51,7 +51,13 @@
     "LearnTitle": "تعلم",
     "BlogTitle": "مدونة",
     "CompanyTitle": "شركة",
-    "Products": ["DET ممارسة", "خدمة التصحيح باستخدام الذكاء الاصطناعي", "DET محاكاة", "Duolingo English Test الدورة"],
+    "Products": [
+      "DET ممارسة",
+      "تصحيح الذكاء الاصطناعي للكتابة في DET",
+      "تصحيح الذكاء الاصطناعي للتحدث في DET",
+      "DET محاكاة",
+      "Duolingo English Test الدورة"
+    ],
     "Company": [
       "معلومات عنا",
       "اتصل بنا",

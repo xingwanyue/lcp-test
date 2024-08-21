@@ -51,7 +51,7 @@
     "LearnTitle": "배우기",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사",
-    "Products": ["DET 연습", "AI 교정 서비스", "DET 목", "Duolingo English Test 코스"],
+    "Products": ["DET 연습", "DET 글쓰기 AI 교정", "DET 말하기 AI 교정", "DET 목", "Duolingo English Test 코스"],
     "Company": ["회사 소개", "문의하기", "이용 약관", "개인 정보 보호 정책", "사이트맵", "제휴 프로그램", "환불 정책"],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",

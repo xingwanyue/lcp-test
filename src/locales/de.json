@@ -51,7 +51,13 @@
     "LearnTitle": "Lernen",
     "BlogTitle": "Blog",
     "CompanyTitle": "Firma",
-    "Products": ["DET Üben", "KI-Korrekturservice", "DET Attrappe", "Duolingo English Test Kurs"],
+    "Products": [
+      "DET Üben",
+      "DET Schreib-AI-Korrektur",
+      "DET Sprech-AI-Korrektur",
+      "DET Attrappe",
+      "Duolingo English Test Kurs"
+    ],
     "Company": [
       "Über uns",
       "Kontaktieren Sie uns",
