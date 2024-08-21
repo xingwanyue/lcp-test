@@ -304,7 +304,7 @@ const changeBuyCorrectTimes = () => {
           <div class="one_price">
             <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
             <div class="card_price">
-              <div class="card_price_part1">Correction Services</div>
+              <div class="card_price_part1">Correction Service</div>
               <div class="card_price_part2">Can be used for writing and speaking during your membership</div>
               <div class="card_price_part4 min_heighthack">
                 <div class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
