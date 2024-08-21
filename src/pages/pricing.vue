@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { formatCash } from '@/utils';
 const { t } = useI18n();
 import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, domain, host, cdn } from '@/utils';
@@ -313,7 +314,7 @@ const changeBuyCorrectTimes = () => {
                 </div>
                 <div class="no_member_font"></div>
               </div>
-              <div class="card_price_part3">
+              <div class="card_price_part3" style="padding-bottom: 1px">
                 <div class="select_out_new">
                   <div class="select_out_new_font">{{ $t('pricing.pagefont.apcs1') }}</div>
                   <div class="sleect_out_wrapper">
@@ -327,7 +328,7 @@ const changeBuyCorrectTimes = () => {
                         >
                           <span style="float: left">{{ itemTimes.correctNum }} {{ $t('pricing.pagefont.times') }}</span>
                           <span style="float: right; font-size: 13px; margin-left: 60px">
-                            {{ $t('pricing.pagefont.do') }}{{ formatCash(itemTimes.price) }}
+                            {{ $t('pricing.pagefont.do') }}{{ (itemTimes.price / 100).toFixed(2) }}
                           </span>
                         </el-option>
                       </el-select>
@@ -341,21 +342,13 @@ const changeBuyCorrectTimes = () => {
               </div>
               <!-- 11 -->
               <div v-if="user.id">
-                <div
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  style="margin-top: 2px"
-                  @click="buyCorrectNum()"
-                >
+                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyCorrectNum()">
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </div>
               </div>
               <div v-else>
-                <NuxtLink
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  style="margin-top: 2px"
-                  :to="localePath(`/login?url=/pricing`)"
-                >
+                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
@@ -447,11 +440,7 @@ const changeBuyCorrectTimes = () => {
                 </template>
               </div>
               <div v-else>
-                <NuxtLink
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  style="margin-top: 2px"
-                  :to="localePath(`/login?url=/pricing`)"
-                >
+                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
@@ -854,7 +843,7 @@ const changeBuyCorrectTimes = () => {
                 font-size: 16px;
                 color: white;
                 text-align: center;
-                margin-top: 32px;
+                margin-top: 16px;
                 position: relative;
                 display: block;
                 a {
@@ -990,7 +979,7 @@ const changeBuyCorrectTimes = () => {
             }
 
             .card_price_part3 {
-              height: 84px;
+              // height: 84px;
               margin-top: 16px;
               // border: 1px red solid;
               .select_out_new {
@@ -1083,7 +1072,7 @@ const changeBuyCorrectTimes = () => {
               font-weight: 500;
               font-size: 16px;
               text-align: center;
-              margin-top: 32px;
+              margin-top: 16px;
               position: relative;
               color: white;
               display: block;
