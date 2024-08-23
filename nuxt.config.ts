@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   "description": "DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.",
   "pricerange":"£", 
   "telephone": "7518886018",
-  "email" : "info@detpractice.com",
+  "email" : "support@detpractice.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "71-75 Shelton Street, Covent Garden",
