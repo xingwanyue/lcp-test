@@ -109,12 +109,17 @@ const faqList = ref([
       <div class="aff_header_content" :style="`background-image: url(/img/affiliate/30off.svg);`">
         <div class="tag">{{ $t('affiliate.tag') }}</div>
         <h1 class="title" v-html="$t('affiliate.h1')"></h1>
-        <NuxtLink
-          :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
-          class="sing_up_now common_btn_hover_bgColor"
-        >
-          {{ $t('affiliate.sun') }}
-        </NuxtLink>
+        <div class="two_btn_out">
+          <NuxtLink
+            :to="`${affurl}/#/?url=${encodeURIComponent('register')}`"
+            class="sing_up_now common_btn_hover_bgColor"
+          >
+            {{ $t('affiliate.sun') }}
+          </NuxtLink>
+          <NuxtLink :to="`${affurl}/#/?url=${encodeURIComponent('login')}`" class="common_btn_hover_borderCu white">
+            {{ $t('affiliate.login') }}
+          </NuxtLink>
+        </div>
       </div>
     </div>
     <div class="content">
@@ -325,18 +330,41 @@ const faqList = ref([
           font-size: 24px;
         }
       }
-      .sing_up_now {
-        padding: 9px 24px;
-        background-color: #f66442;
-        border-radius: 22px;
-        font-weight: 500;
-        font-size: 18px;
-        color: #ffffff;
-        width: fit-content;
-        margin: 0 auto;
+      .two_btn_out {
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 40px;
-        cursor: pointer;
-        display: block;
+        grid-gap: 16px;
+        @media (max-width: 730px) {
+          flex-direction: column;
+        }
+        .sing_up_now {
+          min-width: 260px;
+          padding: 11px 22px;
+          background-color: #f66442;
+          box-sizing: border-box;
+          border-radius: 22px;
+          font-weight: 500;
+          font-size: 18px;
+          color: #ffffff;
+
+          border: 2px solid #f66442;
+          cursor: pointer;
+          display: block;
+        }
+        .white {
+          min-width: 260px;
+          padding: 11px 22px;
+          border: 1px solid #201515;
+          box-sizing: border-box;
+          border-radius: 22px;
+          font-weight: 500;
+          font-size: 18px;
+          cursor: pointer;
+          display: block;
+        }
       }
     }
   }
