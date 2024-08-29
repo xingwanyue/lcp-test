@@ -13,7 +13,7 @@ const router = useRouter();
 const store = useStore();
 const layouProps = useAttrs();
 // const userpc = process.client;
-const isUserPc = ref(process.client);
+const isUserPc = ref(import.meta.client);
 useHead({
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
 });
