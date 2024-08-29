@@ -85,11 +85,11 @@ export default defineNuxtConfig({
   "name": "AITOGETHER LTD",
   "url": "https://www.detpractice.com/",
   "logo": "https://www.detpractice.com/img/footer/small_logo.svg",
-  "image": "https://detcdn.zixuekeji.cn/store/portal/products/bank_picture1.png",
+  "image": "https://www.detpractice.com/store/portal/products/bank_picture1.png",
   "description": "DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.",
   "pricerange":"£", 
   "telephone": "7518886018",
-  "email" : "info@detpractice.com",
+  "email" : "support@detpractice.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "71-75 Shelton Street, Covent Garden",
