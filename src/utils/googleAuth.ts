@@ -104,7 +104,7 @@ export const oauthLogin = async () => {
     }
     return fetchmy(`${api}/common/login`, {
       method: 'post',
-      body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+      body: JSON.stringify(args),
     });
   }
 };
