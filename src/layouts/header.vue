@@ -121,6 +121,7 @@ const menus = computed(() => [
 
 <template>
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
+    <div style="display: none;">test</div>
     <div class="header-content">
       <nuxt-link :to="localePath('/')" class="home-logo" :title="t('header.home_logo_title')">
         <span class="icon iconfont icon-logo logo"></span>

@@ -52,7 +52,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <DelayHydration v-if="!isUserPc">
+  <DelayHydration>
     <el-container class="wrap">
       <el-header class="header" height="62px"> <v-header :type="layouProps.type as string" /> </el-header>
       <el-main class="main">
@@ -64,16 +64,6 @@ onMounted(async () => {
       <v-changeLanguagetk />
     </el-container>
   </DelayHydration>
-  <el-container v-else class="wrap">
-    <el-header class="header" height="62px"> <v-header :type="layouProps.type as string" /> </el-header>
-    <el-main class="main">
-      <slot />
-    </el-main>
-    <el-footer class="footer_wrap">
-      <v-footer />
-    </el-footer>
-    <v-changeLanguagetk />
-  </el-container>
 </template>
 <style lang="scss" scoped>
 .wrap {
