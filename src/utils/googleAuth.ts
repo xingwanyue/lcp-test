@@ -91,6 +91,7 @@ export const oauthLogin = async () => {
     const data = await res.json();
     const { email, picture, name } = data;
     const InviteCode = getStorage('InviteCode');
+    console.log('InviteCode', InviteCode);
     const args = {
       channel: '',
       email,
