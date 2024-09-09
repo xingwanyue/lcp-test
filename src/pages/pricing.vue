@@ -240,6 +240,16 @@ const correctServiceQuanYi = ref([
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
 const buyCorrectNum = () => {
+  if (!isVip.value) {
+    ElMessageBox.alert(
+      "You haven't activated the practice access yet.  you need to have the practice rights before you can use the correction service.",
+      'Buying Tips',
+      {
+        confirmButtonText: 'Got it',
+      },
+    );
+    return;
+  }
   store.stripePay({ vipId: onlycorrectTimesid.value });
 };
 const changeBuyCorrectTimes = () => {
@@ -1504,5 +1514,8 @@ const changeBuyCorrectTimes = () => {
       opacity: 0.9;
     }
   }
+}
+.el-button:focus-visible {
+  outline: 0px;
 }
 </style>
