@@ -245,7 +245,15 @@ const buyCorrectNum = () => {
       "You haven't activated the practice access yet.  you need to have the practice rights before you can use the correction service.",
       'Buying Tips',
       {
-        confirmButtonText: 'Got it',
+        confirmButtonText: 'Continue to buy',
+        cancelButtonText: 'Cancel',
+        cancelButtonClass: 'cancel_btn',
+        showCancelButton: true,
+        callback: (action) => {
+          if (action === 'confirm') {
+            store.stripePay({ vipId: onlycorrectTimesid.value });
+          }
+        },
       },
     );
     return;
@@ -1476,6 +1484,12 @@ const changeBuyCorrectTimes = () => {
 }
 </style>
 <style lang="scss">
+.cancel_btn:hover {
+  background-color: white;
+  border-color: #3c4652 !important;
+  color: black !important;
+  outline: none !important;
+}
 .el-button--primary {
   background: #f66442 !important;
   border-color: #f66442 !important;
