@@ -10,6 +10,8 @@ export const host = `https://app.${domain}`;
 export const api = `https://www.duolingopractice.com/weapp/api`;
 export const affurl = `https://affiliate.detpractice.com`;
 
+export const mode = import.meta.env.VITE_MODE; // 预览模式
+
 export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
 export const domainGet = () => {
   // 浏览器环境
@@ -61,7 +63,7 @@ export function getToken(forHeader?: any) {
   if (!process.client) {
     return;
   }
-  const token = getCookie(TOKEN);
+  const token = mode === 'preview' ? getStorage(TOKEN) : getCookie(TOKEN);
   let res;
   if (token) {
     res = forHeader ? `Bearer ${token}` : token;
@@ -72,6 +74,10 @@ export function getToken(forHeader?: any) {
 }
 
 export function saveToken(token: any) {
+  if (mode === 'preview') {
+    saveStorage(TOKEN, token, true);
+    return;
+  }
   setCookie(TOKEN, token, 90);
 }
 let defaultCachePrefix = '20180428_'; // 默认缓存前缀,便于快速清除缓存
