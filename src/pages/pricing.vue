@@ -240,6 +240,24 @@ const correctServiceQuanYi = ref([
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
 const buyCorrectNum = () => {
+  if (!isVip.value) {
+    ElMessageBox.alert(
+      "You haven't activated the practice access yet.  you need to have the practice rights before you can use the correction service.",
+      'Buying Tips',
+      {
+        confirmButtonText: 'Continue to buy',
+        cancelButtonText: 'Cancel',
+        cancelButtonClass: 'cancel_btn',
+        showCancelButton: true,
+        callback: (action) => {
+          if (action === 'confirm') {
+            store.stripePay({ vipId: onlycorrectTimesid.value });
+          }
+        },
+      },
+    );
+    return;
+  }
   store.stripePay({ vipId: onlycorrectTimesid.value });
 };
 const changeBuyCorrectTimes = () => {
@@ -1466,6 +1484,12 @@ const changeBuyCorrectTimes = () => {
 }
 </style>
 <style lang="scss">
+.cancel_btn:hover {
+  background-color: white;
+  border-color: #3c4652 !important;
+  color: black !important;
+  outline: none !important;
+}
 .el-button--primary {
   background: #f66442 !important;
   border-color: #f66442 !important;
@@ -1504,5 +1528,8 @@ const changeBuyCorrectTimes = () => {
       opacity: 0.9;
     }
   }
+}
+.el-button:focus-visible {
+  outline: 0px;
 }
 </style>
