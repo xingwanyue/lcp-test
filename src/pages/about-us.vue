@@ -4,7 +4,7 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain, cdn } from '@/utils';
 const state = reactive({});
-useServerSeoMeta({
+useSeoMeta({
   title: t('aboutUs.seometa.title'),
   description: '',
 });

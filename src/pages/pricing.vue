@@ -5,7 +5,7 @@ const { t } = useI18n();
 import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, domain, host, cdn } from '@/utils';
 import { useStore } from '@/store';
-useServerSeoMeta({
+useSeoMeta({
   title: t('pricing.seometa.title'),
   description: t('pricing.seometa.description'),
   keywords: t('pricing.seometa.keywords'),

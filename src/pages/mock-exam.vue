@@ -12,7 +12,7 @@ const vsImgSmall = `${cdn}/store/portal/products/vs_img_small.png`;
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useServerSeoMeta({
+useSeoMeta({
   title: t('mockexam.seometa.title'),
   description: t('mockexam.seometa.description'),
   keywords: t('mockexam.seometa.keywords'),

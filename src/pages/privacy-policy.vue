@@ -4,7 +4,7 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
-useServerSeoMeta({
+useSeoMeta({
   title: t('privacyPolicy.seometa.title'),
   // description: t('privacyPolicy.seometa.description'),
   keywords: t('privacyPolicy.seometa.keywords'),

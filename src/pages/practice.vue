@@ -9,7 +9,7 @@ import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useServerSeoMeta({
+useSeoMeta({
   title: t('practice.seometa.title'),
   description: t('practice.seometa.description'),
   keywords: t('practice.seometa.keywords'),

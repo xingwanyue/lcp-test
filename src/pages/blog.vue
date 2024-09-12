@@ -7,7 +7,7 @@ import dayjs from 'dayjs';
 import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
-useServerSeoMeta({
+useSeoMeta({
   title: t('blog.seometa.title'),
   description: t('blog.seometa.description'),
 });

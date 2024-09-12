@@ -8,7 +8,7 @@ import { useStore } from '@/store';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useServerSeoMeta({
+useSeoMeta({
   title: t('correction.seometa.title'),
   description: t('correction.seometa.description'),
 });

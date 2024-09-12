@@ -11,7 +11,7 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
-useServerSeoMeta({
+useSeoMeta({
   title: t('index.seometa.title'),
   description: t('index.seometa.description'),
   keywords: t('index.seometa.keywords'),

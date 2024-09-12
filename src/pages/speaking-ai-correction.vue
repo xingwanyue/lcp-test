@@ -9,7 +9,7 @@ import vHighscorespeaking from '../components/highscorespeaking.vue';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-useServerSeoMeta({
+useSeoMeta({
   title: t('speakingaicorrection.seometa.title'),
   description: t('speakingaicorrection.seometa.description'),
 });
