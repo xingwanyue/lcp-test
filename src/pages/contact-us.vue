@@ -54,7 +54,7 @@ const submit = async () => {
     state.loading = false;
   });
 };
-useServerSeoMeta({
+useSeoMeta({
   title: t('contactUs.seometa.title'),
   description: '',
   keywords: t('contactUs.seometa.keywords'),
