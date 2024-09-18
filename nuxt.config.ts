@@ -3,18 +3,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos', 'nuxt-vitalizer'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos'],
   css: ['@/assets/iconfont/iconfont.css'],
-  vitalizer: {
-    disableStylesheets: 'entry',
-    disablePrefetchLinks: true,
-    disablePreloadLinks: true,
-    delayHydration: {
-      hydrateOnEvents: ['mousemove', 'scroll', 'keydown', 'click', 'touchstart', 'wheel'],
-      idleCallbackTimeout: 8000,
-      postIdleTimeout: 4000,
-    },
-  },
+
   i18n: {
     locales: [
       'en',
