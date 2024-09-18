@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: '@/plugins/vue3-carousel.client.js', mode: 'client' },
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
-    { src: '@/plugins/crisp.js', mode: 'client' },
+    { src: '@/plugins/tidio.js', mode: 'client' },
   ],
   aos: {
     disable: 'mobile',
