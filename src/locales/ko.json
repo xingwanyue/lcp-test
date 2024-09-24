@@ -57,7 +57,8 @@
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
     "newAlt": "DET 연습",
-    "close_icon_alt": "크로스 사인"
+    "close_icon_alt": "크로스 사인",
+    "resourcesNew": ["DET 읽기", "DET 쓰기", "DET 말하기", "DET 듣기", "DET 준비 비디오", "DET 어휘", "DET 준비 팁"]
   },
   "index": {
     "seometa": {

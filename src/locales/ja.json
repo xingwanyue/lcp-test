@@ -65,7 +65,16 @@
     "alt": "DET 練習：最高のDuolingo English Test練習プラットフォーム",
     "cookie_contenr": "DET プラクティスは、ブラウザの設定に基づいてコンテンツを改善するためにクッキーを使用します。詳細については、{",
     "newAlt": "DET 練習",
-    "close_icon_alt": "クロスサイン"
+    "close_icon_alt": "クロスサイン",
+    "resourcesNew": [
+      "DETリーディング",
+      "DETライティング",
+      "DETスピーキング",
+      "DETリスニング",
+      "DET準備ビデオ",
+      "DET語彙",
+      "DET準備のヒント"
+    ]
   },
   "index": {
     "seometa": {

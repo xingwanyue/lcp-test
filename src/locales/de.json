@@ -71,7 +71,16 @@
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
     "newAlt": "DET Übung",
-    "close_icon_alt": "Kreuzzeichen"
+    "close_icon_alt": "Kreuzzeichen",
+    "resourcesNew": [
+      "DET Lesen",
+      "DET Schreiben",
+      "DET Sprechen",
+      "DET Hören",
+      "DET Vorbereitungsvideos",
+      "DET Wortschatz",
+      "DET Vorbereitungstipps"
+    ]
   },
   "index": {
     "seometa": {

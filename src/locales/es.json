@@ -71,7 +71,16 @@
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
     "newAlt": "DET Práctica",
-    "close_icon_alt": "Signo de cruz"
+    "close_icon_alt": "Signo de cruz",
+    "resourcesNew": [
+      "Lectura DET",
+      "Escritura DET",
+      "Hablar DET",
+      "Escuchar DET",
+      "Videos de preparación DET",
+      "Vocabulario DET",
+      "Consejos de preparación DET"
+    ]
   },
   "index": {
     "seometa": {

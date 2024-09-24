@@ -71,7 +71,16 @@
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "cookie_contenr": "DET Uygulama, tarayıcı Ayarlarınıza göre içeriği iyileştirmek için çerezler kullanır. Daha fazla bilgi için bkz",
     "newAlt": "DET Uygulama",
-    "close_icon_alt": "Çarpı İşareti"
+    "close_icon_alt": "Çarpı İşareti",
+    "resourcesNew": [
+      "DET Okuma",
+      "DET Yazma",
+      "DET Konuşma",
+      "DET Dinleme",
+      "DET Hazırlık Videoları",
+      "DET Kelime Bilgisi",
+      "DET Hazırlık İpuçları"
+    ]
   },
   "index": {
     "seometa": {

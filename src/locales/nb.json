@@ -71,7 +71,16 @@
     "alt": "DET Praksis:Den beste Duolingo English Test Praksisplattformen",
     "cookie_contenr": "DET Øvelse bruker informasjonskapsler for å forbedre innholdet basert på dine nettleserinnstillinger. For mer informasjon, se",
     "newAlt": "DET Øvelse",
-    "close_icon_alt": "Kryssignal"
+    "close_icon_alt": "Kryssignal",
+    "resourcesNew": [
+      "DET lesing",
+      "DET skriving",
+      "DET snakking",
+      "DET lytting",
+      "DET forberedelsesvideoer",
+      "DET ordforråd",
+      "DET forberedelsestips"
+    ]
   },
   "index": {
     "seometa": {

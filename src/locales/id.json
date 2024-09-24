@@ -71,7 +71,16 @@
     "alt": "DET Latihan: Platform Duolingo English Test Latihan terbaik",
     "cookie_contenr": "DET Praktik menggunakan cookie untuk meningkatkan konten berdasarkan Pengaturan browser Anda. Untuk lebih jelasnya, lihat",
     "newAlt": "DET Latihan",
-    "close_icon_alt": "Tanda Silang"
+    "close_icon_alt": "Tanda Silang",
+    "resourcesNew": [
+      "Membaca DET",
+      "Menulis DET",
+      "Berbicara DET",
+      "Mendengarkan DET",
+      "Video Persiapan DET",
+      "Kosakata DET",
+      "Tips Persiapan DET"
+    ]
   },
   "index": {
     "seometa": {

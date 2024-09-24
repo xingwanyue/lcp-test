@@ -71,7 +71,16 @@
     "alt": "DET ممارسة:أفضل Duolingo English Test منصة ممارسة",
     "cookie_contenr": "DET يستخدم Practice ملفات تعريف الارتباط لتحسين المحتوى بناءً على إعدادات المتصفح الخاصة بك. لمزيد من التفاصيل، راجع",
     "newAlt": "DET ممارسة",
-    "close_icon_alt": "علامة الصليب"
+    "close_icon_alt": "علامة الصليب",
+    "resourcesNew": [
+      "قراءة DET",
+      "كتابة DET",
+      "تحدث DET",
+      "استماع DET",
+      "فيديوهات تحضير DET",
+      "مفردات DET",
+      "نصائح تحضير DET"
+    ]
   },
   "index": {
     "seometa": {

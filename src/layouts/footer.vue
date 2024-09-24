@@ -53,25 +53,44 @@ const prod = computed(() => {
   };
 });
 
-const Learn = ref([] as any);
+const Learn = ref([
+  {
+    id: '1',
+    url: 'https://prep.detpractice.com/category/det-reading/',
+    name: t('footer.resourcesNew[0]'),
+  },
+  {
+    id: '2',
+    url: 'https://prep.detpractice.com/category/det-writing/',
+    name: t('footer.resourcesNew[1]'),
+  },
+  {
+    id: '3',
+    url: 'https://prep.detpractice.com/category/det-speaking/',
+    name: t('footer.resourcesNew[2]'),
+  },
+  {
+    id: '4',
+    url: 'https://prep.detpractice.com/category/det-listening/',
+    name: t('footer.resourcesNew[3]'),
+  },
+  {
+    id: '5',
+    url: 'https://www.youtube.com/watch?v=BgQ5dxC72WY&t=3s',
+    name: t('footer.resourcesNew[4]'),
+  },
+  {
+    id: '6',
+    url: 'https://prep.detpractice.com/category/det-vocabulary/',
+    name: t('footer.resourcesNew[5]'),
+  },
+  {
+    id: '7',
+    url: 'https://prep.detpractice.com/category/det-tips/',
+    name: t('footer.resourcesNew[6]'),
+  },
+] as any);
 
-const getLearn = async () => {
-  let args = { type: '2', flag: '1' } as any;
-  if (!state.isMore2) {
-    args = { ...args, page: 1, pageSize: 4 };
-  }
-  const { data: Learnjk } = (await useFetch(`${api}/common/article`, {
-    server: true,
-    query: { ...args },
-    headers: { locale: locale.value },
-  })) as any;
-  Learn.value = [...Learnjk.value?.data, { name: showmorefont, path: 'learn' }].map((item: any) => {
-    return {
-      name: item.name,
-      url: `${item.path}`,
-    };
-  });
-};
 const Blog = ref([]);
 const getBlob = async () => {
   let args = { type: '1', flag: '1' } as any;
@@ -129,12 +148,11 @@ const Company = computed(() => {
 const language = ref('');
 
 language.value = locale.value;
-getLearn();
+
 getBlob();
 
 const clickChangeLanguage = (item) => {
   setLocale(item.value).then(() => {
-    getLearn();
     getBlob();
   });
   language.value = item.value;
@@ -265,7 +283,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           :key="indexin"
           :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
         >
-          <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+          <NuxtLink :to="`${itemin.url}`" :title="itemin.name" target="_blank"> {{ itemin.name }}</NuxtLink>
         </div>
       </div>
       <div class="one_link_list">

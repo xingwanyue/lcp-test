@@ -1,19 +1,131 @@
 {
-  "ar": "موارد التحضير لاختبار DET",
-  "da": "DET forberedelsesressourcer",
-  "de": "DET-Vorbereitungsressourcen",
-  "es": "Recursos de preparación para el DET",
-  "fr": "Ressources de préparation au DET",
-  "id": "Sumber Daya Persiapan DET",
-  "it": "Risorse di preparazione DET",
-  "ja": "DET準備リソース",
-  "ko": "DET 준비 자료",
-  "nb": "DET forberedelsesressurser",
-  "nl": "DET voorbereidingsmiddelen",
-  "pl": "Zasoby do przygotowania DET",
-  "pt": "Recursos de preparação para o DET",
-  "ru": "Ресурсы для подготовки к DET",
-  "th": "ทรัพยากรการเตรียมสอบ DET",
-  "tr": "DET Hazırlık Kaynakları",
-  "zh": "DET 准备资源"
+  "ar": ["قراءة DET", "كتابة DET", "تحدث DET", "استماع DET", "فيديوهات تحضير DET", "مفردات DET", "نصائح تحضير DET"],
+  "da": [
+    "DET læsning",
+    "DET skrivning",
+    "DET tale",
+    "DET lytning",
+    "DET forberedelsesvideoer",
+    "DET ordforråd",
+    "DET forberedelsestips"
+  ],
+  "de": [
+    "DET Lesen",
+    "DET Schreiben",
+    "DET Sprechen",
+    "DET Hören",
+    "DET Vorbereitungsvideos",
+    "DET Wortschatz",
+    "DET Vorbereitungstipps"
+  ],
+  "es": [
+    "Lectura DET",
+    "Escritura DET",
+    "Hablar DET",
+    "Escuchar DET",
+    "Videos de preparación DET",
+    "Vocabulario DET",
+    "Consejos de preparación DET"
+  ],
+  "fr": [
+    "Lecture DET",
+    "Écriture DET",
+    "Parler DET",
+    "Écoute DET",
+    "Vidéos de préparation DET",
+    "Vocabulaire DET",
+    "Conseils de préparation DET"
+  ],
+  "id": [
+    "Membaca DET",
+    "Menulis DET",
+    "Berbicara DET",
+    "Mendengarkan DET",
+    "Video Persiapan DET",
+    "Kosakata DET",
+    "Tips Persiapan DET"
+  ],
+  "it": [
+    "Lettura DET",
+    "Scrittura DET",
+    "Parlare DET",
+    "Ascolto DET",
+    "Video di preparazione DET",
+    "Vocabolario DET",
+    "Suggerimenti per la preparazione DET"
+  ],
+  "ja": [
+    "DETリーディング",
+    "DETライティング",
+    "DETスピーキング",
+    "DETリスニング",
+    "DET準備ビデオ",
+    "DET語彙",
+    "DET準備のヒント"
+  ],
+  "ko": ["DET 읽기", "DET 쓰기", "DET 말하기", "DET 듣기", "DET 준비 비디오", "DET 어휘", "DET 준비 팁"],
+  "nb": [
+    "DET lesing",
+    "DET skriving",
+    "DET snakking",
+    "DET lytting",
+    "DET forberedelsesvideoer",
+    "DET ordforråd",
+    "DET forberedelsestips"
+  ],
+  "nl": [
+    "DET lezen",
+    "DET schrijven",
+    "DET spreken",
+    "DET luisteren",
+    "DET voorbereidingsvideo's",
+    "DET woordenschat",
+    "DET voorbereidingstips"
+  ],
+  "pl": [
+    "Czytanie DET",
+    "Pisanie DET",
+    "Mówienie DET",
+    "Słuchanie DET",
+    "Filmy przygotowawcze DET",
+    "Słownictwo DET",
+    "Porady przygotowawcze DET"
+  ],
+  "pt": [
+    "Leitura DET",
+    "Escrita DET",
+    "Fala DET",
+    "Audição DET",
+    "Vídeos de preparação DET",
+    "Vocabulário DET",
+    "Dicas de preparação DET"
+  ],
+  "ru": [
+    "Чтение DET",
+    "Письмо DET",
+    "Говорение DET",
+    "Аудирование DET",
+    "Подготовительные видео DET",
+    "Словарный запас DET",
+    "Советы по подготовке DET"
+  ],
+  "th": [
+    "การอ่าน DET",
+    "การเขียน DET",
+    "การพูด DET",
+    "การฟัง DET",
+    "วิดีโอเตรียมสอบ DET",
+    "คำศัพท์ DET",
+    "เคล็ดลับการเตรียมสอบ DET"
+  ],
+  "tr": [
+    "DET Okuma",
+    "DET Yazma",
+    "DET Konuşma",
+    "DET Dinleme",
+    "DET Hazırlık Videoları",
+    "DET Kelime Bilgisi",
+    "DET Hazırlık İpuçları"
+  ],
+  "zh": ["DET 阅读", "DET 写作", "DET 口语", "DET 听力", "DET 准备视频", "DET 词汇", "DET 准备技巧"]
 }

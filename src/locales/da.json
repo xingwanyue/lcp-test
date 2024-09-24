@@ -71,7 +71,16 @@
     "alt": "DET Øvelse:Den bedste Duolingo English Test Øvelsesplatform",
     "cookie_contenr": "DET Practice bruger cookies til at forbedre indhold baseret på dine browserindstillinger. For flere detaljer, se",
     "newAlt": "DET Øvelse",
-    "close_icon_alt": "Krydsskilt"
+    "close_icon_alt": "Krydsskilt",
+    "resourcesNew": [
+      "DET læsning",
+      "DET skrivning",
+      "DET tale",
+      "DET lytning",
+      "DET forberedelsesvideoer",
+      "DET ordforråd",
+      "DET forberedelsestips"
+    ]
   },
   "index": {
     "seometa": {

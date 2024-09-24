@@ -71,7 +71,16 @@
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
     "newAlt": "DET Practice",
-    "close_icon_alt": "Cross Sign"
+    "close_icon_alt": "Cross Sign",
+    "resourcesNew": [
+      "DET Reading",
+      "DET Writing",
+      "DET Speaking",
+      "DET Listening",
+      "DET Prep Videos",
+      "DET Vocabulary",
+      "DET Prep Tips"
+    ]
   },
   "index": {
     "seometa": {

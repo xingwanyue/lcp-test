@@ -71,7 +71,16 @@
     "alt": "DET Oefening:Het beste Duolingo English Test Oefeningsplatform",
     "cookie_contenr": "DET Praktijk gebruikt cookies om de inhoud te verbeteren op basis van je browserinstellingen. Voor meer details, zie",
     "newAlt": "DET Oefenen",
-    "close_icon_alt": "Kruisteken"
+    "close_icon_alt": "Kruisteken",
+    "resourcesNew": [
+      "DET lezen",
+      "DET schrijven",
+      "DET spreken",
+      "DET luisteren",
+      "DET voorbereidingsvideo's",
+      "DET woordenschat",
+      "DET voorbereidingstips"
+    ]
   },
   "index": {
     "seometa": {
