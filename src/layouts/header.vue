@@ -105,7 +105,7 @@ const menus = computed(() => [
   },
   {
     name: t('Learn'),
-    path: '/learn',
+    path: 'https://prep.detpractice.com/',
   },
   {
     name: t('Pricing'),
@@ -227,6 +227,14 @@ const menus = computed(() => [
               </div>
             </template>
           </el-popover>
+          <template v-else-if="menu.path === 'https://prep.detpractice.com/'">
+            <nuxt-link :to="menu.path" :title="menu.name" target="_blank"
+              >{{ menu.name }}
+              <div v-if="pathname === menu.path" class="header-scrolls"></div>
+              <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
+            </nuxt-link>
+          </template>
+
           <nuxt-link v-else :to="localePath(menu.path)" :title="menu.name"
             >{{ menu.name }}
             <div v-if="pathname === menu.path" class="header-scrolls"></div>
