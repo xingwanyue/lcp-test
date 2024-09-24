@@ -53,43 +53,45 @@ const prod = computed(() => {
   };
 });
 
-const Learn = ref([
-  {
-    id: '1',
-    url: 'https://prep.detpractice.com/category/det-reading/',
-    name: t('footer.resourcesNew[0]'),
-  },
-  {
-    id: '2',
-    url: 'https://prep.detpractice.com/category/det-writing/',
-    name: t('footer.resourcesNew[1]'),
-  },
-  {
-    id: '3',
-    url: 'https://prep.detpractice.com/category/det-speaking/',
-    name: t('footer.resourcesNew[2]'),
-  },
-  {
-    id: '4',
-    url: 'https://prep.detpractice.com/category/det-listening/',
-    name: t('footer.resourcesNew[3]'),
-  },
-  {
-    id: '5',
-    url: 'https://www.youtube.com/watch?v=BgQ5dxC72WY&t=3s',
-    name: t('footer.resourcesNew[4]'),
-  },
-  {
-    id: '6',
-    url: 'https://prep.detpractice.com/category/det-vocabulary/',
-    name: t('footer.resourcesNew[5]'),
-  },
-  {
-    id: '7',
-    url: 'https://prep.detpractice.com/category/det-tips/',
-    name: t('footer.resourcesNew[6]'),
-  },
-] as any);
+const Learn = computed(() => {
+  return [
+    {
+      id: '1',
+      url: 'https://prep.detpractice.com/category/det-reading/',
+      name: t('footer.resourcesNew[0]'),
+    },
+    {
+      id: '2',
+      url: 'https://prep.detpractice.com/category/det-writing/',
+      name: t('footer.resourcesNew[1]'),
+    },
+    {
+      id: '3',
+      url: 'https://prep.detpractice.com/category/det-speaking/',
+      name: t('footer.resourcesNew[2]'),
+    },
+    {
+      id: '4',
+      url: 'https://prep.detpractice.com/category/det-listening/',
+      name: t('footer.resourcesNew[3]'),
+    },
+    {
+      id: '5',
+      url: 'https://www.youtube.com/watch?v=BgQ5dxC72WY&t=3s',
+      name: t('footer.resourcesNew[4]'),
+    },
+    {
+      id: '6',
+      url: 'https://prep.detpractice.com/category/det-vocabulary/',
+      name: t('footer.resourcesNew[5]'),
+    },
+    {
+      id: '7',
+      url: 'https://prep.detpractice.com/category/det-tips/',
+      name: t('footer.resourcesNew[6]'),
+    },
+  ];
+});
 
 const Blog = ref([]);
 const getBlob = async () => {
