@@ -1,5 +1,5 @@
 import { fetchmy } from './request';
-import { api, saveStorage } from '@/utils';
+import { api, saveStorage, getStorage } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
@@ -53,7 +53,7 @@ export const loginBycredential = async (credential: string) => {
     body: JSON.stringify({ credential }),
   });
   const { email, picture, name } = data;
-  const InviteCode = getCookie('InviteCode');
+  const InviteCode = getStorage('InviteCode');
   const args = {
     channel: '',
     email,
@@ -90,7 +90,8 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
-    const InviteCode = getCookie('InviteCode');
+    const InviteCode = getStorage('InviteCode');
+    console.log('InviteCode', InviteCode);
     const args = {
       channel: '',
       email,
@@ -104,7 +105,7 @@ export const oauthLogin = async () => {
     }
     return fetchmy(`${api}/common/login`, {
       method: 'post',
-      body: JSON.stringify({ email, avatar: picture, nickname: name, google: true, type: 'pc' }),
+      body: JSON.stringify(args),
     });
   }
 };

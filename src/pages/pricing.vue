@@ -198,7 +198,7 @@ const copy = async (text: any) => {
   }
 };
 const openchat = () => {
-  (window as any).$crisp.push(['do', 'chat:open']);
+  (window as any).tidioChatApi.open();
 };
 const formateMinToHour = (min: number) => {
   const hour = Math.floor(min / 60);
