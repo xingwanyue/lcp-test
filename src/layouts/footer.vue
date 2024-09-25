@@ -77,7 +77,7 @@ const Learn = computed(() => {
     },
     {
       id: '5',
-      url: 'https://www.youtube.com/watch?v=BgQ5dxC72WY&t=3s',
+      url: 'https://www.youtube.com/@duolingoenglishtestpractices',
       name: t('footer.resourcesNew[4]'),
     },
     {
