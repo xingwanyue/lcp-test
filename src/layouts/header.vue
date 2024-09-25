@@ -121,7 +121,7 @@ const menus = computed(() => [
 
 <template>
   <div class="v-header" :style="{ backgroundColor: `${headerColor} !important` }">
-    <div style="display: none;">test</div>
+    <div style="display: none">test</div>
     <div class="header-content">
       <nuxt-link :to="localePath('/')" class="home-logo" :title="t('header.home_logo_title')">
         <span class="icon iconfont icon-logo logo"></span>
@@ -229,11 +229,11 @@ const menus = computed(() => [
             </template>
           </el-popover>
           <template v-else-if="menu.path === 'https://prep.detpractice.com/'">
-            <nuxt-link :to="menu.path" :title="menu.name" target="_blank"
+            <NuxtLink :to="menu.path" :title="menu.name" target="_blank"
               >{{ menu.name }}
               <div v-if="pathname === menu.path" class="header-scrolls"></div>
               <div v-if="oldPath === menu.path" class="header-scrolls-move"></div>
-            </nuxt-link>
+            </NuxtLink>
           </template>
 
           <nuxt-link v-else :to="localePath(menu.path)" :title="menu.name"
