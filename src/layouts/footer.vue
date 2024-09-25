@@ -77,18 +77,8 @@ const Learn = computed(() => {
     },
     {
       id: '5',
-      url: 'https://www.youtube.com/@duolingoenglishtestpractices',
-      name: t('footer.resourcesNew[4]'),
-    },
-    {
-      id: '6',
-      url: 'https://prep.detpractice.com/category/det-vocabulary/',
-      name: t('footer.resourcesNew[5]'),
-    },
-    {
-      id: '7',
-      url: 'https://prep.detpractice.com/category/det-tips/',
-      name: t('footer.resourcesNew[6]'),
+      url: 'https://prep.detpractice.com/',
+      name: t('footer.show_more'),
     },
   ];
 });
