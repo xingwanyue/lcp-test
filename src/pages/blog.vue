@@ -116,7 +116,7 @@ const handleCurrentChange = async (val: number) => {
           class="mt-4"
         />
       </div>
-      <div class="seohack">
+      <div class="seohack" v-if="allPageNum">
         <NuxtLink v-for="(item, index) in allPageNum" :to="localePath(`/blog?page=${item}`)">{{ item }}</NuxtLink>
       </div>
     </div>
