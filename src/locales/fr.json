@@ -93,7 +93,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez un score plus élevé facilement<br />au test d'anglais Duolingo <br />avec <span class=\"seo_hack\">DET Pratique</span>",
     "h1PC": "Obtenez un meilleur score facilement sur le <br />Duolingo English Test Avec <span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un e-mail",
     "Start_for_free": "Commencez gratuitement",
@@ -507,6 +512,10 @@
     "h2_4": {
       "h2": "Polissage d'essai",
       "right_desc": "Modifiez avec précision chaque mot et chaque phrase, ajustez raisonnablement la structure des paragraphes, et revitalisez le style d'écriture pour améliorer davantage votre composition et la transformer en un texte de haute qualité."
+    },
+    "h2_5": {
+      "h2": "Polissage du texte original",
+      "right_desc": "Élevez chaque mot et chaque phrase ; affinez la structure et le style pour une composition distinguée et performante."
     }
   },
   "courses": {

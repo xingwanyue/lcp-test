@@ -93,7 +93,12 @@
     "power_by": "Ditenagai oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />pada Ujian Bahasa Inggris Duolingo <br />Dengan <span class=\"seo_hack\">DET Latihan</span>",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Duolingo English Test Dengan <span class=\"seo_hack\">DET Latihan</span>",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -507,6 +512,10 @@
     "h2_4": {
       "h2": "Pemolesan esai",
       "right_desc": "Memodifikasi setiap kata dan kalimat dengan akurat, menyesuaikan struktur paragraf secara wajar, dan menghidupkan kembali gaya penulisan untuk lebih meningkatkan komposisi Anda dan mengubahnya menjadi karya dengan skor tinggi."
+    },
+    "h2_5": {
+      "h2": "Pemolesan Teks Asli",
+      "right_desc": "Tinggikan setiap kata dan kalimat; perbaiki struktur dan gaya untuk komposisi yang unggul dan bernilai tinggi."
     }
   },
   "courses": {

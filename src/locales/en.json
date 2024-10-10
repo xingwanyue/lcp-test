@@ -504,6 +504,10 @@
     "h2_4": {
       "h2": "Essay polishing",
       "right_desc": "Accurately modify every word and sentence, reasonably adjust the paragraph structure, and revitalize the writing style to further improve your composition and transform it into a high-scoring one."
+    },
+    "h2_5": {
+      "h2": "Original Text Polishing",
+      "right_desc": "Elevate every word and sentence;refine structure and style for a distinguished and high-scoring composition."
     }
   },
   "courses": {
