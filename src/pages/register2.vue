@@ -61,8 +61,8 @@ const submit = async () => {
   const { err } = await register(temp);
   loading.value = false;
   if (!err) {
-    sinupEvent();
     router.push('/login');
+    sinupEvent();
   } else {
     errShow.value = true;
     errMessage.value = err.message;

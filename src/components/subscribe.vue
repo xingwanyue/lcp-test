@@ -151,6 +151,10 @@ const sendEmail = async () => {
 .el-input__wrapper.is-focus {
   box-shadow: 0 0 0 2px #201515 inset !important;
 }
+.el-textarea__inner:focus {
+  // outline: none !important;
+  box-shadow: 0 0 0 2px #201515 inset !important;
+}
 .subscribe_in_right {
   .input_self {
     height: 50px;

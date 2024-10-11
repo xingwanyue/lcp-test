@@ -214,6 +214,12 @@
                             color: #403f3e;
                             margin-top: 40px;
 
+                            // border: 1px red solid;
+                            ::v-deep(.zdfont) {
+                                // color: #3E8BF8;
+                                font-weight: 600;
+                            }
+
                             @media (max-width: 450px) {
                                 font-size: 16px;
                                 margin-top: 20px;
@@ -326,6 +332,24 @@
 
             &:hover {
                 border-bottom: 1px #3E8BF8 solid !important;
+            }
+        }
+
+
+    }
+}
+
+.speaking_out {
+    .bank_wrapper {
+        background: linear-gradient(#EAEAFEFF 0%, #ffffff 657px, #ffffff 0px, #ffffff);
+    }
+
+    .right_click {
+        .font {
+            color: #635DF7FF !important;
+
+            &:hover {
+                border-bottom: 1px #635DF7FF solid !important;
             }
         }
 

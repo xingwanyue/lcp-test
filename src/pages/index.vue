@@ -11,7 +11,7 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
-useServerSeoMeta({
+useSeoMeta({
   title: t('index.seometa.title'),
   description: t('index.seometa.description'),
   keywords: t('index.seometa.keywords'),
@@ -119,13 +119,19 @@ const isLoad4 = ref(false);
 const onLoad4 = () => {
   isLoad4.value = true;
 };
+const isLoad5 = ref(false);
+const onLoad5 = () => {
+  isLoad5.value = true;
+};
 
 // 引入cdn图片
 const bannerImg = `${cdn}/store/portal/home/banner.svg`;
 const home1 = `${cdn}/store/portal/home/home1.png`;
-const home2 = `${cdn}/store/portal/home/home2.png`;
-const home3 = `${cdn}/store/portal/home/home3.png`;
-const home4 = `${cdn}/store/portal/home/home4.png`;
+const home2 = `${cdn}/store/portal/home/home3.png`;
+const home3 = `${cdn}/store/portal/home/home2.png`;
+const home4 = `${cdn}/store/portal/home/home55.png`;
+const home5 = `${cdn}/store/portal/home/home4.png`;
+const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 </script>
 
 <template>
@@ -198,39 +204,60 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
       </div>
     </div>
-    <div class="part2_wrapper">
-      <div class="part2">
+    <div class="three_nums_wrapper">
+      <div class="three_nums_out">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
           <div>{{ $t('index.The_Best_Platform') }}</div>
         </div>
-        <div class="title2" data-aos="fade-up" data-aos-duration="1000">
-          <div>{{ $t('index.Leverage_Our') }}</div>
+        <div class="three_nums" data-aos="fade-up" data-aos-duration="1000">
+          <div class="one_nums">
+            <div class="one_nums_top">400,000+</div>
+            <div class="one_nums_bottom">{{ $t('index.Tu') }}</div>
+          </div>
+          <div class="one_nums">
+            <div class="one_nums_top">18,000+</div>
+            <div class="one_nums_bottom">{{ $t('index.questions') }}</div>
+          </div>
+          <div class="one_nums">
+            <div class="one_nums_top">10,000+</div>
+            <div class="one_nums_bottom">{{ $t('index.mockTest') }}</div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="part2_wrapper">
+      <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
-            <el-skeleton v-show="!isLoad" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <img loading="lazy" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
               <h2>{{ $t('index.article1.title') }}</h2>
             </div>
             <div class="tips">
-              {{
-                $t('index.article1.tips1', {
-                  number: `${formatNumber(platformData?.questionTotal)}`,
-                })
-              }}
+              <div class="tips_icon">
+                <img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" />
+              </div>
+              <span
+                v-html="
+                  $t('index.article1.tips1', {
+                    number: `<span class='yellow'>${formatNumber(platformData?.questionTotal)}</span>`,
+                  })
+                "
+              ></span>
             </div>
             <div class="tips">
-              {{ $t('index.article1.tips2') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article1.tips2')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article1.tips3') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article1.tips3')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article1.tips4')"></span>
             </div>
             <NuxtLink class="get_more" :to="localePath('/practice')">
               <div class="font">{{ $t('index.article1.btn_font') }}</div>
@@ -242,27 +269,29 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad2" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
-            <el-skeleton v-show="!isLoad2" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <img loading="lazy" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
               <h2>{{ $t('index.article2.title') }}</h2>
             </div>
             <div class="tips">
-              {{ $t('index.article2.tips1') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article2.tips1')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article2.tips2') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article2.tips2')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article2.tips3') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article2.tips3')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/correction')">
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article2.tips4')"></span>
+            </div>
+            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
               <div class="font">{{ $t('index.article2.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article2.btn_img_alt')" />
@@ -272,27 +301,29 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad3" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
-            <el-skeleton v-show="!isLoad3" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
-              </template>
-            </el-skeleton>
+            <img loading="lazy" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
               <h2>{{ $t('index.article3.title') }}</h2>
             </div>
             <div class="tips">
-              {{ $t('index.article3.tips1') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article3.tips1')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article3.tips2') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article3.tips2')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article3.tips3') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article3.tips3')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/mock-exam')">
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article3.tips4')"></span>
+            </div>
+            <NuxtLink class="get_more" :to="localePath('/writing-ai-correction')">
               <div class="font">{{ $t('index.article3.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
@@ -302,7 +333,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad4" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" />
+            <img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" placeholder />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -314,18 +345,62 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
               <h2>{{ $t('index.article4.title') }}</h2>
             </div>
             <div class="tips">
-              {{ $t('index.article4.tips1') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article4.tips1')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article4.tips2') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article4.tips2')"></span>
             </div>
             <div class="tips">
-              {{ $t('index.article4.tips3') }}
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article4.tips3')"></span>
             </div>
-            <NuxtLink class="get_more" :to="localePath('/courses')">
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article4.tips4')"></span>
+            </div>
+            <NuxtLink class="get_more" :to="localePath('/speaking-ai-correction')">
               <div class="font">{{ $t('index.article4.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article4.btn_img_alt')" />
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
+          <div class="img_out">
+            <el-image v-show="isLoad5" :src="home5" :alt="$t('index.article3.title')" @load="onLoad5" />
+            <el-skeleton v-show="!isLoad5" style="width: 100%" animated>
+              <template #template>
+                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
+              </template>
+            </el-skeleton>
+          </div>
+          <div class="article_out">
+            <div class="article_out_title">
+              <h2>{{ $t('index.article5.title') }}</h2>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article5.tips1')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article5.tips2')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article5.tips3')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article5.tips4')"></span>
+            </div>
+            <NuxtLink class="get_more" :to="localePath('/courses')">
+              <div class="font">{{ $t('index.article5.btn_font') }}</div>
+              <div class="icon">
+                <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article3.btn_img_alt')" />
               </div>
             </NuxtLink>
           </div>
@@ -347,7 +422,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
+                          <img loading="lazy" :src="staticUrlGet(item[0].avatar)" :alt="item[0].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[0].nickname }}</div>
@@ -364,7 +439,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
                     <div class="one_card_top">
                       <div class="one_card_top_left">
                         <div class="icon_touxiang">
-                          <img :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
+                          <img loading="lazy" :src="staticUrlGet(item[1].avatar)" :alt="item[1].nickname" />
                         </div>
                         <div class="name_out">
                           <div class="name">{{ item[1].nickname }}</div>
@@ -646,6 +721,78 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       }
     }
   }
+  .three_nums_wrapper {
+    background: #f2f4f6;
+    padding: 100px 0px;
+    margin-top: 96px;
+    margin-bottom: 120px;
+    @media (max-width: 450px) {
+      margin-bottom: 10px;
+    }
+    .three_nums_out {
+      max-width: 1200px;
+      @media (max-width: 1200px) {
+        padding: 0px 30px;
+      }
+      margin: 0 auto;
+      .title1 {
+        div {
+          font-weight: 500;
+          font-size: 40px;
+          color: #201515;
+          text-align: center;
+          padding: 0px;
+          margin: 0px;
+          @media (max-width: 906px) {
+            font-size: 36px;
+          }
+          @media (max-width: 744px) {
+            font-size: 36px;
+          }
+          @media (max-width: 570px) {
+            font-size: 30px;
+          }
+          @media (max-width: 450px) {
+            font-size: 23px;
+          }
+          @media (max-width: 450px) {
+            font-size: 22px;
+          }
+        }
+      }
+      .three_nums {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 100px;
+        grid-row-gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        @media (max-width: 450px) {
+          grid-column-gap: 16px;
+        }
+        .one_nums {
+          text-align: center;
+          .one_nums_top {
+            font-weight: 600;
+            font-size: 48px;
+            color: #f66442;
+            @media (max-width: 450px) {
+              font-size: 23px;
+            }
+          }
+          .one_nums_bottom {
+            font-weight: 400;
+            font-size: 20px;
+            color: #201515;
+            @media (max-width: 450px) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .part2_wrapper {
     padding: 0px 30px;
@@ -657,38 +804,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
       max-width: 1200px;
       // border: 1px blue solid;
       margin: 0 auto;
-      .title1 {
-        div {
-          font-weight: 500;
-          font-size: 40px;
-          color: #201515;
-          text-align: center;
-          padding: 0px;
-          margin: 0px;
-          margin-top: 120px;
-          @media (max-width: 450px) {
-            font-size: 23px;
-          }
-        }
-      }
-      .title2 {
-        margin-top: 32px;
-        margin-bottom: 80px;
-        @media (max-width: 450px) {
-          margin-top: 20px;
-          margin-bottom: 40px;
-        }
-        div {
-          font-weight: 500;
-          font-size: 24px;
-          color: #201515;
-          text-align: center;
-          margin: 0;
-          @media (max-width: 450px) {
-            font-size: 18px;
-          }
-        }
-      }
+
       .one_img_article {
         // border:1px red solid;
         display: grid;
@@ -698,7 +814,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           grid-row-gap: 0px;
         }
         grid-template-columns: 1fr 0.75fr;
-        grid-column-gap: 80px;
+        grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-areas: 'img_out  article_out';
         @media (max-width: 926px) {
@@ -724,10 +840,12 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           }
         }
         .article_out {
+          // border: 1px red solid;
           grid-area: article_out;
-          // @media (max-width: 926px) {
-          //   text-align: center;
-          // }
+          padding-top: 24px;
+          @media (max-width: 926px) {
+            padding-top: 0px;
+          }
           .article_out_title {
             h2 {
               font-weight: 500;
@@ -755,6 +873,24 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            grid-gap: 16px;
+            .tips_icon {
+              width: 18px;
+              height: 18px;
+              position: relative;
+              top: 2px;
+              flex-shrink: 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            ::v-deep(.yellow) {
+              font-weight: 650;
+            }
             @media (max-width: 450px) {
               font-size: 16px;
             }
@@ -801,7 +937,7 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
           grid-row-gap: 0px;
         }
         grid-template-columns: 0.75fr 1fr;
-        grid-column-gap: 80px;
+        grid-column-gap: 40px;
         grid-row-gap: 40px;
         grid-template-areas: ' article_out img_out';
         @media (max-width: 926px) {
@@ -824,13 +960,16 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             width: 100%;
             height: auto;
             border-radius: 16px;
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           }
         }
         .article_out {
+          // border: 1px blue solid;
           grid-area: article_out;
-          // @media (max-width: 926px) {
-          //   text-align: center;
-          // }
+          padding-top: 24px;
+          @media (max-width: 926px) {
+            padding-top: 0px;
+          }
           .article_out_title {
             h2 {
               font-weight: 500;
@@ -858,6 +997,24 @@ const home4 = `${cdn}/store/portal/home/home4.png`;
             font-size: 18px;
             color: #403f3e;
             margin-top: 24px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            grid-gap: 16px;
+            .tips_icon {
+              width: 18px;
+              height: 18px;
+              position: relative;
+              top: 2px;
+              flex-shrink: 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            ::v-deep(.yellow) {
+              font-weight: 650;
+            }
             @media (max-width: 450px) {
               font-size: 16px;
             }

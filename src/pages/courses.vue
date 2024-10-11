@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { useStore } from '@/store';
 import { staticUrlGet, domain, cdn } from '@/utils';
-useServerSeoMeta({
+useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
 });

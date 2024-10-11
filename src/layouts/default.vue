@@ -12,7 +12,8 @@ const router = useRouter();
 
 const store = useStore();
 const layouProps = useAttrs();
-
+// const userpc = process.client;
+const isUserPc = ref(import.meta.client);
 useHead({
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
 });
@@ -51,18 +52,16 @@ onMounted(async () => {
 </script>
 
 <template>
-  <DelayHydration>
-    <el-container class="wrap">
-      <el-header class="header" height="62px"> <v-header :type="layouProps.type as string" /> </el-header>
-      <el-main class="main">
-        <slot />
-      </el-main>
-      <el-footer class="footer_wrap">
-        <v-footer />
-      </el-footer>
-      <v-changeLanguagetk />
-    </el-container>
-  </DelayHydration>
+  <el-container class="wrap">
+    <el-header class="header" height="62px"> <v-header :type="layouProps.type as string" /> </el-header>
+    <el-main class="main">
+      <slot />
+    </el-main>
+    <el-footer class="footer_wrap">
+      <v-footer />
+    </el-footer>
+    <v-changeLanguagetk />
+  </el-container>
 </template>
 <style lang="scss" scoped>
 .wrap {
@@ -77,7 +76,7 @@ onMounted(async () => {
   }
   .main {
     padding: 60px 0 0 0;
-    min-height: calc(100vh - 60px);
+    // min-height: calc(100vh - 60px);
   }
   .footer_wrap {
     padding: 0 30px;

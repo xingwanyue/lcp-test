@@ -187,4 +187,5 @@ export const platformData = {
   questionTotal: '18000+', // 题库
   examTotal: '10k+', // 模考人次
   correctTotal: '21k+', // 批改人次
+  speakingTotal: '26k+', // 批改人次
 } as any;

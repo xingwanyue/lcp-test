@@ -4,7 +4,7 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
-useServerSeoMeta({
+useSeoMeta({
   title: t('refundPolicy.seometa.title'),
   description: t('refundPolicy.seometa.description'),
   keywords: t('privacyPolicy.seometa.keywords'),
@@ -41,11 +41,13 @@ useHead({
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title">{{ $t('refundPolicy.q3.title0') }}</div>
+        <div class="line-break">&nbsp;</div>
         <div class="title">{{ $t('refundPolicy.q3.title') }}</div>
         <div class="content1">
           {{ $t('refundPolicy.q3.a1') }}
           <div class="line-break"></div>
-          {{ $t('refundPolicy.q3.a2') }}
+          <span v-html="$t('refundPolicy.q3.a2')"></span>
           <div class="line-break"></div>
           <div v-html="$t('refundPolicy.q3.a3')"></div>
           <div class="line-break"></div>
@@ -125,6 +127,10 @@ useHead({
       }
       ::v-deep .website {
         color: #f66442;
+      }
+      ::v-deep .websiteStrong {
+        color: #f66442;
+        font-weight: 650;
       }
       .website {
         color: #f66442;

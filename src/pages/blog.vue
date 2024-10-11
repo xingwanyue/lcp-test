@@ -7,7 +7,7 @@ import dayjs from 'dayjs';
 import vEmbark from '../components/embark.vue';
 const localePath = useLocalePath();
 
-useServerSeoMeta({
+useSeoMeta({
   title: t('blog.seometa.title'),
   description: t('blog.seometa.description'),
 });
@@ -116,7 +116,7 @@ const handleCurrentChange = async (val: number) => {
           class="mt-4"
         />
       </div>
-      <div class="seohack">
+      <div class="seohack" v-if="allPageNum">
         <NuxtLink v-for="(item, index) in allPageNum" :to="localePath(`/blog?page=${item}`)">{{ item }}</NuxtLink>
       </div>
     </div>

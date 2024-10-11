@@ -16,7 +16,7 @@ const { data: article } = (await useFetch(`${api}/common/article?path=${route.pa
 })) as any;
 const isLearn = article.value?.type === '2' || article.value?.type === '1';
 
-useServerSeoMeta({
+useSeoMeta({
   title: () => article.value?.title || t('path.seometa.title'),
   description: () => article.value?.description || t('path.seometa.description'),
   keywords: () => article.value?.keywords,

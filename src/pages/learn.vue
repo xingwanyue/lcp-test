@@ -85,7 +85,7 @@ const handleClose = () => {
 const handleChange = () => {
   state.selFatherData = find(state.selectList, { id: state.activeName }) || {};
 };
-useServerSeoMeta({
+useSeoMeta({
   title: t('learn.seometa.title'),
   description: t('learn.seometa.description'),
   keywords: t('learn.seometa.keywords'),

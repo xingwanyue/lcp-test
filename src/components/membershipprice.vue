@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import { reactive } from 'vue';
-import { formatCash } from '@/utils';
+import { formatCashfixed2 } from '@/utils';
 
 // import subscribe from '@/components/subscribe.vue';
 import { useStore } from '@/store';
@@ -117,15 +117,17 @@ const saveCaculate = (item) => {
             <div class="price_out">
               <div class="do">{{ $t('pricing.pagefont.do') }}</div>
               <template v-if="item.day === 7">
-                <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
+                <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
                 <div class="unit">{{ $t('pricing.pagefont.week') }}</div>
               </template>
               <template v-if="item.day === 30">
-                <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
+                <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.day === 365">
-                <div class="price">{{ formatCash(Number(item.price) / 12 + Number(item.correctPrice || 0)) }}</div>
+                <div class="price">
+                  {{ formatCashfixed2(Number(item.price) / 12 + Number(item.correctPrice || 0)) }}
+                </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
             </div>
@@ -133,7 +135,7 @@ const saveCaculate = (item) => {
               <span v-if="item.day === 365">
                 {{
                   $t('pricing.pagefont.Billed', {
-                    num: formatCash(Number(item.price) + Number(item.correctPrice || 0) * 12),
+                    num: formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0) * 12),
                   })
                 }}
               </span>
@@ -153,7 +155,7 @@ const saveCaculate = (item) => {
                   >
                     <span style="float: left">{{ itemTimes.correctNum }} {{ $t('pricing.pagefont.times') }}</span>
                     <span style="float: right; font-size: 13px; margin-left: 60px">
-                      {{ $t('pricing.pagefont.do') }}{{ formatCash(itemTimes.price) }}
+                      {{ $t('pricing.pagefont.do') }}{{ formatCashfixed2(itemTimes.price) }}
                     </span>
                   </el-option>
                 </el-select>
@@ -195,7 +197,7 @@ const saveCaculate = (item) => {
           <div class="icon">
             <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
           </div>
-          <div class="font">{{ item.font }}</div>
+          <div class="font" v-html="item.font"></div>
         </div>
       </div>
     </div>
@@ -207,7 +209,7 @@ const saveCaculate = (item) => {
           </div>
           <div class="price_out">
             <div class="do price_blue">{{ $t('pricing.pagefont.do') }}</div>
-            <div class="price price_blue">{{ formatCash(state.mockBuyItem.price) }}</div>
+            <div class="price price_blue">{{ formatCashfixed2(state.mockBuyItem.price) }}</div>
             <!-- <div class="unit">/week</div> -->
           </div>
           <div class="bill"></div>
@@ -226,7 +228,7 @@ const saveCaculate = (item) => {
                 >
                   <span style="float: left">{{ itemTimes.examNum }} {{ $t('pricing.pagefont.times') }}</span>
                   <span style="float: right; font-size: 13px; margin-left: 60px">
-                    ${{ formatCash(itemTimes.price) }}
+                    ${{ formatCashfixed2(itemTimes.price) }}
                   </span>
                 </el-option>
               </el-select>
@@ -256,7 +258,7 @@ const saveCaculate = (item) => {
           <div class="icon">
             <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
           </div>
-          <div class="font">{{ item.font }}</div>
+          <div class="font" v-html="item.font"></div>
         </div>
       </div>
     </div>
@@ -326,6 +328,9 @@ const saveCaculate = (item) => {
           font-weight: 400;
           font-size: 14px;
           color: #403f3e;
+          ::v-deep(.strongfont) {
+            font-weight: 650;
+          }
         }
       }
     }
@@ -362,6 +367,9 @@ const saveCaculate = (item) => {
           font-weight: 400;
           font-size: 14px;
           color: #403f3e;
+          ::v-deep(.strongfont) {
+            font-weight: 650;
+          }
         }
       }
     }

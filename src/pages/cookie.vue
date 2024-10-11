@@ -4,7 +4,7 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 const state = reactive({});
-useServerSeoMeta({
+useSeoMeta({
   title: t('cookie.seometa.title'),
 });
 useHead({
