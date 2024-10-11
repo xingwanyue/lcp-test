@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n'],
   css: ['@/assets/iconfont/iconfont.css'],
 
   i18n: {
@@ -36,9 +36,6 @@ export default defineNuxtConfig({
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/tidio.js', mode: 'client' },
   ],
-  aos: {
-    disable: 'mobile',
-  },
 
   features: {
     inlineStyles: false,
