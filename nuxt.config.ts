@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'nuxt-aos'],
   css: ['@/assets/iconfont/iconfont.css'],
-
+  build: {
+    analyze: {
+      filename: 'stats.html',
+    },
+  },
   i18n: {
     locales: [
       'en',
@@ -39,6 +43,7 @@ export default defineNuxtConfig({
   aos: {
     disable: 'mobile',
   },
+
   features: {
     inlineStyles: false,
   },
