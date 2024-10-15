@@ -51,7 +51,13 @@
     "LearnTitle": "準備リソース",
     "BlogTitle": "ブログ",
     "CompanyTitle": "会社",
-    "Products": ["DET 練習", "DET 書き取りAI修正", "DET 話し言葉AI修正", "DET モック", "Duolingo English Test コース"],
+    "Products": [
+      "DET 練習",
+      "DET 書き取りAI修正",
+      "DET 話し言葉AI修正",
+      "DET モック",
+      "Duolingo English Test コース"
+    ],
     "Company": [
       "私たちについて",
       "お問い合わせ",
@@ -87,7 +93,12 @@
     "power_by": "AIによって提供されました",
     "h1Mobile": "簡単に高得点を取得する<br />Duolingo <br />英語テストで<span class=\"seo_hack\">DET 練習</span>",
     "h1PC": "スコアを簡単に上げる <br />Duolingo English Test <span class=\"seo_hack\">DET 練習</span>で",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -501,6 +512,10 @@
     "h2_4": {
       "h2": "エッセイの仕上げ",
       "right_desc": "すべての単語と文を正確に修正し、段落構造を適切に調整して、文章のスタイルを一新し、さらに改善して高得点の作文に変えましょう。"
+    },
+    "h2_5": {
+      "h2": "原文の磨き",
+      "right_desc": "すべての単語と文を向上させ、構造とスタイルを洗練して、優れた高得点の作品を作成します。"
     }
   },
   "courses": {

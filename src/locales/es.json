@@ -93,7 +93,12 @@
     "power_by": "Impulsado por IA",
     "h1Mobile": "Obtén una Puntuación Más Alta Fácilmente<br />en la prueba de Duolingo <br />Inglés Con <span class=\"seo_hack\">DET Práctica</span>",
     "h1PC": "Obtén una Puntuación Más Alta Fácilmente en el <br />Duolingo English Test Con <span class=\"seo_hack\">DET Práctica</span>",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -507,6 +512,10 @@
     "h2_4": {
       "h2": "Pulido de ensayo",
       "right_desc": "Modifica con precisión cada palabra y oración, ajusta razonablemente la estructura del párrafo y revitaliza el estilo de escritura para mejorar aún más tu composición y transformarla en una de alta puntuación."
+    },
+    "h2_5": {
+      "h2": "Pulido del texto original",
+      "right_desc": "Eleva cada palabra y oración; refina la estructura y el estilo para lograr una composición distinguida y de alta puntuación."
     }
   },
   "courses": {

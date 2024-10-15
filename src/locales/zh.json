@@ -51,14 +51,36 @@
     "LearnTitle": "准备资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET 练习", "DET 写作 AI 校正", "DET 口语 AI 校正", "DET 模拟", "Duolingo English Test 课程"],
-    "Company": ["关于我们", "联系我们", "条款和条件", "隐私政策", "网站地图", "联盟计划", "退款政策"],
+    "Products": [
+      "DET 练习",
+      "DET 写作 AI 校正",
+      "DET 口语 AI 校正",
+      "DET 模拟",
+      "Duolingo English Test 课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "条款和条件",
+      "隐私政策",
+      "网站地图",
+      "联盟计划",
+      "退款政策"
+    ],
     "show_more": "显示更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
     "newAlt": "DET 练习",
     "close_icon_alt": "交叉标志",
-    "resourcesNew": ["DET 阅读", "DET 写作", "DET 口语", "DET 听力", "DET 准备视频", "DET 词汇", "DET 准备技巧"]
+    "resourcesNew": [
+      "DET 阅读",
+      "DET 写作",
+      "DET 口语",
+      "DET 听力",
+      "DET 准备视频",
+      "DET 词汇",
+      "DET 准备技巧"
+    ]
   },
   "index": {
     "seometa": {
@@ -71,7 +93,12 @@
     "power_by": "由AI提供支持",
     "h1Mobile": "轻松获得更高分数<br />在 Duolingo <br />英语测试中 使用 <span class=\"seo_hack\">DET 练习</span>",
     "h1PC": "轻松拿到更高分数 <br />Duolingo English Test 通过 <span class=\"seo_hack\">DET 练习</span>",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "开始免费使用Google",
     "Start_free_with_email": "以电子邮件免费开始",
     "Start_for_free": "免费开始",
@@ -485,6 +512,10 @@
     "h2_4": {
       "h2": "文章润色",
       "right_desc": "准确修改每个词和句子，合理调整段落结构，并使写作风格焕然一新，从而进一步提高您的作文水平并将其转变为高分作文。"
+    },
+    "h2_5": {
+      "h2": "原文润色",
+      "right_desc": "提升每一个单词和句子；完善结构和风格，以获得杰出的高分作文。"
     }
   },
   "courses": {

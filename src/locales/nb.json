@@ -93,7 +93,12 @@
     "power_by": "Drevet av AI",
     "h1Mobile": "Få en høyere poengsum enkelt<br />på Duolingo <br />engelsktesten med <span class=\"seo_hack\">DET praksis</span>",
     "h1PC": "Få en høyere poengsum enkelt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
-    "one_small_title": ["DET Øvelse", "AI Korrigering", "Full-Length Mock", "DET Kurs"],
+    "one_small_title": [
+      "DET Øvelse",
+      "AI Korrigering",
+      "Full-Length Mock",
+      "DET Kurs"
+    ],
     "Start_free_with_Google": "Start gratis med Google",
     "Start_free_with_email": "Start gratis med e-post",
     "Start_for_free": "Start gratis",
@@ -507,6 +512,10 @@
     "h2_4": {
       "h2": "Essay polering",
       "right_desc": "Nøyaktig endre hvert ord og setning, juster rimelig avsnittsstrukturen, og revitaliser skrivestilen for å ytterligere forbedre din komposisjon og gjøre den til en høyt poenggivende."
+    },
+    "h2_5": {
+      "h2": "Original tekstpolering",
+      "right_desc": "Hev hvert ord og hver setning; avgrens struktur og stil for en fremtredende komposisjon med høy poengsum."
     }
   },
   "courses": {
