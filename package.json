@@ -15,7 +15,6 @@
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.0",
     "nuxt": "^3.11.2",
-    "nuxt-aos": "^1.2.4",
     "vue": "^3.4.23",
     "vue-router": "^4.3.2",
     "vue3-carousel-nuxt": "^1.1.3"
