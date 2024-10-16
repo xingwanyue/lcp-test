@@ -185,20 +185,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         ></div>
         <div class="big_img_out">
           <div class="big_img">
-            <video
-              width="100%"
-              height="100%"
-              muted
-              autoplay
-              loop
-              controlslist="nodownload"
-              webkit-playsinline="true"
-              playsinline="true"
-              x5-video-player-fullscreen="true"
-              x5-video-orientation="portraint"
-              x5-video-player-type="h5"
-              :src="videoUrl"
-            ></video>
+           
             <!-- <img :src="bannerImg" /> -->
           </div>
         </div>
