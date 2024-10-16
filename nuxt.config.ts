@@ -26,9 +26,16 @@ export default defineNuxtConfig({
       'da',
       'ru',
       'zh',
-    ],
+    ].map((locale) => ({
+      code: locale,
+      file: `${locale}.json`,
+    })),
+    lazy: true,
     defaultLocale: 'en',
-    vueI18n: './i18n.config.ts',
+    langDir: 'locales',
+    compilation: {
+      strictMessage: false,
+    },
     detectBrowserLanguage: false,
   },
   plugins: [

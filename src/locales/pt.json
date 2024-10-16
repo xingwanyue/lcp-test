@@ -828,7 +828,7 @@
     "q5": {
       "title": "Entre em contato conosco",
       "a1": "Se tiver alguma dúvida sobre nossa política de reembolso ou precisar de ajuda com sua compra, entre em contato conosco em:",
-      "a2": "Email: <span class='website'>suporte@detpractice.com</span>"
+      "a2": "Email: <span class='website'>suporte{'@'}detpractice.com</span>"
     }
   },
   "register": {
