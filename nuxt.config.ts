@@ -26,10 +26,16 @@ export default defineNuxtConfig({
       'da',
       'ru',
       'zh',
-    ],
+    ].map((locale) => ({
+      code: locale,
+      file: `${locale}.json`,
+    })),
+    lazy: true,
     defaultLocale: 'en',
-    vueI18n: './i18n.config.ts',
-    detectBrowserLanguage: false,
+    langDir: 'locales',
+    compilation: {
+      strictMessage: false,
+    },
   },
   plugins: [
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
