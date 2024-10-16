@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     compilation: {
       strictMessage: false,
     },
+    detectBrowserLanguage: false,
   },
   plugins: [
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
