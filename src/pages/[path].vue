@@ -14,7 +14,7 @@ const { data: article, error } = (await useFetch(`${api}/common/article?path=${r
   server: true,
   headers: { locale: locale.value },
 })) as any;
-if (!article || error) {
+if (error.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page Not Found',
