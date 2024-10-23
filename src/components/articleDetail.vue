@@ -177,10 +177,14 @@ const rateChange = async () => {
         // border: 1px red solid;
       }
       .title {
-        font-weight: 600;
-        font-size: 56px;
-        color: #201515;
-        line-height: 72px;
+        h1 {
+          margin: 0;
+          padding: 0;
+          font-weight: 600;
+          font-size: 56px;
+          color: #201515;
+          line-height: 72px;
+        }
       }
       .article-con1 {
         font-weight: 400;
@@ -257,9 +261,11 @@ const rateChange = async () => {
       .article-con {
         margin-right: 0px;
         .title {
-          font-weight: 600;
-          font-size: 20px;
-          line-height: 27px;
+          h1 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+          }
         }
         .article-con1 {
           font-size: 15px;
