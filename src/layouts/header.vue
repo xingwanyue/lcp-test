@@ -54,6 +54,12 @@ onMounted(async () => {
   });
 });
 const changeHeaderColor = (pathname: string) => {
+  // pathname已/det-开头 则白色
+  if (pathname.indexOf('/det-') === 0) {
+    headerColor.value = '#fff';
+    return;
+  }
+
   switch (pathname) {
     case '/practice':
       headerColor.value = '#ECF7FF';
