@@ -10,10 +10,16 @@ definePageMeta({
   layout: 'empty',
 });
 
-const { data: article } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
+const { data: article, error } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
   server: true,
   headers: { locale: locale.value },
 })) as any;
+if (!article || error) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page Not Found',
+  });
+}
 const isLearn = article.value?.type === '2' || article.value?.type === '1';
 
 useSeoMeta({
