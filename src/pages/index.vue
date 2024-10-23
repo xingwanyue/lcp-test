@@ -890,6 +890,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             }
             ::v-deep(.yellow) {
               font-weight: 650;
+              color: #f66442;
             }
             @media (max-width: 450px) {
               font-size: 16px;
@@ -1014,6 +1015,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             }
             ::v-deep(.yellow) {
               font-weight: 650;
+              color: #f66442;
             }
             @media (max-width: 450px) {
               font-size: 16px;
