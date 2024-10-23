@@ -79,7 +79,8 @@
       "DET lytting",
       "DET forberedelsesvideoer",
       "DET ordforråd",
-      "DET forberedelsestips"
+      "DET forberedelsestips",
+      "Lær DET"
     ]
   },
   "index": {
@@ -93,12 +94,7 @@
     "power_by": "Drevet av AI",
     "h1Mobile": "Få en høyere poengsum enkelt<br />på Duolingo <br />engelsktesten med <span class=\"seo_hack\">DET praksis</span>",
     "h1PC": "Få en høyere poengsum enkelt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
-    "one_small_title": [
-      "DET Øvelse",
-      "AI Korrigering",
-      "Full-Length Mock",
-      "DET Kurs"
-    ],
+    "one_small_title": ["DET Øvelse", "AI Korrigering", "Full-Length Mock", "DET Kurs"],
     "Start_free_with_Google": "Start gratis med Google",
     "Start_free_with_email": "Start gratis med e-post",
     "Start_for_free": "Start gratis",

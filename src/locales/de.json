@@ -79,7 +79,8 @@
       "DET Hören",
       "DET Vorbereitungsvideos",
       "DET Wortschatz",
-      "DET Vorbereitungstipps"
+      "DET Vorbereitungstipps",
+      "DET Lernen"
     ]
   },
   "index": {
@@ -93,12 +94,7 @@
     "power_by": "Betrieben durch KI",
     "h1Mobile": "Erzielen Sie leicht eine höhere Punktzahl<br />beim Duolingo <br />Englischtest mit <span class=\"seo_hack\">DET Übung</span>",
     "h1PC": "Erzielen Sie ganz einfach eine höhere Punktzahl im <br />Duolingo English Test Mit <span class=\"seo_hack\">DET Übung</span>",
-    "one_small_title": [
-      "DET Übung",
-      "KI-Korrektur",
-      "Ganzlängen-Mock",
-      "DET Kurse"
-    ],
+    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
     "Start_free_with_Google": "Kostenlos mit Google starten",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten",

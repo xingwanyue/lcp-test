@@ -79,7 +79,8 @@
       "การฟัง DET",
       "วิดีโอเตรียมสอบ DET",
       "คำศัพท์ DET",
-      "เคล็ดลับการเตรียมสอบ DET"
+      "เคล็ดลับการเตรียมสอบ DET",
+      "เรียนรู้ DET"
     ]
   },
   "index": {
@@ -93,12 +94,7 @@
     "power_by": "ขับเคลื่อนโดย AI",
     "h1Mobile": "รับคะแนนที่สูงขึ้นได้อย่างง่ายดาย<br />ในแบบทดสอบภาษาอังกฤษ Duolingo <br />ด้วย <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "ได้คะแนนสูงขึ้นง่ายๆ บน <br />Duolingo English Test ด้วย <span class=\"seo_hack\">DET ฝึกฝน</span>",
-    "one_small_title": [
-      "DET การฝึกหัด",
-      "การแก้ไข AI",
-      "การจำลองเต็มรูปแบบ",
-      "DET หลักสูตร"
-    ],
+    "one_small_title": ["DET การฝึกหัด", "การแก้ไข AI", "การจำลองเต็มรูปแบบ", "DET หลักสูตร"],
     "Start_free_with_Google": "เริ่มต้นฟรีกับ Google",
     "Start_free_with_email": "เริ่มฟรีด้วยอีเมล",
     "Start_for_free": "เริ่มฟรี",

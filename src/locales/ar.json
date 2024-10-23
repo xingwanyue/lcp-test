@@ -79,7 +79,8 @@
       "استماع DET",
       "فيديوهات تحضير DET",
       "مفردات DET",
-      "نصائح تحضير DET"
+      "نصائح تحضير DET",
+      "تعلم DET"
     ]
   },
   "index": {
@@ -93,12 +94,7 @@
     "power_by": "مدعوم بالذكاء الاصطناعي",
     "h1Mobile": "احصل على درجة أعلى بسهولة<br />في اختبار Duolingo <br />الإنجليزي مع <span class=\"seo_hack\">DET ممارسة</span>",
     "h1PC": "احصل على درجة أعلى بسهولة على <br />Duolingo English Test مع <span class=\"seo_hack\">DET ممارسة</span>",
-    "one_small_title": [
-      "DET ممارسة",
-      "تصحيح الذكاء الاصطناعي",
-      "اختبار تجريبي كامل",
-      "DET الدورات"
-    ],
+    "one_small_title": ["DET ممارسة", "تصحيح الذكاء الاصطناعي", "اختبار تجريبي كامل", "DET الدورات"],
     "Start_free_with_Google": "ابدأ مجانًا مع Google",
     "Start_free_with_email": "ابدأ مجانًا بالبريد الإلكتروني",
     "Start_for_free": "ابدأ مجانًا",

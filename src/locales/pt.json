@@ -79,7 +79,8 @@
       "Audição DET",
       "Vídeos de preparação DET",
       "Vocabulário DET",
-      "Dicas de preparação DET"
+      "Dicas de preparação DET",
+      "Aprender DET"
     ]
   },
   "index": {
@@ -93,12 +94,7 @@
     "power_by": "Desenvolvido por IA",
     "h1Mobile": "Obtenha uma Pontuação Mais Alta Facilmente<br />no Teste de Inglês Duolingo <br />com <span class=\"seo_hack\">DET Prática</span>",
     "h1PC": "Obtenha uma Pontuação Maior Facilmente no <br />Duolingo English Test Com <span class=\"seo_hack\">DET Prática</span>",
-    "one_small_title": [
-      "DET Prática",
-      "Correção de IA",
-      "Simulado Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Prática", "Correção de IA", "Simulado Completo", "DET Cursos"],
     "Start_free_with_Google": "Comece grátis com o Google",
     "Start_free_with_email": "Comece grátis com email",
     "Start_for_free": "Comece gratuitamente",

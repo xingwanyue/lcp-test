@@ -56,6 +56,11 @@ const prod = computed(() => {
 const Learn = computed(() => {
   return [
     {
+      id: '0',
+      url: '/learn',
+      name: t('footer.resourcesNew[7]'),
+    },
+    {
       id: '1',
       url: 'https://prep.detpractice.com/category/det-reading/',
       name: t('footer.resourcesNew[0]'),
@@ -275,7 +280,12 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           :key="indexin"
           :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
         >
-          <NuxtLink :to="`${itemin.url}`" :title="itemin.name" target="_blank"> {{ itemin.name }}</NuxtLink>
+          <template v-if="itemin.url === '/learn'">
+            <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
+          </template>
+          <template v-else>
+            <NuxtLink :to="`${itemin.url}`" :title="itemin.name" target="_blank"> {{ itemin.name }}</NuxtLink></template
+          >
         </div>
       </div>
       <div class="one_link_list">

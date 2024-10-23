@@ -79,7 +79,8 @@
       "DET luisteren",
       "DET voorbereidingsvideo's",
       "DET woordenschat",
-      "DET voorbereidingstips"
+      "DET voorbereidingstips",
+      "DET Leren"
     ]
   },
   "index": {
@@ -93,12 +94,7 @@
     "power_by": "Aangedreven door AI",
     "h1Mobile": "Behaal gemakkelijk een hogere score<br />op de Duolingo <br />Engelse test met <span class=\"seo_hack\">DET Oefening</span>",
     "h1PC": "Behaal eenvoudig een hogere score op de <br />Duolingo English Test Met <span class=\"seo_hack\">DET oefenen</span>",
-    "one_small_title": [
-      "DET Oefening",
-      "AI Correctie",
-      "Volledige Lengte Mock",
-      "DET Cursussen"
-    ],
+    "one_small_title": ["DET Oefening", "AI Correctie", "Volledige Lengte Mock", "DET Cursussen"],
     "Start_free_with_Google": "Begin gratis met Google",
     "Start_free_with_email": "Begin gratis met e-mail",
     "Start_for_free": "Begin gratis",
