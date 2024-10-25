@@ -3,6 +3,10 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { useStore } from '@/store';
 import { staticUrlGet, domain, cdn } from '@/utils';
+import Vtwocourse from '../components/courseBottom.vue';
+import Vcoursezh from '../components/courseZonghe.vue';
+const guide1 = `${cdn}/store/portal/guid/guide111.png`;
+const guide2 = `${cdn}/store/portal/guid/guide222.png`;
 useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
@@ -129,22 +133,119 @@ const contaceUsList = ref([
     id: '3',
   },
 ]);
+// 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
+const buystatus = ref(3);
+
+let zongheData = ref({
+  img: '/img/courses/courses_group.webp',
+  price: 10,
+  priceid: '123',
+  title: 'DET Ultimate Exam Mastery Package',
+  desc: 'The course package includes the "<span class="yellow">DET Speaking Exam Excellence</span>" and the "<span class="yellow">DET Writing Exam Excellence</span>." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
+  isbuyed: false,
+});
+let bottomData = ref([
+  {
+    img: guide1,
+    price: 10,
+    priceid: 123,
+    title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+    article: article1,
+    isbuyed: false,
+  },
+  {
+    img: guide2,
+    price: 10,
+    priceid: 123,
+    title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+    article: article2,
+    isbuyed: false,
+  },
+]);
+// 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
+// user 的转态 支付后会更新
+if (user.value.speak === 1 && user.value.write === 1) {
+  buystatus.value = 3;
+} else if (user.value.speak === 1) {
+  buystatus.value = 1;
+} else if (user.value.write === 1) {
+  buystatus.value = 2;
+} else {
+  buystatus.value = 0;
+}
+if (buystatus.value === 1) {
+  zongheData.value = {
+    img: guide1,
+    price: 10,
+    priceid: '123',
+    title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+    desc: '',
+    isbuyed: true,
+  };
+  bottomData.value = [
+    {
+      img: guide2,
+      price: 10,
+      priceid: 123,
+      title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+      article: article2,
+      isbuyed: false,
+    },
+  ];
+} else if (buystatus.value === 2) {
+  zongheData.value = {
+    img: guide2,
+    price: 10,
+    priceid: '123',
+    title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+    desc: '',
+    isbuyed: true,
+  };
+  bottomData.value = [
+    {
+      img: guide1,
+      price: 10,
+      priceid: 123,
+      title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+      article: article1,
+      isbuyed: false,
+    },
+  ];
+} else if (buystatus.value === 3) {
+  zongheData.value = {
+    img: guide1,
+    price: 10,
+    priceid: '123',
+    title: 'DET Ultimate Exam Mastery Package',
+    desc: 'The course package includes the "DET Speaking Exam Excellence" and the "DET Writing Exam Excellence." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
+    isbuyed: true,
+  };
+  bottomData.value = [
+    {
+      img: guide1,
+      price: 0,
+      priceid: 123,
+      title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+      article: [],
+      isbuyed: true,
+    },
+    {
+      img: guide2,
+      price: 0,
+      priceid: 123,
+      title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+      article: [],
+      isbuyed: true,
+    },
+  ];
+}
 
 const buyMembership = (id: number) => {
   store.stripePay({ vipId: id });
 };
-const isLoad = ref(false);
-const onLoad = () => {
-  isLoad.value = true;
-};
-const isLoad2 = ref(false);
-const onLoad2 = () => {
-  isLoad2.value = true;
-};
 
 // 引入cdn图片
-const guide1 = `${cdn}/store/portal/guid/guide111.png`;
-const guide2 = `${cdn}/store/portal/guid/guide222.png`;
+
 const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
 </script>
 
@@ -152,91 +253,28 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
   <div class="guide_out">
     <div class="guide_wrapper_out">
       <div class="guide_wrapper">
-        <div class="one_article">
-          <h1 class="title">{{ $t('courses.pagefont.h1') }}</h1>
-          <div class="article_out">
-            <div class="left_img">
-              <!-- <img src="/img/guid/guide1.png" /> -->
-              <el-image v-show="isLoad" :src="guide1" :alt="$t('courses.pagefont.h1')" @load="onLoad" />
-              <el-skeleton v-show="!isLoad" style="width: 100%; height: 100%" animated>
-                <template #template>
-                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
-                </template>
-              </el-skeleton>
-            </div>
-            <div class="right_article">
-              <div v-for="(item, index) in article1.list" :key="index" class="one_article_detail">
-                <span class="content">{{ item.content }}</span>
-              </div>
-              <div class="buy_btn">
-                <div class="price">
-                  <span class="tag">{{ $t('courses.pagefont.do') }}</span>
-                  <span class="price_num">{{ pricedata?.speakData?.price / 100 || 0 }}</span>
-                </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(pricedata?.speakData?.id)"
-                >
-                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-                  <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
-                  </div>
-                </div>
-                <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-                  <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
-                  </div>
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="one_article">
-          <div class="title">
-            {{ $t('courses.pagefont.DET_Writing') }}
-          </div>
-          <div class="article_out">
-            <div class="left_img">
-              <!-- <img src="/img/guid/guide2.png" /> -->
-              <el-image v-show="isLoad2" :src="guide2" :alt="$t('courses.pagefont.DET_Writing')" @load="onLoad2" />
-              <el-skeleton v-show="!isLoad2" style="width: 100%; height: 100%" animated>
-                <template #template>
-                  <el-skeleton-item variant="image" style="width: 100%; height: 100%" />
-                </template>
-              </el-skeleton>
-            </div>
-            <div class="right_article">
-              <!-- <div class="one_article_title">{{ article2.title }}</div> -->
-              <div v-for="(item, index) in article2.list" :key="index" class="one_article_detail">
-                <span class="content">{{ item.content }}</span>
-              </div>
-              <div class="buy_btn">
-                <div class="price">
-                  <span class="tag">{{ $t('courses.pagefont.do') }}</span>
-                  <span class="price_num">{{ pricedata?.writeData?.price / 100 || 0 }}</span>
-                </div>
-                <div
-                  v-if="user.id"
-                  class="btn common_btn_hover_bgColor"
-                  @click="buyMembership(pricedata?.writeData?.id)"
-                >
-                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-                  <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
-                  </div>
-                </div>
-                <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-                  <div class="icon">
-                    <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
-                  </div>
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
-        </div>
+        <template v-if="buystatus === 0">
+          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
+          <div class="you_can">You can also buy them separately :</div>
+          <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
+        /></template>
+        <template v-if="buystatus === 1">
+          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
+          <div class="you_can">You can buy DET Writing Exam Excellence for $5 :</div>
+          <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
+        /></template>
+        <template v-if="buystatus === 2">
+          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
+          <div class="you_can">You can buy DET Writing Exam Excellence for $5 :</div>
+          <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
+        /></template>
+        <template v-if="buystatus === 3">
+          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus">
+            <template #footer>
+              <Vtwocourse :bottomData="bottomData" :buystatus="buystatus" />
+            </template>
+          </Vcoursezh>
+        </template>
       </div>
     </div>
 
@@ -257,10 +295,18 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             <div class="method_tip">{{ item.tip }}</div>
             <template v-if="item.id === '1'">
               <template v-if="user.id">
-                <div v-if="item.btn" @click="buyMembership(pricedata?.speakData?.id)" class="btn">
+                <div
+                  v-if="item.btn"
+                  @click="buyMembership(pricedata?.speakData?.id)"
+                  :class="user.speak === 1 ? 'btn disbtn' : 'btn'"
+                >
                   {{ item.btn }}
                 </div>
-                <div v-if="item.btn1" @click="buyMembership(pricedata?.writeData?.id)" class="btn">
+                <div
+                  v-if="item.btn1"
+                  @click="buyMembership(pricedata?.writeData?.id)"
+                  :class="user.write === 1 ? 'btn disbtn' : 'btn'"
+                >
                   {{ item.btn1 }}
                 </div>
               </template>
@@ -367,157 +413,12 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
       // border: 1px red solid;
       max-width: 1200px;
       margin: 0 auto;
-    }
-  }
-
-  .one_article {
-    .title {
-      font-weight: 600;
-      font-size: 56px;
-      color: #201515;
-      text-align: center;
-      margin: 0;
-      margin-top: 56px;
-      margin-bottom: 32px;
-      @media (max-width: 906px) {
-        font-size: 46px;
-        margin-top: 36px;
-      }
-      @media (max-width: 744px) {
-        font-size: 36px;
-      }
-      @media (max-width: 570px) {
-        font-size: 26px;
-      }
-      @media (max-width: 450px) {
-        font-size: 22px;
-      }
-    }
-    .article_out {
-      display: grid;
-      grid-template-columns: 0.47fr 1fr;
-      @media screen and (max-width: 974px) {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        grid-template-rows: 300px auto;
-      }
-
-      grid-gap: 40px;
-      .left_img {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        @media screen and (max-width: 1248px) {
-          align-items: center;
-        }
-
-        .el-image {
-          width: 100%;
-          height: auto;
-          box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.2);
-          border-radius: 18px;
-          @media screen and (max-width: 974px) {
-            height: 100%;
-            width: auto;
-          }
-        }
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 4px;
-          box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.2);
-          @media screen and (max-width: 974px) {
-            height: 100%;
-            width: auto;
-          }
-        }
-      }
-      .right_article {
-        .one_article_title {
-          font-size: var(--article-font-size);
-          color: #201515;
-        }
-        .one_article_detail {
-          margin-top: 16px;
-          .small_title {
-            font-size: var(--article-font-size);
-            color: #201515;
-            font-weight: 600;
-          }
-          .content {
-            font-size: var(--article-font-size);
-            color: #201515;
-          }
-        }
-        .buy_btn {
-          display: flex;
-
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-top: 32px;
-          grid-gap: 32px;
-          // @media screen and (max-width: 974px) {
-          //   justify-content: center;
-          // }
-
-          .price {
-            .tag {
-              font-size: var(--article-font-size);
-              color: #201515;
-            }
-            .price_num {
-              font-size: 40px;
-              color: #201515;
-            }
-          }
-          .btn {
-            width: fit-content;
-            padding: 12px 32px;
-            background: #f66442;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-gap: 8px;
-
-            cursor: pointer;
-            .font {
-              font-weight: 500;
-              font-size: var(--article-font-size);
-              color: #ffffff;
-            }
-            .icon {
-              width: 24px;
-              height: 24px;
-            }
-            &:hover {
-              .icon {
-                transform: translateX(8px);
-                transition: all 0.2s;
-              }
-            }
-          }
-        }
-        @media screen and (max-width: 1000000px) {
-          --article-font-size: 18px;
-        }
-        @media screen and (max-width: 1440px) {
-          --article-font-size: 18px;
-        }
-        @media screen and (max-width: 1280px) {
-          --article-font-size: 16px;
-        }
-        @media screen and (max-width: 768px) {
-          --article-font-size: 16px;
-        }
-        @media screen and (max-width: 414px) {
-          --article-font-size: 14px;
-        }
+      .you_can {
+        margin-bottom: 16px;
       }
     }
   }
+
   .part3_wrapper {
     padding: 0px 30px;
     @media screen and (max-width: 450px) {
