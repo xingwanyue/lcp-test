@@ -38,7 +38,7 @@ const getSelect = async () => {
     // 路由带分类
     state.selConData = find(state.categories, { id: Number(route.query.c) });
     state.selFatherData = find(state.categories, { id: state.selConData.pid });
-    state.activeName = state.selFatherData.id;
+    state.activeName = state.selFatherData ? state.selFatherData.id : '';
     if (!state.selConData) {
       throw createError({
         statusCode: 404,
