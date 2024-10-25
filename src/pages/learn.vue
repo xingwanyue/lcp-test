@@ -39,6 +39,12 @@ const getSelect = async () => {
     state.selConData = find(state.categories, { id: Number(route.query.c) });
     state.selFatherData = find(state.categories, { id: state.selConData.pid });
     state.activeName = state.selFatherData.id;
+    if (!state.selConData) {
+      throw createError({
+        statusCode: 404,
+        statusMessage: 'Page Not Found',
+      });
+    }
     return;
   }
   // Default First
