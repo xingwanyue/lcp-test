@@ -21,6 +21,7 @@ useHead({
 const circle_check_icon = `${cdn}/store/portal/pricing/circle_check_icon.svg`;
 const store = useStore();
 const user = computed(() => store.user);
+const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
 const onlycorrectTimesid = ref(0);
@@ -64,60 +65,71 @@ const aqList = ref([
   },
 ]) as any;
 const vipsData = ref({}) as any;
-if (!user.value.id) {
-  const {
-    data: { data },
-  } = await getVipdataNoToken();
-  const membershipArr = [] as any;
-  const moreServiceArr = [] as any;
 
-  const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
-  const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
-  data.forEach((item: any) => {
-    if (item.type === '1') {
-      item.correctTimesid = correctSelectBuyTimes[1].id;
-      onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
-      onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
-      item.correctPrice = correctSelectBuyTimes[1].price;
-      item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
-      membershipArr.push(item);
-    } else if (item.type === '2') {
-      if (item.write === 1 && item.speak === 1 && item.disabled) {
-        console.log('1');
-      } else {
-        moreServiceArr.push(item);
-      }
-    }
-  });
-  vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
-} else {
-  const token = await getToken();
-  const {
-    data: { data },
-  } = await getVipdataWithToken(token);
-  const membershipArr = [] as any;
-  const moreServiceArr = [] as any;
+const getData = async () => {
+  if (!user.value.id) {
+    const {
+      data: { data },
+    } = await getVipdataNoToken();
+    const membershipArr = [] as any;
+    const moreServiceArr = [] as any;
 
-  const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
-  const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
-  data.forEach((item: any) => {
-    if (item.type === '1') {
-      item.correctTimesid = correctSelectBuyTimes[1].id;
-      onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
-      onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
-      item.correctPrice = correctSelectBuyTimes[1].price;
-      item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
-      membershipArr.push(item);
-    } else if (item.type === '2') {
-      if (item.write === 1 && item.speak === 1 && item.disabled) {
-        console.log('1');
-      } else {
-        moreServiceArr.push(item);
+    const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
+    const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
+    data.forEach((item: any) => {
+      if (item.type === '1') {
+        item.correctTimesid = correctSelectBuyTimes[1].id;
+        onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
+        onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
+        item.correctPrice = correctSelectBuyTimes[1].price;
+        item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
+        membershipArr.push(item);
+      } else if (item.type === '2') {
+        if (item.write === 1 && item.speak === 1 && item.disabled) {
+          console.log('1');
+        } else {
+          moreServiceArr.push(item);
+        }
       }
-    }
-  });
-  vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
-}
+    });
+    vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+  } else {
+    const token = await getToken();
+    const {
+      data: { data },
+    } = await getVipdataWithToken(token);
+    const membershipArr = [] as any;
+    const moreServiceArr = [] as any;
+
+    const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
+    const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
+    data.forEach((item: any) => {
+      if (item.type === '1') {
+        item.correctTimesid = correctSelectBuyTimes[1].id;
+        onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
+        onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
+        item.correctPrice = correctSelectBuyTimes[1].price;
+        item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
+        membershipArr.push(item);
+      } else if (item.type === '2') {
+        if (item.write === 1 && item.speak === 1 && item.disabled) {
+          console.log('1');
+        } else {
+          moreServiceArr.push(item);
+        }
+      }
+    });
+    vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+  }
+};
+
+onMounted(async () => {
+  getData();
+});
+watch(userChangeFlag.value, () => {
+  console.log('watchhhhhhhhhhhhh');
+  getData();
+});
 
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
@@ -451,7 +463,7 @@ const changeBuyCorrectTimes = () => {
               </div>
 
               <div v-if="user.id">
-                <template v-if="item.write === 1">
+                <template v-if="item.write === 1 && !Boolean(item.speak)">
                   <template v-if="user.write">
                     <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
                       {{ $t('pricing.pagefont.Buy_Now') }}
@@ -465,10 +477,10 @@ const changeBuyCorrectTimes = () => {
                     </div>
                   </template>
                 </template>
-                <template v-if="item.speak === 1">
+                <template v-if="item.speak === 1 && !Boolean(item.write)">
                   <template v-if="user.speak">
                     <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
+                      {{ $t('pricing.pagefont.Buy_Now') }}3
                       <!-- <div class="scroll-line"></div> -->
                     </div>
                   </template>
@@ -479,7 +491,7 @@ const changeBuyCorrectTimes = () => {
                     </div>
                   </template>
                 </template>
-                <template v-if="item.speak !== 1 && item.write !== 1">
+                <template v-if="item.speak === 1 && item.write === 1">
                   <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
                     {{ $t('pricing.pagefont.Buy_Now') }}
                     <div class="scroll-line"></div>

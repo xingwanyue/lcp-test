@@ -21,6 +21,7 @@ useHead({
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
+const userchangeFlag = ref(() => store.user);
 
 const article1 = ref({
   title: t('courses.article1.title'),
@@ -160,7 +161,7 @@ let bottomData = ref([
 ]);
 // 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
 // user 的转态 支付后会更新
-const changePageData = (speakData: any, writeData: any) => {
+const changePageData = (zongheDataarg: any, speakData: any, writeData: any) => {
   if (user.value.speak === 1 && user.value.write === 1) {
     buystatus.value = 3;
   } else if (user.value.speak === 1) {
@@ -170,8 +171,44 @@ const changePageData = (speakData: any, writeData: any) => {
   } else {
     buystatus.value = 0;
   }
-  console.log(buystatus.value);
-  if (buystatus.value === 1) {
+
+  if (buystatus.value === 0) {
+    zongheData.value = {
+      img: '/img/courses/courses_group.webp',
+      price: zongheDataarg?.price,
+      priceid: zongheDataarg?.id,
+      vipPrice: zongheDataarg?.vipPrice,
+      title: 'DET Ultimate Exam Mastery Package',
+      desc: 'The course package includes the "<span class="yellow">DET Speaking Exam Excellence</span>" and the "<span class="yellow">DET Writing Exam Excellence</span>." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
+      isbuyed: false,
+      type: 'zonghe',
+      downloadhref: '',
+    };
+    bottomData.value = [
+      {
+        img: guide1,
+        price: speakData?.price,
+        priceid: speakData?.id,
+        vipPrice: speakData?.vipPrice,
+        title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+        article: article1,
+        isbuyed: false,
+        type: 'speaking',
+        downloadhref: downloadhref.value?.DETSpeakingExamExcellence,
+      },
+      {
+        img: guide2,
+        price: writeData?.price,
+        priceid: writeData?.id,
+        vipPrice: writeData?.vipPrice,
+        title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+        article: article2,
+        isbuyed: false,
+        type: 'writing',
+        downloadhref: downloadhref.value?.DETWritingExamExcellence2024,
+      },
+    ];
+  } else if (buystatus.value === 1) {
     zongheData.value = {
       img: guide1,
       price: speakData?.price,
@@ -268,29 +305,29 @@ const buyedChangePage = async () => {
     } = await getVipdataWithToken(token);
     const writeData = data.find((item: any) => item.write === 1 && !item.speak);
     const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+    const zongheDataDataarg = data.find((item: any) => item.speak === 1 && item.write === 1);
     speakDataPage.value = speakData;
     writeDataPage.value = writeData;
 
-    changePageData(speakData, writeData);
+    changePageData(zongheDataDataarg, speakData, writeData);
   } else {
     const {
       data: { data },
     } = await getVipdataNoToken();
     const writeData = data.find((item: any) => item.write === 1 && !item.speak);
     const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+    const zongheDataDataarg = data.find((item: any) => item.speak === 1 && item.write === 1);
 
     speakDataPage.value = speakData;
     writeDataPage.value = writeData;
 
-    changePageData(speakData, writeData);
+    changePageData(zongheDataDataarg, speakData, writeData);
   }
 };
-watch(user.value, () => {
-  console.log('userhanger');
+watch(userchangeFlag.value, () => {
   buyedChangePage();
 });
 onMounted(() => {
-  console.log('mounted');
   buyedChangePage();
 });
 
