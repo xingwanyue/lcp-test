@@ -35,7 +35,7 @@ export const getVipdataWithToken = (token: string) =>
       Authorization: `Bearer ${token}`,
     },
   });
-export const getVipdataNoToken = (token: string) =>
+export const getVipdataNoToken = () =>
   fetchmy(`${api}/common/vips`, {
     method: 'get',
   });

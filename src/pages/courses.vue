@@ -286,7 +286,7 @@ if (user.value.id) {
   const token = await getToken();
   const {
     data: { data },
-  } = await getVipdataWithToken(token);
+  } = await getVipdataNoToken();
   const writeData = data.find((item: any) => item.write === 1 && !item.speak);
   const speakData = data.find((item: any) => item.speak === 1 && !item.write);
   const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);

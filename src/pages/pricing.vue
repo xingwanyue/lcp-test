@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { formatCash } from '@/utils';
+import { formatCash, getToken } from '@/utils';
 const { t } = useI18n();
+import { getVipdataNoToken, getVipdataWithToken } from '@/api';
 import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, domain, host, cdn } from '@/utils';
 import { useStore } from '@/store';
@@ -22,6 +23,8 @@ const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
 const localePath = useLocalePath();
+const onlycorrectTimesid = ref(0);
+const onlycorrectTimesprice = ref(0);
 
 const aqList = ref([
   {
@@ -60,31 +63,61 @@ const aqList = ref([
     open: false,
   },
 ]) as any;
+const vipsData = ref({}) as any;
+if (!user.value.id) {
+  const {
+    data: { data },
+  } = await getVipdataNoToken();
+  const membershipArr = [] as any;
+  const moreServiceArr = [] as any;
 
-const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
-  server: false,
-  lazy: true,
-  transform: ({ freeNum, correct, exam, speak, write, data: vips }: any) => {
-    const membershipArr = [] as any;
-    const moreServiceArr = [] as any;
-
-    const correctSelectBuyTimes = vips.filter((item: any) => item.type === '3');
-    const mockSelectBuyTimes = vips.filter((item: any) => item.type === '4');
-    vips.forEach((item: any) => {
-      if (item.type === '1') {
-        item.correctTimesid = correctSelectBuyTimes[1].id;
-        onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
-        onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
-        item.correctPrice = correctSelectBuyTimes[1].price;
-        item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
-        membershipArr.push(item);
-      } else if (item.type === '2') {
+  const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
+  const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
+  data.forEach((item: any) => {
+    if (item.type === '1') {
+      item.correctTimesid = correctSelectBuyTimes[1].id;
+      onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
+      onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
+      item.correctPrice = correctSelectBuyTimes[1].price;
+      item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
+      membershipArr.push(item);
+    } else if (item.type === '2') {
+      if (item.write === 1 && item.speak === 1 && item.disabled) {
+        console.log('1');
+      } else {
         moreServiceArr.push(item);
       }
-    });
-    return { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
-  },
-})) as any;
+    }
+  });
+  vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+} else {
+  const token = await getToken();
+  const {
+    data: { data },
+  } = await getVipdataWithToken(token);
+  const membershipArr = [] as any;
+  const moreServiceArr = [] as any;
+
+  const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
+  const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
+  data.forEach((item: any) => {
+    if (item.type === '1') {
+      item.correctTimesid = correctSelectBuyTimes[1].id;
+      onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
+      onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
+      item.correctPrice = correctSelectBuyTimes[1].price;
+      item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
+      membershipArr.push(item);
+    } else if (item.type === '2') {
+      if (item.write === 1 && item.speak === 1 && item.disabled) {
+        console.log('1');
+      } else {
+        moreServiceArr.push(item);
+      }
+    }
+  });
+  vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+}
 
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
@@ -237,8 +270,6 @@ const correctServiceQuanYi = ref([
   },
 ]);
 
-const onlycorrectTimesid = ref(0);
-const onlycorrectTimesprice = ref(0);
 const buyCorrectNum = () => {
   if (!isVip.value) {
     ElMessageBox.alert(
@@ -272,9 +303,7 @@ const changeBuyCorrectTimes = () => {
         <div class="title1">
           <h1>{{ $t('pricing.pagefont.h1') }}</h1>
         </div>
-        <!-- <div class="title2">
-          <h4>{{ $t('pricing.pagefont.h4') }}</h4>
-        </div> -->
+
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch1') }}
