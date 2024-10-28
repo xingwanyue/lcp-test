@@ -186,9 +186,13 @@ const buyMembership = (id: number) => {
     justify-content: center;
     align-items: center;
     grid-gap: 8px;
+    flex-wrap: wrap;
     .jiantou {
       width: 24px;
       height: 24px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .buy_btn_common {
@@ -211,6 +215,7 @@ const buyMembership = (id: number) => {
     }
     .btn {
       width: fit-content;
+
       padding: 12px 32px;
       background: #f66442;
       border-radius: 25px;

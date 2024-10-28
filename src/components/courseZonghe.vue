@@ -68,7 +68,7 @@ const buyMembership = (id: number) => {
         >
       </div>
 
-      <div v-if="props.buystatus === 3" class=""><slot name="footer"></slot></div>
+      <div v-if="props.buystatus === 3" class="slotout"><slot name="footer"></slot></div>
     </div>
   </div>
 </template>
@@ -78,7 +78,14 @@ const buyMembership = (id: number) => {
   display: grid;
   grid-template-columns: 0.42fr 1fr;
   grid-gap: 56px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding-top: 26px;
+  }
   .zonghe_out_left {
+    // @media screen and (max-width: 768px) {
+    //   display: none;
+    // }
     .zhimg {
       width: 100%;
       height: auto;
@@ -93,6 +100,9 @@ const buyMembership = (id: number) => {
       font-weight: 600;
       font-size: 56px;
       color: #201515;
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
     }
     .desc {
       font-weight: 400;
@@ -100,6 +110,9 @@ const buyMembership = (id: number) => {
       color: #201515;
       line-height: 30px;
       margin-top: 32px;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
       :deep(.yellow) {
         color: #f66442;
       }
@@ -110,9 +123,13 @@ const buyMembership = (id: number) => {
     grid-gap: 8px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     .jiantou {
       width: 24px;
       height: 24px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .buy_btn_common {
@@ -135,6 +152,7 @@ const buyMembership = (id: number) => {
     }
     .btn {
       width: fit-content;
+
       padding: 12px 32px;
       background: #f66442;
       border-radius: 25px;
@@ -160,6 +178,9 @@ const buyMembership = (id: number) => {
         }
       }
     }
+  }
+  .slotout {
+    margin-top: 16px;
   }
 }
 </style>
