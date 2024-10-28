@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 import { domain } from '@/utils';
-import { useStore } from '@/store';
 import { reactive } from 'vue';
+const route = useRoute();
 
 const localePath = useLocalePath();
-const store = useStore();
 const { locale, t, setLocale } = useI18n();
 const state = reactive({
   isMore1: false,
@@ -367,14 +366,15 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           </el-select> -->
           <el-popover popper-class="options_out_out" placement="top" trigger="hover" width="350px">
             <div class="options_out">
-              <div
+              <NuxtLink
                 class="options_out_name"
                 v-for="item in options"
                 :key="item.value"
+                :to="`/${item.value}${route.path}`"
                 @click="clickChangeLanguage(item)"
               >
                 {{ item.label }}
-              </div>
+              </NuxtLink>
             </div>
             <template #reference>
               <div class="popover_btn">
