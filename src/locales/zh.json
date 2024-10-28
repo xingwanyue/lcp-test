@@ -51,8 +51,22 @@
     "LearnTitle": "准备资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET 练习", "DET 写作 AI 校正", "DET 口语 AI 校正", "DET 模拟", "Duolingo English Test 课程"],
-    "Company": ["关于我们", "联系我们", "条款和条件", "隐私政策", "网站地图", "联盟计划", "退款政策"],
+    "Products": [
+      "DET 练习",
+      "DET 写作 AI 校正",
+      "DET 口语 AI 校正",
+      "DET 模拟",
+      "Duolingo English Test 课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "条款和条件",
+      "隐私政策",
+      "网站地图",
+      "联盟计划",
+      "退款政策"
+    ],
     "show_more": "显示更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -80,7 +94,12 @@
     "power_by": "由AI提供支持",
     "h1Mobile": "轻松获得更高分数<br />在 Duolingo <br />英语测试中 使用 <span class=\"seo_hack\">DET 练习</span>",
     "h1PC": "轻松拿到更高分数 <br />Duolingo English Test 通过 <span class=\"seo_hack\">DET 练习</span>",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "开始免费使用Google",
     "Start_free_with_email": "以电子邮件免费开始",
     "Start_for_free": "免费开始",
@@ -599,7 +618,19 @@
       "orange_title": "精英语言教育者",
       "team_desc": "我们杰出的语言教育团队，拥有像TESOL和其他教学证书这样的卓越资质，带来了丰富的经验，为学生准备主要的英语考试，如TOEFL、IELTS和Duolingo English Test (DET)。他们以令人印象深刻的语言技能、个性化的教学方法和创新的方法而闻名，致力于帮助每位学生达到他们在英语水平方面的最高潜力。",
       "Elite_Language_Educators": "精英语言教育者"
-    }
+    },
+    "sas": "口语音频样本",
+    "zhonghe": {
+      "title": "DET 终极考试掌握包",
+      "desc": "该课程包包括<span class=\"yellow\">DET 口语考试卓越</span>和<span class=\"yellow\">DET 写作考试卓越</span>。\n订阅后，您将可以随时下载指南并随时随地轻松学习。\n立即购买订阅立即生效。\n向上滚动页面，查看并点击下载课程开始学习。"
+    },
+    "speaking": {
+      "title": "DET 口语考试卓越：综合指南"
+    },
+    "writing": {
+      "title": "DET 写作考试卓越：综合指南"
+    },
+    "downloadguide": "下载指南"
   },
   "forget": {
     "Please_enter": "请输入您的邮箱地址",

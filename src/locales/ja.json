@@ -51,7 +51,13 @@
     "LearnTitle": "準備リソース",
     "BlogTitle": "ブログ",
     "CompanyTitle": "会社",
-    "Products": ["DET 練習", "DET 書き取りAI修正", "DET 話し言葉AI修正", "DET モック", "Duolingo English Test コース"],
+    "Products": [
+      "DET 練習",
+      "DET 書き取りAI修正",
+      "DET 話し言葉AI修正",
+      "DET モック",
+      "Duolingo English Test コース"
+    ],
     "Company": [
       "私たちについて",
       "お問い合わせ",
@@ -88,7 +94,12 @@
     "power_by": "AIによって提供されました",
     "h1Mobile": "簡単に高得点を取得する<br />Duolingo <br />英語テストで<span class=\"seo_hack\">DET 練習</span>",
     "h1PC": "スコアを簡単に上げる <br />Duolingo English Test <span class=\"seo_hack\">DET 練習</span>で",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -607,7 +618,19 @@
       "orange_title": "エリート語学教育者",
       "team_desc": "私たちの優れた言語教育者チームは、TESOLやその他の教育証明書などの尊敬される資格を持ち、TOEFL、IELTS、およびDuolingo English Test (DET)のような主要な英語テストの準備で豊富な経験を持っています。卓越した言語スキル、個別指導アプローチ、革新的な方法で知られる彼らは、各学生が英語力において最高の可能性を達成するために尽力しています。",
       "Elite_Language_Educators": "エリート言語教育者"
-    }
+    },
+    "zhonghe": {
+      "title": "DET Ultimate 試験マスタリー パッケージ",
+      "desc": "コース パッケージには、<span class=\" yellow\">DET Speaker Exam Excellence</span> と <span class=\" yellow\">DET Writing Exam Excellence</span> が含まれています。\n購読すると、いつでもガイドをダウンロードして、いつでもどこでも簡単に学習できるようになります。\n今すぐ購入 サブスクリプションはすぐに有効になります。\nページを上にスクロールしてコースを表示し、クリックしてダウンロードして学習を開始します。"
+    },
+    "writing": {
+      "title": "DET Writing Exam Excellence: 包括的なガイド"
+    },
+    "speaking": {
+      "title": "DET スピーキング試験エクセレンス: 総合ガイド"
+    },
+    "downloadguide": "ダウンロードガイド",
+    "sas": "スピーキング音声サンプル"
   },
   "forget": {
     "Please_enter": "メールアドレスを入力してください",

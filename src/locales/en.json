@@ -576,7 +576,19 @@
       "orange_title": "Elite Language Educators",
       "team_desc": "Our distinguished team of language educators, holding esteemed qualifications like TESOL and other teaching Certificates, brings a wealth of experience in preparing students for major English tests like TOEFL, IELTS, and Duolingo English Test (DET). Renowned for their impressive language skills, personalized teaching approaches, and innovative methods, they are committed to helping each student achieve their highest potential in English proficiency.",
       "Elite_Language_Educators": "Elite Language Educators"
-    }
+    },
+    "zhonghe": {
+      "title": "DET Ultimate Exam Mastery Package",
+      "desc": "The course package includes the <span class=\"yellow\">DET Speaking Exam Excellence</span> and the <span class=\"yellow\">DET Writing Exam Excellence</span>. Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning."
+    },
+    "speaking": {
+      "title": "DET Speaking Exam Excellence: A Comprehensive Guide"
+    },
+    "writing": {
+      "title": "DET Writing Exam Excellence: A Comprehensive Guide"
+    },
+    "downloadguide": "Download Guide",
+    "sas": "Speaking Audio Samples"
   },
   "forget": {
     "Please_enter": "Please enter your email address",

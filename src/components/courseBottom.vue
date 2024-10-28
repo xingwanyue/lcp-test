@@ -58,18 +58,18 @@ const buyMembership = (id: number) => {
                 class="btn common_btn_hover_bgColor"
                 target="_blank"
               >
-                <div class="font">Download Guide</div>
+                <div class="font">{{ $t('courses.downloadguide') }}</div>
               </a>
               <div v-else class="btn common_btn_hover_bgColor disbtn">
-                <div class="font">Download Guide</div>
+                <div class="font">{{ $t('courses.downloadguide') }}</div>
               </div>
               <template v-if="item.type === 'speaking'">
                 <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" /></div>
                 <NuxtLink v-if="item.isbuyed" class="btn common_btn_hover_bgColor" :to="localePath(`/listen`)">
-                  <div class="font">Speaking Audio Samples</div>
+                  <div class="font">{{ $t('courses.sas') }}</div>
                 </NuxtLink>
                 <div v-else class="btn common_btn_hover_bgColor disbtn" @click="buyMembership(item.priceid)">
-                  <div class="font">Speaking Audio Samples</div>
+                  <div class="font">{{ $t('courses.sas') }}</div>
                 </div>
               </template>
             </div>

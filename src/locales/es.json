@@ -94,7 +94,12 @@
     "power_by": "Impulsado por IA",
     "h1Mobile": "Obtén una Puntuación Más Alta Fácilmente<br />en la prueba de Duolingo <br />Inglés Con <span class=\"seo_hack\">DET Práctica</span>",
     "h1PC": "Obtén una Puntuación Más Alta Fácilmente en el <br />Duolingo English Test Con <span class=\"seo_hack\">DET Práctica</span>",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -613,7 +618,19 @@
       "orange_title": "Educadores de Lenguaje Elite",
       "team_desc": "Nuestro distinguido equipo de educadores de idiomas, con calificaciones prestigiosas como TESOL y otros certificados de enseñanza, aporta una gran experiencia en la preparación de estudiantes para pruebas importantes de inglés como TOEFL, IELTS y Duolingo English Test (DET). Reconocidos por sus impresionantes habilidades lingüísticas, enfoques de enseñanza personalizados y métodos innovadores, están comprometidos a ayudar a cada estudiante a alcanzar su máximo potencial en competencia en inglés.",
       "Elite_Language_Educators": "Educadores de Lenguas Elite"
-    }
+    },
+    "sas": "Muestras de audio hablado",
+    "zhonghe": {
+      "title": "Paquete de dominio del examen DET Ultimate",
+      "desc": "El paquete del curso incluye el <span class=\"Yellow\">examen de excelencia oral DET</span> y el <span class=\"Yellow\">examen de excelencia escrito DET</span>. \nAl suscribirse, podrá descargar las guías en cualquier momento y estudiarlas con facilidad, en cualquier momento y en cualquier lugar. \nLa suscripción Comprar ahora entra en vigor de inmediato. \nDesplácese hacia arriba en la página, vea y haga clic para descargar el curso y comenzar a aprender."
+    },
+    "speaking": {
+      "title": "Excelencia en el examen de expresión oral DET: una guía completa"
+    },
+    "writing": {
+      "title": "Excelencia en el examen de redacción DET: una guía completa"
+    },
+    "downloadguide": "Descargar Guía"
   },
   "forget": {
     "Please_enter": "Por favor ingrese su dirección de correo electrónico",

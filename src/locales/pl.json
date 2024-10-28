@@ -94,7 +94,12 @@
     "power_by": "Zasilane przez AI",
     "h1Mobile": "Uzyskaj wyższy wynik z łatwością<br />na Duolingo <br />angielskim teście dzięki <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Zdobądź wyższy wynik łatwo na <br />Duolingo English Test Z <span class=\"seo_hack\">DET ćwiczeń</span>",
-    "one_small_title": ["DET Praktyka", "Poprawa AI", "Pełnowymiarowy Mock", "DET Kursy"],
+    "one_small_title": [
+      "DET Praktyka",
+      "Poprawa AI",
+      "Pełnowymiarowy Mock",
+      "DET Kursy"
+    ],
     "Start_free_with_Google": "Rozpocznij za darmo z Google",
     "Start_free_with_email": "Zacznij za darmo z {email}",
     "Start_for_free": "Zacznij za darmo",
@@ -613,7 +618,19 @@
       "orange_title": "Elitarni Edukatorzy Językowi",
       "team_desc": "Nasz wybitny zespół nauczycieli języka, posiadający uznane kwalifikacje takie jak TESOL i inne Certyfikaty nauczycielskie, wnosi bogate doświadczenie w przygotowywaniu studentów do głównych testów z języka angielskiego takich jak TOEFL, IELTS i Duolingo English Test (DET). Znani z imponujących umiejętności językowych, spersonalizowanych podejść do nauczania oraz innowacyjnych metod, są zaangażowani w pomaganie każdemu uczniowi osiągnąć najwyższy potencjał w biegłości w języku angielskim.",
       "Elite_Language_Educators": "Elitarnych Edukatorów Językowych"
-    }
+    },
+    "sas": "Mówienie próbek audio",
+    "zhonghe": {
+      "title": "Pakiet mistrzowski do egzaminu DET Ultimate",
+      "desc": "Pakiet kursów obejmuje <span class=\"yellow\">Doskonały egzamin ze mówienia DET</span> i <span class=\"yellow\">Doskonały egzamin z pisania DET</span>. \nDzięki subskrypcji będziesz mógł pobrać przewodniki w dowolnym momencie i z łatwością je studiować, zawsze i wszędzie. \nSubskrypcja Kup teraz zaczyna obowiązywać natychmiast. \nPrzewiń stronę w górę, wyświetl i kliknij, aby pobrać kurs i rozpocząć naukę."
+    },
+    "speaking": {
+      "title": "Doskonałość egzaminu ustnego DET: kompleksowy przewodnik"
+    },
+    "writing": {
+      "title": "Doskonałość egzaminu z pisania DET: kompleksowy przewodnik"
+    },
+    "downloadguide": "Pobierz przewodnik"
   },
   "forget": {
     "Please_enter": "Proszę podać swój adres e-mail",

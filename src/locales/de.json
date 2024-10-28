@@ -94,7 +94,12 @@
     "power_by": "Betrieben durch KI",
     "h1Mobile": "Erzielen Sie leicht eine höhere Punktzahl<br />beim Duolingo <br />Englischtest mit <span class=\"seo_hack\">DET Übung</span>",
     "h1PC": "Erzielen Sie ganz einfach eine höhere Punktzahl im <br />Duolingo English Test Mit <span class=\"seo_hack\">DET Übung</span>",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos mit Google starten",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten",
@@ -613,7 +618,19 @@
       "orange_title": "Elite Sprachpädagogen",
       "team_desc": "Unser herausragendes Team von Sprachlehrern, das angesehene Qualifikationen wie TESOL und andere Lehrzertifikate besitzt, bringt eine Fülle an Erfahrung in der Vorbereitung von Studenten auf große Englischtests wie TOEFL, IELTS und Duolingo English Test (DET) mit. Bekannt für ihre beeindruckenden Sprachkenntnisse, personalisierten Lehrmethoden und innovativen Ansätze, sind sie engagiert, jedem Schüler zu helfen, sein höchstes Potenzial in der englischen Sprachbeherrschung zu erreichen.",
       "Elite_Language_Educators": "Elite Sprachpädagogen"
-    }
+    },
+    "sas": "Hörbeispiele sprechen",
+    "zhonghe": {
+      "title": "DET Ultimate Exam Mastery-Paket",
+      "desc": "Das Kurspaket umfasst die <span class=\"yellow\">DET Speaking Exam Excellence</span> und die <span class=\"yellow\">DET Writing Exam Excellence</span>. \nMit dem Abonnement können Sie die Leitfäden jederzeit herunterladen und sie jederzeit und überall problemlos studieren. \nDas „Jetzt kaufen“-Abonnement tritt sofort in Kraft. \nScrollen Sie auf der Seite nach oben, zeigen Sie den Kurs an und klicken Sie, um ihn herunterzuladen und mit dem Lernen zu beginnen."
+    },
+    "speaking": {
+      "title": "DET Speaking Exam Excellence: Ein umfassender Leitfaden"
+    },
+    "writing": {
+      "title": "DET Writing Exam Excellence: Ein umfassender Leitfaden"
+    },
+    "downloadguide": "Leitfaden herunterladen"
   },
   "forget": {
     "Please_enter": "Bitte geben Sie Ihre E-Mail-Adresse ein",

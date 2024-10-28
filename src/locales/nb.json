@@ -94,7 +94,12 @@
     "power_by": "Drevet av AI",
     "h1Mobile": "Få en høyere poengsum enkelt<br />på Duolingo <br />engelsktesten med <span class=\"seo_hack\">DET praksis</span>",
     "h1PC": "Få en høyere poengsum enkelt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
-    "one_small_title": ["DET Øvelse", "AI Korrigering", "Full-Length Mock", "DET Kurs"],
+    "one_small_title": [
+      "DET Øvelse",
+      "AI Korrigering",
+      "Full-Length Mock",
+      "DET Kurs"
+    ],
     "Start_free_with_Google": "Start gratis med Google",
     "Start_free_with_email": "Start gratis med e-post",
     "Start_for_free": "Start gratis",
@@ -613,7 +618,19 @@
       "orange_title": "Elite Språkpedagoger",
       "team_desc": "Vårt anerkjente team av språklærere, med høyt respekterte kvalifikasjoner som TESOL og andre undervisningssertifikater, bringer en rikdom av erfaring i å forberede studenter til store engelsktester som TOEFL, IELTS og Duolingo English Test (DET). Kjent for sine imponerende språkkunnskaper, personlige undervisningsmetoder, og innovative tilnærminger, er de dedikert til å hjelpe hver student med å oppnå sitt høyeste potensial i engelskferdigheter.",
       "Elite_Language_Educators": "Elite språkutdannere"
-    }
+    },
+    "sas": "Snakker lydprøver",
+    "zhonghe": {
+      "title": "DET Ultimate Exam Mastery Package",
+      "desc": "Kurspakken inkluderer <span class=\"yellow\">DET Speaking Exam Excellence</span> og <span class=\"yellow\">DET Writing Exam Excellence</span>. \nVed abonnement vil du kunne laste ned guidene når som helst og studere dem med letthet, når som helst og hvor som helst. \nKjøp nå-abonnementet trer i kraft umiddelbart. \nRull opp på siden, se og klikk for å laste ned kurset for å begynne å lære."
+    },
+    "speaking": {
+      "title": "DET Speaking Exam Excellence: En omfattende veiledning"
+    },
+    "writing": {
+      "title": "DET Writing Exam Excellence: A Comprehensive Guide"
+    },
+    "downloadguide": "Last ned guide"
   },
   "forget": {
     "Please_enter": "Vennligst oppgi e-postadressen din",

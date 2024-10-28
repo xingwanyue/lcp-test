@@ -51,8 +51,22 @@
     "LearnTitle": "준비 자료",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사",
-    "Products": ["DET 연습", "DET 글쓰기 AI 교정", "DET 말하기 AI 교정", "DET 목", "Duolingo English Test 코스"],
-    "Company": ["회사 소개", "문의하기", "이용 약관", "개인 정보 보호 정책", "사이트맵", "제휴 프로그램", "환불 정책"],
+    "Products": [
+      "DET 연습",
+      "DET 글쓰기 AI 교정",
+      "DET 말하기 AI 교정",
+      "DET 목",
+      "Duolingo English Test 코스"
+    ],
+    "Company": [
+      "회사 소개",
+      "문의하기",
+      "이용 약관",
+      "개인 정보 보호 정책",
+      "사이트맵",
+      "제휴 프로그램",
+      "환불 정책"
+    ],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -80,7 +94,12 @@
     "power_by": "AI에 의해 구동됨",
     "h1Mobile": "더 높은 점수를 쉽게 받으세요<br /> Duolingo <br />영어 시험에서 <span class=\"seo_hack\">DET 연습</span>으로",
     "h1PC": "더 높은 점수를 쉽게 받으세요 <br />Duolingo English Test <span class=\"seo_hack\">DET 연습</span>와 함께",
-    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
+    "one_small_title": [
+      "DET 연습",
+      "AI 수정",
+      "풀-길이 모의 시험",
+      "DET 코스"
+    ],
     "Start_free_with_Google": "Google로 무료로 시작하세요",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",
@@ -599,7 +618,19 @@
       "orange_title": "엘리트 언어 교육자들",
       "team_desc": "우리의 저명한 언어 교육자 팀은 TESOL 및 기타 교육 인증서와 같은 높은 자격을 보유하고 있으며, TOEFL, IELTS 및 Duolingo English Test (DET)와 같은 주요 영어 시험 준비에서 풍부한 경험을 가지고 있습니다. 그들은 인상적인 언어 능력, 맞춤형 교육 접근 방식 및 혁신적인 방법으로 유명하며, 각 학생이 영어 능력에서 최고 잠재력을 달성하도록 돕는 데 전념하고 있습니다.",
       "Elite_Language_Educators": "엘리트 언어 교육자"
-    }
+    },
+    "sas": "말하기 오디오 샘플",
+    "zhonghe": {
+      "title": "DET Ultimate 시험 마스터리 패키지",
+      "desc": "과정 패키지에는 <span class=\"yellow\">DET Speaking Exam Excellence</span> 및 <span class=\"yellow\">DET Writing Exam Excellence</span>가 포함되어 있습니다. \n구독하시면 언제든지 가이드를 다운로드하여 언제 어디서나 쉽게 학습하실 수 있습니다. \n지금 구매 구독은 즉시 적용됩니다. \n페이지를 위로 스크롤하여 시청하고, 클릭하여 다운로드하여 학습을 시작하세요."
+    },
+    "speaking": {
+      "title": "DET 말하기 시험 우수성: 종합 가이드"
+    },
+    "writing": {
+      "title": "DET 작문 시험 우수성: 종합 가이드"
+    },
+    "downloadguide": "가이드 다운로드"
   },
   "forget": {
     "Please_enter": "이메일 주소를 입력하세요",

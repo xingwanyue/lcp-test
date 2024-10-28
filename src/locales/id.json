@@ -94,7 +94,12 @@
     "power_by": "Ditenagai oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />pada Ujian Bahasa Inggris Duolingo <br />Dengan <span class=\"seo_hack\">DET Latihan</span>",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Duolingo English Test Dengan <span class=\"seo_hack\">DET Latihan</span>",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -613,7 +618,19 @@
       "orange_title": "Pendidik Bahasa Elite",
       "team_desc": "Tim pengajar bahasa kami yang terhormat, yang memiliki kualifikasi terkemuka seperti TESOL dan Sertifikat mengajar lainnya, membawa banyak pengalaman dalam mempersiapkan siswa untuk tes bahasa Inggris utama seperti TOEFL, IELTS, dan Duolingo English Test (DET). Dikenal karena keterampilan bahasa mereka yang mengesankan, pendekatan pengajaran yang dipersonalisasi, dan metode inovatif, mereka berkomitmen untuk membantu setiap siswa mencapai potensi tertinggi mereka dalam kemahiran berbahasa Inggris.",
       "Elite_Language_Educators": "Pendidik Bahasa Elit"
-    }
+    },
+    "sas": "Contoh Audio Berbicara",
+    "zhonghe": {
+      "title": "Paket Penguasaan Ujian DET Ultimate",
+      "desc": "Paket kursus mencakup <span class=\"kuning\">Keunggulan Ujian Berbicara DET</span> dan <span class=\"kuning\">Keunggulan Ujian Menulis DET</span>. \nSetelah berlangganan, Anda akan dapat mengunduh panduan ini kapan saja dan mempelajarinya dengan mudah, kapan saja, dan di mana saja. \nLangganan Beli Sekarang akan segera berlaku. \nGulir ke atas pada halaman, lihat, dan klik untuk mengunduh kursus untuk mulai belajar."
+    },
+    "speaking": {
+      "title": "Keunggulan Ujian Berbicara DET: Panduan Komprehensif"
+    },
+    "writing": {
+      "title": "Keunggulan Ujian Penulisan DET: Panduan Komprehensif"
+    },
+    "downloadguide": "Unduh Panduan"
   },
   "forget": {
     "Please_enter": "Silakan masukkan alamat email Anda",

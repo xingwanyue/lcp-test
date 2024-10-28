@@ -94,7 +94,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez un score plus élevé facilement<br />au test d'anglais Duolingo <br />avec <span class=\"seo_hack\">DET Pratique</span>",
     "h1PC": "Obtenez un meilleur score facilement sur le <br />Duolingo English Test Avec <span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un e-mail",
     "Start_for_free": "Commencez gratuitement",
@@ -613,7 +618,19 @@
       "orange_title": "Éducateurs de Langues d'Élite",
       "team_desc": "Notre équipe distinguée d'éducateurs linguistiques, possédant des qualifications estimées comme TESOL et d'autres certificats d'enseignement, apporte une richesse d'expérience dans la préparation des étudiants aux principaux tests d'anglais comme TOEFL, IELTS et Duolingo English Test (DET). Réputés pour leurs impressionnantes compétences linguistiques, leurs approches pédagogiques personnalisées et leurs méthodes innovantes, ils sont déterminés à aider chaque étudiant à atteindre son plus haut potentiel en maîtrise de l'anglais.",
       "Elite_Language_Educators": "Éducateurs de Langues Élite"
-    }
+    },
+    "sas": "Exemples audio parlants",
+    "zhonghe": {
+      "title": "Package de maîtrise de l'examen DET Ultimate",
+      "desc": "Le package de cours comprend l'<span class=\"white\">Excellence de l'examen DET Speaking</span> et l'<span class=\"white\">Excellence de l'examen DET Writing</span>. \nLors de votre abonnement, vous pourrez télécharger les guides à tout moment et les étudier en toute simplicité, à tout moment et en tout lieu. \nL'abonnement Acheter maintenant prend effet immédiatement. \nFaites défiler la page vers le haut, affichez-la et cliquez pour télécharger le cours et commencer à apprendre."
+    },
+    "speaking": {
+      "title": "Excellence de l'examen oral DET : un guide complet"
+    },
+    "writing": {
+      "title": "Excellence de l'examen de rédaction du DET : un guide complet"
+    },
+    "downloadguide": "Guide de téléchargement"
   },
   "forget": {
     "Please_enter": "Veuillez saisir votre adresse e-mail",

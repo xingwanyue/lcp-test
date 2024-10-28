@@ -45,7 +45,7 @@ const buyMembership = (id: number) => {
             target="_blank"
             class="btn common_btn_hover_bgColor"
           >
-            <div class="font">Download Guide</div>
+            <div class="font">{{ $t('courses.downloadguide') }}</div>
           </a>
           <div v-if="props.zongheData.type === 'speaking'" class="jiantou">
             <img src="/img/courses/courses_jiantou.svg" />
@@ -55,7 +55,7 @@ const buyMembership = (id: number) => {
             class="btn common_btn_hover_bgColor"
             :to="localePath(`/listen`)"
           >
-            <div class="font">Speaking Audio Samples</div>
+            <div class="font">{{ $t('courses.sas') }}123</div>
           </NuxtLink>
         </div>
         <template v-else>

@@ -94,7 +94,12 @@
     "power_by": "Aangedreven door AI",
     "h1Mobile": "Behaal gemakkelijk een hogere score<br />op de Duolingo <br />Engelse test met <span class=\"seo_hack\">DET Oefening</span>",
     "h1PC": "Behaal eenvoudig een hogere score op de <br />Duolingo English Test Met <span class=\"seo_hack\">DET oefenen</span>",
-    "one_small_title": ["DET Oefening", "AI Correctie", "Volledige Lengte Mock", "DET Cursussen"],
+    "one_small_title": [
+      "DET Oefening",
+      "AI Correctie",
+      "Volledige Lengte Mock",
+      "DET Cursussen"
+    ],
     "Start_free_with_Google": "Begin gratis met Google",
     "Start_free_with_email": "Begin gratis met e-mail",
     "Start_for_free": "Begin gratis",
@@ -613,7 +618,19 @@
       "orange_title": "Elite Taalopleiders",
       "team_desc": "Ons vooraanstaande team van taaleducatoren, met gewaardeerde kwalificaties zoals TESOL en andere onderwijs Certificaten, brengt een schat aan ervaring mee in het voorbereiden van studenten op belangrijke Engelse tests zoals TOEFL, IELTS, en Duolingo English Test (DET). Bekend om hun indrukwekkende taalvaardigheden, persoonlijke lesmethoden en innovatieve werkwijzen, zijn zij toegewijd aan het helpen van elke student om hun hoogste potentieel in Engelse vaardigheid te bereiken.",
       "Elite_Language_Educators": "Elitaire Taaldocenten"
-    }
+    },
+    "sas": "Audiovoorbeelden spreken",
+    "zhonghe": {
+      "title": "DET Ultiem examenbeheersingspakket",
+      "desc": "Het cursuspakket omvat het <span class=\"golden\">DET Speaking Exam Excellence</span> en het <span class=\"golden\">DET Writing Exam Excellence</span>. \nAls u zich abonneert, kunt u de gidsen op elk gewenst moment downloaden en ze altijd en overal gemakkelijk bestuderen. \nKoop nu-abonnement gaat onmiddellijk in. \nBlader omhoog op de pagina, bekijk en klik om de cursus te downloaden en te beginnen met leren."
+    },
+    "speaking": {
+      "title": "DET-examenexcellentie: een uitgebreide gids"
+    },
+    "writing": {
+      "title": "DET Schrijven Exam Excellence: een uitgebreide gids"
+    },
+    "downloadguide": "Gids downloaden"
   },
   "forget": {
     "Please_enter": "Voer uw e-mailadres in",

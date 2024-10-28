@@ -94,7 +94,12 @@
     "power_by": "AI Tarafından Desteklenmektedir",
     "h1Mobile": "Daha Yüksek Puan Alın<br />Duolingo <br />İngilizce Testinde<span class=\"seo_hack\">DET Pratik</span> ile",
     "h1PC": "Daha Yüksek Bir Puan Alın <br />Duolingo English Test <span class=\"seo_hack\">DET Uygulama</span> ile",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "E-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -613,7 +618,19 @@
       "orange_title": "Seçkin Dil Eğitimcileri",
       "team_desc": "Saygın öğretmen ekibimiz, TESOL ve diğer öğretim Sertifikaları gibi saygın niteliklere sahip olup, öğrencilere TOEFL, IELTS ve Duolingo English Test (DET) gibi önemli İngilizce sınavlarına hazırlamada zengin bir deneyim sunar. Etkileyici dil becerileri, kişiselleştirilmiş öğretim yaklaşımları ve yenilikçi yöntemleri ile tanınan ekibimiz, her öğrencinin İngilizce yeterliliğinde en yüksek potansiyeline ulaşmasına yardımcı olmaya kararlıdır.",
       "Elite_Language_Educators": "Seçkin Dil Eğitimcileri"
-    }
+    },
+    "sas": "Konuşma Sesi Örnekleri",
+    "zhonghe": {
+      "title": "DET Ultimate Sınav Ustalık Paketi",
+      "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir. \nAbone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz. \nŞimdi Satın Al Aboneliği hemen yürürlüğe girer. \nÖğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
+    },
+    "speaking": {
+      "title": "DET Konuşma Sınavında Mükemmeliyet: Kapsamlı Bir Kılavuz"
+    },
+    "writing": {
+      "title": "DET Yazma Sınavında Mükemmeliyet: Kapsamlı Bir Kılavuz"
+    },
+    "downloadguide": "Kılavuzu İndir"
   },
   "forget": {
     "Please_enter": "Lütfen e-posta adresinizi girin",

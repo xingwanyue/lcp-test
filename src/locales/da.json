@@ -94,7 +94,12 @@
     "power_by": "Drevet af AI",
     "h1Mobile": "Få en højere score nemt<br />på Duolingo <br />Engelsk Testen Med <span class=\"seo_hack\">DET Øvelse</span>",
     "h1PC": "Få en højere score nemt på <br />Duolingo English Test Med <span class=\"seo_hack\">DET Øvelse</span>",
-    "one_small_title": ["DET Øve", "AI Korrektion", "Fuld-Længde Mock", "DET Kurser"],
+    "one_small_title": [
+      "DET Øve",
+      "AI Korrektion",
+      "Fuld-Længde Mock",
+      "DET Kurser"
+    ],
     "Start_free_with_Google": "Start gratis med Google",
     "Start_free_with_email": "Start gratis med e-mail",
     "Start_for_free": "Start gratis",
@@ -613,7 +618,19 @@
       "orange_title": "Elite Sprogpædagoger",
       "team_desc": "Vores anerkendte team af sprogundervisere, med prestigefyldte kvalifikationer som TESOL og andre undervisningscertifikater, bringer en stor erfaring i at forberede studerende til store engelske prøver som TOEFL, IELTS og Duolingo English Test (DET). De er kendt for deres imponerende sprogfærdigheder, personlige undervisningsmetoder og innovative tilgange, og de er engagerede i at hjælpe hver studerende med at opnå deres højeste potentiale i engelsk færdighed.",
       "Elite_Language_Educators": "Elite Sprogundervisere"
-    }
+    },
+    "sas": "Talende lydprøver",
+    "zhonghe": {
+      "title": "DET Ultimate Exam Mastery Package",
+      "desc": "Kursuspakken inkluderer <span class=\"yellow\">DET Speaking Exam Excellence</span> og <span class=\"yellow\">DET Writing Exam Excellence</span>. \nVed abonnement vil du være i stand til at downloade guiderne til enhver tid og studere dem med lethed, når som helst og hvor som helst. \nKøb nu-abonnementet træder i kraft med det samme. \nRul op på siden, se og klik for at downloade kurset for at begynde at lære."
+    },
+    "speaking": {
+      "title": "DET Speaking Exam Excellence: En omfattende vejledning"
+    },
+    "writing": {
+      "title": "DET Writing Exam Excellence: A Comprehensive Guide"
+    },
+    "downloadguide": "Download guide"
   },
   "forget": {
     "Please_enter": "Indtast venligst din e-mailadresse",
