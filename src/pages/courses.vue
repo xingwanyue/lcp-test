@@ -260,64 +260,37 @@ const changePageData = (speakData: any, writeData: any) => {
   }
 };
 
-if (user.value.id) {
-  const token = await getToken();
-  const {
-    data: { data },
-  } = await getVipdataWithToken(token);
-  const writeData = data.find((item: any) => item.write === 1 && !item.speak);
-  const speakData = data.find((item: any) => item.speak === 1 && !item.write);
-  speakDataPage.value = speakData;
-  writeDataPage.value = writeData;
-  const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);
-
-  zongheData.value.price = zhongheData.price;
-  zongheData.value.priceid = zhongheData.id;
-  zongheData.value.vipPrice = zhongheData.vipPrice;
-  bottomData.value[0].price = speakData.price;
-  bottomData.value[0].priceid = speakData.id;
-  bottomData.value[0].vipPrice = speakData.vipPrice;
-
-  bottomData.value[1].price = writeData.price;
-  bottomData.value[1].priceid = writeData.id;
-  bottomData.value[1].vipPrice = writeData.vipPrice;
-  changePageData(speakData, writeData);
-} else {
-  const {
-    data: { data },
-  } = await getVipdataNoToken();
-  const writeData = data.find((item: any) => item.write === 1 && !item.speak);
-  const speakData = data.find((item: any) => item.speak === 1 && !item.write);
-  const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);
-  speakDataPage.value = speakData;
-  writeDataPage.value = writeData;
-  zongheData.value.price = zhongheData.price;
-  zongheData.value.priceid = zhongheData.id;
-  zongheData.value.vipPrice = zhongheData.vipPrice;
-  bottomData.value[0].price = speakData.price;
-  bottomData.value[0].priceid = speakData.id;
-  bottomData.value[0].vipPrice = speakData.vipPrice;
-
-  bottomData.value[1].price = writeData.price;
-  bottomData.value[1].priceid = writeData.id;
-  bottomData.value[1].vipPrice = writeData.vipPrice;
-  changePageData(speakData, writeData);
-}
-
 const buyedChangePage = async () => {
-  const token = await getToken();
-  const {
-    data: { data },
-  } = await getVipdataWithToken(token);
-  const writeData = data.find((item: any) => item.write === 1 && !item.speak);
-  const speakData = data.find((item: any) => item.speak === 1 && !item.write);
-  const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);
-  speakDataPage.value = speakData;
-  writeDataPage.value = writeData;
+  if (user.value.id) {
+    const token = await getToken();
+    const {
+      data: { data },
+    } = await getVipdataWithToken(token);
+    const writeData = data.find((item: any) => item.write === 1 && !item.speak);
+    const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+    speakDataPage.value = speakData;
+    writeDataPage.value = writeData;
 
-  changePageData(speakData, writeData);
+    changePageData(speakData, writeData);
+  } else {
+    const {
+      data: { data },
+    } = await getVipdataNoToken();
+    const writeData = data.find((item: any) => item.write === 1 && !item.speak);
+    const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+
+    speakDataPage.value = speakData;
+    writeDataPage.value = writeData;
+
+    changePageData(speakData, writeData);
+  }
 };
 watch(user.value, () => {
+  console.log('userhanger');
+  buyedChangePage();
+});
+onMounted(() => {
+  console.log('mounted');
   buyedChangePage();
 });
 
