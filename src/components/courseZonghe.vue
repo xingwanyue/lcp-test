@@ -4,6 +4,7 @@ import { useStore } from '@/store';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
+const isVip = computed(() => store.isVip);
 const props = defineProps({
   zongheData: {
     type: Object,
@@ -29,22 +30,42 @@ const buyMembership = (id: number) => {
       <div class="desc" v-html="props.zongheData.desc"></div>
 
       <div v-if="props.buystatus !== 3" class="buy_btn_common">
-        <div class="price">
-          <span class="tag">{{ $t('courses.pagefont.do') }}</span>
-          <span class="price_num">{{ props.zongheData.price / 100 || 0 }}</span>
-        </div>
-        <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(props.zongheData.id)">
-          <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-          <div class="icon">
-            <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
+        <template v-if="!props.zongheData.isbuyed">
+          <div class="price">
+            <span class="tag">{{ $t('courses.pagefont.do') }}</span>
+            <span v-if="isVip" class="price_num">{{ props.zongheData.vipPrice / 100 || 0 }}</span>
+            <span v-else class="price_num">{{ props.zongheData.price / 100 || 0 }}</span>
           </div>
-        </div>
-        <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-          <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-          <div class="icon">
-            <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
+        </template>
+
+        <!-- <div class="buy_time" v-if="props.zongheData.isbuyed">21 21213 1</div> -->
+        <div class="btn_group_out" v-if="props.zongheData.isbuyed">
+          <a
+            :href="staticUrlGet(`/${props.zongheData?.downloadhref}`)"
+            target="_blank"
+            class="btn common_btn_hover_bgColor"
+          >
+            <div class="font">Download Guide</div>
+          </a>
+          <div v-if="props.zongheData.type === 'speaking'" class="jiantou">
+            <img src="/img/courses/courses_jiantou.svg" />
           </div>
-        </NuxtLink>
+          <NuxtLink
+            v-if="props.zongheData.type === 'speaking'"
+            class="btn common_btn_hover_bgColor"
+            :to="localePath(`/listen`)"
+          >
+            <div class="font">Speaking Audio Samples</div>
+          </NuxtLink>
+        </div>
+        <template v-else>
+          <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(props.zongheData.priceid)">
+            <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
+          </div>
+          <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
+            <div class="font">{{ $t('courses.pagefont.Buy_Now') }}1</div>
+          </NuxtLink></template
+        >
       </div>
 
       <div v-if="props.buystatus === 3" class=""><slot name="footer"></slot></div>
@@ -53,7 +74,6 @@ const buyMembership = (id: number) => {
 </template>
 <style lang="scss" scoped>
 .zonghe_out {
-  border: 1px red solid;
   padding: 100px 0;
   display: grid;
   grid-template-columns: 0.42fr 1fr;
@@ -66,6 +86,9 @@ const buyMembership = (id: number) => {
     }
   }
   .zonghe_out_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .title {
       font-weight: 600;
       font-size: 56px;
@@ -82,9 +105,19 @@ const buyMembership = (id: number) => {
       }
     }
   }
+  .btn_group_out {
+    display: flex;
+    grid-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    .jiantou {
+      width: 24px;
+      height: 24px;
+    }
+  }
   .buy_btn_common {
     display: flex;
-    border: 1px red solid;
+
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

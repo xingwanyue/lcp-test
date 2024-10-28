@@ -2,7 +2,8 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { useStore } from '@/store';
-import { staticUrlGet, domain, cdn } from '@/utils';
+import { staticUrlGet, domain, cdn, getToken } from '@/utils';
+import { getVipdataWithToken, getVipdataNoToken } from '@/api';
 import Vtwocourse from '../components/courseBottom.vue';
 import Vcoursezh from '../components/courseZonghe.vue';
 const guide1 = `${cdn}/store/portal/guid/guide111.png`;
@@ -20,30 +21,6 @@ useHead({
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
-const isVip = computed(() => store.isVip);
-const { data: pricedata } = (await useFetch(`${api}/common/vips`, {
-  server: false,
-  lazy: true,
-  transform: (res: any) => {
-    const { data } = res;
-    const writeData = data.find((item: any) => item.write === 1);
-    const speakData = data.find((item: any) => item.speak === 1);
-    if (isVip.value) {
-      speakData.price = speakData.vipPrice;
-      writeData.price = writeData.vipPrice;
-    }
-    return { speakData, writeData };
-  },
-})) as any;
-
-const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
-  server: false,
-  lazy: true,
-  transform: (data: any) => {
-    const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
-    return { DETSpeakingExamExcellence, DETWritingExamExcellence2024 };
-  },
-})) as any;
 
 const article1 = ref({
   title: t('courses.article1.title'),
@@ -133,112 +110,230 @@ const contaceUsList = ref([
     id: '3',
   },
 ]);
-// 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
-const buystatus = ref(3);
+const speakDataPage = ref({}) as any;
+const writeDataPage = ref({}) as any;
 
+const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
+  server: false,
+  lazy: false,
+  transform: (data: any) => {
+    const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
+    return { DETSpeakingExamExcellence, DETWritingExamExcellence2024 };
+  },
+})) as any;
+
+// 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
+const buystatus = ref(0);
 let zongheData = ref({
   img: '/img/courses/courses_group.webp',
-  price: 10,
-  priceid: '123',
+  price: 0,
+  priceid: 0,
+  vipPrice: 0,
   title: 'DET Ultimate Exam Mastery Package',
   desc: 'The course package includes the "<span class="yellow">DET Speaking Exam Excellence</span>" and the "<span class="yellow">DET Writing Exam Excellence</span>." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
   isbuyed: false,
+  type: 'zonghe',
+  downloadhref: '',
 });
 let bottomData = ref([
   {
     img: guide1,
-    price: 10,
-    priceid: 123,
+    price: 0,
+    priceid: 0,
+    vipPrice: 0,
     title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
     article: article1,
     isbuyed: false,
+    type: 'speaking',
+    downloadhref: '',
   },
   {
     img: guide2,
-    price: 10,
-    priceid: 123,
+    price: 0,
+    priceid: 0,
     title: 'DET Writing Exam Excellence: A Comprehensive Guide',
     article: article2,
     isbuyed: false,
+    type: 'writing',
+    downloadhref: '',
   },
 ]);
 // 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
 // user 的转态 支付后会更新
-if (user.value.speak === 1 && user.value.write === 1) {
-  buystatus.value = 3;
-} else if (user.value.speak === 1) {
-  buystatus.value = 1;
-} else if (user.value.write === 1) {
-  buystatus.value = 2;
+const changePageData = (speakData: any, writeData: any) => {
+  if (user.value.speak === 1 && user.value.write === 1) {
+    buystatus.value = 3;
+  } else if (user.value.speak === 1) {
+    buystatus.value = 1;
+  } else if (user.value.write === 1) {
+    buystatus.value = 2;
+  } else {
+    buystatus.value = 0;
+  }
+  if (buystatus.value === 1) {
+    zongheData.value = {
+      img: guide1,
+      price: speakData?.price,
+      priceid: speakData?.id,
+      vipPrice: speakData?.vipPrice,
+      title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+      desc: '',
+      isbuyed: true,
+      type: 'speaking',
+      downloadhref: downloadhref.value?.DETSpeakingExamExcellence,
+    };
+    bottomData.value = [
+      {
+        img: guide2,
+        price: writeData?.price,
+        priceid: writeData?.id,
+        vipPrice: writeData?.vipPrice,
+        title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+        article: article2,
+        isbuyed: false,
+        type: 'writing',
+        downloadhref: downloadhref.value?.DETWritingExamExcellence2024,
+      },
+    ];
+  } else if (buystatus.value === 2) {
+    zongheData.value = {
+      img: guide2,
+      price: writeData?.price,
+      priceid: writeData?.id,
+      vipPrice: writeData?.vipPrice,
+      title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+      desc: '',
+      isbuyed: true,
+      type: 'writing',
+      downloadhref: downloadhref.value?.DETWritingExamExcellence2024,
+    };
+    bottomData.value = [
+      {
+        img: guide1,
+        price: speakData?.price,
+        priceid: speakData?.id,
+        vipPrice: speakData?.vipPrice,
+        title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+        article: article1,
+        isbuyed: false,
+        type: 'speaking',
+        downloadhref: downloadhref.value?.DETSpeakingExamExcellence,
+      },
+    ];
+  } else if (buystatus.value === 3) {
+    zongheData.value = {
+      img: guide1,
+      price: 123456,
+      priceid: 123456,
+      vipPrice: 123456,
+      title: 'DET Ultimate Exam Mastery Package',
+      desc: 'The course package includes the "DET Speaking Exam Excellence" and the "DET Writing Exam Excellence." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
+      isbuyed: true,
+      type: 'zonghe',
+      downloadhref: '',
+    };
+    bottomData.value = [
+      {
+        img: guide1,
+        price: speakData?.price,
+        priceid: speakData?.id,
+        vipPrice: speakData?.vipPrice,
+        title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
+        article: [],
+        isbuyed: true,
+        type: 'speaking',
+        downloadhref: downloadhref.value.DETSpeakingExamExcellence,
+      },
+      {
+        img: guide2,
+        price: writeData?.price,
+        priceid: writeData?.id,
+        vipPrice: writeData?.vipPrice,
+        title: 'DET Writing Exam Excellence: A Comprehensive Guide',
+        article: [],
+        isbuyed: true,
+        type: 'writing',
+        downloadhref: downloadhref.value.DETWritingExamExcellence2024,
+      },
+    ];
+  }
+};
+
+if (user.value.id) {
+  const token = await getToken();
+  const {
+    data: { data },
+  } = await getVipdataWithToken(token);
+  const writeData = data.find((item: any) => item.write === 1 && !item.speak);
+  const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+  speakDataPage.value = speakData;
+  writeDataPage.value = writeData;
+  const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);
+
+  zongheData.value.price = zhongheData.price;
+  zongheData.value.priceid = zhongheData.id;
+  zongheData.value.vipPrice = zhongheData.vipPrice;
+  bottomData.value[0].price = speakData.price;
+  bottomData.value[0].priceid = speakData.id;
+  bottomData.value[0].vipPrice = speakData.vipPrice;
+
+  bottomData.value[1].price = writeData.price;
+  bottomData.value[1].priceid = writeData.id;
+  bottomData.value[1].vipPrice = writeData.vipPrice;
+  changePageData(speakData, writeData);
 } else {
-  buystatus.value = 0;
+  // getVipdataNoToken
+  const token = await getToken();
+  const {
+    data: { data },
+  } = await getVipdataWithToken(token);
+  const writeData = data.find((item: any) => item.write === 1 && !item.speak);
+  const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+  const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);
+  speakDataPage.value = speakData;
+  writeDataPage.value = writeData;
+  zongheData.value.price = zhongheData.price;
+  zongheData.value.priceid = zhongheData.id;
+  zongheData.value.vipPrice = zhongheData.vipPrice;
+  bottomData.value[0].price = speakData.price;
+  bottomData.value[0].priceid = speakData.id;
+  bottomData.value[0].vipPrice = speakData.vipPrice;
+
+  bottomData.value[1].price = writeData.price;
+  bottomData.value[1].priceid = writeData.id;
+  bottomData.value[1].vipPrice = writeData.vipPrice;
+  changePageData(speakData, writeData);
 }
-if (buystatus.value === 1) {
-  zongheData.value = {
-    img: guide1,
-    price: 10,
-    priceid: '123',
-    title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
-    desc: '',
-    isbuyed: true,
-  };
-  bottomData.value = [
-    {
-      img: guide2,
-      price: 10,
-      priceid: 123,
-      title: 'DET Writing Exam Excellence: A Comprehensive Guide',
-      article: article2,
-      isbuyed: false,
-    },
-  ];
-} else if (buystatus.value === 2) {
-  zongheData.value = {
-    img: guide2,
-    price: 10,
-    priceid: '123',
-    title: 'DET Writing Exam Excellence: A Comprehensive Guide',
-    desc: '',
-    isbuyed: true,
-  };
-  bottomData.value = [
-    {
-      img: guide1,
-      price: 10,
-      priceid: 123,
-      title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
-      article: article1,
-      isbuyed: false,
-    },
-  ];
-} else if (buystatus.value === 3) {
-  zongheData.value = {
-    img: guide1,
-    price: 10,
-    priceid: '123',
-    title: 'DET Ultimate Exam Mastery Package',
-    desc: 'The course package includes the "DET Speaking Exam Excellence" and the "DET Writing Exam Excellence." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
-    isbuyed: true,
-  };
-  bottomData.value = [
-    {
-      img: guide1,
-      price: 0,
-      priceid: 123,
-      title: 'DET Speaking Exam Excellence: A Comprehensive Guide',
-      article: [],
-      isbuyed: true,
-    },
-    {
-      img: guide2,
-      price: 0,
-      priceid: 123,
-      title: 'DET Writing Exam Excellence: A Comprehensive Guide',
-      article: [],
-      isbuyed: true,
-    },
-  ];
-}
+
+watch(user.value, () => {
+  console.log('8888888888888888');
+  console.log(user);
+  buyedChangePage();
+});
+
+const buyedChangePage = async () => {
+  const token = await getToken();
+  const {
+    data: { data },
+  } = await getVipdataWithToken(token);
+  const writeData = data.find((item: any) => item.write === 1 && !item.speak);
+  const speakData = data.find((item: any) => item.speak === 1 && !item.write);
+  const zhongheData = data.find((item: any) => item.speak === 1 && item.write === 1);
+  speakDataPage.value = speakData;
+  writeDataPage.value = writeData;
+
+  zongheData.value.price = zhongheData.price;
+  zongheData.value.priceid = zhongheData.id;
+  zongheData.value.vipPrice = zhongheData.vipPrice;
+  bottomData.value[0].price = speakData.price;
+  bottomData.value[0].priceid = speakData.id;
+  bottomData.value[0].vipPrice = speakData.vipPrice;
+
+  bottomData.value[1].price = writeData.price;
+  bottomData.value[1].priceid = writeData.id;
+  bottomData.value[1].vipPrice = writeData.vipPrice;
+  changePageData(speakData, writeData);
+};
 
 const buyMembership = (id: number) => {
   store.stripePay({ vipId: id });
@@ -265,7 +360,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         /></template>
         <template v-if="buystatus === 2">
           <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">You can buy DET Writing Exam Excellence for $5 :</div>
+          <div class="you_can">You can buy DET Speaking Exam Excellence for $5 :</div>
           <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
         /></template>
         <template v-if="buystatus === 3">
@@ -297,14 +392,14 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               <template v-if="user.id">
                 <div
                   v-if="item.btn"
-                  @click="buyMembership(pricedata?.speakData?.id)"
+                  @click="buyMembership(speakDataPage?.id)"
                   :class="user.speak === 1 ? 'btn disbtn' : 'btn'"
                 >
                   {{ item.btn }}
                 </div>
                 <div
                   v-if="item.btn1"
-                  @click="buyMembership(pricedata?.writeData?.id)"
+                  @click="buyMembership(writeDataPage?.id)"
                   :class="user.write === 1 ? 'btn disbtn' : 'btn'"
                 >
                   {{ item.btn1 }}

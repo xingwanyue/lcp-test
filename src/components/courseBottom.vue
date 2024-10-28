@@ -4,6 +4,7 @@ import { useStore } from '@/store';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
+const isVip = computed(() => store.isVip);
 const props = defineProps({
   bottomData: {
     type: Array,
@@ -34,22 +35,44 @@ const buyMembership = (id: number) => {
           </template>
 
           <div class="buy_btn_common">
-            <div v-if="item.price" class="price">
+            <div v-if="!item.isbuyed" class="price">
               <span class="tag">{{ $t('courses.pagefont.do') }}</span>
-              <span class="price_num">{{ item.price / 100 || 0 }}</span>
+              <span v-if="isVip" class="price_num">{{ item.vipPrice / 100 || 0 }}</span>
+              <span v-else class="price_num">{{ item.price / 100 || 0 }}</span>
             </div>
-            <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(item.priceid)">
-              <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-              <div class="icon">
-                <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
+
+            <div class="buttom_group_out">
+              <template v-if="!item.isbuyed">
+                <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="buyMembership(item.priceid)">
+                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
+                </div>
+                <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
+                  <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
+                </NuxtLink>
+                <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" /></div>
+              </template>
+
+              <a
+                v-if="item.isbuyed"
+                :href="staticUrlGet(`/${item?.downloadhref}`)"
+                class="btn common_btn_hover_bgColor"
+                target="_blank"
+              >
+                <div class="font">Download Guide</div>
+              </a>
+              <div v-else class="btn common_btn_hover_bgColor disbtn">
+                <div class="font">Download Guide</div>
               </div>
+              <template v-if="item.type === 'speaking'">
+                <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" /></div>
+                <NuxtLink v-if="item.isbuyed" class="btn common_btn_hover_bgColor" :to="localePath(`/listen`)">
+                  <div class="font">Speaking Audio Samples</div>
+                </NuxtLink>
+                <div v-else class="btn common_btn_hover_bgColor disbtn" @click="buyMembership(item.priceid)">
+                  <div class="font">Speaking Audio Samples</div>
+                </div>
+              </template>
             </div>
-            <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-              <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
-              <div class="icon">
-                <img src="/img/products/white_arrow_right.svg" :alt="$t('courses.pagefont.white_arrow_right')" />
-              </div>
-            </NuxtLink>
           </div>
         </div>
       </div>
@@ -158,6 +181,16 @@ const buyMembership = (id: number) => {
       }
     }
   }
+  .buttom_group_out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 8px;
+    .jiantou {
+      width: 24px;
+      height: 24px;
+    }
+  }
   .buy_btn_common {
     display: flex;
 
@@ -185,6 +218,7 @@ const buyMembership = (id: number) => {
       align-items: center;
       justify-content: center;
       grid-gap: 8px;
+      display: block;
 
       cursor: pointer;
       .font {
@@ -202,6 +236,10 @@ const buyMembership = (id: number) => {
           transition: all 0.2s;
         }
       }
+    }
+    .disbtn {
+      opacity: 0.3;
+      cursor: not-allowed;
     }
   }
 }

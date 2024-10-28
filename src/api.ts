@@ -28,6 +28,17 @@ export const stripePayStatusGet = (logVipId: string, token: string) =>
       Authorization: `Bearer ${token}`,
     },
   });
+export const getVipdataWithToken = (token: string) =>
+  fetchmy(`${api}/vips`, {
+    method: 'get',
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+export const getVipdataNoToken = (token: string) =>
+  fetchmy(`${api}/common/vips`, {
+    method: 'get',
+  });
 
 export const findPassword = (args: any) =>
   fetchmy(`${api}/common/findPassword`, {
