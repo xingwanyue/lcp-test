@@ -370,7 +370,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
                 class="options_out_name"
                 v-for="item in options"
                 :key="item.value"
-                :to="`/${item.value}${route.path}`"
+                :to="localePath(route.path, item.value)"
                 @click="clickChangeLanguage(item)"
               >
                 {{ item.label }}
