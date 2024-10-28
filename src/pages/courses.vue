@@ -170,6 +170,7 @@ const changePageData = (speakData: any, writeData: any) => {
   } else {
     buystatus.value = 0;
   }
+  console.log(buystatus.value);
   if (buystatus.value === 1) {
     zongheData.value = {
       img: guide1,
@@ -282,8 +283,6 @@ if (user.value.id) {
   bottomData.value[1].vipPrice = writeData.vipPrice;
   changePageData(speakData, writeData);
 } else {
-  // getVipdataNoToken
-  const token = await getToken();
   const {
     data: { data },
   } = await getVipdataNoToken();
@@ -305,12 +304,6 @@ if (user.value.id) {
   changePageData(speakData, writeData);
 }
 
-watch(user.value, () => {
-  console.log('8888888888888888');
-  console.log(user);
-  buyedChangePage();
-});
-
 const buyedChangePage = async () => {
   const token = await getToken();
   const {
@@ -322,18 +315,11 @@ const buyedChangePage = async () => {
   speakDataPage.value = speakData;
   writeDataPage.value = writeData;
 
-  zongheData.value.price = zhongheData.price;
-  zongheData.value.priceid = zhongheData.id;
-  zongheData.value.vipPrice = zhongheData.vipPrice;
-  bottomData.value[0].price = speakData.price;
-  bottomData.value[0].priceid = speakData.id;
-  bottomData.value[0].vipPrice = speakData.vipPrice;
-
-  bottomData.value[1].price = writeData.price;
-  bottomData.value[1].priceid = writeData.id;
-  bottomData.value[1].vipPrice = writeData.vipPrice;
   changePageData(speakData, writeData);
 };
+watch(user.value, () => {
+  buyedChangePage();
+});
 
 const buyMembership = (id: number) => {
   store.stripePay({ vipId: id });
