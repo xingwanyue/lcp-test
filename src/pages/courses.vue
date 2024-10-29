@@ -346,17 +346,17 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
       <div class="guide_wrapper">
         <template v-if="buystatus === 0">
           <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">You can also buy them separately :</div>
+          <div class="you_can">{{ $t('courses.dandumai') }}</div>
           <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
         /></template>
         <template v-if="buystatus === 1">
           <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">You can buy DET Writing Exam Excellence for $5 :</div>
+          <div class="you_can">{{ $t('courses.writing5') }}</div>
           <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
         /></template>
         <template v-if="buystatus === 2">
           <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">You can buy DET Speaking Exam Excellence for $5 :</div>
+          <div class="you_can">{{ $t('courses.speaking5') }}</div>
           <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
         /></template>
         <template v-if="buystatus === 3">
