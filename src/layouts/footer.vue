@@ -42,7 +42,7 @@ const prod = computed(() => {
       },
       {
         name: t('footer.Products[3]'),
-        url: '/courses',
+        url: '/mock-exam',
       },
       {
         name: t('footer.Products[4]'),
