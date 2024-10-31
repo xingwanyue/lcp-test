@@ -14,8 +14,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/writing-ai-correction` },
-    { rel: 'alternate', href: `https://www.${domain}/writing-ai-correction`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/writing-ai-correction')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/writing-ai-correction')}`, hreflang: 'en-GB' },
   ],
 });
 const isLoad = ref(false);

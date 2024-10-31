@@ -7,13 +7,15 @@ useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
 });
+const localePath = useLocalePath();
+
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/courses` },
-    { rel: 'alternate', href: `https://www.${domain}/courses`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/courses')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/courses')}`, hreflang: 'en-GB' },
   ],
 });
-const localePath = useLocalePath();
+
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);

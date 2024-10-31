@@ -9,10 +9,12 @@ useSeoMeta({
   // description: t('tos.seometa.description'),
   // keywords: t('tos.seometa.keywords'),
 });
+
+const localePath = useLocalePath();
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/tos` },
-    { rel: 'alternate', href: `https://www.${domain}/tos`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/tos')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/tos')}`, hreflang: 'en-GB' },
   ],
 });
 </script>

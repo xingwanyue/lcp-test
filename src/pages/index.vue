@@ -16,14 +16,15 @@ useSeoMeta({
   description: t('index.seometa.description'),
   keywords: t('index.seometa.keywords'),
 });
+const localePath = useLocalePath();
+
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/` },
-    { rel: 'alternate', href: `https://www.${domain}/`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/')}`, hreflang: 'en-GB' },
   ],
 });
 
-const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 const userPingLunResponse = computed(() => {

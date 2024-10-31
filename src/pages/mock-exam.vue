@@ -17,10 +17,11 @@ useSeoMeta({
   description: t('mockexam.seometa.description'),
   keywords: t('mockexam.seometa.keywords'),
 });
+
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/mock-exam` },
-    { rel: 'alternate', href: `https://www.${domain}/mock-exam`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/mock-exam')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/mock-exam')}`, hreflang: 'en-GB' },
   ],
 });
 

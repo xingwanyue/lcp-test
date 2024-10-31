@@ -15,11 +15,10 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/speaking-ai-correction` },
-    { rel: 'alternate', href: `https://www.${domain}/speaking-ai-correction`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/peaking-ai-correction')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/peaking-ai-correction')}`, hreflang: 'en-GB' },
   ],
 });
-
 const isLoad = ref(false);
 const onLoad = () => {
   isLoad.value = true;

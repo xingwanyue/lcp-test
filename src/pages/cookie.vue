@@ -7,8 +7,13 @@ const state = reactive({});
 useSeoMeta({
   title: t('cookie.seometa.title'),
 });
+
+const localePath = useLocalePath();
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/cookie` }],
+  link: [
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/cookie')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/cookie')}`, hreflang: 'en-GB' },
+  ],
 });
 </script>
 <template>
