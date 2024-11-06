@@ -9,10 +9,11 @@ useSeoMeta({
   description: t('affiliate.seometa.description'),
   keywords: t('affiliate.seometa.keywords'),
 });
+const localePath = useLocalePath();
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/affiliate` },
-    { rel: 'alternate', href: `https://www.${domain}/affiliate`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/affiliate')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/affiliate')}`, hreflang: 'en-GB' },
   ],
 });
 const contaceUsList = ref([

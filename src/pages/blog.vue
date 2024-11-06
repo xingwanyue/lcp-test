@@ -13,8 +13,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/blog` },
-    { rel: 'alternate', href: `https://www.${domain}/blog`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/blog')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/blog')}`, hreflang: 'en-GB' },
   ],
 });
 const route = useRoute();

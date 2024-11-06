@@ -15,8 +15,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/correction` },
-    { rel: 'alternate', href: `https://www.${domain}/correction`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/correction')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/correction')}`, hreflang: 'en-GB' },
   ],
 });
 const isLoad = ref(false);

@@ -9,10 +9,11 @@ useSeoMeta({
   description: t('refundPolicy.seometa.description'),
   keywords: t('privacyPolicy.seometa.keywords'),
 });
+const localePath = useLocalePath();
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/refund-policy` },
-    { rel: 'alternate', href: `https://www.${domain}/refund-policy`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/refund-policy')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/refund-policy')}`, hreflang: 'en-GB' },
   ],
 });
 </script>

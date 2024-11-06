@@ -105,8 +105,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/learn` },
-    { rel: 'alternate', href: `https://www.${domain}/learn`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/learn')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/learn')}`, hreflang: 'en-GB' },
   ],
 });
 </script>

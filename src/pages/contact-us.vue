@@ -59,10 +59,11 @@ useSeoMeta({
   description: '',
   keywords: t('contactUs.seometa.keywords'),
 });
+const localePath = useLocalePath();
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/contact-us` },
-    { rel: 'alternate', href: `https://www.${domain}/contact-us`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/contact-us')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/contact-us')}`, hreflang: 'en-GB' },
   ],
 });
 </script>
