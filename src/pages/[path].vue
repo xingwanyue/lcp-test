@@ -27,13 +27,12 @@ useSeoMeta({
   description: () => article.value?.description || t('path.seometa.description'),
   keywords: () => article.value?.keywords,
 });
-const headOptions = {
+useHead({
   link: [
     { rel: 'canonical', href: () => `https://www.${domain}/${article.value?.path}` },
     { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}/${article.value?.path}` },
   ],
-} as any;
-useHead(headOptions);
+});
 </script>
 <template>
   <NuxtLayout name="default" :type="article?.type">
