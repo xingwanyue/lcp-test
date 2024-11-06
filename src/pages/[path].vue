@@ -33,9 +33,6 @@ const headOptions = {
     { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}/${article.value?.path}` },
   ],
 } as any;
-if (!article.value?.checked && locale.value !== 'en') {
-  headOptions.meta = [{ name: 'robots', content: 'noindex' }];
-}
 useHead(headOptions);
 </script>
 <template>
