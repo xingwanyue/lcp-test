@@ -40,7 +40,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   headers: { locale: locale.value },
   transform: (data: any) => {
     data.data = data.data.map((item: any) => {
-      item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
+      item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
       return item;
     });
     return { data: data.data, total: data.total };
