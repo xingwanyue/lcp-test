@@ -159,99 +159,23 @@ const clickChangeLanguage = (item) => {
   // }
 };
 const wehaveLanguage = {
-  ar: 'العربية',
-  da: 'Dansk',
-  de: 'Deutsch',
   en: 'English',
-  es: 'Español',
-  fr: 'Français',
   id: 'Bahasa Indonesia',
-  it: 'Italiano',
   ja: '日本語',
   ko: '한국어',
-  nb: 'Norsk',
-  nl: 'Nederlands',
-  pl: 'Polski',
-  pt: 'Português',
   ru: 'Русский',
-  th: 'ไทย',
   tr: 'Türkçe',
+  de: 'Deutsch',
+  es: 'Español',
+  fr: 'Français',
+  it: 'Italiano',
+  th: 'ไทย',
   zh: '中文',
-};
-const options = [
-  {
-    value: 'en',
-    label: 'English',
-  },
-  {
-    value: 'id',
-    label: 'Bahasa Indonesia',
-  },
-  {
-    value: 'ja',
-    label: '日本語',
-  },
-  {
-    value: 'ko',
-    label: '한국어',
-  },
-  {
-    value: 'ar',
-    label: 'العربية',
-  },
-  {
-    value: 'ru',
-    label: 'Русский',
-  },
-  {
-    value: 'tr',
-    label: 'Türkçe',
-  },
-  {
-    value: 'da',
-    label: 'Dansk',
-  },
-  {
-    value: 'de',
-    label: 'Deutsch',
-  },
-  {
-    value: 'es',
-    label: 'Español',
-  },
-  {
-    value: 'fr',
-    label: 'Français',
-  },
-  {
-    value: 'it',
-    label: 'Italiano',
-  },
-  {
-    value: 'nb',
-    label: 'Norsk',
-  },
-  {
-    value: 'nl',
-    label: 'Nederlands',
-  },
-  {
-    value: 'pl',
-    label: 'Polski',
-  },
-  {
-    value: 'pt',
-    label: 'Português',
-  },
-  {
-    value: 'th',
-    label: 'ไทย',
-  },
-  {
-    value: 'zh',
-    label: '中文',
-  },
-];
+} as any;
+const options = Object.keys(wehaveLanguage).map((value) => ({
+  value,
+  label: wehaveLanguage[value],
+}));
 
 const closeCookie = () => {
   cookieShow.value = false;
