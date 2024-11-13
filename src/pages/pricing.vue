@@ -11,10 +11,11 @@ useSeoMeta({
   description: t('pricing.seometa.description'),
   keywords: t('pricing.seometa.keywords'),
 });
+const localePath = useLocalePath();
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/pricing` },
-    { rel: 'alternate', href: `https://www.${domain}/pricing`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/pricing')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/pricing')}`, hreflang: 'en-GB' },
   ],
 });
 
@@ -23,7 +24,7 @@ const store = useStore();
 const user = computed(() => store.user);
 const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
-const localePath = useLocalePath();
+
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
 

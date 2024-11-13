@@ -16,8 +16,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/practice` },
-    { rel: 'alternate', href: `https://www.${domain}/practice`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/practice')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/practice')}`, hreflang: 'en-GB' },
   ],
 });
 

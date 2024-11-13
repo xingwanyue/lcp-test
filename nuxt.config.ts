@@ -7,26 +7,7 @@ export default defineNuxtConfig({
   css: ['@/assets/iconfont/iconfont.css'],
 
   i18n: {
-    locales: [
-      'en',
-      'de',
-      'pt',
-      'ja',
-      'fr',
-      'id',
-      'es',
-      'it',
-      'th',
-      'pl',
-      'ko',
-      'ar',
-      'nl',
-      'tr',
-      'nb',
-      'da',
-      'ru',
-      'zh',
-    ].map((locale) => ({
+    locales: ['en', 'id', 'ja', 'ko', 'ru', 'tr', 'de', 'es', 'fr', 'it', 'th', 'zh'].map((locale) => ({
       code: locale,
       file: `${locale}.json`,
     })),
@@ -38,16 +19,20 @@ export default defineNuxtConfig({
     },
     detectBrowserLanguage: false,
   },
+
   plugins: [
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/tidio.js', mode: 'client' },
   ],
+
   features: {
     inlineStyles: false,
   },
+
   experimental: {
     writeEarlyHints: true,
   },
+
   app: {
     head: {
       link: [
@@ -73,47 +58,47 @@ export default defineNuxtConfig({
           type: 'application/ld+json',
           innerHTML: `
 {
-  "@context": "http://schema.org",
-  "@type": "LocalBusiness",
-  "name": "AITOGETHER LTD",
-  "url": "https://www.detpractice.com/",
-  "logo": "https://www.detpractice.com/img/footer/small_logo.svg",
-  "image": "https://www.detpractice.com/store/portal/products/bank_picture1.png",
-  "description": "DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.",
-  "pricerange":"£", 
-  "telephone": "7518886018",
-  "email" : "support@detpractice.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "71-75 Shelton Street, Covent Garden",
-    "addressLocality": "England",
-    "addressRegion": "London",
-    "postalCode": "WC2H 9JQ",
-    "addressCountry": "UK"
+ "@context": "http://schema.org",
+ "@type": "LocalBusiness",
+ "name": "AITOGETHER LTD",
+ "url": "https://www.detpractice.com/",
+ "logo": "https://www.detpractice.com/img/footer/small_logo.svg",
+ "image": "https://www.detpractice.com/store/portal/products/bank_picture1.png",
+ "description": "DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.",
+ "pricerange":"£", 
+ "telephone": "7518886018",
+ "email" : "support@detpractice.com",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "71-75 Shelton Street, Covent Garden",
+   "addressLocality": "England",
+   "addressRegion": "London",
+   "postalCode": "WC2H 9JQ",
+   "addressCountry": "UK"
+ },
+"aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "4.9",
+       "reviewCount": "880"
+ },
+   "review": {
+   "@type": "Review",
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.9",
+    "bestRating": "5"
   },
- "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "880"
-  },
-    "review": {
-    "@type": "Review",
-    "reviewRating": {
-     "@type": "Rating",
-     "ratingValue": "4.9",
-     "bestRating": "5"
-   },
-      "author": {
-      "@type": "Person",
-      "name": "AITOGETHER LTD"
-    }
-      },
-  "sameAs": [
-    "https://www.facebook.com/detpractice",
-    "https://x.com/det_practice",
-    "https://www.instagram.com/detpractice/ ",
-    "https://www.detpractice.com/"
-  ]
+     "author": {
+     "@type": "Person",
+     "name": "AITOGETHER LTD"
+   }
+     },
+ "sameAs": [
+   "https://www.facebook.com/detpractice",
+   "https://x.com/det_practice",
+   "https://www.instagram.com/detpractice/ ",
+   "https://www.detpractice.com/"
+ ]
 }`,
         },
       ],
@@ -159,4 +144,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: '2024-10-25',
 });

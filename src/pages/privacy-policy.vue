@@ -9,10 +9,11 @@ useSeoMeta({
   // description: t('privacyPolicy.seometa.description'),
   keywords: t('privacyPolicy.seometa.keywords'),
 });
+const localePath = useLocalePath();
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/privacy-policy` },
-    { rel: 'alternate', href: `https://www.${domain}/privacy-policy`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/privacy-policy')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/privacy-policy')}`, hreflang: 'en-GB' },
   ],
 });
 </script>

@@ -13,8 +13,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: `https://www.${domain}/blog` },
-    { rel: 'alternate', href: `https://www.${domain}/blog`, hreflang: 'en-GB' },
+    { rel: 'canonical', href: `https://www.${domain}${localePath('/blog')}` },
+    { rel: 'alternate', href: `https://www.${domain}${localePath('/blog')}`, hreflang: 'en-GB' },
   ],
 });
 const route = useRoute();
@@ -40,7 +40,7 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   headers: { locale: locale.value },
   transform: (data: any) => {
     data.data = data.data.map((item: any) => {
-      item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
+      item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
       return item;
     });
     return { data: data.data, total: data.total };
@@ -62,7 +62,7 @@ const handleCurrentChange = async (val: number) => {
     headers: { locale: locale.value },
     transform: (data: any) => {
       data.data = data.data.map((item: any) => {
-        item.category = category.value.find((cate: any) => cate.id === item.categoryId).name;
+        item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
         return item;
       });
       return { data: data.data, total: data.total };

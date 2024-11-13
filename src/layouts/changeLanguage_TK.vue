@@ -8,57 +8,27 @@ const state = reactive({
   tkshow: false,
 });
 const wehaveLanguage = {
-  ar: 'العربية',
-  da: 'Dansk',
-  de: 'Deutsch',
   en: 'English',
-  es: 'Español',
-  fr: 'Français',
   id: 'Bahasa Indonesia',
-  it: 'Italiano',
   ja: '日本語',
   ko: '한국어',
-  nb: 'Norsk',
-  nl: 'Nederlands',
-  pl: 'Polski',
-  pt: 'Português',
   ru: 'Русский',
-  th: 'ไทย',
   tr: 'Türkçe',
+  de: 'Deutsch',
+  es: 'Español',
+  fr: 'Français',
+  it: 'Italiano',
+  th: 'ไทย',
   zh: '中文',
 };
 const changeLanguageTips = {
-  ar: {
-    title: 'اختيار اللغة',
-    tips: 'مرحبًا بك في موقعنا. يمكنك التبديل إلى النسخة [العربية] لفهم واستخدام خدماتنا بشكل أفضل.',
-  },
-  da: {
-    title: 'Vælg sprog',
-    tips: 'Velkommen til vores hjemmeside. Du kan skifte til [Dansk] versionen for at forstå og bruge vores tjenester bedre.',
-  },
-  de: {
-    title: 'Sprache auswählen',
-    tips: 'Willkommen auf unserer Website. Sie können auf die [Deutsch] Version wechseln, um unsere Dienste besser zu verstehen und zu nutzen.',
-  },
   en: {
     title: 'Select Language',
     tips: 'Welcome to our website. You can switch to the [English] version to better understand and use our services.',
   },
-  es: {
-    title: 'Seleccionar idioma',
-    tips: 'Bienvenido a nuestro sitio web. Puede cambiar a la versión [Español] para comprender y utilizar mejor nuestros servicios.',
-  },
-  fr: {
-    title: 'Choisir la langue',
-    tips: 'Bienvenue sur notre site. Vous pouvez passer à la version [Français] pour mieux comprendre et utiliser nos services.',
-  },
   id: {
     title: 'Pilih Bahasa',
     tips: 'Selamat datang di situs web kami. Anda dapat beralih ke versi [Bahasa Indonesia] untuk lebih memahami dan menggunakan layanan kami.',
-  },
-  it: {
-    title: 'Seleziona la lingua',
-    tips: 'Benvenuti nel nostro sito. Puoi passare alla versione [Italiano] per comprendere e utilizzare meglio i nostri servizi.',
   },
   ja: {
     title: '言語を選択',
@@ -68,33 +38,33 @@ const changeLanguageTips = {
     title: '언어 선택',
     tips: '당사 웹 사이트에 오신 것을 환영합니다. [한국어] 버전으로 전환하여 서비스를 더 잘 이해하고 활용할 수 있습니다.',
   },
-  nb: {
-    title: 'Velg språk',
-    tips: 'Velkommen til nettstedet vårt. Du kan bytte til [Norsk] -versjonen for å forstå og bruke tjenestene våre bedre.',
-  },
-  nl: {
-    title: 'Taal selecteren',
-    tips: 'Welkom op onze website. U kunt overschakelen naar de [Nederlands] versie om onze diensten beter te begrijpen en te gebruiken.',
-  },
-  pl: {
-    title: 'Wybierz język',
-    tips: 'Witaj na naszej stronie. Możesz przełączyć się na wersję [Polski], aby lepiej zrozumieć i korzystać z naszych usług.',
-  },
-  pt: {
-    title: 'Selecione o idioma',
-    tips: 'Bem-vindo ao nosso site. Você pode mudar para a versão [Português] para entender e usar melhor nossos serviços.',
-  },
   ru: {
     title: 'Выберите язык',
     tips: 'Добро пожаловать на наш сайт. Вы можете переключиться на [Русский] версию, чтобы лучше понимать и использовать наши услуги.',
   },
-  th: {
-    title: 'เลือกภาษา',
-    tips: 'ยินดีต้อนรับสู่เว็บไซต์ของเรา คุณสามารถเปลี่ยนเป็นเวอร์ชั่น [ไทย] เพื่อเข้าใจและใช้บริการของเราได้ดีขึ้น',
-  },
   tr: {
     title: 'Dil Seçin',
     tips: 'Web sitemize hoş geldiniz. Hizmetlerimizi daha iyi anlamak ve kullanmak için [Türkçe] sürümüne geçebilirsiniz.',
+  },
+  de: {
+    title: 'Sprache auswählen',
+    tips: 'Willkommen auf unserer Website. Sie können auf die [Deutsch] Version wechseln, um unsere Dienste besser zu verstehen und zu nutzen.',
+  },
+  es: {
+    title: 'Seleccionar idioma',
+    tips: 'Bienvenido a nuestro sitio web. Puede cambiar a la versión [Español] para comprender y utilizar mejor nuestros servicios.',
+  },
+  fr: {
+    title: 'Choisir la langue',
+    tips: 'Bienvenue sur notre site. Vous pouvez passer à la version [Français] pour mieux comprendre et utiliser nos services.',
+  },
+  it: {
+    title: 'Seleziona la lingua',
+    tips: 'Benvenuti nel nostro sito. Puoi passare alla versione [Italiano] per comprendere e utilizzare meglio i nostri servizi.',
+  },
+  th: {
+    title: 'เลือกภาษา',
+    tips: 'ยินดีต้อนรับสู่เว็บไซต์ของเรา คุณสามารถเปลี่ยนเป็นเวอร์ชั่น [ไทย] เพื่อเข้าใจและใช้บริการของเราได้ดีขึ้น',
   },
   zh: {
     title: '选择语言',

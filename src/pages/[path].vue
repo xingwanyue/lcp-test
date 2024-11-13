@@ -5,15 +5,21 @@ import { api } from '@/utils';
 import LearnDetail from '@/components/articleDetail.vue';
 
 const route = useRoute();
+const localePath = useLocalePath();
 
 definePageMeta({
   layout: 'empty',
 });
-
-const { data: article } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
+const { data: article, error } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
   server: true,
   headers: { locale: locale.value },
 })) as any;
+if (error.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page Not Found',
+  });
+}
 const isLearn = article.value?.type === '2' || article.value?.type === '1';
 
 useSeoMeta({
@@ -23,8 +29,8 @@ useSeoMeta({
 });
 useHead({
   link: [
-    { rel: 'canonical', href: () => `https://www.${domain}/${article.value?.path}` },
-    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}/${article.value?.path}` },
+    { rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` },
+    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath(route.path)}` },
   ],
 });
 </script>

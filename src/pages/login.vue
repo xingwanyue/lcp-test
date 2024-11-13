@@ -8,8 +8,7 @@ import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { getToken, saveToken } from '@/utils';
 useHead({
-  meta: [{ name: 'robots', content: 'index' }],
-  link: [{ rel: 'canonical', href: 'https://www.detpractice.com' }],
+  meta: [{ name: 'robots', content: 'noindex' }],
 });
 const localePath = useLocalePath();
 const route = useRoute();
