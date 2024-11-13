@@ -55,7 +55,7 @@ const buyMembership = (id: number) => {
             class="btn common_btn_hover_bgColor"
             :to="localePath(`/listen`)"
           >
-            <div class="font">{{ $t('courses.sas') }}123</div>
+            <div class="font">{{ $t('courses.sas') }}</div>
           </NuxtLink>
         </div>
         <template v-else>
@@ -63,7 +63,7 @@ const buyMembership = (id: number) => {
             <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
           </div>
           <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
-            <div class="font">{{ $t('courses.pagefont.Buy_Now') }}1</div>
+            <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
           </NuxtLink></template
         >
       </div>
