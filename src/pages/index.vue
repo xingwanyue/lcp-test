@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
-import vSubscribe from '../components/subscribe.vue';
+// import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
@@ -477,9 +477,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     <div>
       <v-slogen />
     </div>
-    <div>
+    <!-- <div>
       <v-subscribe />
-    </div>
+    </div> -->
   </div>
 </template>
 <style lang="scss">
