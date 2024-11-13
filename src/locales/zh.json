@@ -1,10 +1,10 @@
 {
   "test": "为了测试",
-  "Home": "主页",
-  "Products": "产品",
-  "Learn": "学习",
-  "Pricing": "定价",
-  "Blog": "博客",
+  "Home": "首页",
+  "Products": "产品服务",
+  "Learn": "备考资源",
+  "Pricing": "套餐价格",
+  "Blog": "备考攻略",
   "header": {
     "home_logo_title": "DET 练习",
     "path_practice_title": "Duolingo 英语练习测试在线",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test 在线课程",
     "commonAlt": "DET 练习：最好的 Duolingo English Test 练习 平台",
     "Get_started": "开始使用",
-    "Try_for_free": "免费试用",
+    "Try_for_free": "立即体验",
     "prod1": {
       "title": "Duolingo English Test 练习",
       "alt": "Duolingo English Test 练习",
@@ -46,28 +46,14 @@
     }
   },
   "footer": {
-    "inc": "我们的产品与Duolingo公司没有关系",
-    "ProductsTitle": "产品",
-    "LearnTitle": "准备资源",
+    "inc": "本平台与Duolingo公司（Duolingo, Inc.）无任何关联，所提供服务均为第三方独立运营。",
+    "ProductsTitle": "产品服务",
+    "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": [
-      "DET 练习",
-      "DET 写作 AI 校正",
-      "DET 口语 AI 校正",
-      "DET 模拟",
-      "Duolingo English Test 课程"
-    ],
-    "Company": [
-      "关于我们",
-      "联系我们",
-      "条款和条件",
-      "隐私政策",
-      "网站地图",
-      "联盟计划",
-      "退款政策"
-    ],
-    "show_more": "显示更多",
+    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
+    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
+    "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
     "newAlt": "DET 练习",
@@ -94,12 +80,7 @@
     "power_by": "由AI提供支持",
     "h1Mobile": "轻松获得更高分数<br />在 Duolingo <br />英语测试中 使用 <span class=\"seo_hack\">DET 练习</span>",
     "h1PC": "轻松拿到更高分数 <br />Duolingo English Test 通过 <span class=\"seo_hack\">DET 练习</span>",
-    "one_small_title": [
-      "DET 练习",
-      "AI纠正",
-      "全长模拟",
-      "DET 课程"
-    ],
+    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
     "Start_free_with_Google": "开始免费使用Google",
     "Start_free_with_email": "以电子邮件免费开始",
     "Start_for_free": "免费开始",
@@ -386,35 +367,36 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "关于我们 - DET 实践",
-      "description": ""
+      "title": "关于 DET Practice|多邻国英语考试（DET）一站式备考平台",
+      "description": "DET Practice - 专业多邻国备考平台，提供18,000+真题练习、AI智能批改和全真模考体验。助您高效备战多邻国英语考试，轻松考取理想分数。",
+      "keywords": "多邻国英语考试, 多邻国英语测试, DET模拟考试, DET题库, DET智能批改, DET口语练习, DET写作练习, DET在线课程, DET学习平台, Duolingo考试备考, DET考试技巧, DET备考资料"
     },
     "title": "关于 DET Practice",
-    "title_desc": "DETPractice.com 是最好的 Duolingo English Test 练习和学习平台。",
+    "title_desc": "DET Practice，专业的Duolingo英语测试（DET）备考平台，助您轻松备考，提分无忧。",
     "check_out": {
-      "h2": "查看我们的能耐",
-      "qbt": "DET 题库",
-      "qbtdesc": "我们拥有最大的题库，并每天更新。通过练习这些问题，您可以快速提高您的Duolingo English Test成绩。",
-      "flm": "DET 全真模拟",
-      "flmdesc": "我们有最强大的DET模拟测试，它能让你以更低的成本准确评估你的测试成绩。",
-      "acs": "DET AI 校对服务",
-      "acsdesc": "您可以使用我们提供的AI校正工具来快速提高您的DET口语和写作成绩。",
-      "dc": "DET 课程",
-      "dedesc": "我们将继续基于 DET 的最新测试功能开发考试准备材料和课程。"
+      "h2": "我们的核心优势",
+      "qbt": "海量题库",
+      "qbtdesc": "每日更新独家研发题目，定期更新备考资源，帮助您全面掌握考试重点，快速提升分数。",
+      "flm": "全真模考",
+      "flmdesc": "高度还原DET考试环境，提供专业精准的模拟测评，让您提前熟悉考试流程，从容应对真考。",
+      "acs": "AI智能批改",
+      "acsdesc": "创新的AI评分系统，为您的口语和写作提供专业点评与改进建议，助您精准提升关键技能。",
+      "dc": "专业课程",
+      "dedesc": "基于最新考试动态，打造科学完整的备考体系，确保您备考无盲区，学习更高效。"
     },
     "three_our_our": {
-      "h2": "虽然年轻，但坚强",
-      "ov": "我们的愿景",
-      "me": "通过人工智能提升教育质量",
-      "om": "我们的使命",
-      "omdesc": "确保通用人工<br />智能惠及所有学生。",
-      "ovs": "我们的价值观",
-      "ovsdesc": "真诚、合作与互惠互利<br />"
+      "h2": "新锐团队，远大愿景",
+      "ov": "我们的使命",
+      "me": "以科技创新推动教育进步，让AI赋能每一位学习者",
+      "om": "愿景",
+      "omdesc": "让优质教育触手可及，助力莘莘学子实现梦想",
+      "ovs": "核心价值观",
+      "ovsdesc": "创新驱动 {'|'} 科技赋能 {'|'} 教育普惠<br />"
     },
     "get_in_touch": {
-      "h2": "取得联系",
+      "h2": "联系我们",
       "goytb": "前往 YouTube",
-      "getmore": "在 YouTube 上从 DETPractice 获取更多内容"
+      "getmore": "官方YouTube频道：精品教育内容，助您备考无忧"
     }
   },
   "contactUs": {

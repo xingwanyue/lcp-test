@@ -1,10 +1,10 @@
 {
   "test": "テスト用",
   "Home": "ホーム",
-  "Products": "製品",
-  "Learn": "学ぶ",
-  "Pricing": "料金",
-  "Blog": "ブログ",
+  "Products": "サービス案内",
+  "Learn": "学習コンテンツ",
+  "Pricing": "料金案内",
+  "Blog": "合格ガイド",
   "header": {
     "home_logo_title": "DET 練習",
     "path_practice_title": "Duolingo 英語練習テストオンライン",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test コースオンライン",
     "commonAlt": "DET 練習:最良 Duolingo English Test 練習プラットフォーム",
     "Get_started": "始める",
-    "Try_for_free": "無料で試す",
+    "Try_for_free": "無料体験",
     "prod1": {
       "title": "Duolingo English Test 練習",
       "alt": "Duolingo English Test 練習",
@@ -46,28 +46,22 @@
     }
   },
   "footer": {
-    "inc": "私たちの製品はDuolingo,Incとは関係ありません",
-    "ProductsTitle": "製品",
-    "LearnTitle": "準備リソース",
+    "inc": "本サービスは、Duolingo社（Duolingo, Inc.）とは一切関係のない、独立した学習支援サービスです。",
+    "ProductsTitle": "サービス",
+    "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
-    "CompanyTitle": "会社",
-    "Products": [
-      "DET 練習",
-      "DET 書き取りAI修正",
-      "DET 話し言葉AI修正",
-      "DET モック",
-      "Duolingo English Test コース"
-    ],
+    "CompanyTitle": "企業情報",
+    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
     "Company": [
-      "私たちについて",
+      "会社概要",
       "お問い合わせ",
       "利用規約",
       "プライバシーポリシー",
       "サイトマップ",
-      "アフィリエイトプログラム",
-      "返金ポリシー"
+      "パートナー募集",
+      "返金規定"
     ],
-    "show_more": "もっと見る",
+    "show_more": "続きを読む",
     "alt": "DET 練習：最高のDuolingo English Test練習プラットフォーム",
     "cookie_contenr": "DET プラクティスは、ブラウザの設定に基づいてコンテンツを改善するためにクッキーを使用します。詳細については、{",
     "newAlt": "DET 練習",
@@ -94,12 +88,7 @@
     "power_by": "AIによって提供されました",
     "h1Mobile": "簡単に高得点を取得する<br />Duolingo <br />英語テストで<span class=\"seo_hack\">DET 練習</span>",
     "h1PC": "スコアを簡単に上げる <br />Duolingo English Test <span class=\"seo_hack\">DET 練習</span>で",
-    "one_small_title": [
-      "DET 練習",
-      "AI修正",
-      "フルレングスモック",
-      "DET コース"
-    ],
+    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -386,24 +375,25 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "私たちについて - DET 練習",
-      "description": ""
+      "title": "DET Practice|Duolingo英語テスト（DET）総合準備サイト",
+      "description": "DET Practice - プロフェッショナルなDuolingo準備プラットフォーム。18,000以上の実践問題、AIによるスマート添削、本番さながらの模擬試験を提供。効率的にDuolingo英語テストの準備を行い、理想のスコアを簡単に取得できます。",
+      "keywords": "Duolingo英語テスト, Duolingo英語試験, DET模擬試験, DET問題集, DETスマート添削, DETスピーキング練習, DETライティング練習, DETオンラインコース, DET学習プラットフォーム, Duolingo試験準備, DET試験テクニック, DET準備資料"
     },
-    "title": "DETプラクティスについて",
-    "title_desc": "DETPractice.comは、練習と学習のための最高のプラットフォームです。",
+    "title": "DET Practice（ディーイーティー プラクティス）とは",
+    "title_desc": "Duolingo英語テスト（DET）対策に特化したオンライン学習プラットフォームです。 確実なスコアアップを、効率的な学習でサポートいたします。",
     "check_out": {
-      "h2": "私たちの能力を確認してください",
-      "qbt": "DET 質問バンク",
-      "qbtdesc": "私たちは最大の質問バンクを持っており、それを毎日更新しています。質問を練習することで、あなたのDuolingo English Testスコアを迅速に向上させることができます。",
-      "flm": "DET フルレングスのモック",
-      "flmdesc": "私たちは、より低コストでテストスコアを正確に評価できる最も強力なDET模擬テストを提供しています。",
-      "acs": "DET AI訂正サービス",
-      "acsdesc": "提供されているAI修正ツールを使用すると、話す能力や書く能力のスコアを迅速に向上させることができます。",
-      "dc": "DET コース",
-      "dedesc": "私たちはDETの最新のテスト機能に基づいて、テスト準備資料とコースを開発し続けます。"
+      "h2": "4つの特長",
+      "qbt": "充実の問題データベース",
+      "qbtdesc": "過去問や模擬問題を豊富に収録し、毎日更新中。出題傾向を完全分析し、効率的なスコアアップを実現します。",
+      "flm": "リアルな模擬試験体験",
+      "flmdesc": "本試験と同じ環境で実践的な演習が可能。詳細な評価レポートで、本番への自信が着実に身につきます。",
+      "acs": " AI搭載添削システム",
+      "acsdesc": "革新的なAIによる即時フィードバック機能。スピーキング・ライティングを確実にレベルアップできます。",
+      "dc": "体系的な学習カリキュラム",
+      "dedesc": "最新の試験傾向を徹底分析。効率的な学習で、確実な実力アップを実現します。"
     },
     "three_our_our": {
-      "h2": "若いけれど強い",
+      "h2": "実績ある教育のプロフェッショナルチーム",
       "ov": "私たちのビジョン",
       "me": "AIを通じて教育をより良くする",
       "om": "私たちの使命",
@@ -414,7 +404,7 @@
     "get_in_touch": {
       "h2": "お問い合わせ",
       "goytb": "YouTubeに行く",
-      "getmore": "DETPracticeのYouTubeでさらに学ぼう"
+      "getmore": "公式YouTubeチャンネル： 実践的な学習コンテンツを定期配信中！"
     }
   },
   "contactUs": {

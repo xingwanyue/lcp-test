@@ -67,7 +67,7 @@
       "Affiliate Program",
       "Refund Policy"
     ],
-    "show_more": "show more",
+    "show_more": "Show more",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "cookie_contenr": " DET Practice uses cookies to improve content based on your browser Settings. For more details, see",
     "newAlt": "DET Practice",
@@ -381,19 +381,20 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "About Us - DET Practice",
-      "description": ""
+      "title": "About DET Practice | AI-Powered Duolingo English Test Preparation",
+      "description": "Discover DET Practice - your comprehensive platform for Duolingo English Test preparation. Access 18,000+ practice questions, AI-powered corrections, and full-length mock tests.",
+      "keywords": "DET practice, Duolingo English Test preparation, DET mock test, DET question bank, DET AI correction, DET speaking practice, DET writing practice, Duolingo test prep, DET course, DET learning platform"
     },
     "title": "About DET Practice",
-    "title_desc": "DETPractice.com is the best platform for<br/>Duolingo English Test Practicing and Learning.",
+    "title_desc": "DETPractice.com is the best platform for Duolingo English Test practicing and learning.",
     "check_out": {
       "h2": "Check Out What We Can Do",
       "qbt": "DET Question Bank",
-      "qbtdesc": "We have the largest question bank and update it every day.You can quickly improve your Duolingo English Test score by practicing the questions.",
+      "qbtdesc": "We have the largest question bank and update it every day. You can quickly improve your Duolingo English Test score by practicing the questions.",
       "flm": "DET Full-Length Mock",
-      "flmdesc": " We have the most powerful DET mock test , which allows you to accurately evaluate your test scores at a lower cost.",
+      "flmdesc": "We have the most powerful DET mock test, which allows you to evaluate your test scores accurately at a lower cost.",
       "acs": "DET AI Correction Service",
-      "acsdesc": "You can use the AI ​​correction tools we provide to quickly improve your DET speaking and writing scores.",
+      "acsdesc": "You can use the AI correction tools we provide to quickly improve your DET speaking and writing scores.",
       "dc": "DET Courses",
       "dedesc": "We will continue to develop test preparation materials and courses based on DET's latest test features."
     },
@@ -404,12 +405,12 @@
       "om": "Our Mission",
       "omdesc": "Ensure that artificial general <br />intelligence benefits all of students.",
       "ovs": "Our Values",
-      "ovsdesc": "Sincerity, cooperation and mutual<br /> benefit"
+      "ovsdesc": "Sincerity,cooperation,and mutual<br /> benefit"
     },
     "get_in_touch": {
       "h2": "Get in Touch",
       "goytb": "Go to YouTube",
-      "getmore": "Get more from DETPractice on YouTube"
+      "getmore": "Explore Our Educational Content on YouTube"
     }
   },
   "contactUs": {
