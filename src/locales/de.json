@@ -1,10 +1,10 @@
 {
   "test": "Für den Test",
   "Home": "Startseite",
-  "Products": "Produkte",
-  "Learn": "Lernen",
+  "Products": "Leistungen",
+  "Learn": "Lernmaterialien",
   "Pricing": "Preise",
-  "Blog": "Blog",
+  "Blog": "Prüfungsvorbereitung",
   "header": {
     "home_logo_title": "DET Übung",
     "path_practice_title": "Duolingo Englisch Übungstest Online",
@@ -46,28 +46,14 @@
     }
   },
   "footer": {
-    "inc": "Unser Produkt hat keine Verbindung mit Duolingo,Inc",
-    "ProductsTitle": "Produkte",
-    "LearnTitle": "Vorbereitungsressourcen",
+    "inc": "Diese Plattform ist ein unabhängiges Angebot und steht in keiner Verbindung zu Duolingo,Inc.",
+    "ProductsTitle": "Leistungen",
+    "LearnTitle": "Lernmaterialien",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Firma",
-    "Products": [
-      "DET Üben",
-      "DET Schreib-AI-Korrektur",
-      "DET Sprech-AI-Korrektur",
-      "DET Attrappe",
-      "Duolingo English Test Kurs"
-    ],
-    "Company": [
-      "Über uns",
-      "Kontaktieren Sie uns",
-      "Geschäftsbedingungen",
-      "Datenschutzerklärung",
-      "Sitemap",
-      "Partnerprogramm",
-      "Rückerstattungsrichtlinie"
-    ],
-    "show_more": "mehr anzeigen",
+    "CompanyTitle": "Über uns",
+    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
+    "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
     "newAlt": "DET Übung",
@@ -94,12 +80,7 @@
     "power_by": "Betrieben durch KI",
     "h1Mobile": "Erzielen Sie leicht eine höhere Punktzahl<br />beim Duolingo <br />Englischtest mit <span class=\"seo_hack\">DET Übung</span>",
     "h1PC": "Erzielen Sie ganz einfach eine höhere Punktzahl im <br />Duolingo English Test Mit <span class=\"seo_hack\">DET Übung</span>",
-    "one_small_title": [
-      "DET Übung",
-      "KI-Korrektur",
-      "Ganzlängen-Mock",
-      "DET Kurse"
-    ],
+    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
     "Start_free_with_Google": "Kostenlos mit Google starten",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten",
@@ -386,35 +367,36 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Über uns - DET Praxis",
-      "description": ""
+      "title": "DET Practice | Die All-in-One-Vorbereitungsplattform für den Duolingo English Test (DET)",
+      "description": "DET Practice – Ihre professionelle Duolingo-Vorbereitungsplattform bietet über 18.000 authentische Übungsaufgaben, intelligente KI-Korrektur und ein realistisches Simulationserlebnis. Hilft Ihnen, sich effizient auf den Duolingo English Test vorzubereiten und mühelos Ihr Wunschergebnis zu erzielen.",
+      "keywords": "Duolingo English Test, Duolingo Englischprüfung, DET Simulationstest, DET Fragenbank, DET intelligente Korrektur, DET Sprechübungen, DET Schreibübungen, DET Online-Kurse, DET Lernplattform, Duolingo Prüfungsvorbereitung, DET Prüfungstipps, DET Vorbereitungsmaterialien"
     },
-    "title": "Über DET Übung",
-    "title_desc": "DETPractice.com ist die beste Plattform für Duolingo English Test Üben und Lernen.",
+    "title": "DET Practice im Überblick",
+    "title_desc": "DET Practice ist die führende Lernplattform für den Duolingo English Test (DET). Wir unterstützen Sie dabei, Ihr Wunschergebnis effizient und zielgerichtet zu erreichen.",
     "check_out": {
-      "h2": "Überprüfen Sie, was wir tun können",
-      "qbt": "DET Fragenbank",
-      "qbtdesc": "Wir haben die größte Fragensammlung und aktualisieren sie täglich. Sie können Ihre Duolingo English Test Punktzahl schnell verbessern, indem Sie die Fragen üben.",
-      "flm": "DET Ganzkörper-Mock",
-      "flmdesc": " Wir haben den leistungsstärksten DET-Praxistest, der es Ihnen ermöglicht, Ihre Testergebnisse genau zu bewerten und dabei Kosten zu sparen.",
-      "acs": "DET KI-Korrekturservice",
-      "acsdesc": "Sie können die von uns bereitgestellten KI-Korrekturwerkzeuge verwenden, um Ihre DET Sprech- und Schreibpunktzahlen schnell zu verbessern.",
-      "dc": "DET Kurse",
-      "dedesc": "Wir werden weiterhin Vorbereitungsmaterialien und -kurse basierend auf den neuesten Testfunktionen von DET entwickeln."
+      "h2": "Das macht uns besonders",
+      "qbt": "Umfassende Aufgabensammlung",
+      "qbtdesc": "Tägliche Aktualisierung unserer exklusiven Übungsaufgaben. Regelmäßige Ergänzung der Lernmaterialien für optimale Prüfungsvorbereitung und schnelle Leistungssteigerung.",
+      "flm": "Originalgetreue Testsimulation",
+      "flmdesc": "Prüfungsähnliche Bedingungen durch exakte Nachbildung der DET-Umgebung. Professionelle Auswertung für maximale Prüfungssicherheit.",
+      "acs": "KI-gestützte Bewertung",
+      "acsdesc": "Modernste KI-Technologie analysiert Ihre Sprech- und Schreibleistungen. Detailliertes Feedback und konkrete Verbesserungsvorschläge für gezielte Fortschritte.",
+      "dc": "Durchdachtes Kurssystem",
+      "dedesc": "Wissenschaftlich fundierte Vorbereitung basierend auf aktuellen Prüfungsanforderungen. Strukturierter Lernaufbau für effizientes Training ohne Wissenslücken."
     },
     "three_our_our": {
-      "h2": "Obwohl Jung, Aber Stark",
+      "h2": "Kompetentes Team, klare Ziele",
       "ov": "Unsere Vision",
-      "me": "Bildung durch KI verbessern",
-      "om": "Unsere Mission",
-      "omdesc": "Stellen Sie sicher, dass künstliche allgemeine <br />Intelligenz allen Schülern zugutekommt.",
-      "ovs": "Unsere Werte",
-      "ovsdesc": "Aufrichtigkeit, Zusammenarbeit und gegenseitiger<br /> Nutzen"
+      "me": "Qualitativ hochwertige Bildung für alle zugänglich machen und Lernende auf ihrem Weg zum Erfolg begleiten.",
+      "om": "Unser Auftrag",
+      "omdesc": "Bildung durch innovative Technologie neu gestalten - mit KI-Unterstützung für jeden Lernenden.",
+      "ovs": "Unsere Grundsätze",
+      "ovsdesc": "Innovation {'|'} Technologischer Fortschritt {'|'} Bildungszugang für alle"
     },
     "get_in_touch": {
-      "h2": "Kontakt aufnehmen",
+      "h2": "Kontakt",
       "goytb": "Gehe zu YouTube",
-      "getmore": "Holen Sie mehr von DETPractice auf YouTube"
+      "getmore": "YouTube-Kanal: Hochwertige Lerninhalte für Ihre erfolgreiche Prüfungsvorbereitung"
     }
   },
   "contactUs": {

@@ -670,12 +670,14 @@ const menus = computed(() => [
       font-size: 40px;
     }
     .menus {
+      // border: 1px red solid;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      flex: auto;
+      // flex: auto;
       margin: 0 80px;
-      max-width: 453px;
+      // max-width: 453px;
+      grid-gap: 26px;
       height: 100%;
       .meun {
         font-size: 18px;

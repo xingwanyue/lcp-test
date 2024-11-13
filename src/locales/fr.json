@@ -1,10 +1,10 @@
 {
   "test": "Pour test",
   "Home": "Accueil",
-  "Products": "Produits",
-  "Learn": "Apprendre",
-  "Pricing": "Tarification",
-  "Blog": "Blog",
+  "Products": "Services",
+  "Learn": "Ressources",
+  "Pricing": "Tarifs",
+  "Blog": "Guide d'études",
   "header": {
     "home_logo_title": "DET Pratique",
     "path_practice_title": "Duolingo Test de pratique d'anglais en ligne",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test Cours en ligne",
     "commonAlt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "Get_started": "Commencez",
-    "Try_for_free": "Essayez gratuitement",
+    "Try_for_free": "Démarrer gratuitement",
     "prod1": {
       "title": "Duolingo English Test Pratique",
       "alt": "Duolingo English Test Pratique",
@@ -46,28 +46,28 @@
     }
   },
   "footer": {
-    "inc": "Notre produit n'a aucun lien avec Duolingo,Inc",
-    "ProductsTitle": "Produits",
-    "LearnTitle": "Ressources de préparation",
+    "inc": "Cette plateforme est un service indépendant et n'est pas affiliée à Duolingo, Inc.",
+    "ProductsTitle": "Services",
+    "LearnTitle": "Ressources",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Entreprise",
+    "CompanyTitle": "À propos",
     "Products": [
-      "DET Pratique",
-      "Correction IA d'écriture DET",
-      "Correction IA de parole DET",
-      "DET Moquer",
-      "Duolingo English Test Cours"
+      "Entraînement DET",
+      "Correction IA Expression Écrite",
+      "Évaluation IA Expression Orale",
+      "Tests Blancs",
+      "Formation Complète"
     ],
     "Company": [
-      "À propos de nous",
-      "Contactez-nous",
-      "Conditions générales",
-      "Politique de confidentialité",
+      "Qui sommes-nous",
+      "Contact",
+      "CGU",
+      "Protection des données",
       "Plan du site",
-      "Programme d'affiliation",
-      "Politique de remboursement"
+      "Devenir partenaire",
+      "Conditions de remboursement"
     ],
-    "show_more": "afficher plus",
+    "show_more": "En savoir plus",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "cookie_contenr": "DET La pratique utilise des cookies pour améliorer le contenu en fonction de vos paramètres de navigateur. Pour plus de détails, voir",
     "newAlt": "DET Pratique",
@@ -94,12 +94,7 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez un score plus élevé facilement<br />au test d'anglais Duolingo <br />avec <span class=\"seo_hack\">DET Pratique</span>",
     "h1PC": "Obtenez un meilleur score facilement sur le <br />Duolingo English Test Avec <span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": [
-      "DET Pratique",
-      "Correction de l'IA",
-      "Simulation complète",
-      "DET Cours"
-    ],
+    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un e-mail",
     "Start_for_free": "Commencez gratuitement",
@@ -386,35 +381,36 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "À propos de nous - DET Pratique",
-      "description": ""
+      "title": "DET Practice | Plateforme tout-en-un de préparation au Duolingo English Test (DET)",
+      "description": "DET Practice - Votre plateforme professionnelle de préparation au Duolingo English Test, offrant plus de 18 000 exercices authentiques, correction intelligente par IA et expérience de simulation réaliste. Aidez-vous à vous préparer efficacement au DET et à obtenir facilement le score idéal",
+      "keywords": "Duolingo English Test, Examen Duolingo English, Simulation DET, Banque de questions DET,Correction intelligente DET, Pratique orale DET, Pratique écrite DET, Cours en ligne DET, Plateforme d'apprentissage DET, Préparation au Duolingo English Test, Techniques d'examen DET, Matériel de préparation DET"
     },
-    "title": "À propos de DET Practice",
-    "title_desc": "DETPractice.com est la meilleure plateforme pour Duolingo English Test Pratiquer et Apprendre.",
+    "title": "Découvrez DET Practice",
+    "title_desc": "DET Practice est LA plateforme spécialisée pour votre préparation au Duolingo English Test (DET). Notre approche innovante vous garantit une progression efficace et des résultats optimaux.",
     "check_out": {
-      "h2": "Découvrez Ce Que Nous Pouvons Faire",
-      "qbt": "DET Banque de Questions",
-      "qbtdesc": "Nous avons la plus grande banque de questions et nous la mettons à jour chaque jour. Vous pouvez rapidement améliorer votre score Duolingo English Test en pratiquant les questions.",
-      "flm": "DET Simulation complète",
-      "flmdesc": "Nous avons le test simulé DET le plus puissant, qui vous permet d'évaluer avec précision vos scores de test à un coût réduit.",
-      "acs": "DET Service de Correction AI",
-      "acsdesc": "Vous pouvez utiliser les outils de correction IA que nous fournissons pour améliorer rapidement vos scores de DET expression orale et écrite.",
-      "dc": "DET Cours",
-      "dedesc": "Nous continuerons à développer des matériaux de préparation aux tests et des cours basés sur les dernières fonctionnalités du test de DET."
+      "h2": "Nos Points Forts",
+      "qbt": "Base de Données Complete",
+      "qbtdesc": "Des exercices exclusifs enrichis quotidiennement. Une mise à jour continue des ressources pédagogiques pour une maîtrise parfaite des compétences évaluées au DET.",
+      "flm": "Tests Blancs Authentiques",
+      "flmdesc": "Une reproduction fidèle de l'environnement officiel du DET. Entraînez-vous dans des conditions réelles et abordez l'examen en toute sérénité.",
+      "acs": "Correction IA Avancée",
+      "acsdesc": "Notre technologie d'intelligence artificielle analyse vos productions orales et écrites en temps réel. Recevez des retours détaillés et personnalisés pour progresser efficacement.",
+      "dc": "Parcours Pédagogique Expert",
+      "dedesc": "Une méthodologie éprouvée, constamment actualisée selon les évolutions du test. Une préparation structurée pour des progrès garantis."
     },
     "three_our_our": {
-      "h2": "Bien que Jeune, Mais Fort",
+      "h2": "Notre Équipe et Notre Ambition",
       "ov": "Notre Vision",
-      "me": "Améliorer l'éducation grâce à l'IA",
-      "om": "Notre mission",
-      "omdesc": "Assurez-vous que l'intelligence générale artificielle bénéficie à tous les étudiants. <br />",
+      "me": "Démocratiser l'excellence académique et accompagner chacun vers la réussite.",
+      "om": "Notre Mission",
+      "omdesc": "Révolutionner l'apprentissage grâce à l'IA pour une préparation plus efficace et accessible.<br />",
       "ovs": "Nos Valeurs",
-      "ovsdesc": "Sincérité, coopération et bénéfice<br /> mutuel"
+      "ovsdesc": "Excellence {'|'} Innovation {'|'} Accessibilité"
     },
     "get_in_touch": {
-      "h2": "Nous contacter",
+      "h2": "Contact",
       "goytb": "Allez sur YouTube",
-      "getmore": "Découvrez plus de DETPractice sur YouTube"
+      "getmore": "Chaîne YouTube : Des contenus pédagogiques premium pour optimiser votre préparation"
     }
   },
   "contactUs": {
