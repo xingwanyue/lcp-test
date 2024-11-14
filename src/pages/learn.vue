@@ -26,9 +26,10 @@ const state = reactive({
   learnLastestUpdateTime: '',
   categories: [] as any,
 });
+// clearError({ redirect: '/blog' });
 
 const getSelect = async () => {
-  const { data = {} } = (await useFetch(`${articleCategoryGet}?type=2`, {
+  const { data = {} } = (await useFetch(`${articleCategoryGet}`, {
     server: true,
     headers: { locale: locale.value },
   })) as any;
@@ -37,11 +38,14 @@ const getSelect = async () => {
   if (route.query.c) {
     // 路由带分类
     state.selConData = find(state.categories, { id: Number(route.query.c) });
+    const { path } = state.selConData;
     if (!state.selConData) {
       throw createError({
         statusCode: 404,
         statusMessage: 'Page Not Found',
       });
+    } else {
+      clearError({ redirect: `/blog/${path}` });
     }
     state.selFatherData = find(state.categories, { id: state.selConData.pid });
     if (!state.selFatherData) {
