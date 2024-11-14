@@ -67,9 +67,9 @@ const rateChange = async () => {
   <div class="learndetail">
     <div class="learndetail-content">
       <div class="top">
-        <nuxt-link :to="localePath('/')" class="">{{ $t('articleDetail.Home') }}</nuxt-link>
+        <nuxt-link :to="localePath('/')" class="hoverGiveBorder">{{ $t('articleDetail.Home') }}</nuxt-link>
         >
-        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class="">{{
+        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class="hoverGiveBorder">{{
           $t('articleDetail.Learn')
         }}</nuxt-link>
         <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class="">{{
@@ -161,6 +161,12 @@ const rateChange = async () => {
     color: #201515;
     line-height: 22px;
     margin-top: 32px;
+    .hoverGiveBorder {
+      &:hover {
+        color: #f66442;
+        text-decoration: underline;
+      }
+    }
   }
   .content {
     max-width: 1200px;
