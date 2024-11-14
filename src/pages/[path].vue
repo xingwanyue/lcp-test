@@ -47,7 +47,13 @@ useHead({
       </div>
     </div>
     <div v-else>
-      <LearnDetail :id="article?.id" :categoryId="article?.categoryId" :type="article?.type" :article="article" />
+      <LearnDetail
+        :allData="article"
+        :id="article?.id"
+        :categoryId="article?.categoryId"
+        :type="article?.type"
+        :article="article"
+      />
     </div>
   </NuxtLayout>
 </template>

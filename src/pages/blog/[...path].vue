@@ -192,8 +192,18 @@ const handleCurrentChange = async (val: number) => {
     overflow: hidden;
     display: grid;
     grid-template-columns: 0.32fr 1fr;
+    grid-template-areas: 'left_list right_list';
+
     grid-gap: 48px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-gap: 0px;
+      grid-template-areas:
+        'right_list'
+        'left_list';
+    }
     .blog_left_list {
+      grid-area: left_list;
       background: #ffffff;
       border-radius: 8px;
       border: 1px solid #e9e9e9;
@@ -222,6 +232,7 @@ const handleCurrentChange = async (val: number) => {
       }
     }
     .blog_right_list {
+      grid-area: right_list;
       .bolgs_content {
         display: grid;
         grid-template-columns: 1fr;
