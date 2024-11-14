@@ -45,7 +45,7 @@ const getSelect = async () => {
         statusMessage: 'Page Not Found',
       });
     } else {
-      clearError({ redirect: `/blog/${path}` });
+      navigateTo(`/blog/${path}`, { redirectCode: 301 });
     }
     state.selFatherData = find(state.categories, { id: state.selConData.pid });
     if (!state.selFatherData) {
