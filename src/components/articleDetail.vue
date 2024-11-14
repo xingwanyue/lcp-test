@@ -118,7 +118,7 @@ const iconHover = (index: number) => {
             </div>
           </div>
           <div class="zhengwen" v-html="JSON.parse(props.article.content)[0][1]"></div>
-          <div class="mulu_dom">
+          <div v-if="JSON.parse(props.article.content).length > 1" class="mulu_dom">
             <div class="inthis">In this article</div>
             <div class="article_group_out">
               <div v-for="(item, index) in JSON.parse(props.article.content)" :key="`title${index}`">
