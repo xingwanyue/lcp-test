@@ -109,7 +109,7 @@ const iconHover = (index: number) => {
             <h1>{{ props.article.name }}</h1>
           </div>
           <div class="user_out" @click="shareToX">
-            <div class="user_name_icon">{{ props.allData.author.slice(0, 1) }}</div>
+            <div class="user_name_icon" v-if="props.allData.author">{{ props.allData.author.slice(0, 1) }}</div>
             <div class="user_right">
               <div class="user_name">{{ props.allData.author }}</div>
               <div class="user_up_time">
