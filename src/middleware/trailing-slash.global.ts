@@ -4,7 +4,8 @@ export default defineNuxtRouteMiddleware((to, from) => {
   }
   // 原来的learn页面重定向到blog页面 参数为 /blog/category  category要查一下
   if (to.path === '/learn') {
-    return navigateTo({ path: `/blog` });
+    // to.query.c
+    return navigateTo({ path: `/blog`, query: { c: to.query.c } });
   }
   // 原来的blog页面 路由带问号的重定向到不带问号的新路径
   if (to.path === '/blog' && to.query.page) {

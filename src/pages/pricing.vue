@@ -88,6 +88,7 @@ const getData = async () => {
       } else if (item.type === '2') {
         if (item.write === 1 && item.speak === 1 && item.disabled) {
           console.log('1');
+          moreServiceArr.push(item);
         } else {
           moreServiceArr.push(item);
         }
@@ -115,6 +116,7 @@ const getData = async () => {
       } else if (item.type === '2') {
         if (item.write === 1 && item.speak === 1 && item.disabled) {
           console.log('1');
+          moreServiceArr.push(item);
         } else {
           moreServiceArr.push(item);
         }
@@ -128,7 +130,6 @@ onMounted(async () => {
   getData();
 });
 watch(userChangeFlag.value, () => {
-  console.log('watchhhhhhhhhhhhh');
   getData();
 });
 
@@ -293,7 +294,7 @@ const buyCorrectNum = () => {
         cancelButtonText: 'Cancel',
         cancelButtonClass: 'cancel_btn',
         showCancelButton: true,
-        callback: (action) => {
+        callback: (action: string) => {
           if (action === 'confirm') {
             store.stripePay({ vipId: onlycorrectTimesid.value });
           }
@@ -381,7 +382,7 @@ const changeBuyCorrectTimes = () => {
                     <div class="select_out">
                       <el-select v-model="onlycorrectTimesid" placeholder="Select" @change="changeBuyCorrectTimes()">
                         <el-option
-                          v-for="itemTimes in vipsData?.correctSelectBuyTimes?.filter((item) => item.price !== 0) || []"
+                          v-for="itemTimes in vipsData?.correctSelectBuyTimes?.filter((item: any) => item.price !== 0) || []"
                           :key="itemTimes.id"
                           :label="`${itemTimes.correctNum} ${$t('pricing.pagefont.times')}`"
                           :value="itemTimes.id"
@@ -427,21 +428,22 @@ const changeBuyCorrectTimes = () => {
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price' : 'one_price ']"
+            :class="[item.speak === 1 && item.write === 1 ? 'one_price one_price_bundle' : 'one_price ']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
             <div class="card_price">
               <div class="card_price_part1">{{ item.tag }}</div>
-              <div class="card_price_part2">
+              <div v-if="item.description" class="card_price_part2">
                 {{ item.description }}
               </div>
+              <div v-else class="height_hack_222"></div>
 
               <div :class="[!isVip ? 'card_price_part4 min_heighthack' : 'card_price_part4 min_heighthack2']">
                 <div v-if="!isVip && item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
                 <div class="off_price">
-                  <span class="small">{{ $t('pricing.pagefont.do') }}</span
-                  >{{ (item.price / 100).toFixed(2) }}
+                  <span class="small">{{ $t('pricing.pagefont.do') }}</span>
+                  {{ (item.price / 100).toFixed(2) }}
                 </div>
                 <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
                 <div class="no_member_font" v-if="item.day !== 7">{{ $t('pricing.pagefont.Non_member') }}</div>
@@ -451,10 +453,17 @@ const changeBuyCorrectTimes = () => {
                   <span>{{ $t('pricing.pagefont.your_price') }}</span>
                 </div>
                 <div class="member_price">
-                  <span v-if="item.vipPrice !== item.price"
-                    ><span class="small">{{ $t('pricing.pagefont.do') }}</span
-                    >{{ (item.vipPrice / 100).toFixed(2) }}
+                  <span v-if="item.vipPrice !== item.price">
+                    <span class="small">{{ $t('pricing.pagefont.do') }}</span>
+                    {{ (item.vipPrice / 100).toFixed(2) }}
                   </span>
+                  <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
+                    {{
+                      $t('pricing.pagefont.save', {
+                        num: 50,
+                      })
+                    }}
+                  </div>
                 </div>
                 <div class="member_font">
                   <span v-if="item.vipPrice !== item.price">
@@ -464,35 +473,12 @@ const changeBuyCorrectTimes = () => {
               </div>
 
               <div v-if="user.id">
-                <template v-if="item.write === 1 && !Boolean(item.speak)">
-                  <template v-if="user.write">
-                    <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <!-- <div class="scroll-line"></div> -->
-                    </div>
-                  </template>
-                  <template v-else>
-                    <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <div class="scroll-line"></div>
-                    </div>
-                  </template>
+                <template v-if="item.disabled">
+                  <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
+                    {{ $t('pricing.pagefont.Buy_Now') }}
+                  </div>
                 </template>
-                <template v-if="item.speak === 1 && !Boolean(item.write)">
-                  <template v-if="user.speak">
-                    <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
-                      {{ $t('pricing.pagefont.Buy_Now') }}3
-                      <!-- <div class="scroll-line"></div> -->
-                    </div>
-                  </template>
-                  <template v-else>
-                    <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <div class="scroll-line"></div>
-                    </div>
-                  </template>
-                </template>
-                <template v-if="item.speak === 1 && item.write === 1">
+                <template v-else>
                   <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
                     {{ $t('pricing.pagefont.Buy_Now') }}
                     <div class="scroll-line"></div>
@@ -972,6 +958,7 @@ const changeBuyCorrectTimes = () => {
             }
           }
         }
+
         .box_shadow {
           &:hover {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
@@ -1037,6 +1024,9 @@ const changeBuyCorrectTimes = () => {
               margin-top: 11px;
               min-height: 68px;
             }
+            .height_hack_222 {
+              min-height: 46px;
+            }
 
             .card_price_part3 {
               // height: 84px;
@@ -1070,9 +1060,21 @@ const changeBuyCorrectTimes = () => {
                 font-weight: 600;
                 font-size: 32px;
                 color: #f66442;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-gap: 8px;
                 // margin-top: 24px;
                 .small {
                   font-size: 20px;
+                }
+                .save_tag {
+                  padding: 4px 10px;
+                  background: #ffe1bc;
+                  border-radius: 16px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: #4c2929;
                 }
               }
 
@@ -1179,6 +1181,40 @@ const changeBuyCorrectTimes = () => {
                   }
                 }
               }
+            }
+          }
+        }
+        .one_price_bundle {
+          // border: 1px red solid;
+          .card_price {
+            background: #4c2929;
+            border: 1px solid #e9e9e9;
+            .card_price_part1 {
+              color: #ffffff;
+            }
+            .card_price_part2 {
+              min-height: 34px !important;
+            }
+            .your_price {
+              background: rgba(255, 225, 188, 0.1) !important;
+              color: #ffe1bc !important;
+            }
+            .off_price {
+              color: #ffffff !important;
+            }
+            .no_member_font {
+              color: rgba(255, 255, 255, 0.65) !important;
+            }
+            .member_price {
+              color: #ffe1bc !important;
+            }
+            .member_font {
+              color: #ffe1bc !important;
+            }
+            .card_price_buy_btn {
+              background: #ffe1bc !important;
+              color: #4c2929 !important;
+              overflow: hidden;
             }
           }
         }
