@@ -56,7 +56,7 @@ const submit = async () => {
 };
 useSeoMeta({
   title: t('contactUs.seometa.title'),
-  description: '',
+  description: t('contactUs.seometa.description'),
   keywords: t('contactUs.seometa.keywords'),
 });
 const localePath = useLocalePath();
@@ -88,7 +88,7 @@ useHead({
             <div class="name">{{ $t('contactUs.email') }}</div>
             <div class="address">support@detpractice.com</div>
           </div>
-          <a rel="nofollow" :href="`mailto:support@detpractice.com`" class="send_btn">Send</a>
+          <a rel="nofollow" :href="`mailto:support@detpractice.com`" class="send_btn">{{ $t('contactUs.send') }}</a>
         </div>
         <div class="desc">
           {{ $t('contactUs.thank') }}

@@ -82,7 +82,7 @@
       "DET Hazırlık İpuçları",
       "DET Öğrenmek"
     ],
-    "Products[0]": "DET Alıştırmaları\n"
+    "Products[0]": "DET Alıştırmaları "
   },
   "index": {
     "seometa": {
@@ -95,12 +95,7 @@
     "power_by": "AI Tarafından Desteklenmektedir",
     "h1Mobile": "Daha Yüksek Puan Alın<br />Duolingo <br />İngilizce Testinde<span class=\"seo_hack\">DET Pratik</span> ile",
     "h1PC": "Daha Yüksek Bir Puan Alın <br />Duolingo English Test <span class=\"seo_hack\">DET Uygulama</span> ile",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "E-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -389,7 +384,7 @@
     "seometa": {
       "title": "DET Practice | Duolingo İngilizce Testi (DET) için Hepsi Bir Arada Hazırlık Platformu",
       "description": "DET Practice - Profesyonel Duolingo hazırlık platformu, 18.000'den fazla gerçek soru pratiği,yapay zeka destekli değerlendirme ve tam simülasyon sınav deneyimi sunar. Duolingo İngilizce Testi'ne verimli bir şekilde hazırlanmanıza yardımcı olur, ideal puanınızı kolayca elde edin.",
-      "keywords": "Duolingo İngilizce Testi, DET Simülasyon Sınavı, DET Soru Bankası, DET Akıllı Değerlendirme, DET\nKonuşma Pratiği, DET Yazma Pratiği, DET Online Kurslar, DET Öğrenme Platformu, Duolingo\nSınav Hazırlığı, DET Sınav Teknikleri, DET Hazırlık Materyalleri"
+      "keywords": "Duolingo İngilizce Testi, DET Simülasyon Sınavı, DET Soru Bankası, DET Akıllı Değerlendirme, DET Konuşma Pratiği, DET Yazma Pratiği, DET Online Kurslar, DET Öğrenme Platformu, Duolingo Sınav Hazırlığı, DET Sınav Teknikleri, DET Hazırlık Materyalleri"
     },
     "title": "DET Practice Nedir?",
     "title_desc": "DET Practice, Duolingo İngilizce Testi (DET) için özel olarak tasarlanmış bir hazırlık platformudur. Hedef puanınıza etkili ve hızlı bir şekilde ulaşmanızı sağlar.",
@@ -421,9 +416,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Bize Ulaşın - DET Uygulama",
-      "description": "",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "title": "DET Practice ile İletişim | Destek ve Müşteri Hizmetleri",
+      "description": "Sorularınızı yanıtlamak, geri bildirim almak veya destek sağlamak için DET Practice destek ekibi ile iletişime geçin. Duolingo English Test hazırlığınızda profesyonel yardım alın.",
+      "keywords": "DET Practice iletişim, DET Practice destek ile iletişim, DET sınav desteği, Duolingo English Test destek, DET Practice müşteri hizmetleri, DET deneme sınavı desteği"
     },
     "checkEmail": "E-posta geçerli bir e-posta adresi olmalıdır.",
     "enterName": "Lütfen adınızı giriniz.",
@@ -431,14 +426,15 @@
     "entermessage": "Lütfen mesajınızı giriniz.",
     "subsuccess": "Başarıyla gönderildi",
     "Contact_Us": "Bize Ulaşın",
-    "Questions": "Sorular, hata raporları, geri bildirim - size yardımcı olmak için buradayız!",
+    "Questions": "Sorularınız, önerileriniz veya geri bildiriminiz mi var? Size her zaman yardımcı olmaya hazırız!",
     "fill_in": "Formu doldurun",
-    "thank": "Bizimle iletişime geçmeyi seçtiğiniz için teşekkür ederiz. Lütfen bize bir e-posta gönderin; personelimiz sorularınızı yanıtlamak için en kısa sürede sizinle iletişime geçecektir.",
+    "thank": "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Lütfen talebinizi e-posta yoluyla bize iletin; 24 saat içinde size yanıt vererek DET hazırlığınız için kişisel destek sunacağız.",
     "email": "E-posta",
     "Name": "Ad",
     "Email_Address": "E-posta Adresi",
     "Message": "Mesaj",
-    "SUBMIT": "GÖNDER"
+    "SUBMIT": "GÖNDER",
+    "send": "Gönder"
   },
   "cookie": {
     "seometa": {
@@ -485,7 +481,7 @@
   "correction": {
     "seometa": {
       "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Yazım Düzeltme Hizmeti",
-      "description": "Yapay zeka tarafından sağlanan DET Yazma Yapay Zeka Düzeltme hizmeti, profesyonel öğretmenlerle karşılaştırılabilir. \nMakaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
+      "description": "Yapay zeka tarafından sağlanan DET Yazma Yapay Zeka Düzeltme hizmeti, profesyonel öğretmenlerle karşılaştırılabilir.  Makaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
       "keywords": "需要提供"
     },
     "h1": "DET Yapay Zeka Düzeltme Yazma",
@@ -624,7 +620,7 @@
     "sas": "Konuşma Sesi Örnekleri",
     "zhonghe": {
       "title": "DET Ultimate Sınav Ustalık Paketi",
-      "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir. \nAbone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz. \nŞimdi Satın Al Aboneliği hemen yürürlüğe girer. \nÖğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
+      "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir.  Abone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz.  Şimdi Satın Al Aboneliği hemen yürürlüğe girer.  Öğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
     },
     "speaking": {
       "title": "DET Konuşma Sınavında Mükemmeliyet: Kapsamlı Bir Kılavuz"
@@ -739,7 +735,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Konuşma Düzeltme Hizmeti",
-      "description": "Güçlü yapay zeka tarafından sağlanan DET Konuşma Yapay Zekası Düzeltme hizmeti. \nTüm konuşma sorusu türlerini destekler ve DET konuşma puanınızı kolayca geliştirmenize yardımcı olacak profesyonel rehberlik sağlar.",
+      "description": "Güçlü yapay zeka tarafından sağlanan DET Konuşma Yapay Zekası Düzeltme hizmeti.  Tüm konuşma sorusu türlerini destekler ve DET konuşma puanınızı kolayca geliştirmenize yardımcı olacak profesyonel rehberlik sağlar.",
       "keywords": "需要提供"
     },
     "h1": "DET Konuşan AI Düzeltme",

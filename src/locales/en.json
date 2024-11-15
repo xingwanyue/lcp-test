@@ -415,9 +415,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Contact Us - DET Practice",
-      "description": "",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Contact DET Practice |Support & Customer Service",
+      "description": "Contact DET Practice support team for questions, feedback, or assistance. Expert help for Duolingo English Test preparation.",
+      "keywords": "DET practice contact, contact DET support, DET test prep help, Duolingo English Test support, DET practice customer service, DET mock test assistance, DET writing correction support, DET speaking correction help"
     },
     "checkEmail": "The email must be a valid email address.",
     "enterName": "Please enter your name.",
@@ -425,17 +425,20 @@
     "entermessage": "Please enter your message.",
     "subsuccess": "Submitted successfully",
     "Contact_Us": "Contact Us",
-    "Questions": "Questions, bug reports, feedback - we’re here to help!",
+    "Questions": "Have questions, issues, or feedback? We're Here to help!",
     "fill_in": "Fill in the form",
-    "thank": "Thank you for choosing to get in touch with us. Please send us an email and our staff will reach out to you as soon as possible to address your inquiries.",
+    "thank": "Thank You for Reaching Out. Send us an email, and we'll respond within 24 hours with personalized assistance for your DET preparation journey.",
     "email": "Email",
     "Name": "Name",
     "Email_Address": "Email Address",
     "Message": "Message",
-    "SUBMIT": " SUBMIT "
+    "SUBMIT": " SUBMIT ",
+    "send": "Send"
   },
   "cookie": {
-    "seometa": { "title": "Cookie Policy - DET Practice" },
+    "seometa": {
+      "title": "Cookie Policy - DET Practice"
+    },
     "Cookie_Policy": "Cookie Policy",
     "Last_updated": "Last updated: ",
     "Last_updated_time": "2024-03-27",
@@ -520,28 +523,62 @@
     "article1": {
       "title": "Key Features of DET Speaking Exam Excellence:",
       "list": [
-        { "content": "• In-depth exploration of all DET speaking task types" },
-        { "content": "• Practical strategies for approaching each speaking task" },
-        { "content": "• Interactive exercises to improve speech clarity, fluency, and confidence" },
-        { "content": "• Expert guidance on pronunciation, tone, and overall performance" },
-        { "content": "• Real-life speech samples and analyses demonstrating successful strategies" },
-        { "content": "• Audio demo answers to provide clear examples of effective responses" },
-        { "content": "• Personalized learning approaches for different proficiency levels" },
-        { "content": "• Focus on essential vocabulary and grammar for effective communication" },
-        { "content": "• Updated to incorporate the latest changes in the DET speaking format" }
+        {
+          "content": "• In-depth exploration of all DET speaking task types"
+        },
+        {
+          "content": "• Practical strategies for approaching each speaking task"
+        },
+        {
+          "content": "• Interactive exercises to improve speech clarity, fluency, and confidence"
+        },
+        {
+          "content": "• Expert guidance on pronunciation, tone, and overall performance"
+        },
+        {
+          "content": "• Real-life speech samples and analyses demonstrating successful strategies"
+        },
+        {
+          "content": "• Audio demo answers to provide clear examples of effective responses"
+        },
+        {
+          "content": "• Personalized learning approaches for different proficiency levels"
+        },
+        {
+          "content": "• Focus on essential vocabulary and grammar for effective communication"
+        },
+        {
+          "content": "• Updated to incorporate the latest changes in the DET speaking format"
+        }
       ]
     },
     "article2": {
       "title": "Key Features of DET Writing Exam Excellence:",
       "list": [
-        { "content": "• Comprehensive coverage of DET writing tasks with analysis and examples" },
-        { "content": "• Step-by-step guidelines for planning and writing exceptional essays" },
-        { "content": "• Targeted exercises to hone DET-specific writing skills" },
-        { "content": "• Expert tips to improve clarity, coherence, and sophistication" },
-        { "content": "• Annotated sample essays showcasing effective strategies and common pitfalls" },
-        { "content": "• Adaptable learning paths for various proficiency levels" },
-        { "content": "• Emphasis on essential grammar and vocabulary for DET success" },
-        { "content": "• Updated to reflect the latest DET writing format trends" }
+        {
+          "content": "• Comprehensive coverage of DET writing tasks with analysis and examples"
+        },
+        {
+          "content": "• Step-by-step guidelines for planning and writing exceptional essays"
+        },
+        {
+          "content": "• Targeted exercises to hone DET-specific writing skills"
+        },
+        {
+          "content": "• Expert tips to improve clarity, coherence, and sophistication"
+        },
+        {
+          "content": "• Annotated sample essays showcasing effective strategies and common pitfalls"
+        },
+        {
+          "content": "• Adaptable learning paths for various proficiency levels"
+        },
+        {
+          "content": "• Emphasis on essential grammar and vocabulary for DET success"
+        },
+        {
+          "content": "• Updated to reflect the latest DET writing format trends"
+        }
       ]
     },
     "contaceUsList": [
@@ -970,16 +1007,32 @@
       }
     ],
     "dosList": [
-      { "font": "Try out Detpractice.com for yourself" },
-      { "font": "Promote Detpractice.com ethically and honestly" },
-      { "font": "Create quality and relevant content" },
-      { "font": "Disclose your affiliate relationship" }
+      {
+        "font": "Try out Detpractice.com for yourself"
+      },
+      {
+        "font": "Promote Detpractice.com ethically and honestly"
+      },
+      {
+        "font": "Create quality and relevant content"
+      },
+      {
+        "font": "Disclose your affiliate relationship"
+      }
     ],
     "dontsList": [
-      { "font": "Make misleading or false claims about Detpractice.com" },
-      { "font": "Promote on platforms that have inappropriate or illegal content" },
-      { "font": "Promote on any coupon site" },
-      { "font": "Set up ad campaigns using our brand name, or putting our domain name in your ads' destination URLs" }
+      {
+        "font": "Make misleading or false claims about Detpractice.com"
+      },
+      {
+        "font": "Promote on platforms that have inappropriate or illegal content"
+      },
+      {
+        "font": "Promote on any coupon site"
+      },
+      {
+        "font": "Set up ad campaigns using our brand name, or putting our domain name in your ads' destination URLs"
+      }
     ],
     "faqList": [
       {

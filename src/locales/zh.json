@@ -401,9 +401,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "联系我们 - DET 练习",
-      "description": "",
-      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练度考试"
+      "title": "联系 DET Practice | 支持与客户服务",
+      "description": "联系 DET Practice 支持团队，获取问题解答、反馈或协助。为 Duolingo English Test 准备提供专 业帮助。",
+      "keywords": "DET practice 联系, 联系 DET practice支持, DET 考试帮助, Duolingo English Test 支持, DET practice 客服, DET 模考协助"
     },
     "checkEmail": "电子邮件必须是有效的电子邮件地址。",
     "enterName": "请输入您的姓名。",
@@ -411,14 +411,15 @@
     "entermessage": "请输入您的消息。",
     "subsuccess": "提交成功",
     "Contact_Us": "联系我们",
-    "Questions": "问题、错误报告、反馈——我们随时为您提供帮助！",
+    "Questions": "有问题、疑问或反馈？我们随时为您提供帮助！",
     "fill_in": "填写表格",
-    "thank": "感谢您选择与我们联系。请给我们发送电子邮件，我们的工作人员将尽快与您联系以解决您的疑问。",
+    "thank": "感谢您与我们联系。请将您的需求通过电子邮件发送给我们，我们将在24小时内回复，为您 的 DET 备考提供专属支持。",
     "email": "电子邮件",
     "Name": "名称",
     "Email_Address": "电子邮件地址",
     "Message": "消息",
-    "SUBMIT": "提交"
+    "SUBMIT": "提交",
+    "send": "发送"
   },
   "cookie": {
     "seometa": {
@@ -604,7 +605,7 @@
     "sas": "口语音频样本",
     "zhonghe": {
       "title": "DET 终极考试掌握包",
-      "desc": "该课程包包括<span class=\"yellow\">DET 口语考试卓越</span>和<span class=\"yellow\">DET 写作考试卓越</span>。\n订阅后，您将可以随时下载指南并随时随地轻松学习。\n立即购买订阅立即生效。\n向上滚动页面，查看并点击下载课程开始学习。"
+      "desc": "该课程包包括<span class=\"yellow\">DET 口语考试卓越</span>和<span class=\"yellow\">DET 写作考试卓越</span>。 订阅后，您将可以随时下载指南并随时随地轻松学习。 立即购买订阅立即生效。 向上滚动页面，查看并点击下载课程开始学习。"
     },
     "speaking": {
       "title": "DET 口语考试卓越：综合指南"

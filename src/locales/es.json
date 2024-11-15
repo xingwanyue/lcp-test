@@ -58,15 +58,7 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": [
-      "Nosotros",
-      "Contacto",
-      "Términos",
-      "Privacidad",
-      "Mapa del sitio",
-      "Colaboraciones",
-      "Devoluciones"
-    ],
+    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -95,12 +87,7 @@
     "power_by": "Impulsado por IA",
     "h1Mobile": "Obtén una Puntuación Más Alta Fácilmente<br />en la prueba de Duolingo <br />Inglés Con <span class=\"seo_hack\">DET Práctica</span>",
     "h1PC": "Obtén una Puntuación Más Alta Fácilmente en el <br />Duolingo English Test Con <span class=\"seo_hack\">DET Práctica</span>",
-    "one_small_title": [
-      "DET Práctica",
-      "Corrección de IA",
-      "Simulacro Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -388,8 +375,8 @@
   "aboutUs": {
     "seometa": {
       "title": "DET Practice | Plataforma integral para la preparación del Duolingo English Test (DET)",
-      "description": "DET Practice - Plataforma profesional de preparación para Duolingo que ofrece más de 18.000\nejercicios basados en preguntas reales, corrección inteligente con IA y simulaciones completas del examen. Le ayuda a prepararse eficazmente para el Duolingo English Test y a obtener fácilmente su puntuación ideal.",
-      "keywords": "Duolingo English Test, Simulacro de examen DET, Banco de preguntas DET, Corrección\ninteligente DET, Práctica oral DET, Práctica de escritura DET, Cursos en línea DET, Plataforma de\naprendizaje DET, Preparación para el examen Duolingo, Técnicas de examen DET, Materiales de\npreparación DET"
+      "description": "DET Practice - Plataforma profesional de preparación para Duolingo que ofrece más de 18.000 ejercicios basados en preguntas reales, corrección inteligente con IA y simulaciones completas del examen. Le ayuda a prepararse eficazmente para el Duolingo English Test y a obtener fácilmente su puntuación ideal.",
+      "keywords": "Duolingo English Test, Simulacro de examen DET, Banco de preguntas DET, Corrección inteligente DET, Práctica oral DET, Práctica de escritura DET, Cursos en línea DET, Plataforma de aprendizaje DET, Preparación para el examen Duolingo, Técnicas de examen DET, Materiales de preparación DET"
     },
     "title": "¿Qué es DET Practice?",
     "title_desc": "DET Practice es tu plataforma especializada en preparación para el Duolingo English Test (DET). Te ayudamos a alcanzar tu puntaje ideal de manera efectiva y sin estrés.",
@@ -421,24 +408,25 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Contáctanos - DET Práctica",
-      "description": "",
-      "keywords": "DET Duolingo, DET Prueba, Duolingo DET, Duolingo Prueba, Duolingo Prueba en Línea, Duolingo Prueba de Idioma Inglés, Duolingo Examen de Inglés, Duolingo Examen de Competencia"
+      "title": "Contacta con DET Practice | Soporte y Atención al Cliente",
+      "description": "Contacta con el equipo de soporte de DET Practice para resolver tus dudas, obtener retroalimentación o asistencia. Ofrecemos apoyo profesional para la preparación del Duolingo English Test.",
+      "keywords": "contacto DET Practice, contactar soporte DET Practice, ayuda examen DET, soporte Duolingo English Test, atención al cliente DET Practice, apoyo simulación DET"
     },
     "checkEmail": "El correo electrónico debe ser una dirección de correo electrónico válida.",
     "enterName": "Por favor, introduzca su nombre.",
     "enterEmail": "Por favor, introduzca su dirección de correo electrónico.",
     "entermessage": "Por favor, introduzca su mensaje.",
     "subsuccess": "Enviado con éxito",
-    "Contact_Us": "Contáctenos",
-    "Questions": "Preguntas, informes de errores, comentarios - ¡estamos aquí para ayudar!",
+    "Contact_Us": "Contáctanos",
+    "Questions": "¿Tienes preguntas, dudas o comentarios? ¡Estamos aquí para ayudarte en todo momento!",
     "fill_in": "Rellene el formulario",
-    "thank": "Gracias por elegir ponerse en contacto con nosotros. Envíenos un correo electrónico y nuestro personal se comunicará con usted lo antes posible para atender sus consultas.",
+    "thank": "Gracias por ponerte en contacto con nosotros. Envíanos tu solicitud por correo electrónico, y te responderemos en un plazo de 24 horas, ofreciéndote un apoyo personalizado para tu preparación del DET.",
     "email": "Correo electrónico",
     "Name": "Nombre",
     "Email_Address": "Correo Electrónico",
     "Message": "Mensaje",
-    "SUBMIT": "ENVIAR"
+    "SUBMIT": "ENVIAR",
+    "send": "Enviar"
   },
   "cookie": {
     "seometa": {
@@ -485,7 +473,7 @@
   "correction": {
     "seometa": {
       "title": "Práctica DET: servicio de corrección de escritura con IA para tu examen de inglés de Duolingo",
-      "description": "Servicio de corrección de IA de escritura DET proporcionado por IA comparable al de los profesores profesionales. \nSu ensayo se corregirá según las reglas de puntuación del DET y recibirá comentarios detallados en un plazo de 1 a 5 minutos.",
+      "description": "Servicio de corrección de IA de escritura DET proporcionado por IA comparable al de los profesores profesionales.  Su ensayo se corregirá según las reglas de puntuación del DET y recibirá comentarios detallados en un plazo de 1 a 5 minutos.",
       "keywords": "需要提供"
     },
     "h1": "DET Escritura de Corrección de IA",
@@ -624,7 +612,7 @@
     "sas": "Muestras de audio hablado",
     "zhonghe": {
       "title": "Paquete de dominio del examen DET Ultimate",
-      "desc": "El paquete del curso incluye el <span class=\"Yellow\">examen de excelencia oral DET</span> y el <span class=\"Yellow\">examen de excelencia escrito DET</span>. \nAl suscribirse, podrá descargar las guías en cualquier momento y estudiarlas con facilidad, en cualquier momento y en cualquier lugar. \nLa suscripción Comprar ahora entra en vigor de inmediato. \nDesplácese hacia arriba en la página, vea y haga clic para descargar el curso y comenzar a aprender."
+      "desc": "El paquete del curso incluye el <span class=\"Yellow\">examen de excelencia oral DET</span> y el <span class=\"Yellow\">examen de excelencia escrito DET</span>.  Al suscribirse, podrá descargar las guías en cualquier momento y estudiarlas con facilidad, en cualquier momento y en cualquier lugar.  La suscripción Comprar ahora entra en vigor de inmediato.  Desplácese hacia arriba en la página, vea y haga clic para descargar el curso y comenzar a aprender."
     },
     "speaking": {
       "title": "Excelencia en el examen de expresión oral DET: una guía completa"
@@ -739,7 +727,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "Práctica DET: servicio de corrección del habla con IA para tu examen de inglés de Duolingo",
-      "description": "Servicio DET Speaking AI Correction proporcionado por una potente IA. \nAdmite todo tipo de preguntas orales y brinda orientación profesional para ayudarlo a mejorar fácilmente su puntaje de conversación DET.",
+      "description": "Servicio DET Speaking AI Correction proporcionado por una potente IA.  Admite todo tipo de preguntas orales y brinda orientación profesional para ayudarlo a mejorar fácilmente su puntaje de conversación DET.",
       "keywords": "需要提供"
     },
     "h1": "DET Corrección de IA Hablante",

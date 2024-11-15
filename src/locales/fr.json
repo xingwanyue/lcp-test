@@ -415,24 +415,25 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Nous Contacter - DET Pratique",
-      "description": "",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
+      "title": "DET Practice | Assistance & Service Clientèle",
+      "description": "Notre équipe DET Practice est à votre disposition pour toutes vos questions et besoins d'accompagnement dans votre préparation au Duolingo English Test. Bénéficiez d'un suivi personnalisé par nos experts.",
+      "keywords": "contact DET Practice, assistance DET Practice, préparation DET, support Duolingo English Test, accompagnement DET Practice, aide à l'entraînement DET"
     },
     "checkEmail": "L'e-mail doit être une adresse e-mail valide.",
     "enterName": "Veuillez entrer votre nom.",
     "enterEmail": "Veuillez entrer votre adresse e-mail.",
     "entermessage": "Veuillez entrer votre message.",
     "subsuccess": "Submitted successfully",
-    "Contact_Us": "Contactez-nous",
-    "Questions": "Questions, rapports de bogues, commentaires - nous sommes là pour vous aider !",
+    "Contact_Us": "Contact",
+    "Questions": "Des questions ? Des difficultés ? Des suggestions ? Notre équipe est à votre écoute pour vous accompagner.",
     "fill_in": "Remplissez le formulaire",
-    "thank": "Merci d'avoir choisi de nous contacter. Veuillez nous envoyer un e-mail et notre personnel vous contactera dans les plus brefs délais pour répondre à vos demandes.",
+    "thank": "Nous vous remercions de votre confiance. Adressez-nous votre message par e-mail - notre équipe s'engage à vous répondre sous 24 heures avec un accompagnement personnalisé pour votre préparation au DET.",
     "email": "E-mail",
     "Name": "Nom",
     "Email_Address": "Adresse email",
     "Message": "Message",
-    "SUBMIT": "SOUMETTRE"
+    "SUBMIT": "SOUMETTRE",
+    "send": "Envoyer"
   },
   "cookie": {
     "seometa": {
@@ -479,7 +480,7 @@
   "correction": {
     "seometa": {
       "title": "DET Practice - Service de correction d'écriture IA pour votre test d'anglais Duolingo",
-      "description": "DET Writing AI Service de correction fourni par AI comparable aux enseignants professionnels. \nVotre essai sera corrigé en fonction des règles de notation du DET et vous recevrez des commentaires détaillés dans un délai de 1 à 5 minutes.",
+      "description": "DET Writing AI Service de correction fourni par AI comparable aux enseignants professionnels.  Votre essai sera corrigé en fonction des règles de notation du DET et vous recevrez des commentaires détaillés dans un délai de 1 à 5 minutes.",
       "keywords": "需要提供"
     },
     "h1": "DET Correction d'écriture IA",
@@ -618,7 +619,7 @@
     "sas": "Exemples audio parlants",
     "zhonghe": {
       "title": "Package de maîtrise de l'examen DET Ultimate",
-      "desc": "Le package de cours comprend l'<span class=\"white\">Excellence de l'examen DET Speaking</span> et l'<span class=\"white\">Excellence de l'examen DET Writing</span>. \nLors de votre abonnement, vous pourrez télécharger les guides à tout moment et les étudier en toute simplicité, à tout moment et en tout lieu. \nL'abonnement Acheter maintenant prend effet immédiatement. \nFaites défiler la page vers le haut, affichez-la et cliquez pour télécharger le cours et commencer à apprendre."
+      "desc": "Le package de cours comprend l'<span class=\"white\">Excellence de l'examen DET Speaking</span> et l'<span class=\"white\">Excellence de l'examen DET Writing</span>.  Lors de votre abonnement, vous pourrez télécharger les guides à tout moment et les étudier en toute simplicité, à tout moment et en tout lieu.  L'abonnement Acheter maintenant prend effet immédiatement.  Faites défiler la page vers le haut, affichez-la et cliquez pour télécharger le cours et commencer à apprendre."
     },
     "speaking": {
       "title": "Excellence de l'examen oral DET : un guide complet"
@@ -733,7 +734,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "DET Practice - Service de correction orale AI pour votre test d'anglais Duolingo",
-      "description": "DET Speaking AI Service de correction fourni par une IA puissante. \nPrend en charge tous les types de questions orales et fournit des conseils professionnels pour vous aider à améliorer facilement votre score oral DET.",
+      "description": "DET Speaking AI Service de correction fourni par une IA puissante.  Prend en charge tous les types de questions orales et fournit des conseils professionnels pour vous aider à améliorer facilement votre score oral DET.",
       "keywords": "Besoin de fournir"
     },
     "h1": "DET Correction AI Parlante",

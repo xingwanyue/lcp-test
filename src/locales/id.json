@@ -51,13 +51,7 @@
     "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Tentang Kami",
-    "Products": [
-      "Latihan Soal DET",
-      "Koreksi Writing AI",
-      "Penilaian Speaking AI",
-      "Simulasi Ujian",
-      "Kursus DET"
-    ],
+    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -95,12 +89,7 @@
     "power_by": "Ditenagai oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah<br />pada Ujian Bahasa Inggris Duolingo <br />Dengan <span class=\"seo_hack\">DET Latihan</span>",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah di <br />Duolingo English Test Dengan <span class=\"seo_hack\">DET Latihan</span>",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -174,7 +163,7 @@
     "Subscribe_successfully": "Berlangganan berhasil",
     "Subscribe!": "Langganan!",
     "Subscribe_for": "Langganan untuk Wawasan dan Strategi Terbaru untuk Meningkatkan Skor Anda.",
-    "Email": "Sure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nEmail",
+    "Email": "Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Email",
     "Subscribe": "Berlangganan"
   },
   "learn": {
@@ -389,7 +378,7 @@
     "seometa": {
       "title": "DET Practice | Platform All-in-One Persiapan Duolingo English Test (DET)",
       "description": "DET Practice - Platform persiapan Duolingo profesional yang menyediakan lebih dari 18.000 latihan soal asli, koreksi cerdas AI, dan pengalaman simulasi ujian autentik. Membantu Anda mempersiapkan Duolingo English Test secara efisien, meraih skor ideal dengan mudah.",
-      "keywords": "Duolingo English Test, Simulasi Ujian DET, Bank Soal DET, Koreksi Cerdas DET, Latihan Speaking\nDET, Latihan Writing DET, Kursus Online DET, Platform Pembelajaran DET, Persiapan Ujian\nDuolingo, Tips Ujian DET, Materi Persiapan DET"
+      "keywords": "Duolingo English Test, Simulasi Ujian DET, Bank Soal DET, Koreksi Cerdas DET, Latihan Speaking DET, Latihan Writing DET, Kursus Online DET, Platform Pembelajaran DET, Persiapan Ujian Duolingo, Tips Ujian DET, Materi Persiapan DET"
     },
     "title": "Tentang DET Practice",
     "title_desc": "DET Practice adalah platform khusus persiapan Duolingo English Test (DET) yang akan membantu Anda berlatih dengan mudah dan efektif untuk mencapai skor terbaik.",
@@ -421,9 +410,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Hubungi Kami - DET Latihan",
-      "description": "",
-      "keywords": "DET Duolingo, DET Uji, Duolingo DET, Duolingo Uji, Duolingo Ujian Online, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Bahasa, Duolingo Ujian Kemahiran"
+      "title": "Hubungi DET Practice | Dukungan dan Layanan Pelanggan",
+      "description": "Hubungi tim dukungan DET Practice untuk mendapatkan jawaban, umpan balik, atau bantuan. Kami menyediakan bantuan profesional untuk persiapan Duolingo English Test Anda.",
+      "keywords": "Kontak DET Practice, hubungi dukungan DET Practice, bantuan ujian DET, dukungan Duolingo English Test, layanan pelanggan DET Practice, bantuan simulasi DET"
     },
     "checkEmail": "Email harus berupa alamat email yang valid.",
     "enterName": "Silakan masukkan nama Anda.",
@@ -431,14 +420,15 @@
     "entermessage": "Silakan masukkan pesan Anda.",
     "subsuccess": "Berhasil dikirim",
     "Contact_Us": "Hubungi Kami",
-    "Questions": "Pertanyaan, laporan bug, umpan balik - kami di sini untuk membantu!",
+    "Questions": "Ada pertanyaan, keraguan, atau umpan balik? Kami siap membantu Anda kapan saja!",
     "fill_in": "Isi formulir",
-    "thank": "Terima kasih telah memilih untuk menghubungi kami. Silakan kirim email kepada kami dan staf kami akan menghubungi Anda sesegera mungkin untuk menjawab pertanyaan Anda.",
-    "email": "Sure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nSure, here is the translated text:\n\nEmail",
+    "thank": "Terima kasih telah menghubungi kami. Silakan kirim permintaan Anda melalui email, dan kami akan membalas dalam waktu 24 jam untuk memberikan dukungan khusus bagi persiapan DET Anda.",
+    "email": "Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Sure, here is the translated text:  Email",
     "Name": "Nama",
     "Email_Address": "Alamat Email",
     "Message": "Pesan",
-    "SUBMIT": "KIRIM"
+    "SUBMIT": "KIRIM",
+    "send": "Kirim"
   },
   "cookie": {
     "seometa": {
@@ -485,7 +475,7 @@
   "correction": {
     "seometa": {
       "title": "Latihan DET - Layanan Koreksi Penulisan AI untuk Tes Bahasa Inggris Duolingo Anda",
-      "description": "Layanan Koreksi AI Penulisan DET yang disediakan oleh AI sebanding dengan guru profesional. \nEsai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima masukan terperinci dalam 1-5 menit.",
+      "description": "Layanan Koreksi AI Penulisan DET yang disediakan oleh AI sebanding dengan guru profesional.  Esai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima masukan terperinci dalam 1-5 menit.",
       "keywords": "需要提供"
     },
     "h1": "DET Menulis Koreksi AI",
@@ -624,7 +614,7 @@
     "sas": "Contoh Audio Berbicara",
     "zhonghe": {
       "title": "Paket Penguasaan Ujian DET Ultimate",
-      "desc": "Paket kursus mencakup <span class=\"kuning\">Keunggulan Ujian Berbicara DET</span> dan <span class=\"kuning\">Keunggulan Ujian Menulis DET</span>. \nSetelah berlangganan, Anda akan dapat mengunduh panduan ini kapan saja dan mempelajarinya dengan mudah, kapan saja, dan di mana saja. \nLangganan Beli Sekarang akan segera berlaku. \nGulir ke atas pada halaman, lihat, dan klik untuk mengunduh kursus untuk mulai belajar."
+      "desc": "Paket kursus mencakup <span class=\"kuning\">Keunggulan Ujian Berbicara DET</span> dan <span class=\"kuning\">Keunggulan Ujian Menulis DET</span>.  Setelah berlangganan, Anda akan dapat mengunduh panduan ini kapan saja dan mempelajarinya dengan mudah, kapan saja, dan di mana saja.  Langganan Beli Sekarang akan segera berlaku.  Gulir ke atas pada halaman, lihat, dan klik untuk mengunduh kursus untuk mulai belajar."
     },
     "speaking": {
       "title": "Keunggulan Ujian Berbicara DET: Panduan Komprehensif"
@@ -639,7 +629,7 @@
   },
   "forget": {
     "Please_enter": "Silakan masukkan alamat email Anda",
-    "Invalid_email": "Sure, here is the translated text:\n\nEmail tidak valid.",
+    "Invalid_email": "Sure, here is the translated text:  Email tidak valid.",
     "t1": "Lupa Kata Sandi?",
     "t2": "Silakan masukkan email yang digunakan untuk membuat akun Anda",
     "Enter_your_email": "Masukkan email Anda",
@@ -739,7 +729,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "Latihan DET - Layanan Koreksi Berbicara AI untuk Tes Bahasa Inggris Duolingo Anda",
-      "description": "Layanan Koreksi AI Berbicara DET disediakan oleh AI yang kuat. \nMendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda meningkatkan skor berbicara DET Anda dengan mudah.",
+      "description": "Layanan Koreksi AI Berbicara DET disediakan oleh AI yang kuat.  Mendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda meningkatkan skor berbicara DET Anda dengan mudah.",
       "keywords": "需要提供"
     },
     "h1": "DET Koreksi AI Berbicara",
@@ -851,7 +841,7 @@
   },
   "register": {
     "peyea": "Silakan masukkan alamat email Anda.",
-    "Invalid_email": "Sure, here's the translation:\n\nEmail tidak valid.",
+    "Invalid_email": "Sure, here's the translation:  Email tidak valid.",
     "Sign_up": "Daftar",
     "cya": "Buat akun DETPractice gratis Anda",
     "alt": "DET Praktik:Platform Praktik terbaik Duolingo English Test",

@@ -51,13 +51,7 @@
     "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "企業情報",
-    "Products": [
-      "DET演習",
-      "AIライティング添削",
-      "AIスピーキング評価",
-      "模擬試験",
-      "総合対策コース"
-    ],
+    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -94,12 +88,7 @@
     "power_by": "AIによって提供されました",
     "h1Mobile": "簡単に高得点を取得する<br />Duolingo <br />英語テストで<span class=\"seo_hack\">DET 練習</span>",
     "h1PC": "スコアを簡単に上げる <br />Duolingo English Test <span class=\"seo_hack\">DET 練習</span>で",
-    "one_small_title": [
-      "DET 練習",
-      "AI修正",
-      "フルレングスモック",
-      "DET コース"
-    ],
+    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -138,7 +127,7 @@
       "btn_img_alt": "黄色の矢印 右"
     },
     "article4": {
-      "title": "DET 話すAI修正\n",
+      "title": "DET 話すAI修正 ",
       "tips1": "\"聞いてから話す」をサポート、「写真について話す」、「読んでから話す」、「話すサンプル」",
       "tips2": "AIスコアリング, AI評価結果, 教師の指導",
       "tips3": "正確な評価スコア、詳細な評価レポート",
@@ -420,24 +409,25 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "お問い合わせ - DET 練習",
-      "description": "",
-      "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語能力テスト, Duolingo 英語試験, Duolingo 熟練度試験"
+      "title": "DET Practice 連絡先｜サポート・カスタマーサービス",
+      "description": "DET Practiceサポートチームへお気軽にご連絡ください。Duolingo English Test対策に関するご 質問やご要望に、専門スタッフが丁寧にお応えいたします。",
+      "keywords": "DET Practice 連絡先, DET Practice サポート, DET 試験準備支援, Duolingo English Test サポート, DET Practice カスタマーサービス, DET 模擬試験サポート"
     },
     "checkEmail": "メールアドレスは有効なものでなければなりません。",
     "enterName": "お名前を入力してください。",
     "enterEmail": "メールアドレスを入力してください。",
     "entermessage": "メッセージを入力してください。",
     "subsuccess": "送信が成功しました",
-    "Contact_Us": "お問い合わせ",
-    "Questions": "質問、バグ報告、フィードバック - 私たちはいつでもサポートします！",
+    "Contact_Us": "お問い合わせ窓口",
+    "Questions": "DET Practiceについてのご質問やご意見、フィードバックなど、どんなことでもお気軽にご 相談ください。",
     "fill_in": "フォームに入力してください",
-    "thank": "弊社にご連絡いただきありがとうございます。メールでお問い合わせください。お問い合わせにできるだけ早く対応させていただきます。",
+    "thank": "お問い合わせいただき、ありがとうございます。メールでのご連絡を確認後、24時間以内 に担当スタッフよりご返信させていただきます。DET試験対策に関する個別サポートをご 提供いたします。",
     "email": "メール",
     "Name": "名前",
     "Email_Address": "メールアドレス",
     "Message": "メッセージ",
-    "SUBMIT": "送信"
+    "SUBMIT": "送信",
+    "send": "送信する"
   },
   "cookie": {
     "seometa": {
@@ -484,7 +474,7 @@
   "correction": {
     "seometa": {
       "title": "DET Practice - Duolingo 英語テストの AI ライティング添削サービス",
-      "description": "DET Writing AI プロ教師並みのAIによる添削サービス。\nあなたのエッセイは DET 採点ルールに基づいて修正され、1 ～ 5 分以内に詳細なフィードバックが届きます。",
+      "description": "DET Writing AI プロ教師並みのAIによる添削サービス。 あなたのエッセイは DET 採点ルールに基づいて修正され、1 ～ 5 分以内に詳細なフィードバックが届きます。",
       "keywords": "需要提供"
     },
     "h1": "DET 書き込みAI修正",
@@ -622,7 +612,7 @@
     },
     "zhonghe": {
       "title": "DET Ultimate 試験マスタリー パッケージ",
-      "desc": "コース パッケージには、<span class=\" yellow\">DET Speaker Exam Excellence</span> と <span class=\" yellow\">DET Writing Exam Excellence</span> が含まれています。\n購読すると、いつでもガイドをダウンロードして、いつでもどこでも簡単に学習できるようになります。\n今すぐ購入 サブスクリプションはすぐに有効になります。\nページを上にスクロールしてコースを表示し、クリックしてダウンロードして学習を開始します。"
+      "desc": "コース パッケージには、<span class=\" yellow\">DET Speaker Exam Excellence</span> と <span class=\" yellow\">DET Writing Exam Excellence</span> が含まれています。 購読すると、いつでもガイドをダウンロードして、いつでもどこでも簡単に学習できるようになります。 今すぐ購入 サブスクリプションはすぐに有効になります。 ページを上にスクロールしてコースを表示し、クリックしてダウンロードして学習を開始します。"
     },
     "writing": {
       "title": "DET Writing Exam Excellence: 包括的なガイド"
@@ -738,7 +728,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "DET Practice - Duolingo 英語テストの AI スピーキング添削サービス",
-      "description": "DET 強力な AI によるスピーキング AI 添削サービス。\nすべてのスピーキング質問タイプをサポートし、DET スピーキング スコアを簡単に向上させるための専門的なガイダンスを提供します。",
+      "description": "DET 強力な AI によるスピーキング AI 添削サービス。 すべてのスピーキング質問タイプをサポートし、DET スピーキング スコアを簡単に向上させるための専門的なガイダンスを提供します。",
       "keywords": "需要提供"
     },
     "h1": "DET 話すAIの修正",

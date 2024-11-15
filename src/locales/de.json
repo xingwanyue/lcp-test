@@ -93,7 +93,7 @@
     "yellow_check_icon_alt": "gelbes_kontrollsymbol",
     "article1": {
       "title": "Duolingo English Test Übung",
-      "tips1": "Die <span class='yellow'>größte</span> Fragenbank, {number} Übungsfragen\n",
+      "tips1": "Die <span class='yellow'>größte</span> Fragenbank, {number} Übungsfragen ",
       "tips2": "Kontinuierlich <span class='yellow'>täglich aktualisiert</span>",
       "tips3": "<span>Bieten Sie hoch bewertete Antworten und detaillierte Erklärungen an</span>",
       "tips4": "KI-Bewertung für Lautes Lesen",
@@ -132,7 +132,7 @@
       "tips1": "Entwickeln Sie ein <span class='yellow'>tiefgehendes Verständnis</span> der DET Sprech- und Schreibabschnitte mit unseren detaillierten Anleitungen",
       "tips2": "Erreichen Sie umfassende Beherrschung",
       "tips3": "Lernen Sie von ESL-Experten",
-      "tips4": "Bleiben Sie informiert und voraus\n",
+      "tips4": "Bleiben Sie informiert und voraus ",
       "btn_font": "Entdecken Sie mehr",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
@@ -352,7 +352,7 @@
   "highscorespeaking": {
     "font1": "Beginnen Sie sofort Ihre Reise zu",
     "font2": "Hochwertiges Sprechen!",
-    "Start_Now": "Jetzt starten\n"
+    "Start_Now": "Jetzt starten "
   },
   "highscorewritingnew": {
     "font1": "Beginnen Sie sofort Ihre Reise zu",
@@ -401,9 +401,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Kontaktiere uns - DET Training",
-      "description": "",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englischsprachtest, Duolingo Englischprüfung, Duolingo Eignungsprüfung"
+      "title": "Kontaktieren Sie DET Practice | Unterstützung und Kundenservice",
+      "description": "Kontaktieren Sie das Support-Team von DET Practice für Antworten, Feedback oder Unterstützung. Wir bieten professionelle Hilfe zur Vorbereitung auf den Duolingo English Test.",
+      "keywords": "DET Practice Kontakt, Kontakt DET Practice Support, DET Prüfungshilfe, Duolingo English Test Unterstützung, DET Practice Kundenservice, DET Übungsprüfung Unterstützung"
     },
     "checkEmail": "Die E-Mail muss eine gültige E-Mail-Adresse sein.",
     "enterName": "Bitte geben Sie Ihren Namen ein.",
@@ -411,14 +411,15 @@
     "entermessage": "Bitte geben Sie Ihre Nachricht ein.",
     "subsuccess": "Erfolgreich eingereicht",
     "Contact_Us": "Kontaktieren Sie uns",
-    "Questions": "Fragen, Fehlerberichte, Feedback - wir sind hier, um zu helfen!",
+    "Questions": "Haben Sie Fragen, Anliegen oder Feedback? Wir sind jederzeit für Sie da!",
     "fill_in": "Füllen Sie das Formular aus",
-    "thank": "Vielen Dank, dass Sie sich entschieden haben, mit uns in Kontakt zu treten. Bitte senden Sie uns eine E-Mail und unsere Mitarbeiter werden sich so schnell wie möglich mit Ihnen in Verbindung setzen, um Ihre Anfragen zu beantworten.",
+    "thank": "Vielen Dank, dass Sie uns kontaktiert haben. Senden Sie uns bitte Ihre Anfrage per E-Mail, und wir werden Ihnen innerhalb von 24 Stunden antworten, um Ihnen eine individuelle Unterstützung für Ihre DET-Vorbereitung zu bieten.",
     "email": "E-Mail",
     "Name": "Name",
     "Email_Address": "E-Mail-Adresse",
     "Message": "Nachricht",
-    "SUBMIT": " SUBMIT "
+    "SUBMIT": " SUBMIT ",
+    "send": "Senden"
   },
   "cookie": {
     "seometa": {
@@ -465,7 +466,7 @@
   "correction": {
     "seometa": {
       "title": "DET Practice – KI-Schreibkorrekturservice für Ihren Duolingo-Englischtest",
-      "description": "Der von AI bereitgestellte DET Writing AI-Korrekturdienst ist mit professionellen Lehrern vergleichbar. \nIhr Aufsatz wird anhand der DET-Bewertungsregeln korrigiert und Sie erhalten innerhalb von 1–5 Minuten ein detailliertes Feedback.",
+      "description": "Der von AI bereitgestellte DET Writing AI-Korrekturdienst ist mit professionellen Lehrern vergleichbar.  Ihr Aufsatz wird anhand der DET-Bewertungsregeln korrigiert und Sie erhalten innerhalb von 1–5 Minuten ein detailliertes Feedback.",
       "keywords": "需要提供"
     },
     "h1": "DET KI-Korrektur schreiben",
@@ -485,7 +486,7 @@
       "right_desc": "Reichen Sie Ihren Aufsatz aus der Fragenbank ein, und Sie können innerhalb von 1-5 Minuten einen klaren und detaillierten Bericht und eine Bewertung erhalten."
     },
     "h2_2": {
-      "h2": "Schreibkorrektur\n      ",
+      "h2": "Schreibkorrektur       ",
       "right_desc": "Sie können sofort Ihre Vokabelfehler und Grammatikfehler sehen und lernen, wie Sie sie vermeiden können."
     },
     "h2_3": {
@@ -604,7 +605,7 @@
     "sas": "Hörbeispiele sprechen",
     "zhonghe": {
       "title": "DET Ultimate Exam Mastery-Paket",
-      "desc": "Das Kurspaket umfasst die <span class=\"yellow\">DET Speaking Exam Excellence</span> und die <span class=\"yellow\">DET Writing Exam Excellence</span>. \nMit dem Abonnement können Sie die Leitfäden jederzeit herunterladen und sie jederzeit und überall problemlos studieren. \nDas „Jetzt kaufen“-Abonnement tritt sofort in Kraft. \nScrollen Sie auf der Seite nach oben, zeigen Sie den Kurs an und klicken Sie, um ihn herunterzuladen und mit dem Lernen zu beginnen."
+      "desc": "Das Kurspaket umfasst die <span class=\"yellow\">DET Speaking Exam Excellence</span> und die <span class=\"yellow\">DET Writing Exam Excellence</span>.  Mit dem Abonnement können Sie die Leitfäden jederzeit herunterladen und sie jederzeit und überall problemlos studieren.  Das „Jetzt kaufen“-Abonnement tritt sofort in Kraft.  Scrollen Sie auf der Seite nach oben, zeigen Sie den Kurs an und klicken Sie, um ihn herunterzuladen und mit dem Lernen zu beginnen."
     },
     "speaking": {
       "title": "DET Speaking Exam Excellence: Ein umfassender Leitfaden"
@@ -719,7 +720,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "DET Practice – KI-Sprachkorrekturdienst für Ihren Duolingo-Englischtest",
-      "description": "DET Sprechender KI-Korrekturdienst, bereitgestellt durch leistungsstarke KI. \nUnterstützt alle Arten von Sprechfragen und bietet professionelle Anleitung, die Ihnen dabei hilft, Ihre DET-Punktzahl für Sprechfragen auf einfache Weise zu verbessern.",
+      "description": "DET Sprechender KI-Korrekturdienst, bereitgestellt durch leistungsstarke KI.  Unterstützt alle Arten von Sprechfragen und bietet professionelle Anleitung, die Ihnen dabei hilft, Ihre DET-Punktzahl für Sprechfragen auf einfache Weise zu verbessern.",
       "keywords": "Benötigt werden"
     },
     "h1": "DET Sprechende KI Korrektur",

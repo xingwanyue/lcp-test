@@ -51,22 +51,8 @@
     "LearnTitle": "Материалы",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사 소개",
-    "Products": [
-      "문제 풀이",
-      "AI 작문 첨삭",
-      "AI 스피킹 평가",
-      "실전 모의고사",
-      "DET 학습 과정"
-    ],
-    "Company": [
-      "회사 소개",
-      "고객센터",
-      "이용약관",
-      "개인정보처리방침",
-      "사이트맵",
-      "제휴 안내",
-      "환불규정"
-    ],
+    "Products": ["문제 풀이", "AI 작문 첨삭", "AI 스피킹 평가", "실전 모의고사", "DET 학습 과정"],
+    "Company": ["회사 소개", "고객센터", "이용약관", "개인정보처리방침", "사이트맵", "제휴 안내", "환불규정"],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -95,12 +81,7 @@
     "power_by": "AI에 의해 구동됨",
     "h1Mobile": "더 높은 점수를 쉽게 받으세요<br /> Duolingo <br />영어 시험에서 <span class=\"seo_hack\">DET 연습</span>으로",
     "h1PC": "더 높은 점수를 쉽게 받으세요 <br />Duolingo English Test <span class=\"seo_hack\">DET 연습</span>와 함께",
-    "one_small_title": [
-      "DET 연습",
-      "AI 수정",
-      "풀-길이 모의 시험",
-      "DET 코스"
-    ],
+    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
     "Start_free_with_Google": "Google로 무료로 시작하세요",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",
@@ -130,9 +111,9 @@
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "article3": {
-      "title": "DET 쓰기 AI 수정\n",
+      "title": "DET 쓰기 AI 수정 ",
       "tips1": "\"사진에 대해 쓰기\", \"인터랙티브 라이팅\", \"라이팅 샘플\" 지원",
-      "tips2": "AI 채점, AI 수정, 교사 지도\n",
+      "tips2": "AI 채점, AI 수정, 교사 지도 ",
       "tips3": "정확한 평가 점수, 상세한 평가 보고서",
       "tips4": "결과는 <span class='yellow'>1-5분</span> 이내에 확인할 수 있습니다",
       "btn_font": "자세히 알아보기",
@@ -389,7 +370,7 @@
     "seometa": {
       "title": "DET Practice | Duolingo English Test (DET) 원스톱 대비 플랫폼",
       "description": "DET Practice - 전문적인 Duolingo 대비 플랫폼으로, 18,000개 이상의 실제 문제 연습, AI 스마트첨삭, 그리고 실제 시험과 같은 모의 경험을 제공합니다.효율적으로 Duolingo English Test를 준 비하여 이상적인 점수를 쉽게 얻을 수 있도록 도와드립니다.",
-      "keywords": "Duolingo English Test, DET 모의시험, DET 문제은행, DET 스마트 첨삭, DET 말하기 연습, DET 쓰기\n연습, DET 온라인 코스, DET 학습 플랫폼, Duolingo 시험 대비, DET 시험 전략, DET 대비 자료"
+      "keywords": "Duolingo English Test, DET 모의시험, DET 문제은행, DET 스마트 첨삭, DET 말하기 연습, DET 쓰기 연습, DET 온라인 코스, DET 학습 플랫폼, Duolingo 시험 대비, DET 시험 전략, DET 대비 자료"
     },
     "title": "DET Practice는 듀오링고 영어 시험(DET) 준비를 위한 전문 플랫폼으로, 수험생 여러분의 효 율적인 시험 준비를 도와드립니다",
     "title_desc": "DETPractice.com은 Duolingo English Test 연습하고 배우기에 가장 좋은 플랫폼입니다.",
@@ -421,9 +402,9 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "문의하기 - DET 연습",
-      "description": "",
-      "keywords": "DET Duolingo, DET 테스트, Duolingo DET, Duolingo 테스트, Duolingo 테스트 온라인, Duolingo 영어 언어 테스트, Duolingo 영어 시험, Duolingo 능력 시험"
+      "title": "DET Practice 문의하기 | 지원 및 고객 서비스",
+      "description": "DET Practice 지원팀에 문의하여 질문, 피드백 또는 도움이 필요하시면 연락하세요. Duolingo English Test 준비를 위한 전문적인 도움을 제공합니다.",
+      "keywords": "DET Practice 문의, DET Practice 지원 문의, DET 시험 지원, Duolingo English Test 지원, DET Practice 고객 서비스, DET 모의고사 지원"
     },
     "checkEmail": "이메일은 유효한 이메일 주소여야 합니다.",
     "enterName": "이름을 입력하세요.",
@@ -431,14 +412,15 @@
     "entermessage": "메시지를 입력하세요.",
     "subsuccess": "성공적으로 제출되었습니다",
     "Contact_Us": "문의하기",
-    "Questions": "질문, 버그 보고, 피드백 - 저희가 도와드리겠습니다!",
+    "Questions": "질문이나 피드백이 있으신가요? 언제든지 도와드리겠습니다!",
     "fill_in": "양식을 작성하세요",
-    "thank": "저희에게 연락해 주셔서 감사합니다. 이메일을 보내주시면 저희 직원이 가능한 한 빨리 연락하여 문의 사항을 해결해 드리겠습니다.",
+    "thank": "저희에게 문의해 주셔서 감사합니다. 요청 사항을 이메일로 보내 주시면 24시간 이내에 답변 드리며, DET 준비를 위한 맞춤형 지원을 제공하겠습니다.",
     "email": "이메일",
     "Name": "이름",
     "Email_Address": "이메일 주소",
     "Message": "메시지",
-    "SUBMIT": "제출"
+    "SUBMIT": "제출",
+    "send": "보내기"
   },
   "cookie": {
     "seometa": {
@@ -485,7 +467,7 @@
   "correction": {
     "seometa": {
       "title": "DET Practice - 듀오링고 영어 시험을 위한 AI 작문 교정 서비스",
-      "description": "전문교사 수준의 AI를 활용한 DET 글쓰기 AI 교정 서비스입니다. \n귀하의 에세이는 DET 채점 규칙에 따라 교정되며, 1~5분 이내에 자세한 피드백을 받으실 수 있습니다.",
+      "description": "전문교사 수준의 AI를 활용한 DET 글쓰기 AI 교정 서비스입니다.  귀하의 에세이는 DET 채점 규칙에 따라 교정되며, 1~5분 이내에 자세한 피드백을 받으실 수 있습니다.",
       "keywords": "Duolingo 시험 교정 서비스, Duolingo 시험 AI 교정 서비스"
     },
     "h1": "DET 글쓰기 AI 수정",
@@ -624,7 +606,7 @@
     "sas": "말하기 오디오 샘플",
     "zhonghe": {
       "title": "DET Ultimate 시험 마스터리 패키지",
-      "desc": "과정 패키지에는 <span class=\"yellow\">DET Speaking Exam Excellence</span> 및 <span class=\"yellow\">DET Writing Exam Excellence</span>가 포함되어 있습니다. \n구독하시면 언제든지 가이드를 다운로드하여 언제 어디서나 쉽게 학습하실 수 있습니다. \n지금 구매 구독은 즉시 적용됩니다. \n페이지를 위로 스크롤하여 시청하고, 클릭하여 다운로드하여 학습을 시작하세요."
+      "desc": "과정 패키지에는 <span class=\"yellow\">DET Speaking Exam Excellence</span> 및 <span class=\"yellow\">DET Writing Exam Excellence</span>가 포함되어 있습니다.  구독하시면 언제든지 가이드를 다운로드하여 언제 어디서나 쉽게 학습하실 수 있습니다.  지금 구매 구독은 즉시 적용됩니다.  페이지를 위로 스크롤하여 시청하고, 클릭하여 다운로드하여 학습을 시작하세요."
     },
     "speaking": {
       "title": "DET 말하기 시험 우수성: 종합 가이드"
@@ -739,7 +721,7 @@
   "speakingaicorrection": {
     "seometa": {
       "title": "DET Practice - 듀오링고 영어 시험을 위한 AI 말하기 교정 서비스",
-      "description": "강력한 AI가 제공하는 DET 말하기 AI 교정 서비스입니다. \n모든 말하기 질문 유형을 지원하고, DET 말하기 점수를 쉽게 향상시킬 수 있도록 전문적인 지도를 제공합니다.",
+      "description": "강력한 AI가 제공하는 DET 말하기 AI 교정 서비스입니다.  모든 말하기 질문 유형을 지원하고, DET 말하기 점수를 쉽게 향상시킬 수 있도록 전문적인 지도를 제공합니다.",
       "keywords": "需要提供"
     },
     "h1": "DET AI 교정 말하기",
@@ -959,7 +941,7 @@
   "sitemap": {
     "seometa": {
       "title": "DET 연습 사이트맵: 모든 연습 시험 및 자료 찾기",
-      "description": "Explore DET Practice's complete sitemap to access all practice tests, study resources, and guides. Navigate easily through our comprehensive test prep offerings.\n모든 연습 시험, 학습 자료 및 가이드를 이용할 수 있도록 DET Practice의 전체 사이트 맵을 살펴보세요. 종합적인 시험 준비 제공 사항을 통해 쉽게 탐색하세요.",
+      "description": "Explore DET Practice's complete sitemap to access all practice tests, study resources, and guides. Navigate easily through our comprehensive test prep offerings. 모든 연습 시험, 학습 자료 및 가이드를 이용할 수 있도록 DET Practice의 전체 사이트 맵을 살펴보세요. 종합적인 시험 준비 제공 사항을 통해 쉽게 탐색하세요.",
       "keywords": "DET Duolingo, DET 테스트, Duolingo DET, Duolingo 테스트, Duolingo 온라인 테스트, Duolingo 영어 시험, Duolingo 영어 시험, Duolingo 능력 시험"
     },
     "h1": "사이트맵"
