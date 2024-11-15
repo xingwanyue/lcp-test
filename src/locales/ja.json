@@ -90,7 +90,7 @@
       "keywords": "Duolingo英語テスト、DET Duolingo、DETテスト、Duolingo試験、オンラインDuolingoテス\nト、Duolingo英語検定、Duolingo英語試験、Duolingo英語能力試験、Duolingo英語プロフィシ\nエンシー試験、英語能力試験Duolingo、Duolingo英語試験"
     },
     "bigtitle1": "高得点者数（130ポイント以上）：10000+",
-    "bigtitle2": "850件以上のレビューで4.8/5の優れた評価！",
+    "bigtitle2": "850件以上のレビューで驚異の4.8/5の評価！",
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
@@ -138,21 +138,21 @@
       "btn_img_alt": "黄色の矢印 右"
     },
     "article4": {
-      "title": "DET 話すAI修正 ",
-      "tips1": "\"聞いてから話す」をサポート、「写真について話す」、「読んでから話す」、「話すサンプル」",
-      "tips2": "AIスコアリング, AI評価結果, 教師の指導",
-      "tips3": "正確な評価スコア、詳細な評価レポート",
-      "tips4": "結果は<span class='yellow'>1〜5分</span>以内に表示されます",
-      "btn_font": "もっと詳しく知る",
+      "title": "DETスピーキングAI添削",
+      "tips1": "\"Listen, Then Speak\"、\"Speak About the Photo\"、\"Read, Then Speak\"、\"Speaking\nSample\"に対応",
+      "tips2": "AI採点、AI評価結果、講師のガイダンス",
+      "tips3": "正確なスコア評価、詳細な評価レポート",
+      "tips4": "結果は<span class='yellow'>1〜5</span>分以内にご利用いただけます",
+      "btn_font": "詳しくはこちら",
       "btn_img_alt": "黄色い矢印右"
     },
     "article5": {
-      "title": "Duolingo English Test コース",
-      "tips1": "詳しいガイドで、<span class='yellow'>深い理解</span>を DET 話すセクションと書くセクションに発展させましょう",
-      "tips2": "包括的な習熟を達成する",
+      "title": "Duolingo English Testコース",
+      "tips1": "詳細なガイドでDETのスピーキングおよびライティングセクションを深く理解する",
+      "tips2": "総合的にマスターできる",
       "tips3": "ESL専門家から学ぶ",
-      "tips4": "先取りして情報を手に入れよう",
-      "btn_font": "もっと詳しく見る",
+      "tips4": "常に最新情報を把握し、一歩先へ",
+      "btn_font": "詳しく見る",
       "btn_img_alt": "黄色い矢印右"
     },
     "thousand": "k",
@@ -162,7 +162,7 @@
     "Join_Them": "参加する"
   },
   "slogen": {
-    "title": "<div class='font1'>トップスコアへの道を始めよう</div><div class='font2'>Duolingo English Test ！</div>",
+    "title": "<div class='font1'>Duolingo English Testでトップスコアへの道をスタート！</div>",
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料開始",
     "Start_for_free": "無料で始める"

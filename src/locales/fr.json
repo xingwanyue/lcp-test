@@ -90,7 +90,7 @@
       "keywords": "Test d'anglais Duolingo, DET Duolingo, test DET, examen Duolingo, test en ligne Duolingo, test\nde langue anglaise Duolingo, examen d'anglais Duolingo, test de compétence en anglais\nDuolingo, examen de compétence Duolingo en anglais, test d'anglais de Duolingo"
     },
     "bigtitle1": "Nombre de scores élevés (130+ points)：10000+",
-    "bigtitle2": "Exceptionnel 4.8/5 Évaluation de plus de 850 avis !",
+    "bigtitle2": "Note exceptionnelle de 4,8/5 sur plus de 850 avis !",
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
@@ -138,21 +138,21 @@
       "btn_img_alt": "Flèche Droite Jaune"
     },
     "article4": {
-      "title": "DET Correction de l'IA Parlante",
-      "tips1": "Supportez \"Écouter, puis Parler\", \"Parler de la Photo\", \"Lire, puis Parler\", \"Exemple de Parole\"",
-      "tips2": "Résultats d'évaluation par IA, Évaluation par IA, Orientation des enseignants",
-      "tips3": "Scores d'Évaluation Précis, Rapport d'Évaluation Détaillé",
-      "tips4": "Les résultats seront disponibles dans <span class='yellow'>1-5 minutes</span>",
-      "btn_font": "Apprendre encore plus",
+      "title": "Correction IA de l'expression orale DET",
+      "tips1": "Supporte \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\",\n\"Speaking Sample\"",
+      "tips2": "Évaluation par IA, Résultats d'évaluation IA, Accompagnement d'un enseignant",
+      "tips3": "Scores d'évaluation précis, rapport d'évaluation détaillé",
+      "tips4": "Les résultats seront disponibles en <span class='yellow'>1 à 5 </span>minutes",
+      "btn_font": "En savoir plus",
       "btn_img_alt": "Flèche Jaune Droite"
     },
     "article5": {
-      "title": "Duolingo English Test Cours",
-      "tips1": "Développez une <span class='yellow'>compréhension approfondie</span> des sections de DET expression orale et écrite avec nos guides détaillés",
-      "tips2": "Atteindre une Maîtrise Complète",
-      "tips3": "Apprenez des experts en ESL",
-      "tips4": "Restez informé et en avance",
-      "btn_font": "Explorer davantage",
+      "title": "Correction IA de l'expression orale DET",
+      "tips1": "Approfondissez votre compréhension des sections expression orale et écrite du DET avec nos guides détaillés",
+      "tips2": "Atteignez une maîtrise complète",
+      "tips3": "Apprenez auprès d'experts en ESL",
+      "tips4": "Restez informé et gardez une longueur d'avance",
+      "btn_font": "Explorer plus",
       "btn_img_alt": "Flèche droite jaune"
     },
     "thousand": "k",
@@ -162,7 +162,7 @@
     "Join_Them": "Rejoignez-les"
   },
   "slogen": {
-    "title": "<div class='font1'>Commencez votre chemin vers des scores élevés sur le</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Commencez votre parcours vers les meilleurs scores au Duolingo English Test !</div>",
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un email",
     "Start_for_free": "Commencez gratuitement"

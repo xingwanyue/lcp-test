@@ -91,7 +91,7 @@
       "keywords": "듀오링고 영어 시험, DET Duolingo, DET 테스트, 듀오링고 시험, 듀오링고 온라인 테스트, 듀오링\n고 영어 능력 시험, 듀오링고 영어 평가, 듀오링고 영어 시험 준비, 영어 능력 시험 듀오링고"
     },
     "bigtitle1": "130점 이상 고득점자 수：10000+",
-    "bigtitle2": "850개 이상의 리뷰에서 뛰어난 4.8/5 평점!",
+    "bigtitle2": "850개 이상의 리뷰에서 4.8/5의 뛰어난 평점!",
     "power_by": "AI로 구동되는",
     "h1Mobile": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
     "h1PC": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
@@ -139,21 +139,21 @@
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "article4": {
-      "title": "DET 말하는 AI 수정",
-      "tips1": "지원 \"듣고, 말하기\", \"사진에 대해 말하기\", \"읽고, 말하기\", \"말하기 샘플\"",
-      "tips2": "AI 채점, AI 평가 결과, 교사 지침",
+      "title": "DET 말하기 AI 교정",
+      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"\n지원",
+      "tips2": "AI 채점, AI 평가, 강사 가이드",
       "tips3": "정확한 평가 점수, 상세한 평가 보고서",
-      "tips4": "결과는 <span class='yellow'>1-5분</span> 이내에 제공됩니다",
+      "tips4": "결과는 <span class='yellow'>1~5</span>분 내에 제공됩니다",
       "btn_font": "자세히 알아보기",
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "article5": {
-      "title": "Duolingo English Test 과정",
-      "tips1": "우리의 자세한 가이드로 <span class='yellow'>심층적인 이해</span>를 발달시키십시오 DET 말하기 및 쓰기 섹션에 대해",
-      "tips2": "종합적인 숙달 달성",
+      "title": "DET 말하기 AI 교정",
+      "tips1": "상세한 가이드를 통해 DET 말하기 및 쓰기 섹션에 대한 심층 이해 개발",
+      "tips2": "완벽한 마스터리 달성",
       "tips3": "ESL 전문가에게 배우기",
-      "tips4": "정보를 빠르고 앞서게 유지하세요",
-      "btn_font": "더 알아보기",
+      "tips4": "정보에 밝고 앞서 나가기",
+      "btn_font": "더 탐색하기",
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
     "thousand": "k",
@@ -163,7 +163,7 @@
     "Join_Them": "그들과 함께하기"
   },
   "slogen": {
-    "title": "<div class='font1'>최고 점수를 향한 여정을 시작하세요</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Duolingo English Test에서 최고 점수를 향한 여정을 시작하세요!</div>",
     "Start_free_with_Google": "Google로 무료 시작",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기"

@@ -91,7 +91,7 @@
       "keywords": "Duolingo İngilizce Testi, DET Duolingo, DET Testi, Duolingo Sınavı, Duolingo Online Test,\nDuolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo İngilizce Yeterlilik Testi, İngilizce\nYeterlilik Sınavı Duolingo, Duolingo İngilizce Testi"
     },
     "bigtitle1": "Yüksek Puan Alanların Sayısı (130+ Puan)：10000+",
-    "bigtitle2": "850 Üzerinden İncelemelerden 4.8/5 Olağanüstü Puan!",
+    "bigtitle2": "850'den fazla değerlendirme ile 4,8/5 mükemmel derecelendirme!",
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
@@ -139,21 +139,21 @@
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article4": {
-      "title": "DET Konuşma AI Düzeltme",
-      "tips1": "Destek \"Dinle, Sonra Konuş\", \"Fotoğraf Hakkında Konuş\", \"Oku, sonra Konuş\", \"Konuşma Örneği\"",
+      "title": "DET Konuşma Yapay Zeka Düzeltme",
+      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, Then Speak\", \"Speaking Sample\"\ndesteklenir",
       "tips2": "AI Puanlama, AI Değerlendirme Sonuçları, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>1-5 dakika</span> içinde mevcut olacak",
-      "btn_font": "Daha fazla bilgi edin",
+      "tips4": "Sonuçlar <span class='yellow'>1-5</span>dakika içinde hazır olacaktır",
+      "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article5": {
-      "title": "Duolingo English Test Kurs",
-      "tips1": "Kapsamlı rehberlerimizle konuşma ve yazma bölümlerinin <span class='yellow'>derinlemesine bir anlayışını</span> geliştirin DET",
-      "tips2": "Kapsamlı Ustalık Sağlayın",
+      "title": "DET Konuşma Yapay Zeka Düzeltme",
+      "tips1": "DET konuşma ve yazma bölümlerini derinlemesine anlamak için ayrıntılı kılavuzlarımızla\nöğrenin",
+      "tips2": "Kapsamlı Bir Uzmanlık Kazanın",
       "tips3": "ESL Uzmanlarından Öğrenin",
-      "tips4": "Haberdar Olun ve Önde Kalın",
-      "btn_font": "Daha fazlasını keşfedin",
+      "tips4": "Bilgili ve Önde Kalın",
+      "btn_font": "Daha fazla keşfedin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "thousand": "k",
@@ -163,7 +163,7 @@
     "Join_Them": "Onlara Katıl"
   },
   "slogen": {
-    "title": "<div class='font1'>En Yüksek Puanlara Giden Yolunuza Başlayın</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Duolingo English Test'te En Yüksek Skorları Elde Etme Yolunuza Başlayın!</div>",
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "E-posta ile ücretsiz başla",
     "Start_for_free": "Ücretsiz başla"
