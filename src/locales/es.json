@@ -405,17 +405,17 @@
     },
     "three_our_our": {
       "h2": "Nuestro Equipo, Nuestra Meta",
-      "ov": "Nuestra Visión",
-      "me": "Mejorar la educación a través de la IA",
-      "om": "Nuestra Misión",
-      "omdesc": "Asegúrate de que la inteligencia general <br />artificial beneficie a todos los estudiantes.",
-      "ovs": "Nuestros Valores",
-      "ovsdesc": "Sinceridad, cooperación y beneficio<br /> mutuo"
+      "ov": "Misión",
+      "me": "Transformar la educación mediante tecnología e inteligencia artificial",
+      "om": "Visión",
+      "omdesc": "Hacer accesible la educación de calidad para todos",
+      "ovs": "Valores",
+      "ovsdesc": "Innovación {'|'} Tecnología {'|'} Accesibilidad"
     },
     "get_in_touch": {
-      "h2": "Póngase en contacto",
+      "h2": "Contacto",
       "goytb": "Ir a YouTube",
-      "getmore": "Obtén más de DETPractice en YouTube\n"
+      "getmore": "Canal YouTube: Recursos gratuitos para tu éxito en el DET"
     }
   },
   "contactUs": {

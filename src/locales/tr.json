@@ -405,17 +405,17 @@
     },
     "three_our_our": {
       "h2": "Uzman Kadro ve Hedeflerimiz",
-      "ov": "Vizyonumuz",
-      "me": "Yapay Zeka ile eğitimi daha iyi hale getirmek",
-      "om": "Misyonumuz",
-      "omdesc": "Yapay genel <br />zekanın tüm öğrencilere fayda sağladığından emin olun.",
-      "ovs": "Değerlerimiz",
-      "ovsdesc": "Dürüstlük, iş birliği ve karşılıklı<br /> fayda"
+      "ov": "Amacımız",
+      "me": "Teknoloji ve yapay zeka ile eğitimde yeni ufuklar açmak",
+      "om": "Hedefimiz",
+      "omdesc": "Kaliteli eğitimi herkes için ulaşılabilir kılmak",
+      "ovs": "İlkelerimiz",
+      "ovsdesc": "Yenilikçilik {'|'} Teknoloji {'|'} Erişilebilirlik"
     },
     "get_in_touch": {
-      "h2": "İletişime Geçin",
+      "h2": "İletişim",
       "goytb": "YouTube'a git",
-      "getmore": "DETPractice'tan YouTube'da daha fazlasını alın"
+      "getmore": "YouTube Kanalımız: Başarıya ulaştıran ücretsiz eğitim içerikleri"
     }
   },
   "contactUs": {

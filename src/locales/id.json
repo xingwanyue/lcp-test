@@ -405,17 +405,17 @@
     },
     "three_our_our": {
       "h2": "Tim Inovatif dengan Visi Besar",
-      "ov": "Visi Kami",
-      "me": "Meningkatkan pendidikan melalui AI",
-      "om": "Misi Kami",
-      "omdesc": "Pastikan bahwa kecerdasan umum buatan <br />menguntungkan semua siswa.",
+      "ov": "Misi",
+      "me": "Memajukan dunia pendidikan melalui inovasi teknologi dan memberdayakan setiap pelajar dengan teknologi AI",
+      "om": "Visi",
+      "omdesc": "Mewujudkan pendidikan berkualitas yang terjangkau bagi semua, membantu setiap pelajar meraih cita-citanya",
       "ovs": "Nilai-Nilai Kami",
-      "ovsdesc": "Ketulusan, kerja sama, dan manfaat bersama<br />"
+      "ovsdesc": "Inovasi Berkelanjutan {'|'} Pemberdayaan Teknologi {'|'} Pendidikan untuk Semua"
     },
     "get_in_touch": {
-      "h2": "Hubungi Kami",
+      "h2": "Kontak Kami",
       "goytb": "Pergi ke YouTube",
-      "getmore": "Dapatkan lebih banyak dari DETPractice di YouTube"
+      "getmore": "Channel YouTube Resmi: Konten pembelajaran berkualitas untuk persiapan ujian yang optimal"
     }
   },
   "contactUs": {

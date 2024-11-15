@@ -405,17 +405,17 @@
     },
     "three_our_our": {
       "h2": "Il Nostro Team, La Nostra Visione",
-      "ov": "La nostra Visione",
-      "me": "Migliorare l'istruzione attraverso l'IA",
-      "om": "La Nostra Missione",
-      "omdesc": "Garantire che l'intelligenza generale <br />artificiale benefici tutti gli studenti.",
-      "ovs": "I nostri Valori",
-      "ovsdesc": "Sincerità, cooperazione e reciproco<br /> beneficio"
+      "ov": "La Nostra Missione",
+      "me": "Rivoluzionare l'apprendimento attraverso l'innovazione tecnologica e l'IA",
+      "om": "Il Nostro Obiettivo",
+      "omdesc": "Rendere l'istruzione di qualità accessibile a tutti, trasformando i sogni in realtà",
+      "ovs": "I Nostri Valori",
+      "ovsdesc": "Innovazione {'|'} Tecnologia {'|'} Accessibilità"
     },
     "get_in_touch": {
       "h2": "Contatti",
       "goytb": "Vai su YouTube",
-      "getmore": "Ottieni di più da DETPractice su YouTube"
+      "getmore": "Canale YouTube: Contenuti didattici gratuiti per una preparazione eccellente"
     }
   },
   "contactUs": {

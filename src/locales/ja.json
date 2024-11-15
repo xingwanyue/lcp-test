@@ -51,7 +51,13 @@
     "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "企業情報",
-    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
+    "Products": [
+      "DET演習",
+      "AIライティング添削",
+      "AIスピーキング評価",
+      "模擬試験",
+      "総合対策コース"
+    ],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -88,7 +94,12 @@
     "power_by": "AIによって提供されました",
     "h1Mobile": "簡単に高得点を取得する<br />Duolingo <br />英語テストで<span class=\"seo_hack\">DET 練習</span>",
     "h1PC": "スコアを簡単に上げる <br />Duolingo English Test <span class=\"seo_hack\">DET 練習</span>で",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -399,7 +410,7 @@
       "om": "私たちの使命",
       "omdesc": "すべての学生に利益をもたらすよう人工汎用<br />知能を確保する。",
       "ovs": "私たちの価値観",
-      "ovsdesc": "誠意、協力と相互<br />利益"
+      "ovsdesc": "技術革新：最先端の AI 活用<br/>学習者主体：一人ひとりに最適な環境を<br/>機会創出：より多くの方への学びの提供"
     },
     "get_in_touch": {
       "h2": "お問い合わせ",
