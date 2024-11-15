@@ -2,8 +2,8 @@
   "test": "테스트용",
   "Home": "홈",
   "Products": "제품",
-  "Learn": "배우다",
-  "Pricing": "가격 책정",
+  "Learn": "배우기",
+  "Pricing": "요금제",
   "Blog": "블로그",
   "header": {
     "home_logo_title": "DET 연습",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test 온라인 강좌",
     "commonAlt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "Get_started": "시작하기",
-    "Try_for_free": "무료로 사용해보기",
+    "Try_for_free": "무료로 시작하기",
     "prod1": {
       "title": "Duolingo English Test 연습",
       "alt": "Duolingo English Test 연습",

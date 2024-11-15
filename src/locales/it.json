@@ -1,10 +1,10 @@
 {
   "test": "Per test",
   "Home": "Home",
-  "Products": "Prodotti",
-  "Learn": "Imparare",
-  "Pricing": "Prezzi",
-  "Blog": "Blog",
+  "Products": "Servizi",
+  "Learn": "Materiali Didattici",
+  "Pricing": "Tariffe",
+  "Blog": "Guida allo Studio",
   "header": {
     "home_logo_title": "DET Pratica",
     "path_practice_title": "Duolingo Test di Pratica di Inglese Online",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test Corso Online",
     "commonAlt": "DET Pratica:La migliore Duolingo English Test piattaforma di pratica",
     "Get_started": "Inizia",
-    "Try_for_free": "Prova gratis",
+    "Try_for_free": "Prova Gratuita",
     "prod1": {
       "title": "Duolingo English Test Pratica",
       "alt": "Duolingo English Test Pratica",

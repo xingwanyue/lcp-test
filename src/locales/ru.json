@@ -1,10 +1,10 @@
 {
   "test": "Для тестирования",
   "Home": "Главная",
-  "Products": "Продукты",
-  "Learn": "Учить",
-  "Pricing": "Цены",
-  "Blog": "Блог",
+  "Products": "Услуги",
+  "Learn": "Учебные материалы",
+  "Pricing": "Тарифы",
+  "Blog": "Подготовка к экзамену",
   "header": {
     "home_logo_title": "DET Практика",
     "path_practice_title": "Duolingo Онлайн тест на знание английского языка",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test Онлайн курс",
     "commonAlt": "DET Практика:Лучший Duolingo English Test платформа для Практики",
     "Get_started": "Начать",
-    "Try_for_free": "Попробуйте бесплатно",
+    "Try_for_free": "Начать бесплатно",
     "prod1": {
       "title": "Duolingo English Test Практика",
       "alt": "Duolingo English Test Практика",

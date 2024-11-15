@@ -1,10 +1,10 @@
 {
   "test": "Untuk uji coba",
   "Home": "Beranda",
-  "Products": "Produk",
-  "Learn": "Belajar",
-  "Pricing": "Harga",
-  "Blog": "Blog",
+  "Products": "Produk & Layanan",
+  "Learn": "Materi Belajar",
+  "Pricing": "Paket Harga",
+  "Blog": "Panduan Persiapan",
   "header": {
     "home_logo_title": "DET Latihan",
     "path_practice_title": "Duolingo Tes Latihan Bahasa Inggris Online",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test Kursus Online",
     "commonAlt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
     "Get_started": "Mulai",
-    "Try_for_free": "Coba gratis",
+    "Try_for_free": "Mulai Gratis",
     "prod1": {
       "title": "Duolingo English Test Latihan",
       "alt": "Duolingo English Test Praktek",

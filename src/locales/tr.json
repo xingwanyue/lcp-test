@@ -1,10 +1,10 @@
 {
   "test": "Deneme için",
   "Home": "Ana Sayfa",
-  "Products": "Ürünler",
-  "Learn": "Öğrenmek",
-  "Pricing": "Fiyatlandırma",
-  "Blog": "Blog",
+  "Products": "Hizmetlerimiz",
+  "Learn": "Eğitim Materyalleri",
+  "Pricing": "Ücretler",
+  "Blog": "Başarı Kılavuzu",
   "header": {
     "home_logo_title": "DET Alıştırma",
     "path_practice_title": "Duolingo İngilizce Pratik Testi Online",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test Kurs Çevrimiçi",
     "commonAlt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
     "Get_started": "Başlayın",
-    "Try_for_free": "Ücretsiz dene",
+    "Try_for_free": "Ücretsiz Dene",
     "prod1": {
       "title": "Duolingo English Test Uygulama",
       "alt": "Duolingo English Test Uygulama",

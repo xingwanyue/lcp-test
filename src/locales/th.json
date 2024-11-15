@@ -1,10 +1,10 @@
 {
   "test": "สำหรับการทดสอบ",
   "Home": "หน้าแรก",
-  "Products": "ผลิตภัณฑ์",
-  "Learn": "เรียนรู้",
-  "Pricing": "ราคา",
-  "Blog": "บล็อก",
+  "Products": "บริการ",
+  "Learn": "คลังข้อสอบ",
+  "Pricing": "แพ็กเกจ",
+  "Blog": "เทคนิคติว",
   "header": {
     "home_logo_title": "DET ฝึกฝน",
     "path_practice_title": "Duolingo แบบทดสอบฝึกภาษาอังกฤษออนไลน์",
