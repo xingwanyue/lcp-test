@@ -386,24 +386,25 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "우리에 대해 - DET 연습",
-      "description": ""
+      "title": "DET Practice | Duolingo English Test (DET) 원스톱 대비 플랫폼",
+      "description": "DET Practice - 전문적인 Duolingo 대비 플랫폼으로, 18,000개 이상의 실제 문제 연습, AI 스마트첨삭, 그리고 실제 시험과 같은 모의 경험을 제공합니다.효율적으로 Duolingo English Test를 준 비하여 이상적인 점수를 쉽게 얻을 수 있도록 도와드립니다.",
+      "keywords": "Duolingo English Test, DET 모의시험, DET 문제은행, DET 스마트 첨삭, DET 말하기 연습, DET 쓰기\n연습, DET 온라인 코스, DET 학습 플랫폼, Duolingo 시험 대비, DET 시험 전략, DET 대비 자료"
     },
-    "title": "DET Practice에 대하여",
+    "title": "DET Practice는 듀오링고 영어 시험(DET) 준비를 위한 전문 플랫폼으로, 수험생 여러분의 효 율적인 시험 준비를 도와드립니다",
     "title_desc": "DETPractice.com은 Duolingo English Test 연습하고 배우기에 가장 좋은 플랫폼입니다.",
     "check_out": {
       "h2": "무엇을 할 수 있는지 확인하세요",
-      "qbt": "DET 질문 은행",
-      "qbtdesc": "우리는 최대 규모의 문제 은행을 보유하고 있으며 매일 업데이트합니다. 질문을 연습하여 Duolingo English Test 점수를 빠르게 향상시킬 수 있습니다.",
-      "flm": "DET 전체 길이 모의고사",
-      "flmdesc": "우리는 가장 강력한 DET 모의 테스트를 보유하고 있으며, 이를 통해 더 낮은 비용으로 정확하게 시험 점수를 평가할 수 있습니다.",
-      "acs": "DET AI 교정 서비스",
-      "acsdesc": "저희가 제공하는 AI 교정 도구를 사용하여 빠르게 귀하의 DET 말하기 및 쓰기 점수를 향상시킬 수 있습니다.",
-      "dc": "DET 코스",
-      "dedesc": "DET의 최신 시험 특징을 기반으로 시험 준비 자료와 과정을 개발해 나갈 것입니다."
+      "qbt": "풍부한 문제 콘텐츠",
+      "qbtdesc": "자체 개발한 문제를 매일 업데이트하며, 학습자료를 주기적으로 보완하여 시험의 핵심을 완벽히 대비하고 빠른 실력 향상을 돕습니다.",
+      "flm": "실전형 모의고사",
+      "flmdesc": "실제 DET와 동일한 환경에서 정확한 모의평가를 제공하여, 시험 진행 방식을 미리 익히고 자신감 있게 시험에 임할 수 있습니다.",
+      "acs": "AI 맞춤 첨삭",
+      "acsdesc": "최신 AI 평가 시스템으로 스피킹과 라이팅에 대한 전문적인 피드백을 제공하여, 핵심 역량을 효과적으로 향상시킵니다.",
+      "dc": "체계적인 학습 과정",
+      "dedesc": "최신 출제 경향을 반영한 과학적이고 체계적인 학습 시스템으로, 빈틈없는 시험 준비와 학습 효율 극대화를 실현합니다."
     },
     "three_our_our": {
-      "h2": "비록 젊지만 강하다",
+      "h2": "혁신적인 팀과 미래 비전",
       "ov": "우리의 비전",
       "me": "AI를 통한 교육 개선",
       "om": "우리의 사명",

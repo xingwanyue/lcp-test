@@ -386,24 +386,25 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Su di noi - DET Pratica",
-      "description": ""
+      "title": "DET Practice | Piattaforma All-in-One per la Preparazione al Duolingo English Test (DET)",
+      "description": "DET Practice - Piattaforma professionale per la preparazione a Duolingo, offre oltre 18.000\nesercizi basati su domande reali, correzione intelligente con AI e simulazioni complete dell'esame. Ti aiuta a prepararti in modo efficiente per il Duolingo English Test, ottenendo facilmente il punteggio desiderato.",
+      "keywords": "Duolingo English Test, Simulazione DET, Banca Dati DET, Correzione Intelligente DET, Pratica\nOrale DET, Pratica di Scrittura DET, Corsi Online DET, Piattaforma di Apprendimento DET,\nPreparazione Esame Duolingo, Tecniche d'Esame DET, Materiali di Preparazione DET"
     },
-    "title": "Informazioni su DET Practice",
-    "title_desc": "DETPractice.com è la migliore piattaforma per Duolingo English Test Praticare e Imparare.",
+    "title": "Scopri DET Practice",
+    "title_desc": "DET Practice è la piattaforma leader per la preparazione al Duolingo English Test (DET). Ti guidiamo verso il successo con un metodo efficace e personalizzato.",
     "check_out": {
-      "h2": "Scopri Cosa Possiamo Fare",
-      "qbt": "DET Banca delle Domande",
-      "qbtdesc": "Abbiamo la più grande banca di domande e la aggiorniamo ogni giorno. Puoi migliorare rapidamente il tuo punteggio Duolingo English Test praticando le domande.",
-      "flm": "DET Simulazione Completa",
-      "flmdesc": "Abbiamo il più potente DET mock test, che ti permette di valutare accuratamente i tuoi punteggi dei test a un costo inferiore.",
-      "acs": "DET Servizio di Correzione AI",
-      "acsdesc": "Puoi utilizzare gli strumenti di correzione AI che forniamo per migliorare rapidamente i tuoi punteggi di DET espressione orale e scrittura.",
-      "dc": "DET Corsi",
-      "dedesc": "Continueremo a sviluppare materiali di preparazione ai test e corsi basati sulle ultime caratteristiche dei test di DET."
+      "h2": "Perché Sceglierci",
+      "qbt": "Esercizi Completi",
+      "qbtdesc": "Aggiorniamo quotidianamente la nostra raccolta di esercizi esclusivi. Materiali sempre nuovi per una preparazione completa e punteggi più alti.",
+      "flm": "Simulazioni Realistiche ",
+      "flmdesc": "Ambiente d'esame identico al DET ufficiale. Valutazioni professionali per affrontare l'esame con sicurezza e preparazione.",
+      "acs": "Valutazione con IA",
+      "acsdesc": "Sistema innovativo di intelligenza artificiale che analizza le tue competenze linguistiche. Feedback dettagliato e consigli mirati per parlato e scrittura.",
+      "dc": "Percorso Formativo",
+      "dedesc": "Programma strutturato secondo gli ultimi standard d'esame. Preparazione metodica e completa per risultati garantiti."
     },
     "three_our_our": {
-      "h2": "Anche se Giovane, Ma Forte",
+      "h2": "Il Nostro Team, La Nostra Visione",
       "ov": "La nostra Visione",
       "me": "Migliorare l'istruzione attraverso l'IA",
       "om": "La Nostra Missione",

@@ -386,24 +386,25 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Hakkımızda - DET Pratik",
-      "description": ""
+      "title": "DET Practice | Duolingo İngilizce Testi (DET) için Hepsi Bir Arada Hazırlık Platformu",
+      "description": "DET Practice - Profesyonel Duolingo hazırlık platformu, 18.000'den fazla gerçek soru pratiği,yapay zeka destekli değerlendirme ve tam simülasyon sınav deneyimi sunar. Duolingo İngilizce Testi'ne verimli bir şekilde hazırlanmanıza yardımcı olur, ideal puanınızı kolayca elde edin.",
+      "keywords": "Duolingo İngilizce Testi, DET Simülasyon Sınavı, DET Soru Bankası, DET Akıllı Değerlendirme, DET\nKonuşma Pratiği, DET Yazma Pratiği, DET Online Kurslar, DET Öğrenme Platformu, Duolingo\nSınav Hazırlığı, DET Sınav Teknikleri, DET Hazırlık Materyalleri"
     },
-    "title": "Hakkında DET Pratik",
-    "title_desc": "DETPractice.com, Pratik Yapmak ve Öğrenmek için en iyi platformdur.",
+    "title": "DET Practice Nedir?",
+    "title_desc": "DET Practice, Duolingo İngilizce Testi (DET) için özel olarak tasarlanmış bir hazırlık platformudur. Hedef puanınıza etkili ve hızlı bir şekilde ulaşmanızı sağlar.",
     "check_out": {
-      "h2": "Neler Yapabileceğimizi İnceleyin",
+      "h2": "Neden DET Practice?",
       "qbt": "DET Soru Bankası",
-      "qbtdesc": "En büyük soru bankasına sahibiz ve her gün güncelliyoruz. Soruları çözerek Duolingo English Test puanınızı hızla artırabilirsiniz.",
-      "flm": "DET Tam Uzunlukta Deneme",
-      "flmdesc": "En güçlü DET deneme testine sahibiz, bu sayede test sonuçlarınızı daha düşük bir maliyetle doğru bir şekilde değerlendirebilirsiniz.",
-      "acs": "DET AI Düzeltme Hizmeti",
-      "acsdesc": "Sunmuş olduğumuz yapay zeka düzeltme araçlarını kullanarak konuşma ve yazma puanlarınızı hızlı bir şekilde artırabilirsiniz.",
-      "dc": "DET Dersler",
-      "dedesc": "En son DET test özelliklerine dayalı olarak test hazırlık materyalleri ve kursları geliştirmeye devam edeceğiz."
+      "qbtdesc": "Her gün güncellenen özgün sorular ve çalışma materyalleri ile sınav başarınızı garantileyin. DET formatına uygun binlerce soru ile pratik yapın.",
+      "flm": "Birebir Sınav Deneyimi",
+      "flmdesc": "Gerçek DET sınavının tıpatıp aynısı olan deneme sınavlarıyla kendinizi test edin. Detaylı performans analizleriyle eksiklerinizi görün.",
+      "acs": "Yapay Zeka Değerlendirmesi",
+      "acsdesc": "İleri teknoloji yapay zeka sistemiyle konuşma ve yazma becerileriniz anında değerlendirilir. Kişisel gelişim önerileriyle sürekli ilerleme kaydedin.",
+      "dc": "Sistemli Eğitim Programı",
+      "dedesc": "Güncel sınav içeriğine göre hazırlanmış, adım adım ilerleyen eğitim programı. Başarıya giden yolda size rehberlik eder."
     },
     "three_our_our": {
-      "h2": "Genç Ama Güçlü",
+      "h2": "Uzman Kadro ve Hedeflerimiz",
       "ov": "Vizyonumuz",
       "me": "Yapay Zeka ile eğitimi daha iyi hale getirmek",
       "om": "Misyonumuz",

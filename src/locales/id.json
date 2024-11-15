@@ -386,24 +386,25 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Tentang Kami - DET Praktik",
-      "description": ""
+      "title": "DET Practice | Platform All-in-One Persiapan Duolingo English Test (DET)",
+      "description": "DET Practice - Platform persiapan Duolingo profesional yang menyediakan lebih dari 18.000 latihan soal asli, koreksi cerdas AI, dan pengalaman simulasi ujian autentik. Membantu Anda mempersiapkan Duolingo English Test secara efisien, meraih skor ideal dengan mudah.",
+      "keywords": "Duolingo English Test, Simulasi Ujian DET, Bank Soal DET, Koreksi Cerdas DET, Latihan Speaking\nDET, Latihan Writing DET, Kursus Online DET, Platform Pembelajaran DET, Persiapan Ujian\nDuolingo, Tips Ujian DET, Materi Persiapan DET"
     },
     "title": "Tentang DET Practice",
-    "title_desc": "DETPractice.com adalah platform terbaik untuk Duolingo English Test Berlatih dan Belajar.",
+    "title_desc": "DET Practice adalah platform khusus persiapan Duolingo English Test (DET) yang akan membantu Anda berlatih dengan mudah dan efektif untuk mencapai skor terbaik.",
     "check_out": {
-      "h2": "Lihat Apa yang Bisa Kami Lakukan",
-      "qbt": "DET Bank Soal",
-      "qbtdesc": "Kami memiliki bank soal terbesar dan memperbaruinya setiap hari. Anda dapat dengan cepat meningkatkan skor Duolingo English Test Anda dengan berlatih soal-soal tersebut.",
-      "flm": "DET Ujian Coba Penuh",
-      "flmdesc": "Kami memiliki tes simulasi DET yang paling kuat, yang memungkinkan Anda untuk mengevaluasi skor tes Anda dengan akurat dengan biaya yang lebih rendah.",
-      "acs": "DET Layanan Koreksi AI",
-      "acsdesc": "Anda dapat menggunakan alat koreksi AI yang kami sediakan untuk dengan cepat meningkatkan skor berbicara dan menulis Anda.",
-      "dc": "DET Kursus",
-      "dedesc": "Kami akan terus mengembangkan materi persiapan ujian dan kursus berdasarkan fitur ujian terbaru dari DET."
+      "h2": "Kelebihan Kami",
+      "qbt": "Bank Soal Lengkap",
+      "qbtdesc": "Dilengkapi soal-soal eksklusif yang diperbarui setiap hari dan materi pembelajaran yang selalu diupdate, membantu Anda menguasai konsep penting ujian dan meningkatkan skor dengan cepat.",
+      "flm": "Simulasi Ujian Seperti Asli",
+      "flmdesc": "Menghadirkan suasana ujian DET yang mirip dengan aslinya, memberikan pengalaman latihan yang akurat, sehingga Anda terbiasa dengan proses ujian dan lebih percaya diri saat ujian sesungguhnya.",
+      "acs": "Koreksi AI Pintar",
+      "acsdesc": "Sistem penilaian AI terkini memberikan feedback detail untuk kemampuan speaking dan writing Anda, membantu meningkatkan kemampuan bahasa Inggris secara tepat.",
+      "dc": "Kursus Terstruktur",
+      "dedesc": "Dirancang berdasarkan pola ujian terbaru dengan sistem belajar yang sistematis dan menyeluruh, memastikan persiapan ujian yang maksimal dan efisien."
     },
     "three_our_our": {
-      "h2": "Meskipun Muda, Tapi Kuat",
+      "h2": "Tim Inovatif dengan Visi Besar",
       "ov": "Visi Kami",
       "me": "Meningkatkan pendidikan melalui AI",
       "om": "Misi Kami",
