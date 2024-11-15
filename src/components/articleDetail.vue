@@ -117,7 +117,7 @@ const iconHover = (index: number) => {
               </div>
             </div>
           </div>
-          <div class="zhengwen" v-html="JSON.parse(props.article.content)[0][1]"></div>
+          <!-- <div class="zhengwen" v-html="JSON.parse(props.article.content)[0][1]"></div>
           <div v-if="JSON.parse(props.article.content).length > 1" class="mulu_dom">
             <div class="inthis">In this article</div>
             <div class="article_group_out">
@@ -127,13 +127,12 @@ const iconHover = (index: number) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div id="content" class="article-con1">
-            <div v-for="(item, index) in JSON.parse(props.article.content)" :key="`content${index}`">
-              <div v-if="index > 0" class="one_duan">
-                <div :id="`article${index}`" v-if="item[0]" class="one_duan_title">{{ item[0] }}</div>
-                <div class="one_duan_content" v-html="item[1]"></div>
+            <div>
+              <div class="one_duan">
+                <div class="one_duan_content" v-html="props.article.content" />
               </div>
             </div>
           </div>
@@ -523,6 +522,35 @@ const iconHover = (index: number) => {
     }
     .subs {
       margin-top: 28px;
+    }
+  }
+}
+</style>
+<style lang="scss">
+.blogNav {
+  background: #fff4f1;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  .inthis {
+    font-weight: 500;
+    font-size: 22px;
+    color: #201515;
+  }
+  .h2-point {
+    font-weight: 400;
+    font-size: 22px;
+    color: #201515;
+    line-height: 32px;
+    cursor: pointer;
+    &:hover {
+      font-weight: 500;
+      font-size: 22px;
+      color: #f66442;
+      line-height: 32px;
+      text-decoration: underline;
     }
   }
 }
