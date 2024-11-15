@@ -46,28 +46,28 @@
     }
   },
   "footer": {
-    "inc": "Il nostro prodotto non ha alcuna connessione con Duolingo,Inc",
-    "ProductsTitle": "Prodotti",
-    "LearnTitle": "Risorse di preparazione",
+    "inc": "18. Piattaforma indipendente non affiliata a Duolingo, Inc.",
+    "ProductsTitle": "Servizi",
+    "LearnTitle": "Risorse",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Azienda",
+    "CompanyTitle": "Chi Siamo",
     "Products": [
-      "DET Pratica",
-      "Correzione AI di scrittura DET",
-      "Correzione AI di parlato DET",
-      "DET Simulazione",
-      "Duolingo English Test Corso"
+      "Esercizi DET",
+      "Correzione IA Scrittura",
+      "Valutazione IA Speaking",
+      "Simulazioni",
+      "Corsi Completi"
     ],
     "Company": [
       "Chi siamo",
       "Contattaci",
-      "Termini e Condizioni",
-      "Informativa sulla privacy",
+      "Condizioni",
+      "Privacy",
       "Mappa del sito",
-      "Programma di Affiliazione",
-      "Politica di rimborso"
+      "Partnership",
+      "Rimborsi"
     ],
-    "show_more": "mostra di più",
+    "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
     "newAlt": "DET Pratica",
@@ -81,7 +81,8 @@
       "Vocabolario DET",
       "Suggerimenti per la preparazione DET",
       "Imparare DET"
-    ]
+    ],
+    "Products[0]": "Esercizi DET"
   },
   "index": {
     "seometa": {

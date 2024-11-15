@@ -46,28 +46,28 @@
     }
   },
   "footer": {
-    "inc": "Produk kami tidak memiliki hubungan dengan Duolingo,Inc",
-    "ProductsTitle": "Produk",
-    "LearnTitle": "Sumber Daya Persiapan",
+    "inc": "Platform ini tidak memiliki afiliasi dengan Duolingo, Inc. Seluruh layanan disediakan dan dikelola secara independen oleh pihak ketiga.",
+    "ProductsTitle": "Produk & Layanan",
+    "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Perusahaan",
+    "CompanyTitle": "Tentang Kami",
     "Products": [
-      "DET Latihan",
-      "Koreksi AI Menulis DET",
-      "Koreksi AI Berbicara DET",
-      "DET Pura-Pura",
-      "Duolingo English Test Kursus"
+      "Latihan Soal DET",
+      "Koreksi Writing AI",
+      "Penilaian Speaking AI",
+      "Simulasi Ujian",
+      "Kursus DET"
     ],
     "Company": [
-      "Tentang kami",
-      "Hubungi kami",
-      "Syarat dan Ketentuan",
+      "Tentang Kami",
+      "Hubungi Kami",
+      "Ketentuan Layanan",
       "Kebijakan Privasi",
       "Peta Situs",
-      "Program Afiliasi",
-      "Kebijakan Pengembalian Dana"
+      "Program Partner",
+      "Kebijakan Refund"
     ],
-    "show_more": "tampilkan lebih banyak",
+    "show_more": "Lihat Selengkapnya",
     "alt": "DET Latihan: Platform Duolingo English Test Latihan terbaik",
     "cookie_contenr": "DET Praktik menggunakan cookie untuk meningkatkan konten berdasarkan Pengaturan browser Anda. Untuk lebih jelasnya, lihat",
     "newAlt": "DET Latihan",
@@ -81,7 +81,8 @@
       "Kosakata DET",
       "Tips Persiapan DET",
       "Belajar DET"
-    ]
+    ],
+    "Products[0]": "Latihan Soal DET"
   },
   "index": {
     "seometa": {

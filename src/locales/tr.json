@@ -46,28 +46,28 @@
     }
   },
   "footer": {
-    "inc": "Ürünümüzün Duolingo,Inc ile hiçbir bağlantısı yoktur",
-    "ProductsTitle": "Ürünler",
-    "LearnTitle": "Hazırlık Kaynakları",
+    "inc": "Bu platform Duolingo, Inc. ile bağlantılı değildir ve bağımsız bir eğitim hizmetidir.",
+    "ProductsTitle": "Hizmetler",
+    "LearnTitle": "Kaynaklar",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Şirket",
+    "CompanyTitle": "Kurumsal",
     "Products": [
-      "DET Pratik",
-      "DET Yazma AI Düzeltme",
-      "DET Konuşma AI Düzeltme",
-      "DET Sahte",
-      "Duolingo English Test Kurs"
+      "DET Alıştırmaları",
+      "YZ Yazma Desteği",
+      "YZ Konuşma Desteği",
+      "Deneme Sınavları",
+      "Tam Hazırlık Paketi"
     ],
     "Company": [
       "Hakkımızda",
-      "Bize ulaşın",
-      "Şartlar ve Koşullar",
-      "Gizlilik Politikası",
+      "İletişim",
+      "Kullanım Koşulları",
+      "Gizlilik",
       "Site Haritası",
-      "Ortaklık Programı",
-      "İade Politikası"
+      "İş Ortaklığı",
+      "İade Koşulları"
     ],
-    "show_more": "daha fazla göster",
+    "show_more": "Devamını Gör",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "cookie_contenr": "DET Uygulama, tarayıcı Ayarlarınıza göre içeriği iyileştirmek için çerezler kullanır. Daha fazla bilgi için bkz",
     "newAlt": "DET Uygulama",
@@ -81,7 +81,8 @@
       "DET Kelime Bilgisi",
       "DET Hazırlık İpuçları",
       "DET Öğrenmek"
-    ]
+    ],
+    "Products[0]": "DET Alıştırmaları\n"
   },
   "index": {
     "seometa": {
