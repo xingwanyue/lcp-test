@@ -173,18 +173,18 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Pratica - Preparazione ai Test Iscrizione e Servizi Prezzi",
-      "description": "Scegli il piano giusto per la tua preparazione Duolingo English Test. Opzioni di prezzo accessibili per la pratica personalizzata, le recensioni degli esperti e gli esami simulati a scala completa.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di lingua inglese, Duolingo Esame di inglese, Duolingo Esame di competenzawords"
+      "title": "Prezzi per la Preparazione al Duolingo English Test | Piani Convenienti di Preparazione al DET",
+      "description": "Scopri le opzioni di prezzo per la preparazione al Duolingo English Test su DET Practice. Scegli tra piani flessibili e convenienti progettati per aiutarti a superare il Duolingo Test. Inizia oggi il tuo percorso con il piano giusto!",
+      "keywords": "prezzi preparazione Duolingo English Test, piani preparazione Duolingo Test, pratica DET conveniente, preparazione Duolingo English Test, prezzi DET, prezzi test di competenza inglese, piani di preparazione al test"
     },
     "pagefont": {
-      "h1": "Scegli il piano che fa per te",
+      "h1": "Scegli il Piano più Adatto a Te",
       "h4": "Pagamento sicuro! Annulla in qualsiasi momento! Padroneggia il DET ora!",
       "switch1": "Servizio",
       "switch2": "Corsi",
-      "sep": "Pagamento sicuro",
-      "ca": "Annulla in qualsiasi momento",
-      "atde": "Domina la DET ora",
+      "sep": "Pagamento Sicuro",
+      "ca": "Cancella in Qualsiasi Momento",
+      "atde": "Padroneggia il DET Ora",
       "circle_check_icon": "icona_di_controllo_cerchio",
       "Most_Popular_Choice": "Scelta più popolare",
       "off": "{sconto}% di sconto",
@@ -205,8 +205,8 @@
       "green_check": "Verifica Verde",
       "arrow_down": "Freccia giù",
       "free_font": "Gratuito",
-      "free_tips": " Puoi visualizzare 20 domande gratuitamente, prova la nostra piattaforma e vedi se soddisfa le tue esigenze.",
-      "tff": "Prova gratis",
+      "free_tips": "Puoi visualizzare 20 domande gratuitamente, provare la nostra piattaforma e vedere se soddisfa le tue esigenze.",
+      "tff": "Prova Gratuita",
       "save": "risparmia {num}%",
       "week": "/settimana",
       "month": "/mese",
@@ -303,21 +303,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Illimitato</span> per le Sessioni di Pratica",
-      "Accedi a <span class='strongfont'>18000+</span> domande di pratica",
-      "Sfoglia <span class='strongfont'>Esempi di risposte con punteggi alti</span>",
-      "<span class='strongfont'>Analisi Approfondita</span> delle Domande",
-      "Esame ad Alta Frequenza <span class='strongfont'>Libro delle Parole</span>",
-      "Piano di studi su misura con <span class='strongfont'>selezione intelligente delle domande</span>",
-      "Valutazioni del Parlato Potenziate dall'IA"
+      "Illimitato per le Sessioni di Pratica",
+      "Accesso a oltre 18.000 Domande di Pratica",
+      "Consulta Esempi di Risposte con Punteggio Alto",
+      "Analisi Approfondita delle Domande",
+      "Manuale delle Parole Frequenti dell'Esame",
+      "Piano di Studio Personalizzato con Selezione Intelligente delle Domande",
+      "Valutazioni del Speaking con IA"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Simulazioni di esami completi</span>",
-      "Prova in qualsiasi momento",
-      "Vicino all'<span class='strongfont'>esame reale DET</span>",
+      "Esami di Prova Completi",
+      "Fai il test in qualsiasi momento",
+      "Simile all'esame DET reale",
       "Punteggi di valutazione accurati",
       "Rapporto di valutazione dettagliato",
-      "I risultati saranno disponibili entro <span class='strongfont'>5-30 minuti</span>"
+      "Risultati disponibili in 5-30 minuti"
     ]
   },
   "blog": {

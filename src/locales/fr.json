@@ -186,24 +186,24 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Pratique - Duolingo Préparation aux Tests Adhésion et Services Tarifs",
+      "title": "Tarifs de Préparation au Duolingo English Test | Plans Abordables de Préparation au DET",
       "description": "Choisissez le plan adapté à votre préparation Duolingo English Test. Des options de tarification abordables pour une pratique personnalisée, des avis d'experts et des examens complets de simulation.",
       "keywords": "cléDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
     },
     "pagefont": {
-      "h1": "Choisissez le plan qui vous convient",
+      "h1": "Choisissez le Plan qui Vous Convient",
       "h4": "Paiement sécurisé ! Annulez à tout moment ! Maîtrisez le DET maintenant !",
       "switch1": "Service",
       "switch2": "Cours",
-      "sep": "Paiement sécurisé",
-      "ca": "Annulez à tout moment",
-      "atde": "Réussissez le DET maintenant",
+      "sep": "Paiement Sécurisé",
+      "ca": "Annulation à Tout Moment",
+      "atde": "Maîtrisez le DET Maintenant",
       "circle_check_icon": "icône_cercle_vérifié",
       "Most_Popular_Choice": "Choix le plus populaire",
       "off": "{off}% de réduction",
       "do": "$",
       "mp": "Member's price",
-      "Buy_Now": "Acheter maintenant",
+      "Buy_Now": "Acheter Maintenant",
       "tf": "Essayez gratuitement",
       "mpc": "Choix le plus populaire",
       "your_price": "votre prix",
@@ -218,8 +218,8 @@
       "green_check": "Vérification verte",
       "arrow_down": "Flèche vers le bas",
       "free_font": "Gratuit",
-      "free_tips": "Vous pouvez consulter 20 questions gratuitement, essayez notre plateforme et voyez si elle répond à vos besoins.",
-      "tff": "Essayer gratuitement",
+      "free_tips": "Vous pouvez accéder gratuitement à 20 questions, essayer notre plateforme et voir si elle répond à vos besoins.",
+      "tff": "Essai Gratuit",
       "save": "économisez {num}%",
       "week": "/semaine",
       "month": "/mois",
@@ -316,21 +316,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Illimité</span> pour les sessions de pratique",
-      "Accédez à <span class='strongfont'>18000+</span> questions pratiques",
-      "Parcourez les <span class='strongfont'>réponses d'échantillons à haut score</span>",
-      "<span class='strongfont'>Analyse approfondie</span> des questions",
-      "Examen à Haute Fréquence <span class='strongfont'>Livre de Mots</span>",
-      "Plan d'étude <span class='strongfont'>personnalisé</span> avec sélection intelligente de questions",
-      "Évaluations de Parole Alimentées par l'IA"
+      "Illimité pour les Sessions d'Entraînement",
+      "Accès à plus de 18 000 Questions d'Entraînement",
+      "Consultez des Exemples de Réponses à Haut Score",
+      "Analyse Approfondie des Questions",
+      "Manuel des Mots Fréquents à l'Examen",
+      "Plan d'Étude Personnalisé avec Sélection Intelligente des Questions",
+      "Évaluations Orales Assistées par IA"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Examens blancs complets</span>",
-      "Tester à tout moment",
-      "Près de <span class='strongfont'>l'examen réel Σ</span>",
+      "Examens Blancs Complets",
+      "Testez-vous à tout moment",
+      "Proche de l'examen DET réel",
       "Scores d'évaluation précis",
       "Rapport d'évaluation détaillé",
-      "Les résultats seront disponibles dans un délai de <span class='strongfont'>5-30 minutes</span>"
+      "Résultats disponibles sous 5-30 minutes"
     ]
   },
   "blog": {

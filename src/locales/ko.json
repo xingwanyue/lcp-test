@@ -173,25 +173,25 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET 연습 - Duolingo 시험 대비 회원 및 서비스 가격 책정",
-      "description": "당신의 준비에 맞는 계획을 선택하세요. 맞춤형 연습, 전문가 리뷰 및 대규모 모의 시험을 위한 저렴한 가격 옵션.",
-      "keywords": "keyDET Duolingo, DET 테스트, Duolingo DET, Duolingo 테스트, Duolingo 테스트 온라인, Duolingo 영어 시험, Duolingo 영어 시험, Duolingo 능력 시험words"
+      "title": "Duolingo English Test 준비 가격 | 합리적인 DET 준비 플랜",
+      "description": "DET Practice에서 Duolingo English Test 준비 가격 옵션을 확인하세요. Duolingo Test 준비를 위해 설계된 유연하고 합리적인 플랜 중에서 선택하세요. 지금 바로 적합한 플랜으로 학습을 시작하세요!",
+      "keywords": "Duolingo English Test 준비 가격, Duolingo Test 준비 플랜, 합리적인 DET 연습, Duolingo English Test 준비, DET 가격, 영어 능력 시험 가격, 시험 준비 플랜"
     },
     "pagefont": {
-      "h1": "당신에게 맞는 플랜을 선택하세요",
+      "h1": "나에게 맞는 플랜 선택하기",
       "h4": "안전한 결제! 언제든지 취소 가능! 지금 DET를 정복하세요!",
       "switch1": "서비스",
-      "switch2": "코스",
-      "sep": "안전한 결제",
-      "ca": "언제든지 취소 가능합니다",
-      "atde": "DET 지금 성공하세요",
+      "switch2": "강좌",
+      "sep": "안전 결제 ",
+      "ca": "언제든지 취소 가능",
+      "atde": "지금 DET 마스터하기",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI 교정 서비스",
       "Most_Popular_Choice": "가장 인기 있는 선택",
       "off": "{off}% 할인",
       "do": "$",
       "mp": "회원 가격",
-      "Buy_Now": "지금 구매",
+      "Buy_Now": "지금 구매하기",
       "tf": "무료로 시도해 보세요",
       "mpc": "가장 인기 있는 선택",
       "your_price": "귀하의 가격",
@@ -206,8 +206,8 @@
       "green_check": "그린 체크",
       "arrow_down": "아래쪽 화살표",
       "free_font": "무료",
-      "free_tips": "무료로 20개의 질문을 볼 수 있습니다, 우리의 플랫폼을 시도해보고 필요에 맞는지 확인하세요.",
-      "tff": "무료로 시도",
+      "free_tips": "20개의 문제를 무료로 확인하고, 우리 플랫폼을 체험하여 귀하의 요구에 맞는지 확인하세요.",
+      "tff": "무료로 시작하기",
       "save": "{num}% 절약",
       "week": "/주",
       "month": "/월",
@@ -303,21 +303,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>무제한</span> 연습 세션용",
-      "<span class='strongfont'>18000+</span> 개의 연습 문제에 접근하세요",
-      "다양한 <span class='strongfont'>높은 점수</span>의 샘플 답변 탐색",
-      "<span class='strongfont'>심층</span> 질문 분석",
-      "고빈도 시험 <span class='strongfont'>단어장</span>",
-      "맞춤형 <span class='strongfont'>학습 계획</span>과 스마트 문제 선택",
+      "연습 세션 무제한",
+      "18,000개 이상의 연습 문제 이용",
+      "고득점 답안 예시 확인",
+      "심층 문제 분석",
+      "시험 고빈도 단어장",
+      "스마트 문제 선택으로 맞춤형 학습 계획",
       "AI 기반 말하기 평가"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>풀-랭스</span> 모의 시험",
-      "언제든지 테스트하세요",
-      "실제 <span class='strongfont'>DET 시험</span>에 가깝습니다",
+      "전체 모의고사",
+      "언제든지 테스트 가능",
+      "실제 DET 시험과 유사",
       "정확한 평가 점수",
-      "상세 평가 보고서",
-      "결과는 <span class='strongfont'>5-30분</span> 이내에 확인할 수 있습니다"
+      "상세한 평가 보고서",
+      "5-30분 내 결과 확인"
     ]
   },
   "blog": {

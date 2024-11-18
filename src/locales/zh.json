@@ -172,18 +172,18 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET 练习 - Duolingo 考试准备会员和服务定价",
-      "description": "为您的Duolingo English Test准备选择正确的计划。个性化实践、专业评论和全面模拟考试的价格实惠的选择。",
-      "keywords": "keyDET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练度考试words"
+      "title": "Duolingo English Test备考定价 | 实惠的DET备考方案",
+      "description": "Duolingo English Test备考价格方案。我们提供灵活实惠的备考计划，助你轻松扎实备考多邻国英语测试。立即选择适合你的方案，开启学习之旅！",
+      "keywords": "Duolingo English Test备考价格, 多邻国英语测试备考方案, Duolingo English Test备考, DET定价, 英语水平测试价格, 多邻国英语考试备考方案"
     },
     "pagefont": {
-      "h1": "选择适合您的计划",
+      "h1": "选择最适合你的方案",
       "h4": " 安全付款！随时取消！现在就掌握DET！",
       "switch1": "服务",
       "switch2": "课程",
       "sep": "安全支付",
-      "ca": "随时取消",
-      "atde": "掌握DET现在",
+      "ca": "随时可取消",
+      "atde": "轻松掌握DET",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI校正服务",
       "Most_Popular_Choice": "最受欢迎的选择",
@@ -205,7 +205,7 @@
       "green_check": "绿色检查",
       "arrow_down": "向下箭头",
       "free_font": "免费",
-      "free_tips": "您可以免费查看20个问题，试用我们的平台，看看是否符合您的需求。",
+      "free_tips": "可免费体验20道题目，试用我们的平台，了解是否符合你的需求。",
       "tff": "免费试用",
       "save": "节省 {num}%",
       "week": "/周",
@@ -302,21 +302,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>无限制</span>的练习课",
-      "访问 <span class='strongfont'>18000+</span> 练习题",
-      "浏览 <span class='strongfont'>高分</span> 样本答案",
-      "<span class='strongfont'>深入</span> 问题分析",
-      "高频率考试<span class='strongfont'>单词书</span>",
-      "量身定制的<span class='strongfont'>学习计划</span>与智能问题选择",
+      "<span class='strongfont'>不限</span>练习次数",
+      "可访问 <span class='strongfont'>18000+</span> 习题",
+      "浏览 <span class='strongfont'>高分范文</span>",
+      "<span class='strongfont'>深度</span> 题目解析",
+      "高频考试<span class='strongfont'>词汇手册</span>",
+      "智能选题的个性化<span class='strongfont'>学习计划</span>",
       "AI 驱动的口语评估"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>全长</span> 模拟考试",
-      "随时测试",
-      "接近 <span class='strongfont'>真实 DET 考试</span>",
+      "<span class='strongfont'>1:1</span> 完整模考",
+      "随时参加测试",
+      "贴近 <span class='strongfont'>真实 DET 考试</span>",
       "准确的评估分数",
       "详细评估报告",
-      "结果将在<span class='strongfont'>5-30分钟</span>内可用"
+      "<span class='strongfont'>5-30分钟</span>内获得结果"
     ]
   },
   "blog": {

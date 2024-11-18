@@ -95,7 +95,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -186,9 +191,9 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Practice - Duolingo Test Prep Membership and Services Pricing",
-      "description": "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Examwords"
+      "title": "Duolingo English Test Prep Pricing | Affordable DET Prep Plans",
+      "description": "Discover Duolingo English Test prep pricing options at DET Practice. Choose from flexible and affordable plans tailored to help you succeed in your Duolingo Test prep. Start your journey with the right plan today!",
+      "keywords": "Duolingo English Test prep pricing, Duolingo Test prep plans, affordable DET practice, Duolingo English Test prep, DET pricing, English proficiency test pricing, test prep plans"
     },
     "pagefont": {
       "h1": "Choose The Plan That Works For You",
@@ -218,7 +223,7 @@
       "green_check": "Green Check",
       "arrow_down": "Down Arrow",
       "free_font": "Free",
-      "free_tips": "You can view 20 questions for free, try our platform and see if it fits your needs.",
+      "free_tips": "You can view 20 questions for free, try our platform, and see if it fits your needs.",
       "tff": "Try for free",
       "save": "Save {num}% ",
       "week": "/week",

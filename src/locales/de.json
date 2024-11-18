@@ -172,24 +172,24 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Übung - Duolingo Testvorbereitung Mitgliedschaft und Dienstleistungen Preisgestaltung",
-      "description": "Wählen Sie den richtigen Plan für Ihre Duolingo English Test Vorbereitung aus. Erschwingliche Preismöglichkeiten für personalisiertes Training, Expertenbewertungen und umfassende Mock-Prüfungen.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englisch Sprachtest, Duolingo Englisch Prüfung, Duolingo Fähigkeitsprüfungwords"
+      "title": "Duolingo English Test Vorbereitungspreise | Erschwingliche DET-Vorbereitungspläne",
+      "description": "Entdecken Sie die Preisoptionen für die Duolingo English Test-Vorbereitung bei DET Practice. Wählen Sie aus flexiblen und erschwinglichen Plänen, die Ihnen beim Erfolg Ihrer Duolingo Test-Vorbereitung helfen. Starten Sie noch heute mit dem richtigen Plan!",
+      "keywords": "Duolingo English Test Vorbereitungspreise, Duolingo Test Vorbereitungspläne, erschwingliche DET-Übung, Duolingo English Test Vorbereitung, DET-Preise, Englisch-Testpreise, Testvorbereitungspläne"
     },
     "pagefont": {
       "h1": "Wählen Sie den Plan, der zu Ihnen passt",
       "h4": "Sichere Zahlung! Jederzeit kündbar! Meistern Sie den DET jetzt!",
-      "switch1": "Dienst",
+      "switch1": "Service",
       "switch2": "Kurse",
       "sep": "Sichere Zahlung",
-      "ca": "Jederzeit kündigen",
-      "atde": "Gehe jetzt zur DET",
+      "ca": "Jederzeit kündbar",
+      "atde": "Meistern Sie den DET jetzt",
       "circle_check_icon": "Kreis_kontrollsymbol",
       "Most_Popular_Choice": "Beliebteste Wahl",
       "off": "{off}% Rabatt",
       "do": "$",
       "mp": "Preis für Mitglieder",
-      "Buy_Now": "Kaufe jetzt",
+      "Buy_Now": "Jetzt kaufen",
       "tf": "Kostenlos ausprobieren",
       "mpc": "Beliebteste Wahl",
       "your_price": "Ihr Preis",
@@ -204,8 +204,8 @@
       "green_check": "Grüner Haken",
       "arrow_down": "Nach unten gerichteter Pfeil",
       "free_font": "Kostenlos",
-      "free_tips": "Sie können 20 Fragen kostenlos ansehen, probieren Sie unsere Plattform aus und sehen Sie, ob sie Ihren Bedürfnissen entspricht.",
-      "tff": "Kostenlos ausprobieren",
+      "free_tips": "Sie können 20 Fragen kostenlos ansehen, unsere Plattform testen und prüfen, ob sie Ihren Bedürfnissen entspricht.",
+      "tff": "Kostenlos testen",
       "save": "sparen {num}%",
       "week": "/Woche",
       "month": "/Monat",
@@ -302,21 +302,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Unbegrenzt</span> für Übungseinheiten",
-      "Zugriff auf <span class='strongfont'>18000+</span> Übungsfragen",
-      "Durchsuchen Sie <span class='strongfont'>höchstbewertete</span> Musterantworten",
-      "<span class='strongfont'>Umfassende</span> Frageanalyse",
-      "High-Frequency Exam <span class='strongfont'>Wort Buch</span>",
-      "Maßgeschneiderter <span class='strongfont'>Studienplan</span> mit intelligenter Fragenauswahl",
-      "KI-gesteuerte Sprechbewertungen"
+      "Unbegrenzt für Übungssitzungen",
+      "Zugriff auf über 18.000 Übungsfragen",
+      "Durchsehen von Beispielantworten mit hoher Punktzahl",
+      "Ausführliche Fragenanalyse",
+      "Prüfungswörterbuch mit häufigen Wörtern",
+      "Maßgeschneiderter Studienplan mit intelligenter Fragenauswahl",
+      "KI-gestützte Sprechbewertungen"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Vollständige</span> Übungsprüfungen",
+      "Vollständige Probeprüfungen",
       "Testen Sie jederzeit",
-      "Nah an der <span class='strongfont'>realen DET Prüfung</span>",
-      "Genau Bewertungsergebnisse",
+      "Nah an der echten DET-Prüfung",
+      "Genaue Bewertungspunkte",
       "Detaillierter Bewertungsbericht",
-      "Ergebnisse werden innerhalb von <span class='strongfont'>5-30 Minuten</span> verfügbar sein."
+      "Ergebnisse in 5-30 Minuten verfügbar"
     ]
   },
   "blog": {

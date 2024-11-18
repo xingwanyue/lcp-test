@@ -179,24 +179,24 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Práctica - Duolingo Preparación para Exámenes, Membresía y Servicios de Precios",
-      "description": "Elija el plan adecuado para su preparación. Opciones de precios asequibles para prácticas personalizadas, revisiones de expertos y exámenes simulados a gran escala.",
-      "keywords": "keyDET Duolingo, DET Prueba, Duolingo DET, Duolingo Prueba, Duolingo Prueba en Línea, Duolingo Prueba en Inglés, Duolingo Examen de Inglés, Duolingo Examen de Competenciawords"
+      "title": "Precios de Preparación para el Duolingo English Test | Planes Económicos de Preparación DET",
+      "description": "Descubra las opciones de precios para la preparación del Duolingo English Test en DET Practice. Elija entre planes flexibles y asequibles diseñados para ayudarle a tener éxito en su preparación del Duolingo Test. ¡Comience su viaje con el plan adecuado hoy!",
+      "keywords": "precios preparación Duolingo English Test, planes preparación Duolingo Test, práctica DET económica, preparación Duolingo English Test, precios DET, precios prueba de inglés, planes de preparación para exámenes"
     },
     "pagefont": {
-      "h1": "Elige el plan que funciona para ti",
+      "h1": "Elija el Plan que Mejor se Adapte a Usted",
       "h4": "¡Pago seguro! ¡Cancela en cualquier momento! ¡Domina el DET ahora!",
       "switch1": "Servicio",
       "switch2": "Cursos",
-      "sep": "Pago seguro",
-      "ca": "Cancelar en cualquier momento",
-      "atde": "Acierta la DET ahora",
+      "sep": "Pago Seguro",
+      "ca": "Cancele en Cualquier Momento",
+      "atde": "Domine el DET Ahora",
       "circle_check_icon": "círculo_comprobar_icono",
       "Most_Popular_Choice": "Elección Más Popular",
       "off": "{off}% de descuento",
       "do": "$",
       "mp": "Member's price",
-      "Buy_Now": "Comprar ahora",
+      "Buy_Now": "Comprar Ahora",
       "tf": "Probar gratis",
       "mpc": "Elección Más Popular",
       "your_price": "tu precio",
@@ -211,8 +211,8 @@
       "green_check": "Cheque verde",
       "arrow_down": "Flecha hacia abajo",
       "free_font": "Gratis",
-      "free_tips": "Puedes ver 20 preguntas gratis, prueba nuestra plataforma y ve si se adapta a tus necesidades.",
-      "tff": "Prueba gratis",
+      "free_tips": "Puede ver 20 preguntas gratis, probar nuestra plataforma y ver si se adapta a sus necesidades.",
+      "tff": "Prueba Gratuita",
       "save": "ahorra {num}%",
       "week": "/semana",
       "month": "/mes",
@@ -309,21 +309,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Ilimitado</span> para Sesiones de Práctica",
-      "Acceso a <span class='strongfont'>18000+</span> preguntas de práctica",
-      "Navegar <span class='strongfont'>Respuestas de muestra de alta puntuación</span>",
-      "<span class='strongfont'>Análisis de Preguntas en Profundidad</span>",
-      "Libro de Palabras para Exámenes <span class='strongfont'>de Alta Frecuencia</span>",
-      "Plan de Estudio <span class='strongfont'>Personalizado</span> con Selección Inteligente de Preguntas",
-      "Evaluaciones de Habla Impulsadas por IA"
+      "Ilimitado para Sesiones de Práctica",
+      "Acceso a más de 18.000 Preguntas de Práctica",
+      "Explore Respuestas Modelo de Alta Puntuación",
+      "Análisis Detallado de Preguntas",
+      "Manual de Palabras Frecuentes del Examen",
+      "Plan de Estudio Personalizado con Selección Inteligente de Preguntas",
+      "Evaluaciones de Speaking con IA"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Exámenes simulados de duración completa</span>",
-      "Prueba en cualquier momento",
-      "Cercano a <span class='strongfont'>examen real DET</span>",
+      "Exámenes de Práctica Completos",
+      "Realice el examen en cualquier momento",
+      "Similar al examen DET real",
       "Puntuaciones de evaluación precisas",
       "Informe de evaluación detallado",
-      "Los resultados estarán disponibles dentro de <span class='strongfont'>5-30 minutos</span>"
+      "Resultados disponibles en 5-30 minutos"
     ]
   },
   "blog": {

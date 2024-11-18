@@ -187,25 +187,25 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Uygulama - Duolingo Test Hazırlık Üyelik ve Hizmet Fiyatları",
-      "description": "Kişiselleştirilmiş pratik, uzman incelemeleri ve tam ölçekli deneme sınavları için uygun fiyatlı fiyat seçenekleriyle hazırlığınız için doğru planı seçin.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavıwords"
+      "title": "Duolingo English Test Hazırlık Fiyatları | Uygun DET Hazırlık Planları",
+      "description": "DET Practice'de Duolingo English Test hazırlık fiyat seçeneklerini keşfedin. Duolingo Test hazırlığınızda başarılı olmanıza yardımcı olmak için tasarlanmış esnek ve uygun fiyatlı planlar arasından seçim yapın. Size uygun planla öğrenme yolculuğunuza bugün başlayın!",
+      "keywords": "Duolingo English Test hazırlık fiyatları, Duolingo Test hazırlık planları, uygun DET pratik, Duolingo English Test hazırlık, DET fiyatlandırma, İngilizce yeterlilik sınavı fiyatları, test hazırlık planları"
     },
     "pagefont": {
       "h1": "Size Uygun Planı Seçin",
       "h4": "Güvenli ödeme! Herhangi bir zamanda iptal edin! Şimdi DET'yi ustalaşın!",
       "switch1": "Hizmet",
       "switch2": "Kurslar",
-      "sep": "Güvenli ödeme",
-      "ca": "İstediğiniz zaman iptal edin",
-      "atde": "Şimdi DET'yi kazanın",
+      "sep": "Güvenli Ödeme",
+      "ca": "İstediğiniz Zaman İptal",
+      "atde": "DET'i Şimdi Başarın",
       "circle_check_icon": "daire_kontrol_ikonu",
       "apcs1": "Yapay Zeka Düzeltme Servisi",
       "Most_Popular_Choice": "En Popüler Seçim",
       "off": "{off}% indirim",
       "do": "$",
       "mp": "Üyenin fiyatı",
-      "Buy_Now": "Şimdi Satın Al",
+      "Buy_Now": "Hemen Satın Al",
       "tf": "Ücretsiz dene",
       "mpc": "En Popüler Seçim",
       "your_price": "fiyatınız",
@@ -220,8 +220,8 @@
       "green_check": "Yeşil Onay İşareti",
       "arrow_down": "Aşağı Ok",
       "free_font": "Ücretsiz",
-      "free_tips": "20 soruyu ücretsiz olarak görüntüleyebilirsiniz, platformumuzu deneyin ve ihtiyaçlarınıza uygun olup olmadığını görün.",
-      "tff": "Ücretsiz dene",
+      "free_tips": "Platformumuzu denemek ve ihtiyaçlarınıza uygun olup olmadığını görmek için 20 soruya ücretsiz erişebilirsiniz.",
+      "tff": "Ücretsiz Deneyin",
       "save": "{num}% tasarruf et",
       "week": "/hafta",
       "month": "/ay",
@@ -317,21 +317,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Sınırsız</span> Uygulama Seansları için",
-      "Erişim <span class='strongfont'>18000+</span> Uygulama Sorusu",
-      "Yüksek <span class='strongfont'>Puanlı</span> Örnek Cevapları İnceleyin",
-      "<span class='strongfont'>Derinlemesine</span> Soru Analizi",
-      "Yüksek Frekanslı Sınav <span class='strongfont'>Kelime Kitabı</span>",
-      "Kişiselleştirilmiş <span class='strongfont'>Çalışma Planı</span> ve Akıllı Soru Seçimi",
+      "Alıştırma Oturumları Sınırsız",
+      "18.000+ Alıştırma Sorusuna Erişim",
+      "Yüksek Puanlı Örnek Cevapları İnceleyin",
+      "Detaylı Soru Analizi",
+      "Sık Kullanılan Sınav Kelimeleri Kitapçığı",
+      "Akıllı Soru Seçimi ile Kişiselleştirilmiş Çalışma Planı",
       "Yapay Zeka Destekli Konuşma Değerlendirmeleri"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Tam Uzunlukta</span> deneme sınavları",
-      "Her zaman test et",
-      "Gerçek <span class='strongfont'>DET sınavına</span> yakın",
-      "Doğru değerlendirme puanları",
-      "Detaylı değerlendirme raporu",
-      "Sonuçlar <span class='strongfont'>5-30 dakika</span> içinde mevcut olacak"
+      "Tam Uzunlukta Deneme Sınavları",
+      "İstediğiniz Zaman Test Olun",
+      "Gerçek DET Sınavına Yakın",
+      "Hassas Değerlendirme Puanları",
+      "Detaylı Değerlendirme Raporu",
+      "Sonuçlar 5-30 dakika içinde hazır"
     ]
   },
   "blog": {

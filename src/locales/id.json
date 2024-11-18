@@ -181,18 +181,18 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Latihan - Duolingo Persiapan Tes Keanggotaan dan Layanan Harga",
-      "description": "Pilih rencana yang tepat untuk persiapan Duolingo English Test Anda. Pilihan harga terjangkau untuk latihan yang dipersonalisasi, ulasan ahli, dan ujian simulasi penuh skala.",
-      "keywords": "keyDET Duolingo, DET Ujian, Duolingo DET, Duolingo Ujian, Duolingo Ujian Online, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kecakapan"
+      "title": "Harga Persiapan Duolingo English Test | Paket Persiapan DET Terjangkau",
+      "description": "Temukan pilihan harga persiapan Duolingo English Test di DET Practice. Pilih dari paket fleksibel dan terjangkau yang dirancang untuk membantu Anda sukses dalam persiapan Duolingo Test. Mulai perjalanan Anda dengan paket yang tepat hari ini!",
+      "keywords": "harga persiapan Duolingo English Test, paket persiapan Duolingo Test, latihan DET terjangkau, persiapan Duolingo English Test, harga DET, harga tes kemampuan bahasa Inggris, paket persiapan tes"
     },
     "pagefont": {
       "h1": "Pilih Paket yang Sesuai untuk Anda",
       "h4": "Pembayaran aman! Batalkan kapan saja! Kuasai DET sekarang!",
       "switch1": "Layanan",
       "switch2": "Kursus",
-      "sep": "Pembayaran aman",
-      "ca": "Batalkan kapan saja",
-      "atde": "Kuasi sekarang DET",
+      "sep": "Pembayaran Aman",
+      "ca": "Batalkan Kapan Saja",
+      "atde": "Kuasai DET Sekarang",
       "circle_check_icon": "circle_check_icon",
       "Most_Popular_Choice": "Pilihan Paling Populer",
       "off": "{off}% diskon",
@@ -213,8 +213,8 @@
       "green_check": "Centang Hijau",
       "arrow_down": "Panah Bawah",
       "free_font": "Gratis",
-      "free_tips": "Anda dapat melihat 20 pertanyaan secara gratis, coba platform kami dan lihat apakah sesuai dengan kebutuhan Anda.",
-      "tff": "Coba gratis",
+      "free_tips": "Anda bisa melihat 20 soal secara gratis, coba platform kami, dan lihat apakah sesuai dengan kebutuhan Anda.",
+      "tff": "Coba Gratis",
       "save": "hemat {num}%",
       "week": "/minggu",
       "month": "/bulan",
@@ -311,21 +311,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Tidak Terbatas</span> untuk Sesi Latihan",
-      "Akses <span class='strongfont'>18000+</span> Soal Latihan",
-      "Telusuri <span class='strongfont'>Jawaban Contoh</span> dengan Skor Tinggi",
-      "<span class='strongfont'>Analisis Pertanyaan Mendalam</span>",
-      "Buku Kata <span class='strongfont'>Ujian Frekuensi Tinggi</span>",
-      "Rencana Belajar <span class='strongfont'>Khusus</span> dengan Pemilihan Pertanyaan Cerdas",
-      "Evaluasi Berbicara dengan Kekuatan AI"
+      "Tak Terbatas untuk Sesi Latihan",
+      "Akses 18.000+ Soal Latihan",
+      "Lihat Contoh Jawaban Nilai Tinggi",
+      "Analisis Soal Mendalam",
+      "Buku Kata-kata Ujian Frekuensi Tinggi",
+      "Rencana Belajar Personal dengan Pemilihan Soal Cerdas",
+      "Evaluasi Speaking berbasis AI"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Ujian Tiruan Penuh</span>",
-      "Uji kapan saja",
-      "Dekat dengan <span class='strongfont'>ujian DET yang sebenarnya</span>",
-      "Nilai penilaian yang akurat",
+      "Ujian Simulasi Lengkap",
+      "Ujian kapan saja",
+      "Mirip dengan ujian DET asli",
+      "Skor penilaian akurat",
       "Laporan evaluasi terperinci",
-      "Hasil akan tersedia dalam <span class='strongfont'>5-30 menit</span>"
+      "Hasil tersedia dalam 5-30 menit"
     ]
   },
   "blog": {

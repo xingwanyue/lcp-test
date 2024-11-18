@@ -180,18 +180,18 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET 練習 - Duolingo テスト準備会員およびサービスの価格設定",
-      "description": "あなたの準備に合った適切なプランを選択してください。個人的な練習、専門家によるレビュー、そして本格的な模擬試験に対応した手頃な価格のオプションがあります。",
-      "keywords": "keyDET Duolingo、DET テスト、Duolingo DET、Duolingo テスト、Duolingo テストオンライン、Duolingo 英語テスト、Duolingo 英語試験、Duolingo 適正試験words"
+      "title": "Duolingo English Test対策料金 | お手頃なDET対策プラン",
+      "description": "DET Practiceで最適なDuolingo English Test対策プランをご覧ください。柔軟で手頃な料金プランで、Duolingo Testの対策をサポートします。今すぐ最適なプランで学習を始めましょう！",
+      "keywords": "Duolingo English Test対策料金, Duolingo Test対策プラン, お手頃なDET練習, Duolingo English Test対策, DET料金, 英語能力試験料金, テスト対策プラン"
     },
     "pagefont": {
-      "h1": "あなたに合ったプランを選んでください",
+      "h1": "あなたに最適なプランを選択",
       "h4": "安全な支払い！いつでもキャンセルできます！今すぐDETをマスターしましょう！",
       "switch1": "サービス",
       "switch2": "コース",
       "sep": "安全な支払い",
-      "ca": "いつでもキャンセルできます",
-      "atde": "今すぐ DET をマスター",
+      "ca": "いつでもキャンセル可能",
+      "atde": "DEТ完全攻略",
       "circle_check_icon": "サークル_チェック_アイコン",
       "Most_Popular_Choice": "最も人気のある選択肢",
       "off": "{off}%オフ",
@@ -212,7 +212,7 @@
       "green_check": "グリーンチェック",
       "arrow_down": "下矢印",
       "free_font": "無料",
-      "free_tips": "無料で20の質問を見ることができます、私たちのプラットフォームを試してみて、あなたのニーズに合っているかどうかを確認してください。",
+      "free_tips": "20問を無料で体験でき、プラットフォームを試してニーズに合うかどうかを確認できます。",
       "tff": "無料で試す",
       "save": "{num}% 節約",
       "week": "/週",
@@ -310,21 +310,21 @@
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>無制限</span>の練習セッション",
-      "アクセス <span class='strongfont'>18000+</span> 練習問題",
-      "高得点の<span class='strongfont'>サンプル回答</span>を閲覧する",
-      "<span class='strongfont'>詳細な</span> 質問分析",
-      "高頻度試験 <span class='strongfont'>単語帳</span>",
-      "個別対応の<span class='strongfont'>学習プラン</span>とスマートな質問選択",
-      "AIによるスピーキング評価"
+      "練習セッション無制限",
+      "18,000問以上の練習問題にアクセス",
+      "高得点解答例を閲覧",
+      "詳細な問題分析",
+      "頻出単語帳",
+      "AIによる最適な問題選択で個別学習プラン",
+      "AI搭載スピーキング評価"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>フルレングス</span> 模擬試験",
-      "いつでもテストしてください",
-      "実際の <span class='strongfont'>DET 試験</span> に近い",
-      "正確な評価スコア",
-      "詳細評価レポート",
-      "結果は <span class='strongfont'>5-30分</span>以内に利用可能です。"
+      "本番形式の模擬試験",
+      "いつでも受験可能",
+      "実際のDET試験に近い形式",
+      "正確なスコア評価",
+      "詳細な評価レポート",
+      "<span class='strongfont'>5-30分</span>以内に結果が判明"
     ]
   },
   "blog": {
