@@ -220,32 +220,32 @@
     },
     "aqList": [
       {
-        "name": "Come funzionano i piani e i prezzi di DETPractice?",
-        "content": "Forniamo piani e prezzi trasparenti per i nostri utenti, senza costi nascosti. Inoltre, offriamo pacchetti di abbonamento aggiuntivi in modo che tu possa scegliere i servizi secondo le tue esigenze."
+        "name": "Come funzionano i piani e i prezzi di DET Practice?",
+        "content": "Offriamo piani e prezzi trasparenti per i nostri utenti, senza costi nascosti. Inoltre, forniamo pacchetti di abbonamento aggiuntivi per permetterti di scegliere i servizi in base alle tue esigenze."
       },
       {
         "name": "C'è una prova gratuita?",
-        "content": "Sì! Puoi visualizzare 20 domande gratuitamente. Ti aiutiamo a capirci meglio prima di acquistare più servizi."
+        "content": "Sì! Puoi visualizzare 20 domande gratuitamente. Ti aiuta a conoscerci prima di acquistare altri servizi."
       },
       {
         "name": "Offrite sconti?",
         "content": "Sì! Offriamo sconti personalizzati per ogni servizio. Tuttavia, quando scegli un servizio di 30 giorni, riceverai uno sconto maggiore rispetto agli altri servizi. Si prega di fare riferimento ai dettagli dei prezzi sopra per ulteriori informazioni."
       },
       {
-        "name": "Il mio pagamento è andato a buon fine, ma l'aggiornamento non è riuscito.",
-        "content": "Si prega di contattarci tramite chat o email: <span class='email_address'>support{'@'}detpractice.com</span>. Questo è il modo più semplice e veloce per affrontare le vostre preoccupazioni."
+        "name": "Il pagamento è andato a buon fine, ma l'aggiornamento è fallito.",
+        "content": " Contattaci via chat o email: <span class='email_address'>support{'@'}detpractice.com</span>. Questo è il modo più semplice e veloce per risolvere i tuoi problemi."
       },
       {
-        "name": "Ho acquistato il corso ma non riesco a visualizzarlo?",
-        "content": "Dopo aver acquistato con successo il corso, puoi andare alla pagina di descrizione del corso <span class='email_address'>https://www.detpractice.com/courses</span> per visualizzare e scaricare le informazioni sul corso. Se non riesci a trovare le informazioni sul corso, contattaci tramite chat o email: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Ho acquistato il corso ma non riesco a visualizzarlo, perché?",
+        "content": "Dopo aver acquistato con successo il corso, puoi visitare la pagina di descrizione del corso https://www.detpractice.com/courses per visualizzare e scaricare le informazioni. Se non riesci a trovare le informazioni del corso, contattaci via chat o email: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Dove devo inviare il mio feedback?",
-        "content": "Puoi inviare feedback tramite la chat di supporto nell'angolo in basso a destra, oppure contattarci via email a <span class='email_address'>support{'@'}detpractice.com</span>. In alternativa, puoi lasciare un messaggio direttamente nella sezione \"Contact Us\"."
+        "name": "Dove posso inviare il mio feedback?",
+        "content": "Puoi inviare feedback attraverso la chat di supporto in basso a destra, o contattarci via email a <span class='email_address'>support{'@'}detpractice.com</span>. In alternativa, puoi lasciare un messaggio direttamente nella sezione \"Contattaci\"."
       },
       {
         "name": "Qual è la vostra politica di rimborso?",
-        "content1": "Per informazioni e istruzioni su come ottenere un rimborso, puoi fare riferimento al link \"Politica di Rimborso\" in fondo alla pagina come priorità, o contattarci a <span class='email_address'>support{'@'}detpractice.com</span>."
+        "content1": "Per informazioni e istruzioni su come ottenere un rimborso, puoi consultare il link \"Politica di Rimborso\" in fondo alla pagina o contattarci a <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -288,18 +288,18 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Servizio clienti online",
+        "font": "Servizio Clienti Online",
         "tip": "Disponibile Lun-Ven, 10:00 - 19:00",
-        "btn": "Chat Live Now"
+        "btn": "Chatta Ora"
       },
       "type2": {
-        "font": "Contattaci via Email",
-        "tip": "Ricevi una risposta entro 1 giorno lavorativo."
+        "font": "Inviaci un'Email",
+        "tip": "Risposta entro 1 giorno lavorativo"
       },
       "type3": {
-        "font": "Lascia un messaggio",
-        "tip": "Risponderemo entro un giorno lavorativo.",
-        "btn": "Lascia un messaggio ora"
+        "font": "Lascia un Messaggio",
+        "tip": "Ti risponderemo entro 1 giorno lavorativo",
+        "btn": "Lascia un Messaggio Ora"
       }
     },
     "leftQuanYiList": [

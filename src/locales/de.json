@@ -197,7 +197,7 @@
       "purchased": "gekauft",
       "Secure_Payment": "Sichere Zahlung:",
       "faq": "Häufig gestellte Fragen",
-      "Contact_Us": "Kontaktieren Sie uns",
+      "Contact_Us": "Kontakt",
       "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
       "check_icon": "Überprüfen",
       "tip_icon": "Tipp",
@@ -219,12 +219,12 @@
     },
     "aqList": [
       {
-        "name": "Wie funktionieren die Pläne und Preise von DETPractice?",
-        "content": "Wir bieten transparente Pläne und Preise für unsere Benutzer, ohne versteckte Gebühren. Darüber hinaus bieten wir zusätzliche Abonnementpakete an, sodass Sie Dienste nach Ihren Bedürfnissen auswählen können."
+        "name": "Wie funktionieren die Pläne und Preise von DET Practice?",
+        "content": "Wir bieten transparente Pläne und Preise für unsere Nutzer, ohne versteckte Gebühren. Zusätzlich bieten wir Add-on-Abonnements an, damit Sie Dienste nach Ihren Bedürfnissen wählen können."
       },
       {
         "name": "Gibt es eine kostenlose Testversion?",
-        "content": "Ja! Sie können 20 Fragen kostenlos ansehen. Helfen Sie, uns zu verstehen, bevor Sie weitere Dienstleistungen kaufen."
+        "content": "Ja! Sie können 20 Fragen kostenlos ansehen. Dies hilft Ihnen, uns kennenzulernen, bevor Sie weitere Dienste kaufen."
       },
       {
         "name": "Bieten Sie irgendwelche Rabatte an?",
@@ -232,19 +232,19 @@
       },
       {
         "name": "Meine Zahlung war erfolgreich, aber das Upgrade ist fehlgeschlagen.",
-        "content": "Bitte kontaktieren Sie uns per Chat oder E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>. Dies ist der einfachste und schnellste Weg, um Ihre Anliegen zu klären."
+        "content": "Bitte kontaktieren Sie uns über den Chat oder per E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>. Dies ist der einfachste und schnellste Weg, Ihre Anliegen zu klären."
       },
       {
-        "name": "Ich habe den Kurs gekauft, kann ihn aber nicht sehen?",
-        "content": "Nach dem erfolgreichen Kauf des Kurses können Sie zur Kursbeschreibungsseite <span class='email_address'>https://www.detpractice.com/courses</span> gehen, um die Kursinformationen anzusehen und herunterzuladen. Wenn Sie die Kursinformationen nicht finden können, kontaktieren Sie uns bitte über Chat oder E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Ich habe den Kurs gekauft, kann ihn aber nicht einsehen, warum?",
+        "content": "Nach erfolgreichem Kauf des Kurses können Sie die Kursbeschreibungsseite https://www.detpractice.com/courses besuchen, um die Kursinformationen einzusehen und herunterzuladen. Wenn Sie die Kursinformationen nicht finden können, kontaktieren Sie uns bitte über den Chat oder per E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Wohin sende ich mein Feedback?",
-        "content": "Sie können Feedback über den Support-Chat in der unteren rechten Ecke senden oder uns per E-Mail unter <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren. Alternativ können Sie eine Nachricht direkt im Bereich \"Kontaktieren Sie uns\" hinterlassen."
+        "name": "Wo kann ich Feedback senden?",
+        "content": "Sie können Feedback über den Support-Chat in der rechten unteren Ecke senden oder uns per E-Mail an <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren. Alternativ können Sie direkt im Bereich \"Kontakt\" eine Nachricht hinterlassen."
       },
       {
-        "name": "Wie lautet Ihre Rückerstattungsrichtlinie?",
-        "content1": "Für Informationen und Anweisungen zur Erstattung können Sie sich vorrangig an den Link \"Rückerstattungsrichtlinie\" am Ende der Seite wenden oder uns unter <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren."
+        "name": "Wie ist Ihre Rückerstattungspolitik?",
+        "content1": "Informationen und Anweisungen zur Rückerstattung finden Sie vorrangig unter dem Link \"Rückerstattungspolitik\" am Ende der Seite oder kontaktieren Sie uns unter <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -287,18 +287,18 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Online-Kundendienst",
-        "tip": "Verfügbar Mo-Fr, 10:00 - 19:00",
-        "btn": "Jetzt live chatten"
+        "font": "Online-Kundenservice",
+        "tip": "Verfügbar Mo-Fr, 10:00 - 19:00 Uhr",
+        "btn": "Jetzt chatten"
       },
       "type2": {
-        "font": "E-Mail uns",
-        "tip": "Erhalten Sie innerhalb eines Werktages eine Antwort."
+        "font": "E-Mail senden",
+        "tip": "Antwort innerhalb eines Werktages"
       },
       "type3": {
-        "font": "Hinterlassen Sie eine Nachricht",
-        "tip": "Wir werden Ihnen innerhalb eines Geschäftstags antworten.",
-        "btn": "Hinterlassen Sie jetzt eine Nachricht"
+        "font": "Nachricht hinterlassen",
+        "tip": "Wir antworten innerhalb eines Werktages",
+        "btn": "Jetzt Nachricht hinterlassen"
       }
     },
     "leftQuanYiList": [

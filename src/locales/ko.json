@@ -220,32 +220,32 @@
     },
     "aqList": [
       {
-        "name": "DETPractice의 계획 및 가격은 어떻게 작동하나요?",
-        "content": "우리는 사용자에게 투명한 계획과 가격을 제공하며, 숨겨진 비용이 없습니다. 또한, 필요에 따라 서비스를 선택할 수 있도록 추가 구독 패키지를 제공합니다."
+        "name": "DET Practice의 플랜과 가격은 어떻게 운영되나요?",
+        "content": "사용자들에게 숨겨진 비용 없이 투명한 플랜과 가격을 제공합니다. 또한, 귀하의 필요에 따라 서비스를 선택할 수 있도록 추가 구독 패키지도 제공합니다."
       },
       {
-        "name": "무료 체험이 있습니까?",
-        "content": "네! 20개의 질문을 무료로 볼 수 있습니다. 더 많은 서비스를 구매하기 전에 저희를 이해하는 데 도움이 됩니다."
+        "name": "무료 체험이 있나요?",
+        "content": "네! 20개의 문제를 무료로 확인할 수 있습니다. 추가 서비스 구매 전에 저희를 이해하는 데 도움이 됩니다."
       },
       {
         "name": "할인 혜택이 있나요?",
         "content": "예! 각 서비스에 맞춘 맞춤형 할인을 제공합니다. 그러나 30일 서비스를 선택하시면 다른 서비스보다 더 큰 할인을 받으실 수 있습니다. 자세한 정보는 위의 가격 세부 정보를 참조하십시오."
       },
       {
-        "name": "결제는 성공했지만 업그레이드에 실패했습니다.",
-        "content": "문의 사항이 있으시면 채팅 또는 이메일을 통해 연락해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>. 이는 고객님의 우려 사항을 해결하는 가장 간단하고 빠른 방법입니다."
+        "name": "결제는 성공했지만 업그레이드가 실패했어요.",
+        "content": "채팅이나 이메일로 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>. 이것이 가장 간단하고 빠른 해결 방법입니다."
       },
       {
-        "name": "코스를 구매했지만 볼 수 없어요?",
-        "content": "코스를 성공적으로 구매한 후, 코스 설명 페이지 <span class='email_address'>https://www.detpractice.com/courses</span>로 이동하여 코스 정보를 보고 다운로드할 수 있습니다. 코스 정보를 찾을 수 없는 경우, 채팅이나 이메일을 통해 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "강좌를 구매했는데 볼 수 없어요, 왜 그런가요?",
+        "content": "강좌 구매 완료 후, 강좌 설명 페이지 https://www.detpractice.com/courses 에서 강좌 정보를 확인하고 다운로드할 수 있습니다. 강좌 정보를 찾을 수 없는 경우, 채팅이나 이메일로 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "피드백은 어디로 보내면 되나요?",
-        "content": "지원 채팅창을 통해 피드백을 보낼 수 있으며, 하단 오른쪽 코너에서 가능하거나 이메일 <span class='email_address'>support{'@'}detpractice.com</span>으로 연락할 수 있습니다. 또는 \"문의하기\" 섹션에 직접 메시지를 남길 수 있습니다."
+        "name": "피드백은 어디로 보내나요?",
+        "content": "우측 하단의 지원 채팅을 통해 피드백을 보내거나, <span class='email_address'>support{'@'}detpractice.com</span>으로 이메일을 보내실 수 있습니다. 또는 \"문의하기\" 섹션에서 직접 메시지를 남기실 수 있습니다."
       },
       {
-        "name": "환불 정책은 무엇인가요?",
-        "content1": "환불을 받는 방법에 대한 정보와 지침은 페이지 하단의 \"환불 정책\" 링크를 우선적으로 참조하거나 <span class='email_address'>support{'@'}detpractice.com</span>로 문의하십시오."
+        "name": "환불 정책은 어떻게 되나요?",
+        "content1": " 환불 관련 정보와 안내는 페이지 하단의 \"환불 정책\" 링크를 우선적으로 확인하시거나, <span class='email_address'>support{'@'}detpractice.com</span>으로 문의해 주세요."
       }
     ],
     "qlList": {
@@ -290,16 +290,16 @@
       "type1": {
         "font": "온라인 고객 서비스",
         "tip": "월-금, 10:00 - 19:00 이용 가능",
-        "btn": "지금 라이브 채팅"
+        "btn": "실시간 채팅하기"
       },
       "type2": {
         "font": "이메일 보내기",
-        "tip": "영업일 기준 1일 이내에 응답을 받으세요."
+        "tip": "1영업일 내 답변"
       },
       "type3": {
-        "font": "메시지를 남기세요",
-        "tip": "영업일 기준 하루 이내에 응답드리겠습니다.",
-        "btn": "지금 메시지를 남기세요"
+        "font": "메시지 남기기",
+        "tip": "1영업일 내에 답변 드리겠습니다",
+        "btn": "지금 메시지 남기기"
       }
     },
     "leftQuanYiList": [

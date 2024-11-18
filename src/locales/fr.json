@@ -210,7 +210,7 @@
       "Non_member": "Non-membre",
       "purchased": "acheté",
       "Secure_Payment": "Paiement sécurisé :",
-      "faq": "Questions fréquemment posées",
+      "faq": "Questions Fréquentes",
       "Contact_Us": "Contactez-nous",
       "alt": "DET Pratique:La meilleure plateforme Duolingo English Test de pratique",
       "check_icon": "Vérifier",
@@ -233,32 +233,32 @@
     },
     "aqList": [
       {
-        "name": "Comment fonctionnent les plans et les tarifs de DETPractice ?",
-        "content": "Nous proposons des plans et des tarifs transparents pour nos utilisateurs, sans frais cachés. De plus, nous offrons des forfaits d'abonnement supplémentaires afin que vous puissiez choisir des services en fonction de vos besoins."
+        "name": "Comment fonctionnent les plans et tarifs de DET Practice ?",
+        "content": "Nous proposons des plans et des tarifs transparents pour nos utilisateurs, sans frais cachés. De plus, nous offrons des forfaits d'abonnement complémentaires pour que vous puissiez choisir les services selon vos besoins."
       },
       {
-        "name": "Y a-t-il un essai gratuit?",
-        "content": "Oui! Vous pouvez consulter 20 questions gratuitement. Cela vous aidera à nous comprendre avant d'acheter plus de services."
+        "name": "Y a-t-il un essai gratuit ?",
+        "content": "Oui ! Vous pouvez accéder gratuitement à 20 questions. Cela vous permet de nous découvrir avant d'acheter plus de services."
       },
       {
         "name": "Offrez-vous des réductions ?",
         "content": "Oui ! Nous offrons des réductions personnalisées pour chaque service. Cependant, lorsque vous optez pour un service de 30 jours, vous recevrez une réduction plus importante par rapport aux autres services. Veuillez vous référer aux détails des prix ci-dessus pour plus d'informations."
       },
       {
-        "name": "Mon paiement a été réussi, mais la mise à niveau a échoué.",
-        "content": "Veuillez nous contacter par chat ou email : <span class='email_address'>support{'@'}detpractice.com</span>. C'est le moyen le plus simple et le plus rapide de répondre à vos préoccupations."
+        "name": "Mon paiement a réussi, mais la mise à niveau a échoué？",
+        "content": "Veuillez nous contacter par chat ou par email : <span class='email_address'>support{'@'}detpractice.com</span>. C'est la façon la plus simple et la plus rapide de résoudre vos problèmes."
       },
       {
-        "name": "J'ai acheté le cours mais je ne peux pas le voir?",
-        "content": "Après avoir acheté le cours avec succès, vous pouvez aller à la page de description du cours <span class='email_address'>https://www.detpractice.com/courses</span> pour voir et télécharger les informations du cours. Si vous ne trouvez pas les informations du cours, veuillez nous contacter via le chat ou l'email: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "J'ai acheté le cours mais je ne peux pas le consulter, pourquoi ?",
+        "content": "Après avoir acheté le cours avec succès, vous pouvez vous rendre sur la page de description du cours https://www.detpractice.com/courses pour consulter et télécharger les informations. Si vous ne trouvez pas les informations du cours, veuillez nous contacter par chat ou par email : <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Où dois-je envoyer mes commentaires ?",
-        "content": "Vous pouvez envoyer des commentaires via le chat de support en bas à droite, ou nous contacter par email à <span class='email_address'>support{'@'}detpractice.com</span>. Vous pouvez également laisser un message directement dans la section « Contactez-nous »."
+        "name": "Où puis-je envoyer mes commentaires ?",
+        "content": "Vous pouvez envoyer vos commentaires via le chat de support en bas à droite, ou nous contacter par email à <span class='email_address'>support{'@'}detpractice.com</span>. Vous pouvez également laisser un message directement dans la section “Contactez-nous”."
       },
       {
         "name": "Quelle est votre politique de remboursement ?",
-        "content1": "Pour des informations et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de remboursement\" en bas de la page en priorité, ou nous contacter à <span class='email_address'>support{'@'}detpractice.com</span>."
+        "content1": "Pour obtenir des informations et des instructions sur le remboursement, vous pouvez consulter en priorité le lien \"Politique de remboursement\" en bas de page, ou nous contacter à <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -301,18 +301,18 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Service client en ligne",
-        "tip": "Disponible du lundi au vendredi, 10:00 - 19:00",
-        "btn": "Discuter en direct maintenant"
+        "font": "Service Client en Ligne",
+        "tip": "Disponible du lundi au vendredi, 10h00 - 19h00",
+        "btn": "Chattez Maintenant"
       },
       "type2": {
-        "font": "Envoyez-nous un email",
-        "tip": "Recevez une réponse en 1 jour ouvrable."
+        "font": "Envoyez-nous un Email",
+        "tip": "Réponse sous 1 jour ouvré"
       },
       "type3": {
-        "font": "Laisser un message",
-        "tip": "Nous vous répondrons dans un délai d'un jour ouvrable.",
-        "btn": "Laissez un message maintenant"
+        "font": "Laissez un Message",
+        "tip": "Nous vous répondrons sous 1 jour ouvré",
+        "btn": "Laissez un Message Maintenant"
       }
     },
     "leftQuanYiList": [

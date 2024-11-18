@@ -219,32 +219,32 @@
     },
     "aqList": [
       {
-        "name": "DETPractice的计划和定价如何运作？",
-        "content": "我们为用户提供透明的计划和定价，没有隐藏费用。此外，我们还提供附加订阅套餐，以便您可以根据自己的需要选择服务。"
+        "name": "DET Practice的会员方案和定价是如何运作的？",
+        "content": "我们为用户提供透明的会员方案和定价，绝无隐藏费用。此外，我们还提供附加订阅套餐，让你可以根据需求选择服务。"
       },
       {
-        "name": "是否有免费试用？",
-        "content": "是的！你可以免费查看20个问题。帮助你在购买更多服务之前了解我们。"
+        "name": "有免费试用吗？",
+        "content": "当然！你可以免费体验20道题目，帮助你在购买更多服务前了解我们的平台。"
       },
       {
         "name": "你们提供任何折扣吗？",
         "content": "是的！我们为每项服务提供量身定制的折扣。然而，当您选择30天服务时，您将获得比其他服务更大的折扣。有关更多信息，请参见上面的价格详情。"
       },
       {
-        "name": "我的付款成功了，但升级失败。",
-        "content": "请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。这是解决您问题的最简单和最快的方法。"
+        "name": "付款成功但未能升级会员？",
+        "content": "请通过在线客服或发送邮件至<span class='email_address'>support{'@'}detpractice.com</span>联系我们。这是解决问题最简单快捷的方式。"
       },
       {
-        "name": "我购买了课程但无法查看？",
-        "content": "成功购买课程后，您可以前往课程描述页面 <span class='email_address'>https://www.detpractice.com/courses</span> 查看和下载课程信息。如果您找不到课程信息，请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。"
+        "name": "已购买课程但无法查看，这是为什么？",
+        "content": "成功购买课程后，你可以前往课程介绍页面https://www.detpractice.com/courses查看并下载课程信息。如果找不到课程信息，请通过在线客服或发送邮件至<span class='email_address'>support{'@'}detpractice.com</span>联系我们。"
       },
       {
-        "name": "我应将反馈发送到哪里？",
-        "content": "您可以通过右下角的支持聊天发送反馈，或通过<span class='email_address'>support{'@'}detpractice.com</span>通过电子邮件联系我们。或者，您可以直接在“联系我们”部分留言。"
+        "name": "如何提供反馈？",
+        "content": "你可以通过右下角的客服对话框提供反馈，或发送邮件至<span class='email_address'>support{'@'}detpractice.com</span>。你也可以直接在“联系我们”栏目留言。"
       },
       {
-        "name": "您的退款政策是什么？",
-        "content1": "如需了解如何获得退款的信息和指南，您可以优先参考页面底部的“退款政策”链接，或通过<span class='email_address'>support{'@'}detpractice.com</span>与我们联系。"
+        "name": "退款政策是什么？",
+        "content1": "关于退款的信息和操作说明，你可以优先参考页面底部的“退款政策”链接，或直接联系<span class='email_address'>support{'@'}detpractice.com</span>。"
       }
     ],
     "qlList": {
@@ -288,17 +288,17 @@
     "contaceUsList": {
       "type1": {
         "font": "在线客服",
-        "tip": "周一至周五，10:00 - 19:00",
-        "btn": "立即在线聊天"
+        "tip": "服务时间：周一至周五，10:00 - 19:00",
+        "btn": "立即在线咨询"
       },
       "type2": {
-        "font": "给我们发电子邮件",
-        "tip": "在1个工作日内收到回复。"
+        "font": "邮件咨询",
+        "tip": "1个工作日内回复"
       },
       "type3": {
-        "font": "留言",
-        "tip": "我们将在一个工作日内回复您。",
-        "btn": "现在留言"
+        "font": "留言咨询",
+        "tip": "我们将在1个工作日内回复",
+        "btn": "立即留言"
       }
     },
     "leftQuanYiList": [

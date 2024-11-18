@@ -228,32 +228,32 @@
     },
     "aqList": [
       {
-        "name": "Bagaimana cara kerja rencana dan harga DETPractice?",
-        "content": "Kami menyediakan rencana dan harga yang transparan untuk pengguna kami, tanpa biaya tersembunyi. Selain itu, kami menawarkan paket langganan tambahan sehingga Anda dapat memilih layanan sesuai dengan kebutuhan Anda."
+        "name": "Bagaimana cara kerja paket dan harga DET Practice?",
+        "content": "Kami menyediakan paket dan harga yang transparan untuk pengguna kami, tanpa biaya tersembunyi. Selain itu, kami menyediakan paket berlangganan tambahan agar Anda dapat memilih layanan sesuai kebutuhan Anda."
       },
       {
         "name": "Apakah ada uji coba gratis?",
-        "content": "Ya! Anda dapat melihat 20 pertanyaan secara gratis. Membantu Anda memahami kami sebelum membeli lebih banyak layanan."
+        "content": "Ya! Anda dapat melihat 20 soal secara gratis. Membantu Anda mengenal kami sebelum membeli layanan lebih lanjut."
       },
       {
         "name": "Apakah Anda menawarkan diskon?",
         "content": "Ya! Kami menawarkan diskon yang disesuaikan untuk setiap layanan. Namun, saat Anda memilih layanan 30 hari, Anda akan menerima diskon yang lebih besar dibandingkan dengan layanan lainnya. Silakan merujuk ke detail harga di atas untuk informasi lebih lanjut."
       },
       {
-        "name": "Pembayaran saya berhasil, tetapi peningkatan gagal.",
-        "content": "Silakan hubungi kami melalui obrolan atau email: <span class='email_address'>support{'@'}detpractice.com</span>. Ini adalah cara paling sederhana dan tercepat untuk menangani kekhawatiran Anda."
+        "name": "Pembayaran saya berhasil, tapi upgrade gagal.",
+        "content": "Silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>. Ini adalah cara termudah dan tercepat untuk mengatasi masalah Anda."
       },
       {
-        "name": "Saya telah membeli kursus tetapi tidak bisa melihatnya?",
-        "content": "Setelah berhasil membeli kursus, Anda dapat pergi ke halaman deskripsi kursus <span class='email_address'>https://www.detpractice.com/courses</span> untuk melihat dan mengunduh informasi kursus. Jika Anda tidak dapat menemukan informasi kursus, silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Saya sudah membeli kursus tapi tidak bisa melihatnya, mengapa?",
+        "content": "Setelah berhasil membeli kursus, Anda dapat mengunjungi halaman deskripsi kursus https://www.detpractice.com/courses untuk melihat dan mengunduh informasi kursus. Jika Anda tidak dapat menemukan informasi kursus, silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Ke mana saya mengirimkan umpan balik saya?",
-        "content": "Anda dapat mengirimkan umpan balik melalui obrolan dukungan di sudut kanan bawah, atau hubungi kami melalui email di <span class='email_address'>support{'@'}detpractice.com</span>. Atau, Anda bisa meninggalkan pesan langsung di bagian \"Hubungi Kami\"."
+        "name": "Dimana saya bisa mengirim masukan?",
+        "content": "Anda dapat mengirim masukan melalui chat dukungan di pojok kanan bawah, atau hubungi kami melalui email di <span class='email_address'>support{'@'}detpractice.com</span>. Alternatif lain, Anda dapat meninggalkan pesan langsung di bagian \"Hubungi Kami\"."
       },
       {
-        "name": "Apa kebijakan pengembalian dana Anda?",
-        "content1": "Untuk informasi dan instruksi tentang cara mendapatkan pengembalian dana, Anda dapat merujuk ke tautan \"Kebijakan Pengembalian\" di bagian bawah halaman sebagai prioritas, atau hubungi kami di <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Bagaimana kebijakan pengembalian dana Anda?",
+        "content1": "Untuk informasi dan petunjuk tentang cara mendapatkan pengembalian dana, Anda dapat merujuk ke tautan \"Kebijakan Pengembalian Dana\" di bagian bawah halaman sebagai prioritas, atau hubungi kami di <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -298,16 +298,16 @@
       "type1": {
         "font": "Layanan Pelanggan Online",
         "tip": "Tersedia Senin-Jumat, 10:00 - 19:00",
-        "btn": "Obrolan Langsung Sekarang"
+        "btn": "Chat Sekarang"
       },
       "type2": {
-        "font": "Email Kami",
-        "tip": "Menerima tanggapan dalam 1 hari kerja."
+        "font": "Kirim Email",
+        "tip": "Respon dalam 1 hari kerja"
       },
       "type3": {
-        "font": "Tinggalkan pesan",
-        "tip": "Kami akan merespons Anda dalam satu hari kerja.",
-        "btn": "Tinggalkan pesan sekarang"
+        "font": "Tinggalkan Pesan",
+        "tip": "Kami akan merespon dalam 1 hari kerja",
+        "btn": "Tinggalkan Pesan Sekarang"
       }
     },
     "leftQuanYiList": [

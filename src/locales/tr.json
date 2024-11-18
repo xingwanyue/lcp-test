@@ -212,7 +212,7 @@
       "Non_member": "Üye olmayan",
       "purchased": "satın alındı",
       "Secure_Payment": "Güvenli Ödeme:",
-      "faq": "Sıkça Sorulan Sorular",
+      "faq": "Sık Sorulan Sorular",
       "Contact_Us": "Bize Ulaşın",
       "alt": "DET Uygulama:En iyi Duolingo English Test Uygulama platformu",
       "check_icon": "Kontrol Et",
@@ -234,32 +234,32 @@
     },
     "aqList": [
       {
-        "name": "DETPractice’in planları ve fiyatlandırması nasıl çalışır?",
-        "content": "Kullanıcılarımıza şeffaf planlar ve fiyatlandırma sunuyoruz, gizli ücretler olmadan. Ayrıca, ihtiyaçlarınıza göre hizmetleri seçebilmeniz için ek abonelik paketleri sunuyoruz."
+        "name": "DET Practice'in planları ve fiyatlandırması nasıl çalışır?",
+        "content": "Kullanıcılarımıza gizli ücret olmayan şeffaf planlar ve fiyatlar sunuyoruz. Ayrıca, ihtiyaçlarınıza göre hizmet seçebilmeniz için ek abonelik paketleri sunuyoruz."
       },
       {
-        "name": "Ücretsiz deneme süresi var mı?",
-        "content": "Evet! 20 soruyu ücretsiz olarak görüntüleyebilirsiniz. Daha fazla hizmet satın almadan önce bizi anlamanıza yardımcı olur."
+        "name": "Ücretsiz deneme var mı?",
+        "content": "Evet! 20 soruyu ücretsiz görebilirsiniz. Daha fazla hizmet satın almadan önce bizi tanımanıza yardımcı olur."
       },
       {
         "name": "Herhangi bir indirim sunuyor musunuz?",
         "content": "Evet! Her hizmet için özel indirimler sunuyoruz. Ancak, 30 günlük hizmeti tercih ettiğinizde diğer hizmetlere kıyasla daha büyük bir indirim alacaksınız. Daha fazla bilgi için lütfen yukarıdaki fiyat detaylarına bakın."
       },
       {
-        "name": "Ödemem başarılı oldu, ancak yükseltme başarısız oldu.",
-        "content": "Lütfen bizimle chat veya e-posta yoluyla iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>. Bu, endişelerinizi gidermenin en basit ve hızlı yoludur."
+        "name": "Ödemem başarılı oldu ama yükseltme başarısız oldu.",
+        "content": "Lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>. Bu, sorununuzu çözmenin en basit ve hızlı yoludur."
       },
       {
-        "name": "Kursu satın aldım ama görüntüleyemiyorum?",
-        "content": "Kursu başarıyla satın aldıktan sonra, kurs bilgilerini görüntülemek ve indirmek için kurs tanım sayfasına <span class='email_address'>https://www.detpractice.com/courses</span> gidebilirsiniz. Kurs bilgilerini bulamazsanız, lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Kursu satın aldım ama görüntüleyemiyorum, neden?",
+        "content": "Kursu başarıyla satın aldıktan sonra, kurs açıklama sayfası https://www.detpractice.com/courses adresinden kurs bilgilerini görüntüleyebilir ve indirebilirsiniz. Kurs bilgilerini bulamazsanız, lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Geri bildirimi nereye gönderebilirim?",
-        "content": "Geri bildirimi sağ alt köşedeki destek sohbeti aracılığıyla gönderebilir veya bize <span class='email_address'>support{'@'}detpractice.com</span> adresinden e-posta yoluyla ulaşabilirsiniz. Alternatif olarak, doğrudan \"Bize Ulaşın\" bölümüne bir mesaj bırakabilirsiniz."
+        "name": "Geri bildirimimi nereye gönderebilirim?",
+        "content": "Sağ alt köşedeki destek sohbeti aracılığıyla veya <span class='email_address'>support{'@'}detpractice.com</span> adresine e-posta göndererek geri bildirim sağlayabilirsiniz. Alternatif olarak, \"Bize Ulaşın\" bölümünden doğrudan mesaj bırakabilirsiniz."
       },
       {
-        "name": "İade politikası nedir?",
-        "content1": "Geri ödeme almak için bilgi ve talimatlar için, sayfanın altındaki \"Geri Ödeme Politikası\" bağlantısına öncelikli olarak başvurabilir veya <span class='email_address'>support{'@'}detpractice.com</span> adresinden bize ulaşabilirsiniz."
+        "name": "İade politikanız nedir?",
+        "content1": "İade bilgileri ve talimatları için öncelikle sayfanın altındaki \"İade Politikası\" bağlantısına bakabilir veya <span class='email_address'>support{'@'}detpractice.com</span> adresinden bizimle iletişime geçebilirsiniz."
       }
     ],
     "qlList": {
@@ -302,18 +302,18 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Çevrimiçi Müşteri Hizmetleri",
-        "tip": "Mevcut Pazartesi-Cuma, 10:00 - 19:00",
-        "btn": "Canlı Sohbet Edin"
+        "font": "Online Müşteri Hizmetleri",
+        "tip": "Pazartesi-Cuma, 10:00 - 19:00 saatleri arası",
+        "btn": "Hemen Sohbet Edin"
       },
       "type2": {
-        "font": "Bize E-posta Gönderin",
-        "tip": "1 iş günü içinde yanıt alın."
+        "font": "E-posta Gönderin",
+        "tip": "1 iş günü içinde yanıt"
       },
       "type3": {
-        "font": "Mesaj bırakın",
-        "tip": "Size bir iş günü içinde cevap vereceğiz.",
-        "btn": "Şimdi bir mesaj bırakın"
+        "font": "Mesaj Bırakın",
+        "tip": "1 iş günü içinde size yanıt vereceğiz",
+        "btn": "Hemen Mesaj Bırakın"
       }
     },
     "leftQuanYiList": [

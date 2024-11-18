@@ -226,12 +226,12 @@
     },
     "aqList": [
       {
-        "name": "¿Cómo funcionan los planes y precios de DETPractice?",
-        "content": "Ofrecemos planes y precios transparentes para nuestros usuarios, sin tarifas ocultas. Además, ofrecemos paquetes de suscripción adicionales para que puedas elegir servicios según tus necesidades."
+        "name": "¿Cómo funcionan los planes y precios de DET Practice?",
+        "content": "Ofrecemos planes y precios transparentes para nuestros usuarios, sin costos ocultos. Además, proporcionamos paquetes de suscripción adicionales para que pueda elegir servicios según sus necesidades."
       },
       {
         "name": "¿Hay una prueba gratuita?",
-        "content": "¡Sí! Puedes ver 20 preguntas de forma gratuita. Te ayudamos a entendernos antes de comprar más servicios."
+        "content": "¡Sí! Puede ver 20 preguntas gratis. Le ayuda a conocernos antes de comprar más servicios."
       },
       {
         "name": "¿Ofrecen algún descuento?",
@@ -239,11 +239,11 @@
       },
       {
         "name": "Mi pago fue exitoso, pero la actualización falló.",
-        "content": "Por favor, contáctenos por chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>. Esta es la forma más simple y rápida de abordar sus inquietudes."
+        "content": "Por favor, contáctenos por chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>. Esta es la forma más simple y rápida de resolver sus inquietudes."
       },
       {
-        "name": "Compré el curso pero no puedo verlo?",
-        "content": "Después de comprar el curso con éxito, puedes ir a la página de descripción del curso <span class='email_address'>https://www.detpractice.com/courses</span> para ver y descargar la información del curso. Si no puedes encontrar la información del curso, por favor contáctanos a través del chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Compré el curso pero no puedo verlo, ¿por qué?",
+        "content": "Después de comprar el curso exitosamente, puede visitar la página de descripción del curso https://www.detpractice.com/courses para ver y descargar la información. Si no puede encontrar la información del curso, contáctenos por chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "¿Dónde envío mis comentarios?",
@@ -251,7 +251,7 @@
       },
       {
         "name": "¿Cuál es su política de reembolso?",
-        "content1": "Para obtener información e instrucciones sobre cómo obtener un reembolso, puede referirse al enlace de \"Política de reembolso\" en la parte inferior de la página como una prioridad, o contactarnos en <span class='email_address'>support{'@'}detpractice.com</span>."
+        "content1": "Para información e instrucciones sobre cómo obtener un reembolso, puede consultar el enlace \"Política de Reembolso\" al pie de página o contactarnos en <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -294,18 +294,18 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Servicio de atención al cliente en línea",
-        "tip": "Disponible de lun-vie, 10:00 - 19:00",
-        "btn": "Chatea en Vivo Ahora"
+        "font": "Servicio al Cliente en Línea",
+        "tip": "Disponible Lun-Vie, 10:00 - 19:00",
+        "btn": "Chatear Ahora"
       },
       "type2": {
-        "font": "Envíanos un correo electrónico",
-        "tip": "Reciba una respuesta en 1 día hábil."
+        "font": "Envíenos un Correo",
+        "tip": "Respuesta en 1 día hábil"
       },
       "type3": {
-        "font": "Deja un mensaje",
-        "tip": "Le responderemos dentro de un día hábil.",
-        "btn": "Deja un mensaje ahora"
+        "font": "Dejar un Mensaje",
+        "tip": "Le responderemos en 1 día hábil",
+        "btn": "Dejar un Mensaje Ahora"
       }
     },
     "leftQuanYiList": [
