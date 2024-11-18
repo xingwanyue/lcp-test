@@ -51,22 +51,8 @@
     "LearnTitle": "Материалы",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사 소개",
-    "Products": [
-      "문제 풀이",
-      "AI 작문 첨삭",
-      "AI 스피킹 평가",
-      "실전 모의고사",
-      "DET 학습 과정"
-    ],
-    "Company": [
-      "회사 소개",
-      "고객센터",
-      "이용약관",
-      "개인정보처리방침",
-      "사이트맵",
-      "제휴 안내",
-      "환불규정"
-    ],
+    "Products": ["문제 풀이", "AI 작문 첨삭", "AI 스피킹 평가", "실전 모의고사", "DET 학습 과정"],
+    "Company": ["회사 소개", "고객센터", "이용약관", "개인정보처리방침", "사이트맵", "제휴 안내", "환불규정"],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -88,24 +74,19 @@
   "index": {
     "seometa": {
       "title": "DET Practice - 듀오링고 영어 시험 대비 종합 플랫폼",
-      "description": "DET Practice는 듀오링고 영어 시험 대비를 위한 최고의 플랫폼입니다. 방대한 문제 은행, 실제 시\n험과 동일한 모의고사, AI 기반 말하기 및 쓰기 교정 서비스와 DET 전용 강의를 제공합니다.",
-      "keywords": "듀오링고 영어 시험, DET Duolingo, DET 테스트, 듀오링고 시험, 듀오링고 온라인 테스트, 듀오링\n고 영어 능력 시험, 듀오링고 영어 평가, 듀오링고 영어 시험 준비, 영어 능력 시험 듀오링고"
+      "description": "DET Practice는 듀오링고 영어 시험 대비를 위한 최고의 플랫폼입니다. 방대한 문제 은행, 실제 시 험과 동일한 모의고사, AI 기반 말하기 및 쓰기 교정 서비스와 DET 전용 강의를 제공합니다.",
+      "keywords": "듀오링고 영어 시험, DET Duolingo, DET 테스트, 듀오링고 시험, 듀오링고 온라인 테스트, 듀오링 고 영어 능력 시험, 듀오링고 영어 평가, 듀오링고 영어 시험 준비, 영어 능력 시험 듀오링고"
     },
     "bigtitle1": "130점 이상 고득점자 수：10000+",
     "bigtitle2": "850개 이상의 리뷰에서 4.8/5의 뛰어난 평점!",
     "power_by": "AI로 구동되는",
     "h1Mobile": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
     "h1PC": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
-    "one_small_title": [
-      "DET 연습",
-      "AI 수정",
-      "풀-길이 모의 시험",
-      "DET 코스"
-    ],
+    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
     "Start_free_with_Google": "Google로 무료 시작",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",
-    "trustedByWorldwide": "전 세계 {path}만 명 이상의 학생들이 한 달 만에 Duolingo English Test에서 점수를 높이기 위해\n신뢰합니다",
+    "trustedByWorldwide": "전 세계 {path}만 명 이상의 학생들이 한 달 만에 Duolingo English Test에서 점수를 높이기 위해 신뢰합니다",
     "The_Best_Platform": "Duolingo English Test 점수 향상을 위한 최고의 플랫폼",
     "Tu": "총 사용자 수",
     "questions": "질문 수",
@@ -141,7 +122,7 @@
     },
     "article4": {
       "title": "DET 말하기 AI 교정",
-      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"\n지원",
+      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\" 지원",
       "tips2": "AI 채점, AI 평가, 강사 가이드",
       "tips3": "정확한 평가 점수, 상세한 평가 보고서",
       "tips4": "결과는 <span class='yellow'>1~5</span>분 내에 제공됩니다",
@@ -348,9 +329,9 @@
     "alt": "DET 연습: 최고의 Duolingo English Test 연습 플랫폼"
   },
   "embark": {
-    "font1": "여정을 시작하세요 높은 점수를 향해",
+    "font1": "목표 점수 달성을 위한 첫걸음을 시작하세요",
     "font2": "Duolingo English Test !",
-    "Start_Now": "지금 시작하세요"
+    "Start_Now": "지금 시작하기"
   },
   "articleDetail": {
     "Submitted_successfully": "제출 완료",
@@ -704,38 +685,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET 연습 - Duolingo 연습 시험의 최고 플랫폼",
-      "description": "저희 DET 시험 은행은 자세한 설명과 AI 분석이 포함된 광범위한 연습을 위해 수천 개의 문제를 포함하고 있어 성공에 도움이 됩니다.",
-      "keywords": "Duolingo English Test 연습, Duolingo 영어 연습 테스트, Duolingo 영어 연습 테스트, Duolingo 온라인 연습 테스트, Duolingo 테스트 연습, Duolingo 연습 테스트, Duolingo 연습, Det 연습 테스트, Duolingo English Test 점수"
+      "title": "듀오링고 영어테스트 준비 | AI 기반 DET 문제은행",
+      "description": "DET 시험 준비하시나요? 18,000개 이상의 문제와 AI 피드백, 학습 진도 관리 시스템으로 효과적인 점수 향상을 경험하세요. 이미 40만 명 이상의 수험생이 선택한 검증된 학습 플랫폼입니다",
+      "keywords": "듀오링고 시험 준비, DET 기출문제, DET 모의고사, 듀오링고 테스트 대비, DET 문제집, DET 스피 킹 연습, DET 라이팅 연습, 온라인 영어시험 준비, DET 학습자료, AI 말하기 평가"
     },
-    "h1": "Duolingo English Test 연습",
-    "desc": "방대한 시험 문제 컬렉션에 접근하고, 답안 분석, 템플릿, AI 기반 말하기 평가 및 스마트 계획 기능이 향상되었습니다. AI 구동 방식을 통해 효율적이고 저렴하게 점수 향상을 가속화하십시오.",
+    "h1": "Duolingo English Test 학습하기",
+    "desc": "방대한 문제 은행과 답안 해설, 답변 템플릿, AI 음성평가 시스템으로 효율적인 시험 준비가 가능합니다. AI 기술을 활용해 경제적이면서도 빠른 점수 향상을 경험해보세요",
     "alt": "DET 연습: 최고의 Duolingo English Test 연습 플랫폼",
     "altbanner": "Duolingo English Test 연습",
     "bank_user_icon": "뱅크 유저 아이콘",
     "white_arrow_right": "흰색 화살표 오른쪽",
     "blue_arrow_right": "파란색 화살표 오른쪽",
-    "learners_have": "{number}명의 학습자가 DET 준비를 위해 저희 문제 은행을 사용했습니다.",
-    "spn": "지금 연습 시작하기",
+    "learners_have": "현재까지 {number} 만 명 이상의 수험생이 DET 준비를 위해 저희 문제 은행을 활용했습니다.",
+    "spn": "무료 체험 시작하기",
     "article1": {
-      "h2": "가장 큰 질문 은행",
-      "right_desc": "다양한 시험 유형에 걸쳐 <span class='zdfont'>18,000개 이상의 질문</span>으로 구성된 방대한 라이브러리를 탐색해보세요. 항상 최신 상태로 유지하기 위해 지속적으로 업데이트됩니다. 우리의 문제 은행은 다양한 문제 형식에서 시험 응시 능력을 체계적으로 강화하도록 설계되었습니다.",
-      "btn": "실전에 뛰어들기"
+      "h2": "최대 규모 문제 은행 보유",
+      "right_desc": "18,000개 이상의 다양한 유형별 문제를 제공합니다. 지속적인 업데이트로 최신 시험 경향을 반영하며, 체계적인 학습이 가능하도록 구성되어 있습니다.",
+      "btn": "지금 학습 시작하기"
     },
     "article2": {
-      "h2": "지능형 추천",
-      "right_desc": "<span class='zdfont'>AI 모델</span>은 각 질문 유형의 숙달 수준, 난이도, 목표 점수, 문제 가중치, 질문의 참신함, 최근 시험 빈도, 준비 시간 및 채점 효율성 등을 고려하여 질문을 정확하게 추천함으로써 효율적으로 시험 준비를 할 수 있도록 도와줍니다.",
-      "btn": "스마트 학습 여정 시작"
+      "h2": "AI 맞춤형 학습 시스템",
+      "right_desc": "AI가 여러분의 문제 유형별 숙련도, 난이도, 목표 점수, 중요도, 최신 출제 경향, 학습 기간, 학 습 효율 등을 분석하여 최적화된 문제를 추천해드립니다.",
+      "btn": "맞춤형 학습 시작하기"
     },
     "article3": {
-      "h2": "AI 말하기 평가",
-      "right_desc": "<span class='zdfont'>AI 기반 말하기 평가</span>로 구술 능력을 향상시키세요. 말하기 질문에 대한 응답을 제출하면 즉시 말하기 능력에 대한 상세한 분석을 받아, 정확하고 빠르게 개선할 수 있습니다.",
-      "btn": "평가를 시작하세요"
+      "h2": "AI 스피킹 평가",
+      "right_desc": "AI 음성평가 시스템으로 스피킹 실력을 향상시켜보세요. 답변 제출 즉시 상세한 분석 결과를 받아볼 수 있어 효과적인 학습이 가능합니다.",
+      "btn": "스피킹 테스트 시작하기"
     },
     "article4": {
-      "h2": "답변 분석",
-      "right_desc": "핵심 개념과 문제 해결 기법에 대한 이해를 깊게 하는 포괄적인 답변 설명을 탐구하십시오. 우리의 상세한 분석은 정답으로 안내하는 것뿐만 아니라 귀하의 지식을 확장하고 학습 효율성을 향상시킵니다.",
-      "btn": "답변 인사이트 탐색"
+      "h2": "상세 답안 해설",
+      "right_desc": "핵심 개념과 문제 해결 전략을 포함한 자세한 해설을 제공합니다. 단순한 정답 확인을 넘어 실력 향상에 도움이 되는 깊이 있는 설명을 확인하실 수 있습니다.",
+      "btn": "답안 해설 보기"
     }
   },
   "speakingaicorrection": {

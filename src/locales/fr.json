@@ -87,24 +87,19 @@
   "index": {
     "seometa": {
       "title": "DET Practice - Plateforme Complète de Préparation au Test d'Anglais Duolingo",
-      "description": "DET Practice est la meilleure plateforme de préparation au test d'anglais Duolingo. Nous offrons\nune vaste banque de questions, un examen blanc réaliste, un service de correction par IA pour\nl'oral et l'écrit, ainsi que des cours spécifiques au DET.",
-      "keywords": "Test d'anglais Duolingo, DET Duolingo, test DET, examen Duolingo, test en ligne Duolingo, test\nde langue anglaise Duolingo, examen d'anglais Duolingo, test de compétence en anglais\nDuolingo, examen de compétence Duolingo en anglais, test d'anglais de Duolingo"
+      "description": "DET Practice est la meilleure plateforme de préparation au test d'anglais Duolingo. Nous offrons une vaste banque de questions, un examen blanc réaliste, un service de correction par IA pour l'oral et l'écrit, ainsi que des cours spécifiques au DET.",
+      "keywords": "Test d'anglais Duolingo, DET Duolingo, test DET, examen Duolingo, test en ligne Duolingo, test de langue anglaise Duolingo, examen d'anglais Duolingo, test de compétence en anglais Duolingo, examen de compétence Duolingo en anglais, test d'anglais de Duolingo"
     },
     "bigtitle1": "Nombre de scores élevés (130+ points)：10000+",
     "bigtitle2": "Note exceptionnelle de 4,8/5 sur plus de 850 avis !",
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": [
-      "DET Pratique",
-      "Correction de l'IA",
-      "Simulation complète",
-      "DET Cours"
-    ],
+    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
-    "trustedByWorldwide": "En un mois, plus de {path} étudiants dans le monde nous font confiance pour améliorer\nleur score au Duolingo English Test.",
+    "trustedByWorldwide": "En un mois, plus de {path} étudiants dans le monde nous font confiance pour améliorer leur score au Duolingo English Test.",
     "The_Best_Platform": "La meilleure plateforme pour améliorer vos scores au Duolingo English Test",
     "Tu": "Nombre total d'utilisateurs",
     "questions": "Questions",
@@ -140,7 +135,7 @@
     },
     "article4": {
       "title": "Correction IA de l'expression orale DET",
-      "tips1": "Supporte \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\",\n\"Speaking Sample\"",
+      "tips1": "Supporte \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
       "tips2": "Évaluation par IA, Résultats d'évaluation IA, Accompagnement d'un enseignant",
       "tips3": "Scores d'évaluation précis, rapport d'évaluation détaillé",
       "tips4": "Les résultats seront disponibles en <span class='yellow'>1 à 5 </span>minutes",
@@ -347,9 +342,9 @@
     "alt": "DET Pratique:La meilleure plateforme Duolingo English Test Pratique"
   },
   "embark": {
-    "font1": "Embarquez pour votre voyage vers des scores élevés sur",
+    "font1": "Visez l'excellence au D",
     "font2": "Duolingo English Test !",
-    "Start_Now": "Commencez Maintenant"
+    "Start_Now": "Commencer maintenant"
   },
   "articleDetail": {
     "Submitted_successfully": "Submitted successfully",
@@ -703,38 +698,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Pratique - La meilleure plateforme pour les tests de pratique Duolingo",
-      "description": "Notre banque d'essais DET comprend des milliers de questions pour une formation approfondie, avec des explications détaillées et une analyse d'IA pour vous aider à réussir.",
-      "keywords": "Duolingo English Test Pratique, Duolingo Pratique Test d'anglais, Duolingo Test de pratique anglais, Duolingo Test de pratique en ligne, Duolingo Pratique test, Duolingo Test de pratique, Duolingo Pratique, Det Test de pratique, Duolingo English Test Score"
+      "title": "Préparation au Duolingo English Test | Banque de Questions DET avec IA",
+      "description": "Préparez-vous au Duolingo English Test avec notre plateforme d'entraînement complète. Plus de 18 000 questions, feedback IA personnalisé et suivi intelligent de vos progrès. Rejoignez plus de 400 000 candidats qui ont déjà optimisé leur score au DET.",
+      "keywords": "préparation DET, exercices Duolingo test, entraînement DET, examens blancs DET, ressources Duolingo, pratique expression orale DET, exercices rédaction DET, preparation test anglais en ligne, cours DET, évaluation IA anglais"
     },
-    "h1": "Duolingo English Test Pratique",
-    "desc": "Accédez à une vaste collection de questions d'examen, enrichies par une analyse des réponses, des modèles, des évaluations de la parole basées sur l'IA et une planification intelligente. Accélérez l'amélioration de votre score de manière efficace et abordable avec notre approche alimentée par l'IA.",
+    "h1": "Préparation au Duolingo English Test",
+    "desc": "Une banque complète d'exercices avec corrections détaillées, modèles types, évaluation orale par IA et parcours personnalisé. Notre technologie IA vous permet d'optimiser vos résultats rapidement et à moindre coût.",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "altbanner": "Duolingo English Test Pratique",
     "bank_user_icon": "Icône d'utilisateur de banque",
     "white_arrow_right": "Flèche Blanche Droite",
     "blue_arrow_right": "Flèche bleue droite",
-    "learners_have": "{number} apprenants ont utilisé notre banque de questions pour la préparation DET.",
-    "spn": "Commencez à pratiquer maintenant",
+    "learners_have": "Plus de {number} candidats nous font confiance pour leur préparation au DET.",
+    "spn": "Débuter l'entraînement",
     "article1": {
-      "h2": "La Plus Grande Banque de Questions",
-      "right_desc": "Découvrez notre vaste bibliothèque de plus de <span class='zdfont'>18 000+ questions</span> couvrant divers types d'examens, constamment actualisés pour maintenir votre pratique à jour. Notre banque de questions est conçue pour renforcer systématiquement vos compétences en matière de passage de tests à travers différents formats de questions.",
-      "btn": "Plongez dans la pratique"
+      "h2": "Banque d'exercices exclusive",
+      "right_desc": "Accédez à plus de 18 000 questions couvrant tous les aspects de l'examen. Mise à jour régulière selon les dernières évolutions du test. Une méthodologie structurée pour maîtriser chaque type d'exercice.",
+      "btn": "S'entraîner"
     },
     "article2": {
-      "h2": "Recommandation Intelligente",
-      "right_desc": "Le <span class='zdfont'>modèle d'IA</span> prendra en compte le niveau de maîtrise de chaque type de question, la difficulté, le score cible, le poids des questions, la nouveauté des questions, la fréquence récente du test, le temps de préparation et l'efficacité de la notation, etc. pour recommander précisément des questions afin de vous aider à vous préparer efficacement au test.",
-      "btn": "Commencez un voyage d'étude intelligent"
+      "h2": "Recommandations personnalisées",
+      "right_desc": "Notre IA analyse plusieurs critères pour vous proposer les exercices les plus pertinents : niveau de maîtrise, difficulté, score visé, pondération des questions, nouveautés, tendances actuelles, temps de préparation et progression.",
+      "btn": "Découvrir l'apprentissage intelligent"
     },
     "article3": {
-      "h2": "Évaluation de la Parole par l'IA",
-      "right_desc": "Améliorez votre aisance orale avec nos <span class='zdfont'>évaluations de parole alimentées par l'IA</span>. Soumettez votre réponse à une question de langue parlée et recevez instantanément une analyse détaillée de vos compétences orales, vous aidant à vous améliorer avec précision et rapidité.",
-      "btn": "Commencez votre évaluation"
+      "h2": "Évaluation orale par IA",
+      "right_desc": "Perfectionnez votre expression orale grâce à notre système d'évaluation IA. Enregistrez vos réponses et recevez instantanément une analyse approfondie pour progresser efficacement.",
+      "btn": "Commencer l'évaluation"
     },
     "article4": {
-      "h2": "Analyse de la réponse",
-      "right_desc": "Plongez dans des explications de réponses approfondies qui enrichissent votre compréhension des concepts essentiels et des techniques de résolution de problèmes. Nos analyses détaillées ne se contentent pas de vous guider vers les bonnes réponses—elles élargissent vos connaissances et augmentent votre efficacité d'étude.",
-      "btn": "Explorer les informations sur les réponses"
+      "h2": "Corrections détaillées",
+      "right_desc": "Bénéficiez d'explications approfondies sur les concepts clés et les méthodologies. Nos corrections ne se limitent pas aux bonnes réponses : elles enrichissent vos connaissances et optimisent votre apprentissage.",
+      "btn": "Consulter les corrections"
     }
   },
   "speakingaicorrection": {

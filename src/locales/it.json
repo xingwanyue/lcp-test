@@ -51,22 +51,8 @@
     "LearnTitle": "Risorse",
     "BlogTitle": "Blog",
     "CompanyTitle": "Chi Siamo",
-    "Products": [
-      "Esercizi DET",
-      "Correzione IA Scrittura",
-      "Valutazione IA Speaking",
-      "Simulazioni",
-      "Corsi Completi"
-    ],
-    "Company": [
-      "Chi siamo",
-      "Contattaci",
-      "Condizioni",
-      "Privacy",
-      "Mappa del sito",
-      "Partnership",
-      "Rimborsi"
-    ],
+    "Products": ["Esercizi DET", "Correzione IA Scrittura", "Valutazione IA Speaking", "Simulazioni", "Corsi Completi"],
+    "Company": ["Chi siamo", "Contattaci", "Condizioni", "Privacy", "Mappa del sito", "Partnership", "Rimborsi"],
     "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -88,24 +74,19 @@
   "index": {
     "seometa": {
       "title": "DET Practice - Piattaforma Completa per Prepararsi al Test di Inglese Duolingo",
-      "description": "DET Practice è la migliore piattaforma per la preparazione al test di inglese Duolingo. Offriamo\nun’ampia banca di domande, simulazioni complete del test, un servizio di correzione basato su\nIA per il parlato e lo scritto e corsi dedicati al DET.",
-      "keywords": "Test di inglese Duolingo, DET Duolingo, test DET, esame Duolingo, test online Duolingo, test di\nlingua inglese Duolingo, esame di inglese Duolingo, esame di competenza Duolingo, test di\ninglese Duolingo"
+      "description": "DET Practice è la migliore piattaforma per la preparazione al test di inglese Duolingo. Offriamo un’ampia banca di domande, simulazioni complete del test, un servizio di correzione basato su IA per il parlato e lo scritto e corsi dedicati al DET.",
+      "keywords": "Test di inglese Duolingo, DET Duolingo, test DET, esame Duolingo, test online Duolingo, test di lingua inglese Duolingo, esame di inglese Duolingo, esame di competenza Duolingo, test di inglese Duolingo"
     },
     "bigtitle1": "Numero di punteggi alti (130+ punti)：10000+",
     "bigtitle2": "Valutazione eccezionale di 4,8/5 da oltre 850 recensioni!",
     "power_by": "Basato su AI",
     "h1Mobile": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
     "h1PC": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
-    "one_small_title": [
-      "DET Pratica",
-      "Correzione AI",
-      "Simulazione Completa",
-      "DET Corsi"
-    ],
+    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con email",
     "Start_for_free": "Inizia gratis",
-    "trustedByWorldwide": "Scelto da oltre {path} studenti in tutto il mondo per migliorare il punteggio al Duolingo\nEnglish Test in un mese.",
+    "trustedByWorldwide": "Scelto da oltre {path} studenti in tutto il mondo per migliorare il punteggio al Duolingo English Test in un mese.",
     "The_Best_Platform": "La migliore piattaforma per migliorare i tuoi punteggi al Duolingo English Test",
     "Tu": "Utenti totali",
     "questions": "Domande",
@@ -141,7 +122,7 @@
     },
     "article4": {
       "title": "Correzione AI Speaking DET",
-      "tips1": "Supporta \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\",\n\"Speaking Sample\"",
+      "tips1": "Supporta \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
       "tips2": "Valutazione AI, Risultati AI, Guida dell'insegnante",
       "tips3": "Punteggi accurati, rapporto di valutazione dettagliato",
       "tips4": "I risultati saranno disponibili entro <span class='yellow'>1-5</span> minuti",
@@ -150,7 +131,7 @@
     },
     "article5": {
       "title": "Correzione AI Speaking DET",
-      "tips1": "Sviluppa una comprensione approfondita delle sezioni di speaking e writing del DET\ncon le nostre guide dettagliate",
+      "tips1": "Sviluppa una comprensione approfondita delle sezioni di speaking e writing del DET con le nostre guide dettagliate",
       "tips2": "Raggiungi una padronanza totale",
       "tips3": "Impara dagli esperti ESL",
       "tips4": "Rimani informato e un passo avanti",
@@ -348,9 +329,9 @@
     "alt": "DET Pratica:La migliore piattaforma Duolingo English Test di pratica"
   },
   "embark": {
-    "font1": "Inizia il tuo viaggio verso punteggi alti su",
+    "font1": "Raggiungi il massimo punteggio nel",
     "font2": "Duolingo English Test !",
-    "Start_Now": "Inizia Ora"
+    "Start_Now": "Inizia Subito"
   },
   "articleDetail": {
     "Submitted_successfully": "Inviato con successo",
@@ -704,38 +685,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Pratica - La migliore piattaforma per il test di pratica Duolingo",
-      "description": "Il nostro database di test DET include migliaia di domande per un'ampia preparazione, complete di spiegazioni dettagliate e analisi AI per aiutarti a raggiungere il successo.",
-      "keywords": "Duolingo English Test Pratica, Duolingo Pratica Test di Inglese, Duolingo Test di Pratica Inglese, Duolingo Test di Pratica Online, Duolingo Test di Pratica, Duolingo Test di Pratica, Duolingo Pratica, Det Test di Pratica, Duolingo English Test Punteggio"
+      "title": "Preparazione al DET | Banca Dati Duolingo con Intelligenza Artificiale",
+      "description": "Cerchi un modo efficace per prepararti al Duolingo English Test? Accedi alla nostra piattaforma con oltre 18.000 quesiti, feedback intelligente e monitoraggio AI. Unisciti a più di 400.000 studenti che hanno già migliorato il loro punteggio DET.",
+      "keywords": "esercizi DET, preparazione Duolingo test, simulazione DET, esercitazioni Duolingo, banca dati DET, pratica speaking DET, esercizi writing DET, allenamento test inglese online, materiale didattico DET, valutazione AI speaking"
     },
-    "h1": "Duolingo English Test Pratica",
-    "desc": "Accedi a un'ampia raccolta di domande di test, arricchita con analisi delle risposte, modelli, valutazioni del parlato guidate dall'IA e pianificazione intelligente. Accelera il miglioramento del tuo punteggio in modo efficiente ed economico con il nostro approccio alimentato dall'IA.",
+    "h1": "Centro di Preparazione Duolingo English Test",
+    "desc": "Accedi a una raccolta completa di esercizi con spiegazioni dettagliate, esempi di risposte, valutazione AI del parlato e piano di studio personalizzato. Ottieni il punteggio desiderato in modo efficace ed economico grazie alla nostra tecnologia avanzata",
     "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di Pratica",
     "altbanner": "Duolingo English Test Pratica",
     "bank_user_icon": "Icona Utente della Banca",
     "white_arrow_right": "Freccia Bianca Destra",
     "blue_arrow_right": "Freccia Blu a Destra",
-    "learners_have": "{number} studenti hanno utilizzato il nostro questionario per la preparazione DET.",
-    "spn": "Inizia a esercitarti ora",
+    "learners_have": "Più di {number} candidati si sono preparati con il nostro sistema.",
+    "spn": "Inizia ad Esercitarti",
     "article1": {
-      "h2": "La più grande banca di domande",
-      "right_desc": "Esplora la nostra vasta biblioteca di oltre <span class='zdfont'>18.000+ domande</span> su diversi tipi di esami, costantemente aggiornata per mantenere la tua pratica al passo coi tempi. Il nostro banco di domande è progettato per rafforzare sistematicamente le tue abilità nei test attraverso vari formati di domande.",
-      "btn": "Immergiti nella Pratica"
+      "h2": "La Banca Dati Più Completa",
+      "right_desc": "Oltre 18.000 quesiti costantemente aggiornati che coprono tutti gli aspetti dell'esame. Un sistema strutturato per sviluppare metodicamente le competenze richieste in ogni sezione del test.",
+      "btn": "Comincia ad Allenarti"
     },
     "article2": {
-      "h2": "Raccomandazione Intelligente",
-      "right_desc": "L'<span class='zdfont'>modello di AI</span> terrà conto del livello di padronanza di ogni tipo di domanda, della difficoltà, del punteggio obiettivo, del peso delle domande, della novità delle domande, della frequenza recente del test, del tempo di preparazione e dell'efficienza nel punteggio, ecc. per raccomandare accuratamente le domande e aiutarti a prepararti in modo efficiente per il test.",
-      "btn": "Inizia il tuo viaggio di studio intelligentemente"
+      "h2": "Sistema di Raccomandazione Intelligente",
+      "right_desc": "Il nostro sistema AI analizza il tuo livello di preparazione, la difficoltà degli esercizi, il punteggio target, la rilevanza dei contenuti, gli aggiornamenti del test, i tempi di preparazione e i progressi per suggerirti il percorso di studio ottimale.",
+      "btn": "Avvia il Tuo Percorso Personalizzato"
     },
     "article3": {
-      "h2": "Valutazione del Parlato dell'Intelligenza Artificiale",
-      "right_desc": "Migliora la tua competenza orale con le nostre <span class='zdfont'>valutazioni di speaking guidate dall'AI</span>. Invia la tua risposta a una domanda di lingua parlata e ricevi immediatamente un'analisi dettagliata delle tue abilità di speaking, aiutandoti a migliorare con precisione e rapidità.",
-      "btn": "Inizia la tua valutazione"
+      "h2": "Valutazione AI del Speaking",
+      "right_desc": "Perfeziona le tue competenze orali con la nostra valutazione AI. Registra le tue risposte e ricevi immediatamente un'analisi dettagliata per migliorare in modo mirato e rapido.",
+      "btn": "Inizia la Valutazione"
     },
     "article4": {
-      "h2": "Analisi della risposta",
-      "right_desc": "Approfondisci le spiegazioni dettagliate delle risposte che approfondiscono la tua comprensione dei concetti essenziali e delle tecniche di risoluzione dei problemi. Le nostre analisi dettagliate non ti guidano solo verso le risposte corrette—espandono la tua conoscenza e aumentano la tua efficienza di studio.",
-      "btn": "Esplora Approfondimenti delle Risposte"
+      "h2": "Analisi Approfondite",
+      "right_desc": "Comprendi a fondo ogni esercizio grazie alle spiegazioni complete. Le nostre soluzioni non si limitano a mostrarti la risposta corretta, ma ti aiutano a padroneggiare i concetti chiave e le strategie di studio più efficaci.",
+      "btn": "Scopri le Soluzioni"
     }
   },
   "speakingaicorrection": {

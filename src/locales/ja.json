@@ -51,13 +51,7 @@
     "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "企業情報",
-    "Products": [
-      "DET演習",
-      "AIライティング添削",
-      "AIスピーキング評価",
-      "模擬試験",
-      "総合対策コース"
-    ],
+    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -87,24 +81,19 @@
   "index": {
     "seometa": {
       "title": "DET Practice - Duolingo英語テスト対策の総合プラットフォーム",
-      "description": "DET Practiceは、最適なDuolingo英語テスト対策プラットフォームです。豊富な問題集、1対1\nの模擬試験、AIによるスピーキング・ライティングの添削サービス、DET対策コースを提供し\nています。",
-      "keywords": "Duolingo英語テスト、DET Duolingo、DETテスト、Duolingo試験、オンラインDuolingoテス\nト、Duolingo英語検定、Duolingo英語試験、Duolingo英語能力試験、Duolingo英語プロフィシ\nエンシー試験、英語能力試験Duolingo、Duolingo英語試験"
+      "description": "DET Practiceは、最適なDuolingo英語テスト対策プラットフォームです。豊富な問題集、1対1 の模擬試験、AIによるスピーキング・ライティングの添削サービス、DET対策コースを提供し ています。",
+      "keywords": "Duolingo英語テスト、DET Duolingo、DETテスト、Duolingo試験、オンラインDuolingoテス ト、Duolingo英語検定、Duolingo英語試験、Duolingo英語能力試験、Duolingo英語プロフィシ エンシー試験、英語能力試験Duolingo、Duolingo英語試験"
     },
     "bigtitle1": "高得点者数（130ポイント以上）：10000+",
     "bigtitle2": "850件以上のレビューで驚異の4.8/5の評価！",
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
-    "one_small_title": [
-      "DET 練習",
-      "AI修正",
-      "フルレングスモック",
-      "DET コース"
-    ],
+    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
-    "trustedByWorldwide": "世界中の{path}万人以上の学生から信頼され、1か月でDuolingo English Testのスコアを向上さ\nせています。",
+    "trustedByWorldwide": "世界中の{path}万人以上の学生から信頼され、1か月でDuolingo English Testのスコアを向上さ せています。",
     "The_Best_Platform": "Duolingo English Testのスコアアップに最適なプラットフォーム",
     "Tu": "総ユーザー数",
     "questions": "問題数",
@@ -140,7 +129,7 @@
     },
     "article4": {
       "title": "DETスピーキングAI添削",
-      "tips1": "\"Listen, Then Speak\"、\"Speak About the Photo\"、\"Read, Then Speak\"、\"Speaking\nSample\"に対応",
+      "tips1": "\"Listen, Then Speak\"、\"Speak About the Photo\"、\"Read, Then Speak\"、\"Speaking Sample\"に対応",
       "tips2": "AI採点、AI評価結果、講師のガイダンス",
       "tips3": "正確なスコア評価、詳細な評価レポート",
       "tips4": "結果は<span class='yellow'>1〜5</span>分以内にご利用いただけます",
@@ -349,7 +338,7 @@
   "embark": {
     "font1": "あなたの高得点への旅を始めよう",
     "font2": "Duolingo English Test ！",
-    "Start_Now": "今すぐ開始"
+    "Start_Now": "今すぐ始める"
   },
   "articleDetail": {
     "Submitted_successfully": "送信完了",
@@ -703,38 +692,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET 練習 - Duolingoの練習テストに最適なプラットフォーム",
-      "description": "私たちのDETテストバンクには、詳細な説明とAI分析を含む数千の問題が含まれており、広範なトレーニングに役立ちます。成功するための支援をします。",
-      "keywords": "Duolingo English Test 練習, Duolingo 練習英語テスト, Duolingo 英語練習テスト, Duolingo 練習テストオンライン, Duolingo テスト練習, Duolingo 練習テスト, Duolingo 練習, Det 練習テスト, Duolingo English Test スコア"
+      "title": "DET対策問題集｜AI搭載のDuolingo英語テスト練習プラットフォーム",
+      "description": "Duolingo英語テスト（DET）の対策をお探しですか？18,000問以上の練習問題とAIフィードバ ック機能で、効率的にスコアアップを実現。40万人以上の受験者が選んだ信頼の学習プラット フォームです。",
+      "keywords": "デュオリンゴ英語テスト, DET対策, DET問題集, DET模擬テスト, DET勉強法, DETスピーキング練 習, DETライティング対策, オンライン英語試験対策, DET学習教材, AI音声採点"
     },
-    "h1": "Duolingo English Test 練習",
-    "desc": "幅広いテスト問題集へのアクセス、解答分析、テンプレート、AI駆動のスピーキング評価、スマートプランニングが充実しています。AIによる効率的かつ手頃な価格でスコア改善を加速させましょう。",
+    "h1": "Duolingo English Test 対策問題",
+    "desc": "充実した演習問題と解説、モデル解答、AI音声評価システム、効率的な学習プランをご提 供します。最新のAI技術で、効率的かつリーズナブルにスコアアップを実現できます。",
     "alt": "DET 練習:最高の Duolingo English Test 練習プラットフォーム",
     "altbanner": "Duolingo English Test 練習",
     "bank_user_icon": "銀行ユーザーアイコン",
     "white_arrow_right": "白い矢印 右",
     "blue_arrow_right": "青い矢印 右",
-    "learners_have": "{number} 人の学習者が私たちの質問バンクを利用して DET 準備をしました。",
-    "spn": "今すぐ練習を始めましょう",
+    "learners_have": "これまでに{number} 人以上の方がDET対策に当問題集をご利用いただいています。",
+    "spn": "学習を始める",
     "article1": {
-      "h2": "最大の問題集",
-      "right_desc": "多様な試験形式にわたる<span class='zdfont'>18,000以上の質問</span>が揃った広範なライブラリを探検し、常に最新の状態で練習できるよう定期的に更新されています。私たちの問題集は、さまざまな質問形式において体系的にあなたの試験スキルを強化するよう設計されています。",
-      "btn": "実践に飛び込む"
+      "h2": "豊富な問題数",
+      "right_desc": "18,000問以上の問題を収録し、様々な出題形式に対応。最新の試験傾向に合わせて定期的 にアップデートしております。体系的な演習で確実に実力を養成します。",
+      "btn": "演習を始める"
     },
     "article2": {
-      "h2": "インテリジェントレコメンデーション",
-      "right_desc": "それぞれの質問タイプの習熟度、難易度、目標スコア、質問の重み、新規性、最近のテスト頻度、準備時間、採点効率などを考慮して、<span class='zdfont'>AIモデル</span>が正確に質問を推薦し、効率的にテストの準備をするのを助けます。",
-      "btn": "スマートスタディジャーニーを始める"
+      "h2": "AIによる最適化",
+      "right_desc": "AIシステムが以下の要素を分析し、最適な問題を提案します： 習熟度、難易度、目標スコ ア、重要度、新規問題、出題傾向、学習期間、学習効率など、効果的な対策をサポートい たします。",
+      "btn": "スマート学習を始める"
     },
     "article3": {
-      "h2": "AIスピーキング評価",
-      "right_desc": "<span class='zdfont'>AI駆動の話す能力評価</span>で、口頭の熟練度を向上させましょう。話し言葉の質問に対する回答を提出すると、すぐにあなたの話すスキルの詳細な分析を受け取り、正確かつ迅速に改善できます。",
-      "btn": "評価を開始する"
+      "h2": "AI音声評価システム",
+      "right_desc": "AI搭載の音声評価システムでスピーキング力を向上。回答を提出すると即座に詳細な分析 結果が表示され、効率的なスキルアップを実現します。",
+      "btn": "評価を受ける"
     },
     "article4": {
-      "h2": "回答の分析",
-      "right_desc": "包括的な回答の説明を掘り下げて、重要な概念や問題解決技術の理解を深めましょう。詳細な分析は正しい答えに導くだけでなく、知識を広げ、学習効率を高めます。",
-      "btn": "アンサーインサイトを探索"
+      "h2": "詳細な解説",
+      "right_desc": "各問題に丁寧な解説を用意。重要なポイントや解法のコツを分かりやすく説明し、知識の 定着と学習効率の向上をサポートいたします。",
+      "btn": "解説を確認する"
     }
   },
   "speakingaicorrection": {

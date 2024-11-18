@@ -6,7 +6,7 @@
     },
     "article5": {
       "title": "DET Speaking KI-Korrektur",
-      "tips1": "Entwickeln Sie ein tiefgehendes Verständnis der DET Speaking- und Writing-Abschnitte\nmit unseren detaillierten Leitfäden",
+      "tips1": "Entwickeln Sie ein tiefgehendes Verständnis der DET Speaking- und Writing-Abschnitte mit unseren detaillierten Leitfäden",
       "tips2": "Erreichen Sie umfassende Beherrschung",
       "tips3": "Lernen Sie von ESL-Experten",
       "tips4": "Bleiben Sie informiert und einen Schritt voraus",
@@ -20,5 +20,40 @@
   },
   "footer": {
     "igetit": "Okay, verstanden"
+  },
+  "practice": {
+    "seometa": {
+      "title": "DET Übungsportal | KI-gestützte Duolingo English Test Vorbereitung",
+      "description": "Auf der Suche nach einer effektiven DET-Vorbereitung? Nutzen Sie unsere umfangreiche Übungsplattform mit über 18.000 Aufgaben, KI-gesteuertem Feedback und intelligentem Lernfortschritt. Schließen Sie sich über 400.000 erfolgreichen Teilnehmern an.",
+      "keywords": "Duolingo Test Vorbereitung, DET Übungsmaterialien, DET Beispielaufgaben, Duolingo Prüfungstraining, DET Aufgabensammlung, DET Sprechübungen, DET Schreibtraining, Online Englischtest Übungen, DET Lernmaterialien, KI-Sprachbewertung"
+    },
+    "h1": "Duolingo English Test Übungszentrum",
+    "desc": "Nutzen Sie unsere umfassende Testbibliothek mit ausführlichen Lösungserklärungen, Beispielantworten, KI-basierter Sprachanalyse und individuellem Lernplan. Mit modernster KI-Technologie erreichen Sie Ihr Wunschergebnis effizient und kostengünstig",
+    "learners_have": "Mehr als {number} Teilnehmer vertrauen auf unsere DET-Vorbereitung.",
+    "spn": "Jetzt mit dem Training beginnen",
+    "article1": {
+      "h2": "Umfangreichste Aufgabensammlung",
+      "right_desc": "Profitieren Sie von über 18.000 Übungsaufgaben zu allen Prüfungsbereichen. Regelmäßige Aktualisierungen garantieren aktuelle Prüfungsinhalte. Systematischer Aufbau zur gezielten Verbesserung aller Prüfungskompetenzen.",
+      "btn": "Mit dem Training beginnen"
+    },
+    "article2": {
+      "h2": "Intelligente Lernempfehlungen",
+      "right_desc": "Unser KI-System analysiert Ihren aktuellen Leistungsstand, Schwierigkeitsgrade, Zielpunktzahl, Aufgabengewichtung, aktuelle Prüfungstrends, Vorbereitungszeit und Lernfortschritt, um Ihnen optimale Übungsaufgaben für eine effiziente Prüfungsvorbereitung zu empfehlen.",
+      "btn": "Starten Sie Ihr individuelles Training"
+    },
+    "article3": {
+      "h2": "KI-gestützte Sprachbewertung",
+      "right_desc": "Optimieren Sie Ihre Sprechfertigkeit mit KI-basierter Analyse. Laden Sie Ihre Sprachantworten hoch und erhalten Sie sofort eine detaillierte Auswertung für gezielte Verbesserungen.",
+      "btn": "Sprachbewertung starten"
+    },
+    "article4": {
+      "h2": "Ausführliche Lösungen",
+      "right_desc": "Verstehen Sie die Aufgaben durch detaillierte Erklärungen. Unsere Lösungen vermitteln nicht nur die richtigen Antworten, sondern auch wichtige Konzepte und effektive Lernstrategien.",
+      "btn": "Lösungen anzeigen"
+    }
+  },
+  "embark": {
+    "font1": "Erreichen Sie Ihre Bestleistung im",
+    "Start_Now": "Jetzt loslegen"
   }
 }

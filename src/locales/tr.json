@@ -88,24 +88,19 @@
   "index": {
     "seometa": {
       "title": "DET Practice - Duolingo İngilizce Testi için Kapsamlı Hazırlık Platformu",
-      "description": "DET Practice, Duolingo İngilizce Testi hazırlığı için en iyi platformdur. Geniş soru bankası, birebir\ntam kapsamlı deneme sınavı, konuşma ve yazma için yapay zeka destekli düzeltme hizmeti ve\nDET kursları sunuyoruz.",
-      "keywords": "Duolingo İngilizce Testi, DET Duolingo, DET Testi, Duolingo Sınavı, Duolingo Online Test,\nDuolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo İngilizce Yeterlilik Testi, İngilizce\nYeterlilik Sınavı Duolingo, Duolingo İngilizce Testi"
+      "description": "DET Practice, Duolingo İngilizce Testi hazırlığı için en iyi platformdur. Geniş soru bankası, birebir tam kapsamlı deneme sınavı, konuşma ve yazma için yapay zeka destekli düzeltme hizmeti ve DET kursları sunuyoruz.",
+      "keywords": "Duolingo İngilizce Testi, DET Duolingo, DET Testi, Duolingo Sınavı, Duolingo Online Test, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo İngilizce Yeterlilik Testi, İngilizce Yeterlilik Sınavı Duolingo, Duolingo İngilizce Testi"
     },
     "bigtitle1": "Yüksek Puan Alanların Sayısı (130+ Puan)：10000+",
     "bigtitle2": "850'den fazla değerlendirme ile 4,8/5 mükemmel derecelendirme!",
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
-    "trustedByWorldwide": "Duolingo English Test'te 1 ay içinde puan artırmak için dünya çapında {path}'den fazla\nöğrenci tarafından güvenilmektedir.",
+    "trustedByWorldwide": "Duolingo English Test'te 1 ay içinde puan artırmak için dünya çapında {path}'den fazla öğrenci tarafından güvenilmektedir.",
     "The_Best_Platform": "Duolingo English Test Puanlarınızı Artırmak İçin En İyi Platform",
     "Tu": "Toplam Kullanıcılar",
     "questions": "Sorular",
@@ -141,7 +136,7 @@
     },
     "article4": {
       "title": "DET Konuşma Yapay Zeka Düzeltme",
-      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, Then Speak\", \"Speaking Sample\"\ndesteklenir",
+      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, Then Speak\", \"Speaking Sample\" desteklenir",
       "tips2": "AI Puanlama, AI Değerlendirme Sonuçları, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
       "tips4": "Sonuçlar <span class='yellow'>1-5</span>dakika içinde hazır olacaktır",
@@ -150,7 +145,7 @@
     },
     "article5": {
       "title": "DET Konuşma Yapay Zeka Düzeltme",
-      "tips1": "DET konuşma ve yazma bölümlerini derinlemesine anlamak için ayrıntılı kılavuzlarımızla\nöğrenin",
+      "tips1": "DET konuşma ve yazma bölümlerini derinlemesine anlamak için ayrıntılı kılavuzlarımızla öğrenin",
       "tips2": "Kapsamlı Bir Uzmanlık Kazanın",
       "tips3": "ESL Uzmanlarından Öğrenin",
       "tips4": "Bilgili ve Önde Kalın",
@@ -704,38 +699,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Egzersiz - Duolingo pratik sınavı için en iyi platform",
-      "description": "DET Test bankımız, detaylı açıklamalar ve başarınıza yardımcı olacak AI analiziyle uzun süreli eğitim için binlerce soru içerir.",
-      "keywords": "Duolingo English Test Pratik, Duolingo İngilizce Testi Pratik, Duolingo İngilizce Pratik Testi, Duolingo Çevrimiçi Pratik Testi, Duolingo Test Pratiği, Duolingo Pratik Test, Duolingo Pratik, Det Pratik Testi, Duolingo English Test Puan"
+      "title": "DET Hazırlık Platformu | Yapay Zeka Destekli Duolingo Sınav Bankası",
+      "description": "Duolingo İngilizce Testi için en kapsamlı hazırlık platformu! 18.000'den fazla soru, yapay zeka geri bildirimi ve akıllı ilerleme takibi ile DET puanınızı yükseltin. 400.000'den fazla öğrencinin tercih ettiği sınav hazırlık sistemi.",
+      "keywords": "DET hazırlık, Duolingo sınav soruları, DET örnek sorular, Duolingo test çalışması, DET soru bankası, DET konuşma pratiği, DET yazma alıştırmaları, online İngilizce test çalışması, DET çalışma materyalleri, yapay zeka değerlendirmesi"
     },
-    "h1": "Duolingo English Test Pratik",
-    "desc": "Geniş bir test soruları koleksiyonuna erişim sağlayın, cevap analizi, şablonlar, AI destekli konuşma değerlendirmeleri ve akıllı planlama ile geliştirin. AI destekli yaklaşımımızla puan artırma sürecinizi verimli ve ekonomik bir şekilde hızlandırın.",
+    "h1": "Duolingo English Test Hazırlık Merkezi",
+    "desc": "Detaylı çözümler, örnek yanıtlar, yapay zeka destekli konuşma değerlendirmesi ve kişisel çalışma planı sunan kapsamlı test platformu. Yapay zeka teknolojimizle hedef puanınıza uygun maliyetle ve verimli şekilde ulaşın",
     "alt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
     "altbanner": "Duolingo English Test Uygulama",
     "bank_user_icon": "Banka Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "blue_arrow_right": "Mavi Ok Sağ",
-    "learners_have": "{number} öğrenci DET hazırlığı için soru bankamızı kullandı.",
-    "spn": "Şimdi Pratik Yapmaya Başla",
+    "learners_have": "{number}'den fazla öğrenci DET hazırlığında bizi tercih etti",
+    "spn": "Hemen Çalışmaya Başla",
     "article1": {
-      "h2": "En Büyük Soru Bankası",
-      "right_desc": "Kapsamlı kütüphanemizde <span class='zdfont'>18.000'den fazla soru</span>yu keşfedin; çeşitli sınav türleri arasında sürekli olarak güncellenen sorularla pratiklerinizi güncel tutun. Soru bankamız, farklı soru formatlarında sınav becerilerinizi sistematik olarak güçlendirecek şekilde tasarlanmıştır.",
-      "btn": "Uygulamaya Dalış"
+      "h2": "Türkiye'nin En Kapsamlı Soru Bankası",
+      "right_desc": "Sürekli güncellenen 18.000'den fazla soru ile tüm sınav konularını kapsayan içerikler. Düzenli güncellemeler ile en yeni sınav formatına uygun, sistematik öğrenmeyi destekleyen soru bankası.",
+      "btn": "Pratik Yapmaya Başla"
     },
     "article2": {
-      "h2": "Akıllı Öneri",
-      "right_desc": "<span class='zdfont'>AI modeli</span>, her soru türünün ustalık seviyesini, zorluk derecesini, hedef puanı, soru ağırlığını, soruların yeniliğini, testin yakın zamanda yapılma sıklığını, hazırlık süresini ve puanlama verimliliğini vb. dikkate alarak, size sınava verimli bir şekilde hazırlanmanızda yardımcı olacak soruları doğru bir şekilde önerecektir.",
-      "btn": "Akıllı Çalışma Yolculuğuna Başla"
+      "h2": "Akıllı Öğrenme Sistemi",
+      "right_desc": "Yapay zeka sistemimiz seviyenizi, hedef puanınızı, konu ağırlıklarını, güncel sınav eğilimlerini, çalışma sürenizi ve gelişim hızınızı analiz ederek size en uygun soruları sunar.",
+      "btn": "Kişisel Öğrenme Yolculuğunuza Başlayın"
     },
     "article3": {
-      "h2": "AI Konuşma Değerlendirmesi",
-      "right_desc": "<span class='zdfont'>Yapay Zeka destekli konuşma değerlendirmelerimizle</span> sözlü yeterliliğinizi artırın. Konuşma diline yönelik bir soruya yanıtınızı gönderin ve konuşma becerilerinizin detaylı analizini anında alın, böylece doğruluk ve hızla gelişmenize yardımcı olun.",
-      "btn": "Değerlendirmenize Başlayın"
+      "h2": "Yapay Zeka ile Konuşma Analizi",
+      "right_desc": "Konuşma becerilerinizi yapay zeka teknolojisiyle geliştirin. Ses kaydınızı yükleyin, anında detaylı geri bildirim alın ve hızla ilerleme kaydedin.",
+      "btn": "Konuşma Değerlendirmesine Başla"
     },
     "article4": {
-      "h2": "Cevap Analizi",
-      "right_desc": "Kapsamlı cevap açıklamalarına dalarak temel kavramlar ve problem çözme teknikleri üzerine anlayışınızı derinleştirin. Detaylı analizlerimiz sizi doğru cevaplara yönlendirmekle kalmaz—bilginizi genişletir ve çalışma verimliliğinizi artırır.",
-      "btn": "Yanıt Bilgilerini Keşfet"
+      "h2": "Ayrıntılı Çözümler",
+      "right_desc": "Her sorunun detaylı çözümüyle konuları derinlemesine öğrenin. Çözümlerimiz sadece doğru cevabı göstermekle kalmaz, konuyu tam öğrenmenizi ve çalışma verimliliğinizi artırmanızı sağlar.",
+      "btn": "Çözümleri İncele"
     }
   },
   "speakingaicorrection": {

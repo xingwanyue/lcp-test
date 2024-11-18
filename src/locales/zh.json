@@ -51,22 +51,8 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": [
-      "DET刷题",
-      "AI写作批改",
-      "AI口语评测",
-      "全真模考",
-      "DET课程"
-    ],
-    "Company": [
-      "关于我们",
-      "联系我们",
-      "服务条款",
-      "隐私政策",
-      "网站地图",
-      "合作计划",
-      "退款说明"
-    ],
+    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
+    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -87,20 +73,15 @@
   "index": {
     "seometa": {
       "title": "DET Practice - 多邻国英语测试一站式备考平台",
-      "description": "DET Practice，最好的多邻国英语测试备考平台。我们提供海量题库、1比1全真模拟考试、AI口语\n写作批改服务和DET课程。",
-      "keywords": "多邻国英语测试，DET Duolingo, DET测试, Duolingo考试, Duolingo在线测试, Duolingo英语语言\n测试, Duolingo英语考试, Duolingo英语能力考试, 英语能力测试Duolingo, Duolingo能力测试,\nDuolingo英语能力测试, Duolingo英语测试, 英语Duolingo测试"
+      "description": "DET Practice，最好的多邻国英语测试备考平台。我们提供海量题库、1比1全真模拟考试、AI口语 写作批改服务和DET课程。",
+      "keywords": "多邻国英语测试，DET Duolingo, DET测试, Duolingo考试, Duolingo在线测试, Duolingo英语语言 测试, Duolingo英语考试, Duolingo英语能力考试, 英语能力测试Duolingo, Duolingo能力测试, Duolingo英语能力测试, Duolingo英语测试, 英语Duolingo测试"
     },
     "bigtitle1": "高分者数量（130+ 分）：10000+",
     "bigtitle2": "850+用户好评如潮，评分高达4.8分！",
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": [
-      "DET 练习",
-      "AI纠正",
-      "全长模拟",
-      "DET 课程"
-    ],
+    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -703,38 +684,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET 练习 - 最好的Duolingo模拟测试平台",
-      "description": "我们的 DET 试题库包括数千个问题，供广泛练习，配有详细解释和 AI 分析，帮助您成功。",
-      "keywords": "Duolingo English Test 练习, Duolingo 练习英语测试, Duolingo 英语练习测试, Duolingo 在线练习测试, Duolingo 测试练习, Duolingo 练习测试, Duolingo 练习, 挪威语练习测试, Duolingo English Test 分数"
+      "title": "多邻国英语考试（DET）练习题库 | 18000+题目模拟",
+      "description": "备考多邻国英语考试？我们的智能题库收录超过18000道练习题，配备AI智能反馈和学习进度跟 踪。已有超40万考生选择，助你高效备考，提升DET成绩。",
+      "keywords": "多邻国英语考试, DET备考, DET真题, DET模拟题, DET考试技巧, DET口语练习, DET写作训练, DET在 线练习, DET备考资料, AI口语评分"
     },
-    "h1": "Duolingo English Test 练习",
-    "desc": "获取丰富的测试题库，配有答案解析、模板、AI驱动的口语评估和智能规划。通过我们的AI驱动方法，高效且经济地提升你的分数。",
+    "h1": "Duolingo English Test 练习题库",
+    "desc": "获取专业全面的DET备考资源，包含详细解析、答题模板、AI口语评测及个性化学习规划。借助 先进AI技术，帮助您快速高效地实现理想成绩。",
     "alt": "DET 练习:最好的 Duolingo English Test 练习平台",
     "altbanner": "Duolingo English Test 练习",
     "bank_user_icon": "银行用户图标",
     "white_arrow_right": "白色箭头向右",
     "blue_arrow_right": "蓝色箭头右",
-    "learners_have": "{number} 名学习者已经使用我们的题库进行 DET 备考。",
+    "learners_have": "超过{number}考生的共同选择",
     "spn": "立即开始练习",
     "article1": {
-      "h2": "最大的题库",
-      "right_desc": "探索我们涵盖各种考试类型的庞大题库，拥有超过<span class='zdfont'>18,000+道题目</span>，不断更新以确保您的练习始终保持最新。我们的问题库旨在系统地增强您的应试能力，涵盖各种问题格式。",
-      "btn": "投入实践"
+      "h2": "最全题库",
+      "right_desc": "探索我们包含<span class='zdfont'>18,000+</span>道精选题目的题库，涵盖所有考试题型，并定期更新以紧跟最新考试 动态。系统化的练习设计，助您全面提升应试能力，适应各种题型要求。",
+      "btn": "深入练习"
     },
     "article2": {
       "h2": "智能推荐",
-      "right_desc": "<span class='zdfont'>AI模型</span>将考虑每种题型的掌握水平、难度、目标分数、题目权重、题目的新颖性、最近的测试频率、准备时间和评分效率等因素，以准确推荐题目，帮助你高效备考。",
-      "btn": "开启智慧学习之旅"
+      "right_desc": "<span class='zdfont'>AI模型</span>根据多维度数据为您精准推荐练习题目：题型掌握程度、难度系数、目标分数、考点 权重、题目更新情况、考试最新趋势、备考时间规划及得分效率分析等，帮助您事半功倍。",
+      "btn": "开启你的智能学习之旅"
     },
     "article3": {
-      "h2": "AI 语言表达评估",
-      "right_desc": "通过我们的<span class='zdfont'>AI驱动的口语评估</span>提升你的口语能力。提交你对一个口语问题的回答，立即获得详细的口语技巧分析，帮助你精准快速地提高。",
-      "btn": "开始您的评估"
+      "h2": "AI口语评估",
+      "right_desc": "运用<span class='zdfont'>AI驱动</span>的语音评测提升口语水平。提交口语答案后即时获取详细能力分析报告，帮助您 快速且精准地找准提升方向。",
+      "btn": "开始评估"
     },
     "article4": {
-      "h2": "答案分析",
-      "right_desc": "深入了解全面的答案解释，深化您对基本概念和解决问题技巧的理解。我们的详细分析不仅引导您找到正确答案，还能扩展您的知识，提高您的学习效率。",
-      "btn": "探索答案洞察"
+      "h2": "答案解析",
+      "right_desc": "每题配备全面详实的解析说明，帮助您深入理解核心考点和解题思路。解析内容不仅指明正 确答案，更注重知识拓展和学习方法指导。",
+      "btn": "深入了解答案解析"
     }
   },
   "speakingaicorrection": {
