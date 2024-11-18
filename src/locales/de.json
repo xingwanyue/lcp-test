@@ -51,22 +51,8 @@
     "LearnTitle": "Lernmaterialien",
     "BlogTitle": "Blog",
     "CompanyTitle": "Über uns",
-    "Products": [
-      "DET-Übungen",
-      "KI-Schreibtraining",
-      "KI-Sprechtraining",
-      "Prüfungssimulation",
-      "DET-Kurse"
-    ],
-    "Company": [
-      "Über uns",
-      "Kontakt",
-      "AGB",
-      "Datenschutz",
-      "Sitemap",
-      "Partner werden",
-      "Widerrufsrecht"
-    ],
+    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
     "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -95,12 +81,7 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": [
-      "DET Übung",
-      "KI-Korrektur",
-      "Ganzlängen-Mock",
-      "DET Kurse"
-    ],
+    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -915,46 +896,46 @@
     "title": "Nutzungsbedingungen",
     "q1": {
       "title": "Zuletzt aktualisiert: 2023-11-20",
-      "a1": "Bitte lesen Sie diese Nutzungsbedingungen („Bedingungen“, „TOS“) sorgfältig durch, bevor Sie die",
-      "a2": "Website (der „Service“) betrieben von DET Practice („uns“, „wir“ oder „unser“).",
-      "a3": "Ihr Zugriff auf und die Nutzung des Dienstes ist an Ihre Annahme dieser Bedingungen und die Einhaltung dieser Bedingungen geknüpft. Diese Bedingungen gelten für alle Besucher, Benutzer und andere, die auf den Dienst zugreifen oder ihn nutzen.",
-      "a4": "Durch den Zugriff auf den Dienst oder die Nutzung desselben erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Teil der Bedingungen nicht einverstanden sind, dürfen Sie nicht auf den Dienst zugreifen."
+      "a1": "Bitte lesen Sie diese Nutzungsbedingungen (\"Bedingungen\",\"AGB\") sorgfältig durch, bevor Sie die Website",
+      "a2": "(der \"Service\") nutzen, die von DET Practice (\"wir\",\"uns\" oder \"unser\") betrieben wird.",
+      "a3": "Ihr Zugang zu und die Nutzung des Services setzen voraus, dass Sie diese Bedingungen akzeptieren und einhalten. Diese Bedingungen gelten für alle Besucher, Nutzer und andere Personen, die auf den Service zugreifen oder ihn nutzen.",
+      "a4": "Durch den Zugriff auf oder die Nutzung des Services erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Teil der Bedingungen nicht einverstanden sind, dürfen Sie den Service nicht nutzen."
     },
     "q2": {
       "title": "Konten",
-      "a1": "Wenn Sie ein Konto bei uns erstellen, müssen Sie uns jederzeit genaue, vollständige und aktuelle Informationen zur Verfügung stellen. Andernfalls verstößt dies gegen die Bedingungen, was zur sofortigen Kündigung Ihres Kontos bei unserem Service führen kann.",
-      "a2": "Sie sind verantwortlich für den Schutz des Passworts, das Sie zur Nutzung des Dienstes verwenden, und für alle Aktivitäten oder Aktionen unter Ihrem Passwort, unabhängig davon, ob Ihr Passwort bei unserem Dienst oder einem Drittanbieterdienst ist.",
-      "a3": "Sie stimmen zu, Ihr Passwort keiner dritten Partei offenzulegen. Sie müssen uns unverzüglich benachrichtigen, sobald Sie von einem Sicherheitsverstoß oder einer unbefugten Nutzung Ihres Kontos Kenntnis erlangen."
+      "a1": "Wenn Sie bei uns ein Konto erstellen, müssen Sie uns jederzeit genaue, vollständige und aktuelle Informationen zur Verfügung stellen. Ein Verstoß dagegen stellt eine Verletzung der Bedingungen dar, die zur sofortigen Kündigung Ihres Kontos führen kann.",
+      "a2": "Sie sind für den Schutz des Passworts verantwortlich, das Sie für den Zugriff auf den Service verwenden, sowie für alle Aktivitäten oder Handlungen unter Ihrem Passwort, unabhängig davon, ob Ihr Passwort bei unserem Service oder einem Drittanbieterdienst verwendet wird.",
+      "a3": "Sie verpflichten sich, Ihr Passwort keinem Dritten mitzuteilen. Sie müssen uns unverzüglich informieren, wenn Sie von einer Sicherheitsverletzung oder einer unbefugten Nutzung Ihres Kontos Kenntnis erlangen."
     },
     "q3": {
       "title": "Links zu anderen Websites",
-      "a1": "Unser Service kann Links zu Websites oder Diensten von Drittanbietern enthalten, die nicht Eigentum von DET Practice sind oder von DET Practice kontrolliert werden.",
-      "a2": "DET Practice hat keine Kontrolle über und übernimmt keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter. Sie erkennen ferner an und erklären sich damit einverstanden, dass DET Practice nicht direkt oder indirekt für Schäden oder Verluste verantwortlich oder haftbar gemacht werden kann, die durch oder im Zusammenhang mit der Nutzung oder dem Vertrauen auf solche Inhalte, Waren oder Dienstleistungen, die auf oder über solche Websites oder Dienste verfügbar sind, verursacht oder angeblich verursacht wurden.",
-      "a3": "Wir raten Ihnen dringend, die Geschäftsbedingungen und Datenschutzrichtlinien aller Drittanbieter-Websites oder -Dienste, die Sie besuchen, zu lesen."
+      "a1": "Unser Service kann Links zu Websites oder Diensten von Drittanbietern enthalten, die nicht im Besitz von DET Practice sind oder von DET Practice kontrolliert werden.",
+      "a2": "DET Practice hat keine Kontrolle über und übernimmt keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder die Praktiken von Websites oder Diensten Dritter. Sie erkennen an und stimmen zu, dass DET Practice weder direkt noch indirekt für Schäden oder Verluste verantwortlich oder haftbar ist, die durch die Nutzung von oder das Vertrauen auf Inhalte, Waren oder Dienstleistungen verursacht werden, die über solche Websites oder Dienste verfügbar sind.",
+      "a3": "Wir empfehlen Ihnen dringend, die Nutzungsbedingungen und Datenschutzrichtlinien aller von Ihnen besuchten Websites oder Dienste Dritter zu lesen."
     },
     "q4": {
-      "title": "Beendigung",
-      "a1": "Wir können Ihr Konto sofort, ohne vorherige Ankündigung oder Haftung, aus beliebigen Gründen kündigen oder sperren, einschließlich, aber nicht beschränkt auf, wenn Sie gegen die {Terms} verstoßen.",
-      "a2": "Nach der Kündigung endet Ihr Recht zur Nutzung des Dienstes sofort. Wenn Sie Ihr Konto kündigen möchten, können Sie einfach die Nutzung des Dienstes einstellen.",
-      "a3": "Alle Bestimmungen der Bedingungen, die ihrer Natur nach die Beendigung überdauern sollten, bleiben nach der Beendigung bestehen, einschließlich, aber nicht beschränkt auf Eigentumsbestimmungen, Gewährleistungsausschlüsse, Entschädigung und Haftungsbeschränkungen."
+      "title": "Kündigung",
+      "a1": "Wir können Ihr Konto sofort und ohne vorherige Ankündigung oder Haftung aus beliebigem Grund kündigen oder sperren, insbesondere wenn Sie gegen die Bedingungen verstoßen.",
+      "a2": "Mit der Kündigung erlischt Ihr Recht zur Nutzung des Services sofort. Wenn Sie Ihr Konto kündigen möchten, können Sie die Nutzung des Services einfach einstellen.",
+      "a3": "Alle Bestimmungen der Bedingungen, die ihrer Natur nach auch nach der Kündigung gelten sollten, bleiben nach der Kündigung bestehen, einschließlich, aber nicht beschränkt auf Eigentumsbestimmungen, Gewährleistungsausschlüsse, Entschädigung und Haftungsbeschränkungen."
     },
     "q5": {
       "title": "Haftungsausschluss",
-      "a1": "Ihre Nutzung des Dienstes erfolgt auf Ihr eigenes Risiko. Der Dienst wird auf einer „WIE BESEHEN“ und „WIE VERFÜGBAR“ Basis bereitgestellt. Der Dienst wird ohne jegliche Gewährleistungen bereitgestellt, ob ausdrücklich oder stillschweigend, einschließlich, aber nicht beschränkt auf, stillschweigende Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck, Nichtverletzung von Rechten oder Leistungsfähigkeit."
+      "a1": "Die Nutzung des Services erfolgt auf Ihr eigenes Risiko. Der Service wird WIE BESEHEN\" und WIE VERFÜGBAR\" bereitgestellt. Der Service wird ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck, Nichtverletzung von Rechten Dritter oder Leistungserbringung."
     },
     "q6": {
-      "title": "Anwendbares Recht",
-      "a1": "Diese Bedingungen unterliegen den Gesetzen des Vereinigten Königreichs und werden in Übereinstimmung mit diesen ausgelegt, ohne Rücksicht auf deren Kollisionsnormen.",
-      "a2": "Unser Versäumnis, ein Recht oder eine Bestimmung dieser Bedingungen durchzusetzen, wird nicht als Verzicht auf diese Rechte betrachtet. Wenn eine Bestimmung dieser Bedingungen von einem Gericht für ungültig oder nicht durchsetzbar erklärt wird, bleiben die übrigen Bestimmungen dieser Bedingungen in Kraft. Diese Bedingungen stellen die gesamte Vereinbarung zwischen uns in Bezug auf unseren Service dar und ersetzen alle früheren Vereinbarungen, die wir möglicherweise in Bezug auf den Service getroffen haben."
+      "title": "Geltendes Recht",
+      "a1": "Diese Bedingungen unterliegen den Gesetzen des Vereinigten Königreichs und werden nach diesen ausgelegt, ohne Berücksichtigung von Kollisionsnormen.",
+      "a2": "Wenn wir ein Recht oder eine Bestimmung dieser Bedingungen nicht durchsetzen, gilt dies nicht als Verzicht auf diese Rechte. Sollte eine Bestimmung dieser Bedingungen von einem Gericht für ungültig oder nicht durchsetzbar erklärt werden, bleiben die übrigen Bestimmungen dieser Bedingungen in Kraft. Diese Bedingungen stellen die gesamte Vereinbarung zwischen uns in Bezug auf unseren Service dar und ersetzen alle früheren Vereinbarungen, die wir möglicherweise in Bezug auf den Service getroffen haben."
     },
     "q7": {
       "title": "Änderungen",
-      "a1": "Wir behalten uns das Recht vor, nach eigenem Ermessen diese Bedingungen jederzeit zu ändern oder zu ersetzen. Wenn eine Änderung wesentlich ist, werden wir versuchen, mindestens 15 Tage im Voraus eine Benachrichtigung bereitzustellen, bevor neue Bedingungen in Kraft treten. Was eine wesentliche Änderung darstellt, wird nach unserem alleinigen Ermessen bestimmt.",
-      "a2": "Durch die fortgesetzte Nutzung unseres Dienstes nach Inkrafttreten dieser Änderungen stimmen Sie den geänderten Bedingungen zu. Wenn Sie den neuen Bedingungen nicht zustimmen, stellen Sie bitte die Nutzung des Dienstes ein."
+      "a1": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit nach eigenem Ermessen zu ändern oder zu ersetzen. Bei wesentlichen Änderungen werden wir versuchen, Sie mindestens 15 Tage vor Inkrafttreten der neuen Bedingungen zu informieren. Was eine wesentliche Änderung darstellt, wird in unserem alleinigen Ermessen bestimmt.",
+      "a2": "Durch die weitere Nutzung unseres Services nach Inkrafttreten dieser Änderungen erklären Sie sich mit den geänderten Bedingungen einverstanden. Wenn Sie mit den neuen Bedingungen nicht einverstanden sind, stellen Sie bitte die Nutzung des Services ein."
     },
     "q8": {
-      "title": "Kontaktieren Sie uns",
-      "a1": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte."
+      "title": "Kontakt",
+      "a1": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte."
     }
   },
   "sitemap": {

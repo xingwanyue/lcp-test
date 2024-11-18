@@ -96,12 +96,7 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -916,46 +911,46 @@
     "title": "Hizmet Şartları",
     "q1": {
       "title": "Son güncelleme: 2023-11-20",
-      "a1": "Lütfen bu Hizmet Şartları'nı (“Şartlar”, “TOS”) kullanmadan önce dikkatlice okuyun",
-      "a2": "web sitesi (\"Hizmet\") DET Practice tarafından (\"biz\", \"bizim\" veya \"bize\") işletilmektedir.",
-      "a3": "Hizmete erişiminiz ve kullanmanız, bu Şartları kabul etmenize ve bunlara uymanıza bağlıdır. Bu Şartlar, Hizmete erişen veya hizmeti kullanan tüm ziyaretçiler, kullanıcılar ve diğerleri için geçerlidir.",
-      "a4": "Hizmete erişerek veya Hizmeti kullanarak bu Şartlara bağlı kalmayı kabul etmiş olursunuz. Şartların herhangi bir kısmına katılmıyorsanız, Hizmete erişemezsiniz."
+      "a1": "DET Practice (\"biz\", \"bizim\" veya \"şirketimiz\") tarafından işletilen",
+      "a2": "web sitesini (\"Hizmet\") kullanmadan önce lütfen bu Hizmet Şartları'nı (\"Şartlar\", \"HŞ\") dikkatlice okuyun.",
+      "a3": "Hizmete erişiminiz ve kullanımınız, bu Şartları kabul etmeniz ve bunlara uymanız koşuluna bağlıdır. Bu Şartlar, Hizmete erişen veya kullanan tüm ziyaretçiler, kullanıcılar ve diğer kişiler için geçerlidir.",
+      "a4": "Hizmete erişerek veya kullanarak bu Şartlarla bağlı olmayı kabul edersiniz. Şartların herhangi bir bölümüne katılmıyorsanız, Hizmete erişemezsiniz."
     },
     "q2": {
       "title": "Hesaplar",
-      "a1": "Bizimle bir hesap oluşturduğunuzda, her zaman doğru, eksiksiz ve güncel bilgiler sağlamalısınız. Bunu yapmamak, Hizmet Şartları'nın ihlali anlamına gelir ve bu durum hesabınızın hemen feshedilmesiyle sonuçlanabilir.",
-      "a2": "Hizmete erişmek için kullandığınız şifrenin korunmasından ve şifreniz ister Hizmetimizde ister üçüncü taraf bir hizmette olsun, şifreniz altındaki herhangi bir etkinlik veya eylemden siz sorumlusunuz.",
-      "a3": "Şifrenizi üçüncü taraflarla paylaşmamayı kabul edersiniz. Herhangi bir güvenlik ihlalinden veya hesabınızın yetkisiz kullanımından haberdar olduğunuzda bizi derhal bilgilendirmelisiniz."
+      "a1": "Bizimle bir hesap oluşturduğunuzda, her zaman doğru, eksiksiz ve güncel bilgiler sağlamak zorundasınız. Bunu yapmamak, hesabınızın Hizmetimizde derhal sonlandırılmasına neden olabilecek Şartların ihlalini oluşturur.",
+      "a2": "Hizmete erişmek için kullandığınız şifreyi ve şifreniz altında gerçekleştirilen tüm etkinlikleri veya işlemleri korumaktan siz sorumlusunuz; şifreniz ister bizim Hizmetimizde ister üçüncü taraf bir hizmette olsun.",
+      "a3": "Şifrenizi herhangi bir üçüncü tarafa açıklamamayı kabul edersiniz. Hesabınızın güvenliğinin ihlal edildiğini veya yetkisiz kullanımını fark ettiğinizde bizi derhal bilgilendirmelisiniz."
     },
     "q3": {
       "title": "Diğer Web Sitelerine Bağlantılar",
-      "a1": "Hizmetimiz, DET Practice tarafından sahip olunmayan veya kontrol edilmeyen üçüncü taraf web sitelerine veya hizmetlerine bağlantılar içerebilir.",
-      "a2": "DET Practice, üçüncü taraf web sitelerinin veya hizmetlerin içeriği, gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrolü yoktur ve sorumluluk kabul etmez. Ayrıca, DET Practice'in bu tür web sitelerinde veya hizmetlerde mevcut olan herhangi bir içerik, mal veya hizmetin kullanımı veya bunlara güvenilmesi sonucunda ortaya çıkan veya ortaya çıktığı iddia edilen herhangi bir zarar veya kayıptan doğrudan veya dolaylı olarak sorumlu olmayacağını kabul ve beyan edersiniz.",
-      "a3": "Ziyaret ettiğiniz üçüncü taraf web sitelerinin veya hizmetlerinin şartlar ve koşullarını ve gizlilik politikalarını okumanızı şiddetle tavsiye ederiz."
+      "a1": "Hizmetimiz, DET Practice'in sahip olmadığı veya kontrol etmediği üçüncü taraf web sitelerine veya hizmetlerine bağlantılar içerebilir.",
+      "a2": "DET Practice, üçüncü taraf web sitelerinin veya hizmetlerinin içeriği, gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrole sahip değildir ve bunlardan sorumlu değildir. Bu tür web sitelerinde veya hizmetlerde bulunan veya bunlar aracılığıyla erişilebilen herhangi bir içerik, mal veya hizmetin kullanımından veya bunlara güvenilmesinden kaynaklanan veya bunlarla bağlantılı olduğu iddia edilen herhangi bir zarar veya kayıptan DET Practice'in doğrudan veya dolaylı olarak sorumlu veya yükümlü olmayacağını kabul edersiniz.",
+      "a3": "Ziyaret ettiğiniz üçüncü taraf web sitelerinin veya hizmetlerinin şartlar ve koşullarını ve gizlilik politikalarını okumanızı önemle tavsiye ederiz."
     },
     "q4": {
-      "title": "Fesih",
-      "a1": "Hizmet Şartlarını ihlal etmeniz dahil ancak bununla sınırlı olmamak üzere herhangi bir nedenle, önceden bildirimde bulunmaksızın veya sorumluluk üstlenmeden, hesabınızı derhal sonlandırabilir veya askıya alabiliriz.",
-      "a2": "Hizmetin sona ermesi durumunda, Hizmeti kullanma hakkınız derhal sona erecektir. Hesabınızı sonlandırmak isterseniz, Hizmeti kullanmayı bırakmanız yeterlidir.",
-      "a3": "Doğası gereği fesih sonrasında da geçerli olması gereken Şartların tüm hükümleri, mülkiyet hükümleri, garanti feragatleri, tazminat ve sorumluluğun sınırlandırılması dahil olmak üzere, fesih sonrasında da geçerli kalacaktır."
+      "title": "Sonlandırma",
+      "a1": "Şartları ihlal etmeniz de dahil olmak üzere herhangi bir nedenle, önceden bildirimde bulunmaksızın veya sorumluluk üstlenmeksizin hesabınızı derhal sonlandırabilir veya askıya alabiliriz.",
+      "a2": "Sonlandırma üzerine, Hizmeti kullanma hakkınız derhal sona erecektir. Hesabınızı sonlandırmak isterseniz, sadece Hizmeti kullanmayı bırakabilirsiniz.",
+      "a3": "Mülkiyet hükümleri, garanti reddi, tazminat ve sorumluluk sınırlamaları dahil ancak bunlarla sınırlı olmamak üzere, doğası gereği sonlandırmadan sonra da geçerli kalması gereken Şartların tüm hükümleri sonlandırmadan sonra da geçerli kalacaktır."
     },
     "q5": {
-      "title": "Feragatname",
-      "a1": "Hizmeti kullanmanız tamamen sizin sorumluluğunuzdadır. Hizmet, “OLDUĞU GİBİ” ve “MEVCUT OLDUĞU ŞEKİLDE” sağlanmaktadır. Hizmet, ticarete elverişlilik, belirli bir amaca uygunluk, ihlal etmeme veya performans şekli dahil ancak bunlarla sınırlı olmamak üzere, açık veya zımni hiçbir garanti olmadan sağlanmaktadır."
+      "title": "Sorumluluk Reddi",
+      "a1": "Hizmeti kullanmanız tamamen kendi sorumluluğunuzdadır. Hizmet \"OLDUĞU GİBİ\" ve \"MEVCUT OLDUĞU ŞEKILDE\" sunulmaktadır. Hizmet, açık veya zımni, ticarete elverişlilik, belirli bir amaca uygunluk, ihlal etmeme veya performans seyri dahil ancak bunlarla sınırlı olmamak üzere hiçbir garanti olmaksızın sunulmaktadır."
     },
     "q6": {
       "title": "Geçerli Hukuk",
-      "a1": "Bu Koşullar, hukuk çatışması hükümlerine bakılmaksızın, Birleşik Krallık yasalarına göre yönetilecek ve yorumlanacaktır.",
-      "a2": "Bu Şartların herhangi bir hakkını veya hükmünü uygulamamamız, bu haklardan feragat ettiğimiz anlamına gelmez. Bu Şartların herhangi bir hükmü bir mahkeme tarafından geçersiz veya uygulanamaz olarak kabul edilirse, bu Şartların geri kalan hükümleri yürürlükte kalacaktır. Bu Şartlar, Hizmetimiz ile ilgili olarak aramızdaki tüm anlaşmayı oluşturur ve aramızda Hizmet ile ilgili olarak yapmış olabileceğimiz önceki anlaşmaların yerine geçer."
+      "a1": "Bu Şartlar, çatışma hukuku hükümleri dikkate alınmaksızın Birleşik Krallık yasalarına göre yönetilecek ve yorumlanacaktır.",
+      "a2": "Bu Şartlardaki herhangi bir hak veya hükmü uygulamamız, bu hakların feragati olarak kabul edilmeyecektir. Bu Şartların herhangi bir hükmünün bir mahkeme tarafından geçersiz veya uygulanamaz olduğuna karar verilirse, Şartların geri kalan hükümleri yürürlükte kalacaktır. Bu Şartlar, Hizmetimizle ilgili olarak aramızdaki tüm anlaşmayı oluşturur ve Hizmetle ilgili olarak aramızda önceden var olabilecek herhangi bir anlaşmanın yerini alır."
     },
     "q7": {
       "title": "Değişiklikler",
-      "a1": "Bu Koşulları herhangi bir zamanda değiştirme veya yerine yenilerini koyma hakkını tamamen kendi takdirimize bağlı olarak saklı tutarız. Eğer bir revizyon önemli ise, yeni koşulların yürürlüğe girmesinden en az 15 gün önce bildirim sağlamaya çalışacağız. Önemli bir değişikliğin ne oluşturduğunu tamamen kendi takdirimize bağlı olarak belirleyeceğiz.",
-      "a2": "Bu revizyonlar yürürlüğe girdikten sonra Hizmetimize erişmeye veya Hizmeti kullanmaya devam ederek, revize edilmiş şartlarla bağlı olmayı kabul edersiniz. Yeni şartları kabul etmiyorsanız, lütfen Hizmeti kullanmayı bırakın."
+      "a1": "Bu Şartları herhangi bir zamanda kendi takdirimize bağlı olarak değiştirme veya yenileme hakkını saklı tutarız. Eğer değişiklik önemliyse, yeni şartların yürürlüğe girmesinden önce en az 15 gün önceden bildirimde bulunmaya çalışacağız. Neyin önemli bir değişiklik oluşturduğuna kendi takdirimize göre karar verilecektir.",
+      "a2": "Bu değişiklikler yürürlüğe girdikten sonra Hizmetimize erişmeye veya kullanmaya devam ederek, revize edilmiş şartlarla bağlı olmayı kabul edersiniz. Yeni şartları kabul etmiyorsanız, lütfen Hizmeti kullanmayı bırakın."
     },
     "q8": {
       "title": "Bize Ulaşın",
-      "a1": "Herhangi bir sorunuz varsa bu Şartlar hakkında, lütfen bizimle iletişime geçin."
+      "a1": "Bu Şartlarla ilgili herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin."
     }
   },
   "sitemap": {

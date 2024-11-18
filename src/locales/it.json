@@ -51,22 +51,8 @@
     "LearnTitle": "Risorse",
     "BlogTitle": "Blog",
     "CompanyTitle": "Chi Siamo",
-    "Products": [
-      "Esercizi DET",
-      "Correzione IA Scrittura",
-      "Valutazione IA Speaking",
-      "Simulazioni",
-      "Corsi Completi"
-    ],
-    "Company": [
-      "Chi siamo",
-      "Contattaci",
-      "Condizioni",
-      "Privacy",
-      "Mappa del sito",
-      "Partnership",
-      "Rimborsi"
-    ],
+    "Products": ["Esercizi DET", "Correzione IA Scrittura", "Valutazione IA Speaking", "Simulazioni", "Corsi Completi"],
+    "Company": ["Chi siamo", "Contattaci", "Condizioni", "Privacy", "Mappa del sito", "Partnership", "Rimborsi"],
     "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -96,12 +82,7 @@
     "power_by": "Basato su AI",
     "h1Mobile": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
     "h1PC": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
-    "one_small_title": [
-      "DET Pratica",
-      "Correzione AI",
-      "Simulazione Completa",
-      "DET Corsi"
-    ],
+    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con email",
     "Start_for_free": "Inizia gratis",
@@ -916,46 +897,46 @@
     "title": "Termini di Servizio",
     "q1": {
       "title": "Ultimo aggiornamento: 2023-11-20",
-      "a1": "Si prega di leggere attentamente questi Termini di Servizio (\"Termini\", \"TOS\") prima di utilizzare il",
-      "a2": "sito web (il “Servizio”) gestito da DET Practice (“noi”, “ci”, o “nostro”).",
-      "a3": "Il tuo accesso e utilizzo del Servizio è condizionato alla tua accettazione e conformità con questi Termini. Questi Termini si applicano a tutti i visitatori, utenti e altri che accedono o utilizzano il Servizio.",
-      "a4": "Accedendo o utilizzando il Servizio, accetti di essere vincolato da questi Termini. Se non sei d'accordo con qualsiasi parte dei termini, non puoi accedere al Servizio."
+      "a1": "Ti preghiamo di leggere attentamente questi Termini di Servizio (\"Termini\", \"TOS\") prima di utilizzare il sito web",
+      "a2": "(il \"Servizio\") gestito da DET Practice (\"noi\" o \"nostro\").",
+      "a3": "L'accesso e l'utilizzo del Servizio sono subordinati all'accettazione e al rispetto dei presenti Termini. Questi Termini si applicano a tutti i visitatori, utenti e altri soggetti che accedono o utilizzano il Servizio.",
+      "a4": "Accedendo o utilizzando il Servizio, accetti di essere vincolato dai presenti Termini. Se non concordi con qualsiasi parte dei termini, non potrai accedere al Servizio."
     },
     "q2": {
       "title": "Account",
-      "a1": "Quando crei un account con noi, devi fornirci informazioni che siano accurate, complete e aggiornate in ogni momento. La mancata osservanza di ciò costituisce una violazione dei Termini, che può comportare l'immediata cessazione del tuo account sul nostro Servizio.",
-      "a2": "Sei responsabile di salvaguardare la password che utilizzi per accedere al Servizio e di qualsiasi attività o azione sotto la tua password, sia che la tua password sia con il nostro Servizio o con un servizio di terze parti.",
-      "a3": "Accetti di non divulgare la tua password a terzi. Devi notificarci immediatamente appena vieni a conoscenza di qualsiasi violazione della sicurezza o uso non autorizzato del tuo account."
+      "a1": "Quando crei un account con noi, devi fornirci informazioni accurate, complete e aggiornate in ogni momento. La mancata osservanza di questo requisito costituisce una violazione dei Termini e può comportare l'immediata cessazione del tuo account sul nostro Servizio.",
+      "a2": "Sei responsabile della protezione della password che utilizzi per accedere al Servizio e di qualsiasi attività o azione eseguita con la tua password, sia che questa sia utilizzata con il nostro Servizio o con un servizio di terze parti. ",
+      "a3": "Accetti di non divulgare la tua password a terzi. Devi informarci immediatamente nel caso in cui venga a conoscenza di qualsiasi violazione della sicurezza o utilizzo non autorizzato del tuo account."
     },
     "q3": {
-      "title": "Link ad altri siti Web",
-      "a1": "Il nostro Servizio può contenere collegamenti a siti web o servizi di terze parti che non sono di proprietà o controllati da DET Practice.",
-      "a2": "DET Practice non ha alcun controllo e non si assume alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti web o servizi di terze parti. Riconosci inoltre e accetti che DET Practice non sarà responsabile, direttamente o indirettamente, per qualsiasi danno o perdita causata o presunta tale da essere causata dall'uso o dall'affidamento su tali contenuti, beni o servizi disponibili su o tramite tali siti web o servizi.",
+      "title": "Collegamenti ad Altri Siti Web",
+      "a1": "Il nostro Servizio può contenere collegamenti a siti web o servizi di terze parti non di proprietà o controllati da DET Practice.",
+      "a2": "DET Practice non ha alcun controllo e non si assume alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di qualsiasi sito web o servizio di terze parti. Riconosci e accetti inoltre che DET Practice non sarà responsabile, direttamente o indirettamente, per eventuali danni o perdite causati o presumibilmente causati da o in connessione con l'uso o l'affidamento su qualsiasi contenuto, bene o servizio disponibile su o attraverso tali siti web o servizi.",
       "a3": "Ti consigliamo vivamente di leggere i termini e le condizioni e le politiche sulla privacy di qualsiasi sito web o servizio di terze parti che visiti."
     },
     "q4": {
-      "title": "Terminazione",
-      "a1": "Potremmo terminare o sospendere il tuo account immediatamente, senza preavviso o responsabilità, per qualsiasi motivo, inclusi senza limitazione se violi i Termini.",
-      "a2": "Alla cessazione, il tuo diritto di utilizzare il Servizio cesserà immediatamente. Se desideri terminare il tuo account, puoi semplicemente smettere di utilizzare il Servizio.",
-      "a3": "Tutte le disposizioni dei Termini che per loro natura dovrebbero sopravvivere alla risoluzione sopravviveranno alla risoluzione, comprese, senza limitazione, le disposizioni sulla proprietà, le esclusioni di garanzia, l'indennità e le limitazioni di responsabilità."
+      "title": "Cessazione",
+      "a1": "Possiamo terminare o sospendere il tuo account immediatamente, senza preavviso o responsabilità, per qualsiasi motivo, incluso, senza limitazioni, se violi i Termini.",
+      "a2": "In caso di cessazione, il tuo diritto di utilizzare il Servizio cesserà immediatamente. Se desideri terminare il tuo account, puoi semplicemente interrompere l'utilizzo del Servizio.",
+      "a3": "Tutte le disposizioni dei Termini che per loro natura dovrebbero sopravvivere alla cessazione rimarranno in vigore dopo la cessazione, incluse, senza limitazioni, le disposizioni sulla proprietà, le esclusioni di garanzia, l'indennità e le limitazioni di responsabilità."
     },
     "q5": {
-      "title": "Dichiarazione di esclusione di responsabilità",
-      "a1": "L'uso del Servizio è a tuo esclusivo rischio. Il Servizio è fornito su una base \"COSÌ COM'È\" e \"COME DISPONIBILE\". Il Servizio è fornito senza garanzie di alcun tipo, sia espresse che implicite, incluse, ma non limitate a, garanzie implicite di commerciabilità, idoneità per uno scopo particolare, non violazione o corso di esecuzione."
+      "title": "Esclusione di Responsabilità",
+      "a1": "L'utilizzo del Servizio è a tuo esclusivo rischio. Il Servizio è fornito \"COSÌ COM'È\" e \"COME DISPONIBILE\". Il Servizio è fornito senza garanzie di alcun tipo, siano esse espresse o implicite, incluse, ma non limitate a, garanzie implicite di commerciabilità, idoneità per uno scopo particolare, non violazione o corso di esecuzione."
     },
     "q6": {
       "title": "Legge applicabile",
-      "a1": "Questi Termini saranno disciplinati e interpretati in conformità con le leggi del Regno Unito senza tenere conto delle sue disposizioni sui conflitti di legge.",
-      "a2": "La nostra mancata applicazione di qualsiasi diritto o disposizione di questi Termini non sarà considerata una rinuncia a tali diritti. Se qualsiasi disposizione di questi Termini è ritenuta non valida o inapplicabile da un tribunale, le restanti disposizioni di questi Termini rimarranno in vigore. Questi Termini costituiscono l'intero accordo tra noi riguardo al nostro Servizio e sostituiscono e sostituiscono eventuali accordi precedenti che potremmo avere tra noi riguardo al Servizio."
+      "a1": "I presenti Termini saranno disciplinati e interpretati in conformità con le leggi del Regno Unito, senza tenere conto delle disposizioni sul conflitto di leggi.",
+      "a2": "La nostra mancata applicazione di qualsiasi diritto o disposizione dei presenti Termini non sarà considerata una rinuncia a tali diritti. Se una qualsiasi disposizione dei presenti Termini è ritenuta non valida o inapplicabile da un tribunale, le restanti disposizioni dei Termini rimarranno in vigore. Questi Termini costituiscono l'intero accordo tra noi in relazione al nostro Servizio e sostituiscono e rimpiazzano qualsiasi accordo precedente che potremmo avere tra noi riguardo al Servizio."
     },
     "q7": {
-      "title": "Cambiamenti",
-      "a1": "Ci riserviamo il diritto, a nostra esclusiva discrezione, di modificare o sostituire questi Termini in qualsiasi momento. Se una revisione è significativa, cercheremo di fornire almeno 15 giorni di preavviso prima che entrino in vigore nuovi termini. Ciò che costituisce un cambiamento significativo sarà determinato a nostra esclusiva discrezione.",
-      "a2": "Continuando ad accedere o utilizzare il nostro Servizio dopo che tali revisioni diventano efficaci, accetti di essere vincolato dai termini rivisti. Se non sei d'accordo con i nuovi termini, interrompi l'uso del Servizio."
+      "title": "Modifiche",
+      "a1": "Ci riserviamo il diritto, a nostra esclusiva discrezione, di modificare o sostituire questi Termini in qualsiasi momento. Se una revisione è sostanziale, cercheremo di fornire un preavviso di almeno 15 giorni prima dell'entrata in vigore dei nuovi termini. Ciò che costituisce una modifica sostanziale sarà determinato a nostra esclusiva discrezione.",
+      "a2": "Continuando ad accedere o utilizzare il nostro Servizio dopo l'entrata in vigore di tali revisioni, accetti di essere vincolato dai termini modificati. Se non accetti i nuovi termini, ti preghiamo di interrompere l'utilizzo del Servizio."
     },
     "q8": {
       "title": "Contattaci",
-      "a1": "Se hai domande su questi Termini, ti preghiamo di contattarci."
+      "a1": "Se hai domande su questi Termini, contattaci."
     }
   },
   "sitemap": {

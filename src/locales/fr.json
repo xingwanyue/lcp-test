@@ -95,12 +95,7 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": [
-      "DET Pratique",
-      "Correction de l'IA",
-      "Simulation complète",
-      "DET Cours"
-    ],
+    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
@@ -915,45 +910,45 @@
     "title": "Conditions d'Utilisation",
     "q1": {
       "title": "Dernière mise à jour : 20/11/2023",
-      "a1": "Veuillez lire attentivement ces Conditions d'utilisation (« Conditions », « TOS ») avant d'utiliser le",
-      "a2": "site web (le “Service”) exploité par DET Practice (“nous”, “notre” ou “nos”).",
-      "a3": "Votre accès et utilisation du Service sont conditionnés par votre acceptation et votre respect de ces Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le Service.",
+      "a1": "Veuillez lire attentivement ces Conditions d'Utilisation (\"Conditions\", \"CGU\") avant d'utiliser le site web ",
+      "a2": "(le \"Service\") exploité par DET Practice (\"nous\" ou \"notre\").",
+      "a3": "Votre accès et utilisation du Service sont conditionnés à votre acceptation et au respect des présentes Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le Service.",
       "a4": "En accédant ou en utilisant le Service, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec une partie des conditions, vous ne pouvez pas accéder au Service."
     },
     "q2": {
       "title": "Comptes",
-      "a1": "Lorsque vous créez un compte chez nous, vous devez nous fournir des informations qui sont exactes, complètes et à jour en permanence. Le non-respect de cette obligation constitue une violation des Conditions, ce qui peut entraîner la résiliation immédiate de votre compte sur notre Service.",
-      "a2": "Vous êtes responsable de la protection du mot de passe que vous utilisez pour accéder au Service et de toute activité ou action sous votre mot de passe, que ce soit avec notre Service ou un service tiers.",
-      "a3": "Vous acceptez de ne pas divulguer votre mot de passe à un tiers. Vous devez nous informer immédiatement dès que vous prenez connaissance de toute violation de la sécurité ou d'une utilisation non autorisée de votre compte."
+      "a1": "Lorsque vous créez un compte chez nous, vous devez nous fournir des informations exactes, complètes et à jour. Le non-respect de cette obligation constitue une violation des Conditions, pouvant entraîner la résiliation immédiate de votre compte sur notre Service.",
+      "a2": "Vous êtes responsable de la protection du mot de passe que vous utilisez pour accéder au Service et de toutes les activités ou actions effectuées sous votre mot de passe, que ce soit avec notre Service ou un service tiers.",
+      "a3": "Vous acceptez de ne pas divulguer votre mot de passe à des tiers. Vous devez nous informer immédiatement si vous prenez connaissance d'une violation de la sécurité ou d'une utilisation non autorisée de votre compte."
     },
     "q3": {
       "title": "Liens vers d'autres sites web",
-      "a1": "Notre Service peut contenir des liens vers des sites Web ou services tiers qui ne sont pas détenus ou contrôlés par DET Practice.",
-      "a2": "DET Practice n'a aucun contrôle sur, et n'assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites web ou services tiers. Vous reconnaissez et acceptez en outre que DET Practice ne sera pas responsable ou redevable, directement ou indirectement, de tout dommage ou perte causé ou prétendument causé par ou en relation avec l'utilisation de ou la confiance en de tels contenus, biens ou services disponibles sur ou par le biais de ces sites web ou services.",
-      "a3": "Nous vous conseillons vivement de lire les conditions générales et les politiques de confidentialité de tout site web ou service tiers que vous visitez."
+      "a1": "Notre Service peut contenir des liens vers des sites web ou services tiers qui ne sont pas détenus ou contrôlés par DET Practice.",
+      "a2": "DET Practice n'exerce aucun contrôle et n'assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites web ou services tiers. Vous reconnaissez et acceptez que DET Practice ne sera pas responsable, directement ou indirectement, de tout dommage ou perte causé ou présumé être causé par ou en relation avec l'utilisation ou la confiance accordée à tout contenu, bien ou service disponible sur ou via ces sites web ou services.",
+      "a3": "Nous vous conseillons vivement de lire les conditions d'utilisation et les politiques de confidentialité des sites web ou services tiers que vous visitez."
     },
     "q4": {
       "title": "Résiliation",
-      "a1": "Nous pouvons résilier ou suspendre votre compte immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris sans limitation si vous enfreignez les Conditions.",
-      "a2": "À la résiliation, votre droit d'utiliser le Service cessera immédiatement. Si vous souhaitez résilier votre compte, vous pouvez simplement arrêter d'utiliser le Service.",
-      "a3": "Toutes les dispositions des Conditions qui, de par leur nature, devraient survivre à la résiliation, survivront à la résiliation, y compris, sans limitation, les dispositions relatives à la propriété, les clauses de non-responsabilité relatives aux garanties, l'indemnisation et les limitations de responsabilité."
+      "a1": "Nous pouvons résilier ou suspendre votre compte immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris, sans limitation, si vous violez les Conditions.",
+      "a2": "En cas de résiliation, votre droit d'utiliser le Service cessera immédiatement. Si vous souhaitez résilier votre compte, vous pouvez simplement cesser d'utiliser le Service.",
+      "a3": "Toutes les dispositions des Conditions qui, par leur nature, devraient survivre à la résiliation resteront en vigueur après la résiliation, y compris, sans limitation, les dispositions relatives à la propriété, les exclusions de garantie, l'indemnisation et les limitations de responsabilité."
     },
     "q5": {
-      "title": "Avertissement",
-      "a1": "Votre utilisation du Service se fait à vos risques et périls. Le Service est fourni \"EN L'ÉTAT\" et \"TEL QUE DISPONIBLE\". Le Service est fourni sans garanties de quelque nature que ce soit, qu'elles soient expresses ou implicites, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier, d'absence de contrefaçon, ou de déroulement des performances."
+      "title": "Clause de non-responsabilité",
+      "a1": "L'utilisation du Service se fait à vos propres risques. Le Service est fourni \"TEL QUEL\" et \"SELON LA DISPONIBILITÉ\". Le Service est fourni sans garantie d'aucune sorte, expresse ou implicite, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier, de non-contrefaçon ou de performance."
     },
     "q6": {
       "title": "Loi applicable",
-      "a1": "Ces Conditions seront régies et interprétées conformément aux lois du Royaume-Uni sans égard à ses dispositions en matière de conflit de lois.",
-      "a2": "Notre incapacité à faire respecter un droit ou une disposition de ces Conditions ne sera pas considérée comme une renonciation à ces droits. Si une disposition de ces Conditions est jugée invalide ou inapplicable par un tribunal, les autres dispositions de ces Conditions resteront en vigueur. Ces Conditions constituent l'intégralité de l'accord entre nous concernant notre Service et remplacent tous les accords antérieurs que nous pourrions avoir entre nous concernant le Service."
+      "a1": "Ces Conditions sont régies et interprétées conformément aux lois du Royaume-Uni, sans égard aux dispositions relatives aux conflits de lois.",
+      "a2": "Notre manquement à faire valoir un droit ou une disposition des présentes Conditions ne sera pas considéré comme une renonciation à ces droits. Si une disposition des présentes Conditions est jugée invalide ou inapplicable par un tribunal, les autres dispositions des présentes Conditions resteront en vigueur. Ces Conditions constituent l'intégralité de l'accord entre nous concernant notre Service et remplacent tout accord antérieur que nous pourrions avoir eu entre nous concernant le Service."
     },
     "q7": {
-      "title": "Changements",
-      "a1": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces Conditions à tout moment. Si une révision est substantielle, nous tenterons de fournir un préavis d'au moins 15 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement substantiel sera déterminé à notre seule discrétion.",
-      "a2": "En continuant à accéder ou à utiliser notre Service après l'entrée en vigueur de ces révisions, vous acceptez d'être lié par les termes révisés. Si vous n'acceptez pas les nouveaux termes, veuillez arrêter d'utiliser le Service."
+      "title": "Modifications",
+      "a1": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces Conditions à tout moment. Si une révision est importante, nous essaierons de fournir un préavis d'au moins 15 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement important sera déterminé à notre seule discrétion.",
+      "a2": "En continuant d'accéder ou d'utiliser notre Service après l'entrée en vigueur de ces révisions, vous acceptez d'être lié par les conditions révisées. Si vous n'acceptez pas les nouvelles conditions, veuillez cesser d'utiliser le Service."
     },
     "q8": {
-      "title": "Contactez-nous",
+      "title": "Nous contacter",
       "a1": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter."
     }
   },
