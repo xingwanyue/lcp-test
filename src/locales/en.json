@@ -81,7 +81,8 @@
       "DET Vocabulary",
       "DET Prep Tips",
       "DET Learn"
-    ]
+    ],
+    "igetit": "OK, got it"
   },
   "index": {
     "seometa": {
@@ -94,12 +95,7 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": [
-      "DET Practice",
-      "AI Correction",
-      "Full-Length Mock",
-      "DET Courses"
-    ],
+    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",

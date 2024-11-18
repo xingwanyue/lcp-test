@@ -326,6 +326,9 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         {{ $t('footer.cookie_contenr') }}
         <NuxtLink :to="localePath(`/cookie`)" title="Cookie Policy" class="see_cookei">Cookie Policy</NuxtLink>
       </div>
+      <div class="cookie_btn_out">
+        <div class="close_btn" @click="closeCookie">{{ $t('footer.igetit') }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -526,6 +529,22 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
       .see_cookei {
         font-weight: 600;
         text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .cookie_btn_out {
+      // border: 1px red solid;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .close_btn {
+        padding: 6px 12px;
+        background: #f66442;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+        width: fit-content;
         cursor: pointer;
       }
     }
