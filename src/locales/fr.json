@@ -81,29 +81,25 @@
       "Vocabulaire DET",
       "Conseils de préparation DET",
       "Apprendre DET"
-    ]
+    ],
+    "igetit": "OK, je l'ai compris"
   },
   "index": {
     "seometa": {
       "title": "DET Practice - Plateforme Complète de Préparation au Test d'Anglais Duolingo",
-      "description": "DET Practice est la meilleure plateforme de préparation au test d'anglais Duolingo. Nous offrons\nune vaste banque de questions, un examen blanc réaliste, un service de correction par IA pour\nl'oral et l'écrit, ainsi que des cours spécifiques au DET.",
-      "keywords": "Test d'anglais Duolingo, DET Duolingo, test DET, examen Duolingo, test en ligne Duolingo, test\nde langue anglaise Duolingo, examen d'anglais Duolingo, test de compétence en anglais\nDuolingo, examen de compétence Duolingo en anglais, test d'anglais de Duolingo"
+      "description": "DET Practice est la meilleure plateforme de préparation au test d'anglais Duolingo. Nous offrons une vaste banque de questions, un examen blanc réaliste, un service de correction par IA pour l'oral et l'écrit, ainsi que des cours spécifiques au DET.",
+      "keywords": "Test d'anglais Duolingo, DET Duolingo, test DET, examen Duolingo, test en ligne Duolingo, test de langue anglaise Duolingo, examen d'anglais Duolingo, test de compétence en anglais Duolingo, examen de compétence Duolingo en anglais, test d'anglais de Duolingo"
     },
     "bigtitle1": "Nombre de scores élevés (130+ points)：10000+",
-    "bigtitle2": "Exceptionnel 4.8/5 Évaluation de plus de 850 avis !",
+    "bigtitle2": "Note exceptionnelle de 4,8/5 sur plus de 850 avis !",
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": [
-      "DET Pratique",
-      "Correction de l'IA",
-      "Simulation complète",
-      "DET Cours"
-    ],
+    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
-    "trustedByWorldwide": "En un mois, plus de {path} étudiants dans le monde nous font confiance pour améliorer\nleur score au Duolingo English Test.",
+    "trustedByWorldwide": "En un mois, plus de {path} étudiants dans le monde nous font confiance pour améliorer leur score au Duolingo English Test.",
     "The_Best_Platform": "La meilleure plateforme pour améliorer vos scores au Duolingo English Test",
     "Tu": "Nombre total d'utilisateurs",
     "questions": "Questions",
@@ -138,21 +134,21 @@
       "btn_img_alt": "Flèche Droite Jaune"
     },
     "article4": {
-      "title": "DET Correction de l'IA Parlante",
-      "tips1": "Supportez \"Écouter, puis Parler\", \"Parler de la Photo\", \"Lire, puis Parler\", \"Exemple de Parole\"",
-      "tips2": "Résultats d'évaluation par IA, Évaluation par IA, Orientation des enseignants",
-      "tips3": "Scores d'Évaluation Précis, Rapport d'Évaluation Détaillé",
-      "tips4": "Les résultats seront disponibles dans <span class='yellow'>1-5 minutes</span>",
-      "btn_font": "Apprendre encore plus",
+      "title": "Correction IA de l'expression orale DET",
+      "tips1": "Supporte \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
+      "tips2": "Évaluation par IA, Résultats d'évaluation IA, Accompagnement d'un enseignant",
+      "tips3": "Scores d'évaluation précis, rapport d'évaluation détaillé",
+      "tips4": "Les résultats seront disponibles en <span class='yellow'>1 à 5 </span>minutes",
+      "btn_font": "En savoir plus",
       "btn_img_alt": "Flèche Jaune Droite"
     },
     "article5": {
-      "title": "Duolingo English Test Cours",
-      "tips1": "Développez une <span class='yellow'>compréhension approfondie</span> des sections de DET expression orale et écrite avec nos guides détaillés",
-      "tips2": "Atteindre une Maîtrise Complète",
-      "tips3": "Apprenez des experts en ESL",
-      "tips4": "Restez informé et en avance",
-      "btn_font": "Explorer davantage",
+      "title": "Correction IA de l'expression orale DET",
+      "tips1": "Approfondissez votre compréhension des sections expression orale et écrite du DET avec nos guides détaillés",
+      "tips2": "Atteignez une maîtrise complète",
+      "tips3": "Apprenez auprès d'experts en ESL",
+      "tips4": "Restez informé et gardez une longueur d'avance",
+      "btn_font": "Explorer plus",
       "btn_img_alt": "Flèche droite jaune"
     },
     "thousand": "k",
@@ -162,7 +158,7 @@
     "Join_Them": "Rejoignez-les"
   },
   "slogen": {
-    "title": "<div class='font1'>Commencez votre chemin vers des scores élevés sur le</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Commencez votre parcours vers les meilleurs scores au Duolingo English Test !</div>",
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un email",
     "Start_for_free": "Commencez gratuitement"
@@ -190,31 +186,31 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Pratique - Duolingo Préparation aux Tests Adhésion et Services Tarifs",
+      "title": "Tarifs de Préparation au Duolingo English Test | Plans Abordables de Préparation au DET",
       "description": "Choisissez le plan adapté à votre préparation Duolingo English Test. Des options de tarification abordables pour une pratique personnalisée, des avis d'experts et des examens complets de simulation.",
       "keywords": "cléDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
     },
     "pagefont": {
-      "h1": "Choisissez le plan qui vous convient",
+      "h1": "Choisissez le Plan qui Vous Convient",
       "h4": "Paiement sécurisé ! Annulez à tout moment ! Maîtrisez le DET maintenant !",
       "switch1": "Service",
       "switch2": "Cours",
-      "sep": "Paiement sécurisé",
-      "ca": "Annulez à tout moment",
-      "atde": "Réussissez le DET maintenant",
+      "sep": "Paiement Sécurisé",
+      "ca": "Annulation à Tout Moment",
+      "atde": "Maîtrisez le DET Maintenant",
       "circle_check_icon": "icône_cercle_vérifié",
       "Most_Popular_Choice": "Choix le plus populaire",
       "off": "{off}% de réduction",
       "do": "$",
       "mp": "Member's price",
-      "Buy_Now": "Acheter maintenant",
+      "Buy_Now": "Acheter Maintenant",
       "tf": "Essayez gratuitement",
       "mpc": "Choix le plus populaire",
       "your_price": "votre prix",
       "Non_member": "Non-membre",
       "purchased": "acheté",
       "Secure_Payment": "Paiement sécurisé :",
-      "faq": "Questions fréquemment posées",
+      "faq": "Questions Fréquentes",
       "Contact_Us": "Contactez-nous",
       "alt": "DET Pratique:La meilleure plateforme Duolingo English Test de pratique",
       "check_icon": "Vérifier",
@@ -222,8 +218,8 @@
       "green_check": "Vérification verte",
       "arrow_down": "Flèche vers le bas",
       "free_font": "Gratuit",
-      "free_tips": "Vous pouvez consulter 20 questions gratuitement, essayez notre plateforme et voyez si elle répond à vos besoins.",
-      "tff": "Essayer gratuitement",
+      "free_tips": "Vous pouvez accéder gratuitement à 20 questions, essayer notre plateforme et voir si elle répond à vos besoins.",
+      "tff": "Essai Gratuit",
       "save": "économisez {num}%",
       "week": "/semaine",
       "month": "/mois",
@@ -237,32 +233,32 @@
     },
     "aqList": [
       {
-        "name": "Comment fonctionnent les plans et les tarifs de DETPractice ?",
-        "content": "Nous proposons des plans et des tarifs transparents pour nos utilisateurs, sans frais cachés. De plus, nous offrons des forfaits d'abonnement supplémentaires afin que vous puissiez choisir des services en fonction de vos besoins."
+        "name": "Comment fonctionnent les plans et tarifs de DET Practice ?",
+        "content": "Nous proposons des plans et des tarifs transparents pour nos utilisateurs, sans frais cachés. De plus, nous offrons des forfaits d'abonnement complémentaires pour que vous puissiez choisir les services selon vos besoins."
       },
       {
-        "name": "Y a-t-il un essai gratuit?",
-        "content": "Oui! Vous pouvez consulter 20 questions gratuitement. Cela vous aidera à nous comprendre avant d'acheter plus de services."
+        "name": "Y a-t-il un essai gratuit ?",
+        "content": "Oui ! Vous pouvez accéder gratuitement à 20 questions. Cela vous permet de nous découvrir avant d'acheter plus de services."
       },
       {
         "name": "Offrez-vous des réductions ?",
         "content": "Oui ! Nous offrons des réductions personnalisées pour chaque service. Cependant, lorsque vous optez pour un service de 30 jours, vous recevrez une réduction plus importante par rapport aux autres services. Veuillez vous référer aux détails des prix ci-dessus pour plus d'informations."
       },
       {
-        "name": "Mon paiement a été réussi, mais la mise à niveau a échoué.",
-        "content": "Veuillez nous contacter par chat ou email : <span class='email_address'>support{'@'}detpractice.com</span>. C'est le moyen le plus simple et le plus rapide de répondre à vos préoccupations."
+        "name": "Mon paiement a réussi, mais la mise à niveau a échoué？",
+        "content": "Veuillez nous contacter par chat ou par email : <span class='email_address'>support{'@'}detpractice.com</span>. C'est la façon la plus simple et la plus rapide de résoudre vos problèmes."
       },
       {
-        "name": "J'ai acheté le cours mais je ne peux pas le voir?",
-        "content": "Après avoir acheté le cours avec succès, vous pouvez aller à la page de description du cours <span class='email_address'>https://www.detpractice.com/courses</span> pour voir et télécharger les informations du cours. Si vous ne trouvez pas les informations du cours, veuillez nous contacter via le chat ou l'email: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "J'ai acheté le cours mais je ne peux pas le consulter, pourquoi ?",
+        "content": "Après avoir acheté le cours avec succès, vous pouvez vous rendre sur la page de description du cours https://www.detpractice.com/courses pour consulter et télécharger les informations. Si vous ne trouvez pas les informations du cours, veuillez nous contacter par chat ou par email : <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Où dois-je envoyer mes commentaires ?",
-        "content": "Vous pouvez envoyer des commentaires via le chat de support en bas à droite, ou nous contacter par email à <span class='email_address'>support{'@'}detpractice.com</span>. Vous pouvez également laisser un message directement dans la section « Contactez-nous »."
+        "name": "Où puis-je envoyer mes commentaires ?",
+        "content": "Vous pouvez envoyer vos commentaires via le chat de support en bas à droite, ou nous contacter par email à <span class='email_address'>support{'@'}detpractice.com</span>. Vous pouvez également laisser un message directement dans la section “Contactez-nous”."
       },
       {
         "name": "Quelle est votre politique de remboursement ?",
-        "content1": "Pour des informations et des instructions sur comment obtenir un remboursement, vous pouvez vous référer au lien \"Politique de remboursement\" en bas de la page en priorité, ou nous contacter à <span class='email_address'>support{'@'}detpractice.com</span>."
+        "content1": "Pour obtenir des informations et des instructions sur le remboursement, vous pouvez consulter en priorité le lien \"Politique de remboursement\" en bas de page, ou nous contacter à <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -305,36 +301,36 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Service client en ligne",
-        "tip": "Disponible du lundi au vendredi, 10:00 - 19:00",
-        "btn": "Discuter en direct maintenant"
+        "font": "Service Client en Ligne",
+        "tip": "Disponible du lundi au vendredi, 10h00 - 19h00",
+        "btn": "Chattez Maintenant"
       },
       "type2": {
-        "font": "Envoyez-nous un email",
-        "tip": "Recevez une réponse en 1 jour ouvrable."
+        "font": "Envoyez-nous un Email",
+        "tip": "Réponse sous 1 jour ouvré"
       },
       "type3": {
-        "font": "Laisser un message",
-        "tip": "Nous vous répondrons dans un délai d'un jour ouvrable.",
-        "btn": "Laissez un message maintenant"
+        "font": "Laissez un Message",
+        "tip": "Nous vous répondrons sous 1 jour ouvré",
+        "btn": "Laissez un Message Maintenant"
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Illimité</span> pour les sessions de pratique",
-      "Accédez à <span class='strongfont'>18000+</span> questions pratiques",
-      "Parcourez les <span class='strongfont'>réponses d'échantillons à haut score</span>",
-      "<span class='strongfont'>Analyse approfondie</span> des questions",
-      "Examen à Haute Fréquence <span class='strongfont'>Livre de Mots</span>",
-      "Plan d'étude <span class='strongfont'>personnalisé</span> avec sélection intelligente de questions",
-      "Évaluations de Parole Alimentées par l'IA"
+      "Illimité pour les Sessions d'Entraînement",
+      "Accès à plus de 18 000 Questions d'Entraînement",
+      "Consultez des Exemples de Réponses à Haut Score",
+      "Analyse Approfondie des Questions",
+      "Manuel des Mots Fréquents à l'Examen",
+      "Plan d'Étude Personnalisé avec Sélection Intelligente des Questions",
+      "Évaluations Orales Assistées par IA"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Examens blancs complets</span>",
-      "Tester à tout moment",
-      "Près de <span class='strongfont'>l'examen réel Σ</span>",
+      "Examens Blancs Complets",
+      "Testez-vous à tout moment",
+      "Proche de l'examen DET réel",
       "Scores d'évaluation précis",
       "Rapport d'évaluation détaillé",
-      "Les résultats seront disponibles dans un délai de <span class='strongfont'>5-30 minutes</span>"
+      "Résultats disponibles sous 5-30 minutes"
     ]
   },
   "blog": {
@@ -346,9 +342,9 @@
     "alt": "DET Pratique:La meilleure plateforme Duolingo English Test Pratique"
   },
   "embark": {
-    "font1": "Embarquez pour votre voyage vers des scores élevés sur",
+    "font1": "Visez l'excellence au D",
     "font2": "Duolingo English Test !",
-    "Start_Now": "Commencez Maintenant"
+    "Start_Now": "Commencer maintenant"
   },
   "articleDetail": {
     "Submitted_successfully": "Submitted successfully",
@@ -702,38 +698,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Pratique - La meilleure plateforme pour les tests de pratique Duolingo",
-      "description": "Notre banque d'essais DET comprend des milliers de questions pour une formation approfondie, avec des explications détaillées et une analyse d'IA pour vous aider à réussir.",
-      "keywords": "Duolingo English Test Pratique, Duolingo Pratique Test d'anglais, Duolingo Test de pratique anglais, Duolingo Test de pratique en ligne, Duolingo Pratique test, Duolingo Test de pratique, Duolingo Pratique, Det Test de pratique, Duolingo English Test Score"
+      "title": "Préparation au Duolingo English Test | Banque de Questions DET avec IA",
+      "description": "Préparez-vous au Duolingo English Test avec notre plateforme d'entraînement complète. Plus de 18 000 questions, feedback IA personnalisé et suivi intelligent de vos progrès. Rejoignez plus de 400 000 candidats qui ont déjà optimisé leur score au DET.",
+      "keywords": "préparation DET, exercices Duolingo test, entraînement DET, examens blancs DET, ressources Duolingo, pratique expression orale DET, exercices rédaction DET, preparation test anglais en ligne, cours DET, évaluation IA anglais"
     },
-    "h1": "Duolingo English Test Pratique",
-    "desc": "Accédez à une vaste collection de questions d'examen, enrichies par une analyse des réponses, des modèles, des évaluations de la parole basées sur l'IA et une planification intelligente. Accélérez l'amélioration de votre score de manière efficace et abordable avec notre approche alimentée par l'IA.",
+    "h1": "Préparation au Duolingo English Test",
+    "desc": "Une banque complète d'exercices avec corrections détaillées, modèles types, évaluation orale par IA et parcours personnalisé. Notre technologie IA vous permet d'optimiser vos résultats rapidement et à moindre coût.",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "altbanner": "Duolingo English Test Pratique",
     "bank_user_icon": "Icône d'utilisateur de banque",
     "white_arrow_right": "Flèche Blanche Droite",
     "blue_arrow_right": "Flèche bleue droite",
-    "learners_have": "{number} apprenants ont utilisé notre banque de questions pour la préparation DET.",
-    "spn": "Commencez à pratiquer maintenant",
+    "learners_have": "Plus de {number} candidats nous font confiance pour leur préparation au DET.",
+    "spn": "Débuter l'entraînement",
     "article1": {
-      "h2": "La Plus Grande Banque de Questions",
-      "right_desc": "Découvrez notre vaste bibliothèque de plus de <span class='zdfont'>18 000+ questions</span> couvrant divers types d'examens, constamment actualisés pour maintenir votre pratique à jour. Notre banque de questions est conçue pour renforcer systématiquement vos compétences en matière de passage de tests à travers différents formats de questions.",
-      "btn": "Plongez dans la pratique"
+      "h2": "Banque d'exercices exclusive",
+      "right_desc": "Accédez à plus de 18 000 questions couvrant tous les aspects de l'examen. Mise à jour régulière selon les dernières évolutions du test. Une méthodologie structurée pour maîtriser chaque type d'exercice.",
+      "btn": "S'entraîner"
     },
     "article2": {
-      "h2": "Recommandation Intelligente",
-      "right_desc": "Le <span class='zdfont'>modèle d'IA</span> prendra en compte le niveau de maîtrise de chaque type de question, la difficulté, le score cible, le poids des questions, la nouveauté des questions, la fréquence récente du test, le temps de préparation et l'efficacité de la notation, etc. pour recommander précisément des questions afin de vous aider à vous préparer efficacement au test.",
-      "btn": "Commencez un voyage d'étude intelligent"
+      "h2": "Recommandations personnalisées",
+      "right_desc": "Notre IA analyse plusieurs critères pour vous proposer les exercices les plus pertinents : niveau de maîtrise, difficulté, score visé, pondération des questions, nouveautés, tendances actuelles, temps de préparation et progression.",
+      "btn": "Découvrir l'apprentissage intelligent"
     },
     "article3": {
-      "h2": "Évaluation de la Parole par l'IA",
-      "right_desc": "Améliorez votre aisance orale avec nos <span class='zdfont'>évaluations de parole alimentées par l'IA</span>. Soumettez votre réponse à une question de langue parlée et recevez instantanément une analyse détaillée de vos compétences orales, vous aidant à vous améliorer avec précision et rapidité.",
-      "btn": "Commencez votre évaluation"
+      "h2": "Évaluation orale par IA",
+      "right_desc": "Perfectionnez votre expression orale grâce à notre système d'évaluation IA. Enregistrez vos réponses et recevez instantanément une analyse approfondie pour progresser efficacement.",
+      "btn": "Commencer l'évaluation"
     },
     "article4": {
-      "h2": "Analyse de la réponse",
-      "right_desc": "Plongez dans des explications de réponses approfondies qui enrichissent votre compréhension des concepts essentiels et des techniques de résolution de problèmes. Nos analyses détaillées ne se contentent pas de vous guider vers les bonnes réponses—elles élargissent vos connaissances et augmentent votre efficacité d'étude.",
-      "btn": "Explorer les informations sur les réponses"
+      "h2": "Corrections détaillées",
+      "right_desc": "Bénéficiez d'explications approfondies sur les concepts clés et les méthodologies. Nos corrections ne se limitent pas aux bonnes réponses : elles enrichissent vos connaissances et optimisent votre apprentissage.",
+      "btn": "Consulter les corrections"
     }
   },
   "speakingaicorrection": {
@@ -907,52 +903,52 @@
   },
   "tos": {
     "seometa": {
-      "title": "Termes et conditions - DET Pratique",
-      "description": "Explorez les Conditions d'utilisation complètes de DET Practice, comprenant notre Politique de confidentialité et nos Directives d'utilisation. Assurez-vous de la transparence et de la conformité.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
+      "title": "Conditions d'Utilisation | DET Practice – Préparation au Test d'Anglais Duolingo",
+      "description": "Découvrez les Conditions d'Utilisation de DET Practice. Comprenez les directives et politiques d'utilisation de notre plateforme de préparation au Test d'Anglais Duolingo, y compris les responsabilités des utilisateurs, les droits et les conditions d'utilisation.",
+      "keywords": "Conditions d'utilisation, DET Practice, Test d'Anglais Duolingo, plateforme de préparation aux tests, accord utilisateur, conditions de service, préparation en ligne, politiques"
     },
-    "title": "Conditions d'utilisation",
+    "title": "Conditions d'Utilisation",
     "q1": {
-      "title": "Dernière mise à jour : 2023-11-20",
-      "a1": "Veuillez lire attentivement ces Conditions d'utilisation (« Conditions », « TOS ») avant d'utiliser le",
-      "a2": "site web (le “Service”) exploité par DET Practice (“nous”, “notre” ou “nos”).",
-      "a3": "Votre accès et utilisation du Service sont conditionnés par votre acceptation et votre respect de ces Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le Service.",
+      "title": "Dernière mise à jour : 20/11/2023",
+      "a1": "Veuillez lire attentivement ces Conditions d'Utilisation (\"Conditions\", \"CGU\") avant d'utiliser le site web ",
+      "a2": "(le \"Service\") exploité par DET Practice (\"nous\" ou \"notre\").",
+      "a3": "Votre accès et utilisation du Service sont conditionnés à votre acceptation et au respect des présentes Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le Service.",
       "a4": "En accédant ou en utilisant le Service, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec une partie des conditions, vous ne pouvez pas accéder au Service."
     },
     "q2": {
       "title": "Comptes",
-      "a1": "Lorsque vous créez un compte chez nous, vous devez nous fournir des informations qui sont exactes, complètes et à jour en permanence. Le non-respect de cette obligation constitue une violation des Conditions, ce qui peut entraîner la résiliation immédiate de votre compte sur notre Service.",
-      "a2": "Vous êtes responsable de la protection du mot de passe que vous utilisez pour accéder au Service et de toute activité ou action sous votre mot de passe, que ce soit avec notre Service ou un service tiers.",
-      "a3": "Vous acceptez de ne pas divulguer votre mot de passe à un tiers. Vous devez nous informer immédiatement dès que vous prenez connaissance de toute violation de la sécurité ou d'une utilisation non autorisée de votre compte."
+      "a1": "Lorsque vous créez un compte chez nous, vous devez nous fournir des informations exactes, complètes et à jour. Le non-respect de cette obligation constitue une violation des Conditions, pouvant entraîner la résiliation immédiate de votre compte sur notre Service.",
+      "a2": "Vous êtes responsable de la protection du mot de passe que vous utilisez pour accéder au Service et de toutes les activités ou actions effectuées sous votre mot de passe, que ce soit avec notre Service ou un service tiers.",
+      "a3": "Vous acceptez de ne pas divulguer votre mot de passe à des tiers. Vous devez nous informer immédiatement si vous prenez connaissance d'une violation de la sécurité ou d'une utilisation non autorisée de votre compte."
     },
     "q3": {
       "title": "Liens vers d'autres sites web",
-      "a1": "Notre Service peut contenir des liens vers des sites Web ou services tiers qui ne sont pas détenus ou contrôlés par DET Practice.",
-      "a2": "DET Practice n'a aucun contrôle sur, et n'assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites web ou services tiers. Vous reconnaissez et acceptez en outre que DET Practice ne sera pas responsable ou redevable, directement ou indirectement, de tout dommage ou perte causé ou prétendument causé par ou en relation avec l'utilisation de ou la confiance en de tels contenus, biens ou services disponibles sur ou par le biais de ces sites web ou services.",
-      "a3": "Nous vous conseillons vivement de lire les conditions générales et les politiques de confidentialité de tout site web ou service tiers que vous visitez."
+      "a1": "Notre Service peut contenir des liens vers des sites web ou services tiers qui ne sont pas détenus ou contrôlés par DET Practice.",
+      "a2": "DET Practice n'exerce aucun contrôle et n'assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites web ou services tiers. Vous reconnaissez et acceptez que DET Practice ne sera pas responsable, directement ou indirectement, de tout dommage ou perte causé ou présumé être causé par ou en relation avec l'utilisation ou la confiance accordée à tout contenu, bien ou service disponible sur ou via ces sites web ou services.",
+      "a3": "Nous vous conseillons vivement de lire les conditions d'utilisation et les politiques de confidentialité des sites web ou services tiers que vous visitez."
     },
     "q4": {
       "title": "Résiliation",
-      "a1": "Nous pouvons résilier ou suspendre votre compte immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris sans limitation si vous enfreignez les Conditions.",
-      "a2": "À la résiliation, votre droit d'utiliser le Service cessera immédiatement. Si vous souhaitez résilier votre compte, vous pouvez simplement arrêter d'utiliser le Service.",
-      "a3": "Toutes les dispositions des Conditions qui, de par leur nature, devraient survivre à la résiliation, survivront à la résiliation, y compris, sans limitation, les dispositions relatives à la propriété, les clauses de non-responsabilité relatives aux garanties, l'indemnisation et les limitations de responsabilité."
+      "a1": "Nous pouvons résilier ou suspendre votre compte immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris, sans limitation, si vous violez les Conditions.",
+      "a2": "En cas de résiliation, votre droit d'utiliser le Service cessera immédiatement. Si vous souhaitez résilier votre compte, vous pouvez simplement cesser d'utiliser le Service.",
+      "a3": "Toutes les dispositions des Conditions qui, par leur nature, devraient survivre à la résiliation resteront en vigueur après la résiliation, y compris, sans limitation, les dispositions relatives à la propriété, les exclusions de garantie, l'indemnisation et les limitations de responsabilité."
     },
     "q5": {
-      "title": "Avertissement",
-      "a1": "Votre utilisation du Service se fait à vos risques et périls. Le Service est fourni \"EN L'ÉTAT\" et \"TEL QUE DISPONIBLE\". Le Service est fourni sans garanties de quelque nature que ce soit, qu'elles soient expresses ou implicites, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier, d'absence de contrefaçon, ou de déroulement des performances."
+      "title": "Clause de non-responsabilité",
+      "a1": "L'utilisation du Service se fait à vos propres risques. Le Service est fourni \"TEL QUEL\" et \"SELON LA DISPONIBILITÉ\". Le Service est fourni sans garantie d'aucune sorte, expresse ou implicite, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier, de non-contrefaçon ou de performance."
     },
     "q6": {
       "title": "Loi applicable",
-      "a1": "Ces Conditions seront régies et interprétées conformément aux lois du Royaume-Uni sans égard à ses dispositions en matière de conflit de lois.",
-      "a2": "Notre incapacité à faire respecter un droit ou une disposition de ces Conditions ne sera pas considérée comme une renonciation à ces droits. Si une disposition de ces Conditions est jugée invalide ou inapplicable par un tribunal, les autres dispositions de ces Conditions resteront en vigueur. Ces Conditions constituent l'intégralité de l'accord entre nous concernant notre Service et remplacent tous les accords antérieurs que nous pourrions avoir entre nous concernant le Service."
+      "a1": "Ces Conditions sont régies et interprétées conformément aux lois du Royaume-Uni, sans égard aux dispositions relatives aux conflits de lois.",
+      "a2": "Notre manquement à faire valoir un droit ou une disposition des présentes Conditions ne sera pas considéré comme une renonciation à ces droits. Si une disposition des présentes Conditions est jugée invalide ou inapplicable par un tribunal, les autres dispositions des présentes Conditions resteront en vigueur. Ces Conditions constituent l'intégralité de l'accord entre nous concernant notre Service et remplacent tout accord antérieur que nous pourrions avoir eu entre nous concernant le Service."
     },
     "q7": {
-      "title": "Changements",
-      "a1": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces Conditions à tout moment. Si une révision est substantielle, nous tenterons de fournir un préavis d'au moins 15 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement substantiel sera déterminé à notre seule discrétion.",
-      "a2": "En continuant à accéder ou à utiliser notre Service après l'entrée en vigueur de ces révisions, vous acceptez d'être lié par les termes révisés. Si vous n'acceptez pas les nouveaux termes, veuillez arrêter d'utiliser le Service."
+      "title": "Modifications",
+      "a1": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces Conditions à tout moment. Si une révision est importante, nous essaierons de fournir un préavis d'au moins 15 jours avant l'entrée en vigueur de nouvelles conditions. Ce qui constitue un changement important sera déterminé à notre seule discrétion.",
+      "a2": "En continuant d'accéder ou d'utiliser notre Service après l'entrée en vigueur de ces révisions, vous acceptez d'être lié par les conditions révisées. Si vous n'acceptez pas les nouvelles conditions, veuillez cesser d'utiliser le Service."
     },
     "q8": {
-      "title": "Contactez-nous",
+      "title": "Nous contacter",
       "a1": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter."
     }
   },

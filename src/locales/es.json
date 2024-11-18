@@ -58,15 +58,7 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": [
-      "Nosotros",
-      "Contacto",
-      "Términos",
-      "Privacidad",
-      "Mapa del sitio",
-      "Colaboraciones",
-      "Devoluciones"
-    ],
+    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -82,29 +74,25 @@
       "Consejos de preparación DET",
       "Aprender DET"
     ],
-    "Products[0]": "Ejercicios DET"
+    "Products[0]": "Ejercicios DET",
+    "igetit": "Ok, lo tengo"
   },
   "index": {
     "seometa": {
       "title": "DET Practice - Plataforma Integral para Preparar el Examen de Inglés de Duolingo",
-      "description": "DET Practice es la mejor plataforma para preparar el examen de inglés de Duolingo. Ofrecemos\nun amplio banco de preguntas, simulacros de examen completos, un servicio de corrección por\nIA para expresión oral y escrita, y cursos especializados para el DET.",
-      "keywords": "Examen de inglés Duolingo, DET Duolingo, prueba DET, examen Duolingo, prueba en línea\nDuolingo, prueba de idioma inglés Duolingo, examen de inglés Duolingo, examen de\ncompetencia en inglés Duolingo, prueba de competencia en inglés Duolingo"
+      "description": "DET Practice es la mejor plataforma para preparar el examen de inglés de Duolingo. Ofrecemos un amplio banco de preguntas, simulacros de examen completos, un servicio de corrección por IA para expresión oral y escrita, y cursos especializados para el DET.",
+      "keywords": "Examen de inglés Duolingo, DET Duolingo, prueba DET, examen Duolingo, prueba en línea Duolingo, prueba de idioma inglés Duolingo, examen de inglés Duolingo, examen de competencia en inglés Duolingo, prueba de competencia en inglés Duolingo"
     },
     "bigtitle1": "Número de Altos Puntuadores (130+ Puntos)：10000+",
-    "bigtitle2": "¡Calificación excepcional de 4.8/5 de más de 850 reseñas!",
+    "bigtitle2": "¡Calificación excepcional de 4.8/5 basada en más de 850 reseñas!",
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": [
-      "DET Práctica",
-      "Corrección de IA",
-      "Simulacro Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
-    "trustedByWorldwide": "Confiado por más de {path estudiantes en todo el mundo para mejorar su puntuación en\nel Duolingo English Test en un mes.",
+    "trustedByWorldwide": "Confiado por más de {path estudiantes en todo el mundo para mejorar su puntuación en el Duolingo English Test en un mes.",
     "The_Best_Platform": "La mejor plataforma para mejorar tus puntuaciones en el Duolingo English Test",
     "Tu": "Usuarios totales",
     "questions": "Preguntas",
@@ -139,20 +127,20 @@
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
     "article4": {
-      "title": "DET Corrección de AI para hablar",
-      "tips1": "Apoyar \"Escuchar, luego hablar \", \"Hablar sobre la foto\", \"Leer, luego hablar\", \"Muestra de habla\"",
-      "tips2": "Puntuación de IA, Resultados de Evaluación de IA, Orientación del Profesorado",
-      "tips3": "Puntuaciones Precisas de Evaluación, Informe Detallado de Evaluación",
-      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5 minutos</span>",
-      "btn_font": "Más información",
+      "title": "Corrección de habla con IA DET",
+      "tips1": "Soporta \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
+      "tips2": "Puntuación IA, Resultados IA, Orientación del profesor",
+      "tips3": "Puntuaciones de evaluación precisas, informe de evaluación detallado",
+      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5</span> minutos",
+      "btn_font": "Aprende más",
       "btn_img_alt": "Flecha Derecha Amarilla"
     },
     "article5": {
-      "title": "Duolingo English Test Curso",
-      "tips1": "Desarrolla una <span class='yellow'>comprensión profunda</span> de las secciones de DET habla y escritura con nuestras guías detalladas",
-      "tips2": "Logra un Dominio Integral",
+      "title": "Corrección de habla con IA DET",
+      "tips1": "Desarrolla una comprensión profunda de las secciones de habla y escritura del DET con nuestras guías detalladas",
+      "tips2": "Logra un dominio total",
       "tips3": "Aprende de expertos en ESL",
-      "tips4": "Mantente informado y adelantado",
+      "tips4": "Mantente informado y a la vanguardia",
       "btn_font": "Explora más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
@@ -163,8 +151,8 @@
     "Join_Them": "Únete a ellos"
   },
   "slogen": {
-    "title": "<div class='font1'>Comienza tu camino hacia las mejores calificaciones en el</div><div class='font2'>Duolingo English Test !</div>",
-    "Start_free_with_Google": "Empieza gratis con Google",
+    "title": "<div class='font1'>¡Comienza tu camino hacia las mejores puntuaciones en el Duolingo English Test!</div>",
+    "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Comienza gratis"
   },
@@ -191,24 +179,24 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Práctica - Duolingo Preparación para Exámenes, Membresía y Servicios de Precios",
-      "description": "Elija el plan adecuado para su preparación. Opciones de precios asequibles para prácticas personalizadas, revisiones de expertos y exámenes simulados a gran escala.",
-      "keywords": "keyDET Duolingo, DET Prueba, Duolingo DET, Duolingo Prueba, Duolingo Prueba en Línea, Duolingo Prueba en Inglés, Duolingo Examen de Inglés, Duolingo Examen de Competenciawords"
+      "title": "Precios de Preparación para el Duolingo English Test | Planes Económicos de Preparación DET",
+      "description": "Descubra las opciones de precios para la preparación del Duolingo English Test en DET Practice. Elija entre planes flexibles y asequibles diseñados para ayudarle a tener éxito en su preparación del Duolingo Test. ¡Comience su viaje con el plan adecuado hoy!",
+      "keywords": "precios preparación Duolingo English Test, planes preparación Duolingo Test, práctica DET económica, preparación Duolingo English Test, precios DET, precios prueba de inglés, planes de preparación para exámenes"
     },
     "pagefont": {
-      "h1": "Elige el plan que funciona para ti",
+      "h1": "Elija el Plan que Mejor se Adapte a Usted",
       "h4": "¡Pago seguro! ¡Cancela en cualquier momento! ¡Domina el DET ahora!",
       "switch1": "Servicio",
       "switch2": "Cursos",
-      "sep": "Pago seguro",
-      "ca": "Cancelar en cualquier momento",
-      "atde": "Acierta la DET ahora",
+      "sep": "Pago Seguro",
+      "ca": "Cancele en Cualquier Momento",
+      "atde": "Domine el DET Ahora",
       "circle_check_icon": "círculo_comprobar_icono",
       "Most_Popular_Choice": "Elección Más Popular",
       "off": "{off}% de descuento",
       "do": "$",
       "mp": "Member's price",
-      "Buy_Now": "Comprar ahora",
+      "Buy_Now": "Comprar Ahora",
       "tf": "Probar gratis",
       "mpc": "Elección Más Popular",
       "your_price": "tu precio",
@@ -223,8 +211,8 @@
       "green_check": "Cheque verde",
       "arrow_down": "Flecha hacia abajo",
       "free_font": "Gratis",
-      "free_tips": "Puedes ver 20 preguntas gratis, prueba nuestra plataforma y ve si se adapta a tus necesidades.",
-      "tff": "Prueba gratis",
+      "free_tips": "Puede ver 20 preguntas gratis, probar nuestra plataforma y ver si se adapta a sus necesidades.",
+      "tff": "Prueba Gratuita",
       "save": "ahorra {num}%",
       "week": "/semana",
       "month": "/mes",
@@ -238,12 +226,12 @@
     },
     "aqList": [
       {
-        "name": "¿Cómo funcionan los planes y precios de DETPractice?",
-        "content": "Ofrecemos planes y precios transparentes para nuestros usuarios, sin tarifas ocultas. Además, ofrecemos paquetes de suscripción adicionales para que puedas elegir servicios según tus necesidades."
+        "name": "¿Cómo funcionan los planes y precios de DET Practice?",
+        "content": "Ofrecemos planes y precios transparentes para nuestros usuarios, sin costos ocultos. Además, proporcionamos paquetes de suscripción adicionales para que pueda elegir servicios según sus necesidades."
       },
       {
         "name": "¿Hay una prueba gratuita?",
-        "content": "¡Sí! Puedes ver 20 preguntas de forma gratuita. Te ayudamos a entendernos antes de comprar más servicios."
+        "content": "¡Sí! Puede ver 20 preguntas gratis. Le ayuda a conocernos antes de comprar más servicios."
       },
       {
         "name": "¿Ofrecen algún descuento?",
@@ -251,11 +239,11 @@
       },
       {
         "name": "Mi pago fue exitoso, pero la actualización falló.",
-        "content": "Por favor, contáctenos por chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>. Esta es la forma más simple y rápida de abordar sus inquietudes."
+        "content": "Por favor, contáctenos por chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>. Esta es la forma más simple y rápida de resolver sus inquietudes."
       },
       {
-        "name": "Compré el curso pero no puedo verlo?",
-        "content": "Después de comprar el curso con éxito, puedes ir a la página de descripción del curso <span class='email_address'>https://www.detpractice.com/courses</span> para ver y descargar la información del curso. Si no puedes encontrar la información del curso, por favor contáctanos a través del chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Compré el curso pero no puedo verlo, ¿por qué?",
+        "content": "Después de comprar el curso exitosamente, puede visitar la página de descripción del curso https://www.detpractice.com/courses para ver y descargar la información. Si no puede encontrar la información del curso, contáctenos por chat o correo electrónico: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
         "name": "¿Dónde envío mis comentarios?",
@@ -263,7 +251,7 @@
       },
       {
         "name": "¿Cuál es su política de reembolso?",
-        "content1": "Para obtener información e instrucciones sobre cómo obtener un reembolso, puede referirse al enlace de \"Política de reembolso\" en la parte inferior de la página como una prioridad, o contactarnos en <span class='email_address'>support{'@'}detpractice.com</span>."
+        "content1": "Para información e instrucciones sobre cómo obtener un reembolso, puede consultar el enlace \"Política de Reembolso\" al pie de página o contactarnos en <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -306,36 +294,36 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Servicio de atención al cliente en línea",
-        "tip": "Disponible de lun-vie, 10:00 - 19:00",
-        "btn": "Chatea en Vivo Ahora"
+        "font": "Servicio al Cliente en Línea",
+        "tip": "Disponible Lun-Vie, 10:00 - 19:00",
+        "btn": "Chatear Ahora"
       },
       "type2": {
-        "font": "Envíanos un correo electrónico",
-        "tip": "Reciba una respuesta en 1 día hábil."
+        "font": "Envíenos un Correo",
+        "tip": "Respuesta en 1 día hábil"
       },
       "type3": {
-        "font": "Deja un mensaje",
-        "tip": "Le responderemos dentro de un día hábil.",
-        "btn": "Deja un mensaje ahora"
+        "font": "Dejar un Mensaje",
+        "tip": "Le responderemos en 1 día hábil",
+        "btn": "Dejar un Mensaje Ahora"
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Ilimitado</span> para Sesiones de Práctica",
-      "Acceso a <span class='strongfont'>18000+</span> preguntas de práctica",
-      "Navegar <span class='strongfont'>Respuestas de muestra de alta puntuación</span>",
-      "<span class='strongfont'>Análisis de Preguntas en Profundidad</span>",
-      "Libro de Palabras para Exámenes <span class='strongfont'>de Alta Frecuencia</span>",
-      "Plan de Estudio <span class='strongfont'>Personalizado</span> con Selección Inteligente de Preguntas",
-      "Evaluaciones de Habla Impulsadas por IA"
+      "Ilimitado para Sesiones de Práctica",
+      "Acceso a más de 18.000 Preguntas de Práctica",
+      "Explore Respuestas Modelo de Alta Puntuación",
+      "Análisis Detallado de Preguntas",
+      "Manual de Palabras Frecuentes del Examen",
+      "Plan de Estudio Personalizado con Selección Inteligente de Preguntas",
+      "Evaluaciones de Speaking con IA"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Exámenes simulados de duración completa</span>",
-      "Prueba en cualquier momento",
-      "Cercano a <span class='strongfont'>examen real DET</span>",
+      "Exámenes de Práctica Completos",
+      "Realice el examen en cualquier momento",
+      "Similar al examen DET real",
       "Puntuaciones de evaluación precisas",
       "Informe de evaluación detallado",
-      "Los resultados estarán disponibles dentro de <span class='strongfont'>5-30 minutos</span>"
+      "Resultados disponibles en 5-30 minutos"
     ]
   },
   "blog": {
@@ -347,9 +335,9 @@
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica"
   },
   "embark": {
-    "font1": "Embárcate en tu viaje hacia altas puntuaciones en",
+    "font1": "¡Emprende tu camino hacia altas puntuaciones en el D",
     "font2": "Duolingo English Test !",
-    "Start_Now": "Empieza ahora"
+    "Start_Now": "Comienza Ahora"
   },
   "articleDetail": {
     "Submitted_successfully": "Enviado con éxito",
@@ -703,38 +691,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Práctica - La mejor plataforma para el examen de práctica de Duolingo",
-      "description": "Nuestra base de datos de pruebas DET incluye miles de preguntas para un entrenamiento exhaustivo, completo con explicaciones detalladas y análisis de IA para ayudarte a alcanzar el éxito.",
-      "keywords": "Duolingo English Test Práctica, Duolingo Práctica Examen de Inglés, Duolingo Práctica de Examen de Inglés, Duolingo Examen de Práctica en Línea, Duolingo Práctica para Examen, Duolingo Examen de Práctica, Duolingo Práctica, Examen de Práctica Det, Duolingo English Test Puntuación"
+      "title": "Preparación DET | Banco de Preguntas Duolingo con IA Integrada",
+      "description": "¿Buscas prepararte para el Duolingo English Test? Accede a más de 18.000 ejercicios con retroalimentación por inteligencia artificial y seguimiento personalizado. Únete a más de 400.000 estudiantes que ya mejoraron su puntuación en el DET.",
+      "keywords": "preparación DET, ejercicios Duolingo, práctica examen DET, banco preguntas Duolingo, simulador DET, ejercicios speaking DET, práctica writing DET, preparación inglés online, materiales estudio DET, evaluación IA inglés"
     },
-    "h1": "Duolingo English Test Practicar",
-    "desc": "Accede a una amplia colección de preguntas de prueba, mejorada con análisis de respuestas, plantillas, evaluaciones de habla impulsadas por IA y planificación inteligente. Acelera la mejora de tu puntuación de manera eficiente y asequible con nuestro enfoque impulsado por IA.",
+    "h1": "Práctica del Duolingo English Test",
+    "desc": "Accede a una amplia colección de preguntas de examen, enriquecida con análisis de respuestas, plantillas, evaluaciones de expresión oral con IA y planificación inteligente. Mejora tu puntuación de manera eficiente y económica con nuestro enfoque basado en IA.",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "altbanner": "Duolingo English Test Práctica",
     "bank_user_icon": "Icono de usuario del banco",
     "white_arrow_right": "Flecha Blanca Derecha",
     "blue_arrow_right": "Flecha Azul Derecha",
-    "learners_have": "{number} estudiantes han utilizado nuestro banco de preguntas para la preparación de DET.",
-    "spn": "Empieza a Practicar Ahora",
+    "learners_have": "Más de {number} estudiantes han utilizado nuestro banco de preguntas para prepararse para el DET.",
+    "spn": "Comienza a Practicar Ahora",
     "article1": {
       "h2": "El Banco de Preguntas Más Grande",
-      "right_desc": " Explora nuestra extensa biblioteca de más de <span class='zdfont'>18,000+ preguntas</span> en diversos tipos de exámenes, constantemente actualizada para mantener tu práctica al día. Nuestro banco de preguntas está diseñado para fortalecer sistemáticamente tus habilidades para tomar exámenes en varios formatos de preguntas.",
-      "btn": "Sumérgete en la práctica"
+      "right_desc": "Explora nuestra amplia biblioteca de más de 18,000 preguntas en diversos tipos de exámenes, actualizada constantemente para mantener tu práctica al día. Nuestro banco de preguntas está diseñado para fortalecer tus habilidades de examen en varios formatos de preguntas de forma sistemática.",
+      "btn": "Sumérgete en la Práctica"
     },
     "article2": {
       "h2": "Recomendación Inteligente",
-      "right_desc": "El <span class='zdfont'>modelo de IA</span> tendrá en cuenta el nivel de dominio de cada tipo de pregunta, la dificultad, el puntaje objetivo, el peso de la pregunta, la novedad de las preguntas, la frecuencia reciente del examen, el tiempo de preparación y la eficiencia en la calificación, etc., para recomendar preguntas de manera precisa que te ayuden a prepararte eficientemente para el examen.",
-      "btn": "Inicia un Viaje de Estudio Inteligente"
+      "right_desc": "El modelo de IA considera el nivel de dominio de cada tipo de pregunta, dificultad, puntuación objetivo, peso de la pregunta, novedad, frecuencia del examen, tiempo de preparación y eficiencia en la puntuación para recomendar preguntas específicas que optimicen tu preparación.",
+      "btn": "Comienza tu Viaje de Estudio Inteligente"
     },
     "article3": {
-      "h2": "Evaluación de habla por IA",
-      "right_desc": "Mejore su competencia oral con nuestras <span class='zdfont'>evaluaciones de habla impulsadas por IA</span>. Envíe su respuesta a una pregunta de idioma hablado y reciba al instante un análisis detallado de sus habilidades de habla, ayudándole a mejorar con precisión y rapidez.",
-      "btn": "Comience su evaluación"
+      "h2": "Evaluación de Expresión Oral con IA",
+      "right_desc": "Mejora tu competencia oral con nuestras evaluaciones de expresión oral basadas en IA. Envía tu respuesta a una pregunta hablada y recibe de inmediato un análisis detallado de tus habilidades de expresión, ayudándote a mejorar de manera precisa y rápida.",
+      "btn": "Comienza tu Evaluación"
     },
     "article4": {
       "h2": "Análisis de Respuestas",
-      "right_desc": "Adéntrate en explicaciones completas de respuestas que profundizan tu comprensión de conceptos esenciales y técnicas de resolución de problemas. Nuestros análisis detallados no solo te guían hacia las respuestas correctas, sino que también amplían tu conocimiento y mejoran tu eficiencia de estudio.",
-      "btn": "Explorar información de respuestas"
+      "right_desc": "Sumérgete en explicaciones completas de las respuestas que profundizan tu comprensión de los conceptos clave y técnicas de resolución de problemas. Nuestros análisis detallados no solo te guían hacia las respuestas correctas, sino que amplían tu conocimiento y aumentan la eficiencia de tu estudio.",
+      "btn": "Explora los Insights de Respuestas"
     }
   },
   "speakingaicorrection": {
@@ -908,53 +896,53 @@
   },
   "tos": {
     "seometa": {
-      "title": "Términos y Condiciones - DET Práctica",
-      "description": "Explora los completos Términos de Servicio de DET Practice, que incluyen nuestra Política de Privacidad y Guías de Utilización. Asegúrate de la transparencia y cumplimiento.",
-      "keywords": "DET Duolingo, DET Prueba, Duolingo DET, Duolingo Prueba, Duolingo Prueba en línea, Duolingo Prueba de idioma inglés, Duolingo Examen de inglés, Duolingo Examen de competencia"
+      "title": "Términos de Servicio | DET Practice – Preparación para el Duolingo English Test",
+      "description": "Explora los Términos de Servicio de DET Practice. Comprende las pautas y políticas para utilizar nuestra plataforma de preparación para el Duolingo English Test, incluyendo las responsabilidades del usuario, derechos y condiciones de uso.",
+      "keywords": "Términos de Servicio, DET Practice, Duolingo English Test, plataforma de preparación para exámenes, acuerdo del usuario, condiciones del servicio, preparación de exámenes en línea, políticas EPT"
     },
-    "title": "Términos de servicio",
+    "title": "Términos de Servicio",
     "q1": {
       "title": "Última actualización: 2023-11-20",
-      "a1": "Lea estos Términos de Servicio (“Términos”, “TOS”) detenidamente antes de usar el",
-      "a2": "sitio web (el “Servicio”) operado por DET Practice (“nosotros” o “nuestro”).",
-      "a3": "Su acceso y uso del Servicio está condicionado a su aceptación y cumplimiento de estos Términos. Estos Términos se aplican a todos los visitantes, usuarios y otras personas que acceden o utilizan el Servicio.",
-      "a4": "Al acceder o usar el Servicio, usted acepta quedar sujeto a estos Términos. Si no está de acuerdo con alguna parte de los términos, entonces no puede acceder al Servicio."
+      "a1": "Por favor, lee detenidamente estos Términos de Servicio (\"Términos\", \"TOS\") antes de utilizar el sitio web",
+      "a2": "(el \"Servicio\") operado por DET Practice (\"nosotros\" o \"nuestro\").",
+      "a3": "Tu acceso y uso del Servicio está condicionado a tu aceptación y cumplimiento de estos Términos. Estos Términos se aplican a todos los visitantes, usuarios y otras personas que accedan o utilicen el Servicio.",
+      "a4": "Al acceder o utilizar el Servicio, aceptas estar sujeto a estos Términos. Si no estás de acuerdo con alguna parte de los términos, no podrás acceder al Servicio."
     },
     "q2": {
       "title": "Cuentas",
-      "a1": "Cuando creas una cuenta con nosotros, debes proporcionarnos información que sea precisa, completa y actualizada en todo momento. No hacerlo constituye un incumplimiento de los Términos, lo que puede resultar en la terminación inmediata de tu cuenta en nuestro Servicio.",
-      "a2": "Usted es responsable de proteger la contraseña que utiliza para acceder al Servicio y de cualquier actividad o acción bajo su contraseña, ya sea que su contraseña esté en nuestro Servicio o en un servicio de terceros.",
-      "a3": "Usted acepta no divulgar su contraseña a ningún tercero. Debe notificarnos de inmediato al darse cuenta de cualquier violación de seguridad o uso no autorizado de su cuenta."
+      "a1": "Cuando creas una cuenta con nosotros, debes proporcionarnos información precisa, completa y actualizada en todo momento. El incumplimiento de esto constituye una violación de los Términos, lo que puede resultar en la terminación inmediata de tu cuenta en nuestro Servicio.",
+      "a2": "Eres responsable de proteger la contraseña que utilizas para acceder al Servicio y de cualquier actividad o acción bajo tu contraseña, ya sea que tu contraseña esté con nuestro Servicio o con un servicio de terceros.",
+      "a3": "Aceptas no revelar tu contraseña a ningún tercero. Debes notificarnos inmediatamente al tener conocimiento de cualquier violación de seguridad o uso no autorizado de tu cuenta."
     },
     "q3": {
-      "title": "Enlaces A Otros Sitios Web",
+      "title": "Enlaces a Otros Sitios Web",
       "a1": "Nuestro Servicio puede contener enlaces a sitios web o servicios de terceros que no son propiedad ni están controlados por DET Practice.",
-      "a2": "DET Practice no tiene control ni asume ninguna responsabilidad por el contenido, las políticas de privacidad o las prácticas de cualquier sitio web o servicio de terceros. Además, usted reconoce y acepta que DET Practice no será responsable, directa o indirectamente, de ningún daño o pérdida causada o supuestamente causada por o en relación con el uso o la confianza en dicho contenido, bienes o servicios disponibles en o a través de dichos sitios web o servicios.",
-      "a3": "Le recomendamos encarecidamente que lea los términos y condiciones y las políticas de privacidad de cualquier sitio web o servicio de terceros que visite."
+      "a2": "DET Practice no tiene control sobre, ni asume responsabilidad por el contenido, políticas de privacidad o prácticas de sitios web o servicios de terceros. Además, reconoces y aceptas que DET Practice no será responsable, directa o indirectamente, por cualquier daño o pérdida causada o supuestamente causada por o en conexión con el uso o la confianza en cualquier contenido, bienes o servicios disponibles en o a través de dichos sitios web o servicios.",
+      "a3": "Te recomendamos encarecidamente que leas los términos y condiciones y las políticas de privacidad de cualquier sitio web o servicio de terceros que visites."
     },
     "q4": {
       "title": "Terminación",
-      "a1": "Podemos terminar o suspender su cuenta de inmediato, sin previo aviso o responsabilidad, por cualquier motivo, incluyendo sin limitación si incumple los Términos.",
-      "a2": "Al terminar, su derecho a usar el Servicio cesará de inmediato. Si desea cancelar su cuenta, simplemente puede dejar de usar el Servicio.",
-      "a3": "Todas las disposiciones de los Términos que por su naturaleza deban sobrevivir a la terminación, sobrevivirán a la terminación, incluidas, entre otras, las disposiciones de propiedad, las exenciones de garantía, la indemnización y las limitaciones de responsabilidad."
+      "a1": "Podemos terminar o suspender tu cuenta inmediatamente, sin previo aviso ni responsabilidad, por cualquier motivo, incluyendo, sin limitación, si violas los Términos.",
+      "a2": "Tras la terminación, tu derecho a utilizar el Servicio cesará inmediatamente. Si deseas terminar tu cuenta, simplemente puedes dejar de usar el Servicio.",
+      "a3": "Todas las disposiciones de los Términos que por su naturaleza deberían sobrevivir a la terminación sobrevivirán a la terminación, incluyendo, sin limitación, las disposiciones de propiedad, renuncias de garantía, indemnización y limitaciones de responsabilidad."
     },
     "q5": {
-      "title": "Aviso Legal",
-      "a1": "Su uso del Servicio es bajo su propio riesgo. El Servicio se proporciona en una base “TAL COMO ESTÁ” y “SEGÚN DISPONIBILIDAD”. El Servicio se proporciona sin garantías de ningún tipo, ya sean expresas o implícitas, incluyendo, pero no limitado a, garantías implícitas de comerciabilidad, idoneidad para un propósito particular, no infracción, o curso de ejecución."
+      "title": "Descargo de Responsabilidad",
+      "a1": "El uso del Servicio es bajo tu propio riesgo. El Servicio se proporciona \"TAL CUAL\" y \"SEGÚN DISPONIBILIDAD\". El Servicio se proporciona sin garantías de ningún tipo, ya sean expresas o implícitas, incluyendo, pero no limitándose a, garantías implícitas de comerciabilidad, idoneidad para un propósito particular, no infracción o curso de ejecución."
     },
     "q6": {
-      "title": "Ley aplicable",
-      "a1": "Estos Términos se regirán e interpretarán de acuerdo con las leyes del Reino Unido sin considerar sus disposiciones sobre conflictos de leyes.",
-      "a2": "Nuestro incumplimiento de hacer cumplir cualquier derecho o disposición de estos Términos no se considerará una renuncia a esos derechos. Si alguna disposición de estos Términos es considerada inválida o inaplicable por un tribunal, el resto de las disposiciones de estos Términos permanecerán en vigor. Estos Términos constituyen el acuerdo completo entre nosotros con respecto a nuestro Servicio y sustituyen y reemplazan cualquier acuerdo previo que pudiéramos tener entre nosotros con respecto al Servicio."
+      "title": "Ley Aplicable",
+      "a1": "Estos Términos se regirán e interpretarán de acuerdo con las leyes del Reino Unido, sin tener en cuenta sus disposiciones sobre conflictos de leyes.",
+      "a2": "Nuestra falta de aplicación de cualquier derecho o disposición de estos Términos no se considerará una renuncia a esos derechos. Si alguna disposición de estos Términos es considerada inválida o inaplicable por un tribunal, las disposiciones restantes de estos Términos permanecerán en vigor. Estos Términos constituyen el acuerdo completo entre nosotros con respecto a nuestro Servicio y reemplazan cualquier acuerdo previo que podamos tener entre nosotros con respecto al Servicio."
     },
     "q7": {
       "title": "Cambios",
-      "a1": "Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Si una revisión es material, intentaremos proporcionar al menos 15 días de aviso antes de que entren en vigor los nuevos términos. Lo que constituye un cambio material será determinado a nuestra sola discreción.",
-      "a2": "Al continuar accediendo o utilizando nuestro Servicio después de que dichas revisiones entren en vigor, usted acepta estar sujeto a los términos revisados. Si no está de acuerdo con los nuevos términos, por favor, deje de usar el Servicio."
+      "a1": "Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Si una revisión es material, intentaremos proporcionar al menos 15 días de aviso antes de que los nuevos términos entren en vigor. Lo que constituye un cambio material será determinado a nuestra sola discreción.",
+      "a2": "Al continuar accediendo o utilizando nuestro Servicio después de que esas revisiones entren en vigor, aceptas estar sujeto a los términos revisados. Si no estás de acuerdo con los nuevos términos, por favor deja de usar el Servicio."
     },
     "q8": {
-      "title": "Contáctenos",
-      "a1": "Si tienes alguna pregunta sobre estos Términos, por favor contáctanos."
+      "title": "Contáctanos",
+      "a1": "Si tienes alguna pregunta sobre estos Términos, contáctanos."
     }
   },
   "sitemap": {

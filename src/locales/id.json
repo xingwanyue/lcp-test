@@ -51,13 +51,7 @@
     "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Tentang Kami",
-    "Products": [
-      "Latihan Soal DET",
-      "Koreksi Writing AI",
-      "Penilaian Speaking AI",
-      "Simulasi Ujian",
-      "Kursus DET"
-    ],
+    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -82,29 +76,25 @@
       "Tips Persiapan DET",
       "Belajar DET"
     ],
-    "Products[0]": "Latihan Soal DET"
+    "Products[0]": "Latihan Soal DET",
+    "igetit": "Oke, mengerti"
   },
   "index": {
     "seometa": {
       "title": "DET Practice - Platform Lengkap untuk Persiapan Tes Bahasa Inggris Duolingo",
-      "description": "DET Practice adalah platform terbaik untuk persiapan Tes Bahasa Inggris Duolingo. Kami\nmenyediakan bank soal yang luas, simulasi ujian lengkap, layanan koreksi AI untuk berbicara dan\nmenulis, serta kursus khusus untuk DET.",
-      "keywords": "Tes Bahasa Inggris Duolingo, DET Duolingo, tes DET, ujian Duolingo, tes online Duolingo, tes\nbahasa Inggris Duolingo, ujian bahasa Inggris Duolingo, tes kemahiran bahasa Inggris Duolingo,\nujian kemahiran bahasa Inggris Duolingo, tes kemampuan bahasa Inggris Duolingo"
+      "description": "DET Practice adalah platform terbaik untuk persiapan Tes Bahasa Inggris Duolingo. Kami menyediakan bank soal yang luas, simulasi ujian lengkap, layanan koreksi AI untuk berbicara dan menulis, serta kursus khusus untuk DET.",
+      "keywords": "Tes Bahasa Inggris Duolingo, DET Duolingo, tes DET, ujian Duolingo, tes online Duolingo, tes bahasa Inggris Duolingo, ujian bahasa Inggris Duolingo, tes kemahiran bahasa Inggris Duolingo, ujian kemahiran bahasa Inggris Duolingo, tes kemampuan bahasa Inggris Duolingo"
     },
     "bigtitle1": "Jumlah Pencetak Skor Tinggi (130+ Poin)：10000+",
-    "bigtitle2": "Penilaian Luar Biasa 4.8/5 dari Lebih dari 850 Ulasan!",
+    "bigtitle2": "Penilaian Luar Biasa 4,8/5 dari Lebih dari 850 Ulasan!",
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
-    "trustedByWorldwide": "Dipercaya oleh lebih dari {path} ribu siswa di seluruh dunia untuk meningkatkan skor\nDuolingo English Test mereka hanya dalam 1 bulan.",
+    "trustedByWorldwide": "Dipercaya oleh lebih dari {path} ribu siswa di seluruh dunia untuk meningkatkan skor Duolingo English Test mereka hanya dalam 1 bulan.",
     "The_Best_Platform": "Platform Terbaik untuk Meningkatkan Skor Duolingo English Test Anda",
     "Tu": "Total Pengguna",
     "questions": "Pertanyaan",
@@ -139,18 +129,18 @@
       "btn_img_alt": "Anak Panah Kuning Kanan"
     },
     "article4": {
-      "title": "DET Koreksi AI Berbicara",
-      "tips1": "Dukung \"Dengar, Lalu Bicara\", \"Bicara Tentang Foto\", \"Baca, lalu Bicara\", \"Contoh Berbicara\"",
-      "tips2": "Penilaian AI, Hasil Evaluasi AI, Panduan Guru",
-      "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Terperinci",
-      "tips4": "Hasil akan tersedia dalam <span class='yellow'>1-5 menit</span>",
+      "title": "Koreksi AI Berbicara DET",
+      "tips1": "Mendukung \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
+      "tips2": "Penilaian AI, Evaluasi AI, Bimbingan Guru",
+      "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Mendetail",
+      "tips4": "Hasil akan tersedia dalam 1-5 </span>menit",
       "btn_font": "Pelajari lebih lanjut",
       "btn_img_alt": "Panah Kuning Kanan"
     },
     "article5": {
-      "title": "Duolingo English Test Kursus",
-      "tips1": "Kembangkan <span class='yellow'>pemahaman mendalam</span> tentang DET bagian berbicara dan menulis dengan panduan rinci kami",
-      "tips2": "Capai Penguasaan Menyeluruh",
+      "title": "Koreksi AI Berbicara DET",
+      "tips1": "Kembangkan pemahaman mendalam tentang bagian berbicara dan menulis DET dengan panduan rinci kami",
+      "tips2": "Capai Penguasaan Penuh",
       "tips3": "Belajar dari Ahli ESL",
       "tips4": "Tetap Terinformasi dan Terdepan",
       "btn_font": "Jelajahi lebih lanjut",
@@ -163,7 +153,7 @@
     "Join_Them": "Bergabunglah dengan Mereka"
   },
   "slogen": {
-    "title": "<div class='font1'>Mulailah Jalan Anda Menuju Skor Tertinggi pada</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Mulailah Jalan Anda Menuju Skor Tertinggi pada Duolingo English Test!</div>",
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai secara gratis"
@@ -191,18 +181,18 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Latihan - Duolingo Persiapan Tes Keanggotaan dan Layanan Harga",
-      "description": "Pilih rencana yang tepat untuk persiapan Duolingo English Test Anda. Pilihan harga terjangkau untuk latihan yang dipersonalisasi, ulasan ahli, dan ujian simulasi penuh skala.",
-      "keywords": "keyDET Duolingo, DET Ujian, Duolingo DET, Duolingo Ujian, Duolingo Ujian Online, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kecakapan"
+      "title": "Harga Persiapan Duolingo English Test | Paket Persiapan DET Terjangkau",
+      "description": "Temukan pilihan harga persiapan Duolingo English Test di DET Practice. Pilih dari paket fleksibel dan terjangkau yang dirancang untuk membantu Anda sukses dalam persiapan Duolingo Test. Mulai perjalanan Anda dengan paket yang tepat hari ini!",
+      "keywords": "harga persiapan Duolingo English Test, paket persiapan Duolingo Test, latihan DET terjangkau, persiapan Duolingo English Test, harga DET, harga tes kemampuan bahasa Inggris, paket persiapan tes"
     },
     "pagefont": {
       "h1": "Pilih Paket yang Sesuai untuk Anda",
       "h4": "Pembayaran aman! Batalkan kapan saja! Kuasai DET sekarang!",
       "switch1": "Layanan",
       "switch2": "Kursus",
-      "sep": "Pembayaran aman",
-      "ca": "Batalkan kapan saja",
-      "atde": "Kuasi sekarang DET",
+      "sep": "Pembayaran Aman",
+      "ca": "Batalkan Kapan Saja",
+      "atde": "Kuasai DET Sekarang",
       "circle_check_icon": "circle_check_icon",
       "Most_Popular_Choice": "Pilihan Paling Populer",
       "off": "{off}% diskon",
@@ -223,8 +213,8 @@
       "green_check": "Centang Hijau",
       "arrow_down": "Panah Bawah",
       "free_font": "Gratis",
-      "free_tips": "Anda dapat melihat 20 pertanyaan secara gratis, coba platform kami dan lihat apakah sesuai dengan kebutuhan Anda.",
-      "tff": "Coba gratis",
+      "free_tips": "Anda bisa melihat 20 soal secara gratis, coba platform kami, dan lihat apakah sesuai dengan kebutuhan Anda.",
+      "tff": "Coba Gratis",
       "save": "hemat {num}%",
       "week": "/minggu",
       "month": "/bulan",
@@ -238,32 +228,32 @@
     },
     "aqList": [
       {
-        "name": "Bagaimana cara kerja rencana dan harga DETPractice?",
-        "content": "Kami menyediakan rencana dan harga yang transparan untuk pengguna kami, tanpa biaya tersembunyi. Selain itu, kami menawarkan paket langganan tambahan sehingga Anda dapat memilih layanan sesuai dengan kebutuhan Anda."
+        "name": "Bagaimana cara kerja paket dan harga DET Practice?",
+        "content": "Kami menyediakan paket dan harga yang transparan untuk pengguna kami, tanpa biaya tersembunyi. Selain itu, kami menyediakan paket berlangganan tambahan agar Anda dapat memilih layanan sesuai kebutuhan Anda."
       },
       {
         "name": "Apakah ada uji coba gratis?",
-        "content": "Ya! Anda dapat melihat 20 pertanyaan secara gratis. Membantu Anda memahami kami sebelum membeli lebih banyak layanan."
+        "content": "Ya! Anda dapat melihat 20 soal secara gratis. Membantu Anda mengenal kami sebelum membeli layanan lebih lanjut."
       },
       {
         "name": "Apakah Anda menawarkan diskon?",
         "content": "Ya! Kami menawarkan diskon yang disesuaikan untuk setiap layanan. Namun, saat Anda memilih layanan 30 hari, Anda akan menerima diskon yang lebih besar dibandingkan dengan layanan lainnya. Silakan merujuk ke detail harga di atas untuk informasi lebih lanjut."
       },
       {
-        "name": "Pembayaran saya berhasil, tetapi peningkatan gagal.",
-        "content": "Silakan hubungi kami melalui obrolan atau email: <span class='email_address'>support{'@'}detpractice.com</span>. Ini adalah cara paling sederhana dan tercepat untuk menangani kekhawatiran Anda."
+        "name": "Pembayaran saya berhasil, tapi upgrade gagal.",
+        "content": "Silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>. Ini adalah cara termudah dan tercepat untuk mengatasi masalah Anda."
       },
       {
-        "name": "Saya telah membeli kursus tetapi tidak bisa melihatnya?",
-        "content": "Setelah berhasil membeli kursus, Anda dapat pergi ke halaman deskripsi kursus <span class='email_address'>https://www.detpractice.com/courses</span> untuk melihat dan mengunduh informasi kursus. Jika Anda tidak dapat menemukan informasi kursus, silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Saya sudah membeli kursus tapi tidak bisa melihatnya, mengapa?",
+        "content": "Setelah berhasil membeli kursus, Anda dapat mengunjungi halaman deskripsi kursus https://www.detpractice.com/courses untuk melihat dan mengunduh informasi kursus. Jika Anda tidak dapat menemukan informasi kursus, silakan hubungi kami melalui chat atau email: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Ke mana saya mengirimkan umpan balik saya?",
-        "content": "Anda dapat mengirimkan umpan balik melalui obrolan dukungan di sudut kanan bawah, atau hubungi kami melalui email di <span class='email_address'>support{'@'}detpractice.com</span>. Atau, Anda bisa meninggalkan pesan langsung di bagian \"Hubungi Kami\"."
+        "name": "Dimana saya bisa mengirim masukan?",
+        "content": "Anda dapat mengirim masukan melalui chat dukungan di pojok kanan bawah, atau hubungi kami melalui email di <span class='email_address'>support{'@'}detpractice.com</span>. Alternatif lain, Anda dapat meninggalkan pesan langsung di bagian \"Hubungi Kami\"."
       },
       {
-        "name": "Apa kebijakan pengembalian dana Anda?",
-        "content1": "Untuk informasi dan instruksi tentang cara mendapatkan pengembalian dana, Anda dapat merujuk ke tautan \"Kebijakan Pengembalian\" di bagian bawah halaman sebagai prioritas, atau hubungi kami di <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Bagaimana kebijakan pengembalian dana Anda?",
+        "content1": "Untuk informasi dan petunjuk tentang cara mendapatkan pengembalian dana, Anda dapat merujuk ke tautan \"Kebijakan Pengembalian Dana\" di bagian bawah halaman sebagai prioritas, atau hubungi kami di <span class='email_address'>support{'@'}detpractice.com</span>."
       }
     ],
     "qlList": {
@@ -308,34 +298,34 @@
       "type1": {
         "font": "Layanan Pelanggan Online",
         "tip": "Tersedia Senin-Jumat, 10:00 - 19:00",
-        "btn": "Obrolan Langsung Sekarang"
+        "btn": "Chat Sekarang"
       },
       "type2": {
-        "font": "Email Kami",
-        "tip": "Menerima tanggapan dalam 1 hari kerja."
+        "font": "Kirim Email",
+        "tip": "Respon dalam 1 hari kerja"
       },
       "type3": {
-        "font": "Tinggalkan pesan",
-        "tip": "Kami akan merespons Anda dalam satu hari kerja.",
-        "btn": "Tinggalkan pesan sekarang"
+        "font": "Tinggalkan Pesan",
+        "tip": "Kami akan merespon dalam 1 hari kerja",
+        "btn": "Tinggalkan Pesan Sekarang"
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Tidak Terbatas</span> untuk Sesi Latihan",
-      "Akses <span class='strongfont'>18000+</span> Soal Latihan",
-      "Telusuri <span class='strongfont'>Jawaban Contoh</span> dengan Skor Tinggi",
-      "<span class='strongfont'>Analisis Pertanyaan Mendalam</span>",
-      "Buku Kata <span class='strongfont'>Ujian Frekuensi Tinggi</span>",
-      "Rencana Belajar <span class='strongfont'>Khusus</span> dengan Pemilihan Pertanyaan Cerdas",
-      "Evaluasi Berbicara dengan Kekuatan AI"
+      "Tak Terbatas untuk Sesi Latihan",
+      "Akses 18.000+ Soal Latihan",
+      "Lihat Contoh Jawaban Nilai Tinggi",
+      "Analisis Soal Mendalam",
+      "Buku Kata-kata Ujian Frekuensi Tinggi",
+      "Rencana Belajar Personal dengan Pemilihan Soal Cerdas",
+      "Evaluasi Speaking berbasis AI"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Ujian Tiruan Penuh</span>",
-      "Uji kapan saja",
-      "Dekat dengan <span class='strongfont'>ujian DET yang sebenarnya</span>",
-      "Nilai penilaian yang akurat",
+      "Ujian Simulasi Lengkap",
+      "Ujian kapan saja",
+      "Mirip dengan ujian DET asli",
+      "Skor penilaian akurat",
       "Laporan evaluasi terperinci",
-      "Hasil akan tersedia dalam <span class='strongfont'>5-30 menit</span>"
+      "Hasil tersedia dalam 5-30 menit"
     ]
   },
   "blog": {
@@ -347,7 +337,7 @@
     "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik"
   },
   "embark": {
-    "font1": "Mulailah perjalanan Anda menuju skor tinggi di",
+    "font1": "Raih nilai tinggi d",
     "font2": "Duolingo English Test !",
     "Start_Now": "Mulai Sekarang"
   },
@@ -703,38 +693,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Latihan - Platform terbaik untuk tes latihan Duolingo",
-      "description": "Bank soal DET kami mencakup ribuan pertanyaan untuk pelatihan yang mendalam, lengkap dengan penjelasan terperinci dan analisis AI untuk membantu Anda berhasil.",
-      "keywords": "Duolingo English Test Latihan, Duolingo Ujian Latihan Bahasa Inggris, Duolingo Tes Latihan Bahasa Inggris, Duolingo Latihan Tes Online, Duolingo Latihan Ujian, Duolingo Tes Latihan, Duolingo Latihan, Tes Latihan Det, Duolingo English Test Skor"
+      "title": "Latihan DET | Bank Soal Duolingo English Test dengan AI Pintar",
+      "description": "Sedang persiapan Duolingo English Test? Akses lebih dari 18.000 soal lengkap dengan feedback AI dan sistem tracking otomatis. Bergabung bersama 400.000+ pelajar yang sudah berhasil meningkatkan skor DET mereka.",
+      "keywords": "atihan DET, soal Duolingo test, contoh soal DET, persiapan Duolingo, bank soal DET, latihan speaking DET, latihan writing DET, latihan tes Inggris online, materi belajar DET, evaluasi berbicara AI"
     },
-    "h1": "Duolingo English Test Latihan",
-    "desc": "Dapatkan akses ke koleksi soal tes yang luas, dilengkapi dengan analisis jawaban, template, evaluasi berbicara didorong oleh AI, dan perencanaan cerdas. Percepat peningkatan skor Anda secara efisien dan terjangkau dengan pendekatan bertenaga AI kami.",
+    "h1": "Latihan Duolingo English Test",
+    "desc": "Akses ribuan soal lengkap dengan analisis jawaban, template, penilaian speaking berbasis AI, dan pembelajaran terencana. Tingkatkan nilai Anda secara efektif dan ekonomis dengan teknologi AI kami.",
     "alt": "DET Latihan:Yang terbaik Duolingo English Test Platform latihan",
     "altbanner": "Duolingo English Test Latihan",
     "bank_user_icon": "Ikon Pengguna Bank",
     "white_arrow_right": "Panah Putih Kanan",
     "blue_arrow_right": "Panah Biru Kanan",
-    "learners_have": "{number} pelajar telah menggunakan bank soal kami untuk persiapan DET.",
+    "learners_have": "Sudah lebih dari {number} peserta menggunakan bank soal kami untuk persiapan DET.",
     "spn": "Mulai Berlatih Sekarang",
     "article1": {
-      "h2": "Bank Soal Terbesar",
-      "right_desc": " Jelajahi perpustakaan kami yang luas dengan lebih dari <span class='zdfont'>18,000+ pertanyaan</span> di berbagai jenis ujian, yang terus diperbarui agar latihan Anda selalu terkini. Bank soal kami dirancang untuk secara sistematis memperkuat keterampilan mengerjakan ujian Anda melalui berbagai format pertanyaan.",
-      "btn": "Menyelami Latihan"
+      "h2": "Bank Soal Terlengkap",
+      "right_desc": "Dapatkan akses ke lebih dari 18.000 soal berbagai tipe yang selalu diperbarui sesuai perkembangan ujian terkini. Bank soal kami dirancang untuk meningkatkan kemampuan Anda secara sistematis dalam menghadapi berbagai format soal.",
+      "btn": "Mulai Latihan"
     },
     "article2": {
-      "h2": "Rekomendasi Cerdas",
-      "right_desc": "Model <span class='zdfont'>AI</span> akan mempertimbangkan tingkat penguasaan dari setiap jenis pertanyaan, kesulitan, skor target, bobot pertanyaan, kebaruan pertanyaan, frekuensi terbaru dari tes, waktu persiapan dan efisiensi penilaian, dll. untuk merekomendasikan pertanyaan secara akurat agar membantu Anda mempersiapkan diri dengan efisien untuk tes tersebut.",
-      "btn": "Mulai Perjalanan Studi Pintar"
+      "h2": "Sistem Rekomendasi Cerdas",
+      "right_desc": "AI kami menganalisis tingkat kemahiran per tipe soal, tingkat kesulitan, target nilai, tingkat kepentingan soal, kebaruan materi, frekuensi soal dalam ujian, waktu persiapan, dan efektivitas pembelajaran untuk memberikan rekomendasi soal yang paling sesuai.",
+      "btn": "Mulai Belajar Pintar"
     },
     "article3": {
-      "h2": "Evaluasi Berbicara AI",
-      "right_desc": "Tingkatkan kemahiran lisan Anda dengan <span class='zdfont'>evaluasi berbicara yang didukung oleh AI</span> kami. Kirimkan jawaban Anda untuk pertanyaan bahasa lisan dan segera terima analisis mendetail tentang keterampilan berbicara Anda, membantu Anda meningkatkan dengan presisi dan kecepatan.",
-      "btn": "Mulai Evaluasi Anda"
+      "h2": "Penilaian Speaking dengan AI",
+      "right_desc": "Tingkatkan kemampuan speaking Anda dengan penilaian AI. Kirimkan rekaman jawaban Anda dan dapatkan analisis detail secara instan untuk perbaikan yang cepat dan tepat.",
+      "btn": "Mulai Penilaian"
     },
     "article4": {
-      "h2": "Analisis Jawaban",
-      "right_desc": "Jelajahi penjelasan jawaban komprehensif yang memperdalam pemahaman Anda tentang konsep penting dan teknik pemecahan masalah. Analisis mendetail kami tidak hanya membimbing Anda menuju jawaban yang benar—mereka juga memperluas pengetahuan Anda dan meningkatkan efisiensi belajar Anda.",
-      "btn": "Jelajahi Wawasan Jawaban"
+      "h2": "Pembahasan Lengkap",
+      "right_desc": "Pelajari pembahasan mendalam untuk memahami konsep penting dan teknik penyelesaian soal. Analisis kami tidak sekadar memberikan jawaban benar, tapi juga membantu meningkatkan pemahaman dan efisiensi belajar Anda.",
+      "btn": "Lihat Pembahasan"
     }
   },
   "speakingaicorrection": {
@@ -908,53 +898,53 @@
   },
   "tos": {
     "seometa": {
-      "title": "Syarat dan Ketentuan - DET Praktik",
-      "description": "Jelajahi Syarat Layanan komprehensif dari DET Practice, termasuk Kebijakan Privasi dan Pedoman Penggunaan. Memastikan transparansi dan kepatuhan.",
-      "keywords": "DET Duolingo, DET Uji, Duolingo DET, Duolingo Uji, Duolingo Uji Online, Duolingo Tes Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kemahiran"
+      "title": "Terms of Service | DET Practice – Duolingo English Test Preparation",
+      "description": "Jelajahi Ketentuan Layanan untuk DET Practice. Pahami pedoman dan kebijakan penggunaan platform kami untuk persiapan Duolingo English Test, termasuk tanggung jawab pengguna, hak-hak, dan ketentuan penggunaan.",
+      "keywords": "Ketentuan Layanan, DET Practice, Duolingo English Test, platform persiapan tes, perjanjian pengguna, syarat layanan, persiapan tes online, kebijakan EPT"
     },
     "title": "Ketentuan Layanan",
     "q1": {
       "title": "Terakhir diperbarui: 2023-11-20",
-      "a1": "Silakan baca Syarat Layanan ini (\"Syarat\", \"TOS\") dengan seksama sebelum menggunakan",
-      "a2": "website (disebut “Layanan”) yang dioperasikan oleh DET Practice (“kami”, “kita”, atau “milik kami”).",
-      "a3": "Akses Anda ke dan penggunaan Layanan tergantung pada penerimaan dan kepatuhan Anda terhadap Syarat-Syarat ini. Syarat-Syarat ini berlaku untuk semua pengunjung, pengguna, dan lainnya yang mengakses atau menggunakan Layanan.",
-      "a4": "Dengan mengakses atau menggunakan Layanan, Anda setuju untuk terikat oleh Syarat-Syarat ini. Jika Anda tidak setuju dengan bagian mana pun dari syarat-syarat ini, maka Anda tidak boleh mengakses Layanan."
+      "a1": "Mohon baca Ketentuan Layanan (\"Ketentuan\", \"TOS\") ini dengan seksama sebelum menggunakan situs web",
+      "a2": " (\"Layanan\") yang dioperasikan oleh DET Practice (\"kami\").",
+      "a3": "Akses dan penggunaan Layanan Anda mensyaratkan penerimaan dan kepatuhan terhadap Ketentuan ini. Ketentuan ini berlaku untuk semua pengunjung, pengguna, dan pihak lain yang mengakses atau menggunakan Layanan.",
+      "a4": "Dengan mengakses atau menggunakan Layanan, Anda menyetujui untuk terikat dengan Ketentuan ini. Jika Anda tidak setuju dengan bagian mana pun dari ketentuan ini, maka Anda tidak diperkenankan mengakses Layanan."
     },
     "q2": {
       "title": "Akun",
-      "a1": "Ketika Anda membuat akun dengan kami, Anda harus memberikan informasi yang akurat, lengkap, dan terkini setiap saat. Kegagalan untuk melakukannya merupakan pelanggaran terhadap Ketentuan, yang dapat mengakibatkan penghentian segera akun Anda di Layanan kami.",
-      "a2": "Anda bertanggung jawab untuk menjaga keamanan kata sandi yang Anda gunakan untuk mengakses Layanan dan untuk setiap aktivitas atau tindakan di bawah kata sandi Anda, baik kata sandi Anda dengan Layanan kami atau layanan pihak ketiga.",
-      "a3": "Anda setuju untuk tidak mengungkapkan kata sandi Anda kepada pihak ketiga mana pun. Anda harus segera memberi tahu kami setelah mengetahui adanya pelanggaran keamanan atau penggunaan akun Anda yang tidak sah."
+      "a1": "Saat membuat akun dengan kami, Anda harus memberikan informasi yang akurat, lengkap, dan terkini setiap saat. Kegagalan melakukannya merupakan pelanggaran terhadap Ketentuan, yang dapat mengakibatkan penonaktifan segera akun Anda pada Layanan kami.",
+      "a2": "Anda bertanggung jawab untuk melindungi kata sandi yang Anda gunakan untuk mengakses Layanan dan untuk setiap aktivitas atau tindakan di bawah kata sandi Anda, baik kata sandi Anda berada di Layanan kami atau layanan pihak ketiga.",
+      "a3": "Anda setuju untuk tidak mengungkapkan kata sandi Anda kepada pihak ketiga mana pun. Anda harus memberi tahu kami segera setelah mengetahui adanya pelanggaran keamanan atau penggunaan akun Anda yang tidak sah."
     },
     "q3": {
-      "title": "Tautan Ke Situs Web Lain",
+      "title": "Tautan ke Situs Web Lain",
       "a1": "Layanan kami mungkin berisi tautan ke situs web atau layanan pihak ketiga yang tidak dimiliki atau dikendalikan oleh DET Practice.",
-      "a2": "DET Practice tidak memiliki kendali atas dan tidak bertanggung jawab atas, konten, kebijakan privasi, atau praktik dari situs web atau layanan pihak ketiga mana pun. Anda selanjutnya mengakui dan setuju bahwa DET Practice tidak akan bertanggung jawab, secara langsung atau tidak langsung, atas kerusakan atau kerugian apa pun yang disebabkan atau diduga disebabkan oleh atau sehubungan dengan penggunaan atau ketergantungan pada konten, barang, atau layanan yang tersedia di atau melalui situs web atau layanan tersebut.",
+      "a2": "DET Practice tidak memiliki kendali atas dan tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik situs web atau layanan pihak ketiga mana pun. Anda selanjutnya mengakui dan menyetujui bahwa DET Practice tidak bertanggung jawab atau berkewajiban, secara langsung atau tidak langsung, atas kerusakan atau kerugian yang disebabkan atau diduga disebabkan oleh atau sehubungan dengan penggunaan atau ketergantungan pada konten, barang, atau layanan yang tersedia pada atau melalui situs web atau layanan tersebut.",
       "a3": "Kami sangat menyarankan Anda untuk membaca syarat dan ketentuan serta kebijakan privasi dari situs web atau layanan pihak ketiga yang Anda kunjungi."
     },
     "q4": {
-      "title": "Pengakhiran",
-      "a1": "Kami dapat menghentikan atau menangguhkan akun Anda segera, tanpa pemberitahuan sebelumnya atau tanggung jawab, untuk alasan apa pun, termasuk tanpa batasan jika Anda melanggar Ketentuan.",
-      "a2": "Setelah penghentian, hak Anda untuk menggunakan Layanan akan segera berakhir. Jika Anda ingin menghentikan akun Anda, Anda dapat berhenti menggunakan Layanan.",
-      "a3": "Semua ketentuan dalam Persyaratan yang menurut sifatnya harus tetap berlaku setelah penghentian akan tetap berlaku setelah penghentian, termasuk, tanpa batasan, ketentuan kepemilikan, penolakan jaminan, ganti rugi, dan batasan tanggung jawab."
+      "title": "Pemutusan",
+      "a1": "Kami dapat menghentikan atau menangguhkan akun Anda segera, tanpa pemberitahuan atau kewajiban sebelumnya, untuk alasan apa pun, termasuk namun tidak terbatas pada jika Anda melanggar Ketentuan.",
+      "a2": "Setelah pemutusan, hak Anda untuk menggunakan Layanan akan segera berakhir. Jika Anda ingin menghentikan akun Anda, Anda cukup menghentikan penggunaan Layanan.",
+      "a3": "Semua ketentuan dalam Ketentuan yang secara alamiah harus tetap berlaku setelah pemutusan akan tetap berlaku setelah pemutusan, termasuk, namun tidak terbatas pada, ketentuan kepemilikan, penafian jaminan, ganti rugi, dan pembatasan tanggung jawab."
     },
     "q5": {
       "title": "Penafian",
-      "a1": "Penggunaan Layanan ini sepenuhnya merupakan risiko Anda sendiri. Layanan ini disediakan berdasarkan “SEBAGAIMANA ADANYA” dan “SEBAGAIMANA TERSEDIA”. Layanan ini disediakan tanpa jaminan jenis apa pun, baik yang tersurat maupun tersirat, termasuk, tetapi tidak terbatas pada, jaminan tersirat tentang kelayakan jual, kesesuaian untuk tujuan tertentu, tidak melanggar, atau jalannya kinerja."
+      "a1": "Penggunaan Layanan oleh Anda sepenuhnya merupakan risiko Anda sendiri. Layanan disediakan \"SEBAGAIMANA ADANYA\" dan \"SEBAGAIMANA TERSEDIA\". Layanan disediakan tanpa jaminan apa pun, baik tersurat maupun tersirat, termasuk, namun tidak terbatas pada, jaminan tersirat atas kelayakan untuk diperdagangkan, kesesuaian untuk tujuan tertentu, non-pelanggaran, atau jalannya kinerja."
     },
     "q6": {
       "title": "Hukum yang Mengatur",
-      "a1": "Syarat-syarat ini akan diatur dan ditafsirkan sesuai dengan hukum Inggris tanpa memperhatikan ketentuan konflik hukumnya.",
-      "a2": "Kegagalan kami untuk menegakkan hak atau ketentuan apa pun dari Ketentuan ini tidak akan dianggap sebagai pelepasan hak tersebut. Jika ada ketentuan dari Ketentuan ini yang dianggap tidak sah atau tidak dapat dilaksanakan oleh pengadilan, ketentuan lainnya dari Ketentuan ini akan tetap berlaku. Ketentuan ini merupakan keseluruhan perjanjian antara kami mengenai Layanan kami dan menggantikan serta menggantikan perjanjian sebelumnya yang mungkin kami miliki antara kami mengenai Layanan."
+      "a1": "Ketentuan ini akan diatur dan ditafsirkan sesuai dengan hukum Britania Raya tanpa memperhatikan ketentuan pertentangan hukumnya.",
+      "a2": "Kegagalan kami untuk menegakkan hak atau ketentuan apa pun dari Ketentuan ini tidak akan dianggap sebagai pengesampingan hak-hak tersebut. Jika ada ketentuan dari Ketentuan ini yang dianggap tidak sah atau tidak dapat diberlakukan oleh pengadilan, ketentuan lain dari Ketentuan ini akan tetap berlaku. Ketentuan ini merupakan keseluruhan perjanjian antara kita mengenai Layanan kami dan menggantikan dan mengganti setiap perjanjian sebelumnya yang mungkin ada di antara kita mengenai Layanan."
     },
     "q7": {
       "title": "Perubahan",
-      "a1": "Kami berhak, atas kebijaksanaan kami sendiri, untuk mengubah atau mengganti Syarat-Syarat ini kapan saja. Jika suatu revisi bersifat material kami akan mencoba memberikan pemberitahuan setidaknya 15 hari sebelum syarat-syarat baru berlaku. Apa yang merupakan perubahan material akan ditentukan atas kebijaksanaan kami sendiri.",
-      "a2": "Dengan melanjutkan mengakses atau menggunakan Layanan kami setelah revisi tersebut berlaku, Anda setuju untuk terikat oleh syarat-syarat yang direvisi. Jika Anda tidak setuju dengan syarat-syarat baru, harap berhenti menggunakan Layanan."
+      "a1": "Kami berhak, atas kebijakan kami sendiri, untuk mengubah atau mengganti Ketentuan ini setiap saat. Jika revisi bersifat material, kami akan berusaha memberikan pemberitahuan setidaknya 15 hari sebelum ketentuan baru berlaku. Apa yang merupakan perubahan material akan ditentukan atas kebijakan kami sendiri.",
+      "a2": "Dengan terus mengakses atau menggunakan Layanan kami setelah revisi tersebut berlaku, Anda setuju untuk terikat oleh ketentuan yang direvisi. Jika Anda tidak setuju dengan ketentuan baru, mohon hentikan penggunaan Layanan."
     },
     "q8": {
       "title": "Hubungi Kami",
-      "a1": "Jika Anda memiliki pertanyaan tentang Syarat-syarat ini, silakan hubungi kami."
+      "a1": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, silakan hubungi kami."
     }
   },
   "sitemap": {

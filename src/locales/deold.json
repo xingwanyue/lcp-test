@@ -172,24 +172,24 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test Vorbereitungspreise | Erschwingliche DET-Vorbereitungspläne",
-      "description": "Entdecken Sie die Preisoptionen für die Duolingo English Test-Vorbereitung bei DET Practice. Wählen Sie aus flexiblen und erschwinglichen Plänen, die Ihnen beim Erfolg Ihrer Duolingo Test-Vorbereitung helfen. Starten Sie noch heute mit dem richtigen Plan!",
-      "keywords": "Duolingo English Test Vorbereitungspreise, Duolingo Test Vorbereitungspläne, erschwingliche DET-Übung, Duolingo English Test Vorbereitung, DET-Preise, Englisch-Testpreise, Testvorbereitungspläne"
+      "title": "DET Übung - Duolingo Testvorbereitung Mitgliedschaft und Dienstleistungen Preisgestaltung",
+      "description": "Wählen Sie den richtigen Plan für Ihre Duolingo English Test Vorbereitung aus. Erschwingliche Preismöglichkeiten für personalisiertes Training, Expertenbewertungen und umfassende Mock-Prüfungen.",
+      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englisch Sprachtest, Duolingo Englisch Prüfung, Duolingo Fähigkeitsprüfungwords"
     },
     "pagefont": {
       "h1": "Wählen Sie den Plan, der zu Ihnen passt",
       "h4": "Sichere Zahlung! Jederzeit kündbar! Meistern Sie den DET jetzt!",
-      "switch1": "Service",
+      "switch1": "Dienst",
       "switch2": "Kurse",
       "sep": "Sichere Zahlung",
-      "ca": "Jederzeit kündbar",
-      "atde": "Meistern Sie den DET jetzt",
+      "ca": "Jederzeit kündigen",
+      "atde": "Gehe jetzt zur DET",
       "circle_check_icon": "Kreis_kontrollsymbol",
       "Most_Popular_Choice": "Beliebteste Wahl",
       "off": "{off}% Rabatt",
       "do": "$",
       "mp": "Preis für Mitglieder",
-      "Buy_Now": "Jetzt kaufen",
+      "Buy_Now": "Kaufe jetzt",
       "tf": "Kostenlos ausprobieren",
       "mpc": "Beliebteste Wahl",
       "your_price": "Ihr Preis",
@@ -197,15 +197,15 @@
       "purchased": "gekauft",
       "Secure_Payment": "Sichere Zahlung:",
       "faq": "Häufig gestellte Fragen",
-      "Contact_Us": "Kontakt",
+      "Contact_Us": "Kontaktieren Sie uns",
       "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
       "check_icon": "Überprüfen",
       "tip_icon": "Tipp",
       "green_check": "Grüner Haken",
       "arrow_down": "Nach unten gerichteter Pfeil",
       "free_font": "Kostenlos",
-      "free_tips": "Sie können 20 Fragen kostenlos ansehen, unsere Plattform testen und prüfen, ob sie Ihren Bedürfnissen entspricht.",
-      "tff": "Kostenlos testen",
+      "free_tips": "Sie können 20 Fragen kostenlos ansehen, probieren Sie unsere Plattform aus und sehen Sie, ob sie Ihren Bedürfnissen entspricht.",
+      "tff": "Kostenlos ausprobieren",
       "save": "sparen {num}%",
       "week": "/Woche",
       "month": "/Monat",
@@ -219,12 +219,12 @@
     },
     "aqList": [
       {
-        "name": "Wie funktionieren die Pläne und Preise von DET Practice?",
-        "content": "Wir bieten transparente Pläne und Preise für unsere Nutzer, ohne versteckte Gebühren. Zusätzlich bieten wir Add-on-Abonnements an, damit Sie Dienste nach Ihren Bedürfnissen wählen können."
+        "name": "Wie funktionieren die Pläne und Preise von DETPractice?",
+        "content": "Wir bieten transparente Pläne und Preise für unsere Benutzer, ohne versteckte Gebühren. Darüber hinaus bieten wir zusätzliche Abonnementpakete an, sodass Sie Dienste nach Ihren Bedürfnissen auswählen können."
       },
       {
         "name": "Gibt es eine kostenlose Testversion?",
-        "content": "Ja! Sie können 20 Fragen kostenlos ansehen. Dies hilft Ihnen, uns kennenzulernen, bevor Sie weitere Dienste kaufen."
+        "content": "Ja! Sie können 20 Fragen kostenlos ansehen. Helfen Sie, uns zu verstehen, bevor Sie weitere Dienstleistungen kaufen."
       },
       {
         "name": "Bieten Sie irgendwelche Rabatte an?",
@@ -232,19 +232,19 @@
       },
       {
         "name": "Meine Zahlung war erfolgreich, aber das Upgrade ist fehlgeschlagen.",
-        "content": "Bitte kontaktieren Sie uns über den Chat oder per E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>. Dies ist der einfachste und schnellste Weg, Ihre Anliegen zu klären."
+        "content": "Bitte kontaktieren Sie uns per Chat oder E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>. Dies ist der einfachste und schnellste Weg, um Ihre Anliegen zu klären."
       },
       {
-        "name": "Ich habe den Kurs gekauft, kann ihn aber nicht einsehen, warum?",
-        "content": "Nach erfolgreichem Kauf des Kurses können Sie die Kursbeschreibungsseite https://www.detpractice.com/courses besuchen, um die Kursinformationen einzusehen und herunterzuladen. Wenn Sie die Kursinformationen nicht finden können, kontaktieren Sie uns bitte über den Chat oder per E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Ich habe den Kurs gekauft, kann ihn aber nicht sehen?",
+        "content": "Nach dem erfolgreichen Kauf des Kurses können Sie zur Kursbeschreibungsseite <span class='email_address'>https://www.detpractice.com/courses</span> gehen, um die Kursinformationen anzusehen und herunterzuladen. Wenn Sie die Kursinformationen nicht finden können, kontaktieren Sie uns bitte über Chat oder E-Mail: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Wo kann ich Feedback senden?",
-        "content": "Sie können Feedback über den Support-Chat in der rechten unteren Ecke senden oder uns per E-Mail an <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren. Alternativ können Sie direkt im Bereich \"Kontakt\" eine Nachricht hinterlassen."
+        "name": "Wohin sende ich mein Feedback?",
+        "content": "Sie können Feedback über den Support-Chat in der unteren rechten Ecke senden oder uns per E-Mail unter <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren. Alternativ können Sie eine Nachricht direkt im Bereich \"Kontaktieren Sie uns\" hinterlassen."
       },
       {
-        "name": "Wie ist Ihre Rückerstattungspolitik?",
-        "content1": "Informationen und Anweisungen zur Rückerstattung finden Sie vorrangig unter dem Link \"Rückerstattungspolitik\" am Ende der Seite oder kontaktieren Sie uns unter <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Wie lautet Ihre Rückerstattungsrichtlinie?",
+        "content1": "Für Informationen und Anweisungen zur Erstattung können Sie sich vorrangig an den Link \"Rückerstattungsrichtlinie\" am Ende der Seite wenden oder uns unter <span class='email_address'>support{'@'}detpractice.com</span> kontaktieren."
       }
     ],
     "qlList": {
@@ -287,36 +287,36 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Online-Kundenservice",
-        "tip": "Verfügbar Mo-Fr, 10:00 - 19:00 Uhr",
-        "btn": "Jetzt chatten"
+        "font": "Online-Kundendienst",
+        "tip": "Verfügbar Mo-Fr, 10:00 - 19:00",
+        "btn": "Jetzt live chatten"
       },
       "type2": {
-        "font": "E-Mail senden",
-        "tip": "Antwort innerhalb eines Werktages"
+        "font": "E-Mail uns",
+        "tip": "Erhalten Sie innerhalb eines Werktages eine Antwort."
       },
       "type3": {
-        "font": "Nachricht hinterlassen",
-        "tip": "Wir antworten innerhalb eines Werktages",
-        "btn": "Jetzt Nachricht hinterlassen"
+        "font": "Hinterlassen Sie eine Nachricht",
+        "tip": "Wir werden Ihnen innerhalb eines Geschäftstags antworten.",
+        "btn": "Hinterlassen Sie jetzt eine Nachricht"
       }
     },
     "leftQuanYiList": [
-      "Unbegrenzt für Übungssitzungen",
-      "Zugriff auf über 18.000 Übungsfragen",
-      "Durchsehen von Beispielantworten mit hoher Punktzahl",
-      "Ausführliche Fragenanalyse",
-      "Prüfungswörterbuch mit häufigen Wörtern",
-      "Maßgeschneiderter Studienplan mit intelligenter Fragenauswahl",
-      "KI-gestützte Sprechbewertungen"
+      "<span class='strongfont'>Unbegrenzt</span> für Übungseinheiten",
+      "Zugriff auf <span class='strongfont'>18000+</span> Übungsfragen",
+      "Durchsuchen Sie <span class='strongfont'>höchstbewertete</span> Musterantworten",
+      "<span class='strongfont'>Umfassende</span> Frageanalyse",
+      "High-Frequency Exam <span class='strongfont'>Wort Buch</span>",
+      "Maßgeschneiderter <span class='strongfont'>Studienplan</span> mit intelligenter Fragenauswahl",
+      "KI-gesteuerte Sprechbewertungen"
     ],
     "mockQuanYiList": [
-      "Vollständige Probeprüfungen",
+      "<span class='strongfont'>Vollständige</span> Übungsprüfungen",
       "Testen Sie jederzeit",
-      "Nah an der echten DET-Prüfung",
-      "Genaue Bewertungspunkte",
+      "Nah an der <span class='strongfont'>realen DET Prüfung</span>",
+      "Genau Bewertungsergebnisse",
       "Detaillierter Bewertungsbericht",
-      "Ergebnisse in 5-30 Minuten verfügbar"
+      "Ergebnisse werden innerhalb von <span class='strongfont'>5-30 Minuten</span> verfügbar sein."
     ]
   },
   "blog": {
@@ -889,53 +889,53 @@
   },
   "tos": {
     "seometa": {
-      "title": "Nutzungsbedingungen | DET Practice – Duolingo English Test Preparation",
-      "description": "Informieren Sie sich über die Nutzungsbedingungen von DET Practice. Verstehen Sie die Richtlinien und Regelungen für die Nutzung unserer Plattform zur Vorbereitung auf den Duolingo English Test, einschließlich der Nutzerverantwortlichkeiten, Rechte und Nutzungsbedingungen.",
-      "keywords": "Nutzungsbedingungen, DET Practice, Duolingo English Test, Testvorbereitungsplattform, Nutzervereinbarung, Servicebedingungen, Online-Testvorbereitung, EPT-Richtlinien"
+      "title": "Geschäftsbedingungen - DET Übung",
+      "description": "Erkunden Sie die umfassenden Nutzungsbedingungen von DET Practice, einschließlich unserer Datenschutzrichtlinie und Nutzungshinweise. Stellen Sie Transparenz und Einhaltung sicher.",
+      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englisch-Sprachtest, Duolingo Englischprüfung, Duolingo Kompetenzprüfung"
     },
     "title": "Nutzungsbedingungen",
     "q1": {
       "title": "Zuletzt aktualisiert: 2023-11-20",
-      "a1": "Bitte lesen Sie diese Nutzungsbedingungen (\"Bedingungen\",\"AGB\") sorgfältig durch, bevor Sie die Website",
-      "a2": "(der \"Service\") nutzen, die von DET Practice (\"wir\",\"uns\" oder \"unser\") betrieben wird.",
-      "a3": "Ihr Zugang zu und die Nutzung des Services setzen voraus, dass Sie diese Bedingungen akzeptieren und einhalten. Diese Bedingungen gelten für alle Besucher, Nutzer und andere Personen, die auf den Service zugreifen oder ihn nutzen.",
-      "a4": "Durch den Zugriff auf oder die Nutzung des Services erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Teil der Bedingungen nicht einverstanden sind, dürfen Sie den Service nicht nutzen."
+      "a1": "Bitte lesen Sie diese Nutzungsbedingungen („Bedingungen“, „TOS“) sorgfältig durch, bevor Sie die",
+      "a2": "Website (der „Service“) betrieben von DET Practice („uns“, „wir“ oder „unser“).",
+      "a3": "Ihr Zugriff auf und die Nutzung des Dienstes ist an Ihre Annahme dieser Bedingungen und die Einhaltung dieser Bedingungen geknüpft. Diese Bedingungen gelten für alle Besucher, Benutzer und andere, die auf den Dienst zugreifen oder ihn nutzen.",
+      "a4": "Durch den Zugriff auf den Dienst oder die Nutzung desselben erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Teil der Bedingungen nicht einverstanden sind, dürfen Sie nicht auf den Dienst zugreifen."
     },
     "q2": {
       "title": "Konten",
-      "a1": "Wenn Sie bei uns ein Konto erstellen, müssen Sie uns jederzeit genaue, vollständige und aktuelle Informationen zur Verfügung stellen. Ein Verstoß dagegen stellt eine Verletzung der Bedingungen dar, die zur sofortigen Kündigung Ihres Kontos führen kann.",
-      "a2": "Sie sind für den Schutz des Passworts verantwortlich, das Sie für den Zugriff auf den Service verwenden, sowie für alle Aktivitäten oder Handlungen unter Ihrem Passwort, unabhängig davon, ob Ihr Passwort bei unserem Service oder einem Drittanbieterdienst verwendet wird.",
-      "a3": "Sie verpflichten sich, Ihr Passwort keinem Dritten mitzuteilen. Sie müssen uns unverzüglich informieren, wenn Sie von einer Sicherheitsverletzung oder einer unbefugten Nutzung Ihres Kontos Kenntnis erlangen."
+      "a1": "Wenn Sie ein Konto bei uns erstellen, müssen Sie uns jederzeit genaue, vollständige und aktuelle Informationen zur Verfügung stellen. Andernfalls verstößt dies gegen die Bedingungen, was zur sofortigen Kündigung Ihres Kontos bei unserem Service führen kann.",
+      "a2": "Sie sind verantwortlich für den Schutz des Passworts, das Sie zur Nutzung des Dienstes verwenden, und für alle Aktivitäten oder Aktionen unter Ihrem Passwort, unabhängig davon, ob Ihr Passwort bei unserem Dienst oder einem Drittanbieterdienst ist.",
+      "a3": "Sie stimmen zu, Ihr Passwort keiner dritten Partei offenzulegen. Sie müssen uns unverzüglich benachrichtigen, sobald Sie von einem Sicherheitsverstoß oder einer unbefugten Nutzung Ihres Kontos Kenntnis erlangen."
     },
     "q3": {
       "title": "Links zu anderen Websites",
-      "a1": "Unser Service kann Links zu Websites oder Diensten von Drittanbietern enthalten, die nicht im Besitz von DET Practice sind oder von DET Practice kontrolliert werden.",
-      "a2": "DET Practice hat keine Kontrolle über und übernimmt keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder die Praktiken von Websites oder Diensten Dritter. Sie erkennen an und stimmen zu, dass DET Practice weder direkt noch indirekt für Schäden oder Verluste verantwortlich oder haftbar ist, die durch die Nutzung von oder das Vertrauen auf Inhalte, Waren oder Dienstleistungen verursacht werden, die über solche Websites oder Dienste verfügbar sind.",
-      "a3": "Wir empfehlen Ihnen dringend, die Nutzungsbedingungen und Datenschutzrichtlinien aller von Ihnen besuchten Websites oder Dienste Dritter zu lesen."
+      "a1": "Unser Service kann Links zu Websites oder Diensten von Drittanbietern enthalten, die nicht Eigentum von DET Practice sind oder von DET Practice kontrolliert werden.",
+      "a2": "DET Practice hat keine Kontrolle über und übernimmt keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter. Sie erkennen ferner an und erklären sich damit einverstanden, dass DET Practice nicht direkt oder indirekt für Schäden oder Verluste verantwortlich oder haftbar gemacht werden kann, die durch oder im Zusammenhang mit der Nutzung oder dem Vertrauen auf solche Inhalte, Waren oder Dienstleistungen, die auf oder über solche Websites oder Dienste verfügbar sind, verursacht oder angeblich verursacht wurden.",
+      "a3": "Wir raten Ihnen dringend, die Geschäftsbedingungen und Datenschutzrichtlinien aller Drittanbieter-Websites oder -Dienste, die Sie besuchen, zu lesen."
     },
     "q4": {
-      "title": "Kündigung",
-      "a1": "Wir können Ihr Konto sofort und ohne vorherige Ankündigung oder Haftung aus beliebigem Grund kündigen oder sperren, insbesondere wenn Sie gegen die Bedingungen verstoßen.",
-      "a2": "Mit der Kündigung erlischt Ihr Recht zur Nutzung des Services sofort. Wenn Sie Ihr Konto kündigen möchten, können Sie die Nutzung des Services einfach einstellen.",
-      "a3": "Alle Bestimmungen der Bedingungen, die ihrer Natur nach auch nach der Kündigung gelten sollten, bleiben nach der Kündigung bestehen, einschließlich, aber nicht beschränkt auf Eigentumsbestimmungen, Gewährleistungsausschlüsse, Entschädigung und Haftungsbeschränkungen."
+      "title": "Beendigung",
+      "a1": "Wir können Ihr Konto sofort, ohne vorherige Ankündigung oder Haftung, aus beliebigen Gründen kündigen oder sperren, einschließlich, aber nicht beschränkt auf, wenn Sie gegen die {Terms} verstoßen.",
+      "a2": "Nach der Kündigung endet Ihr Recht zur Nutzung des Dienstes sofort. Wenn Sie Ihr Konto kündigen möchten, können Sie einfach die Nutzung des Dienstes einstellen.",
+      "a3": "Alle Bestimmungen der Bedingungen, die ihrer Natur nach die Beendigung überdauern sollten, bleiben nach der Beendigung bestehen, einschließlich, aber nicht beschränkt auf Eigentumsbestimmungen, Gewährleistungsausschlüsse, Entschädigung und Haftungsbeschränkungen."
     },
     "q5": {
       "title": "Haftungsausschluss",
-      "a1": "Die Nutzung des Services erfolgt auf Ihr eigenes Risiko. Der Service wird WIE BESEHEN\" und WIE VERFÜGBAR\" bereitgestellt. Der Service wird ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck, Nichtverletzung von Rechten Dritter oder Leistungserbringung."
+      "a1": "Ihre Nutzung des Dienstes erfolgt auf Ihr eigenes Risiko. Der Dienst wird auf einer „WIE BESEHEN“ und „WIE VERFÜGBAR“ Basis bereitgestellt. Der Dienst wird ohne jegliche Gewährleistungen bereitgestellt, ob ausdrücklich oder stillschweigend, einschließlich, aber nicht beschränkt auf, stillschweigende Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck, Nichtverletzung von Rechten oder Leistungsfähigkeit."
     },
     "q6": {
-      "title": "Geltendes Recht",
-      "a1": "Diese Bedingungen unterliegen den Gesetzen des Vereinigten Königreichs und werden nach diesen ausgelegt, ohne Berücksichtigung von Kollisionsnormen.",
-      "a2": "Wenn wir ein Recht oder eine Bestimmung dieser Bedingungen nicht durchsetzen, gilt dies nicht als Verzicht auf diese Rechte. Sollte eine Bestimmung dieser Bedingungen von einem Gericht für ungültig oder nicht durchsetzbar erklärt werden, bleiben die übrigen Bestimmungen dieser Bedingungen in Kraft. Diese Bedingungen stellen die gesamte Vereinbarung zwischen uns in Bezug auf unseren Service dar und ersetzen alle früheren Vereinbarungen, die wir möglicherweise in Bezug auf den Service getroffen haben."
+      "title": "Anwendbares Recht",
+      "a1": "Diese Bedingungen unterliegen den Gesetzen des Vereinigten Königreichs und werden in Übereinstimmung mit diesen ausgelegt, ohne Rücksicht auf deren Kollisionsnormen.",
+      "a2": "Unser Versäumnis, ein Recht oder eine Bestimmung dieser Bedingungen durchzusetzen, wird nicht als Verzicht auf diese Rechte betrachtet. Wenn eine Bestimmung dieser Bedingungen von einem Gericht für ungültig oder nicht durchsetzbar erklärt wird, bleiben die übrigen Bestimmungen dieser Bedingungen in Kraft. Diese Bedingungen stellen die gesamte Vereinbarung zwischen uns in Bezug auf unseren Service dar und ersetzen alle früheren Vereinbarungen, die wir möglicherweise in Bezug auf den Service getroffen haben."
     },
     "q7": {
       "title": "Änderungen",
-      "a1": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit nach eigenem Ermessen zu ändern oder zu ersetzen. Bei wesentlichen Änderungen werden wir versuchen, Sie mindestens 15 Tage vor Inkrafttreten der neuen Bedingungen zu informieren. Was eine wesentliche Änderung darstellt, wird in unserem alleinigen Ermessen bestimmt.",
-      "a2": "Durch die weitere Nutzung unseres Services nach Inkrafttreten dieser Änderungen erklären Sie sich mit den geänderten Bedingungen einverstanden. Wenn Sie mit den neuen Bedingungen nicht einverstanden sind, stellen Sie bitte die Nutzung des Services ein."
+      "a1": "Wir behalten uns das Recht vor, nach eigenem Ermessen diese Bedingungen jederzeit zu ändern oder zu ersetzen. Wenn eine Änderung wesentlich ist, werden wir versuchen, mindestens 15 Tage im Voraus eine Benachrichtigung bereitzustellen, bevor neue Bedingungen in Kraft treten. Was eine wesentliche Änderung darstellt, wird nach unserem alleinigen Ermessen bestimmt.",
+      "a2": "Durch die fortgesetzte Nutzung unseres Dienstes nach Inkrafttreten dieser Änderungen stimmen Sie den geänderten Bedingungen zu. Wenn Sie den neuen Bedingungen nicht zustimmen, stellen Sie bitte die Nutzung des Dienstes ein."
     },
     "q8": {
-      "title": "Kontakt",
-      "a1": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte."
+      "title": "Kontaktieren Sie uns",
+      "a1": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte."
     }
   },
   "sitemap": {

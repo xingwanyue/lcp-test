@@ -51,22 +51,8 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": [
-      "DET刷题",
-      "AI写作批改",
-      "AI口语评测",
-      "全真模考",
-      "DET课程"
-    ],
-    "Company": [
-      "关于我们",
-      "联系我们",
-      "服务条款",
-      "隐私政策",
-      "网站地图",
-      "合作计划",
-      "退款说明"
-    ],
+    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
+    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -81,25 +67,21 @@
       "DET 词汇",
       "DET 准备技巧",
       "DET 学习"
-    ]
+    ],
+    "igetit": "好的，明白了"
   },
   "index": {
     "seometa": {
       "title": "DET Practice - 多邻国英语测试一站式备考平台",
-      "description": "DET Practice，最好的多邻国英语测试备考平台。我们提供海量题库、1比1全真模拟考试、AI口语\n写作批改服务和DET课程。",
-      "keywords": "多邻国英语测试，DET Duolingo, DET测试, Duolingo考试, Duolingo在线测试, Duolingo英语语言\n测试, Duolingo英语考试, Duolingo英语能力考试, 英语能力测试Duolingo, Duolingo能力测试,\nDuolingo英语能力测试, Duolingo英语测试, 英语Duolingo测试"
+      "description": "DET Practice，最好的多邻国英语测试备考平台。我们提供海量题库、1比1全真模拟考试、AI口语 写作批改服务和DET课程。",
+      "keywords": "多邻国英语测试，DET Duolingo, DET测试, Duolingo考试, Duolingo在线测试, Duolingo英语语言 测试, Duolingo英语考试, Duolingo英语能力考试, 英语能力测试Duolingo, Duolingo能力测试, Duolingo英语能力测试, Duolingo英语测试, 英语Duolingo测试"
     },
     "bigtitle1": "高分者数量（130+ 分）：10000+",
-    "bigtitle2": "超过850条评价的卓越4.8/5评分！",
+    "bigtitle2": "850+用户好评如潮，评分高达4.8分！",
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": [
-      "DET 练习",
-      "AI纠正",
-      "全长模拟",
-      "DET 课程"
-    ],
+    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -138,21 +120,21 @@
       "btn_img_alt": "黄色箭头右"
     },
     "article4": {
-      "title": "DET 说话 AI 纠正",
-      "tips1": "支持 \"先听，然后说\", \"谈谈照片\", \"阅读后说\", \"口语样本\"",
-      "tips2": "AI评分, AI评估结果, 教师指导",
+      "title": "多邻国英语口语AI批改",
+      "tips1": "支持\"听说题\"、\"看图说话\"、\"朗读题\"、\"口语样本\"",
+      "tips2": "AI评分、AI评估结果、教师指导",
       "tips3": "准确的评估分数，详细的评估报告",
-      "tips4": "结果将在<span class='yellow'>1-5分钟</span>内可用",
-      "btn_font": "了解更多",
+      "tips4": "<span class='yellow'>1-5分钟</span>内出分",
+      "btn_font": "了解详情",
       "btn_img_alt": "黄色箭头右"
     },
     "article5": {
-      "title": "Duolingo English Test 课程",
-      "tips1": "开发对 <span class='yellow'>深入了解</span> DET 口语和写作部分的深入理解与我们的详细指南",
-      "tips2": "实现全面掌握",
-      "tips3": "向ESL专家学习",
-      "tips4": "保持知情，走在前列",
-      "btn_font": "探索更多",
+      "title": "多邻国英语考试课程",
+      "tips1": "详细指导，深入学习",
+      "tips2": "全面精通口语写作",
+      "tips3": "由ESL专家制作",
+      "tips4": "保持更新，学习领先一步",
+      "btn_font": "了解更多",
       "btn_img_alt": "黄色箭头向右"
     },
     "thousand": "k",
@@ -162,8 +144,8 @@
     "Join_Them": "加入他们"
   },
   "slogen": {
-    "title": "<div class='font1'>开启你的高分之路</div><div class='font2'>Duolingo English Test !</div>",
-    "Start_free_with_Google": "开始免费使用 Google",
+    "title": "<div class='font1'>开启你的多邻国英语考试高分之路！</div>",
+    "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "用电子邮件免费开始",
     "Start_for_free": "免费开始"
   },
@@ -190,18 +172,18 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET 练习 - Duolingo 考试准备会员和服务定价",
-      "description": "为您的Duolingo English Test准备选择正确的计划。个性化实践、专业评论和全面模拟考试的价格实惠的选择。",
-      "keywords": "keyDET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练度考试words"
+      "title": "Duolingo English Test备考定价 | 实惠的DET备考方案",
+      "description": "Duolingo English Test备考价格方案。我们提供灵活实惠的备考计划，助你轻松扎实备考多邻国英语测试。立即选择适合你的方案，开启学习之旅！",
+      "keywords": "Duolingo English Test备考价格, 多邻国英语测试备考方案, Duolingo English Test备考, DET定价, 英语水平测试价格, 多邻国英语考试备考方案"
     },
     "pagefont": {
-      "h1": "选择适合您的计划",
+      "h1": "选择最适合你的方案",
       "h4": " 安全付款！随时取消！现在就掌握DET！",
       "switch1": "服务",
       "switch2": "课程",
       "sep": "安全支付",
-      "ca": "随时取消",
-      "atde": "掌握DET现在",
+      "ca": "随时可取消",
+      "atde": "轻松掌握DET",
       "circle_check_icon": "circle_check_icon",
       "apcs1": "AI校正服务",
       "Most_Popular_Choice": "最受欢迎的选择",
@@ -223,7 +205,7 @@
       "green_check": "绿色检查",
       "arrow_down": "向下箭头",
       "free_font": "免费",
-      "free_tips": "您可以免费查看20个问题，试用我们的平台，看看是否符合您的需求。",
+      "free_tips": "可免费体验20道题目，试用我们的平台，了解是否符合你的需求。",
       "tff": "免费试用",
       "save": "节省 {num}%",
       "week": "/周",
@@ -237,32 +219,32 @@
     },
     "aqList": [
       {
-        "name": "DETPractice的计划和定价如何运作？",
-        "content": "我们为用户提供透明的计划和定价，没有隐藏费用。此外，我们还提供附加订阅套餐，以便您可以根据自己的需要选择服务。"
+        "name": "DET Practice的会员方案和定价是如何运作的？",
+        "content": "我们为用户提供透明的会员方案和定价，绝无隐藏费用。此外，我们还提供附加订阅套餐，让你可以根据需求选择服务。"
       },
       {
-        "name": "是否有免费试用？",
-        "content": "是的！你可以免费查看20个问题。帮助你在购买更多服务之前了解我们。"
+        "name": "有免费试用吗？",
+        "content": "当然！你可以免费体验20道题目，帮助你在购买更多服务前了解我们的平台。"
       },
       {
         "name": "你们提供任何折扣吗？",
         "content": "是的！我们为每项服务提供量身定制的折扣。然而，当您选择30天服务时，您将获得比其他服务更大的折扣。有关更多信息，请参见上面的价格详情。"
       },
       {
-        "name": "我的付款成功了，但升级失败。",
-        "content": "请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。这是解决您问题的最简单和最快的方法。"
+        "name": "付款成功但未能升级会员？",
+        "content": "请通过在线客服或发送邮件至<span class='email_address'>support{'@'}detpractice.com</span>联系我们。这是解决问题最简单快捷的方式。"
       },
       {
-        "name": "我购买了课程但无法查看？",
-        "content": "成功购买课程后，您可以前往课程描述页面 <span class='email_address'>https://www.detpractice.com/courses</span> 查看和下载课程信息。如果您找不到课程信息，请通过聊天或电子邮件与我们联系：<span class='email_address'>support{'@'}detpractice.com</span>。"
+        "name": "已购买课程但无法查看，这是为什么？",
+        "content": "成功购买课程后，你可以前往课程介绍页面https://www.detpractice.com/courses查看并下载课程信息。如果找不到课程信息，请通过在线客服或发送邮件至<span class='email_address'>support{'@'}detpractice.com</span>联系我们。"
       },
       {
-        "name": "我应将反馈发送到哪里？",
-        "content": "您可以通过右下角的支持聊天发送反馈，或通过<span class='email_address'>support{'@'}detpractice.com</span>通过电子邮件联系我们。或者，您可以直接在“联系我们”部分留言。"
+        "name": "如何提供反馈？",
+        "content": "你可以通过右下角的客服对话框提供反馈，或发送邮件至<span class='email_address'>support{'@'}detpractice.com</span>。你也可以直接在“联系我们”栏目留言。"
       },
       {
-        "name": "您的退款政策是什么？",
-        "content1": "如需了解如何获得退款的信息和指南，您可以优先参考页面底部的“退款政策”链接，或通过<span class='email_address'>support{'@'}detpractice.com</span>与我们联系。"
+        "name": "退款政策是什么？",
+        "content1": "关于退款的信息和操作说明，你可以优先参考页面底部的“退款政策”链接，或直接联系<span class='email_address'>support{'@'}detpractice.com</span>。"
       }
     ],
     "qlList": {
@@ -306,35 +288,35 @@
     "contaceUsList": {
       "type1": {
         "font": "在线客服",
-        "tip": "周一至周五，10:00 - 19:00",
-        "btn": "立即在线聊天"
+        "tip": "服务时间：周一至周五，10:00 - 19:00",
+        "btn": "立即在线咨询"
       },
       "type2": {
-        "font": "给我们发电子邮件",
-        "tip": "在1个工作日内收到回复。"
+        "font": "邮件咨询",
+        "tip": "1个工作日内回复"
       },
       "type3": {
-        "font": "留言",
-        "tip": "我们将在一个工作日内回复您。",
-        "btn": "现在留言"
+        "font": "留言咨询",
+        "tip": "我们将在1个工作日内回复",
+        "btn": "立即留言"
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>无限制</span>的练习课",
-      "访问 <span class='strongfont'>18000+</span> 练习题",
-      "浏览 <span class='strongfont'>高分</span> 样本答案",
-      "<span class='strongfont'>深入</span> 问题分析",
-      "高频率考试<span class='strongfont'>单词书</span>",
-      "量身定制的<span class='strongfont'>学习计划</span>与智能问题选择",
+      "<span class='strongfont'>不限</span>练习次数",
+      "可访问 <span class='strongfont'>18000+</span> 习题",
+      "浏览 <span class='strongfont'>高分范文</span>",
+      "<span class='strongfont'>深度</span> 题目解析",
+      "高频考试<span class='strongfont'>词汇手册</span>",
+      "智能选题的个性化<span class='strongfont'>学习计划</span>",
       "AI 驱动的口语评估"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>全长</span> 模拟考试",
-      "随时测试",
-      "接近 <span class='strongfont'>真实 DET 考试</span>",
+      "<span class='strongfont'>1:1</span> 完整模考",
+      "随时参加测试",
+      "贴近 <span class='strongfont'>真实 DET 考试</span>",
       "准确的评估分数",
       "详细评估报告",
-      "结果将在<span class='strongfont'>5-30分钟</span>内可用"
+      "<span class='strongfont'>5-30分钟</span>内获得结果"
     ]
   },
   "blog": {
@@ -702,38 +684,38 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET 练习 - 最好的Duolingo模拟测试平台",
-      "description": "我们的 DET 试题库包括数千个问题，供广泛练习，配有详细解释和 AI 分析，帮助您成功。",
-      "keywords": "Duolingo English Test 练习, Duolingo 练习英语测试, Duolingo 英语练习测试, Duolingo 在线练习测试, Duolingo 测试练习, Duolingo 练习测试, Duolingo 练习, 挪威语练习测试, Duolingo English Test 分数"
+      "title": "多邻国英语考试（DET）练习题库 | 18000+题目模拟",
+      "description": "备考多邻国英语考试？我们的智能题库收录超过18000道练习题，配备AI智能反馈和学习进度跟 踪。已有超40万考生选择，助你高效备考，提升DET成绩。",
+      "keywords": "多邻国英语考试, DET备考, DET真题, DET模拟题, DET考试技巧, DET口语练习, DET写作训练, DET在 线练习, DET备考资料, AI口语评分"
     },
-    "h1": "Duolingo English Test 练习",
-    "desc": "获取丰富的测试题库，配有答案解析、模板、AI驱动的口语评估和智能规划。通过我们的AI驱动方法，高效且经济地提升你的分数。",
+    "h1": "Duolingo English Test 练习题库",
+    "desc": "获取专业全面的DET备考资源，包含详细解析、答题模板、AI口语评测及个性化学习规划。借助 先进AI技术，帮助您快速高效地实现理想成绩。",
     "alt": "DET 练习:最好的 Duolingo English Test 练习平台",
     "altbanner": "Duolingo English Test 练习",
     "bank_user_icon": "银行用户图标",
     "white_arrow_right": "白色箭头向右",
     "blue_arrow_right": "蓝色箭头右",
-    "learners_have": "{number} 名学习者已经使用我们的题库进行 DET 备考。",
+    "learners_have": "超过{number}考生的共同选择",
     "spn": "立即开始练习",
     "article1": {
-      "h2": "最大的题库",
-      "right_desc": "探索我们涵盖各种考试类型的庞大题库，拥有超过<span class='zdfont'>18,000+道题目</span>，不断更新以确保您的练习始终保持最新。我们的问题库旨在系统地增强您的应试能力，涵盖各种问题格式。",
-      "btn": "投入实践"
+      "h2": "最全题库",
+      "right_desc": "探索我们包含<span class='zdfont'>18,000+</span>道精选题目的题库，涵盖所有考试题型，并定期更新以紧跟最新考试 动态。系统化的练习设计，助您全面提升应试能力，适应各种题型要求。",
+      "btn": "深入练习"
     },
     "article2": {
       "h2": "智能推荐",
-      "right_desc": "<span class='zdfont'>AI模型</span>将考虑每种题型的掌握水平、难度、目标分数、题目权重、题目的新颖性、最近的测试频率、准备时间和评分效率等因素，以准确推荐题目，帮助你高效备考。",
-      "btn": "开启智慧学习之旅"
+      "right_desc": "<span class='zdfont'>AI模型</span>根据多维度数据为您精准推荐练习题目：题型掌握程度、难度系数、目标分数、考点 权重、题目更新情况、考试最新趋势、备考时间规划及得分效率分析等，帮助您事半功倍。",
+      "btn": "开启你的智能学习之旅"
     },
     "article3": {
-      "h2": "AI 语言表达评估",
-      "right_desc": "通过我们的<span class='zdfont'>AI驱动的口语评估</span>提升你的口语能力。提交你对一个口语问题的回答，立即获得详细的口语技巧分析，帮助你精准快速地提高。",
-      "btn": "开始您的评估"
+      "h2": "AI口语评估",
+      "right_desc": "运用<span class='zdfont'>AI驱动</span>的语音评测提升口语水平。提交口语答案后即时获取详细能力分析报告，帮助您 快速且精准地找准提升方向。",
+      "btn": "开始评估"
     },
     "article4": {
-      "h2": "答案分析",
-      "right_desc": "深入了解全面的答案解释，深化您对基本概念和解决问题技巧的理解。我们的详细分析不仅引导您找到正确答案，还能扩展您的知识，提高您的学习效率。",
-      "btn": "探索答案洞察"
+      "h2": "答案解析",
+      "right_desc": "每题配备全面详实的解析说明，帮助您深入理解核心考点和解题思路。解析内容不仅指明正 确答案，更注重知识拓展和学习方法指导。",
+      "btn": "深入了解答案解析"
     }
   },
   "speakingaicorrection": {
@@ -907,53 +889,53 @@
   },
   "tos": {
     "seometa": {
-      "title": "条款和条件 - DET 练习",
-      "description": "探索DETPractice全面的服务条款，包括我们的隐私政策和使用指南。确保透明度和合规性。",
-      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练考试"
+      "title": "服务条款 | DET Practice –多邻国英语测试备考平台",
+      "description": "了解 DET Practice 的服务条款，掌握使用我们平台备考 Duolingo 英语测试的相关指南和政策，包括用户责任、权利以及使用条款。",
+      "keywords": "服务条款, DET Practice, 多邻国英语测试, 测试备考平台, 用户协议, 服务条款, 在线备考, EPT 政策"
     },
     "title": "服务条款",
     "q1": {
-      "title": "上次更新：2023-11-20",
-      "a1": "请仔细阅读这些服务条款（“条款”、“TOS”）然后再使用该",
-      "a2": "由DET Practice（“我们”或“我们的”）运营的网站（“服务”）。",
-      "a3": "您访问和使用本服务的前提是您接受并遵守这些条款。这些条款适用于所有访问或使用本服务的访客、用户和其他人。",
-      "a4": "通过访问或使用本服务，您同意受这些条款的约束。如果您不同意任何部分的条款，则您可能无法访问本服务。"
+      "title": "最后更新：2023-11-20",
+      "a1": "在使用",
+      "a2": "网站（以下简称“服务”）前，请仔细阅读这些服务条款（“条款”，“TOS”）。这些条款由 DET Practice（“我们”，“我们公司”或“我们的”）运营。  ",
+      "a3": "您对服务的访问和使用取决于您是否接受并遵守这些条款。这些条款适用于所有访问或使用该服务的访客、用户及其他人。",
+      "a4": "通过访问或使用该服务，您同意受这些条款的约束。如果您不同意其中的任何部分，您将无法访问该服务。"
     },
     "q2": {
       "title": "帐户",
-      "a1": "当您创建帐户时，您必须随时向我们提供准确、完整和最新的信息。不这样做将构成违反条款，这可能导致您的帐户在我们的服务中被立即终止。",
-      "a2": "您有责任保护用于访问{Service}的密码，以及对在您的密码下进行的任何活动或行为，无论您的密码是用于我们的{Service}还是第三方服务。",
-      "a3": "您同意不向任何第三方透露您的密码。您必须在发现任何安全漏洞或未经授权使用您的帐户时立即通知我们。"
+      "a1": "当您在我们这里创建账户时，必须提供准确、完整和最新的信息。如果未能做到这一点，将构成违反条款，可能导致立即终止您在我们服务上的账户。",
+      "a2": "您有责任保护用于访问服务的密码，并对任何在您的密码下发生的活动或操作负责，无论您的密码是否与我们的服务或第三方服务相关。",
+      "a3": "您同意不向任何第三方透露您的密码。如果您发现安全漏洞或账户未经授权的使用，您必须立即通知我们。"
     },
     "q3": {
-      "title": "指向其他网站的链接",
-      "a1": "我们的服务可能包含指向第三方网站或服务的链接，这些网站或服务不由DET Practice拥有或控制。",
-      "a2": "DET Practice 不控制也不承担任何第三方网站或服务的内容、隐私政策或实践的责任。您进一步承认并同意，DET Practice 不应对任何因使用或依赖任何此类网站或服务上的内容、商品或服务而导致或声称导致的任何损害或损失直接或间接负责。",
-      "a3": "我们强烈建议您阅读您访问的任何第三方网站或服务的条款和条件以及隐私政策。"
+      "title": "链接到其他网站",
+      "a1": "我们的服务可能包含指向第三方网站或服务的链接，这些网站或服务不由 DET Practice 拥有或控制。",
+      "a2": "DET Practice 对任何第三方网站或服务的内容、隐私政策或实践不承担任何责任，也不对因使用或依赖任何此类网站或服务上的内容、商品或服务而引起或声称引起的任何损害或损失负责。",
+      "a3": "我们强烈建议您阅读您访问的任何第三方网站或服务的条款和隐私政策。"
     },
     "q4": {
       "title": "终止",
-      "a1": "我们可能会立即终止或暂停您的账户，恕不另行通知或承担责任，无论出于何种原因，包括但不限于如果您违反了条款。",
-      "a2": "一旦终止，您使用服务的权利将立即停止。如果您希望终止账户，您可以简单地停止使用该服务。",
-      "a3": "所有条款中按其性质应在终止后继续有效的规定将在终止后继续有效，包括但不限于所有权规定、免责声明、赔偿条款和责任限制。"
+      "a1": "我们可以在没有提前通知或责任的情况下，因任何原因立即终止或暂停您的账户，包括但不限于您违反条款的情况。",
+      "a2": "账户终止后，您使用服务的权利将立即停止。如果您希望终止账户，您只需停止使用服务即可。",
+      "a3": "所有由于其性质应在终止后仍然有效的条款将继续有效，包括但不限于所有权条款、免责声明、赔偿条款和责任限制。"
     },
     "q5": {
       "title": "免责声明",
-      "a1": "您使用本服务的风险由您自己承担。本服务是在“按现状”和“按可用”基础上提供的。服务不提供任何种类的保证，无论是明示或默示的，包括但不限于对适销性、特定用途适用性、未侵权或履约过程的默示保证。"
+      "a1": "您使用本服务的风险由您自行承担。本服务是基于“按原样”和“按可用性”提供的。本服务不提供任何形式的保证，无论是明示的还是暗示的，包括但不限于对适销性、特定用途的适用性、不侵犯权利或履行过程的暗示保证。"
     },
     "q6": {
-      "title": "管辖法律",
-      "a1": "这些条款应受英国法律管辖并依其解释，而不考虑其法律冲突规定。",
-      "a2": "我们未能执行这些条款的任何权利或规定，不会被视为对这些权利的放弃。如果这些条款的任何规定被法院认定为无效或不可执行，这些条款的其余规定将继续有效。这些条款构成我们之间关于服务的完整协议，并取代我们之间之前可能就服务达成的任何协议。"
+      "title": "适用法律",
+      "a1": "这些条款应适用英国法律，并根据英国法律进行解释，而不考虑其法律冲突规定",
+      "a2": "我们未能执行这些条款的任何权利或条款，不能视为放弃这些权利。如果任何条款被法院判定为无效或无法执行，其他条款仍将继续有效。这些条款构成我们之间关于服务的完整协议，并取代和替代我们之间之前可能就服务达成的任何协议。"
     },
     "q7": {
-      "title": "更改",
-      "a1": "我们保留在我们自行决定的情况下随时修改或替换这些条款的权利。如果修订内容重大，我们将尝试在任何新条款生效之前至少提供15天的通知。重大变更的构成将由我们自行决定。",
-      "a2": "在这些修订生效后继续访问或使用我们的服务，即表示您同意受修订条款的约束。如果您不同意新条款，请停止使用该服务。"
+      "title": "变更",
+      "a1": "我们保留随时自行修改或替换这些条款的权利。如果修订内容较为重大，我们会尽力在新条款生效前至少提前15天通知您。是否为重大变化将由我们自行决定。  ",
+      "a2": "在这些修订生效后继续访问或使用我们的服务，即表示您同意接受修订后的条款。如果您不同意新条款，请停止使用服务。"
     },
     "q8": {
       "title": "联系我们",
-      "a1": "如果您对这些条款有任何疑问，请联系我们。"
+      "a1": "如果您对这些条款有任何疑问，请联系我们"
     }
   },
   "sitemap": {

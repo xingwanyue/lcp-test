@@ -81,7 +81,8 @@
       "DET Vocabulary",
       "DET Prep Tips",
       "DET Learn"
-    ]
+    ],
+    "igetit": "OK, got it"
   },
   "index": {
     "seometa": {
@@ -94,12 +95,7 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": [
-      "DET Practice",
-      "AI Correction",
-      "Full-Length Mock",
-      "DET Courses"
-    ],
+    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -190,9 +186,9 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Practice - Duolingo Test Prep Membership and Services Pricing",
-      "description": "Choose the right plan for your Duolingo English Test preparation. Affordable pricing options for personalized practice, expert reviews, and full-scale mock exams.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Examwords"
+      "title": "Duolingo English Test Prep Pricing | Affordable DET Prep Plans",
+      "description": "Discover Duolingo English Test prep pricing options at DET Practice. Choose from flexible and affordable plans tailored to help you succeed in your Duolingo Test prep. Start your journey with the right plan today!",
+      "keywords": "Duolingo English Test prep pricing, Duolingo Test prep plans, affordable DET practice, Duolingo English Test prep, DET pricing, English proficiency test pricing, test prep plans"
     },
     "pagefont": {
       "h1": "Choose The Plan That Works For You",
@@ -222,7 +218,7 @@
       "green_check": "Green Check",
       "arrow_down": "Down Arrow",
       "free_font": "Free",
-      "free_tips": "You can view 20 questions for free, try our platform and see if it fits your needs.",
+      "free_tips": "You can view 20 questions for free, try our platform, and see if it fits your needs.",
       "tff": "Try for free",
       "save": "Save {num}% ",
       "week": "/week",
@@ -701,9 +697,9 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Practice - The best platform for Duolingo practice test",
-      "description": "Our DET test bank includes thousands of questions for extensive training, complete with detailed explanations and AI analysis to help you succeed.",
-      "keywords": "Duolingo English Test Practice, Duolingo Practice English Test, Duolingo English Practice Test, Duolingo Practice Test Online, Duolingo Test Practice, Duolingo Practice Test, Duolingo Practice, Det Practice Test, Duolingo English Test Score"
+      "title": "Duolingo English Test Practice | Ultimate DET Question Bank by DET Practice",
+      "description": "Looking for Duolingo English Test practice? Access our 18,000+ questions with AI feedback and smart tracking. Join 400k+ learners to boost your DET score effectively",
+      "keywords": "Duolingo English Test practice, DET practice questions, DET sample questions, Duolingo test preparation, DET question bank, DET speaking practice, DET writing practice, online English test practice, DET study materials, AI speaking evaluation"
     },
     "h1": "Duolingo English Test Practice",
     "desc": "Gain access to an extensive collection of test questions, enhanced with answer analysis, templates, AI-driven speaking evaluations, and smart planning. Accelerate your score improvement efficiently and affordably with our AI-powered approach.",
@@ -722,7 +718,7 @@
     "article2": {
       "h2": "Intelligent Recommendation",
       "right_desc": "The <span class='zdfont'>AI model</span> will take into account the mastery level of each question type, difficulty,target score, question weight, novelty of the questions, the recent frequency of the test, preparation time and efficiency of scoring, etc. to accurately recommend questions to help you efficiently prepare for the test.",
-      "btn": "Start Smart Study Journey"
+      "btn": "Start Your Smart Study Journey"
     },
     "article3": {
       "h2": "AI Speaking Evaluation",
@@ -905,16 +901,16 @@
   },
   "tos": {
     "seometa": {
-      "title": "Terms and Conditions - DET Practice",
-      "description": "Explore DET Practice's comprehensive Terms of Service, including our Privacy Policy and Usage Guidelines. Ensure transparency and compliance.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Terms of Service | DET Practice – Duolingo English Test Preparation",
+      "description": "Explore the Terms of Service for DET Practice. Understand the guidelines and policies for using our platform to prepare for the Duolingo English Test, including user responsibilities, rights, and terms of use.",
+      "keywords": "Terms of Service, DET Practice, Duolingo English Test, test preparation platform, user agreement, service terms, online test prep, EPT policies"
     },
     "title": "Terms of Service",
     "q1": {
       "title": "Last updated: 2023-11-20",
-      "a1": "Please read these Terms of Service (“Terms”, “TOS”) carefully before using the",
+      "a1": "Please read these Terms of Service (“Terms”, “TOS”) carefully before using the ",
       "a2": "website (the “Service”) operated by DET Practice (“us”, “we”, or “our”).",
-      "a3": " Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.",
+      "a3": "Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.",
       "a4": "By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service."
     },
     "q2": {
