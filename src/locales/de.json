@@ -758,41 +758,43 @@
     "h1": "Datenschutzerklärung",
     "q1": {
       "title": "Zuletzt aktualisiert: 2023-11-20",
-      "a1": "DET Practice („uns“, „wir“ oder „unser“) betreibt die DET Practice-Website (den „Service“).",
-      "a2": "Diese Seite informiert Sie über unsere Richtlinien bezüglich der Erhebung, Nutzung und Offenlegung von persönlichen Informationen, wenn Sie unseren Service nutzen.",
-      "a3": "Wir werden Ihre Informationen nicht verwenden oder weitergeben, außer wie in dieser Datenschutzrichtlinie beschrieben.",
-      "a4": "Wir verwenden Ihre persönlichen Informationen, um den Service bereitzustellen und zu verbessern. Durch die Nutzung des Services stimmen Sie der Erfassung und Verwendung von Informationen gemäß dieser Richtlinie zu. Sofern in dieser Datenschutzrichtlinie nicht anders definiert, haben Begriffe in dieser Datenschutzrichtlinie die gleiche Bedeutung wie in unseren Allgemeinen Geschäftsbedingungen, zugänglich unter",
-      "a5": "Sammlung und Verwendung von Informationen",
-      "a6": "Während der Nutzung unseres Dienstes bitten wir Sie möglicherweise, uns bestimmte persönlich identifizierbare Informationen bereitzustellen, die verwendet werden können, um Sie zu kontaktieren oder zu identifizieren. Persönlich identifizierbare Informationen („Persönliche Informationen“) können unter anderem Folgendes umfassen:",
+      "a1": "DET Practice (\"uns\",\"wir\" oder ,\"unser\") betreibt die DET Practice Website (der ,\"Dienst\").",
+      "a2": "Diese Seite informiert Sie über unsere Richtlinien bezüglich der Erhebung, Nutzung und Offenlegung personenbezogener Daten bei der Nutzung unseres Dienstes.",
+      "a3": "Wir werden Ihre Informationen nicht verwenden oder mit anderen teilen, außer wie in dieser Datenschutzerklärung beschrieben.",
+      "a4": "Wir nutzen Ihre personenbezogenen Daten zur Bereitstellung und Verbesserung des Dienstes. Durch die Nutzung des Dienstes stimmen Sie der Erhebung und Nutzung von Informationen gemäß dieser Richtlinie zu. Sofern in dieser Datenschutzerklärung nicht anders definiert, haben die hier verwendeten Begriffe dieselbe Bedeutung wie in unseren Nutzungsbedingungen, die unter",
+      "a4_1": "zugänglich sind.",
+      "a5": "Erhebung und Verwendung von Informationen",
+      "a6": "Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte personenbezogene Daten zur Verfügung zu stellen, die zur Kontaktaufnahme oder Identifizierung verwendet werden können. Zu den personenbezogenen Daten (Personenbezogene Daten\") können unter anderem gehören:",
       "a7": "• Name",
       "a8": "• E-Mail-Adresse"
     },
     "q2": {
       "title": "Protokolldaten",
-      "a1": "Wir sammeln Informationen, die Ihr Browser sendet, wann immer Sie unseren Dienst besuchen („Protokolldaten”). Diese Protokolldaten können Informationen wie die Internetprotokoll-Adresse („IP”) Ihres Computers, den Browsertyp, die Browserversion, die Seiten unseres Dienstes, die Sie besuchen, die Uhrzeit und das Datum Ihres Besuchs, die auf diesen Seiten verbrachte Zeit und andere Statistiken enthalten."
+      "a1": "Wir erfassen Informationen, die Ihr Browser sendet, wenn Sie unseren Dienst besuchen (\"Protokolldaten\"). Diese Protokolldaten können Informationen wie die Internet Protocol (\"IP\")-Adresse Ihres Computers, Browsertyp, Browserversion, die von Ihnen besuchten Seiten unseres Dienstes, Datum und Uhrzeit Ihres Besuchs, die auf diesen Seiten verbrachte Zeit und andere Statistiken umfassen."
     },
     "q3": {
       "title": "Cookies",
-      "a1": "Cookies sind Dateien mit einer kleinen Datenmenge, die eine anonyme eindeutige Kennung enthalten können. Cookies werden von einer Website an Ihren Browser gesendet und auf der Festplatte Ihres Computers gespeichert.",
-      "a2": "Wir verwenden „Cookies“, um Informationen zu sammeln. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Dienstes nicht nutzen."
+      "a1": "Cookies sind Dateien mit einer kleinen Datenmenge, die möglicherweise eine anonyme eindeutige Kennung enthalten. Cookies werden von einer Website an Ihren Browser gesendet und auf der Festplatte Ihres Computers gespeichert.",
+      "a2": "Wir verwenden \"Cookies\" zur Erfassung von Informationen. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Dienstes nicht nutzen."
     },
     "q4": {
       "title": "Dienstleister",
-      "a1": "Wir können Drittunternehmen und Einzelpersonen einsetzen, um unseren Service zu erleichtern, den Service in unserem Namen bereitzustellen, dienstbezogene Dienstleistungen zu erbringen oder uns dabei zu unterstützen, zu analysieren, wie unser Service genutzt wird.",
-      "a2": "Diese Dritten haben nur Zugriff auf Ihre persönlichen Daten, um diese Aufgaben in unserem Auftrag auszuführen, und sind verpflichtet, diese nicht offenzulegen oder für andere Zwecke zu verwenden."
+      "a1": "Wir können Drittunternehmen und Einzelpersonen aus folgenden Gründen einsetzen: um unseren Dienst zu erleichtern; um den Dienst in unserem Namen bereitzustellen; um dienstbezogene Leistungen zu erbringen; oder um uns bei der Analyse zu helfen, wie unser Dienst genutzt wird.",
+      "a2": "Diese Dritten haben nur zur Erfüllung dieser Aufgaben in unserem Auftrag Zugriff auf Ihre personenbezogenen Daten und sind verpflichtet, diese nicht für andere Zwecke offenzulegen oder zu nutzen."
     },
     "q5": {
       "title": "Sicherheit",
-      "a1": "Die Sicherheit Ihrer persönlichen Daten ist uns wichtig, aber denken Sie daran, dass keine Methode der Übertragung über das Internet oder der elektronischen Speicherung 100% sicher ist. Während wir bestrebt sind, kommerziell akzeptable Mittel zu verwenden, um Ihre persönlichen Daten zu schützen, können wir deren absolute Sicherheit nicht garantieren."
+      "a1": "Die Sicherheit Ihrer personenbezogenen Daten ist uns wichtig. Bedenken Sie jedoch, dass keine Methode der Übertragung über das Internet oder der elektronischen Speicherung 100% sicher ist. Während wir uns bemühen, kommerziell angemessene Mittel zum Schutz Ihrer personenbezogenen Daten einzusetzen, können wir deren absolute Sicherheit nicht garantieren."
     },
     "q6": {
       "title": "Zahlungsinformationen & Sicherheit",
-      "a1": "Um Zahlungen in Ihrem Namen von Ihren Kunden einzuziehen und Ihnen Zahlungen zu leisten, erheben wir, unter Nutzung von Stripe als Drittanbieter-Zahlungsabwickler, Zahlungsinformationen von Ihnen, Ihren Teilnehmern und Kunden, Ihren Anbietern und anderen Parteien, an die wir in Ihrem Namen Zahlungen leisten und von denen wir in Ihrem Namen Zahlungen einziehen. Diese Informationen werden ausschließlich zur Einziehung und Bereitstellung von Zahlungen im Zusammenhang mit den Diensten verwendet und nur von Stripe gespeichert. Sie sollten die Nutzungsbedingungen und Datenschutzrichtlinien von Stripe prüfen, die verfügbar sind unter"
+      "a1": "Um Zahlungen in Ihrem Namen von Ihren Kunden einzuziehen und Ihnen Zahlungen zu leisten, erheben wir, unter Nutzung von Stripe als Drittanbieter-Zahlungsabwickler, Zahlungsinformationen von Ihnen, Ihren Teilnehmern und Kunden, Ihren Anbietern und anderen Parteien, an die wir in Ihrem Namen Zahlungen leisten und von denen wir in Ihrem Namen Zahlungen einziehen. Diese Informationen werden ausschließlich zur Einziehung und Bereitstellung von Zahlungen im Zusammenhang mit den Diensten verwendet und nur von Stripe gespeichert. Sie sollten die Nutzungsbedingungen und Datenschutzrichtlinien von Stripe prüfen, die verfügbar sind unter",
+      "a1_1": "verfügbar sind."
     },
     "q7": {
       "title": "Links zu anderen Websites",
-      "a1": "Unser Service kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Link eines Drittanbieters klicken, werden Sie zu der Website dieses Drittanbieters weitergeleitet. Wir raten Ihnen dringend, die Datenschutzrichtlinie jeder Website, die Sie besuchen, zu überprüfen.",
-      "a2": "Wir haben keine Kontrolle über und übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter."
+      "a1": "Unser Dienst kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Link eines Dritten klicken, werden Sie zu der Website dieses Dritten weitergeleitet. Wir empfehlen Ihnen dringend, die Datenschutzerklärung jeder Website zu überprüfen, die Sie besuchen.",
+      "a2": "Wir haben keine Kontrolle über die Inhalte, Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter und übernehmen keine Verantwortung dafür."
     }
   },
   "refundPolicy": {

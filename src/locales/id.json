@@ -51,7 +51,13 @@
     "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Tentang Kami",
-    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
+    "Products": [
+      "Latihan Soal DET",
+      "Koreksi Writing AI",
+      "Penilaian Speaking AI",
+      "Simulasi Ujian",
+      "Kursus DET"
+    ],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -90,7 +96,12 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -767,23 +778,24 @@
     "h1": "Kebijakan Privasi",
     "q1": {
       "title": "Terakhir diperbarui: 2023-11-20",
-      "a1": "DET Practice (\"kami\" atau \"milik kami\") mengoperasikan situs web DET Practice (the \"Service\").",
-      "a2": "Halaman ini memberitahu Anda tentang kebijakan kami mengenai pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi ketika Anda menggunakan Layanan kami.",
-      "a3": "Kami tidak akan menggunakan atau membagikan informasi Anda dengan siapa pun kecuali seperti yang dijelaskan dalam Kebijakan Privasi ini.",
-      "a4": "Kami menggunakan Informasi Pribadi Anda untuk menyediakan dan meningkatkan Layanan. Dengan menggunakan Layanan, Anda setuju terhadap pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Kecuali didefinisikan lain dalam Kebijakan Privasi ini, istilah yang digunakan dalam Kebijakan Privasi ini memiliki arti yang sama seperti yang ada di Syarat dan Ketentuan kami, yang dapat diakses di",
+      "a1": "DET Practice (\"kami\") mengoperasikan situs web DET Practice (\"Layanan\").",
+      "a2": "Halaman ini memberi tahu Anda tentang kebijakan kami mengenai pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi saat Anda menggunakan Layanan kami.",
+      "a3": "Kami tidak akan menggunakan atau membagikan informasi Anda dengan siapa pun kecuali sebagaimana dijelaskan dalam Kebijakan Privasi ini.",
+      "a4": "Kami menggunakan Informasi Pribadi Anda untuk menyediakan dan meningkatkan Layanan. Dengan menggunakan Layanan, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Kecuali didefinisikan lain dalam Kebijakan Privasi ini, istilah yang digunakan dalam Kebijakan Privasi ini memiliki arti yang sama seperti dalam Syarat dan Ketentuan kami, yang dapat diakses di",
+      "a4_1": " ",
       "a5": "Pengumpulan dan Penggunaan Informasi",
-      "a6": "Saat menggunakan Layanan kami, kami mungkin meminta Anda untuk memberikan informasi pribadi tertentu yang dapat digunakan untuk menghubungi atau mengidentifikasi Anda. Informasi pribadi (“Informasi Pribadi”) mungkin termasuk, tetapi tidak terbatas pada:",
+      "a6": "Saat menggunakan Layanan kami, kami mungkin meminta Anda untuk memberikan informasi pribadi tertentu yang dapat digunakan untuk menghubungi atau mengidentifikasi Anda. Informasi pribadi yang dapat diidentifikasi (\"Informasi Pribadi\") mungkin termasuk, namun tidak terbatas pada:",
       "a7": "• Nama",
       "a8": "• Alamat email"
     },
     "q2": {
       "title": "Data Log",
-      "a1": "Kami mengumpulkan informasi yang dikirimkan browser Anda setiap kali Anda mengunjungi Layanan kami (“Data Log”). Data Log ini dapat mencakup informasi seperti alamat Protokol Internet (“IP”) komputer Anda, jenis browser, versi browser, halaman-halaman Layanan kami yang Anda kunjungi, waktu dan tanggal kunjungan Anda, waktu yang dihabiskan di halaman-halaman tersebut, dan statistik lainnya."
+      "a1": "Kami mengumpulkan informasi yang dikirim browser Anda setiap kali Anda mengunjungi Layanan kami (\"Data Log\"). Data Log ini mungkin termasuk informasi seperti alamat Protokol Internet (\"IP\") komputer Anda, jenis browser, versi browser, halaman Layanan kami yang Anda kunjungi, waktu dan tanggal kunjungan Anda, waktu yang dihabiskan di halaman tersebut, dan statistik lainnya."
     },
     "q3": {
-      "title": "Kuki",
-      "a1": "Cookies adalah file dengan sejumlah kecil data, yang mungkin termasuk pengenal unik anonim. Cookies dikirim ke browser Anda dari sebuah situs web dan disimpan di hard drive komputer Anda.",
-      "a2": "Kami menggunakan “cookies” untuk mengumpulkan informasi. Anda dapat mengatur browser Anda untuk menolak semua cookies atau untuk memberi tahu saat cookie sedang dikirim. Namun, jika Anda tidak menerima cookies, Anda mungkin tidak dapat menggunakan beberapa bagian dari Layanan kami."
+      "title": "Cookie",
+      "a1": "Cookie adalah file dengan sejumlah kecil data, yang mungkin termasuk pengidentifikasi unik anonim. Cookie dikirim ke browser Anda dari situs web dan disimpan di hard drive komputer Anda.",
+      "a2": "Kami menggunakan \"cookie\" untuk mengumpulkan informasi. Anda dapat menginstruksikan browser Anda untuk menolak semua cookie atau untuk menunjukkan ketika cookie sedang dikirim. Namun, jika Anda tidak menerima cookie, Anda mungkin tidak dapat menggunakan beberapa bagian dari Layanan kami."
     },
     "q4": {
       "title": "Penyedia Layanan",
@@ -792,16 +804,17 @@
     },
     "q5": {
       "title": "Keamanan",
-      "a1": "Keamanan Informasi Pribadi Anda penting bagi kami, namun ingatlah bahwa tidak ada metode transmisi melalui Internet, atau metode penyimpanan elektronik yang 100% aman. Meskipun kami berusaha untuk menggunakan cara yang dapat diterima secara komersial untuk melindungi Informasi Pribadi Anda, kami tidak dapat menjamin keamanannya secara mutlak."
+      "a1": "Keamanan Informasi Pribadi Anda penting bagi kami, tetapi ingat bahwa tidak ada metode transmisi melalui Internet, atau metode penyimpanan elektronik yang 100% aman. Meskipun kami berupaya menggunakan cara yang dapat diterima secara komersial untuk melindungi Informasi Pribadi Anda, kami tidak dapat menjamin keamanan absolutnya."
     },
     "q6": {
-      "title": "Informasi Pembayaran & Keamanan",
-      "a1": "Untuk mengumpulkan pembayaran atas nama Anda dari pelanggan Anda, dan memberikan pembayaran kepada Anda, kami, dengan menggunakan Stripe sebagai pemroses pembayaran pihak ketiga, mengumpulkan informasi pembayaran dari Anda, peserta dan pelanggan Anda, vendor Anda, dan pihak lain yang kami berikan pembayaran atas nama Anda dan dari siapa kami mengumpulkan pembayaran atas nama Anda. Informasi ini digunakan semata-mata untuk mengumpulkan dan memberikan pembayaran terkait Layanan dan hanya disimpan oleh Stripe. Anda harus meninjau syarat layanan dan kebijakan privasi Stripe, yang tersedia di"
+      "title": "Informasi & Keamanan Pembayaran",
+      "a1": "Untuk mengumpulkan pembayaran atas nama Anda dari pelanggan Anda, dan memberikan pembayaran kepada Anda, kami, menggunakan Stripe sebagai pemroses pembayaran pihak ketiga, mengumpulkan informasi pembayaran dari Anda, peserta dan pelanggan Anda, vendor Anda, dan pihak lain kepada siapa kami memberikan pembayaran atas nama Anda dan dari siapa kami mengumpulkan pembayaran atas nama Anda. Informasi ini digunakan semata-mata untuk mengumpulkan dan memberikan pembayaran terkait Layanan dan hanya disimpan oleh Stripe. Anda harus meninjau ketentuan layanan dan ketentuan layanan Stripe serta kebijakan privasi, yang merupakan kebijakan privasi Stripe, tersedia di ",
+      "a1_1": " "
     },
     "q7": {
-      "title": "Tautan Ke Situs Lain",
-      "a1": "Layanan kami mungkin berisi tautan ke situs lain yang tidak dioperasikan oleh kami. Jika Anda mengklik tautan pihak ketiga, Anda akan diarahkan ke situs pihak ketiga tersebut. Kami sangat menyarankan Anda untuk meninjau Kebijakan Privasi dari setiap situs yang Anda kunjungi.",
-      "a2": "Kami tidak memiliki kendali atas dan tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik situs atau layanan pihak ketiga."
+      "title": "Tautan ke Situs Lain",
+      "a1": "Layanan kami mungkin berisi tautan ke situs lain yang tidak dioperasikan oleh kami. Jika Anda mengklik tautan pihak ketiga, Anda akan diarahkan ke situs pihak ketiga tersebut. Kami sangat menyarankan Anda untuk meninjau Kebijakan Privasi setiap situs yang Anda kunjungi.",
+      "a2": "Kami tidak memiliki kendali atas dan tidak bertanggung jawab atas konten, kebijakan privasi, atau praktik situs atau layanan pihak ketiga mana pun."
     }
   },
   "refundPolicy": {

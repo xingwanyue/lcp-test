@@ -95,7 +95,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
@@ -774,39 +779,41 @@
       "title": "Dernière mise à jour : 2023-11-20",
       "a1": "DET Practice (« nous » ou « notre ») exploite le site web DET Practice (le « Service »).",
       "a2": "Cette page vous informe de nos politiques concernant la collecte, l'utilisation et la divulgation des Informations Personnelles lorsque vous utilisez notre Service.",
-      "a3": "Nous n'utiliserons ni ne partagerons vos informations avec quiconque, sauf comme décrit dans cette Politique de confidentialité.",
-      "a4": "Nous utilisons vos Informations Personnelles pour fournir et améliorer le Service. En utilisant le Service, vous acceptez la collecte et l'utilisation des informations conformément à cette politique. Sauf définition contraire dans cette Politique de Confidentialité, les termes utilisés dans cette Politique de Confidentialité ont les mêmes significations que dans nos Termes et Conditions, accessibles à",
-      "a5": "Collecte et utilisation des informations",
-      "a6": "Lors de l'utilisation de notre Service, nous pouvons vous demander de nous fournir certaines informations personnelles identifiables pouvant être utilisées pour vous contacter ou vous identifier. Les informations personnelles identifiables (« Informations Personnelles ») peuvent inclure, sans s'y limiter :",
+      "a3": "Nous n'utiliserons ni ne partagerons vos informations avec quiconque, sauf comme décrit dans cette Politique de Confidentialité.",
+      "a4": "Nous utilisons vos Informations Personnelles pour fournir et améliorer le Service. En utilisant le Service, vous acceptez la collecte et l'utilisation d'informations conformément à cette politique. Sauf définition contraire dans cette Politique de Confidentialité, les termes utilisés dans cette Politique de Confidentialité ont la même signification que dans nos Conditions d'Utilisation, accessibles à ",
+      "a4_1": " ",
+      "a5": "Collecte et Utilisation des Informations",
+      "a6": "Lors de l'utilisation de notre Service, nous pouvons vous demander de nous fournir certaines informations personnellement identifiables qui peuvent être utilisées pour vous contacter ou vous identifier. Les informations personnellement identifiables (« Informations Personnelles ») peuvent inclure, sans s'y limiter :",
       "a7": "• Nom",
       "a8": "• Adresse e-mail"
     },
     "q2": {
-      "title": "Données de journal",
-      "a1": "Nous recueillons les informations que votre navigateur envoie chaque fois que vous visitez notre Service (\"Données de journal\"). Ces Données de journal peuvent inclure des informations telles que l'adresse de protocole Internet (\"IP\") de votre ordinateur, le type de navigateur, la version du navigateur, les pages de notre Service que vous visitez, l'heure et la date de votre visite, le temps passé sur ces pages, et d'autres statistiques."
+      "title": "Données de Journal",
+      "a1": "Nous collectons les informations que votre navigateur envoie lorsque vous visitez notre Service (« Données de Journal »). Ces Données de Journal peuvent inclure des informations telles que l'adresse de protocole Internet (« IP ») de votre ordinateur, le type de navigateur, la version du navigateur, les pages de notre Service que vous visitez, l'heure et la date de votre visite, le temps passé sur ces pages et d'autres statistiques."
     },
     "q3": {
       "title": "Cookies",
-      "a1": "Les cookies sont des fichiers contenant une petite quantité de données, ce qui peut inclure un identifiant unique anonyme. Les cookies sont envoyés à votre navigateur par un site web et stockés sur le disque dur de votre ordinateur.",
-      "a2": "Nous utilisons des « cookies » pour collecter des informations. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour indiquer quand un cookie est envoyé. Cependant, si vous n'acceptez pas les cookies, il se peut que vous ne puissiez pas utiliser certaines parties de notre Service."
+      "a1": "Les cookies sont des fichiers contenant une petite quantité de données, qui peuvent inclure un identifiant unique anonyme. Les cookies sont envoyés à votre navigateur par un site web et stockés sur le disque dur de votre ordinateur.",
+      "a2": "Nous utilisons des « cookies » pour collecter des informations. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour indiquer quand un cookie est envoyé. Toutefois, si vous n'acceptez pas les cookies, il est possible que vous ne puissiez pas utiliser certaines parties de notre Service."
     },
     "q4": {
-      "title": "Fournisseurs de services",
-      "a1": "Nous pouvons employer des entreprises et des individus tiers pour faciliter notre Service, fournir le Service en notre nom, effectuer des services liés au Service ou nous aider à analyser comment notre Service est utilisé.",
-      "a2": "Ces tiers ont accès à vos Informations Personnelles uniquement pour effectuer ces tâches en notre nom et sont tenus de ne pas les divulguer ou les utiliser à d'autres fins."
+      "title": "Prestataires de Services",
+      "a1": "Nous pouvons employer des sociétés tierces et des individus pour faciliter notre Service, fournir le Service en notre nom, exécuter des services liés au Service ou nous aider à analyser l'utilisation de notre Service.",
+      "a2": "Ces tiers n'ont accès à vos Informations Personnelles que pour effectuer ces tâches en notre nom et sont tenus de ne pas les divulguer ou les utiliser à d'autres fins."
     },
     "q5": {
       "title": "Sécurité",
-      "a1": "La sécurité de vos Informations Personnelles est importante pour nous, mais rappelez-vous qu'aucune méthode de transmission sur Internet, ni aucune méthode de stockage électronique n'est sûre à 100 %. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos Informations Personnelles, nous ne pouvons pas garantir leur sécurité absolue."
+      "a1": "La sécurité de vos Informations Personnelles est importante pour nous, mais n'oubliez pas qu'aucune méthode de transmission sur Internet ou méthode de stockage électronique n'est sécurisée à 100%. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos Informations Personnelles, nous ne pouvons garantir leur sécurité absolue."
     },
     "q6": {
-      "title": "Informations de paiement et sécurité",
-      "a1": "Afin de recueillir des paiements en votre nom auprès de vos clients, et de vous fournir des paiements, nous, en utilisant Stripe en tant que processeur de paiement tiers, recueillons des informations de paiement de votre part, de vos participants et clients, de vos fournisseurs et d'autres parties à qui nous fournissons des paiements en votre nom et de qui nous recueillons des paiements en votre nom. Ces informations sont utilisées uniquement pour collecter et fournir des paiements liés aux Services et sont uniquement stockées par Stripe. Vous devriez consulter les conditions d'utilisation et les politiques de confidentialité de Stripe, disponibles à"
+      "title": "Informations de Paiement et Sécurité",
+      "a1": "Afin de collecter les paiements pour votre compte auprès de vos clients et de vous fournir des paiements, nous utilisons Stripe comme processeur de paiement tiers pour collecter les informations de paiement auprès de vous, de vos participants et clients, de vos fournisseurs et d'autres parties à qui nous fournissons des paiements en votre nom et de qui nous collectons des paiements en votre nom. Ces informations sont utilisées uniquement pour collecter et fournir des paiements liés aux Services et sont uniquement stockées par Stripe. Vous devez consulter les conditions de service et les politiques de confidentialité de Stripe, disponibles sur",
+      "a1_1": " "
     },
     "q7": {
-      "title": "Liens vers d'autres sites",
-      "a1": "Notre Service peut contenir des liens vers d'autres sites qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons fortement de consulter la Politique de Confidentialité de chaque site que vous visitez.",
-      "a2": "Nous n'avons aucun contrôle sur et n'assumons aucune responsabilité pour le contenu, les politiques de confidentialité ou les pratiques de tout site ou service tiers."
+      "title": "Liens Vers D'autres Sites",
+      "a1": "Notre Service peut contenir des liens vers d'autres sites qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons vivement de consulter la Politique de Confidentialité de chaque site que vous visitez.",
+      "a2": "Nous n'avons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites ou services tiers."
     }
   },
   "refundPolicy": {

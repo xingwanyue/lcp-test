@@ -773,41 +773,43 @@
     "h1": "Gizlilik Politikası",
     "q1": {
       "title": "Son güncelleme: 2023-11-20",
-      "a1": "DET Practice (\"biz\", \"bize\" veya \"bizim\") DET Practice web sitesini (\"Hizmet\") işletir.",
-      "a2": "Bu sayfa, Hizmetimizi kullandığınızda Kişisel Bilgilerin toplanması, kullanılması ve açıklanmasıyla ilgili politikalarımız hakkında sizi bilgilendirir.",
-      "a3": "Bilgilerinizi bu Gizlilik Politikası'nda belirtilenler dışında hiç kimseyle kullanmayacak veya paylaşmayacağız.",
-      "a4": "Hizmeti sağlamak ve geliştirmek için Kişisel Bilgilerinizi kullanıyoruz. Hizmeti kullanarak, bilgilerin bu politikaya uygun olarak toplanmasına ve kullanılmasına izin vermiş olursunuz. Bu Gizlilik Politikasında aksi belirtilmedikçe, bu Gizlilik Politikasında kullanılan terimler, Terms and Conditions adresinde erişilebilen Şartlar ve Koşullarımızdaki ile aynı anlamlara sahiptir.",
-      "a5": "Bilgi Toplama ve Kullanma",
-      "a6": "Hizmetimizi kullanırken, sizinle iletişime geçmek veya sizi tanımlamak için kullanılabilecek belirli kişisel olarak tanımlanabilir bilgileri sağlamanızı isteyebiliriz. Kişisel olarak tanımlanabilir bilgiler (“Kişisel Bilgiler”) şunları içerebilir, ancak bunlarla sınırlı değildir:",
-      "a7": "• Adı",
+      "a1": "DET Practice (\"biz\" veya \"bizim\") DET Practice web sitesini (\"Hizmet\") işletmektedir.",
+      "a2": "Bu sayfa, Hizmetimizi kullandığınızda Kişisel Bilgilerin toplanması, kullanılması ve açıklanmasına ilişkin politikalarımız hakkında sizi bilgilendirmektedir.",
+      "a3": "Bilgilerinizi bu Gizlilik Politikasında belirtilenler dışında kimseyle kullanmayacak veya paylaşmayacağız.",
+      "a4": "Kişisel Bilgilerinizi Hizmeti sağlamak ve geliştirmek için kullanıyoruz. Hizmeti kullanarak, bu politika doğrultusunda bilgilerin toplanmasını ve kullanılmasını kabul etmiş olursunuz. Bu Gizlilik Politikasında aksi belirtilmedikçe, bu Gizlilik Politikasında kullanılan terimler, ",
+      "a4_1": "adresinden erişilebilen Kullanım Koşullarımızla aynı anlamlara sahiptir.",
+      "a5": "Bilgi Toplama ve Kullanım",
+      "a6": "Hizmetimizi kullanırken, sizinle iletişim kurmak veya kimliğinizi belirlemek için kullanılabilecek belirli kişisel tanımlayıcı bilgileri bize sağlamanızı isteyebiliriz. Kişisel tanımlayıcı bilgiler (\"Kişisel Bilgiler\") şunları içerebilir, ancak bunlarla sınırlı değildir:",
+      "a7": "• İsim",
       "a8": "• E-posta adresi"
     },
     "q2": {
       "title": "Günlük Verileri",
-      "a1": "Hizmetimizi ziyaret ettiğinizde tarayıcınızın gönderdiği bilgileri topluyoruz (“Günlük Verileri”). Bu Günlük Verileri, bilgisayarınızın İnternet Protokolü (“IP”) adresi, tarayıcı türü, tarayıcı sürümü, Hizmetimizi ziyaret ettiğiniz sayfalar, ziyaretinizin saati ve tarihi, bu sayfalarda geçirilen süre ve diğer istatistikler gibi bilgileri içerebilir."
+      "a1": "Hizmetimizi her ziyaret ettiğinizde tarayıcınızın gönderdiği bilgileri (\"Günlük Verileri\") topluyoruz. Bu Günlük Verileri, bilgisayarınızın İnternet Protokolü (\"IP\") adresi, tarayıcı türü, tarayıcı sürümü, ziyaret ettiğiniz Hizmet sayfaları, ziyaretinizin tarih ve saati, bu sayfalarda geçirilen süre ve diğer istatistikler gibi bilgileri içerebilir."
     },
     "q3": {
       "title": "Çerezler",
-      "a1": "Tanımlama bilgileri, anonim bir benzersiz tanımlayıcı içerebilecek küçük miktarda veri içeren dosyalardır. Tanımlama bilgileri bir web sitesinden tarayıcınıza gönderilir ve bilgisayarınızın sabit diskinde saklanır.",
-      "a2": "“Çerezleri” bilgi toplamak için kullanıyoruz. Tarayıcınıza tüm çerezleri reddetmesini veya bir çerez gönderildiğinde bildirimde bulunmasını söyleyebilirsiniz. Ancak, çerezleri kabul etmezseniz, Hizmetimizin bazı bölümlerini kullanamayabilirsiniz."
+      "a1": "Çerezler, anonim bir benzersiz tanımlayıcı içerebilen küçük miktarda veri içeren dosyalardır. Çerezler bir web sitesinden tarayıcınıza gönderilir ve bilgisayarınızın sabit diskinde saklanır.",
+      "a2": "Bilgi toplamak için \"çerezler\" kullanıyoruz. Tarayıcınızı tüm çerezleri reddetmesi veya bir çerez gönderildiğinde bunu belirtmesi için ayarlayabilirsiniz. Ancak, çerezleri kabul etmezseniz, Hizmetimizin bazı bölümlerini kullanamayabilirsiniz."
     },
     "q4": {
       "title": "Hizmet Sağlayıcıları",
-      "a1": "Hizmetimizi kolaylaştırmak, Hizmeti bizim adımıza sağlamak, Hizmetle ilgili hizmetleri yerine getirmek veya Hizmetimizin nasıl kullanıldığını analiz etmemize yardımcı olmak için üçüncü taraf şirketleri ve bireyleri işe alabiliriz.",
-      "a2": "Bu üçüncü şahıslar, yalnızca bu görevleri bizim adımıza yerine getirmek için Kişisel Bilgilerinize erişime sahiptir ve bunu başka herhangi bir amaçla açıklamamak veya kullanmamakla yükümlüdür."
+      "a1": "Hizmetimizi kolaylaştırmak, Hizmeti bizim adımıza sağlamak, Hizmetle ilgili hizmetleri gerçekleştirmek veya Hizmetimizin nasıl kullanıldığını analiz etmemize yardımcı olmak için üçüncü taraf şirketleri ve bireyleri istihdam edebiliriz.",
+      "a2": "Bu üçüncü taraflar, Kişisel Bilgilerinize yalnızca bu görevleri bizim adımıza gerçekleştirmek için erişebilir ve bunları başka bir amaçla açıklamamak veya kullanmamakla yükümlüdürler."
     },
     "q5": {
       "title": "Güvenlik",
-      "a1": "Kişisel Bilgilerinizin güvenliği bizim için önemlidir, ancak İnternet üzerinden iletim yöntemi veya elektronik depolama yöntemi %100 güvenli değildir. Kişisel Bilgilerinizi korumak için ticari olarak kabul edilebilir yöntemler kullanmaya çalışsak da, mutlak güvenliğini garanti edemeyiz."
+      "a1": "Kişisel Bilgilerinizin güvenliği bizim için önemlidir, ancak İnternet üzerinden hiçbir iletim yönteminin veya elektronik depolama yönteminin %100 güvenli olmadığını unutmayın. Kişisel Bilgilerinizi korumak için ticari olarak kabul edilebilir araçlar kullanmaya çalışsak da, mutlak güvenliğini garanti edemeyiz."
     },
     "q6": {
-      "title": "Ödeme Bilgileri & Güvenliği",
-      "a1": "Müşterilerinizden sizin adınıza ödeme almak ve size ödeme sağlamak amacıyla, üçüncü taraf ödeme işlemcisi olarak Stripe kullanarak, sizden, katılımcılarınızdan ve müşterilerinizden, satıcılarınızdan ve sizin adınıza ödeme yaptığımız ve sizin adınıza ödeme aldığımız diğer taraflardan ödeme bilgilerini topluyoruz. Bu bilgiler yalnızca Hizmetlerle ilgili ödemeleri toplamak ve sağlamak için kullanılır ve yalnızca Stripe tarafından saklanır. Stripe'ın hizmet şartlarını ve gizlilik politikalarını gözden geçirmelisiniz, bunlara şu adresten ulaşabilirsiniz"
+      "title": "Ödeme Bilgileri ve Güvenlik",
+      "a1": "Müşterilerinizden sizin adınıza ödemeleri toplamak ve size ödemeler sağlamak için, üçüncü taraf ödeme işlemcisi olarak Stripe'ı kullanarak, sizden, katılımcılarınızdan ve müşterilerinizden, tedarikçilerinizden ve sizin adınıza ödeme yaptığımız ve sizin adınıza ödeme topladığımız diğer taraflardan ödeme bilgilerini topluyoruz. Bu bilgiler yalnızca Hizmetlerle ilgili ödemeleri toplamak ve sağlamak için kullanılır ve yalnızca Stripe tarafından saklanır. Stripe'ın kullanım koşullarını ve gizlilik politikalarını, ",
+      "a1_1": "adreslerinde bulunan Stripe'ın gizlilik politikalarını incelemelisiniz."
     },
     "q7": {
-      "title": "Diğer Siteler İçin Bağlantılar",
-      "a1": "Hizmetimiz, tarafımızca işletilmeyen diğer sitelere bağlantılar içerebilir. Üçüncü taraf bir bağlantıya tıklarsanız, o üçüncü tarafın sitesine yönlendirileceksiniz. Ziyaret ettiğiniz her sitenin Gizlilik Politikasını gözden geçirmenizi şiddetle tavsiye ederiz.",
-      "a2": "İçerik, gizlilik politikaları veya herhangi bir üçüncü taraf siteleri veya hizmetleri uygulamaları üzerinde hiçbir kontrolümüz yoktur ve sorumluluk kabul etmiyoruz."
+      "title": "Diğer Sitelere Bağlantılar",
+      "a1": "Hizmetimiz, tarafımızca işletilmeyen diğer sitelere bağlantılar içerebilir. Üçüncü taraf bir bağlantıya tıklarsanız, o üçüncü tarafın sitesine yönlendirileceksiniz. Ziyaret ettiğiniz her sitenin Gizlilik Politikasını incelemenizi önemle tavsiye ederiz.",
+      "a2": "Üçüncü taraf sitelerinin veya hizmetlerinin içeriği, gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrolümüz yoktur ve bunlar için hiçbir sorumluluk kabul etmiyoruz."
     }
   },
   "refundPolicy": {

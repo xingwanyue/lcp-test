@@ -95,7 +95,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -763,9 +768,9 @@
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "Privacy Policy - DET Practice",
-      "description": "Discover DET Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Privacy Policy | DET Practice – Duolingo English Test Preparation",
+      "description": "Read the Privacy Policy for DET Practice. Learn how we collect, use, and protect your personal information when you access our platform for Duolingo English Test preparation. Your privacy is important to us, and we are committed to safeguarding your data.",
+      "keywords": "Privacy Policy, DET Practice, Duolingo English Test, data protection, user privacy, personal information, privacy practices, online test prep, data security"
     },
     "h1": "Privacy Policy",
     "q1": {
@@ -774,6 +779,7 @@
       "a2": "This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service.",
       "a3": "We will not use or share your information with anyone except as described in this Privacy Policy.",
       "a4": "We use your Personal Information to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at",
+      "a4_1": " ",
       "a5": "Information Collection And Use",
       "a6": "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information (“Personal Information”) may include, but is not limited to:",
       "a7": "• Name",
@@ -799,7 +805,8 @@
     },
     "q6": {
       "title": "Payment Info & Security",
-      "a1": "In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees and customers, your vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on your behalf. This information is used solely to collect and provide payments related to the Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at"
+      "a1": "In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees and customers, your vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on your behalf. This information is used solely to collect and provide payments related to the Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at",
+      "a1_1": " "
     },
     "q7": {
       "title": "Links To Other Sites",

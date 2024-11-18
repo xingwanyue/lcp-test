@@ -51,8 +51,22 @@
     "LearnTitle": "Risorse",
     "BlogTitle": "Blog",
     "CompanyTitle": "Chi Siamo",
-    "Products": ["Esercizi DET", "Correzione IA Scrittura", "Valutazione IA Speaking", "Simulazioni", "Corsi Completi"],
-    "Company": ["Chi siamo", "Contattaci", "Condizioni", "Privacy", "Mappa del sito", "Partnership", "Rimborsi"],
+    "Products": [
+      "Esercizi DET",
+      "Correzione IA Scrittura",
+      "Valutazione IA Speaking",
+      "Simulazioni",
+      "Corsi Completi"
+    ],
+    "Company": [
+      "Chi siamo",
+      "Contattaci",
+      "Condizioni",
+      "Privacy",
+      "Mappa del sito",
+      "Partnership",
+      "Rimborsi"
+    ],
     "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -82,7 +96,12 @@
     "power_by": "Basato su AI",
     "h1Mobile": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
     "h1PC": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
-    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
+    "one_small_title": [
+      "DET Pratica",
+      "Correzione AI",
+      "Simulazione Completa",
+      "DET Corsi"
+    ],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con email",
     "Start_for_free": "Inizia gratis",
@@ -756,43 +775,45 @@
       "description": "Scopri l'informativa sulla privacy di DET Practice: scopri come gestiamo i dati, proteggiamo le informazioni e garantiamo la tua privacy. Leggi di più sulle nostre politiche adesso.",
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Competenza"
     },
-    "h1": "Informativa sulla privacy",
+    "h1": "Informativa sulla Privacy",
     "q1": {
       "title": "Ultimo aggiornamento: 2023-11-20",
-      "a1": "DET Practice (“noi”, “ci” o “nostro”) gestisce il sito web DET Practice (il “Servizio”).",
-      "a2": "Questa pagina ti informa delle nostre politiche riguardanti la raccolta, l'uso e la divulgazione delle Informazioni Personali quando usi il nostro Servizio.",
-      "a3": "Non utilizzeremo né condivideremo le tue informazioni con nessuno, tranne che come descritto in questa Informativa sulla privacy.",
-      "a4": "Utilizziamo le tue Informazioni Personali per fornire e migliorare il Servizio. Utilizzando il Servizio, acconsenti alla raccolta e all'uso delle informazioni in conformità con questa politica. Salvo diversa definizione nella presente Informativa sulla Privacy, i termini utilizzati nella presente Informativa sulla Privacy hanno lo stesso significato dei nostri Termini e Condizioni, accessibili su",
+      "a1": "DET Practice (\"noi\" o \"nostro\") gestisce il sito web DET Practice (il \"Servizio\").",
+      "a2": "Questa pagina ti informa sulle nostre politiche riguardanti la raccolta, l'uso e la divulgazione delle Informazioni Personali quando utilizzi il nostro Servizio.",
+      "a3": "Non useremo né condivideremo le tue informazioni con nessuno, eccetto come descritto in questa Informativa sulla Privacy.",
+      "a4": "Utilizziamo le tue Informazioni Personali per fornire e migliorare il Servizio. Utilizzando il Servizio, accetti la raccolta e l'uso delle informazioni in conformità con questa politica. Se non diversamente definito in questa Informativa sulla Privacy, i termini utilizzati hanno lo stesso significato dei nostri Termini e Condizioni, accessibili su ",
+      "a4_1": " ",
       "a5": "Raccolta e Utilizzo delle Informazioni",
       "a6": "Durante l'utilizzo del nostro Servizio, potremmo chiederti di fornirci alcune informazioni personali identificabili che possono essere utilizzate per contattarti o identificarti. Le informazioni personali identificabili (\"Informazioni Personali\") possono includere, ma non sono limitate a:",
       "a7": "• Nome",
       "a8": "• Indirizzo email"
     },
     "q2": {
-      "title": "Dati di registro",
-      "a1": "Raccogliamo informazioni che il tuo browser invia ogni volta che visiti il nostro Servizio (\"Dati di Log\"). Questi Dati di Log possono includere informazioni come l'indirizzo del Protocolo Internet (\"IP\") del tuo computer, il tipo di browser, la versione del browser, le pagine del nostro Servizio che visiti, l'ora e la data della tua visita, il tempo trascorso su quelle pagine e altre statistiche."
+      "title": "Dati di Log",
+      "a1": "Raccogliamo le informazioni che il tuo browser invia ogni volta che visiti il nostro Servizio (\"Dati di Log\"). Questi Dati di Log possono includere informazioni come l'indirizzo Internet Protocol (\"IP\") del tuo computer, tipo di browser, versione del browser, le pagine del nostro Servizio che visiti, l'ora e la data della tua visita, il tempo trascorso su queste pagine e altre statistiche."
     },
     "q3": {
       "title": "Cookies",
-      "a1": "I cookie sono file con una piccola quantità di dati, che possono includere un identificatore univoco anonimo. I cookie vengono inviati al tuo browser da un sito web e memorizzati sul disco rigido del tuo computer.",
-      "a2": "Usiamo i “cookie” per raccogliere informazioni. Puoi istruire il tuo browser a rifiutare tutti i cookie o a indicare quando un cookie viene inviato. Tuttavia, se non accetti i cookie, potresti non essere in grado di utilizzare alcune parti del nostro Servizio."
+      "a1": "I cookie sono file contenenti una piccola quantità di dati, che possono includere un identificatore unico anonimo. I cookie vengono inviati al tuo browser da un sito web e memorizzati sul disco rigido del tuo computer.",
+      "a2": "Utilizziamo i \"cookie\" per raccogliere informazioni. Puoi configurare il tuo browser per rifiutare tutti i cookie o per indicare quando viene inviato un cookie. Tuttavia, se non accetti i cookie, potresti non essere in grado di utilizzare alcune parti del nostro Servizio."
     },
     "q4": {
-      "title": "Fornitori di servizi",
-      "a1": "Potremmo impiegare aziende e individui di terze parti per facilitare il nostro Servizio, per fornire il Servizio per nostro conto, per eseguire servizi relativi al Servizio o per assisterci nell'analisi di come viene utilizzato il nostro Servizio.",
-      "a2": "Queste terze parti hanno accesso alle tue Informazioni Personali solo per eseguire questi compiti per nostro conto e sono obbligate a non divulgarle o utilizzarle per qualsiasi altro scopo."
+      "title": "Fornitori di Servizi",
+      "a1": "Potremmo impiegare società e individui terzi per facilitare il nostro Servizio, fornire il Servizio per nostro conto, eseguire servizi correlati al Servizio o aiutarci ad analizzare come viene utilizzato il nostro Servizio.",
+      "a2": "Queste terze parti hanno accesso alle tue Informazioni Personali solo per eseguire questi compiti per nostro conto e sono obbligate a non divulgarle o utilizzarle per altri scopi."
     },
     "q5": {
       "title": "Sicurezza",
-      "a1": "La sicurezza delle tue Informazioni Personali è importante per noi, ma ricorda che nessun metodo di trasmissione su Internet, o metodo di archiviazione elettronica è sicuro al 100%. Anche se ci sforziamo di utilizzare mezzi commercialmente accettabili per proteggere le tue Informazioni Personali, non possiamo garantirne la sicurezza assoluta."
+      "a1": "La sicurezza delle tue Informazioni Personali è importante per noi, ma ricorda che nessun metodo di trasmissione su Internet o metodo di archiviazione elettronica è sicuro al 100%. Mentre ci sforziamo di utilizzare mezzi commercialmente accettabili per proteggere le tue Informazioni Personali, non possiamo garantirne la sicurezza assoluta."
     },
     "q6": {
-      "title": "Informazioni di pagamento e sicurezza",
-      "a1": "Al fine di riscuotere pagamenti per tuo conto dai tuoi clienti e fornirti pagamenti, noi, utilizzando Stripe come processore di pagamento di terze parti, raccogliamo informazioni di pagamento da te, i tuoi partecipanti e clienti, i tuoi fornitori e altre parti a cui forniamo pagamenti per tuo conto e da cui riscuotiamo pagamenti per tuo conto. Queste informazioni vengono utilizzate esclusivamente per riscuotere e fornire pagamenti relativi ai Servizi e sono memorizzate solo da Stripe. Dovresti esaminare i termini di servizio e le politiche sulla privacy di Stripe, disponibili su"
+      "title": "Informazioni sui Pagamenti e Sicurezza",
+      "a1": "Per raccogliere i pagamenti per tuo conto dai tuoi clienti e fornirti i pagamenti, noi, utilizzando Stripe come processore di pagamenti di terze parti, raccogliamo informazioni di pagamento da te, dai tuoi partecipanti e clienti, dai tuoi fornitori e da altre parti a cui forniamo pagamenti per tuo conto e da cui raccogliamo pagamenti per tuo conto. Queste informazioni sono utilizzate esclusivamente per raccogliere e fornire pagamenti relativi ai Servizi e sono memorizzate solo da Stripe. Dovresti consultare i termini di servizio e le politiche sulla privacy di Stripe, disponibili su",
+      "a1_1": " "
     },
     "q7": {
-      "title": "Link ad altri siti",
-      "a1": "Il nostro servizio può contenere collegamenti ad altri siti che non sono gestiti da noi. Se fai clic su un collegamento di terze parti, sarai indirizzato al sito di quella terza parte. Ti consigliamo vivamente di esaminare l'Informativa sulla privacy di ogni sito che visiti.",
+      "title": "ollegamenti ad Altri Siti",
+      "a1": "Il nostro Servizio può contenere collegamenti ad altri siti che non sono gestiti da noi. Se clicchi su un collegamento di terze parti, sarai indirizzato al sito di quella terza parte. Ti consigliamo vivamente di consultare l'Informativa sulla Privacy di ogni sito che visiti.",
       "a2": "Non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti."
     }
   },
