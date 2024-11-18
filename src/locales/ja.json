@@ -51,7 +51,13 @@
     "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "企業情報",
-    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
+    "Products": [
+      "DET演習",
+      "AIライティング添削",
+      "AIスピーキング評価",
+      "模擬試験",
+      "総合対策コース"
+    ],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -89,7 +95,12 @@
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -897,13 +908,13 @@
   },
   "tos": {
     "seometa": {
-      "title": "利用規約 - DET 練習",
-      "description": "Explore DET Practiceの包括的な利用規約を確認してください。当社のプライバシーポリシーや使用ガイドラインも含まれます。透明性と法令遵守を確保してください。",
-      "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語言語テスト, Duolingo 英語試験, Duolingo 能力試験"
+      "title": "サービス利用規約 | DET Practice – Duolingo 英語テスト準備",
+      "description": "DET Practiceのサービス利用規約を確認してください。Duolingo 英語テストの準備のために当プラットフォームを使用するためのガイドラインとポリシーを理解し、ユーザーの責任、権利、利用規約について学びましょう。",
+      "keywords": "サービス利用規約, DET Practice, Duolingo 英語テスト, テスト準備プラットフォーム, ユーザー契約, サービス利用規約, オンラインテスト準備, EPT ポリシー"
     },
-    "title": "利用規約",
+    "title": "サービス利用規約",
     "q1": {
-      "title": "最終更新日: 2023-11-20",
+      "title": "最終更新日：2023年11月20日",
       "a1": "この利用規約（「規約」、「TOS」）をよく読んでからご利用ください",
       "a2": "ウェブサイト（「サービス」）は、DET Practice（「私たち」または「当社」）によって運営されています。",
       "a3": "サービスへのアクセスおよび使用は、これらの規約の受け入れと遵守を条件としています。これらの規約は、サービスにアクセスまたは使用するすべての訪問者、ユーザー、およびその他の人に適用されます。",

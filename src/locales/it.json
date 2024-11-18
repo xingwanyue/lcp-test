@@ -51,8 +51,22 @@
     "LearnTitle": "Risorse",
     "BlogTitle": "Blog",
     "CompanyTitle": "Chi Siamo",
-    "Products": ["Esercizi DET", "Correzione IA Scrittura", "Valutazione IA Speaking", "Simulazioni", "Corsi Completi"],
-    "Company": ["Chi siamo", "Contattaci", "Condizioni", "Privacy", "Mappa del sito", "Partnership", "Rimborsi"],
+    "Products": [
+      "Esercizi DET",
+      "Correzione IA Scrittura",
+      "Valutazione IA Speaking",
+      "Simulazioni",
+      "Corsi Completi"
+    ],
+    "Company": [
+      "Chi siamo",
+      "Contattaci",
+      "Condizioni",
+      "Privacy",
+      "Mappa del sito",
+      "Partnership",
+      "Rimborsi"
+    ],
     "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -82,7 +96,12 @@
     "power_by": "Basato su AI",
     "h1Mobile": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
     "h1PC": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
-    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
+    "one_small_title": [
+      "DET Pratica",
+      "Correzione AI",
+      "Simulazione Completa",
+      "DET Corsi"
+    ],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con email",
     "Start_for_free": "Inizia gratis",
@@ -890,11 +909,11 @@
   },
   "tos": {
     "seometa": {
-      "title": "Termini e Condizioni - DET Esercitazione",
-      "description": "Esplora i completi Termini di Servizio di DET Practice, inclusa la nostra Politica sulla privacy e le Linee guida d'utilizzo. Garantiamo trasparenza e conformità.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Test di Lingua Inglese, Duolingo Esame di Inglese, Duolingo Esame di Competenza"
+      "title": "Termini di Servizio | DET Practice – Preparazione al Duolingo English Test",
+      "description": "Consulta i Termini di Servizio di DET Practice. Comprendi le linee guida e le politiche per l'utilizzo della nostra piattaforma di preparazione al Duolingo English Test, incluse le responsabilità degli utenti, i diritti e le condizioni d'uso.",
+      "keywords": "Termini di Servizio, DET Practice, Duolingo English Test, piattaforma di preparazione al test, accordo utente, condizioni del servizio, preparazione online al test, politiche EPT"
     },
-    "title": "Termini di servizio",
+    "title": "Termini di Servizio",
     "q1": {
       "title": "Ultimo aggiornamento: 2023-11-20",
       "a1": "Si prega di leggere attentamente questi Termini di Servizio (\"Termini\", \"TOS\") prima di utilizzare il",

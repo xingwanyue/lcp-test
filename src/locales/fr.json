@@ -95,7 +95,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
@@ -903,13 +908,13 @@
   },
   "tos": {
     "seometa": {
-      "title": "Termes et conditions - DET Pratique",
-      "description": "Explorez les Conditions d'utilisation complètes de DET Practice, comprenant notre Politique de confidentialité et nos Directives d'utilisation. Assurez-vous de la transparence et de la conformité.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
+      "title": "Conditions d'Utilisation | DET Practice – Préparation au Test d'Anglais Duolingo",
+      "description": "Découvrez les Conditions d'Utilisation de DET Practice. Comprenez les directives et politiques d'utilisation de notre plateforme de préparation au Test d'Anglais Duolingo, y compris les responsabilités des utilisateurs, les droits et les conditions d'utilisation.",
+      "keywords": "Conditions d'utilisation, DET Practice, Test d'Anglais Duolingo, plateforme de préparation aux tests, accord utilisateur, conditions de service, préparation en ligne, politiques"
     },
-    "title": "Conditions d'utilisation",
+    "title": "Conditions d'Utilisation",
     "q1": {
-      "title": "Dernière mise à jour : 2023-11-20",
+      "title": "Dernière mise à jour : 20/11/2023",
       "a1": "Veuillez lire attentivement ces Conditions d'utilisation (« Conditions », « TOS ») avant d'utiliser le",
       "a2": "site web (le “Service”) exploité par DET Practice (“nous”, “notre” ou “nos”).",
       "a3": "Votre accès et utilisation du Service sont conditionnés par votre acceptation et votre respect de ces Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes qui accèdent ou utilisent le Service.",

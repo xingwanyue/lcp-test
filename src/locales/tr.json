@@ -96,7 +96,12 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -904,9 +909,9 @@
   },
   "tos": {
     "seometa": {
-      "title": "Koşullar ve Şartlar - DET Uygulama",
-      "description": "Keşfet DET Pratik'in kapsamlı Hizmet Şartları'nı, Gizlilik Politikamızı ve Kullanım Kurallarımızı içerenlerini inceleyin. Şeffaflığı ve uyumu sağlayın.",
-      "keywords": "DET Duolingo, DET Testi, Duolingo DET, Duolingo Testi, Duolingo Testi Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "title": "Terms of Service | DET Practice – Duolingo English Test Preparation",
+      "description": "DET Practice'in Hizmet Şartları'nı inceleyin. Duolingo English Test'e hazırlanmak için platformumuzu kullanırken uyulması gereken kuralları, politikaları, kullanıcı sorumluluklarını, haklarını ve kullanım şartlarını öğrenin.",
+      "keywords": "Hizmet Şartları, DET Practice, Duolingo English Test, sınav hazırlık platformu, kullanıcı sözleşmesi, hizmet koşulları, çevrimiçi sınav hazırlığı, EPT politikaları"
     },
     "title": "Hizmet Şartları",
     "q1": {

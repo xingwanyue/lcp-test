@@ -6,8 +6,8 @@ import { domain } from '@/utils';
 const state = reactive({});
 useSeoMeta({
   title: t('tos.seometa.title'),
-  // description: t('tos.seometa.description'),
-  // keywords: t('tos.seometa.keywords'),
+  description: t('tos.seometa.description'),
+  keywords: t('tos.seometa.keywords'),
 });
 
 const localePath = useLocalePath();

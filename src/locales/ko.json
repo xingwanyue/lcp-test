@@ -51,8 +51,22 @@
     "LearnTitle": "Материалы",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사 소개",
-    "Products": ["문제 풀이", "AI 작문 첨삭", "AI 스피킹 평가", "실전 모의고사", "DET 학습 과정"],
-    "Company": ["회사 소개", "고객센터", "이용약관", "개인정보처리방침", "사이트맵", "제휴 안내", "환불규정"],
+    "Products": [
+      "문제 풀이",
+      "AI 작문 첨삭",
+      "AI 스피킹 평가",
+      "실전 모의고사",
+      "DET 학습 과정"
+    ],
+    "Company": [
+      "회사 소개",
+      "고객센터",
+      "이용약관",
+      "개인정보처리방침",
+      "사이트맵",
+      "제휴 안내",
+      "환불규정"
+    ],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -82,7 +96,12 @@
     "power_by": "AI로 구동되는",
     "h1Mobile": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
     "h1PC": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
-    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
+    "one_small_title": [
+      "DET 연습",
+      "AI 수정",
+      "풀-길이 모의 시험",
+      "DET 코스"
+    ],
     "Start_free_with_Google": "Google로 무료 시작",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",
@@ -890,13 +909,13 @@
   },
   "tos": {
     "seometa": {
-      "title": "약관 - DET 연습",
-      "description": "Explore DET Practice의 종합적인 이용약관을 확인하세요. 개인정보 보호정책과 이용지침도 함께 보실 수 있습니다. 투명성과 준법성을 보장합니다.",
-      "keywords": "DET Duolingo, DET 테스트, Duolingo DET, Duolingo 테스트, Duolingo 테스트 온라인, Duolingo 영어 언어 테스트, Duolingo 영어 시험, Duolingo 능력 시험"
+      "title": "이용약관 | DET Practice – Duolingo English Test 준비",
+      "description": "DET Practice의 이용약관을 살펴보세요. Duolingo English Test 준비를 위한 플랫폼 사용에 관한 지침과 정책을 이해하고, 사용자의 책임, 권리 및 이용 조건을 확인하세요.",
+      "keywords": "이용약관, DET Practice, Duolingo English Test, 시험 준비 플랫폼, 사용자 계약, 서비스 조건, 온라인 시험 준비, EPT 정책"
     },
-    "title": "서비스 약관",
+    "title": "이용약관",
     "q1": {
-      "title": "마지막 업데이트: 2023-11-20",
+      "title": "최종 업데이트: 2023-11-20",
       "a1": "다음 약관(“약관”, “TOS”)을 사용하기 전에 주의 깊게 읽어보십시오.",
       "a2": "웹사이트 (이하 \"서비스\")는 DET Practice(\"우리\" 또는 \"당사\")가 운영합니다.",
       "a3": "서비스에 대한 귀하의 접근 및 사용은 본 약관에 대한 귀하의 수락 및 준수 조건입니다. 본 약관은 서비스를 방문하거나 사용하는 모든 방문자, 사용자 및 기타 사람들에게 적용됩니다.",

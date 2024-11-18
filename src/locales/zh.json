@@ -51,8 +51,22 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
-    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
+    "Products": [
+      "DET刷题",
+      "AI写作批改",
+      "AI口语评测",
+      "全真模考",
+      "DET课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "服务条款",
+      "隐私政策",
+      "网站地图",
+      "合作计划",
+      "退款说明"
+    ],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -81,7 +95,12 @@
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -889,13 +908,13 @@
   },
   "tos": {
     "seometa": {
-      "title": "条款和条件 - DET 练习",
-      "description": "探索DETPractice全面的服务条款，包括我们的隐私政策和使用指南。确保透明度和合规性。",
-      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 熟练考试"
+      "title": "服务条款 | DET Practice –多邻国英语测试备考平台",
+      "description": "了解 DET Practice 的服务条款，掌握使用我们平台备考 Duolingo 英语测试的相关指南和政策，包括用户责任、权利以及使用条款。",
+      "keywords": "服务条款, DET Practice, 多邻国英语测试, 测试备考平台, 用户协议, 服务条款, 在线备考, EPT 政策"
     },
     "title": "服务条款",
     "q1": {
-      "title": "上次更新：2023-11-20",
+      "title": "最后更新：2023-11-20",
       "a1": "请仔细阅读这些服务条款（“条款”、“TOS”）然后再使用该",
       "a2": "由DET Practice（“我们”或“我们的”）运营的网站（“服务”）。",
       "a3": "您访问和使用本服务的前提是您接受并遵守这些条款。这些条款适用于所有访问或使用本服务的访客、用户和其他人。",

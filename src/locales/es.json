@@ -58,7 +58,15 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
+    "Company": [
+      "Nosotros",
+      "Contacto",
+      "Términos",
+      "Privacidad",
+      "Mapa del sitio",
+      "Colaboraciones",
+      "Devoluciones"
+    ],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -88,7 +96,12 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -896,11 +909,11 @@
   },
   "tos": {
     "seometa": {
-      "title": "Términos y Condiciones - DET Práctica",
-      "description": "Explora los completos Términos de Servicio de DET Practice, que incluyen nuestra Política de Privacidad y Guías de Utilización. Asegúrate de la transparencia y cumplimiento.",
-      "keywords": "DET Duolingo, DET Prueba, Duolingo DET, Duolingo Prueba, Duolingo Prueba en línea, Duolingo Prueba de idioma inglés, Duolingo Examen de inglés, Duolingo Examen de competencia"
+      "title": "Términos de Servicio | DET Practice – Preparación para el Duolingo English Test",
+      "description": "Explora los Términos de Servicio de DET Practice. Comprende las pautas y políticas para utilizar nuestra plataforma de preparación para el Duolingo English Test, incluyendo las responsabilidades del usuario, derechos y condiciones de uso.",
+      "keywords": "Términos de Servicio, DET Practice, Duolingo English Test, plataforma de preparación para exámenes, acuerdo del usuario, condiciones del servicio, preparación de exámenes en línea, políticas EPT"
     },
-    "title": "Términos de servicio",
+    "title": "Términos de Servicio",
     "q1": {
       "title": "Última actualización: 2023-11-20",
       "a1": "Lea estos Términos de Servicio (“Términos”, “TOS”) detenidamente antes de usar el",
