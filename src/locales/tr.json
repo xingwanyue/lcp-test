@@ -96,7 +96,12 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -965,9 +970,9 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "Bağlı Programı | DET Uygulaması",
-      "description": "DET Uygulaması'nın kazançlı bağlı programına katılın ve her yönlendirme için %30'a kadar komisyon kazanın. Öğrencilerin en iyi puanlarına ulaşmalarına yardımcı olmak için bizimle ortak olun.",
-      "keywords": "DET Duolingo, DET Testi, Duolingo DET, Duolingo Testi, Duolingo Testi Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "title": "İş Ortaklığı Programı - DET Practice | Duolingo Test Hazırlığı ile Kazanın",
+      "description": "DET Practice İş Ortaklığı Programı'na katılın ve Duolingo test hazırlık hizmetlerimizi tanıtarak kazanmaya başlayın. Yüksek dönüşüm sağlayan materyallere erişin ve her satıştan komisyon kazanın. Bugün nasıl başlayacağınızı öğrenin.",
+      "keywords": "iş ortaklığı programı, Duolingo test hazırlığı ortaklığı, DET Practice ile kazanç, online test hazırlığı ortaklığı, satış ortaklığı, DET Practice ortakları, komisyon kazanma"
     },
     "tag": "Bağlı Programı",
     "h1": "Her Yönlendirmenizden <span class='yellow_font'>%30 Komisyon</span> Kazanın",

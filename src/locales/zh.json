@@ -51,8 +51,22 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
-    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
+    "Products": [
+      "DET刷题",
+      "AI写作批改",
+      "AI口语评测",
+      "全真模考",
+      "DET课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "服务条款",
+      "隐私政策",
+      "网站地图",
+      "合作计划",
+      "退款说明"
+    ],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -81,7 +95,12 @@
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -950,9 +969,9 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "联盟计划 | DET 练习",
-      "description": "加入 DET 练习的丰厚联盟计划，通过每个推荐赚取高达 30% 的佣金。与我们合作，帮助学生取得最佳成绩。",
-      "keywords": "DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试, Duolingo 英语语言测试, Duolingo 英语考试, Duolingo 英语水平考试"
+      "title": "联盟计划 - DET Practice | 通过多邻国英语测试备考赚取佣金",
+      "description": "加入DET Practice联盟计划，通过推广我们的DET考试备考服务开始赚钱。获取高转化率的推广材料，并为每笔销售赚取佣金。了解如何立即开始",
+      "keywords": "联盟计划, DET考试备考联盟, 与DET Practice一起赚取佣金, 在线考试备考联盟, 联盟营销, DET Practice合作伙伴, 赚取佣金"
     },
     "tag": "联盟计划",
     "h1": "通过每个推荐赚取 <span class='yellow_font'>30% 的佣金</span>",

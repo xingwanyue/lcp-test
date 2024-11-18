@@ -51,7 +51,13 @@
     "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "企業情報",
-    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
+    "Products": [
+      "DET演習",
+      "AIライティング添削",
+      "AIスピーキング評価",
+      "模擬試験",
+      "総合対策コース"
+    ],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -89,7 +95,12 @@
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -958,8 +969,8 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "アフィリエイトプログラム | DET Practice",
-      "description": "DET Practiceの収益性の高いアフィリエイトプログラムに参加して、紹介ごとに最大30%のコミッションを獲得しましょう。私たちと協力して、学生が最高のスコアを達成するのをサポートしましょう。",
+      "title": "アフィリエイトプログラム - DET Practice | Duolingo テスト対策で収益を得よう",
+      "description": "DET Practiceのアフィリエイトプログラムに参加して、Duolingoテスト対策サービスを紹介することで収益を得ましょう。高いコンバージョン率を誇る教材へのアクセスと、売上ごとの報酬を獲得できます。今すぐ始める方法をご覧ください。",
       "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語試験, Duolingo 英語テスト, Duolingo 語学能力試験"
     },
     "tag": "アフィリエイトプログラム",
