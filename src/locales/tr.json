@@ -96,7 +96,12 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -520,38 +525,39 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Uygulama - Duolingo English Test Kılavuz ile Konuşma ve Yazma Becerilerini Geliştirin",
-      "description": "Potansiyelinizi açığa çıkarın Duolingo English Test Rehberimiz ile. Kapsamlı stratejiler, uzman ipuçları ve güncel DET Pratik ile konuşma ve yazmada mükemmelliğe dalın."
+      "title": "DET Hazırlık Kursları | Duolingo English Test için Profesyonel Eğitim",
+      "description": "Profesyonel DET hazırlık kurslarımızla başarıya ulaşın. Okuma, yazma, konuşma ve dinleme becerilerinizi uzman eğitmenler eşliğinde geliştirin. Sınava hazırlığınıza hemen başlayın!",
+      "keywords": "DET hazırlık, Duolingo sınav eğitimi, DET kursları, İngilizce sınav hazırlığı, Duolingo sertifikası, DET özel ders, online İngilizce kursu, DET eğitim materyali"
     },
     "article1": {
       "title": "DET Konuşma Sınavı Mükemmelliğinin Ana Özellikleri:",
       "list": [
         {
-          "content": "• Tüm DET konuşma görev türlerinin derinlemesine keşfi"
+          "content": "• Tüm konuşma görevlerinin ayrıntılı analizi"
         },
         {
-          "content": "• Her bir konuşma görevi için pratik stratejiler"
+          "content": "• Her soru tipi için kanıtlanmış çözüm teknikleri"
         },
         {
-          "content": "• Konuşma netliğini, akıcılığını ve güvenini artırmak için interaktif alıştırmalar"
+          "content": "• Telaffuz ve akıcılık geliştirme alıştırmaları"
         },
         {
-          "content": "• Telaffuz, ton ve genel performans konusunda uzman rehberliği"
+          "content": "• Vurgu ve sunum için uzman tavsiyeleri"
         },
         {
-          "content": "• Başarılı stratejileri gösteren gerçek hayattan konuşma örnekleri ve analizler"
+          "content": "• Gerçek sınav örnekleri ve çözümleri"
         },
         {
-          "content": "• Sesli demo yanıtları, etkili yanıt örneklerini net bir şekilde sağlamak için"
+          "content": "• Örnek ses kayıtları"
         },
         {
-          "content": "• Farklı yeterlilik düzeyleri için kişiselleştirilmiş öğrenme yaklaşımları"
+          "content": "• Seviyenize uygun öğrenme planı"
         },
         {
-          "content": "• Etkili iletişim için temel kelime bilgisi ve dilbilgisine odaklanın"
+          "content": "• Temel kelime ve dilbilgisi çalışması"
         },
         {
-          "content": "• En son değişiklikleri DET konuşma formatına dahil etmek için güncellendi"
+          "content": "• Güncel sınav formatına uygun içerik"
         }
       ]
     },
@@ -559,48 +565,48 @@
       "title": "DET Yazı Sınavı Mükemmelliğinin Ana Özellikleri:",
       "list": [
         {
-          "content": "• Analiz ve örneklerle kapsamlı DET yazma görevleri"
+          "content": "• Tüm yazma görevlerinin sistematik açıklaması"
         },
         {
-          "content": "• Olağanüstü makaleler planlama ve yazma için adım adım kılavuzlar"
+          "content": "• Etkili kompozisyon yazma teknikleri"
         },
         {
-          "content": "• DET-spesifik yazma becerilerini geliştirmek için hedeflenmiş egzersizler"
+          "content": "• Sınava yönelik yazma alıştırmaları"
         },
         {
-          "content": "• Açıklık, tutarlılık ve sofistikeliği artırmak için uzman ipuçları"
+          "content": "• Açık ve ikna edici yazım için ipuçları"
         },
         {
-          "content": "• Etkili stratejiler ve yaygın tuzakları gösteren açıklamalı örnek denemeler"
+          "content": "• Açıklamalı örnek yazılar"
         },
         {
-          "content": "• Çeşitli yeterlilik seviyeleri için uyarlanabilir öğrenme yolları"
+          "content": "• Her seviyeye uygun çalışma modülleri"
         },
         {
-          "content": "• DET başarı için temel dilbilgisi ve kelime bilgisine vurgu"
+          "content": "• Temel dilbilgisi ve kelime çalışmaları"
         },
         {
-          "content": "• En son DET yazı formatı trendlerini yansıtacak şekilde güncellendi"
+          "content": "• En son sınav formatına göre hazırlanmış içerik"
         }
       ]
     },
     "contaceUsList": [
       {
-        "font": "Rehberinizi Seçin",
-        "tip": "Konuşma veya Yazma Kılavuzunu hedeflenen sınav hazırlığı için seçin.",
-        "btn": "Konuşma Kılavuzu Satın Al",
-        "btn1": "Yazma Kılavuzu Satın Al"
+        "font": "Paketinizi Seçin",
+        "tip": "Konuşma veya yazma eğitiminden birini tercih edin",
+        "btn": "Konuşma Eğitimi Al",
+        "btn1": "Yazma Eğitimi Al"
       },
       {
-        "font": "Anında İndirme",
-        "tip": "Satın aldıktan hemen sonra rehbere erişim kazanın.",
-        "btn": "Konuşma Kılavuzunu İndir",
-        "btn1": "Yazma Kılavuzunu İndir"
+        "font": "Anında Erişim",
+        "tip": "Ödemeniz sonrası hemen erişim sağlayın",
+        "btn": "Konuşma Eğitimini İndir",
+        "btn1": "Yazma Eğitimini İndir"
       },
       {
-        "font": "Konuşma Ses Örnekleri",
-        "tip": "Ek konuşma sesli demo cevaplarını keşfedin.",
-        "btn1": "Ses Örneklerine Erişim"
+        "font": "Dinleme Materyalleri",
+        "tip": "Ek çalışma örnekleri ve ses kayıtları",
+        "btn1": "Ses Kayıtlarına Eriş"
       }
     ],
     "pagefont": {
@@ -611,11 +617,11 @@
       "white_arrow_right": "Beyaz Ok Sağa",
       "Double_Right_Arrow": "Çift Sağ Ok",
       "DET_Writing": "DET Yazma Sınavı Mükemmelliği: Kapsamlı Bir Rehber",
-      "How_to": "Rehberi nasıl alabilirim?",
+      "How_to": "Eğitim Materyallerine Erişim",
       "spa": "Konuşma pratiği ses kaydı",
-      "tips": "Konuşma/Yazma Rehberimize olan ilginiz için teşekkür ederiz! Lütfen bunun sanal bir ürün olduğunu unutmayın. Satın alındıktan ve indirildikten sonra, ürün teslimatı tamamlanmış sayılır ve genellikle geri ödemesi mümkün değildir. Lütfen satın almadan önce onaylayın.",
-      "orange_title": "Seçkin Dil Eğitimcileri",
-      "team_desc": "Saygın öğretmen ekibimiz, TESOL ve diğer öğretim Sertifikaları gibi saygın niteliklere sahip olup, öğrencilere TOEFL, IELTS ve Duolingo English Test (DET) gibi önemli İngilizce sınavlarına hazırlamada zengin bir deneyim sunar. Etkileyici dil becerileri, kişiselleştirilmiş öğretim yaklaşımları ve yenilikçi yöntemleri ile tanınan ekibimiz, her öğrencinin İngilizce yeterliliğinde en yüksek potansiyeline ulaşmasına yardımcı olmaya kararlıdır.",
+      "tips": "Önemli Not: Bu dijital bir üründür. İndirme işlemi tamamlandıktan sonra iade kabul edilmemektedir. Lütfen satın almadan önce şartları dikkatle okuyunuz.",
+      "orange_title": "Uzman Eğitim Kadromuz",
+      "team_desc": "TESOL sertifikalı deneyimli eğitmenlerimiz, TOEFL, IELTS ve DET gibi uluslararası sınavlarda uzmanlaşmıştır. Modern öğretim yöntemleri ve kişiye özel yaklaşımlarıyla sınav başarınız için yanınızdayız.",
       "Elite_Language_Educators": "Seçkin Dil Eğitimcileri"
     },
     "sas": "Konuşma Sesi Örnekleri",
@@ -624,10 +630,10 @@
       "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir.  Abone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz.  Şimdi Satın Al Aboneliği hemen yürürlüğe girer.  Öğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
     },
     "speaking": {
-      "title": "DET Konuşma Sınavında Mükemmeliyet: Kapsamlı Bir Kılavuz"
+      "title": "DET Konuşma Bölümü için Tam Kapsamlı Rehber"
     },
     "writing": {
-      "title": "DET Yazma Sınavında Mükemmeliyet: Kapsamlı Bir Kılavuz"
+      "title": "DET Yazma Bölümü için Tam Kapsamlı Rehber"
     },
     "downloadguide": "Kılavuzu İndir",
     "dandumai": "Ayrıca bunları ayrı olarak da satın alabilirsiniz:",

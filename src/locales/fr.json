@@ -519,38 +519,39 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Pratique - Maîtrisez l'expression orale et écrite avec le Duolingo English Test Guide",
-      "description": "Déverrouillez votre potentiel avec notre Duolingo English Test Guide. Plongez dans l'excellence orale et écrite avec des stratégies complètes, des conseils d'experts et une DET Pratique mise à jour."
+      "title": "Guide de préparation au DET | Formation complète au test d'anglais Duolingo",
+      "description": "Optimisez votre réussite au test Duolingo avec notre programme de formation expert. Notre méthode progressive couvre les quatre compétences linguistiques à travers des exercices ciblés et des stratégies éprouvées. Commencez votre préparation dès aujourd'hui !",
+      "keywords": "Préparation DET, formation Duolingo, cours test Duolingo, entraînement DET, test d'anglais Duolingo, certification DET, préparation en ligne, réussite DET"
     },
     "article1": {
       "title": "Caractéristiques clés de DET Excellence des examens oraux :",
       "list": [
         {
-          "content": "• Exploration approfondie de tous les types de tâches de prise de parole DET"
+          "content": "• Analyse approfondie des épreuves orales"
         },
         {
-          "content": "• Stratégies pratiques pour aborder chaque tâche de prise de parole"
+          "content": "• Méthodologie détaillée pour chaque type d'exercice"
         },
         {
-          "content": "• Exercices interactifs pour améliorer la clarté de la parole, la fluidité et la confiance"
+          "content": "• Entraînements pratiques pour développer l'aisance"
         },
         {
-          "content": "• Conseils d'expert sur la prononciation, le ton et la performance globale"
+          "content": "• Conseils techniques sur la prononciation et l'intonation"
         },
         {
-          "content": "• Échantillons de discours réels et analyses démontrant des stratégies réussies"
+          "content": "• Exemples commentés de réponses réussies"
         },
         {
-          "content": "• Réponses audio de démonstration pour fournir des exemples clairs de réponses efficaces"
+          "content": "• Exercices audio avec modèles de réponses"
         },
         {
-          "content": "• Approches d'apprentissage personnalisées pour différents niveaux de compétence"
+          "content": "• Parcours adapté selon votre niveau"
         },
         {
-          "content": "• Concentrez-vous sur le vocabulaire et la grammaire essentiels pour une communication efficace"
+          "content": "• Focus sur les expressions et structures clés"
         },
         {
-          "content": "• Mis à jour pour intégrer les dernières modifications dans le format de DET speaking"
+          "content": "• Conformité aux dernières évolutions du test"
         }
       ]
     },
@@ -558,48 +559,48 @@
       "title": "Principales caractéristiques de l'excellence à l'examen d'écriture DET :",
       "list": [
         {
-          "content": "• Couverture complète des tâches d'écriture DET avec analyse et exemples"
+          "content": "• Présentation détaillée des exercices d'expression écrite"
         },
         {
-          "content": "• Directives étape par étape pour planifier et rédiger des essais exceptionnels"
+          "content": "• Guide méthodologique pour une rédaction efficace"
         },
         {
-          "content": "• Exercices ciblés pour affiner les compétences en écriture spécifiques à DET"
+          "content": "• Exercices spécifiques aux exigences du DET"
         },
         {
-          "content": "• Conseils d'experts pour améliorer la clarté, la cohérence et la sophistication"
+          "content": "• Techniques pour améliorer style et cohérence"
         },
         {
-          "content": "• Essais annotés présentant des stratégies efficaces et des pièges courants"
+          "content": "• Modèles de rédaction annotés et commentés"
         },
         {
-          "content": "• Chemins d'apprentissage adaptables pour différents niveaux de compétence"
+          "content": "• Progression adaptée à votre niveau"
         },
         {
-          "content": "• Accent sur la grammaire et le vocabulaire essentiels pour DET succès"
+          "content": "• Rappels grammaticaux et lexicaux essentiels"
         },
         {
-          "content": "• Mis à jour pour refléter les dernières tendances de format d'écriture DET"
+          "content": "• Actualisation selon les derniers formats d'examen"
         }
       ]
     },
     "contaceUsList": [
       {
-        "font": "Sélectionnez Votre Guide",
-        "tip": "Choisissez le guide de parole ou d'écriture pour une préparation ciblée à l'examen.",
-        "btn": "Acheter le guide de conversation",
-        "btn1": "Acheter le Guide d'Écriture"
+        "font": "Choisissez votre formation",
+        "tip": "Sélectionnez le module oral ou écrit selon vos besoins",
+        "btn": "Commander le guide oral",
+        "btn1": "Commander le guide écrit"
       },
       {
-        "font": "Téléchargement instantané",
-        "tip": "Accédez au guide immédiatement après l'achat.",
-        "btn": "Télécharger le guide de conversation",
-        "btn1": "Télécharger le guide d'écriture"
+        "font": "Accès immédiat",
+        "tip": "Téléchargement disponible dès validation de votre commande",
+        "btn": "Télécharger le module oral",
+        "btn1": "Télécharger le module écrit"
       },
       {
-        "font": "Échantillons Audio Parlants",
-        "tip": "Explorez les réponses de démonstration audio supplémentaires de conversation.",
-        "btn1": "Accéder aux échantillons audio"
+        "font": "Ressources audio complémentaires",
+        "tip": "Accédez à notre banque d'exemples commentés",
+        "btn1": "Découvrir les supports audio"
       }
     ],
     "pagefont": {
@@ -610,11 +611,11 @@
       "white_arrow_right": "Flèche blanche droite",
       "Double_Right_Arrow": "Double flèche droite",
       "DET_Writing": "DET Rédaction d'Examen Excellence : Un Guide Complet",
-      "How_to": "Comment obtenir le guide ?",
+      "How_to": "Modalités d'accès",
       "spa": "Speaking practice audio",
-      "tips": "Merci de votre intérêt pour notre Guide de Conversation/Écriture! Veuillez noter qu'il s'agit d'un produit virtuel. Une fois acheté et téléchargé, la livraison du produit est considérée comme terminée, et il est généralement non remboursable. Veuillez confirmer avant de faire un achat.",
-      "orange_title": "Éducateurs de Langues d'Élite",
-      "team_desc": "Notre équipe distinguée d'éducateurs linguistiques, possédant des qualifications estimées comme TESOL et d'autres certificats d'enseignement, apporte une richesse d'expérience dans la préparation des étudiants aux principaux tests d'anglais comme TOEFL, IELTS et Duolingo English Test (DET). Réputés pour leurs impressionnantes compétences linguistiques, leurs approches pédagogiques personnalisées et leurs méthodes innovantes, ils sont déterminés à aider chaque étudiant à atteindre son plus haut potentiel en maîtrise de l'anglais.",
+      "tips": "NB : Ce produit est exclusivement numérique. Le téléchargement validé constitue la livraison définitive, sans possibilité de remboursement. Merci de prendre connaissance des conditions avant l'achat.",
+      "orange_title": "Notre équipe pédagogique",
+      "team_desc": "Nos formateurs, tous titulaires de certifications reconnues (TESOL et autres), sont des spécialistes des examens d'anglais (TOEFL, IELTS, DET). Leur expertise et leur pédagogie personnalisée vous garantissent un accompagnement optimal vers la réussite.",
       "Elite_Language_Educators": "Éducateurs de Langues Élite"
     },
     "sas": "Exemples audio parlants",
@@ -623,10 +624,10 @@
       "desc": "Le package de cours comprend l'<span class=\"white\">Excellence de l'examen DET Speaking</span> et l'<span class=\"white\">Excellence de l'examen DET Writing</span>.  Lors de votre abonnement, vous pourrez télécharger les guides à tout moment et les étudier en toute simplicité, à tout moment et en tout lieu.  L'abonnement Acheter maintenant prend effet immédiatement.  Faites défiler la page vers le haut, affichez-la et cliquez pour télécharger le cours et commencer à apprendre."
     },
     "speaking": {
-      "title": "Excellence de l'examen oral DET : un guide complet"
+      "title": "Guide complet de l'épreuve orale DET"
     },
     "writing": {
-      "title": "Excellence de l'examen de rédaction du DET : un guide complet"
+      "title": "Guide complet de l'épreuve écrite DET"
     },
     "downloadguide": "Guide de téléchargement",
     "dandumai": "Vous pouvez également les acheter séparément :",
@@ -693,7 +694,7 @@
     },
     "article4": {
       "h2": "Résultats Rapides",
-      "right_desc": "\nConsultez votre score et votre analyse en <span class='zdfont'>5 à 30 minutes</span> pour un suivi optimal de vos progrès."
+      "right_desc": " Consultez votre score et votre analyse en <span class='zdfont'>5 à 30 minutes</span> pour un suivi optimal de vos progrès."
     },
     "vs1": "Corrélation Scores DET Practice - Scores Officiels",
     "vs2": "Analyse comparative entre les résultats officiels au Duolingo English Test et les scores obtenus à nos simulations"

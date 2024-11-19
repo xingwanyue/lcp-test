@@ -58,7 +58,15 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
+    "Company": [
+      "Nosotros",
+      "Contacto",
+      "Términos",
+      "Privacidad",
+      "Mapa del sitio",
+      "Colaboraciones",
+      "Devoluciones"
+    ],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -88,7 +96,12 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -512,38 +525,39 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Práctica - Domina Hablar y Escribir con la Duolingo English Test Guía",
-      "description": "Desbloquea tu potencial con nuestra Duolingo English Test Guía. Sumérgete en la excelencia en hablar y escribir con estrategias completas, consejos de expertos y DET Práctica actualizada."
+      "title": "Preparación para el DET | Tu Curso Completo del Duolingo English Test",
+      "description": "Alcanza el éxito en el DET con nuestros cursos especializados impartidos por expertos certificados. Desarrolla tus competencias en lectura, escritura, expresión oral y comprensión auditiva mediante clases personalizadas. ¡Inicia tu camino hacia el DET ahora!",
+      "keywords": "preparación DET, curso Duolingo Test, examen DET, certificación inglés, clases DET, curso inglés, formación online DET, material DET"
     },
     "article1": {
       "title": "Características clave de DET Speaking Exam Excellence:",
       "list": [
         {
-          "content": "• Exploración en profundidad de todos los tipos de tareas de expresión DET"
+          "content": "• Análisis completo de todas las pruebas orales"
         },
         {
-          "content": "• Estrategias prácticas para abordar cada tarea de speaking"
+          "content": "• Técnicas específicas para cada tarea oral"
         },
         {
-          "content": "• Ejercicios interactivos para mejorar la claridad del habla, la fluidez y la confianza"
+          "content": "• Prácticas para mejorar claridad y fluidez"
         },
         {
-          "content": "• Orientación experta sobre pronunciación, tono y rendimiento general"
+          "content": "• Asesoramiento experto en pronunciación y presentación"
         },
         {
-          "content": "• Muestras de discurso de la vida real y análisis que demuestran estrategias exitosas"
+          "content": "• Ejemplos reales comentados"
         },
         {
-          "content": "• Respuestas de demostración de audio para proporcionar ejemplos claros de respuestas efectivas"
+          "content": "• Audios modelo con explicaciones"
         },
         {
-          "content": "• Enfoques de aprendizaje personalizado para diferentes niveles de competencia"
+          "content": "• Formación adaptada a cada nivel"
         },
         {
-          "content": "• Enfócate en el vocabulario y la gramática esenciales para una comunicación efectiva"
+          "content": "• Vocabulario y gramática fundamentales"
         },
         {
-          "content": "• Actualizado para incorporar los últimos cambios en el formato de DET speaking"
+          "content": "• Actualizado al último formato del examen"
         }
       ]
     },
@@ -551,48 +565,48 @@
       "title": "Características clave de DET Writing Exam Excellence:",
       "list": [
         {
-          "content": "• Cobertura integral de DET tareas de escritura con análisis y ejemplos"
+          "content": "• Explicación detallada de todas las tareas escritas"
         },
         {
-          "content": "• Directrices paso a paso para planificar y redactar ensayos excepcionales"
+          "content": "• Método paso a paso para redactar"
         },
         {
-          "content": "• Ejercicios dirigidos para perfeccionar habilidades de escritura DET-específicas"
+          "content": "• Ejercicios específicos de preparación"
         },
         {
-          "content": "• Consejos expertos para mejorar la claridad, coherencia y sofisticación"
+          "content": "• Consejos para una escritura clara y efectiva"
         },
         {
-          "content": "• Ensayos de muestra anotados que muestran estrategias efectivas y errores comunes"
+          "content": "• Modelos de ensayos comentados"
         },
         {
-          "content": "• Rutas de aprendizaje adaptables para varios niveles de competencia"
+          "content": "• Rutas de estudio por niveles"
         },
         {
-          "content": "• Énfasis en la gramática y el vocabulario esenciales para DET éxito"
+          "content": "• Gramática y vocabulario clave"
         },
         {
-          "content": "• Actualizado para reflejar las últimas tendencias en el formato de escritura DET"
+          "content": "• Contenido actualizado al formato actual"
         }
       ]
     },
     "contaceUsList": [
       {
-        "font": "Seleccione su guía",
-        "tip": "Elige la Guía de Speaking o Writing para una preparación específica del examen.",
-        "btn": "Comprar guía de conversación",
-        "btn1": "Comprar guía de escritura"
+        "font": "Elige tu Guía",
+        "tip": "Selecciona la guía oral o escrita según tus necesidades",
+        "btn": "Obtener Guía Oral",
+        "btn1": "Obtener Guía Escrita"
       },
       {
-        "font": "Descarga instantánea",
-        "tip": "Obtén acceso a la guía inmediatamente después de la compra.",
-        "btn": "Descargar Guía de Habla",
-        "btn1": "Descargar Guía de Escritura"
+        "font": "Acceso Inmediato",
+        "tip": "Descarga tu guía al instante tras la compra",
+        "btn": "Descargar Guía Oral",
+        "btn1": "Descargar Guía Escrita"
       },
       {
-        "font": "Muestras de audio habladas",
-        "tip": "Explora las respuestas adicionales de demostración de audio habladas.",
-        "btn1": "Acceder a muestras de audio"
+        "font": "Audios de Práctica",
+        "tip": "Escucha nuestros ejemplos de audio complementarios",
+        "btn1": "Ver Audios"
       }
     ],
     "pagefont": {
@@ -603,11 +617,11 @@
       "white_arrow_right": "Flecha Blanca Derecha",
       "Double_Right_Arrow": "Doble Flecha Derecha",
       "DET_Writing": "DET Excelencia en Exámenes Escritos: Una Guía Completa",
-      "How_to": "¿Cómo obtener la guía?",
+      "How_to": "¿Cómo Conseguir la Guía?",
       "spa": "Audio de práctica de conversación",
-      "tips": "Gracias por su interés en nuestra Guía de Hablar/Escribir! Tenga en cuenta que este es un producto virtual. Una vez comprado y descargado, la entrega del producto se considera completa, y generalmente no es reembolsable. Por favor confirme antes de realizar una compra.",
-      "orange_title": "Educadores de Lenguaje Elite",
-      "team_desc": "Nuestro distinguido equipo de educadores de idiomas, con calificaciones prestigiosas como TESOL y otros certificados de enseñanza, aporta una gran experiencia en la preparación de estudiantes para pruebas importantes de inglés como TOEFL, IELTS y Duolingo English Test (DET). Reconocidos por sus impresionantes habilidades lingüísticas, enfoques de enseñanza personalizados y métodos innovadores, están comprometidos a ayudar a cada estudiante a alcanzar su máximo potencial en competencia en inglés.",
+      "tips": "Aviso Importante: Este es un producto digital. Una vez realizada la descarga, se considera entregado y no admite devoluciones. Por favor, verifica tu elección antes de comprar.",
+      "orange_title": "Nuestros Profesores",
+      "team_desc": "Contamos con un equipo de profesores certificados con TESOL y otras acreditaciones reconocidas, especializados en la preparación de exámenes internacionales como TOEFL, IELTS y DET. Con amplia experiencia y métodos innovadores de enseñanza, te ayudaremos a conseguir los mejores resultados en tu certificación de inglés.",
       "Elite_Language_Educators": "Educadores de Lenguas Elite"
     },
     "sas": "Muestras de audio hablado",
@@ -616,10 +630,10 @@
       "desc": "El paquete del curso incluye el <span class=\"Yellow\">examen de excelencia oral DET</span> y el <span class=\"Yellow\">examen de excelencia escrito DET</span>.  Al suscribirse, podrá descargar las guías en cualquier momento y estudiarlas con facilidad, en cualquier momento y en cualquier lugar.  La suscripción Comprar ahora entra en vigor de inmediato.  Desplácese hacia arriba en la página, vea y haga clic para descargar el curso y comenzar a aprender."
     },
     "speaking": {
-      "title": "Excelencia en el examen de expresión oral DET: una guía completa"
+      "title": "Domina la Sección Oral del DET: Guía Definitiva"
     },
     "writing": {
-      "title": "Excelencia en el examen de redacción DET: una guía completa"
+      "title": "Domina la Sección Escrita del DET: Guía Definitiva"
     },
     "downloadguide": "Descargar Guía",
     "dandumai": "También puedes comprarlos por separado:",

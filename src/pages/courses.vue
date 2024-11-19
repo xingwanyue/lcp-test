@@ -11,6 +11,7 @@ const guide2 = `${cdn}/store/portal/guid/guide222.png`;
 useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
+  keywords: t('courses.seometa.keywords'),
 });
 const localePath = useLocalePath();
 

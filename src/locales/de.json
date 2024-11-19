@@ -73,8 +73,8 @@
   "index": {
     "seometa": {
       "title": "DET Practice - Die umfassende Plattform zur Vorbereitung auf den Duolingo Englischtest",
-      "description": "DET Practice ist die beste Plattform für die Vorbereitung auf den Duolingo Englischtest. Wir\nbieten eine umfangreiche Aufgabenbank, eine realistische Simulation des Tests, einen KI\u0002gestützten Korrekturservice für Sprechen und Schreiben sowie spezielle DET-Kurse.",
-      "keywords": "Duolingo Englischtest, DET Duolingo, DET Test, Duolingo Prüfung, Duolingo Online Test,\nDuolingo Englisch Sprachtest, Duolingo Englischprüfung, Duolingo Kompetenztest Englisch,\nEnglischtest Duolingo, Duolingo Sprachprüfung Englisch"
+      "description": "DET Practice ist die beste Plattform für die Vorbereitung auf den Duolingo Englischtest. Wir bieten eine umfangreiche Aufgabenbank, eine realistische Simulation des Tests, einen KI\u0002gestützten Korrekturservice für Sprechen und Schreiben sowie spezielle DET-Kurse.",
+      "keywords": "Duolingo Englischtest, DET Duolingo, DET Test, Duolingo Prüfung, Duolingo Online Test, Duolingo Englisch Sprachtest, Duolingo Englischprüfung, Duolingo Kompetenztest Englisch, Englischtest Duolingo, Duolingo Sprachprüfung Englisch"
     },
     "bigtitle1": "Anzahl der Höchstpunktzahlen (130+ Punkte)：10000+",
     "bigtitle2": "Außergewöhnliche Bewertung von 4,8/5 aus über 850 Bewertungen!",
@@ -85,7 +85,7 @@
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
-    "trustedByWorldwide": "Vertraut von über {path} Studierenden weltweit für eine Verbesserung der Ergebnisse im\nDuolingo English Test innerhalb eines Monats.",
+    "trustedByWorldwide": "Vertraut von über {path} Studierenden weltweit für eine Verbesserung der Ergebnisse im Duolingo English Test innerhalb eines Monats.",
     "The_Best_Platform": "Die beste Plattform zur Steigerung Ihrer Duolingo English Test Ergebnisse",
     "Tu": "Gesamtnutzer",
     "questions": "Fragen",
@@ -505,38 +505,39 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Übung - Beherrschen Sie Sprechen und Schreiben mit dem Duolingo English Test Leitfaden",
-      "description": "Entfesseln Sie Ihr Potenzial mit unserem Duolingo English Test Leitfaden. Tauchen Sie ein in Sprach- und Schreibexzellenz mit umfassenden Strategien, Expertentipps und aktualisiertem DET Übungsmaterial."
+      "title": "DET-Vorbereitungskurse | Professionelles Training für den Duolingo English Test",
+      "description": "Profitieren Sie von unseren professionellen DET-Vorbereitungskursen. Mit gezielten Übungen und bewährten Strategien optimieren wir Ihre Lese-, Schreib-, Sprech- und Hörkompetenzen. Beginnen Sie jetzt mit Ihrer Prüfungsvorbereitung!",
+      "keywords": "DET-Vorbereitung, Duolingo-Prüfungstraining, DET-Kurse, Englischtest-Training, Duolingo-Zertifikat, Prüfungsvorbereitung DET, Online-Englischkurse, DET-Lernmaterial"
     },
     "article1": {
       "title": "Hauptmerkmale der DET Prüfung zur Sprachbeherrschung:",
       "list": [
         {
-          "content": "• Tiefgehende Erkundung aller DET Sprechaufgabentypen"
+          "content": "• Ausführliche Analyse aller Sprechaufgaben"
         },
         {
-          "content": "• Praktische Strategien für die Herangehensweise an jede Sprechaufgabe"
+          "content": "• Bewährte Lösungsstrategien für jeden Aufgabentyp"
         },
         {
-          "content": "• Interaktive Übungen zur Verbesserung der Sprachklarheit, Flüssigkeit und Selbstvertrauen"
+          "content": "• Praktische Übungen zur Verbesserung von Aussprache und Redefluss"
         },
         {
-          "content": "• Expertenanleitung zur Aussprache, zum Tonfall und zur Gesamtleistung"
+          "content": "• Fachkundige Hinweise zu Betonung und Gesamtauftritt"
         },
         {
-          "content": "• Echte Sprachproben und Analysen, die erfolgreiche Strategien demonstrieren"
+          "content": "• Praxisnahe Beispiele mit Strategieanalysen"
         },
         {
-          "content": "• Audio-Demoantworten, um klare Beispiele für effektive Antworten zu geben"
+          "content": "• Musterlösungen als Audiobeispiele"
         },
         {
-          "content": "• Personalisierte Lernansätze für unterschiedliche Kenntnisstufen"
+          "content": "• Individuell anpassbare Lernwege"
         },
         {
-          "content": "• Konzentrieren Sie sich auf wesentlichen Wortschatz und Grammatik für eine effektive Kommunikation"
+          "content": "• Kernwortschatz und -grammatik im Fokus"
         },
         {
-          "content": "• Aktualisiert, um die neuesten Änderungen im DET Sprechformat zu integrieren"
+          "content": "• Stets aktuell nach neuesten Prüfungsstandards"
         }
       ]
     },
@@ -544,48 +545,48 @@
       "title": "Hauptmerkmale der DET Writing Exam Excellence:",
       "list": [
         {
-          "content": "• Umfassende Abdeckung der DET Schreibaufgaben mit Analyse und Beispielen"
+          "content": "• Systematische Darstellung aller Schreibaufgaben"
         },
         {
-          "content": "• Schritt-für-Schritt-Anleitungen zur Planung und zum Verfassen außergewöhnlicher Aufsätze"
+          "content": "• Strukturierte Anleitung zum Verfassen überzeugender Texte"
         },
         {
-          "content": "• Gezielte Übungen zur Verbesserung DET-spezifischer Schreibfähigkeiten"
+          "content": "• Gezielte Übungen für prüfungsrelevante Schreibkompetenzen"
         },
         {
-          "content": "• Experten-Tipps zur Verbesserung von Klarheit, Kohärenz und Raffinesse"
+          "content": "• Expertentipps für klare und überzeugende Formulierungen"
         },
         {
-          "content": "• Kommentierte Beispielaufsätze, die effektive Strategien und häufige Fehler aufzeigen"
+          "content": "• Kommentierte Beispieltexte mit Erläuterungen"
         },
         {
-          "content": "• Anpassungsfähige Lernpfade für verschiedene Kompetenzstufen"
+          "content": "• Flexible Lernmodule für alle Niveaustufen"
         },
         {
-          "content": "• Betonung auf wesentliche Grammatik und Wortschatz für DET Erfolg"
+          "content": "• Wesentliche Grammatik- und Wortschatzübungen"
         },
         {
-          "content": "• Aktualisiert, um die neuesten DET Schreibformat-Trends widerzuspiegeln"
+          "content": "• Aktuell nach neuestem Prüfungsformat"
         }
       ]
     },
     "contaceUsList": [
       {
-        "font": "Wählen Sie Ihren Reiseführer aus",
-        "tip": "Wählen Sie den Sprech- oder Schreibführer für gezielte Prüfungsvorbereitung.",
-        "btn": "Kaufen Sie den Sprechführer",
-        "btn1": "Kaufanleitung für das Schreiben"
+        "font": "Wählen Sie Ihr Lernpaket",
+        "tip": "Entscheiden Sie sich für Sprech- oder Schreibtraining",
+        "btn": "Sprechtraining bestellen",
+        "btn1": "Schreibtraining bestellen"
       },
       {
-        "font": "Sofortiger Download",
-        "tip": "Erhalten Sie sofort nach dem Kauf Zugang zum Leitfaden.",
-        "btn": "Laden Sie den Sprachführer herunter",
-        "btn1": "Schreibleitfaden herunterladen"
+        "font": "Sofortzugang",
+        "tip": "Direkter Zugriff nach Zahlungseingang",
+        "btn": "Sprechtraining herunterladen",
+        "btn1": "Schreibtraining herunterladen"
       },
       {
-        "font": "Sprachproben",
-        "tip": "Entdecken Sie die zusätzlichen Audio-Demoantworten zum Sprechen.",
-        "btn1": "Auf Audio-Samples zugreifen"
+        "font": "Ergänzende Hörmaterialien",
+        "tip": "Zusätzliche Übungsbeispiele mit Audio",
+        "btn1": "Audiomaterial aufrufen"
       }
     ],
     "pagefont": {
@@ -596,11 +597,11 @@
       "white_arrow_right": "Weißer Pfeil nach rechts",
       "Double_Right_Arrow": "Doppelpfeil nach rechts",
       "DET_Writing": "DET Schreibprüfung Exzellenz: Ein umfassender Leitfaden",
-      "How_to": "Wie erhalte ich den Leitfaden?",
+      "How_to": "Zugang zum Lernmaterial",
       "spa": "Audio für Sprechübungen",
-      "tips": "Danke für Ihr Interesse an unserem Sprech-/Schreibleitfaden! Bitte beachten Sie, dass dies ein virtuelles Produkt ist. Sobald das Produkt gekauft und heruntergeladen wurde, gilt die Lieferung als abgeschlossen und es ist in der Regel nicht erstattungsfähig. Bitte bestätigen Sie vor dem Kauf.",
-      "orange_title": "Elite Sprachpädagogen",
-      "team_desc": "Unser herausragendes Team von Sprachlehrern, das angesehene Qualifikationen wie TESOL und andere Lehrzertifikate besitzt, bringt eine Fülle an Erfahrung in der Vorbereitung von Studenten auf große Englischtests wie TOEFL, IELTS und Duolingo English Test (DET) mit. Bekannt für ihre beeindruckenden Sprachkenntnisse, personalisierten Lehrmethoden und innovativen Ansätze, sind sie engagiert, jedem Schüler zu helfen, sein höchstes Potenzial in der englischen Sprachbeherrschung zu erreichen.",
+      "tips": "Hinweis: Dies ist ein digitales Produkt. Mit erfolgtem Download gilt der Kauf als abgeschlossen und ist nicht erstattungsfähig. Bitte prüfen Sie die Bedingungen vor dem Kauf.",
+      "orange_title": "Unser Expertenteam",
+      "team_desc": "Unsere qualifizierten Sprachtrainer (TESOL-zertifiziert u.a.) verfügen über langjährige Erfahrung in der Vorbereitung auf internationale Sprachprüfungen wie TOEFL, IELTS und DET. Mit ihrer Fachkompetenz und modernen Lehrmethoden unterstützen sie Sie optimal auf Ihrem Weg zum Prüfungserfolg.",
       "Elite_Language_Educators": "Elite Sprachpädagogen"
     },
     "sas": "Hörbeispiele sprechen",
@@ -609,10 +610,10 @@
       "desc": "Das Kurspaket umfasst die <span class=\"yellow\">DET Speaking Exam Excellence</span> und die <span class=\"yellow\">DET Writing Exam Excellence</span>.  Mit dem Abonnement können Sie die Leitfäden jederzeit herunterladen und sie jederzeit und überall problemlos studieren.  Das „Jetzt kaufen“-Abonnement tritt sofort in Kraft.  Scrollen Sie auf der Seite nach oben, zeigen Sie den Kurs an und klicken Sie, um ihn herunterzuladen und mit dem Lernen zu beginnen."
     },
     "speaking": {
-      "title": "DET Speaking Exam Excellence: Ein umfassender Leitfaden"
+      "title": "Kompletter Leitfaden für den DET-Sprachteil"
     },
     "writing": {
-      "title": "DET Writing Exam Excellence: Ein umfassender Leitfaden"
+      "title": "Kompletter Leitfaden für den DET-Schreibteil"
     },
     "downloadguide": "Leitfaden herunterladen",
     "dandumai": "Sie können sie auch einzeln kaufen:",
