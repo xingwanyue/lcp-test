@@ -366,8 +366,8 @@
     "Start_Now": "Şimdi Başla"
   },
   "highscorespeaking": {
-    "font1": "Derhal yolculuğunuza başlayın",
-    "font2": "Yüksek Puanlı Konuşma!",
+    "font1": "Yüksek puana giden yolculuğunuz başlıyor!",
+    "font2": " ",
     "Start_Now": "Şimdi Başla"
   },
   "highscorewritingnew": {
@@ -737,32 +737,32 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Konuşma Düzeltme Hizmeti",
-      "description": "Güçlü yapay zeka tarafından sağlanan DET Konuşma Yapay Zekası Düzeltme hizmeti.  Tüm konuşma sorusu türlerini destekler ve DET konuşma puanınızı kolayca geliştirmenize yardımcı olacak profesyonel rehberlik sağlar.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Konuşma Becerileri - Yapay Zeka Destekli Değerlendirme | DET Hazırlık",
+      "description": "Duolingo English Test konuşma bölümünü artık yapay zeka desteğiyle çok daha kolay halledebilirsiniz. Anlık geri bildirimler, kapsamlı analizler ve uzman tavsiyeleri ile DET konuşma becerilerinizi geliştirin. Sınırsız pratik yapın ve DET resmi kriterleri doğrultusunda anında değerlendirme alın.",
+      "keywords": "DET konuşma pratiği, Duolingo sınav hazırlığı, DET konuşma teknikleri, yapay zeka değerlendirmesi, DET konuşma örnekleri, Duolingo speaking tüyoları, DET online hazırlık, İngilizce konuşma pratiği, DET sınav stratejileri, Duolingo konuşma egzersizleri"
     },
-    "h1": "DET Konuşan AI Düzeltme",
-    "desc": "DET Güçlü AI tarafından sağlanan Konuşma AI Düzeltme hizmeti. Tüm konuşma soru türlerini destekler ve DET konuşma puanınızı kolayca artırmanıza yardımcı olmak için profesyonel rehberlik sağlar.",
+    "h1": "Yapay Zeka Destekli Konuşma Değerlendirmesi",
+    "desc": "Gelişmiş yapay zeka teknolojimiz, tüm konuşma soru tiplerini analiz eder ve DET puanınızı yükseltmeniz için size özel yönlendirme sağlar.",
     "alt": "DET Pratik:En iyi DET Konuşma AI Düzeltme platformu",
     "altbanner": "DET Konuşan Yapay Zeka Düzeltme",
     "bank_user_icon": "Banka Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "purple_arrow_right": "Mor Ok Sağ",
-    "learners_have": "{number} kişi DET Konuşma AI Düzeltme hizmetini kullandı.",
-    "spn": "Başlayın",
+    "learners_have": "{number}'den fazla öğrenci başarıya ulaştı!",
+    "spn": "Hemen Dene",
     "article1": {
-      "h2": "Doğru skor",
-      "right_desc": "Denemenizi girerek veya soru bankasından seçerek gönderin, ve anında net ve ayrıntılı bir rapor ve puan alabilirsiniz.",
-      "btn": "Deneyimlemeye başlayın"
+      "h2": "Hassas Puanlama",
+      "right_desc": "Soru bankamızdan seçeceğiniz ya da kendi belirlediğiniz konularda konuşma pratiği yapın, anında detaylı rapor alın.",
+      "btn": "Ücretsiz Deneyin"
     },
     "article2": {
-      "h2": "Konuşma Değerlendirmesi",
-      "right_desc": "Telaffuz hatanızı, beklenmedik kesintiyi, eksik duraklamayı, şüpheli yüksek sesle okumayı, şüpheli tekrarı hemen görebilir ve bunlardan nasıl kaçınacağınızı öğrenebilirsiniz.",
+      "h2": "Detaylı Analiz",
+      "right_desc": "Telaffuz hatalarınızı, duraksamalarınızı, gereksiz tekrarlarınızı ve okuma tonlamanızı anında tespit edin, düzeltme önerileri alın.",
       "btn": "Deneyimlemeye başlayın"
     },
     "article3": {
-      "h2": "Profesyonel rehberlik",
-      "right_desc": "DET puanlama öğelerine göre, konuşmanızdaki zayıflıkları belirlemenize yardımcı olmak ve onu mükemmelleştirmek için profesyonel rehberlik sağlıyoruz.",
+      "h2": "Uzman Desteği",
+      "right_desc": "DET değerlendirme kriterlerine göre konuşma becerilerinizi analiz eder, gelişim alanlarınızı belirler ve size özel çözümler sunarız.",
       "btn": "Başlamaya"
     }
   },

@@ -351,9 +351,9 @@
     "Start_Now": "Jetzt starten"
   },
   "highscorespeaking": {
-    "font1": "Beginnen Sie sofort Ihre Reise zu",
-    "font2": "Hochwertiges Sprechen!",
-    "Start_Now": "Jetzt starten "
+    "font1": "Starten Sie jetzt Ihren Weg zum Erfolg!",
+    "font2": " ",
+    "Start_Now": "Jetzt beginnen"
   },
   "highscorewritingnew": {
     "font1": "Erreichen Sie Ihr Wunschergebnis!",
@@ -722,32 +722,32 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DET Practice – KI-Sprachkorrekturdienst für Ihren Duolingo-Englischtest",
-      "description": "DET Sprechender KI-Korrekturdienst, bereitgestellt durch leistungsstarke KI.  Unterstützt alle Arten von Sprechfragen und bietet professionelle Anleitung, die Ihnen dabei hilft, Ihre DET-Punktzahl für Sprechfragen auf einfache Weise zu verbessern.",
-      "keywords": "Benötigt werden"
+      "title": "KI-gestützte Sprechübungen für den Duolingo English Test | DET-Vorbereitung",
+      "description": "Optimieren Sie Ihre Sprechfertigkeiten für den Duolingo English Test mit modernster KI-Technologie. Profitieren Sie von Echtzeit-Feedback, ausführlichen Analysen und fachkundiger Beratung. Trainieren Sie unbegrenzt mit unserem Übungssystem, das nach offiziellen DET-Kriterien bewertet.",
+      "keywords": "DET Sprechübungen, Duolingo Testvorbereitung, KI-Sprachbewertung, DET Prüfungstraining, Duolingo Sprechpraxis, DET Übungsmaterial, Sprachtest-Vorbereitung, DET Sprechtraining, Englischtest-Coaching, DET Prüfungssimulation"
     },
-    "h1": "DET Sprechende KI Korrektur",
-    "desc": "DET Sprachkorrekturdienst bereitgestellt von leistungsstarker KI. Unterstützt alle Arten von Sprechaufgaben und bietet professionelle Anleitung, um Ihnen zu helfen, Ihre DET Sprechbewertung einfach zu verbessern.",
+    "h1": "KI-gestützte Sprachanalyse",
+    "desc": "Unsere leistungsstarke KI unterstützt Sie bei allen Aufgabentypen des Speaking-Moduls und hilft Ihnen gezielt, Ihre Testergebnisse zu verbessern.",
     "alt": "DET Übung: Die beste DET Plattform für KI-gestützte Sprachkorrektur",
     "altbanner": "DET Sprechende KI-Korrektur",
     "bank_user_icon": "Bank Nutzer Icon",
     "white_arrow_right": "Weißer Pfeil nach rechts",
     "purple_arrow_right": "Lila Pfeil nach rechts",
-    "learners_have": "{number} Personen haben den DET Speaking AI-Korrekturservice genutzt.",
-    "spn": "Loslegen",
+    "learners_have": "Bereits über {number} erfolgreiche Nutzer vertrauen unserem System.",
+    "spn": "Jetzt testen",
     "article1": {
-      "h2": "Genaues Ergebnis",
-      "right_desc": "Reichen Sie Ihren Aufsatz ein, indem Sie ihn eingeben oder aus der Fragenbank auswählen, und Sie erhalten sofort einen klaren und detaillierten Bericht sowie eine Bewertung.",
-      "btn": "Beginnen Sie zu erleben"
+      "h2": "Präzise Bewertung",
+      "right_desc": "Wählen Sie eine Übungsaufgabe oder nutzen Sie die freie Aufnahme - Sie erhalten umgehend eine detaillierte Auswertung.",
+      "btn": "Ausprobieren"
     },
     "article2": {
-      "h2": "Sprechbewertung",
-      "right_desc": "Sie können sofort Ihren Aussprachefehler, unerwartete Unterbrechung, fehlende Pause, vermutetes lautes Lesen, vermutete Wiederholung sehen und lernen, wie Sie diese vermeiden können.",
+      "h2": "Umfassende Analyse",
+      "right_desc": "Das System erkennt Ausspracheprobleme, Sprechpausen, Unterbrechungen, mechanisches Vorlesen und Wiederholungen - mit konkreten Verbesserungsvorschlägen.",
       "btn": "Beginnen Sie mit dem Erleben"
     },
     "article3": {
-      "h2": "Professionelle Beratung",
-      "right_desc": "Gemäß den DET Bewertungselementen bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Sprechen zu identifizieren und es perfekt zu machen.",
+      "h2": "Expertenberatung",
+      "right_desc": "Anhand der offiziellen DET-Bewertungskriterien identifizieren wir Ihre Schwachstellen und zeigen Ihnen den Weg zur Optimierung.",
       "btn": "Beginnen Sie zu erleben"
     }
   },

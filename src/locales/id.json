@@ -360,9 +360,9 @@
     "Start_Now": "Mulai Sekarang"
   },
   "highscorespeaking": {
-    "font1": "Segera memulai perjalanan Anda ke",
-    "font2": "Berbicara dengan Skor Tinggi!",
-    "Start_Now": "Mulai Sekarang"
+    "font1": "Mulai perjalanan Anda menuju skor speaking yang tinggi sekarang juga!",
+    "font2": " ",
+    "Start_Now": "Mulai Berlatih"
   },
   "highscorewritingnew": {
     "font1": "Raih skor tinggi DET Anda sekarang juga!",
@@ -731,32 +731,32 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Latihan DET - Layanan Koreksi Berbicara AI untuk Tes Bahasa Inggris Duolingo Anda",
-      "description": "Layanan Koreksi AI Berbicara DET disediakan oleh AI yang kuat.  Mendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda meningkatkan skor berbicara DET Anda dengan mudah.",
-      "keywords": "需要提供"
+      "title": "Umpan Balik AI untuk Speaking Duolingo English Test | Latihan DET",
+      "description": "Berlatih Speaking Duolingo English Test menjadi lebih mudah dengan bantuan AI mutakhir! Dapatkan umpan balik instan, analisis terperinci, dan saran ahli untuk menguasai Speaking DET. Latih kemampuan berbicara Anda dengan soal-soal tidak terbatas dan terima skor langsung sesuai standar resmi DET.",
+      "keywords": "Latihan Speaking DET, Persiapan Duolingo Test, Soal Speaking DET, AI Feedback DET, Koreksi Speaking Duolingo, Contoh Soal Speaking DET, Tips Speaking Duolingo Test, Latihan Speaking Duolingo, Penilaian Speaking DET, Cara Persiapan Speaking DET"
     },
-    "h1": "DET Koreksi AI Berbicara",
-    "desc": "DET Layanan Koreksi AI Berbicara yang disediakan oleh AI yang kuat. Mendukung semua jenis pertanyaan berbicara, dan memberikan panduan profesional untuk membantu Anda dengan mudah meningkatkan nilai DET berbicara Anda.",
+    "h1": "AI Feedback untuk Speaking DET",
+    "desc": "Layanan AI canggih untuk meningkatkan kemampuan Speaking DET Anda. Mencakup semua jenis soal speaking dengan panduan ahli untuk membantu Anda meraih skor tinggi dengan lebih mudah.",
     "alt": "DET Latihan:Platform Koreksi AI Berbicara Terbaik DET",
     "altbanner": "DET Koreksi AI Berbicara",
     "bank_user_icon": "Ikon Pengguna Bank",
     "white_arrow_right": "Panah Putih Kanan",
     "purple_arrow_right": "Panah Ungu Kanan",
-    "learners_have": "{number} orang menggunakan layanan Koreksi AI Berbicara DET.",
-    "spn": "Mulai",
+    "learners_have": "Sudah dipercaya oleh lebih dari {number} peserta DET.",
+    "spn": "Mulai Sekarang",
     "article1": {
-      "h2": "Skor akurat",
-      "right_desc": "Kirimkan esai Anda dengan memasukkan atau dari bank soal, dan Anda bisa menerima laporan dan skor yang jelas dan terperinci secara langsung.",
-      "btn": "Mulai mengalami"
+      "h2": "Penilaian Akurat",
+      "right_desc": "Kirimkan jawaban Anda atau pilih dari bank soal kami untuk mendapatkan laporan terperinci dan skor langsung.",
+      "btn": "Coba Sekarang"
     },
     "article2": {
-      "h2": "Evaluasi Berbicara",
-      "right_desc": "Anda dapat segera melihat kesalahan pengucapan Anda, gangguan yang tidak diharapkan, jeda yang hilang, dugaan membaca keras-keras, dugaan pengulangan, dan belajar cara menghindarinya.",
+      "h2": "Evaluasi Speaking",
+      "right_desc": "Identifikasi langsung kesalahan pengucapan, jeda yang tidak tepat, tanda baca yang terlewat, keraguan dalam membaca, atau pengulangan yang tidak perlu, serta pelajari cara memperbaikinya.",
       "btn": "Mulai mengalami"
     },
     "article3": {
-      "h2": "Panduan profesional",
-      "right_desc": "Menurut elemen penilaian DET, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam berbicara dan membuatnya sempurna.",
+      "h2": "Panduan Profesional",
+      "right_desc": "Berdasarkan kriteria penilaian resmi DET, kami memberikan panduan ahli untuk mengidentifikasi dan menyempurnakan kelemahan speaking Anda.",
       "btn": "Mulai merasakan"
     }
   },

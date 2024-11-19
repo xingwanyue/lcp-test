@@ -352,9 +352,9 @@
     "Start_Now": "Inizia ora"
   },
   "highscorespeaking": {
-    "font1": "Inizia subito il tuo viaggio verso",
-    "font2": "Punteggio Elevato nel Parlare!",
-    "Start_Now": "Inizia Ora"
+    "font1": "Inizia ora il tuo percorso verso l'eccellenza!",
+    "font2": " ",
+    "Start_Now": "Comincia Adesso"
   },
   "highscorewritingnew": {
     "font1": "Raggiungi il Massimo Punteggio!",
@@ -723,32 +723,32 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Pratica DET - Servizio di correzione orale tramite intelligenza artificiale per il tuo test di inglese Duolingo",
-      "description": "Servizio di correzione AI parlante DET fornito da una potente intelligenza artificiale.  Supporta tutti i tipi di domande sulla conversazione e fornisce una guida professionale per aiutarti a migliorare facilmente il tuo punteggio di conversazione DET.",
-      "keywords": "需要提供"
+      "title": "Preparazione al Duolingo English Test con Feedback IA | Esercitazioni Speaking DET",
+      "description": "Ottimizza la tua performance nella sezione orale del Duolingo English Test grazie alla nostra innovativa tecnologia di Intelligenza Artificiale. Ricevi valutazioni immediate, analisi approfondite e consigli personalizzati. Esercitati senza limiti con un sistema di valutazione allineato ai criteri ufficiali DET.",
+      "keywords": "esercizi speaking DET, preparazione Duolingo Test, valutazione IA inglese, simulazione prova orale, correzione speaking DET, esercitazioni Duolingo, metodo speaking test, preparazione esame DET, allenamento pronuncia, strategie DET"
     },
-    "h1": "DET Correzione dell'IA di parola",
-    "desc": "DET Servizio di correzione del parlato fornito da un potente AI. Supporta tutti i tipi di domande orali e fornisce una guida professionale per aiutarti a migliorare facilmente il tuo DET punteggio di speaking.",
+    "h1": "Valutazione IA della Prova Orale",
+    "desc": "La nostra avanzata tecnologia IA analizza ogni aspetto della tua espressione orale e ti guida verso il miglioramento delle tue prestazioni nel DET.",
     "alt": "DET Pratica:La migliore DET piattaforma di correzione per il parlato AI",
     "altbanner": "DET Correzione AI Parlante",
     "bank_user_icon": "Icona Utente della Banca",
     "white_arrow_right": "Freccia Bianca Destra",
     "purple_arrow_right": "Freccia Viola Destra",
-    "learners_have": "{number} persone hanno utilizzato il servizio di correzione vocale DET Speaking AI.",
-    "spn": "Inizia",
+    "learners_have": "Più di {number} studenti si sono già affidati al nostro sistema.",
+    "spn": "Prova Subito",
     "article1": {
-      "h2": "Punteggio accurato",
-      "right_desc": "Invia il tuo saggio inserendolo o dalla banca delle domande, e potrai ricevere immediatamente un rapporto chiaro e dettagliato con il punteggio.",
-      "btn": "Inizia a sperimentare"
+      "h2": "Valutazione Precisa",
+      "right_desc": "Registra la tua risposta o scegli un esercizio dalla nostra banca dati per ricevere immediatamente un'analisi dettagliata.",
+      "btn": "Inizia la Prova"
     },
     "article2": {
-      "h2": "Valutazione del Parlato",
-      "right_desc": "Puoi vedere immediatamente il tuo errore di pronuncia, interruzione inaspettata, pausa mancante, sospetto di lettura ad alta voce, sospetto di ripetizione e imparare come evitarli.",
+      "h2": "Analisi Completa",
+      "right_desc": "Individua istantaneamente errori di pronuncia, esitazioni, pause inadeguate, lettura meccanica e ripetizioni superflue.",
       "btn": "Inizia a sperimentare"
     },
     "article3": {
-      "h2": "Guida professionale",
-      "right_desc": "Secondo gli elementi di punteggio DET, forniamo una guida professionale per aiutarti a identificare le debolezze nel tuo parlare e renderlo perfetto.",
+      "h2": "Supporto Esperto",
+      "right_desc": "Seguendo i criteri di valutazione DET, identifichiamo i tuoi punti deboli e ti proponiamo soluzioni mirate.",
       "btn": "Inizia a sperimentare"
     }
   },

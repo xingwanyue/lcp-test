@@ -365,9 +365,9 @@
     "Start_Now": "Commencer maintenant"
   },
   "highscorespeaking": {
-    "font1": "Embarquez immédiatement dans votre voyage vers",
-    "font2": "Parler avec un score élevé !",
-    "Start_Now": "Commencez maintenant"
+    "font1": "Lancez-vous vers l'excellence !",
+    "font2": " ",
+    "Start_Now": "Démarrer maintenant"
   },
   "highscorewritingnew": {
     "font1": "Réussissez votre DET dès aujourd'hui !",
@@ -736,32 +736,32 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DET Practice - Service de correction orale AI pour votre test d'anglais Duolingo",
-      "description": "DET Speaking AI Service de correction fourni par une IA puissante.  Prend en charge tous les types de questions orales et fournit des conseils professionnels pour vous aider à améliorer facilement votre score oral DET.",
-      "keywords": "Besoin de fournir"
+      "title": "Assistant IA pour l'Épreuve Orale du Duolingo English Test | Préparation DET",
+      "description": "Optimisez votre performance à l'épreuve orale du Duolingo English Test grâce à notre technologie IA de pointe. Bénéficiez d'une évaluation instantanée, d'analyses approfondies et de conseils personnalisés. Entraînez-vous sans limite avec notre système d'évaluation aligné sur les critères officiels du DET.",
+      "keywords": "préparation DET oral, entraînement Duolingo Test, exercices speaking DET, correction IA Duolingo, évaluation orale DET, conseils réussite DET, simulation test Duolingo, préparation speaking test, exercices anglais oral, méthodologie DET"
     },
-    "h1": "DET Correction AI Parlante",
-    "desc": "DET Service de correction par IA parlante fourni par une IA puissante. Prend en charge tous les types de questions orales et fournit des conseils professionnels pour vous aider à améliorer facilement votre DET score de parole.",
+    "h1": "Évaluation IA de l'Expression Orale",
+    "desc": "Notre technologie IA avancée analyse tous les aspects de votre expression orale et vous guide efficacement vers l'amélioration de vos performances au DET.",
     "alt": "DET Pratique :La meilleure DET Plateforme de correction d'IA pour parler",
     "altbanner": "DET Correction de l'IA Parlante",
     "bank_user_icon": "Icône d'utilisateur bancaire",
     "white_arrow_right": "Flèche Blanche Droite",
     "purple_arrow_right": "Flèche violette vers la droite",
-    "learners_have": "{number} personnes ont utilisé le service de correction AI de DET Speaking.",
-    "spn": "Commencer",
+    "learners_have": "Déjà plus de {number} candidats nous font confiance.",
+    "spn": "Essayer gratuitement",
     "article1": {
-      "h2": "Score précis",
-      "right_desc": "Soumettez votre essai en le saisissant ou en utilisant la banque de questions, et vous pouvez recevoir un rapport clair et détaillé ainsi qu'un score immédiatement.",
-      "btn": "Commencez à vivre l'expérience"
+      "h2": "Notation Précise",
+      "right_desc": "Enregistrez votre réponse ou choisissez un sujet de notre base d'exercices pour recevoir instantanément une évaluation détaillée.",
+      "btn": "Commencer l'évaluation"
     },
     "article2": {
-      "h2": "Évaluation de l'expression orale",
-      "right_desc": "Vous pouvez immédiatement voir votre erreur de prononciation, interruption inattendue, pause manquante, lecture à haute voix suspectée, répétition suspectée, et apprendre comment les éviter.",
+      "h2": "Analyse Complète",
+      "right_desc": "Identifiez immédiatement vos erreurs de prononciation, les hésitations, les pauses inappropriées, la lecture mécanique et les répétitions superflues.",
       "btn": "Commencez à faire l'expérience"
     },
     "article3": {
-      "h2": "Conseils professionnels",
-      "right_desc": "Selon les éléments de notation DET, nous fournissons des conseils professionnels pour vous aider à identifier les faiblesses de votre expression orale et à la perfectionner.",
+      "h2": "Accompagnement Expert",
+      "right_desc": "Conformément aux critères d'évaluation du DET, nous ciblons vos points faibles et vous proposons des solutions concrètes.",
       "btn": "Commencez à expérimenter"
     }
   },
