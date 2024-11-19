@@ -95,12 +95,7 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": [
-      "DET Pratique",
-      "Correction de l'IA",
-      "Simulation complète",
-      "DET Cours"
-    ],
+    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
@@ -375,9 +370,9 @@
     "Start_Now": "Commencez maintenant"
   },
   "highscorewritingnew": {
-    "font1": "Commencez immédiatement votre voyage vers",
-    "font2": "Écriture à haute notation !",
-    "Start_Now": "Commencez maintenant"
+    "font1": "Réussissez votre DET dès aujourd'hui !",
+    "font2": " ",
+    "Start_Now": "Commencer"
   },
   "path": {
     "seometa": {
@@ -485,37 +480,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - Service de correction d'écriture IA pour votre test d'anglais Duolingo",
-      "description": "DET Writing AI Service de correction fourni par AI comparable aux enseignants professionnels.  Votre essai sera corrigé en fonction des règles de notation du DET et vous recevrez des commentaires détaillés dans un délai de 1 à 5 minutes.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Writing AI | Vérificateur de Score de Rédaction DET par DET Practice",
+      "description": "Optimisez votre préparation au Duolingo English Test avec notre outil d'évaluation intelligent. Notre système analyse votre rédaction en temps réel et fournit une évaluation précise, des retours personnalisés et des conseils ciblés. Entraînez-vous sur des sujets authentiques du DET et perfectionnez votre expression écrite grâce à nos analyses expertes.",
+      "keywords": "duolingo test rédaction, préparation DET, correction rédaction, évaluation duolingo, retour écrit DET, exercices duolingo, analyse IA, méthodologie DET, techniques rédaction, exemples corrigés, entraînement DET, exercices en ligne"
     },
-    "h1": "DET Correction d'écriture IA",
-    "desc": "DET Service de correction d'écriture AI fourni par une IA comparable à des enseignants professionnels. Votre essai sera corrigé en fonction des règles DET de notation, et vous recevrez des commentaires détaillés dans un délai de 1 à 5 minutes.",
+    "h1": "Assistant Rédaction DET",
+    "desc": "Notre technologie d'IA égale l'expertise des correcteurs professionnels. Analyse complète selon les critères officiels du DET, avec retour détaillé sous 5 minutes.",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "useralt": "Icône utilisateur",
     "white_arrow_right": "flèche_blanche_droite",
     "yellow_arrow_right": "flèche_jaune_droite",
-    "learners_have": "{number} personnes ont utilisé le service de correction DET Writing AI.",
-    "Review_Now": "Commencer",
-    "Correct_Now": "Commencez à vivre l'expérience",
+    "learners_have": "Déjà adopté par plus de {number} candidats.",
+    "Review_Now": "Découvrir",
+    "Correct_Now": "Tester Maintenant",
     "Get_Scored_Now": "Commencez à expérimenter",
     "Enhance_Now": "Améliorez maintenant",
     "Begin_Polishing": "Commencer le polissage",
     "h2_1": {
-      "h2": "Score précis",
-      "right_desc": "Soumettez votre essai à partir de la banque de questions, et vous pouvez recevoir un rapport clair et détaillé ainsi qu'un score en 1 à 5 minutes."
+      "h2": "Notation Experte",
+      "right_desc": "Choisissez un sujet de notre base et recevez une évaluation détaillée en quelques minutes."
     },
     "h2_2": {
-      "h2": "Correction d'écriture",
-      "right_desc": "Vous pouvez immédiatement voir vos erreurs de vocabulaire, vos fautes de grammaire et apprendre comment les éviter."
+      "h2": "Correction Intelligente",
+      "right_desc": "Repérage instantané des erreurs linguistiques avec explications et conseils de remédiation."
     },
     "h2_3": {
-      "h2": "Conseils professionnels",
-      "right_desc": "Selon les éléments de scoring DET, nous fournissons des conseils professionnels pour vous aider à identifier les faiblesses de votre document et le rendre parfait."
+      "h2": "Accompagnement Expert",
+      "right_desc": "Analyse approfondie selon la grille officielle DET pour optimiser votre performance."
     },
     "h2_4": {
-      "h2": "Polissage d'essai",
-      "right_desc": "Modifiez avec précision chaque mot et chaque phrase, ajustez raisonnablement la structure des paragraphes, et revitalisez le style d'écriture pour améliorer davantage votre composition et la transformer en un texte de haute qualité."
+      "h2": "Perfectionnement Stylistique",
+      "right_desc": "Recommandations précises sur le vocabulaire, la syntaxe et la structure pour maximiser votre score."
     },
     "h2_5": {
       "h2": "Polissage du texte original",

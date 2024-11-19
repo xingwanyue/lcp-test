@@ -96,12 +96,7 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -376,9 +371,9 @@
     "Start_Now": "Şimdi Başla"
   },
   "highscorewritingnew": {
-    "font1": "Hemen yolculuğunuza başlayın",
-    "font2": "Yüksek Skorlu Yazı!",
-    "Start_Now": "Şimdi Başla"
+    "font1": "Hedef Puanınıza Ulaşın!",
+    "font2": " ",
+    "Start_Now": "Başlayın"
   },
   "path": {
     "seometa": {
@@ -486,37 +481,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Yazım Düzeltme Hizmeti",
-      "description": "Yapay zeka tarafından sağlanan DET Yazma Yapay Zeka Düzeltme hizmeti, profesyonel öğretmenlerle karşılaştırılabilir.  Makaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Writing AI | DET Yazma Skor Kontrolörü by DET Practice",
+      "description": "Yapay zeka teknolojisiyle DET yazma becerinizi geliştirin. Gerçek sınav formatında yazılarınızı analiz edin, anında puan ve detaylı geri bildirim alın. Profesyonel düzeyde önerilerle yazma kalitenizi yükseltin ve DET'e tam hazırlıklı olun.",
+      "keywords": "duolingo yazma sınavı, det yazı hazırlık, yazma değerlendirmesi, duolingo puan hesaplama, det yazı örnekleri, yazma alıştırmaları, yapay zeka analizi, det yazı teknikleri, yazma püf noktaları, örnek yazılar, sınav hazırlığı, online pratik"
     },
-    "h1": "DET Yapay Zeka Düzeltme Yazma",
-    "desc": "DET Profesyonel öğretmenlerle karşılaştırılabilir AI tarafından sağlanan Yazma AI Düzeltme hizmeti. Makaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
+    "h1": "Yapay Zeka Destekli Yazı Analizi",
+    "desc": "Uzman öğretmen kalitesinde yapay zeka değerlendirmesi. DET kriterlerine göre 5 dakika içinde kapsamlı analiz.",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "useralt": "Kullanıcı Simgesi",
     "white_arrow_right": "beyaz_ok_sağa",
     "yellow_arrow_right": "sarı_ok_sağa",
-    "learners_have": "{number} kişi DET Yazı AI Düzeltme hizmetini kullandı.",
-    "Review_Now": "Başlayın",
-    "Correct_Now": "Deneyimlemeye başla",
+    "learners_have": "{number}'den fazla öğrencinin tercihi.",
+    "Review_Now": "Hemen Dene",
+    "Correct_Now": "Şimdi Başla",
     "Get_Scored_Now": "Deneyimlemeye başlayın",
     "Enhance_Now": "Şimdi Geliştir",
     "Begin_Polishing": "Cilalamayı Başlat",
     "h2_1": {
-      "h2": "Doğru skor",
-      "right_desc": "Soru bankasından makalenizi gönderin ve 1-5 dakika içinde net ve ayrıntılı bir rapor ve puan alabilirsiniz."
+      "h2": "Hassas Puanlama",
+      "right_desc": "Soru havuzundan seçtiğiniz konuda yazın, dakikalar içinde detaylı değerlendirme alın."
     },
     "h2_2": {
-      "h2": "Yazı düzeltme",
-      "right_desc": "Kelime dağarcığınızla ilgili hataları, dilbilgisi hatalarını hemen görebilir ve bunlardan nasıl kaçınacağınızı öğrenebilirsiniz."
+      "h2": "Anlık Düzeltme",
+      "right_desc": "Dil ve anlatım hatalarınızı anında tespit edip, çözüm önerileri sunuyoruz."
     },
     "h2_3": {
-      "h2": "Profesyonel rehberlik",
-      "right_desc": "DET puanlama unsurlarına göre, makalenizdeki zayıf noktaları belirlemenize yardımcı olmak ve mükemmel hale getirmek için profesyonel rehberlik sağlıyoruz."
+      "h2": "Uzman Desteği",
+      "right_desc": "DET değerlendirme ölçütlerine göre eksiksiz analiz ve yönlendirme."
     },
     "h2_4": {
-      "h2": "Deneme cilalama",
-      "right_desc": "Her kelimeyi ve cümleyi doğru bir şekilde değiştir, paragraf yapısını makul bir şekilde ayarla ve yazı tarzını canlandırarak kompozisyonunu daha da geliştir ve yüksek puan alan birine dönüştür."
+      "h2": "İfade Geliştirme",
+      "right_desc": "Kelime seçiminden paragraf düzenine kadar tüm yazınızı mükemmelleştirin."
     },
     "h2_5": {
       "h2": "Orijinal Metin Parlatma",

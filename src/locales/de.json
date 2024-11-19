@@ -51,22 +51,8 @@
     "LearnTitle": "Lernmaterialien",
     "BlogTitle": "Blog",
     "CompanyTitle": "Über uns",
-    "Products": [
-      "DET-Übungen",
-      "KI-Schreibtraining",
-      "KI-Sprechtraining",
-      "Prüfungssimulation",
-      "DET-Kurse"
-    ],
-    "Company": [
-      "Über uns",
-      "Kontakt",
-      "AGB",
-      "Datenschutz",
-      "Sitemap",
-      "Partner werden",
-      "Widerrufsrecht"
-    ],
+    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
     "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -95,12 +81,7 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": [
-      "DET Übung",
-      "KI-Korrektur",
-      "Ganzlängen-Mock",
-      "DET Kurse"
-    ],
+    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -375,9 +356,9 @@
     "Start_Now": "Jetzt starten "
   },
   "highscorewritingnew": {
-    "font1": "Beginnen Sie sofort Ihre Reise zu",
-    "font2": "Schreiben mit hoher Punktzahl!",
-    "Start_Now": "Jetzt starten"
+    "font1": "Erreichen Sie Ihr Wunschergebnis!",
+    "font2": " ",
+    "Start_Now": "Jetzt beginnen"
   },
   "path": {
     "seometa": {
@@ -485,37 +466,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice – KI-Schreibkorrekturservice für Ihren Duolingo-Englischtest",
-      "description": "Der von AI bereitgestellte DET Writing AI-Korrekturdienst ist mit professionellen Lehrern vergleichbar.  Ihr Aufsatz wird anhand der DET-Bewertungsregeln korrigiert und Sie erhalten innerhalb von 1–5 Minuten ein detailliertes Feedback.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Writing AI | DET Schreibbewertungs-Checker von DET Practice",
+      "description": "Optimieren Sie Ihre Vorbereitung auf den Duolingo English Test mit unserem intelligenten Analysesystem. Erhalten Sie binnen Minuten eine präzise Auswertung Ihrer Texte nach DET-Standards, individuelle Rückmeldungen und konkrete Verbesserungsvorschläge. Trainieren Sie mit authentischen Aufgaben und steigern Sie Ihre Schreibkompetenz durch fundierte Analysen.",
+      "keywords": "duolingo schreibtest, det übungsmaterial, schreibtraining det, textbewertung duolingo, det korrektur, schreibaufgaben det, ki-analyse, det vorbereitung, schreibtechniken det, musterlösungen, prüfungsvorbereitung, online-übungen"
     },
-    "h1": "DET KI-Korrektur schreiben",
-    "desc": "DET Schreibkorrekturservice von AI, vergleichbar mit professionellen Lehrern. Ihr Aufsatz wird basierend auf DET Bewertungsregeln korrigiert, und Sie erhalten innerhalb von 1-5 Minuten detailliertes Feedback.",
+    "h1": "KI-Textanalyse für DET",
+    "desc": "Modernste KI-Technologie auf dem Niveau erfahrener Prüfer. Erhalten Sie innerhalb von 5 Minuten eine detaillierte Analyse nach offiziellen DET-Kriterien.",
     "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
     "useralt": "Benutzer-Symbol",
     "white_arrow_right": "weißer_pfeil_rechts",
     "yellow_arrow_right": "gelber_pfeil_rechts",
-    "learners_have": "{number} Personen nutzten den DET Writing AI Correction-Dienst.",
-    "Review_Now": "Loslegen",
-    "Correct_Now": "Beginnen Sie zu erleben",
+    "learners_have": "Bereits von über {number} Teilnehmern erfolgreich genutzt.",
+    "Review_Now": "Jetzt testen",
+    "Correct_Now": "Sofort starten",
     "Get_Scored_Now": "Starten Sie das Erlebnis",
     "Enhance_Now": "Jetzt verbessern",
     "Begin_Polishing": "Polieren beginnen",
     "h2_1": {
-      "h2": "Genauer Spielstand",
-      "right_desc": "Reichen Sie Ihren Aufsatz aus der Fragenbank ein, und Sie können innerhalb von 1-5 Minuten einen klaren und detaillierten Bericht und eine Bewertung erhalten."
+      "h2": "Präzise Bewertung",
+      "right_desc": "Wählen Sie eine Aufgabe aus unserer Datenbank und erhalten Sie binnen Minuten eine ausführliche Auswertung."
     },
     "h2_2": {
-      "h2": "Schreibkorrektur       ",
-      "right_desc": "Sie können sofort Ihre Vokabelfehler und Grammatikfehler sehen und lernen, wie Sie sie vermeiden können."
+      "h2": "Intelligente Korrektur",
+      "right_desc": "Automatische Erkennung sprachlicher Schwächen mit konkreten Verbesserungsvorschlägen."
     },
     "h2_3": {
-      "h2": "Professionelle Beratung",
-      "right_desc": "Laut den DET Bewertungsfaktoren bieten wir professionelle Beratung an, um Ihnen zu helfen, die Schwächen in Ihrem Papier zu identifizieren und es perfekt zu machen."
+      "h2": "Professionelle Begleitung",
+      "right_desc": "Fundierte Analyse nach DET-Bewertungsmatrix für optimale Prüfungsvorbereitung."
     },
     "h2_4": {
-      "h2": "Essay-Überarbeitung",
-      "right_desc": "Ändern Sie jeden Satz und jedes Wort genau, passen Sie die Absatzstruktur vernünftig an und beleben Sie den Schreibstil, um Ihre Komposition weiter zu verbessern und sie in eine hoch bewertete zu verwandeln."
+      "h2": "Stilistische Optimierung",
+      "right_desc": "Detaillierte Empfehlungen zu Wortwahl, Satzbau und Textstruktur für Höchstleistungen."
     },
     "h2_5": {
       "h2": "Polieren des Originaltextes",

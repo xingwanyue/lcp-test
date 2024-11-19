@@ -58,15 +58,7 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": [
-      "Nosotros",
-      "Contacto",
-      "Términos",
-      "Privacidad",
-      "Mapa del sitio",
-      "Colaboraciones",
-      "Devoluciones"
-    ],
+    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -96,12 +88,7 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": [
-      "DET Práctica",
-      "Corrección de IA",
-      "Simulacro Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -376,9 +363,9 @@
     "Start_Now": "Empieza Ahora"
   },
   "highscorewritingnew": {
-    "font1": "Inmediatamente embárcate en tu viaje a",
-    "font2": "¡Escritura de alta puntuación!",
-    "Start_Now": "Empieza Ahora"
+    "font1": "¡Alcanza la Máxima Puntuación!",
+    "font2": " ",
+    "Start_Now": "¡Adelante!"
   },
   "path": {
     "seometa": {
@@ -486,37 +473,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "Práctica DET: servicio de corrección de escritura con IA para tu examen de inglés de Duolingo",
-      "description": "Servicio de corrección de IA de escritura DET proporcionado por IA comparable al de los profesores profesionales.  Su ensayo se corregirá según las reglas de puntuación del DET y recibirá comentarios detallados en un plazo de 1 a 5 minutos.",
-      "keywords": "需要提供"
+      "title": "Evaluación AI para el Duolingo English Test | DET Writing Score Checker by DET Practice",
+      "description": "Mejora tu preparación para el Duolingo English Test con nuestra avanzada inteligencia artificial. Obtén evaluaciones profesionales, retroalimentación personalizada y consejos prácticos en cuestión de minutos. Practica con ejercicios auténticos del DET y perfecciona tu escritura.",
+      "keywords": "duolingo english test preparación, ejercicios DET, corrector DET, evaluación escritura duolingo, análisis AI escritura, simulador DET, preparación examen, tips escritura DET, ejemplos DET, práctica online"
     },
-    "h1": "DET Escritura de Corrección de IA",
-    "desc": "DET Servicio de corrección de escritura AI proporcionado por AI comparable a maestros profesionales. Su ensayo será corregido según las DET reglas de puntuación, y recibirá comentarios detallados en un plazo de 1-5 minutos.",
+    "h1": "Análisis Inteligente DET",
+    "desc": "Sistema de evaluación AI de última generación, equivalente a un profesor experto. Corrección según criterios oficiales DET en solo 5 minutos.",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de práctica",
     "useralt": "Icono de Usuario",
     "white_arrow_right": "flecha_blanca_derecha",
     "yellow_arrow_right": "flecha_amarilla_derecha",
-    "learners_have": "{number} personas utilizaron el servicio de Corrección de Escritura AI de DET.",
-    "Review_Now": "Comenzar",
-    "Correct_Now": "Empieza a experimentar",
+    "learners_have": "Ya confían en nosotros más de {number} estudiantes.",
+    "Review_Now": "Empieza Ya",
+    "Correct_Now": "Pruébalo",
     "Get_Scored_Now": "Comienza a experimentar",
     "Enhance_Now": "Mejorar Ahora",
     "Begin_Polishing": "Comenzar pulido",
     "h2_1": {
-      "h2": "Puntuación precisa",
-      "right_desc": "Envía tu ensayo desde el banco de preguntas, y puedes recibir un informe claro y detallado con puntuación en 1-5 minutos."
+      "h2": "Evaluación Precisa",
+      "right_desc": "Elige un tema de nuestro banco de ejercicios y recibe un análisis detallado al instante."
     },
     "h2_2": {
-      "h2": "Corrección de escritura",
-      "right_desc": "Puedes ver de inmediato tus errores de vocabulario, errores gramaticales y aprender cómo evitarlos."
+      "h2": "Corrección Instantánea",
+      "right_desc": "Detecta errores lingüísticos al momento y aprende cómo mejorarlos."
     },
     "h2_3": {
-      "h2": "Guía profesional",
-      "right_desc": "Según los elementos de puntuación DET, proporcionamos orientación profesional para ayudarte a identificar las debilidades en tu documento y hacerlo perfecto."
+      "h2": "Asesoría Experta",
+      "right_desc": "Análisis basado en los criterios oficiales del DET para optimizar tu rendimiento."
     },
     "h2_4": {
-      "h2": "Pulido de ensayo",
-      "right_desc": "Modifica con precisión cada palabra y oración, ajusta razonablemente la estructura del párrafo y revitaliza el estilo de escritura para mejorar aún más tu composición y transformarla en una de alta puntuación."
+      "h2": "Mejora Estilística",
+      "right_desc": "Recomendaciones específicas para perfeccionar vocabulario, gramática y estructura."
     },
     "h2_5": {
       "h2": "Pulido del texto original",

@@ -95,7 +95,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -480,8 +485,9 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - AI Writing Correction Service for your Duolingo English Test",
-      "description": "DET Writing AI Correction service provided by AI comparable to professional teachers. Your essay will be corrected based on DET scoring rules, and you will receive detailed feedback within 1-5 mins."
+      "title": "Duolingo English Test Writing AI | DET Writing Score Checker by DET Practice",
+      "description": "Get instant AI-powered writing evaluation for your Duolingo English Test practice. Receive accurate scores, detailed feedback, and improvement suggestions within minutes. Practice with real DET writing questions and enhance your writing skills with professional analysis.",
+      "keywords": "duolingo english test writing, DET writing practice, DET writing correction, duolingo english test writing scorer, DET writing feedback, duolingo english test writing, AI writing evaluation, DET writing assessment, DET writing tips, duolingo english test writing samples, DET writing preparation, online writing practice"
     },
     "h1": "DET Writing AI Correction",
     "desc": "DET Writing AI Correction service provided by AI comparable to professional teachers. Your essay will be corrected based on DET scoring rules, and you will receive detailed feedback within 1-5 mins.",

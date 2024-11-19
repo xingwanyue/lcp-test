@@ -51,13 +51,7 @@
     "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Tentang Kami",
-    "Products": [
-      "Latihan Soal DET",
-      "Koreksi Writing AI",
-      "Penilaian Speaking AI",
-      "Simulasi Ujian",
-      "Kursus DET"
-    ],
+    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -96,12 +90,7 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -376,9 +365,9 @@
     "Start_Now": "Mulai Sekarang"
   },
   "highscorewritingnew": {
-    "font1": "Segera memulai perjalanan Anda ke",
-    "font2": "Penulisan Skor Tinggi!",
-    "Start_Now": "Mulai Sekarang"
+    "font1": "Raih skor tinggi DET Anda sekarang juga!",
+    "font2": " ",
+    "Start_Now": "Mulai Gratis"
   },
   "path": {
     "seometa": {
@@ -486,37 +475,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "Latihan DET - Layanan Koreksi Penulisan AI untuk Tes Bahasa Inggris Duolingo Anda",
-      "description": "Layanan Koreksi AI Penulisan DET yang disediakan oleh AI sebanding dengan guru profesional.  Esai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima masukan terperinci dalam 1-5 menit.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Writing AI | Pemeriksa Skor Menulis DET dengan AI",
+      "description": "Dapatkan penilaian tulisan instan menggunakan AI untuk persiapan Duolingo English Test Anda. Sistem kami memberikan skor akurat, masukan detail, dan saran perbaikan hanya dalam hitungan menit. Tingkatkan kemampuan menulis Anda dengan soal-soal DET asli dan analisis profesional.",
+      "keywords": "duolingo english test writing, latihan menulis DET, koreksi tulisan DET, penilaian skor DET, feedback menulis DET, tips menulis DET, evaluasi tulisan dengan AI, persiapan tes DET, contoh tulisan DET, bank soal DET, latihan menulis online, cara mendapat skor tinggi DET"
     },
-    "h1": "DET Menulis Koreksi AI",
-    "desc": "DET Layanan Koreksi AI yang disediakan oleh AI setara dengan guru profesional. Esai Anda akan dikoreksi berdasarkan aturan penilaian DET, dan Anda akan menerima umpan balik terperinci dalam waktu 1-5 menit.",
+    "h1": "Koreksi Tulisan DET dengan AI",
+    "desc": "Layanan koreksi tulisan kami menggunakan AI canggih setara pengajar profesional. Esai Anda akan dinilai sesuai rubrik DET resmi dengan feedback lengkap dalam 1-5 menit.",
     "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
     "useralt": "Ikon Pengguna",
     "white_arrow_right": "panah_putih_kanan",
     "yellow_arrow_right": "panah_kuning_kanan",
-    "learners_have": "{number} orang menggunakan layanan DET Koreksi AI Penulisan.",
-    "Review_Now": "Mulai",
-    "Correct_Now": "Mulailah mengalami",
+    "learners_have": "Telah dipercaya oleh lebih dari {number} peserta tes DET.",
+    "Review_Now": "Coba Sekarang",
+    "Correct_Now": "Mulai Berlatih",
     "Get_Scored_Now": "Mulai mengalami",
     "Enhance_Now": "Tingkatkan Sekarang",
     "Begin_Polishing": "Mulai Memoles",
     "h2_1": {
-      "h2": "Skor akurat",
-      "right_desc": "Kirimkan esai Anda dari bank soal, dan Anda dapat menerima laporan dan skor yang jelas dan rinci dalam waktu 1-5 menit."
+      "h2": "Penilaian Skor Akurat",
+      "right_desc": "Kerjakan soal dari bank soal kami dan dapatkan laporan detail beserta prediksi skor dalam 1-5 menit."
     },
     "h2_2": {
-      "h2": "Koreksi tulisan",
-      "right_desc": "Anda dapat segera melihat kesalahan kosakata Anda, kesalahan tata bahasa, dan belajar cara menghindarinya."
+      "h2": "Koreksi Komprehensif",
+      "right_desc": "Temukan kesalahan kosakata dan tata bahasa secara instan, lengkap dengan cara memperbaikinya."
     },
     "h2_3": {
-      "h2": "Panduan profesional",
-      "right_desc": "Menurut elemen penilaian DET, kami menyediakan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam makalah Anda dan membuatnya sempurna."
+      "h2": "Panduan Ahli",
+      "right_desc": "Berdasarkan kriteria penilaian DET, kami membantu mengidentifikasi kelemahan tulisan Anda dan memberikan saran perbaikan yang tepat."
     },
     "h2_4": {
-      "h2": "Pemolesan esai",
-      "right_desc": "Memodifikasi setiap kata dan kalimat dengan akurat, menyesuaikan struktur paragraf secara wajar, dan menghidupkan kembali gaya penulisan untuk lebih meningkatkan komposisi Anda dan mengubahnya menjadi karya dengan skor tinggi."
+      "h2": "Penyempurnaan Esai",
+      "right_desc": "Perbaiki pilihan kata, struktur kalimat, dan organisasi paragraf untuk menghasilkan esai berkualitas tinggi yang memenuhi standar DET."
     },
     "h2_5": {
       "h2": "Pemolesan Teks Asli",

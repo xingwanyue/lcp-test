@@ -51,22 +51,8 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": [
-      "DET刷题",
-      "AI写作批改",
-      "AI口语评测",
-      "全真模考",
-      "DET课程"
-    ],
-    "Company": [
-      "关于我们",
-      "联系我们",
-      "服务条款",
-      "隐私政策",
-      "网站地图",
-      "合作计划",
-      "退款说明"
-    ],
+    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
+    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -95,12 +81,7 @@
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": [
-      "DET 练习",
-      "AI纠正",
-      "全长模拟",
-      "DET 课程"
-    ],
+    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -375,9 +356,9 @@
     "Start_Now": "立即开始"
   },
   "highscorewritingnew": {
-    "font1": "立即开始您的旅程到",
-    "font2": "高分写作！",
-    "Start_Now": "立即开始"
+    "font1": "开启你的DET",
+    "font2": "写作提分之旅！",
+    "Start_Now": "马上开始"
   },
   "path": {
     "seometa": {
@@ -485,37 +466,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET 练习 - 为您的 Duolingo 英语测试提供人工智能写作批改服务",
-      "description": "AI提供的DET写作AI批改服务可媲美专业老师。您的论文将根据DET评分规则进行批改，您将在1-5分钟内收到详细的反馈。",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test 写作 AI 助手｜DET 写作智能评分系统",
+      "description": "专业的 DET 写作智能评分工具，实时诊断和评估你的 Duolingo English Test 写作水平。系统会在几分钟内给出精准评分、专业点评和改进建议。配备真实 DET 写作题库，助你通过系统性分析全面提升写作能力。",
+      "keywords": "duolingo english test writing, DET写作训练, DET作文批改, duolingo写作评分, DET写作指导, 多邻国英语测试写作, AI写作点评, DET写作诊断, DET写作提升, 多邻国英语测试写作范文, DET备考写作, 在线写作辅导"
     },
-    "h1": "DET 编写人工智能校正",
-    "desc": "DET 由人工智能提供的写作纠正服务媲美专业教师。您的文章将根据DET评分规则进行纠正，并且您将在1-5分钟内收到详细反馈。",
+    "h1": "DET写作智能助手",
+    "desc": "基于深度学习的写作诊断系统，评分标准与DET考试完全同步。1-5分钟内即可获得全面的写作分析报告和针对性建议。",
     "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
     "useralt": "用户图标",
     "white_arrow_right": "白色_箭头_右",
     "yellow_arrow_right": "黄色箭头右",
-    "learners_have": "{number} 人使用了 DET 写作AI校正服务。",
-    "Review_Now": "开始使用",
-    "Correct_Now": "开始体验",
+    "learners_have": "已有超过{number}名考生使用并提升了写作水平。",
+    "Review_Now": "开始体验",
+    "Correct_Now": "立即测评",
     "Get_Scored_Now": "开始体验",
     "Enhance_Now": "立即增强",
     "Begin_Polishing": "开始抛光",
     "h2_1": {
-      "h2": "准确得分",
-      "right_desc": "从题库中提交您的作文，您可以在1-5分钟内收到清晰详细的报告和评分。"
+      "h2": "评分精准可靠",
+      "right_desc": "从真题库中选择题目完成写作，系统会在1-5分钟内生成专业的评分报告。"
     },
     "h2_2": {
-      "h2": "写作修改",
-      "right_desc": "您可以立即看到您的词汇错误、语法错误，并学习如何避免这些错误。"
+      "h2": "智能纠错指导",
+      "right_desc": "系统自动标注语言错误，并提供详细的改正说明，帮你避免常见问题"
     },
     "h2_3": {
-      "h2": "专业指导",
-      "right_desc": "根据DET评分元素，我们提供专业指导，帮助您识别论文中的弱点并使其完美。"
+      "h2": "专业评分解析",
+      "right_desc": "严格遵循DET评分标准，深入分析文章优缺点，指导你逐步提升写作水平。"
     },
     "h2_4": {
-      "h2": "文章润色",
-      "right_desc": "准确修改每个词和句子，合理调整段落结构，并使写作风格焕然一新，从而进一步提高您的作文水平并将其转变为高分作文。"
+      "h2": "写作优化建议",
+      "right_desc": "从用词、句式到段落结构，全方位提供改进建议，帮你打造出高质量的文章。"
     },
     "h2_5": {
       "h2": "原文润色",
