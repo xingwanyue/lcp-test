@@ -58,15 +58,7 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": [
-      "Nosotros",
-      "Contacto",
-      "Términos",
-      "Privacidad",
-      "Mapa del sitio",
-      "Colaboraciones",
-      "Devoluciones"
-    ],
+    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -96,16 +88,11 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": [
-      "DET Práctica",
-      "Corrección de IA",
-      "Simulacro Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
-    "trustedByWorldwide": "Confiado por más de {path estudiantes en todo el mundo para mejorar su puntuación en el Duolingo English Test en un mes.",
+    "trustedByWorldwide": "Confiado por más de {path} estudiantes en todo el mundo para mejorar su puntuación en el Duolingo English Test en un mes.",
     "The_Best_Platform": "La mejor plataforma para mejorar tus puntuaciones en el Duolingo English Test",
     "Tu": "Usuarios totales",
     "questions": "Preguntas",
