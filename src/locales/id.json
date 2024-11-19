@@ -51,13 +51,7 @@
     "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Tentang Kami",
-    "Products": [
-      "Latihan Soal DET",
-      "Koreksi Writing AI",
-      "Penilaian Speaking AI",
-      "Simulasi Ujian",
-      "Kursus DET"
-    ],
+    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -96,12 +90,7 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -773,7 +762,7 @@
     "seometa": {
       "title": "Kebijakan Privasi - DET Praktik",
       "description": "Temukan Kebijakan Privasi DET Practice: Pelajari bagaimana kami menangani data, melindungi informasi, dan memastikan privasi Anda. Baca lebih lanjut tentang kebijakan kami sekarang.",
-      "keywords": "DET Duolingo, DET Tes, Duolingo DET, Duolingo Tes, Duolingo Tes Online, Duolingo Tes Bahasa Inggris, Duolingo Ujian Bahasa Inggris, Duolingo Ujian Kecakapan"
+      "keywords": "kebijakan pengembalian dana, pengembalian dana DET Practice, kebijakan pengembalian, pengembalian dana persiapan tes Duolingo, pengembalian dana kursus online, pengembalian dana layanan, ketentuan DET Practice"
     },
     "h1": "Kebijakan Privasi",
     "q1": {
@@ -819,37 +808,37 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Kebijakan Pengembalian Dana: Pelajari Tentang Proses Pengembalian Dana Kami | DET Praktik",
-      "description": "Temukan kebijakan pengembalian dana dari DET Practice: Pelajari bagaimana kami menangani permintaan pengembalian dana, kriteria kelayakan, dan proses untuk mendapatkan pengembalian dana. Baca lebih lanjut tentang kebijakan kami sekarang.",
+      "title": "Kebijakan Pengembalian Dana - DET Practice | Ketentuan yang Transparan dan Adil",
+      "description": "Baca Kebijakan Pengembalian Dana kami yang jelas dan transparan untuk semua layanan yang ditawarkan oleh DET Practice. Kami berusaha memberikan pengalaman terbaik bagi pengguna kami dengan ketentuan pengembalian dana yang adil dan mudah dipahami. Pelajari lebih lanjut hari ini.",
       "keywords": "Kebijakan Pengembalian Dana, DET Praktik Pengembalian Dana, DET Kebijakan Praktik, Proses Pengembalian Dana, Kelayakan untuk Pengembalian Dana"
     },
     "h1": "Kebijakan Pengembalian Dana",
     "q1": {
-      "a1": "Terima kasih telah memilih dan membeli layanan kami. Kami berusaha menyediakan pengalaman belajar terbaik untuk pelanggan kami. Namun, jika Anda tidak sepenuhnya puas dengan pembelian Anda, kami siap membantu."
+      "a1": "Terima kasih telah memilih dan membeli layanan kami. Kami berusaha memberikan pengalaman belajar terbaik bagi pelanggan kami. Namun, jika Anda tidak sepenuhnya puas dengan pembelian Anda, kami siap membantu."
     },
     "q2": {
-      "title": "Kelayakan untuk Pengembalian Dana",
-      "a1": "• Layanan Anggota: Permintaan pengembalian untuk layanan anggota harus dilakukan dalam waktu 3 hari setelah pembelian.",
-      "a2": "• Isi yang Diakses: Jika Anda belum mengakses lebih dari 20 pertanyaan, Anda berhak atas pengembalian dana.",
-      "a3": "• Kursus Digital: Setelah produk digital diunduh atau diakses, dianggap sudah digunakan dan produk yang sudah digunakan tidak dapat dikembalikan."
+      "title": "Kelayakan Pengembalian Dana",
+      "a1": "• Layanan Anggota: Permintaan pengembalian dana untuk layanan anggota harus dilakukan dalam waktu 3 hari setelah pembelian.",
+      "a2": "• Konten yang Diakses: Jika Anda belum mengakses lebih dari 20 pertanyaan, Anda berhak mendapatkan pengembalian dana.",
+      "a3": "• Kursus Digital: Setelah produk digital diunduh atau diakses, dianggap sudah digunakan, dan produk yang sudah digunakan tidak dapat dikembalikan dananya."
     },
     "q3": {
-      "title0": "Namun, DETPractice menyambut Anda untuk <strong>Hubungi kami</strong> untuk menyelesaikan masalah Anda dalam situasi apapun. Kami akan berusaha sebaik mungkin untuk memberikan solusi yang memuaskan Anda.",
-      "title": "Bagaimana Cara Meminta Pengembalian Dana / Membatalkan Langganan",
-      "a1": "Untuk meminta pengembalian dana, silakan ikuti langkah-langkah berikut:",
-      "a2": "1. Batalkan Langganan: Masuk ke akun Anda, temukan dan klik tautan <span class='websiteStrong'>\"Kelola penagihan Anda\"</span> di bagian bawah halaman keanggotaan. Anda akan diarahkan ke halaman konfirmasi di mana Anda dapat mengonfirmasi keputusan Anda untuk berhenti berlangganan.",
-      "a3": "2. Hubungi Dukungan Kami: Hubungi tim dukungan pelanggan kami di <span class='website'>support{'@'}detpractice.com</span> dengan nomor pesanan Anda dan alasan untuk permintaan pengembalian dana.",
+      "title0": "Namun, DET Practice mengundang Anda untuk Menghubungi kami untuk menyelesaikan masalah Anda dalam situasi apa pun. Kami akan berusaha sebaik mungkin untuk memberikan solusi yang memuaskan Anda.",
+      "title": "Cara Meminta Pengembalian Dana / Membatalkan Langganan",
+      "a1": "Untuk meminta pengembalian dana, ikuti langkah-langkah berikut:",
+      "a2": "1. Batalkan Langganan: Masuk ke akun Anda, temukan dan klik tautan <span class='websiteStrong'>\"Manage your billing\"</span> di bagian bawah halaman keanggotaan. Anda akan diarahkan ke halaman konfirmasi di mana Anda dapat mengonfirmasi keputusan Anda untuk berhenti berlangganan.",
+      "a3": "2. Hubungi Tim Dukungan Kami: Hubungi tim dukungan pelanggan kami di <span class='website'>support{'@'}detpractice.com</span> dengan nomor pesanan dan alasan permintaan pengembalian dana Anda.",
       "a4": "3. Tim kami akan meninjau permintaan Anda dan merespons dalam waktu 3 hari kerja."
     },
     "q4": {
       "title": "Pengecualian",
-      "a1": "Berikut tidak layak untuk pengembalian dana:",
+      "a1": "Berikut ini tidak memenuhi syarat untuk pengembalian dana:",
       "a2": "• Produk digital yang telah diunduh.",
-      "a3": "• Produk dan layanan dibeli melalui pihak vendor lain."
+      "a3": "• Produk dan layanan yang dibeli melalui vendor pihak ketiga."
     },
     "q5": {
       "title": "Hubungi Kami",
-      "a1": "Jika Anda memiliki pertanyaan tentang kebijakan pengembalian dana kami atau membutuhkan bantuan dalam pembelian Anda, silakan hubungi kami di:",
+      "a1": "Jika Anda memiliki pertanyaan tentang kebijakan pengembalian dana kami atau memerlukan bantuan dengan pembelian Anda, silakan hubungi kami di:",
       "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },

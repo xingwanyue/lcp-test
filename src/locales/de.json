@@ -51,22 +51,8 @@
     "LearnTitle": "Lernmaterialien",
     "BlogTitle": "Blog",
     "CompanyTitle": "Über uns",
-    "Products": [
-      "DET-Übungen",
-      "KI-Schreibtraining",
-      "KI-Sprechtraining",
-      "Prüfungssimulation",
-      "DET-Kurse"
-    ],
-    "Company": [
-      "Über uns",
-      "Kontakt",
-      "AGB",
-      "Datenschutz",
-      "Sitemap",
-      "Partner werden",
-      "Widerrufsrecht"
-    ],
+    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
     "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -95,12 +81,7 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": [
-      "DET Übung",
-      "KI-Korrektur",
-      "Ganzlängen-Mock",
-      "DET Kurse"
-    ],
+    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -772,7 +753,7 @@
     "seometa": {
       "title": "Datenschutzrichtlinie - DET Praxis",
       "description": "Entdecken Sie die Datenschutzrichtlinie von DET Practice: Erfahren Sie, wie wir Daten verarbeiten, Informationen schützen und Ihre Privatsphäre sicherstellen. Lesen Sie jetzt mehr über unsere Richtlinien.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo Englisch Sprachtest, Duolingo Englischprüfung, Duolingo Kompetenzprüfung"
+      "keywords": "Rückerstattungsrichtlinie, DET Practice Rückerstattung, Rückgaberecht, Duolingo Testvorbereitung Rückerstattung, Online-Kurs Rückerstattung, Service-Rückerstattung, DET Practice Bedingungen"
     },
     "h1": "Datenschutzerklärung",
     "q1": {
@@ -818,36 +799,36 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Rückerstattungsrichtlinie: Erfahren Sie mehr über unseren Rückerstattungsprozess | DET Übung",
-      "description": "Entdecken Sie die Rückerstattungsrichtlinie von DET Practice: Erfahren Sie, wie wir Rückerstattungsanträge bearbeiten, welche Voraussetzungen erfüllt sein müssen und wie der Rückerstattungsprozess abläuft. Lesen Sie jetzt mehr über unsere Richtlinien.",
+      "title": "Rückerstattungsrichtlinie - DET Practice | Transparente und faire Bedingungen",
+      "description": "Lesen Sie unsere klare und transparente Rückerstattungsrichtlinie für alle von DET Practice angebotenen Dienstleistungen. Wir streben danach, unseren Nutzern die beste Erfahrung mit fairen und unkomplizierten Rückerstattungsbedingungen zu bieten. Erfahren Sie heute mehr.",
       "keywords": "Rückzahlungsrichtlinie, DET Übungsrückerstattung, DET Übungsrichtlinie, Rückzahlungsprozess, Anspruch auf Rückerstattung"
     },
-    "h1": "Rücknahmebedingungen",
+    "h1": "Rückerstattungsrichtlinie",
     "q1": {
-      "a1": "Vielen Dank, dass Sie sich für den Kauf unserer Dienstleistungen entschieden haben. Wir bemühen uns, unseren Kunden das beste Lernerlebnis zu bieten. Wenn Sie jedoch mit Ihrem Kauf nicht vollständig zufrieden sind, sind wir hier, um zu helfen."
+      "a1": "Vielen Dank, dass Sie sich für unsere Dienste entschieden haben. Wir bemühen uns, unseren Kunden die bestmögliche Lernerfahrung zu bieten. Falls Sie mit Ihrem Kauf nicht vollständig zufrieden sind, helfen wir Ihnen gerne weiter."
     },
     "q2": {
-      "title": "Berechtigung für Rückerstattungen",
-      "a1": "• Mitgliederdienste: Rückerstattungsanträge für Mitgliederdienste müssen innerhalb von 3 Tagen nach dem Kauf gestellt werden.",
-      "a2": "• Zugriff auf Inhalte: Wenn du weniger als 20 Fragen abgerufen hast, bist du für eine Rückerstattung berechtigt.",
-      "a3": "• Digitale Kurse: Sobald ein digitales Produkt heruntergeladen oder darauf zugegriffen wurde, gilt es als genutzt und genutzte Produkte können nicht erstattet werden."
+      "title": "Voraussetzungen für Rückerstattungen",
+      "a1": "• Mitgliedschaftsdienste: Rückerstattungsanträge für Mitgliedschaftsdienste müssen innerhalb von 3 Tagen nach dem Kauf gestellt werden.",
+      "a2": "• Zugegriffene Inhalte: Wenn Sie nicht mehr als 20 Fragen aufgerufen haben, haben Sie Anspruch auf eine Rückerstattung.",
+      "a3": "• Digitale Kurse: Sobald ein digitales Produkt heruntergeladen oder darauf zugegriffen wurde, gilt es als genutzt, und genutzte Produkte können nicht erstattet werden."
     },
     "q3": {
-      "title0": "Dennoch heißt DETPractice Sie willkommen, uns zu kontaktieren, um Ihre Probleme in jeder Situation zu lösen. Wir werden unser Bestes tun, um eine Lösung zu bieten, die Sie zufriedenstellt.",
-      "title": "Wie man eine Rückerstattung anfordert / ein Abonnement storniert",
-      "a1": "Um eine Rückerstattung zu beantragen, befolgen Sie bitte diese Schritte:",
-      "a2": "1. Abonnement kündigen: Melden Sie sich bei Ihrem Konto an, suchen Sie den Link <span class='websiteStrong'>\"Verwalten Sie Ihre Abrechnung\"</span> am unteren Rand der Mitgliedschaftsseite und klicken Sie darauf. Sie werden zu einer Bestätigungsseite weitergeleitet, auf der Sie Ihre Entscheidung zum Abbestellen bestätigen können.",
-      "a3": "2. Kontaktieren Sie unseren Support: Kontaktieren Sie unser Kundensupport-Team unter <span class='website'>support{'@'}detpractice.com</span> mit Ihrer Bestellnummer und dem Grund für die Erstattungsanfrage.",
-      "a4": "3. Unser Team wird Ihre Anfrage überprüfen und innerhalb von 3 Werktagen antworten."
+      "title0": "DETPractice lädt Sie jedoch ein, uns in jeder Situation zu kontaktieren, um Ihre Probleme zu lösen. Wir werden unser Bestes tun, um eine für Sie zufriedenstellende Lösung zu finden.",
+      "title": "Wie Sie eine Rückerstattung beantragen / ein Abonnement kündigen",
+      "a1": "Um eine Rückerstattung zu beantragen, folgen Sie bitte diesen Schritten:",
+      "a2": "1. Abonnement kündigen: Melden Sie sich in Ihrem Konto an, suchen und klicken Sie auf den Link <span class='websiteStrong'>\"Manage your billing\"</span> am Ende der Mitgliedschaftsseite. Sie werden zu einer Bestätigungsseite weitergeleitet, wo Sie Ihre Entscheidung zur Kündigung bestätigen können.",
+      "a3": "2. Support kontaktieren: Kontaktieren Sie unser Kundenservice-Team unter <span class='website'>support{'@'}detpractice.com</span> mit Ihrer Bestellnummer und dem Grund für die Rückerstattungsanfrage.",
+      "a4": "3. Unser Team wird Ihre Anfrage prüfen und innerhalb von 3 Werktagen antworten."
     },
     "q4": {
-      "title": "Ausnahmen",
-      "a1": "Die folgenden Artikel sind nicht erstattungsfähig:",
-      "a2": "• Digitale Produkte, die heruntergeladen wurden.",
-      "a3": "• Produkte und Dienstleistungen, die über Drittanbieter gekauft wurden."
+      "title": "Ausschlüsse",
+      "a1": "Folgendes ist von der Rückerstattung ausgeschlossen:",
+      "a2": "• Heruntergeladene digitale Produkte.",
+      "a3": "• Produkte und Dienstleistungen, die über Drittanbieter erworben wurden."
     },
     "q5": {
-      "title": "Kontaktiere uns",
+      "title": "Kontakt",
       "a1": "Wenn Sie Fragen zu unserer Rückerstattungsrichtlinie haben oder Hilfe bei Ihrem Kauf benötigen, kontaktieren Sie uns bitte unter:",
       "a2": "E-Mail: <span class='website'>support{'@'}detpractice.com</span>"
     }

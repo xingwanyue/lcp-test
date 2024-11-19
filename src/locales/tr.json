@@ -96,12 +96,7 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -773,7 +768,7 @@
     "seometa": {
       "title": "Gizlilik Politikası - DET Uygulama",
       "description": "Discover DET Practice Gizlilik Politikası: Verileri nasıl işlediğimizi, bilgiyi nasıl koruduğumuzu ve gizliliğinizi nasıl sağladığımızı öğrenin. Şimdi politikalarımız hakkında daha fazla bilgi edinin.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "keywords": "iade politikası, DET Practice iade, geri ödeme politikası, Duolingo test hazırlık iadesi, online kurs iadesi, hizmet iadesi, DET Practice koşulları"
     },
     "h1": "Gizlilik Politikası",
     "q1": {
@@ -819,37 +814,37 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "İade Politikası: İade Sürecimiz Hakkında Bilgi Edinin | DET Uygulama",
-      "description": "Discover DET Practice'nin İade Politikasını öğrenin: İade taleplerinin nasıl ele alındığı, uygunluk kriterleri ve iade alma süreci hakkında bilgi edinin. Politikalarımız hakkında daha fazla bilgi edinin şimdi.",
+      "title": "İade Politikası - DET Practice | Şeffaf ve Adil Koşullar",
+      "description": "DET Practice tarafından sunulan tüm hizmetler için net ve şeffaf İade Politikamızı okuyun. Adil ve anlaşılır iade koşullarıyla kullanıcılarımıza en iyi deneyimi sunmaya çalışıyoruz. Bugün daha fazlasını öğrenin.",
       "keywords": "İade Politikası, DET Uygulama İadesi, DET Uygulama Politikası, İade Süreci, İade İçin Eligibility"
     },
     "h1": "İade Politikası",
     "q1": {
-      "a1": "Servislerimizi seçtiğiniz ve satın aldığınız için teşekkür ederiz. Müşterilerimize en iyi öğrenme deneyimini sağlamak için çaba gösteriyoruz. Ancak, satın alma işleminizden tamamen memnun değilseniz, size yardımcı olmak için buradayız."
+      "a1": "Hizmetlerimizi seçtiğiniz ve satın aldığınız için teşekkür ederiz. Müşterilerimize en iyi öğrenme deneyimini sunmak için çalışıyoruz. Ancak, satın almanızdan tamamen memnun değilseniz, size yardımcı olmak için buradayız."
     },
     "q2": {
-      "title": "İade İşlemi için Uygunluk",
-      "a1": "• Üye Hizmetleri: Üye hizmetleri için geri ödeme talepleri satın alınmadan sonraki 3 gün içinde yapılmalıdır.",
-      "a2": "• Erişilen İçerik: 20 sorudan fazlasına erişmediyseniz, para iadesi için uygunsunuz.",
-      "a3": "• Dijital Kurslar: Bir dijital ürün indirildiğinde veya erişildiğinde, kullanılmış kabul edilir ve kullanılan ürünler iade edilemez."
+      "title": "İade Koşulları",
+      "a1": "• Üyelik Hizmetleri: Üyelik hizmetleri için iade talepleri satın alımdan sonraki 3 gün içinde yapılmalıdır.",
+      "a2": "• Erişilen İçerik: 20'den fazla soruya erişmediyseniz, iade için uygun durumdasınız.",
+      "a3": "• Dijital Kurslar: Bir dijital ürün indirildiğinde veya erişildiğinde kullanılmış sayılır ve kullanılmış ürünler iade edilemez."
     },
     "q3": {
-      "title0": "Ancak, DETPractice her durumda sorunlarınızı çözmek için bizimle İletişime geçmenizi memnuniyetle karşılar. Sizi tatmin edecek bir çözüm sunmak için elimizden gelenin en iyisini yapacağız.",
-      "title": "Nasıl İade İsteği Yapılır / Aboneliği İptal Etmek İçin",
-      "a1": "İade isteği için lütfen şu adımları izleyin:",
-      "a2": "Aboneliği İptal Et: Hesabınıza giriş yapın, üyelik sayfasının alt kısmında bulunan <span class='websiteStrong'>\"Faturalarınızı yönetin\"</span> bağlantısını bulun ve tıklayın. Abonelikten çıkma kararınızı onaylayabileceğiniz bir onay sayfasına yönlendirileceksiniz.",
-      "a3": "2. Destek Ekibi İle İletişime Geçin: İade talebi nedeninizi ve sipariş numaranızı içeren bir e-posta göndererek müşteri destek ekibimizle <span class='website'>support{'@'}detpractice.com</span> adresinden iletişime geçin.",
+      "title0": "Bununla birlikte, DETPractice her durumda sorunlarınızı çözmek için bizimle iletişime geçmenizi memnuniyetle karşılar. Sizi memnun edecek bir çözüm sunmak için elimizden gelenin en iyisini yapacağız.",
+      "title": "İade Nasıl Talep Edilir / Abonelik Nasıl İptal Edilir",
+      "a1": "İade talep etmek için lütfen şu adımları izleyin:",
+      "a2": "1. Aboneliği İptal Etme: Hesabınıza giriş yapın, üyelik sayfasının altındaki <span class='websiteStrong'>\"Manage your billing\"</span> bağlantısını bulun ve tıklayın. Abonelikten çıkma kararınızı onaylayabileceğiniz bir onay sayfasına yönlendirileceksiniz.",
+      "a3": "2. Destek Ekibimizle İletişime Geçin: Sipariş numaranız ve iade talebinizin nedeniyle birlikte  <span class='website'>support{'@'}detpractice.com</span> adresinden müşteri destek ekibimizle iletişime geçin.",
       "a4": "3. Ekibimiz talebinizi inceleyecek ve 3 iş günü içinde yanıt verecektir."
     },
     "q4": {
-      "title": "Hariç Tutulanlar",
+      "title": "İade Edilemeyenler",
       "a1": "Aşağıdakiler iade için uygun değildir:",
-      "a2": "• İndirilen dijital ürünler.",
-      "a3": "• Üçüncü taraf satıcılar aracılığıyla satın alınan ürünler ve hizmetler."
+      "a2": "• İndirilmiş dijital ürünler.",
+      "a3": "• Üçüncü taraf satıcılardan satın alınan ürün ve hizmetler."
     },
     "q5": {
       "title": "Bize Ulaşın",
-      "a1": "Satın alma işleminizde herhangi bir sorunuz varsa veya iade politikamız hakkında yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
+      "a1": "İade politikamız hakkında sorularınız varsa veya satın almanızla ilgili yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
       "a2": "E-posta: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },

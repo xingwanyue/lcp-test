@@ -95,7 +95,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -765,7 +770,7 @@
     "seometa": {
       "title": "Privacy Policy | DET Practice – Duolingo English Test Preparation",
       "description": "Read the Privacy Policy for DET Practice. Learn how we collect, use, and protect your personal information when you access our platform for Duolingo English Test preparation. Your privacy is important to us, and we are committed to safeguarding your data.",
-      "keywords": "Privacy Policy, DET Practice, Duolingo English Test, data protection, user privacy, personal information, privacy practices, online test prep, data security"
+      "keywords": "refund policy, DET Practice refund, return policy, Duolingo test prep refund, online course refund, service refund, DET Practice terms"
     },
     "h1": "Privacy Policy",
     "q1": {
@@ -811,8 +816,8 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Refund Policy: Learn About Our Refund Process | DET Practice",
-      "description": "Discover DET Practice's Refund Policy: Learn how we handle refund requests, eligibility criteria, and the process for obtaining a refund. Read more about our policies now.",
+      "title": "Refund Policy - DET Practice | Transparent and Fair Terms",
+      "description": "Read our clear and transparent Refund Policy for all services offered by DET Practice. We strive to provide the best experience for our users with fair and straightforward refund terms. Learn more today.",
       "keywords": "Refund Policy, DET Practice Refund, DET Practice Policy, Refund Process, Eligibility for Refund"
     },
     "h1": "Refund Policy",
