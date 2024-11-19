@@ -51,8 +51,22 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
-    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
+    "Products": [
+      "DET刷题",
+      "AI写作批改",
+      "AI口语评测",
+      "全真模考",
+      "DET课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "服务条款",
+      "隐私政策",
+      "网站地图",
+      "合作计划",
+      "退款说明"
+    ],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -81,7 +95,12 @@
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -144,7 +163,7 @@
     "Join_Them": "加入他们"
   },
   "slogen": {
-    "title": "<div class='font1'>开启你的多邻国英语考试高分之路！</div>",
+    "title": "<div class='font1'>开启你的<span class='font2'>多邻国</span >英语考试高分之路！</div>",
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "用电子邮件免费开始",
     "Start_for_free": "免费开始"
