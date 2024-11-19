@@ -975,26 +975,26 @@
       "keywords": "program afiliasi, afiliasi persiapan Duolingo test, penghasilan dengan DET Practice, afiliasi persiapan tes online, pemasaran afiliasi, mitra DET Practice, dapatkan komisi"
     },
     "tag": "Program Afiliasi",
-    "h1": "Dapatkan <span class='yellow_font'>30% Komisi</span> dari Setiap Rujukan Anda",
+    "h1": "Dapatkan Komisi <span class='yellow_font'>30%</span> Dari Setiap Referral Anda",
     "sun": "Daftar Sekarang",
     "login": "Masuk",
-    "join_title": "Bergabunglah dengan Program Afiliasi <span class='yellow_font'>Menguntungkan</span> Detpractice",
-    "join_tips": "Daftar untuk program afiliasi di Detpractice.com. Siapa pun dapat dengan mudah mendapatkan skor lebih tinggi di Duolingo English Test dengan Detpractice.com. Jadilah mitra kami dan dapatkan hingga 30% komisi untuk setiap rujukan.",
-    "earth_with_title": "Dapatkan dengan Beragam Produk dari Detpractice",
+    "join_title": "Bergabung dengan Program Afiliasi Menguntungkan dari Detpractice",
+    "join_tips": "Daftar untuk program afiliasi Detpractice.com. Siapa pun bisa mendapatkan skor lebih tinggi dengan mudah di Duolingo English Test dengan Detpractice.com. Jadilah mitra kami dan dapatkan komisi hingga 30% untuk setiap referral.",
+    "earth_with_title": "Dapatkan Penghasilan dengan Berbagai Produk Detpractice",
     "question_bank": "Bank Soal",
     "acs": "Layanan Koreksi AI",
-    "Mock_Test": "Tes Uji Coba",
+    "Mock_Test": "Tes Simulasi",
     "Courses": "Kursus",
-    "bada": "Menjadi Afiliasi Detpractice dalam 3 Langkah",
+    "bada": "Jadilah Afiliasi Detpractice dalam 3 Langkah",
     "hep": "Potensi Penghasilan Tinggi",
     "heptips": [
-      "Tarif komisi yang kompetitif: 30% pada semua pendapatan yang dihasilkan dari tautan afiliasi Anda",
-      "Potensi untuk kemitraan jangka panjang: Kami menghargai afiliasi kami dan berusaha untuk mengembangkan hubungan jangka panjang yang saling menguntungkan."
+      "Tingkat komisi kompetitif: 30% dari semua pendapatan yang dihasilkan dari link afiliasi Anda.",
+      "Potensi kemitraan jangka panjang: Kami menghargai afiliasi kami dan berusaha mengembangkan hubungan jangka panjang yang saling menguntungkan."
     ],
-    "ctw": "Kreator yang Kami Suka Bekerja Dengan",
+    "ctw": "Kreator yang Ingin Kami Ajak Bekerja Sama",
     "ctwtips": [
-      "1. Anda adalah kreator yang memiliki audiens yang terdiri dari siswa (Belajar Duolingo English Test adalah nilai tambah!)",
-      "2. Anda antusias dengan cara yang lebih efektif untuk belajar DET",
+      "1. Anda adalah kreator yang memiliki audiens dari kalangan pelajar (Sedang belajar Duolingo English Test adalah nilai plus!)",
+      "2. Anda tertarik dengan cara yang lebih efektif untuk belajar DET",
       "3. Anda adalah institusi pelatihan yang mengajarkan Duolingo English Test"
     ],
     "dos": "Yang Harus Dilakukan",
@@ -1002,7 +1002,7 @@
     "donts": "Yang Tidak Boleh Dilakukan",
     "donts_icon_alt": "Ikon Salah Merah",
     "faqs": "Pertanyaan yang Sering Diajukan",
-    "sew": "Mulai Menghasilkan dengan Program Afiliasi Kami Sekarang",
+    "sew": "Mulai Dapatkan Penghasilan dengan Program Afiliasi Kami Sekarang",
     "contaceUsList": [
       {
         "font": "Daftar untuk program afiliasi kami dan dapatkan tautan rujukan Anda.",
@@ -1019,7 +1019,7 @@
     ],
     "dosList": [
       {
-        "font": "Cobalah Detpractice.com untuk diri Anda sendiri"
+        "font": "Coba Detpractice.com sendiri"
       },
       {
         "font": "Promosikan Detpractice.com secara etis dan jujur"
@@ -1033,47 +1033,56 @@
     ],
     "dontsList": [
       {
-        "font": "Jangan membuat klaim yang menyesatkan atau salah tentang Detpractice.com"
+        "font": "Membuat klaim yang menyesatkan atau palsu tentang Detpractice.com"
       },
       {
-        "font": "Jangan promosikan di platform yang memiliki konten yang tidak pantas atau ilegal"
+        "font": "Mempromosikan di platform yang memiliki konten tidak pantas atau ilegal"
       },
       {
-        "font": "Jangan promosikan di situs kupon"
+        "font": "Mempromosikan di situs kupon apa pun"
       },
       {
-        "font": "Jangan buat kampanye iklan menggunakan nama merek kami, atau menempatkan nama domain kami di URL tujuan iklan Anda"
+        "font": "Membuat kampanye iklan menggunakan nama merek kami, atau menempatkan nama domain kami di URL tujuan iklan Anda"
       }
     ],
     "faqList": [
       {
-        "q": "Siapa yang dapat mendaftar untuk program afiliasi DET Practice?",
-        "a": "Jika Anda adalah kreator yang memiliki audiens yang terdiri dari siswa, institusi pelatihan yang mengajarkan Duolingo English Test, atau influencer, Anda dapat mendaftar untuk program afiliasi kami dan mendapatkan uang."
+        "q": "Siapa yang bisa mendaftar program afiliasi DET Practice?",
+        "a": "Jika Anda adalah kreator yang memiliki audiens dari kalangan pelajar, institusi pelatihan yang mengajarkan Duolingo English Test, atau seorang influencer, Anda bisa mendaftar program afiliasi kami dan mendapatkan penghasilan."
       },
       {
         "q": "Bagaimana cara melacak komisi saya?",
-        "a": "Setelah Anda mendaftar untuk program afiliasi kami, Anda akan memiliki akses ke halaman admin khusus di mana Anda dapat melacak konversi dari tautan rujukan Anda."
+        "a": "Setelah Anda mendaftar program afiliasi kami, Anda akan memiliki akses ke halaman admin khusus di mana Anda bisa melacak konversi dari link referral Anda."
       },
       {
-        "q": "Apakah saya mendapatkan komisi jika pelanggan yang saya rujuk berlangganan atau meningkatkan?",
-        "a": "Ya, setelah pengguna mendaftar melalui tautan Anda, Anda mendapatkan komisi setiap kali pengguna melakukan pembelian dan meningkatkan."
+        "q": "Apakah saya mendapatkan komisi jika pelanggan yang saya referensikan berlangganan atau upgrade?",
+        "a": "Ya, setelah pengguna mendaftar melalui link Anda, Anda mendapatkan komisi setiap kali pengguna melakukan pembelian dan upgrade."
       },
       {
         "q": "Berapa persentase komisi yang bisa saya dapatkan?",
         "a": "Untuk 3 pesanan pertama, Anda akan menerima komisi 10%; untuk lebih dari 3 pesanan, Anda akan menerima komisi 30%."
       },
       {
-        "q": "Bagaimana jika pelanggan yang saya rujuk membatalkan pembelian mereka?",
-        "a": "Jika pelanggan membatalkan pembelian atau mendapatkan pengembalian dana karena alasan apa pun, komisi yang Anda peroleh untuk orang tersebut akan dikurangkan dari akun Anda."
+        "q": "Bagaimana jika pelanggan yang saya referensikan membatalkan pembeliannya?",
+        "a": "Jika pelanggan membatalkan pembelian atau mendapatkan pengembalian dana dengan alasan apa pun, komisi yang Anda dapatkan untuk orang tersebut akan dikurangi dari akun Anda."
       },
       {
         "q": "Kapan dan bagaimana saya dibayar?",
-        "a": "Kami memproses pembayaran pada tanggal 15 setiap bulan untuk semua komisi yang Anda peroleh di bulan sebelumnya. Anda dapat menerima pembayaran melalui PayPal."
+        "a": "Kami memproses pembayaran pada tanggal 15 setiap bulan untuk semua komisi yang Anda dapatkan di bulan sebelumnya. Anda bisa menerima pembayaran melalui PayPal."
       },
       {
-        "q": "Bagaimana jika saya memiliki pertanyaan lain tentang program pemasaran afiliasi internet Anda?",
-        "a": "Cukup hubungi kami di \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" dan kami akan dengan senang hati membantu Anda dengan pertanyaan apa pun yang mungkin Anda miliki."
+        "q": "Bagaimana jika saya memiliki pertanyaan lain tentang program pemasaran afiliasi Anda?",
+        "a": "Cukup hubungi kami di \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" dan kami dengan senang hati akan membantu Anda dengan pertanyaan apa pun yang Anda miliki."
       }
-    ]
+    ],
+    "contaceUsList[0]": {
+      "font": "Daftar program afiliasi kami dan dapatkan link referral Anda."
+    },
+    "contaceUsList[1]": {
+      "font": "Bagikan link Anda di website atau platform lainnya."
+    },
+    "contaceUsList[2]": {
+      "btn": "Terima Pembayaran"
+    }
   }
 }

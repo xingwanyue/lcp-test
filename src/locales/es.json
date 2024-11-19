@@ -58,15 +58,7 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": [
-      "Nosotros",
-      "Contacto",
-      "Términos",
-      "Privacidad",
-      "Mapa del sitio",
-      "Colaboraciones",
-      "Devoluciones"
-    ],
+    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -96,12 +88,7 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": [
-      "DET Práctica",
-      "Corrección de IA",
-      "Simulacro Completo",
-      "DET Cursos"
-    ],
+    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -975,31 +962,31 @@
       "keywords": "programa de afiliados, afiliado preparación Duolingo test, ganar con DET Practice, afiliado preparación test online, marketing de afiliados, socios DET Practice, ganar comisiones"
     },
     "tag": "Programa de Afiliados",
-    "h1": "Gane <span class='yellow_font'>30% de Comisión</span> por cada Referencia",
+    "h1": "Gana <span class='yellow_font'>30%</span> de Comisión por Cada Referido",
     "sun": "Regístrate Ahora",
-    "login": "Iniciar sesión",
-    "join_title": "Únete al <span class='yellow_font'>Lucrativo</span> Programa de Afiliados de Detpractice",
-    "join_tips": "Regístrate en el programa de afiliados de Detpractice.com. Cualquiera puede obtener una puntuación más alta fácilmente en Duolingo English Test con Detpractice.com. Conviértete en nuestro socio y gana hasta un 30% de comisión por cada referencia.",
+    "login": "Iniciar Sesión",
+    "join_title": "Únete al Lucrativo Programa de Afiliados de Detpractice",
+    "join_tips": "Regístrate en el programa de afiliados de Detpractice.com. Cualquiera puede obtener fácilmente una puntuación más alta en el Duolingo English Test con Detpractice.com. Conviértete en nuestro socio y obtén hasta un 30% de comisión por cada referido.",
     "earth_with_title": "Gana con la Diversa Gama de Productos de Detpractice",
     "question_bank": "Banco de Preguntas",
-    "acs": "Servicio de Corrección con IA",
-    "Mock_Test": "Examen Simulado",
+    "acs": "Servicio de Corrección por IA",
+    "Mock_Test": "Examen de Práctica",
     "Courses": "Cursos",
-    "bada": "Conviértete en un Afiliado de Detpractice en 3 Pasos",
-    "hep": "Alto Potencial de Ganancias",
+    "bada": "Conviértete en Afiliado de Detpractice en 3 Pasos",
+    "hep": "Alto Potencial de Ingresos",
     "heptips": [
-      "Tasas de comisión competitivas: 30% en todos los ingresos generados a partir de tu enlace de afiliado",
-      "Potencial para asociaciones a largo plazo: Valoramos a nuestros afiliados y nos esforzamos por desarrollar relaciones a largo plazo y mutuamente beneficiosas."
+      "Tasas de comisión competitivas: 30% sobre todos los ingresos generados desde tu enlace de afiliado.",
+      "Potencial para asociaciones a largo plazo: Valoramos a nuestros afiliados y nos esforzamos por desarrollar relaciones duraderas y mutuamente beneficiosas."
     ],
     "ctw": "Creadores con los que Nos Encanta Trabajar",
     "ctwtips": [
-      "1. Eres un creador con una audiencia compuesta por estudiantes (¡Aprender Duolingo English Test es una ventaja!)",
-      "2. Estás emocionado por una manera más efectiva de aprender DET",
-      "3. Eres una institución de formación que enseña Duolingo English Test"
+      "1. Eres un creador con una audiencia compuesta por estudiantes (¡Aprender el Duolingo English Test es una ventaja!)",
+      "2. Te entusiasma una forma más efectiva de aprender el DET",
+      "3. Eres una institución educativa que enseña el Duolingo English Test"
     ],
-    "dos": "Do’s",
+    "dos": "Qué Hacer",
     "dos_icon_alt": "Icono de Marca Verde",
-    "donts": "Don’ts",
+    "donts": "Qué No Hacer",
     "donts_icon_alt": "Icono de Error Rojo",
     "faqs": "Preguntas Frecuentes",
     "sew": "Comienza a Ganar con Nuestro Programa de Afiliados Ahora",
@@ -1022,58 +1009,68 @@
         "font": "Prueba Detpractice.com por ti mismo"
       },
       {
-        "font": "Promociona Detpractice.com ética y honestamente"
+        "font": "Promociona Detpractice.com de manera ética y honesta"
       },
       {
         "font": "Crea contenido de calidad y relevante"
       },
       {
-        "font": "Divulga tu relación de afiliado"
+        "font": "Revela tu relación de afiliado"
       }
     ],
     "dontsList": [
       {
-        "font": "No hagas afirmaciones engañosas o falsas sobre Detpractice.com"
+        "font": "Hacer afirmaciones engañosas o falsas sobre Detpractice.com"
       },
       {
-        "font": "No promociones en plataformas con contenido inapropiado o ilegal"
+        "font": "Promocionar en plataformas con contenido inapropiado o ilegal"
       },
       {
-        "font": "No promociones en sitios de cupones"
+        "font": "Promocionar en sitios de cupones"
       },
       {
-        "font": "No configures campañas publicitarias usando nuestro nombre de marca, o colocando nuestro nombre de dominio en las URL de destino de tus anuncios"
+        "font": "Crear campañas publicitarias usando nuestro nombre de marca o poner nuestro dominio en las URLs de destino de tus anuncios"
       }
     ],
     "faqList": [
       {
         "q": "¿Quién puede solicitar el programa de afiliados de DET Practice?",
-        "a": "Si eres un creador con una audiencia compuesta por estudiantes, una institución de formación que enseña Duolingo English Test, o un influencer, puedes registrarte en nuestro programa de afiliados y ganar dinero."
+        "a": "Si eres un creador con una audiencia compuesta por estudiantes, una institución educativa que enseña el Duolingo English Test, o un influencer, puedes registrarte en nuestro programa de afiliados y ganar dinero."
       },
       {
-        "q": "¿Cómo puedo rastrear mis comisiones?",
-        "a": "Una vez que te hayas registrado en nuestro programa de afiliados, tendrás acceso a tu página de administración dedicada donde podrás rastrear las conversiones de tus enlaces de referencia."
+        "q": "¿Cómo puedo hacer seguimiento a mis comisiones?",
+        "a": "Una vez que te hayas registrado en nuestro programa de afiliados, tendrás acceso a tu página de administración dedicada donde podrás hacer seguimiento a las conversiones de tus enlaces de referidos."
       },
       {
-        "q": "¿Recibo una comisión si un cliente que refiero se suscribe o actualiza?",
+        "q": "¿Recibo una comisión si un cliente que referí se suscribe o actualiza?",
         "a": "Sí, después de que un usuario se registre a través de tu enlace, ganas una comisión cada vez que el usuario realiza una compra y actualiza."
       },
       {
         "q": "¿Cuál es el porcentaje exacto de comisión que puedo ganar?",
-        "a": "Para las primeras 3 órdenes, recibirás un 10% de comisión; para más de 3 órdenes, recibirás un 30% de comisión."
+        "a": "Para los primeros 3 pedidos, recibirás un 10% de comisión; para más de 3 pedidos, recibirás un 30% de comisión."
       },
       {
-        "q": "¿Qué pasa si un cliente que referí cancela su compra?",
-        "a": "Si un cliente cancela una compra o recibe un reembolso por cualquier motivo, la comisión que ganaste por esa persona se deducirá de tu cuenta."
+        "q": "¿Qué sucede si un cliente que referí cancela su compra?",
+        "a": "Si un cliente cancela una compra u obtiene un reembolso por cualquier motivo, la comisión que ganaste por esa persona se deducirá de tu cuenta."
       },
       {
         "q": "¿Cuándo y cómo me pagan?",
         "a": "Procesamos los pagos el día 15 de cada mes por todas las comisiones que hayas ganado en el mes anterior. Puedes recibir los pagos a través de PayPal."
       },
       {
-        "q": "¿Qué hago si tengo otras preguntas sobre su programa de marketing de afiliados en Internet?",
-        "a": "Simplemente contáctanos en \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" y estaremos encantados de ayudarte con cualquier pregunta que puedas tener."
+        "q": "¿Qué pasa si tengo otras preguntas sobre su programa de marketing de afiliados?",
+        "a": "Simplemente contáctanos en  \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" y estaremos encantados de ayudarte con cualquier pregunta que tengas."
       }
-    ]
+    ],
+    "contaceUsList[0]": {
+      "font": "Regístrate en nuestro programa de afiliados y obtén tu enlace de referidos."
+    },
+    "contaceUsList[1]": {
+      "btn": "Compartir"
+    },
+    "contaceUsList[2]": {
+      "font": "Gana comisiones por las ventas que tú y tus sub-afiliados generen.",
+      "btn": "Recibe tus Pagos"
+    }
   }
 }

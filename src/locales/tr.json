@@ -974,35 +974,35 @@
       "description": "DET Practice İş Ortaklığı Programı'na katılın ve Duolingo test hazırlık hizmetlerimizi tanıtarak kazanmaya başlayın. Yüksek dönüşüm sağlayan materyallere erişin ve her satıştan komisyon kazanın. Bugün nasıl başlayacağınızı öğrenin.",
       "keywords": "iş ortaklığı programı, Duolingo test hazırlığı ortaklığı, DET Practice ile kazanç, online test hazırlığı ortaklığı, satış ortaklığı, DET Practice ortakları, komisyon kazanma"
     },
-    "tag": "Bağlı Programı",
-    "h1": "Her Yönlendirmenizden <span class='yellow_font'>%30 Komisyon</span> Kazanın",
-    "sun": "Şimdi Kaydolun",
-    "login": "Giriş yap",
-    "join_title": "Detpractice'ın <span class='yellow_font'>Kazançlı</span> Bağlı Programına Katılın",
-    "join_tips": "Detpractice.com'un bağlı programına kaydolun. Herkes Detpractice.com ile Duolingo English Test üzerinde kolayca daha yüksek bir puan alabilir. Bizim ortağımız olun ve her yönlendirme için %30'a kadar komisyon kazanın.",
-    "earth_with_title": "Detpractice'ın Çeşitli Ürün Yelpazesiyle Kazanın",
+    "tag": "İş Ortaklığı Programı",
+    "h1": "Her Yönlendirmeden <span class='yellow_font'>%30</span> Komisyon Kazanın",
+    "sun": "Hemen Üye Olun",
+    "login": "Giriş Yap",
+    "join_title": "Detpractice'in Kazançlı İş Ortaklığı Programına Katılın",
+    "join_tips": "Detpractice.com'un iş ortaklığı programına kayıt olun. Detpractice.com ile herkes Duolingo English Test'te kolayca daha yüksek puan alabilir. İş ortağımız olun ve her yönlendirme için %30'a varan komisyon kazanın.",
+    "earth_with_title": "Detpractice'in Çeşitli Ürün Yelpazesi ile Kazanın",
     "question_bank": "Soru Bankası",
-    "acs": "AI Düzeltme Hizmeti",
-    "Mock_Test": "Deneme Testi",
+    "acs": "Yapay Zeka Düzeltme Hizmeti",
+    "Mock_Test": "Deneme Sınavı",
     "Courses": "Kurslar",
-    "bada": "3 Adımda Detpractice Bağlısı Olun",
+    "bada": "3 Adımda Detpractice İş Ortağı Olun",
     "hep": "Yüksek Kazanç Potansiyeli",
     "heptips": [
-      "Rekabetçi komisyon oranları: Bağlantınızdan gelen tüm gelirlerde %30",
-      "Uzun vadeli ortaklık potansiyeli: Bağlılarımızı değerli buluyor ve uzun vadeli, karşılıklı yarar sağlayan ilişkiler geliştirmeyi hedefliyoruz."
+      "Rekabetçi komisyon oranları: İş ortaklığı bağlantınızdan gelen tüm gelirlerden %30.",
+      "Uzun vadeli ortaklık potansiyeli: İş ortaklarımıza değer veriyor ve karşılıklı fayda sağlayan uzun vadeli ilişkiler geliştirmeye çalışıyoruz."
     ],
-    "ctw": "Çalışmayı Sevdiğimiz İçerik Üreticileri",
+    "ctw": "Birlikte Çalışmaktan Keyif Aldığımız İçerik Üreticileri",
     "ctwtips": [
-      "1. İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisiniz (Duolingo English Test Öğrenmek bir artıdır!)",
-      "2. DET öğrenmenin daha etkili bir yoluyla heyecanlanıyorsunuz",
-      "3. Duolingo English Test öğreten bir eğitim kurumusunuz"
+      "1. Öğrencilerden oluşan bir kitleye sahip içerik üreticisisiniz (Duolingo English Test öğrenmek bir avantaj!)",
+      "2. DET'i öğrenmenin daha etkili bir yoluna heyecan duyuyorsunuz",
+      "3. Duolingo English Test eğitimi veren bir eğitim kurumusunuz"
     ],
     "dos": "Yapılması Gerekenler",
     "dos_icon_alt": "yeşil Doğru İkonu",
     "donts": "Yapılmaması Gerekenler",
     "donts_icon_alt": "kırmızı Hata İkonu",
     "faqs": "SSS",
-    "sew": "Bağlı Programımızla Şimdi Kazanmaya Başlayın",
+    "sew": "İş Ortaklığı Programımız ile Şimdi Kazanmaya Başlayın",
     "contaceUsList": [
       {
         "font": "Bağlı programımıza kaydolun ve yönlendirme bağlantınızı alın.",
@@ -1025,55 +1025,66 @@
         "font": "Detpractice.com'u etik ve dürüst bir şekilde tanıtın"
       },
       {
-        "font": "Kaliteli ve ilgili içerikler oluşturun"
+        "font": "Kaliteli ve ilgili içerik oluşturun"
       },
       {
-        "font": "Bağlılık ilişkinizi açıklayın"
+        "font": "İş ortaklığı ilişkinizi açıklayın"
       }
     ],
     "dontsList": [
       {
-        "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunun"
+        "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunmak"
       },
       {
-        "font": "Uygunsuz veya yasa dışı içeriğe sahip platformlarda tanıtım yapın"
+        "font": "Uygunsuz veya yasadışı içeriğe sahip platformlarda tanıtım yapmak"
       },
       {
-        "font": "Herhangi bir kupon sitesinde tanıtım yapın"
+        "font": "Herhangi bir kupon sitesinde tanıtım yapmak"
       },
       {
-        "font": "Marka adımızı kullanarak reklam kampanyaları düzenleyin veya reklamlarınızın hedef URL'lerine alan adımızı koyun"
+        "font": "Marka adımızı kullanarak reklam kampanyaları oluşturmak veya reklamlarınızın hedef URL'lerine alan adımızı yerleştirmek"
       }
     ],
     "faqList": [
       {
-        "q": "DET Uygulaması'nın bağlı programına kimler başvurabilir?",
-        "a": "İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisi, Duolingo English Test öğreten bir eğitim kurumu veya bir influencer iseniz, bağlı programımıza kaydolup para kazanabilirsiniz."
+        "q": "DET Practice'in iş ortaklığı programına kimler başvurabilir?",
+        "a": "Öğrencilerden oluşan bir kitleye sahip içerik üreticisi, Duolingo English Test eğitimi veren bir eğitim kurumu veya influencer iseniz, iş ortaklığı programımıza kaydolabilir ve para kazanabilirsiniz."
       },
       {
-        "q": "Komisyonlarımı nasıl takip ederim?",
-        "a": "Bağlı programımıza kaydolduğunuzda, yönlendirme bağlantılarınızdan gelen dönüşümleri takip edebileceğiniz özel bir yönetici sayfasına erişiminiz olacak."
+        "q": "Komisyonlarımı nasıl takip edebilirim?",
+        "a": "İş ortaklığı programımıza kaydolduktan sonra, yönlendirme bağlantılarınızdan gelen dönüşümleri takip edebileceğiniz size özel yönetici sayfasına erişim elde edeceksiniz."
       },
       {
-        "q": "Yönlendirdiğim bir müşteri abone olur veya yükseltirse komisyon alır mıyım?",
+        "q": "Yönlendirdiğim bir müşteri abonelik alırsa veya yükseltme yaparsa komisyon alır mıyım?",
         "a": "Evet, bir kullanıcı bağlantınız üzerinden kaydolduktan sonra, kullanıcı her satın alma ve yükseltme yaptığında komisyon kazanırsınız."
       },
       {
-        "q": "Kazandığım komisyonun tam yüzdesi nedir?",
-        "a": "İlk 3 sipariş için %10 komisyon alacaksınız; 3'ten fazla sipariş için %30 komisyon alacaksınız."
+        "q": "Kazanabileceğim kesin komisyon yüzdesi nedir?",
+        "a": "İlk 3 sipariş için %10 komisyon alacaksınız; 3 siparişten sonra %30 komisyon alacaksınız."
       },
       {
-        "q": "Yönlendirdiğim bir müşteri satın alımını iptal ederse ne olur?",
-        "a": "Bir müşteri herhangi bir nedenle satın alımını iptal eder veya geri ödeme alırsa, o kişi için kazandığınız komisyon hesabınızdan düşülür."
+        "q": "Yönlendirdiğim bir müşteri satın almasını iptal ederse ne olur?",
+        "a": "Bir müşteri satın almayı iptal ederse veya herhangi bir nedenle geri ödeme alırsa, o kişi için kazandığınız komisyon hesabınızdan düşülecektir."
       },
       {
-        "q": "Ödemelerimi ne zaman ve nasıl alırım?",
-        "a": "Önceki ay kazandığınız tüm komisyonlar için her ayın 15'inde ödemeleri işliyoruz. Ödemeleri PayPal aracılığıyla alabilirsiniz."
+        "q": "Ne zaman ve nasıl ödeme alırım?",
+        "a": "Her ayın 15'inde önceki ay kazandığınız tüm komisyonların ödemesini işleme alırız. Ödemeleri PayPal üzerinden alabilirsiniz."
       },
       {
-        "q": "İnternet pazarlama programınızla ilgili başka sorularım olursa ne yapmalıyım?",
-        "a": "\"<span class='yellow_font'>support{'@'}detpractice.com</span>\" adresinden bizimle iletişime geçin, sorularınızı cevaplamaktan memnuniyet duyarız."
+        "q": "İş ortaklığı pazarlama programınız hakkında başka sorularım olursa ne yapmalıyım?",
+        "a": "Sadece  \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" adresinden bizimle iletişime geçin, tüm sorularınıza yardımcı olmaktan memnuniyet duyarız."
       }
-    ]
+    ],
+    "contaceUsList[0]": {
+      "font": "İş ortaklığı programımıza kaydolun ve yönlendirme bağlantınızı alın.",
+      "btn": "Hemen Üye Olun"
+    },
+    "contaceUsList[1]": {
+      "btn": "Paylaş"
+    },
+    "contaceUsList[2]": {
+      "font": "Sizin ve alt ortaklarınızın getirdiği satışlardan komisyon kazanın.",
+      "btn": "Ödemenizi Alın"
+    }
   }
 }

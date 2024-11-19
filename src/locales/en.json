@@ -95,12 +95,7 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": [
-      "DET Practice",
-      "AI Correction",
-      "Full-Length Mock",
-      "DET Courses"
-    ],
+    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -985,12 +980,12 @@
     "bada": "Become a Detpractice Affiliate in 3 Steps",
     "hep": "High Earning Potential",
     "heptips": [
-      "Competitive commission rates: 30% on all revenue contributed from your affiliate link",
+      "Competitive commission rates: 30% on all revenue contributed from your affiliate link.",
       "Potential for long-term partnerships: We value our affiliates and strive to develop long-term, mutually beneficial relationships."
     ],
     "ctw": "Creators That We Love to Work With",
     "ctwtips": [
-      " 1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
+      "1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
       "2.You are excited by a more effective way to learn DET",
       "3.You are a training institution that teaches Duolingo English Test"
     ],
@@ -1071,6 +1066,9 @@
         "q": "What if I have other questions about your affiliate internet marketing program?",
         "a": "Just contact us at <span class='yellow_font'>support{'@'}detpractice.com</span> and we'll be happy to help you with any questions you may have."
       }
-    ]
+    ],
+    "contaceUsList[2]": {
+      "btn": "Get Paid"
+    }
   }
 }
