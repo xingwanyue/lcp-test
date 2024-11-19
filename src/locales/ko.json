@@ -51,8 +51,22 @@
     "LearnTitle": "Материалы",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사 소개",
-    "Products": ["문제 풀이", "AI 작문 첨삭", "AI 스피킹 평가", "실전 모의고사", "DET 학습 과정"],
-    "Company": ["회사 소개", "고객센터", "이용약관", "개인정보처리방침", "사이트맵", "제휴 안내", "환불규정"],
+    "Products": [
+      "문제 풀이",
+      "AI 작문 첨삭",
+      "AI 스피킹 평가",
+      "실전 모의고사",
+      "DET 학습 과정"
+    ],
+    "Company": [
+      "회사 소개",
+      "고객센터",
+      "이용약관",
+      "개인정보처리방침",
+      "사이트맵",
+      "제휴 안내",
+      "환불규정"
+    ],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -82,7 +96,12 @@
     "power_by": "AI로 구동되는",
     "h1Mobile": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
     "h1PC": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
-    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
+    "one_small_title": [
+      "DET 연습",
+      "AI 수정",
+      "풀-길이 모의 시험",
+      "DET 코스"
+    ],
     "Start_free_with_Google": "Google로 무료 시작",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",
@@ -343,8 +362,8 @@
     "Rate_this_article": "이 기사 평가하기"
   },
   "easyexam": {
-    "snfeep": "지금 시작하여 쉬운 시험 준비하세요.",
-    "Start_Now": "지금 시작"
+    "snfeep": "지금 바로 시험 준비를 시작하세요.",
+    "Start_Now": "시작하기"
   },
   "highscorewriting": {
     "font1": "귀하의 경로를 가속화하십시오",
@@ -653,35 +672,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET 연습 - DET 대비 전문 모의고사",
-      "description": "DET Practice의 전체 길이 시험으로 현실적인 Duolingo 모의 시험 경험을해보세요. 지능적인 적응형 질문과 AI 점수가 특징인 우리의 모의 시험은 Duolingo English Test에 대한 효과적인 준비를 위한 정확한 평가를 제공합니다.",
-      "keywords": "모의 시험, DET Duolingo, DET 시험, Duolingo DET, Duolingo 시험, Duolingo 시험 온라인"
+      "title": "Duolingo English Mock Test | DET 실전 모의고사",
+      "description": "실제 DET와 동일한 환경에서 진행되는 모의고사를 통해 시험을 미리 경험해 보세요. 30분 이내 점수 확인이 가능하며, 상세한 분석 리포트를 제공해 드립니다. 18,000여 개의 문제 은행과 적응형 테스트 알고리즘, AI 기반 말하기/쓰기 평가 시스템을 갖추고 있습니다. 지금 바로 DET 준비를 시작하세요.",
+      "keywords": "duolingo english mock test, duolingo english practice test, DET 모의고사, duolingo 시험 대비, duolingo english test 실전 연습, DET 모의고사, duolingo 기출문제, 온라인 duolingo 학습, DET 시험 준비, duolingo english test 기출, duolingo 예상 점수, DET 자가 진단"
     },
-    "h1": "DET 전체 길이 모의 시험",
-    "desc": "실제와 같은 모의고사로 진짜 시험과 같은 경험을 해보세요. 실제 시험 전에 테스트 과정을 경험하고, 빠르게 점수와 상세한 진단 보고서를 받아서 개선이 필요한 부분을 정확히 파악하세요.",
+    "h1": "전 영역 DET 모의고사",
+    "desc": "실제 시험과 동일한 환경의 모의고사로 시험을 미리 체험해 보세요. 실전 전 충분한 연습을 통해 시험 감각을 익히고, 맞춤형 분석 리포트로 취약점을 보완하실 수 있습니다.",
     "alt": "DET 연습: 최고의 Duolingo English Test 연습 플랫폼",
     "mock_user_icon": "모의 사용자 아이콘",
     "white_arrow_right": "흰색 화살표 오른쪽",
     "orange_arrow_right": "오렌지 화살표 오른쪽",
-    "learners_have": "{number}명의 학습자가 자기 평가와 연습을 위해 모의 시험을 보았습니다.",
-    "Mock_Now": "모의 지금",
+    "learners_have": "현재 {number} 명이 넘는 수험생들이 실력 진단과 연습을 위해 저희 모의고사를 활용하고 계십니다.",
+    "Mock_Now": "모의고사 시작하기",
     "Full_scale": "Duolingo 1:1 실제 크기 모의시험",
     "article1": {
-      "h2": "실제 시험에 가까운",
-      "right_desc": "실제 시험 환경을 경험하고 우리 고급 적응형 테스트 알고리즘을 사용해 보세요. 다양한 문제 유형을 빠르게 익히고 정밀한 평가를 받으세요."
+      "h2": "실전과 동일한 시험 환경",
+      "right_desc": "적응형 테스트 알고리즘을 통해 실제 시험과 동일한 환경에서 연습하실 수 있습니다. 다양한 유형의 문제를 접하며 정확한 실력 평가가 가능합니다."
     },
     "article2": {
-      "h2": "정확한 점수 및 심층 보고서",
-      "right_desc": "모의 시험 상세 보고서는 현재 강점과 약점에 대한 정확한 진단 및 분석을 제공하여 학습 계획을 자동으로 업데이트하고 시험 준비 효율성을 향상시킵니다."
+      "h2": "정밀한 점수 분석 및 리포트",
+      "right_desc": "상세 분석 리포트를 통해 본인의 강점과 약점을 정확히 파악하실 수 있으며, 맞춤형 학습 계획으로 효율적인 시험 준비가 가능합니다."
     },
     "article3": {
-      "h2": "편리한 시험 경험",
-      "right_desc": "일정에 맞춰 유연하게 시험을 치를 수 있으며, 예약은 필요하지 않습니다. 구매 후 모의 시험을 즉시 시작할 수 있으며 언제든지 일시 중지하거나 다시 시작할 수 있는 자유가 있습니다."
+      "h2": "자유로운 응시",
+      "right_desc": "예약 없이 원하시는 시간에 응시 가능합니다. 결제 즉시 시험을 시작할 수 있으며, 중단 후 재개도 자유롭습니다."
     },
     "article4": {
-      "h2": "빠른 점수 보고",
-      "right_desc": "모의 시험 결과를 <span class='zdfont'>5-30분</span> 이내에 받아보시고, 진행 상황 검토를 신속하게 하세요."
-    }
+      "h2": "신속한 결과 확인",
+      "right_desc": "시험 완료 후 <span class='zdfont'>5-30분</span>이내에 결과를 확인하실 수 있어 학습 진도 관리가 용이합니다."
+    },
+    "vs1": "DET Practice 모의고사와 실제 DET 점수 비교",
+    "vs2": "실제 DET 응시자들의 모의고사 대비 실전 성적 분석 데이터"
   },
   "practice": {
     "seometa": {

@@ -258,9 +258,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
             </div>
           </div>
           <div class="vs_out">
-            <h2>DET Practice Mock VS DET Test Scores</h2>
+            <h2>{{ $t('mockexam.vs1') }}</h2>
             <div class="vs_tips">
-              Score comparison of students who took the Duolingo English test and used our mock test
+              {{ $t('mockexam.vs2') }}
             </div>
             <div class="vs_img">
               <img class="vs_img_self big_img" :src="vsImgBig" alt="vs_img" />

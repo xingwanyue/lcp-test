@@ -51,8 +51,22 @@
     "LearnTitle": "备考资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
-    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
+    "Products": [
+      "DET刷题",
+      "AI写作批改",
+      "AI口语评测",
+      "全真模考",
+      "DET课程"
+    ],
+    "Company": [
+      "关于我们",
+      "联系我们",
+      "服务条款",
+      "隐私政策",
+      "网站地图",
+      "合作计划",
+      "退款说明"
+    ],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -81,7 +95,12 @@
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
+    "one_small_title": [
+      "DET 练习",
+      "AI纠正",
+      "全长模拟",
+      "DET 课程"
+    ],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -342,8 +361,8 @@
     "Rate_this_article": "为此文章评分"
   },
   "easyexam": {
-    "snfeep": "现在开始轻松备考。",
-    "Start_Now": "立即开始"
+    "snfeep": "科学备考，即刻启程。",
+    "Start_Now": "开始测试"
   },
   "highscorewriting": {
     "font1": "加速您的路径到",
@@ -652,35 +671,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET练习 - DET准备全长模拟考试",
-      "description": "使用DET练习的全长考试体验逼真的Duolingo模拟测试。我们的模拟测试具有智能自适应问题和人工智能评分，提供准确的评估，使您有效准备Duolingo English Test。",
-      "keywords": "Duolingo 模拟测试, DET Duolingo, DET 测试, Duolingo DET, Duolingo 测试, Duolingo 在线测试"
+      "title": "多邻国英语测试（DET）模拟考试 | 专业完整版模拟测试，由 DET Practice 提供",
+      "description": "参加专业的多邻国英语模拟考试，体验最真实的 DET 考试环境。数分钟即可获得详细的成绩报告和分析。题库包含 18,000+ 道优质试题，采用智能自适应算法，配备 AI 口语和写作评估系统。立即开启你的 DET 备考之路。",
+      "keywords": "duolingo english mock test, duolingo english practice test, DET 模拟考试, duolingo 备考资源, duolingo english test 在线模考, DET practice test, duolingo 真题练习, 在线 duolingo 模拟, DET 备考指南, duolingo english test 题库, duolingo 成绩评估, DET 能力测评"
     },
-    "h1": "DET 全长模拟测试",
-    "desc": "将自己沉浸在真实的考试体验中，通过我们的全真模拟考试。 在真正的考试之前，先体验实际的测试过程，并快速收到分数和详细的诊断报告，以确定需要改进的领域。",
+    "h1": "DET 1:1还原模拟考试",
+    "desc": "体验最贴近真实考试的全真模拟。提前熟悉考试流程，获取即时成绩和专业分析报告，精准定位需要提升的分数项",
     "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
     "mock_user_icon": "模拟用户图标",
     "white_arrow_right": "白色箭头右",
     "orange_arrow_right": "橙色箭头右",
-    "learners_have": "{number} 学员已经参加了我们的模拟考试进行自我评估和练习。",
-    "Mock_Now": "立即模拟",
+    "learners_have": "已有超过 {number} 名考生通过我们的模拟系统进行备考训练。",
+    "Mock_Now": "立即模考",
     "Full_scale": "Duolingo 1:1 完全模拟考试",
     "article1": {
-      "h2": "接近真实考试",
-      "right_desc": "体验真实考试条件，利用我们先进的自适应测试算法。快速掌握各种题型并获得精确的评估。"
+      "h2": "高度还原真实考试",
+      "right_desc": "采用专业的自适应测试算法，打造真实考试环境。帮助你快速掌握各种题型，获得准确的能力评估。"
     },
     "article2": {
-      "h2": "精准评分与深入报告",
-      "right_desc": "详细的模拟考试报告提供了当前优缺点的精确诊断和分析，自动更新学习计划以提高备考效率。"
+      "h2": "专业评分与深度分析",
+      "right_desc": "提供全面的考试报告，精确分析你的强项与短板，并根据表现自动调整学习计划，提高备考效率。"
     },
     "article3": {
-      "h2": "便捷的考试体验",
-      "right_desc": "享受灵活的测试安排，无需预约。在购买后立即开始模拟考试，并可以随时暂停或继续。"
+      "h2": "灵活便捷的考试模式",
+      "right_desc": "随时随地开始考试，无需预约。购买后即可使用，支持随时暂停和继续。"
     },
     "article4": {
-      "h2": "快速评分报告",
-      "right_desc": "在 <span class='zdfont'>5-30 分钟</span> 内获取您的模拟考试结果，加快您的进度评估。"
-    }
+      "h2": "快速出分",
+      "right_desc": "<span class='zdfont'>5-30分钟</span>内即可查看考试成绩，助你快速掌握学习进度。"
+    },
+    "vs1": "DET Practice 模考成绩与官方考试成绩对比",
+    "vs2": "真实考生在 Duolingo English Test 与我们模拟系统的成绩对照分析"
   },
   "practice": {
     "seometa": {

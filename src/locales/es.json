@@ -58,7 +58,15 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
+    "Company": [
+      "Nosotros",
+      "Contacto",
+      "Términos",
+      "Privacidad",
+      "Mapa del sitio",
+      "Colaboraciones",
+      "Devoluciones"
+    ],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -88,7 +96,12 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -349,8 +362,8 @@
     "Rate_this_article": "Califica este artículo"
   },
   "easyexam": {
-    "snfeep": "Comience ahora para una fácil preparación del examen.",
-    "Start_Now": "Empieza Ahora"
+    "snfeep": "Preparación eficaz a un clic de distancia.",
+    "Start_Now": "Comienza Ahora"
   },
   "highscorewriting": {
     "font1": "Acelera Tu Camino Hacia",
@@ -659,35 +672,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Práctica: Examen simulado completo para la preparación de DET",
-      "description": "Experimenta un examen de prueba de Duolingo realista con los exámenes completos de DET Practice. Con preguntas adaptativas inteligentes y puntuación de IA, nuestros exámenes de prueba ofrecen una evaluación precisa para prepararte eficazmente para el Duolingo English Test.",
-      "keywords": "Prueba simulada de Duolingo, DET Duolingo, DET Prueba, Duolingo DET, Prueba de Duolingo, Prueba de Duolingo en línea"
+      "title": "Simulador Oficial DET | Examen Completo de Preparación - DET Practice",
+      "description": "Prepárate con simulaciones exactas del Duolingo English Test. Obtén tu calificación y análisis detallado en tan solo 30 minutos. Accede a más de 18.000 ejercicios, sistema adaptativo inteligente y evaluación automática de speaking y writing mediante IA. Inicia tu camino al DET hoy mismo.",
+      "keywords": "simulador duolingo english test, práctica DET, examen de prueba duolingo, preparación duolingo, simulación oficial DET, ejercicios duolingo test, entrenamiento DET, práctica en línea duolingo, preparación certificación, ejercicios duolingo english, evaluación previa, simulacro DET"
     },
-    "h1": "DET Examen Simulado Completo",
-    "desc": "Sumérgete en una experiencia de examen realista con nuestros exámenes simulados a gran escala. Prueba el proceso de examen real antes del verdadero y recibe rápidamente las puntuaciones e informes diagnósticos detallados para identificar áreas de mejora.",
+    "h1": "Simulación Integral DET",
+    "desc": "Vive una experiencia idéntica al examen oficial con nuestros simulacros completos. Familiarízate con el formato y recibe al instante tu puntuación y análisis detallado para optimizar tu preparación.",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de práctica",
     "mock_user_icon": "Icono de usuario simulado",
     "white_arrow_right": "Flecha Blanca Derecha",
     "orange_arrow_right": "Flecha Naranja Derecha",
-    "learners_have": "{number} estudiantes han realizado nuestros exámenes de práctica para autoevaluación y práctica.",
-    "Mock_Now": "Burlarse ahora",
+    "learners_have": "Más de {number} estudiantes ya se han preparado con nuestros simulacros.",
+    "Mock_Now": "Empieza Ya",
     "Full_scale": "Duolingo 1:1 Examen Simulado a Escala Completa",
     "article1": {
-      "h2": "Cerca del Examen Real",
-      "right_desc": "Experimenta las condiciones reales del examen con nuestro avanzado algoritmo de prueba adaptativa. Domina rápidamente varios tipos de preguntas y obtén evaluaciones precisas."
+      "h2": "Fiel al Examen Oficial",
+      "right_desc": "Entrena en condiciones idénticas al examen real gracias a nuestro sistema adaptativo. Domina cada tipo de pregunta con evaluaciones precisas."
     },
     "article2": {
-      "h2": "Puntuación Precisa y Reportes Detallados",
-      "right_desc": "Informes detallados de exámenes simulados proporcionan un diagnóstico y análisis preciso de las fortalezas y debilidades actuales, actualizando automáticamente los planes de estudio para mejorar la eficiencia en la preparación del examen."
+      "h2": "Evaluación Precisa y Análisis Completo",
+      "right_desc": "Recibe un informe exhaustivo de tus puntos fuertes y áreas de mejora, con plan de estudio personalizado que se actualiza automáticamente."
     },
     "article3": {
-      "h2": "Experiencia de Examen Conveniente",
-      "right_desc": "Disfruta de tomar exámenes flexibles según tu horario, sin necesidad de citas. Comienza tu examen de prueba inmediatamente después de la compra y ten la libertad de pausar o reanudar en cualquier momento."
+      "h2": "Máxima Flexibilidad",
+      "right_desc": "Practica cuando quieras, sin horarios fijos. Acceso inmediato tras la compra con pausas ilimitadas."
     },
     "article4": {
-      "h2": "Informe Rápido de Puntuaciones",
-      "right_desc": "Reciba los resultados de su examen de práctica en un plazo de <span class='zdfont'>5-30 minutos</span>, acelerando su revisión de progreso."
-    }
+      "h2": "Resultados Instantáneos",
+      "right_desc": "Consulta tus resultados en <span class='zdfont'>5-30 minutos</span> para dar seguimiento a tu progreso."
+    },
+    "vs1": "Comparativa Simulacro vs DET Oficial",
+    "vs2": "Análisis comparativo entre los resultados del DET oficial y nuestros simulacros."
   },
   "practice": {
     "seometa": {

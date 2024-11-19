@@ -51,8 +51,22 @@
     "LearnTitle": "Risorse",
     "BlogTitle": "Blog",
     "CompanyTitle": "Chi Siamo",
-    "Products": ["Esercizi DET", "Correzione IA Scrittura", "Valutazione IA Speaking", "Simulazioni", "Corsi Completi"],
-    "Company": ["Chi siamo", "Contattaci", "Condizioni", "Privacy", "Mappa del sito", "Partnership", "Rimborsi"],
+    "Products": [
+      "Esercizi DET",
+      "Correzione IA Scrittura",
+      "Valutazione IA Speaking",
+      "Simulazioni",
+      "Corsi Completi"
+    ],
+    "Company": [
+      "Chi siamo",
+      "Contattaci",
+      "Condizioni",
+      "Privacy",
+      "Mappa del sito",
+      "Partnership",
+      "Rimborsi"
+    ],
     "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -82,7 +96,12 @@
     "power_by": "Basato su AI",
     "h1Mobile": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
     "h1PC": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
-    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
+    "one_small_title": [
+      "DET Pratica",
+      "Correzione AI",
+      "Simulazione Completa",
+      "DET Corsi"
+    ],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con email",
     "Start_for_free": "Inizia gratis",
@@ -343,8 +362,8 @@
     "Rate_this_article": "Valuta questo articolo"
   },
   "easyexam": {
-    "snfeep": "Inizia ora per una facile preparazione all'esame.",
-    "Start_Now": "Inizia ora"
+    "snfeep": "Preparazione efficace a portata di click.",
+    "Start_Now": "Comincia Ora"
   },
   "highscorewriting": {
     "font1": "Accelera il tuo percorso verso",
@@ -653,35 +672,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Pratica - Esame simulato a lunga durata per la preparazione di DET",
-      "description": "Vivi un realistico esame di simulazione Duolingo con gli esami a lunghezza intera di DET Practice. Con domande intelligenti e adattive e punteggi AI, i nostri esami di simulazione offrono una valutazione accurata per prepararti efficacemente per il Duolingo English Test.",
-      "keywords": "Duolingo Test di prova, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test online"
+      "title": "Simulazione Ufficiale DET | Test di Preparazione Completo by DET Practice",
+      "description": "Preparati al meglio con simulazioni fedeli del Duolingo English Test. Ricevi risultati e analisi approfondite in soli 30 minuti. A tua disposizione oltre 18.000 quesiti, sistema adattivo intelligente e valutazione automatizzata di speaking e writing tramite IA. La preparazione al DET inizia qui.",
+      "keywords": "simulazione duolingo english test, esercitazioni DET, preparazione duolingo, allenamento DET, test di prova duolingo, esame simulato DET, banco di prova duolingo, esercizi online DET, preparazione certificazione, prove duolingo english, valutazione preliminare, simulatore DET"
     },
-    "h1": "DET Test Completo di Simulazione",
-    "desc": "Immergiti in un'esperienza d'esame realistica con i nostri esami simulati a grandezza naturale. Assapora il vero processo di test prima dell'evento reale e ricevi rapidamente punteggi e report diagnostici dettagliati per individuare le aree da migliorare.",
+    "h1": "Simulazione Integrale DET",
+    "desc": "Affronta una simulazione realistica dell'esame con i nostri test completi. Familiarizza con la struttura della prova e ricevi subito punteggio e analisi dettagliata per ottimizzare la preparazione.",
     "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di practice",
     "mock_user_icon": "Icona utente simulata",
     "white_arrow_right": "Freccia Bianca Destra",
     "orange_arrow_right": "Freccia Arancione a Destra",
-    "learners_have": "{number} studenti hanno sostenuto i nostri esami simulati per autovalutazione ed esercitazione.",
-    "Mock_Now": "Simula Ora",
+    "learners_have": "Oltre {number} studenti si sono già preparati con le nostre simulazioni.",
+    "Mock_Now": "Inizia la Prova",
     "Full_scale": "Duolingo 1:1 Simulazione d'Esame a Piena Scala",
     "article1": {
-      "h2": "Vicino all'Esame Reale",
-      "right_desc": "Sperimenta le reali condizioni d'esame con il nostro avanzato algoritmo di test adattivo. Padroneggia rapidamente vari tipi di domande e ottieni valutazioni precise."
+      "h2": "Fedele all'Esame Ufficiale",
+      "right_desc": "Allenati in condizioni identiche a quelle dell'esame grazie al nostro sistema adattivo. Padroneggia ogni tipologia di quesito con valutazioni precise."
     },
     "article2": {
-      "h2": "Punteggio Preciso & Report Approfonditi",
-      "right_desc": "Rapporti dettagliati sugli esami simulati forniscono diagnosi e analisi precise dei punti di forza e delle debolezze attuali, aggiornando automaticamente i piani di studio per migliorare l'efficienza nella preparazione agli esami."
+      "h2": "Valutazione Accurata e Analisi Dettagliata",
+      "right_desc": "Ricevi un report completo sui tuoi punti di forza e debolezza, con piano di studio personalizzato che si aggiorna automaticamente."
     },
     "article3": {
-      "h2": "Esperienza di Esame Conveniente",
-      "right_desc": "Goditi la flessibilità di fare i test secondo il tuo programma, senza bisogno di appuntamenti. Inizia il tuo esame simulato subito dopo l'acquisto e hai la libertà di mettere in pausa o riprendere in qualsiasi momento."
+      "h2": "Massima Flessibilità",
+      "right_desc": "Esercitati quando preferisci, senza vincoli di orario. Accesso immediato dopo l'acquisto con possibilità di pause illimitate."
     },
     "article4": {
-      "h2": "Rapida Segnalazione dei Punteggi",
-      "right_desc": "Ricevi i risultati del tuo esame simulato entro <span class='zdfont'>5-30 minuti</span>, accelerando la tua revisione dei progressi."
-    }
+      "h2": "Risultati Immediati",
+      "right_desc": "Consulta i risultati della simulazione in <span class='zdfont'>5-30 minuti</span>per monitorare i progressi."
+    },
+    "vs1": "Confronto Simulazione vs DET Ufficiale",
+    "vs2": "Analisi comparativa dei risultati tra il DET ufficiale e le nostre simulazioni."
   },
   "practice": {
     "seometa": {

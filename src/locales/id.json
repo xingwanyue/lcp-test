@@ -51,7 +51,13 @@
     "LearnTitle": "Materi Belajar",
     "BlogTitle": "Blog",
     "CompanyTitle": "Tentang Kami",
-    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
+    "Products": [
+      "Latihan Soal DET",
+      "Koreksi Writing AI",
+      "Penilaian Speaking AI",
+      "Simulasi Ujian",
+      "Kursus DET"
+    ],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -90,7 +96,12 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -351,7 +362,7 @@
     "Rate_this_article": "Beri nilai artikel ini"
   },
   "easyexam": {
-    "snfeep": "Mulai Sekarang untuk Persiapan Ujian yang Mudah.",
+    "snfeep": "Mulai Persiapan DET dengan Mudah",
     "Start_Now": "Mulai Sekarang"
   },
   "highscorewriting": {
@@ -661,35 +672,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Praktik - Ujian Simulasi Penuh untuk Persiapan DET",
-      "description": "Pengalaman uji coba Duolingo yang realistis dengan ujian panjang penuh praktek DET oleh Practice. Menampilkan pertanyaan adaptif cerdas dan penilaian AI, ujian coba kami menawarkan penilaian yang akurat untuk mempersiapkan Anda secara efektif untuk Duolingo English Test.",
-      "keywords": "Tes Mock Duolingo, DET Duolingo, DET Tes, Duolingo DET, Tes Duolingo, Tes Duolingo Online"
+      "title": "Duolingo English Mock Test | Simulasi DET Lengkap dari DET Practice",
+      "description": "Ikuti simulasi DET lengkap yang menyerupai ujian resmi Duolingo English. Dalam waktu 30 menit, Anda akan mendapatkan nilai dan laporan detail. Dilengkapi dengan bank soal 18.000+ pertanyaan, sistem ujian adaptif, serta penilaian speaking & writing berbasis AI. Persiapkan DET Anda mulai sekarang.",
+      "keywords": "duolingo english mock test, duolingo english practice test, simulasi DET lengkap, persiapan duolingo test, latihan duolingo english test, tryout DET, soal duolingo, latihan duolingo online, persiapan DET, bank soal duolingo english test, simulasi nilai duolingo, evaluasi kemampuan DET"
     },
-    "h1": "DET Tes Percobaan Lengkap",
-    "desc": "Benamkan diri Anda dalam pengalaman ujian yang benar-benar nyata dengan ujian tiruan skala penuh kami. Rasakan proses pengujian yang sebenarnya sebelum ujian yang sesungguhnya dan segera menerima skor serta laporan diagnostik terperinci untuk mengidentifikasi area yang perlu ditingkatkan.",
+    "h1": "Simulasi DET Lengkap",
+    "desc": "Rasakan pengalaman ujian yang mirip dengan tes resmi melalui simulasi kami. Kenali proses ujian sebelum hari-H dan dapatkan nilai beserta laporan analisis lengkap untuk mengetahui aspek yang perlu ditingkatkan.",
     "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
     "mock_user_icon": "Ikon Pengguna Tiruan",
     "white_arrow_right": "Panah Putih Kanan",
     "orange_arrow_right": "Panah Oranye Kanan",
-    "learners_have": "{number} pelajar telah mengikuti ujian tiruan kami untuk penilaian diri dan latihan.",
-    "Mock_Now": "Tiruan Sekarang",
+    "learners_have": "Sudah lebih dari {number} peserta menggunakan simulasi kami untuk evaluasi dan latihan.",
+    "Mock_Now": "Mulai Simulasi",
     "Full_scale": "Duolingo 1:1 Ujian Mock Skala Penuh",
     "article1": {
-      "h2": "Dekat Dengan Ujian Sebenarnya",
-      "right_desc": "Alami kondisi ujian yang sesungguhnya dengan algoritma pengujian adaptif kami yang canggih. Cepat kuasai berbagai jenis pertanyaan dan dapatkan penilaian yang tepat."
+      "h2": "Mirip Ujian Resmi",
+      "right_desc": "Sistem ujian adaptif kami memberikan pengalaman yang mirip dengan tes resmi. Berlatih dengan berbagai tipe soal dan dapatkan penilaian yang akurat."
     },
     "article2": {
-      "h2": "Penilaian Tepat & Laporan Mendalam",
-      "right_desc": "Laporan ujian tiruan terperinci memberikan diagnosis dan analisis yang tepat mengenai kekuatan dan kelemahan saat ini, secara otomatis memperbarui rencana belajar untuk meningkatkan efisiensi persiapan ujian."
+      "h2": "Penilaian & Analisis Detail",
+      "right_desc": "Laporan hasil simulasi memberikan analisis mendalam tentang kekuatan dan kelemahan Anda, dilengkapi dengan rekomendasi belajar otomatis untuk persiapan yang lebih efektif."
     },
     "article3": {
-      "h2": "Pengalaman Ujian yang Nyaman",
-      "right_desc": "Nikmati fleksibilitas saat mengambil ujian sesuai jadwal Anda, tanpa perlu janji temu. Mulai ujian uji coba Anda segera setelah pembelian dan memiliki kebebasan untuk jeda atau melanjutkan kapan saja."
+      "h2": "Waktu Fleksibel",
+      "right_desc": "Tidak perlu reservasi, kerjakan kapan saja sesuai waktu Anda. Langsung mulai setelah pembayaran dan bisa dijeda atau dilanjutkan sesuka hati."
     },
     "article4": {
-      "h2": "Pelaporan Skor Cepat",
-      "right_desc": "Dapatkan hasil ujian tiruan Anda dalam <span class='zdfont'>5-30 menit</span>, mempercepat tinjauan kemajuan Anda."
-    }
+      "h2": "Hasil Cepat",
+      "right_desc": "Nilai dan laporan tersedia dalam <span class='zdfont'>5-30 menit</span> untuk memantau perkembangan belajar Anda."
+    },
+    "vs1": "Perbandingan Nilai Simulasi DET Practice dengan DET Resmi",
+    "vs2": "Data perbandingan nilai peserta yang mengikuti DET resmi dan simulasi kami."
   },
   "practice": {
     "seometa": {

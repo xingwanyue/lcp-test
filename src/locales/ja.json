@@ -51,7 +51,13 @@
     "LearnTitle": "学習コンテンツ",
     "BlogTitle": "ブログ",
     "CompanyTitle": "企業情報",
-    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
+    "Products": [
+      "DET演習",
+      "AIライティング添削",
+      "AIスピーキング評価",
+      "模擬試験",
+      "総合対策コース"
+    ],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -89,7 +95,12 @@
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -350,8 +361,8 @@
     "Rate_this_article": "この記事を評価する"
   },
   "easyexam": {
-    "snfeep": "今すぐ始めて簡単に試験準備。",
-    "Start_Now": "今すぐ開始"
+    "snfeep": "効率的な試験対策を、今すぐ始めましょう。",
+    "Start_Now": "テストを開始する"
   },
   "highscorewriting": {
     "font1": "あなたの道を加速する",
@@ -660,35 +671,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET練習 - DET準備のためのフルレングス模擬試験",
-      "description": "DET Practiceのフルレングス・テストでリアルなDuolingo模擬試験を体験してみましょう。知的適応問題とAIスコアリングを使っているため、我々の模擬試験は正確な評価を提供し、あなたを効果的にDuolingo English Testに備えます。",
-      "keywords": "Duolingo 模擬試験, DET Duolingo, DET 試験, Duolingo DET, Duolingo 試験, Duolingo 試験オンライン"
+      "title": "Duolingo English Mock Test | DET Practice提供の実践的DET模擬テスト",
+      "description": "本番レベルのDuolingo English模擬テストで、実践的なDET体験ができます。受験後30分以内にスコアと詳細なレポートを受け取れます。18,000問以上の問題、AIによる適応型アルゴリズム、スピーキング・ライティング評価システムを搭載。DET対策を今すぐ始めましょう。",
+      "keywords": "duolingo english mock test, duolingo english practice test, DET模擬テスト, duolingo試験対策, duolingo english test演習, DET practice test, duolingo問題集, オンラインduolingo対策, DET準備講座, duolingo english test問題バンク, duolingoスコア診断, DET実力診断"
     },
-    "h1": "DET フルレングス模擬試験",
-    "desc": "本格的な模擬試験で、現実に近い試験体験を堪能できます。本番前に実際の試験プロセスを体験し、迅速にスコアと詳細な診断レポートを受け取って改善点を特定しましょう。",
+    "h1": "DET完全再現模擬テスト",
+    "desc": "本番と同じ環境で模擬試験に挑戦できます。実際の試験の流れを体験し、即座にスコアと詳細な分析レポートを確認して、改善点を把握しましょう。",
     "alt": "DET 練習:最良の Duolingo English Test 練習 プラットフォーム",
     "mock_user_icon": "モックユーザーアイコン",
     "white_arrow_right": "右矢印",
     "orange_arrow_right": "オレンジの矢印右",
-    "learners_have": "{number} 人の学習者が、自己評価と練習のために模擬試験を受けました。",
-    "Mock_Now": "今すぐモック",
+    "learners_have": "すでに{number}人以上の受験者が当社の模擬テストで実力を磨いています。",
+    "Mock_Now": "模擬テストを受験する",
     "Full_scale": "Duolingo 1:1 本番試験",
     "article1": {
-      "h2": "実際の試験に近い",
-      "right_desc": "私たちの高度な適応テストアルゴリズムで本物の試験条件を体験してください。さまざまな問題タイプを迅速に習得し、正確な評価を得ることができます。"
+      "h2": "本番同様の試験環境",
+      "right_desc": "最新の適応型アルゴリズムにより、本番さながらの環境で試験に臨めます。各問題形式に慣れながら、正確な実力診断を受けることができます。"
     },
     "article2": {
-      "h2": "正確なスコアリングと詳細なレポート",
-      "right_desc": "詳細な模擬試験レポートは、現在の強みと弱点を正確に診断および分析し、試験準備の効率を高めるために学習計画を自動的に更新します。"
+      "h2": "精密なスコアリングと詳細な分析",
+      "right_desc": "総合的な試験レポートで強み弱みを分析し、学習プランを自動で最適化。効率的な試験対策を実現します。"
     },
     "article3": {
-      "h2": "便利な試験体験",
-      "right_desc": "スケジュールに合わせて柔軟にテストを受けられ、予約は不要です。購入後すぐに模擬試験を開始し、いつでも一時停止や再開ができます。"
+      "h2": "便利な受験システム",
+      "right_desc": "予約不要で、いつでも受験可能。購入後すぐに開始でき、途中での中断・再開も自由です。"
     },
     "article4": {
-      "h2": "迅速なスコア報告",
-      "right_desc": "モック試験の結果を<span class='zdfont'>5-30分</span>以内に配信し、進捗レビューを迅速化します。"
-    }
+      "h2": "迅速な採点システム",
+      "right_desc": "<span class='zdfont'>5～30分</span>で結果が判明し、学習の進捗状況を素早く確認できます。"
+    },
+    "vs1": "DET Practice模擬テストと本番スコアの相関性",
+    "vs2": "実際のDuolingo English Test受験者の本番スコアと当社模擬テストスコアの比較データ"
   },
   "practice": {
     "seometa": {

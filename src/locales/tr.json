@@ -96,7 +96,12 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -357,8 +362,8 @@
     "Rate_this_article": "Bu makaleyi oyla"
   },
   "easyexam": {
-    "snfeep": "Şimdi Başlayın Kolay Sınav Hazırlığı İçin.",
-    "Start_Now": "Başlayın"
+    "snfeep": "Etkili hazırlık için ilk adımı atın.",
+    "Start_Now": "Başla"
   },
   "highscorewriting": {
     "font1": "Hızla İlerleyin",
@@ -667,35 +672,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Pratik - DET Hazırlığı için Tam Uzunlukta Deneme Sınavı",
-      "description": "Tam ölçekli sınavlarla gerçekçi bir Duolingo Deneme Sınavı deneyimi yaşayın. Akıllı uyumlu sorular ve yapay zeka puanlama özelliklerinin yer aldığı deneme sınavlarımız, Duolingo English Test için etkili bir hazırlık sağlayacak doğru bir değerlendirme sunar.",
-      "keywords": "Duolingo Deneme Sınavı, DET Duolingo, DET Sınav, Duolingo DET, Duolingo Sınav, Duolingo Çevrimiçi Sınav"
+      "title": "DET Practice'ten Gerçek Formatta Duolingo English Deneme Sınavı",
+      "description": "DET'e birebir uygun deneme sınavlarıyla hazırlanın. Sınavınızı tamamladıktan sonra 30 dakika içinde sonuçlarınızı ve detaylı analizinizi alın. 18.000'i aşkın alıştırma sorusu, akıllı uyarlamalı algoritma ve yapay zeka destekli konuşma-yazma değerlendirmesi ile tam donanımlı hazırlık imkanı. DET yolculuğunuza hemen başlayın.",
+      "keywords": "duolingo english örnek sınav, duolingo english alıştırma sınavı, gerçek format DET sınavı, duolingo hazırlık, duolingo english test çalışma, DET örnek sınav, duolingo soru bankası, çevrimiçi duolingo çalışma, DET hazırlık programı, duolingo english soru örnekleri, DET performans ölçümü, duolingo değerlendirme"
     },
-    "h1": "DET Tam Uzunlukta Deneme Sınavı",
-    "desc": "Gerçek bir sınav deneyimiyle kendinizi şımartın. Gerçek sınav sürecinin tadına bakın ve geliştirilmesi gereken alanları belirlemek için hızla puanlar ve ayrıntılı teşhis raporları alın.",
+    "h1": "Gerçek DET Formatında Deneme",
+    "desc": "Birebir uyumlu deneme sınavlarımızla gerçek sınav atmosferini yaşayın. Sınav sürecini önceden deneyimleyin ve gelişim alanlarınızı belirlemek için anında sonuç ve kapsamlı analiz alın.",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "mock_user_icon": "Sahte Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "orange_arrow_right": "Turuncu Ok Sağ",
-    "learners_have": "{number} öğrenci, kendini değerlendirme ve pratik için deneme sınavlarımızı aldı.",
-    "Mock_Now": "\"Şimdi Alay Et\"",
+    "learners_have": "Şimdiye kadar {number}'den fazla öğrenci başarıyla hazırlandı.",
+    "Mock_Now": "Hemen Dene",
     "Full_scale": "Duolingo 1:1 Gerçek Ölçekli Deneme Sınavı",
     "article1": {
-      "h2": "Gerçek Sınava Yakın",
-      "right_desc": "Gerçek sınav koşullarını gelişmiş uyarlanabilir test algoritmamızla deneyimleyin. Çeşitli soru türlerini hızla öğrenin ve kesin değerlendirmeler elde edin."
+      "h2": "Gerçeğe Birebir Uygun",
+      "right_desc": "Akıllı uyarlamalı algoritmamız sayesinde gerçek sınav ortamında çalışın. Tüm soru tiplerinde uzmanlaşın ve net değerlendirmeler alın."
     },
     "article2": {
-      "h2": "Kesin Skorlama & Ayrıntılı Raporlar",
-      "right_desc": "Detaylı deneme sınavı raporları, mevcut güçlü ve zayıf yönlerin kesin teşhis ve analizini sağlar, çalışma planlarını otomatik olarak güncelleyerek sınava hazırlık verimliliğini artırır."
+      "h2": "Hassas Ölçüm ve Detaylı Analiz",
+      "right_desc": "Her deneme sonrası güçlü ve gelişime açık yönlerinizi gösteren kapsamlı rapor alın. Çalışma planınız otomatik olarak güncellenir."
     },
     "article3": {
-      "h2": "Kolay Sınav Deneyimi",
-      "right_desc": "Randevuya gerek kalmadan, kendi programınıza göre esnek sınav yapmanın keyfini çıkarın. Satın alımdan hemen sonra deneme sınavınıza başlayın ve istediğiniz zaman duraklatma veya yeniden başlatma özgürlüğüne sahip olun."
+      "h2": "Size Özel Çalışma İmkanı",
+      "right_desc": "Randevu derdi olmadan, istediğiniz zaman çalışın. Satın almanızın ardından hemen başlayabilir, dilediğinizde ara verip kaldığınız yerden devam edebilirsiniz."
     },
     "article4": {
-      "h2": "Hızlı Skor Raporlama",
-      "right_desc": "Deneme sınavı sonuçlarınızı <span class='zdfont'>5-30 dakika</span> içinde alın, ilerlemenizi hızlandırın."
-    }
+      "h2": "Hızlı Sonuç Bildirimi",
+      "right_desc": "Deneme sınavı sonuçlarınızı <span class='zdfont'>5-30 dakika</span> içinde alarak ilerlemenizi takip edin."
+    },
+    "vs1": "DET Practice ve Gerçek DET Karşılaştırması",
+    "vs2": "Resmi DET sınavına giren adayların deneme sınavlarımızdaki performans analizi."
   },
   "practice": {
     "seometa": {

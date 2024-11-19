@@ -95,7 +95,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",
@@ -356,8 +361,8 @@
     "Rate_this_article": "Évaluez cet article"
   },
   "easyexam": {
-    "snfeep": "Commencez maintenant pour une préparation facile aux examens.",
-    "Start_Now": "Commencez maintenant"
+    "snfeep": "Une préparation efficace à portée de main.",
+    "Start_Now": "Démarrer Maintenant"
   },
   "highscorewriting": {
     "font1": "Accélérez votre chemin vers",
@@ -666,35 +671,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Pratique - Examen blanc complet pour la préparation à DET",
-      "description": "Expérimentez un Duolingo test simulé réaliste avec les examens complets de DET Practice. Dotés de questions adaptatives intelligentes et d'une notation IA, nos tests simulés offrent une évaluation précise pour vous préparer efficacement au Duolingo English Test.",
-      "keywords": "Duolingo Test simulé, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne"
+      "title": "Test Blanc Duolingo English | Simulation Complète DET par DET Practice",
+      "description": "Préparez-vous au Duolingo English Test avec notre simulation fidèle du DET. Recevez vos résultats et une analyse détaillée en moins de 30 minutes. Bénéficiez d'une banque de plus de 18 000 questions, d'un algorithme adaptatif intelligent et d'une évaluation par IA de l'expression orale et écrite. Lancez votre préparation au DET aujourd'hui.",
+      "keywords": "duolingo english mock test, duolingo english practice test, simulation DET, préparation duolingo, entraînement duolingo english test, test blanc DET, exercices duolingo, préparation en ligne duolingo, révision DET, banque d'exercices duolingo, évaluation duolingo, entraînement DET"
     },
-    "h1": "DET Test complet de simulation",
-    "desc": "Immergez-vous dans une expérience d'examen réaliste avec nos examens simulés grandeur nature. Goûtez au processus de test réel avant le grand jour et recevez rapidement des scores et des rapports de diagnostic détaillés pour identifier les domaines à améliorer.",
+    "h1": "Simulation Authentique du DET",
+    "desc": "Immergez-vous dans une simulation fidèle de l'examen. Familiarisez-vous avec le déroulement réel de l'épreuve et obtenez rapidement une analyse détaillée de vos performances pour identifier vos axes de progression.",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "mock_user_icon": "Icône utilisateur fictif",
     "white_arrow_right": "Flèche Blanche Droite",
     "orange_arrow_right": "Flèche Orange Droite",
-    "learners_have": "{number} apprenants ont passé nos examens blancs pour l'auto-évaluation et la pratique.",
-    "Mock_Now": "Simuler maintenant",
+    "learners_have": "Déjà plus de {number} candidats ont perfectionné leur préparation grâce à nos simulations.",
+    "Mock_Now": "Commencer le Test",
     "Full_scale": "Duolingo 1:1 Examen simulé à échelle réelle",
     "article1": {
-      "h2": "Près de l'examen réel",
-      "right_desc": "Découvrez les conditions réelles de l'examen avec notre algorithme avancé de test adaptatif. Maîtrisez rapidement différents types de questions et obtenez des évaluations précises."
+      "h2": "Conditions d'Examen Réalistes",
+      "right_desc": "Entraînez-vous dans des conditions identiques au jour J grâce à notre algorithme adaptatif. Maîtrisez tous les types de questions et évaluez précisément votre niveau."
     },
     "article2": {
-      "h2": "Score Précis & Rapports Approfondis",
-      "right_desc": "Des rapports d'examen simulé détaillés fournissent un diagnostic et une analyse précis des forces et faiblesses actuelles, mettant à jour automatiquement les plans d'étude pour améliorer l'efficacité de la préparation aux examens."
+      "h2": "Évaluation Précise et Analyse Approfondie",
+      "right_desc": "Recevez une analyse détaillée identifiant vos points forts et vos points faibles, avec un programme de révision personnalisé et automatiquement mis à jour."
     },
     "article3": {
-      "h2": "Expérience d'examen pratique",
-      "right_desc": "Profitez d'une flexibilité de passage des tests à votre convenance, sans rendez-vous nécessaire. Commencez votre examen blanc immédiatement après l'achat et profitez de la liberté de mettre en pause ou de reprendre à tout moment."
+      "h2": "Flexibilité Maximale",
+      "right_desc": "Passez votre test quand vous le souhaitez, sans réservation. Accès immédiat après l'achat, avec possibilité de pause et reprise à votre convenance."
     },
     "article4": {
-      "h2": "Rapport de score rapide",
-      "right_desc": "Obtenez les résultats de votre examen simulé dans un délai de <span class='zdfont'>5-30 minutes</span>, accélérant ainsi votre évaluation de progression."
-    }
+      "h2": "Résultats Rapides",
+      "right_desc": "\nConsultez votre score et votre analyse en <span class='zdfont'>5 à 30 minutes</span> pour un suivi optimal de vos progrès."
+    },
+    "vs1": "Corrélation Scores DET Practice - Scores Officiels",
+    "vs2": "Analyse comparative entre les résultats officiels au Duolingo English Test et les scores obtenus à nos simulations"
   },
   "practice": {
     "seometa": {

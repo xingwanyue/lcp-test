@@ -51,8 +51,22 @@
     "LearnTitle": "Lernmaterialien",
     "BlogTitle": "Blog",
     "CompanyTitle": "Über uns",
-    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
-    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
+    "Products": [
+      "DET-Übungen",
+      "KI-Schreibtraining",
+      "KI-Sprechtraining",
+      "Prüfungssimulation",
+      "DET-Kurse"
+    ],
+    "Company": [
+      "Über uns",
+      "Kontakt",
+      "AGB",
+      "Datenschutz",
+      "Sitemap",
+      "Partner werden",
+      "Widerrufsrecht"
+    ],
     "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -81,7 +95,12 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -342,8 +361,8 @@
     "Rate_this_article": "Bewerten Sie diesen Artikel"
   },
   "easyexam": {
-    "snfeep": "Beginnen Sie jetzt mit der einfachen Prüfungsvorbereitung.",
-    "Start_Now": "Jetzt Starten"
+    "snfeep": "Effektive Prüfungsvorbereitung leicht gemacht.",
+    "Start_Now": "Jetzt beginnen"
   },
   "highscorewriting": {
     "font1": "Beschleunigen Sie Ihren Weg zu",
@@ -652,35 +671,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Übung - Vollständige Mock-Prüfung für DET Vorbereitung",
-      "description": "Erleben Sie einen realistischen Duolingo-Probetest mit DET Practice's Vollzeit-Prüfungen. Mit intelligenten adaptiven Fragen und KI-Bewertung bieten unsere Probetests eine genaue Bewertung, um Sie effektiv auf das Duolingo English Test vorzubereiten.",
-      "keywords": "Duolingo Mock-Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
+      "title": "Duolingo English Mock Test | Authentischer DET-Simulationstest von DET Practice",
+      "description": "Bereiten Sie sich optimal auf den Duolingo English Test vor mit unserem originalgetreuen DET-Simulationstest. Ihre Ergebnisse und eine ausführliche Auswertung erhalten Sie innerhalb von 30 Minuten. Profitieren Sie von über 18.000 Übungsaufgaben, einem intelligenten adaptiven Algorithmus und KI-gestützter Bewertung für Sprechen und Schreiben. Starten Sie noch heute mit Ihrer DET-Vorbereitung.",
+      "keywords": "duolingo english mock test, duolingo english practice test, DET-Simulation, duolingo-Vorbereitung, duolingo english test Übung, DET-Probetest, duolingo Übungsmaterial, Online-DET-Training, DET-Prüfungsvorbereitung, duolingo Aufgabensammlung, DET-Leistungsanalyse, Duolingo-Testtraining"
     },
-    "h1": "DET Vollständiger Probetest",
-    "desc": "Tauchen Sie ein in eine realistische Prüfungserfahrung mit unseren groß angelegten Übungsprüfungen. Erhalten Sie einen Vorgeschmack auf den tatsächlichen Prüfungsprozess, bevor es ernst wird und erhalten Sie schnell Ergebnisse und detaillierte Diagnoseberichte, um Verbesserungsbereiche zu identifizieren.",
+    "h1": "Originalgetreue DET-Simulation",
+    "desc": "Erleben Sie eine authentische Testsituation mit unseren vollständigen Übungstests. Lernen Sie den Prüfungsablauf kennen und erhalten Sie umgehend Ihre Ergebnisse samt detaillierter Analyse zur gezielten Verbesserung.",
     "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
     "mock_user_icon": "Benutzersymbol simulieren",
     "white_arrow_right": "Weißer Pfeil nach rechts",
     "orange_arrow_right": "Oranger Pfeil rechts",
-    "learners_have": "{number} Lernende haben unsere Probeprüfungen zur Selbstbewertung und Übung absolviert.",
-    "Mock_Now": "Jetzt simulieren",
+    "learners_have": "Bereits über {number} Teilnehmer haben mit unseren Übungstests erfolgreich trainiert.",
+    "Mock_Now": "Test jetzt starten",
     "Full_scale": "Duolingo 1:1 Vollständige Prüfungssimulation",
     "article1": {
-      "h2": "Nahe an der echten Prüfung",
-      "right_desc": "Erleben Sie reale Prüfungsbedingungen mit unserem fortschrittlichen adaptiven Testalgorithmus. Beherrschen Sie schnell verschiedene Fragetypen und erhalten Sie präzise Bewertungen."
+      "h2": "Realistische Prüfungsumgebung",
+      "right_desc": "Trainieren Sie unter echten Prüfungsbedingungen dank unserem adaptiven Algorithmus. Beherrschen Sie alle Aufgabentypen und erhalten Sie eine präzise Leistungseinschätzung."
     },
     "article2": {
-      "h2": "Präzise Bewertung & Detaillierte Berichte",
-      "right_desc": "Detaillierte Prüfungsberichts bieten eine präzise Diagnose und Analyse der aktuellen Stärken und Schwächen, indem sie automatisch Lernpläne aktualisieren, um die Effizienz der Prüfungsvorbereitung zu verbessern."
+      "h2": "Genaue Bewertung und umfassende Analyse",
+      "right_desc": "Erhalten Sie einen detaillierten Testbericht mit Analyse Ihrer Stärken und Schwächen sowie einen automatisch angepassten Lernplan für optimale Vorbereitung."
     },
     "article3": {
-      "h2": "Bequeme Prüfungserfahrung",
-      "right_desc": "Genießen Sie flexibles Testen nach Ihrem Zeitplan, keine Termine erforderlich. Beginnen Sie sofort nach dem Kauf mit Ihrer Probeklausur und haben Sie die Freiheit, jederzeit zu pausieren oder fortzusetzen."
+      "h2": "Maximale Flexibilität",
+      "right_desc": "Üben Sie ohne Terminbindung wann immer es Ihnen passt. Sofortiger Zugang nach dem Kauf mit der Möglichkeit, jederzeit zu pausieren und fortzusetzen."
     },
     "article4": {
-      "h2": "Schnelle Ergebnismeldung",
-      "right_desc": "Erhalten Sie Ihre Prüfungsergebnisse innerhalb von <span class='zdfont'>5-30 Minuten</span>, um Ihren Fortschritt schnell zu überprüfen."
-    }
+      "h2": "Schnelle Ergebnisse",
+      "right_desc": "Ihre Testergebnisse sind innerhalb von 5-30 Minuten</span> verfügbar für eine effiziente Lernkontrolle."
+    },
+    "vs1": "Vergleich DET Practice und offizieller DET",
+    "vs2": "Gegenüberstellung der Ergebnisse von Teilnehmern im offiziellen Duolingo English Test und unserem Simulationstest."
   },
   "practice": {
     "seometa": {
