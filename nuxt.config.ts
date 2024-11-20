@@ -27,7 +27,6 @@ export default defineNuxtConfig({
   },
   plugins: [
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
-    { src: '@/plugins/tidio.js', mode: 'client' },
   ],
 
   features: {
@@ -51,14 +50,6 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-BTN96NLD4D',
-          async: true,
-        },
-        {
-          src: '/js/googleAnalytics.js',
-          async: true,
-        },
         {
           type: 'application/ld+json',
           innerHTML: `
