@@ -20,7 +20,11 @@ export default defineNuxtConfig({
     },
     detectBrowserLanguage: false,
   },
-
+  nitro: {
+    prerender: {
+      failOnError: false,
+    },
+  },
   plugins: [
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/tidio.js', mode: 'client' },
