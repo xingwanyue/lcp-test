@@ -58,7 +58,15 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
+    "Company": [
+      "Nosotros",
+      "Contacto",
+      "Términos",
+      "Privacidad",
+      "Mapa del sitio",
+      "Colaboraciones",
+      "Devoluciones"
+    ],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -88,7 +96,12 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -151,7 +164,7 @@
     "Join_Them": "Únete a ellos"
   },
   "slogen": {
-    "title": "<div class='font1'>¡Comienza tu camino hacia las mejores puntuaciones en el Duolingo English Test!</div>",
+    "title": "<div class='font1'>¡Comienza tu camino hacia las mejores puntuaciones en el</div> <div class='font2'>Duolingo English Test!</div>",
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con el correo electrónico",
     "Start_for_free": "Comienza gratis"
