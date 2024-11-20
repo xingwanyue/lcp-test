@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
   css: ['@/assets/iconfont/iconfont.css'],
-
+  pages: true,
+  sourcemap: false,
   i18n: {
     locales: ['en', 'id', 'ja', 'ko', 'ru', 'tr', 'de', 'es', 'fr', 'it', 'th', 'zh'].map((locale) => ({
       code: locale,
