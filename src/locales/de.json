@@ -52,7 +52,15 @@
     "BlogTitle": "Blog",
     "CompanyTitle": "Über uns",
     "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
-    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
+    "Company": [
+      "Über uns",
+      "Kontakt",
+      "Allgemeine Geschäftsbedingungen",
+      "Datenschutz",
+      "Sitemap",
+      "Partner werden",
+      "Widerrufsrecht"
+    ],
     "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -144,7 +152,7 @@
     "Join_Them": "Treten Sie ihnen bei"
   },
   "slogen": {
-    "title": "<div class='font1'>Starten Sie Ihren Weg zu Top-Ergebnissen im Duolingo English Test!</div>",
+    "title": "<div class='font1'>Starten Sie Ihren Weg zu Top-Ergebnissen im</div> <div class='font2'>Duolingo English Test!</div>",
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten"

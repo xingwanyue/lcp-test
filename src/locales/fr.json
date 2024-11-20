@@ -1,10 +1,10 @@
 {
   "test": "Pour test",
   "Home": "Accueil",
-  "Products": "Services",
-  "Learn": "Ressources",
-  "Pricing": "Tarifs",
-  "Blog": "Guide d'études",
+  "Products": "Produits",
+  "Learn": "Apprendre",
+  "Pricing": "Tarification",
+  "Blog": "Blog",
   "header": {
     "home_logo_title": "DET Pratique",
     "path_practice_title": "Duolingo Test de pratique d'anglais en ligne",
@@ -50,7 +50,7 @@
     "ProductsTitle": "Services",
     "LearnTitle": "Ressources",
     "BlogTitle": "Blog",
-    "CompanyTitle": "À propos",
+    "CompanyTitle": "Entreprise",
     "Products": [
       "Entraînement DET",
       "Correction IA Expression Écrite",
@@ -59,13 +59,12 @@
       "Formation Complète"
     ],
     "Company": [
-      "Qui sommes-nous",
-      "Contact",
-      "CGU",
-      "Protection des données",
-      "Plan du site",
-      "Devenir partenaire",
-      "Conditions de remboursement"
+      "À propos de nous",
+      "Contactez-nous",
+      "Conditions générales",
+      "Politique de confidentialité",
+      "Programme d'affiliation",
+      "Politique de remboursement"
     ],
     "show_more": "En savoir plus",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
@@ -158,7 +157,7 @@
     "Join_Them": "Rejoignez-les"
   },
   "slogen": {
-    "title": "<div class='font1'>Commencez votre parcours vers les meilleurs scores au Duolingo English Test !</div>",
+    "title": "<div class='font1'>Commencez votre parcours vers les meilleurs scores au</div> <div class='font2'>Duolingo English Test !</div>",
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un email",
     "Start_for_free": "Commencez gratuitement"
