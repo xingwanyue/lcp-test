@@ -116,16 +116,23 @@ export const useStore = defineStore({
             days premium package purchased successfully! Membership valid until 
             ${dayjs(vipEndTime).format('YYYY-MM-DD')}.`);
           }
-          if (write) {
+          if (write && speak) {
             this.user.write = 1;
-            message.push(
-              `"Writing Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
-            );
-          }
-          if (speak) {
             this.user.speak = 1;
             message.push(
-              `"Speaking Guide" has been successfully purchased, please visit the course details page on the official website to view or download.`,
+              `"Speaking Guide" and "Writing Guide" purchase successful. You can view or download them directly from the course page.`,
+            );
+          }
+          if (write && !speak) {
+            this.user.write = 1;
+            message.push(
+              `"Writing Guide" purchase successful. You can view or download it directly from the course page.`,
+            );
+          }
+          if (speak && !write) {
+            this.user.speak = 1;
+            message.push(
+              `"Speaking Guide" purchase successful. You can view or download it directly from the course page.`,
             );
           }
 
