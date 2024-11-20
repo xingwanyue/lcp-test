@@ -27,6 +27,7 @@ export default defineNuxtConfig({
   },
   plugins: [
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
+    { src: '@/plugins/tidio.js', mode: 'client' },
   ],
 
   features: {
@@ -50,6 +51,10 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       script: [
+        {
+          src: '/js/googleAnalytics.js',
+          async: true,
+        },
         {
           type: 'application/ld+json',
           innerHTML: `
