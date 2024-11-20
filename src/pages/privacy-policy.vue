@@ -6,7 +6,7 @@ import { domain } from '@/utils';
 const state = reactive({});
 useSeoMeta({
   title: t('privacyPolicy.seometa.title'),
-  // description: t('privacyPolicy.seometa.description'),
+  description: t('privacyPolicy.seometa.description'),
   keywords: t('privacyPolicy.seometa.keywords'),
 });
 const localePath = useLocalePath();
@@ -38,6 +38,7 @@ useHead({
           <nuxt-link to="https://www.detpractice.com/" target="_blank" class="website">
             https://www.detpractice.com
           </nuxt-link>
+          {{ $t('privacyPolicy.q1.a4_1') }}
           <div class="line-break"></div>
           {{ $t('privacyPolicy.q1.a5') }}
           <div class="line-break"></div>
@@ -87,6 +88,7 @@ useHead({
           <nuxt-link to="https://stripe.com/us/privacy" target="_blank" class="website">
             https://stripe.com/us/privacy.
           </nuxt-link>
+          {{ $t('privacyPolicy.q6.a1_1') }}
         </div>
       </div>
       <div class="content" data-aos="fade-up" data-aos-duration="1000">

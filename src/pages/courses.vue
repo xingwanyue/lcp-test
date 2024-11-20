@@ -6,11 +6,12 @@ import { staticUrlGet, domain, cdn, getToken } from '@/utils';
 import { getVipdataWithToken, getVipdataNoToken } from '@/api';
 import Vtwocourse from '../components/courseBottom.vue';
 import Vcoursezh from '../components/courseZonghe.vue';
-const guide1 = `${cdn}/store/portal/guid/guide111.png`;
-const guide2 = `${cdn}/store/portal/guid/guide222.png`;
+const guide1 = `${cdn}/store/portal/guid/kouyu.png`;
+const guide2 = `${cdn}/store/portal/guid/xiezuo.png`;
 useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
+  keywords: t('courses.seometa.keywords'),
 });
 const localePath = useLocalePath();
 
@@ -23,7 +24,7 @@ useHead({
 
 const store = useStore();
 const user = computed(() => store.user);
-const userchangeFlag = ref(() => store.user);
+// const userchangeFlag = reactive(() => store.user);
 
 const article1 = ref({
   title: t('courses.article1.title'),
@@ -326,9 +327,19 @@ const buyedChangePage = async () => {
     changePageData(zongheDataDataarg, speakData, writeData);
   }
 };
-watch(userchangeFlag.value, () => {
-  buyedChangePage();
-});
+
+watch(
+  () => user.value.write,
+  () => {
+    buyedChangePage();
+  },
+);
+watch(
+  () => user.value.speak,
+  () => {
+    buyedChangePage();
+  },
+);
 onMounted(() => {
   buyedChangePage();
 });

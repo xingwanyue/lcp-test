@@ -129,9 +129,19 @@ const getData = async () => {
 onMounted(async () => {
   getData();
 });
-watch(userChangeFlag.value, () => {
-  getData();
-});
+
+watch(
+  () => user.value.write,
+  () => {
+    getData();
+  },
+);
+watch(
+  () => user.value.speak,
+  () => {
+    getData();
+  },
+);
 
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {

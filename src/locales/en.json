@@ -95,7 +95,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -480,8 +485,9 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - AI Writing Correction Service for your Duolingo English Test",
-      "description": "DET Writing AI Correction service provided by AI comparable to professional teachers. Your essay will be corrected based on DET scoring rules, and you will receive detailed feedback within 1-5 mins."
+      "title": "Duolingo English Test Writing AI | DET Writing Score Checker by DET Practice",
+      "description": "Get instant AI-powered writing evaluation for your Duolingo English Test practice. Receive accurate scores, detailed feedback, and improvement suggestions within minutes. Practice with real DET writing questions and enhance your writing skills with professional analysis.",
+      "keywords": "duolingo english test writing, DET writing practice, DET writing correction, duolingo english test writing scorer, DET writing feedback, duolingo english test writing, AI writing evaluation, DET writing assessment, DET writing tips, duolingo english test writing samples, DET writing preparation, online writing practice"
     },
     "h1": "DET Writing AI Correction",
     "desc": "DET Writing AI Correction service provided by AI comparable to professional teachers. Your essay will be corrected based on DET scoring rules, and you will receive detailed feedback within 1-5 mins.",
@@ -518,8 +524,9 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Practice - Master Speaking and Writing with the Duolingo English Test Guide",
-      "description": "Unlock your potential with our Duolingo English Test Guide. Delve into speaking and writing excellence with comprehensive strategies, expert tips, and updated DET Practice."
+      "title": "Duolingo English Test Courses | Comprehensive DET Preparation at DET Practice",
+      "description": "Explore our expert-led Duolingo English Test courses designed to help you succeed. From practice tests to strategies, enhance your skills in reading, writing, speaking, and listening with tailored lessons. Start your DET prep today!",
+      "keywords": "Duolingo English Test courses, DET preparation courses, Duolingo test prep, English proficiency courses, DET practice lessons, Duolingo study guide, English test preparation, online DET courses"
     },
     "article1": {
       "title": "Key Features of DET Speaking Exam Excellence:",
@@ -665,9 +672,9 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Practice - Full-length Mock Exam for DET Preparation",
-      "description": "Experience a realistic Duolingo Mock Test with DET Practice's full-length exams. Featuring intelligent adaptive questions and AI scoring, our mock tests offer an accurate assessment to prepare you effectively for the Duolingo English Test.",
-      "keywords": "Duolingo Mock Test, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online"
+      "title": "Duolingo English Mock Test | Full-length DET Practice Test by DET Practice",
+      "description": "Take full-length Duolingo English mock tests that simulate the real DET experience. Get instant scores and detailed reports within 30 minutes. Features 18,000+ practice questions, adaptive testing algorithm, and AI-powered speaking & writing evaluation. Start your DET preparation today.",
+      "keywords": "duolingo english mock test, duolingo english practice test, full-length DET test, duolingo test preparation, duolingo english test simulation, DET practice test, duolingo test sample, online duolingo practice, DET preparation, duolingo english test questions, duolingo mock scoring, DET self assessment"
     },
     "h1": "DET Full-Length Mock Test",
     "desc": "Immerse yourself in a true-to-life examination experience with our full-scale mock exams. Get a taste of the actual testing process before the real deal and quickly receive scores and detailed diagnostic reports to pinpoint areas for improvement.",
@@ -693,7 +700,9 @@
     "article4": {
       "h2": "Rapid Score Reporting",
       "right_desc": "Get your mock exam results delivered within <span class='zdfont'>5-30 minutes</span>, fast-tracking your progress review."
-    }
+    },
+    "vs1": "DET Practice Mock VS DET Test Scores",
+    "vs2": "Score comparison of students who took the Duolingo English test and used our mock test"
   },
   "practice": {
     "seometa": {
@@ -733,8 +742,9 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DET Practice - AI Speaking Correction Service for your Duolingo English Test",
-      "description": "DET Speaking AI Correction service provided by powerful AI. Support all speaking question types, and provides professional guidance to help you easily improve your DET speaking score. "
+      "title": "Duolingo English Test Speaking AI Feedback | DET Practice",
+      "description": "Duolingo English Test speaking section made easier with advanced AI correction. Master your DET speaking tasks through instant feedback, detailed analysis, and expert tips. Practice unlimited speaking questions and receive immediate scoring aligned with official DET standards.",
+      "keywords": "Duolingo English Test speaking practice, Duolingo English Test preparation, DET speaking tasks, DET AI feedback, Duolingo speaking correction, DET speaking samples, Duolingo Test speaking tips, DET speaking practice, Duolingo speaking assessment, DET speaking preparation"
     },
     "h1": "DET Speaking AI Correction",
     "desc": "DET Speaking AI Correction service provided by powerful AI. Support all speaking question types, and provides professional guidance to help you easily improve your DET speaking score.",
@@ -743,7 +753,7 @@
     "bank_user_icon": "Bank User Icon",
     "white_arrow_right": "White Arrow Right",
     "purple_arrow_right": "Purple Arrow Right",
-    "learners_have": "{number} people used DET Speaking AI Correction service.",
+    "learners_have": "{number} people used our DET Speaking AI Correction service.",
     "spn": "Get Started",
     "article1": {
       "h2": "Accurate score",
@@ -752,20 +762,20 @@
     },
     "article2": {
       "h2": "Speaking Evaluation",
-      "right_desc": "You can immediately see your pronunciation error, unexpected interruption, missing pause,suspected reading aloud, suspected repetition, and learn how to avoid them.",
+      "right_desc": "You can immediately see your pronunciation errors, unexpected interruptions, missing pauses, suspected reading aloud, or repetitions, and learn how to avoid them.",
       "btn": "Start experiencing"
     },
     "article3": {
-      "h2": "Professional guidance",
+      "h2": "Professional Guidance",
       "right_desc": "According to the DET scoring elements, we provide professional guidance to help you identify the weaknesses in your speaking and make it perfect.",
       "btn": "Start experiencing"
     }
   },
   "privacyPolicy": {
     "seometa": {
-      "title": "Privacy Policy - DET Practice",
-      "description": "Discover DET Practice's Privacy Policy: Learn how we handle data, protect information, and ensure your privacy. Read more about our policies now.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Privacy Policy | DET Practice – Duolingo English Test Preparation",
+      "description": "Read the Privacy Policy for DET Practice. Learn how we collect, use, and protect your personal information when you access our platform for Duolingo English Test preparation. Your privacy is important to us, and we are committed to safeguarding your data.",
+      "keywords": "refund policy, DET Practice refund, return policy, Duolingo test prep refund, online course refund, service refund, DET Practice terms"
     },
     "h1": "Privacy Policy",
     "q1": {
@@ -774,6 +784,7 @@
       "a2": "This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service.",
       "a3": "We will not use or share your information with anyone except as described in this Privacy Policy.",
       "a4": "We use your Personal Information to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at",
+      "a4_1": " ",
       "a5": "Information Collection And Use",
       "a6": "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information (“Personal Information”) may include, but is not limited to:",
       "a7": "• Name",
@@ -799,7 +810,8 @@
     },
     "q6": {
       "title": "Payment Info & Security",
-      "a1": "In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees and customers, your vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on your behalf. This information is used solely to collect and provide payments related to the Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at"
+      "a1": "In order to collect payments on your behalf from your customers, and provide payments to you, we, using Stripe as a third-party payment processor, collect payment information from you, your attendees and customers, your vendors, and other parties to whom we provide payments on your behalf and from whom we collect payments on your behalf. This information is used solely to collect and provide payments related to the Services and is only stored by Stripe. You should review the terms of service and privacy policies of Stripe, available at",
+      "a1_1": " "
     },
     "q7": {
       "title": "Links To Other Sites",
@@ -809,8 +821,8 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Refund Policy: Learn About Our Refund Process | DET Practice",
-      "description": "Discover DET Practice's Refund Policy: Learn how we handle refund requests, eligibility criteria, and the process for obtaining a refund. Read more about our policies now.",
+      "title": "Refund Policy - DET Practice | Transparent and Fair Terms",
+      "description": "Read our clear and transparent Refund Policy for all services offered by DET Practice. We strive to provide the best experience for our users with fair and straightforward refund terms. Learn more today.",
       "keywords": "Refund Policy, DET Practice Refund, DET Practice Policy, Refund Process, Eligibility for Refund"
     },
     "h1": "Refund Policy",
@@ -960,9 +972,9 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "Affiliate Program | DET Practice",
-      "description": "Join DET Practice's lucrative affiliate program and earn up to 30% commission for every referral. Partner with us to help students achieve their best scores.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam"
+      "title": "Affiliate Program - DET Practice | Earn with Duolingo Test Prep",
+      "description": "Join the DET Practice Affiliate Program and start earning by promoting our Duolingo test prep services. Get access to high-converting materials and earn commissions for every sale. Learn how to get started today.",
+      "keywords": "affiliate program, Duolingo test prep affiliate, earn with DET Practice, online test prep affiliate, affiliate marketing, DET Practice partners, earn commissions"
     },
     "tag": "Affiliate Program",
     "h1": "Earn <span class='yellow_font'>30% Commission</span> From Your Every Referral",
@@ -978,12 +990,12 @@
     "bada": "Become a Detpractice Affiliate in 3 Steps",
     "hep": "High Earning Potential",
     "heptips": [
-      "Competitive commission rates: 30% on all revenue contributed from your affiliate link",
+      "Competitive commission rates: 30% on all revenue contributed from your affiliate link.",
       "Potential for long-term partnerships: We value our affiliates and strive to develop long-term, mutually beneficial relationships."
     ],
     "ctw": "Creators That We Love to Work With",
     "ctwtips": [
-      " 1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
+      "1.You are a creator that has an audience composed of students (Learning Duolingo English Test is a plus!)",
       "2.You are excited by a more effective way to learn DET",
       "3.You are a training institution that teaches Duolingo English Test"
     ],
@@ -1064,6 +1076,9 @@
         "q": "What if I have other questions about your affiliate internet marketing program?",
         "a": "Just contact us at <span class='yellow_font'>support{'@'}detpractice.com</span> and we'll be happy to help you with any questions you may have."
       }
-    ]
+    ],
+    "contaceUsList[2]": {
+      "btn": "Get Paid"
+    }
   }
 }

@@ -51,8 +51,22 @@
     "LearnTitle": "Lernmaterialien",
     "BlogTitle": "Blog",
     "CompanyTitle": "Über uns",
-    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
-    "Company": ["Über uns", "Kontakt", "AGB", "Datenschutz", "Sitemap", "Partner werden", "Widerrufsrecht"],
+    "Products": [
+      "DET-Übungen",
+      "KI-Schreibtraining",
+      "KI-Sprechtraining",
+      "Prüfungssimulation",
+      "DET-Kurse"
+    ],
+    "Company": [
+      "Über uns",
+      "Kontakt",
+      "AGB",
+      "Datenschutz",
+      "Sitemap",
+      "Partner werden",
+      "Widerrufsrecht"
+    ],
     "show_more": "Weiterlesen",
     "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
     "cookie_contenr": "DET Practice verwendet Cookies, um Inhalte basierend auf Ihren Browsereinstellungen zu verbessern. Weitere Einzelheiten finden Sie unter",
@@ -81,7 +95,12 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -144,7 +163,7 @@
     "Join_Them": "Treten Sie ihnen bei"
   },
   "slogen": {
-    "title": "<div class='font1'>Starten Sie Ihren Weg zu Top-Ergebnissen im Duolingo English Test!</div>",
+    "title": "<div class='font1'>Starten Sie Ihren Weg zu Top-Ergebnissen im</div> <div class='font2'>Duolingo English Test!</div>",
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "Start_for_free": "Kostenlos starten"
@@ -765,7 +784,8 @@
       "a5": "Sammlung und Verwendung von Informationen",
       "a6": "Während der Nutzung unseres Dienstes bitten wir Sie möglicherweise, uns bestimmte persönlich identifizierbare Informationen bereitzustellen, die verwendet werden können, um Sie zu kontaktieren oder zu identifizieren. Persönlich identifizierbare Informationen („Persönliche Informationen“) können unter anderem Folgendes umfassen:",
       "a7": "• Name",
-      "a8": "• E-Mail-Adresse"
+      "a8": "• E-Mail-Adresse",
+      "a4_1": " "
     },
     "q2": {
       "title": "Protokolldaten",
@@ -787,7 +807,8 @@
     },
     "q6": {
       "title": "Zahlungsinformationen & Sicherheit",
-      "a1": "Um Zahlungen in Ihrem Namen von Ihren Kunden einzuziehen und Ihnen Zahlungen zu leisten, erheben wir, unter Nutzung von Stripe als Drittanbieter-Zahlungsabwickler, Zahlungsinformationen von Ihnen, Ihren Teilnehmern und Kunden, Ihren Anbietern und anderen Parteien, an die wir in Ihrem Namen Zahlungen leisten und von denen wir in Ihrem Namen Zahlungen einziehen. Diese Informationen werden ausschließlich zur Einziehung und Bereitstellung von Zahlungen im Zusammenhang mit den Diensten verwendet und nur von Stripe gespeichert. Sie sollten die Nutzungsbedingungen und Datenschutzrichtlinien von Stripe prüfen, die verfügbar sind unter"
+      "a1": "Um Zahlungen in Ihrem Namen von Ihren Kunden einzuziehen und Ihnen Zahlungen zu leisten, erheben wir, unter Nutzung von Stripe als Drittanbieter-Zahlungsabwickler, Zahlungsinformationen von Ihnen, Ihren Teilnehmern und Kunden, Ihren Anbietern und anderen Parteien, an die wir in Ihrem Namen Zahlungen leisten und von denen wir in Ihrem Namen Zahlungen einziehen. Diese Informationen werden ausschließlich zur Einziehung und Bereitstellung von Zahlungen im Zusammenhang mit den Diensten verwendet und nur von Stripe gespeichert. Sie sollten die Nutzungsbedingungen und Datenschutzrichtlinien von Stripe prüfen, die verfügbar sind unter",
+      "a1_1": " "
     },
     "q7": {
       "title": "Links zu anderen Websites",

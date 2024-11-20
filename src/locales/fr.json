@@ -1,10 +1,10 @@
 {
   "test": "Pour test",
   "Home": "Accueil",
-  "Products": "Services",
-  "Learn": "Ressources",
-  "Pricing": "Tarifs",
-  "Blog": "Guide d'études",
+  "Products": "Produits",
+  "Learn": "Apprendre",
+  "Pricing": "Tarification",
+  "Blog": "Blog",
   "header": {
     "home_logo_title": "DET Pratique",
     "path_practice_title": "Duolingo Test de pratique d'anglais en ligne",
@@ -50,7 +50,7 @@
     "ProductsTitle": "Services",
     "LearnTitle": "Ressources",
     "BlogTitle": "Blog",
-    "CompanyTitle": "À propos",
+    "CompanyTitle": "Entreprise",
     "Products": [
       "Entraînement DET",
       "Correction IA Expression Écrite",
@@ -59,13 +59,13 @@
       "Formation Complète"
     ],
     "Company": [
-      "Qui sommes-nous",
-      "Contact",
-      "CGU",
-      "Protection des données",
-      "Plan du site",
-      "Devenir partenaire",
-      "Conditions de remboursement"
+      "À propos de nous",
+      "Contactez-nous",
+      "Conditions générales",
+      "Politique de confidentialité",
+      "Sitemap",
+      "Programme d'affiliation",
+      "Politique de remboursement"
     ],
     "show_more": "En savoir plus",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
@@ -158,7 +158,7 @@
     "Join_Them": "Rejoignez-les"
   },
   "slogen": {
-    "title": "<div class='font1'>Commencez votre parcours vers les meilleurs scores au Duolingo English Test !</div>",
+    "title": "<div class='font1'>Commencez votre parcours vers les meilleurs scores au</div> <div class='font2'>Duolingo English Test !</div>",
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement avec un email",
     "Start_for_free": "Commencez gratuitement"
@@ -356,8 +356,8 @@
     "Rate_this_article": "Évaluez cet article"
   },
   "easyexam": {
-    "snfeep": "Commencez maintenant pour une préparation facile aux examens.",
-    "Start_Now": "Commencez maintenant"
+    "snfeep": "Une préparation efficace à portée de main.",
+    "Start_Now": "Démarrer Maintenant"
   },
   "highscorewriting": {
     "font1": "Accélérez votre chemin vers",
@@ -365,14 +365,14 @@
     "Start_Now": "Commencer maintenant"
   },
   "highscorespeaking": {
-    "font1": "Embarquez immédiatement dans votre voyage vers",
-    "font2": "Parler avec un score élevé !",
-    "Start_Now": "Commencez maintenant"
+    "font1": "Lancez-vous vers l'excellence !",
+    "font2": " ",
+    "Start_Now": "Démarrer maintenant"
   },
   "highscorewritingnew": {
-    "font1": "Commencez immédiatement votre voyage vers",
-    "font2": "Écriture à haute notation !",
-    "Start_Now": "Commencez maintenant"
+    "font1": "Réussissez votre DET dès aujourd'hui !",
+    "font2": " ",
+    "Start_Now": "Commencer"
   },
   "path": {
     "seometa": {
@@ -480,37 +480,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - Service de correction d'écriture IA pour votre test d'anglais Duolingo",
-      "description": "DET Writing AI Service de correction fourni par AI comparable aux enseignants professionnels.  Votre essai sera corrigé en fonction des règles de notation du DET et vous recevrez des commentaires détaillés dans un délai de 1 à 5 minutes.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Writing AI | Vérificateur de Score de Rédaction DET par DET Practice",
+      "description": "Optimisez votre préparation au Duolingo English Test avec notre outil d'évaluation intelligent. Notre système analyse votre rédaction en temps réel et fournit une évaluation précise, des retours personnalisés et des conseils ciblés. Entraînez-vous sur des sujets authentiques du DET et perfectionnez votre expression écrite grâce à nos analyses expertes.",
+      "keywords": "duolingo test rédaction, préparation DET, correction rédaction, évaluation duolingo, retour écrit DET, exercices duolingo, analyse IA, méthodologie DET, techniques rédaction, exemples corrigés, entraînement DET, exercices en ligne"
     },
-    "h1": "DET Correction d'écriture IA",
-    "desc": "DET Service de correction d'écriture AI fourni par une IA comparable à des enseignants professionnels. Votre essai sera corrigé en fonction des règles DET de notation, et vous recevrez des commentaires détaillés dans un délai de 1 à 5 minutes.",
+    "h1": "Assistant Rédaction DET",
+    "desc": "Notre technologie d'IA égale l'expertise des correcteurs professionnels. Analyse complète selon les critères officiels du DET, avec retour détaillé sous 5 minutes.",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "useralt": "Icône utilisateur",
     "white_arrow_right": "flèche_blanche_droite",
     "yellow_arrow_right": "flèche_jaune_droite",
-    "learners_have": "{number} personnes ont utilisé le service de correction DET Writing AI.",
-    "Review_Now": "Commencer",
-    "Correct_Now": "Commencez à vivre l'expérience",
+    "learners_have": "Déjà adopté par plus de {number} candidats.",
+    "Review_Now": "Découvrir",
+    "Correct_Now": "Tester Maintenant",
     "Get_Scored_Now": "Commencez à expérimenter",
     "Enhance_Now": "Améliorez maintenant",
     "Begin_Polishing": "Commencer le polissage",
     "h2_1": {
-      "h2": "Score précis",
-      "right_desc": "Soumettez votre essai à partir de la banque de questions, et vous pouvez recevoir un rapport clair et détaillé ainsi qu'un score en 1 à 5 minutes."
+      "h2": "Notation Experte",
+      "right_desc": "Choisissez un sujet de notre base et recevez une évaluation détaillée en quelques minutes."
     },
     "h2_2": {
-      "h2": "Correction d'écriture",
-      "right_desc": "Vous pouvez immédiatement voir vos erreurs de vocabulaire, vos fautes de grammaire et apprendre comment les éviter."
+      "h2": "Correction Intelligente",
+      "right_desc": "Repérage instantané des erreurs linguistiques avec explications et conseils de remédiation."
     },
     "h2_3": {
-      "h2": "Conseils professionnels",
-      "right_desc": "Selon les éléments de scoring DET, nous fournissons des conseils professionnels pour vous aider à identifier les faiblesses de votre document et le rendre parfait."
+      "h2": "Accompagnement Expert",
+      "right_desc": "Analyse approfondie selon la grille officielle DET pour optimiser votre performance."
     },
     "h2_4": {
-      "h2": "Polissage d'essai",
-      "right_desc": "Modifiez avec précision chaque mot et chaque phrase, ajustez raisonnablement la structure des paragraphes, et revitalisez le style d'écriture pour améliorer davantage votre composition et la transformer en un texte de haute qualité."
+      "h2": "Perfectionnement Stylistique",
+      "right_desc": "Recommandations précises sur le vocabulaire, la syntaxe et la structure pour maximiser votre score."
     },
     "h2_5": {
       "h2": "Polissage du texte original",
@@ -519,38 +519,39 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Pratique - Maîtrisez l'expression orale et écrite avec le Duolingo English Test Guide",
-      "description": "Déverrouillez votre potentiel avec notre Duolingo English Test Guide. Plongez dans l'excellence orale et écrite avec des stratégies complètes, des conseils d'experts et une DET Pratique mise à jour."
+      "title": "Guide de préparation au DET | Formation complète au test d'anglais Duolingo",
+      "description": "Optimisez votre réussite au test Duolingo avec notre programme de formation expert. Notre méthode progressive couvre les quatre compétences linguistiques à travers des exercices ciblés et des stratégies éprouvées. Commencez votre préparation dès aujourd'hui !",
+      "keywords": "Préparation DET, formation Duolingo, cours test Duolingo, entraînement DET, test d'anglais Duolingo, certification DET, préparation en ligne, réussite DET"
     },
     "article1": {
       "title": "Caractéristiques clés de DET Excellence des examens oraux :",
       "list": [
         {
-          "content": "• Exploration approfondie de tous les types de tâches de prise de parole DET"
+          "content": "• Analyse approfondie des épreuves orales"
         },
         {
-          "content": "• Stratégies pratiques pour aborder chaque tâche de prise de parole"
+          "content": "• Méthodologie détaillée pour chaque type d'exercice"
         },
         {
-          "content": "• Exercices interactifs pour améliorer la clarté de la parole, la fluidité et la confiance"
+          "content": "• Entraînements pratiques pour développer l'aisance"
         },
         {
-          "content": "• Conseils d'expert sur la prononciation, le ton et la performance globale"
+          "content": "• Conseils techniques sur la prononciation et l'intonation"
         },
         {
-          "content": "• Échantillons de discours réels et analyses démontrant des stratégies réussies"
+          "content": "• Exemples commentés de réponses réussies"
         },
         {
-          "content": "• Réponses audio de démonstration pour fournir des exemples clairs de réponses efficaces"
+          "content": "• Exercices audio avec modèles de réponses"
         },
         {
-          "content": "• Approches d'apprentissage personnalisées pour différents niveaux de compétence"
+          "content": "• Parcours adapté selon votre niveau"
         },
         {
-          "content": "• Concentrez-vous sur le vocabulaire et la grammaire essentiels pour une communication efficace"
+          "content": "• Focus sur les expressions et structures clés"
         },
         {
-          "content": "• Mis à jour pour intégrer les dernières modifications dans le format de DET speaking"
+          "content": "• Conformité aux dernières évolutions du test"
         }
       ]
     },
@@ -558,48 +559,48 @@
       "title": "Principales caractéristiques de l'excellence à l'examen d'écriture DET :",
       "list": [
         {
-          "content": "• Couverture complète des tâches d'écriture DET avec analyse et exemples"
+          "content": "• Présentation détaillée des exercices d'expression écrite"
         },
         {
-          "content": "• Directives étape par étape pour planifier et rédiger des essais exceptionnels"
+          "content": "• Guide méthodologique pour une rédaction efficace"
         },
         {
-          "content": "• Exercices ciblés pour affiner les compétences en écriture spécifiques à DET"
+          "content": "• Exercices spécifiques aux exigences du DET"
         },
         {
-          "content": "• Conseils d'experts pour améliorer la clarté, la cohérence et la sophistication"
+          "content": "• Techniques pour améliorer style et cohérence"
         },
         {
-          "content": "• Essais annotés présentant des stratégies efficaces et des pièges courants"
+          "content": "• Modèles de rédaction annotés et commentés"
         },
         {
-          "content": "• Chemins d'apprentissage adaptables pour différents niveaux de compétence"
+          "content": "• Progression adaptée à votre niveau"
         },
         {
-          "content": "• Accent sur la grammaire et le vocabulaire essentiels pour DET succès"
+          "content": "• Rappels grammaticaux et lexicaux essentiels"
         },
         {
-          "content": "• Mis à jour pour refléter les dernières tendances de format d'écriture DET"
+          "content": "• Actualisation selon les derniers formats d'examen"
         }
       ]
     },
     "contaceUsList": [
       {
-        "font": "Sélectionnez Votre Guide",
-        "tip": "Choisissez le guide de parole ou d'écriture pour une préparation ciblée à l'examen.",
-        "btn": "Acheter le guide de conversation",
-        "btn1": "Acheter le Guide d'Écriture"
+        "font": "Choisissez votre formation",
+        "tip": "Sélectionnez le module oral ou écrit selon vos besoins",
+        "btn": "Commander le guide oral",
+        "btn1": "Commander le guide écrit"
       },
       {
-        "font": "Téléchargement instantané",
-        "tip": "Accédez au guide immédiatement après l'achat.",
-        "btn": "Télécharger le guide de conversation",
-        "btn1": "Télécharger le guide d'écriture"
+        "font": "Accès immédiat",
+        "tip": "Téléchargement disponible dès validation de votre commande",
+        "btn": "Télécharger le module oral",
+        "btn1": "Télécharger le module écrit"
       },
       {
-        "font": "Échantillons Audio Parlants",
-        "tip": "Explorez les réponses de démonstration audio supplémentaires de conversation.",
-        "btn1": "Accéder aux échantillons audio"
+        "font": "Ressources audio complémentaires",
+        "tip": "Accédez à notre banque d'exemples commentés",
+        "btn1": "Découvrir les supports audio"
       }
     ],
     "pagefont": {
@@ -610,11 +611,11 @@
       "white_arrow_right": "Flèche blanche droite",
       "Double_Right_Arrow": "Double flèche droite",
       "DET_Writing": "DET Rédaction d'Examen Excellence : Un Guide Complet",
-      "How_to": "Comment obtenir le guide ?",
+      "How_to": "Modalités d'accès",
       "spa": "Speaking practice audio",
-      "tips": "Merci de votre intérêt pour notre Guide de Conversation/Écriture! Veuillez noter qu'il s'agit d'un produit virtuel. Une fois acheté et téléchargé, la livraison du produit est considérée comme terminée, et il est généralement non remboursable. Veuillez confirmer avant de faire un achat.",
-      "orange_title": "Éducateurs de Langues d'Élite",
-      "team_desc": "Notre équipe distinguée d'éducateurs linguistiques, possédant des qualifications estimées comme TESOL et d'autres certificats d'enseignement, apporte une richesse d'expérience dans la préparation des étudiants aux principaux tests d'anglais comme TOEFL, IELTS et Duolingo English Test (DET). Réputés pour leurs impressionnantes compétences linguistiques, leurs approches pédagogiques personnalisées et leurs méthodes innovantes, ils sont déterminés à aider chaque étudiant à atteindre son plus haut potentiel en maîtrise de l'anglais.",
+      "tips": "NB : Ce produit est exclusivement numérique. Le téléchargement validé constitue la livraison définitive, sans possibilité de remboursement. Merci de prendre connaissance des conditions avant l'achat.",
+      "orange_title": "Notre équipe pédagogique",
+      "team_desc": "Nos formateurs, tous titulaires de certifications reconnues (TESOL et autres), sont des spécialistes des examens d'anglais (TOEFL, IELTS, DET). Leur expertise et leur pédagogie personnalisée vous garantissent un accompagnement optimal vers la réussite.",
       "Elite_Language_Educators": "Éducateurs de Langues Élite"
     },
     "sas": "Exemples audio parlants",
@@ -623,10 +624,10 @@
       "desc": "Le package de cours comprend l'<span class=\"white\">Excellence de l'examen DET Speaking</span> et l'<span class=\"white\">Excellence de l'examen DET Writing</span>.  Lors de votre abonnement, vous pourrez télécharger les guides à tout moment et les étudier en toute simplicité, à tout moment et en tout lieu.  L'abonnement Acheter maintenant prend effet immédiatement.  Faites défiler la page vers le haut, affichez-la et cliquez pour télécharger le cours et commencer à apprendre."
     },
     "speaking": {
-      "title": "Excellence de l'examen oral DET : un guide complet"
+      "title": "Guide complet de l'épreuve orale DET"
     },
     "writing": {
-      "title": "Excellence de l'examen de rédaction du DET : un guide complet"
+      "title": "Guide complet de l'épreuve écrite DET"
     },
     "downloadguide": "Guide de téléchargement",
     "dandumai": "Vous pouvez également les acheter séparément :",
@@ -666,35 +667,37 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Pratique - Examen blanc complet pour la préparation à DET",
-      "description": "Expérimentez un Duolingo test simulé réaliste avec les examens complets de DET Practice. Dotés de questions adaptatives intelligentes et d'une notation IA, nos tests simulés offrent une évaluation précise pour vous préparer efficacement au Duolingo English Test.",
-      "keywords": "Duolingo Test simulé, DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne"
+      "title": "Test Blanc Duolingo English | Simulation Complète DET par DET Practice",
+      "description": "Préparez-vous au Duolingo English Test avec notre simulation fidèle du DET. Recevez vos résultats et une analyse détaillée en moins de 30 minutes. Bénéficiez d'une banque de plus de 18 000 questions, d'un algorithme adaptatif intelligent et d'une évaluation par IA de l'expression orale et écrite. Lancez votre préparation au DET aujourd'hui.",
+      "keywords": "duolingo english mock test, duolingo english practice test, simulation DET, préparation duolingo, entraînement duolingo english test, test blanc DET, exercices duolingo, préparation en ligne duolingo, révision DET, banque d'exercices duolingo, évaluation duolingo, entraînement DET"
     },
-    "h1": "DET Test complet de simulation",
-    "desc": "Immergez-vous dans une expérience d'examen réaliste avec nos examens simulés grandeur nature. Goûtez au processus de test réel avant le grand jour et recevez rapidement des scores et des rapports de diagnostic détaillés pour identifier les domaines à améliorer.",
+    "h1": "Simulation Authentique du DET",
+    "desc": "Immergez-vous dans une simulation fidèle de l'examen. Familiarisez-vous avec le déroulement réel de l'épreuve et obtenez rapidement une analyse détaillée de vos performances pour identifier vos axes de progression.",
     "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
     "mock_user_icon": "Icône utilisateur fictif",
     "white_arrow_right": "Flèche Blanche Droite",
     "orange_arrow_right": "Flèche Orange Droite",
-    "learners_have": "{number} apprenants ont passé nos examens blancs pour l'auto-évaluation et la pratique.",
-    "Mock_Now": "Simuler maintenant",
+    "learners_have": "Déjà plus de {number} candidats ont perfectionné leur préparation grâce à nos simulations.",
+    "Mock_Now": "Commencer le Test",
     "Full_scale": "Duolingo 1:1 Examen simulé à échelle réelle",
     "article1": {
-      "h2": "Près de l'examen réel",
-      "right_desc": "Découvrez les conditions réelles de l'examen avec notre algorithme avancé de test adaptatif. Maîtrisez rapidement différents types de questions et obtenez des évaluations précises."
+      "h2": "Conditions d'Examen Réalistes",
+      "right_desc": "Entraînez-vous dans des conditions identiques au jour J grâce à notre algorithme adaptatif. Maîtrisez tous les types de questions et évaluez précisément votre niveau."
     },
     "article2": {
-      "h2": "Score Précis & Rapports Approfondis",
-      "right_desc": "Des rapports d'examen simulé détaillés fournissent un diagnostic et une analyse précis des forces et faiblesses actuelles, mettant à jour automatiquement les plans d'étude pour améliorer l'efficacité de la préparation aux examens."
+      "h2": "Évaluation Précise et Analyse Approfondie",
+      "right_desc": "Recevez une analyse détaillée identifiant vos points forts et vos points faibles, avec un programme de révision personnalisé et automatiquement mis à jour."
     },
     "article3": {
-      "h2": "Expérience d'examen pratique",
-      "right_desc": "Profitez d'une flexibilité de passage des tests à votre convenance, sans rendez-vous nécessaire. Commencez votre examen blanc immédiatement après l'achat et profitez de la liberté de mettre en pause ou de reprendre à tout moment."
+      "h2": "Flexibilité Maximale",
+      "right_desc": "Passez votre test quand vous le souhaitez, sans réservation. Accès immédiat après l'achat, avec possibilité de pause et reprise à votre convenance."
     },
     "article4": {
-      "h2": "Rapport de score rapide",
-      "right_desc": "Obtenez les résultats de votre examen simulé dans un délai de <span class='zdfont'>5-30 minutes</span>, accélérant ainsi votre évaluation de progression."
-    }
+      "h2": "Résultats Rapides",
+      "right_desc": " Consultez votre score et votre analyse en <span class='zdfont'>5 à 30 minutes</span> pour un suivi optimal de vos progrès."
+    },
+    "vs1": "Corrélation Scores DET Practice - Scores Officiels",
+    "vs2": "Analyse comparative entre les résultats officiels au Duolingo English Test et les scores obtenus à nos simulations"
   },
   "practice": {
     "seometa": {
@@ -734,32 +737,32 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DET Practice - Service de correction orale AI pour votre test d'anglais Duolingo",
-      "description": "DET Speaking AI Service de correction fourni par une IA puissante.  Prend en charge tous les types de questions orales et fournit des conseils professionnels pour vous aider à améliorer facilement votre score oral DET.",
-      "keywords": "Besoin de fournir"
+      "title": "Assistant IA pour l'Épreuve Orale du Duolingo English Test | Préparation DET",
+      "description": "Optimisez votre performance à l'épreuve orale du Duolingo English Test grâce à notre technologie IA de pointe. Bénéficiez d'une évaluation instantanée, d'analyses approfondies et de conseils personnalisés. Entraînez-vous sans limite avec notre système d'évaluation aligné sur les critères officiels du DET.",
+      "keywords": "préparation DET oral, entraînement Duolingo Test, exercices speaking DET, correction IA Duolingo, évaluation orale DET, conseils réussite DET, simulation test Duolingo, préparation speaking test, exercices anglais oral, méthodologie DET"
     },
-    "h1": "DET Correction AI Parlante",
-    "desc": "DET Service de correction par IA parlante fourni par une IA puissante. Prend en charge tous les types de questions orales et fournit des conseils professionnels pour vous aider à améliorer facilement votre DET score de parole.",
+    "h1": "Évaluation IA de l'Expression Orale",
+    "desc": "Notre technologie IA avancée analyse tous les aspects de votre expression orale et vous guide efficacement vers l'amélioration de vos performances au DET.",
     "alt": "DET Pratique :La meilleure DET Plateforme de correction d'IA pour parler",
     "altbanner": "DET Correction de l'IA Parlante",
     "bank_user_icon": "Icône d'utilisateur bancaire",
     "white_arrow_right": "Flèche Blanche Droite",
     "purple_arrow_right": "Flèche violette vers la droite",
-    "learners_have": "{number} personnes ont utilisé le service de correction AI de DET Speaking.",
-    "spn": "Commencer",
+    "learners_have": "Déjà plus de {number} candidats nous font confiance.",
+    "spn": "Essayer gratuitement",
     "article1": {
-      "h2": "Score précis",
-      "right_desc": "Soumettez votre essai en le saisissant ou en utilisant la banque de questions, et vous pouvez recevoir un rapport clair et détaillé ainsi qu'un score immédiatement.",
-      "btn": "Commencez à vivre l'expérience"
+      "h2": "Notation Précise",
+      "right_desc": "Enregistrez votre réponse ou choisissez un sujet de notre base d'exercices pour recevoir instantanément une évaluation détaillée.",
+      "btn": "Commencer l'évaluation"
     },
     "article2": {
-      "h2": "Évaluation de l'expression orale",
-      "right_desc": "Vous pouvez immédiatement voir votre erreur de prononciation, interruption inattendue, pause manquante, lecture à haute voix suspectée, répétition suspectée, et apprendre comment les éviter.",
+      "h2": "Analyse Complète",
+      "right_desc": "Identifiez immédiatement vos erreurs de prononciation, les hésitations, les pauses inappropriées, la lecture mécanique et les répétitions superflues.",
       "btn": "Commencez à faire l'expérience"
     },
     "article3": {
-      "h2": "Conseils professionnels",
-      "right_desc": "Selon les éléments de notation DET, nous fournissons des conseils professionnels pour vous aider à identifier les faiblesses de votre expression orale et à la perfectionner.",
+      "h2": "Accompagnement Expert",
+      "right_desc": "Conformément aux critères d'évaluation du DET, nous ciblons vos points faibles et vous proposons des solutions concrètes.",
       "btn": "Commencez à expérimenter"
     }
   },
@@ -767,82 +770,84 @@
     "seometa": {
       "title": "Politique de confidentialité - DET Practice",
       "description": "Découvrez la politique de confidentialité de DET Practice : Apprenez comment nous traitons les données, protégeons les informations et garantissons votre vie privée. Lisez dès maintenant plus d'informations sur nos politiques.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test de langue anglaise, Duolingo Examen d'anglais, Duolingo Examen de compétence"
+      "keywords": "politique de remboursement, remboursement DET Practice, politique de retour, remboursement préparation test Duolingo, remboursement cours en ligne, remboursement service, conditions DET Practice"
     },
     "h1": "Politique de Confidentialité",
     "q1": {
       "title": "Dernière mise à jour : 2023-11-20",
       "a1": "DET Practice (« nous » ou « notre ») exploite le site web DET Practice (le « Service »).",
       "a2": "Cette page vous informe de nos politiques concernant la collecte, l'utilisation et la divulgation des Informations Personnelles lorsque vous utilisez notre Service.",
-      "a3": "Nous n'utiliserons ni ne partagerons vos informations avec quiconque, sauf comme décrit dans cette Politique de confidentialité.",
-      "a4": "Nous utilisons vos Informations Personnelles pour fournir et améliorer le Service. En utilisant le Service, vous acceptez la collecte et l'utilisation des informations conformément à cette politique. Sauf définition contraire dans cette Politique de Confidentialité, les termes utilisés dans cette Politique de Confidentialité ont les mêmes significations que dans nos Termes et Conditions, accessibles à",
-      "a5": "Collecte et utilisation des informations",
-      "a6": "Lors de l'utilisation de notre Service, nous pouvons vous demander de nous fournir certaines informations personnelles identifiables pouvant être utilisées pour vous contacter ou vous identifier. Les informations personnelles identifiables (« Informations Personnelles ») peuvent inclure, sans s'y limiter :",
+      "a3": "Nous n'utiliserons ni ne partagerons vos informations avec quiconque, sauf comme décrit dans cette Politique de Confidentialité.",
+      "a4": "Nous utilisons vos Informations Personnelles pour fournir et améliorer le Service. En utilisant le Service, vous acceptez la collecte et l'utilisation d'informations conformément à cette politique. Sauf définition contraire dans cette Politique de Confidentialité, les termes utilisés dans cette Politique de Confidentialité ont la même signification que dans nos Conditions d'Utilisation, accessibles à ",
+      "a4_1": " ",
+      "a5": "Collecte et Utilisation des Informations",
+      "a6": "Lors de l'utilisation de notre Service, nous pouvons vous demander de nous fournir certaines informations personnellement identifiables qui peuvent être utilisées pour vous contacter ou vous identifier. Les informations personnellement identifiables (« Informations Personnelles ») peuvent inclure, sans s'y limiter :",
       "a7": "• Nom",
       "a8": "• Adresse e-mail"
     },
     "q2": {
-      "title": "Données de journal",
-      "a1": "Nous recueillons les informations que votre navigateur envoie chaque fois que vous visitez notre Service (\"Données de journal\"). Ces Données de journal peuvent inclure des informations telles que l'adresse de protocole Internet (\"IP\") de votre ordinateur, le type de navigateur, la version du navigateur, les pages de notre Service que vous visitez, l'heure et la date de votre visite, le temps passé sur ces pages, et d'autres statistiques."
+      "title": "Données de Journal",
+      "a1": "Nous collectons les informations que votre navigateur envoie lorsque vous visitez notre Service (« Données de Journal »). Ces Données de Journal peuvent inclure des informations telles que l'adresse de protocole Internet (« IP ») de votre ordinateur, le type de navigateur, la version du navigateur, les pages de notre Service que vous visitez, l'heure et la date de votre visite, le temps passé sur ces pages et d'autres statistiques."
     },
     "q3": {
       "title": "Cookies",
-      "a1": "Les cookies sont des fichiers contenant une petite quantité de données, ce qui peut inclure un identifiant unique anonyme. Les cookies sont envoyés à votre navigateur par un site web et stockés sur le disque dur de votre ordinateur.",
-      "a2": "Nous utilisons des « cookies » pour collecter des informations. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour indiquer quand un cookie est envoyé. Cependant, si vous n'acceptez pas les cookies, il se peut que vous ne puissiez pas utiliser certaines parties de notre Service."
+      "a1": "Les cookies sont des fichiers contenant une petite quantité de données, qui peuvent inclure un identifiant unique anonyme. Les cookies sont envoyés à votre navigateur par un site web et stockés sur le disque dur de votre ordinateur.",
+      "a2": "Nous utilisons des « cookies » pour collecter des informations. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour indiquer quand un cookie est envoyé. Toutefois, si vous n'acceptez pas les cookies, il est possible que vous ne puissiez pas utiliser certaines parties de notre Service."
     },
     "q4": {
-      "title": "Fournisseurs de services",
-      "a1": "Nous pouvons employer des entreprises et des individus tiers pour faciliter notre Service, fournir le Service en notre nom, effectuer des services liés au Service ou nous aider à analyser comment notre Service est utilisé.",
-      "a2": "Ces tiers ont accès à vos Informations Personnelles uniquement pour effectuer ces tâches en notre nom et sont tenus de ne pas les divulguer ou les utiliser à d'autres fins."
+      "title": "Prestataires de Services",
+      "a1": "Nous pouvons employer des sociétés tierces et des individus pour faciliter notre Service, fournir le Service en notre nom, exécuter des services liés au Service ou nous aider à analyser l'utilisation de notre Service.",
+      "a2": "Ces tiers n'ont accès à vos Informations Personnelles que pour effectuer ces tâches en notre nom et sont tenus de ne pas les divulguer ou les utiliser à d'autres fins."
     },
     "q5": {
       "title": "Sécurité",
-      "a1": "La sécurité de vos Informations Personnelles est importante pour nous, mais rappelez-vous qu'aucune méthode de transmission sur Internet, ni aucune méthode de stockage électronique n'est sûre à 100 %. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos Informations Personnelles, nous ne pouvons pas garantir leur sécurité absolue."
+      "a1": "La sécurité de vos Informations Personnelles est importante pour nous, mais n'oubliez pas qu'aucune méthode de transmission sur Internet ou méthode de stockage électronique n'est sécurisée à 100%. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos Informations Personnelles, nous ne pouvons garantir leur sécurité absolue."
     },
     "q6": {
-      "title": "Informations de paiement et sécurité",
-      "a1": "Afin de recueillir des paiements en votre nom auprès de vos clients, et de vous fournir des paiements, nous, en utilisant Stripe en tant que processeur de paiement tiers, recueillons des informations de paiement de votre part, de vos participants et clients, de vos fournisseurs et d'autres parties à qui nous fournissons des paiements en votre nom et de qui nous recueillons des paiements en votre nom. Ces informations sont utilisées uniquement pour collecter et fournir des paiements liés aux Services et sont uniquement stockées par Stripe. Vous devriez consulter les conditions d'utilisation et les politiques de confidentialité de Stripe, disponibles à"
+      "title": "Informations de Paiement et Sécurité",
+      "a1": "Afin de collecter les paiements pour votre compte auprès de vos clients et de vous fournir des paiements, nous utilisons Stripe comme processeur de paiement tiers pour collecter les informations de paiement auprès de vous, de vos participants et clients, de vos fournisseurs et d'autres parties à qui nous fournissons des paiements en votre nom et de qui nous collectons des paiements en votre nom. Ces informations sont utilisées uniquement pour collecter et fournir des paiements liés aux Services et sont uniquement stockées par Stripe. Vous devez consulter les conditions de service et les politiques de confidentialité de Stripe, disponibles sur",
+      "a1_1": " "
     },
     "q7": {
-      "title": "Liens vers d'autres sites",
-      "a1": "Notre Service peut contenir des liens vers d'autres sites qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons fortement de consulter la Politique de Confidentialité de chaque site que vous visitez.",
-      "a2": "Nous n'avons aucun contrôle sur et n'assumons aucune responsabilité pour le contenu, les politiques de confidentialité ou les pratiques de tout site ou service tiers."
+      "title": "Liens Vers D'autres Sites",
+      "a1": "Notre Service peut contenir des liens vers d'autres sites qui ne sont pas exploités par nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons vivement de consulter la Politique de Confidentialité de chaque site que vous visitez.",
+      "a2": "Nous n'avons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques des sites ou services tiers."
     }
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Politique de Remboursement: Apprenez Comment Nous Procédons aux Remboursements | DET Pratique",
-      "description": "Découvrez la politique de remboursement de DET Practice : Apprenez comment nous traitons les demandes de remboursement, les critères d'éligibilité et le processus pour obtenir un remboursement. En savoir plus sur nos politiques maintenant.",
+      "title": "Politique de Remboursement - DET Practice | Conditions Transparentes et Équitables",
+      "description": "Découvrez notre politique de remboursement claire et transparente pour tous les services proposés par DET Practice. Nous nous efforçons d'offrir la meilleure expérience à nos utilisateurs avec des conditions de remboursement équitables et simples. En savoir plus aujourd'hui.",
       "keywords": "Politique de remboursement, DET Remboursement d'entraînement, DET Politique d'entraînement, Processus de remboursement, Éligibilité au remboursement"
     },
-    "h1": "Politique de remboursement",
+    "h1": "Politique de Remboursement",
     "q1": {
-      "a1": "Merci d'avoir choisi et acheté nos services. Nous nous efforçons de fournir la meilleure expérience d'apprentissage à nos clients. Cependant, si vous n'êtes pas entièrement satisfait de votre achat, nous sommes là pour vous aider."
+      "a1": "Nous vous remercions d'avoir choisi et acheté nos services. Nous nous efforçons d'offrir la meilleure expérience d'apprentissage à nos clients. Toutefois, si vous n'êtes pas entièrement satisfait de votre achat, nous sommes là pour vous aider."
     },
     "q2": {
-      "title": "Éligibilité aux remboursements",
-      "a1": "• Services aux membres : Les demandes de remboursement pour les services aux membres doivent être effectuées dans les 3 jours suivant l'achat.",
-      "a2": "• Contenu consulté : Si vous n'avez pas consulté plus de 20 questions, vous êtes éligible pour un remboursement.",
-      "a3": "• Cours numériques : Une fois qu'un produit numérique est téléchargé ou consulté, il est considéré comme utilisé et les produits utilisés ne peuvent pas être remboursés."
+      "title": "Conditions de Remboursement",
+      "a1": "• Services Membres : Les demandes de remboursement pour les services membres doivent être effectuées dans les 3 jours suivant l'achat.",
+      "a2": "• Contenu Consulté : Si vous n'avez pas accédé à plus de 20 questions, vous êtes éligible à un remboursement.",
+      "a3": "• Cours Numériques : Une fois qu'un produit numérique est téléchargé ou consulté, il est considéré comme utilisé, et les produits utilisés ne peuvent pas être remboursés."
     },
     "q3": {
-      "title0": "Cependant, DETPractice vous invite à <strong>nous contacter</strong> pour résoudre vos problèmes dans toutes les situations. Nous ferons de notre mieux pour fournir une solution qui vous satisfait.",
-      "title": "Comment demander un remboursement / Annuler l'abonnement",
+      "title0": "Néanmoins, DETPractice vous invite à nous contacter pour résoudre vos problèmes quelle que soit la situation. Nous ferons de notre mieux pour vous proposer une solution satisfaisante.",
+      "title": "Comment Demander un Remboursement / Annuler un Abonnement",
       "a1": "Pour demander un remboursement, veuillez suivre ces étapes :",
-      "a2": "1. Annuler l'abonnement : Connectez-vous à votre compte, trouvez et cliquez sur le lien <span class='websiteStrong'>\"Gérer votre facturation\"</span> en bas de la page d'adhésion. Vous serez redirigé vers une page de confirmation où vous pourrez confirmer votre décision de vous désabonner.",
-      "a3": "2. Contactez notre support : Contactez notre équipe d'assistance clientèle à l'adresse <span class='website'>support{'@'}detpractice.com</span> avec votre numéro de commande et la raison de la demande de remboursement.",
+      "a2": "1. Annuler l'Abonnement : Connectez-vous à votre compte, trouvez et cliquez sur le lien <span class='websiteStrong'>\"Manage your billing\"</span> en bas de la page d'adhésion. Vous serez redirigé vers une page de confirmation où vous pourrez confirmer votre décision de désabonnement.",
+      "a3": "2. Contacter Notre Support : Contactez notre équipe de support client à <span class='website'>support{'@'}detpractice.com</span> avec votre numéro de commande et le motif de votre demande de remboursement.",
       "a4": "3. Notre équipe examinera votre demande et vous répondra dans un délai de 3 jours ouvrables."
     },
     "q4": {
       "title": "Exclusions",
-      "a1": "Les éléments suivants ne sont pas éligibles pour un remboursement :",
-      "a2": "• Produits numériques téléchargés.",
-      "a3": "• Produits et services achetés via des vendeurs tiers."
+      "a1": "Les éléments suivants ne sont pas éligibles aux remboursements :",
+      "a2": "• Les produits numériques qui ont été téléchargés.",
+      "a3": "• Les produits et services achetés via des fournisseurs tiers."
     },
     "q5": {
-      "title": "Nous contacter",
-      "a1": "Si vous avez des questions sur notre politique de remboursement ou si vous avez besoin d'aide pour votre achat, veuillez nous contacter à:",
-      "a2": "Courriel : <span class='website'>support{'@'}detpractice.com</span>"
+      "title": "Nous Contacter",
+      "a1": "Si vous avez des questions concernant notre politique de remboursement ou si vous avez besoin d'aide avec votre achat, veuillez nous contacter à :",
+      "a2": "Email : <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
   "register": {
@@ -962,39 +967,39 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "Programme d'affiliation | DET Practice",
-      "description": "Rejoignez le programme d'affiliation lucratif de DET Practice et gagnez jusqu'à 30% de commission pour chaque parrainage. Partenariat avec nous pour aider les étudiants à atteindre leurs meilleurs scores.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test en ligne, Duolingo Test d'anglais, Duolingo Examen d'anglais, Duolingo Examen de compétence"
+      "title": "Programme d'Affiliation - DET Practice | Gagnez avec la Préparation au Duolingo Test",
+      "description": "Rejoignez le Programme d'Affiliation DET Practice et commencez à gagner en promouvant nos services de préparation au Duolingo test. Accédez à des supports à fort taux de conversion et gagnez des commissions sur chaque vente. Découvrez comment commencer dès aujourd'hui.",
+      "keywords": "programme d'affiliation, affiliation préparation Duolingo test, gains avec DET Practice, affiliation préparation test en ligne, marketing d'affiliation, partenaires DET Practice, gagner des commissions"
     },
-    "tag": "Programme d'affiliation",
-    "h1": "Gagnez <span class='yellow_font'>30% de commission</span> pour chaque parrainage",
-    "sun": "Inscrivez-vous maintenant",
+    "tag": "Programme d'Affiliation",
+    "h1": "Gagnez <span class='yellow_font'>30%</span> de Commission sur Chaque Parrainage",
+    "sun": "S'inscrire Maintenant",
     "login": "Connexion",
-    "join_title": "Rejoignez le <span class='yellow_font'>lucratif</span> programme d'affiliation de Detpractice",
-    "join_tips": "Inscrivez-vous au programme d'affiliation de Detpractice.com. Tout le monde peut facilement obtenir un score plus élevé sur Duolingo English Test avec Detpractice.com. Devenez notre partenaire et gagnez jusqu'à 30% de commission pour chaque parrainage.",
-    "earth_with_title": "Gagnez avec la gamme diversifiée de produits de Detpractice",
-    "question_bank": "Banque de questions",
-    "acs": "Service de correction IA",
-    "Mock_Test": "Test blanc",
+    "join_title": "Rejoignez le Programme d'Affiliation Lucratif de Detpractice",
+    "join_tips": "Inscrivez-vous au programme d'affiliation de Detpractice.com. Tout le monde peut facilement obtenir un meilleur score au Duolingo English Test avec Detpractice.com. Devenez notre partenaire et obtenez jusqu'à 30% de commission pour chaque parrainage.",
+    "earth_with_title": "Gagnez avec la Gamme Diversifiée de Produits Detpractice",
+    "question_bank": "Banque de Questions",
+    "acs": "Service de Correction IA",
+    "Mock_Test": "Test d'Entraînement",
     "Courses": "Cours",
-    "bada": "Devenez un affilié de Detpractice en 3 étapes",
-    "hep": "Potentiel de gains élevés",
+    "bada": "Devenez Affilié Detpractice en 3 Étapes",
+    "hep": "Fort Potentiel de Gains",
     "heptips": [
-      "Taux de commission compétitifs : 30% sur tous les revenus générés à partir de votre lien d'affiliation",
-      "Potentiel pour des partenariats à long terme : Nous valorisons nos affiliés et nous efforçons de développer des relations durables et mutuellement bénéfiques."
+      "Taux de commission compétitifs : 30% sur tous les revenus générés via votre lien d'affiliation.",
+      "Potentiel de partenariats à long terme : Nous valorisons nos affiliés et nous efforçons de développer des relations durables et mutuellement bénéfiques."
     ],
-    "ctw": "Créateurs avec lesquels nous aimons travailler",
+    "ctw": "Les Créateurs avec qui Nous Aimons Travailler",
     "ctwtips": [
-      "1. Vous êtes un créateur avec un public composé d'étudiants (apprendre Duolingo English Test est un plus !)",
-      "2. Vous êtes enthousiaste à l'idée d'une manière plus efficace d'apprendre DET",
-      "3. Vous êtes une institution de formation qui enseigne Duolingo English Test"
+      "1. Vous êtes un créateur dont l'audience est composée d'étudiants (La préparation au Duolingo English Test est un plus !)",
+      "2. Vous êtes enthousiaste à l'idée d'une méthode plus efficace pour apprendre le DET",
+      "3. Vous êtes un établissement de formation qui enseigne le Duolingo English Test"
     ],
-    "dos": "À faire",
+    "dos": "À Faire",
     "dos_icon_alt": "Icône de coche verte",
-    "donts": "À ne pas faire",
+    "donts": "À Ne Pas Faire",
     "donts_icon_alt": "Icône d'erreur rouge",
     "faqs": "FAQ",
-    "sew": "Commencez à gagner avec notre programme d'affiliation maintenant",
+    "sew": "Commencez à Gagner avec Notre Programme d'Affiliation Maintenant",
     "contaceUsList": [
       {
         "font": "Inscrivez-vous à notre programme d'affiliation et obtenez votre lien de parrainage.",
@@ -1014,58 +1019,68 @@
         "font": "Essayez Detpractice.com par vous-même"
       },
       {
-        "font": "Promouvez Detpractice.com de manière éthique et honnête"
+        "font": "Promouvoir Detpractice.com de manière éthique et honnête"
       },
       {
-        "font": "Créez du contenu de qualité et pertinent"
+        "font": "Créer du contenu pertinent et de qualité"
       },
       {
-        "font": "Divulguez votre relation d'affiliation"
+        "font": "Divulguer votre relation d'affiliation"
       }
     ],
     "dontsList": [
       {
-        "font": "Ne faites pas de déclarations trompeuses ou fausses sur Detpractice.com"
+        "font": "Faire des déclarations trompeuses ou fausses sur Detpractice.com"
       },
       {
-        "font": "Ne faites pas de promotion sur des plateformes contenant du contenu inapproprié ou illégal"
+        "font": "Promouvoir sur des plateformes au contenu inapproprié ou illégal"
       },
       {
-        "font": "Ne faites pas de promotion sur des sites de coupons"
+        "font": "Promouvoir sur des sites de coupons"
       },
       {
-        "font": "Ne créez pas de campagnes publicitaires utilisant notre nom de marque, ou en mettant notre nom de domaine dans les URL de destination de vos annonces"
+        "font": "Créer des campagnes publicitaires utilisant notre nom de marque ou mettre notre nom de domaine dans les URLs de destination de vos publicités"
       }
     ],
     "faqList": [
       {
-        "q": "Qui peut s'inscrire au programme d'affiliation de DET Practice?",
-        "a": "Si vous êtes un créateur avec un public composé d'étudiants, une institution de formation qui enseigne Duolingo English Test, ou un influenceur, vous pouvez vous inscrire à notre programme d'affiliation et gagner de l'argent."
+        "q": "Qui peut postuler au programme d'affiliation de DET Practice ?",
+        "a": "Si vous êtes un créateur avec une audience composée d'étudiants, un établissement de formation qui enseigne le Duolingo English Test, ou un influenceur, vous pouvez vous inscrire à notre programme d'affiliation et gagner de l'argent."
       },
       {
-        "q": "Comment puis-je suivre mes commissions?",
-        "a": "Une fois que vous vous êtes inscrit à notre programme d'affiliation, vous aurez accès à votre page d'administration dédiée où vous pourrez suivre les conversions de vos liens de parrainage."
+        "q": "Comment puis-je suivre mes commissions ?",
+        "a": "Une fois inscrit à notre programme d'affiliation, vous aurez accès à votre page d'administration dédiée où vous pourrez suivre les conversions de vos liens de parrainage."
       },
       {
-        "q": "Est-ce que je reçois une commission si un client que je parraine s'abonne ou effectue une mise à niveau?",
-        "a": "Oui, après qu'un utilisateur se soit inscrit via votre lien, vous gagnez une commission chaque fois que l'utilisateur effectue un achat et une mise à niveau."
+        "q": "Est-ce que je reçois une commission si un client que j'ai parrainé s'abonne ou effectue une mise à niveau ?",
+        "a": "Oui, après qu'un utilisateur s'inscrit via votre lien, vous gagnez une commission chaque fois que l'utilisateur effectue un achat ou une mise à niveau."
       },
       {
-        "q": "Quel est le pourcentage exact de commission que je peux gagner?",
-        "a": "Pour les 3 premières commandes, vous recevrez une commission de 10%; pour plus de 3 commandes, vous recevrez une commission de 30%."
+        "q": "Quel est le pourcentage exact de commission que je peux gagner ?",
+        "a": "Pour les 3 premières commandes, vous recevrez 10% de commission ; pour plus de 3 commandes, vous recevrez 30% de commission."
       },
       {
-        "q": "Que se passe-t-il si un client que j'ai parrainé annule son achat?",
+        "q": "Que se passe-t-il si un client que j'ai parrainé annule son achat ?",
         "a": "Si un client annule un achat ou obtient un remboursement pour une raison quelconque, la commission que vous avez gagnée pour cette personne sera déduite de votre compte."
       },
       {
-        "q": "Quand et comment suis-je payé?",
-        "a": "Nous traitons les paiements le 15 de chaque mois pour toutes les commissions que vous avez gagnées le mois précédent. Vous pouvez recevoir des paiements via PayPal."
+        "q": "Quand et comment suis-je payé ?",
+        "a": "Nous traitons les paiements le 15 de chaque mois pour toutes les commissions que vous avez gagnées le mois précédent. Vous pouvez recevoir les paiements via PayPal."
       },
       {
-        "q": "Que faire si j'ai d'autres questions sur votre programme de marketing d'affiliation sur Internet?",
-        "a": "Contactez-nous simplement à \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" et nous serons heureux de vous aider avec toutes les questions que vous pourriez avoir."
+        "q": "Que faire si j'ai d'autres questions sur votre programme de marketing d'affiliation ?",
+        "a": " Contactez-nous simplement à \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" et nous serons ravis de répondre à toutes vos questions."
       }
-    ]
+    ],
+    "contaceUsList[0]": {
+      "btn": "S'inscrire Maintenant"
+    },
+    "contaceUsList[1]": {
+      "btn": "Partager"
+    },
+    "contaceUsList[2]": {
+      "font": "Gagnez des commissions sur les ventes générées par vous et vos sous-affiliés.",
+      "btn": "Recevez vos Gains"
+    }
   }
 }
